@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="fe15skill_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_101" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_101.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_102" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_102.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_103" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_103.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_104" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_104.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_105" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_105.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_106" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_106.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_107" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_107.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_108" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_108.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_109" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_109.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_110" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_110.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_112" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_112.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_114" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_114.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_115" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_115.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_116" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_116.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_117" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_117.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_118" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_118.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_119" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_119.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_120" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_120.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_123" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_123.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_124" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_124.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_125" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_125.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_126" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_126.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_127" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_127.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_129" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_129.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_130" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_130.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_131" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_131.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_132" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_132.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_133" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_133.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_134" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_134.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_135" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_135.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_136" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_136.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_137" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_137.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_138" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_138.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_139" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_139.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_140" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_140.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_141" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_141.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_142" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_142.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_143" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_143.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_144" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_144.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_145" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_145.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_146" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_146.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_147" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_147.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_148" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_148.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_149" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_149.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_150" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_150.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_151" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_151.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_152" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_152.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_153" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_153.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_154" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_154.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_155" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_155.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_156" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_156.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_157" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_157.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_158" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_158.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_159" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_159.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_160" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_160.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_162" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_162.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_163" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_163.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_164" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_164.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_165" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_165.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_166" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_166.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_167" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_167.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_168" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_168.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_169" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_169.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_170" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_170.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_171" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_172" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_172.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_173" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_173.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_174" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_174.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_175" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_175.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_176" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_176.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_177" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_177.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_178" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_178.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_179" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_179.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_181" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_181.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_182" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_182.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_183" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_183.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_184" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_184.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_185" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_185.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_186" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_186.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_187" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_187.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_188" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_188.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_189" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_189.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_190" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_190.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_191" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_191.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_192" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_192.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_193" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_193.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_194" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_194.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_195" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_195.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_196" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_196.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_197" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_197.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_198" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_198.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_199" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_199.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_201.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_202" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_202.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_203" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_203.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_204" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_204.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_205" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_205.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_206" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_206.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_207" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_207.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_208" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_208.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_209" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_209.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_210" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_210.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_211" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_211.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_212" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_212.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_213" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_213.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_214" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_214.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_215" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_215.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_216" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_216.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_217" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_217.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_218" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_218.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_219" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_219.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_220" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_220.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_221" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_221.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_222" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_222.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_223" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_223.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_224" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_224.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_225" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_225.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_226" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_226.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_227" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_227.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_228" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_228.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_33.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_37" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_38" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_38.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_39" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_39.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_42" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_42.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_43.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_46" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_46.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_47" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_49" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_49.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_52.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_53" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_53.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_54" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_54.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_55" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_55.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_56" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_56.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_57" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_57.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_59" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_59.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_61.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_63" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_63.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_65" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_65.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_66" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_66.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_67" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_67.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_68" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_68.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_69" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_69.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_70" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_70.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_71" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_71.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_72" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_72.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_73" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_73.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_74" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_74.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_75" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_76" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_76.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_77" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_77.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_78" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_78.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_79" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_79.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_81.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_82" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_82.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_83" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_83.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_84" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_84.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_85" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_85.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_86" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_86.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_87" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_87.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_88" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_88.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_89" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_89.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_91" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_91.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_92" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_92.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_93" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_93.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_94" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_94.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_95" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_95.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_97" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_97.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_98" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_98.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe15skill_99" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\fe15skill_99.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
