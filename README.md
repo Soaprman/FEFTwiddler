@@ -23,6 +23,7 @@ Special thanks:
 * RainThunder for making FEST https://github.com/RainThunder/FEST
 * Also RainThunder for making the convoy editor, which I drew some inspiration from https://github.com/RainThunder/Fire-Emblem-Fates-Convoy-Editor
 * Various posters in the threads about this game on Serenesforest.net and Gbatemp.net for a few hex offsets that were tricky to find on my own
+* Whoever ripped the skill icon graphics and whoever put them onto the Serenesforest.net website. Thanks for using the IDs in the file names, by the way. That made my life a little easier!
 * I think that's it? I hope I didn't forget anyone!
 
 Also, shoutout to ShadowMario3 for the complete support log save file that he posted here: https://www.reddit.com/r/fireemblem/comments/49omnd/100_support_log_global_save_file_for_fates/
