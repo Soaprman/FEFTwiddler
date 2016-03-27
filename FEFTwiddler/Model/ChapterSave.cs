@@ -227,11 +227,6 @@ namespace FEFTwiddler.Model
 
             bw.BaseStream.Seek(character.BinaryPosition, SeekOrigin.Begin);
 
-            if (character.CharacterID == Enums.Character.Soleil)
-            {
-                var breakpoint = true;
-            }
-
             // TODO
             bw.BaseStream.Seek(9, SeekOrigin.Current);
 
