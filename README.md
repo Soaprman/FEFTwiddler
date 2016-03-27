@@ -18,3 +18,13 @@ How to use:
 * Restore the save
 
 Have fun, and I guess report problems? I don't know how much I'll add to this...
+
+Special thanks:
+* RainThunder for making FEST https://github.com/RainThunder/FEST
+* Also RainThunder for making the convoy editor, which I drew some inspiration from https://github.com/RainThunder/Fire-Emblem-Fates-Convoy-Editor
+* Various posters in the threads about this game on Serenesforest.net and Gbatemp.net for a few hex offsets that were tricky to find on my own
+* I think that's it? I hope I didn't forget anyone!
+
+Also, shoutout to ShadowMario3 for the complete support log save file that he posted here: https://www.reddit.com/r/fireemblem/comments/49omnd/100_support_log_global_save_file_for_fates/
+
+That kind of inspired me to do this at all, and I'll probably add code to do that to this later on.
