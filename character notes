@@ -1,0 +1,345 @@
+character block beginning:
+54 49 4E 55 
+look for TINU in text column
+in chapter0 save it is in row 0x1390 rightmost four bytes
+in chapter2 save it is in row 0x10A0 rightmost four bytes
+after three more bytes...
+	01 03 47 in chapter 0 (0x47 = 71)
+	01 03 1E in chapter 2 (0x1e = 30)
+... an 07 00 00 00 block appears. then MU's block starts
+TINU might be like "Magic" in convoy editor
+
+idea: switch two characters positions to get character block size + staRT + end
+character blocks may have no delimiting characters (there could be pointers instead)
+
+testing based on 002 - no edits one support unlocked_dec\Chapter0_dec (revelation)
+
+
+
+
+
+things to think about:
+character id
+dragon crown icon
+	could maybe check if either parent is in some hardcoded list i guess?
+character name for avatar?
+class
+dead + chapter/mission/map died on
+level
+experience
+weapon experience
+	probably 8 bytes
+	sword spear axe shuriken bow tome staff stone
+movement
+hp (prob just max)
+str mag skl spd luk def res
+	could be offsets from base stats?
+# boots used
+maybe separate stats for "extra stats"
+skills equipped
+personal skill prob not listed
+inventory (item id, forge boost, number of uses remaining)
+	equipped bit on one weapon or maybe value 00-05 saying which is equipped
+support levels with other characters
+available classes? master/heart/partner/friend/offspring seals might differ
+growth rates? kinda doubt this
+accessories (head, face, arm, bath)
+
+before learned skills: 00 00 00 01 14 00 00 00 ?
+learned skills: 20 bytes (all FF for all skills) followed by 02
+DF FF 7F FB FF FF FF FF FF FE FF EF FF BF 01 00 00 00 00 00 gives no DLC or Enemy-Only skills. 
+
+child "canon" hair colors
+Both Routes
+Kana: ED DB C5
+Dwyer: D2 D2 C3
+Sophie: AA B4 B4
+Midori: 7D 96 82
+
+Birthright/Hoshido
+Shiro: 58 33 2D
+Kiragi: C1 B2 AC
+Asugi: D2 88 69
+Selkie: D3 91 46
+Hisame: 6F 55 4B
+Mitama: FC DE F7
+Caeldori: AF 54 54
+Rhajat: 48 48 48
+
+Conquest/Nohr
+Siegbert: D0 C2 9F
+Forrest: D2 C3 AA
+Ignatius: D2 C3 B5
+Velouria: 40 40 40
+Percy: FE EA B7
+Ophelia: DA D3 BD
+Soleil: EB CD D6
+Nina: F5 F3 F0 
+
+
+009\Chapter0_dec
+start at TINU
+skip next three bytes (01 03 47)
+
+from beginning of 07 00 00 00 through last byte before next character's 07 00 00 00
+the "to" is the first byte of the following character's block to make the math right
+avatar: 0x13A3 to 0x14FD (length: 0x15A)
+laslow: 0x14FD to 0x15FB (length: 0xFE)
+velouria: 0x15FB to 0x171F (length: 0x124)
+fuga: 0x171F to 0x180D (length: 0xEE)
+soleil: 0x180D to 0x1931 (length: 0x124) 292 = 18 rows 4 bytes
+	last byte of inventory: 0x1888
+	support block only 15 bytes?
+percy: 0x1931 to 0x1A55 (length: 0x124)
+nina: 0x1A55 to 0x1B78 (length: 0x123)
+	last byte of inventory: 0x1AD0
+niles: 0x1B78 to 0x1C76 (length: 0xFE)
+kana: 0x1C76 to 0x1D99 (length: 0x123) (note: begins with 07 00 00 80, not 07 00 00 00)
+ignatius: 0x1D99 to 0x1EBD (length: 0x124)
+azura: 0x1EBD to 0x1FC0 (length: 0x103)
+felicia: 0x1FC0 to 0x20C3 (length: 0x103)
+gunter: 0x20C3 to 0x21B1 (length: 0xEE)
+sakura: 0x21B1 to 0x22AF (length: 0xFE)
+hana: 0x22AF to 0x23AD (length: 0xFE)
+subaki: 0x23AD to 0x24AB (length: 0xFE)
+kaze: 0x24AB to 0x25AE (length: 0x103)
+mozu: 0x25AE to 0x26B1 (length: 0x103)
+rinkah: 0x26B1 to 0x27AF (length: 0xFE)
+mitama: 0x27AF to 0x28D3 (length: 0x124)
+ophelia: 0x28D3 to 0x29F6 (length: 0x123)
+caeldori: 0x29F6 to 0x2B1A (length: 0x124)
+shiro: 0x2B1A to 0x2C3E (length: 0x124)
+xander: 0x2C3E to 0x2D3C (length: 0xFE)
+takumi: 0x2D3C to 0x2E3A (length: 0xFE)
+candace: 0x2E3A to 0x2F25 (length: 0xEB)
+shigure: 0x2F25 to 0x3049 (length: 0x124)
+ryoma: 0x3049 to 0x3147 (length: 0xFE)
+siegbert: 0x3147 to 0x326B (length: 0x124)
+sophie: 0x326B to 0x3390 (length: 0x125)
+midori: 0x3390 to 0x34B5 (length: 0x125)
+shura: 0x34B5 to 0x35A2 (length: 0xED)
+setsuna: 0x35A2 to 0x36A0 (length: 0xFE)
+senno: 0x36A0 to 0x378B (length: 0xEB)
+kiragi: 0x378B to 0x38AF (length: 0x124)
+jakob: 0x38AF to 0x39B2 (length: 0x103)
+saizo: 0x39B2 to 0x3AB0 (length: 0xFE)
+asugi: 0x3AB0 to 0x3BD4 (length: 0x124)
+kaden: 0x3BD4 to 0x3CD2 (length: 0xFE)
+dwyer: 0x3CD2 to 0x3DF7 (length: 0x125)
+hinoka: 0x3DF7 to 0x3EF5 (length: 0xFE)
+selkie: 0x3EF5 to 0x4019 (length: 0x124)
+hinata: 0x4019 to 0x4117 (length: 0xFE)
+hisame: 0x4117 to 0x423B (length: 0x124)
+flora: 0x423B to 0x4329 (length: 0xEE)
+azama: 0x4329 to 0x4427 (length: 0xFE)
+silas: 0x4427 to 0x452A (length: 0x103)
+oboro: 0x452A to 0x4628 (length: 0xFE)
+selena: 0x4628 to 0x4726 (length: 0xFE)
+forrest: 0x4726 to 0x484A (length: 0x124)
+leo: 0x484A to 0x4948 (length: 0xFE)
+arthur: 0x4948 to 0x4A46 (length: 0xFE)
+odin: 0x4A46 to 0x4B44 (length: 0xFE)
+hayato: 0x4B44 to 0x4C42 (length: 0xFE)
+rhajat: 0x4C42 to 0x4D66 (length: 0x124)
+keaton: 0x4D66 to 0x4E64 (length: 0xFE)
+benny: 0x4E64 to 0x4F61 (length: 0xFD) (note: unique value due to support count. he has 18 supports, keaton has 19)
+elise: 0x4F61 to 0x505F (length: 0xFE)
+reina: 0x505F to 0x514C (length: 0xED)
+camilla: 0x514C to 0x524A (length: 0xFE)
+kagero: 0x524A to 0x5348 (length: 0xFE)
+beruka: 0x5348 to 0x5446 (length: 0xFE)
+effie: 0x5446 to 0x5544 (length: 0xFE)
+nyx: 0x5544 to 0x5642 (length: 0xFE)
+orochi: 0x5642 to 0x5740 (length: 0xFE)
+peri: 0x5740 to 0x583E (length: 0xFE)
+charlotte: 0x583E to 0x593C (length: 0xFE)
+zhara: 0x593C to 0x5A27 (length: 0xEB)
+gazak: 0x5A27 to 0x5B12 (length: 0xEB)
+nichol: 0x5B12 to 0x5BFD (length: 0xEB)
+daichi: 0x5BFD to 0x5CE8 (length: 0xEB)
+2 bytes - 06 01 - border between life and death
+scarlet: 0x5CEA to ???? (length: 0xED) (guess)
+
+followed by IFER (49 46 45 52) which begins the forged item name block
+followed by NART (4E 41 52 54) which begins the convoy block
+	this is "Magic" in convoy editor (backwards byte order)
+followed by the my castle block (hard to tell where it begins, maybe at AC[E (41 43 5B 45))
+followed by a bunch of nonsense that i thought was character pointers at first
+followed by... more my castle stuff? looks like calling cards (i see nick's army in there)
+
+
+
+
+
+
+character block structure info (what changes, what stays the same):
+4 bytes
+	07 00 00 00 for most characters
+	07 00 00 80 for kana (f)
+5 bytes
+	idk
+	usually 00 00 00 00 00 (they are on MU)
+	saw 01 00 00 00 00 on velouria in earlier save
+1 byte: level
+1 byte: exp
+1 byte: suspected level of promotion (is 14 for many units)
+1 byte: number of eternal seals used
+1 byte: character id
+1 byte: 00
+1 byte: class id
+1 byte: 00
+2 bytes
+	idk
+	00 00 on MU
+12 bytes
+	a bunch of random looking values
+8 bytes
+	stats relative to something
+	fifth byte is speed for sure
+16 bytes
+	idk
+	00 01 00 00 01 01 01 00 00 00 00 00 00 00 00 00 on laslow
+	00 01 01 01 01 01 01 01 00 00 00 00 00 00 00 00 on MU
+8 bytes
+	stats gained due to stat boosters
+	fifth byte is speed for sure (00 > 02 after a speedwing)
+8 bytes
+	weapon exp
+	order: sword, lance, axe, shuriken, bow, tome, staff, stone
+1 byte
+	maximum hp?
+	22 on laslow
+4 bytes
+	FF FF FF FF
+5 bytes
+	00 00 00 00 00 on MU
+	00 00 00 30 00 on candace
+	i heard this is the shield icon
+	first byte was 18 for scarlet i think. so could be death related
+6 bytes
+	00 00 00 FF FF 00
+2 bytes
+	idk
+	earlier notes:
+		laslow had 08 01
+		velouria had 02 01
+		scarlet had 1F 01
+		soleil changed 03 00 > 04 01
+	current notes:
+		candace has 02 01
+2 bytes
+	equipped skill 1 followed by 00
+2 bytes
+	equipped skill 2 followed by 00
+2 bytes
+	equipped skill 3 followed by 00
+2 bytes
+	equipped skill 4 followed by 00
+2 bytes
+	equipped skill 5 followed by 00
+1 byte: 00
+4 bytes: inventory item 1
+1 byte: 00
+4 bytes: inventory item 2
+1 byte: 00
+4 bytes: inventory item 3
+1 byte: 00
+4 bytes: inventory item 4
+1 byte: 00
+4 bytes: inventory item 5
+? bytes
+	mostly unknown
+	36 bytes for laslow (length: 0x24)
+		laslow has 19 supports
+	boots is 0x1B from the beginning for laslow i think?
+	83 bytes for MU (length: 0x53) 0x141F (0x43) to 0x1472 (0x01)
+		MU has 65 supports
+	difference is one off but there may be a support missing from the list or something.
+	this block is probably supports plus something else that is fixed among all characters (would account for boots)
+	17 bytes for candace
+		00 00 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00
+	so this block is probably:
+		some number of bytes (one per support conversation)
+		followed by 17 bytes for everyone
+3 bytes
+	DLC classes for heart seals?
+3 bytes
+	hair color (RGB)
+2 bytes
+	FF 00
+? bytes
+	a bunch of actual values. no idea what they are though
+	probably fixed at 12 bytes
+	12 bytes for laslow
+	12 bytes for MU
+	laslow from pic: 					24 82 25 21 24 C3 4A 16 78 2B 7C 01 - next 77
+	generic f.knight from birthright:	24 82 25 21 24 C3 4A 16 44 F7 7E B9 - next 76
+1 byte
+	magenta on my picture
+	usually 77, have seen 76
+	77 on laslow
+	76 on MU
+	77 on candace
+8 bytes
+	00 00 00 02 07 00 00 00
+20 bytes
+	idk
+	all 00s for laslow
+	all 00s for MU
+	i think i have seen other values here though
+5 bytes
+	01 14 00 00 00
+16 bytes
+	learned skills
+	no dlc or enemy skills: DF FF 7F FB FF FF FF FF FF FE FF EF FF BF 01 00 00 00 00 00
+1 byte: 02
+4 bytes
+	idk
+	00 00 00 00 for laslow
+	00 00 00 00 for MU
+4 bytes
+	accessories
+	head, face, arm, underwear (in that order)
+11 bytes
+	idk
+	laslow: 	00 16 00 0B 00 02 00 00 00 00 00
+		did not change from old save to current save
+	candace: 	00 0F 00 0C 00 01 00 00 00 00 00
+	MU: 		00 77 02 66 01 03 00 00 00 01 04 (hope i didn't pick the wrong ones)
+	velouria: 	00 00 10 00 00 00 00 00 00 00 00
+	fuga: 		00 5C 00 33 00 04 00 00 00 00 00
+	soleil: 	00 00 10 00 00 00 00 00 00 00 00
+	percy: 		00 00 10 00 00 00 00 00 00 00 00
+	nina: 		00 00 10 00 00 00 00 00 00 00 00
+	niles: 		00 C3 00 7F 00 04 00 00 00 00 00
+	kanaf: 		00 00 12 01 00 00 00 00 00 01 00
+	this seems like mostly historical/game progress data. guesses:
+		byte 3: offspring seal levels gained past 20
+			i recruited some children at a point where they promoted to lv16, and a few others (like kana) promoted to lv18
+	not gonna put much effort into this one. it's probably not useful
+? bytes
+	character name (in my case, Soap)
+	MU only
+	each letter is 2 bytes
+	including name, 44 bytes until next character (laslow)'s 07 00 00 00
+
+
+
+
+
+birthright differences:
+corrin: 0x10B3 to 0x120D (len: 0x15A)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
