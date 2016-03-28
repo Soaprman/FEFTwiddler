@@ -58,6 +58,7 @@
             this.btnGiveEternalSeals = new System.Windows.Forms.Button();
             this.btnAllSkillsNoNpc = new System.Windows.Forms.Button();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnMaxWeaponExp = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -135,7 +136,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(483, 495);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Chapter Viewer";
+            this.tabPage1.Text = "Character Viewer";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // panel1
@@ -327,6 +328,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnMaxWeaponExp);
             this.tabPage2.Controls.Add(this.btnGiveEternalSeals);
             this.tabPage2.Controls.Add(this.btnAllSkillsNoNpc);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -362,6 +364,16 @@
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
+            // 
+            // btnMaxWeaponExp
+            // 
+            this.btnMaxWeaponExp.Location = new System.Drawing.Point(7, 161);
+            this.btnMaxWeaponExp.Name = "btnMaxWeaponExp";
+            this.btnMaxWeaponExp.Size = new System.Drawing.Size(218, 71);
+            this.btnMaxWeaponExp.TabIndex = 2;
+            this.btnMaxWeaponExp.Text = "Give all characters S rank in all weapons";
+            this.btnMaxWeaponExp.UseVisualStyleBackColor = true;
+            this.btnMaxWeaponExp.Click += new System.EventHandler(this.btnMaxWeaponExp_Click);
             // 
             // Form1
             // 
@@ -423,6 +435,7 @@
         private System.Windows.Forms.ToolStripMenuItem saveFileToolStripMenuItem;
         private System.Windows.Forms.Button btnAllSkillsNoNpc;
         private System.Windows.Forms.Button btnGiveEternalSeals;
+        private System.Windows.Forms.Button btnMaxWeaponExp;
     }
 }
 

@@ -9,6 +9,40 @@ namespace FEFTwiddler.Model
 {
     class ChapterSave: ISave
     {
+        #region Member variables
+
+        private string _filePath;
+
+        #endregion
+
+        #region Properties
+
+        public uint Gold { get; set; }
+
+        // TODO: Actually find the right order of these
+        public byte ResourceQuantity_Crystal { get; set; }
+        public byte ResourceQuantity_Pearl { get; set; }
+        public byte ResourceQuantity_Ruby { get; set; }
+        public byte ResourceQuantity_Coral { get; set; }
+        public byte ResourceQuantity_Sapphire { get; set; }
+        public byte ResourceQuantity_Lapis { get; set; }
+        public byte ResourceQuantity_Onyx { get; set; }
+        public byte ResourceQuantity_Quartz { get; set; }
+        public byte ResourceQuantity_Emerald { get; set; }
+        public byte ResourceQuantity_Jade { get; set; }
+        public byte ResourceQuantity_Topaz { get; set; }
+        public byte ResourceQuantity_Amber { get; set; }
+        public byte ResourceQuantity_Meat { get; set; }
+        public byte ResourceQuantity_Beans { get; set; }
+        public byte ResourceQuantity_Milk { get; set; }
+        public byte ResourceQuantity_Fish { get; set; }
+        public byte ResourceQuantity_Cabbage { get; set; }
+        public byte ResourceQuantity_Daikon { get; set; }
+        public byte ResourceQuantity_Berries { get; set; }
+        public byte ResourceQuantity_Peaches { get; set; }
+        public byte ResourceQuantity_Wheat { get; set; }
+        public byte ResourceQuantity_Rice { get; set; }
+
         private List<Character> _characters = new List<Character>();
         public List<Character> Characters {
             get
@@ -17,7 +51,7 @@ namespace FEFTwiddler.Model
             }
         }
 
-        private string _filePath;
+        #endregion
 
         public static ChapterSave FromPath(string path)
         {
@@ -246,8 +280,21 @@ namespace FEFTwiddler.Model
             // TODO
             bw.BaseStream.Seek(46, SeekOrigin.Current);
 
-            // Weapon exp and HP
-            bw.BaseStream.Seek(9, SeekOrigin.Current);
+            // Weapon exp
+            chunk = new byte[] {
+                character.WeaponExperience_Sword,
+                character.WeaponExperience_Lance,
+                character.WeaponExperience_Axe,
+                character.WeaponExperience_Shuriken,
+                character.WeaponExperience_Bow,
+                character.WeaponExperience_Tome,
+                character.WeaponExperience_Staff,
+                character.WeaponExperience_Stone
+            };
+            bw.Write(chunk);
+
+            // Max HP
+            bw.BaseStream.Seek(1, SeekOrigin.Current);
 
             // Filler - FF FF FF FF
             bw.BaseStream.Seek(4, SeekOrigin.Current);

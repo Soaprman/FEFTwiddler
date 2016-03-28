@@ -48,13 +48,6 @@ namespace FEFTwiddler.Model
         public override string ToString()
         {
             return CharacterID.ToString() + ": " + ClassID.ToString() +  " // lv" + Level.ToString() + " exp" + Experience.ToString();
-
-            //return "Name: " + CharacterID.ToString() +
-            //    (IsDead ? " (DEAD)" : "") +
-            //    (IsRecruited ? " (Shield icon)" : "") +
-            //    Environment.NewLine + "Class: " + ClassID.ToString() +
-            //    Environment.NewLine + "Level: " + Level.ToString() +
-            //    Environment.NewLine + "Experience: " + Experience.ToString();
         }
 
         #region Cheats
@@ -62,6 +55,19 @@ namespace FEFTwiddler.Model
         public void LearnAllNonNpcSkills()
         {
             LearnedSkills = new byte[] { 0xDF, 0xFF, 0x7F, 0xFB, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFE, 0xFF, 0xEF, 0xFF, 0xBF, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00 };
+        }
+
+        public void SRankAllWeapons()
+        {
+            byte sRank = 0xFB;
+            WeaponExperience_Sword = sRank;
+            WeaponExperience_Lance = sRank;
+            WeaponExperience_Axe = sRank;
+            WeaponExperience_Shuriken = sRank;
+            WeaponExperience_Bow = sRank;
+            WeaponExperience_Tome = sRank;
+            WeaponExperience_Staff = sRank;
+            WeaponExperience_Stone = sRank;
         }
 
         #endregion

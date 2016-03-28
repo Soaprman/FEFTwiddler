@@ -162,5 +162,13 @@ namespace FEFTwiddler
                 character.EternalSealsUsed = 16;
             }
         }
+
+        private void btnMaxWeaponExp_Click(object sender, EventArgs e)
+        {
+            foreach (var character in _chapterSave.Characters)
+            {
+                character.SRankAllWeapons();
+            }
+        }
     }
 }
