@@ -15,7 +15,6 @@ namespace FEFTwiddler
     public partial class Form1 : Form
     {
         private Model.ChapterSave _chapterSave;
-        private Dictionary<string, Model.Character> _listBoxHelper;
         private Model.Character _selectedCharacter;
 
         public Form1()
@@ -29,12 +28,12 @@ namespace FEFTwiddler
             {
                 _chapterSave = Model.ChapterSave.FromPath(openFileDialog1.FileName);
 
-                _listBoxHelper = new Dictionary<string, Model.Character>();
+                listBox1.DisplayMember = "CharacterID";
+                listBox1.ValueMember = "BinaryPosition"; // Sure, why not
                 listBox1.Items.Clear();
                 foreach (var character in _chapterSave.Characters)
                 {
-                    _listBoxHelper.Add(character.CharacterID.ToString(), character);
-                    listBox1.Items.Add(character.CharacterID.ToString());
+                    listBox1.Items.Add(character);
                 }
 
                 PopulatePickers();
@@ -53,8 +52,10 @@ namespace FEFTwiddler
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var characterId = listBox1.SelectedItem.ToString();
-            var character = _listBoxHelper[characterId];
+            var character = (Model.Character)listBox1.SelectedItem;
+            //var character = (from c in _chapterSave.Characters
+            //                 where c.BinaryPosition == characterId
+            //                 select c).FirstOrDefault();
             _selectedCharacter = character;
             LoadCharacter(character);
         }
@@ -123,6 +124,10 @@ namespace FEFTwiddler
             cmbClass.Text = character.ClassID.ToString();
             numLevel.Value = character.Level;
             numExperience.Value = character.Experience;
+
+            chkDead.Checked = character.IsDead;
+            chkEinherjar.Checked = character.IsEinherjar;
+            chkRecruited.Checked = character.IsRecruited;
 
             cmbSkill1.Text = character.EquippedSkill_1.ToString();
             pictSkill1.Image = GetSkillImage(character.EquippedSkill_1);

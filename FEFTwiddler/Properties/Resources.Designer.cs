@@ -153,6 +153,16 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap einherjar {
+            get {
+                object obj = ResourceManager.GetObject("einherjar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap emerald {
             get {
                 object obj = ResourceManager.GetObject("emerald", resourceCulture);
@@ -2526,6 +2536,16 @@ namespace FEFTwiddler.Properties {
         internal static System.Drawing.Bitmap quartz {
             get {
                 object obj = ResourceManager.GetObject("quartz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap recruited {
+            get {
+                object obj = ResourceManager.GetObject("recruited", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

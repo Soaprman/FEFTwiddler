@@ -41,6 +41,7 @@ namespace FEFTwiddler.Model
         public Enums.Skill EquippedSkill_5 { get; set; }
 
         public bool IsDead { get; set; }
+        public bool IsEinherjar { get; set; }
         public bool IsRecruited { get; set; }
 
         public byte[] LearnedSkills { get; set; }
@@ -165,9 +166,12 @@ namespace FEFTwiddler.Model
             return Enums.Character.Marth <= charId && charId <= Enums.Character.Robin;
         }
 
-        public static int GetBlockSize(Enums.Character charId)
+        public int GetBlockSize()
         {
-            switch (charId)
+            // All Einherjar units have the same support-free block size, regardless of which character it is
+            if (this.IsEinherjar) return 0xEB;
+
+            switch (this.CharacterID)
             {
                 case Enums.Character.Corrin_F: // guess
                 case Enums.Character.Corrin_M:
@@ -270,12 +274,7 @@ namespace FEFTwiddler.Model
 
         public int GetSupportBlockSize()
         {
-            return GetSupportBlockSize(this.CharacterID);
-        }
-
-        public static int GetSupportBlockSize(Enums.Character charId)
-        {
-            var supportSize = GetBlockSize(charId);
+            var supportSize = GetBlockSize();
 
             // TODO
             supportSize -= 9;
@@ -294,18 +293,18 @@ namespace FEFTwiddler.Model
 
             // Unknown stuff right after support block
             supportSize -= 17;
-            
+
             // Everything else
             supportSize -= 90;
-            
+
             // Corrin has 44 bytes of stuff at the end
-            if (IsCorrin(charId))
+            if (IsCorrin(this.CharacterID))
             {
                 supportSize -= 44;
             }
 
             // Gen 2 units have supports split into two blocks
-            if (IsKana(charId) || IsGen2Ordinary(charId))
+            if (IsKana(this.CharacterID) || IsGen2Ordinary(this.CharacterID))
             {
                 supportSize -= 42;
             }
@@ -315,13 +314,8 @@ namespace FEFTwiddler.Model
 
         public int GetSupportBlock2Size()
         {
-            return GetSupportBlock2Size(this.CharacterID);
-        }
-
-        public static int GetSupportBlock2Size(Enums.Character charId)
-        {
             // Gen 2 units have supports split into two blocks
-            if (IsKana(charId) || IsGen2Ordinary(charId))
+            if (IsKana(this.CharacterID) || IsGen2Ordinary(this.CharacterID))
             {
                 return 42;
             }

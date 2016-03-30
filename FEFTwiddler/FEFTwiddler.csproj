@@ -115,6 +115,8 @@
     <Content Include="Resources\Images\MaterialIcons\sapphire.png" />
     <Content Include="Resources\Images\MaterialIcons\topaz.png" />
     <Content Include="Resources\Images\MaterialIcons\wheat.png" />
+    <Content Include="Resources\Images\OtherIcons\einherjar.png" />
+    <Content Include="Resources\Images\OtherIcons\recruited.png" />
     <Content Include="Resources\Images\SkillIcons\fe15skill_01.png" />
     <Content Include="Resources\Images\SkillIcons\fe15skill_02.png" />
     <Content Include="Resources\Images\SkillIcons\fe15skill_03.png" />

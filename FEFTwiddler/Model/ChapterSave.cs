@@ -322,8 +322,12 @@ namespace FEFTwiddler.Model
             chunk = new byte[5];
             br.Read(chunk, 0, 5);
 
-            character.IsDead = chunk[0] == 0x18;
-            character.IsRecruited = chunk[3] == 0x30;
+            character.IsDead = chunk[0] == 0x18; // Scarlet
+            character.IsEinherjar = chunk[1] == 0x01; // Quatro, generic einherjar
+            //character.IsRecruited = chunk[3] == 0x30; // Captured bosses
+            //character.IsRecruited = chunk[3] == 0x18; // Quatro, generic einherjar
+            //character.IsRecruited = chunk[3] == 0x38; // Named einherjars (Niles, etc)
+            character.IsRecruited = (chunk[3] & 0x10) == 0x10;
 
             // Filler - 00 00 00 FF FF 00
             br.ReadBytes(6);
