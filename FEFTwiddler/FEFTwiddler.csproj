@@ -48,7 +48,10 @@
   <ItemGroup>
     <Compile Include="Enums\Character.cs" />
     <Compile Include="Enums\Class.cs" />
+    <Compile Include="Enums\Difficulty.cs" />
+    <Compile Include="Enums\Ruleset.cs" />
     <Compile Include="Enums\Skill.cs" />
+    <Compile Include="Extensions\BinaryReaderExtensions.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +64,7 @@
     <Compile Include="Model\ISave.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\TypeConverter.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +93,28 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\Skills.xml" />
+    <Content Include="Resources\Images\MaterialIcons\amber.png" />
+    <Content Include="Resources\Images\MaterialIcons\beans.png" />
+    <Content Include="Resources\Images\MaterialIcons\berries.png" />
+    <Content Include="Resources\Images\MaterialIcons\cabbage.png" />
+    <Content Include="Resources\Images\MaterialIcons\coral.png" />
+    <Content Include="Resources\Images\MaterialIcons\crystal.png" />
+    <Content Include="Resources\Images\MaterialIcons\daikon.png" />
+    <Content Include="Resources\Images\MaterialIcons\emerald.png" />
+    <Content Include="Resources\Images\MaterialIcons\fish.png" />
+    <Content Include="Resources\Images\MaterialIcons\jade.png" />
+    <Content Include="Resources\Images\MaterialIcons\lapis.png" />
+    <Content Include="Resources\Images\MaterialIcons\meat.png" />
+    <Content Include="Resources\Images\MaterialIcons\milk.png" />
+    <Content Include="Resources\Images\MaterialIcons\onyx.png" />
+    <Content Include="Resources\Images\MaterialIcons\peaches.png" />
+    <Content Include="Resources\Images\MaterialIcons\pearl.png" />
+    <Content Include="Resources\Images\MaterialIcons\quartz.png" />
+    <Content Include="Resources\Images\MaterialIcons\rice.png" />
+    <Content Include="Resources\Images\MaterialIcons\ruby.png" />
+    <Content Include="Resources\Images\MaterialIcons\sapphire.png" />
+    <Content Include="Resources\Images\MaterialIcons\topaz.png" />
+    <Content Include="Resources\Images\MaterialIcons\wheat.png" />
     <Content Include="Resources\Images\SkillIcons\fe15skill_01.png" />
     <Content Include="Resources\Images\SkillIcons\fe15skill_02.png" />
     <Content Include="Resources\Images\SkillIcons\fe15skill_03.png" />
@@ -316,6 +342,14 @@
     <Content Include="Resources\Images\SkillIcons\fe15skill_97.png" />
     <Content Include="Resources\Images\SkillIcons\fe15skill_98.png" />
     <Content Include="Resources\Images\SkillIcons\fe15skill_99.png" />
+    <Content Include="Resources\Images\WeaponExpIcons\axe.png" />
+    <Content Include="Resources\Images\WeaponExpIcons\bow.png" />
+    <Content Include="Resources\Images\WeaponExpIcons\lance.png" />
+    <Content Include="Resources\Images\WeaponExpIcons\shuriken.png" />
+    <Content Include="Resources\Images\WeaponExpIcons\staff.png" />
+    <Content Include="Resources\Images\WeaponExpIcons\stone.png" />
+    <Content Include="Resources\Images\WeaponExpIcons\sword.png" />
+    <Content Include="Resources\Images\WeaponExpIcons\tome.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

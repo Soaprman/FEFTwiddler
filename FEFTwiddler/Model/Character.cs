@@ -59,6 +59,9 @@ namespace FEFTwiddler.Model
 
         public void SRankAllWeapons()
         {
+            // I don't know if 0xFB translates precisely to S rank's minimum requirement. But it works.
+            // For what it's worth, 0xB5 (181) (A rank in Awakening) was like 1/3 through A-rank here in Fates.
+            // Awakening data source: http://serenesforest.net/awakening/miscellaneous/calculations/
             byte sRank = 0xFB;
             WeaponExperience_Sword = sRank;
             WeaponExperience_Lance = sRank;

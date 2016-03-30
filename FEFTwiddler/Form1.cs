@@ -23,21 +23,6 @@ namespace FEFTwiddler
             InitializeComponent();
         }
 
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-        //    // Main testing file
-        //    var chapterSave = Model.ChapterSave.FromPath(@"E:\Games\3DS Homebrew\Backups\Saves\Fire Emblem Fates Birthright\009\Chapter0_dec");
-
-        //    // An older birthright save
-        //    //var chapterSave = Model.ChapterSave.FromPath(@"E:\Games\3DS Homebrew\Backups\Saves\Fire Emblem Fates Birthright\000 - original with no edits_dec\Chapter2_dec");
-
-        //    //foreach (var character in chapterSave.Characters)
-        //    //{
-        //    //    //tblCharacters.Controls.Add(new GUI.CharacterPanelOld(character));
-        //    //    tblCharacters.Controls.Add(new GUI.CharacterPanel(character));
-        //    //}
-        //}
-
         private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -45,6 +30,7 @@ namespace FEFTwiddler
                 _chapterSave = Model.ChapterSave.FromPath(openFileDialog1.FileName);
 
                 _listBoxHelper = new Dictionary<string, Model.Character>();
+                listBox1.Items.Clear();
                 foreach (var character in _chapterSave.Characters)
                 {
                     _listBoxHelper.Add(character.CharacterID.ToString(), character);
@@ -52,6 +38,8 @@ namespace FEFTwiddler
                 }
 
                 PopulatePickers();
+                LoadChapterData();
+                BindEventHandlers();
 
                 tabControl1.Enabled = true;
 
@@ -61,7 +49,6 @@ namespace FEFTwiddler
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -70,6 +57,64 @@ namespace FEFTwiddler
             var character = _listBoxHelper[characterId];
             _selectedCharacter = character;
             LoadCharacter(character);
+        }
+
+        private void BindEventHandlers()
+        {
+            numGold.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.Gold = (uint)((NumericUpDown)sender).Value; };
+
+            numAmber.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Amber = (byte)((NumericUpDown)sender).Value; };
+            numBeans.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Beans = (byte)((NumericUpDown)sender).Value; };
+            numBerries.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Berries = (byte)((NumericUpDown)sender).Value; };
+            numCabbage.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Cabbage = (byte)((NumericUpDown)sender).Value; };
+            numCoral.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Coral = (byte)((NumericUpDown)sender).Value; };
+            numCrystal.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Crystal = (byte)((NumericUpDown)sender).Value; };
+            numDaikon.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Daikon = (byte)((NumericUpDown)sender).Value; };
+            numEmerald.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Emerald = (byte)((NumericUpDown)sender).Value; };
+            numFish.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Fish = (byte)((NumericUpDown)sender).Value; };
+            numJade.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Jade = (byte)((NumericUpDown)sender).Value; };
+            numLapis.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Lapis = (byte)((NumericUpDown)sender).Value; };
+            numMeat.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Meat = (byte)((NumericUpDown)sender).Value; };
+            numMilk.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Milk = (byte)((NumericUpDown)sender).Value; };
+            numOnyx.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Onyx = (byte)((NumericUpDown)sender).Value; };
+            numPeaches.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Peaches = (byte)((NumericUpDown)sender).Value; };
+            numPearl.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Pearl = (byte)((NumericUpDown)sender).Value; };
+            numQuartz.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Quartz = (byte)((NumericUpDown)sender).Value; };
+            numRice.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Rice = (byte)((NumericUpDown)sender).Value; };
+            numRuby.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Ruby = (byte)((NumericUpDown)sender).Value; };
+            numSapphire.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Sapphire = (byte)((NumericUpDown)sender).Value; };
+            numTopaz.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Topaz = (byte)((NumericUpDown)sender).Value; };
+            numWheat.ValueChanged += delegate (object sender, EventArgs e) { _chapterSave.MaterialQuantity_Wheat = (byte)((NumericUpDown)sender).Value; };
+        }
+
+        private void LoadChapterData()
+        {
+            lblAvatarName.Text = Utils.TypeConverter.ToString(_chapterSave.AvatarName);
+
+            numGold.Value = _chapterSave.Gold;
+
+            numAmber.Value = _chapterSave.MaterialQuantity_Amber;
+            numBeans.Value = _chapterSave.MaterialQuantity_Beans;
+            numBerries.Value = _chapterSave.MaterialQuantity_Berries;
+            numCabbage.Value = _chapterSave.MaterialQuantity_Cabbage;
+            numCoral.Value = _chapterSave.MaterialQuantity_Coral;
+            numCrystal.Value = _chapterSave.MaterialQuantity_Crystal;
+            numDaikon.Value = _chapterSave.MaterialQuantity_Daikon;
+            numEmerald.Value = _chapterSave.MaterialQuantity_Emerald;
+            numFish.Value = _chapterSave.MaterialQuantity_Fish;
+            numJade.Value = _chapterSave.MaterialQuantity_Jade;
+            numLapis.Value = _chapterSave.MaterialQuantity_Lapis;
+            numMeat.Value = _chapterSave.MaterialQuantity_Meat;
+            numMilk.Value = _chapterSave.MaterialQuantity_Milk;
+            numOnyx.Value = _chapterSave.MaterialQuantity_Onyx;
+            numPeaches.Value = _chapterSave.MaterialQuantity_Peaches;
+            numPearl.Value = _chapterSave.MaterialQuantity_Pearl;
+            numQuartz.Value = _chapterSave.MaterialQuantity_Quartz;
+            numRice.Value = _chapterSave.MaterialQuantity_Rice;
+            numRuby.Value = _chapterSave.MaterialQuantity_Ruby;
+            numSapphire.Value = _chapterSave.MaterialQuantity_Sapphire;
+            numTopaz.Value = _chapterSave.MaterialQuantity_Topaz;
+            numWheat.Value = _chapterSave.MaterialQuantity_Wheat;
         }
 
         private void LoadCharacter(Model.Character character)
@@ -169,6 +214,38 @@ namespace FEFTwiddler
             {
                 character.SRankAllWeapons();
             }
+        }
+
+        private void btnMaxMaterials_Click(object sender, EventArgs e)
+        {
+            byte max = 99;
+            numAmber.Value = max;
+            numBeans.Value = max;
+            numBerries.Value = max;
+            numCabbage.Value = max;
+            numCoral.Value = max;
+            numCrystal.Value = max;
+            numDaikon.Value = max;
+            numEmerald.Value = max;
+            numFish.Value = max;
+            numJade.Value = max;
+            numLapis.Value = max;
+            numMeat.Value = max;
+            numMilk.Value = max;
+            numOnyx.Value = max;
+            numPeaches.Value = max;
+            numPearl.Value = max;
+            numQuartz.Value = max;
+            numRice.Value = max;
+            numRuby.Value = max;
+            numSapphire.Value = max;
+            numTopaz.Value = max;
+            numWheat.Value = max;
+        }
+
+        private void btnMaxGold_Click(object sender, EventArgs e)
+        {
+            numGold.Value = 999999;
         }
     }
 }
