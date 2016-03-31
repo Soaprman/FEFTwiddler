@@ -349,13 +349,35 @@ namespace FEFTwiddler.Model
             br.ReadBytes(25);
 
             // Supports
-            br.ReadBytes(character.GetSupportBlockSize());
+            byte supportCount = br.ReadByte();
+            if (supportCount > 0)
+            {
+                chunk = new byte[supportCount];
+                br.Read(chunk, 0, supportCount);
+                character.MainSupports = chunk;
+            }
 
             // TODO
-            br.ReadBytes(17);
+            br.ReadBytes(7);
+
+            // Boots
+            character.Boots = br.ReadByte();
 
             // TODO
-            br.ReadBytes(48);
+            br.ReadBytes(9);
+
+            // DLC class flags
+            chunk = new byte[2];
+            br.Read(chunk, 0, 2);
+            character.DLCClassFlags = chunk;
+
+            // Hair color
+            chunk = new byte[4];
+            br.Read(chunk, 0, 4);
+            character.HairColor = chunk;
+
+            // TODO
+            br.ReadBytes(47);
 
             // Learned skills
             chunk = new byte[20];
@@ -363,14 +385,35 @@ namespace FEFTwiddler.Model
 
             character.LearnedSkills = chunk;
 
-            // Supports 2
-            br.ReadBytes(character.GetSupportBlock2Size());
+            // TODO
+            br.ReadBytes(5);
+
+            // Accessories
+            chunk = new byte[4];
+            br.Read(chunk, 0, 4);
+            character.Accessories = chunk;
 
             // TODO
-            br.ReadBytes(20);
+            br.ReadBytes(10);
+
+            // Determine end block size
+            int endBlockSize;
+            byte endByte = br.ReadByte();
+            switch (endByte)
+            {
+                case 0x04:
+                    endBlockSize = 44;
+                    break;
+                case 0x01:
+                    endBlockSize = 42;
+                    break;
+                default:
+                    endBlockSize = 0;
+                    break;
+            }
 
             // TODO
-            br.ReadBytes(character.GetEndBlockSize());
+            br.ReadBytes(endBlockSize);
 
             _characters.Add(character);
         }
