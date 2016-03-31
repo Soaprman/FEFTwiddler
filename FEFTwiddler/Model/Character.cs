@@ -44,6 +44,12 @@ namespace FEFTwiddler.Model
         public bool IsEinherjar { get; set; }
         public bool IsRecruited { get; set; }
 
+        public byte[] MainSupports { get; set; }
+
+        public byte Boots { get; set; }
+        public byte[] DLCClassFlags { get; set; }
+        public byte[] HairColor { get; set; }
+        public byte[] Accessories { get; set; }
         public byte[] LearnedSkills { get; set; }
 
         public override string ToString()
