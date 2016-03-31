@@ -391,7 +391,11 @@ namespace FEFTwiddler.Model
             // Accessories
             chunk = new byte[4];
             br.Read(chunk, 0, 4);
-            character.Accessories = chunk;
+
+            character.Headwear = (Enums.Headwear)chunk[0];
+            character.Facewear = (Enums.Facewear)chunk[1];
+            character.Armwear = (Enums.Armwear)chunk[2];
+            character.Underwear = (Enums.Underwear)chunk[3];
 
             // TODO
             br.ReadBytes(10);
@@ -486,25 +490,66 @@ namespace FEFTwiddler.Model
             bw.BaseStream.Seek(25, SeekOrigin.Current);
 
             // Supports
-            bw.BaseStream.Seek(character.GetSupportBlockSize(), SeekOrigin.Current);
+            int supportCount = bw.BaseStream.ReadByte();
+            if (supportCount > 0)
+            {
+                bw.BaseStream.Seek(supportCount, SeekOrigin.Current);
+            }
 
             // TODO
-            bw.BaseStream.Seek(17, SeekOrigin.Current);
+            bw.BaseStream.Seek(7, SeekOrigin.Current);
+
+            // Boots
+            bw.Write(character.Boots);
 
             // TODO
-            bw.BaseStream.Seek(48, SeekOrigin.Current);
+            bw.BaseStream.Seek(9, SeekOrigin.Current);
+
+            // DLC class flags
+            bw.Write(character.DLCClassFlags);
+
+            // Hair color
+            bw.Write(character.HairColor);
+
+            // TODO
+            bw.BaseStream.Seek(47, SeekOrigin.Current);
 
             // Learned skills
             bw.Write(character.LearnedSkills);
 
-            // Supports 2
-            bw.BaseStream.Seek(character.GetSupportBlock2Size(), SeekOrigin.Current);
+            // TODO
+            bw.BaseStream.Seek(5, SeekOrigin.Current);
+
+            // Accessories
+            chunk = new byte[] {
+                (byte)character.Headwear,
+                (byte)character.Facewear,
+                (byte)character.Armwear,
+                (byte)character.Underwear
+            };
+            bw.Write(chunk);
 
             // TODO
-            bw.BaseStream.Seek(20, SeekOrigin.Current);
+            bw.BaseStream.Seek(10, SeekOrigin.Current);
+
+            // Determine end block size
+            int endBlockSize;
+            int endByte = bw.BaseStream.ReadByte();
+            switch (endByte)
+            {
+                case 0x04:
+                    endBlockSize = 44;
+                    break;
+                case 0x01:
+                    endBlockSize = 42;
+                    break;
+                default:
+                    endBlockSize = 0;
+                    break;
+            }
 
             // TODO
-            bw.BaseStream.Seek(character.GetEndBlockSize(), SeekOrigin.Current);
+            bw.BaseStream.Seek(endBlockSize, SeekOrigin.Current);
         }
 
         #endregion

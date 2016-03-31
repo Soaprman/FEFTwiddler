@@ -46,11 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\Armwear.cs" />
     <Compile Include="Enums\Character.cs" />
     <Compile Include="Enums\Class.cs" />
     <Compile Include="Enums\Difficulty.cs" />
+    <Compile Include="Enums\Facewear.cs" />
+    <Compile Include="Enums\Headwear.cs" />
     <Compile Include="Enums\Ruleset.cs" />
     <Compile Include="Enums\Skill.cs" />
+    <Compile Include="Enums\Underwear.cs" />
     <Compile Include="Extensions\BinaryReaderExtensions.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

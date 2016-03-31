@@ -140,6 +140,11 @@ namespace FEFTwiddler
             cmbSkill5.Text = character.EquippedSkill_5.ToString();
             pictSkill5.Image = GetSkillImage(character.EquippedSkill_5);
 
+            cmbHeadwear.Text = character.Headwear.ToString();
+            cmbFacewear.Text = character.Facewear.ToString();
+            cmbArmwear.Text = character.Armwear.ToString();
+            cmbUnderwear.Text = character.Underwear.ToString();
+
             //EnableControls();
         }
 
@@ -151,6 +156,11 @@ namespace FEFTwiddler
             cmbSkill3.DataSource = Enum.GetValues(typeof(Enums.Skill));
             cmbSkill4.DataSource = Enum.GetValues(typeof(Enums.Skill));
             cmbSkill5.DataSource = Enum.GetValues(typeof(Enums.Skill));
+
+            cmbHeadwear.DataSource = Enum.GetValues(typeof(Enums.Headwear));
+            cmbFacewear.DataSource = Enum.GetValues(typeof(Enums.Facewear));
+            cmbArmwear.DataSource = Enum.GetValues(typeof(Enums.Armwear));
+            cmbUnderwear.DataSource = Enum.GetValues(typeof(Enums.Underwear));
         }
 
         private Bitmap GetSkillImage(Enums.Skill skillId)

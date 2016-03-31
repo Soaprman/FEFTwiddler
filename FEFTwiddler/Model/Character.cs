@@ -49,8 +49,12 @@ namespace FEFTwiddler.Model
         public byte Boots { get; set; }
         public byte[] DLCClassFlags { get; set; }
         public byte[] HairColor { get; set; }
-        public byte[] Accessories { get; set; }
         public byte[] LearnedSkills { get; set; }
+
+        public Enums.Headwear Headwear { get; set; }
+        public Enums.Facewear Facewear { get; set; }
+        public Enums.Armwear Armwear { get; set; }
+        public Enums.Underwear Underwear { get; set; }
 
         public override string ToString()
         {

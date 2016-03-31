@@ -112,6 +112,15 @@
             this.btnGiveEternalSeals = new System.Windows.Forms.Button();
             this.btnAllSkillsNoNpc = new System.Windows.Forms.Button();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmbUnderwear = new System.Windows.Forms.ComboBox();
+            this.cmbArmwear = new System.Windows.Forms.ComboBox();
+            this.cmbHeadwear = new System.Windows.Forms.ComboBox();
+            this.cmbFacewear = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -814,6 +823,15 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.cmbFacewear);
+            this.panel1.Controls.Add(this.cmbHeadwear);
+            this.panel1.Controls.Add(this.cmbArmwear);
+            this.panel1.Controls.Add(this.cmbUnderwear);
             this.panel1.Controls.Add(this.chkRecruited);
             this.panel1.Controls.Add(this.chkEinherjar);
             this.panel1.Controls.Add(this.chkDead);
@@ -1083,6 +1101,87 @@
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
+            // cmbUnderwear
+            // 
+            this.cmbUnderwear.Enabled = false;
+            this.cmbUnderwear.FormattingEnabled = true;
+            this.cmbUnderwear.Location = new System.Drawing.Point(235, 459);
+            this.cmbUnderwear.Name = "cmbUnderwear";
+            this.cmbUnderwear.Size = new System.Drawing.Size(121, 21);
+            this.cmbUnderwear.TabIndex = 19;
+            // 
+            // cmbArmwear
+            // 
+            this.cmbArmwear.Enabled = false;
+            this.cmbArmwear.FormattingEnabled = true;
+            this.cmbArmwear.Location = new System.Drawing.Point(235, 432);
+            this.cmbArmwear.Name = "cmbArmwear";
+            this.cmbArmwear.Size = new System.Drawing.Size(121, 21);
+            this.cmbArmwear.TabIndex = 20;
+            // 
+            // cmbHeadwear
+            // 
+            this.cmbHeadwear.Enabled = false;
+            this.cmbHeadwear.FormattingEnabled = true;
+            this.cmbHeadwear.Location = new System.Drawing.Point(58, 432);
+            this.cmbHeadwear.Name = "cmbHeadwear";
+            this.cmbHeadwear.Size = new System.Drawing.Size(121, 21);
+            this.cmbHeadwear.TabIndex = 21;
+            // 
+            // cmbFacewear
+            // 
+            this.cmbFacewear.Enabled = false;
+            this.cmbFacewear.FormattingEnabled = true;
+            this.cmbFacewear.Location = new System.Drawing.Point(58, 459);
+            this.cmbFacewear.Name = "cmbFacewear";
+            this.cmbFacewear.Size = new System.Drawing.Size(121, 21);
+            this.cmbFacewear.TabIndex = 22;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(5, 416);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 13);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Accessories";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(16, 435);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(36, 13);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Head:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(201, 435);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(28, 13);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Arm:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(18, 462);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 13);
+            this.label7.TabIndex = 26;
+            this.label7.Text = "Face:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(190, 462);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(39, 13);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "Under:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1244,6 +1343,15 @@
         private System.Windows.Forms.CheckBox chkDead;
         private System.Windows.Forms.CheckBox chkRecruited;
         private System.Windows.Forms.CheckBox chkEinherjar;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cmbFacewear;
+        private System.Windows.Forms.ComboBox cmbHeadwear;
+        private System.Windows.Forms.ComboBox cmbArmwear;
+        private System.Windows.Forms.ComboBox cmbUnderwear;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
     }
 }
 
