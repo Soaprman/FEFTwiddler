@@ -213,6 +213,7 @@ namespace FEFTwiddler
             {
                 character.LearnAllNonNpcSkills();
             }
+            MessageBox.Show("Done!");
         }
 
         private void btnGiveEternalSeals_Click(object sender, EventArgs e)
@@ -221,6 +222,7 @@ namespace FEFTwiddler
             {
                 character.EternalSealsUsed = 16;
             }
+            MessageBox.Show("Done!");
         }
 
         private void btnMaxWeaponExp_Click(object sender, EventArgs e)
@@ -229,6 +231,7 @@ namespace FEFTwiddler
             {
                 character.SRankAllWeapons();
             }
+            MessageBox.Show("Done!");
         }
 
         private void btnMaxMaterials_Click(object sender, EventArgs e)
