@@ -121,6 +121,30 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.numSword = new System.Windows.Forms.NumericUpDown();
+            this.numLance = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.numAxe = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.numBow = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.numShuriken = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.numStaff = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.numTome = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.numStone = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.lblSwordRank = new System.Windows.Forms.Label();
+            this.lblLanceRank = new System.Windows.Forms.Label();
+            this.lblAxeRank = new System.Windows.Forms.Label();
+            this.lblShurikenRank = new System.Windows.Forms.Label();
+            this.lblBowRank = new System.Windows.Forms.Label();
+            this.lblTomeRank = new System.Windows.Forms.Label();
+            this.lblStaffRank = new System.Windows.Forms.Label();
+            this.lblStoneRank = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -179,6 +203,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAxe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numShuriken)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numStaff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numStone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -823,6 +863,30 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lblStoneRank);
+            this.panel1.Controls.Add(this.lblStaffRank);
+            this.panel1.Controls.Add(this.lblTomeRank);
+            this.panel1.Controls.Add(this.lblBowRank);
+            this.panel1.Controls.Add(this.lblShurikenRank);
+            this.panel1.Controls.Add(this.lblAxeRank);
+            this.panel1.Controls.Add(this.lblLanceRank);
+            this.panel1.Controls.Add(this.lblSwordRank);
+            this.panel1.Controls.Add(this.numStone);
+            this.panel1.Controls.Add(this.pictureBox30);
+            this.panel1.Controls.Add(this.numStaff);
+            this.panel1.Controls.Add(this.pictureBox28);
+            this.panel1.Controls.Add(this.numTome);
+            this.panel1.Controls.Add(this.pictureBox29);
+            this.panel1.Controls.Add(this.numBow);
+            this.panel1.Controls.Add(this.pictureBox26);
+            this.panel1.Controls.Add(this.numShuriken);
+            this.panel1.Controls.Add(this.pictureBox27);
+            this.panel1.Controls.Add(this.numAxe);
+            this.panel1.Controls.Add(this.pictureBox25);
+            this.panel1.Controls.Add(this.numLance);
+            this.panel1.Controls.Add(this.pictureBox24);
+            this.panel1.Controls.Add(this.numSword);
+            this.panel1.Controls.Add(this.pictureBox23);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -1182,6 +1246,350 @@
             this.label8.TabIndex = 27;
             this.label8.Text = "Under:";
             // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Image = global::FEFTwiddler.Properties.Resources.sword;
+            this.pictureBox23.Location = new System.Drawing.Point(8, 290);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox23.TabIndex = 28;
+            this.pictureBox23.TabStop = false;
+            // 
+            // numSword
+            // 
+            this.numSword.Enabled = false;
+            this.numSword.Location = new System.Drawing.Point(8, 312);
+            this.numSword.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numSword.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numSword.Name = "numSword";
+            this.numSword.Size = new System.Drawing.Size(38, 20);
+            this.numSword.TabIndex = 29;
+            this.numSword.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numSword.ValueChanged += new System.EventHandler(this.numSword_ValueChanged);
+            // 
+            // numLance
+            // 
+            this.numLance.Enabled = false;
+            this.numLance.Location = new System.Drawing.Point(52, 312);
+            this.numLance.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numLance.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numLance.Name = "numLance";
+            this.numLance.Size = new System.Drawing.Size(38, 20);
+            this.numLance.TabIndex = 31;
+            this.numLance.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numLance.ValueChanged += new System.EventHandler(this.numLance_ValueChanged);
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Image = global::FEFTwiddler.Properties.Resources.lance;
+            this.pictureBox24.Location = new System.Drawing.Point(52, 290);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox24.TabIndex = 30;
+            this.pictureBox24.TabStop = false;
+            // 
+            // numAxe
+            // 
+            this.numAxe.Enabled = false;
+            this.numAxe.Location = new System.Drawing.Point(96, 312);
+            this.numAxe.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numAxe.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numAxe.Name = "numAxe";
+            this.numAxe.Size = new System.Drawing.Size(38, 20);
+            this.numAxe.TabIndex = 33;
+            this.numAxe.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numAxe.ValueChanged += new System.EventHandler(this.numAxe_ValueChanged);
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Image = global::FEFTwiddler.Properties.Resources.axe;
+            this.pictureBox25.Location = new System.Drawing.Point(96, 290);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox25.TabIndex = 32;
+            this.pictureBox25.TabStop = false;
+            // 
+            // numBow
+            // 
+            this.numBow.Enabled = false;
+            this.numBow.Location = new System.Drawing.Point(184, 312);
+            this.numBow.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numBow.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numBow.Name = "numBow";
+            this.numBow.Size = new System.Drawing.Size(38, 20);
+            this.numBow.TabIndex = 37;
+            this.numBow.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numBow.ValueChanged += new System.EventHandler(this.numBow_ValueChanged);
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Image = global::FEFTwiddler.Properties.Resources.bow;
+            this.pictureBox26.Location = new System.Drawing.Point(184, 290);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox26.TabIndex = 36;
+            this.pictureBox26.TabStop = false;
+            // 
+            // numShuriken
+            // 
+            this.numShuriken.Enabled = false;
+            this.numShuriken.Location = new System.Drawing.Point(140, 312);
+            this.numShuriken.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numShuriken.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numShuriken.Name = "numShuriken";
+            this.numShuriken.Size = new System.Drawing.Size(38, 20);
+            this.numShuriken.TabIndex = 35;
+            this.numShuriken.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numShuriken.ValueChanged += new System.EventHandler(this.numShuriken_ValueChanged);
+            // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Image = global::FEFTwiddler.Properties.Resources.shuriken;
+            this.pictureBox27.Location = new System.Drawing.Point(140, 290);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox27.TabIndex = 34;
+            this.pictureBox27.TabStop = false;
+            // 
+            // numStaff
+            // 
+            this.numStaff.Enabled = false;
+            this.numStaff.Location = new System.Drawing.Point(272, 312);
+            this.numStaff.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numStaff.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numStaff.Name = "numStaff";
+            this.numStaff.Size = new System.Drawing.Size(38, 20);
+            this.numStaff.TabIndex = 41;
+            this.numStaff.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numStaff.ValueChanged += new System.EventHandler(this.numStaff_ValueChanged);
+            // 
+            // pictureBox28
+            // 
+            this.pictureBox28.Image = global::FEFTwiddler.Properties.Resources.staff;
+            this.pictureBox28.Location = new System.Drawing.Point(272, 290);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox28.TabIndex = 40;
+            this.pictureBox28.TabStop = false;
+            // 
+            // numTome
+            // 
+            this.numTome.Enabled = false;
+            this.numTome.Location = new System.Drawing.Point(228, 312);
+            this.numTome.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numTome.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numTome.Name = "numTome";
+            this.numTome.Size = new System.Drawing.Size(38, 20);
+            this.numTome.TabIndex = 39;
+            this.numTome.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numTome.ValueChanged += new System.EventHandler(this.numTome_ValueChanged);
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Image = global::FEFTwiddler.Properties.Resources.tome;
+            this.pictureBox29.Location = new System.Drawing.Point(228, 290);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox29.TabIndex = 38;
+            this.pictureBox29.TabStop = false;
+            // 
+            // numStone
+            // 
+            this.numStone.Enabled = false;
+            this.numStone.Location = new System.Drawing.Point(316, 312);
+            this.numStone.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numStone.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numStone.Name = "numStone";
+            this.numStone.Size = new System.Drawing.Size(38, 20);
+            this.numStone.TabIndex = 43;
+            this.numStone.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numStone.ValueChanged += new System.EventHandler(this.numStone_ValueChanged);
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.Image = global::FEFTwiddler.Properties.Resources.stone;
+            this.pictureBox30.Location = new System.Drawing.Point(316, 290);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox30.TabIndex = 42;
+            this.pictureBox30.TabStop = false;
+            // 
+            // lblSwordRank
+            // 
+            this.lblSwordRank.AutoSize = true;
+            this.lblSwordRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSwordRank.Location = new System.Drawing.Point(30, 290);
+            this.lblSwordRank.Name = "lblSwordRank";
+            this.lblSwordRank.Size = new System.Drawing.Size(15, 13);
+            this.lblSwordRank.TabIndex = 44;
+            this.lblSwordRank.Text = "E";
+            // 
+            // lblLanceRank
+            // 
+            this.lblLanceRank.AutoSize = true;
+            this.lblLanceRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLanceRank.Location = new System.Drawing.Point(75, 290);
+            this.lblLanceRank.Name = "lblLanceRank";
+            this.lblLanceRank.Size = new System.Drawing.Size(15, 13);
+            this.lblLanceRank.TabIndex = 45;
+            this.lblLanceRank.Text = "E";
+            // 
+            // lblAxeRank
+            // 
+            this.lblAxeRank.AutoSize = true;
+            this.lblAxeRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAxeRank.Location = new System.Drawing.Point(119, 290);
+            this.lblAxeRank.Name = "lblAxeRank";
+            this.lblAxeRank.Size = new System.Drawing.Size(15, 13);
+            this.lblAxeRank.TabIndex = 46;
+            this.lblAxeRank.Text = "E";
+            // 
+            // lblShurikenRank
+            // 
+            this.lblShurikenRank.AutoSize = true;
+            this.lblShurikenRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShurikenRank.Location = new System.Drawing.Point(162, 290);
+            this.lblShurikenRank.Name = "lblShurikenRank";
+            this.lblShurikenRank.Size = new System.Drawing.Size(15, 13);
+            this.lblShurikenRank.TabIndex = 47;
+            this.lblShurikenRank.Text = "E";
+            // 
+            // lblBowRank
+            // 
+            this.lblBowRank.AutoSize = true;
+            this.lblBowRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBowRank.Location = new System.Drawing.Point(207, 290);
+            this.lblBowRank.Name = "lblBowRank";
+            this.lblBowRank.Size = new System.Drawing.Size(15, 13);
+            this.lblBowRank.TabIndex = 48;
+            this.lblBowRank.Text = "E";
+            // 
+            // lblTomeRank
+            // 
+            this.lblTomeRank.AutoSize = true;
+            this.lblTomeRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTomeRank.Location = new System.Drawing.Point(251, 290);
+            this.lblTomeRank.Name = "lblTomeRank";
+            this.lblTomeRank.Size = new System.Drawing.Size(15, 13);
+            this.lblTomeRank.TabIndex = 49;
+            this.lblTomeRank.Text = "E";
+            // 
+            // lblStaffRank
+            // 
+            this.lblStaffRank.AutoSize = true;
+            this.lblStaffRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStaffRank.Location = new System.Drawing.Point(294, 290);
+            this.lblStaffRank.Name = "lblStaffRank";
+            this.lblStaffRank.Size = new System.Drawing.Size(15, 13);
+            this.lblStaffRank.TabIndex = 50;
+            this.lblStaffRank.Text = "E";
+            // 
+            // lblStoneRank
+            // 
+            this.lblStoneRank.AutoSize = true;
+            this.lblStoneRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStoneRank.Location = new System.Drawing.Point(341, 290);
+            this.lblStoneRank.Name = "lblStoneRank";
+            this.lblStoneRank.Size = new System.Drawing.Size(15, 13);
+            this.lblStoneRank.TabIndex = 51;
+            this.lblStoneRank.Text = "E";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1253,6 +1661,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAxe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numShuriken)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numStaff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numStone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1352,6 +1776,30 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox23;
+        private System.Windows.Forms.NumericUpDown numSword;
+        private System.Windows.Forms.NumericUpDown numStone;
+        private System.Windows.Forms.PictureBox pictureBox30;
+        private System.Windows.Forms.NumericUpDown numStaff;
+        private System.Windows.Forms.PictureBox pictureBox28;
+        private System.Windows.Forms.NumericUpDown numTome;
+        private System.Windows.Forms.PictureBox pictureBox29;
+        private System.Windows.Forms.NumericUpDown numBow;
+        private System.Windows.Forms.PictureBox pictureBox26;
+        private System.Windows.Forms.NumericUpDown numShuriken;
+        private System.Windows.Forms.PictureBox pictureBox27;
+        private System.Windows.Forms.NumericUpDown numAxe;
+        private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.NumericUpDown numLance;
+        private System.Windows.Forms.PictureBox pictureBox24;
+        private System.Windows.Forms.Label lblStoneRank;
+        private System.Windows.Forms.Label lblStaffRank;
+        private System.Windows.Forms.Label lblTomeRank;
+        private System.Windows.Forms.Label lblBowRank;
+        private System.Windows.Forms.Label lblShurikenRank;
+        private System.Windows.Forms.Label lblAxeRank;
+        private System.Windows.Forms.Label lblLanceRank;
+        private System.Windows.Forms.Label lblSwordRank;
     }
 }
 

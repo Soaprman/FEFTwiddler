@@ -145,6 +145,15 @@ namespace FEFTwiddler
             cmbArmwear.Text = character.Armwear.ToString();
             cmbUnderwear.Text = character.Underwear.ToString();
 
+            numSword.Value = character.WeaponExperience_Sword;
+            numLance.Value = character.WeaponExperience_Lance;
+            numAxe.Value = character.WeaponExperience_Axe;
+            numShuriken.Value = character.WeaponExperience_Shuriken;
+            numBow.Value = character.WeaponExperience_Bow;
+            numTome.Value = character.WeaponExperience_Tome;
+            numStaff.Value = character.WeaponExperience_Staff;
+            numStone.Value = character.WeaponExperience_Stone;
+
             //EnableControls();
         }
 
@@ -264,6 +273,70 @@ namespace FEFTwiddler
         private void btnMaxGold_Click(object sender, EventArgs e)
         {
             numGold.Value = 999999;
+        }
+
+        private void numSword_ValueChanged(object sender, EventArgs e)
+        {
+            lblSwordRank.Text = GetWeaponRank(numSword.Value);
+            lblSwordRank.ForeColor = GetWeaponRankColor(numSword.Value);
+        }
+
+        private void numLance_ValueChanged(object sender, EventArgs e)
+        {
+            lblLanceRank.Text = GetWeaponRank(numLance.Value);
+            lblLanceRank.ForeColor = GetWeaponRankColor(numLance.Value);
+        }
+
+        private void numAxe_ValueChanged(object sender, EventArgs e)
+        {
+            lblAxeRank.Text = GetWeaponRank(numAxe.Value);
+            lblAxeRank.ForeColor = GetWeaponRankColor(numAxe.Value);
+        }
+
+        private void numShuriken_ValueChanged(object sender, EventArgs e)
+        {
+            lblShurikenRank.Text = GetWeaponRank(numShuriken.Value);
+            lblShurikenRank.ForeColor = GetWeaponRankColor(numShuriken.Value);
+        }
+
+        private void numBow_ValueChanged(object sender, EventArgs e)
+        {
+            lblBowRank.Text = GetWeaponRank(numBow.Value);
+            lblBowRank.ForeColor = GetWeaponRankColor(numBow.Value);
+        }
+
+        private void numTome_ValueChanged(object sender, EventArgs e)
+        {
+            lblTomeRank.Text = GetWeaponRank(numTome.Value);
+            lblTomeRank.ForeColor = GetWeaponRankColor(numTome.Value);
+        }
+
+        private void numStaff_ValueChanged(object sender, EventArgs e)
+        {
+            lblStaffRank.Text = GetWeaponRank(numStaff.Value);
+            lblStaffRank.ForeColor = GetWeaponRankColor(numStaff.Value);
+        }
+
+        private void numStone_ValueChanged(object sender, EventArgs e)
+        {
+            lblStoneRank.Text = GetWeaponRank(numStone.Value);
+            lblStoneRank.ForeColor = GetWeaponRankColor(numStone.Value);
+        }
+
+        private string GetWeaponRank(decimal weaponExp)
+        {
+            if (weaponExp >= 251) return "S";
+            if (weaponExp >= 161) return "A";
+            if (weaponExp >= 96) return "B";
+            if (weaponExp >= 51) return "C";
+            if (weaponExp >= 21) return "D";
+            return "E";
+        }
+
+        private Color GetWeaponRankColor(decimal weaponExp)
+        {
+            if (weaponExp >= 251) return Color.Green;
+            return Color.Black;
         }
     }
 }
