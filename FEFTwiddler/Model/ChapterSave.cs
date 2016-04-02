@@ -16,10 +16,16 @@ namespace FEFTwiddler.Model
 
         /// <summary>You know, just so we're clear!</summary>
         private long _headerOffset = 0;
+        /// <summary>Hex: 0x52455355 / Text: RESU</summary>
+        private byte[] _userMarker = new byte[] { 0x52, 0x45, 0x53, 0x55 };
+        private long _userOffset;
         /// <summary>Hex: 0xFFFFFFFF / Text: ÿÿÿÿ</summary>
         /// <remarks>Yeah, that's a super suspect marker. It's the first FFFFFFFF in the file though. I hope.</remarks>
         private byte[] _fileDataMarker = new byte[] { 0xFF, 0xFF, 0xFF, 0xFF };
         private long _fileDataOffset;
+        /// <summary>Hex: 0x504F4853 / Text: POHS</summary>
+        private byte[] _shopMarker = new byte[] { 0x50, 0x4F, 0x48, 0x53 };
+        private long _shopOffset;
         /// <summary>Hex: 0x54494E55 / Text: TINU</summary>
         private byte[] _characterMarker = new byte[] { 0x54, 0x49, 0x4E, 0x55 };
         private long _characterOffset;
@@ -346,7 +352,26 @@ namespace FEFTwiddler.Model
             character.EquippedSkill_5 = (Enums.Skill)chunk[8];
 
             // Inventory
-            br.ReadBytes(25);
+            br.ReadBytes(1);
+            chunk = new byte[4];
+            br.Read(chunk, 0, 4);
+            character.Item_1 = new InventoryItem(chunk);
+            br.ReadBytes(1);
+            chunk = new byte[4];
+            br.Read(chunk, 0, 4);
+            character.Item_2 = new InventoryItem(chunk);
+            br.ReadBytes(1);
+            chunk = new byte[4];
+            br.Read(chunk, 0, 4);
+            character.Item_3 = new InventoryItem(chunk);
+            br.ReadBytes(1);
+            chunk = new byte[4];
+            br.Read(chunk, 0, 4);
+            character.Item_4 = new InventoryItem(chunk);
+            br.ReadBytes(1);
+            chunk = new byte[4];
+            br.Read(chunk, 0, 4);
+            character.Item_5 = new InventoryItem(chunk);
 
             // Supports
             byte supportCount = br.ReadByte();

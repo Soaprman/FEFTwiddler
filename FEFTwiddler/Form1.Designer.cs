@@ -87,6 +87,39 @@
             this.numCrystal = new System.Windows.Forms.NumericUpDown();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblStoneRank = new System.Windows.Forms.Label();
+            this.lblStaffRank = new System.Windows.Forms.Label();
+            this.lblTomeRank = new System.Windows.Forms.Label();
+            this.lblBowRank = new System.Windows.Forms.Label();
+            this.lblShurikenRank = new System.Windows.Forms.Label();
+            this.lblAxeRank = new System.Windows.Forms.Label();
+            this.lblLanceRank = new System.Windows.Forms.Label();
+            this.lblSwordRank = new System.Windows.Forms.Label();
+            this.numStone = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.numStaff = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.numTome = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.numBow = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.numShuriken = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.numAxe = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.numLance = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.numSword = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cmbFacewear = new System.Windows.Forms.ComboBox();
+            this.cmbHeadwear = new System.Windows.Forms.ComboBox();
+            this.cmbArmwear = new System.Windows.Forms.ComboBox();
+            this.cmbUnderwear = new System.Windows.Forms.ComboBox();
             this.chkRecruited = new System.Windows.Forms.CheckBox();
             this.chkEinherjar = new System.Windows.Forms.CheckBox();
             this.chkDead = new System.Windows.Forms.CheckBox();
@@ -112,39 +145,12 @@
             this.btnGiveEternalSeals = new System.Windows.Forms.Button();
             this.btnAllSkillsNoNpc = new System.Windows.Forms.Button();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmbUnderwear = new System.Windows.Forms.ComboBox();
-            this.cmbArmwear = new System.Windows.Forms.ComboBox();
-            this.cmbHeadwear = new System.Windows.Forms.ComboBox();
-            this.cmbFacewear = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.numSword = new System.Windows.Forms.NumericUpDown();
-            this.numLance = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.numAxe = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.numBow = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.numShuriken = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.numStaff = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.numTome = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
-            this.numStone = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
-            this.lblSwordRank = new System.Windows.Forms.Label();
-            this.lblLanceRank = new System.Windows.Forms.Label();
-            this.lblAxeRank = new System.Windows.Forms.Label();
-            this.lblShurikenRank = new System.Windows.Forms.Label();
-            this.lblBowRank = new System.Windows.Forms.Label();
-            this.lblTomeRank = new System.Windows.Forms.Label();
-            this.lblStaffRank = new System.Windows.Forms.Label();
-            this.lblStoneRank = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblInventory1 = new System.Windows.Forms.Label();
+            this.lblInventory2 = new System.Windows.Forms.Label();
+            this.lblInventory3 = new System.Windows.Forms.Label();
+            this.lblInventory4 = new System.Windows.Forms.Label();
+            this.lblInventory5 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -195,6 +201,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.numCrystal)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numStone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numStaff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numShuriken)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAxe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numExperience)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill5)).BeginInit();
@@ -203,22 +225,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numSword)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numLance)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numAxe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numBow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numShuriken)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numStaff)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numTome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numStone)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -863,6 +869,12 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lblInventory5);
+            this.panel1.Controls.Add(this.lblInventory4);
+            this.panel1.Controls.Add(this.lblInventory3);
+            this.panel1.Controls.Add(this.lblInventory2);
+            this.panel1.Controls.Add(this.lblInventory1);
+            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.lblStoneRank);
             this.panel1.Controls.Add(this.lblStaffRank);
             this.panel1.Controls.Add(this.lblTomeRank);
@@ -920,11 +932,436 @@
             this.panel1.Size = new System.Drawing.Size(367, 485);
             this.panel1.TabIndex = 1;
             // 
+            // lblStoneRank
+            // 
+            this.lblStoneRank.AutoSize = true;
+            this.lblStoneRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStoneRank.Location = new System.Drawing.Point(341, 249);
+            this.lblStoneRank.Name = "lblStoneRank";
+            this.lblStoneRank.Size = new System.Drawing.Size(15, 13);
+            this.lblStoneRank.TabIndex = 51;
+            this.lblStoneRank.Text = "E";
+            // 
+            // lblStaffRank
+            // 
+            this.lblStaffRank.AutoSize = true;
+            this.lblStaffRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStaffRank.Location = new System.Drawing.Point(294, 249);
+            this.lblStaffRank.Name = "lblStaffRank";
+            this.lblStaffRank.Size = new System.Drawing.Size(15, 13);
+            this.lblStaffRank.TabIndex = 50;
+            this.lblStaffRank.Text = "E";
+            // 
+            // lblTomeRank
+            // 
+            this.lblTomeRank.AutoSize = true;
+            this.lblTomeRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTomeRank.Location = new System.Drawing.Point(251, 249);
+            this.lblTomeRank.Name = "lblTomeRank";
+            this.lblTomeRank.Size = new System.Drawing.Size(15, 13);
+            this.lblTomeRank.TabIndex = 49;
+            this.lblTomeRank.Text = "E";
+            // 
+            // lblBowRank
+            // 
+            this.lblBowRank.AutoSize = true;
+            this.lblBowRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBowRank.Location = new System.Drawing.Point(207, 249);
+            this.lblBowRank.Name = "lblBowRank";
+            this.lblBowRank.Size = new System.Drawing.Size(15, 13);
+            this.lblBowRank.TabIndex = 48;
+            this.lblBowRank.Text = "E";
+            // 
+            // lblShurikenRank
+            // 
+            this.lblShurikenRank.AutoSize = true;
+            this.lblShurikenRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShurikenRank.Location = new System.Drawing.Point(162, 249);
+            this.lblShurikenRank.Name = "lblShurikenRank";
+            this.lblShurikenRank.Size = new System.Drawing.Size(15, 13);
+            this.lblShurikenRank.TabIndex = 47;
+            this.lblShurikenRank.Text = "E";
+            // 
+            // lblAxeRank
+            // 
+            this.lblAxeRank.AutoSize = true;
+            this.lblAxeRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAxeRank.Location = new System.Drawing.Point(119, 249);
+            this.lblAxeRank.Name = "lblAxeRank";
+            this.lblAxeRank.Size = new System.Drawing.Size(15, 13);
+            this.lblAxeRank.TabIndex = 46;
+            this.lblAxeRank.Text = "E";
+            // 
+            // lblLanceRank
+            // 
+            this.lblLanceRank.AutoSize = true;
+            this.lblLanceRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLanceRank.Location = new System.Drawing.Point(75, 249);
+            this.lblLanceRank.Name = "lblLanceRank";
+            this.lblLanceRank.Size = new System.Drawing.Size(15, 13);
+            this.lblLanceRank.TabIndex = 45;
+            this.lblLanceRank.Text = "E";
+            // 
+            // lblSwordRank
+            // 
+            this.lblSwordRank.AutoSize = true;
+            this.lblSwordRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSwordRank.Location = new System.Drawing.Point(30, 249);
+            this.lblSwordRank.Name = "lblSwordRank";
+            this.lblSwordRank.Size = new System.Drawing.Size(15, 13);
+            this.lblSwordRank.TabIndex = 44;
+            this.lblSwordRank.Text = "E";
+            // 
+            // numStone
+            // 
+            this.numStone.Enabled = false;
+            this.numStone.Location = new System.Drawing.Point(316, 271);
+            this.numStone.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numStone.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numStone.Name = "numStone";
+            this.numStone.Size = new System.Drawing.Size(38, 20);
+            this.numStone.TabIndex = 43;
+            this.numStone.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numStone.ValueChanged += new System.EventHandler(this.numStone_ValueChanged);
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.Image = global::FEFTwiddler.Properties.Resources.stone;
+            this.pictureBox30.Location = new System.Drawing.Point(316, 249);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox30.TabIndex = 42;
+            this.pictureBox30.TabStop = false;
+            // 
+            // numStaff
+            // 
+            this.numStaff.Enabled = false;
+            this.numStaff.Location = new System.Drawing.Point(272, 271);
+            this.numStaff.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numStaff.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numStaff.Name = "numStaff";
+            this.numStaff.Size = new System.Drawing.Size(38, 20);
+            this.numStaff.TabIndex = 41;
+            this.numStaff.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numStaff.ValueChanged += new System.EventHandler(this.numStaff_ValueChanged);
+            // 
+            // pictureBox28
+            // 
+            this.pictureBox28.Image = global::FEFTwiddler.Properties.Resources.staff;
+            this.pictureBox28.Location = new System.Drawing.Point(272, 249);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox28.TabIndex = 40;
+            this.pictureBox28.TabStop = false;
+            // 
+            // numTome
+            // 
+            this.numTome.Enabled = false;
+            this.numTome.Location = new System.Drawing.Point(228, 271);
+            this.numTome.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numTome.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numTome.Name = "numTome";
+            this.numTome.Size = new System.Drawing.Size(38, 20);
+            this.numTome.TabIndex = 39;
+            this.numTome.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numTome.ValueChanged += new System.EventHandler(this.numTome_ValueChanged);
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Image = global::FEFTwiddler.Properties.Resources.tome;
+            this.pictureBox29.Location = new System.Drawing.Point(228, 249);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox29.TabIndex = 38;
+            this.pictureBox29.TabStop = false;
+            // 
+            // numBow
+            // 
+            this.numBow.Enabled = false;
+            this.numBow.Location = new System.Drawing.Point(184, 271);
+            this.numBow.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numBow.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numBow.Name = "numBow";
+            this.numBow.Size = new System.Drawing.Size(38, 20);
+            this.numBow.TabIndex = 37;
+            this.numBow.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numBow.ValueChanged += new System.EventHandler(this.numBow_ValueChanged);
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Image = global::FEFTwiddler.Properties.Resources.bow;
+            this.pictureBox26.Location = new System.Drawing.Point(184, 249);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox26.TabIndex = 36;
+            this.pictureBox26.TabStop = false;
+            // 
+            // numShuriken
+            // 
+            this.numShuriken.Enabled = false;
+            this.numShuriken.Location = new System.Drawing.Point(140, 271);
+            this.numShuriken.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numShuriken.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numShuriken.Name = "numShuriken";
+            this.numShuriken.Size = new System.Drawing.Size(38, 20);
+            this.numShuriken.TabIndex = 35;
+            this.numShuriken.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numShuriken.ValueChanged += new System.EventHandler(this.numShuriken_ValueChanged);
+            // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Image = global::FEFTwiddler.Properties.Resources.shuriken;
+            this.pictureBox27.Location = new System.Drawing.Point(140, 249);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox27.TabIndex = 34;
+            this.pictureBox27.TabStop = false;
+            // 
+            // numAxe
+            // 
+            this.numAxe.Enabled = false;
+            this.numAxe.Location = new System.Drawing.Point(96, 271);
+            this.numAxe.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numAxe.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numAxe.Name = "numAxe";
+            this.numAxe.Size = new System.Drawing.Size(38, 20);
+            this.numAxe.TabIndex = 33;
+            this.numAxe.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numAxe.ValueChanged += new System.EventHandler(this.numAxe_ValueChanged);
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Image = global::FEFTwiddler.Properties.Resources.axe;
+            this.pictureBox25.Location = new System.Drawing.Point(96, 249);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox25.TabIndex = 32;
+            this.pictureBox25.TabStop = false;
+            // 
+            // numLance
+            // 
+            this.numLance.Enabled = false;
+            this.numLance.Location = new System.Drawing.Point(52, 271);
+            this.numLance.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numLance.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numLance.Name = "numLance";
+            this.numLance.Size = new System.Drawing.Size(38, 20);
+            this.numLance.TabIndex = 31;
+            this.numLance.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numLance.ValueChanged += new System.EventHandler(this.numLance_ValueChanged);
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Image = global::FEFTwiddler.Properties.Resources.lance;
+            this.pictureBox24.Location = new System.Drawing.Point(52, 249);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox24.TabIndex = 30;
+            this.pictureBox24.TabStop = false;
+            // 
+            // numSword
+            // 
+            this.numSword.Enabled = false;
+            this.numSword.Location = new System.Drawing.Point(8, 271);
+            this.numSword.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numSword.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numSword.Name = "numSword";
+            this.numSword.Size = new System.Drawing.Size(38, 20);
+            this.numSword.TabIndex = 29;
+            this.numSword.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numSword.ValueChanged += new System.EventHandler(this.numSword_ValueChanged);
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Image = global::FEFTwiddler.Properties.Resources.sword;
+            this.pictureBox23.Location = new System.Drawing.Point(8, 249);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox23.TabIndex = 28;
+            this.pictureBox23.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(190, 462);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(39, 13);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "Under:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(18, 462);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 13);
+            this.label7.TabIndex = 26;
+            this.label7.Text = "Face:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(201, 435);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(28, 13);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Arm:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(16, 435);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(36, 13);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Head:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(5, 416);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 13);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Accessories";
+            // 
+            // cmbFacewear
+            // 
+            this.cmbFacewear.Enabled = false;
+            this.cmbFacewear.FormattingEnabled = true;
+            this.cmbFacewear.Location = new System.Drawing.Point(58, 459);
+            this.cmbFacewear.Name = "cmbFacewear";
+            this.cmbFacewear.Size = new System.Drawing.Size(121, 21);
+            this.cmbFacewear.TabIndex = 22;
+            // 
+            // cmbHeadwear
+            // 
+            this.cmbHeadwear.Enabled = false;
+            this.cmbHeadwear.FormattingEnabled = true;
+            this.cmbHeadwear.Location = new System.Drawing.Point(58, 432);
+            this.cmbHeadwear.Name = "cmbHeadwear";
+            this.cmbHeadwear.Size = new System.Drawing.Size(121, 21);
+            this.cmbHeadwear.TabIndex = 21;
+            // 
+            // cmbArmwear
+            // 
+            this.cmbArmwear.Enabled = false;
+            this.cmbArmwear.FormattingEnabled = true;
+            this.cmbArmwear.Location = new System.Drawing.Point(235, 432);
+            this.cmbArmwear.Name = "cmbArmwear";
+            this.cmbArmwear.Size = new System.Drawing.Size(121, 21);
+            this.cmbArmwear.TabIndex = 20;
+            // 
+            // cmbUnderwear
+            // 
+            this.cmbUnderwear.Enabled = false;
+            this.cmbUnderwear.FormattingEnabled = true;
+            this.cmbUnderwear.Location = new System.Drawing.Point(235, 459);
+            this.cmbUnderwear.Name = "cmbUnderwear";
+            this.cmbUnderwear.Size = new System.Drawing.Size(121, 21);
+            this.cmbUnderwear.TabIndex = 19;
+            // 
             // chkRecruited
             // 
             this.chkRecruited.AutoSize = true;
             this.chkRecruited.Enabled = false;
-            this.chkRecruited.Location = new System.Drawing.Point(8, 184);
+            this.chkRecruited.Location = new System.Drawing.Point(8, 143);
             this.chkRecruited.Name = "chkRecruited";
             this.chkRecruited.Size = new System.Drawing.Size(131, 17);
             this.chkRecruited.TabIndex = 18;
@@ -935,7 +1372,7 @@
             // 
             this.chkEinherjar.AutoSize = true;
             this.chkEinherjar.Enabled = false;
-            this.chkEinherjar.Location = new System.Drawing.Point(8, 161);
+            this.chkEinherjar.Location = new System.Drawing.Point(8, 120);
             this.chkEinherjar.Name = "chkEinherjar";
             this.chkEinherjar.Size = new System.Drawing.Size(151, 17);
             this.chkEinherjar.TabIndex = 17;
@@ -946,7 +1383,7 @@
             // 
             this.chkDead.AutoSize = true;
             this.chkDead.Enabled = false;
-            this.chkDead.Location = new System.Drawing.Point(8, 138);
+            this.chkDead.Location = new System.Drawing.Point(8, 97);
             this.chkDead.Name = "chkDead";
             this.chkDead.Size = new System.Drawing.Size(52, 17);
             this.chkDead.TabIndex = 16;
@@ -1006,14 +1443,14 @@
             // 
             this.cmbSkill5.Enabled = false;
             this.cmbSkill5.FormattingEnabled = true;
-            this.cmbSkill5.Location = new System.Drawing.Point(235, 249);
+            this.cmbSkill5.Location = new System.Drawing.Point(235, 208);
             this.cmbSkill5.Name = "cmbSkill5";
             this.cmbSkill5.Size = new System.Drawing.Size(121, 21);
             this.cmbSkill5.TabIndex = 11;
             // 
             // pictSkill5
             // 
-            this.pictSkill5.Location = new System.Drawing.Point(205, 247);
+            this.pictSkill5.Location = new System.Drawing.Point(205, 206);
             this.pictSkill5.Name = "pictSkill5";
             this.pictSkill5.Size = new System.Drawing.Size(24, 24);
             this.pictSkill5.TabIndex = 10;
@@ -1023,14 +1460,14 @@
             // 
             this.cmbSkill4.Enabled = false;
             this.cmbSkill4.FormattingEnabled = true;
-            this.cmbSkill4.Location = new System.Drawing.Point(235, 221);
+            this.cmbSkill4.Location = new System.Drawing.Point(235, 180);
             this.cmbSkill4.Name = "cmbSkill4";
             this.cmbSkill4.Size = new System.Drawing.Size(121, 21);
             this.cmbSkill4.TabIndex = 9;
             // 
             // pictSkill4
             // 
-            this.pictSkill4.Location = new System.Drawing.Point(205, 219);
+            this.pictSkill4.Location = new System.Drawing.Point(205, 178);
             this.pictSkill4.Name = "pictSkill4";
             this.pictSkill4.Size = new System.Drawing.Size(24, 24);
             this.pictSkill4.TabIndex = 8;
@@ -1040,14 +1477,14 @@
             // 
             this.cmbSkill3.Enabled = false;
             this.cmbSkill3.FormattingEnabled = true;
-            this.cmbSkill3.Location = new System.Drawing.Point(235, 194);
+            this.cmbSkill3.Location = new System.Drawing.Point(235, 153);
             this.cmbSkill3.Name = "cmbSkill3";
             this.cmbSkill3.Size = new System.Drawing.Size(121, 21);
             this.cmbSkill3.TabIndex = 7;
             // 
             // pictSkill3
             // 
-            this.pictSkill3.Location = new System.Drawing.Point(205, 192);
+            this.pictSkill3.Location = new System.Drawing.Point(205, 151);
             this.pictSkill3.Name = "pictSkill3";
             this.pictSkill3.Size = new System.Drawing.Size(24, 24);
             this.pictSkill3.TabIndex = 6;
@@ -1057,14 +1494,14 @@
             // 
             this.cmbSkill2.Enabled = false;
             this.cmbSkill2.FormattingEnabled = true;
-            this.cmbSkill2.Location = new System.Drawing.Point(235, 167);
+            this.cmbSkill2.Location = new System.Drawing.Point(235, 126);
             this.cmbSkill2.Name = "cmbSkill2";
             this.cmbSkill2.Size = new System.Drawing.Size(121, 21);
             this.cmbSkill2.TabIndex = 5;
             // 
             // pictSkill2
             // 
-            this.pictSkill2.Location = new System.Drawing.Point(205, 165);
+            this.pictSkill2.Location = new System.Drawing.Point(205, 124);
             this.pictSkill2.Name = "pictSkill2";
             this.pictSkill2.Size = new System.Drawing.Size(24, 24);
             this.pictSkill2.TabIndex = 4;
@@ -1074,7 +1511,7 @@
             // 
             this.cmbSkill1.Enabled = false;
             this.cmbSkill1.FormattingEnabled = true;
-            this.cmbSkill1.Location = new System.Drawing.Point(235, 140);
+            this.cmbSkill1.Location = new System.Drawing.Point(235, 99);
             this.cmbSkill1.Name = "cmbSkill1";
             this.cmbSkill1.Size = new System.Drawing.Size(121, 21);
             this.cmbSkill1.TabIndex = 3;
@@ -1082,7 +1519,7 @@
             // 
             // pictSkill1
             // 
-            this.pictSkill1.Location = new System.Drawing.Point(205, 138);
+            this.pictSkill1.Location = new System.Drawing.Point(205, 97);
             this.pictSkill1.Name = "pictSkill1";
             this.pictSkill1.Size = new System.Drawing.Size(24, 24);
             this.pictSkill1.TabIndex = 2;
@@ -1165,430 +1602,59 @@
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
-            // cmbUnderwear
-            // 
-            this.cmbUnderwear.Enabled = false;
-            this.cmbUnderwear.FormattingEnabled = true;
-            this.cmbUnderwear.Location = new System.Drawing.Point(235, 459);
-            this.cmbUnderwear.Name = "cmbUnderwear";
-            this.cmbUnderwear.Size = new System.Drawing.Size(121, 21);
-            this.cmbUnderwear.TabIndex = 19;
-            // 
-            // cmbArmwear
-            // 
-            this.cmbArmwear.Enabled = false;
-            this.cmbArmwear.FormattingEnabled = true;
-            this.cmbArmwear.Location = new System.Drawing.Point(235, 432);
-            this.cmbArmwear.Name = "cmbArmwear";
-            this.cmbArmwear.Size = new System.Drawing.Size(121, 21);
-            this.cmbArmwear.TabIndex = 20;
-            // 
-            // cmbHeadwear
-            // 
-            this.cmbHeadwear.Enabled = false;
-            this.cmbHeadwear.FormattingEnabled = true;
-            this.cmbHeadwear.Location = new System.Drawing.Point(58, 432);
-            this.cmbHeadwear.Name = "cmbHeadwear";
-            this.cmbHeadwear.Size = new System.Drawing.Size(121, 21);
-            this.cmbHeadwear.TabIndex = 21;
-            // 
-            // cmbFacewear
-            // 
-            this.cmbFacewear.Enabled = false;
-            this.cmbFacewear.FormattingEnabled = true;
-            this.cmbFacewear.Location = new System.Drawing.Point(58, 459);
-            this.cmbFacewear.Name = "cmbFacewear";
-            this.cmbFacewear.Size = new System.Drawing.Size(121, 21);
-            this.cmbFacewear.TabIndex = 22;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 416);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 13);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "Accessories";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 435);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 13);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "Head:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(201, 435);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(28, 13);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "Arm:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(18, 462);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(34, 13);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "Face:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(190, 462);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 13);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "Under:";
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.Image = global::FEFTwiddler.Properties.Resources.sword;
-            this.pictureBox23.Location = new System.Drawing.Point(8, 290);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox23.TabIndex = 28;
-            this.pictureBox23.TabStop = false;
-            // 
-            // numSword
-            // 
-            this.numSword.Enabled = false;
-            this.numSword.Location = new System.Drawing.Point(8, 312);
-            this.numSword.Maximum = new decimal(new int[] {
-            251,
-            0,
-            0,
-            0});
-            this.numSword.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numSword.Name = "numSword";
-            this.numSword.Size = new System.Drawing.Size(38, 20);
-            this.numSword.TabIndex = 29;
-            this.numSword.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numSword.ValueChanged += new System.EventHandler(this.numSword_ValueChanged);
-            // 
-            // numLance
-            // 
-            this.numLance.Enabled = false;
-            this.numLance.Location = new System.Drawing.Point(52, 312);
-            this.numLance.Maximum = new decimal(new int[] {
-            251,
-            0,
-            0,
-            0});
-            this.numLance.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numLance.Name = "numLance";
-            this.numLance.Size = new System.Drawing.Size(38, 20);
-            this.numLance.TabIndex = 31;
-            this.numLance.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numLance.ValueChanged += new System.EventHandler(this.numLance_ValueChanged);
-            // 
-            // pictureBox24
-            // 
-            this.pictureBox24.Image = global::FEFTwiddler.Properties.Resources.lance;
-            this.pictureBox24.Location = new System.Drawing.Point(52, 290);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox24.TabIndex = 30;
-            this.pictureBox24.TabStop = false;
-            // 
-            // numAxe
-            // 
-            this.numAxe.Enabled = false;
-            this.numAxe.Location = new System.Drawing.Point(96, 312);
-            this.numAxe.Maximum = new decimal(new int[] {
-            251,
-            0,
-            0,
-            0});
-            this.numAxe.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numAxe.Name = "numAxe";
-            this.numAxe.Size = new System.Drawing.Size(38, 20);
-            this.numAxe.TabIndex = 33;
-            this.numAxe.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numAxe.ValueChanged += new System.EventHandler(this.numAxe_ValueChanged);
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.Image = global::FEFTwiddler.Properties.Resources.axe;
-            this.pictureBox25.Location = new System.Drawing.Point(96, 290);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox25.TabIndex = 32;
-            this.pictureBox25.TabStop = false;
-            // 
-            // numBow
-            // 
-            this.numBow.Enabled = false;
-            this.numBow.Location = new System.Drawing.Point(184, 312);
-            this.numBow.Maximum = new decimal(new int[] {
-            251,
-            0,
-            0,
-            0});
-            this.numBow.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numBow.Name = "numBow";
-            this.numBow.Size = new System.Drawing.Size(38, 20);
-            this.numBow.TabIndex = 37;
-            this.numBow.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numBow.ValueChanged += new System.EventHandler(this.numBow_ValueChanged);
-            // 
-            // pictureBox26
-            // 
-            this.pictureBox26.Image = global::FEFTwiddler.Properties.Resources.bow;
-            this.pictureBox26.Location = new System.Drawing.Point(184, 290);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox26.TabIndex = 36;
-            this.pictureBox26.TabStop = false;
-            // 
-            // numShuriken
-            // 
-            this.numShuriken.Enabled = false;
-            this.numShuriken.Location = new System.Drawing.Point(140, 312);
-            this.numShuriken.Maximum = new decimal(new int[] {
-            251,
-            0,
-            0,
-            0});
-            this.numShuriken.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numShuriken.Name = "numShuriken";
-            this.numShuriken.Size = new System.Drawing.Size(38, 20);
-            this.numShuriken.TabIndex = 35;
-            this.numShuriken.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numShuriken.ValueChanged += new System.EventHandler(this.numShuriken_ValueChanged);
-            // 
-            // pictureBox27
-            // 
-            this.pictureBox27.Image = global::FEFTwiddler.Properties.Resources.shuriken;
-            this.pictureBox27.Location = new System.Drawing.Point(140, 290);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox27.TabIndex = 34;
-            this.pictureBox27.TabStop = false;
-            // 
-            // numStaff
-            // 
-            this.numStaff.Enabled = false;
-            this.numStaff.Location = new System.Drawing.Point(272, 312);
-            this.numStaff.Maximum = new decimal(new int[] {
-            251,
-            0,
-            0,
-            0});
-            this.numStaff.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numStaff.Name = "numStaff";
-            this.numStaff.Size = new System.Drawing.Size(38, 20);
-            this.numStaff.TabIndex = 41;
-            this.numStaff.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numStaff.ValueChanged += new System.EventHandler(this.numStaff_ValueChanged);
-            // 
-            // pictureBox28
-            // 
-            this.pictureBox28.Image = global::FEFTwiddler.Properties.Resources.staff;
-            this.pictureBox28.Location = new System.Drawing.Point(272, 290);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox28.TabIndex = 40;
-            this.pictureBox28.TabStop = false;
-            // 
-            // numTome
-            // 
-            this.numTome.Enabled = false;
-            this.numTome.Location = new System.Drawing.Point(228, 312);
-            this.numTome.Maximum = new decimal(new int[] {
-            251,
-            0,
-            0,
-            0});
-            this.numTome.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numTome.Name = "numTome";
-            this.numTome.Size = new System.Drawing.Size(38, 20);
-            this.numTome.TabIndex = 39;
-            this.numTome.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numTome.ValueChanged += new System.EventHandler(this.numTome_ValueChanged);
-            // 
-            // pictureBox29
-            // 
-            this.pictureBox29.Image = global::FEFTwiddler.Properties.Resources.tome;
-            this.pictureBox29.Location = new System.Drawing.Point(228, 290);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox29.TabIndex = 38;
-            this.pictureBox29.TabStop = false;
-            // 
-            // numStone
-            // 
-            this.numStone.Enabled = false;
-            this.numStone.Location = new System.Drawing.Point(316, 312);
-            this.numStone.Maximum = new decimal(new int[] {
-            251,
-            0,
-            0,
-            0});
-            this.numStone.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numStone.Name = "numStone";
-            this.numStone.Size = new System.Drawing.Size(38, 20);
-            this.numStone.TabIndex = 43;
-            this.numStone.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numStone.ValueChanged += new System.EventHandler(this.numStone_ValueChanged);
-            // 
-            // pictureBox30
-            // 
-            this.pictureBox30.Image = global::FEFTwiddler.Properties.Resources.stone;
-            this.pictureBox30.Location = new System.Drawing.Point(316, 290);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox30.TabIndex = 42;
-            this.pictureBox30.TabStop = false;
-            // 
-            // lblSwordRank
-            // 
-            this.lblSwordRank.AutoSize = true;
-            this.lblSwordRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSwordRank.Location = new System.Drawing.Point(30, 290);
-            this.lblSwordRank.Name = "lblSwordRank";
-            this.lblSwordRank.Size = new System.Drawing.Size(15, 13);
-            this.lblSwordRank.TabIndex = 44;
-            this.lblSwordRank.Text = "E";
-            // 
-            // lblLanceRank
-            // 
-            this.lblLanceRank.AutoSize = true;
-            this.lblLanceRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLanceRank.Location = new System.Drawing.Point(75, 290);
-            this.lblLanceRank.Name = "lblLanceRank";
-            this.lblLanceRank.Size = new System.Drawing.Size(15, 13);
-            this.lblLanceRank.TabIndex = 45;
-            this.lblLanceRank.Text = "E";
-            // 
-            // lblAxeRank
-            // 
-            this.lblAxeRank.AutoSize = true;
-            this.lblAxeRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAxeRank.Location = new System.Drawing.Point(119, 290);
-            this.lblAxeRank.Name = "lblAxeRank";
-            this.lblAxeRank.Size = new System.Drawing.Size(15, 13);
-            this.lblAxeRank.TabIndex = 46;
-            this.lblAxeRank.Text = "E";
-            // 
-            // lblShurikenRank
-            // 
-            this.lblShurikenRank.AutoSize = true;
-            this.lblShurikenRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShurikenRank.Location = new System.Drawing.Point(162, 290);
-            this.lblShurikenRank.Name = "lblShurikenRank";
-            this.lblShurikenRank.Size = new System.Drawing.Size(15, 13);
-            this.lblShurikenRank.TabIndex = 47;
-            this.lblShurikenRank.Text = "E";
-            // 
-            // lblBowRank
-            // 
-            this.lblBowRank.AutoSize = true;
-            this.lblBowRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBowRank.Location = new System.Drawing.Point(207, 290);
-            this.lblBowRank.Name = "lblBowRank";
-            this.lblBowRank.Size = new System.Drawing.Size(15, 13);
-            this.lblBowRank.TabIndex = 48;
-            this.lblBowRank.Text = "E";
-            // 
-            // lblTomeRank
-            // 
-            this.lblTomeRank.AutoSize = true;
-            this.lblTomeRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTomeRank.Location = new System.Drawing.Point(251, 290);
-            this.lblTomeRank.Name = "lblTomeRank";
-            this.lblTomeRank.Size = new System.Drawing.Size(15, 13);
-            this.lblTomeRank.TabIndex = 49;
-            this.lblTomeRank.Text = "E";
-            // 
-            // lblStaffRank
-            // 
-            this.lblStaffRank.AutoSize = true;
-            this.lblStaffRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStaffRank.Location = new System.Drawing.Point(294, 290);
-            this.lblStaffRank.Name = "lblStaffRank";
-            this.lblStaffRank.Size = new System.Drawing.Size(15, 13);
-            this.lblStaffRank.TabIndex = 50;
-            this.lblStaffRank.Text = "E";
-            // 
-            // lblStoneRank
-            // 
-            this.lblStoneRank.AutoSize = true;
-            this.lblStoneRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStoneRank.Location = new System.Drawing.Point(341, 290);
-            this.lblStoneRank.Name = "lblStoneRank";
-            this.lblStoneRank.Size = new System.Drawing.Size(15, 13);
-            this.lblStoneRank.TabIndex = 51;
-            this.lblStoneRank.Text = "E";
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(8, 298);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(51, 13);
+            this.label9.TabIndex = 52;
+            this.label9.Text = "Inventory";
+            // 
+            // lblInventory1
+            // 
+            this.lblInventory1.AutoSize = true;
+            this.lblInventory1.Location = new System.Drawing.Point(8, 317);
+            this.lblInventory1.Name = "lblInventory1";
+            this.lblInventory1.Size = new System.Drawing.Size(33, 13);
+            this.lblInventory1.TabIndex = 53;
+            this.lblInventory1.Text = "(Item)";
+            // 
+            // lblInventory2
+            // 
+            this.lblInventory2.AutoSize = true;
+            this.lblInventory2.Location = new System.Drawing.Point(8, 337);
+            this.lblInventory2.Name = "lblInventory2";
+            this.lblInventory2.Size = new System.Drawing.Size(33, 13);
+            this.lblInventory2.TabIndex = 54;
+            this.lblInventory2.Text = "(Item)";
+            // 
+            // lblInventory3
+            // 
+            this.lblInventory3.AutoSize = true;
+            this.lblInventory3.Location = new System.Drawing.Point(8, 357);
+            this.lblInventory3.Name = "lblInventory3";
+            this.lblInventory3.Size = new System.Drawing.Size(33, 13);
+            this.lblInventory3.TabIndex = 55;
+            this.lblInventory3.Text = "(Item)";
+            // 
+            // lblInventory4
+            // 
+            this.lblInventory4.AutoSize = true;
+            this.lblInventory4.Location = new System.Drawing.Point(8, 377);
+            this.lblInventory4.Name = "lblInventory4";
+            this.lblInventory4.Size = new System.Drawing.Size(33, 13);
+            this.lblInventory4.TabIndex = 56;
+            this.lblInventory4.Text = "(Item)";
+            // 
+            // lblInventory5
+            // 
+            this.lblInventory5.AutoSize = true;
+            this.lblInventory5.Location = new System.Drawing.Point(8, 398);
+            this.lblInventory5.Name = "lblInventory5";
+            this.lblInventory5.Size = new System.Drawing.Size(33, 13);
+            this.lblInventory5.TabIndex = 57;
+            this.lblInventory5.Text = "(Item)";
             // 
             // Form1
             // 
@@ -1653,6 +1719,22 @@
             this.tabPage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numStone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numStaff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numShuriken)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAxe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numExperience)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill5)).EndInit();
@@ -1661,22 +1743,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numSword)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numLance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numAxe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numBow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numShuriken)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numStaff)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numTome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numStone)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1800,6 +1866,12 @@
         private System.Windows.Forms.Label lblAxeRank;
         private System.Windows.Forms.Label lblLanceRank;
         private System.Windows.Forms.Label lblSwordRank;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblInventory5;
+        private System.Windows.Forms.Label lblInventory4;
+        private System.Windows.Forms.Label lblInventory3;
+        private System.Windows.Forms.Label lblInventory2;
+        private System.Windows.Forms.Label lblInventory1;
     }
 }
 

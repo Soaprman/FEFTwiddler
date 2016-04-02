@@ -40,6 +40,12 @@ namespace FEFTwiddler.Model
         public Enums.Skill EquippedSkill_4 { get; set; }
         public Enums.Skill EquippedSkill_5 { get; set; }
 
+        public InventoryItem Item_1 { get; set; }
+        public InventoryItem Item_2 { get; set; }
+        public InventoryItem Item_3 { get; set; }
+        public InventoryItem Item_4 { get; set; }
+        public InventoryItem Item_5 { get; set; }
+
         public bool IsDead { get; set; }
         public bool IsEinherjar { get; set; }
         public bool IsRecruited { get; set; }

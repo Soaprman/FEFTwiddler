@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
-using System.Resources;
 
 namespace FEFTwiddler
 {
@@ -17,9 +9,17 @@ namespace FEFTwiddler
         private Model.ChapterSave _chapterSave;
         private Model.Character _selectedCharacter;
 
+        private Data.ItemDatabase _itemDatabase;
+
         public Form1()
         {
             InitializeComponent();
+            InitializeDatabases();
+        }
+
+        private void InitializeDatabases()
+        {
+            _itemDatabase = new Data.ItemDatabase();
         }
 
         private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -153,6 +153,12 @@ namespace FEFTwiddler
             numTome.Value = character.WeaponExperience_Tome;
             numStaff.Value = character.WeaponExperience_Staff;
             numStone.Value = character.WeaponExperience_Stone;
+
+            lblInventory1.Text = GetItemString(character.Item_1);
+            lblInventory2.Text = GetItemString(character.Item_2);
+            lblInventory3.Text = GetItemString(character.Item_3);
+            lblInventory4.Text = GetItemString(character.Item_4);
+            lblInventory5.Text = GetItemString(character.Item_5);
 
             //EnableControls();
         }
@@ -337,6 +343,34 @@ namespace FEFTwiddler
         {
             if (weaponExp >= 251) return Color.Green;
             return Color.Black;
+        }
+
+        private string GetItemString(Model.InventoryItem item)
+        {
+            var data = _itemDatabase.GetByID(item.ItemID);
+
+            var equipped = (item.IsEquipped ? "(E) " : "");
+            var displayName = data.DisplayName;
+            string uses;
+            if (data.Type == Enums.ItemType.Sword || 
+                data.Type == Enums.ItemType.Lance || 
+                data.Type == Enums.ItemType.Axe || 
+                data.Type == Enums.ItemType.Shuriken || 
+                data.Type == Enums.ItemType.Bow || 
+                data.Type == Enums.ItemType.Tome || 
+                data.Type == Enums.ItemType.Stone || 
+                data.Type == Enums.ItemType.NPC ||
+                data.Type == Enums.ItemType.Unknown)
+            {
+                if (item.Uses > 0) uses = "+" + item.Uses.ToString();
+                else uses = "";
+            }
+            else
+            {
+                uses = "x" + item.Uses.ToString() + "/" + data.MaximumUses.ToString();
+            }
+            var nameId = (item.ItemNameID > 0 ? "NameID: " + item.ItemNameID.ToString() : "");
+            return String.Format("{0} {1} {2} {3}", equipped, displayName, uses, nameId);
         }
     }
 }
