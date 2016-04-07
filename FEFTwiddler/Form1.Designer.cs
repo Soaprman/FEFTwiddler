@@ -36,6 +36,12 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btn9999VisitPoints = new System.Windows.Forms.Button();
+            this.btn9999BattlePoints = new System.Windows.Forms.Button();
+            this.numVisitPoints = new System.Windows.Forms.NumericUpDown();
+            this.numBattlePoints = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.lblAvatarName = new System.Windows.Forms.Label();
             this.btnMaxGold = new System.Windows.Forms.Button();
             this.numGold = new System.Windows.Forms.NumericUpDown();
@@ -87,6 +93,12 @@
             this.numCrystal = new System.Windows.Forms.NumericUpDown();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblInventory5 = new System.Windows.Forms.Label();
+            this.lblInventory4 = new System.Windows.Forms.Label();
+            this.lblInventory3 = new System.Windows.Forms.Label();
+            this.lblInventory2 = new System.Windows.Forms.Label();
+            this.lblInventory1 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.lblStoneRank = new System.Windows.Forms.Label();
             this.lblStaffRank = new System.Windows.Forms.Label();
             this.lblTomeRank = new System.Windows.Forms.Label();
@@ -145,15 +157,13 @@
             this.btnGiveEternalSeals = new System.Windows.Forms.Button();
             this.btnAllSkillsNoNpc = new System.Windows.Forms.Button();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label9 = new System.Windows.Forms.Label();
-            this.lblInventory1 = new System.Windows.Forms.Label();
-            this.lblInventory2 = new System.Windows.Forms.Label();
-            this.lblInventory3 = new System.Windows.Forms.Label();
-            this.lblInventory4 = new System.Windows.Forms.Label();
-            this.lblInventory5 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numVisitPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBattlePoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numGold)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -284,6 +294,14 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label13);
+            this.tabPage3.Controls.Add(this.label12);
+            this.tabPage3.Controls.Add(this.btn9999VisitPoints);
+            this.tabPage3.Controls.Add(this.btn9999BattlePoints);
+            this.tabPage3.Controls.Add(this.numVisitPoints);
+            this.tabPage3.Controls.Add(this.numBattlePoints);
+            this.tabPage3.Controls.Add(this.label11);
+            this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Controls.Add(this.lblAvatarName);
             this.tabPage3.Controls.Add(this.btnMaxGold);
             this.tabPage3.Controls.Add(this.numGold);
@@ -340,6 +358,70 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Chapter Data";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // btn9999VisitPoints
+            // 
+            this.btn9999VisitPoints.Location = new System.Drawing.Point(171, 140);
+            this.btn9999VisitPoints.Name = "btn9999VisitPoints";
+            this.btn9999VisitPoints.Size = new System.Drawing.Size(75, 23);
+            this.btn9999VisitPoints.TabIndex = 54;
+            this.btn9999VisitPoints.Text = "9999";
+            this.btn9999VisitPoints.UseVisualStyleBackColor = true;
+            this.btn9999VisitPoints.Click += new System.EventHandler(this.btn9999VisitPoints_Click);
+            // 
+            // btn9999BattlePoints
+            // 
+            this.btn9999BattlePoints.Location = new System.Drawing.Point(171, 114);
+            this.btn9999BattlePoints.Name = "btn9999BattlePoints";
+            this.btn9999BattlePoints.Size = new System.Drawing.Size(75, 23);
+            this.btn9999BattlePoints.TabIndex = 53;
+            this.btn9999BattlePoints.Text = "9999";
+            this.btn9999BattlePoints.UseVisualStyleBackColor = true;
+            this.btn9999BattlePoints.Click += new System.EventHandler(this.btn9999BattlePoints_Click);
+            // 
+            // numVisitPoints
+            // 
+            this.numVisitPoints.Location = new System.Drawing.Point(85, 141);
+            this.numVisitPoints.Maximum = new decimal(new int[] {
+            999999,
+            0,
+            0,
+            0});
+            this.numVisitPoints.Name = "numVisitPoints";
+            this.numVisitPoints.Size = new System.Drawing.Size(78, 20);
+            this.numVisitPoints.TabIndex = 52;
+            this.numVisitPoints.ValueChanged += new System.EventHandler(this.numVisitPoints_ValueChanged);
+            // 
+            // numBattlePoints
+            // 
+            this.numBattlePoints.Location = new System.Drawing.Point(85, 115);
+            this.numBattlePoints.Maximum = new decimal(new int[] {
+            999999,
+            0,
+            0,
+            0});
+            this.numBattlePoints.Name = "numBattlePoints";
+            this.numBattlePoints.Size = new System.Drawing.Size(78, 20);
+            this.numBattlePoints.TabIndex = 51;
+            this.numBattlePoints.ValueChanged += new System.EventHandler(this.numBattlePoints_ValueChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(18, 144);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(61, 13);
+            this.label11.TabIndex = 50;
+            this.label11.Text = "Visit Points:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(10, 117);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(69, 13);
+            this.label10.TabIndex = 49;
+            this.label10.Text = "Battle Points:";
             // 
             // lblAvatarName
             // 
@@ -931,6 +1013,60 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(367, 485);
             this.panel1.TabIndex = 1;
+            // 
+            // lblInventory5
+            // 
+            this.lblInventory5.AutoSize = true;
+            this.lblInventory5.Location = new System.Drawing.Point(8, 398);
+            this.lblInventory5.Name = "lblInventory5";
+            this.lblInventory5.Size = new System.Drawing.Size(33, 13);
+            this.lblInventory5.TabIndex = 57;
+            this.lblInventory5.Text = "(Item)";
+            // 
+            // lblInventory4
+            // 
+            this.lblInventory4.AutoSize = true;
+            this.lblInventory4.Location = new System.Drawing.Point(8, 377);
+            this.lblInventory4.Name = "lblInventory4";
+            this.lblInventory4.Size = new System.Drawing.Size(33, 13);
+            this.lblInventory4.TabIndex = 56;
+            this.lblInventory4.Text = "(Item)";
+            // 
+            // lblInventory3
+            // 
+            this.lblInventory3.AutoSize = true;
+            this.lblInventory3.Location = new System.Drawing.Point(8, 357);
+            this.lblInventory3.Name = "lblInventory3";
+            this.lblInventory3.Size = new System.Drawing.Size(33, 13);
+            this.lblInventory3.TabIndex = 55;
+            this.lblInventory3.Text = "(Item)";
+            // 
+            // lblInventory2
+            // 
+            this.lblInventory2.AutoSize = true;
+            this.lblInventory2.Location = new System.Drawing.Point(8, 337);
+            this.lblInventory2.Name = "lblInventory2";
+            this.lblInventory2.Size = new System.Drawing.Size(33, 13);
+            this.lblInventory2.TabIndex = 54;
+            this.lblInventory2.Text = "(Item)";
+            // 
+            // lblInventory1
+            // 
+            this.lblInventory1.AutoSize = true;
+            this.lblInventory1.Location = new System.Drawing.Point(8, 317);
+            this.lblInventory1.Name = "lblInventory1";
+            this.lblInventory1.Size = new System.Drawing.Size(33, 13);
+            this.lblInventory1.TabIndex = 53;
+            this.lblInventory1.Text = "(Item)";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(8, 298);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(51, 13);
+            this.label9.TabIndex = 52;
+            this.label9.Text = "Inventory";
             // 
             // lblStoneRank
             // 
@@ -1602,59 +1738,25 @@
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
-            // label9
+            // label12
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(8, 298);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(51, 13);
-            this.label9.TabIndex = 52;
-            this.label9.Text = "Inventory";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(6, 166);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(232, 13);
+            this.label12.TabIndex = 55;
+            this.label12.Text = "These will last until you update your castle data.";
             // 
-            // lblInventory1
+            // label13
             // 
-            this.lblInventory1.AutoSize = true;
-            this.lblInventory1.Location = new System.Drawing.Point(8, 317);
-            this.lblInventory1.Name = "lblInventory1";
-            this.lblInventory1.Size = new System.Drawing.Size(33, 13);
-            this.lblInventory1.TabIndex = 53;
-            this.lblInventory1.Text = "(Item)";
-            // 
-            // lblInventory2
-            // 
-            this.lblInventory2.AutoSize = true;
-            this.lblInventory2.Location = new System.Drawing.Point(8, 337);
-            this.lblInventory2.Name = "lblInventory2";
-            this.lblInventory2.Size = new System.Drawing.Size(33, 13);
-            this.lblInventory2.TabIndex = 54;
-            this.lblInventory2.Text = "(Item)";
-            // 
-            // lblInventory3
-            // 
-            this.lblInventory3.AutoSize = true;
-            this.lblInventory3.Location = new System.Drawing.Point(8, 357);
-            this.lblInventory3.Name = "lblInventory3";
-            this.lblInventory3.Size = new System.Drawing.Size(33, 13);
-            this.lblInventory3.TabIndex = 55;
-            this.lblInventory3.Text = "(Item)";
-            // 
-            // lblInventory4
-            // 
-            this.lblInventory4.AutoSize = true;
-            this.lblInventory4.Location = new System.Drawing.Point(8, 377);
-            this.lblInventory4.Name = "lblInventory4";
-            this.lblInventory4.Size = new System.Drawing.Size(33, 13);
-            this.lblInventory4.TabIndex = 56;
-            this.lblInventory4.Text = "(Item)";
-            // 
-            // lblInventory5
-            // 
-            this.lblInventory5.AutoSize = true;
-            this.lblInventory5.Location = new System.Drawing.Point(8, 398);
-            this.lblInventory5.Name = "lblInventory5";
-            this.lblInventory5.Size = new System.Drawing.Size(33, 13);
-            this.lblInventory5.TabIndex = 57;
-            this.lblInventory5.Text = "(Item)";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(6, 181);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(263, 13);
+            this.label13.TabIndex = 56;
+            this.label13.Text = "After that, the values will revert to what\'s stored online.";
             // 
             // Form1
             // 
@@ -1671,6 +1773,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numVisitPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBattlePoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numGold)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
@@ -1872,6 +1976,14 @@
         private System.Windows.Forms.Label lblInventory3;
         private System.Windows.Forms.Label lblInventory2;
         private System.Windows.Forms.Label lblInventory1;
+        private System.Windows.Forms.NumericUpDown numVisitPoints;
+        private System.Windows.Forms.NumericUpDown numBattlePoints;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btn9999VisitPoints;
+        private System.Windows.Forms.Button btn9999BattlePoints;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
     }
 }
 

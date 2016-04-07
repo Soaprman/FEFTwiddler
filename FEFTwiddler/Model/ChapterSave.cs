@@ -73,6 +73,9 @@ namespace FEFTwiddler.Model
         public byte MaterialQuantity_Peaches { get; set; }
         public byte MaterialQuantity_Rice { get; set; }
 
+        public uint BattlePoints { get; set; }
+        public uint VisitPoints { get; set; }
+
         private List<Character> _characters = new List<Character>();
         public List<Character> Characters {
             get
@@ -595,8 +598,8 @@ namespace FEFTwiddler.Model
             br.ReadBytes(0x19D);
 
             // Materials
-            chunk = new byte[22];
-            br.Read(chunk, 0, 22);
+            chunk = new byte[0x16];
+            br.Read(chunk, 0, 0x16);
 
             MaterialQuantity_Crystal = chunk[0];
             MaterialQuantity_Ruby = chunk[1];
@@ -620,6 +623,45 @@ namespace FEFTwiddler.Model
             MaterialQuantity_Daikon = chunk[19];
             MaterialQuantity_Peaches = chunk[20];
             MaterialQuantity_Rice = chunk[21];
+
+            // Stuff (need to confirm size. it's variable) (maybe 0x25 on birthright save)
+            br.ReadBytes(0x37);
+
+            // Some block that I *think* is a list of chapters completed
+            // Or something that scales with game length, anyway (it's way longer in the revelation save)
+            var butWaitTheresMore = true;
+            var stopHere = new byte[] { 0x00, 0x00, 0x00, 0x01 };
+            while (butWaitTheresMore)
+            {
+                chunk = new byte[4];
+                br.Read(chunk, 0, 4);
+
+                if (Enumerable.SequenceEqual(chunk, stopHere)) butWaitTheresMore = false;
+            }
+
+            // Stuff
+            br.ReadBytes(0x107);
+
+            // Avatar name
+            chunk = new byte[0x18];
+            br.Read(chunk, 0, 0x18);
+
+            // Stuff
+            br.ReadBytes(0xA8);
+
+            // Battle points
+            chunk = new byte[4];
+            br.Read(chunk, 0, 4);
+
+            BattlePoints = (uint)(chunk[0] + chunk[1] * 0x100 + chunk[2] * 0x10000 + chunk[3] * 0x1000000);
+
+            // Visit points
+            chunk = new byte[4];
+            br.Read(chunk, 0, 4);
+
+            VisitPoints = (uint)(chunk[0] + chunk[1] * 0x100 + chunk[2] * 0x10000 + chunk[3] * 0x1000000);
+
+            // 0x1D5 between that and the FF FF FF that begins the Chaos Block
 
             // Not sure about the rest. Guess it's a TODO.
         }
@@ -663,6 +705,29 @@ namespace FEFTwiddler.Model
                 MaterialQuantity_Daikon,
                 MaterialQuantity_Peaches,
                 MaterialQuantity_Rice
+            };
+            bw.Write(chunk);
+
+            // Stuff
+            bw.BaseStream.Seek(0x2EE, SeekOrigin.Current);
+
+            // Battle points
+            chunk = new byte[]
+            {
+                (byte)(BattlePoints & 0xFF),
+                (byte)(BattlePoints >> 8 & 0xFF),
+                (byte)(BattlePoints >> 16 & 0xFF),
+                (byte)(BattlePoints >> 24 & 0xFF)
+            };
+            bw.Write(chunk);
+
+            // Visit points
+            chunk = new byte[]
+            {
+                (byte)(VisitPoints & 0xFF),
+                (byte)(VisitPoints >> 8 & 0xFF),
+                (byte)(VisitPoints >> 16 & 0xFF),
+                (byte)(VisitPoints >> 24 & 0xFF)
             };
             bw.Write(chunk);
 

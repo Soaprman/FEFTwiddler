@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FEFTwiddler.Extensions;
 
 namespace FEFTwiddler.Model
 {
@@ -71,7 +67,9 @@ namespace FEFTwiddler.Model
 
         public void LearnAllNonNpcSkills()
         {
-            LearnedSkills = new byte[] { 0xDF, 0xFF, 0x7F, 0xFB, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFE, 0xFF, 0xEF, 0xFF, 0xBF, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00 };
+            // Learn the skills, but leave existing learned skills outside this range intact
+            var learnThese = new byte[] { 0xDF, 0xFF, 0x7F, 0xFB, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFE, 0xFF, 0xEF, 0xFF, 0xBF, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00 };
+            LearnedSkills = LearnedSkills.Or(learnThese);
         }
 
         public void SRankAllWeapons()

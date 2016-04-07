@@ -116,6 +116,10 @@ namespace FEFTwiddler
             numSapphire.Value = _chapterSave.MaterialQuantity_Sapphire;
             numTopaz.Value = _chapterSave.MaterialQuantity_Topaz;
             numWheat.Value = _chapterSave.MaterialQuantity_Wheat;
+
+            // TODO: Add these after fixing ChapterSave
+            //numBattlePoints.Value = _chapterSave.BattlePoints;
+            //numVisitPoints.Value = _chapterSave.VisitPoints;
         }
 
         private void LoadCharacter(Model.Character character)
@@ -371,6 +375,26 @@ namespace FEFTwiddler
             }
             var nameId = (item.ItemNameID > 0 ? "NameID: " + item.ItemNameID.ToString() : "");
             return String.Format("{0} {1} {2} {3}", equipped, displayName, uses, nameId);
+        }
+
+        private void btn9999BattlePoints_Click(object sender, EventArgs e)
+        {
+            numBattlePoints.Value = 9999;
+        }
+
+        private void btn9999VisitPoints_Click(object sender, EventArgs e)
+        {
+            numVisitPoints.Value = 9999;
+        }
+
+        private void numBattlePoints_ValueChanged(object sender, EventArgs e)
+        {
+            _chapterSave.BattlePoints = (uint)numBattlePoints.Value;
+        }
+
+        private void numVisitPoints_ValueChanged(object sender, EventArgs e)
+        {
+            _chapterSave.VisitPoints = (uint)numVisitPoints.Value;
         }
     }
 }
