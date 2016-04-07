@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 using FEFTwiddler.Extensions;
 
 namespace FEFTwiddler.Model
 {
-    class ChapterSave: ISave
+    /// <summary>
+    /// A Fire Emblem Fates "Chapter" save
+    /// </summary>
+    class ChapterSave : ISave
     {
         #region Member variables
 
-        private string _filePath;
+        private SaveFile _file;
 
         /// <summary>You know, just so we're clear!</summary>
         private long _headerOffset = 0;
@@ -122,21 +123,25 @@ namespace FEFTwiddler.Model
 
         #endregion
 
-        public static ChapterSave FromPath(string path)
+        public static ChapterSave FromSaveFile(SaveFile file)
         {
             var cs = new ChapterSave();
-            cs.Read(path);
+            cs.ReadFromFile(file);
             return cs;
         }
 
         #region General IO
 
-        public void Read(string path)
+        private void ReadFromFile(SaveFile file)
         {
-            _filePath = path;
+            _file = file;
+            Read();
+        }
 
-            using (var fs = new FileStream(_filePath, FileMode.Open, FileAccess.Read))
-            using (var br = new BinaryReader(fs))
+        public void Read()
+        {
+            using (var ms = new MemoryStream(_file.DecompressedBytes))
+            using (var br = new BinaryReader(ms))
             {
                 ReadHeaderData(br);
 
@@ -156,13 +161,15 @@ namespace FEFTwiddler.Model
 
         public void Write()
         {
-            using (var fs = new FileStream(_filePath, FileMode.Open, FileAccess.ReadWrite))
-            using (var bw = new BinaryWriter(fs))
+            using (var ms = new MemoryStream(_file.DecompressedBytes))
+            using (var bw = new BinaryWriter(ms))
             {
                 WriteFileData(bw);
                 WriteCharacters(bw);
                 WriteMyCastle(bw);
             }
+
+            _file.Write();
         }
 
         #endregion
@@ -256,8 +263,9 @@ namespace FEFTwiddler.Model
 
         private void ReadCharacters(BinaryReader br)
         {
+            byte[] chunk;
 
-            // Probably a marker to begin the "living units" block.
+            // Begin "living units" block
             // 01 03 on my save
             br.ReadBytes(2);
 
@@ -269,9 +277,14 @@ namespace FEFTwiddler.Model
                 ReadCurrentCharacter(br);
             }
 
-            // Probably a marker to begin the "dead units" block.
-            // 06 on my save
-            br.ReadBytes(1);
+            // What's next?
+            chunk = new byte[1];
+            br.Read(chunk, 0, 1);
+
+            // Begin "dead units" block
+            // If this is FF, no units are dead
+            // This is 06 on my save, where there are dead units
+            if (chunk[0] == 0xFF) return;
 
             // The number of dead characters to read
             var deadCharacters = br.ReadByte();
@@ -302,8 +315,7 @@ namespace FEFTwiddler.Model
             character.Experience = chunk[1];
             character.Unknown00C = chunk[2];
             character.EternalSealsUsed = chunk[3];
-            character.CharacterID = (Enums.Character)chunk[4];
-            character.Unknown00F = chunk[5];
+            character.CharacterID = (Enums.Character)(ushort)(chunk[4] + chunk[5] * 0x100);
             character.ClassID = (Enums.Class)chunk[6];
             character.Unknown011 = chunk[7];
 
@@ -314,14 +326,14 @@ namespace FEFTwiddler.Model
             chunk = new byte[9];
             br.Read(chunk, 0, 9);
 
-            character.WeaponExperience_Sword = chunk[0];
-            character.WeaponExperience_Lance = chunk[1];
-            character.WeaponExperience_Axe = chunk[2];
-            character.WeaponExperience_Shuriken = chunk[3];
-            character.WeaponExperience_Bow = chunk[4];
-            character.WeaponExperience_Tome = chunk[5];
-            character.WeaponExperience_Staff = chunk[6];
-            character.WeaponExperience_Stone = chunk[7];
+            character.WeaponExperience_Sword = Math.Min(chunk[0], Character.MaxWeaponExperience);
+            character.WeaponExperience_Lance = Math.Min(chunk[1], Character.MaxWeaponExperience);
+            character.WeaponExperience_Axe = Math.Min(chunk[2], Character.MaxWeaponExperience);
+            character.WeaponExperience_Shuriken = Math.Min(chunk[3], Character.MaxWeaponExperience);
+            character.WeaponExperience_Bow = Math.Min(chunk[4], Character.MaxWeaponExperience);
+            character.WeaponExperience_Tome = Math.Min(chunk[5], Character.MaxWeaponExperience);
+            character.WeaponExperience_Staff = Math.Min(chunk[6], Character.MaxWeaponExperience);
+            character.WeaponExperience_Stone = Math.Min(chunk[7], Character.MaxWeaponExperience);
             character.MaximumHP = chunk[8];
 
             // Filler - FF FF FF FF
@@ -473,8 +485,8 @@ namespace FEFTwiddler.Model
                 character.Experience,
                 character.Unknown00C,
                 character.EternalSealsUsed,
-                (byte)character.CharacterID,
-                character.Unknown00F,
+                (byte)((ushort)character.CharacterID & 0xFF),
+                (byte)(((ushort)character.CharacterID >> 8) & 0xFF),
                 (byte)character.ClassID,
                 character.Unknown011
             };
@@ -711,25 +723,25 @@ namespace FEFTwiddler.Model
             // Stuff
             bw.BaseStream.Seek(0x2EE, SeekOrigin.Current);
 
-            // Battle points
-            chunk = new byte[]
-            {
-                (byte)(BattlePoints & 0xFF),
-                (byte)(BattlePoints >> 8 & 0xFF),
-                (byte)(BattlePoints >> 16 & 0xFF),
-                (byte)(BattlePoints >> 24 & 0xFF)
-            };
-            bw.Write(chunk);
+            //// Battle points
+            //chunk = new byte[]
+            //{
+            //    (byte)(BattlePoints & 0xFF),
+            //    (byte)(BattlePoints >> 8 & 0xFF),
+            //    (byte)(BattlePoints >> 16 & 0xFF),
+            //    (byte)(BattlePoints >> 24 & 0xFF)
+            //};
+            //bw.Write(chunk);
 
-            // Visit points
-            chunk = new byte[]
-            {
-                (byte)(VisitPoints & 0xFF),
-                (byte)(VisitPoints >> 8 & 0xFF),
-                (byte)(VisitPoints >> 16 & 0xFF),
-                (byte)(VisitPoints >> 24 & 0xFF)
-            };
-            bw.Write(chunk);
+            //// Visit points
+            //chunk = new byte[]
+            //{
+            //    (byte)(VisitPoints & 0xFF),
+            //    (byte)(VisitPoints >> 8 & 0xFF),
+            //    (byte)(VisitPoints >> 16 & 0xFF),
+            //    (byte)(VisitPoints >> 24 & 0xFF)
+            //};
+            //bw.Write(chunk);
 
             // Not sure about the rest. Guess it's a TODO.
         }

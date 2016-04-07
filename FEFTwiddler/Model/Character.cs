@@ -2,7 +2,7 @@
 
 namespace FEFTwiddler.Model
 {
-    public class Character: ISavePart
+    public class Character
     {
         /// <summary>
         /// The location of this character in the hex
@@ -15,10 +15,10 @@ namespace FEFTwiddler.Model
         public byte Unknown00C { get; set; }
         public byte EternalSealsUsed { get; set; }
         public Enums.Character CharacterID { get; set; }
-        public byte Unknown00F { get; set; }
         public Enums.Class ClassID { get; set; }
         public byte Unknown011 { get; set; }
 
+        public static byte MaxWeaponExperience = 0xFB;
         public byte WeaponExperience_Sword { get; set; }
         public byte WeaponExperience_Lance { get; set; }
         public byte WeaponExperience_Axe { get; set; }
@@ -74,18 +74,14 @@ namespace FEFTwiddler.Model
 
         public void SRankAllWeapons()
         {
-            // I don't know if 0xFB translates precisely to S rank's minimum requirement. But it works.
-            // For what it's worth, 0xB5 (181) (A rank in Awakening) was like 1/3 through A-rank here in Fates.
-            // Awakening data source: http://serenesforest.net/awakening/miscellaneous/calculations/
-            byte sRank = 0xFB;
-            WeaponExperience_Sword = sRank;
-            WeaponExperience_Lance = sRank;
-            WeaponExperience_Axe = sRank;
-            WeaponExperience_Shuriken = sRank;
-            WeaponExperience_Bow = sRank;
-            WeaponExperience_Tome = sRank;
-            WeaponExperience_Staff = sRank;
-            WeaponExperience_Stone = sRank;
+            WeaponExperience_Sword = MaxWeaponExperience;
+            WeaponExperience_Lance = MaxWeaponExperience;
+            WeaponExperience_Axe = MaxWeaponExperience;
+            WeaponExperience_Shuriken = MaxWeaponExperience;
+            WeaponExperience_Bow = MaxWeaponExperience;
+            WeaponExperience_Tome = MaxWeaponExperience;
+            WeaponExperience_Staff = MaxWeaponExperience;
+            WeaponExperience_Stone = MaxWeaponExperience;
         }
 
         #endregion

@@ -138,6 +138,8 @@ namespace FEFTwiddler.Enums
         Lodestar = 0x7C,
         Vanguard = 0x7D,
         GreatLord = 0x7E,
-        Grandmaster = 0x7F
+        Grandmaster = 0x7F,
+        // More DLC
+        PegasusKnight = 0x88,
     }
 }

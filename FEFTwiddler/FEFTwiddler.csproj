@@ -75,9 +75,8 @@
     <Compile Include="Model\Character.cs" />
     <Compile Include="Model\ConvoyItem.cs" />
     <Compile Include="Model\InventoryItem.cs" />
-    <Compile Include="Model\Item.cs" />
-    <Compile Include="Model\ISavePart.cs" />
     <Compile Include="Model\ISave.cs" />
+    <Compile Include="Model\Item.cs" />
     <Compile Include="Model\ShopItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
