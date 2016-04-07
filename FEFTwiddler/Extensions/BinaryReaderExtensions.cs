@@ -8,7 +8,7 @@ namespace FEFTwiddler.Extensions
         /// <summary>
         /// Read until hitting the value.
         /// </summary>
-        /// <remarks>What could possibly go wrong?</remarks>
+        /// <remarks>What could possibly go wrong? As it turns out, quite a bit.</remarks>
         /// <exception cref="EndOfStreamException">The value is not found.</exception>
         public static void AdvanceToValue(this BinaryReader br, byte[] value)
         {
@@ -17,25 +17,31 @@ namespace FEFTwiddler.Extensions
             try
             {
                 byte[] match = new byte[value.Length];
-                int position = 0;
+                byte[][] image = new byte[value.Length][];
 
+                for (int x = 0; x < value.Length; x++)
+                {
+                    image[x] = new byte[value.Length];
+                    for (int y = 0; y < value.Length; y++)
+                    {
+                        image[x][(y + x) % value.Length] = value[y];
+                    }
+                }
+
+                int offset = value.Length - 1;
+
+                for (int x = 0; x < offset; x++)
+                {
+                    match[x] = br.ReadByte();
+                }
+                
                 while (true)
                 {
-                    var curByte = br.ReadByte();
+                    match[offset] = br.ReadByte();
 
-                    if (curByte == value[position])
-                    {
-                        match[position] = curByte;
-                        if (Enumerable.SequenceEqual(match, value)) return;
-                        position++;
-                    }
-                    else
-                    {
-                        match = new byte[value.Length];
-                        position = 0;
-                    }
+                    offset = (offset + 1) % value.Length;
 
-                    if (position >= value.Length) position = 0;
+                    if (Enumerable.SequenceEqual(match, image[offset])) return;
                 }
             }
             catch (EndOfStreamException)
