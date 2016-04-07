@@ -1,15 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 
 namespace FEFTwiddler.Model
 {
+    /// <summary>
+    /// A Fire Emblem Fates save file on disk
+    /// </summary>
     public class SaveFile
     {
-        private string _originalPath;
+        #region Members and Properties
+
+        private string _filePath;
 
         private Enums.SaveFileType _type;
         public Enums.SaveFileType Type
@@ -17,12 +19,18 @@ namespace FEFTwiddler.Model
             get { return _type; }
         }
 
-        bool _wasCompressed;
+        bool _isCompressed;
+        public bool IsCompressed
+        {
+            get { return _isCompressed; }
+        }
 
         public byte[] DecompressedBytes;
 
         private byte[] _compMarker = new byte[] { 0x50, 0x4D, 0x4F, 0x43 }; // COMP backwards
         private byte[] _indeMarker = new byte[] { 0x45, 0x44, 0x4E, 0x49 }; // INDE backwards
+
+        #endregion
 
         public static SaveFile FromPath(string path)
         {
@@ -33,47 +41,21 @@ namespace FEFTwiddler.Model
 
         private void ReadFromPath(string path)
         {
-            _originalPath = path;
+            _filePath = path;
             Read();
         }
 
+        #region Read
+
+        /// <summary>
+        /// Read data into this object from the file at _originalPath
+        /// </summary>
         public void Read()
-        {
-            //_wasCompressed = IsFileCompressed(_originalPath);
-
-            //int fileLength = (int)(new FileInfo(_originalPath).Length);
-            //_header = new byte[0xC0];
-
-            //using (var fs = new FileStream(_originalPath, FileMode.Open, FileAccess.Read))
-            //using (var br = new BinaryReader(fs))
-            //{
-            //    br.Read(_header, 0, 0xC0);
-
-            //}
-        }
-
-        public void Write()
-        {
-            byte[] bytesToWrite;
-            
-            if (_wasCompressed)
-            {
-
-            }
-            else
-            {
-                bytesToWrite = DecompressedBytes;
-            }
-
-            // Write
-        }
-
-        private void GetFileInfo()
         {
             byte[] chunk;
             int length = GetFileLength();
 
-            using (var fs = new FileStream(_originalPath, FileMode.Open, FileAccess.Read))
+            using (var fs = new FileStream(_filePath, FileMode.Open, FileAccess.Read))
             using (var br = new BinaryReader(fs))
             {
                 // Read the first four bytes
@@ -82,7 +64,7 @@ namespace FEFTwiddler.Model
 
                 if (Enumerable.SequenceEqual(chunk, _compMarker))
                 {
-                    _wasCompressed = true;
+                    _isCompressed = true;
                     SetNonChapterType();
 
                     br.BaseStream.Seek(0, SeekOrigin.Begin);
@@ -94,13 +76,13 @@ namespace FEFTwiddler.Model
                 }
                 else if (Enumerable.SequenceEqual(chunk, _indeMarker))
                 {
-                    _wasCompressed = false;
+                    _isCompressed = false;
                     SetNonChapterType();
 
                     br.BaseStream.Seek(0, SeekOrigin.Begin);
                     DecompressedBytes = new byte[length];
                     br.Read(DecompressedBytes, 0, length);
-                    
+
                     return;
                 }
 
@@ -111,13 +93,17 @@ namespace FEFTwiddler.Model
 
                 if (Enumerable.SequenceEqual(chunk, _compMarker))
                 {
-                    _wasCompressed = true;
+                    _isCompressed = true;
                     _type = Enums.SaveFileType.Chapter;
 
+                    br.BaseStream.Seek(0, SeekOrigin.Begin);
                     byte[] header = new byte[0xC0];
+                    br.Read(header, 0, 0xC0);
+
                     br.BaseStream.Seek(0xD0, SeekOrigin.Begin);
                     byte[] compressedBytes = new byte[length - 0xD0];
                     br.Read(compressedBytes, 0, length - 0xD0);
+
                     byte[] decompressedBytes = new Utils.Huffman8().Decompress(compressedBytes);
 
                     DecompressedBytes = header.Concat(decompressedBytes).ToArray();
@@ -126,7 +112,7 @@ namespace FEFTwiddler.Model
                 }
                 else if (Enumerable.SequenceEqual(chunk, _indeMarker))
                 {
-                    _wasCompressed = false;
+                    _isCompressed = false;
                     _type = Enums.SaveFileType.Chapter;
 
                     br.BaseStream.Seek(0, SeekOrigin.Begin);
@@ -143,15 +129,73 @@ namespace FEFTwiddler.Model
         /// <remarks>Maybe replace this with smarter detection in the future</remarks>
         private void SetNonChapterType()
         {
-            if (_originalPath.IndexOf("Exchange") > -1) _type = Enums.SaveFileType.Exchange;
-            else if (_originalPath.IndexOf("Global") > -1) _type = Enums.SaveFileType.Global;
-            else if (_originalPath.IndexOf("Rating") > -1) _type = Enums.SaveFileType.Rating;
+            if (_filePath.IndexOf("Exchange") > -1) _type = Enums.SaveFileType.Exchange;
+            else if (_filePath.IndexOf("Global") > -1) _type = Enums.SaveFileType.Global;
+            else if (_filePath.IndexOf("Rating") > -1) _type = Enums.SaveFileType.Rating;
             else _type = Enums.SaveFileType.Unknown;
         }
 
         private int GetFileLength()
         {
-            return (int)(new FileInfo(_originalPath).Length);
+            return (int)(new FileInfo(_filePath).Length);
+        }
+
+        #endregion
+
+        #region Write
+
+        /// <summary>
+        /// Write data from this object into the file at _originalPath
+        /// </summary>
+        public void Write()
+        {
+            using (var fs = new FileStream(_filePath, FileMode.Open, FileAccess.ReadWrite))
+            using (var bw = new BinaryWriter(fs))
+            {
+                switch (_type)
+                {
+                    case Enums.SaveFileType.Chapter: WriteChapterFile(bw); break;
+                    case Enums.SaveFileType.Exchange: WriteExchangeFile(bw); break;
+                    case Enums.SaveFileType.Global: WriteGlobalFile(bw); break;
+                    case Enums.SaveFileType.Rating: WriteRatingFile(bw); break;
+                }
+            }
+        }
+
+        private void WriteChapterFile(BinaryWriter bw)
+        {
+            if (_isCompressed)
+            {
+                byte[] raw = DecompressedBytes;
+                bw.Write(raw, 0, 0xC0);
+                bw.Write(0x434F4D50); // "COMP"
+                bw.Write(0x00000002); // Huffman-8 compression
+                bw.Write(raw.Length - 0xC0);
+                bw.Write(GetChecksum(raw));
+                byte[] decompressed = new byte[raw.Length - 0xC0];
+                Array.Copy(raw, 0xC0, decompressed, 0x0, raw.Length - 0xC0);
+                byte[] compressed = new Utils.Huffman8().Compress(decompressed);
+                bw.Write(compressed);
+            }
+            else
+            {
+                bw.Write(DecompressedBytes);
+            }
+        }
+
+        private void WriteExchangeFile(BinaryWriter bw)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void WriteGlobalFile(BinaryWriter bw)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void WriteRatingFile(BinaryWriter bw)
+        {
+            throw new NotImplementedException();
         }
 
         /// <remarks>Taken directly from FEST. "It's just CRC32."</remarks>
@@ -179,5 +223,7 @@ namespace FEFTwiddler.Model
             }
             return ~checksum;
         }
+
+        #endregion
     }
 }

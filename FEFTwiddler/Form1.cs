@@ -6,6 +6,7 @@ namespace FEFTwiddler
 {
     public partial class Form1 : Form
     {
+        private Model.SaveFile _saveFile;
         private Model.ChapterSave _chapterSave;
         private Model.Character _selectedCharacter;
 
@@ -26,7 +27,21 @@ namespace FEFTwiddler
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                _chapterSave = Model.ChapterSave.FromPath(openFileDialog1.FileName);
+                _saveFile = Model.SaveFile.FromPath(openFileDialog1.FileName);
+
+                if (_saveFile.Type != Enums.SaveFileType.Chapter)
+                {
+                    MessageBox.Show("This type of save is not supported yet. Only 'Chapter' saves are supported right now.");
+                    return;
+                }
+                // TODO: Remove this after working out the last issues with compressed saves
+                if (_saveFile.IsCompressed)
+                {
+                    MessageBox.Show("Compressed saves are not supported yet. Please decompress your save using a program like FEST first.");
+                    return;
+                }
+
+                _chapterSave = Model.ChapterSave.FromSaveFile(_saveFile);
 
                 listBox1.DisplayMember = "CharacterID";
                 listBox1.ValueMember = "BinaryPosition"; // Sure, why not

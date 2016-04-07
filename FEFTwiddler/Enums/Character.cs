@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FEFTwiddler.Enums
 {
-    public enum Character : byte
+    public enum Character : ushort
     {
         Corrin_M = 0x01,
         Corrin_F = 0x02,
@@ -265,6 +265,10 @@ namespace FEFTwiddler.Enums
         Marth = 0xFA,
         Ike = 0xFB,
         Lucina = 0xFC,
-        Robin = 0xFD
+        Robin = 0xFD,
+        // Cipher
+        CipherMarth = 0x200,
+        CipherLucina = 0x300,
+        CipherMinerva = 0x400
     }
 }

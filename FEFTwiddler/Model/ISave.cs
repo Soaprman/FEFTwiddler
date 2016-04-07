@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FEFTwiddler.Model
+﻿namespace FEFTwiddler.Model
 {
-    interface ISave
+    public interface ISave
     {
-        void Read(string path);
+        void Read();
         void Write();
     }
 }
