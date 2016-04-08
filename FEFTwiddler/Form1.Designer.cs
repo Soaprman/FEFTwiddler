@@ -163,6 +163,10 @@
             this.btnGiveEternalSeals = new System.Windows.Forms.Button();
             this.btnAllSkillsNoNpc = new System.Windows.Forms.Button();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.numDragonVeinPoints = new System.Windows.Forms.NumericUpDown();
+            this.label16 = new System.Windows.Forms.Label();
+            this.btn99DragonVeinPoints = new System.Windows.Forms.Button();
+            
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -239,6 +243,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numDragonVeinPoints)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -298,6 +303,9 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.btn99DragonVeinPoints);
+            this.tabPage3.Controls.Add(this.label16);
+            this.tabPage3.Controls.Add(this.numDragonVeinPoints);
             this.tabPage3.Controls.Add(this.label13);
             this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Controls.Add(this.btn9999VisitPoints);
@@ -1799,6 +1807,38 @@
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
+            // numDragonVeinPoints
+            // 
+            this.numDragonVeinPoints.Location = new System.Drawing.Point(114, 88);
+            this.numDragonVeinPoints.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.numDragonVeinPoints.Name = "numDragonVeinPoints";
+            this.numDragonVeinPoints.Size = new System.Drawing.Size(50, 20);
+            this.numDragonVeinPoints.TabIndex = 57;
+            this.numDragonVeinPoints.ValueChanged += new System.EventHandler(this.numDragonVeinPoints_ValueChanged);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(7, 90);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(101, 13);
+            this.label16.TabIndex = 58;
+            this.label16.Text = "Dragon Vein Points:";
+            // 
+            // btn99DragonVeinPoints
+            // 
+            this.btn99DragonVeinPoints.Location = new System.Drawing.Point(171, 85);
+            this.btn99DragonVeinPoints.Name = "btn99DragonVeinPoints";
+            this.btn99DragonVeinPoints.Size = new System.Drawing.Size(75, 23);
+            this.btn99DragonVeinPoints.TabIndex = 59;
+            this.btn99DragonVeinPoints.Text = "99";
+            this.btn99DragonVeinPoints.UseVisualStyleBackColor = true;
+            this.btn99DragonVeinPoints.Click += new System.EventHandler(this.btn99DragonVeinPoints_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1889,6 +1929,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numDragonVeinPoints)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2029,6 +2070,9 @@
         private System.Windows.Forms.TextBox txtStatBytes;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button btn99DragonVeinPoints;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.NumericUpDown numDragonVeinPoints;
     }
 }
 

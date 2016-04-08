@@ -51,6 +51,8 @@ namespace FEFTwiddler.Model
         public Enums.Difficulty Difficulty { get; set; }
         public Enums.Ruleset Ruleset { get; set; }
 
+        public ushort DragonVeinPoint { get; set; }
+
         public byte MaterialQuantity_Crystal { get; set; }
         public byte MaterialQuantity_Ruby { get; set; }
         public byte MaterialQuantity_Sapphire { get; set; }
@@ -630,7 +632,15 @@ namespace FEFTwiddler.Model
             br.ReadBytes(0x20);
 
             // Stuff
-            br.ReadBytes(0x19D);
+            br.ReadBytes(0x19);
+
+            // Dragon Vein point
+            chunk = new byte[0x2];
+            br.Read(chunk, 0, 0x2);
+            DragonVeinPoint = (ushort)((chunk[1] << 8) | chunk[0]);
+
+            // Stuff
+            br.ReadBytes(0x182);
 
             // Materials
             chunk = new byte[0x16];
@@ -714,7 +724,14 @@ namespace FEFTwiddler.Model
             bw.BaseStream.Seek(0x20, SeekOrigin.Current);
 
             // Stuff
-            bw.BaseStream.Seek(0x19D, SeekOrigin.Current);
+            bw.BaseStream.Seek(0x19, SeekOrigin.Current);
+
+            // Dragon Vein point
+            chunk = new byte[] { (byte)(DragonVeinPoint & 0xFF), (byte)(DragonVeinPoint >> 8) };
+            bw.BaseStream.Write(chunk, 0, 0x2);
+
+            // Stuff
+            bw.BaseStream.Seek(0x182, SeekOrigin.Current);
 
             // Materials
             chunk = new byte[] {
