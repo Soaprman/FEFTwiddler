@@ -365,11 +365,6 @@ namespace FEFTwiddler.Model
             chunk = new byte[5];
             br.Read(chunk, 0, 5);
 
-            if (character.CharacterID == Enums.Character.ShrineMaiden)
-            {
-                var breakpoint = true;
-            }
-
             character.IsDead = chunk[0] == 0x18; // Scarlet
             character.IsEinherjar = (chunk[3] & 0x08) == 0x08;
             //character.IsEinherjar = chunk[1] == 0x01; // Quatro, generic einherjar
