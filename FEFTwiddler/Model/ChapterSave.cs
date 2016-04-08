@@ -319,8 +319,30 @@ namespace FEFTwiddler.Model
             character.ClassID = (Enums.Class)chunk[6];
             character.Unknown011 = chunk[7];
 
-            // TODO
-            br.ReadBytes(46);
+            // Some bytes
+            chunk = new byte[2];
+            br.Read(chunk, 0, 2);
+            character.UnknownBytesBeforeStatBytes1 = chunk;
+
+            // Some bytes
+            chunk = new byte[12];
+            br.Read(chunk, 0, 12);
+            character.UnknownBytesBeforeStatBytes2 = chunk;
+
+            // Stat bytes 1
+            chunk = new byte[8];
+            br.Read(chunk, 0, 8);
+            character.StatBytes1 = chunk;
+
+            // Some bytes
+            chunk = new byte[16];
+            br.Read(chunk, 0, 16);
+            character.UnknownBytesBetweenStatBytes = chunk;
+
+            // Stat bytes 2
+            chunk = new byte[8];
+            br.Read(chunk, 0, 8);
+            character.StatBytes2 = chunk;
 
             // Weapon exp and HP
             chunk = new byte[9];

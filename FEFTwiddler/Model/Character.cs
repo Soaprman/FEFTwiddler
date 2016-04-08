@@ -18,6 +18,12 @@ namespace FEFTwiddler.Model
         public Enums.Class ClassID { get; set; }
         public byte Unknown011 { get; set; }
 
+        public byte[] UnknownBytesBeforeStatBytes1 { get; set; }
+        public byte[] UnknownBytesBeforeStatBytes2 { get; set; }
+        public byte[] StatBytes1 { get; set; }
+        public byte[] UnknownBytesBetweenStatBytes { get; set; }
+        public byte[] StatBytes2 { get; set; }
+
         public static byte MaxWeaponExperience = 0xFB;
         public byte WeaponExperience_Sword { get; set; }
         public byte WeaponExperience_Lance { get; set; }

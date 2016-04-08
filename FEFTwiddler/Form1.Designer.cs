@@ -36,6 +36,8 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.btn9999VisitPoints = new System.Windows.Forms.Button();
             this.btn9999BattlePoints = new System.Windows.Forms.Button();
             this.numVisitPoints = new System.Windows.Forms.NumericUpDown();
@@ -157,8 +159,9 @@
             this.btnGiveEternalSeals = new System.Windows.Forms.Button();
             this.btnAllSkillsNoNpc = new System.Windows.Forms.Button();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.txtStatBytes = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -358,6 +361,26 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Chapter Data";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(6, 181);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(263, 13);
+            this.label13.TabIndex = 56;
+            this.label13.Text = "After that, the values will revert to what\'s stored online.";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(6, 166);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(232, 13);
+            this.label12.TabIndex = 55;
+            this.label12.Text = "These will last until you update your castle data.";
             // 
             // btn9999VisitPoints
             // 
@@ -951,6 +974,9 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.txtStatBytes);
             this.panel1.Controls.Add(this.lblInventory5);
             this.panel1.Controls.Add(this.lblInventory4);
             this.panel1.Controls.Add(this.lblInventory3);
@@ -1738,25 +1764,34 @@
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
-            // label12
+            // txtStatBytes
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(6, 166);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(232, 13);
-            this.label12.TabIndex = 55;
-            this.label12.Text = "These will last until you update your castle data.";
+            this.txtStatBytes.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStatBytes.Location = new System.Drawing.Point(8, 59);
+            this.txtStatBytes.Multiline = true;
+            this.txtStatBytes.Name = "txtStatBytes";
+            this.txtStatBytes.Size = new System.Drawing.Size(192, 34);
+            this.txtStatBytes.TabIndex = 58;
+            this.txtStatBytes.Text = "Stats";
             // 
-            // label13
+            // label14
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(6, 181);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(263, 13);
-            this.label13.TabIndex = 56;
-            this.label13.Text = "After that, the values will revert to what\'s stored online.";
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(5, 43);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(57, 13);
+            this.label14.TabIndex = 59;
+            this.label14.Text = "Stat bytes:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(96, 43);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(104, 13);
+            this.label15.TabIndex = 60;
+            this.label15.Text = "(Edits are not saved)";
             // 
             // Form1
             // 
@@ -1984,6 +2019,9 @@
         private System.Windows.Forms.Button btn9999BattlePoints;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtStatBytes;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
     }
 }
 

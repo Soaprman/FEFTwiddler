@@ -179,6 +179,8 @@ namespace FEFTwiddler
             lblInventory4.Text = GetItemString(character.Item_4);
             lblInventory5.Text = GetItemString(character.Item_5);
 
+            txtStatBytes.Text = GetStatBytesString(character);
+
             //EnableControls();
         }
 
@@ -204,6 +206,17 @@ namespace FEFTwiddler
             var img = Properties.Resources.ResourceManager.GetObject("fe15skill_" + id);
 
             return (Bitmap)img;
+        }
+
+        private string GetStatBytesString(Model.Character character)
+        {
+            var str = "";
+
+            str += BitConverter.ToString(character.StatBytes1);
+            str += Environment.NewLine;
+            str += BitConverter.ToString(character.StatBytes2);
+
+            return str;
         }
 
         private void EnableControls()
