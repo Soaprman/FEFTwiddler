@@ -9,7 +9,7 @@ namespace FEFTwiddler.Model
     /// <summary>
     /// A Fire Emblem Fates "Chapter" save
     /// </summary>
-    class ChapterSave : ISave
+    public class ChapterSave : ISave
     {
         #region Member variables
 

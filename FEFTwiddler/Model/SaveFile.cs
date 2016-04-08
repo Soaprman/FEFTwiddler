@@ -11,24 +11,28 @@ namespace FEFTwiddler.Model
     {
         #region Members and Properties
 
-        private string _filePath;
+        protected string _filePath;
 
-        private Enums.SaveFileType _type;
+        protected Enums.SaveFileType _type;
         public Enums.SaveFileType Type
         {
             get { return _type; }
         }
 
-        bool _isCompressed;
+        protected bool _isCompressed;
         public bool IsCompressed
         {
             get { return _isCompressed; }
         }
 
-        public byte[] DecompressedBytes;
+        protected byte[] _decompressedBytes;
+        public byte[] DecompressedBytes
+        {
+            get { return _decompressedBytes;  }
+        }
 
-        private byte[] _compMarker = new byte[] { 0x50, 0x4D, 0x4F, 0x43 }; // COMP backwards
-        private byte[] _indeMarker = new byte[] { 0x45, 0x44, 0x4E, 0x49 }; // INDE backwards
+        protected byte[] _compMarker = new byte[] { 0x50, 0x4D, 0x4F, 0x43 }; // COMP backwards
+        protected byte[] _indeMarker = new byte[] { 0x45, 0x44, 0x4E, 0x49 }; // INDE backwards
 
         #endregion
 
@@ -50,7 +54,7 @@ namespace FEFTwiddler.Model
         /// <summary>
         /// Read data into this object from the file at _originalPath
         /// </summary>
-        public void Read()
+        public virtual void Read()
         {
             byte[] chunk;
             int length = GetFileLength();
@@ -70,7 +74,7 @@ namespace FEFTwiddler.Model
                     br.BaseStream.Seek(0, SeekOrigin.Begin);
                     byte[] compressedBytes = new byte[length];
                     br.Read(compressedBytes, 0, length);
-                    DecompressedBytes = new Utils.Huffman8().Decompress(compressedBytes);
+                    _decompressedBytes = new Utils.Huffman8().Decompress(compressedBytes);
 
                     return;
                 }
@@ -80,8 +84,8 @@ namespace FEFTwiddler.Model
                     SetNonChapterType();
 
                     br.BaseStream.Seek(0, SeekOrigin.Begin);
-                    DecompressedBytes = new byte[length];
-                    br.Read(DecompressedBytes, 0, length);
+                    _decompressedBytes = new byte[length];
+                    br.Read(_decompressedBytes, 0, length);
 
                     return;
                 }
@@ -106,7 +110,7 @@ namespace FEFTwiddler.Model
 
                     byte[] decompressedBytes = new Utils.Huffman8().Decompress(compressedBytes);
 
-                    DecompressedBytes = header.Concat(decompressedBytes).ToArray();
+                    _decompressedBytes = header.Concat(decompressedBytes).ToArray();
 
                     return;
                 }
@@ -116,8 +120,8 @@ namespace FEFTwiddler.Model
                     _type = Enums.SaveFileType.Chapter;
 
                     br.BaseStream.Seek(0, SeekOrigin.Begin);
-                    DecompressedBytes = new byte[length];
-                    br.Read(DecompressedBytes, 0, length);
+                    _decompressedBytes = new byte[length];
+                    br.Read(_decompressedBytes, 0, length);
 
                     return;
                 }
@@ -147,7 +151,7 @@ namespace FEFTwiddler.Model
         /// <summary>
         /// Write data from this object into the file at _originalPath
         /// </summary>
-        public void Write()
+        public virtual void Write()
         {
             using (var fs = new FileStream(_filePath, FileMode.Open, FileAccess.ReadWrite))
             using (var bw = new BinaryWriter(fs))
