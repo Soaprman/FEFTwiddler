@@ -20,9 +20,9 @@ namespace FEFTwiddler.Model
         /// <summary>Hex: 0x52455355 / Text: RESU</summary>
         private byte[] _userMarker = new byte[] { 0x52, 0x45, 0x53, 0x55 };
         private long _userOffset;
-        /// <summary>Hex: 0xFFFFFFFF / Text: ÿÿÿÿ</summary>
-        /// <remarks>Yeah, that's a super suspect marker. It's the first FFFFFFFF in the file though. I hope.</remarks>
-        private byte[] _fileDataMarker = new byte[] { 0xFF, 0xFF, 0xFF, 0xFF };
+        /// <summary>Hex: 0x30000000FFFF / Text: 0...ÿÿ</summary>
+        /// <remarks>This is some hacky shit right here. It sure would be nice to figure out the size of the USER block...</remarks>
+        private byte[] _fileDataMarker = new byte[] { 0x30, 0x00, 0x00, 0x00, 0xFF, 0xFF };
         private long _fileDataOffset;
         /// <summary>Hex: 0x504F4853 / Text: POHS</summary>
         private byte[] _shopMarker = new byte[] { 0x50, 0x4F, 0x48, 0x53 };
@@ -201,7 +201,7 @@ namespace FEFTwiddler.Model
             byte[] chunk;
 
             // Stuff
-            br.ReadBytes(0x02);
+            br.ReadBytes(0x04);
 
             // Ruleset
             chunk = new byte[1];
