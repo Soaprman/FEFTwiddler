@@ -237,7 +237,7 @@ namespace FEFTwiddler.Model
             bw.BaseStream.Seek(_fileDataOffset, SeekOrigin.Begin);
 
             // Stuff
-            bw.BaseStream.Seek(0x02, SeekOrigin.Current);
+            bw.BaseStream.Seek(0x04, SeekOrigin.Current);
 
             // Ruleset
             bw.BaseStream.Seek(0x01, SeekOrigin.Current);
