@@ -418,5 +418,10 @@ namespace FEFTwiddler
         {
             _chapterSave.VisitPoints = (uint)numVisitPoints.Value;
         }
+
+        private void tabPage1_Enter(object sender, EventArgs e)
+        {
+            LoadCharacter(_selectedCharacter);
+        }
     }
 }

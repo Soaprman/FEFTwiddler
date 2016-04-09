@@ -95,6 +95,9 @@
             this.numCrystal = new System.Windows.Forms.NumericUpDown();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtStatBytes = new System.Windows.Forms.TextBox();
             this.lblInventory5 = new System.Windows.Forms.Label();
             this.lblInventory4 = new System.Windows.Forms.Label();
             this.lblInventory3 = new System.Windows.Forms.Label();
@@ -159,9 +162,6 @@
             this.btnGiveEternalSeals = new System.Windows.Forms.Button();
             this.btnAllSkillsNoNpc = new System.Windows.Forms.Button();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.txtStatBytes = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -970,6 +970,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Character Viewer";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Enter += new System.EventHandler(this.tabPage1_Enter);
             // 
             // panel1
             // 
@@ -1039,6 +1040,35 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(367, 485);
             this.panel1.TabIndex = 1;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(96, 43);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(104, 13);
+            this.label15.TabIndex = 60;
+            this.label15.Text = "(Edits are not saved)";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(5, 43);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(57, 13);
+            this.label14.TabIndex = 59;
+            this.label14.Text = "Stat bytes:";
+            // 
+            // txtStatBytes
+            // 
+            this.txtStatBytes.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStatBytes.Location = new System.Drawing.Point(8, 59);
+            this.txtStatBytes.Multiline = true;
+            this.txtStatBytes.Name = "txtStatBytes";
+            this.txtStatBytes.Size = new System.Drawing.Size(192, 34);
+            this.txtStatBytes.TabIndex = 58;
+            this.txtStatBytes.Text = "Stats";
             // 
             // lblInventory5
             // 
@@ -1763,35 +1793,6 @@
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
-            // 
-            // txtStatBytes
-            // 
-            this.txtStatBytes.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStatBytes.Location = new System.Drawing.Point(8, 59);
-            this.txtStatBytes.Multiline = true;
-            this.txtStatBytes.Name = "txtStatBytes";
-            this.txtStatBytes.Size = new System.Drawing.Size(192, 34);
-            this.txtStatBytes.TabIndex = 58;
-            this.txtStatBytes.Text = "Stats";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(5, 43);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(57, 13);
-            this.label14.TabIndex = 59;
-            this.label14.Text = "Stat bytes:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(96, 43);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(104, 13);
-            this.label15.TabIndex = 60;
-            this.label15.Text = "(Edits are not saved)";
             // 
             // Form1
             // 
