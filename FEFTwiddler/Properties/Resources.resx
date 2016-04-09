@@ -220,4 +220,685 @@
   <data name="Other_recruited" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Images\OtherIcons\Other_recruited.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Skill_001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_003" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_003.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_004" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_004.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_005" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_005.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_006" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_006.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_007" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_007.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_008" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_008.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_009" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_009.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_010" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_010.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_011" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_011.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_012" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_012.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_013" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_013.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_014" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_014.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_015" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_015.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_016" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_016.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_017" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_017.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_018" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_018.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_019" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_019.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_020" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_020.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_021" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_021.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_022" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_022.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_023" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_023.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_024" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_024.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_025" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_025.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_026" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_026.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_027" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_027.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_028" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_028.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_029" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_029.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_030" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_030.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_031" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_031.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_032" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_032.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_033" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_033.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_034" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_034.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_035" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_035.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_036" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_036.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_037" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_037.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_038" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_038.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_039" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_039.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_040" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_040.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_041" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_041.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_042" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_042.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_043" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_043.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_044" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_044.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_045" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_045.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_046" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_046.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_047" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_047.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_048" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_048.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_049" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_049.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_050" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_050.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_051" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_051.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_052" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_052.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_053" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_053.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_054" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_054.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_055" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_055.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_056" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_056.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_057" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_057.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_058" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_058.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_059" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_059.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_060" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_060.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_061" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_061.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_062" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_062.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_063" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_063.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_064" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_064.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_065" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_065.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_066" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_066.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_067" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_067.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_068" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_068.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_069" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_069.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_070" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_070.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_071" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_071.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_072" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_072.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_073" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_073.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_074" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_074.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_075" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_075.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_076" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_076.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_077" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_077.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_078" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_078.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_079" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_079.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_080" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_080.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_081" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_081.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_082" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_082.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_083" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_083.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_084" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_084.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_085" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_085.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_086" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_086.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_087" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_087.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_088" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_088.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_089" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_089.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_090" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_090.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_091" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_091.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_092" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_092.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_093" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_093.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_094" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_094.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_095" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_095.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_096" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_096.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_097" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_097.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_098" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_098.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_099" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_099.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_101" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_101.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_102" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_102.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_103" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_103.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_104" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_104.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_105" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_105.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_106" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_106.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_107" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_107.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_108" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_108.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_109" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_109.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_110" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_110.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_112" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_112.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_114" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_114.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_115" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_115.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_116" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_116.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_117" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_117.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_118" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_118.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_119" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_119.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_120" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_120.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_123" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_123.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_124" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_124.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_125" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_125.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_126" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_126.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_127" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_127.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_129" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_129.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_130" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_130.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_131" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_131.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_132" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_132.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_133" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_133.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_134" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_134.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_135" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_135.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_136" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_136.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_137" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_137.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_138" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_138.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_139" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_139.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_140" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_140.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_141" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_141.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_142" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_142.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_143" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_143.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_144" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_144.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_145" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_145.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_146" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_146.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_147" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_147.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_148" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_148.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_149" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_149.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_150" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_150.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_151" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_151.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_152" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_152.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_153" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_153.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_154" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_154.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_155" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_155.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_156" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_156.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_157" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_157.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_158" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_158.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_159" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_159.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_160" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_160.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_162" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_162.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_163" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_163.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_164" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_164.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_165" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_165.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_166" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_166.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_167" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_167.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_168" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_168.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_169" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_169.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_170" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_170.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_171" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_172" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_172.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_173" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_173.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_174" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_174.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_175" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_175.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_176" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_176.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_177" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_177.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_178" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_178.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_179" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_179.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_181" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_181.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_182" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_182.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_183" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_183.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_184" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_184.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_185" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_185.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_186" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_186.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_187" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_187.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_188" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_188.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_189" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_189.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_190" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_190.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_191" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_191.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_192" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_192.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_193" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_193.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_194" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_194.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_195" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_195.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_196" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_196.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_197" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_197.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_198" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_198.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_199" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_199.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_201.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_202" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_202.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_203" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_203.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_204" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_204.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_205" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_205.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_206" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_206.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_207" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_207.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_208" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_208.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_209" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_209.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_210" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_210.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_211" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_211.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_212" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_212.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_213" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_213.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_214" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_214.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_215" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_215.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_216" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_216.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_217" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_217.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_218" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_218.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_219" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_219.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_220" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_220.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_221" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_221.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_222" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_222.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_223" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_223.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_224" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_224.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_225" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_225.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_226" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_226.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_227" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_227.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_228" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\SkillIcons\Skill_228.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
