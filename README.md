@@ -2,16 +2,16 @@
 A feature-light work-in-progress save editor for Fire Emblem Fates
 
 What this does:
-* Opens a decompressed save
+* Opens a "chapter" save
 * Shows a few things
-* Lets you apply some cheats
+* Lets you apply some cheats or make some changes
 * Lets you save changes to the file you opened
 
 How to use:
 * Backup your save. You'll need homebrew and svdt or some other save manager. Also if you're on the digital version, you need CFW I think because of newer save encryption.
 * Copy your save to your computer.
 * MAKE A BACKUP OF YOUR SAVE IN CASE ANYTHING GOES WRONG.
-* Decompress it using FEST, available here: https://github.com/RainThunder/FEST
+* (Optionally) Decompress it using FEST, available here: https://github.com/RainThunder/FEST
 * File > Open
 * Click cheat buttons
 * File > Save
@@ -23,6 +23,8 @@ Special thanks:
 * RainThunder for making FEST https://github.com/RainThunder/FEST
 * Also RainThunder for making the convoy editor, which I drew some inspiration from https://github.com/RainThunder/Fire-Emblem-Fates-Convoy-Editor
 * Various posters (KuroKairaku, TheGrandGander, probably others) in the threads about this game on Serenesforest.net and Gbatemp.net for a few hex offsets that were tricky to find on my own
+* Other Serenesforest posters (EldinTokuro, 9Hopper) for reporting bugs and giving me their saves to test with
+* RainThunder and rilne for contributing bug fixes
 * Whoever ripped the skill icon graphics and whoever put them onto the Serenesforest.net website. Thanks for using the IDs in the file names, by the way. That made my life a little easier!
 * Whoever compiled these ID lists: https://docs.google.com/spreadsheets/d/1Bem9eu9IAEBm7d6PBZhtddDnDUnLpdoZ7ddenFSURmw/edit?pref=2&pli=1#gid=1077677946 https://docs.google.com/spreadsheets/d/1HAdsxVVxNKaxu90Lnb4WfWM-HH2TFLfNFQzsYwIDmKs/edit?pref=2&pli=1#gid=0
 * I think that's it? I hope I didn't forget anyone!
