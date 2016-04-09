@@ -307,7 +307,11 @@ namespace FEFTwiddler.Model
             character.BinaryPosition = br.BaseStream.Position;
 
             // TODO
-            br.ReadBytes(9);
+            br.ReadBytes(1);
+
+            // Read flags
+            byte[] flags = new byte[8];
+            br.Read(flags, 0, 8);
 
             // Character main data
             chunk = new byte[8];
@@ -315,11 +319,20 @@ namespace FEFTwiddler.Model
 
             character.Level = chunk[0];
             character.Experience = chunk[1];
-            character.Unknown00C = chunk[2];
+            character.InternalLevel = chunk[2];
             character.EternalSealsUsed = chunk[3];
             character.CharacterID = (Enums.Character)(ushort)(chunk[4] + chunk[5] * 0x100);
             character.ClassID = (Enums.Class)chunk[6];
             character.Unknown011 = chunk[7];
+
+            // Process flags
+            // character._IsCorrin = (chunk[0] & 0x01) == 0x01;
+            character.IsManakete = Model.Character.IsCorrin(character.CharacterID) ||
+                ((flags[2] & 0x80) == 0x80);
+            character.IsBeast = Model.Character.IsBeastCharacter(character.CharacterID) ||
+                (flags[3] & 0x01) == 0x01;
+            character.CanUseDragonVein = Model.Character.IsRoyal(character.CharacterID) ||
+                ((flags[4] & 0x08) == 0x08);
 
             // Some bytes
             chunk = new byte[2];
@@ -502,13 +515,31 @@ namespace FEFTwiddler.Model
             bw.BaseStream.Seek(character.BinaryPosition, SeekOrigin.Begin);
 
             // TODO
-            bw.BaseStream.Seek(9, SeekOrigin.Current);
+            bw.BaseStream.Seek(1, SeekOrigin.Current);
+
+            // Flags
+            chunk = new byte[8];
+            bw.BaseStream.Read(chunk, 0, 8);
+            if (character.IsManakete && !Model.Character.IsCorrin(character.CharacterID))
+                chunk[2] |= 0x80;
+            else
+                chunk[2] &= 0x7F;
+            if (character.IsBeast && !Model.Character.IsBeastCharacter(character.CharacterID))
+                chunk[3] |= 0x01;
+            else
+                chunk[3] &= 0xFE;
+            if (character.CanUseDragonVein && !Model.Character.IsRoyal(character.CharacterID))
+                chunk[4] |= 0x08;
+            else
+                chunk[4] &= 0xF7;
+            bw.BaseStream.Seek(-8, SeekOrigin.Current);
+            bw.BaseStream.Write(chunk, 0, 8);
 
             // Character main data
             chunk = new byte[] {
                 character.Level,
                 character.Experience,
-                character.Unknown00C,
+                character.InternalLevel,
                 character.EternalSealsUsed,
                 (byte)((ushort)character.CharacterID & 0xFF),
                 (byte)(((ushort)character.CharacterID >> 8) & 0xFF),
