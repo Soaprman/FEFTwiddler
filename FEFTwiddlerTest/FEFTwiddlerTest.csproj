@@ -67,11 +67,14 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\TestSaves\Chapter\9Hopper_Chapter1_dec" />
-    <None Include="Resources\TestSaves\Chapter\EldinTokuro_Chapter0_dec" />
-    <None Include="Resources\TestSaves\Chapter\Soap_027_Chapter0_dec" />
-    <None Include="Resources\TestSaves\Chapter\Soap_027_Chapter1_dec" />
-    <None Include="Resources\TestSaves\Chapter\Soap_027_Chapter2_dec" />
+    <None Include="Resources\TestSaves\Chapter\Decompressed\9Hopper_Chapter1_dec" />
+    <None Include="Resources\TestSaves\Chapter\Decompressed\EldinTokuro_Chapter0_dec" />
+    <None Include="Resources\TestSaves\Chapter\Decompressed\Soap_027_Chapter0_dec" />
+    <None Include="Resources\TestSaves\Chapter\Decompressed\Soap_027_Chapter1_dec" />
+    <None Include="Resources\TestSaves\Chapter\Decompressed\Soap_027_Chapter2_dec" />
+    <None Include="Resources\TestSaves\Chapter\Compressed\Soap_027_Chapter0" />
+    <None Include="Resources\TestSaves\Chapter\Compressed\Soap_027_Chapter1" />
+    <None Include="Resources\TestSaves\Chapter\Compressed\Soap_027_Chapter2" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
@@ -95,6 +98,9 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>XCOPY "$(ProjectDir)Resources\TestSaves" "$(TargetDir)\TestSaves" /S /Y /i</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>DEL /s /f /q "$(TargetDir)\TestSaves"</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

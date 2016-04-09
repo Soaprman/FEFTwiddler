@@ -34,12 +34,6 @@ namespace FEFTwiddler
                     MessageBox.Show("This type of save is not supported yet. Only 'Chapter' saves are supported right now.");
                     return;
                 }
-                // TODO: Remove this after working out the last issues with compressed saves
-                if (_saveFile.IsCompressed)
-                {
-                    MessageBox.Show("Compressed saves are not supported yet. Please decompress your save using a program like FEST first.");
-                    return;
-                }
 
                 _chapterSave = Model.ChapterSave.FromSaveFile(_saveFile);
 
