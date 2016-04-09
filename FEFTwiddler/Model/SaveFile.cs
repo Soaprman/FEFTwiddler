@@ -150,7 +150,7 @@ namespace FEFTwiddler.Model
         #region Write
 
         /// <summary>
-        /// Write data from this object into the file at _originalPath
+        /// Write data from this object into the file at _filePath
         /// </summary>
         public virtual void Write()
         {
