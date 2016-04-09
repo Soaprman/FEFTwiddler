@@ -143,15 +143,15 @@ namespace FEFTwiddler
             chkRecruited.Checked = character.IsRecruited;
 
             cmbSkill1.Text = character.EquippedSkill_1.ToString();
-            pictSkill1.Image = GetSkillImage(character.EquippedSkill_1);
+            //pictSkill1.Image = GetSkillImage(character.EquippedSkill_1);
             cmbSkill2.Text = character.EquippedSkill_2.ToString();
-            pictSkill2.Image = GetSkillImage(character.EquippedSkill_2);
+            //pictSkill2.Image = GetSkillImage(character.EquippedSkill_2);
             cmbSkill3.Text = character.EquippedSkill_3.ToString();
-            pictSkill3.Image = GetSkillImage(character.EquippedSkill_3);
+            //pictSkill3.Image = GetSkillImage(character.EquippedSkill_3);
             cmbSkill4.Text = character.EquippedSkill_4.ToString();
-            pictSkill4.Image = GetSkillImage(character.EquippedSkill_4);
+            //pictSkill4.Image = GetSkillImage(character.EquippedSkill_4);
             cmbSkill5.Text = character.EquippedSkill_5.ToString();
-            pictSkill5.Image = GetSkillImage(character.EquippedSkill_5);
+            //pictSkill5.Image = GetSkillImage(character.EquippedSkill_5);
 
             cmbHeadwear.Text = character.Headwear.ToString();
             cmbFacewear.Text = character.Facewear.ToString();
