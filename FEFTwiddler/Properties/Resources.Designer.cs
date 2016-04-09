@@ -61,96 +61,6 @@ namespace FEFTwiddler.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap amber {
-            get {
-                object obj = ResourceManager.GetObject("amber", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap axe {
-            get {
-                object obj = ResourceManager.GetObject("axe", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap beans {
-            get {
-                object obj = ResourceManager.GetObject("beans", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap berries {
-            get {
-                object obj = ResourceManager.GetObject("berries", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap bow {
-            get {
-                object obj = ResourceManager.GetObject("bow", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap cabbage {
-            get {
-                object obj = ResourceManager.GetObject("cabbage", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap coral {
-            get {
-                object obj = ResourceManager.GetObject("coral", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap crystal {
-            get {
-                object obj = ResourceManager.GetObject("crystal", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap daikon {
-            get {
-                object obj = ResourceManager.GetObject("daikon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;root&gt;
         ///  &lt;item id=&quot;0&quot; name=&quot;None&quot; displayName=&quot;(None)&quot; type=&quot;Unknown&quot; maxUses=&quot;&quot; /&gt;
@@ -167,26 +77,6 @@ namespace FEFTwiddler.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap einherjar {
-            get {
-                object obj = ResourceManager.GetObject("einherjar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap emerald {
-            get {
-                object obj = ResourceManager.GetObject("emerald", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon FEFTwiddler {
@@ -199,9 +89,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fish {
+        internal static System.Drawing.Bitmap Material_amber {
             get {
-                object obj = ResourceManager.GetObject("fish", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_amber", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -209,9 +99,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap jade {
+        internal static System.Drawing.Bitmap Material_beans {
             get {
-                object obj = ResourceManager.GetObject("jade", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_beans", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -219,9 +109,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap lance {
+        internal static System.Drawing.Bitmap Material_berries {
             get {
-                object obj = ResourceManager.GetObject("lance", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_berries", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -229,9 +119,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap lapis {
+        internal static System.Drawing.Bitmap Material_cabbage {
             get {
-                object obj = ResourceManager.GetObject("lapis", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_cabbage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -239,9 +129,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap meat {
+        internal static System.Drawing.Bitmap Material_coral {
             get {
-                object obj = ResourceManager.GetObject("meat", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_coral", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -249,9 +139,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap milk {
+        internal static System.Drawing.Bitmap Material_crystal {
             get {
-                object obj = ResourceManager.GetObject("milk", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_crystal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -259,9 +149,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap onyx {
+        internal static System.Drawing.Bitmap Material_daikon {
             get {
-                object obj = ResourceManager.GetObject("onyx", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_daikon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -269,9 +159,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap peaches {
+        internal static System.Drawing.Bitmap Material_emerald {
             get {
-                object obj = ResourceManager.GetObject("peaches", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_emerald", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -279,9 +169,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pearl {
+        internal static System.Drawing.Bitmap Material_fish {
             get {
-                object obj = ResourceManager.GetObject("pearl", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_fish", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -289,9 +179,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quartz {
+        internal static System.Drawing.Bitmap Material_jade {
             get {
-                object obj = ResourceManager.GetObject("quartz", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_jade", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -299,9 +189,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap recruited {
+        internal static System.Drawing.Bitmap Material_lapis {
             get {
-                object obj = ResourceManager.GetObject("recruited", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_lapis", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -309,9 +199,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rice {
+        internal static System.Drawing.Bitmap Material_meat {
             get {
-                object obj = ResourceManager.GetObject("rice", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_meat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -319,9 +209,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ruby {
+        internal static System.Drawing.Bitmap Material_milk {
             get {
-                object obj = ResourceManager.GetObject("ruby", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_milk", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -329,9 +219,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap sapphire {
+        internal static System.Drawing.Bitmap Material_onyx {
             get {
-                object obj = ResourceManager.GetObject("sapphire", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_onyx", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -339,9 +229,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap shuriken {
+        internal static System.Drawing.Bitmap Material_peaches {
             get {
-                object obj = ResourceManager.GetObject("shuriken", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_peaches", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -349,9 +239,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap staff {
+        internal static System.Drawing.Bitmap Material_pearl {
             get {
-                object obj = ResourceManager.GetObject("staff", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_pearl", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -359,9 +249,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap stone {
+        internal static System.Drawing.Bitmap Material_quartz {
             get {
-                object obj = ResourceManager.GetObject("stone", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_quartz", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -369,9 +259,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap sword {
+        internal static System.Drawing.Bitmap Material_rice {
             get {
-                object obj = ResourceManager.GetObject("sword", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_rice", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -379,9 +269,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tome {
+        internal static System.Drawing.Bitmap Material_ruby {
             get {
-                object obj = ResourceManager.GetObject("tome", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_ruby", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -389,9 +279,9 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap topaz {
+        internal static System.Drawing.Bitmap Material_sapphire {
             get {
-                object obj = ResourceManager.GetObject("topaz", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_sapphire", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -399,9 +289,119 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap wheat {
+        internal static System.Drawing.Bitmap Material_topaz {
             get {
-                object obj = ResourceManager.GetObject("wheat", resourceCulture);
+                object obj = ResourceManager.GetObject("Material_topaz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Material_wheat {
+            get {
+                object obj = ResourceManager.GetObject("Material_wheat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Other_einherjar {
+            get {
+                object obj = ResourceManager.GetObject("Other_einherjar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Other_recruited {
+            get {
+                object obj = ResourceManager.GetObject("Other_recruited", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WeaponExp_axe {
+            get {
+                object obj = ResourceManager.GetObject("WeaponExp_axe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WeaponExp_bow {
+            get {
+                object obj = ResourceManager.GetObject("WeaponExp_bow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WeaponExp_lance {
+            get {
+                object obj = ResourceManager.GetObject("WeaponExp_lance", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WeaponExp_shuriken {
+            get {
+                object obj = ResourceManager.GetObject("WeaponExp_shuriken", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WeaponExp_staff {
+            get {
+                object obj = ResourceManager.GetObject("WeaponExp_staff", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WeaponExp_stone {
+            get {
+                object obj = ResourceManager.GetObject("WeaponExp_stone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WeaponExp_sword {
+            get {
+                object obj = ResourceManager.GetObject("WeaponExp_sword", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WeaponExp_tome {
+            get {
+                object obj = ResourceManager.GetObject("WeaponExp_tome", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

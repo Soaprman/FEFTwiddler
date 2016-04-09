@@ -504,7 +504,7 @@
             // 
             // pictureBox12
             // 
-            this.pictureBox12.Image = global::FEFTwiddler.Properties.Resources.rice;
+            this.pictureBox12.Image = global::FEFTwiddler.Properties.Resources.Material_rice;
             this.pictureBox12.Location = new System.Drawing.Point(418, 282);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(16, 16);
@@ -513,7 +513,7 @@
             // 
             // pictureBox13
             // 
-            this.pictureBox13.Image = global::FEFTwiddler.Properties.Resources.peaches;
+            this.pictureBox13.Image = global::FEFTwiddler.Properties.Resources.Material_peaches;
             this.pictureBox13.Location = new System.Drawing.Point(418, 256);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(16, 16);
@@ -522,7 +522,7 @@
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Image = global::FEFTwiddler.Properties.Resources.daikon;
+            this.pictureBox14.Image = global::FEFTwiddler.Properties.Resources.Material_daikon;
             this.pictureBox14.Location = new System.Drawing.Point(418, 230);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(16, 16);
@@ -531,7 +531,7 @@
             // 
             // pictureBox15
             // 
-            this.pictureBox15.Image = global::FEFTwiddler.Properties.Resources.fish;
+            this.pictureBox15.Image = global::FEFTwiddler.Properties.Resources.Material_fish;
             this.pictureBox15.Location = new System.Drawing.Point(418, 204);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(16, 16);
@@ -540,7 +540,7 @@
             // 
             // pictureBox16
             // 
-            this.pictureBox16.Image = global::FEFTwiddler.Properties.Resources.beans;
+            this.pictureBox16.Image = global::FEFTwiddler.Properties.Resources.Material_beans;
             this.pictureBox16.Location = new System.Drawing.Point(418, 178);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(16, 16);
@@ -549,7 +549,7 @@
             // 
             // pictureBox17
             // 
-            this.pictureBox17.Image = global::FEFTwiddler.Properties.Resources.amber;
+            this.pictureBox17.Image = global::FEFTwiddler.Properties.Resources.Material_amber;
             this.pictureBox17.Location = new System.Drawing.Point(418, 137);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(16, 16);
@@ -558,7 +558,7 @@
             // 
             // pictureBox18
             // 
-            this.pictureBox18.Image = global::FEFTwiddler.Properties.Resources.jade;
+            this.pictureBox18.Image = global::FEFTwiddler.Properties.Resources.Material_jade;
             this.pictureBox18.Location = new System.Drawing.Point(418, 111);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(16, 16);
@@ -567,7 +567,7 @@
             // 
             // pictureBox19
             // 
-            this.pictureBox19.Image = global::FEFTwiddler.Properties.Resources.quartz;
+            this.pictureBox19.Image = global::FEFTwiddler.Properties.Resources.Material_quartz;
             this.pictureBox19.Location = new System.Drawing.Point(418, 85);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(16, 16);
@@ -576,7 +576,7 @@
             // 
             // pictureBox20
             // 
-            this.pictureBox20.Image = global::FEFTwiddler.Properties.Resources.lapis;
+            this.pictureBox20.Image = global::FEFTwiddler.Properties.Resources.Material_lapis;
             this.pictureBox20.Location = new System.Drawing.Point(418, 59);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(16, 16);
@@ -585,7 +585,7 @@
             // 
             // pictureBox21
             // 
-            this.pictureBox21.Image = global::FEFTwiddler.Properties.Resources.coral;
+            this.pictureBox21.Image = global::FEFTwiddler.Properties.Resources.Material_coral;
             this.pictureBox21.Location = new System.Drawing.Point(418, 33);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(16, 16);
@@ -594,7 +594,7 @@
             // 
             // pictureBox22
             // 
-            this.pictureBox22.Image = global::FEFTwiddler.Properties.Resources.pearl;
+            this.pictureBox22.Image = global::FEFTwiddler.Properties.Resources.Material_pearl;
             this.pictureBox22.Location = new System.Drawing.Point(418, 7);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(16, 16);
@@ -603,7 +603,7 @@
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Image = global::FEFTwiddler.Properties.Resources.wheat;
+            this.pictureBox11.Image = global::FEFTwiddler.Properties.Resources.Material_wheat;
             this.pictureBox11.Location = new System.Drawing.Point(343, 282);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(16, 16);
@@ -612,7 +612,7 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Image = global::FEFTwiddler.Properties.Resources.berries;
+            this.pictureBox10.Image = global::FEFTwiddler.Properties.Resources.Material_berries;
             this.pictureBox10.Location = new System.Drawing.Point(343, 256);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(16, 16);
@@ -621,7 +621,7 @@
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = global::FEFTwiddler.Properties.Resources.cabbage;
+            this.pictureBox9.Image = global::FEFTwiddler.Properties.Resources.Material_cabbage;
             this.pictureBox9.Location = new System.Drawing.Point(343, 230);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(16, 16);
@@ -630,7 +630,7 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = global::FEFTwiddler.Properties.Resources.milk;
+            this.pictureBox8.Image = global::FEFTwiddler.Properties.Resources.Material_milk;
             this.pictureBox8.Location = new System.Drawing.Point(343, 204);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(16, 16);
@@ -639,7 +639,7 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::FEFTwiddler.Properties.Resources.meat;
+            this.pictureBox7.Image = global::FEFTwiddler.Properties.Resources.Material_meat;
             this.pictureBox7.Location = new System.Drawing.Point(343, 178);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(16, 16);
@@ -648,7 +648,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::FEFTwiddler.Properties.Resources.topaz;
+            this.pictureBox6.Image = global::FEFTwiddler.Properties.Resources.Material_topaz;
             this.pictureBox6.Location = new System.Drawing.Point(343, 137);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(16, 16);
@@ -657,7 +657,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::FEFTwiddler.Properties.Resources.emerald;
+            this.pictureBox5.Image = global::FEFTwiddler.Properties.Resources.Material_emerald;
             this.pictureBox5.Location = new System.Drawing.Point(343, 111);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(16, 16);
@@ -666,7 +666,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::FEFTwiddler.Properties.Resources.onyx;
+            this.pictureBox4.Image = global::FEFTwiddler.Properties.Resources.Material_onyx;
             this.pictureBox4.Location = new System.Drawing.Point(343, 85);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(16, 16);
@@ -675,7 +675,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::FEFTwiddler.Properties.Resources.sapphire;
+            this.pictureBox3.Image = global::FEFTwiddler.Properties.Resources.Material_sapphire;
             this.pictureBox3.Location = new System.Drawing.Point(343, 59);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(16, 16);
@@ -684,7 +684,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::FEFTwiddler.Properties.Resources.ruby;
+            this.pictureBox2.Image = global::FEFTwiddler.Properties.Resources.Material_ruby;
             this.pictureBox2.Location = new System.Drawing.Point(343, 33);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(16, 16);
@@ -693,7 +693,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::FEFTwiddler.Properties.Resources.crystal;
+            this.pictureBox1.Image = global::FEFTwiddler.Properties.Resources.Material_crystal;
             this.pictureBox1.Location = new System.Drawing.Point(343, 7);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(16, 16);
@@ -1235,7 +1235,7 @@
             // 
             // pictureBox30
             // 
-            this.pictureBox30.Image = global::FEFTwiddler.Properties.Resources.stone;
+            this.pictureBox30.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_stone;
             this.pictureBox30.Location = new System.Drawing.Point(316, 249);
             this.pictureBox30.Name = "pictureBox30";
             this.pictureBox30.Size = new System.Drawing.Size(16, 16);
@@ -1268,7 +1268,7 @@
             // 
             // pictureBox28
             // 
-            this.pictureBox28.Image = global::FEFTwiddler.Properties.Resources.staff;
+            this.pictureBox28.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_staff;
             this.pictureBox28.Location = new System.Drawing.Point(272, 249);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(16, 16);
@@ -1301,7 +1301,7 @@
             // 
             // pictureBox29
             // 
-            this.pictureBox29.Image = global::FEFTwiddler.Properties.Resources.tome;
+            this.pictureBox29.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_tome;
             this.pictureBox29.Location = new System.Drawing.Point(228, 249);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(16, 16);
@@ -1334,7 +1334,7 @@
             // 
             // pictureBox26
             // 
-            this.pictureBox26.Image = global::FEFTwiddler.Properties.Resources.bow;
+            this.pictureBox26.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_bow;
             this.pictureBox26.Location = new System.Drawing.Point(184, 249);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(16, 16);
@@ -1367,7 +1367,7 @@
             // 
             // pictureBox27
             // 
-            this.pictureBox27.Image = global::FEFTwiddler.Properties.Resources.shuriken;
+            this.pictureBox27.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_shuriken;
             this.pictureBox27.Location = new System.Drawing.Point(140, 249);
             this.pictureBox27.Name = "pictureBox27";
             this.pictureBox27.Size = new System.Drawing.Size(16, 16);
@@ -1400,7 +1400,7 @@
             // 
             // pictureBox25
             // 
-            this.pictureBox25.Image = global::FEFTwiddler.Properties.Resources.axe;
+            this.pictureBox25.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_axe;
             this.pictureBox25.Location = new System.Drawing.Point(96, 249);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(16, 16);
@@ -1433,7 +1433,7 @@
             // 
             // pictureBox24
             // 
-            this.pictureBox24.Image = global::FEFTwiddler.Properties.Resources.lance;
+            this.pictureBox24.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_lance;
             this.pictureBox24.Location = new System.Drawing.Point(52, 249);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(16, 16);
@@ -1466,7 +1466,7 @@
             // 
             // pictureBox23
             // 
-            this.pictureBox23.Image = global::FEFTwiddler.Properties.Resources.sword;
+            this.pictureBox23.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_sword;
             this.pictureBox23.Location = new System.Drawing.Point(8, 249);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(16, 16);
