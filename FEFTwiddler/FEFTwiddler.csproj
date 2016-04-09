@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\FEFTwiddler.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -111,6 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Data\Items.xml" />
+    <Content Include="Resources\FEFTwiddler.ico" />
     <Content Include="Resources\Images\MaterialIcons\amber.png" />
     <Content Include="Resources\Images\MaterialIcons\beans.png" />
     <Content Include="Resources\Images\MaterialIcons\berries.png" />

@@ -153,12 +153,12 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;root&gt;
-        ///  &lt;item id=&quot;0x001&quot; name=&quot;BronzeSword&quot; displayName=&quot;Bronze Sword&quot; type=&quot;sword&quot; /&gt;
-        ///  &lt;item id=&quot;0x002&quot; name=&quot;IronSword&quot; displayName=&quot;Iron Sword&quot; type=&quot;sword&quot; /&gt;
-        ///  &lt;item id=&quot;0x003&quot; name=&quot;SteelSword&quot; displayName=&quot;Steel Sword&quot; type=&quot;sword&quot; /&gt;
-        ///  &lt;item id=&quot;0x004&quot; name=&quot;SilverSword&quot; displayName=&quot;Silver Sword&quot; type=&quot;sword&quot; /&gt;
-        ///  &lt;item id=&quot;0x005&quot; name=&quot;BraveSword&quot; displayName=&quot;Brave Sword&quot; type=&quot;sword&quot; /&gt;
-        ///  &lt;item id=&quot;0x115&quot; name=&quot;Vulnerary&quot; displayName=&quot;Vulnerary&quot; t [rest of string was truncated]&quot;;.
+        ///  &lt;item id=&quot;0&quot; name=&quot;None&quot; displayName=&quot;(None)&quot; type=&quot;Unknown&quot; maxUses=&quot;&quot; /&gt;
+        ///  &lt;item id=&quot;1&quot; name=&quot;BronzeSword&quot; displayName=&quot;Bronze Sword&quot; type=&quot;Sword&quot; maxUses=&quot;&quot; /&gt;
+        ///  &lt;item id=&quot;2&quot; name=&quot;IronSword&quot; displayName=&quot;Iron Sword&quot; type=&quot;Sword&quot; maxUses=&quot;&quot; /&gt;
+        ///  &lt;item id=&quot;3&quot; name=&quot;SteelSword&quot; displayName=&quot;Steel Sword&quot; type=&quot;Sword&quot; maxUses=&quot;&quot; /&gt;
+        ///  &lt;item id=&quot;4&quot; name=&quot;SilverSword&quot; displayName=&quot;Silver Sword&quot; type=&quot;Sword&quot; maxUses=&quot;&quot; /&gt;
+        ///  &lt;item id=&quot;5&quot; name=&quot;BraveSword&quot; di [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Items {
             get {
@@ -2453,6 +2453,16 @@ namespace FEFTwiddler.Properties {
             get {
                 object obj = ResourceManager.GetObject("fe15skill_99", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon FEFTwiddler {
+            get {
+                object obj = ResourceManager.GetObject("FEFTwiddler", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
