@@ -99,6 +99,10 @@
             this.numCrystal = new System.Windows.Forms.NumericUpDown();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.numVictories = new System.Windows.Forms.NumericUpDown();
+            this.label18 = new System.Windows.Forms.Label();
+            this.numBattles = new System.Windows.Forms.NumericUpDown();
+            this.label17 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.txtStatBytes = new System.Windows.Forms.TextBox();
@@ -166,10 +170,6 @@
             this.btnGiveEternalSeals = new System.Windows.Forms.Button();
             this.btnAllSkillsNoNpc = new System.Windows.Forms.Button();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label17 = new System.Windows.Forms.Label();
-            this.numBattles = new System.Windows.Forms.NumericUpDown();
-            this.label18 = new System.Windows.Forms.Label();
-            this.numVictories = new System.Windows.Forms.NumericUpDown();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -223,6 +223,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numCrystal)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numVictories)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBattles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStaff)).BeginInit();
@@ -247,8 +249,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numBattles)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numVictories)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -1095,6 +1095,50 @@
             this.panel1.Size = new System.Drawing.Size(367, 485);
             this.panel1.TabIndex = 1;
             // 
+            // numVictories
+            // 
+            this.numVictories.Location = new System.Drawing.Point(299, 324);
+            this.numVictories.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numVictories.Name = "numVictories";
+            this.numVictories.Size = new System.Drawing.Size(57, 20);
+            this.numVictories.TabIndex = 64;
+            this.numVictories.ValueChanged += new System.EventHandler(this.numVictories_ValueChanged);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(232, 326);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(47, 13);
+            this.label18.TabIndex = 63;
+            this.label18.Text = "Victories";
+            // 
+            // numBattles
+            // 
+            this.numBattles.Location = new System.Drawing.Point(299, 298);
+            this.numBattles.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numBattles.Name = "numBattles";
+            this.numBattles.Size = new System.Drawing.Size(57, 20);
+            this.numBattles.TabIndex = 62;
+            this.numBattles.ValueChanged += new System.EventHandler(this.numBattles_ValueChanged);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(232, 300);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(39, 13);
+            this.label17.TabIndex = 61;
+            this.label17.Text = "Battles";
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -1260,7 +1304,6 @@
             // 
             // numStone
             // 
-            this.numStone.Enabled = false;
             this.numStone.Location = new System.Drawing.Point(316, 271);
             this.numStone.Maximum = new decimal(new int[] {
             251,
@@ -1293,7 +1336,6 @@
             // 
             // numStaff
             // 
-            this.numStaff.Enabled = false;
             this.numStaff.Location = new System.Drawing.Point(272, 271);
             this.numStaff.Maximum = new decimal(new int[] {
             251,
@@ -1326,7 +1368,6 @@
             // 
             // numTome
             // 
-            this.numTome.Enabled = false;
             this.numTome.Location = new System.Drawing.Point(228, 271);
             this.numTome.Maximum = new decimal(new int[] {
             251,
@@ -1359,7 +1400,6 @@
             // 
             // numBow
             // 
-            this.numBow.Enabled = false;
             this.numBow.Location = new System.Drawing.Point(184, 271);
             this.numBow.Maximum = new decimal(new int[] {
             251,
@@ -1392,7 +1432,6 @@
             // 
             // numShuriken
             // 
-            this.numShuriken.Enabled = false;
             this.numShuriken.Location = new System.Drawing.Point(140, 271);
             this.numShuriken.Maximum = new decimal(new int[] {
             251,
@@ -1425,7 +1464,6 @@
             // 
             // numAxe
             // 
-            this.numAxe.Enabled = false;
             this.numAxe.Location = new System.Drawing.Point(96, 271);
             this.numAxe.Maximum = new decimal(new int[] {
             251,
@@ -1458,7 +1496,6 @@
             // 
             // numLance
             // 
-            this.numLance.Enabled = false;
             this.numLance.Location = new System.Drawing.Point(52, 271);
             this.numLance.Maximum = new decimal(new int[] {
             251,
@@ -1491,7 +1528,6 @@
             // 
             // numSword
             // 
-            this.numSword.Enabled = false;
             this.numSword.Location = new System.Drawing.Point(8, 271);
             this.numSword.Maximum = new decimal(new int[] {
             251,
@@ -1848,50 +1884,6 @@
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(232, 300);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(39, 13);
-            this.label17.TabIndex = 61;
-            this.label17.Text = "Battles";
-            // 
-            // numBattles
-            // 
-            this.numBattles.Location = new System.Drawing.Point(299, 298);
-            this.numBattles.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.numBattles.Name = "numBattles";
-            this.numBattles.Size = new System.Drawing.Size(57, 20);
-            this.numBattles.TabIndex = 62;
-            this.numBattles.ValueChanged += new System.EventHandler(this.numBattles_ValueChanged);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(232, 326);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(47, 13);
-            this.label18.TabIndex = 63;
-            this.label18.Text = "Victories";
-            // 
-            // numVictories
-            // 
-            this.numVictories.Location = new System.Drawing.Point(299, 324);
-            this.numVictories.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.numVictories.Name = "numVictories";
-            this.numVictories.Size = new System.Drawing.Size(57, 20);
-            this.numVictories.TabIndex = 64;
-            this.numVictories.ValueChanged += new System.EventHandler(this.numVictories_ValueChanged);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1959,6 +1951,8 @@
             this.tabPage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numVictories)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBattles)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStaff)).EndInit();
@@ -1983,8 +1977,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numBattles)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numVictories)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
