@@ -385,6 +385,7 @@
             // 
             // btn9999VisitPoints
             // 
+            this.btn9999VisitPoints.Enabled = false;
             this.btn9999VisitPoints.Location = new System.Drawing.Point(171, 140);
             this.btn9999VisitPoints.Name = "btn9999VisitPoints";
             this.btn9999VisitPoints.Size = new System.Drawing.Size(75, 23);
@@ -395,6 +396,7 @@
             // 
             // btn9999BattlePoints
             // 
+            this.btn9999BattlePoints.Enabled = false;
             this.btn9999BattlePoints.Location = new System.Drawing.Point(171, 114);
             this.btn9999BattlePoints.Name = "btn9999BattlePoints";
             this.btn9999BattlePoints.Size = new System.Drawing.Size(75, 23);
@@ -405,6 +407,7 @@
             // 
             // numVisitPoints
             // 
+            this.numVisitPoints.Enabled = false;
             this.numVisitPoints.Location = new System.Drawing.Point(85, 141);
             this.numVisitPoints.Maximum = new decimal(new int[] {
             999999,
@@ -418,6 +421,7 @@
             // 
             // numBattlePoints
             // 
+            this.numBattlePoints.Enabled = false;
             this.numBattlePoints.Location = new System.Drawing.Point(85, 115);
             this.numBattlePoints.Maximum = new decimal(new int[] {
             999999,
