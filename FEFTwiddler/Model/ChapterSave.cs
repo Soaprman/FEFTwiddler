@@ -51,6 +51,8 @@ namespace FEFTwiddler.Model
         public Enums.Difficulty Difficulty { get; set; }
         public Enums.Ruleset Ruleset { get; set; }
 
+        public ushort DragonVeinPoint { get; set; }
+
         public byte MaterialQuantity_Crystal { get; set; }
         public byte MaterialQuantity_Ruby { get; set; }
         public byte MaterialQuantity_Sapphire { get; set; }
@@ -305,7 +307,11 @@ namespace FEFTwiddler.Model
             character.BinaryPosition = br.BaseStream.Position;
 
             // TODO
-            br.ReadBytes(9);
+            br.ReadBytes(1);
+
+            // Read flags
+            byte[] flags = new byte[8];
+            br.Read(flags, 0, 8);
 
             // Character main data
             chunk = new byte[8];
@@ -313,11 +319,20 @@ namespace FEFTwiddler.Model
 
             character.Level = chunk[0];
             character.Experience = chunk[1];
-            character.Unknown00C = chunk[2];
+            character.InternalLevel = chunk[2];
             character.EternalSealsUsed = chunk[3];
             character.CharacterID = (Enums.Character)(ushort)(chunk[4] + chunk[5] * 0x100);
             character.ClassID = (Enums.Class)chunk[6];
             character.Unknown011 = chunk[7];
+
+            // Process flags
+            // character._IsCorrin = (chunk[0] & 0x01) == 0x01;
+            character.IsManakete = Model.Character.IsCorrin(character.CharacterID) ||
+                ((flags[2] & 0x80) == 0x80);
+            character.IsBeast = Model.Character.IsBeastCharacter(character.CharacterID) ||
+                (flags[3] & 0x01) == 0x01;
+            character.CanUseDragonVein = Model.Character.IsRoyal(character.CharacterID) ||
+                ((flags[4] & 0x08) == 0x08);
 
             // Some bytes
             chunk = new byte[2];
@@ -461,7 +476,16 @@ namespace FEFTwiddler.Model
             character.Underwear = (Enums.Underwear)chunk[3];
 
             // TODO
-            br.ReadBytes(10);
+            br.ReadBytes(1);
+
+            // Battles and Victories
+            chunk = new byte[4];
+            br.Read(chunk, 0, 4);
+            character.BattleCount = (ushort)((chunk[1] << 8) | chunk[0]);
+            character.VictoryCount = (ushort)((chunk[3] << 8) | chunk[2]);
+
+            // TODO
+            br.ReadBytes(5);
 
             // Determine end block size
             int endBlockSize;
@@ -500,13 +524,31 @@ namespace FEFTwiddler.Model
             bw.BaseStream.Seek(character.BinaryPosition, SeekOrigin.Begin);
 
             // TODO
-            bw.BaseStream.Seek(9, SeekOrigin.Current);
+            bw.BaseStream.Seek(1, SeekOrigin.Current);
+
+            // Flags
+            chunk = new byte[8];
+            bw.BaseStream.Read(chunk, 0, 8);
+            if (character.IsManakete && !Model.Character.IsCorrin(character.CharacterID))
+                chunk[2] |= 0x80;
+            else
+                chunk[2] &= 0x7F;
+            if (character.IsBeast && !Model.Character.IsBeastCharacter(character.CharacterID))
+                chunk[3] |= 0x01;
+            else
+                chunk[3] &= 0xFE;
+            if (character.CanUseDragonVein && !Model.Character.IsRoyal(character.CharacterID))
+                chunk[4] |= 0x08;
+            else
+                chunk[4] &= 0xF7;
+            bw.BaseStream.Seek(-8, SeekOrigin.Current);
+            bw.BaseStream.Write(chunk, 0, 8);
 
             // Character main data
             chunk = new byte[] {
                 character.Level,
                 character.Experience,
-                character.Unknown00C,
+                character.InternalLevel,
                 character.EternalSealsUsed,
                 (byte)((ushort)character.CharacterID & 0xFF),
                 (byte)(((ushort)character.CharacterID >> 8) & 0xFF),
@@ -593,7 +635,14 @@ namespace FEFTwiddler.Model
             bw.Write(chunk);
 
             // TODO
-            bw.BaseStream.Seek(10, SeekOrigin.Current);
+            bw.BaseStream.Seek(1, SeekOrigin.Current);
+
+            // Battles and Victories
+            bw.Write(BitConverter.GetBytes(character.BattleCount));
+            bw.Write(BitConverter.GetBytes(character.VictoryCount));
+
+            // TODO
+            bw.BaseStream.Seek(5, SeekOrigin.Current);
 
             // Determine end block size
             int endBlockSize;
@@ -630,7 +679,15 @@ namespace FEFTwiddler.Model
             br.ReadBytes(0x20);
 
             // Stuff
-            br.ReadBytes(0x19D);
+            br.ReadBytes(0x19);
+
+            // Dragon Vein point
+            chunk = new byte[0x2];
+            br.Read(chunk, 0, 0x2);
+            DragonVeinPoint = (ushort)((chunk[1] << 8) | chunk[0]);
+
+            // Stuff
+            br.ReadBytes(0x182);
 
             // Materials
             chunk = new byte[0x16];
@@ -714,7 +771,14 @@ namespace FEFTwiddler.Model
             bw.BaseStream.Seek(0x20, SeekOrigin.Current);
 
             // Stuff
-            bw.BaseStream.Seek(0x19D, SeekOrigin.Current);
+            bw.BaseStream.Seek(0x19, SeekOrigin.Current);
+
+            // Dragon Vein point
+            chunk = new byte[] { (byte)(DragonVeinPoint & 0xFF), (byte)(DragonVeinPoint >> 8) };
+            bw.BaseStream.Write(chunk, 0, 0x2);
+
+            // Stuff
+            bw.BaseStream.Seek(0x182, SeekOrigin.Current);
 
             // Materials
             chunk = new byte[] {

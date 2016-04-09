@@ -103,6 +103,8 @@ namespace FEFTwiddler
 
             numGold.Value = _chapterSave.Gold;
 
+            numDragonVeinPoints.Value = _chapterSave.DragonVeinPoint / 100;
+
             numAmber.Value = _chapterSave.MaterialQuantity_Amber;
             numBeans.Value = _chapterSave.MaterialQuantity_Beans;
             numBerries.Value = _chapterSave.MaterialQuantity_Berries;
@@ -174,6 +176,9 @@ namespace FEFTwiddler
             lblInventory5.Text = GetItemString(character.Item_5);
 
             txtStatBytes.Text = GetStatBytesString(character);
+
+            numBattles.Value = character.BattleCount;
+            numVictories.Value = character.VictoryCount;
 
             //EnableControls();
         }
@@ -400,6 +405,11 @@ namespace FEFTwiddler
             return String.Format("{0} {1} {2} {3}", equipped, displayName, uses, nameId);
         }
 
+        private void btn99DragonVeinPoints_Click(object sender, EventArgs e)
+        {
+            numDragonVeinPoints.Value = 99;
+        }
+
         private void btn9999BattlePoints_Click(object sender, EventArgs e)
         {
             numBattlePoints.Value = 9999;
@@ -410,9 +420,24 @@ namespace FEFTwiddler
             numVisitPoints.Value = 9999;
         }
 
+        private void numDragonVeinPoints_ValueChanged(object sender, EventArgs e)
+        {
+            _chapterSave.DragonVeinPoint = (ushort)(numDragonVeinPoints.Value * 100);
+        }
+
         private void numBattlePoints_ValueChanged(object sender, EventArgs e)
         {
             _chapterSave.BattlePoints = (uint)numBattlePoints.Value;
+        }
+
+        private void numBattles_ValueChanged(object sender, EventArgs e)
+        {
+            _selectedCharacter.BattleCount = (ushort)numBattles.Value;
+        }
+
+        private void numVictories_ValueChanged(object sender, EventArgs e)
+        {
+            _selectedCharacter.VictoryCount = (ushort)numVictories.Value;
         }
 
         private void numVisitPoints_ValueChanged(object sender, EventArgs e)

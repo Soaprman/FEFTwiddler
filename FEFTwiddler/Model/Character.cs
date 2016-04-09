@@ -10,9 +10,15 @@ namespace FEFTwiddler.Model
         /// <remarks>This technique goes out the window if we allow adding or switching character positions. But it's fine for now.</remarks>
         public long BinaryPosition { get; set; }
 
+        // There are 64 flags here.
+        // public bool _IsCorrin { get; set; }
+        public bool IsManakete { get; set; }
+        public bool IsBeast { get; set; }
+        public bool CanUseDragonVein { get; set; }
+
         public byte Level { get; set; }
         public byte Experience { get; set; }
-        public byte Unknown00C { get; set; }
+        public byte InternalLevel { get; set; }
         public byte EternalSealsUsed { get; set; }
         public Enums.Character CharacterID { get; set; }
         public Enums.Class ClassID { get; set; }
@@ -63,6 +69,9 @@ namespace FEFTwiddler.Model
         public Enums.Facewear Facewear { get; set; }
         public Enums.Armwear Armwear { get; set; }
         public Enums.Underwear Underwear { get; set; }
+
+        public ushort BattleCount { get; set; }
+        public ushort VictoryCount { get; set; }
 
         public override string ToString()
         {
@@ -180,6 +189,27 @@ namespace FEFTwiddler.Model
         public static bool IsAmiibo(Enums.Character charId)
         {
             return Enums.Character.Marth <= charId && charId <= Enums.Character.Robin;
+        }
+
+        public static bool IsRoyal(Enums.Character charId)
+        {
+            return charId == Enums.Character.Corrin_M ||
+                charId == Enums.Character.Corrin_F ||
+                charId == Enums.Character.Azura ||
+                charId == Enums.Character.Sakura ||
+                charId == Enums.Character.Hinoka ||
+                charId == Enums.Character.Takumi ||
+                charId == Enums.Character.Ryoma ||
+                charId == Enums.Character.Elise ||
+                charId == Enums.Character.Leo ||
+                charId == Enums.Character.Camilla ||
+                charId == Enums.Character.Xander;
+        }
+
+        public static bool IsBeastCharacter(Enums.Character charId)
+        {
+            return charId == Enums.Character.Kaden ||
+                charId == Enums.Character.Keaton;
         }
 
         public int GetBlockSize()
