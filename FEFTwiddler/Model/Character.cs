@@ -70,6 +70,9 @@ namespace FEFTwiddler.Model
         public Enums.Armwear Armwear { get; set; }
         public Enums.Underwear Underwear { get; set; }
 
+        public ushort BattleCount { get; set; }
+        public ushort VictoryCount { get; set; }
+
         public override string ToString()
         {
             return CharacterID.ToString() + ": " + ClassID.ToString() +  " // lv" + Level.ToString() + " exp" + Experience.ToString();

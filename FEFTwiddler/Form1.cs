@@ -177,6 +177,9 @@ namespace FEFTwiddler
 
             txtStatBytes.Text = GetStatBytesString(character);
 
+            numBattles.Value = character.BattleCount;
+            numVictories.Value = character.VictoryCount;
+
             //EnableControls();
         }
 
@@ -425,6 +428,16 @@ namespace FEFTwiddler
         private void numBattlePoints_ValueChanged(object sender, EventArgs e)
         {
             _chapterSave.BattlePoints = (uint)numBattlePoints.Value;
+        }
+
+        private void numBattles_ValueChanged(object sender, EventArgs e)
+        {
+            _selectedCharacter.BattleCount = (ushort)numBattles.Value;
+        }
+
+        private void numVictories_ValueChanged(object sender, EventArgs e)
+        {
+            _selectedCharacter.VictoryCount = (ushort)numVictories.Value;
         }
 
         private void numVisitPoints_ValueChanged(object sender, EventArgs e)

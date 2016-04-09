@@ -37,6 +37,9 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btn99DragonVeinPoints = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.numDragonVeinPoints = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.btn9999VisitPoints = new System.Windows.Forms.Button();
@@ -163,13 +166,14 @@
             this.btnGiveEternalSeals = new System.Windows.Forms.Button();
             this.btnAllSkillsNoNpc = new System.Windows.Forms.Button();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.numDragonVeinPoints = new System.Windows.Forms.NumericUpDown();
-            this.label16 = new System.Windows.Forms.Label();
-            this.btn99DragonVeinPoints = new System.Windows.Forms.Button();
-            
+            this.label17 = new System.Windows.Forms.Label();
+            this.numBattles = new System.Windows.Forms.NumericUpDown();
+            this.label18 = new System.Windows.Forms.Label();
+            this.numVictories = new System.Windows.Forms.NumericUpDown();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numDragonVeinPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numVisitPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBattlePoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numGold)).BeginInit();
@@ -243,7 +247,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numDragonVeinPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBattles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numVictories)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -370,6 +375,38 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Chapter Data";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // btn99DragonVeinPoints
+            // 
+            this.btn99DragonVeinPoints.Location = new System.Drawing.Point(171, 85);
+            this.btn99DragonVeinPoints.Name = "btn99DragonVeinPoints";
+            this.btn99DragonVeinPoints.Size = new System.Drawing.Size(75, 23);
+            this.btn99DragonVeinPoints.TabIndex = 59;
+            this.btn99DragonVeinPoints.Text = "99";
+            this.btn99DragonVeinPoints.UseVisualStyleBackColor = true;
+            this.btn99DragonVeinPoints.Click += new System.EventHandler(this.btn99DragonVeinPoints_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(7, 90);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(101, 13);
+            this.label16.TabIndex = 58;
+            this.label16.Text = "Dragon Vein Points:";
+            // 
+            // numDragonVeinPoints
+            // 
+            this.numDragonVeinPoints.Location = new System.Drawing.Point(114, 88);
+            this.numDragonVeinPoints.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.numDragonVeinPoints.Name = "numDragonVeinPoints";
+            this.numDragonVeinPoints.Size = new System.Drawing.Size(50, 20);
+            this.numDragonVeinPoints.TabIndex = 57;
+            this.numDragonVeinPoints.ValueChanged += new System.EventHandler(this.numDragonVeinPoints_ValueChanged);
             // 
             // label13
             // 
@@ -988,6 +1025,10 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.numVictories);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.numBattles);
+            this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.txtStatBytes);
@@ -1807,37 +1848,49 @@
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
-            // numDragonVeinPoints
+            // label17
             // 
-            this.numDragonVeinPoints.Location = new System.Drawing.Point(114, 88);
-            this.numDragonVeinPoints.Maximum = new decimal(new int[] {
-            99,
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(232, 300);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(39, 13);
+            this.label17.TabIndex = 61;
+            this.label17.Text = "Battles";
+            // 
+            // numBattles
+            // 
+            this.numBattles.Location = new System.Drawing.Point(299, 298);
+            this.numBattles.Maximum = new decimal(new int[] {
+            65535,
             0,
             0,
             0});
-            this.numDragonVeinPoints.Name = "numDragonVeinPoints";
-            this.numDragonVeinPoints.Size = new System.Drawing.Size(50, 20);
-            this.numDragonVeinPoints.TabIndex = 57;
-            this.numDragonVeinPoints.ValueChanged += new System.EventHandler(this.numDragonVeinPoints_ValueChanged);
+            this.numBattles.Name = "numBattles";
+            this.numBattles.Size = new System.Drawing.Size(57, 20);
+            this.numBattles.TabIndex = 62;
+            this.numBattles.ValueChanged += new System.EventHandler(this.numBattles_ValueChanged);
             // 
-            // label16
+            // label18
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(7, 90);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(101, 13);
-            this.label16.TabIndex = 58;
-            this.label16.Text = "Dragon Vein Points:";
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(232, 326);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(47, 13);
+            this.label18.TabIndex = 63;
+            this.label18.Text = "Victories";
             // 
-            // btn99DragonVeinPoints
+            // numVictories
             // 
-            this.btn99DragonVeinPoints.Location = new System.Drawing.Point(171, 85);
-            this.btn99DragonVeinPoints.Name = "btn99DragonVeinPoints";
-            this.btn99DragonVeinPoints.Size = new System.Drawing.Size(75, 23);
-            this.btn99DragonVeinPoints.TabIndex = 59;
-            this.btn99DragonVeinPoints.Text = "99";
-            this.btn99DragonVeinPoints.UseVisualStyleBackColor = true;
-            this.btn99DragonVeinPoints.Click += new System.EventHandler(this.btn99DragonVeinPoints_Click);
+            this.numVictories.Location = new System.Drawing.Point(299, 324);
+            this.numVictories.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numVictories.Name = "numVictories";
+            this.numVictories.Size = new System.Drawing.Size(57, 20);
+            this.numVictories.TabIndex = 64;
+            this.numVictories.ValueChanged += new System.EventHandler(this.numVictories_ValueChanged);
             // 
             // Form1
             // 
@@ -1855,6 +1908,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numDragonVeinPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numVisitPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBattlePoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numGold)).EndInit();
@@ -1929,7 +1983,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numDragonVeinPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBattles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numVictories)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2073,6 +2128,10 @@
         private System.Windows.Forms.Button btn99DragonVeinPoints;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.NumericUpDown numDragonVeinPoints;
+        private System.Windows.Forms.NumericUpDown numBattles;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.NumericUpDown numVictories;
+        private System.Windows.Forms.Label label18;
     }
 }
 

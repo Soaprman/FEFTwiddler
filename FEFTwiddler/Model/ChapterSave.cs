@@ -476,7 +476,16 @@ namespace FEFTwiddler.Model
             character.Underwear = (Enums.Underwear)chunk[3];
 
             // TODO
-            br.ReadBytes(10);
+            br.ReadBytes(1);
+
+            // Battles and Victories
+            chunk = new byte[4];
+            br.Read(chunk, 0, 4);
+            character.BattleCount = (ushort)((chunk[1] << 8) | chunk[0]);
+            character.VictoryCount = (ushort)((chunk[3] << 8) | chunk[2]);
+
+            // TODO
+            br.ReadBytes(5);
 
             // Determine end block size
             int endBlockSize;
@@ -626,7 +635,14 @@ namespace FEFTwiddler.Model
             bw.Write(chunk);
 
             // TODO
-            bw.BaseStream.Seek(10, SeekOrigin.Current);
+            bw.BaseStream.Seek(1, SeekOrigin.Current);
+
+            // Battles and Victories
+            bw.Write(BitConverter.GetBytes(character.BattleCount));
+            bw.Write(BitConverter.GetBytes(character.VictoryCount));
+
+            // TODO
+            bw.BaseStream.Seek(5, SeekOrigin.Current);
 
             // Determine end block size
             int endBlockSize;
