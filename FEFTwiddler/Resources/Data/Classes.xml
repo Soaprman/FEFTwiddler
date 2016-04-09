@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <class id="1" name="NohrNoble_M">
+    <text lang="English" displayName="Nohr Noble (M)" />
+    <text lang="Japanese" displayName="Dark Blood (M)" />
+    <baseStats hp="18" str="8" mag="4" skl="4" spd="7" lck="2" def="6" res="6" />
+  </class>
+
+  <!--
+  Template:
+  <class id="0" name="InternalName">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </class>
+  -->
+</root>

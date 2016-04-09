@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <skill id="1" name="HPPlus5">
+    <text lang="English" displayName="HP +5" />
+    <text lang="Japanese" displayName="HP +5" />
+  </skill>
+
+  <!--
+  Template:
+  <skill id="0" name="InternalName">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </skill>
+  -->
+</root>

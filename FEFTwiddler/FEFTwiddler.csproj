@@ -49,8 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\BaseDatabase.cs" />
+    <Compile Include="Data\Character.cs" />
+    <Compile Include="Data\CharacterDatabase.cs" />
+    <Compile Include="Data\Class.cs" />
+    <Compile Include="Data\ClassDatabase.cs" />
     <Compile Include="Data\Item.cs" />
     <Compile Include="Data\ItemDatabase.cs" />
+    <Compile Include="Data\Skill.cs" />
+    <Compile Include="Data\SkillDatabase.cs" />
     <Compile Include="Enums\Armwear.cs" />
     <Compile Include="Enums\Building.cs" />
     <Compile Include="Enums\Character.cs" />
@@ -60,6 +67,7 @@
     <Compile Include="Enums\Headwear.cs" />
     <Compile Include="Enums\Item.cs" />
     <Compile Include="Enums\ItemType.cs" />
+    <Compile Include="Enums\Language.cs" />
     <Compile Include="Enums\Ruleset.cs" />
     <Compile Include="Enums\SaveFileType.cs" />
     <Compile Include="Enums\Skill.cs" />
@@ -113,7 +121,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Data\Items.xml" />
+    <Content Include="Resources\Data\Characters.xml" />
+    <Content Include="Resources\Data\Classes.xml" />
+    <Content Include="Resources\Data\Items.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\Data\Skills.xml" />
     <Content Include="Resources\FEFTwiddler.ico" />
     <Content Include="Resources\Images\MaterialIcons\Material_amber.png" />
     <Content Include="Resources\Images\MaterialIcons\Material_beans.png" />

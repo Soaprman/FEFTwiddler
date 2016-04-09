@@ -5,11 +5,9 @@ using FEFTwiddler.Extensions;
 
 namespace FEFTwiddler.Data
 {
-    public class ItemDatabase
+    public class ItemDatabase : BaseDatabase
     {
-        private XElement _data;
-
-        public ItemDatabase()
+        public ItemDatabase(Enums.Language language) : base(language)
         {
             _data = XElement.Parse(Properties.Resources.Data_Items);
         }
@@ -21,8 +19,7 @@ namespace FEFTwiddler.Data
                 .Where((x) => x.Attribute("id").Value == ((ushort)itemId).ToString())
                 .First();
 
-            // Until data entry is finished in Items.xml, use "name" as a fallback
-            var displayName = (row.GetAttribute("displayName") == "BBBBBBB" ? row.GetAttribute("name") : row.GetAttribute("displayName"));
+            var displayName = GetDisplayName(row);
 
             return new Item
             {

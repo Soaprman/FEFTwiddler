@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <character id="1" name="Corrin_M">
+    <text lang="English" displayName="Corrin (M)" />
+    <text lang="Japanese" displayName="Kamui (M)" />
+    <baseStats hp="19" str="7" mag="4" skl="7" spd="6" lck="5" def="6" res="2" />
+  </character>
+  
+  <!--
+  Template:
+  <character id="0" name="InternalName">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  -->
+</root>

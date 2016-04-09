@@ -20,7 +20,9 @@ namespace FEFTwiddler
 
         private void InitializeDatabases()
         {
-            _itemDatabase = new Data.ItemDatabase();
+            // TODO: Let user specify language
+            // Will need to call SetLanguage on all databases when switching and refresh GUI for display names
+            _itemDatabase = new Data.ItemDatabase(Enums.Language.English);
         }
 
         private void openFileToolStripMenuItem_Click(object sender, EventArgs e)

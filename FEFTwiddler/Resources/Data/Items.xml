@@ -1,397 +1,1580 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<root>
-  <item id="0" name="None" displayName="(None)" type="Unknown" maxUses="0"/>
-  <item id="1" name="BronzeSword" displayName="Bronze Sword" type="Sword" maxUses="0"/>
-  <item id="2" name="IronSword" displayName="Iron Sword" type="Sword" maxUses="0"/>
-  <item id="3" name="SteelSword" displayName="Steel Sword" type="Sword" maxUses="0"/>
-  <item id="4" name="SilverSword" displayName="Silver Sword" type="Sword" maxUses="0"/>
-  <item id="5" name="BraveSword" displayName="Brave Sword" type="Sword" maxUses="0"/>
-  <item id="6" name="IronKukri" displayName="Iron Kukri" type="Sword" maxUses="0" enemyOnly="true"/>
-  <item id="7" name="SteelKukri" displayName="Steel Kukri" type="Sword" maxUses="0" enemyOnly="true"/>
-  <item id="8" name="SilverKukri" displayName="Silver Kukri" type="Sword" maxUses="0" enemyOnly="true"/>
-  <item id="9" name="Armorslayer" displayName="Armorslayer" type="Sword" maxUses="0"/>
-  <item id="10" name="Wyrmslayer" displayName="Wyrmslayer" type="Sword" maxUses="0"/>
-  <item id="11" name="KillingEdge" displayName="Killing Edge" type="Sword" maxUses="0"/>
-  <item id="12" name="LevinSword" displayName="Levin Sword" type="Sword" maxUses="0"/>
-  <item id="13" name="Ganglari" displayName="Ganglari" type="Sword" maxUses="0"/>
-  <item id="14" name="Siegfried" displayName="Siegfried" type="Sword" maxUses="0"/>
-  <item id="15" name="Bottle" displayName="Bottle" type="Sword" maxUses="0"/>
-  <item id="16" name="Umbrella" displayName="Umbrella" type="Sword" maxUses="0"/>
-  <item id="17" name="NohrianBlade" displayName="Nohrian Blade" type="Sword" maxUses="0"/>
-  <item id="18" name="LeosIceblade" displayName="Leo's Iceblade" type="Sword" maxUses="0"/>
-  <item id="19" name="SelenasBlade" displayName="Selena's Blade" type="Sword" maxUses="0"/>
-  <item id="20" name="LaslowsBlade" displayName="Laslow's Blade" type="Sword" maxUses="0"/>
-  <item id="21" name="BronzeKatana" displayName="Bronze Katana" type="Sword" maxUses="0"/>
-  <item id="22" name="IronKatana" displayName="Iron Katana" type="Sword" maxUses="0"/>
-  <item id="23" name="SteelKatana" displayName="Steel Katana" type="Sword" maxUses="0"/>
-  <item id="24" name="SilverKatana" displayName="Silver Katana" type="Sword" maxUses="0"/>
-  <item id="25" name="VengeKatana" displayName="Venge Katana" type="Sword" maxUses="0"/>
-  <item id="26" name="IronKatti" displayName="Iron Katti" type="Sword" maxUses="0" enemyOnly="true"/>
-  <item id="27" name="SteelKatti" displayName="Steel Katti" type="Sword" maxUses="0" enemyOnly="true"/>
-  <item id="28" name="SilverKatti" displayName="Silver Katti" type="Sword" maxUses="0" enemyOnly="true"/>
-  <item id="29" name="Kodachi" displayName="Kodachi" type="Sword" maxUses="0"/>
-  <item id="30" name="Wakizashi" displayName="Wakizashi" type="Sword" maxUses="0"/>
-  <item id="31" name="AxeSplitter" displayName="Axe Splitter" type="Sword" maxUses="0"/>
-  <item id="32" name="DualKatana" displayName="Dual Katana" type="Sword" maxUses="0"/>
-  <item id="33" name="PracticeKatana" displayName="Practice Katana" type="Sword" maxUses="0"/>
-  <item id="34" name="SpiritKatana" displayName="Spirit Katana" type="Sword" maxUses="0"/>
-  <item id="35" name="HagakureBlade" displayName="Hagakure Blade" type="Sword" maxUses="0"/>
-  <item id="36" name="Yato" displayName="Yato" type="Sword" maxUses="0"/>
-  <item id="37" name="NobleYato" displayName="Noble Yato" type="Sword" maxUses="0"/>
-  <item id="38" name="BlazingYato" displayName="Blazing Yato" type="Sword" maxUses="0"/>
-  <item id="39" name="GrimYato" displayName="Grim Yato" type="Sword" maxUses="0"/>
-  <item id="40" name="ShadowYato" displayName="Shadow Yato" type="Sword" maxUses="0"/>
-  <item id="41" name="AlphaYato" displayName="Alpha Yato" type="Sword" maxUses="0"/>
-  <item id="42" name="OmegaYato" displayName="Omega Yato" type="Sword" maxUses="0"/>
-  <item id="43" name="Raijinto" displayName="Raijinto" type="Sword" maxUses="0"/>
-  <item id="44" name="DaikonRadish" displayName="Daikon Radish" type="Sword" maxUses="0"/>
-  <item id="45" name="Parasol" displayName="Parasol" type="Sword" maxUses="0"/>
-  <item id="46" name="RaiderKatana" displayName="Raider Katana" type="Sword" maxUses="0"/>
-  <item id="47" name="SunriseKatana" displayName="Sunrise Katana" type="Sword" maxUses="0"/>
-  <item id="48" name="TakumisShinai" displayName="Takumi's Shinai" type="Sword" maxUses="0"/>
-  <item id="49" name="HanasKatana" displayName="Hana's Katana" type="Sword" maxUses="0"/>
-  <item id="50" name="HinatasKatana" displayName="Hinata's Katana" type="Sword" maxUses="0"/>
-  <item id="51" name="BronzeLance" displayName="Bronze Lance" type="Lance" maxUses="0"/>
-  <item id="52" name="IronLance" displayName="Iron Lance" type="Lance" maxUses="0"/>
-  <item id="53" name="SteelLance" displayName="Steel Lance" type="Lance" maxUses="0"/>
-  <item id="54" name="SilverLance" displayName="Silver Lance" type="Lance" maxUses="0"/>
-  <item id="55" name="BraveLance" displayName="Brave Lance" type="Lance" maxUses="0"/>
-  <item id="56" name="IronJavelin" displayName="Iron Javelin" type="Lance" maxUses="0" enemyOnly="true"/>
-  <item id="57" name="SteelJavelin" displayName="Steel Javelin" type="Lance" maxUses="0" enemyOnly="true"/>
-  <item id="58" name="SilverJavelin" displayName="Silver Javelin" type="Lance" maxUses="0" enemyOnly="true"/>
-  <item id="59" name="Javelin" displayName="Javelin" type="Lance" maxUses="0"/>
-  <item id="60" name="Spear" displayName="Spear" type="Lance" maxUses="0"/>
-  <item id="61" name="BeastKiller" displayName="Beast Killer" type="Lance" maxUses="0"/>
-  <item id="62" name="KillerLance" displayName="Killer Lance" type="Lance" maxUses="0"/>
-  <item id="63" name="BlessedLance" displayName="Blessed Lance" type="Lance" maxUses="0"/>
-  <item id="64" name="Broom" displayName="Broom" type="Lance" maxUses="0"/>
-  <item id="65" name="Stick" displayName="Stick" type="Lance" maxUses="0"/>
-  <item id="66" name="HexlockSpear" displayName="Hexlock Spear" type="Lance" maxUses="0"/>
-  <item id="67" name="XandersLance" displayName="Xander's Lance" type="Lance" maxUses="0"/>
-  <item id="68" name="EffiesLance" displayName="Effie's Lance" type="Lance" maxUses="0"/>
-  <item id="69" name="PerisLance" displayName="Peri's Lance" type="Lance" maxUses="0"/>
-  <item id="70" name="BrassNaginata" displayName="Brass Naginata" type="Lance" maxUses="0"/>
-  <item id="71" name="IronNaginata" displayName="Iron Naginata" type="Lance" maxUses="0"/>
-  <item id="72" name="SteelNaginata" displayName="Steel Naginata" type="Lance" maxUses="0"/>
-  <item id="73" name="SilverNaginata" displayName="Silver Naginata" type="Lance" maxUses="0"/>
-  <item id="74" name="VengeNaginata" displayName="Venge Naginata" type="Lance" maxUses="0"/>
-  <item id="75" name="IronNageyari" displayName="Iron Nageyari" type="Lance" maxUses="0" enemyOnly="true"/>
-  <item id="76" name="SteelNageyari" displayName="Steel Nageyari" type="Lance" maxUses="0" enemyOnly="true"/>
-  <item id="77" name="SilverNageyari" displayName="Silver Nageyari" type="Lance" maxUses="0" enemyOnly="true"/>
-  <item id="78" name="Swordcatcher" displayName="Swordcatcher" type="Lance" maxUses="0"/>
-  <item id="79" name="DualNaginata" displayName="Dual Naginata" type="Lance" maxUses="0"/>
-  <item id="80" name="GuardNaginata" displayName="Guard Naginata" type="Lance" maxUses="0"/>
-  <item id="81" name="BoltNaginata" displayName="Bolt Naginata" type="Lance" maxUses="0"/>
-  <item id="82" name="Waterwheel" displayName="Waterwheel" type="Lance" maxUses="0"/>
-  <item id="83" name="BambooPole" displayName="Bamboo Pole" type="Lance" maxUses="0"/>
-  <item id="84" name="PineBranch" displayName="Pine Branch" type="Lance" maxUses="0"/>
-  <item id="85" name="RaiderNaginata" displayName="Raider Naginata" type="Lance" maxUses="0"/>
-  <item id="86" name="BoldNaginata" displayName="Bold Naginata" type="Lance" maxUses="0"/>
-  <item id="87" name="HinokasSpear" displayName="Hinoka's Spear" type="Lance" maxUses="0"/>
-  <item id="88" name="SubakisPike" displayName="Subaki's Pike" type="Lance" maxUses="0"/>
-  <item id="89" name="OborosSpear" displayName="Oboro's Spear" type="Lance" maxUses="0"/>
-  <item id="90" name="BronzeAxe" displayName="Bronze Axe" type="Axe" maxUses="0"/>
-  <item id="91" name="IronAxe" displayName="Iron Axe" type="Axe" maxUses="0"/>
-  <item id="92" name="SteelAxe" displayName="Steel Axe" type="Axe" maxUses="0"/>
-  <item id="93" name="SilverAxe" displayName="Silver Axe" type="Axe" maxUses="0"/>
-  <item id="94" name="BraveAxe" displayName="Brave Axe" type="Axe" maxUses="0"/>
-  <item id="95" name="IronStarAxe" displayName="Iron Star Axe" type="Axe" maxUses="0" enemyOnly="true"/>
-  <item id="96" name="SteelStarAxe" displayName="Steel Star Axe" type="Axe" maxUses="0" enemyOnly="true"/>
-  <item id="97" name="SilverStarAxe" displayName="Silver Star Axe" type="Axe" maxUses="0" enemyOnly="true"/>
-  <item id="98" name="HandAxe" displayName="Hand Axe" type="Axe" maxUses="0"/>
-  <item id="99" name="Tomahawk" displayName="Tomahawk" type="Axe" maxUses="0"/>
-  <item id="100" name="Hammer" displayName="Hammer" type="Axe" maxUses="0"/>
-  <item id="101" name="BoltAxe" displayName="Bolt Axe" type="Axe" maxUses="0"/>
-  <item id="102" name="KillerAxe" displayName="Killer Axe" type="Axe" maxUses="0"/>
-  <item id="103" name="Aurgelmir" displayName="Aurgelmir" type="Axe" maxUses="0"/>
-  <item id="104" name="Bölverk" displayName="Bölverk" type="Axe" maxUses="0" enemyOnly="true"/>
-  <item id="105" name="FryingPan" displayName="Frying Pan" type="Axe" maxUses="0"/>
-  <item id="106" name="BoneAxe" displayName="Bone Axe" type="Axe" maxUses="0"/>
-  <item id="107" name="RaiderAxe" displayName="Raider Axe" type="Axe" maxUses="0"/>
-  <item id="108" name="BerserkersAxe" displayName="Berserker's Axe" type="Axe" maxUses="0"/>
-  <item id="109" name="CamillasAxe" displayName="Camilla's Axe" type="Axe" maxUses="0"/>
-  <item id="110" name="ArthursAxe" displayName="Arthur's Axe" type="Axe" maxUses="0"/>
-  <item id="111" name="BerukasAxe" displayName="Beruka's Axe" type="Axe" maxUses="0"/>
-  <item id="112" name="BrassClub" displayName="Brass Club" type="Axe" maxUses="0"/>
-  <item id="113" name="IronClub" displayName="Iron Club" type="Axe" maxUses="0"/>
-  <item id="114" name="SteelClub" displayName="Steel Club" type="Axe" maxUses="0"/>
-  <item id="115" name="SilverClub" displayName="Silver Club" type="Axe" maxUses="0"/>
-  <item id="116" name="VengeClub" displayName="Venge Club" type="Axe" maxUses="0"/>
-  <item id="117" name="IronMace" displayName="Iron Mace" type="Axe" maxUses="0" enemyOnly="true"/>
-  <item id="118" name="SteelMace" displayName="Steel Mace" type="Axe" maxUses="0" enemyOnly="true"/>
-  <item id="119" name="SilverMace" displayName="Silver Mace" type="Axe" maxUses="0" enemyOnly="true"/>
-  <item id="120" name="ThrowingClub" displayName="Throwing Club" type="Axe" maxUses="0"/>
-  <item id="121" name="BatteringClub" displayName="Battering Club" type="Axe" maxUses="0"/>
-  <item id="122" name="PikeRuinClub" displayName="Pike-Ruin Club" type="Axe" maxUses="0"/>
-  <item id="123" name="DualClub" displayName="Dual Club" type="Axe" maxUses="0"/>
-  <item id="124" name="GreatClub" displayName="Great Club" type="Axe" maxUses="0"/>
-  <item id="125" name="CarpStreamer" displayName="Carp Streamer" type="Axe" maxUses="0"/>
-  <item id="126" name="Hoe" displayName="Hoe" type="Axe" maxUses="0"/>
-  <item id="127" name="AdamantClub" displayName="Adamant Club" type="Axe" maxUses="0"/>
-  <item id="128" name="RinkahsClub" displayName="Rinkah's Club" type="Axe" maxUses="0"/>
-  <item id="129" name="RyomasClub" displayName="Ryoma's Club" type="Axe" maxUses="0"/>
-  <item id="130" name="FugasClub" displayName="Fuga's Club" type="Axe" maxUses="0"/>
-  <item id="131" name="BronzeDagger" displayName="Bronze Dagger" type="Shuriken" maxUses="0"/>
-  <item id="132" name="IronDagger" displayName="Iron Dagger" type="Shuriken" maxUses="0"/>
-  <item id="133" name="SteelDagger" displayName="Steel Dagger" type="Shuriken" maxUses="0"/>
-  <item id="134" name="SilverDagger" displayName="Silver Dagger" type="Shuriken" maxUses="0"/>
-  <item id="135" name="SoldiersKnife" displayName="Soldier's Knife" type="Shuriken" maxUses="0"/>
-  <item id="136" name="FruitKnife" displayName="Fruit Knife" type="Shuriken" maxUses="0"/>
-  <item id="137" name="HuntersKnife" displayName="Hunter's Knife" type="Shuriken" maxUses="0"/>
-  <item id="138" name="KrisKnife" displayName="Kris Knife" type="Shuriken" maxUses="0"/>
-  <item id="139" name="QuillPen" displayName="Quill Pen" type="Shuriken" maxUses="0"/>
-  <item id="140" name="StaleBread" displayName="Stale Bread" type="Shuriken" maxUses="0"/>
-  <item id="141" name="RaiderKnife" displayName="Raider Knife" type="Shuriken" maxUses="0"/>
-  <item id="142" name="VotiveCandle" displayName="Votive Candle" type="Shuriken" maxUses="0"/>
-  <item id="143" name="SacrificialKnife" displayName="Sacrificial Knife" type="Shuriken" maxUses="0"/>
-  <item id="144" name="FeliciasPlate" displayName="Felicia's Plate" type="Shuriken" maxUses="0"/>
-  <item id="145" name="JakobsTray" displayName="Jakob's Tray" type="Shuriken" maxUses="0"/>
-  <item id="146" name="BrassShuriken" displayName="Brass Shuriken" type="Shuriken" maxUses="0"/>
-  <item id="147" name="IronShuriken" displayName="Iron Shuriken" type="Shuriken" maxUses="0"/>
-  <item id="148" name="SteelShuriken" displayName="Steel Shuriken" type="Shuriken" maxUses="0"/>
-  <item id="149" name="SilverShuriken" displayName="Silver Shuriken" type="Shuriken" maxUses="0"/>
-  <item id="150" name="SpysShuriken" displayName="Spy's Shuriken" type="Shuriken" maxUses="0"/>
-  <item id="151" name="DualShuriken" displayName="Dual Shuriken" type="Shuriken" maxUses="0"/>
-  <item id="152" name="StingShuriken" displayName="Sting Shuriken" type="Shuriken" maxUses="0"/>
-  <item id="153" name="BarbShuriken" displayName="Barb Shuriken" type="Shuriken" maxUses="0"/>
-  <item id="154" name="FlameShuriken" displayName="Flame Shuriken" type="Shuriken" maxUses="0"/>
-  <item id="155" name="Chakram" displayName="Chakram" type="Shuriken" maxUses="0"/>
-  <item id="156" name="Chopstick" displayName="Chopstick" type="Shuriken" maxUses="0"/>
-  <item id="157" name="HairPin" displayName="Hair Pin" type="Shuriken" maxUses="0"/>
-  <item id="158" name="Caltrop" displayName="Caltrop" type="Shuriken" maxUses="0"/>
-  <item id="159" name="KazesNeedle" displayName="Kaze's Needle" type="Shuriken" maxUses="0"/>
-  <item id="160" name="SaizosStar" displayName="Saizo's Star" type="Shuriken" maxUses="0"/>
-  <item id="161" name="KagerosDart" displayName="Kagero's Dart" type="Shuriken" maxUses="0"/>
-  <item id="162" name="BronzeBow" displayName="Bronze Bow" type="Bow" maxUses="0"/>
-  <item id="163" name="IronBow" displayName="Iron Bow" type="Bow" maxUses="0"/>
-  <item id="164" name="SteelBow" displayName="Steel Bow" type="Bow" maxUses="0"/>
-  <item id="165" name="SilverBow" displayName="Silver Bow" type="Bow" maxUses="0"/>
-  <item id="166" name="CrescentBow" displayName="Crescent Bow" type="Bow" maxUses="0"/>
-  <item id="167" name="IronShortbow" displayName="Iron Shortbow" type="Bow" maxUses="0" enemyOnly="true"/>
-  <item id="168" name="SteelShortbow" displayName="Steel Shortbow" type="Bow" maxUses="0" enemyOnly="true"/>
-  <item id="169" name="SilverShortbow" displayName="Silver Shortbow" type="Bow" maxUses="0" enemyOnly="true"/>
-  <item id="170" name="MiniBow" displayName="Mini Bow" type="Bow" maxUses="0"/>
-  <item id="171" name="KillerBow" displayName="Killer Bow" type="Bow" maxUses="0"/>
-  <item id="172" name="BlessedBow" displayName="Blessed Bow" type="Bow" maxUses="0"/>
-  <item id="173" name="ShiningBow" displayName="Shining Bow" type="Bow" maxUses="0"/>
-  <item id="174" name="RubberBow" displayName="Rubber Bow" type="Bow" maxUses="0"/>
-  <item id="175" name="ViolinBow" displayName="Violin Bow" type="Bow" maxUses="0"/>
-  <item id="176" name="CupidBow" displayName="Cupid Bow" type="Bow" maxUses="0"/>
-  <item id="177" name="HuntersBow" displayName="Hunter's Bow" type="Bow" maxUses="0"/>
-  <item id="178" name="AnnasBow" displayName="Anna's Bow" type="Bow" maxUses="0"/>
-  <item id="179" name="NilessBow" displayName="Niles's Bow" type="Bow" maxUses="0"/>
-  <item id="180" name="BrassYumi" displayName="Brass Yumi" type="Bow" maxUses="0"/>
-  <item id="181" name="IronYumi" displayName="Iron Yumi" type="Bow" maxUses="0"/>
-  <item id="182" name="SteelYumi" displayName="Steel Yumi" type="Bow" maxUses="0"/>
-  <item id="183" name="SilverYumi" displayName="Silver Yumi" type="Bow" maxUses="0"/>
-  <item id="184" name="SpysYumi" displayName="Spy's Yumi" type="Bow" maxUses="0"/>
-  <item id="185" name="IronHankyu" displayName="Iron Hankyu" type="Bow" maxUses="0" enemyOnly="true"/>
-  <item id="186" name="SteelHankyu" displayName="Steel Hankyu" type="Bow" maxUses="0" enemyOnly="true"/>
-  <item id="187" name="SilverHankyu" displayName="Silver Hankyu" type="Bow" maxUses="0" enemyOnly="true"/>
-  <item id="188" name="DualYumi" displayName="Dual Yumi" type="Bow" maxUses="0"/>
-  <item id="189" name="IllusoryYumi" displayName="Illusory Yumi" type="Bow" maxUses="0"/>
-  <item id="190" name="SurefireYumi" displayName="Surefire Yumi" type="Bow" maxUses="0"/>
-  <item id="191" name="Pursuer" displayName="Pursuer" type="Bow" maxUses="0"/>
-  <item id="192" name="FujinYumi" displayName="Fujin Yumi" type="Bow" maxUses="0"/>
-  <item id="193" name="FujinYumi2" displayName="Fujin Yumi" type="Bow" maxUses="0"/>
-  <item id="194" name="Skadi" displayName="Skadi" type="Bow" maxUses="0" enemyOnly="true"/>
-  <item id="195" name="BambooYumi" displayName="Bamboo Yumi" type="Bow" maxUses="0"/>
-  <item id="196" name="HarpYumi" displayName="Harp Yumi" type="Bow" maxUses="0"/>
-  <item id="197" name="RaiderYumi" displayName="Raider Yumi" type="Bow" maxUses="0"/>
-  <item id="198" name="SpellbaneYumi" displayName="Spellbane Yumi" type="Bow" maxUses="0"/>
-  <item id="199" name="SidelongYumi" displayName="Sidelong Yumi" type="Bow" maxUses="0"/>
-  <item id="200" name="MikotosYumi" displayName="Mikoto's Yumi" type="Bow" maxUses="0"/>
-  <item id="201" name="SetsunasYumi" displayName="Setsuna's Yumi" type="Bow" maxUses="0"/>
-  <item id="202" name="Fire" displayName="Fire" type="Tome" maxUses="0"/>
-  <item id="203" name="Thunder" displayName="Thunder" type="Tome" maxUses="0"/>
-  <item id="204" name="Fimbulvetr" displayName="Fimbulvetr" type="Tome" maxUses="0"/>
-  <item id="205" name="Ragnarok" displayName="Ragnarok" type="Tome" maxUses="0"/>
-  <item id="206" name="Ginnungagap" displayName="Ginnungagap" type="Tome" maxUses="0"/>
-  <item id="207" name="Lightning" displayName="Lightning" type="Tome" maxUses="0"/>
-  <item id="208" name="Mjölnir" displayName="Mjölnir" type="Tome" maxUses="0"/>
-  <item id="209" name="Nosferatu" displayName="Nosferatu" type="Tome" maxUses="0"/>
-  <item id="210" name="Excalibur" displayName="Excalibur" type="Tome" maxUses="0"/>
-  <item id="211" name="Brynhildr" displayName="Brynhildr" type="Tome" maxUses="0"/>
-  <item id="212" name="Ember" displayName="Ember" type="Tome" maxUses="0"/>
-  <item id="213" name="Missiletainn" displayName="Missiletainn" type="Tome" maxUses="0"/>
-  <item id="214" name="DisrobingGale" displayName="Disrobing Gale" type="Tome" maxUses="0"/>
-  <item id="215" name="SpeedThunder" displayName="Speed Thunder" type="Tome" maxUses="0"/>
-  <item id="216" name="Moonlight" displayName="Moonlight" type="Tome" maxUses="0"/>
-  <item id="217" name="IagosTome" displayName="Iago's Tome" type="Tome" maxUses="0"/>
-  <item id="218" name="OdinsGrimoire" displayName="Odin's Grimoire" type="Tome" maxUses="0"/>
-  <item id="219" name="RatSpirit" displayName="Rat Spirit" type="Tome" maxUses="0"/>
-  <item id="220" name="OxSpirit" displayName="Ox Spirit" type="Tome" maxUses="0"/>
-  <item id="221" name="TigerSpirit" displayName="Tiger Spirit" type="Tome" maxUses="0"/>
-  <item id="222" name="RabbitSpirit" displayName="Rabbit Spirit" type="Tome" maxUses="0"/>
-  <item id="223" name="DragonSpirit" displayName="Dragon Spirit" type="Tome" maxUses="0"/>
-  <item id="224" name="CalamityGate" displayName="Calamity Gate" type="Tome" maxUses="0"/>
-  <item id="225" name="SnakeSpirit" displayName="Snake Spirit" type="Tome" maxUses="0"/>
-  <item id="226" name="HorseSpirit" displayName="Horse Spirit" type="Tome" maxUses="0"/>
-  <item id="227" name="SheepSpirit" displayName="Sheep Spirit" type="Tome" maxUses="0"/>
-  <item id="228" name="Paper" displayName="Paper" type="Tome" maxUses="0"/>
-  <item id="229" name="MalevolentText" displayName="Malevolent Text" type="Tome" maxUses="0"/>
-  <item id="230" name="MonkeySpirit" displayName="Monkey Spirit" type="Tome" maxUses="0"/>
-  <item id="231" name="BirdSpirit" displayName="Bird Spirit" type="Tome" maxUses="0"/>
-  <item id="232" name="InkPainting" displayName="Ink Painting" type="Tome" maxUses="0"/>
-  <item id="233" name="IzanasScroll" displayName="Izana's Scroll" type="Tome" maxUses="0"/>
-  <item id="234" name="Heal" displayName="Heal" type="Staff" maxUses="20"/>
-  <item id="235" name="Mend" displayName="Mend" type="Staff" maxUses="15"/>
-  <item id="236" name="Physic" displayName="Physic" type="Staff" maxUses="5"/>
-  <item id="237" name="Recover" displayName="Recover" type="Staff" maxUses="5"/>
-  <item id="238" name="Fortify" displayName="Fortify" type="Staff" maxUses="2"/>
-  <item id="239" name="Freeze" displayName="Freeze" type="Staff" maxUses="4"/>
-  <item id="240" name="Enfeeble" displayName="Enfeeble" type="Staff" maxUses="4"/>
-  <item id="241" name="Entrap" displayName="Entrap" type="Staff" maxUses="2"/>
-  <item id="242" name="EntrapNohr27" displayName="Entrap" type="Staff" maxUses="1" enemyOnly="true"/>
-  <item id="243" name="Bifröst" displayName="Bifröst" type="Staff" maxUses="1"/>
-  <item id="244" name="CandyCane" displayName="Candy Cane" type="Staff" maxUses="5"/>
-  <item id="245" name="MushroomStaff" displayName="Mushroom Staff" type="Staff" maxUses="5"/>
-  <item id="246" name="BouquetStaff" displayName="Bouquet Staff" type="Staff" maxUses="3"/>
-  <item id="247" name="ElisesStaff" displayName="Elise's Staff" type="Staff" maxUses="1"/>
-  <item id="248" name="LilithsStaff" displayName="Lilith's Staff" type="Staff" maxUses="1"/>
-  <item id="249" name="BloomFestal" displayName="Bloom Festal" type="Staff" maxUses="20"/>
-  <item id="250" name="SunFestal" displayName="Sun Festal" type="Staff" maxUses="15"/>
-  <item id="251" name="WaneFestal" displayName="Wane Festal" type="Staff" maxUses="5"/>
-  <item id="252" name="MoonFestal" displayName="Moon Festal" type="Staff" maxUses="5"/>
-  <item id="253" name="GreatFestal" displayName="Great Festal" type="Staff" maxUses="2"/>
-  <item id="254" name="Rescue" displayName="Rescue" type="Staff" maxUses="2"/>
-  <item id="255" name="Silence" displayName="Silence" type="Staff" maxUses="4"/>
-  <item id="256" name="HexingRod" displayName="Hexing Rod" type="Staff" maxUses="3"/>
-  <item id="257" name="Lantern" displayName="Lantern" type="Staff" maxUses="5"/>
-  <item id="258" name="DumplingRod" displayName="Dumpling Rod" type="Staff" maxUses="3"/>
-  <item id="259" name="BambooBranch" displayName="Bamboo Branch" type="Staff" maxUses="3"/>
-  <item id="260" name="SakurasRod" displayName="Sakura's Rod" type="Staff" maxUses="10"/>
-  <item id="261" name="PurificationRod" displayName="Purification Rod" type="Staff" maxUses="1"/>
-  <item id="262" name="Dragonstone" displayName="Dragonstone" type="Stone" maxUses="0"/>
-  <item id="263" name="DragonstonePlus" displayName="Dragonstone+" type="Stone" maxUses="0"/>
-  <item id="264" name="Beaststone" displayName="Beaststone" type="Stone" maxUses="0"/>
-  <item id="265" name="Beastrune" displayName="Beastrune" type="Stone" maxUses="0"/>
-  <item id="266" name="BeaststonePlus" displayName="Beaststone+" type="Stone" maxUses="0"/>
-  <item id="267" name="DraconicRage" displayName="Draconic Rage" type="NPC" maxUses="0" enemyOnly="true"/>
-  <item id="268" name="DarkBreath" displayName="Dark Breath" type="NPC" maxUses="0" enemyOnly="true"/>
-  <item id="269" name="InvisiblesBreath" displayName="Invisible's Breath" type="NPC" maxUses="0" enemyOnly="true"/>
-  <item id="270" name="InvisiblesBreath2" displayName="Invisible's Breath" type="NPC" maxUses="0" enemyOnly="true"/>
-  <item id="271" name="ShackledFist" displayName="Shackled Fist" type="NPC" maxUses="0" enemyOnly="true"/>
-  <item id="272" name="Gauntlet" displayName="Gauntlet" type="NPC" maxUses="0" enemyOnly="true"/>
-  <item id="273" name="Rock" displayName="Rock" type="NPC" maxUses="0" enemyOnly="true"/>
-  <item id="274" name="MassiveRock" displayName="Massive Rock" type="NPC" maxUses="0" enemyOnly="true"/>
-  <item id="275" name="AstralBreath" displayName="Astral Breath" type="NPC" maxUses="0" enemyOnly="true"/>
-  <item id="276" name="AstralBlessing" displayName="Astral Blessing" type="NPC" maxUses="0" enemyOnly="true"/>
-  <item id="277" name="Vulnerary" displayName="Vulnerary" type="Consumable" maxUses="3"/>
-  <item id="278" name="Concoction" displayName="Concoction" type="Consumable" maxUses="2"/>
-  <item id="279" name="Elixir" displayName="Elixir" type="Consumable" maxUses="1"/>
-  <item id="280" name="HPTonic" displayName="HP Tonic" type="Consumable" maxUses="1"/>
-  <item id="281" name="StrengthTonic" displayName="Strength Tonic" type="Consumable" maxUses="1"/>
-  <item id="282" name="MagicTonic" displayName="Magic Tonic" type="Consumable" maxUses="1"/>
-  <item id="283" name="SkillTonic" displayName="Skill Tonic" type="Consumable" maxUses="1"/>
-  <item id="284" name="SpeedTonic" displayName="Speed Tonic" type="Consumable" maxUses="1"/>
-  <item id="285" name="LuckTonic" displayName="Luck Tonic" type="Consumable" maxUses="1"/>
-  <item id="286" name="DefenseTonic" displayName="Defense Tonic" type="Consumable" maxUses="1"/>
-  <item id="287" name="ResistanceTonic" displayName="Resistance Tonic" type="Consumable" maxUses="1"/>
-  <item id="288" name="AzurasSalve" displayName="Azura's Salve" type="Consumable" maxUses="1"/>
-  <item id="289" name="GuntersPotion" displayName="Gunter's Potion" type="Consumable" maxUses="1"/>
-  <item id="290" name="AsugisConfect" displayName="Asugi's Confect" type="Consumable" maxUses="1"/>
-  <item id="291" name="RainbowTonic" displayName="Rainbow Tonic" type="Consumable" maxUses="1"/>
-  <item id="292" name="SeedOfTrust" displayName="Seed of Trust" type="Consumable" maxUses="1"/>
-  <item id="293" name="AllegroHarp" displayName="Allegro Harp" type="Consumable" maxUses="1"/>
-  <item id="294" name="ShellHorn" displayName="Shell Horn" type="Consumable" maxUses="1"/>
-  <item id="295" name="Saw" displayName="Saw" type="NPC" maxUses="0" enemyOnly="true"/>
-  <item id="296" name="BigSaw" displayName="Big Saw" type="NPC" maxUses="0" enemyOnly="true"/>
-  <item id="297" name="DoorKey" displayName="Door Key" type="Consumable" maxUses="1" mapOnly="true"/>
-  <item id="298" name="ChestKey" displayName="Chest Key" type="Consumable" maxUses="1" mapOnly="true"/>
-  <item id="299" name="MasterKey" displayName="Master Key" type="Consumable" maxUses="1" mapOnly="true"/>
-  <item id="300" name="SeraphRobe" displayName="Seraph Robe" type="Consumable" maxUses="1"/>
-  <item id="301" name="EnergyDrop" displayName="Energy Drop" type="Consumable" maxUses="1"/>
-  <item id="302" name="SpiritDust" displayName="Spirit Dust" type="Consumable" maxUses="1"/>
-  <item id="303" name="SecretBook" displayName="Secret Book" type="Consumable" maxUses="1"/>
-  <item id="304" name="Speedwing" displayName="Speedwing" type="Consumable" maxUses="1"/>
-  <item id="305" name="GoddessIcon" displayName="Goddess Icon" type="Consumable" maxUses="1"/>
-  <item id="306" name="Dracoshield" displayName="Dracoshield" type="Consumable" maxUses="1"/>
-  <item id="307" name="Talisman" displayName="Talisman" type="Consumable" maxUses="1"/>
-  <item id="308" name="DragonHerbs" displayName="Dragon Herbs" type="Consumable" maxUses="1"/>
-  <item id="309" name="Boots" displayName="Boots" type="Consumable" maxUses="1"/>
-  <item id="310" name="ArmsScroll" displayName="Arms Scroll" type="Consumable" maxUses="1"/>
-  <item id="311" name="MasterSeal" displayName="Master Seal" type="Consumable" maxUses="1"/>
-  <item id="312" name="HeartSeal" displayName="Heart Seal" type="Consumable" maxUses="1"/>
-  <item id="313" name="PartnerSeal" displayName="Partner Seal" type="Consumable" maxUses="1"/>
-  <item id="314" name="FriendshipSeal" displayName="Friendship Seal" type="Consumable" maxUses="1"/>
-  <item id="315" name="EternalSeal" displayName="Eternal Seal" type="Consumable" maxUses="1"/>
-  <item id="316" name="DreadScroll" displayName="Dread Scroll" type="Consumable" maxUses="1"/>
-  <item id="317" name="EbonWing" displayName="Ebon Wing" type="Consumable" maxUses="1"/>
-  <item id="318" name="Ganglari2" displayName="Ganglari" type="Sword" maxUses="0"/>
-  <item id="319" name="GoldBar" displayName="Gold Bar" type="Held" maxUses="0"/>
-  <item id="320" name="BattleSeal" displayName="Battle Seal" type="Held" maxUses="0"/>
-  <item id="321" name="VisitationSeal" displayName="Visitation Seal" type="Held" maxUses="0"/>
-  <item id="322" name="OffspringSeal" displayName="Offspring Seal" type="Consumable" maxUses="1"/>
-  <item id="323" name="SightingLens" displayName="Sighting Lens" type="Consumable" maxUses="1"/>
-  <item id="324" name="WitchsMark" displayName="Witch's Mark" type="Consumable" maxUses="1"/>
-  <item id="325" name="Paragon" displayName="Paragon" type="Consumable" maxUses="1"/>
-  <item id="326" name="ArmorShield" displayName="Armor Shield" type="Consumable" maxUses="1"/>
-  <item id="327" name="BeastShield" displayName="Beast Shield" type="Consumable" maxUses="1"/>
-  <item id="328" name="WingedShield" displayName="Winged Shield" type="Consumable" maxUses="1"/>
-  <item id="329" name="PointBlank" displayName="Point Blank" type="Consumable" maxUses="1"/>
-  <item id="330" name="BoldStance" displayName="Bold Stance" type="Consumable" maxUses="1"/>
-  <item id="331" name="Strengthtaker" displayName="Strengthtaker" type="Consumable" maxUses="1"/>
-  <item id="332" name="Magictaker" displayName="Magictaker" type="Consumable" maxUses="1"/>
-  <item id="333" name="Skilltaker" displayName="Skilltaker" type="Consumable" maxUses="1"/>
-  <item id="334" name="Speedtaker" displayName="Speedtaker" type="Consumable" maxUses="1"/>
-  <item id="335" name="Lucktaker" displayName="Lucktaker" type="Consumable" maxUses="1"/>
-  <item id="336" name="Defensetaker" displayName="Defensetaker" type="Consumable" maxUses="1"/>
-  <item id="337" name="Resistancetaker" displayName="Resistancetaker" type="Consumable" maxUses="1"/>
-  <item id="338" name="MasterEmblem" displayName="Master Emblem" type="Held" maxUses="0"/>
-  <item id="339" name="Falchion" displayName="Falchion" type="Sword" maxUses="0"/>
-  <item id="340" name="Ragnell" displayName="Ragnell" type="Sword" maxUses="0"/>
-  <item id="341" name="ParallelFalchion" displayName="Parallel Falchion" type="Sword" maxUses="0"/>
-  <item id="342" name="Thoron" displayName="Thoron" type="Tome" maxUses="0"/>
-  <item id="343" name="MarthsSpatha" displayName="Marth's Spatha" type="Sword" maxUses="0"/>
-  <item id="344" name="IkesBackup" displayName="Ike's Backup" type="Sword" maxUses="0"/>
-  <item id="345" name="LucinasEstoc" displayName="Lucina's Estoc" type="Sword" maxUses="0"/>
-  <item id="346" name="RobinsPrimer" displayName="Robin's Primer" type="Tome" maxUses="0"/>
-  <item id="347" name="Gold1000" displayName="1000G" type="Held" maxUses="0" mapOnly="true"/>
-  <item id="348" name="Gold2000" displayName="2000G" type="Held" maxUses="0" mapOnly="true"/>
-  <item id="349" name="Gold3000" displayName="3000G" type="Held" maxUses="0" mapOnly="true"/>
-  <item id="350" name="Gold5000" displayName="5000G" type="Held" maxUses="0" mapOnly="true"/>
-  <item id="351" name="Gold7000" displayName="7000G" type="Held" maxUses="0" mapOnly="true"/>
-  <item id="352" name="Gold10000" displayName="10000G" type="Held" maxUses="0" mapOnly="true"/>
-  <item id="353" name="Gold20000" displayName="20000G" type="Held" maxUses="0" mapOnly="true"/>
-  <item id="354" name="Obstacle" displayName="Obstacle" type="Held" maxUses="0" mapOnly="true"/>
-  <item id="355" name="Pebble" displayName="Pebble" type="Shuriken" maxUses="0"/>
-  <item id="356" name="HerosBrand" displayName="Hero's Brand" type="Consumable" maxUses="1"/>
-  <item id="357" name="ExaltsBrand" displayName="Exalt's Brand" type="Consumable" maxUses="1"/>
-  <item id="358" name="Unknown358" displayName="Falchion" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="359" name="FellBrand" displayName="Fell Brand" type="Consumable" maxUses="1"/>
-  <item id="360" name="FirstBlood" displayName="First Blood" type="Consumable" maxUses="1"/>
-  <item id="361" name="Unknown361" displayName="BBBBBBB" type="Consumable" maxUses="1"/>
-  <item id="362" name="VanguardBrand" displayName="Vanguard Brand" type="Consumable" maxUses="1"/>
-  <item id="363" name="HeavyBlade" displayName="Heavy Blade" type="Consumable" maxUses="1"/>
-  <item id="364" name="VeteranIntuition" displayName="Veteran Intuition" type="Consumable" maxUses="1"/>
-  <item id="365" name="Aether" displayName="Aether" type="Consumable" maxUses="1"/>
-  <item id="366" name="Unknown366" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="367" name="Unknown367" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="368" name="Unknown368" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="369" name="Unknown369" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="370" name="Unknown370" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="371" name="Unknown371" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="372" name="Unknown372" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="373" name="Unknown373" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="374" name="Unknown374" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="375" name="Unknown375" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="376" name="Unknown376" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="377" name="Unknown377" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="378" name="Unknown378" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="379" name="Unknown379" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="380" name="Unknown380" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="381" name="Unknown381" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="382" name="Unknown382" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="383" name="Unknown383" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="384" name="Unknown384" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="385" name="Unknown385" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="386" name="Unknown386" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="387" name="Unknown387" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="388" name="Unknown388" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="389" name="Unknown389" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="390" name="Unknown390" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="391" name="Unknown391" displayName="BBBBBBB" type="Unknown" maxUses="DDDDDDD"/>
-  <item id="392" name="Warp" displayName="Warp" type="Consumable" maxUses="1"/>
-  <!-- template: <item id="001" name="AAAAAAA" displayName="BBBBBBB" type="CCCCCCC" maxUses="DDDDDDD" /> -->
+﻿<root>
+  <item id="0" name="None" type="Unknown" maxUses="0">
+    <text lang="English" displayName="(None)" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="1" name="BronzeSword" type="Sword" maxUses="0">
+    <text lang="English" displayName="Bronze Sword" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="2" name="IronSword" type="Sword" maxUses="0">
+    <text lang="English" displayName="Iron Sword" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="3" name="SteelSword" type="Sword" maxUses="0">
+    <text lang="English" displayName="Steel Sword" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="4" name="SilverSword" type="Sword" maxUses="0">
+    <text lang="English" displayName="Silver Sword" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="5" name="BraveSword" type="Sword" maxUses="0">
+    <text lang="English" displayName="Brave Sword" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="6" name="IronKukri" type="Sword" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Iron Kukri" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="7" name="SteelKukri" type="Sword" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Steel Kukri" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="8" name="SilverKukri" type="Sword" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Silver Kukri" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="9" name="Armorslayer" type="Sword" maxUses="0">
+    <text lang="English" displayName="Armorslayer" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="10" name="Wyrmslayer" type="Sword" maxUses="0">
+    <text lang="English" displayName="Wyrmslayer" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="11" name="KillingEdge" type="Sword" maxUses="0">
+    <text lang="English" displayName="Killing Edge" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="12" name="LevinSword" type="Sword" maxUses="0">
+    <text lang="English" displayName="Levin Sword" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="13" name="Ganglari" type="Sword" maxUses="0">
+    <text lang="English" displayName="Ganglari" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="14" name="Siegfried" type="Sword" maxUses="0">
+    <text lang="English" displayName="Siegfried" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="15" name="Bottle" type="Sword" maxUses="0">
+    <text lang="English" displayName="Bottle" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="16" name="Umbrella" type="Sword" maxUses="0">
+    <text lang="English" displayName="Umbrella" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="17" name="NohrianBlade" type="Sword" maxUses="0">
+    <text lang="English" displayName="Nohrian Blade" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="18" name="LeosIceblade" type="Sword" maxUses="0">
+    <text lang="English" displayName="Leo's Iceblade" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="19" name="SelenasBlade" type="Sword" maxUses="0">
+    <text lang="English" displayName="Selena's Blade" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="20" name="LaslowsBlade" type="Sword" maxUses="0">
+    <text lang="English" displayName="Laslow's Blade" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="21" name="BronzeKatana" type="Sword" maxUses="0">
+    <text lang="English" displayName="Bronze Katana" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="22" name="IronKatana" type="Sword" maxUses="0">
+    <text lang="English" displayName="Iron Katana" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="23" name="SteelKatana" type="Sword" maxUses="0">
+    <text lang="English" displayName="Steel Katana" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="24" name="SilverKatana" type="Sword" maxUses="0">
+    <text lang="English" displayName="Silver Katana" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="25" name="VengeKatana" type="Sword" maxUses="0">
+    <text lang="English" displayName="Venge Katana" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="26" name="IronKatti" type="Sword" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Iron Katti" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="27" name="SteelKatti" type="Sword" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Steel Katti" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="28" name="SilverKatti" type="Sword" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Silver Katti" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="29" name="Kodachi" type="Sword" maxUses="0">
+    <text lang="English" displayName="Kodachi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="30" name="Wakizashi" type="Sword" maxUses="0">
+    <text lang="English" displayName="Wakizashi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="31" name="AxeSplitter" type="Sword" maxUses="0">
+    <text lang="English" displayName="Axe Splitter" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="32" name="DualKatana" type="Sword" maxUses="0">
+    <text lang="English" displayName="Dual Katana" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="33" name="PracticeKatana" type="Sword" maxUses="0">
+    <text lang="English" displayName="Practice Katana" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="34" name="SpiritKatana" type="Sword" maxUses="0">
+    <text lang="English" displayName="Spirit Katana" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="35" name="HagakureBlade" type="Sword" maxUses="0">
+    <text lang="English" displayName="Hagakure Blade" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="36" name="Yato" type="Sword" maxUses="0">
+    <text lang="English" displayName="Yato" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="37" name="NobleYato" type="Sword" maxUses="0">
+    <text lang="English" displayName="Noble Yato" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="38" name="BlazingYato" type="Sword" maxUses="0">
+    <text lang="English" displayName="Blazing Yato" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="39" name="GrimYato" type="Sword" maxUses="0">
+    <text lang="English" displayName="Grim Yato" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="40" name="ShadowYato" type="Sword" maxUses="0">
+    <text lang="English" displayName="Shadow Yato" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="41" name="AlphaYato" type="Sword" maxUses="0">
+    <text lang="English" displayName="Alpha Yato" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="42" name="OmegaYato" type="Sword" maxUses="0">
+    <text lang="English" displayName="Omega Yato" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="43" name="Raijinto" type="Sword" maxUses="0">
+    <text lang="English" displayName="Raijinto" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="44" name="DaikonRadish" type="Sword" maxUses="0">
+    <text lang="English" displayName="Daikon Radish" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="45" name="Parasol" type="Sword" maxUses="0">
+    <text lang="English" displayName="Parasol" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="46" name="RaiderKatana" type="Sword" maxUses="0">
+    <text lang="English" displayName="Raider Katana" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="47" name="SunriseKatana" type="Sword" maxUses="0">
+    <text lang="English" displayName="Sunrise Katana" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="48" name="TakumisShinai" type="Sword" maxUses="0">
+    <text lang="English" displayName="Takumi's Shinai" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="49" name="HanasKatana" type="Sword" maxUses="0">
+    <text lang="English" displayName="Hana's Katana" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="50" name="HinatasKatana" type="Sword" maxUses="0">
+    <text lang="English" displayName="Hinata's Katana" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="51" name="BronzeLance" type="Lance" maxUses="0">
+    <text lang="English" displayName="Bronze Lance" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="52" name="IronLance" type="Lance" maxUses="0">
+    <text lang="English" displayName="Iron Lance" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="53" name="SteelLance" type="Lance" maxUses="0">
+    <text lang="English" displayName="Steel Lance" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="54" name="SilverLance" type="Lance" maxUses="0">
+    <text lang="English" displayName="Silver Lance" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="55" name="BraveLance" type="Lance" maxUses="0">
+    <text lang="English" displayName="Brave Lance" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="56" name="IronJavelin" type="Lance" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Iron Javelin" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="57" name="SteelJavelin" type="Lance" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Steel Javelin" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="58" name="SilverJavelin" type="Lance" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Silver Javelin" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="59" name="Javelin" type="Lance" maxUses="0">
+    <text lang="English" displayName="Javelin" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="60" name="Spear" type="Lance" maxUses="0">
+    <text lang="English" displayName="Spear" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="61" name="BeastKiller" type="Lance" maxUses="0">
+    <text lang="English" displayName="Beast Killer" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="62" name="KillerLance" type="Lance" maxUses="0">
+    <text lang="English" displayName="Killer Lance" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="63" name="BlessedLance" type="Lance" maxUses="0">
+    <text lang="English" displayName="Blessed Lance" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="64" name="Broom" type="Lance" maxUses="0">
+    <text lang="English" displayName="Broom" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="65" name="Stick" type="Lance" maxUses="0">
+    <text lang="English" displayName="Stick" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="66" name="HexlockSpear" type="Lance" maxUses="0">
+    <text lang="English" displayName="Hexlock Spear" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="67" name="XandersLance" type="Lance" maxUses="0">
+    <text lang="English" displayName="Xander's Lance" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="68" name="EffiesLance" type="Lance" maxUses="0">
+    <text lang="English" displayName="Effie's Lance" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="69" name="PerisLance" type="Lance" maxUses="0">
+    <text lang="English" displayName="Peri's Lance" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="70" name="BrassNaginata" type="Lance" maxUses="0">
+    <text lang="English" displayName="Brass Naginata" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="71" name="IronNaginata" type="Lance" maxUses="0">
+    <text lang="English" displayName="Iron Naginata" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="72" name="SteelNaginata" type="Lance" maxUses="0">
+    <text lang="English" displayName="Steel Naginata" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="73" name="SilverNaginata" type="Lance" maxUses="0">
+    <text lang="English" displayName="Silver Naginata" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="74" name="VengeNaginata" type="Lance" maxUses="0">
+    <text lang="English" displayName="Venge Naginata" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="75" name="IronNageyari" type="Lance" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Iron Nageyari" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="76" name="SteelNageyari" type="Lance" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Steel Nageyari" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="77" name="SilverNageyari" type="Lance" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Silver Nageyari" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="78" name="Swordcatcher" type="Lance" maxUses="0">
+    <text lang="English" displayName="Swordcatcher" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="79" name="DualNaginata" type="Lance" maxUses="0">
+    <text lang="English" displayName="Dual Naginata" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="80" name="GuardNaginata" type="Lance" maxUses="0">
+    <text lang="English" displayName="Guard Naginata" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="81" name="BoltNaginata" type="Lance" maxUses="0">
+    <text lang="English" displayName="Bolt Naginata" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="82" name="Waterwheel" type="Lance" maxUses="0">
+    <text lang="English" displayName="Waterwheel" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="83" name="BambooPole" type="Lance" maxUses="0">
+    <text lang="English" displayName="Bamboo Pole" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="84" name="PineBranch" type="Lance" maxUses="0">
+    <text lang="English" displayName="Pine Branch" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="85" name="RaiderNaginata" type="Lance" maxUses="0">
+    <text lang="English" displayName="Raider Naginata" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="86" name="BoldNaginata" type="Lance" maxUses="0">
+    <text lang="English" displayName="Bold Naginata" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="87" name="HinokasSpear" type="Lance" maxUses="0">
+    <text lang="English" displayName="Hinoka's Spear" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="88" name="SubakisPike" type="Lance" maxUses="0">
+    <text lang="English" displayName="Subaki's Pike" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="89" name="OborosSpear" type="Lance" maxUses="0">
+    <text lang="English" displayName="Oboro's Spear" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="90" name="BronzeAxe" type="Axe" maxUses="0">
+    <text lang="English" displayName="Bronze Axe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="91" name="IronAxe" type="Axe" maxUses="0">
+    <text lang="English" displayName="Iron Axe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="92" name="SteelAxe" type="Axe" maxUses="0">
+    <text lang="English" displayName="Steel Axe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="93" name="SilverAxe" type="Axe" maxUses="0">
+    <text lang="English" displayName="Silver Axe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="94" name="BraveAxe" type="Axe" maxUses="0">
+    <text lang="English" displayName="Brave Axe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="95" name="IronStarAxe" type="Axe" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Iron Star Axe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="96" name="SteelStarAxe" type="Axe" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Steel Star Axe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="97" name="SilverStarAxe" type="Axe" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Silver Star Axe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="98" name="HandAxe" type="Axe" maxUses="0">
+    <text lang="English" displayName="Hand Axe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="99" name="Tomahawk" type="Axe" maxUses="0">
+    <text lang="English" displayName="Tomahawk" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="100" name="Hammer" type="Axe" maxUses="0">
+    <text lang="English" displayName="Hammer" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="101" name="BoltAxe" type="Axe" maxUses="0">
+    <text lang="English" displayName="Bolt Axe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="102" name="KillerAxe" type="Axe" maxUses="0">
+    <text lang="English" displayName="Killer Axe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="103" name="Aurgelmir" type="Axe" maxUses="0">
+    <text lang="English" displayName="Aurgelmir" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="104" name="Bölverk" type="Axe" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Bölverk" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="105" name="FryingPan" type="Axe" maxUses="0">
+    <text lang="English" displayName="Frying Pan" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="106" name="BoneAxe" type="Axe" maxUses="0">
+    <text lang="English" displayName="Bone Axe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="107" name="RaiderAxe" type="Axe" maxUses="0">
+    <text lang="English" displayName="Raider Axe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="108" name="BerserkersAxe" type="Axe" maxUses="0">
+    <text lang="English" displayName="Berserker's Axe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="109" name="CamillasAxe" type="Axe" maxUses="0">
+    <text lang="English" displayName="Camilla's Axe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="110" name="ArthursAxe" type="Axe" maxUses="0">
+    <text lang="English" displayName="Arthur's Axe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="111" name="BerukasAxe" type="Axe" maxUses="0">
+    <text lang="English" displayName="Beruka's Axe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="112" name="BrassClub" type="Axe" maxUses="0">
+    <text lang="English" displayName="Brass Club" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="113" name="IronClub" type="Axe" maxUses="0">
+    <text lang="English" displayName="Iron Club" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="114" name="SteelClub" type="Axe" maxUses="0">
+    <text lang="English" displayName="Steel Club" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="115" name="SilverClub" type="Axe" maxUses="0">
+    <text lang="English" displayName="Silver Club" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="116" name="VengeClub" type="Axe" maxUses="0">
+    <text lang="English" displayName="Venge Club" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="117" name="IronMace" type="Axe" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Iron Mace" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="118" name="SteelMace" type="Axe" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Steel Mace" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="119" name="SilverMace" type="Axe" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Silver Mace" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="120" name="ThrowingClub" type="Axe" maxUses="0">
+    <text lang="English" displayName="Throwing Club" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="121" name="BatteringClub" type="Axe" maxUses="0">
+    <text lang="English" displayName="Battering Club" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="122" name="PikeRuinClub" type="Axe" maxUses="0">
+    <text lang="English" displayName="Pike-Ruin Club" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="123" name="DualClub" type="Axe" maxUses="0">
+    <text lang="English" displayName="Dual Club" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="124" name="GreatClub" type="Axe" maxUses="0">
+    <text lang="English" displayName="Great Club" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="125" name="CarpStreamer" type="Axe" maxUses="0">
+    <text lang="English" displayName="Carp Streamer" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="126" name="Hoe" type="Axe" maxUses="0">
+    <text lang="English" displayName="Hoe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="127" name="AdamantClub" type="Axe" maxUses="0">
+    <text lang="English" displayName="Adamant Club" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="128" name="RinkahsClub" type="Axe" maxUses="0">
+    <text lang="English" displayName="Rinkah's Club" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="129" name="RyomasClub" type="Axe" maxUses="0">
+    <text lang="English" displayName="Ryoma's Club" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="130" name="FugasClub" type="Axe" maxUses="0">
+    <text lang="English" displayName="Fuga's Club" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="131" name="BronzeDagger" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Bronze Dagger" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="132" name="IronDagger" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Iron Dagger" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="133" name="SteelDagger" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Steel Dagger" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="134" name="SilverDagger" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Silver Dagger" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="135" name="SoldiersKnife" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Soldier's Knife" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="136" name="FruitKnife" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Fruit Knife" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="137" name="HuntersKnife" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Hunter's Knife" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="138" name="KrisKnife" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Kris Knife" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="139" name="QuillPen" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Quill Pen" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="140" name="StaleBread" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Stale Bread" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="141" name="RaiderKnife" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Raider Knife" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="142" name="VotiveCandle" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Votive Candle" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="143" name="SacrificialKnife" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Sacrificial Knife" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="144" name="FeliciasPlate" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Felicia's Plate" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="145" name="JakobsTray" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Jakob's Tray" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="146" name="BrassShuriken" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Brass Shuriken" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="147" name="IronShuriken" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Iron Shuriken" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="148" name="SteelShuriken" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Steel Shuriken" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="149" name="SilverShuriken" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Silver Shuriken" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="150" name="SpysShuriken" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Spy's Shuriken" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="151" name="DualShuriken" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Dual Shuriken" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="152" name="StingShuriken" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Sting Shuriken" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="153" name="BarbShuriken" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Barb Shuriken" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="154" name="FlameShuriken" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Flame Shuriken" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="155" name="Chakram" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Chakram" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="156" name="Chopstick" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Chopstick" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="157" name="HairPin" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Hair Pin" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="158" name="Caltrop" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Caltrop" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="159" name="KazesNeedle" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Kaze's Needle" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="160" name="SaizosStar" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Saizo's Star" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="161" name="KagerosDart" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Kagero's Dart" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="162" name="BronzeBow" type="Bow" maxUses="0">
+    <text lang="English" displayName="Bronze Bow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="163" name="IronBow" type="Bow" maxUses="0">
+    <text lang="English" displayName="Iron Bow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="164" name="SteelBow" type="Bow" maxUses="0">
+    <text lang="English" displayName="Steel Bow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="165" name="SilverBow" type="Bow" maxUses="0">
+    <text lang="English" displayName="Silver Bow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="166" name="CrescentBow" type="Bow" maxUses="0">
+    <text lang="English" displayName="Crescent Bow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="167" name="IronShortbow" type="Bow" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Iron Shortbow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="168" name="SteelShortbow" type="Bow" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Steel Shortbow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="169" name="SilverShortbow" type="Bow" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Silver Shortbow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="170" name="MiniBow" type="Bow" maxUses="0">
+    <text lang="English" displayName="Mini Bow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="171" name="KillerBow" type="Bow" maxUses="0">
+    <text lang="English" displayName="Killer Bow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="172" name="BlessedBow" type="Bow" maxUses="0">
+    <text lang="English" displayName="Blessed Bow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="173" name="ShiningBow" type="Bow" maxUses="0">
+    <text lang="English" displayName="Shining Bow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="174" name="RubberBow" type="Bow" maxUses="0">
+    <text lang="English" displayName="Rubber Bow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="175" name="ViolinBow" type="Bow" maxUses="0">
+    <text lang="English" displayName="Violin Bow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="176" name="CupidBow" type="Bow" maxUses="0">
+    <text lang="English" displayName="Cupid Bow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="177" name="HuntersBow" type="Bow" maxUses="0">
+    <text lang="English" displayName="Hunter's Bow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="178" name="AnnasBow" type="Bow" maxUses="0">
+    <text lang="English" displayName="Anna's Bow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="179" name="NilessBow" type="Bow" maxUses="0">
+    <text lang="English" displayName="Niles's Bow" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="180" name="BrassYumi" type="Bow" maxUses="0">
+    <text lang="English" displayName="Brass Yumi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="181" name="IronYumi" type="Bow" maxUses="0">
+    <text lang="English" displayName="Iron Yumi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="182" name="SteelYumi" type="Bow" maxUses="0">
+    <text lang="English" displayName="Steel Yumi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="183" name="SilverYumi" type="Bow" maxUses="0">
+    <text lang="English" displayName="Silver Yumi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="184" name="SpysYumi" type="Bow" maxUses="0">
+    <text lang="English" displayName="Spy's Yumi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="185" name="IronHankyu" type="Bow" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Iron Hankyu" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="186" name="SteelHankyu" type="Bow" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Steel Hankyu" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="187" name="SilverHankyu" type="Bow" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Silver Hankyu" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="188" name="DualYumi" type="Bow" maxUses="0">
+    <text lang="English" displayName="Dual Yumi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="189" name="IllusoryYumi" type="Bow" maxUses="0">
+    <text lang="English" displayName="Illusory Yumi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="190" name="SurefireYumi" type="Bow" maxUses="0">
+    <text lang="English" displayName="Surefire Yumi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="191" name="Pursuer" type="Bow" maxUses="0">
+    <text lang="English" displayName="Pursuer" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="192" name="FujinYumi" type="Bow" maxUses="0">
+    <text lang="English" displayName="Fujin Yumi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="193" name="FujinYumi2" type="Bow" maxUses="0">
+    <text lang="English" displayName="Fujin Yumi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="194" name="Skadi" type="Bow" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Skadi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="195" name="BambooYumi" type="Bow" maxUses="0">
+    <text lang="English" displayName="Bamboo Yumi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="196" name="HarpYumi" type="Bow" maxUses="0">
+    <text lang="English" displayName="Harp Yumi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="197" name="RaiderYumi" type="Bow" maxUses="0">
+    <text lang="English" displayName="Raider Yumi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="198" name="SpellbaneYumi" type="Bow" maxUses="0">
+    <text lang="English" displayName="Spellbane Yumi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="199" name="SidelongYumi" type="Bow" maxUses="0">
+    <text lang="English" displayName="Sidelong Yumi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="200" name="MikotosYumi" type="Bow" maxUses="0">
+    <text lang="English" displayName="Mikoto's Yumi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="201" name="SetsunasYumi" type="Bow" maxUses="0">
+    <text lang="English" displayName="Setsuna's Yumi" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="202" name="Fire" type="Tome" maxUses="0">
+    <text lang="English" displayName="Fire" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="203" name="Thunder" type="Tome" maxUses="0">
+    <text lang="English" displayName="Thunder" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="204" name="Fimbulvetr" type="Tome" maxUses="0">
+    <text lang="English" displayName="Fimbulvetr" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="205" name="Ragnarok" type="Tome" maxUses="0">
+    <text lang="English" displayName="Ragnarok" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="206" name="Ginnungagap" type="Tome" maxUses="0">
+    <text lang="English" displayName="Ginnungagap" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="207" name="Lightning" type="Tome" maxUses="0">
+    <text lang="English" displayName="Lightning" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="208" name="Mjölnir" type="Tome" maxUses="0">
+    <text lang="English" displayName="Mjölnir" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="209" name="Nosferatu" type="Tome" maxUses="0">
+    <text lang="English" displayName="Nosferatu" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="210" name="Excalibur" type="Tome" maxUses="0">
+    <text lang="English" displayName="Excalibur" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="211" name="Brynhildr" type="Tome" maxUses="0">
+    <text lang="English" displayName="Brynhildr" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="212" name="Ember" type="Tome" maxUses="0">
+    <text lang="English" displayName="Ember" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="213" name="Missiletainn" type="Tome" maxUses="0">
+    <text lang="English" displayName="Missiletainn" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="214" name="DisrobingGale" type="Tome" maxUses="0">
+    <text lang="English" displayName="Disrobing Gale" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="215" name="SpeedThunder" type="Tome" maxUses="0">
+    <text lang="English" displayName="Speed Thunder" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="216" name="Moonlight" type="Tome" maxUses="0">
+    <text lang="English" displayName="Moonlight" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="217" name="IagosTome" type="Tome" maxUses="0">
+    <text lang="English" displayName="Iago's Tome" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="218" name="OdinsGrimoire" type="Tome" maxUses="0">
+    <text lang="English" displayName="Odin's Grimoire" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="219" name="RatSpirit" type="Tome" maxUses="0">
+    <text lang="English" displayName="Rat Spirit" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="220" name="OxSpirit" type="Tome" maxUses="0">
+    <text lang="English" displayName="Ox Spirit" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="221" name="TigerSpirit" type="Tome" maxUses="0">
+    <text lang="English" displayName="Tiger Spirit" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="222" name="RabbitSpirit" type="Tome" maxUses="0">
+    <text lang="English" displayName="Rabbit Spirit" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="223" name="DragonSpirit" type="Tome" maxUses="0">
+    <text lang="English" displayName="Dragon Spirit" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="224" name="CalamityGate" type="Tome" maxUses="0">
+    <text lang="English" displayName="Calamity Gate" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="225" name="SnakeSpirit" type="Tome" maxUses="0">
+    <text lang="English" displayName="Snake Spirit" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="226" name="HorseSpirit" type="Tome" maxUses="0">
+    <text lang="English" displayName="Horse Spirit" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="227" name="SheepSpirit" type="Tome" maxUses="0">
+    <text lang="English" displayName="Sheep Spirit" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="228" name="Paper" type="Tome" maxUses="0">
+    <text lang="English" displayName="Paper" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="229" name="MalevolentText" type="Tome" maxUses="0">
+    <text lang="English" displayName="Malevolent Text" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="230" name="MonkeySpirit" type="Tome" maxUses="0">
+    <text lang="English" displayName="Monkey Spirit" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="231" name="BirdSpirit" type="Tome" maxUses="0">
+    <text lang="English" displayName="Bird Spirit" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="232" name="InkPainting" type="Tome" maxUses="0">
+    <text lang="English" displayName="Ink Painting" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="233" name="IzanasScroll" type="Tome" maxUses="0">
+    <text lang="English" displayName="Izana's Scroll" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="234" name="Heal" type="Staff" maxUses="20">
+    <text lang="English" displayName="Heal" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="235" name="Mend" type="Staff" maxUses="15">
+    <text lang="English" displayName="Mend" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="236" name="Physic" type="Staff" maxUses="5">
+    <text lang="English" displayName="Physic" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="237" name="Recover" type="Staff" maxUses="5">
+    <text lang="English" displayName="Recover" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="238" name="Fortify" type="Staff" maxUses="2">
+    <text lang="English" displayName="Fortify" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="239" name="Freeze" type="Staff" maxUses="4">
+    <text lang="English" displayName="Freeze" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="240" name="Enfeeble" type="Staff" maxUses="4">
+    <text lang="English" displayName="Enfeeble" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="241" name="Entrap" type="Staff" maxUses="2">
+    <text lang="English" displayName="Entrap" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="242" name="EntrapNohr27" type="Staff" maxUses="1" enemyOnly="true">
+    <text lang="English" displayName="Entrap" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="243" name="Bifröst" type="Staff" maxUses="1">
+    <text lang="English" displayName="Bifröst" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="244" name="CandyCane" type="Staff" maxUses="5">
+    <text lang="English" displayName="Candy Cane" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="245" name="MushroomStaff" type="Staff" maxUses="5">
+    <text lang="English" displayName="Mushroom Staff" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="246" name="BouquetStaff" type="Staff" maxUses="3">
+    <text lang="English" displayName="Bouquet Staff" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="247" name="ElisesStaff" type="Staff" maxUses="1">
+    <text lang="English" displayName="Elise's Staff" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="248" name="LilithsStaff" type="Staff" maxUses="1">
+    <text lang="English" displayName="Lilith's Staff" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="249" name="BloomFestal" type="Staff" maxUses="20">
+    <text lang="English" displayName="Bloom Festal" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="250" name="SunFestal" type="Staff" maxUses="15">
+    <text lang="English" displayName="Sun Festal" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="251" name="WaneFestal" type="Staff" maxUses="5">
+    <text lang="English" displayName="Wane Festal" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="252" name="MoonFestal" type="Staff" maxUses="5">
+    <text lang="English" displayName="Moon Festal" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="253" name="GreatFestal" type="Staff" maxUses="2">
+    <text lang="English" displayName="Great Festal" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="254" name="Rescue" type="Staff" maxUses="2">
+    <text lang="English" displayName="Rescue" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="255" name="Silence" type="Staff" maxUses="4">
+    <text lang="English" displayName="Silence" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="256" name="HexingRod" type="Staff" maxUses="3">
+    <text lang="English" displayName="Hexing Rod" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="257" name="Lantern" type="Staff" maxUses="5">
+    <text lang="English" displayName="Lantern" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="258" name="DumplingRod" type="Staff" maxUses="3">
+    <text lang="English" displayName="Dumpling Rod" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="259" name="BambooBranch" type="Staff" maxUses="3">
+    <text lang="English" displayName="Bamboo Branch" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="260" name="SakurasRod" type="Staff" maxUses="10">
+    <text lang="English" displayName="Sakura's Rod" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="261" name="PurificationRod" type="Staff" maxUses="1">
+    <text lang="English" displayName="Purification Rod" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="262" name="Dragonstone" type="Stone" maxUses="0">
+    <text lang="English" displayName="Dragonstone" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="263" name="DragonstonePlus" type="Stone" maxUses="0">
+    <text lang="English" displayName="Dragonstone+" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="264" name="Beaststone" type="Stone" maxUses="0">
+    <text lang="English" displayName="Beaststone" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="265" name="Beastrune" type="Stone" maxUses="0">
+    <text lang="English" displayName="Beastrune" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="266" name="BeaststonePlus" type="Stone" maxUses="0">
+    <text lang="English" displayName="Beaststone+" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="267" name="DraconicRage" type="NPC" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Draconic Rage" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="268" name="DarkBreath" type="NPC" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Dark Breath" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="269" name="InvisiblesBreath" type="NPC" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Invisible's Breath" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="270" name="InvisiblesBreath2" type="NPC" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Invisible's Breath" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="271" name="ShackledFist" type="NPC" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Shackled Fist" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="272" name="Gauntlet" type="NPC" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Gauntlet" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="273" name="Rock" type="NPC" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Rock" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="274" name="MassiveRock" type="NPC" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Massive Rock" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="275" name="AstralBreath" type="NPC" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Astral Breath" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="276" name="AstralBlessing" type="NPC" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Astral Blessing" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="277" name="Vulnerary" type="Consumable" maxUses="3">
+    <text lang="English" displayName="Vulnerary" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="278" name="Concoction" type="Consumable" maxUses="2">
+    <text lang="English" displayName="Concoction" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="279" name="Elixir" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Elixir" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="280" name="HPTonic" type="Consumable" maxUses="1">
+    <text lang="English" displayName="HP Tonic" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="281" name="StrengthTonic" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Strength Tonic" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="282" name="MagicTonic" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Magic Tonic" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="283" name="SkillTonic" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Skill Tonic" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="284" name="SpeedTonic" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Speed Tonic" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="285" name="LuckTonic" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Luck Tonic" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="286" name="DefenseTonic" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Defense Tonic" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="287" name="ResistanceTonic" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Resistance Tonic" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="288" name="AzurasSalve" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Azura's Salve" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="289" name="GuntersPotion" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Gunter's Potion" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="290" name="AsugisConfect" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Asugi's Confect" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="291" name="RainbowTonic" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Rainbow Tonic" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="292" name="SeedOfTrust" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Seed of Trust" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="293" name="AllegroHarp" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Allegro Harp" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="294" name="ShellHorn" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Shell Horn" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="295" name="Saw" type="NPC" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Saw" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="296" name="BigSaw" type="NPC" maxUses="0" enemyOnly="true">
+    <text lang="English" displayName="Big Saw" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="297" name="DoorKey" type="Consumable" maxUses="1" mapOnly="true">
+    <text lang="English" displayName="Door Key" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="298" name="ChestKey" type="Consumable" maxUses="1" mapOnly="true">
+    <text lang="English" displayName="Chest Key" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="299" name="MasterKey" type="Consumable" maxUses="1" mapOnly="true">
+    <text lang="English" displayName="Master Key" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="300" name="SeraphRobe" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Seraph Robe" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="301" name="EnergyDrop" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Energy Drop" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="302" name="SpiritDust" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Spirit Dust" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="303" name="SecretBook" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Secret Book" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="304" name="Speedwing" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Speedwing" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="305" name="GoddessIcon" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Goddess Icon" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="306" name="Dracoshield" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Dracoshield" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="307" name="Talisman" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Talisman" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="308" name="DragonHerbs" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Dragon Herbs" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="309" name="Boots" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Boots" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="310" name="ArmsScroll" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Arms Scroll" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="311" name="MasterSeal" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Master Seal" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="312" name="HeartSeal" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Heart Seal" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="313" name="PartnerSeal" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Partner Seal" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="314" name="FriendshipSeal" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Friendship Seal" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="315" name="EternalSeal" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Eternal Seal" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="316" name="DreadScroll" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Dread Scroll" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="317" name="EbonWing" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Ebon Wing" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="318" name="Ganglari2" type="Sword" maxUses="0">
+    <text lang="English" displayName="Ganglari" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="319" name="GoldBar" type="Held" maxUses="0">
+    <text lang="English" displayName="Gold Bar" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="320" name="BattleSeal" type="Held" maxUses="0">
+    <text lang="English" displayName="Battle Seal" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="321" name="VisitationSeal" type="Held" maxUses="0">
+    <text lang="English" displayName="Visitation Seal" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="322" name="OffspringSeal" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Offspring Seal" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="323" name="SightingLens" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Sighting Lens" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="324" name="WitchsMark" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Witch's Mark" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="325" name="Paragon" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Paragon" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="326" name="ArmorShield" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Armor Shield" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="327" name="BeastShield" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Beast Shield" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="328" name="WingedShield" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Winged Shield" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="329" name="PointBlank" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Point Blank" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="330" name="BoldStance" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Bold Stance" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="331" name="Strengthtaker" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Strengthtaker" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="332" name="Magictaker" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Magictaker" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="333" name="Skilltaker" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Skilltaker" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="334" name="Speedtaker" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Speedtaker" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="335" name="Lucktaker" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Lucktaker" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="336" name="Defensetaker" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Defensetaker" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="337" name="Resistancetaker" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Resistancetaker" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="338" name="MasterEmblem" type="Held" maxUses="0">
+    <text lang="English" displayName="Master Emblem" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="339" name="Falchion" type="Sword" maxUses="0">
+    <text lang="English" displayName="Falchion" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="340" name="Ragnell" type="Sword" maxUses="0">
+    <text lang="English" displayName="Ragnell" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="341" name="ParallelFalchion" type="Sword" maxUses="0">
+    <text lang="English" displayName="Parallel Falchion" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="342" name="Thoron" type="Tome" maxUses="0">
+    <text lang="English" displayName="Thoron" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="343" name="MarthsSpatha" type="Sword" maxUses="0">
+    <text lang="English" displayName="Marth's Spatha" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="344" name="IkesBackup" type="Sword" maxUses="0">
+    <text lang="English" displayName="Ike's Backup" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="345" name="LucinasEstoc" type="Sword" maxUses="0">
+    <text lang="English" displayName="Lucina's Estoc" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="346" name="RobinsPrimer" type="Tome" maxUses="0">
+    <text lang="English" displayName="Robin's Primer" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="347" name="Gold1000" type="Held" maxUses="0" mapOnly="true">
+    <text lang="English" displayName="1000G" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="348" name="Gold2000" type="Held" maxUses="0" mapOnly="true">
+    <text lang="English" displayName="2000G" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="349" name="Gold3000" type="Held" maxUses="0" mapOnly="true">
+    <text lang="English" displayName="3000G" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="350" name="Gold5000" type="Held" maxUses="0" mapOnly="true">
+    <text lang="English" displayName="5000G" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="351" name="Gold7000" type="Held" maxUses="0" mapOnly="true">
+    <text lang="English" displayName="7000G" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="352" name="Gold10000" type="Held" maxUses="0" mapOnly="true">
+    <text lang="English" displayName="10000G" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="353" name="Gold20000" type="Held" maxUses="0" mapOnly="true">
+    <text lang="English" displayName="20000G" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="354" name="Obstacle" type="Held" maxUses="0" mapOnly="true">
+    <text lang="English" displayName="Obstacle" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="355" name="Pebble" type="Shuriken" maxUses="0">
+    <text lang="English" displayName="Pebble" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="356" name="HerosBrand" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Hero's Brand" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="357" name="ExaltsBrand" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Exalt's Brand" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="358" name="Unknown358" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="Falchion" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="359" name="FellBrand" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Fell Brand" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="360" name="FirstBlood" type="Consumable" maxUses="1">
+    <text lang="English" displayName="First Blood" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="361" name="Unknown361" type="Consumable" maxUses="1">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="362" name="VanguardBrand" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Vanguard Brand" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="363" name="HeavyBlade" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Heavy Blade" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="364" name="VeteranIntuition" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Veteran Intuition" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="365" name="Aether" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Aether" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="366" name="Unknown366" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="367" name="Unknown367" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="368" name="Unknown368" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="369" name="Unknown369" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="370" name="Unknown370" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="371" name="Unknown371" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="372" name="Unknown372" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="373" name="Unknown373" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="374" name="Unknown374" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="375" name="Unknown375" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="376" name="Unknown376" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="377" name="Unknown377" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="378" name="Unknown378" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="379" name="Unknown379" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="380" name="Unknown380" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="381" name="Unknown381" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="382" name="Unknown382" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="383" name="Unknown383" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="384" name="Unknown384" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="385" name="Unknown385" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="386" name="Unknown386" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="387" name="Unknown387" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="388" name="Unknown388" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="389" name="Unknown389" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="390" name="Unknown390" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="391" name="Unknown391" type="Unknown" maxUses="DDDDDDD">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <item id="392" name="Warp" type="Consumable" maxUses="1">
+    <text lang="English" displayName="Warp" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  <!-- template: 
+  <item id="0" name="InternalName" type="ItemType" maxUses="0">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </item>
+  -->
 </root>

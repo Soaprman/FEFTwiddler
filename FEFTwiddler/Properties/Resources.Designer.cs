@@ -63,16 +63,83 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;root&gt;
-        ///  &lt;item id=&quot;0&quot; name=&quot;None&quot; displayName=&quot;(None)&quot; type=&quot;Unknown&quot; maxUses=&quot;&quot; /&gt;
-        ///  &lt;item id=&quot;1&quot; name=&quot;BronzeSword&quot; displayName=&quot;Bronze Sword&quot; type=&quot;Sword&quot; maxUses=&quot;&quot; /&gt;
-        ///  &lt;item id=&quot;2&quot; name=&quot;IronSword&quot; displayName=&quot;Iron Sword&quot; type=&quot;Sword&quot; maxUses=&quot;&quot; /&gt;
-        ///  &lt;item id=&quot;3&quot; name=&quot;SteelSword&quot; displayName=&quot;Steel Sword&quot; type=&quot;Sword&quot; maxUses=&quot;&quot; /&gt;
-        ///  &lt;item id=&quot;4&quot; name=&quot;SilverSword&quot; displayName=&quot;Silver Sword&quot; type=&quot;Sword&quot; maxUses=&quot;&quot; /&gt;
+        ///  &lt;character id=&quot;1&quot; name=&quot;Corrin_M&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Corrin (M)&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;Kamui (M)&quot; /&gt;
+        ///    &lt;baseStats hp=&quot;19&quot; str=&quot;7&quot; mag=&quot;4&quot; skl=&quot;7&quot; spd=&quot;6&quot; lck=&quot;5&quot; def=&quot;6&quot; res=&quot;2&quot; /&gt;
+        ///  &lt;/character&gt;
+        ///  
+        ///  &lt;!--
+        ///  Template:
+        ///  &lt;character id=&quot;0&quot; name=&quot;InternalName&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;DisplayName&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;DisplayName&quot; /&gt;
+        ///    &lt;baseStats hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; sk [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Data_Characters {
+            get {
+                return ResourceManager.GetString("Data_Characters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///&lt;root&gt;
+        ///  &lt;class id=&quot;1&quot; name=&quot;NohrNoble_M&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Nohr Noble (M)&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;Dark Blood (M)&quot; /&gt;
+        ///    &lt;baseStats hp=&quot;18&quot; str=&quot;8&quot; mag=&quot;4&quot; skl=&quot;4&quot; spd=&quot;7&quot; lck=&quot;2&quot; def=&quot;6&quot; res=&quot;6&quot; /&gt;
+        ///  &lt;/class&gt;
+        ///
+        ///  &lt;!--
+        ///  Template:
+        ///  &lt;class id=&quot;0&quot; name=&quot;InternalName&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;DisplayName&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;DisplayName&quot; /&gt;
+        ///    &lt;baseStats hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl= [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Data_Classes {
+            get {
+                return ResourceManager.GetString("Data_Classes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///&lt;root&gt;
+        ///  &lt;item id=&quot;0&quot; name=&quot;None&quot; displayName=&quot;(None)&quot; type=&quot;Unknown&quot; maxUses=&quot;0&quot;/&gt;
+        ///  &lt;item id=&quot;1&quot; name=&quot;BronzeSword&quot; displayName=&quot;Bronze Sword&quot; type=&quot;Sword&quot; maxUses=&quot;0&quot;/&gt;
+        ///  &lt;item id=&quot;2&quot; name=&quot;IronSword&quot; displayName=&quot;Iron Sword&quot; type=&quot;Sword&quot; maxUses=&quot;0&quot;/&gt;
+        ///  &lt;item id=&quot;3&quot; name=&quot;SteelSword&quot; displayName=&quot;Steel Sword&quot; type=&quot;Sword&quot; maxUses=&quot;0&quot;/&gt;
+        ///  &lt;item id=&quot;4&quot; name=&quot;SilverSword&quot; displayName=&quot;Silver Sword&quot; type=&quot;Sword&quot; maxUses=&quot;0&quot;/&gt;
         ///  &lt;item id=&quot;5&quot; name=&quot;BraveSword&quot; di [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Items {
             get {
                 return ResourceManager.GetString("Data_Items", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///&lt;root&gt;
+        ///  &lt;skill id=&quot;1&quot; name=&quot;HPPlus5&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;HP +5&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;HP +5&quot; /&gt;
+        ///  &lt;/skill&gt;
+        ///
+        ///  &lt;!--
+        ///  Template:
+        ///  &lt;skill id=&quot;0&quot; name=&quot;InternalName&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;DisplayName&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;DisplayName&quot; /&gt;
+        ///  &lt;/skill&gt;
+        ///  --&gt;
+        ///&lt;/root&gt;.
+        /// </summary>
+        internal static string Data_Skills {
+            get {
+                return ResourceManager.GetString("Data_Skills", resourceCulture);
             }
         }
         
