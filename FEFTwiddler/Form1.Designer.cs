@@ -99,6 +99,7 @@
             this.numCrystal = new System.Windows.Forms.NumericUpDown();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.chkDeployed = new System.Windows.Forms.CheckBox();
             this.numVictories = new System.Windows.Forms.NumericUpDown();
             this.label18 = new System.Windows.Forms.Label();
             this.numBattles = new System.Windows.Forms.NumericUpDown();
@@ -170,7 +171,9 @@
             this.btnGiveEternalSeals = new System.Windows.Forms.Button();
             this.btnAllSkillsNoNpc = new System.Windows.Forms.Button();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chkDeployed = new System.Windows.Forms.CheckBox();
+            this.numBoots = new System.Windows.Forms.NumericUpDown();
+            this.label19 = new System.Windows.Forms.Label();
+            this.btnMaxBoots = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -250,6 +253,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numBoots)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -1026,6 +1030,8 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.numBoots);
             this.panel1.Controls.Add(this.chkDeployed);
             this.panel1.Controls.Add(this.numVictories);
             this.panel1.Controls.Add(this.label18);
@@ -1096,6 +1102,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(367, 485);
             this.panel1.TabIndex = 1;
+            // 
+            // chkDeployed
+            // 
+            this.chkDeployed.AutoSize = true;
+            this.chkDeployed.Enabled = false;
+            this.chkDeployed.Location = new System.Drawing.Point(8, 101);
+            this.chkDeployed.Name = "chkDeployed";
+            this.chkDeployed.Size = new System.Drawing.Size(106, 17);
+            this.chkDeployed.TabIndex = 65;
+            this.chkDeployed.Text = "Deployed to map";
+            this.chkDeployed.UseVisualStyleBackColor = true;
             // 
             // numVictories
             // 
@@ -1839,6 +1856,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnMaxBoots);
             this.tabPage2.Controls.Add(this.btnMaxWeaponExp);
             this.tabPage2.Controls.Add(this.btnGiveEternalSeals);
             this.tabPage2.Controls.Add(this.btnAllSkillsNoNpc);
@@ -1886,16 +1904,37 @@
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
-            // chkDeployed
+            // numBoots
             // 
-            this.chkDeployed.AutoSize = true;
-            this.chkDeployed.Enabled = false;
-            this.chkDeployed.Location = new System.Drawing.Point(8, 101);
-            this.chkDeployed.Name = "chkDeployed";
-            this.chkDeployed.Size = new System.Drawing.Size(106, 17);
-            this.chkDeployed.TabIndex = 65;
-            this.chkDeployed.Text = "Deployed to map";
-            this.chkDeployed.UseVisualStyleBackColor = true;
+            this.numBoots.Location = new System.Drawing.Point(318, 60);
+            this.numBoots.Maximum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.numBoots.Name = "numBoots";
+            this.numBoots.Size = new System.Drawing.Size(38, 20);
+            this.numBoots.TabIndex = 66;
+            this.numBoots.ValueChanged += new System.EventHandler(this.numBoots_ValueChanged);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(282, 62);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(34, 13);
+            this.label19.TabIndex = 67;
+            this.label19.Text = "Boots";
+            // 
+            // btnMaxBoots
+            // 
+            this.btnMaxBoots.Location = new System.Drawing.Point(7, 238);
+            this.btnMaxBoots.Name = "btnMaxBoots";
+            this.btnMaxBoots.Size = new System.Drawing.Size(218, 71);
+            this.btnMaxBoots.TabIndex = 3;
+            this.btnMaxBoots.Text = "Make all characters have 2 Boots (movement +2)";
+            this.btnMaxBoots.UseVisualStyleBackColor = true;
+            this.btnMaxBoots.Click += new System.EventHandler(this.btnMaxBoots_Click);
             // 
             // Form1
             // 
@@ -1990,6 +2029,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numBoots)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2138,6 +2178,9 @@
         private System.Windows.Forms.NumericUpDown numVictories;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.CheckBox chkDeployed;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.NumericUpDown numBoots;
+        private System.Windows.Forms.Button btnMaxBoots;
     }
 }
 

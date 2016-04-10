@@ -65,6 +65,7 @@ namespace FEFTwiddler.Model
 
         public byte[] MainSupports { get; set; }
 
+        public static byte MaxBoots = 0x02;
         public byte Boots { get; set; }
         public byte[] DLCClassFlags { get; set; }
         public byte[] HairColor { get; set; }
@@ -83,12 +84,22 @@ namespace FEFTwiddler.Model
             return CharacterID.ToString() + ": " + ClassID.ToString() +  " // lv" + Level.ToString() + " exp" + Experience.ToString();
         }
 
+        #region Boundary Enforcement
+
         public static byte FixWeaponExperience(byte weaponExp)
         {
             if (weaponExp < MinWeaponExperience) return MinWeaponExperience;
             if (weaponExp > MaxWeaponExperience) return MaxWeaponExperience;
             return weaponExp;
         }
+
+        public static byte FixBoots(byte boots)
+        {
+            if (boots > MaxBoots) return MaxBoots;
+            return boots;
+        }
+
+        #endregion
 
         #region Cheats
 

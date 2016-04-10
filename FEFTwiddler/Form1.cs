@@ -150,6 +150,7 @@ namespace FEFTwiddler
             cmbClass.Text = character.ClassID.ToString();
             numLevel.Value = character.Level;
             numExperience.Value = character.Experience;
+            numBoots.Value = Model.Character.FixBoots(character.Boots);
 
             chkDeployed.Checked = character.IsDeployed;
             chkDead.Checked = character.IsDead;
@@ -289,6 +290,15 @@ namespace FEFTwiddler
             foreach (var character in _chapterSave.Characters)
             {
                 character.SRankAllWeapons();
+            }
+            MessageBox.Show("Done!");
+        }
+
+        private void btnMaxBoots_Click(object sender, EventArgs e)
+        {
+            foreach (var character in _chapterSave.Characters)
+            {
+                character.Boots = Model.Character.MaxBoots;
             }
             MessageBox.Show("Done!");
         }
@@ -460,6 +470,11 @@ namespace FEFTwiddler
         private void tabPage1_Enter(object sender, EventArgs e)
         {
             LoadCharacter(_selectedCharacter);
+        }
+
+        private void numBoots_ValueChanged(object sender, EventArgs e)
+        {
+            _selectedCharacter.Boots = (byte)numBoots.Value;
         }
     }
 }
