@@ -151,6 +151,7 @@ namespace FEFTwiddler
             numLevel.Value = character.Level;
             numExperience.Value = character.Experience;
 
+            chkDeployed.Checked = character.IsDeployed;
             chkDead.Checked = character.IsDead;
             chkEinherjar.Checked = character.IsEinherjar;
             chkRecruited.Checked = character.IsRecruited;
@@ -171,14 +172,14 @@ namespace FEFTwiddler
             cmbArmwear.Text = character.Armwear.ToString();
             cmbUnderwear.Text = character.Underwear.ToString();
 
-            numSword.Value = character.WeaponExperience_Sword;
-            numLance.Value = character.WeaponExperience_Lance;
-            numAxe.Value = character.WeaponExperience_Axe;
-            numShuriken.Value = character.WeaponExperience_Shuriken;
-            numBow.Value = character.WeaponExperience_Bow;
-            numTome.Value = character.WeaponExperience_Tome;
-            numStaff.Value = character.WeaponExperience_Staff;
-            numStone.Value = character.WeaponExperience_Stone;
+            numSword.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Sword);
+            numLance.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Lance);
+            numAxe.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Axe);
+            numShuriken.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Shuriken);
+            numBow.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Bow);
+            numTome.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Tome);
+            numStaff.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Staff);
+            numStone.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Stone);
 
             lblInventory1.Text = GetItemString(character.Item_1);
             lblInventory2.Text = GetItemString(character.Item_2);

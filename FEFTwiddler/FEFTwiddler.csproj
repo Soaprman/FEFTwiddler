@@ -69,6 +69,7 @@
     <Compile Include="Enums\Item.cs" />
     <Compile Include="Enums\ItemType.cs" />
     <Compile Include="Enums\Language.cs" />
+    <Compile Include="Enums\Map.cs" />
     <Compile Include="Enums\Ruleset.cs" />
     <Compile Include="Enums\SaveFileType.cs" />
     <Compile Include="Enums\Skill.cs" />

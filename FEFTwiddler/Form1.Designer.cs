@@ -170,6 +170,7 @@
             this.btnGiveEternalSeals = new System.Windows.Forms.Button();
             this.btnAllSkillsNoNpc = new System.Windows.Forms.Button();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chkDeployed = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -1025,6 +1026,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.chkDeployed);
             this.panel1.Controls.Add(this.numVictories);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.numBattles);
@@ -1643,7 +1645,7 @@
             // 
             this.chkRecruited.AutoSize = true;
             this.chkRecruited.Enabled = false;
-            this.chkRecruited.Location = new System.Drawing.Point(8, 143);
+            this.chkRecruited.Location = new System.Drawing.Point(8, 170);
             this.chkRecruited.Name = "chkRecruited";
             this.chkRecruited.Size = new System.Drawing.Size(131, 17);
             this.chkRecruited.TabIndex = 18;
@@ -1654,7 +1656,7 @@
             // 
             this.chkEinherjar.AutoSize = true;
             this.chkEinherjar.Enabled = false;
-            this.chkEinherjar.Location = new System.Drawing.Point(8, 120);
+            this.chkEinherjar.Location = new System.Drawing.Point(8, 147);
             this.chkEinherjar.Name = "chkEinherjar";
             this.chkEinherjar.Size = new System.Drawing.Size(151, 17);
             this.chkEinherjar.TabIndex = 17;
@@ -1665,7 +1667,7 @@
             // 
             this.chkDead.AutoSize = true;
             this.chkDead.Enabled = false;
-            this.chkDead.Location = new System.Drawing.Point(8, 97);
+            this.chkDead.Location = new System.Drawing.Point(8, 124);
             this.chkDead.Name = "chkDead";
             this.chkDead.Size = new System.Drawing.Size(52, 17);
             this.chkDead.TabIndex = 16;
@@ -1883,6 +1885,17 @@
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
+            // 
+            // chkDeployed
+            // 
+            this.chkDeployed.AutoSize = true;
+            this.chkDeployed.Enabled = false;
+            this.chkDeployed.Location = new System.Drawing.Point(8, 101);
+            this.chkDeployed.Name = "chkDeployed";
+            this.chkDeployed.Size = new System.Drawing.Size(106, 17);
+            this.chkDeployed.TabIndex = 65;
+            this.chkDeployed.Text = "Deployed to map";
+            this.chkDeployed.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -2124,6 +2137,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.NumericUpDown numVictories;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.CheckBox chkDeployed;
     }
 }
 

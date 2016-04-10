@@ -30,6 +30,7 @@ namespace FEFTwiddler.Model
         public byte[] UnknownBytesBetweenStatBytes { get; set; }
         public sbyte[] StatBytes2 { get; set; }
 
+        public static byte MinWeaponExperience = 0x01;
         public static byte MaxWeaponExperience = 0xFB;
         public byte WeaponExperience_Sword { get; set; }
         public byte WeaponExperience_Lance { get; set; }
@@ -41,6 +42,9 @@ namespace FEFTwiddler.Model
         public byte WeaponExperience_Stone { get; set; }
 
         public byte MaximumHP { get; set; }
+
+        public byte Position_FromLeft { get; set; }
+        public byte Position_FromTop { get; set; }
 
         public Enums.Skill EquippedSkill_1 { get; set; }
         public Enums.Skill EquippedSkill_2 { get; set; }
@@ -54,6 +58,7 @@ namespace FEFTwiddler.Model
         public InventoryItem Item_4 { get; set; }
         public InventoryItem Item_5 { get; set; }
 
+        public bool IsDeployed { get; set; }
         public bool IsDead { get; set; }
         public bool IsEinherjar { get; set; }
         public bool IsRecruited { get; set; }
@@ -76,6 +81,13 @@ namespace FEFTwiddler.Model
         public override string ToString()
         {
             return CharacterID.ToString() + ": " + ClassID.ToString() +  " // lv" + Level.ToString() + " exp" + Experience.ToString();
+        }
+
+        public static byte FixWeaponExperience(byte weaponExp)
+        {
+            if (weaponExp < MinWeaponExperience) return MinWeaponExperience;
+            if (weaponExp > MaxWeaponExperience) return MaxWeaponExperience;
+            return weaponExp;
         }
 
         #region Cheats

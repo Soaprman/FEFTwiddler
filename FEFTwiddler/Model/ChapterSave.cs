@@ -79,6 +79,8 @@ namespace FEFTwiddler.Model
         public uint BattlePoints { get; set; }
         public uint VisitPoints { get; set; }
 
+        public Enums.Map CurrentMap { get; set; }
+
         private List<Character> _characters = new List<Character>();
         public List<Character> Characters {
             get
@@ -147,6 +149,10 @@ namespace FEFTwiddler.Model
             {
                 ReadHeaderData(br);
 
+                br.AdvanceToValue(_userMarker);
+                _fileDataOffset = br.BaseStream.Position;
+                ReadUserData(br);
+
                 br.AdvanceToValue(_fileDataMarker);
                 _fileDataOffset = br.BaseStream.Position;
                 ReadFileData(br);
@@ -190,6 +196,27 @@ namespace FEFTwiddler.Model
             br.Read(chunk, 0, 24);
 
             AvatarName = chunk;
+
+            // Not sure about the rest. Guess it's a TODO.
+        }
+
+        #endregion
+
+        #region User Data IO
+
+        public void ReadUserData(BinaryReader br)
+        {
+            byte[] chunk;
+
+            // Stuff
+            br.ReadBytes(0x09);
+
+            // Map
+            chunk = new byte[1];
+            br.Read(chunk, 0, 1);
+
+            // TODO: Add this once the enum is better fleshed-out
+            //CurrentMap = (Enums.Map)chunk[0];
 
             // Not sure about the rest. Guess it's a TODO.
         }
@@ -265,35 +292,31 @@ namespace FEFTwiddler.Model
 
         private void ReadCharacters(BinaryReader br)
         {
-            byte[] chunk;
+            // 01
+            br.ReadBytes(1);
 
-            // Begin "living units" block
-            // 01 03 on my save
-            br.ReadBytes(2);
-
-            // The number of living characters to read
-            var livingCharacters = br.ReadByte();
-
-            for (var i = 0; i < livingCharacters; i++)
+            bool stillReading = true;
+            while (stillReading)
             {
-                ReadCurrentCharacter(br);
-            }
+                // What's next?
+                var nextBlock = br.ReadByte();
 
-            // What's next?
-            chunk = new byte[1];
-            br.Read(chunk, 0, 1);
-
-            // Begin "dead units" block
-            // If this is FF, no units are dead
-            // This is 06 on my save, where there are dead units
-            if (chunk[0] == 0xFF) return;
-
-            // The number of dead characters to read
-            var deadCharacters = br.ReadByte();
-
-            for (var i = 0; i < deadCharacters; i++)
-            {
-                ReadCurrentCharacter(br);
+                switch (nextBlock)
+                {
+                    case 0x00: // Deployed living units (battle prep only)
+                    case 0x03: // Undeployed living units (all living units in my castle)
+                    case 0x06: // Dead units
+                        var characterCount = br.ReadByte();
+                        for (var i = 0; i < characterCount; i++)
+                        {
+                            ReadCurrentCharacter(br);
+                        }
+                        break;
+                    case 0xFF: // End of unit block
+                    default: // Just a failsafe
+                        stillReading = false;
+                        break;
+                }
             }
         }
 
@@ -363,18 +386,25 @@ namespace FEFTwiddler.Model
             chunk = new byte[9];
             br.Read(chunk, 0, 9);
 
-            character.WeaponExperience_Sword = Math.Min(chunk[0], Character.MaxWeaponExperience);
-            character.WeaponExperience_Lance = Math.Min(chunk[1], Character.MaxWeaponExperience);
-            character.WeaponExperience_Axe = Math.Min(chunk[2], Character.MaxWeaponExperience);
-            character.WeaponExperience_Shuriken = Math.Min(chunk[3], Character.MaxWeaponExperience);
-            character.WeaponExperience_Bow = Math.Min(chunk[4], Character.MaxWeaponExperience);
-            character.WeaponExperience_Tome = Math.Min(chunk[5], Character.MaxWeaponExperience);
-            character.WeaponExperience_Staff = Math.Min(chunk[6], Character.MaxWeaponExperience);
-            character.WeaponExperience_Stone = Math.Min(chunk[7], Character.MaxWeaponExperience);
+            character.WeaponExperience_Sword = chunk[0];
+            character.WeaponExperience_Lance = chunk[1];
+            character.WeaponExperience_Axe = chunk[2];
+            character.WeaponExperience_Shuriken = chunk[3];
+            character.WeaponExperience_Bow = chunk[4];
+            character.WeaponExperience_Tome = chunk[5];
+            character.WeaponExperience_Staff = chunk[6];
+            character.WeaponExperience_Stone = chunk[7];
             character.MaximumHP = chunk[8];
 
-            // Filler - FF FF FF FF
-            br.ReadBytes(4);
+            // Map position (battle prep only)
+            chunk = new byte[2];
+            br.Read(chunk, 0, 2);
+            character.Position_FromLeft = chunk[0];
+            character.Position_FromTop = chunk[0];
+            character.IsDeployed = character.Position_FromLeft != 0xFF || character.Position_FromTop != 0xFF; // There might be an actual flag for this, but this works too
+
+            // Filler - FF FF
+            br.ReadBytes(2);
 
             // Flags block (shield, dead, etc)
             chunk = new byte[5];
@@ -463,8 +493,20 @@ namespace FEFTwiddler.Model
 
             character.LearnedSkills = chunk;
 
+            // Extra data on deployed characters in battle prep saves.
+            // Might contain debuffs, status effects, and other battle-specific status info
+            // This is what it looks like in my "030_Chapter1" save:
+            // 00 00 00 00 00 FF FF 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+            if (character.IsDeployed)
+            {
+                br.ReadBytes(54);
+            }
+
+            // TODO (this is the 02 that comes after the learned skills block)
+            br.ReadBytes(1);
+
             // TODO
-            br.ReadBytes(5);
+            br.ReadBytes(4);
 
             // Accessories
             chunk = new byte[4];
@@ -621,6 +663,12 @@ namespace FEFTwiddler.Model
 
             // Learned skills
             bw.Write(character.LearnedSkills);
+
+            // Stuff only on deployed characters
+            if (character.IsDeployed)
+            {
+                bw.BaseStream.Seek(54, SeekOrigin.Current);
+            }
 
             // TODO
             bw.BaseStream.Seek(5, SeekOrigin.Current);
