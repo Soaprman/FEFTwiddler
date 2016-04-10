@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace FEFTwiddler
@@ -27,8 +28,16 @@ namespace FEFTwiddler
 
         private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            openFileDialog1.FileName = "";
+
+            var startupPath = Config.StartupPath;
+            if (startupPath == "") startupPath = Application.StartupPath;
+            openFileDialog1.InitialDirectory = startupPath;
+
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
+                Config.StartupPath = Path.GetDirectoryName(openFileDialog1.FileName);
+
                 _saveFile = Model.SaveFile.FromPath(openFileDialog1.FileName);
 
                 if (_saveFile.Type != Enums.SaveFileType.Chapter)

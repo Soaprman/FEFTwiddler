@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config.cs" />
     <Compile Include="Data\BaseDatabase.cs" />
     <Compile Include="Data\Character.cs" />
     <Compile Include="Data\CharacterDatabase.cs" />
@@ -387,6 +388,9 @@
     <Content Include="Resources\Images\WeaponExpIcons\WeaponExp_stone.png" />
     <Content Include="Resources\Images\WeaponExpIcons\WeaponExp_sword.png" />
     <Content Include="Resources\Images\WeaponExpIcons\WeaponExp_tome.png" />
+    <Content Include="Config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
