@@ -21,6 +21,7 @@ namespace FEFTwiddler.Data
 
             var displayName = GetDisplayName(row);
             var baseStats = row.Elements("baseStats").First();
+            var maxStats = row.Elements("maxStats").First();
 
             return new Class
             {
@@ -33,7 +34,15 @@ namespace FEFTwiddler.Data
                 Base_Spd = baseStats.GetAttribute<byte>("spd"),
                 Base_Lck = baseStats.GetAttribute<byte>("lck"),
                 Base_Def = baseStats.GetAttribute<byte>("def"),
-                Base_Res = baseStats.GetAttribute<byte>("res")
+                Base_Res = baseStats.GetAttribute<byte>("res"),
+                Max_HP = maxStats.GetAttribute<byte>("hp"),
+                Max_Str = maxStats.GetAttribute<byte>("str"),
+                Max_Mag = maxStats.GetAttribute<byte>("mag"),
+                Max_Skl = maxStats.GetAttribute<byte>("skl"),
+                Max_Spd = maxStats.GetAttribute<byte>("spd"),
+                Max_Lck = maxStats.GetAttribute<byte>("lck"),
+                Max_Def = maxStats.GetAttribute<byte>("def"),
+                Max_Res = maxStats.GetAttribute<byte>("res")
             };
         }
     }

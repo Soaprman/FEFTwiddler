@@ -21,6 +21,7 @@ namespace FEFTwiddler.Data
 
             var displayName = GetDisplayName(row);
             var baseStats = row.Elements("baseStats").First();
+            var modifier = row.Elements("modifier").First();
 
             return new Character
             {
@@ -33,7 +34,15 @@ namespace FEFTwiddler.Data
                 Base_Spd = baseStats.GetAttribute<byte>("spd"),
                 Base_Lck = baseStats.GetAttribute<byte>("lck"),
                 Base_Def = baseStats.GetAttribute<byte>("def"),
-                Base_Res = baseStats.GetAttribute<byte>("res")
+                Base_Res = baseStats.GetAttribute<byte>("res"),
+                Modifier_HP = modifier.GetAttribute<sbyte>("hp"),
+                Modifier_Str = modifier.GetAttribute<sbyte>("str"),
+                Modifier_Mag = modifier.GetAttribute<sbyte>("mag"),
+                Modifier_Skl = modifier.GetAttribute<sbyte>("skl"),
+                Modifier_Spd = modifier.GetAttribute<sbyte>("spd"),
+                Modifier_Lck = modifier.GetAttribute<sbyte>("lck"),
+                Modifier_Def = modifier.GetAttribute<sbyte>("def"),
+                Modifier_Res = modifier.GetAttribute<sbyte>("res")
             };
         }
     }

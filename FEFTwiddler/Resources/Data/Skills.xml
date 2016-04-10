@@ -1,10 +1,921 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <root>
+  <skill id="0" name="None">
+    <text lang="English" displayName="None" />
+    <text lang="Japanese" displayName="無し" />
+  </skill>
   <skill id="1" name="HPPlus5">
     <text lang="English" displayName="HP +5" />
-    <text lang="Japanese" displayName="HP +5" />
+    <text lang="Japanese" displayName="【最大ＨＰ+5】" />
   </skill>
-
+  <skill id="2" name="StrengthPlus2">
+    <text lang="English" displayName="Strength +2" />
+    <text lang="Japanese" displayName="【力+2】" />
+  </skill>
+  <skill id="3" name="MagicPlus2">
+    <text lang="English" displayName="Magic +2" />
+    <text lang="Japanese" displayName="【魔力+2】" />
+  </skill>
+  <skill id="4" name="SkillPlus2">
+    <text lang="English" displayName="Skill +2" />
+    <text lang="Japanese" displayName="【技+2】" />
+  </skill>
+  <skill id="5" name="SpeedPlus2">
+    <text lang="English" displayName="Speed +2" />
+    <text lang="Japanese" displayName="【速さ+2】" />
+  </skill>
+  <skill id="6" name="LuckPlus4">
+    <text lang="English" displayName="Luck +4" />
+    <text lang="Japanese" displayName="【幸運+4】" />
+  </skill>
+  <skill id="7" name="DefensePlus2">
+    <text lang="English" displayName="Defense +2" />
+    <text lang="Japanese" displayName="【守備+2】" />
+  </skill>
+  <skill id="8" name="ResistancePlus2">
+    <text lang="English" displayName="Resistance +2" />
+    <text lang="Japanese" displayName="【魔防+2】" />
+  </skill>
+  <skill id="9" name="MovementPlus1">
+    <text lang="English" displayName="Movement +1" />
+    <text lang="Japanese" displayName="【移動+1】" />
+  </skill>
+  <skill id="10" name="DraconicHex">
+    <text lang="English" displayName="Draconic Hex" />
+    <text lang="Japanese" displayName="【竜呪】" />
+  </skill>
+  <skill id="11" name="SealStrength">
+    <text lang="English" displayName="Seal Strength" />
+    <text lang="Japanese" displayName="【力封じ】" />
+  </skill>
+  <skill id="12" name="SealMagic">
+    <text lang="English" displayName="Seal Magic" />
+    <text lang="Japanese" displayName="【魔力封じ】" />
+  </skill>
+  <skill id="13" name="SealSpeed">
+    <text lang="English" displayName="Seal Speed" />
+    <text lang="Japanese" displayName="【速さ封じ】" />
+  </skill>
+  <skill id="14" name="SealDefense">
+    <text lang="English" displayName="Seal Defense" />
+    <text lang="Japanese" displayName="【守備封じ】" />
+  </skill>
+  <skill id="15" name="SealResistance">
+    <text lang="English" displayName="Seal Resistance" />
+    <text lang="Japanese" displayName="【魔防封じ】" />
+  </skill>
+  <skill id="16" name="RallyStrength">
+    <text lang="English" displayName="Rally Strength" />
+    <text lang="Japanese" displayName="【力の叫び】" />
+  </skill>
+  <skill id="17" name="RallyMagic">
+    <text lang="English" displayName="Rally Magic" />
+    <text lang="Japanese" displayName="【魔力の叫び】" />
+  </skill>
+  <skill id="18" name="RallySkill">
+    <text lang="English" displayName="Rally Skill" />
+    <text lang="Japanese" displayName="【技の叫び】" />
+  </skill>
+  <skill id="19" name="RallySpeed">
+    <text lang="English" displayName="Rally Speed" />
+    <text lang="Japanese" displayName="【速さの叫び】" />
+  </skill>
+  <skill id="20" name="RallyLuck">
+    <text lang="English" displayName="Rally Luck" />
+    <text lang="Japanese" displayName="【幸運の叫び】" />
+  </skill>
+  <skill id="21" name="RallyDefense">
+    <text lang="English" displayName="Rally Defense" />
+    <text lang="Japanese" displayName="【守備の叫び】" />
+  </skill>
+  <skill id="22" name="RallyResistance">
+    <text lang="English" displayName="Rally Resistance" />
+    <text lang="Japanese" displayName="【魔防の叫び】" />
+  </skill>
+  <skill id="23" name="RallyMovement">
+    <text lang="English" displayName="Rally Movement" />
+    <text lang="Japanese" displayName="【移動の叫び】" />
+  </skill>
+  <skill id="24" name="InspiringSong">
+    <text lang="English" displayName="Inspiring Song" />
+    <text lang="Japanese" displayName="【特別な歌】" />
+  </skill>
+  <skill id="25" name="Lethality">
+    <text lang="English" displayName="Lethality" />
+    <text lang="Japanese" displayName="【滅殺】" />
+  </skill>
+  <skill id="26" name="Aether">
+    <text lang="English" displayName="Aether" />
+    <text lang="Japanese" displayName="【天空】" />
+  </skill>
+  <skill id="27" name="Astra">
+    <text lang="English" displayName="Astra" />
+    <text lang="Japanese" displayName="【流星】" />
+  </skill>
+  <skill id="28" name="DragonFang">
+    <text lang="English" displayName="Dragon Fang" />
+    <text lang="Japanese" displayName="【竜穿】" />
+  </skill>
+  <skill id="29" name="Sol">
+    <text lang="English" displayName="Sol" />
+    <text lang="Japanese" displayName="【太陽】" />
+  </skill>
+  <skill id="30" name="Luna">
+    <text lang="English" displayName="Luna" />
+    <text lang="Japanese" displayName="【月光】" />
+  </skill>
+  <skill id="31" name="RendHeaven">
+    <text lang="English" displayName="Rend Heaven" />
+    <text lang="Japanese" displayName="【破天】" />
+  </skill>
+  <skill id="32" name="Vengeance">
+    <text lang="English" displayName="Vengeance" />
+    <text lang="Japanese" displayName="【復讐】" />
+  </skill>
+  <skill id="33" name="Pavise">
+    <text lang="English" displayName="Pavise" />
+    <text lang="Japanese" displayName="【大盾】" />
+  </skill>
+  <skill id="34" name="Aegis">
+    <text lang="English" displayName="Aegis" />
+    <text lang="Japanese" displayName="【聖盾】" />
+  </skill>
+  <skill id="35" name="DragonWard">
+    <text lang="English" displayName="Dragon Ward" />
+    <text lang="Japanese" displayName="【竜盾】" />
+  </skill>
+  <skill id="36" name="Miracle">
+    <text lang="English" displayName="Miracle" />
+    <text lang="Japanese" displayName="【祈り】" />
+  </skill>
+  <skill id="37" name="Counter">
+    <text lang="English" displayName="Counter" />
+    <text lang="Japanese" displayName="【カウンター】" />
+  </skill>
+  <skill id="38" name="MagicCounter">
+    <text lang="English" displayName="Countermagic" />
+    <text lang="Japanese" displayName="【魔法カウンター】" />
+  </skill>
+  <skill id="39" name="Vantage">
+    <text lang="English" displayName="Vantage" />
+    <text lang="Japanese" displayName="【待ち伏せ】" />
+  </skill>
+  <skill id="40" name="Beastbane">
+    <text lang="English" displayName="Beastbane" />
+    <text lang="Japanese" displayName="【獣特効】" />
+  </skill>
+  <skill id="41" name="Golembane">
+    <text lang="English" displayName="Golembane" />
+    <text lang="Japanese" displayName="【人形崩し】" />
+  </skill>
+  <skill id="42" name="NohrianTrust">
+    <text lang="English" displayName="Nohrian Trust" />
+    <text lang="Japanese" displayName="【暗夜】" />
+  </skill>
+  <skill id="43" name="HoshidanUnity">
+    <text lang="English" displayName="Hoshidan Unity" />
+    <text lang="Japanese" displayName="【白夜】" />
+  </skill>
+  <skill id="44" name="Shelter">
+    <text lang="English" displayName="Shelter" />
+    <text lang="Japanese" displayName="【救出】" />
+  </skill>
+  <skill id="45" name="Shove">
+    <text lang="English" displayName="Shove" />
+    <text lang="Japanese" displayName="【体当たり】" />
+  </skill>
+  <skill id="46" name="Lunge">
+    <text lang="English" displayName="Lunge" />
+    <text lang="Japanese" displayName="【切り込み】" />
+  </skill>
+  <skill id="47" name="Swap">
+    <text lang="English" displayName="Swap" />
+    <text lang="Japanese" displayName="【入れ替え】" />
+  </skill>
+  <skill id="48" name="Replicate">
+    <text lang="English" displayName="Replicate" />
+    <text lang="Japanese" displayName="【写し身人形】" />
+  </skill>
+  <skill id="49" name="QuickDraw">
+    <text lang="English" displayName="Quick Draw" />
+    <text lang="Japanese" displayName="【先手必勝】" />
+  </skill>
+  <skill id="50" name="StrongRiposte">
+    <text lang="English" displayName="Strong Riposte" />
+    <text lang="Japanese" displayName="【後手不敗】" />
+  </skill>
+  <skill id="51" name="ElbowRoom">
+    <text lang="English" displayName="Elbow Room" />
+    <text lang="Japanese" displayName="【広所突撃】" />
+  </skill>
+  <skill id="52" name="NaturalCover">
+    <text lang="English" displayName="Natural Cover" />
+    <text lang="Japanese" displayName="【閉所防御】" />
+  </skill>
+  <skill id="53" name="Evenhanded">
+    <text lang="English" displayName="Evenhanded" />
+    <text lang="Japanese" displayName="【偶像の幻】" />
+  </skill>
+  <skill id="54" name="OddShaped">
+    <text lang="English" displayName="Odd Shaped" />
+    <text lang="Japanese" displayName="【奇襲の牙】" />
+  </skill>
+  <skill id="55" name="LifeAndDeath">
+    <text lang="English" displayName="Life and Death" />
+    <text lang="Japanese" displayName="【死線】" />
+  </skill>
+  <skill id="56" name="Spendthrift">
+    <text lang="English" displayName="Spendthrift" />
+    <text lang="Japanese" displayName="【お大尽】" />
+  </skill>
+  <skill id="57" name="DuelistsBlow">
+    <text lang="English" displayName="Duelist's Blow" />
+    <text lang="Japanese" displayName="【清流の一撃】" />
+  </skill>
+  <skill id="58" name="DartingBlow">
+    <text lang="English" displayName="Darting Blow" />
+    <text lang="Japanese" displayName="【飛燕の一撃】" />
+  </skill>
+  <skill id="59" name="DeathBlow">
+    <text lang="English" displayName="Death Blow" />
+    <text lang="Japanese" displayName="【鬼神の一撃】" />
+  </skill>
+  <skill id="60" name="CertainBlow">
+    <text lang="English" displayName="Certain Blow" />
+    <text lang="Japanese" displayName="【凶鳥の一撃】" />
+  </skill>
+  <skill id="61" name="ArmoredBlow">
+    <text lang="English" displayName="Armored Blow" />
+    <text lang="Japanese" displayName="【金剛の一撃】" />
+  </skill>
+  <skill id="62" name="WardingBlow">
+    <text lang="English" displayName="Warding Blow" />
+    <text lang="Japanese" displayName="【明鏡の一撃】" />
+  </skill>
+  <skill id="63" name="Trample">
+    <text lang="English" displayName="Trample" />
+    <text lang="Japanese" displayName="【見下す者】" />
+  </skill>
+  <skill id="64" name="WaryFighter">
+    <text lang="English" displayName="Wary Fighter" />
+    <text lang="Japanese" displayName="【守備隊形】" />
+  </skill>
+  <skill id="65" name="Swordfaire">
+    <text lang="English" displayName="Swordfaire" />
+    <text lang="Japanese" displayName="【剣の達人】" />
+  </skill>
+  <skill id="66" name="Lancefaire">
+    <text lang="English" displayName="Lancefaire" />
+    <text lang="Japanese" displayName="【槍の達人】" />
+  </skill>
+  <skill id="67" name="Axefaire">
+    <text lang="English" displayName="Axefaire" />
+    <text lang="Japanese" displayName="【斧の達人】" />
+  </skill>
+  <skill id="68" name="Shurikenfaire">
+    <text lang="English" displayName="Shurikenfaire" />
+    <text lang="Japanese" displayName="【暗器の達人】" />
+  </skill>
+  <skill id="69" name="Bowfaire">
+    <text lang="English" displayName="Bowfaire" />
+    <text lang="Japanese" displayName="【弓の達人】" />
+  </skill>
+  <skill id="70" name="Tomefaire">
+    <text lang="English" displayName="Tomefaire" />
+    <text lang="Japanese" displayName="【魔の達人】" />
+  </skill>
+  <skill id="71" name="Defender">
+    <text lang="English" displayName="Defender" />
+    <text lang="Japanese" displayName="【守り手】" />
+  </skill>
+  <skill id="72" name="Charm">
+    <text lang="English" displayName="Charm" />
+    <text lang="Japanese" displayName="【カリスマ】" />
+  </skill>
+  <skill id="73" name="Gentilhomme">
+    <text lang="English" displayName="Gentilhomme" />
+    <text lang="Japanese" displayName="【名家の令息】" />
+  </skill>
+  <skill id="74" name="Demoiselle">
+    <text lang="English" displayName="Demoiselle" />
+    <text lang="Japanese" displayName="【深窓の令嬢】" />
+  </skill>
+  <skill id="75" name="Inspiration">
+    <text lang="English" displayName="Inspiration" />
+    <text lang="Japanese" displayName="【戦闘指揮】" />
+  </skill>
+  <skill id="76" name="MaleficAura">
+    <text lang="English" displayName="Malefic Aura" />
+    <text lang="Japanese" displayName="【魔の風】" />
+  </skill>
+  <skill id="77" name="VoiceOfPeace">
+    <text lang="English" displayName="Voice of Peace" />
+    <text lang="Japanese" displayName="【平和の声】" />
+  </skill>
+  <skill id="78" name="ForeignPrincess">
+    <text lang="English" displayName="Foreign Princess" />
+    <text lang="Japanese" displayName="【異邦の王女】" />
+  </skill>
+  <skill id="79" name="Swordbreaker">
+    <text lang="English" displayName="Swordbreaker" />
+    <text lang="Japanese" displayName="【剣殺し】" />
+  </skill>
+  <skill id="80" name="Lancebreaker">
+    <text lang="English" displayName="Lancebreaker" />
+    <text lang="Japanese" displayName="【槍殺し】" />
+  </skill>
+  <skill id="81" name="Axebreaker">
+    <text lang="English" displayName="Axebreaker" />
+    <text lang="Japanese" displayName="【斧殺し】" />
+  </skill>
+  <skill id="82" name="Shurikenbreaker">
+    <text lang="English" displayName="Shurikenbreaker" />
+    <text lang="Japanese" displayName="【暗器殺し】" />
+  </skill>
+  <skill id="83" name="Bowbreaker">
+    <text lang="English" displayName="Bowbreaker" />
+    <text lang="Japanese" displayName="【弓殺し】" />
+  </skill>
+  <skill id="84" name="Tomebreaker">
+    <text lang="English" displayName="Tomebreaker" />
+    <text lang="Japanese" displayName="【魔殺し】" />
+  </skill>
+  <skill id="85" name="Gamble">
+    <text lang="English" displayName="Gamble" />
+    <text lang="Japanese" displayName="【大振り】" />
+  </skill>
+  <skill id="86" name="Underdog">
+    <text lang="English" displayName="Underdog" />
+    <text lang="Japanese" displayName="【下剋上】" />
+  </skill>
+  <skill id="87" name="Lucky7">
+    <text lang="English" displayName="Lucky Seven" />
+    <text lang="Japanese" displayName="【ラッキー7】" />
+  </skill>
+  <skill id="88" name="AirSuperiority">
+    <text lang="English" displayName="Air Superiority" />
+    <text lang="Japanese" displayName="【天翔ける】" />
+  </skill>
+  <skill id="89" name="Heartseeker">
+    <text lang="English" displayName="Heartseeker" />
+    <text lang="Japanese" displayName="【呪縛】" />
+  </skill>
+  <skill id="90" name="Quixotic">
+    <text lang="English" displayName="Quixotic" />
+    <text lang="Japanese" displayName="【傾奇者】" />
+  </skill>
+  <skill id="91" name="GoodFortune">
+    <text lang="English" displayName="Good Fortune" />
+    <text lang="Japanese" displayName="【しぶとい心】" />
+  </skill>
+  <skill id="92" name="Relief">
+    <text lang="English" displayName="Relief" />
+    <text lang="Japanese" displayName="【リフレッシュ】" />
+  </skill>
+  <skill id="93" name="Camaraderie">
+    <text lang="English" displayName="Camaraderie" />
+    <text lang="Japanese" displayName="【和の心】" />
+  </skill>
+  <skill id="94" name="Renewal">
+    <text lang="English" displayName="Renewal" />
+    <text lang="Japanese" displayName="【回復】" />
+  </skill>
+  <skill id="95" name="EvenBetter">
+    <text lang="English" displayName="Even Better" />
+    <text lang="Japanese" displayName="【偶然のまどろみ】" />
+  </skill>
+  <skill id="96" name="BetterOdds">
+    <text lang="English" displayName="Better Odds" />
+    <text lang="Japanese" displayName="【奇妙な鳴き声】" />
+  </skill>
+  <skill id="97" name="Amaterasu">
+    <text lang="English" displayName="Amaterasu" />
+    <text lang="Japanese" displayName="【天照らす】" />
+  </skill>
+  <skill id="98" name="Lifetaker">
+    <text lang="English" displayName="Lifetaker" />
+    <text lang="Japanese" displayName="【生命吸収】" />
+  </skill>
+  <skill id="99" name="PotentPotion">
+    <text lang="English" displayName="Potent Potion" />
+    <text lang="Japanese" displayName="【よく効く薬】" />
+  </skill>
+  <skill id="100" name="LiveToServe">
+    <text lang="English" displayName="Live to Serve" />
+    <text lang="Japanese" displayName="【ご奉仕の喜び】" />
+  </skill>
+  <skill id="101" name="PoisonStrike">
+    <text lang="English" displayName="Poison Strike" />
+    <text lang="Japanese" displayName="【蛇毒】" />
+  </skill>
+  <skill id="102" name="SavageBlow">
+    <text lang="English" displayName="Savage Blow" />
+    <text lang="Japanese" displayName="【死の吐息】" />
+  </skill>
+  <skill id="103" name="GrislyWound">
+    <text lang="English" displayName="Grisly Wound" />
+    <text lang="Japanese" displayName="【四牙】" />
+  </skill>
+  <skill id="104" name="SalvageBlow">
+    <text lang="English" displayName="Salvage Blow" />
+    <text lang="Japanese" displayName="【匠の技】" />
+  </skill>
+  <skill id="105" name="Profiteer">
+    <text lang="English" displayName="Profiteer" />
+    <text lang="Japanese" displayName="【左うちわ】" />
+  </skill>
+  <skill id="106" name="Nobility">
+    <text lang="English" displayName="Nobility" />
+    <text lang="Japanese" displayName="【高貴なる血統】" />
+  </skill>
+  <skill id="107" name="FutureSight">
+    <text lang="English" displayName="Future Sight" />
+    <text lang="Japanese" displayName="【おみくじ】" />
+  </skill>
+  <skill id="108" name="Aptitude">
+    <text lang="English" displayName="Aptitude" />
+    <text lang="Japanese" displayName="【良成長】" />
+  </skill>
+  <skill id="109" name="QuickSalve">
+    <text lang="English" displayName="Quick Salve" />
+    <text lang="Japanese" displayName="【常備薬】" />
+  </skill>
+  <skill id="110" name="Galeforce">
+    <text lang="English" displayName="Galeforce" />
+    <text lang="Japanese" displayName="【疾風迅雷】" />
+  </skill>
+  <skill id="111" name="Pass">
+    <text lang="English" displayName="Pass" />
+    <text lang="Japanese" displayName="【すり抜け】" />
+  </skill>
+  <skill id="112" name="Locktouch">
+    <text lang="English" displayName="Locktouch" />
+    <text lang="Japanese" displayName="【鍵開け】" />
+  </skill>
+  <skill id="113" name="Brynhildr">
+    <text lang="English" displayName="Brynhildr" />
+    <text lang="Japanese" displayName="【ブリュンヒルデ】" />
+  </skill>
+  <skill id="114" name="Dragonskin">
+    <text lang="English" displayName="Dragonskin" />
+    <text lang="Japanese" displayName="【竜鱗】" />
+  </skill>
+  <skill id="115" name="DivineShield">
+    <text lang="English" displayName="Divine Shield" />
+    <text lang="Japanese" displayName="【神盾】" />
+  </skill>
+  <skill id="116" name="HitAvoidPlus10">
+    <text lang="English" displayName="Hit/Avo +10" />
+    <text lang="Japanese" displayName="【命中回避+10】" />
+  </skill>
+  <skill id="117" name="HitAvoidPlus20">
+    <text lang="English" displayName="Hit/Avo +20" />
+    <text lang="Japanese" displayName="【命中回避+20】" />
+  </skill>
+  <skill id="118" name="ResistStatus">
+    <text lang="English" displayName="Resist Status" />
+    <text lang="Japanese" displayName="【状態異常耐性】" />
+  </skill>
+  <skill id="119" name="ImmuneStatus">
+    <text lang="English" displayName="Immune Status" />
+    <text lang="Japanese" displayName="【状態異常無効】" />
+  </skill>
+  <skill id="120" name="BoldStance">
+    <text lang="English" displayName="Bold Stance" />
+    <text lang="Japanese" displayName="【攻防一体の陣】" />
+  </skill>
+  <skill id="121" name="PointBlank">
+    <text lang="English" displayName="Point Blank" />
+    <text lang="Japanese" displayName="【近接射撃】" />
+  </skill>
+  <skill id="122" name="WingedShield">
+    <text lang="English" displayName="Winged Shield" />
+    <text lang="Japanese" displayName="【翼盾】" />
+  </skill>
+  <skill id="123" name="VoidCurse">
+    <text lang="English" displayName="Void Curse" />
+    <text lang="Japanese" displayName="【虚無の呪い】" />
+  </skill>
+  <skill id="124" name="SelfDestruct">
+    <text lang="English" displayName="Self-Destruct" />
+    <text lang="Japanese" displayName="【自壊】" />
+  </skill>
+  <skill id="125" name="StaffSavant">
+    <text lang="English" displayName="Staff Savant" />
+    <text lang="Japanese" displayName="【無限の杖】" />
+  </skill>
+  <skill id="126" name="Immobilize">
+    <text lang="English" displayName="Immobilize" />
+    <text lang="Japanese" displayName="【凍結】" />
+  </skill>
+  <skill id="127" name="InevitableEnd">
+    <text lang="English" displayName="Inevitable End" />
+    <text lang="Japanese" displayName="【負の連鎖】" />
+  </skill>
+  <skill id="128" name="EvenKeel">
+    <text lang="English" displayName="Even Keel" />
+    <text lang="Japanese" displayName="【偶人の空蝉】" />
+  </skill>
+  <skill id="129" name="IronWill">
+    <text lang="English" displayName="Iron Will" />
+    <text lang="Japanese" displayName="【精神統一】" />
+  </skill>
+  <skill id="130" name="Clarity">
+    <text lang="English" displayName="Clarity" />
+    <text lang="Japanese" displayName="【心頭滅却】" />
+  </skill>
+  <skill id="131" name="Aggressor">
+    <text lang="English" displayName="Aggressor" />
+    <text lang="Japanese" displayName="【居合一閃】" />
+  </skill>
+  <skill id="132" name="DualStriker">
+    <text lang="English" displayName="Dual Striker" />
+    <text lang="Japanese" displayName="【攻陣＋】" />
+  </skill>
+  <skill id="133" name="Awakening">
+    <text lang="English" displayName="Awakening" />
+    <text lang="Japanese" displayName="【覚醒】" />
+  </skill>
+  <skill id="134" name="TacticalAdvice">
+    <text lang="English" displayName="Tactical Advice" />
+    <text lang="Japanese" displayName="【戦術指南】" />
+  </skill>
+  <skill id="135" name="Solidarity">
+    <text lang="English" displayName="Solidarity" />
+    <text lang="Japanese" displayName="【方陣】" />
+  </skill>
+  <skill id="136" name="Ignis">
+    <text lang="English" displayName="Ignis" />
+    <text lang="Japanese" displayName="【華炎】" />
+  </skill>
+  <skill id="137" name="RallySpectrum">
+    <text lang="English" displayName="Rally Spectrum" />
+    <text lang="Japanese" displayName="【七色の叫び】" />
+  </skill>
+  <skill id="138" name="Paragon">
+    <text lang="English" displayName="Paragon" />
+    <text lang="Japanese" displayName="【エリート】" />
+  </skill>
+  <skill id="139" name="BeastShield">
+    <text lang="English" displayName="Armor Shield" />
+    <text lang="Japanese" displayName="【鎧盾】" />
+  </skill>
+  <skill id="140" name="ArmorShield">
+    <text lang="English" displayName="Beast Shield" />
+    <text lang="Japanese" displayName="【獣盾】" />
+  </skill>
+  <skill id="141" name="Shadowgift">
+    <text lang="English" displayName="Shadowgift" />
+    <text lang="Japanese" displayName="【暗闇の加護】" />
+  </skill>
+  <skill id="142" name="StrengthTaker">
+    <text lang="English" displayName="Strengthtaker" />
+    <text lang="Japanese" displayName="【力の吸収】" />
+  </skill>
+  <skill id="143" name="MagicTaker">
+    <text lang="English" displayName="Magictaker" />
+    <text lang="Japanese" displayName="【魔力の吸収】" />
+  </skill>
+  <skill id="144" name="SkillTaker">
+    <text lang="English" displayName="Skilltaker" />
+    <text lang="Japanese" displayName="【技の吸収】" />
+  </skill>
+  <skill id="145" name="SpeedTaker">
+    <text lang="English" displayName="Speedtaker" />
+    <text lang="Japanese" displayName="【速さの吸収】" />
+  </skill>
+  <skill id="146" name="LuckTaker">
+    <text lang="English" displayName="Lucktaker" />
+    <text lang="Japanese" displayName="【幸運の吸収】" />
+  </skill>
+  <skill id="147" name="DefenseTaker">
+    <text lang="English" displayName="Defensetaker" />
+    <text lang="Japanese" displayName="【守備の吸収】" />
+  </skill>
+  <skill id="148" name="ResistanceTaker">
+    <text lang="English" displayName="Resistancetaker" />
+    <text lang="Japanese" displayName="【魔防の吸収】" />
+  </skill>
+  <skill id="149" name="Survey">
+    <text lang="English" displayName="Survey" />
+    <text lang="Japanese" displayName="【測量術】" />
+  </skill>
+  <skill id="150" name="OpportunityShot">
+    <text lang="English" displayName="Opportunity Shot" />
+    <text lang="Japanese" displayName="【自動砲台】" />
+  </skill>
+  <skill id="151" name="RifledBarrel">
+    <text lang="English" displayName="Rifled Barrel" />
+    <text lang="Japanese" displayName="【砲身改造】" />
+  </skill>
+  <skill id="152" name="Surefooted">
+    <text lang="English" displayName="Surefooted" />
+    <text lang="Japanese" displayName="【悪路踏破】" />
+  </skill>
+  <skill id="153" name="WitchsBrew">
+    <text lang="English" displayName="Witch's Brew" />
+    <text lang="Japanese" displayName="【魔女の大釜】" />
+  </skill>
+  <skill id="154" name="Warp">
+    <text lang="English" displayName="Warp" />
+    <text lang="Japanese" displayName="【ワープ】" />
+  </skill>
+  <skill id="155" name="ToxicBrew">
+    <text lang="English" displayName="Toxic Brew" />
+    <text lang="Japanese" displayName="【魔女の毒薬】" />
+  </skill>
+  <skill id="156" name="DancingBlade">
+    <text lang="English" displayName="Dancing Blade" />
+    <text lang="Japanese" displayName="【柔剣】" />
+  </skill>
+  <skill id="157" name="DualGuardsman">
+    <text lang="English" displayName="Dual Guardsman" />
+    <text lang="Japanese" displayName="【防陣＋】" />
+  </skill>
+  <skill id="158" name="HeavyBlade">
+    <text lang="English" displayName="Heavy Blade" />
+    <text lang="Japanese" displayName="【剛剣】" />
+  </skill>
+  <skill id="159" name="VeteranIntuition">
+    <text lang="English" displayName="Veteran Intuition" />
+    <text lang="Japanese" displayName="【歴戦の勘】" />
+  </skill>
+  <skill id="160" name="Supportive">
+    <text lang="English" displayName="Supportive" />
+    <text lang="Japanese" displayName="【不思議な魅力】" />
+  </skill>
+  <skill id="161" name="ForcefulPartner">
+    <text lang="English" displayName="Forceful Partner" />
+    <text lang="Japanese" displayName="【絶対進攻】" />
+  </skill>
+  <skill id="162" name="DevotedPartner">
+    <text lang="English" displayName="Devoted Partner" />
+    <text lang="Japanese" displayName="【絶対援護】" />
+  </skill>
+  <skill id="163" name="EvasivePartner">
+    <text lang="English" displayName="Evasive Partner" />
+    <text lang="Japanese" displayName="【絶対死守】" />
+  </skill>
+  <skill id="164" name="FieryBlood">
+    <text lang="English" displayName="Fiery Blood" />
+    <text lang="Japanese" displayName="【炎の血】" />
+  </skill>
+  <skill id="165" name="MiraculousSave">
+    <text lang="English" displayName="Miraculous Save" />
+    <text lang="Japanese" displayName="【絆の祈り】" />
+  </skill>
+  <skill id="166" name="HealingDescant">
+    <text lang="English" displayName="Healing Descant" />
+    <text lang="Japanese" displayName="【癒しの声】" />
+  </skill>
+  <skill id="167" name="QuietStrength">
+    <text lang="English" displayName="Quiet Strength" />
+    <text lang="Japanese" displayName="【小さな声援】" />
+  </skill>
+  <skill id="168" name="FearsomeBlow">
+    <text lang="English" displayName="Fearsome Blow" />
+    <text lang="Japanese" displayName="【お転婆】" />
+  </skill>
+  <skill id="169" name="Perfectionist">
+    <text lang="English" displayName="Perfectionist" />
+    <text lang="Japanese" displayName="【完璧主義】" />
+  </skill>
+  <skill id="170" name="VowOfFriendship">
+    <text lang="English" displayName="Vow of Friendship" />
+    <text lang="Japanese" displayName="【友情の誓い】" />
+  </skill>
+  <skill id="171" name="Pyrotechnics">
+    <text lang="English" displayName="Pyrotechnics" />
+    <text lang="Japanese" displayName="【爆炎使い】" />
+  </skill>
+  <skill id="172" name="Capture">
+    <text lang="English" displayName="Capture" />
+    <text lang="Japanese" displayName="【白夜の捕縛術】" />
+  </skill>
+  <skill id="173" name="RallyingCry">
+    <text lang="English" displayName="Rallying Cry" />
+    <text lang="Japanese" displayName="【叱咤激励】" />
+  </skill>
+  <skill id="174" name="DivineRetribution">
+    <text lang="English" displayName="Divine Retribution" />
+    <text lang="Japanese" displayName="【天罰】" />
+  </skill>
+  <skill id="175" name="Optimistic">
+    <text lang="English" displayName="Optimistic" />
+    <text lang="Japanese" displayName="【ぼんやり】" />
+  </skill>
+  <skill id="176" name="Pride">
+    <text lang="English" displayName="Pride" />
+    <text lang="Japanese" displayName="【尊大】" />
+  </skill>
+  <skill id="177" name="NohrEnmity">
+    <text lang="English" displayName="Nohr Enmity" />
+    <text lang="Japanese" displayName="【暗夜嫌い】" />
+  </skill>
+  <skill id="178" name="TripleThreat">
+    <text lang="English" displayName="Triple Threat" />
+    <text lang="Japanese" displayName="【悪あがき】" />
+  </skill>
+  <skill id="179" name="Competitive">
+    <text lang="English" displayName="Competitive" />
+    <text lang="Japanese" displayName="【対抗意識】" />
+  </skill>
+  <skill id="180" name="ShurikenMastery">
+    <text lang="English" displayName="Shuriken Mastery" />
+    <text lang="Japanese" displayName="【忍法車返し】" />
+  </skill>
+  <skill id="181" name="MorbidCelebration">
+    <text lang="English" displayName="Morbid Celebration" />
+    <text lang="Japanese" displayName="【勝者の愉悦】" />
+  </skill>
+  <skill id="182" name="Reciprocity">
+    <text lang="English" displayName="Reciprocity" />
+    <text lang="Japanese" displayName="【恩返し】" />
+  </skill>
+  <skill id="183" name="Bushido">
+    <text lang="English" displayName="Bushido" />
+    <text lang="Japanese" displayName="【武士道】" />
+  </skill>
+  <skill id="184" name="InExtremis">
+    <text lang="English" displayName="In Extremis" />
+    <text lang="Japanese" displayName="【勝利への執念】" />
+  </skill>
+  <skill id="185" name="Highwayman">
+    <text lang="English" displayName="Highwayman" />
+    <text lang="Japanese" displayName="【ダーティファイト】" />
+  </skill>
+  <skill id="186" name="LilysPoise">
+    <text lang="English" displayName="Lily's Poise" />
+    <text lang="Japanese" displayName="【可憐な花】" />
+  </skill>
+  <skill id="187" name="Misfortunate">
+    <text lang="English" displayName="Misfortunate" />
+    <text lang="Japanese" displayName="【不運の塊】" />
+  </skill>
+  <skill id="188" name="Puissance">
+    <text lang="English" displayName="Puissance" />
+    <text lang="Japanese" displayName="【怪力】" />
+  </skill>
+  <skill id="189" name="AchingBlood">
+    <text lang="English" displayName="Aching Blood" />
+    <text lang="Japanese" displayName="【血の疼き】" />
+  </skill>
+  <skill id="190" name="Kidnap">
+    <text lang="English" displayName="Kidnap" />
+    <text lang="Japanese" displayName="【暗夜の拘束術】" />
+  </skill>
+  <skill id="191" name="Countercurse">
+    <text lang="English" displayName="Countercurse" />
+    <text lang="Japanese" displayName="【呪詛返し】" />
+  </skill>
+  <skill id="192" name="RosesThorns">
+    <text lang="English" displayName="Rose's Thorns" />
+    <text lang="Japanese" displayName="【妖艶な花】" />
+  </skill>
+  <skill id="193" name="FierceRival">
+    <text lang="English" displayName="Fierce Rival" />
+    <text lang="Japanese" displayName="【負けん気】" />
+  </skill>
+  <skill id="194" name="Opportunist">
+    <text lang="English" displayName="Opportunist" />
+    <text lang="Japanese" displayName="【奇襲任務】" />
+  </skill>
+  <skill id="195" name="FancyFootwork">
+    <text lang="English" displayName="Fancy Footwork" />
+    <text lang="Japanese" displayName="【青の踊り】" />
+  </skill>
+  <skill id="196" name="Bloodthirst">
+    <text lang="English" displayName="Bloodthirst" />
+    <text lang="Japanese" displayName="【殺戮本能】" />
+  </skill>
+  <skill id="197" name="FierceMien">
+    <text lang="English" displayName="Fierce Mien" />
+    <text lang="Japanese" displayName="【強面】" />
+  </skill>
+  <skill id="198" name="Unmask">
+    <text lang="English" displayName="Unmask" />
+    <text lang="Japanese" displayName="【女の本性】" />
+  </skill>
+  <skill id="199" name="Pragmatic">
+    <text lang="English" displayName="Pragmatic" />
+    <text lang="Japanese" displayName="【冷血】" />
+  </skill>
+  <skill id="200" name="Collector">
+    <text lang="English" displayName="Collector" />
+    <text lang="Japanese" displayName="【拾いもの】" />
+  </skill>
+  <skill id="201" name="Chivalry">
+    <text lang="English" displayName="Chivalry" />
+    <text lang="Japanese" displayName="【騎士道】" />
+  </skill>
+  <skill id="202" name="Peacebringer">
+    <text lang="English" displayName="Peacebringer" />
+    <text lang="Japanese" displayName="【美しき王】" />
+  </skill>
+  <skill id="203" name="WindDisciple">
+    <text lang="English" displayName="Wind Disciple" />
+    <text lang="Japanese" displayName="【風の血】" />
+  </skill>
+  <skill id="204" name="Perspicacious">
+    <text lang="English" displayName="Perspicacious" />
+    <text lang="Japanese" displayName="【軍略伝授】" />
+  </skill>
+  <skill id="205" name="IcyBlood">
+    <text lang="English" displayName="Icy Blood" />
+    <text lang="Japanese" displayName="【氷の血】" />
+  </skill>
+  <skill id="206" name="Forager">
+    <text lang="English" displayName="Forager" />
+    <text lang="Japanese" displayName="【農地の主】" />
+  </skill>
+  <skill id="207" name="DraconicHeir">
+    <text lang="English" displayName="Draconic Heir" />
+    <text lang="Japanese" displayName="【竜の御子】" />
+  </skill>
+  <skill id="208" name="BornSteward">
+    <text lang="English" displayName="Born Steward" />
+    <text lang="Japanese" displayName="【執事の嗜み】" />
+  </skill>
+  <skill id="209" name="PerfectPitch">
+    <text lang="English" displayName="Perfect Pitch" />
+    <text lang="Japanese" displayName="【チューニング】" />
+  </skill>
+  <skill id="210" name="Mischievous">
+    <text lang="English" displayName="Mischievous" />
+    <text lang="Japanese" displayName="【おっちょこちょい】" />
+  </skill>
+  <skill id="211" name="LuckyCharm">
+    <text lang="English" displayName="Lucky Charm" />
+    <text lang="Japanese" displayName="【幸運のおまじない】" />
+  </skill>
+  <skill id="212" name="NobleCause">
+    <text lang="English" displayName="Noble Cause" />
+    <text lang="Japanese" displayName="【大義の勇】" />
+  </skill>
+  <skill id="213" name="Optimist">
+    <text lang="English" displayName="Optimist" />
+    <text lang="Japanese" displayName="【前向き】" />
+  </skill>
+  <skill id="214" name="SweetTooth">
+    <text lang="English" displayName="Sweet Tooth" />
+    <text lang="Japanese" displayName="【甘党】" />
+  </skill>
+  <skill id="215" name="Playthings">
+    <text lang="English" displayName="Playthings" />
+    <text lang="Japanese" displayName="【じゃれつき】" />
+  </skill>
+  <skill id="216" name="Calm">
+    <text lang="English" displayName="Calm" />
+    <text lang="Japanese" displayName="【冷静沈着】" />
+  </skill>
+  <skill id="217" name="Haiku">
+    <text lang="English" displayName="Haiku" />
+    <text lang="Japanese" displayName="【五・七・五】" />
+  </skill>
+  <skill id="218" name="Prodigy">
+    <text lang="English" displayName="Prodigy" />
+    <text lang="Japanese" displayName="【天才肌】" />
+  </skill>
+  <skill id="219" name="Vendetta">
+    <text lang="English" displayName="Vendetta" />
+    <text lang="Japanese" displayName="【執念】" />
+  </skill>
+  <skill id="220" name="Gallant">
+    <text lang="English" displayName="Gallant" />
+    <text lang="Japanese" displayName="【レディーファースト】" />
+  </skill>
+  <skill id="221" name="FierceCounter">
+    <text lang="English" displayName="Guarded Bravery" />
+    <text lang="Japanese" displayName="【臆病】" />
+  </skill>
+  <skill id="222" name="GuardedBravery">
+    <text lang="English" displayName="Fierce Counter" />
+    <text lang="Japanese" displayName="【だまし討ち】" />
+  </skill>
+  <skill id="223" name="Scavenge">
+    <text lang="English" displayName="Goody Basket" />
+    <text lang="Japanese" displayName="【ひろい食い】" />
+  </skill>
+  <skill id="224" name="FortunateSon">
+    <text lang="English" displayName="Fortunate Son" />
+    <text lang="Japanese" displayName="【強運の塊】" />
+  </skill>
+  <skill id="225" name="Bibliophile">
+    <text lang="English" displayName="Bibliophile" />
+    <text lang="Japanese" displayName="【乙女心の躍動】" />
+  </skill>
+  <skill id="226" name="Sisterhood">
+    <text lang="English" displayName="Sisterhood" />
+    <text lang="Japanese" displayName="【女の子好き】" />
+  </skill>
+  <skill id="227" name="Daydream">
+    <text lang="English" displayName="Daydream" />
+    <text lang="Japanese" displayName="【邪な空想】" />
+  </skill>
+  <skill id="228" name="MakeAKilling">
+    <text lang="English" displayName="Make a Killing" />
+    <text lang="Japanese" displayName="【一攫千金】" />
+  </skill>
   <!--
   Template:
   <skill id="0" name="InternalName">
