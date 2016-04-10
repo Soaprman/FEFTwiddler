@@ -26,9 +26,9 @@ namespace FEFTwiddler.Model
 
         public byte[] UnknownBytesBeforeStatBytes1 { get; set; }
         public byte[] UnknownBytesBeforeStatBytes2 { get; set; }
-        public byte[] StatBytes1 { get; set; }
+        public sbyte[] StatBytes1 { get; set; }
         public byte[] UnknownBytesBetweenStatBytes { get; set; }
-        public byte[] StatBytes2 { get; set; }
+        public sbyte[] StatBytes2 { get; set; }
 
         public static byte MaxWeaponExperience = 0xFB;
         public byte WeaponExperience_Sword { get; set; }

@@ -347,7 +347,7 @@ namespace FEFTwiddler.Model
             // Stat bytes 1
             chunk = new byte[8];
             br.Read(chunk, 0, 8);
-            character.StatBytes1 = chunk;
+            character.StatBytes1 = (sbyte[])(Array)chunk;
 
             // Some bytes
             chunk = new byte[16];
@@ -357,7 +357,7 @@ namespace FEFTwiddler.Model
             // Stat bytes 2
             chunk = new byte[8];
             br.Read(chunk, 0, 8);
-            character.StatBytes2 = chunk;
+            character.StatBytes2 = (sbyte[])(Array)chunk;
 
             // Weapon exp and HP
             chunk = new byte[9];

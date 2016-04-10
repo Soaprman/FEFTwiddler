@@ -214,9 +214,9 @@ namespace FEFTwiddler
         {
             var str = "";
 
-            str += BitConverter.ToString(character.StatBytes1);
+            str += BitConverter.ToString((byte[])(Array)character.StatBytes1);
             str += Environment.NewLine;
-            str += BitConverter.ToString(character.StatBytes2);
+            str += BitConverter.ToString((byte[])(Array)character.StatBytes2);
 
             return str;
         }
