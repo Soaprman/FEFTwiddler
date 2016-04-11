@@ -38,7 +38,7 @@ namespace FEFTwiddler
             openFileDialog1.FileName = "";
 
             var startupPath = Config.StartupPath;
-            if (startupPath == "") startupPath = Application.StartupPath;
+            if (startupPath == "" || !Directory.Exists(startupPath)) startupPath = Application.StartupPath;
             openFileDialog1.InitialDirectory = startupPath;
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -469,13 +469,13 @@ namespace FEFTwiddler
             var equipped = (item.IsEquipped ? "(E) " : "");
             var displayName = data.DisplayName;
             string uses;
-            if (data.Type == Enums.ItemType.Sword || 
-                data.Type == Enums.ItemType.Lance || 
-                data.Type == Enums.ItemType.Axe || 
-                data.Type == Enums.ItemType.Shuriken || 
-                data.Type == Enums.ItemType.Bow || 
-                data.Type == Enums.ItemType.Tome || 
-                data.Type == Enums.ItemType.Stone || 
+            if (data.Type == Enums.ItemType.Sword ||
+                data.Type == Enums.ItemType.Lance ||
+                data.Type == Enums.ItemType.Axe ||
+                data.Type == Enums.ItemType.Shuriken ||
+                data.Type == Enums.ItemType.Bow ||
+                data.Type == Enums.ItemType.Tome ||
+                data.Type == Enums.ItemType.Stone ||
                 data.Type == Enums.ItemType.NPC ||
                 data.Type == Enums.ItemType.Unknown)
             {
