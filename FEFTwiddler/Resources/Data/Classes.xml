@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <root>
-  <class id="1" name="OutrealmClass">
+  <class id="0" name="None">
     <text lang="English" displayName="None" />
     <text lang="Japanese" displayName="無し" />
     <baseStats hp="1" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -12,761 +12,773 @@
     <baseStats hp="18" str="8" mag="6" skl="4" spd="7" lck="2" def="6" res="6" />
     <maxStats hp="60" str="32" mag="31" skl="28" spd="32" lck="27" def="29" res="32" />
   </class>
-  <class id="1" name="NohrNoble_F">
+  <class id="2" name="NohrNoble_F">
     <text lang="English" displayName="Nohr Noble (F)" />
     <text lang="Japanese" displayName="ダークブラッド女" />
     <baseStats hp="18" str="8" mag="6" skl="4" spd="7" lck="2" def="6" res="6" />
     <maxStats hp="60" str="32" mag="31" skl="28" spd="32" lck="27" def="29" res="32" />
   </class>
-  <class id="1" name="NohrPrince_M">
+  <class id="3" name="NohrPrince_M">
     <text lang="English" displayName="Nohr Prince (M)" />
     <text lang="Japanese" displayName="ダークプリンス男" />
     <baseStats hp="17" str="7" mag="3" skl="4" spd="5" lck="2" def="5" res="2" />
     <maxStats hp="40" str="23" mag="17" skl="19" spd="21" lck="22" def="21" res="19" />
   </class>
-  <class id="1" name="NohrPrince_F">
+  <class id="4" name="NohrPrince_F">
     <text lang="English" displayName="Nohr Princess (F)" />
     <text lang="Japanese" displayName="ダークプリンセス女" />
     <baseStats hp="17" str="7" mag="3" skl="4" spd="5" lck="2" def="5" res="2" />
     <maxStats hp="40" str="23" mag="17" skl="19" spd="21" lck="22" def="21" res="19" />
   </class>
-  <class id="1" name="HoshidoNoble_M">
+  <class id="5" name="HoshidoNoble_M">
     <text lang="English" displayName="Hoshido Noble (M)" />
     <text lang="Japanese" displayName="白の血族男" />
     <baseStats hp="19" str="10" mag="4" skl="5" spd="6" lck="4" def="7" res="3" />
     <maxStats hp="60" str="34" mag="28" skl="29" spd="30" lck="33" def="31" res="28" />
   </class>
-  <class id="1" name="HoshidoNoble_F">
+  <class id="6" name="HoshidoNoble_F">
     <text lang="English" displayName="Hoshido Noble (F)" />
     <text lang="Japanese" displayName="白の血族女" />
     <baseStats hp="19" str="10" mag="4" skl="5" spd="6" lck="4" def="7" res="3" />
     <maxStats hp="60" str="34" mag="28" skl="29" spd="30" lck="33" def="31" res="28" />
   </class>
-  <class id="1" name="Paladin_M">
+  <class id="7" name="Paladin_M">
     <text lang="English" displayName="Paladin (M)" />
     <text lang="Japanese" displayName="パラディン男" />
     <baseStats hp="19" str="8" mag="1" skl="7" spd="7" lck="4" def="7" res="6" />
     <maxStats hp="60" str="31" mag="26" skl="30" spd="30" lck="32" def="32" res="32" />
   </class>
-  <class id="1" name="Paladin_F">
+  <class id="8" name="Paladin_F">
     <text lang="English" displayName="Paladin (F)" />
     <text lang="Japanese" displayName="パラディン女" />
     <baseStats hp="19" str="8" mag="1" skl="7" spd="7" lck="4" def="7" res="6" />
     <maxStats hp="60" str="31" mag="26" skl="30" spd="30" lck="32" def="32" res="32" />
   </class>
-  <class id="1" name="Cavalier_M">
+  <class id="9" name="Cavalier_M">
     <text lang="English" displayName="Cavalier (M)" />
     <text lang="Japanese" displayName="ソシアルナイト男" />
     <baseStats hp="17" str="6" mag="0" skl="5" spd="5" lck="3" def="5" res="3" />
     <maxStats hp="40" str="22" mag="15" skl="21" spd="20" lck="24" def="22" res="21" />
   </class>
-  <class id="1" name="Cavalier_F">
+  <class id="10" name="Cavalier_F">
     <text lang="English" displayName="Cavalier (F)" />
     <text lang="Japanese" displayName="ソシアルナイト女" />
     <baseStats hp="17" str="6" mag="0" skl="5" spd="5" lck="3" def="5" res="3" />
     <maxStats hp="40" str="22" mag="15" skl="21" spd="20" lck="24" def="22" res="21" />
   </class>
-  <class id="1" name="GreatKnight_M">
+  <class id="11" name="GreatKnight_M">
     <text lang="English" displayName="Great Knight (M)" />
     <text lang="Japanese" displayName="グレートナイト男" />
     <baseStats hp="21" str="10" mag="0" skl="6" spd="6" lck="3" def="10" res="2" />
     <maxStats hp="65" str="35" mag="25" skl="29" spd="27" lck="28" def="37" res="28" />
   </class>
-  <class id="1" name="GreatKnight_F">
+  <class id="12" name="GreatKnight_F">
     <text lang="English" displayName="Great Knight (F)" />
     <text lang="Japanese" displayName="グレートナイト女" />
     <baseStats hp="21" str="10" mag="0" skl="6" spd="6" lck="3" def="10" res="2" />
     <maxStats hp="65" str="35" mag="25" skl="29" spd="27" lck="28" def="37" res="28" />
   </class>
-  <class id="1" name="Knight_M">
+  <class id="13" name="Knight_M">
     <text lang="English" displayName="Knight (M)" />
     <text lang="Japanese" displayName="アーマーナイト男" />
     <baseStats hp="19" str="8" mag="0" skl="5" spd="3" lck="3" def="8" res="1" />
     <maxStats hp="45" str="24" mag="15" skl="22" spd="17" lck="22" def="26" res="18" />
   </class>
-  <class id="1" name="Knight_F">
+  <class id="14" name="Knight_F">
     <text lang="English" displayName="Knight (F)" />
     <text lang="Japanese" displayName="アーマーナイト女" />
     <baseStats hp="19" str="8" mag="0" skl="5" spd="3" lck="3" def="8" res="1" />
     <maxStats hp="45" str="24" mag="15" skl="22" spd="17" lck="22" def="26" res="18" />
   </class>
-  <class id="1" name="General_M">
+  <class id="15" name="General_M">
     <text lang="English" displayName="General (M)" />
     <text lang="Japanese" displayName="ジェネラル男" />
     <baseStats hp="22" str="11" mag="0" skl="7" spd="3" lck="4" def="12" res="3" />
     <maxStats hp="70" str="38" mag="25" skl="32" spd="25" lck="32" def="40" res="30" />
   </class>
-  <class id="1" name="General_F">
+  <class id="16" name="General_F">
     <text lang="English" displayName="General (F)" />
     <text lang="Japanese" displayName="ジェネラル女" />
     <baseStats hp="22" str="11" mag="0" skl="7" spd="3" lck="4" def="12" res="3" />
     <maxStats hp="70" str="38" mag="25" skl="32" spd="25" lck="32" def="40" res="30" />
   </class>
-  <class id="1" name="Berserker_M">
+  <class id="17" name="Berserker_M">
     <text lang="English" displayName="Berserker (M)" />
     <text lang="Japanese" displayName="バーサーカー男" />
     <baseStats hp="24" str="12" mag="0" skl="8" spd="9" lck="0" def="5" res="0" />
     <maxStats hp="70" str="40" mag="25" skl="32" spd="33" lck="25" def="27" res="25" />
   </class>
-  <class id="1" name="Berserker_F">
+  <class id="18" name="Berserker_F">
     <text lang="English" displayName="Berserker (F)" />
     <text lang="Japanese" displayName="バーサーカー女" />
     <baseStats hp="24" str="12" mag="0" skl="8" spd="9" lck="0" def="5" res="0" />
     <maxStats hp="70" str="40" mag="25" skl="32" spd="33" lck="25" def="27" res="25" />
   </class>
-  <class id="1" name="Fighter_M">
+  <class id="19" name="Fighter_M">
     <text lang="English" displayName="Fighter (M)" />
     <text lang="Japanese" displayName="アクスファイター男" />
     <baseStats hp="19" str="7" mag="0" skl="6" spd="6" lck="2" def="4" res="1" />
     <maxStats hp="45" str="25" mag="15" skl="23" spd="22" lck="21" def="19" res="18" />
   </class>
-  <class id="1" name="Fighter_F">
+  <class id="20" name="Fighter_F">
     <text lang="English" displayName="Fighter (F)" />
     <text lang="Japanese" displayName="アクスファイター女" />
     <baseStats hp="19" str="7" mag="0" skl="6" spd="6" lck="2" def="4" res="1" />
     <maxStats hp="45" str="25" mag="15" skl="23" spd="22" lck="21" def="19" res="18" />
   </class>
-  <class id="1" name="Hero_M">
+  <class id="21" name="Hero_M">
     <text lang="English" displayName="Hero (M)" />
     <text lang="Japanese" displayName="ブレイブヒーロー男" />
     <baseStats hp="20" str="8" mag="0" skl="10" spd="8" lck="3" def="7" res="2" />
     <maxStats hp="60" str="32" mag="25" skl="35" spd="32" lck="31" def="30" res="27" />
   </class>
-  <class id="1" name="Hero_F">
+  <class id="22" name="Hero_F">
     <text lang="English" displayName="Hero (F)" />
     <text lang="Japanese" displayName="ブレイブヒーロー女" />
     <baseStats hp="20" str="8" mag="0" skl="10" spd="8" lck="3" def="7" res="2" />
     <maxStats hp="60" str="32" mag="25" skl="35" spd="32" lck="31" def="30" res="27" />
   </class>
-  <class id="1" name="Mercenary_M">
+  <class id="23" name="Mercenary_M">
     <text lang="English" displayName="Mercenary (M)" />
     <text lang="Japanese" displayName="マーシナリー男" />
     <baseStats hp="17" str="5" mag="0" skl="7" spd="6" lck="2" def="5" res="2" />
     <maxStats hp="40" str="22" mag="15" skl="24" spd="22" lck="20" def="21" res="19" />
   </class>
-  <class id="1" name="Mercenary_F">
+  <class id="24" name="Mercenary_F">
     <text lang="English" displayName="Mercenary (F)" />
     <text lang="Japanese" displayName="マーシナリー女" />
     <baseStats hp="17" str="5" mag="0" skl="7" spd="6" lck="2" def="5" res="2" />
     <maxStats hp="40" str="22" mag="15" skl="24" spd="22" lck="20" def="21" res="19" />
   </class>
-  <class id="1" name="BowKnight_M">
+  <class id="25" name="BowKnight_M">
     <text lang="English" displayName="Bow Knight (M)" />
     <text lang="Japanese" displayName="ボウナイト男" />
     <baseStats hp="18" str="6" mag="0" skl="8" spd="9" lck="3" def="5" res="6" />
     <maxStats hp="55" str="29" mag="25" skl="32" spd="33" lck="30" def="27" res="32" />
   </class>
-  <class id="1" name="BowKnight_F">
+  <class id="26" name="BowKnight_F">
     <text lang="English" displayName="Bow Knight (F)" />
     <text lang="Japanese" displayName="ボウナイト女" />
     <baseStats hp="18" str="6" mag="0" skl="8" spd="9" lck="3" def="5" res="6" />
     <maxStats hp="55" str="29" mag="25" skl="32" spd="33" lck="30" def="27" res="32" />
   </class>
-  <class id="1" name="Outlaw_M">
+  <class id="27" name="Outlaw_M">
     <text lang="English" displayName="Outlaw (M)" />
     <text lang="Japanese" displayName="シーフ男" />
     <baseStats hp="16" str="3" mag="1" skl="4" spd="8" lck="1" def="2" res="4" />
     <maxStats hp="35" str="19" mag="18" skl="20" spd="24" lck="18" def="17" res="22" />
   </class>
-  <class id="1" name="Outlaw_F">
+  <class id="28" name="Outlaw_F">
     <text lang="English" displayName="Outlaw (F)" />
     <text lang="Japanese" displayName="シーフ女" />
     <baseStats hp="16" str="3" mag="1" skl="4" spd="8" lck="1" def="2" res="4" />
     <maxStats hp="35" str="19" mag="18" skl="20" spd="24" lck="18" def="17" res="22" />
   </class>
-  <class id="1" name="Adventurer_M">
+  <class id="29" name="Adventurer_M">
     <text lang="English" displayName="Adventurer (M)" />
     <text lang="Japanese" displayName="アドベンチャラー男" />
     <baseStats hp="17" str="4" mag="6" skl="6" spd="10" lck="2" def="3" res="8" />
     <maxStats hp="50" str="27" mag="31" skl="27" spd="34" lck="27" def="25" res="34" />
   </class>
-  <class id="1" name="Adventurer_F">
+  <class id="30" name="Adventurer_F">
     <text lang="English" displayName="Adventurer (F)" />
     <text lang="Japanese" displayName="アドベンチャラー女" />
     <baseStats hp="17" str="4" mag="6" skl="6" spd="10" lck="2" def="3" res="8" />
     <maxStats hp="50" str="27" mag="31" skl="27" spd="34" lck="27" def="25" res="34" />
   </class>
-  <class id="1" name="Swordmaster_M">
+  <class id="31" name="Swordmaster_M">
     <text lang="English" displayName="Swordmaster (M)" />
     <text lang="Japanese" displayName="剣聖男" />
     <baseStats hp="18" str="6" mag="2" skl="7" spd="11" lck="4" def="5" res="5" />
     <maxStats hp="55" str="30" mag="28" skl="32" spd="35" lck="33" def="27" res="31" />
   </class>
-  <class id="1" name="Swordmaster_F">
+  <class id="32" name="Swordmaster_F">
     <text lang="English" displayName="Swordmaster (F)" />
     <text lang="Japanese" displayName="剣聖女" />
     <baseStats hp="18" str="6" mag="2" skl="7" spd="11" lck="4" def="5" res="5" />
     <maxStats hp="55" str="30" mag="28" skl="32" spd="35" lck="33" def="27" res="31" />
   </class>
-  <class id="1" name="Samurai_M">
+  <class id="33" name="Samurai_M">
     <text lang="English" displayName="Samurai (M)" />
     <text lang="Japanese" displayName="侍男" />
     <baseStats hp="17" str="4" mag="0" skl="5" spd="8" lck="3" def="3" res="3" />
     <maxStats hp="40" str="20" mag="16" skl="23" spd="25" lck="24" def="18" res="20" />
   </class>
-  <class id="1" name="Samurai_F">
+  <class id="34" name="Samurai_F">
     <text lang="English" displayName="Samurai (F)" />
     <text lang="Japanese" displayName="侍女" />
     <baseStats hp="17" str="4" mag="0" skl="5" spd="8" lck="3" def="3" res="3" />
     <maxStats hp="40" str="20" mag="16" skl="23" spd="25" lck="24" def="18" res="20" />
   </class>
-  <class id="1" name="MasterOfArms_M">
+  <class id="35" name="MasterOfArms_M">
     <text lang="English" displayName="Master of Arms (M)" />
     <text lang="Japanese" displayName="兵法者男" />
     <baseStats hp="20" str="8" mag="0" skl="6" spd="9" lck="3" def="7" res="3" />
     <maxStats hp="65" str="33" mag="25" skl="30" spd="30" lck="31" def="31" res="28" />
   </class>
-  <class id="1" name="MasterOfArms_F">
+  <class id="36" name="MasterOfArms_F">
     <text lang="English" displayName="Master of Arms (F)" />
     <text lang="Japanese" displayName="兵法者女" />
     <baseStats hp="20" str="8" mag="0" skl="6" spd="9" lck="3" def="7" res="3" />
     <maxStats hp="65" str="33" mag="25" skl="30" spd="30" lck="31" def="31" res="28" />
   </class>
-  <class id="1" name="OniChieftain_M">
+  <class id="37" name="OniChieftain_M">
     <text lang="English" displayName="Oni Chieftain (M)" />
     <text lang="Japanese" displayName="修羅男" />
     <baseStats hp="19" str="9" mag="5" skl="2" spd="7" lck="0" def="10" res="5" />
     <maxStats hp="60" str="34" mag="28" skl="25" spd="30" lck="25" def="36" res="31" />
   </class>
-  <class id="1" name="OniChieftain_F">
+  <class id="38" name="OniChieftain_F">
     <text lang="English" displayName="Oni Chieftain (F)" />
     <text lang="Japanese" displayName="修羅女" />
     <baseStats hp="19" str="9" mag="5" skl="2" spd="7" lck="0" def="10" res="5" />
     <maxStats hp="60" str="34" mag="28" skl="25" spd="30" lck="25" def="36" res="31" />
   </class>
-  <class id="1" name="OniSavage_M">
+  <class id="39" name="OniSavage_M">
     <text lang="English" displayName="Oni Savage (M)" />
     <text lang="Japanese" displayName="鬼人男" />
     <baseStats hp="18" str="6" mag="1" skl="2" spd="5" lck="0" def="7" res="1" />
     <maxStats hp="45" str="24" mag="19" skl="16" spd="20" lck="17" def="23" res="18" />
   </class>
-  <class id="1" name="OniSavage_F">
+  <class id="40" name="OniSavage_F">
     <text lang="English" displayName="Oni Savage (F)" />
     <text lang="Japanese" displayName="鬼人女" />
     <baseStats hp="18" str="6" mag="1" skl="2" spd="5" lck="0" def="7" res="1" />
     <maxStats hp="45" str="24" mag="19" skl="16" spd="20" lck="17" def="23" res="18" />
   </class>
-  <class id="1" name="Blacksmith_M">
+  <class id="41" name="Blacksmith_M">
     <text lang="English" displayName="Blacksmith (M)" />
     <text lang="Japanese" displayName="鍛冶男" />
     <baseStats hp="21" str="8" mag="0" skl="9" spd="8" lck="3" def="8" res="2" />
     <maxStats hp="65" str="33" mag="25" skl="32" spd="31" lck="30" def="32" res="27" />
   </class>
-  <class id="1" name="Blacksmith_F">
+  <class id="42" name="Blacksmith_F">
     <text lang="English" displayName="Blacksmith (F)" />
     <text lang="Japanese" displayName="鍛冶女" />
     <baseStats hp="21" str="8" mag="0" skl="9" spd="8" lck="3" def="8" res="2" />
     <maxStats hp="65" str="33" mag="25" skl="32" spd="31" lck="30" def="32" res="27" />
   </class>
-  <class id="1" name="SpearMaster_M">
+  <class id="43" name="SpearMaster_M">
     <text lang="English" displayName="Spear Master (M)" />
     <text lang="Japanese" displayName="槍聖男" />
     <baseStats hp="18" str="9" mag="0" skl="8" spd="8" lck="3" def="7" res="3" />
     <maxStats hp="60" str="34" mag="25" skl="33" spd="32" lck="29" def="30" res="29" />
   </class>
-  <class id="1" name="SpearMaster_F">
+  <class id="44" name="SpearMaster_F">
     <text lang="English" displayName="Spear Master (F)" />
     <text lang="Japanese" displayName="槍聖女" />
     <baseStats hp="18" str="9" mag="0" skl="8" spd="8" lck="3" def="7" res="3" />
     <maxStats hp="60" str="34" mag="25" skl="33" spd="32" lck="29" def="30" res="29" />
   </class>
-  <class id="1" name="SpearFighter_M">
+  <class id="45" name="SpearFighter_M">
     <text lang="English" displayName="Spear Fighter (M)" />
     <text lang="Japanese" displayName="槍術士男" />
     <baseStats hp="17" str="6" mag="0" skl="6" spd="6" lck="2" def="5" res="2" />
     <maxStats hp="40" str="22" mag="15" skl="23" spd="22" lck="21" def="22" res="21" />
   </class>
-  <class id="1" name="SpearFighter_F">
+  <class id="46" name="SpearFighter_F">
     <text lang="English" displayName="Spear Fighter (F)" />
     <text lang="Japanese" displayName="槍術士女" />
     <baseStats hp="17" str="6" mag="0" skl="6" spd="6" lck="2" def="5" res="2" />
     <maxStats hp="40" str="22" mag="15" skl="23" spd="22" lck="21" def="22" res="21" />
   </class>
-  <class id="1" name="Basara_M">
+  <class id="47" name="Basara_M">
     <text lang="English" displayName="Basara (M)" />
     <text lang="Japanese" displayName="婆娑羅男" />
     <baseStats hp="20" str="7" mag="5" skl="7" spd="7" lck="5" def="7" res="6" />
     <maxStats hp="65" str="31" mag="30" skl="30" spd="31" lck="35" def="30" res="32" />
   </class>
-  <class id="1" name="Basara_F">
+  <class id="48" name="Basara_F">
     <text lang="English" displayName="Basara (F)" />
     <text lang="Japanese" displayName="婆娑羅女" />
     <baseStats hp="20" str="7" mag="5" skl="7" spd="7" lck="5" def="7" res="6" />
     <maxStats hp="65" str="31" mag="30" skl="30" spd="31" lck="35" def="30" res="32" />
   </class>
-  <class id="1" name="Diviner_M">
+  <class id="49" name="Diviner_M">
     <text lang="English" displayName="Diviner (M)" />
     <text lang="Japanese" displayName="呪い師男" />
     <baseStats hp="15" str="0" mag="4" skl="5" spd="6" lck="1" def="1" res="3" />
     <maxStats hp="35" str="17" mag="22" skl="20" spd="23" lck="19" def="16" res="20" />
   </class>
-  <class id="1" name="Diviner_F">
+  <class id="50" name="Diviner_F">
     <text lang="English" displayName="Diviner (F)" />
     <text lang="Japanese" displayName="呪い師女" />
     <baseStats hp="15" str="0" mag="4" skl="5" spd="6" lck="1" def="1" res="3" />
     <maxStats hp="35" str="17" mag="22" skl="20" spd="23" lck="19" def="16" res="20" />
   </class>
-  <class id="1" name="Onmyoji_M">
+  <class id="51" name="Onmyoji_M">
     <text lang="English" displayName="Onmyoji (M)" />
     <text lang="Japanese" displayName="陰陽師男" />
     <baseStats hp="16" str="0" mag="7" skl="6" spd="7" lck="2" def="3" res="6" />
     <maxStats hp="45" str="25" mag="33" skl="31" spd="32" lck="27" def="25" res="31" />
   </class>
-  <class id="1" name="Onmyoji_F">
+  <class id="52" name="Onmyoji_F">
     <text lang="English" displayName="Onmyoji (F)" />
     <text lang="Japanese" displayName="陰陽師女" />
     <baseStats hp="16" str="0" mag="7" skl="6" spd="7" lck="2" def="3" res="6" />
     <maxStats hp="45" str="25" mag="33" skl="31" spd="32" lck="27" def="25" res="31" />
   </class>
-  <class id="1" name="Monk">
+  <class id="53" name="Monk">
     <text lang="English" displayName="Monk" />
     <text lang="Japanese" displayName="修験者" />
     <baseStats hp="16" str="0" mag="3" skl="5" spd="5" lck="4" def="2" res="5" />
     <maxStats hp="35" str="18" mag="21" skl="20" spd="22" lck="23" def="17" res="24" />
   </class>
-  <class id="1" name="ShrineMaiden">
+  <class id="54" name="ShrineMaiden">
     <text lang="English" displayName="Shrine Maiden" />
     <text lang="Japanese" displayName="巫女" />
     <baseStats hp="16" str="0" mag="3" skl="5" spd="5" lck="4" def="2" res="5" />
     <maxStats hp="35" str="18" mag="21" skl="20" spd="22" lck="23" def="17" res="24" />
   </class>
-  <class id="1" name="GreatMaster">
+  <class id="55" name="GreatMaster">
     <text lang="English" displayName="Great Master" />
     <text lang="Japanese" displayName="山伏" />
     <baseStats hp="19" str="8" mag="6" skl="6" spd="8" lck="5" def="6" res="7" />
     <maxStats hp="55" str="32" mag="30" skl="31" spd="33" lck="32" def="28" res="32" />
   </class>
-  <class id="1" name="Priestess">
+  <class id="56" name="Priestess">
     <text lang="English" displayName="Priestess" />
     <text lang="Japanese" displayName="戦巫女" />
     <baseStats hp="19" str="6" mag="7" skl="6" spd="9" lck="5" def="5" res="8" />
     <maxStats hp="50" str="29" mag="32" skl="30" spd="33" lck="34" def="26" res="34" />
   </class>
-  <class id="1" name="FalconKnight_M">
+  <class id="57" name="FalconKnight_M">
     <text lang="English" displayName="Falcon Knight (M)" />
     <text lang="Japanese" displayName="聖天馬武者男" />
     <baseStats hp="18" str="5" mag="4" skl="6" spd="10" lck="5" def="5" res="9" />
     <maxStats hp="55" str="28" mag="27" skl="30" spd="34" lck="35" def="27" res="35" />
   </class>
-  <class id="1" name="FalconKnight_F">
+  <class id="58" name="FalconKnight_F">
     <text lang="English" displayName="Falcon Knight (F)" />
     <text lang="Japanese" displayName="聖天馬武者女" />
     <baseStats hp="18" str="5" mag="4" skl="6" spd="10" lck="5" def="5" res="9" />
     <maxStats hp="55" str="28" mag="27" skl="30" spd="34" lck="35" def="27" res="35" />
   </class>
-  <class id="1" name="SkyKnight_M">
+  <class id="59" name="SkyKnight_M">
     <text lang="English" displayName="Sky Knight (M)" />
     <text lang="Japanese" displayName="天馬武者男" />
     <baseStats hp="16" str="3" mag="0" skl="5" spd="7" lck="4" def="2" res="6" />
     <maxStats hp="35" str="19" mag="16" skl="21" spd="23" lck="25" def="18" res="25" />
   </class>
-  <class id="1" name="SkyKnight_F">
+  <class id="60" name="SkyKnight_F">
     <text lang="English" displayName="Sky Knight (F)" />
     <text lang="Japanese" displayName="天馬武者女" />
     <baseStats hp="16" str="3" mag="0" skl="5" spd="7" lck="4" def="2" res="6" />
     <maxStats hp="35" str="19" mag="16" skl="21" spd="23" lck="25" def="18" res="25" />
   </class>
-  <class id="1" name="KinshiKnight_M">
+  <class id="61" name="KinshiKnight_M">
     <text lang="English" displayName="Kinshi Knight (M)" />
     <text lang="Japanese" displayName="金鵄武者男" />
     <baseStats hp="17" str="4" mag="1" skl="9" spd="8" lck="5" def="4" res="7" />
     <maxStats hp="50" str="27" mag="26" skl="33" spd="31" lck="34" def="25" res="31" />
   </class>
-  <class id="1" name="KinshiKnight_F">
+  <class id="62" name="KinshiKnight_F">
     <text lang="English" displayName="Kinshi Knight (F)" />
     <text lang="Japanese" displayName="金鵄武者女" />
     <baseStats hp="17" str="4" mag="1" skl="9" spd="8" lck="5" def="4" res="7" />
     <maxStats hp="50" str="27" mag="26" skl="33" spd="31" lck="34" def="25" res="31" />
   </class>
-  <class id="1" name="Archer_M">
+  <class id="63" name="Archer_M">
     <text lang="English" displayName="Archer (M)" />
     <text lang="Japanese" displayName="弓使い男" />
     <baseStats hp="17" str="5" mag="0" skl="7" spd="5" lck="2" def="4" res="1" />
     <maxStats hp="40" str="21" mag="15" skl="23" spd="21" lck="20" def="20" res="17" />
   </class>
-  <class id="1" name="Archer_F">
+  <class id="64" name="Archer_F">
     <text lang="English" displayName="Archer (F)" />
     <text lang="Japanese" displayName="弓使い女" />
     <baseStats hp="17" str="5" mag="0" skl="7" spd="5" lck="2" def="4" res="1" />
     <maxStats hp="40" str="21" mag="15" skl="23" spd="21" lck="20" def="20" res="17" />
   </class>
-  <class id="1" name="Sniper_M">
+  <class id="65" name="Sniper_M">
     <text lang="English" displayName="Sniper (M)" />
     <text lang="Japanese" displayName="弓聖男" />
     <baseStats hp="19" str="7" mag="0" skl="10" spd="9" lck="3" def="6" res="2" />
     <maxStats hp="55" str="31" mag="25" skl="35" spd="33" lck="30" def="31" res="28" />
   </class>
-  <class id="1" name="Sniper_F">
+  <class id="66" name="Sniper_F">
     <text lang="English" displayName="Sniper (F)" />
     <text lang="Japanese" displayName="弓聖女" />
     <baseStats hp="19" str="7" mag="0" skl="10" spd="9" lck="3" def="6" res="2" />
     <maxStats hp="55" str="31" mag="25" skl="35" spd="33" lck="30" def="31" res="28" />
   </class>
-  <class id="1" name="WyvernLord_M">
+  <class id="67" name="WyvernLord_M">
     <text lang="English" displayName="Wyvern Lord (M)" />
     <text lang="Japanese" displayName="ドラゴンマスター男" />
     <baseStats hp="19" str="8" mag="0" skl="9" spd="6" lck="3" def="10" res="1" />
     <maxStats hp="60" str="33" mag="25" skl="33" spd="29" lck="28" def="35" res="26" />
   </class>
-  <class id="1" name="WyvernLord_F">
+  <class id="68" name="WyvernLord_F">
     <text lang="English" displayName="Wyvern Lord (F)" />
     <text lang="Japanese" displayName="ドラゴンマスター女" />
     <baseStats hp="19" str="8" mag="0" skl="9" spd="6" lck="3" def="10" res="1" />
     <maxStats hp="60" str="33" mag="25" skl="33" spd="29" lck="28" def="35" res="26" />
   </class>
-  <class id="1" name="WyvernRider_M">
+  <class id="69" name="WyvernRider_M">
     <text lang="English" displayName="Wyvern Rider (M)" />
     <text lang="Japanese" displayName="ドラゴンナイト男" />
     <baseStats hp="17" str="6" mag="0" skl="5" spd="4" lck="2" def="7" res="0" />
     <maxStats hp="40" str="22" mag="17" skl="21" spd="20" lck="19" def="24" res="15" />
   </class>
-  <class id="1" name="WyvernRider_F">
+  <class id="70" name="WyvernRider_F">
     <text lang="English" displayName="Wyvern Rider (F)" />
     <text lang="Japanese" displayName="ドラゴンナイト女" />
     <baseStats hp="17" str="6" mag="0" skl="5" spd="4" lck="2" def="7" res="0" />
     <maxStats hp="40" str="22" mag="17" skl="21" spd="20" lck="19" def="24" res="15" />
   </class>
-  <class id="1" name="MaligKnight_M">
+  <class id="71" name="MaligKnight_M">
     <text lang="English" displayName="Malig Knight (M)" />
     <text lang="Japanese" displayName="レヴナントナイト男" />
     <baseStats hp="18" str="7" mag="6" skl="6" spd="5" lck="0" def="8" res="6" />
     <maxStats hp="55" str="31" mag="30" skl="28" spd="27" lck="25" def="31" res="31" />
   </class>
-  <class id="1" name="MaligKnight_F">
+  <class id="72" name="MaligKnight_F">
     <text lang="English" displayName="Malig Knight (F)" />
     <text lang="Japanese" displayName="レヴナントナイト女" />
     <baseStats hp="18" str="7" mag="6" skl="6" spd="5" lck="0" def="8" res="6" />
     <maxStats hp="55" str="31" mag="30" skl="28" spd="27" lck="25" def="31" res="31" />
   </class>
-  <class id="1" name="NinjaMaster_M">
+  <class id="73" name="NinjaMaster_M">
     <text lang="English" displayName="Master Ninja (M)" />
     <text lang="Japanese" displayName="上忍男" />
     <baseStats hp="17" str="5" mag="0" skl="10" spd="11" lck="2" def="4" res="8" />
     <maxStats hp="55" str="27" mag="25" skl="35" spd="35" lck="28" def="26" res="34" />
   </class>
-  <class id="1" name="NinjaMaster_F">
+  <class id="74" name="NinjaMaster_F">
     <text lang="English" displayName="Master Ninja (F)" />
     <text lang="Japanese" displayName="上忍女" />
     <baseStats hp="17" str="5" mag="0" skl="10" spd="11" lck="2" def="4" res="8" />
     <maxStats hp="55" str="27" mag="25" skl="35" spd="35" lck="28" def="26" res="34" />
   </class>
-  <class id="1" name="Ninja_M">
+  <class id="75" name="Ninja_M">
     <text lang="English" displayName="Ninja (M)" />
     <text lang="Japanese" displayName="忍男" />
     <baseStats hp="16" str="3" mag="0" skl="8" spd="8" lck="1" def="3" res="3" />
     <maxStats hp="35" str="17" mag="15" skl="25" spd="25" lck="18" def="19" res="20" />
   </class>
-  <class id="1" name="Ninja_F">
+  <class id="76" name="Ninja_F">
     <text lang="English" displayName="Ninja (F)" />
     <text lang="Japanese" displayName="忍女" />
     <baseStats hp="16" str="3" mag="0" skl="8" spd="8" lck="1" def="3" res="3" />
     <maxStats hp="35" str="17" mag="15" skl="25" spd="25" lck="18" def="19" res="20" />
   </class>
-  <class id="1" name="Mechanist_M">
+  <class id="77" name="Mechanist_M">
     <text lang="English" displayName="Mechanist (M)" />
     <text lang="Japanese" displayName="絡繰師男" />
     <baseStats hp="18" str="7" mag="0" skl="9" spd="7" lck="2" def="6" res="6" />
     <maxStats hp="60" str="30" mag="25" skl="33" spd="30" lck="30" def="31" res="31" />
   </class>
-  <class id="1" name="Mechanist_F">
+  <class id="78" name="Mechanist_F">
     <text lang="English" displayName="Mechanist (F)" />
     <text lang="Japanese" displayName="絡繰師女" />
     <baseStats hp="18" str="7" mag="0" skl="9" spd="7" lck="2" def="6" res="6" />
     <maxStats hp="60" str="30" mag="25" skl="33" spd="30" lck="30" def="31" res="31" />
   </class>
-  <class id="1" name="Apothecary_M">
+  <class id="79" name="Apothecary_M">
     <text lang="English" displayName="Apothecary (M)" />
     <text lang="Japanese" displayName="薬商人男" />
     <baseStats hp="18" str="6" mag="0" skl="4" spd="4" lck="2" def="6" res="2" />
     <maxStats hp="45" str="24" mag="15" skl="19" spd="19" lck="21" def="23" res="20" />
   </class>
-  <class id="1" name="Apothecary_F">
+  <class id="80" name="Apothecary_F">
     <text lang="English" displayName="Apothecary (F)" />
     <text lang="Japanese" displayName="薬商人女" />
     <baseStats hp="18" str="6" mag="0" skl="4" spd="4" lck="2" def="6" res="2" />
     <maxStats hp="45" str="24" mag="15" skl="19" spd="19" lck="21" def="23" res="20" />
   </class>
-  <class id="1" name="Merchant_M">
+  <class id="81" name="Merchant_M">
     <text lang="English" displayName="Merchant (M)" />
     <text lang="Japanese" displayName="大商人男" />
     <baseStats hp="20" str="8" mag="0" skl="6" spd="5" lck="4" def="8" res="5" />
     <maxStats hp="65" str="33" mag="25" skl="29" spd="28" lck="32" def="33" res="30" />
   </class>
-  <class id="1" name="Merchant_F">
+  <class id="82" name="Merchant_F">
     <text lang="English" displayName="Merchant (F)" />
     <text lang="Japanese" displayName="大商人女" />
     <baseStats hp="20" str="8" mag="0" skl="6" spd="5" lck="4" def="8" res="5" />
     <maxStats hp="65" str="33" mag="25" skl="29" spd="28" lck="32" def="33" res="30" />
   </class>
-  <class id="1" name="Sorcerer_M">
+  <class id="83" name="Sorcerer_M">
     <text lang="English" displayName="Sorcerer (M)" />
     <text lang="Japanese" displayName="ソーサラー男" />
     <baseStats hp="17" str="0" mag="9" skl="4" spd="6" lck="1" def="5" res="8" />
     <maxStats hp="50" str="25" mag="35" skl="26" spd="29" lck="26" def="29" res="33" />
   </class>
-  <class id="1" name="Sorcerer_F">
+  <class id="84" name="Sorcerer_F">
     <text lang="English" displayName="Sorcerer (F)" />
     <text lang="Japanese" displayName="ソーサラー女" />
     <baseStats hp="17" str="0" mag="9" skl="4" spd="6" lck="1" def="5" res="8" />
     <maxStats hp="50" str="25" mag="35" skl="26" spd="29" lck="26" def="29" res="33" />
   </class>
-  <class id="1" name="DarkMage_M">
+  <class id="85" name="DarkMage_M">
     <text lang="English" displayName="Dark Mage (M)" />
     <text lang="Japanese" displayName="ダークマージ男" />
     <baseStats hp="16" str="0" mag="6" skl="3" spd="3" lck="1" def="3" res="5" />
     <maxStats hp="35" str="19" mag="24" skl="16" spd="19" lck="18" def="19" res="22" />
   </class>
-  <class id="1" name="DarkMage_F">
+  <class id="86" name="DarkMage_F">
     <text lang="English" displayName="Dark Mage (F)" />
     <text lang="Japanese" displayName="ダークマージ女" />
     <baseStats hp="16" str="0" mag="6" skl="3" spd="3" lck="1" def="3" res="5" />
     <maxStats hp="35" str="19" mag="24" skl="16" spd="19" lck="18" def="19" res="22" />
   </class>
-  <class id="1" name="DarkKnight_M">
+  <class id="87" name="DarkKnight_M">
     <text lang="English" displayName="Dark Knight (M)" />
     <text lang="Japanese" displayName="ダークナイト男" />
     <baseStats hp="19" str="8" mag="6" skl="6" spd="5" lck="3" def="8" res="6" />
     <maxStats hp="55" str="32" mag="31" skl="28" spd="27" lck="31" def="34" res="30" />
   </class>
-  <class id="1" name="DarkKnight_F">
+  <class id="88" name="DarkKnight_F">
     <text lang="English" displayName="Dark Knight (F)" />
     <text lang="Japanese" displayName="ダークナイト女" />
     <baseStats hp="19" str="8" mag="6" skl="6" spd="5" lck="3" def="8" res="6" />
     <maxStats hp="55" str="32" mag="31" skl="28" spd="27" lck="31" def="34" res="30" />
   </class>
-  <class id="1" name="Strategist_M">
+  <class id="89" name="Strategist_M">
     <text lang="English" displayName="Strategist (M)" />
     <text lang="Japanese" displayName="ストラテジスト男" />
     <baseStats hp="16" str="0" mag="7" skl="6" spd="7" lck="5" def="2" res="7" />
     <maxStats hp="45" str="25" mag="33" skl="28" spd="31" lck="33" def="25" res="32" />
   </class>
-  <class id="1" name="Strategist_F">
+  <class id="90" name="Strategist_F">
     <text lang="English" displayName="Strategist (F)" />
     <text lang="Japanese" displayName="ストラテジスト女" />
     <baseStats hp="16" str="0" mag="7" skl="6" spd="7" lck="5" def="2" res="7" />
     <maxStats hp="45" str="25" mag="33" skl="28" spd="31" lck="33" def="25" res="32" />
   </class>
-  <class id="1" name="Troubadour_M">
+  <class id="91" name="Troubadour_M">
     <text lang="English" displayName="Troubadour (M)" />
     <text lang="Japanese" displayName="ロッドナイト男" />
     <baseStats hp="15" str="0" mag="3" skl="7" spd="5" lck="4" def="1" res="4" />
     <maxStats hp="35" str="16" mag="19" skl="24" spd="20" lck="23" def="16" res="21" />
   </class>
-  <class id="1" name="Troubadour_F">
+  <class id="92" name="Troubadour_F">
     <text lang="English" displayName="Troubadour (F)" />
     <text lang="Japanese" displayName="ロッドナイト女" />
     <baseStats hp="15" str="0" mag="3" skl="7" spd="5" lck="4" def="1" res="4" />
     <maxStats hp="35" str="16" mag="19" skl="24" spd="20" lck="23" def="16" res="21" />
   </class>
-  <class id="1" name="Butler">
+  <class id="93" name="Butler">
     <text lang="English" displayName="Butler" />
     <text lang="Japanese" displayName="バトラー" />
     <baseStats hp="18" str="4" mag="5" skl="9" spd="8" lck="4" def="5" res="4" />
     <maxStats hp="50" str="28" mag="31" skl="33" spd="33" lck="32" def="29" res="29" />
   </class>
-  <class id="1" name="Maid">
+  <class id="94" name="Maid">
     <text lang="English" displayName="Maid" />
     <text lang="Japanese" displayName="メイド" />
     <baseStats hp="18" str="4" mag="5" skl="9" spd="8" lck="4" def="5" res="4" />
     <maxStats hp="50" str="28" mag="31" skl="33" spd="33" lck="32" def="29" res="29" />
   </class>
-  <class id="1" name="Wolfskin_M">
+  <class id="95" name="Wolfskin_M">
     <text lang="English" displayName="Wolfskin (M)" />
     <text lang="Japanese" displayName="ガルー男" />
     <baseStats hp="19" str="8" mag="0" skl="4" spd="6" lck="0" def="4" res="0" />
     <maxStats hp="45" str="24" mag="15" skl="18" spd="22" lck="17" def="21" res="15" />
   </class>
-  <class id="1" name="Wolfskin_F">
+  <class id="96" name="Wolfskin_F">
     <text lang="English" displayName="Wolfskin (F)" />
     <text lang="Japanese" displayName="ガルー女" />
     <baseStats hp="19" str="8" mag="0" skl="4" spd="6" lck="0" def="4" res="0" />
     <maxStats hp="45" str="24" mag="15" skl="18" spd="22" lck="17" def="21" res="15" />
   </class>
-  <class id="1" name="Wolfssegner_M">
+  <class id="97" name="Wolfssegner_M">
     <text lang="English" displayName="Wolfssegner (M)" />
     <text lang="Japanese" displayName="マーナガルム男" />
     <baseStats hp="22" str="11" mag="0" skl="6" spd="7" lck="1" def="7" res="1" />
     <maxStats hp="65" str="36" mag="25" skl="29" spd="31" lck="26" def="32" res="26" />
   </class>
-  <class id="1" name="Wolfssegner_F">
+  <class id="98" name="Wolfssegner_F">
     <text lang="English" displayName="Wolfssegner (F)" />
     <text lang="Japanese" displayName="マーナガルム女" />
     <baseStats hp="22" str="11" mag="0" skl="6" spd="7" lck="1" def="7" res="1" />
     <maxStats hp="65" str="36" mag="25" skl="29" spd="31" lck="26" def="32" res="26" />
   </class>
-  <class id="1" name="Kitsune_M">
+  <class id="99" name="Kitsune_M">
     <text lang="English" displayName="Kitsune (M)" />
     <text lang="Japanese" displayName="妖狐男" />
     <baseStats hp="16" str="5" mag="1" skl="6" spd="8" lck="4" def="1" res="4" />
     <maxStats hp="40" str="20" mag="18" skl="23" spd="24" lck="24" def="18" res="23" />
   </class>
-  <class id="1" name="Kitsune_F">
+  <class id="100" name="Kitsune_F">
     <text lang="English" displayName="Kitsune (F)" />
     <text lang="Japanese" displayName="妖狐女" />
     <baseStats hp="16" str="5" mag="1" skl="6" spd="8" lck="4" def="1" res="4" />
     <maxStats hp="40" str="20" mag="18" skl="23" spd="24" lck="24" def="18" res="23" />
   </class>
-  <class id="1" name="NineTails_M">
+  <class id="101" name="NineTails_M">
     <text lang="English" displayName="Nine-Tails (M)" />
     <text lang="Japanese" displayName="九尾の狐男" />
     <baseStats hp="19" str="6" mag="2" skl="9" spd="10" lck="5" def="2" res="8" />
     <maxStats hp="55" str="29" mag="29" skl="33" spd="34" lck="33" def="27" res="34" />
   </class>
-  <class id="1" name="NineTails_F">
+  <class id="102" name="NineTails_F">
     <text lang="English" displayName="Nine-Tails (F)" />
     <text lang="Japanese" displayName="九尾の狐女" />
     <baseStats hp="19" str="6" mag="2" skl="9" spd="10" lck="5" def="2" res="8" />
     <maxStats hp="55" str="29" mag="29" skl="33" spd="34" lck="33" def="27" res="34" />
   </class>
-  <class id="1" name="Songstress">
+  <class id="103" name="Songstress">
     <text lang="English" displayName="Songstress" />
     <text lang="Japanese" displayName="歌姫" />
     <baseStats hp="16" str="3" mag="0" skl="6" spd="5" lck="3" def="2" res="3" />
     <maxStats hp="45" str="28" mag="27" skl="31" spd="31" lck="35" def="27" res="28" />
   </class>
-  <class id="1" name="Villager_M">
+  <class id="104" name="Villager_M">
     <text lang="English" displayName="Villager (M)" />
     <text lang="Japanese" displayName="村人男" />
     <baseStats hp="17" str="5" mag="0" skl="4" spd="5" lck="3" def="4" res="0" />
     <maxStats hp="35" str="19" mag="15" skl="19" spd="19" lck="22" def="18" res="15" />
   </class>
-  <class id="1" name="Villager_F">
+  <class id="105" name="Villager_F">
     <text lang="English" displayName="Villager (F)" />
     <text lang="Japanese" displayName="村人女" />
     <baseStats hp="17" str="5" mag="0" skl="4" spd="5" lck="3" def="4" res="0" />
     <maxStats hp="35" str="19" mag="15" skl="19" spd="19" lck="22" def="18" res="15" />
   </class>
-  <class id="1" name="Lancer">
+  <class id="106" name="Lancer">
     <text lang="English" displayName="Lancer" />
     <text lang="Japanese" displayName="ランサー" />
     <baseStats hp="17" str="5" mag="0" skl="5" spd="5" lck="2" def="5" res="2" />
     <maxStats hp="60" str="31" mag="25" skl="29" spd="29" lck="30" def="31" res="29" />
   </class>
-  <class id="1" name="Faceless">
+  <class id="107" name="Faceless">
     <text lang="English" displayName="Faceless" />
     <text lang="Japanese" displayName="ノスフェラトゥ" />
     <baseStats hp="18" str="5" mag="2" skl="5" spd="6" lck="0" def="6" res="5" />
     <maxStats hp="70" str="30" mag="27" skl="29" spd="31" lck="25" def="36" res="32" />
   </class>
-  <class id="1" name="Stoneborn">
+  <class id="108" name="Stoneborn">
     <text lang="English" displayName="Stoneborn" />
     <text lang="Japanese" displayName="ゴーレム" />
     <baseStats hp="20" str="8" mag="0" skl="4" spd="3" lck="0" def="8" res="3" />
     <maxStats hp="70" str="40" mag="25" skl="25" spd="25" lck="20" def="40" res="28" />
   </class>
-  <class id="1" name="Automaton">
+  <class id="109" name="Automaton">
     <text lang="English" displayName="Automaton" />
     <text lang="Japanese" displayName="絡繰人形" />
     <baseStats hp="16" str="5" mag="0" skl="8" spd="7" lck="0" def="4" res="6" />
     <maxStats hp="60" str="28" mag="25" skl="34" spd="33" lck="20" def="29" res="33" />
   </class>
-  <class id="1" name="AstralDragon">
+  <class id="110" name="AstralDragon">
     <text lang="English" displayName="Astral Dragon" />
     <text lang="Japanese" displayName="星竜" />
     <baseStats hp="18" str="4" mag="9" skl="5" spd="6" lck="4" def="5" res="8" />
     <maxStats hp="60" str="28" mag="35" skl="29" spd="33" lck="35" def="30" res="35" />
   </class>
-  <class id="1" name="Dragon_M">
+  <class id="111" name="Dragon_M">
     <text lang="English" displayName="Feral Dragon (M)" />
     <text lang="Japanese" displayName="竜男" />
     <baseStats hp="17" str="25" mag="20" skl="20" spd="14" lck="18" def="19" res="12" />
     <maxStats hp="60" str="32" mag="31" skl="28" spd="32" lck="27" def="29" res="32" />
   </class>
-  <class id="1" name="Dragon_F">
+  <class id="112" name="Dragon_F">
     <text lang="English" displayName="Feral Dragon (F)" />
     <text lang="Japanese" displayName="竜女" />
     <baseStats hp="17" str="25" mag="20" skl="20" spd="14" lck="18" def="19" res="12" />
     <maxStats hp="60" str="32" mag="31" skl="28" spd="32" lck="27" def="29" res="32" />
   </class>
-  <class id="1" name="DarkDragon">
+  <class id="113" name="DarkDragon">
     <text lang="English" displayName="Blight Dragon" />
     <text lang="Japanese" displayName="暗夜竜" />
     <baseStats hp="18" str="8" mag="6" skl="4" spd="7" lck="2" def="6" res="6" />
     <maxStats hp="80" str="40" mag="40" skl="40" spd="40" lck="40" def="40" res="40" />
   </class>
-  <class id="1" name="InvisibleDragon1">
+  <class id="114" name="InvisibleDragon1">
     <text lang="English" displayName="Silent Dragon" />
     <text lang="Japanese" displayName="透魔竜" />
     <baseStats hp="21" str="10" mag="0" skl="6" spd="6" lck="3" def="10" res="2" />
     <maxStats hp="80" str="40" mag="40" skl="40" spd="40" lck="40" def="40" res="40" />
   </class>
-  <class id="1" name="InvisibleDragon2">
+  <class id="115" name="InvisibleDragon2">
     <text lang="English" displayName="Silent Dragon" />
     <text lang="Japanese" displayName="透魔竜" />
     <baseStats hp="21" str="10" mag="0" skl="6" spd="6" lck="3" def="10" res="2" />
     <maxStats hp="80" str="40" mag="40" skl="40" spd="40" lck="40" def="40" res="40" />
   </class>
-  <class id="1" name="DarkLord">
+  <class id="116" name="DarkLord">
     <text lang="English" displayName="Nohrian King" />
     <text lang="Japanese" displayName="ダークロード" />
     <baseStats hp="18" str="8" mag="6" skl="4" spd="7" lck="2" def="6" res="6" />
     <maxStats hp="80" str="40" mag="40" skl="40" spd="40" lck="40" def="40" res="40" />
   </class>
-  <class id="1" name="Familiar">
+  <class id="117" name="Familiar">
     <text lang="English" displayName="Empty Vessel" />
     <text lang="Japanese" displayName="水の眷属" />
     <baseStats hp="19" str="7" mag="0" skl="10" spd="9" lck="3" def="6" res="2" />
     <maxStats hp="80" str="40" mag="40" skl="40" spd="40" lck="40" def="40" res="40" />
   </class>
-  <class id="1" name="DreadFighter_M">
+  <class id="118" name="DreadFighter_M">
     <text lang="English" displayName="Dread Fighter (M)" />
     <text lang="Japanese" displayName="魔戦士男" />
     <baseStats hp="19" str="8" mag="3" skl="6" spd="8" lck="1" def="6" res="9" />
     <maxStats hp="55" str="32" mag="28" skl="29" spd="31" lck="26" def="29" res="34" />
   </class>
-  <class id="1" name="DreadFighter_F">
+  <class id="119" name="DreadFighter_F">
     <text lang="English" displayName="Dread Fighter (F)" />
     <text lang="Japanese" displayName="魔戦士女" />
     <baseStats hp="19" str="8" mag="3" skl="6" spd="8" lck="1" def="6" res="9" />
     <maxStats hp="55" str="32" mag="28" skl="29" spd="31" lck="26" def="29" res="34" />
   </class>
-  <class id="1" name="DarkFalcon_M">
+  <class id="120" name="DarkFalcon_M">
     <text lang="English" displayName="Dark Falcon (M)" />
     <text lang="Japanese" displayName="ダークファルコン男" />
     <baseStats hp="17" str="4" mag="7" skl="5" spd="9" lck="4" def="3" res="9" />
     <maxStats hp="45" str="27" mag="32" skl="28" spd="33" lck="32" def="26" res="34" />
   </class>
-  <class id="1" name="DarkFalcon_F">
+  <class id="121" name="DarkFalcon_F">
     <text lang="English" displayName="Dark Falcon (F)" />
     <text lang="Japanese" displayName="ダークファルコン女" />
     <baseStats hp="17" str="4" mag="7" skl="5" spd="9" lck="4" def="3" res="9" />
     <maxStats hp="45" str="27" mag="32" skl="28" spd="33" lck="32" def="26" res="34" />
   </class>
-  <class id="1" name="Ballistician">
+  <class id="122" name="Ballistician">
     <text lang="English" displayName="Ballistician" />
     <text lang="Japanese" displayName="シューター" />
     <baseStats hp="18" str="10" mag="0" skl="7" spd="2" lck="4" def="3" res="1" />
     <maxStats hp="50" str="39" mag="25" skl="31" spd="25" lck="32" def="27" res="26" />
   </class>
-  <class id="1" name="Witch">
+  <class id="123" name="Witch">
     <text lang="English" displayName="Witch" />
     <text lang="Japanese" displayName="魔女" />
     <baseStats hp="17" str="0" mag="10" skl="5" spd="9" lck="3" def="4" res="5" />
     <maxStats hp="50" str="25" mag="36" skl="27" spd="34" lck="28" def="26" res="29" />
   </class>
-  <class id="1" name="Lodestar">
+  <class id="124" name="Lodestar">
     <text lang="English" displayName="Lodestar" />
     <text lang="Japanese" displayName="スターロード" />
     <baseStats hp="19" str="7" mag="0" skl="10" spd="9" lck="7" def="7" res="2" />
     <maxStats hp="60" str="29" mag="26" skl="35" spd="33" lck="40" def="30" res="29" />
   </class>
-  <class id="1" name="Vanguard">
+  <class id="125" name="Vanguard">
     <text lang="English" displayName="Vanguard" />
     <text lang="Japanese" displayName="ヴァンガード" />
     <baseStats hp="21" str="10" mag="0" skl="6" spd="7" lck="3" def="9" res="1" />
     <maxStats hp="65" str="36" mag="25" skl="29" spd="30" lck="30" def="32" res="27" />
   </class>
-  <class id="1" name="GreatLord">
+  <class id="126" name="GreatLord">
     <text lang="English" displayName="Great Lord" />
     <text lang="Japanese" displayName="マスターロード" />
     <baseStats hp="18" str="8" mag="1" skl="8" spd="9" lck="5" def="7" res="3" />
     <maxStats hp="60" str="30" mag="25" skl="32" spd="34" lck="35" def="29" res="31" />
   </class>
-  <class id="1" name="Grandmaster">
+  <class id="127" name="Grandmaster">
     <text lang="English" displayName="Grandmaster" />
     <text lang="Japanese" displayName="神軍師" />
     <baseStats hp="18" str="7" mag="6" skl="8" spd="7" lck="2" def="6" res="8" />
     <maxStats hp="55" str="31" mag="33" skl="33" spd="29" lck="26" def="28" res="33" />
+  </class>
+  <class id="128" name="Outrealm">
+    <text lang="English" displayName="Outrealm Class" />
+    <text lang="Japanese" displayName="異界の兵種" />
+    <baseStats hp="1" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <maxStats hp="40" str="15" mag="15" skl="15" spd="15" lck="15" def="15" res="15" />
+  </class>
+  <class id="136" name="PegasusKnight">
+    <text lang="English" displayName="Pegasus Knight" />
+    <text lang="Japanese" displayName="ペガサスナイト" />
+    <baseStats hp="18" str="6" mag="1" skl="7" spd="10" lck="5" def="4" res="9" />
+    <maxStats hp="55" str="30" mag="26" skl="31" spd="34" lck="35" def="26" res="35" />
   </class>
   <!--
   Template:

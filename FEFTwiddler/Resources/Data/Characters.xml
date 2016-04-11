@@ -1530,6 +1530,24 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
+  <character id="512" name="CipherMarth">
+    <text lang="English" displayName="Cipher Marth" />
+    <text lang="Japanese" displayName="サイファマルス" />
+    <baseStats hp="6" str="6" mag="2" skl="9" spd="9" lck="13" def="5" res="7" />
+    <modifier hp="0" str="-1" mag="0" skl="1" spd="1" lck="1" def="0" res="-1" />
+  </character>
+  <character id="768" name="CipherLucina">
+    <text lang="English" displayName="Cipher Lucina" />
+    <text lang="Japanese" displayName="サイファルキナ" />
+    <baseStats hp="6" str="6" mag="2" skl="8" spd="9" lck="12" def="4" res="8" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="2" lck="0" def="-1" res="0" />
+  </character>
+  <character id="1024" name="CipherMinerva">
+    <text lang="English" displayName="Cipher Minerva" />
+    <text lang="Japanese" displayName="サイファミネルバ" />
+    <baseStats hp="4" str="7" mag="0" skl="2" spd="7" lck="2" def="11" res="3" />
+    <modifier hp="0" str="1" mag="0" skl="0" spd="1" lck="-2" def="3" res="-3" />
+  </character>
   <!--
   Template:
   <character id="0" name="InternalName">
