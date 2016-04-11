@@ -27,6 +27,7 @@ namespace FEFTwiddler.Model
         public byte[] UnknownBytesBeforeStatBytes1 { get; set; }
         public byte[] UnknownBytesBeforeStatBytes2 { get; set; }
         public sbyte[] StatBytes1 { get; set; }
+        public byte[] StatueBonuses { get; set; }
         public byte[] UnknownBytesBetweenStatBytes { get; set; }
         public sbyte[] StatBytes2 { get; set; }
 

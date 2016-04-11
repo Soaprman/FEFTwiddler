@@ -1,1467 +1,1468 @@
-﻿<root>
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
   <item id="0" name="None" type="Unknown" maxUses="0">
     <text lang="English" displayName="(None)" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="無し" />
   </item>
   <item id="1" name="BronzeSword" type="Sword" maxUses="0">
     <text lang="English" displayName="Bronze Sword" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="青銅の剣" />
   </item>
   <item id="2" name="IronSword" type="Sword" maxUses="0">
     <text lang="English" displayName="Iron Sword" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の剣" />
   </item>
   <item id="3" name="SteelSword" type="Sword" maxUses="0">
     <text lang="English" displayName="Steel Sword" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の剣" />
   </item>
   <item id="4" name="SilverSword" type="Sword" maxUses="0">
     <text lang="English" displayName="Silver Sword" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の剣" />
   </item>
   <item id="5" name="BraveSword" type="Sword" maxUses="0">
     <text lang="English" displayName="Brave Sword" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="勇者の剣" />
   </item>
-  <item id="6" name="IronKukri" type="Sword" maxUses="0" enemyOnly="true">
+  <item id="6" name="IronKukri" type="Sword" maxUses="0">
     <text lang="English" displayName="Iron Kukri" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の投撃剣" />
   </item>
-  <item id="7" name="SteelKukri" type="Sword" maxUses="0" enemyOnly="true">
+  <item id="7" name="SteelKukri" type="Sword" maxUses="0">
     <text lang="English" displayName="Steel Kukri" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の投撃剣" />
   </item>
-  <item id="8" name="SilverKukri" type="Sword" maxUses="0" enemyOnly="true">
+  <item id="8" name="SilverKukri" type="Sword" maxUses="0">
     <text lang="English" displayName="Silver Kukri" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の投撃剣" />
   </item>
   <item id="9" name="Armorslayer" type="Sword" maxUses="0">
     <text lang="English" displayName="Armorslayer" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="アーマーキラー" />
   </item>
   <item id="10" name="Wyrmslayer" type="Sword" maxUses="0">
     <text lang="English" displayName="Wyrmslayer" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ドラゴンキラー" />
   </item>
   <item id="11" name="KillingEdge" type="Sword" maxUses="0">
     <text lang="English" displayName="Killing Edge" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="キルソード" />
   </item>
   <item id="12" name="LevinSword" type="Sword" maxUses="0">
     <text lang="English" displayName="Levin Sword" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="サンダーソード" />
   </item>
   <item id="13" name="Ganglari" type="Sword" maxUses="0">
     <text lang="English" displayName="Ganglari" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ガングレリ" />
   </item>
   <item id="14" name="Siegfried" type="Sword" maxUses="0">
     <text lang="English" displayName="Siegfried" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ジークフリート" />
   </item>
   <item id="15" name="Bottle" type="Sword" maxUses="0">
     <text lang="English" displayName="Bottle" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ワインボトル" />
   </item>
   <item id="16" name="Umbrella" type="Sword" maxUses="0">
     <text lang="English" displayName="Umbrella" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="洋傘" />
   </item>
   <item id="17" name="NohrianBlade" type="Sword" maxUses="0">
     <text lang="English" displayName="Nohrian Blade" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="暗夜の漆黒剣" />
   </item>
   <item id="18" name="LeosIceblade" type="Sword" maxUses="0">
     <text lang="English" displayName="Leo's Iceblade" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="レオンの冷剣" />
   </item>
   <item id="19" name="SelenasBlade" type="Sword" maxUses="0">
     <text lang="English" displayName="Selena's Blade" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ルーナの鋭剣" />
   </item>
   <item id="20" name="LaslowsBlade" type="Sword" maxUses="0">
     <text lang="English" displayName="Laslow's Blade" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ラズワルドの舞剣" />
   </item>
   <item id="21" name="BronzeKatana" type="Sword" maxUses="0">
     <text lang="English" displayName="Bronze Katana" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="青銅の刀" />
   </item>
   <item id="22" name="IronKatana" type="Sword" maxUses="0">
     <text lang="English" displayName="Iron Katana" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の刀" />
   </item>
   <item id="23" name="SteelKatana" type="Sword" maxUses="0">
     <text lang="English" displayName="Steel Katana" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の刀" />
   </item>
   <item id="24" name="SilverKatana" type="Sword" maxUses="0">
     <text lang="English" displayName="Silver Katana" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の刀" />
   </item>
   <item id="25" name="VengeKatana" type="Sword" maxUses="0">
     <text lang="English" displayName="Venge Katana" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="武者の刀" />
   </item>
-  <item id="26" name="IronKatti" type="Sword" maxUses="0" enemyOnly="true">
+  <item id="26" name="IronKatti" type="Sword" maxUses="0">
     <text lang="English" displayName="Iron Katti" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の投撃刀" />
   </item>
-  <item id="27" name="SteelKatti" type="Sword" maxUses="0" enemyOnly="true">
+  <item id="27" name="SteelKatti" type="Sword" maxUses="0">
     <text lang="English" displayName="Steel Katti" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の投撃刀" />
   </item>
-  <item id="28" name="SilverKatti" type="Sword" maxUses="0" enemyOnly="true">
+  <item id="28" name="SilverKatti" type="Sword" maxUses="0">
     <text lang="English" displayName="Silver Katti" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の投撃刀" />
   </item>
   <item id="29" name="Kodachi" type="Sword" maxUses="0">
     <text lang="English" displayName="Kodachi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="小太刀" />
   </item>
   <item id="30" name="Wakizashi" type="Sword" maxUses="0">
     <text lang="English" displayName="Wakizashi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="飛刀" />
   </item>
   <item id="31" name="AxeSplitter" type="Sword" maxUses="0">
     <text lang="English" displayName="Axe Splitter" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="斧斬りの刀" />
   </item>
   <item id="32" name="DualKatana" type="Sword" maxUses="0">
     <text lang="English" displayName="Dual Katana" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="逆刀" />
   </item>
   <item id="33" name="PracticeKatana" type="Sword" maxUses="0">
     <text lang="English" displayName="Practice Katana" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="居合刀" />
   </item>
   <item id="34" name="SpiritKatana" type="Sword" maxUses="0">
     <text lang="English" displayName="Spirit Katana" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="霊刀" />
   </item>
   <item id="35" name="HagakureBlade" type="Sword" maxUses="0">
     <text lang="English" displayName="Hagakure Blade" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="葉隠" />
   </item>
   <item id="36" name="Yato" type="Sword" maxUses="0">
     <text lang="English" displayName="Yato" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="夜刀神" />
   </item>
   <item id="37" name="NobleYato" type="Sword" maxUses="0">
     <text lang="English" displayName="Noble Yato" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="夜刀神・空夜" />
   </item>
   <item id="38" name="BlazingYato" type="Sword" maxUses="0">
     <text lang="English" displayName="Blazing Yato" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="夜刀神・白夜" />
   </item>
   <item id="39" name="GrimYato" type="Sword" maxUses="0">
     <text lang="English" displayName="Grim Yato" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="夜刀神・長夜" />
   </item>
   <item id="40" name="ShadowYato" type="Sword" maxUses="0">
     <text lang="English" displayName="Shadow Yato" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="夜刀神・暗夜" />
   </item>
   <item id="41" name="AlphaYato" type="Sword" maxUses="0">
     <text lang="English" displayName="Alpha Yato" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="夜刀神・幻夜" />
   </item>
   <item id="42" name="OmegaYato" type="Sword" maxUses="0">
     <text lang="English" displayName="Omega Yato" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="夜刀神・終夜" />
   </item>
   <item id="43" name="Raijinto" type="Sword" maxUses="0">
     <text lang="English" displayName="Raijinto" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="雷神刀" />
   </item>
   <item id="44" name="DaikonRadish" type="Sword" maxUses="0">
     <text lang="English" displayName="Daikon Radish" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="大根" />
   </item>
   <item id="45" name="Parasol" type="Sword" maxUses="0">
     <text lang="English" displayName="Parasol" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="和傘" />
   </item>
   <item id="46" name="RaiderKatana" type="Sword" maxUses="0">
     <text lang="English" displayName="Raider Katana" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="追い剥ぎの刀" />
   </item>
   <item id="47" name="SunriseKatana" type="Sword" maxUses="0">
     <text lang="English" displayName="Sunrise Katana" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="白夜の霞刀" />
   </item>
   <item id="48" name="TakumisShinai" type="Sword" maxUses="0">
     <text lang="English" displayName="Takumi's Shinai" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="タクミの竹刀" />
   </item>
   <item id="49" name="HanasKatana" type="Sword" maxUses="0">
     <text lang="English" displayName="Hana's Katana" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="カザハナの麗刀" />
   </item>
   <item id="50" name="HinatasKatana" type="Sword" maxUses="0">
     <text lang="English" displayName="Hinata's Katana" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ヒナタの猛刀" />
   </item>
   <item id="51" name="BronzeLance" type="Lance" maxUses="0">
     <text lang="English" displayName="Bronze Lance" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="青銅の槍" />
   </item>
   <item id="52" name="IronLance" type="Lance" maxUses="0">
     <text lang="English" displayName="Iron Lance" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の槍" />
   </item>
   <item id="53" name="SteelLance" type="Lance" maxUses="0">
     <text lang="English" displayName="Steel Lance" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の槍" />
   </item>
   <item id="54" name="SilverLance" type="Lance" maxUses="0">
     <text lang="English" displayName="Silver Lance" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の槍" />
   </item>
   <item id="55" name="BraveLance" type="Lance" maxUses="0">
     <text lang="English" displayName="Brave Lance" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="勇者の槍" />
   </item>
-  <item id="56" name="IronJavelin" type="Lance" maxUses="0" enemyOnly="true">
+  <item id="56" name="IronJavelin" type="Lance" maxUses="0">
     <text lang="English" displayName="Iron Javelin" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の投撃槍" />
   </item>
-  <item id="57" name="SteelJavelin" type="Lance" maxUses="0" enemyOnly="true">
+  <item id="57" name="SteelJavelin" type="Lance" maxUses="0">
     <text lang="English" displayName="Steel Javelin" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の投撃槍" />
   </item>
-  <item id="58" name="SilverJavelin" type="Lance" maxUses="0" enemyOnly="true">
+  <item id="58" name="SilverJavelin" type="Lance" maxUses="0">
     <text lang="English" displayName="Silver Javelin" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の投撃槍" />
   </item>
   <item id="59" name="Javelin" type="Lance" maxUses="0">
     <text lang="English" displayName="Javelin" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="手槍" />
   </item>
   <item id="60" name="Spear" type="Lance" maxUses="0">
     <text lang="English" displayName="Spear" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="スレンドスピア" />
   </item>
   <item id="61" name="BeastKiller" type="Lance" maxUses="0">
     <text lang="English" displayName="Beast Killer" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ビーストキラー" />
   </item>
   <item id="62" name="KillerLance" type="Lance" maxUses="0">
     <text lang="English" displayName="Killer Lance" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="キラーランス" />
   </item>
   <item id="63" name="BlessedLance" type="Lance" maxUses="0">
     <text lang="English" displayName="Blessed Lance" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="聖なる槍" />
   </item>
   <item id="64" name="Broom" type="Lance" maxUses="0">
     <text lang="English" displayName="Broom" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ほうき" />
   </item>
   <item id="65" name="Stick" type="Lance" maxUses="0">
     <text lang="English" displayName="Stick" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="小枝" />
   </item>
   <item id="66" name="HexlockSpear" type="Lance" maxUses="0">
     <text lang="English" displayName="Hexlock Spear" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="魔封じの槍" />
   </item>
   <item id="67" name="XandersLance" type="Lance" maxUses="0">
     <text lang="English" displayName="Xander's Lance" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="マークスの指南槍" />
   </item>
   <item id="68" name="EffiesLance" type="Lance" maxUses="0">
     <text lang="English" displayName="Effie's Lance" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="エルフィの大槍" />
   </item>
   <item id="69" name="PerisLance" type="Lance" maxUses="0">
     <text lang="English" displayName="Peri's Lance" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ピエリの小槍" />
   </item>
   <item id="70" name="BrassNaginata" type="Lance" maxUses="0">
     <text lang="English" displayName="Brass Naginata" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="青銅の薙刀" />
   </item>
   <item id="71" name="IronNaginata" type="Lance" maxUses="0">
     <text lang="English" displayName="Iron Naginata" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の薙刀" />
   </item>
   <item id="72" name="SteelNaginata" type="Lance" maxUses="0">
     <text lang="English" displayName="Steel Naginata" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の薙刀" />
   </item>
   <item id="73" name="SilverNaginata" type="Lance" maxUses="0">
     <text lang="English" displayName="Silver Naginata" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の薙刀" />
   </item>
   <item id="74" name="VengeNaginata" type="Lance" maxUses="0">
     <text lang="English" displayName="Venge Naginata" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="武者の薙刀" />
   </item>
-  <item id="75" name="IronNageyari" type="Lance" maxUses="0" enemyOnly="true">
+  <item id="75" name="IronNageyari" type="Lance" maxUses="0">
     <text lang="English" displayName="Iron Nageyari" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の投撃薙刀" />
   </item>
-  <item id="76" name="SteelNageyari" type="Lance" maxUses="0" enemyOnly="true">
+  <item id="76" name="SteelNageyari" type="Lance" maxUses="0">
     <text lang="English" displayName="Steel Nageyari" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の投撃薙刀" />
   </item>
-  <item id="77" name="SilverNageyari" type="Lance" maxUses="0" enemyOnly="true">
+  <item id="77" name="SilverNageyari" type="Lance" maxUses="0">
     <text lang="English" displayName="Silver Nageyari" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の投撃薙刀" />
   </item>
   <item id="78" name="Swordcatcher" type="Lance" maxUses="0">
     <text lang="English" displayName="Swordcatcher" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="剣薙ぎの薙刀" />
   </item>
   <item id="79" name="DualNaginata" type="Lance" maxUses="0">
     <text lang="English" displayName="Dual Naginata" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="逆薙刀" />
   </item>
   <item id="80" name="GuardNaginata" type="Lance" maxUses="0">
     <text lang="English" displayName="Guard Naginata" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="守りの薙刀" />
   </item>
   <item id="81" name="BoltNaginata" type="Lance" maxUses="0">
     <text lang="English" displayName="Bolt Naginata" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="神雷の薙刀" />
   </item>
   <item id="82" name="Waterwheel" type="Lance" maxUses="0">
     <text lang="English" displayName="Waterwheel" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="水車" />
   </item>
   <item id="83" name="BambooPole" type="Lance" maxUses="0">
     <text lang="English" displayName="Bamboo Pole" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="竹竿" />
   </item>
   <item id="84" name="PineBranch" type="Lance" maxUses="0">
     <text lang="English" displayName="Pine Branch" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="松の木" />
   </item>
   <item id="85" name="RaiderNaginata" type="Lance" maxUses="0">
     <text lang="English" displayName="Raider Naginata" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="追い剥ぎの薙刀" />
   </item>
   <item id="86" name="BoldNaginata" type="Lance" maxUses="0">
     <text lang="English" displayName="Bold Naginata" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="捨て身の薙刀" />
   </item>
   <item id="87" name="HinokasSpear" type="Lance" maxUses="0">
     <text lang="English" displayName="Hinoka's Spear" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ヒノカの紅薙刀" />
   </item>
   <item id="88" name="SubakisPike" type="Lance" maxUses="0">
     <text lang="English" displayName="Subaki's Pike" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ツバキの金薙刀" />
   </item>
   <item id="89" name="OborosSpear" type="Lance" maxUses="0">
     <text lang="English" displayName="Oboro's Spear" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="オボロの漆薙刀" />
   </item>
   <item id="90" name="BronzeAxe" type="Axe" maxUses="0">
     <text lang="English" displayName="Bronze Axe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="青銅の斧" />
   </item>
   <item id="91" name="IronAxe" type="Axe" maxUses="0">
     <text lang="English" displayName="Iron Axe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の斧" />
   </item>
   <item id="92" name="SteelAxe" type="Axe" maxUses="0">
     <text lang="English" displayName="Steel Axe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の斧" />
   </item>
   <item id="93" name="SilverAxe" type="Axe" maxUses="0">
     <text lang="English" displayName="Silver Axe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の斧" />
   </item>
   <item id="94" name="BraveAxe" type="Axe" maxUses="0">
     <text lang="English" displayName="Brave Axe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="勇者の斧" />
   </item>
-  <item id="95" name="IronStarAxe" type="Axe" maxUses="0" enemyOnly="true">
+  <item id="95" name="IronStarAxe" type="Axe" maxUses="0">
     <text lang="English" displayName="Iron Star Axe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の投撃斧" />
   </item>
-  <item id="96" name="SteelStarAxe" type="Axe" maxUses="0" enemyOnly="true">
+  <item id="96" name="SteelStarAxe" type="Axe" maxUses="0">
     <text lang="English" displayName="Steel Star Axe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の投撃斧" />
   </item>
-  <item id="97" name="SilverStarAxe" type="Axe" maxUses="0" enemyOnly="true">
+  <item id="97" name="SilverStarAxe" type="Axe" maxUses="0">
     <text lang="English" displayName="Silver Star Axe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の投撃斧" />
   </item>
   <item id="98" name="HandAxe" type="Axe" maxUses="0">
     <text lang="English" displayName="Hand Axe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="手斧" />
   </item>
   <item id="99" name="Tomahawk" type="Axe" maxUses="0">
     <text lang="English" displayName="Tomahawk" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="トマホーク" />
   </item>
   <item id="100" name="Hammer" type="Axe" maxUses="0">
     <text lang="English" displayName="Hammer" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ハンマー" />
   </item>
   <item id="101" name="BoltAxe" type="Axe" maxUses="0">
     <text lang="English" displayName="Bolt Axe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ボルトアクス" />
   </item>
   <item id="102" name="KillerAxe" type="Axe" maxUses="0">
     <text lang="English" displayName="Killer Axe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="キラーアクス" />
   </item>
   <item id="103" name="Aurgelmir" type="Axe" maxUses="0">
     <text lang="English" displayName="Aurgelmir" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="アウルゲルミル" />
   </item>
-  <item id="104" name="Bölverk" type="Axe" maxUses="0" enemyOnly="true">
+  <item id="104" name="Bölverk" type="Axe" maxUses="0">
     <text lang="English" displayName="Bölverk" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ベルヴェルク" />
   </item>
   <item id="105" name="FryingPan" type="Axe" maxUses="0">
     <text lang="English" displayName="Frying Pan" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="フライパン" />
   </item>
   <item id="106" name="BoneAxe" type="Axe" maxUses="0">
     <text lang="English" displayName="Bone Axe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="獣の骨" />
   </item>
   <item id="107" name="RaiderAxe" type="Axe" maxUses="0">
     <text lang="English" displayName="Raider Axe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="追い剥ぎの斧" />
   </item>
   <item id="108" name="BerserkersAxe" type="Axe" maxUses="0">
     <text lang="English" displayName="Berserker's Axe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="狂戦士の斧" />
   </item>
   <item id="109" name="CamillasAxe" type="Axe" maxUses="0">
     <text lang="English" displayName="Camilla's Axe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="カミラの艶斧" />
   </item>
   <item id="110" name="ArthursAxe" type="Axe" maxUses="0">
     <text lang="English" displayName="Arthur's Axe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ハロルドの雄斧" />
   </item>
   <item id="111" name="BerukasAxe" type="Axe" maxUses="0">
     <text lang="English" displayName="Beruka's Axe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ベルカの殺斧" />
   </item>
   <item id="112" name="BrassClub" type="Axe" maxUses="0">
     <text lang="English" displayName="Brass Club" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="青銅の金棒" />
   </item>
   <item id="113" name="IronClub" type="Axe" maxUses="0">
     <text lang="English" displayName="Iron Club" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の金棒" />
   </item>
   <item id="114" name="SteelClub" type="Axe" maxUses="0">
     <text lang="English" displayName="Steel Club" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の金棒" />
   </item>
   <item id="115" name="SilverClub" type="Axe" maxUses="0">
     <text lang="English" displayName="Silver Club" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の金棒" />
   </item>
   <item id="116" name="VengeClub" type="Axe" maxUses="0">
     <text lang="English" displayName="Venge Club" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="武者の金棒" />
   </item>
-  <item id="117" name="IronMace" type="Axe" maxUses="0" enemyOnly="true">
+  <item id="117" name="IronMace" type="Axe" maxUses="0">
     <text lang="English" displayName="Iron Mace" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の投撃金棒" />
   </item>
-  <item id="118" name="SteelMace" type="Axe" maxUses="0" enemyOnly="true">
+  <item id="118" name="SteelMace" type="Axe" maxUses="0">
     <text lang="English" displayName="Steel Mace" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の投撃金棒" />
   </item>
-  <item id="119" name="SilverMace" type="Axe" maxUses="0" enemyOnly="true">
+  <item id="119" name="SilverMace" type="Axe" maxUses="0">
     <text lang="English" displayName="Silver Mace" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の投撃金棒" />
   </item>
   <item id="120" name="ThrowingClub" type="Axe" maxUses="0">
     <text lang="English" displayName="Throwing Club" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="投げ棒" />
   </item>
   <item id="121" name="BatteringClub" type="Axe" maxUses="0">
     <text lang="English" displayName="Battering Club" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="破城の投げ棒" />
   </item>
   <item id="122" name="PikeRuinClub" type="Axe" maxUses="0">
     <text lang="English" displayName="Pike-Ruin Club" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="槍砕きの金棒" />
   </item>
   <item id="123" name="DualClub" type="Axe" maxUses="0">
     <text lang="English" displayName="Dual Club" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="逆金棒" />
   </item>
   <item id="124" name="GreatClub" type="Axe" maxUses="0">
     <text lang="English" displayName="Great Club" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="大金棒" />
   </item>
   <item id="125" name="CarpStreamer" type="Axe" maxUses="0">
     <text lang="English" displayName="Carp Streamer" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鯉のぼり" />
   </item>
   <item id="126" name="Hoe" type="Axe" maxUses="0">
     <text lang="English" displayName="Hoe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="クワ" />
   </item>
   <item id="127" name="AdamantClub" type="Axe" maxUses="0">
     <text lang="English" displayName="Adamant Club" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="金剛の金棒" />
   </item>
   <item id="128" name="RinkahsClub" type="Axe" maxUses="0">
     <text lang="English" displayName="Rinkah's Club" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="リンカの鬼金棒" />
   </item>
   <item id="129" name="RyomasClub" type="Axe" maxUses="0">
     <text lang="English" displayName="Ryoma's Club" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="リョウマの鍛錬棒" />
   </item>
   <item id="130" name="FugasClub" type="Axe" maxUses="0">
     <text lang="English" displayName="Fuga's Club" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="フウガの疾風金棒" />
   </item>
   <item id="131" name="BronzeDagger" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Bronze Dagger" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="青銅の暗器" />
   </item>
   <item id="132" name="IronDagger" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Iron Dagger" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の暗器" />
   </item>
   <item id="133" name="SteelDagger" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Steel Dagger" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の暗器" />
   </item>
   <item id="134" name="SilverDagger" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Silver Dagger" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の暗器" />
   </item>
   <item id="135" name="SoldiersKnife" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Soldier's Knife" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="強者の暗器" />
   </item>
   <item id="136" name="FruitKnife" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Fruit Knife" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="果物ナイフ" />
   </item>
   <item id="137" name="HuntersKnife" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Hunter's Knife" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="獣狩りの暗器" />
   </item>
   <item id="138" name="KrisKnife" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Kris Knife" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="クリスナイフ" />
   </item>
   <item id="139" name="QuillPen" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Quill Pen" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="羽ペン" />
   </item>
   <item id="140" name="StaleBread" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Stale Bread" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="固いパン" />
   </item>
   <item id="141" name="RaiderKnife" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Raider Knife" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="追い剥ぎナイフ" />
   </item>
   <item id="142" name="VotiveCandle" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Votive Candle" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="祈りのロウソク" />
   </item>
   <item id="143" name="SacrificialKnife" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Sacrificial Knife" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="死を呼ぶナイフ" />
   </item>
   <item id="144" name="FeliciasPlate" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Felicia's Plate" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="フェリシアの氷皿" />
   </item>
   <item id="145" name="JakobsTray" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Jakob's Tray" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ジョーカーの食器" />
   </item>
   <item id="146" name="BrassShuriken" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Brass Shuriken" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="青銅の手裏剣" />
   </item>
   <item id="147" name="IronShuriken" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Iron Shuriken" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の手裏剣" />
   </item>
   <item id="148" name="SteelShuriken" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Steel Shuriken" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の手裏剣" />
   </item>
   <item id="149" name="SilverShuriken" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Silver Shuriken" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の手裏剣" />
   </item>
   <item id="150" name="SpysShuriken" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Spy's Shuriken" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="巧者の手裏剣" />
   </item>
   <item id="151" name="DualShuriken" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Dual Shuriken" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="逆手裏剣" />
   </item>
   <item id="152" name="StingShuriken" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Sting Shuriken" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="針手裏剣" />
   </item>
   <item id="153" name="BarbShuriken" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Barb Shuriken" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="暗殺手裏剣" />
   </item>
   <item id="154" name="FlameShuriken" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Flame Shuriken" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="爆炎手裏剣" />
   </item>
   <item id="155" name="Chakram" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Chakram" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="朧" />
   </item>
   <item id="156" name="Chopstick" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Chopstick" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="菜箸" />
   </item>
   <item id="157" name="HairPin" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Hair Pin" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="かんざし" />
   </item>
   <item id="158" name="Caltrop" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Caltrop" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="まきびし" />
   </item>
   <item id="159" name="KazesNeedle" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Kaze's Needle" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="スズカゼの疾風針" />
   </item>
   <item id="160" name="SaizosStar" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Saizo's Star" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="サイゾウの爆炎針" />
   </item>
   <item id="161" name="KagerosDart" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Kagero's Dart" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="カゲロウの眩惑針" />
   </item>
   <item id="162" name="BronzeBow" type="Bow" maxUses="0">
     <text lang="English" displayName="Bronze Bow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="青銅の弓" />
   </item>
   <item id="163" name="IronBow" type="Bow" maxUses="0">
     <text lang="English" displayName="Iron Bow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の弓" />
   </item>
   <item id="164" name="SteelBow" type="Bow" maxUses="0">
     <text lang="English" displayName="Steel Bow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の弓" />
   </item>
   <item id="165" name="SilverBow" type="Bow" maxUses="0">
     <text lang="English" displayName="Silver Bow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の弓" />
   </item>
   <item id="166" name="CrescentBow" type="Bow" maxUses="0">
     <text lang="English" displayName="Crescent Bow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="強者の弓" />
   </item>
-  <item id="167" name="IronShortbow" type="Bow" maxUses="0" enemyOnly="true">
+  <item id="167" name="IronShortbow" type="Bow" maxUses="0">
     <text lang="English" displayName="Iron Shortbow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の近撃弓" />
   </item>
-  <item id="168" name="SteelShortbow" type="Bow" maxUses="0" enemyOnly="true">
+  <item id="168" name="SteelShortbow" type="Bow" maxUses="0">
     <text lang="English" displayName="Steel Shortbow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の近撃弓" />
   </item>
-  <item id="169" name="SilverShortbow" type="Bow" maxUses="0" enemyOnly="true">
+  <item id="169" name="SilverShortbow" type="Bow" maxUses="0">
     <text lang="English" displayName="Silver Shortbow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の近撃弓" />
   </item>
   <item id="170" name="MiniBow" type="Bow" maxUses="0">
     <text lang="English" displayName="Mini Bow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ショートボウ" />
   </item>
   <item id="171" name="KillerBow" type="Bow" maxUses="0">
     <text lang="English" displayName="Killer Bow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="キラーボウ" />
   </item>
   <item id="172" name="BlessedBow" type="Bow" maxUses="0">
     <text lang="English" displayName="Blessed Bow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="聖なる弓" />
   </item>
   <item id="173" name="ShiningBow" type="Bow" maxUses="0">
     <text lang="English" displayName="Shining Bow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="シャイニングボウ" />
   </item>
   <item id="174" name="RubberBow" type="Bow" maxUses="0">
     <text lang="English" displayName="Rubber Bow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ゴムの弓" />
   </item>
   <item id="175" name="ViolinBow" type="Bow" maxUses="0">
     <text lang="English" displayName="Violin Bow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="バイオリンの弓" />
   </item>
   <item id="176" name="CupidBow" type="Bow" maxUses="0">
     <text lang="English" displayName="Cupid Bow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="キューピッドの弓" />
   </item>
   <item id="177" name="HuntersBow" type="Bow" maxUses="0">
     <text lang="English" displayName="Hunter's Bow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="狩人の弓" />
   </item>
   <item id="178" name="AnnasBow" type="Bow" maxUses="0">
     <text lang="English" displayName="Anna's Bow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="アンナの福弓" />
   </item>
   <item id="179" name="NilessBow" type="Bow" maxUses="0">
     <text lang="English" displayName="Niles's Bow" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ゼロの虐弓" />
   </item>
   <item id="180" name="BrassYumi" type="Bow" maxUses="0">
     <text lang="English" displayName="Brass Yumi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="青銅の和弓" />
   </item>
   <item id="181" name="IronYumi" type="Bow" maxUses="0">
     <text lang="English" displayName="Iron Yumi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の和弓" />
   </item>
   <item id="182" name="SteelYumi" type="Bow" maxUses="0">
     <text lang="English" displayName="Steel Yumi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の和弓" />
   </item>
   <item id="183" name="SilverYumi" type="Bow" maxUses="0">
     <text lang="English" displayName="Silver Yumi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の和弓" />
   </item>
   <item id="184" name="SpysYumi" type="Bow" maxUses="0">
     <text lang="English" displayName="Spy's Yumi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="巧者の和弓" />
   </item>
-  <item id="185" name="IronHankyu" type="Bow" maxUses="0" enemyOnly="true">
+  <item id="185" name="IronHankyu" type="Bow" maxUses="0">
     <text lang="English" displayName="Iron Hankyu" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鉄の近撃和弓" />
   </item>
-  <item id="186" name="SteelHankyu" type="Bow" maxUses="0" enemyOnly="true">
+  <item id="186" name="SteelHankyu" type="Bow" maxUses="0">
     <text lang="English" displayName="Steel Hankyu" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鋼の近撃和弓" />
   </item>
-  <item id="187" name="SilverHankyu" type="Bow" maxUses="0" enemyOnly="true">
+  <item id="187" name="SilverHankyu" type="Bow" maxUses="0">
     <text lang="English" displayName="Silver Hankyu" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="銀の近撃和弓" />
   </item>
   <item id="188" name="DualYumi" type="Bow" maxUses="0">
     <text lang="English" displayName="Dual Yumi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="逆和弓" />
   </item>
   <item id="189" name="IllusoryYumi" type="Bow" maxUses="0">
     <text lang="English" displayName="Illusory Yumi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="明鏡の和弓" />
   </item>
   <item id="190" name="SurefireYumi" type="Bow" maxUses="0">
     <text lang="English" displayName="Surefire Yumi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="必中の和弓" />
   </item>
   <item id="191" name="Pursuer" type="Bow" maxUses="0">
     <text lang="English" displayName="Pursuer" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="残心" />
   </item>
   <item id="192" name="FujinYumi" type="Bow" maxUses="0">
     <text lang="English" displayName="Fujin Yumi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="風神弓" />
   </item>
   <item id="193" name="FujinYumi2" type="Bow" maxUses="0">
     <text lang="English" displayName="Fujin Yumi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="風神弓" />
   </item>
-  <item id="194" name="Skadi" type="Bow" maxUses="0" enemyOnly="true">
+  <item id="194" name="Skadi" type="Bow" maxUses="0">
     <text lang="English" displayName="Skadi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="スカディ" />
   </item>
   <item id="195" name="BambooYumi" type="Bow" maxUses="0">
     <text lang="English" displayName="Bamboo Yumi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="竹の和弓" />
   </item>
   <item id="196" name="HarpYumi" type="Bow" maxUses="0">
     <text lang="English" displayName="Harp Yumi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="琵琶の和弓" />
   </item>
   <item id="197" name="RaiderYumi" type="Bow" maxUses="0">
     <text lang="English" displayName="Raider Yumi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="追い剥ぎの和弓" />
   </item>
   <item id="198" name="SpellbaneYumi" type="Bow" maxUses="0">
     <text lang="English" displayName="Spellbane Yumi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="破魔矢" />
   </item>
   <item id="199" name="SidelongYumi" type="Bow" maxUses="0">
     <text lang="English" displayName="Sidelong Yumi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="横撃ちの和弓" />
   </item>
   <item id="200" name="MikotosYumi" type="Bow" maxUses="0">
     <text lang="English" displayName="Mikoto's Yumi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ミコトの霊弓" />
   </item>
   <item id="201" name="SetsunasYumi" type="Bow" maxUses="0">
     <text lang="English" displayName="Setsuna's Yumi" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="セツナの緩弓" />
   </item>
   <item id="202" name="Fire" type="Tome" maxUses="0">
     <text lang="English" displayName="Fire" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ファイアー" />
   </item>
   <item id="203" name="Thunder" type="Tome" maxUses="0">
     <text lang="English" displayName="Thunder" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="サンダー" />
   </item>
   <item id="204" name="Fimbulvetr" type="Tome" maxUses="0">
     <text lang="English" displayName="Fimbulvetr" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="フィンブル" />
   </item>
   <item id="205" name="Ragnarok" type="Tome" maxUses="0">
     <text lang="English" displayName="Ragnarok" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ライナロック" />
   </item>
   <item id="206" name="Ginnungagap" type="Tome" maxUses="0">
     <text lang="English" displayName="Ginnungagap" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ギンヌンガガプ" />
   </item>
   <item id="207" name="Lightning" type="Tome" maxUses="0">
     <text lang="English" displayName="Lightning" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ライトニング" />
   </item>
   <item id="208" name="Mjölnir" type="Tome" maxUses="0">
     <text lang="English" displayName="Mjölnir" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ミョルニル" />
   </item>
   <item id="209" name="Nosferatu" type="Tome" maxUses="0">
     <text lang="English" displayName="Nosferatu" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="リザイア" />
   </item>
   <item id="210" name="Excalibur" type="Tome" maxUses="0">
     <text lang="English" displayName="Excalibur" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="エクスカリバー" />
   </item>
   <item id="211" name="Brynhildr" type="Tome" maxUses="0">
     <text lang="English" displayName="Brynhildr" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ブリュンヒルデ" />
   </item>
   <item id="212" name="Ember" type="Tome" maxUses="0">
     <text lang="English" displayName="Ember" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="プチファイアー" />
   </item>
   <item id="213" name="Missiletainn" type="Tome" maxUses="0">
     <text lang="English" displayName="Missiletainn" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ミステルトィン" />
   </item>
   <item id="214" name="DisrobingGale" type="Tome" maxUses="0">
     <text lang="English" displayName="Disrobing Gale" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ローバー" />
   </item>
   <item id="215" name="SpeedThunder" type="Tome" maxUses="0">
     <text lang="English" displayName="Speed Thunder" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ブーストサンダー" />
   </item>
   <item id="216" name="Moonlight" type="Tome" maxUses="0">
     <text lang="English" displayName="Moonlight" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ムーンライト" />
   </item>
   <item id="217" name="IagosTome" type="Tome" maxUses="0">
     <text lang="English" displayName="Iago's Tome" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="マクベスの惑書" />
   </item>
   <item id="218" name="OdinsGrimoire" type="Tome" maxUses="0">
     <text lang="English" displayName="Odin's Grimoire" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="オーディンの黒書" />
   </item>
   <item id="219" name="RatSpirit" type="Tome" maxUses="0">
     <text lang="English" displayName="Rat Spirit" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鼠神・子" />
   </item>
   <item id="220" name="OxSpirit" type="Tome" maxUses="0">
     <text lang="English" displayName="Ox Spirit" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="牛神・丑" />
   </item>
   <item id="221" name="TigerSpirit" type="Tome" maxUses="0">
     <text lang="English" displayName="Tiger Spirit" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="虎神・寅" />
   </item>
   <item id="222" name="RabbitSpirit" type="Tome" maxUses="0">
     <text lang="English" displayName="Rabbit Spirit" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="兎神・卯" />
   </item>
   <item id="223" name="DragonSpirit" type="Tome" maxUses="0">
     <text lang="English" displayName="Dragon Spirit" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="龍神・辰" />
   </item>
   <item id="224" name="CalamityGate" type="Tome" maxUses="0">
     <text lang="English" displayName="Calamity Gate" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="逆神・丑寅" />
   </item>
   <item id="225" name="SnakeSpirit" type="Tome" maxUses="0">
     <text lang="English" displayName="Snake Spirit" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="蛇神・巳" />
   </item>
   <item id="226" name="HorseSpirit" type="Tome" maxUses="0">
     <text lang="English" displayName="Horse Spirit" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="馬神・午" />
   </item>
   <item id="227" name="SheepSpirit" type="Tome" maxUses="0">
     <text lang="English" displayName="Sheep Spirit" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="羊神・未" />
   </item>
   <item id="228" name="Paper" type="Tome" maxUses="0">
     <text lang="English" displayName="Paper" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="紙" />
   </item>
   <item id="229" name="MalevolentText" type="Tome" maxUses="0">
     <text lang="English" displayName="Malevolent Text" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="古びた書物" />
   </item>
   <item id="230" name="MonkeySpirit" type="Tome" maxUses="0">
     <text lang="English" displayName="Monkey Spirit" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="猿神・申" />
   </item>
   <item id="231" name="BirdSpirit" type="Tome" maxUses="0">
     <text lang="English" displayName="Bird Spirit" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鳥神・酉" />
   </item>
   <item id="232" name="InkPainting" type="Tome" maxUses="0">
     <text lang="English" displayName="Ink Painting" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="虹の賢者の墨絵" />
   </item>
   <item id="233" name="IzanasScroll" type="Tome" maxUses="0">
     <text lang="English" displayName="Izana's Scroll" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="イザナの古呪" />
   </item>
   <item id="234" name="Heal" type="Staff" maxUses="20">
     <text lang="English" displayName="Heal" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ライブ" />
   </item>
   <item id="235" name="Mend" type="Staff" maxUses="15">
     <text lang="English" displayName="Mend" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="リライブ" />
   </item>
   <item id="236" name="Physic" type="Staff" maxUses="5">
     <text lang="English" displayName="Physic" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="リブロー" />
   </item>
   <item id="237" name="Recover" type="Staff" maxUses="5">
     <text lang="English" displayName="Recover" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="リカバー" />
   </item>
   <item id="238" name="Fortify" type="Staff" maxUses="2">
     <text lang="English" displayName="Fortify" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="リザーブ" />
   </item>
   <item id="239" name="Freeze" type="Staff" maxUses="4">
     <text lang="English" displayName="Freeze" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="フリーズ" />
   </item>
   <item id="240" name="Enfeeble" type="Staff" maxUses="4">
     <text lang="English" displayName="Enfeeble" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ウィークネス" />
   </item>
   <item id="241" name="Entrap" type="Staff" maxUses="2">
     <text lang="English" displayName="Entrap" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ドロー" />
   </item>
-  <item id="242" name="EntrapNohr27" type="Staff" maxUses="1" enemyOnly="true">
+  <item id="242" name="EntrapNohr27" type="Staff" maxUses="1">
     <text lang="English" displayName="Entrap" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ドロー" />
   </item>
   <item id="243" name="Bifröst" type="Staff" maxUses="1">
     <text lang="English" displayName="Bifröst" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ビフレスト" />
   </item>
   <item id="244" name="CandyCane" type="Staff" maxUses="5">
     <text lang="English" displayName="Candy Cane" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="お菓子の杖" />
   </item>
   <item id="245" name="MushroomStaff" type="Staff" maxUses="5">
     <text lang="English" displayName="Mushroom Staff" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="キノコの杖" />
   </item>
   <item id="246" name="BouquetStaff" type="Staff" maxUses="3">
     <text lang="English" displayName="Bouquet Staff" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="花束の杖" />
   </item>
   <item id="247" name="ElisesStaff" type="Staff" maxUses="1">
     <text lang="English" displayName="Elise's Staff" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="エリーゼの幼杖" />
   </item>
   <item id="248" name="LilithsStaff" type="Staff" maxUses="1">
     <text lang="English" displayName="Lilith's Staff" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="リリスの星杖" />
   </item>
   <item id="249" name="BloomFestal" type="Staff" maxUses="20">
     <text lang="English" displayName="Bloom Festal" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="春祭" />
   </item>
   <item id="250" name="SunFestal" type="Staff" maxUses="15">
     <text lang="English" displayName="Sun Festal" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="夏祭" />
   </item>
   <item id="251" name="WaneFestal" type="Staff" maxUses="5">
     <text lang="English" displayName="Wane Festal" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="秋祭" />
   </item>
   <item id="252" name="MoonFestal" type="Staff" maxUses="5">
     <text lang="English" displayName="Moon Festal" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="冬祭" />
   </item>
   <item id="253" name="GreatFestal" type="Staff" maxUses="2">
     <text lang="English" displayName="Great Festal" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="大祭" />
   </item>
   <item id="254" name="Rescue" type="Staff" maxUses="2">
     <text lang="English" displayName="Rescue" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="七難即滅" />
   </item>
   <item id="255" name="Silence" type="Staff" maxUses="4">
     <text lang="English" displayName="Silence" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="神風招来" />
   </item>
   <item id="256" name="HexingRod" type="Staff" maxUses="3">
     <text lang="English" displayName="Hexing Rod" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="禍事罪穢" />
   </item>
   <item id="257" name="Lantern" type="Staff" maxUses="5">
     <text lang="English" displayName="Lantern" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ちょうちん" />
   </item>
   <item id="258" name="DumplingRod" type="Staff" maxUses="3">
     <text lang="English" displayName="Dumpling Rod" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="団子串" />
   </item>
   <item id="259" name="BambooBranch" type="Staff" maxUses="3">
     <text lang="English" displayName="Bamboo Branch" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="笹飾り" />
   </item>
   <item id="260" name="SakurasRod" type="Staff" maxUses="10">
     <text lang="English" displayName="Sakura's Rod" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="サクラの小祓串" />
   </item>
   <item id="261" name="PurificationRod" type="Staff" maxUses="1">
     <text lang="English" displayName="Purification Rod" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="アサマの捻れ祓串" />
   </item>
   <item id="262" name="Dragonstone" type="Stone" maxUses="0">
     <text lang="English" displayName="Dragonstone" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="竜石" />
   </item>
   <item id="263" name="DragonstonePlus" type="Stone" maxUses="0">
     <text lang="English" displayName="Dragonstone+" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="真竜石" />
   </item>
   <item id="264" name="Beaststone" type="Stone" maxUses="0">
     <text lang="English" displayName="Beaststone" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="獣石" />
   </item>
   <item id="265" name="Beastrune" type="Stone" maxUses="0">
     <text lang="English" displayName="Beastrune" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="守獣石" />
   </item>
   <item id="266" name="BeaststonePlus" type="Stone" maxUses="0">
     <text lang="English" displayName="Beaststone+" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="超獣石" />
   </item>
-  <item id="267" name="DraconicRage" type="NPC" maxUses="0" enemyOnly="true">
+  <item id="267" name="DraconicRage" type="NPC" maxUses="0">
     <text lang="English" displayName="Draconic Rage" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="水の飛沫" />
   </item>
-  <item id="268" name="DarkBreath" type="NPC" maxUses="0" enemyOnly="true">
+  <item id="268" name="DarkBreath" type="NPC" maxUses="0">
     <text lang="English" displayName="Dark Breath" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="暗夜竜の翼" />
   </item>
-  <item id="269" name="InvisiblesBreath" type="NPC" maxUses="0" enemyOnly="true">
-    <text lang="English" displayName="Invisible's Breath" />
-    <text lang="Japanese" displayName="DisplayName" />
+  <item id="269" name="InvisiblesBreath" type="NPC" maxUses="0">
+    <text lang="English" displayName="Dragon Breath" />
+    <text lang="Japanese" displayName="透魔竜のブレス" />
   </item>
-  <item id="270" name="InvisiblesBreath2" type="NPC" maxUses="0" enemyOnly="true">
-    <text lang="English" displayName="Invisible's Breath" />
-    <text lang="Japanese" displayName="DisplayName" />
+  <item id="270" name="InvisiblesBreath2" type="NPC" maxUses="0">
+    <text lang="English" displayName="Dragon Breath" />
+    <text lang="Japanese" displayName="透魔竜のブレス" />
   </item>
-  <item id="271" name="ShackledFist" type="NPC" maxUses="0" enemyOnly="true">
+  <item id="271" name="ShackledFist" type="NPC" maxUses="0">
     <text lang="English" displayName="Shackled Fist" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="乱拳" />
   </item>
-  <item id="272" name="Gauntlet" type="NPC" maxUses="0" enemyOnly="true">
+  <item id="272" name="Gauntlet" type="NPC" maxUses="0">
     <text lang="English" displayName="Gauntlet" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="狂乱拳" />
   </item>
-  <item id="273" name="Rock" type="NPC" maxUses="0" enemyOnly="true">
+  <item id="273" name="Rock" type="NPC" maxUses="0">
     <text lang="English" displayName="Rock" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="岩塊" />
   </item>
-  <item id="274" name="MassiveRock" type="NPC" maxUses="0" enemyOnly="true">
+  <item id="274" name="MassiveRock" type="NPC" maxUses="0">
     <text lang="English" displayName="Massive Rock" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="巨岩塊" />
   </item>
-  <item id="275" name="AstralBreath" type="NPC" maxUses="0" enemyOnly="true">
+  <item id="275" name="AstralBreath" type="NPC" maxUses="0">
     <text lang="English" displayName="Astral Breath" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="星竜のブレス" />
   </item>
-  <item id="276" name="AstralBlessing" type="NPC" maxUses="0" enemyOnly="true">
+  <item id="276" name="AstralBlessing" type="NPC" maxUses="0">
     <text lang="English" displayName="Astral Blessing" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="星竜の加護" />
   </item>
   <item id="277" name="Vulnerary" type="Consumable" maxUses="3">
     <text lang="English" displayName="Vulnerary" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="傷薬" />
   </item>
   <item id="278" name="Concoction" type="Consumable" maxUses="2">
     <text lang="English" displayName="Concoction" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="調合薬" />
   </item>
   <item id="279" name="Elixir" type="Consumable" maxUses="1">
     <text lang="English" displayName="Elixir" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="特効薬" />
   </item>
   <item id="280" name="HPTonic" type="Consumable" maxUses="1">
     <text lang="English" displayName="HP Tonic" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ＨＰの薬" />
   </item>
   <item id="281" name="StrengthTonic" type="Consumable" maxUses="1">
     <text lang="English" displayName="Strength Tonic" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="力の薬" />
   </item>
   <item id="282" name="MagicTonic" type="Consumable" maxUses="1">
     <text lang="English" displayName="Magic Tonic" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="魔力の薬" />
   </item>
   <item id="283" name="SkillTonic" type="Consumable" maxUses="1">
     <text lang="English" displayName="Skill Tonic" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="技の薬" />
   </item>
   <item id="284" name="SpeedTonic" type="Consumable" maxUses="1">
     <text lang="English" displayName="Speed Tonic" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="速さの薬" />
   </item>
   <item id="285" name="LuckTonic" type="Consumable" maxUses="1">
     <text lang="English" displayName="Luck Tonic" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="幸運の薬" />
   </item>
   <item id="286" name="DefenseTonic" type="Consumable" maxUses="1">
     <text lang="English" displayName="Defense Tonic" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="守備の薬" />
   </item>
   <item id="287" name="ResistanceTonic" type="Consumable" maxUses="1">
     <text lang="English" displayName="Resistance Tonic" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="魔防の薬" />
   </item>
   <item id="288" name="AzurasSalve" type="Consumable" maxUses="1">
     <text lang="English" displayName="Azura's Salve" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="アクアの秘薬" />
   </item>
   <item id="289" name="GuntersPotion" type="Consumable" maxUses="1">
     <text lang="English" displayName="Gunter's Potion" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ギュンターの良薬" />
   </item>
   <item id="290" name="AsugisConfect" type="Consumable" maxUses="1">
     <text lang="English" displayName="Asugi's Confect" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="グレイの創作菓子" />
   </item>
   <item id="291" name="RainbowTonic" type="Consumable" maxUses="1">
     <text lang="English" displayName="Rainbow Tonic" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="虹の秘薬" />
   </item>
   <item id="292" name="SeedOfTrust" type="Consumable" maxUses="1">
     <text lang="English" displayName="Seed of Trust" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="絆の種" />
   </item>
   <item id="293" name="AllegroHarp" type="Consumable" maxUses="1">
     <text lang="English" displayName="Allegro Harp" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ハープ" />
   </item>
   <item id="294" name="ShellHorn" type="Consumable" maxUses="1">
     <text lang="English" displayName="Shell Horn" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ほら貝" />
   </item>
-  <item id="295" name="Saw" type="NPC" maxUses="0" enemyOnly="true">
+  <item id="295" name="Saw" type="NPC" maxUses="0">
     <text lang="English" displayName="Saw" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="絡繰鋸" />
   </item>
-  <item id="296" name="BigSaw" type="NPC" maxUses="0" enemyOnly="true">
+  <item id="296" name="BigSaw" type="NPC" maxUses="0">
     <text lang="English" displayName="Big Saw" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="絡繰巨大鋸" />
   </item>
-  <item id="297" name="DoorKey" type="Consumable" maxUses="1" mapOnly="true">
+  <item id="297" name="DoorKey" type="Consumable" maxUses="1">
     <text lang="English" displayName="Door Key" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="扉の鍵" />
   </item>
-  <item id="298" name="ChestKey" type="Consumable" maxUses="1" mapOnly="true">
+  <item id="298" name="ChestKey" type="Consumable" maxUses="1">
     <text lang="English" displayName="Chest Key" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="宝の鍵" />
   </item>
-  <item id="299" name="MasterKey" type="Consumable" maxUses="1" mapOnly="true">
+  <item id="299" name="MasterKey" type="Consumable" maxUses="1">
     <text lang="English" displayName="Master Key" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="万能鍵" />
   </item>
   <item id="300" name="SeraphRobe" type="Consumable" maxUses="1">
     <text lang="English" displayName="Seraph Robe" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="天使の衣" />
   </item>
   <item id="301" name="EnergyDrop" type="Consumable" maxUses="1">
     <text lang="English" displayName="Energy Drop" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="力のしずく" />
   </item>
   <item id="302" name="SpiritDust" type="Consumable" maxUses="1">
     <text lang="English" displayName="Spirit Dust" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="精霊の粉" />
   </item>
   <item id="303" name="SecretBook" type="Consumable" maxUses="1">
     <text lang="English" displayName="Secret Book" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="秘伝の書" />
   </item>
   <item id="304" name="Speedwing" type="Consumable" maxUses="1">
     <text lang="English" displayName="Speedwing" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="はやての羽" />
   </item>
   <item id="305" name="GoddessIcon" type="Consumable" maxUses="1">
     <text lang="English" displayName="Goddess Icon" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="女神の像" />
   </item>
   <item id="306" name="Dracoshield" type="Consumable" maxUses="1">
     <text lang="English" displayName="Dracoshield" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="竜の盾" />
   </item>
   <item id="307" name="Talisman" type="Consumable" maxUses="1">
     <text lang="English" displayName="Talisman" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="魔よけ" />
   </item>
   <item id="308" name="DragonHerbs" type="Consumable" maxUses="1">
     <text lang="English" displayName="Dragon Herbs" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="神竜草" />
   </item>
   <item id="309" name="Boots" type="Consumable" maxUses="1">
     <text lang="English" displayName="Boots" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ブーツ" />
   </item>
   <item id="310" name="ArmsScroll" type="Consumable" maxUses="1">
     <text lang="English" displayName="Arms Scroll" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="術書" />
   </item>
   <item id="311" name="MasterSeal" type="Consumable" maxUses="1">
     <text lang="English" displayName="Master Seal" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="マスタープルフ" />
   </item>
   <item id="312" name="HeartSeal" type="Consumable" maxUses="1">
     <text lang="English" displayName="Heart Seal" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="パラレルプルフ" />
   </item>
   <item id="313" name="PartnerSeal" type="Consumable" maxUses="1">
     <text lang="English" displayName="Partner Seal" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="マリッジプルフ" />
   </item>
   <item id="314" name="FriendshipSeal" type="Consumable" maxUses="1">
     <text lang="English" displayName="Friendship Seal" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="バディプルフ" />
   </item>
   <item id="315" name="EternalSeal" type="Consumable" maxUses="1">
     <text lang="English" displayName="Eternal Seal" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="エターナルプルフ" />
   </item>
   <item id="316" name="DreadScroll" type="Consumable" maxUses="1">
     <text lang="English" displayName="Dread Scroll" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="魔戦士の巻物" />
   </item>
   <item id="317" name="EbonWing" type="Consumable" maxUses="1">
     <text lang="English" displayName="Ebon Wing" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="黒天馬の翼" />
   </item>
   <item id="318" name="Ganglari2" type="Sword" maxUses="0">
     <text lang="English" displayName="Ganglari" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ガングレリ" />
   </item>
   <item id="319" name="GoldBar" type="Held" maxUses="0">
     <text lang="English" displayName="Gold Bar" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="小判" />
   </item>
   <item id="320" name="BattleSeal" type="Held" maxUses="0">
     <text lang="English" displayName="Battle Seal" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="戦闘王の紋章" />
   </item>
   <item id="321" name="VisitationSeal" type="Held" maxUses="0">
     <text lang="English" displayName="Visitation Seal" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="訪問王の紋章" />
   </item>
   <item id="322" name="OffspringSeal" type="Consumable" maxUses="1">
     <text lang="English" displayName="Offspring Seal" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="チャイルドプルフ" />
   </item>
   <item id="323" name="SightingLens" type="Consumable" maxUses="1">
     <text lang="English" displayName="Sighting Lens" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="シューター砲台" />
   </item>
   <item id="324" name="WitchsMark" type="Consumable" maxUses="1">
     <text lang="English" displayName="Witch's Mark" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="魔女の魔法陣" />
   </item>
   <item id="325" name="Paragon" type="Consumable" maxUses="1">
     <text lang="English" displayName="Paragon" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="エリートの書" />
   </item>
   <item id="326" name="ArmorShield" type="Consumable" maxUses="1">
     <text lang="English" displayName="Armor Shield" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="鎧盾の書" />
   </item>
   <item id="327" name="BeastShield" type="Consumable" maxUses="1">
     <text lang="English" displayName="Beast Shield" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="獣盾の書" />
   </item>
   <item id="328" name="WingedShield" type="Consumable" maxUses="1">
     <text lang="English" displayName="Winged Shield" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="翼盾の書" />
   </item>
   <item id="329" name="PointBlank" type="Consumable" maxUses="1">
     <text lang="English" displayName="Point Blank" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="近接射撃の書" />
   </item>
   <item id="330" name="BoldStance" type="Consumable" maxUses="1">
     <text lang="English" displayName="Bold Stance" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="攻防一体の陣の書" />
   </item>
   <item id="331" name="Strengthtaker" type="Consumable" maxUses="1">
     <text lang="English" displayName="Strengthtaker" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="力の吸収の書" />
   </item>
   <item id="332" name="Magictaker" type="Consumable" maxUses="1">
     <text lang="English" displayName="Magictaker" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="魔力の吸収の書" />
   </item>
   <item id="333" name="Skilltaker" type="Consumable" maxUses="1">
     <text lang="English" displayName="Skilltaker" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="技の吸収の書" />
   </item>
   <item id="334" name="Speedtaker" type="Consumable" maxUses="1">
     <text lang="English" displayName="Speedtaker" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="速さの吸収の書" />
   </item>
   <item id="335" name="Lucktaker" type="Consumable" maxUses="1">
     <text lang="English" displayName="Lucktaker" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="幸運の吸収の書" />
   </item>
   <item id="336" name="Defensetaker" type="Consumable" maxUses="1">
     <text lang="English" displayName="Defensetaker" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="守備の吸収の書" />
   </item>
   <item id="337" name="Resistancetaker" type="Consumable" maxUses="1">
     <text lang="English" displayName="Resistancetaker" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="魔防の吸収の書" />
   </item>
   <item id="338" name="MasterEmblem" type="Held" maxUses="0">
     <text lang="English" displayName="Master Emblem" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="絆の王の紋章" />
   </item>
   <item id="339" name="Falchion" type="Sword" maxUses="0">
     <text lang="English" displayName="Falchion" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="神剣ファルシオン" />
   </item>
   <item id="340" name="Ragnell" type="Sword" maxUses="0">
     <text lang="English" displayName="Ragnell" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="神剣ラグネル" />
   </item>
   <item id="341" name="ParallelFalchion" type="Sword" maxUses="0">
     <text lang="English" displayName="Parallel Falchion" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="裏剣ファルシオン" />
   </item>
   <item id="342" name="Thoron" type="Tome" maxUses="0">
     <text lang="English" displayName="Thoron" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="雷書トロン" />
   </item>
   <item id="343" name="MarthsSpatha" type="Sword" maxUses="0">
     <text lang="English" displayName="Marth's Spatha" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="マルスの模擬剣" />
   </item>
   <item id="344" name="IkesBackup" type="Sword" maxUses="0">
     <text lang="English" displayName="Ike's Backup" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="アイクの模擬剣" />
   </item>
   <item id="345" name="LucinasEstoc" type="Sword" maxUses="0">
     <text lang="English" displayName="Lucina's Estoc" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ルキナの模擬剣" />
   </item>
   <item id="346" name="RobinsPrimer" type="Tome" maxUses="0">
     <text lang="English" displayName="Robin's Primer" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ルフレの写本" />
   </item>
-  <item id="347" name="Gold1000" type="Held" maxUses="0" mapOnly="true">
+  <item id="347" name="Gold1000" type="Held" maxUses="0">
     <text lang="English" displayName="1000G" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="1000G" />
   </item>
-  <item id="348" name="Gold2000" type="Held" maxUses="0" mapOnly="true">
+  <item id="348" name="Gold2000" type="Held" maxUses="0">
     <text lang="English" displayName="2000G" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="2000G" />
   </item>
-  <item id="349" name="Gold3000" type="Held" maxUses="0" mapOnly="true">
+  <item id="349" name="Gold3000" type="Held" maxUses="0">
     <text lang="English" displayName="3000G" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="3000G" />
   </item>
-  <item id="350" name="Gold5000" type="Held" maxUses="0" mapOnly="true">
+  <item id="350" name="Gold5000" type="Held" maxUses="0">
     <text lang="English" displayName="5000G" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="5000G" />
   </item>
-  <item id="351" name="Gold7000" type="Held" maxUses="0" mapOnly="true">
+  <item id="351" name="Gold7000" type="Held" maxUses="0">
     <text lang="English" displayName="7000G" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="7000G" />
   </item>
-  <item id="352" name="Gold10000" type="Held" maxUses="0" mapOnly="true">
+  <item id="352" name="Gold10000" type="Held" maxUses="0">
     <text lang="English" displayName="10000G" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="10000G" />
   </item>
-  <item id="353" name="Gold20000" type="Held" maxUses="0" mapOnly="true">
+  <item id="353" name="Gold20000" type="Held" maxUses="0">
     <text lang="English" displayName="20000G" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="20000G" />
   </item>
-  <item id="354" name="Obstacle" type="Held" maxUses="0" mapOnly="true">
+  <item id="354" name="Obstacle" type="Held" maxUses="0">
     <text lang="English" displayName="Obstacle" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="障害物" />
   </item>
   <item id="355" name="Pebble" type="Shuriken" maxUses="0">
     <text lang="English" displayName="Pebble" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="小石" />
   </item>
   <item id="356" name="HerosBrand" type="Consumable" maxUses="1">
     <text lang="English" displayName="Hero's Brand" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="英雄王の紋章" />
   </item>
   <item id="357" name="ExaltsBrand" type="Consumable" maxUses="1">
     <text lang="English" displayName="Exalt's Brand" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="聖痕の紋章" />
   </item>
   <item id="358" name="Unknown358" type="Unknown" maxUses="DDDDDDD">
     <text lang="English" displayName="Falchion" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="神剣ファルシオン" />
   </item>
   <item id="359" name="FellBrand" type="Consumable" maxUses="1">
     <text lang="English" displayName="Fell Brand" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="邪痕の紋章" />
   </item>
   <item id="360" name="FirstBlood" type="Consumable" maxUses="1">
     <text lang="English" displayName="First Blood" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="神祖竜の血" />
   </item>
   <item id="361" name="Unknown361" type="Consumable" maxUses="1">
     <text lang="English" displayName="DisplayName" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="displayName" />
   </item>
   <item id="362" name="VanguardBrand" type="Consumable" maxUses="1">
     <text lang="English" displayName="Vanguard Brand" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="神将の紋章" />
   </item>
   <item id="363" name="HeavyBlade" type="Consumable" maxUses="1">
     <text lang="English" displayName="Heavy Blade" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="剛剣の書" />
   </item>
   <item id="364" name="VeteranIntuition" type="Consumable" maxUses="1">
     <text lang="English" displayName="Veteran Intuition" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="歴戦の勘の書" />
   </item>
   <item id="365" name="Aether" type="Consumable" maxUses="1">
     <text lang="English" displayName="Aether" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="天空の書" />
   </item>
   <item id="366" name="Unknown366" type="Unknown" maxUses="DDDDDDD">
     <text lang="English" displayName="DisplayName" />
@@ -1569,7 +1570,7 @@
   </item>
   <item id="392" name="Warp" type="Consumable" maxUses="1">
     <text lang="English" displayName="Warp" />
-    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Japanese" displayName="ワープの書" />
   </item>
   <!-- template: 
   <item id="0" name="InternalName" type="ItemType" maxUses="0">
