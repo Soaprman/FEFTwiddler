@@ -11,7 +11,10 @@ namespace FEFTwiddler
         private Model.ChapterSave _chapterSave;
         private Model.Character _selectedCharacter;
 
+        private Data.CharacterDatabase _characterDatabase;
+        private Data.ClassDatabase _classDatabase;
         private Data.ItemDatabase _itemDatabase;
+        private Data.SkillDatabase _skillDatabase;
 
         public Form1()
         {
@@ -23,7 +26,10 @@ namespace FEFTwiddler
         {
             // TODO: Let user specify language
             // Will need to call SetLanguage on all databases when switching and refresh GUI for display names
+            _characterDatabase = new Data.CharacterDatabase(Enums.Language.English);
+            _classDatabase = new Data.ClassDatabase(Enums.Language.English);
             _itemDatabase = new Data.ItemDatabase(Enums.Language.English);
+            _skillDatabase = new Data.SkillDatabase(Enums.Language.English);
         }
 
         private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -146,8 +152,14 @@ namespace FEFTwiddler
 
         private void LoadCharacter(Model.Character character)
         {
-            lblName.Text = character.CharacterID.ToString();
-            cmbClass.Text = character.ClassID.ToString();
+            if (Enum.IsDefined(typeof(Enums.Character), character.CharacterID))
+                lblName.Text = _characterDatabase.GetByID(character.CharacterID).DisplayName;
+            else
+                lblName.Text = character.CharacterID.ToString();
+            if (Enum.IsDefined(typeof(Enums.Class), character.ClassID))
+                cmbClass.Text = _classDatabase.GetByID(character.ClassID).DisplayName;
+            else
+                cmbClass.Text = character.ClassID.ToString();
             numLevel.Value = character.Level;
             numExperience.Value = character.Experience;
             numBoots.Value = Model.Character.FixBoots(character.Boots);
@@ -157,15 +169,15 @@ namespace FEFTwiddler
             chkEinherjar.Checked = character.IsEinherjar;
             chkRecruited.Checked = character.IsRecruited;
 
-            cmbSkill1.Text = character.EquippedSkill_1.ToString();
+            cmbSkill1.Text = _skillDatabase.GetByID(character.EquippedSkill_1).DisplayName;
             pictSkill1.Image = GetSkillImage(character.EquippedSkill_1);
-            cmbSkill2.Text = character.EquippedSkill_2.ToString();
+            cmbSkill2.Text = _skillDatabase.GetByID(character.EquippedSkill_2).DisplayName;
             pictSkill2.Image = GetSkillImage(character.EquippedSkill_2);
-            cmbSkill3.Text = character.EquippedSkill_3.ToString();
+            cmbSkill3.Text = _skillDatabase.GetByID(character.EquippedSkill_3).DisplayName;
             pictSkill3.Image = GetSkillImage(character.EquippedSkill_3);
-            cmbSkill4.Text = character.EquippedSkill_4.ToString();
+            cmbSkill4.Text = _skillDatabase.GetByID(character.EquippedSkill_4).DisplayName;
             pictSkill4.Image = GetSkillImage(character.EquippedSkill_4);
-            cmbSkill5.Text = character.EquippedSkill_5.ToString();
+            cmbSkill5.Text = _skillDatabase.GetByID(character.EquippedSkill_5).DisplayName;
             pictSkill5.Image = GetSkillImage(character.EquippedSkill_5);
 
             cmbHeadwear.Text = character.Headwear.ToString();
@@ -225,9 +237,45 @@ namespace FEFTwiddler
         {
             var str = "";
 
-            str += BitConverter.ToString((byte[])(Array)character.StatBytes1);
-            str += Environment.NewLine;
-            str += BitConverter.ToString((byte[])(Array)character.StatBytes2);
+            if (Enum.IsDefined(typeof(Enums.Character), character.CharacterID) &&
+                Enum.IsDefined(typeof(Enums.Class), character.ClassID))
+            {
+                var characterData = _characterDatabase.GetByID(character.CharacterID);
+                var classData = _classDatabase.GetByID(character.ClassID);
+                byte[] trueStats = new byte[] {
+                    (byte)(characterData.Base_HP  + classData.Base_HP  + character.StatBytes1[0]),
+                    (byte)(characterData.Base_Str + classData.Base_Str + character.StatBytes1[1]),
+                    (byte)(characterData.Base_Mag + classData.Base_Mag + character.StatBytes1[2]),
+                    (byte)(characterData.Base_Skl + classData.Base_Skl + character.StatBytes1[3]),
+                    (byte)(characterData.Base_Spd + classData.Base_Spd + character.StatBytes1[4]),
+                    (byte)(characterData.Base_Lck + classData.Base_Lck + character.StatBytes1[5]),
+                    (byte)(characterData.Base_Def + classData.Base_Def + character.StatBytes1[6]),
+                    (byte)(characterData.Base_Res + classData.Base_Res + character.StatBytes1[7])
+                };
+                byte[] caps = new byte[] {
+                    (byte)(classData.Max_HP  + characterData.Modifier_HP  + character.StatueBonuses[0]),
+                    (byte)(classData.Max_Str + characterData.Modifier_Str + character.StatueBonuses[1]),
+                    (byte)(classData.Max_Mag + characterData.Modifier_Mag + character.StatueBonuses[2]),
+                    (byte)(classData.Max_Skl + characterData.Modifier_Skl + character.StatueBonuses[3]),
+                    (byte)(classData.Max_Spd + characterData.Modifier_Spd + character.StatueBonuses[4]),
+                    (byte)(classData.Max_Lck + characterData.Modifier_Lck + character.StatueBonuses[5]),
+                    (byte)(classData.Max_Def + characterData.Modifier_Def + character.StatueBonuses[6]),
+                    (byte)(classData.Max_Res + characterData.Modifier_Res + character.StatueBonuses[7])
+                };
+                for (int i = 0; i < 8; i++)
+                {
+                    if (trueStats[i] < caps[i])
+                        str += trueStats[i].ToString() + '-';
+                    else
+                        str += caps[i].ToString() + '-';
+                }
+            }
+            else
+            {
+                str += BitConverter.ToString((byte[])(Array)character.StatBytes1);
+                str += Environment.NewLine;
+                str += BitConverter.ToString((byte[])(Array)character.StatBytes2);
+            }
 
             return str;
         }

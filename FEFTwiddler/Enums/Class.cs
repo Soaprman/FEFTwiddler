@@ -2,7 +2,7 @@
 {
     public enum Class : byte
     {
-        OutrealmClass = 0x00,
+        None = 0x00,
         NohrNoble_M = 0x01,
         NohrNoble_F = 0x02,
         NohrPrince_M = 0x03,
@@ -133,6 +133,7 @@
         Vanguard = 0x7D,
         GreatLord = 0x7E,
         Grandmaster = 0x7F,
+        Outrealm = 0x80,
         // More DLC
         PegasusKnight = 0x88,
     }

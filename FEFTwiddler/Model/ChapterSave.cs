@@ -372,9 +372,14 @@ namespace FEFTwiddler.Model
             br.Read(chunk, 0, 8);
             character.StatBytes1 = (sbyte[])(Array)chunk;
 
+            // Statue bonuses
+            chunk = new byte[8];
+            br.Read(chunk, 0, 8);
+            character.StatueBonuses = chunk;
+
             // Some bytes
-            chunk = new byte[16];
-            br.Read(chunk, 0, 16);
+            chunk = new byte[8];
+            br.Read(chunk, 0, 8);
             character.UnknownBytesBetweenStatBytes = chunk;
 
             // Stat bytes 2
