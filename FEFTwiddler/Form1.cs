@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using FEFTwiddler.Extensions;
 
 namespace FEFTwiddler
 {
@@ -44,13 +45,19 @@ namespace FEFTwiddler
             {
                 Config.StartupPath = Path.GetDirectoryName(openFileDialog1.FileName);
 
-                _saveFile = Model.SaveFile.FromPath(openFileDialog1.FileName);
+                var saveFile = Model.SaveFile.FromPath(openFileDialog1.FileName);
 
-                if (_saveFile.Type != Enums.SaveFileType.Chapter)
+                if (saveFile.Type != Enums.SaveFileType.Chapter)
                 {
                     MessageBox.Show("This type of save is not supported yet. Only 'Chapter' saves are supported right now.");
                     return;
                 }
+                else
+                {
+                    _saveFile = saveFile;
+                }
+
+                UpdateTitleBar(openFileDialog1.FileName);
 
                 _chapterSave = Model.ChapterSave.FromSaveFile(_saveFile);
 
@@ -70,6 +77,14 @@ namespace FEFTwiddler
 
                 listBox1.SelectedIndex = 0;
             }
+        }
+
+        private void UpdateTitleBar(string path)
+        {
+            var directory = Path.GetDirectoryName(path);
+            if (directory.Length > 36) directory = "..." + directory.Right(36); // Arbitary choice that I find tends to fit
+            var truncatedPath = directory + "\\" + Path.GetFileName(path);
+            this.Text = "FEFTwiddler - " + truncatedPath;
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)

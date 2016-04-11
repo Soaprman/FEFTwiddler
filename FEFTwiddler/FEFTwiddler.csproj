@@ -76,6 +76,7 @@
     <Compile Include="Enums\Underwear.cs" />
     <Compile Include="Extensions\BinaryReaderExtensions.cs" />
     <Compile Include="Extensions\ByteArrayExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\XElementExtensions.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
