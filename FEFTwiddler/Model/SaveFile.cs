@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.IO;
+using System.Text;
 
 namespace FEFTwiddler.Model
 {
@@ -11,24 +12,28 @@ namespace FEFTwiddler.Model
     {
         #region Members and Properties
 
-        private string _filePath;
+        protected string _filePath;
 
-        private Enums.SaveFileType _type;
+        protected Enums.SaveFileType _type;
         public Enums.SaveFileType Type
         {
             get { return _type; }
         }
 
-        bool _isCompressed;
+        protected bool _isCompressed;
         public bool IsCompressed
         {
             get { return _isCompressed; }
         }
 
-        public byte[] DecompressedBytes;
+        protected byte[] _decompressedBytes;
+        public byte[] DecompressedBytes
+        {
+            get { return _decompressedBytes;  }
+        }
 
-        private byte[] _compMarker = new byte[] { 0x50, 0x4D, 0x4F, 0x43 }; // COMP backwards
-        private byte[] _indeMarker = new byte[] { 0x45, 0x44, 0x4E, 0x49 }; // INDE backwards
+        protected byte[] _compMarker = new byte[] { 0x50, 0x4D, 0x4F, 0x43 }; // COMP backwards
+        protected byte[] _indeMarker = new byte[] { 0x45, 0x44, 0x4E, 0x49 }; // INDE backwards
 
         #endregion
 
@@ -50,7 +55,7 @@ namespace FEFTwiddler.Model
         /// <summary>
         /// Read data into this object from the file at _originalPath
         /// </summary>
-        public void Read()
+        public virtual void Read()
         {
             byte[] chunk;
             int length = GetFileLength();
@@ -70,7 +75,7 @@ namespace FEFTwiddler.Model
                     br.BaseStream.Seek(0, SeekOrigin.Begin);
                     byte[] compressedBytes = new byte[length];
                     br.Read(compressedBytes, 0, length);
-                    DecompressedBytes = new Utils.Huffman8().Decompress(compressedBytes);
+                    _decompressedBytes = Decompress(compressedBytes);
 
                     return;
                 }
@@ -80,8 +85,8 @@ namespace FEFTwiddler.Model
                     SetNonChapterType();
 
                     br.BaseStream.Seek(0, SeekOrigin.Begin);
-                    DecompressedBytes = new byte[length];
-                    br.Read(DecompressedBytes, 0, length);
+                    _decompressedBytes = new byte[length];
+                    br.Read(_decompressedBytes, 0, length);
 
                     return;
                 }
@@ -104,9 +109,9 @@ namespace FEFTwiddler.Model
                     byte[] compressedBytes = new byte[length - 0xD0];
                     br.Read(compressedBytes, 0, length - 0xD0);
 
-                    byte[] decompressedBytes = new Utils.Huffman8().Decompress(compressedBytes);
+                    byte[] decompressedBytes = Decompress(compressedBytes);
 
-                    DecompressedBytes = header.Concat(decompressedBytes).ToArray();
+                    _decompressedBytes = header.Concat(decompressedBytes).ToArray();
 
                     return;
                 }
@@ -116,8 +121,8 @@ namespace FEFTwiddler.Model
                     _type = Enums.SaveFileType.Chapter;
 
                     br.BaseStream.Seek(0, SeekOrigin.Begin);
-                    DecompressedBytes = new byte[length];
-                    br.Read(DecompressedBytes, 0, length);
+                    _decompressedBytes = new byte[length];
+                    br.Read(_decompressedBytes, 0, length);
 
                     return;
                 }
@@ -145,9 +150,9 @@ namespace FEFTwiddler.Model
         #region Write
 
         /// <summary>
-        /// Write data from this object into the file at _originalPath
+        /// Write data from this object into the file at _filePath
         /// </summary>
-        public void Write()
+        public virtual void Write()
         {
             using (var fs = new FileStream(_filePath, FileMode.Open, FileAccess.ReadWrite))
             using (var bw = new BinaryWriter(fs))
@@ -166,21 +171,25 @@ namespace FEFTwiddler.Model
         {
             if (_isCompressed)
             {
-                byte[] raw = DecompressedBytes;
-                bw.Write(raw, 0, 0xC0);
-                bw.Write(0x434F4D50); // "COMP"
-                bw.Write(0x00000002); // Huffman-8 compression
-                bw.Write(raw.Length - 0xC0);
-                bw.Write(GetChecksum(raw));
-                byte[] decompressed = new byte[raw.Length - 0xC0];
-                Array.Copy(raw, 0xC0, decompressed, 0x0, raw.Length - 0xC0);
-                byte[] compressed = new Utils.Huffman8().Compress(decompressed);
-                bw.Write(compressed);
+                bw.Write(DecompressedBytes, 0, 0xC0);
+                bw.Write(GetHeader(DecompressedBytes));
+                bw.Write(Compress(DecompressedBytes.Skip(0xC0).ToArray()));
             }
             else
             {
                 bw.Write(DecompressedBytes);
             }
+        }
+
+        private byte[] GetHeader(byte[] decompressedBytes)
+        {
+            uint length = (uint)(decompressedBytes.Length - 0xC0);
+            byte[] header = new byte[0x10];
+            Array.Copy(Encoding.ASCII.GetBytes("PMOC"), header, 0x4);
+            Array.Copy(BitConverter.GetBytes(2), 0, header, 0x4, 0x4); // 2 = Huffman-8 Compression.
+            Array.Copy(BitConverter.GetBytes(length), 0, header, 0x8, 0x4);
+            Array.Copy(BitConverter.GetBytes(GetChecksum(decompressedBytes)), 0, header, 0xC, 0x4); // CRC32 of Decompressed Data.
+            return header;
         }
 
         private void WriteExchangeFile(BinaryWriter bw)
@@ -222,6 +231,16 @@ namespace FEFTwiddler.Model
                 }
             }
             return ~checksum;
+        }
+
+        private byte[] Compress(byte[] dec)
+        {
+            return new Utils.Huffman8().Compress(dec);
+        }
+
+        private byte[] Decompress(byte[] cmp)
+        {
+            return new Utils.Huffman8().Decompress(cmp);
         }
 
         #endregion

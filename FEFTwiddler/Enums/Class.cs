@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FEFTwiddler.Enums
+﻿namespace FEFTwiddler.Enums
 {
     public enum Class : byte
     {
-        OutrealmClass = 0x00,
+        None = 0x00,
         NohrNoble_M = 0x01,
         NohrNoble_F = 0x02,
         NohrPrince_M = 0x03,
@@ -139,6 +133,7 @@ namespace FEFTwiddler.Enums
         Vanguard = 0x7D,
         GreatLord = 0x7E,
         Grandmaster = 0x7F,
+        Outrealm = 0x80,
         // More DLC
         PegasusKnight = 0x88,
     }

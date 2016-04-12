@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,6 +37,11 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btn99DragonVeinPoints = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.numDragonVeinPoints = new System.Windows.Forms.NumericUpDown();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.btn9999VisitPoints = new System.Windows.Forms.Button();
             this.btn9999BattlePoints = new System.Windows.Forms.Button();
             this.numVisitPoints = new System.Windows.Forms.NumericUpDown();
@@ -93,6 +99,20 @@
             this.numCrystal = new System.Windows.Forms.NumericUpDown();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.numInternalLevel = new System.Windows.Forms.NumericUpDown();
+            this.label20 = new System.Windows.Forms.Label();
+            this.numEternalSeals = new System.Windows.Forms.NumericUpDown();
+            this.label19 = new System.Windows.Forms.Label();
+            this.numBoots = new System.Windows.Forms.NumericUpDown();
+            this.chkDeployed = new System.Windows.Forms.CheckBox();
+            this.numVictories = new System.Windows.Forms.NumericUpDown();
+            this.label18 = new System.Windows.Forms.Label();
+            this.numBattles = new System.Windows.Forms.NumericUpDown();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtStatBytes = new System.Windows.Forms.TextBox();
             this.lblInventory5 = new System.Windows.Forms.Label();
             this.lblInventory4 = new System.Windows.Forms.Label();
             this.lblInventory3 = new System.Windows.Forms.Label();
@@ -153,15 +173,15 @@
             this.lblName = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnMaxBoots = new System.Windows.Forms.Button();
             this.btnMaxWeaponExp = new System.Windows.Forms.Button();
             this.btnGiveEternalSeals = new System.Windows.Forms.Button();
             this.btnAllSkillsNoNpc = new System.Windows.Forms.Button();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numDragonVeinPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numVisitPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBattlePoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numGold)).BeginInit();
@@ -211,6 +231,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.numCrystal)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numInternalLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numEternalSeals)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBoots)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numVictories)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBattles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStaff)).BeginInit();
@@ -243,7 +268,7 @@
             this.fileToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(517, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(624, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -276,10 +301,6 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -289,11 +310,14 @@
             this.tabControl1.Location = new System.Drawing.Point(13, 28);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(491, 521);
+            this.tabControl1.Size = new System.Drawing.Size(598, 521);
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.btn99DragonVeinPoints);
+            this.tabPage3.Controls.Add(this.label16);
+            this.tabPage3.Controls.Add(this.numDragonVeinPoints);
             this.tabPage3.Controls.Add(this.label13);
             this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Controls.Add(this.btn9999VisitPoints);
@@ -354,13 +378,66 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(483, 495);
+            this.tabPage3.Size = new System.Drawing.Size(590, 495);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Chapter Data";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // btn99DragonVeinPoints
+            // 
+            this.btn99DragonVeinPoints.Location = new System.Drawing.Point(171, 85);
+            this.btn99DragonVeinPoints.Name = "btn99DragonVeinPoints";
+            this.btn99DragonVeinPoints.Size = new System.Drawing.Size(75, 23);
+            this.btn99DragonVeinPoints.TabIndex = 59;
+            this.btn99DragonVeinPoints.Text = "99";
+            this.btn99DragonVeinPoints.UseVisualStyleBackColor = true;
+            this.btn99DragonVeinPoints.Click += new System.EventHandler(this.btn99DragonVeinPoints_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(7, 90);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(101, 13);
+            this.label16.TabIndex = 58;
+            this.label16.Text = "Dragon Vein Points:";
+            // 
+            // numDragonVeinPoints
+            // 
+            this.numDragonVeinPoints.Location = new System.Drawing.Point(114, 88);
+            this.numDragonVeinPoints.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.numDragonVeinPoints.Name = "numDragonVeinPoints";
+            this.numDragonVeinPoints.Size = new System.Drawing.Size(50, 20);
+            this.numDragonVeinPoints.TabIndex = 57;
+            this.numDragonVeinPoints.ValueChanged += new System.EventHandler(this.numDragonVeinPoints_ValueChanged);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(6, 181);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(263, 13);
+            this.label13.TabIndex = 56;
+            this.label13.Text = "After that, the values will revert to what\'s stored online.";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(6, 166);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(232, 13);
+            this.label12.TabIndex = 55;
+            this.label12.Text = "These will last until you update your castle data.";
+            // 
             // btn9999VisitPoints
             // 
+            this.btn9999VisitPoints.Enabled = false;
             this.btn9999VisitPoints.Location = new System.Drawing.Point(171, 140);
             this.btn9999VisitPoints.Name = "btn9999VisitPoints";
             this.btn9999VisitPoints.Size = new System.Drawing.Size(75, 23);
@@ -371,6 +448,7 @@
             // 
             // btn9999BattlePoints
             // 
+            this.btn9999BattlePoints.Enabled = false;
             this.btn9999BattlePoints.Location = new System.Drawing.Point(171, 114);
             this.btn9999BattlePoints.Name = "btn9999BattlePoints";
             this.btn9999BattlePoints.Size = new System.Drawing.Size(75, 23);
@@ -381,6 +459,7 @@
             // 
             // numVisitPoints
             // 
+            this.numVisitPoints.Enabled = false;
             this.numVisitPoints.Location = new System.Drawing.Point(85, 141);
             this.numVisitPoints.Maximum = new decimal(new int[] {
             999999,
@@ -394,6 +473,7 @@
             // 
             // numBattlePoints
             // 
+            this.numBattlePoints.Enabled = false;
             this.numBattlePoints.Location = new System.Drawing.Point(85, 115);
             this.numBattlePoints.Maximum = new decimal(new int[] {
             999999,
@@ -466,7 +546,7 @@
             // 
             // btnMaxMaterials
             // 
-            this.btnMaxMaterials.Location = new System.Drawing.Point(343, 308);
+            this.btnMaxMaterials.Location = new System.Drawing.Point(450, 307);
             this.btnMaxMaterials.Name = "btnMaxMaterials";
             this.btnMaxMaterials.Size = new System.Drawing.Size(134, 23);
             this.btnMaxMaterials.TabIndex = 44;
@@ -476,8 +556,8 @@
             // 
             // pictureBox12
             // 
-            this.pictureBox12.Image = global::FEFTwiddler.Properties.Resources.rice;
-            this.pictureBox12.Location = new System.Drawing.Point(418, 282);
+            this.pictureBox12.Image = global::FEFTwiddler.Properties.Resources.Material_rice;
+            this.pictureBox12.Location = new System.Drawing.Point(525, 281);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(16, 16);
             this.pictureBox12.TabIndex = 43;
@@ -485,8 +565,8 @@
             // 
             // pictureBox13
             // 
-            this.pictureBox13.Image = global::FEFTwiddler.Properties.Resources.peaches;
-            this.pictureBox13.Location = new System.Drawing.Point(418, 256);
+            this.pictureBox13.Image = global::FEFTwiddler.Properties.Resources.Material_peaches;
+            this.pictureBox13.Location = new System.Drawing.Point(525, 255);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(16, 16);
             this.pictureBox13.TabIndex = 42;
@@ -494,8 +574,8 @@
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Image = global::FEFTwiddler.Properties.Resources.daikon;
-            this.pictureBox14.Location = new System.Drawing.Point(418, 230);
+            this.pictureBox14.Image = global::FEFTwiddler.Properties.Resources.Material_daikon;
+            this.pictureBox14.Location = new System.Drawing.Point(525, 229);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(16, 16);
             this.pictureBox14.TabIndex = 41;
@@ -503,8 +583,8 @@
             // 
             // pictureBox15
             // 
-            this.pictureBox15.Image = global::FEFTwiddler.Properties.Resources.fish;
-            this.pictureBox15.Location = new System.Drawing.Point(418, 204);
+            this.pictureBox15.Image = global::FEFTwiddler.Properties.Resources.Material_fish;
+            this.pictureBox15.Location = new System.Drawing.Point(525, 203);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(16, 16);
             this.pictureBox15.TabIndex = 40;
@@ -512,8 +592,8 @@
             // 
             // pictureBox16
             // 
-            this.pictureBox16.Image = global::FEFTwiddler.Properties.Resources.beans;
-            this.pictureBox16.Location = new System.Drawing.Point(418, 178);
+            this.pictureBox16.Image = global::FEFTwiddler.Properties.Resources.Material_beans;
+            this.pictureBox16.Location = new System.Drawing.Point(525, 177);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(16, 16);
             this.pictureBox16.TabIndex = 39;
@@ -521,8 +601,8 @@
             // 
             // pictureBox17
             // 
-            this.pictureBox17.Image = global::FEFTwiddler.Properties.Resources.amber;
-            this.pictureBox17.Location = new System.Drawing.Point(418, 137);
+            this.pictureBox17.Image = global::FEFTwiddler.Properties.Resources.Material_amber;
+            this.pictureBox17.Location = new System.Drawing.Point(525, 136);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(16, 16);
             this.pictureBox17.TabIndex = 38;
@@ -530,8 +610,8 @@
             // 
             // pictureBox18
             // 
-            this.pictureBox18.Image = global::FEFTwiddler.Properties.Resources.jade;
-            this.pictureBox18.Location = new System.Drawing.Point(418, 111);
+            this.pictureBox18.Image = global::FEFTwiddler.Properties.Resources.Material_jade;
+            this.pictureBox18.Location = new System.Drawing.Point(525, 110);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(16, 16);
             this.pictureBox18.TabIndex = 37;
@@ -539,8 +619,8 @@
             // 
             // pictureBox19
             // 
-            this.pictureBox19.Image = global::FEFTwiddler.Properties.Resources.quartz;
-            this.pictureBox19.Location = new System.Drawing.Point(418, 85);
+            this.pictureBox19.Image = global::FEFTwiddler.Properties.Resources.Material_quartz;
+            this.pictureBox19.Location = new System.Drawing.Point(525, 84);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(16, 16);
             this.pictureBox19.TabIndex = 36;
@@ -548,8 +628,8 @@
             // 
             // pictureBox20
             // 
-            this.pictureBox20.Image = global::FEFTwiddler.Properties.Resources.lapis;
-            this.pictureBox20.Location = new System.Drawing.Point(418, 59);
+            this.pictureBox20.Image = global::FEFTwiddler.Properties.Resources.Material_lapis;
+            this.pictureBox20.Location = new System.Drawing.Point(525, 58);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(16, 16);
             this.pictureBox20.TabIndex = 35;
@@ -557,8 +637,8 @@
             // 
             // pictureBox21
             // 
-            this.pictureBox21.Image = global::FEFTwiddler.Properties.Resources.coral;
-            this.pictureBox21.Location = new System.Drawing.Point(418, 33);
+            this.pictureBox21.Image = global::FEFTwiddler.Properties.Resources.Material_coral;
+            this.pictureBox21.Location = new System.Drawing.Point(525, 32);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(16, 16);
             this.pictureBox21.TabIndex = 34;
@@ -566,8 +646,8 @@
             // 
             // pictureBox22
             // 
-            this.pictureBox22.Image = global::FEFTwiddler.Properties.Resources.pearl;
-            this.pictureBox22.Location = new System.Drawing.Point(418, 7);
+            this.pictureBox22.Image = global::FEFTwiddler.Properties.Resources.Material_pearl;
+            this.pictureBox22.Location = new System.Drawing.Point(525, 6);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(16, 16);
             this.pictureBox22.TabIndex = 33;
@@ -575,8 +655,8 @@
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Image = global::FEFTwiddler.Properties.Resources.wheat;
-            this.pictureBox11.Location = new System.Drawing.Point(343, 282);
+            this.pictureBox11.Image = global::FEFTwiddler.Properties.Resources.Material_wheat;
+            this.pictureBox11.Location = new System.Drawing.Point(450, 281);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(16, 16);
             this.pictureBox11.TabIndex = 32;
@@ -584,8 +664,8 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Image = global::FEFTwiddler.Properties.Resources.berries;
-            this.pictureBox10.Location = new System.Drawing.Point(343, 256);
+            this.pictureBox10.Image = global::FEFTwiddler.Properties.Resources.Material_berries;
+            this.pictureBox10.Location = new System.Drawing.Point(450, 255);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(16, 16);
             this.pictureBox10.TabIndex = 31;
@@ -593,8 +673,8 @@
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = global::FEFTwiddler.Properties.Resources.cabbage;
-            this.pictureBox9.Location = new System.Drawing.Point(343, 230);
+            this.pictureBox9.Image = global::FEFTwiddler.Properties.Resources.Material_cabbage;
+            this.pictureBox9.Location = new System.Drawing.Point(450, 229);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(16, 16);
             this.pictureBox9.TabIndex = 30;
@@ -602,8 +682,8 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = global::FEFTwiddler.Properties.Resources.milk;
-            this.pictureBox8.Location = new System.Drawing.Point(343, 204);
+            this.pictureBox8.Image = global::FEFTwiddler.Properties.Resources.Material_milk;
+            this.pictureBox8.Location = new System.Drawing.Point(450, 203);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(16, 16);
             this.pictureBox8.TabIndex = 29;
@@ -611,8 +691,8 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::FEFTwiddler.Properties.Resources.meat;
-            this.pictureBox7.Location = new System.Drawing.Point(343, 178);
+            this.pictureBox7.Image = global::FEFTwiddler.Properties.Resources.Material_meat;
+            this.pictureBox7.Location = new System.Drawing.Point(450, 177);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(16, 16);
             this.pictureBox7.TabIndex = 28;
@@ -620,8 +700,8 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::FEFTwiddler.Properties.Resources.topaz;
-            this.pictureBox6.Location = new System.Drawing.Point(343, 137);
+            this.pictureBox6.Image = global::FEFTwiddler.Properties.Resources.Material_topaz;
+            this.pictureBox6.Location = new System.Drawing.Point(450, 136);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(16, 16);
             this.pictureBox6.TabIndex = 27;
@@ -629,8 +709,8 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::FEFTwiddler.Properties.Resources.emerald;
-            this.pictureBox5.Location = new System.Drawing.Point(343, 111);
+            this.pictureBox5.Image = global::FEFTwiddler.Properties.Resources.Material_emerald;
+            this.pictureBox5.Location = new System.Drawing.Point(450, 110);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(16, 16);
             this.pictureBox5.TabIndex = 26;
@@ -638,8 +718,8 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::FEFTwiddler.Properties.Resources.onyx;
-            this.pictureBox4.Location = new System.Drawing.Point(343, 85);
+            this.pictureBox4.Image = global::FEFTwiddler.Properties.Resources.Material_onyx;
+            this.pictureBox4.Location = new System.Drawing.Point(450, 84);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(16, 16);
             this.pictureBox4.TabIndex = 25;
@@ -647,8 +727,8 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::FEFTwiddler.Properties.Resources.sapphire;
-            this.pictureBox3.Location = new System.Drawing.Point(343, 59);
+            this.pictureBox3.Image = global::FEFTwiddler.Properties.Resources.Material_sapphire;
+            this.pictureBox3.Location = new System.Drawing.Point(450, 58);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(16, 16);
             this.pictureBox3.TabIndex = 24;
@@ -656,8 +736,8 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::FEFTwiddler.Properties.Resources.ruby;
-            this.pictureBox2.Location = new System.Drawing.Point(343, 33);
+            this.pictureBox2.Image = global::FEFTwiddler.Properties.Resources.Material_ruby;
+            this.pictureBox2.Location = new System.Drawing.Point(450, 32);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(16, 16);
             this.pictureBox2.TabIndex = 23;
@@ -665,8 +745,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::FEFTwiddler.Properties.Resources.crystal;
-            this.pictureBox1.Location = new System.Drawing.Point(343, 7);
+            this.pictureBox1.Image = global::FEFTwiddler.Properties.Resources.Material_crystal;
+            this.pictureBox1.Location = new System.Drawing.Point(450, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(16, 16);
             this.pictureBox1.TabIndex = 22;
@@ -674,7 +754,7 @@
             // 
             // numRice
             // 
-            this.numRice.Location = new System.Drawing.Point(440, 282);
+            this.numRice.Location = new System.Drawing.Point(547, 281);
             this.numRice.Maximum = new decimal(new int[] {
             99,
             0,
@@ -686,7 +766,7 @@
             // 
             // numPeaches
             // 
-            this.numPeaches.Location = new System.Drawing.Point(440, 256);
+            this.numPeaches.Location = new System.Drawing.Point(547, 255);
             this.numPeaches.Maximum = new decimal(new int[] {
             99,
             0,
@@ -698,7 +778,7 @@
             // 
             // numDaikon
             // 
-            this.numDaikon.Location = new System.Drawing.Point(440, 230);
+            this.numDaikon.Location = new System.Drawing.Point(547, 229);
             this.numDaikon.Maximum = new decimal(new int[] {
             99,
             0,
@@ -710,7 +790,7 @@
             // 
             // numFish
             // 
-            this.numFish.Location = new System.Drawing.Point(440, 204);
+            this.numFish.Location = new System.Drawing.Point(547, 203);
             this.numFish.Maximum = new decimal(new int[] {
             99,
             0,
@@ -722,7 +802,7 @@
             // 
             // numBeans
             // 
-            this.numBeans.Location = new System.Drawing.Point(440, 178);
+            this.numBeans.Location = new System.Drawing.Point(547, 177);
             this.numBeans.Maximum = new decimal(new int[] {
             99,
             0,
@@ -734,7 +814,7 @@
             // 
             // numWheat
             // 
-            this.numWheat.Location = new System.Drawing.Point(365, 282);
+            this.numWheat.Location = new System.Drawing.Point(472, 281);
             this.numWheat.Maximum = new decimal(new int[] {
             99,
             0,
@@ -746,7 +826,7 @@
             // 
             // numBerries
             // 
-            this.numBerries.Location = new System.Drawing.Point(365, 256);
+            this.numBerries.Location = new System.Drawing.Point(472, 255);
             this.numBerries.Maximum = new decimal(new int[] {
             99,
             0,
@@ -758,7 +838,7 @@
             // 
             // numCabbage
             // 
-            this.numCabbage.Location = new System.Drawing.Point(365, 230);
+            this.numCabbage.Location = new System.Drawing.Point(472, 229);
             this.numCabbage.Maximum = new decimal(new int[] {
             99,
             0,
@@ -770,7 +850,7 @@
             // 
             // numMilk
             // 
-            this.numMilk.Location = new System.Drawing.Point(365, 204);
+            this.numMilk.Location = new System.Drawing.Point(472, 203);
             this.numMilk.Maximum = new decimal(new int[] {
             99,
             0,
@@ -782,7 +862,7 @@
             // 
             // numMeat
             // 
-            this.numMeat.Location = new System.Drawing.Point(365, 178);
+            this.numMeat.Location = new System.Drawing.Point(472, 177);
             this.numMeat.Maximum = new decimal(new int[] {
             99,
             0,
@@ -794,7 +874,7 @@
             // 
             // numAmber
             // 
-            this.numAmber.Location = new System.Drawing.Point(440, 137);
+            this.numAmber.Location = new System.Drawing.Point(547, 136);
             this.numAmber.Maximum = new decimal(new int[] {
             99,
             0,
@@ -806,7 +886,7 @@
             // 
             // numJade
             // 
-            this.numJade.Location = new System.Drawing.Point(440, 111);
+            this.numJade.Location = new System.Drawing.Point(547, 110);
             this.numJade.Maximum = new decimal(new int[] {
             99,
             0,
@@ -818,7 +898,7 @@
             // 
             // numQuartz
             // 
-            this.numQuartz.Location = new System.Drawing.Point(440, 85);
+            this.numQuartz.Location = new System.Drawing.Point(547, 84);
             this.numQuartz.Maximum = new decimal(new int[] {
             99,
             0,
@@ -830,7 +910,7 @@
             // 
             // numLapis
             // 
-            this.numLapis.Location = new System.Drawing.Point(440, 59);
+            this.numLapis.Location = new System.Drawing.Point(547, 58);
             this.numLapis.Maximum = new decimal(new int[] {
             99,
             0,
@@ -842,7 +922,7 @@
             // 
             // numCoral
             // 
-            this.numCoral.Location = new System.Drawing.Point(440, 33);
+            this.numCoral.Location = new System.Drawing.Point(547, 32);
             this.numCoral.Maximum = new decimal(new int[] {
             99,
             0,
@@ -854,7 +934,7 @@
             // 
             // numPearl
             // 
-            this.numPearl.Location = new System.Drawing.Point(440, 7);
+            this.numPearl.Location = new System.Drawing.Point(547, 6);
             this.numPearl.Maximum = new decimal(new int[] {
             99,
             0,
@@ -866,7 +946,7 @@
             // 
             // numTopaz
             // 
-            this.numTopaz.Location = new System.Drawing.Point(365, 137);
+            this.numTopaz.Location = new System.Drawing.Point(472, 136);
             this.numTopaz.Maximum = new decimal(new int[] {
             99,
             0,
@@ -878,7 +958,7 @@
             // 
             // numEmerald
             // 
-            this.numEmerald.Location = new System.Drawing.Point(365, 111);
+            this.numEmerald.Location = new System.Drawing.Point(472, 110);
             this.numEmerald.Maximum = new decimal(new int[] {
             99,
             0,
@@ -890,7 +970,7 @@
             // 
             // numOnyx
             // 
-            this.numOnyx.Location = new System.Drawing.Point(365, 85);
+            this.numOnyx.Location = new System.Drawing.Point(472, 84);
             this.numOnyx.Maximum = new decimal(new int[] {
             99,
             0,
@@ -902,7 +982,7 @@
             // 
             // numSapphire
             // 
-            this.numSapphire.Location = new System.Drawing.Point(365, 59);
+            this.numSapphire.Location = new System.Drawing.Point(472, 58);
             this.numSapphire.Maximum = new decimal(new int[] {
             99,
             0,
@@ -914,7 +994,7 @@
             // 
             // numRuby
             // 
-            this.numRuby.Location = new System.Drawing.Point(365, 33);
+            this.numRuby.Location = new System.Drawing.Point(472, 32);
             this.numRuby.Maximum = new decimal(new int[] {
             99,
             0,
@@ -926,7 +1006,7 @@
             // 
             // numCrystal
             // 
-            this.numCrystal.Location = new System.Drawing.Point(365, 7);
+            this.numCrystal.Location = new System.Drawing.Point(472, 6);
             this.numCrystal.Maximum = new decimal(new int[] {
             99,
             0,
@@ -943,14 +1023,29 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(483, 495);
+            this.tabPage1.Size = new System.Drawing.Size(590, 495);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Character Viewer";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Enter += new System.EventHandler(this.tabPage1_Enter);
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.Controls.Add(this.numInternalLevel);
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.numEternalSeals);
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.numBoots);
+            this.panel1.Controls.Add(this.chkDeployed);
+            this.panel1.Controls.Add(this.numVictories);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.numBattles);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.txtStatBytes);
             this.panel1.Controls.Add(this.lblInventory5);
             this.panel1.Controls.Add(this.lblInventory4);
             this.panel1.Controls.Add(this.lblInventory3);
@@ -1011,8 +1106,163 @@
             this.panel1.Controls.Add(this.lblName);
             this.panel1.Location = new System.Drawing.Point(110, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(367, 485);
+            this.panel1.Size = new System.Drawing.Size(474, 485);
             this.panel1.TabIndex = 1;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(371, 32);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(58, 13);
+            this.label21.TabIndex = 71;
+            this.label21.Text = "Internal LV";
+            // 
+            // numInternalLevel
+            // 
+            this.numInternalLevel.Enabled = false;
+            this.numInternalLevel.Location = new System.Drawing.Point(431, 30);
+            this.numInternalLevel.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numInternalLevel.Name = "numInternalLevel";
+            this.numInternalLevel.Size = new System.Drawing.Size(38, 20);
+            this.numInternalLevel.TabIndex = 70;
+            this.numInternalLevel.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(360, 84);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(69, 13);
+            this.label20.TabIndex = 69;
+            this.label20.Text = "Eternal Seals";
+            // 
+            // numEternalSeals
+            // 
+            this.numEternalSeals.Location = new System.Drawing.Point(431, 82);
+            this.numEternalSeals.Maximum = new decimal(new int[] {
+            47,
+            0,
+            0,
+            0});
+            this.numEternalSeals.Name = "numEternalSeals";
+            this.numEternalSeals.Size = new System.Drawing.Size(38, 20);
+            this.numEternalSeals.TabIndex = 68;
+            this.numEternalSeals.ValueChanged += new System.EventHandler(this.numEternalSeals_ValueChanged);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(395, 110);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(34, 13);
+            this.label19.TabIndex = 67;
+            this.label19.Text = "Boots";
+            // 
+            // numBoots
+            // 
+            this.numBoots.Location = new System.Drawing.Point(431, 108);
+            this.numBoots.Maximum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.numBoots.Name = "numBoots";
+            this.numBoots.Size = new System.Drawing.Size(38, 20);
+            this.numBoots.TabIndex = 66;
+            this.numBoots.ValueChanged += new System.EventHandler(this.numBoots_ValueChanged);
+            // 
+            // chkDeployed
+            // 
+            this.chkDeployed.AutoSize = true;
+            this.chkDeployed.Enabled = false;
+            this.chkDeployed.Location = new System.Drawing.Point(8, 101);
+            this.chkDeployed.Name = "chkDeployed";
+            this.chkDeployed.Size = new System.Drawing.Size(106, 17);
+            this.chkDeployed.TabIndex = 65;
+            this.chkDeployed.Text = "Deployed to map";
+            this.chkDeployed.UseVisualStyleBackColor = true;
+            // 
+            // numVictories
+            // 
+            this.numVictories.Location = new System.Drawing.Point(299, 324);
+            this.numVictories.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numVictories.Name = "numVictories";
+            this.numVictories.Size = new System.Drawing.Size(57, 20);
+            this.numVictories.TabIndex = 64;
+            this.numVictories.ValueChanged += new System.EventHandler(this.numVictories_ValueChanged);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(232, 326);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(47, 13);
+            this.label18.TabIndex = 63;
+            this.label18.Text = "Victories";
+            // 
+            // numBattles
+            // 
+            this.numBattles.Location = new System.Drawing.Point(299, 298);
+            this.numBattles.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numBattles.Name = "numBattles";
+            this.numBattles.Size = new System.Drawing.Size(57, 20);
+            this.numBattles.TabIndex = 62;
+            this.numBattles.ValueChanged += new System.EventHandler(this.numBattles_ValueChanged);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(232, 300);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(39, 13);
+            this.label17.TabIndex = 61;
+            this.label17.Text = "Battles";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(96, 43);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(104, 13);
+            this.label15.TabIndex = 60;
+            this.label15.Text = "(Edits are not saved)";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(5, 43);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(57, 13);
+            this.label14.TabIndex = 59;
+            this.label14.Text = "Stat bytes:";
+            // 
+            // txtStatBytes
+            // 
+            this.txtStatBytes.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStatBytes.Location = new System.Drawing.Point(8, 59);
+            this.txtStatBytes.Multiline = true;
+            this.txtStatBytes.Name = "txtStatBytes";
+            this.txtStatBytes.Size = new System.Drawing.Size(192, 34);
+            this.txtStatBytes.TabIndex = 58;
+            this.txtStatBytes.Text = "Stats";
             // 
             // lblInventory5
             // 
@@ -1150,7 +1400,6 @@
             // 
             // numStone
             // 
-            this.numStone.Enabled = false;
             this.numStone.Location = new System.Drawing.Point(316, 271);
             this.numStone.Maximum = new decimal(new int[] {
             251,
@@ -1174,7 +1423,7 @@
             // 
             // pictureBox30
             // 
-            this.pictureBox30.Image = global::FEFTwiddler.Properties.Resources.stone;
+            this.pictureBox30.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_stone;
             this.pictureBox30.Location = new System.Drawing.Point(316, 249);
             this.pictureBox30.Name = "pictureBox30";
             this.pictureBox30.Size = new System.Drawing.Size(16, 16);
@@ -1183,7 +1432,6 @@
             // 
             // numStaff
             // 
-            this.numStaff.Enabled = false;
             this.numStaff.Location = new System.Drawing.Point(272, 271);
             this.numStaff.Maximum = new decimal(new int[] {
             251,
@@ -1207,7 +1455,7 @@
             // 
             // pictureBox28
             // 
-            this.pictureBox28.Image = global::FEFTwiddler.Properties.Resources.staff;
+            this.pictureBox28.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_staff;
             this.pictureBox28.Location = new System.Drawing.Point(272, 249);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(16, 16);
@@ -1216,7 +1464,6 @@
             // 
             // numTome
             // 
-            this.numTome.Enabled = false;
             this.numTome.Location = new System.Drawing.Point(228, 271);
             this.numTome.Maximum = new decimal(new int[] {
             251,
@@ -1240,7 +1487,7 @@
             // 
             // pictureBox29
             // 
-            this.pictureBox29.Image = global::FEFTwiddler.Properties.Resources.tome;
+            this.pictureBox29.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_tome;
             this.pictureBox29.Location = new System.Drawing.Point(228, 249);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(16, 16);
@@ -1249,7 +1496,6 @@
             // 
             // numBow
             // 
-            this.numBow.Enabled = false;
             this.numBow.Location = new System.Drawing.Point(184, 271);
             this.numBow.Maximum = new decimal(new int[] {
             251,
@@ -1273,7 +1519,7 @@
             // 
             // pictureBox26
             // 
-            this.pictureBox26.Image = global::FEFTwiddler.Properties.Resources.bow;
+            this.pictureBox26.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_bow;
             this.pictureBox26.Location = new System.Drawing.Point(184, 249);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(16, 16);
@@ -1282,7 +1528,6 @@
             // 
             // numShuriken
             // 
-            this.numShuriken.Enabled = false;
             this.numShuriken.Location = new System.Drawing.Point(140, 271);
             this.numShuriken.Maximum = new decimal(new int[] {
             251,
@@ -1306,7 +1551,7 @@
             // 
             // pictureBox27
             // 
-            this.pictureBox27.Image = global::FEFTwiddler.Properties.Resources.shuriken;
+            this.pictureBox27.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_shuriken;
             this.pictureBox27.Location = new System.Drawing.Point(140, 249);
             this.pictureBox27.Name = "pictureBox27";
             this.pictureBox27.Size = new System.Drawing.Size(16, 16);
@@ -1315,7 +1560,6 @@
             // 
             // numAxe
             // 
-            this.numAxe.Enabled = false;
             this.numAxe.Location = new System.Drawing.Point(96, 271);
             this.numAxe.Maximum = new decimal(new int[] {
             251,
@@ -1339,7 +1583,7 @@
             // 
             // pictureBox25
             // 
-            this.pictureBox25.Image = global::FEFTwiddler.Properties.Resources.axe;
+            this.pictureBox25.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_axe;
             this.pictureBox25.Location = new System.Drawing.Point(96, 249);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(16, 16);
@@ -1348,7 +1592,6 @@
             // 
             // numLance
             // 
-            this.numLance.Enabled = false;
             this.numLance.Location = new System.Drawing.Point(52, 271);
             this.numLance.Maximum = new decimal(new int[] {
             251,
@@ -1372,7 +1615,7 @@
             // 
             // pictureBox24
             // 
-            this.pictureBox24.Image = global::FEFTwiddler.Properties.Resources.lance;
+            this.pictureBox24.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_lance;
             this.pictureBox24.Location = new System.Drawing.Point(52, 249);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(16, 16);
@@ -1381,7 +1624,6 @@
             // 
             // numSword
             // 
-            this.numSword.Enabled = false;
             this.numSword.Location = new System.Drawing.Point(8, 271);
             this.numSword.Maximum = new decimal(new int[] {
             251,
@@ -1405,7 +1647,7 @@
             // 
             // pictureBox23
             // 
-            this.pictureBox23.Image = global::FEFTwiddler.Properties.Resources.sword;
+            this.pictureBox23.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_sword;
             this.pictureBox23.Location = new System.Drawing.Point(8, 249);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(16, 16);
@@ -1497,7 +1739,7 @@
             // 
             this.chkRecruited.AutoSize = true;
             this.chkRecruited.Enabled = false;
-            this.chkRecruited.Location = new System.Drawing.Point(8, 143);
+            this.chkRecruited.Location = new System.Drawing.Point(8, 170);
             this.chkRecruited.Name = "chkRecruited";
             this.chkRecruited.Size = new System.Drawing.Size(131, 17);
             this.chkRecruited.TabIndex = 18;
@@ -1508,7 +1750,7 @@
             // 
             this.chkEinherjar.AutoSize = true;
             this.chkEinherjar.Enabled = false;
-            this.chkEinherjar.Location = new System.Drawing.Point(8, 120);
+            this.chkEinherjar.Location = new System.Drawing.Point(8, 147);
             this.chkEinherjar.Name = "chkEinherjar";
             this.chkEinherjar.Size = new System.Drawing.Size(151, 17);
             this.chkEinherjar.TabIndex = 17;
@@ -1519,7 +1761,7 @@
             // 
             this.chkDead.AutoSize = true;
             this.chkDead.Enabled = false;
-            this.chkDead.Location = new System.Drawing.Point(8, 97);
+            this.chkDead.Location = new System.Drawing.Point(8, 124);
             this.chkDead.Name = "chkDead";
             this.chkDead.Size = new System.Drawing.Size(52, 17);
             this.chkDead.TabIndex = 16;
@@ -1529,7 +1771,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(288, 34);
+            this.label2.Location = new System.Drawing.Point(401, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 15;
@@ -1537,8 +1779,7 @@
             // 
             // numExperience
             // 
-            this.numExperience.Enabled = false;
-            this.numExperience.Location = new System.Drawing.Point(318, 32);
+            this.numExperience.Location = new System.Drawing.Point(431, 56);
             this.numExperience.Maximum = new decimal(new int[] {
             99,
             0,
@@ -1547,11 +1788,12 @@
             this.numExperience.Name = "numExperience";
             this.numExperience.Size = new System.Drawing.Size(38, 20);
             this.numExperience.TabIndex = 14;
+            this.numExperience.ValueChanged += new System.EventHandler(this.numExperience_ValueChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(296, 8);
+            this.label1.Location = new System.Drawing.Point(409, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(20, 13);
             this.label1.TabIndex = 13;
@@ -1559,8 +1801,12 @@
             // 
             // numLevel
             // 
-            this.numLevel.Enabled = false;
-            this.numLevel.Location = new System.Drawing.Point(318, 5);
+            this.numLevel.Location = new System.Drawing.Point(431, 4);
+            this.numLevel.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
             this.numLevel.Minimum = new decimal(new int[] {
             1,
             0,
@@ -1574,6 +1820,7 @@
             0,
             0,
             0});
+            this.numLevel.ValueChanged += new System.EventHandler(this.numLevel_ValueChanged);
             // 
             // cmbSkill5
             // 
@@ -1665,7 +1912,7 @@
             // 
             this.cmbClass.Enabled = false;
             this.cmbClass.FormattingEnabled = true;
-            this.cmbClass.Location = new System.Drawing.Point(149, 4);
+            this.cmbClass.Location = new System.Drawing.Point(235, 4);
             this.cmbClass.Name = "cmbClass";
             this.cmbClass.Size = new System.Drawing.Size(121, 21);
             this.cmbClass.TabIndex = 1;
@@ -1691,16 +1938,27 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnMaxBoots);
             this.tabPage2.Controls.Add(this.btnMaxWeaponExp);
             this.tabPage2.Controls.Add(this.btnGiveEternalSeals);
             this.tabPage2.Controls.Add(this.btnAllSkillsNoNpc);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(483, 495);
+            this.tabPage2.Size = new System.Drawing.Size(569, 495);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Megacheats";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnMaxBoots
+            // 
+            this.btnMaxBoots.Location = new System.Drawing.Point(7, 238);
+            this.btnMaxBoots.Name = "btnMaxBoots";
+            this.btnMaxBoots.Size = new System.Drawing.Size(218, 71);
+            this.btnMaxBoots.TabIndex = 3;
+            this.btnMaxBoots.Text = "Make all characters have 2 Boots (movement +2)";
+            this.btnMaxBoots.UseVisualStyleBackColor = true;
+            this.btnMaxBoots.Click += new System.EventHandler(this.btnMaxBoots_Click);
             // 
             // btnMaxWeaponExp
             // 
@@ -1738,33 +1996,14 @@
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(6, 166);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(232, 13);
-            this.label12.TabIndex = 55;
-            this.label12.Text = "These will last until you update your castle data.";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(6, 181);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(263, 13);
-            this.label13.TabIndex = 56;
-            this.label13.Text = "After that, the values will revert to what\'s stored online.";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(517, 561);
+            this.ClientSize = new System.Drawing.Size(624, 561);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "FEFTwiddler";
@@ -1773,6 +2012,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numDragonVeinPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numVisitPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBattlePoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numGold)).EndInit();
@@ -1823,6 +2063,11 @@
             this.tabPage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numInternalLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numEternalSeals)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBoots)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numVictories)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBattles)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStaff)).EndInit();
@@ -1984,6 +2229,24 @@
         private System.Windows.Forms.Button btn9999BattlePoints;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtStatBytes;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button btn99DragonVeinPoints;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.NumericUpDown numDragonVeinPoints;
+        private System.Windows.Forms.NumericUpDown numBattles;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.NumericUpDown numVictories;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.CheckBox chkDeployed;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.NumericUpDown numBoots;
+        private System.Windows.Forms.Button btnMaxBoots;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.NumericUpDown numEternalSeals;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.NumericUpDown numInternalLevel;
     }
 }
 

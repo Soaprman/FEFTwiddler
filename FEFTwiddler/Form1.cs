@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
+using FEFTwiddler.Extensions;
 
 namespace FEFTwiddler
 {
@@ -10,7 +12,10 @@ namespace FEFTwiddler
         private Model.ChapterSave _chapterSave;
         private Model.Character _selectedCharacter;
 
+        private Data.CharacterDatabase _characterDatabase;
+        private Data.ClassDatabase _classDatabase;
         private Data.ItemDatabase _itemDatabase;
+        private Data.SkillDatabase _skillDatabase;
 
         public Form1()
         {
@@ -20,26 +25,39 @@ namespace FEFTwiddler
 
         private void InitializeDatabases()
         {
-            _itemDatabase = new Data.ItemDatabase();
+            // TODO: Let user specify language
+            // Will need to call SetLanguage on all databases when switching and refresh GUI for display names
+            _characterDatabase = new Data.CharacterDatabase(Enums.Language.English);
+            _classDatabase = new Data.ClassDatabase(Enums.Language.English);
+            _itemDatabase = new Data.ItemDatabase(Enums.Language.English);
+            _skillDatabase = new Data.SkillDatabase(Enums.Language.English);
         }
 
         private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            openFileDialog1.FileName = "";
+
+            var startupPath = Config.StartupPath;
+            if (startupPath == "" || !Directory.Exists(startupPath)) startupPath = Application.StartupPath;
+            openFileDialog1.InitialDirectory = startupPath;
+
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                _saveFile = Model.SaveFile.FromPath(openFileDialog1.FileName);
+                Config.StartupPath = Path.GetDirectoryName(openFileDialog1.FileName);
 
-                if (_saveFile.Type != Enums.SaveFileType.Chapter)
+                var saveFile = Model.SaveFile.FromPath(openFileDialog1.FileName);
+
+                if (saveFile.Type != Enums.SaveFileType.Chapter)
                 {
                     MessageBox.Show("This type of save is not supported yet. Only 'Chapter' saves are supported right now.");
                     return;
                 }
-                // TODO: Remove this after working out the last issues with compressed saves
-                if (_saveFile.IsCompressed)
+                else
                 {
-                    MessageBox.Show("Compressed saves are not supported yet. Please decompress your save using a program like FEST first.");
-                    return;
+                    _saveFile = saveFile;
                 }
+
+                UpdateTitleBar(openFileDialog1.FileName);
 
                 _chapterSave = Model.ChapterSave.FromSaveFile(_saveFile);
 
@@ -59,6 +77,14 @@ namespace FEFTwiddler
 
                 listBox1.SelectedIndex = 0;
             }
+        }
+
+        private void UpdateTitleBar(string path)
+        {
+            var directory = Path.GetDirectoryName(path);
+            if (directory.Length > 36) directory = "..." + directory.Right(36); // Arbitary choice that I find tends to fit
+            var truncatedPath = directory + "\\" + Path.GetFileName(path);
+            this.Text = "FEFTwiddler - " + truncatedPath;
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -109,6 +135,8 @@ namespace FEFTwiddler
 
             numGold.Value = _chapterSave.Gold;
 
+            numDragonVeinPoints.Value = _chapterSave.DragonVeinPoint / 100;
+
             numAmber.Value = _chapterSave.MaterialQuantity_Amber;
             numBeans.Value = _chapterSave.MaterialQuantity_Beans;
             numBerries.Value = _chapterSave.MaterialQuantity_Berries;
@@ -139,24 +167,39 @@ namespace FEFTwiddler
 
         private void LoadCharacter(Model.Character character)
         {
-            lblName.Text = character.CharacterID.ToString();
-            cmbClass.Text = character.ClassID.ToString();
-            numLevel.Value = character.Level;
-            numExperience.Value = character.Experience;
+            if (Enum.IsDefined(typeof(Enums.Character), character.CharacterID))
+                lblName.Text = _characterDatabase.GetByID(character.CharacterID).DisplayName;
+            else
+                lblName.Text = character.CharacterID.ToString();
+            if (Enum.IsDefined(typeof(Enums.Class), character.ClassID))
+                cmbClass.Text = _classDatabase.GetByID(character.ClassID).DisplayName;
+            else
+                cmbClass.Text = character.ClassID.ToString();
 
+            // Set eternal seals before level, since level's range is restricted by eternal seals
+            numEternalSeals.Maximum = character.GetMaxEternalSealsUsed();
+            numEternalSeals.Value = character.FixEternalSealsUsed();
+            numLevel.Maximum = character.GetTheoreticalMaxLevel();
+            numLevel.Value = character.FixLevel();
+
+            numInternalLevel.Value = character.InternalLevel;
+            numExperience.Value = character.Experience;
+            numBoots.Value = Model.Character.FixBoots(character.Boots);
+
+            chkDeployed.Checked = character.IsDeployed;
             chkDead.Checked = character.IsDead;
             chkEinherjar.Checked = character.IsEinherjar;
             chkRecruited.Checked = character.IsRecruited;
 
-            cmbSkill1.Text = character.EquippedSkill_1.ToString();
+            cmbSkill1.Text = _skillDatabase.GetByID(character.EquippedSkill_1).DisplayName;
             pictSkill1.Image = GetSkillImage(character.EquippedSkill_1);
-            cmbSkill2.Text = character.EquippedSkill_2.ToString();
+            cmbSkill2.Text = _skillDatabase.GetByID(character.EquippedSkill_2).DisplayName;
             pictSkill2.Image = GetSkillImage(character.EquippedSkill_2);
-            cmbSkill3.Text = character.EquippedSkill_3.ToString();
+            cmbSkill3.Text = _skillDatabase.GetByID(character.EquippedSkill_3).DisplayName;
             pictSkill3.Image = GetSkillImage(character.EquippedSkill_3);
-            cmbSkill4.Text = character.EquippedSkill_4.ToString();
+            cmbSkill4.Text = _skillDatabase.GetByID(character.EquippedSkill_4).DisplayName;
             pictSkill4.Image = GetSkillImage(character.EquippedSkill_4);
-            cmbSkill5.Text = character.EquippedSkill_5.ToString();
+            cmbSkill5.Text = _skillDatabase.GetByID(character.EquippedSkill_5).DisplayName;
             pictSkill5.Image = GetSkillImage(character.EquippedSkill_5);
 
             cmbHeadwear.Text = character.Headwear.ToString();
@@ -164,20 +207,25 @@ namespace FEFTwiddler
             cmbArmwear.Text = character.Armwear.ToString();
             cmbUnderwear.Text = character.Underwear.ToString();
 
-            numSword.Value = character.WeaponExperience_Sword;
-            numLance.Value = character.WeaponExperience_Lance;
-            numAxe.Value = character.WeaponExperience_Axe;
-            numShuriken.Value = character.WeaponExperience_Shuriken;
-            numBow.Value = character.WeaponExperience_Bow;
-            numTome.Value = character.WeaponExperience_Tome;
-            numStaff.Value = character.WeaponExperience_Staff;
-            numStone.Value = character.WeaponExperience_Stone;
+            numSword.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Sword);
+            numLance.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Lance);
+            numAxe.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Axe);
+            numShuriken.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Shuriken);
+            numBow.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Bow);
+            numTome.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Tome);
+            numStaff.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Staff);
+            numStone.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Stone);
 
             lblInventory1.Text = GetItemString(character.Item_1);
             lblInventory2.Text = GetItemString(character.Item_2);
             lblInventory3.Text = GetItemString(character.Item_3);
             lblInventory4.Text = GetItemString(character.Item_4);
             lblInventory5.Text = GetItemString(character.Item_5);
+
+            txtStatBytes.Text = GetStatBytesString(character);
+
+            numBattles.Value = character.BattleCount;
+            numVictories.Value = character.VictoryCount;
 
             //EnableControls();
         }
@@ -200,10 +248,58 @@ namespace FEFTwiddler
         private Bitmap GetSkillImage(Enums.Skill skillId)
         {
             var id = ((byte)skillId).ToString();
-            if (id.Length == 1) id = "0" + id;
-            var img = Properties.Resources.ResourceManager.GetObject("fe15skill_" + id);
+            if (id.Length == 1) id = "00" + id;
+            else if (id.Length == 2) id = "0" + id;
+            var img = Properties.Resources.ResourceManager.GetObject("Skill_" + id);
 
             return (Bitmap)img;
+        }
+
+        private string GetStatBytesString(Model.Character character)
+        {
+            var str = "";
+
+            if (Enum.IsDefined(typeof(Enums.Character), character.CharacterID) &&
+                Enum.IsDefined(typeof(Enums.Class), character.ClassID))
+            {
+                var characterData = _characterDatabase.GetByID(character.CharacterID);
+                var classData = _classDatabase.GetByID(character.ClassID);
+                byte[] trueStats = new byte[] {
+                    (byte)(characterData.Base_HP  + classData.Base_HP  + character.StatBytes1[0]),
+                    (byte)(characterData.Base_Str + classData.Base_Str + character.StatBytes1[1]),
+                    (byte)(characterData.Base_Mag + classData.Base_Mag + character.StatBytes1[2]),
+                    (byte)(characterData.Base_Skl + classData.Base_Skl + character.StatBytes1[3]),
+                    (byte)(characterData.Base_Spd + classData.Base_Spd + character.StatBytes1[4]),
+                    (byte)(characterData.Base_Lck + classData.Base_Lck + character.StatBytes1[5]),
+                    (byte)(characterData.Base_Def + classData.Base_Def + character.StatBytes1[6]),
+                    (byte)(characterData.Base_Res + classData.Base_Res + character.StatBytes1[7])
+                };
+                byte[] caps = new byte[] {
+                    (byte)(classData.Max_HP  + characterData.Modifier_HP  + character.StatueBonuses[0]),
+                    (byte)(classData.Max_Str + characterData.Modifier_Str + character.StatueBonuses[1]),
+                    (byte)(classData.Max_Mag + characterData.Modifier_Mag + character.StatueBonuses[2]),
+                    (byte)(classData.Max_Skl + characterData.Modifier_Skl + character.StatueBonuses[3]),
+                    (byte)(classData.Max_Spd + characterData.Modifier_Spd + character.StatueBonuses[4]),
+                    (byte)(classData.Max_Lck + characterData.Modifier_Lck + character.StatueBonuses[5]),
+                    (byte)(classData.Max_Def + characterData.Modifier_Def + character.StatueBonuses[6]),
+                    (byte)(classData.Max_Res + characterData.Modifier_Res + character.StatueBonuses[7])
+                };
+                for (int i = 0; i < 8; i++)
+                {
+                    if (trueStats[i] < caps[i])
+                        str += trueStats[i].ToString() + '-';
+                    else
+                        str += caps[i].ToString() + '-';
+                }
+            }
+            else
+            {
+                str += BitConverter.ToString((byte[])(Array)character.StatBytes1);
+                str += Environment.NewLine;
+                str += BitConverter.ToString((byte[])(Array)character.StatBytes2);
+            }
+
+            return str;
         }
 
         private void EnableControls()
@@ -264,6 +360,15 @@ namespace FEFTwiddler
             foreach (var character in _chapterSave.Characters)
             {
                 character.SRankAllWeapons();
+            }
+            MessageBox.Show("Done!");
+        }
+
+        private void btnMaxBoots_Click(object sender, EventArgs e)
+        {
+            foreach (var character in _chapterSave.Characters)
+            {
+                character.Boots = Model.Character.MaxBoots;
             }
             MessageBox.Show("Done!");
         }
@@ -371,13 +476,13 @@ namespace FEFTwiddler
             var equipped = (item.IsEquipped ? "(E) " : "");
             var displayName = data.DisplayName;
             string uses;
-            if (data.Type == Enums.ItemType.Sword || 
-                data.Type == Enums.ItemType.Lance || 
-                data.Type == Enums.ItemType.Axe || 
-                data.Type == Enums.ItemType.Shuriken || 
-                data.Type == Enums.ItemType.Bow || 
-                data.Type == Enums.ItemType.Tome || 
-                data.Type == Enums.ItemType.Stone || 
+            if (data.Type == Enums.ItemType.Sword ||
+                data.Type == Enums.ItemType.Lance ||
+                data.Type == Enums.ItemType.Axe ||
+                data.Type == Enums.ItemType.Shuriken ||
+                data.Type == Enums.ItemType.Bow ||
+                data.Type == Enums.ItemType.Tome ||
+                data.Type == Enums.ItemType.Stone ||
                 data.Type == Enums.ItemType.NPC ||
                 data.Type == Enums.ItemType.Unknown)
             {
@@ -392,6 +497,11 @@ namespace FEFTwiddler
             return String.Format("{0} {1} {2} {3}", equipped, displayName, uses, nameId);
         }
 
+        private void btn99DragonVeinPoints_Click(object sender, EventArgs e)
+        {
+            numDragonVeinPoints.Value = 99;
+        }
+
         private void btn9999BattlePoints_Click(object sender, EventArgs e)
         {
             numBattlePoints.Value = 9999;
@@ -402,14 +512,91 @@ namespace FEFTwiddler
             numVisitPoints.Value = 9999;
         }
 
+        private void numDragonVeinPoints_ValueChanged(object sender, EventArgs e)
+        {
+            _chapterSave.DragonVeinPoint = (ushort)(numDragonVeinPoints.Value * 100);
+        }
+
         private void numBattlePoints_ValueChanged(object sender, EventArgs e)
         {
             _chapterSave.BattlePoints = (uint)numBattlePoints.Value;
         }
 
+        private void numBattles_ValueChanged(object sender, EventArgs e)
+        {
+            _selectedCharacter.BattleCount = (ushort)numBattles.Value;
+        }
+
+        private void numVictories_ValueChanged(object sender, EventArgs e)
+        {
+            _selectedCharacter.VictoryCount = (ushort)numVictories.Value;
+        }
+
         private void numVisitPoints_ValueChanged(object sender, EventArgs e)
         {
             _chapterSave.VisitPoints = (uint)numVisitPoints.Value;
+        }
+
+        private void tabPage1_Enter(object sender, EventArgs e)
+        {
+            LoadCharacter(_selectedCharacter);
+        }
+
+        private void numBoots_ValueChanged(object sender, EventArgs e)
+        {
+            _selectedCharacter.Boots = (byte)numBoots.Value;
+        }
+
+        private void numLevel_ValueChanged(object sender, EventArgs e)
+        {
+            _selectedCharacter.Level = (byte)numLevel.Value;
+
+            var minEternalSeals = _selectedCharacter.GetMinimumEternalSealsForCurrentLevel();
+            if (_selectedCharacter.EternalSealsUsed < minEternalSeals)
+            {
+                numEternalSeals.Value = minEternalSeals;
+                _selectedCharacter.EternalSealsUsed = minEternalSeals;
+            }
+
+            var maxLevel = _selectedCharacter.GetModifiedMaxLevel();
+            if (_selectedCharacter.Level == maxLevel)
+            {
+                numExperience.Value = 0;
+                _selectedCharacter.Experience = 0;
+                numExperience.Enabled = false;
+            }
+            else
+            {
+                numExperience.Enabled = true;
+            }
+        }
+
+        private void numEternalSeals_ValueChanged(object sender, EventArgs e)
+        {
+            _selectedCharacter.EternalSealsUsed = (byte)numEternalSeals.Value;
+
+            var maxLevel = _selectedCharacter.GetModifiedMaxLevel();
+            if (_selectedCharacter.Level > maxLevel)
+            {
+                numLevel.Value = maxLevel;
+                _selectedCharacter.Level = maxLevel;
+            }
+
+            if (_selectedCharacter.Level == maxLevel)
+            {
+                numExperience.Value = 0;
+                _selectedCharacter.Experience = 0;
+                numExperience.Enabled = false;
+            }
+            else
+            {
+                numExperience.Enabled = true;
+            }
+        }
+
+        private void numExperience_ValueChanged(object sender, EventArgs e)
+        {
+            _selectedCharacter.Experience = (byte)numExperience.Value;
         }
     }
 }

@@ -9,7 +9,7 @@ namespace FEFTwiddlerTest.Data
     {
         private ItemDatabase GetInstance()
         {
-            return new ItemDatabase();
+            return new ItemDatabase(FEFTwiddler.Enums.Language.English);
         }
 
         [TestMethod]
