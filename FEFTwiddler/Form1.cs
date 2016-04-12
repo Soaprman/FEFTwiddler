@@ -6,7 +6,7 @@ using FEFTwiddler.Extensions;
 
 namespace FEFTwiddler
 {
-    public partial class Form1 : Form
+    public partial class FEFTwiddler : Form
     {
         private Model.SaveFile _saveFile;
         private Model.ChapterSave _chapterSave;
@@ -17,7 +17,7 @@ namespace FEFTwiddler
         private Data.ItemDatabase _itemDatabase;
         private Data.SkillDatabase _skillDatabase;
 
-        public Form1()
+        public FEFTwiddler()
         {
             InitializeComponent();
             InitializeDatabases();
@@ -76,6 +76,22 @@ namespace FEFTwiddler
                 tabControl1.Enabled = true;
 
                 listBox1.SelectedIndex = 0;
+            }
+        }
+
+        private void UpdateHairColor(object sender, EventArgs e)
+        {
+            Byte[] NewHairColor = {0,0,0,255};
+            if(HairColorHex.Text.Length == 6 &&
+               Byte.TryParse(HairColorHex.Text.Substring(0,2), System.Globalization.NumberStyles.HexNumber, null, out NewHairColor[0]) &&
+               Byte.TryParse(HairColorHex.Text.Substring(2,2), System.Globalization.NumberStyles.HexNumber, null, out NewHairColor[1]) &&
+               Byte.TryParse(HairColorHex.Text.Substring(4,2), System.Globalization.NumberStyles.HexNumber, null, out NewHairColor[2]))
+            {
+                HairColor.BackColor = Color.FromArgb(NewHairColor[3],
+                                                     NewHairColor[2],
+                                                     NewHairColor[1],
+                                                     NewHairColor[0]);
+                _selectedCharacter.HairColor = NewHairColor;
             }
         }
 
@@ -176,6 +192,15 @@ namespace FEFTwiddler
             else
                 cmbClass.Text = character.ClassID.ToString();
 
+            HairColor.BackColor = Color.FromArgb( character.HairColor[3],
+                                                  character.HairColor[2],
+                                                  character.HairColor[1],
+                                                  character.HairColor[0]);
+            HairColorHex.Text = String.Format(  "{0:X2}{1:X2}{2:X2}",
+                                                character.HairColor[0],
+                                                character.HairColor[1],
+                                                character.HairColor[2]);
+
             // Set eternal seals before level, since level's range is restricted by eternal seals
             numEternalSeals.Maximum = character.GetMaxEternalSealsUsed();
             numEternalSeals.Value = character.FixEternalSealsUsed();
@@ -247,10 +272,8 @@ namespace FEFTwiddler
 
         private Bitmap GetSkillImage(Enums.Skill skillId)
         {
-            var id = ((byte)skillId).ToString();
-            if (id.Length == 1) id = "00" + id;
-            else if (id.Length == 2) id = "0" + id;
-            var img = Properties.Resources.ResourceManager.GetObject("Skill_" + id);
+            var img = Properties.Resources.ResourceManager.GetObject(
+                        String.Format("Skill_{0,000}", (byte)skillId));
 
             return (Bitmap)img;
         }
@@ -337,11 +360,38 @@ namespace FEFTwiddler
             MessageBox.Show("File saved. Hope you made a backup!");
         }
 
-        private void btnAllSkillsNoNpc_Click(object sender, EventArgs e)
+        private void btnAllCharAllSkills_Click(object sender, EventArgs e)
         {
             foreach (var character in _chapterSave.Characters)
             {
-                character.LearnAllNonNpcSkills();
+                character.LearnAllSkills();
+            }
+            MessageBox.Show("Done!");
+        }
+
+        private void btnAllCharAllSkillsDLC_Click(object sender, EventArgs e)
+        {
+            foreach (var character in _chapterSave.Characters)
+            {
+                character.LearnAllSkillsDLC();
+            }
+            MessageBox.Show("Done!");
+        }
+
+        private void btnAllCharAllSkillsEnemy_Click(object sender, EventArgs e)
+        {
+            foreach (var character in _chapterSave.Characters)
+            {
+                character.LearnAllSkillsEnemy();
+            }
+            MessageBox.Show("Done!");
+        }
+
+        private void btnAllCharMaxStatue_Click(object sender, EventArgs e)
+        {
+            foreach (var character in _chapterSave.Characters)
+            {
+                character.maxStatue();
             }
             MessageBox.Show("Done!");
         }
@@ -597,6 +647,26 @@ namespace FEFTwiddler
         private void numExperience_ValueChanged(object sender, EventArgs e)
         {
             _selectedCharacter.Experience = (byte)numExperience.Value;
+        }
+
+        private void btnAllSkills_Click(object sender, EventArgs e)
+        {
+            _selectedCharacter.LearnAllSkills();
+        }
+
+        private void btnDLCSkills_Click(object sender, EventArgs e)
+        {
+            _selectedCharacter.LearnAllSkillsDLC();
+        }
+
+        private void btnEnemySkills_Click(object sender, EventArgs e)
+        {
+            _selectedCharacter.LearnAllSkillsEnemy();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
