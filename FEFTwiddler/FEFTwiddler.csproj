@@ -87,6 +87,7 @@
     <Compile Include="Model\Building.cs" />
     <Compile Include="Model\ChapterSave.cs" />
     <Compile Include="Model\Character.cs" />
+    <Compile Include="Model\Class.cs" />
     <Compile Include="Model\ConvoyItem.cs" />
     <Compile Include="Model\InventoryItem.cs" />
     <Compile Include="Model\ISave.cs" />

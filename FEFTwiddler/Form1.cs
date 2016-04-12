@@ -175,7 +175,14 @@ namespace FEFTwiddler
                 cmbClass.Text = _classDatabase.GetByID(character.ClassID).DisplayName;
             else
                 cmbClass.Text = character.ClassID.ToString();
-            numLevel.Value = character.Level;
+
+            // Set eternal seals before level, since level's range is restricted by eternal seals
+            numEternalSeals.Maximum = character.GetMaxEternalSealsUsed();
+            numEternalSeals.Value = character.FixEternalSealsUsed();
+            numLevel.Maximum = character.GetTheoreticalMaxLevel();
+            numLevel.Value = character.FixLevel();
+
+            numInternalLevel.Value = character.InternalLevel;
             numExperience.Value = character.Experience;
             numBoots.Value = Model.Character.FixBoots(character.Boots);
 
@@ -538,6 +545,58 @@ namespace FEFTwiddler
         private void numBoots_ValueChanged(object sender, EventArgs e)
         {
             _selectedCharacter.Boots = (byte)numBoots.Value;
+        }
+
+        private void numLevel_ValueChanged(object sender, EventArgs e)
+        {
+            _selectedCharacter.Level = (byte)numLevel.Value;
+
+            var minEternalSeals = _selectedCharacter.GetMinimumEternalSealsForCurrentLevel();
+            if (_selectedCharacter.EternalSealsUsed < minEternalSeals)
+            {
+                numEternalSeals.Value = minEternalSeals;
+                _selectedCharacter.EternalSealsUsed = minEternalSeals;
+            }
+
+            var maxLevel = _selectedCharacter.GetModifiedMaxLevel();
+            if (_selectedCharacter.Level == maxLevel)
+            {
+                numExperience.Value = 0;
+                _selectedCharacter.Experience = 0;
+                numExperience.Enabled = false;
+            }
+            else
+            {
+                numExperience.Enabled = true;
+            }
+        }
+
+        private void numEternalSeals_ValueChanged(object sender, EventArgs e)
+        {
+            _selectedCharacter.EternalSealsUsed = (byte)numEternalSeals.Value;
+
+            var maxLevel = _selectedCharacter.GetModifiedMaxLevel();
+            if (_selectedCharacter.Level > maxLevel)
+            {
+                numLevel.Value = maxLevel;
+                _selectedCharacter.Level = maxLevel;
+            }
+
+            if (_selectedCharacter.Level == maxLevel)
+            {
+                numExperience.Value = 0;
+                _selectedCharacter.Experience = 0;
+                numExperience.Enabled = false;
+            }
+            else
+            {
+                numExperience.Enabled = true;
+            }
+        }
+
+        private void numExperience_ValueChanged(object sender, EventArgs e)
+        {
+            _selectedCharacter.Experience = (byte)numExperience.Value;
         }
     }
 }

@@ -174,6 +174,10 @@
             this.btnGiveEternalSeals = new System.Windows.Forms.Button();
             this.btnAllSkillsNoNpc = new System.Windows.Forms.Button();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label20 = new System.Windows.Forms.Label();
+            this.numEternalSeals = new System.Windows.Forms.NumericUpDown();
+            this.label21 = new System.Windows.Forms.Label();
+            this.numInternalLevel = new System.Windows.Forms.NumericUpDown();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -254,6 +258,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numEternalSeals)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numInternalLevel)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -1026,6 +1032,10 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.Controls.Add(this.numInternalLevel);
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.numEternalSeals);
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.numBoots);
             this.panel1.Controls.Add(this.chkDeployed);
@@ -1102,7 +1112,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(374, 60);
+            this.label19.Location = new System.Drawing.Point(374, 109);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(34, 13);
             this.label19.TabIndex = 67;
@@ -1110,7 +1120,7 @@
             // 
             // numBoots
             // 
-            this.numBoots.Location = new System.Drawing.Point(410, 58);
+            this.numBoots.Location = new System.Drawing.Point(410, 107);
             this.numBoots.Maximum = new decimal(new int[] {
             2,
             0,
@@ -1712,7 +1722,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(380, 32);
+            this.label2.Location = new System.Drawing.Point(380, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 15;
@@ -1720,8 +1730,7 @@
             // 
             // numExperience
             // 
-            this.numExperience.Enabled = false;
-            this.numExperience.Location = new System.Drawing.Point(410, 30);
+            this.numExperience.Location = new System.Drawing.Point(410, 55);
             this.numExperience.Maximum = new decimal(new int[] {
             99,
             0,
@@ -1730,6 +1739,7 @@
             this.numExperience.Name = "numExperience";
             this.numExperience.Size = new System.Drawing.Size(38, 20);
             this.numExperience.TabIndex = 14;
+            this.numExperience.ValueChanged += new System.EventHandler(this.numExperience_ValueChanged);
             // 
             // label1
             // 
@@ -1742,8 +1752,12 @@
             // 
             // numLevel
             // 
-            this.numLevel.Enabled = false;
             this.numLevel.Location = new System.Drawing.Point(410, 3);
+            this.numLevel.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
             this.numLevel.Minimum = new decimal(new int[] {
             1,
             0,
@@ -1757,6 +1771,7 @@
             0,
             0,
             0});
+            this.numLevel.ValueChanged += new System.EventHandler(this.numLevel_ValueChanged);
             // 
             // cmbSkill5
             // 
@@ -1932,6 +1947,55 @@
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(339, 83);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(69, 13);
+            this.label20.TabIndex = 69;
+            this.label20.Text = "Eternal Seals";
+            // 
+            // numEternalSeals
+            // 
+            this.numEternalSeals.Location = new System.Drawing.Point(410, 81);
+            this.numEternalSeals.Maximum = new decimal(new int[] {
+            47,
+            0,
+            0,
+            0});
+            this.numEternalSeals.Name = "numEternalSeals";
+            this.numEternalSeals.Size = new System.Drawing.Size(38, 20);
+            this.numEternalSeals.TabIndex = 68;
+            this.numEternalSeals.ValueChanged += new System.EventHandler(this.numEternalSeals_ValueChanged);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(350, 31);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(58, 13);
+            this.label21.TabIndex = 71;
+            this.label21.Text = "Internal LV";
+            // 
+            // numInternalLevel
+            // 
+            this.numInternalLevel.Enabled = false;
+            this.numInternalLevel.Location = new System.Drawing.Point(410, 29);
+            this.numInternalLevel.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numInternalLevel.Name = "numInternalLevel";
+            this.numInternalLevel.Size = new System.Drawing.Size(38, 20);
+            this.numInternalLevel.TabIndex = 70;
+            this.numInternalLevel.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2026,6 +2090,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numEternalSeals)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numInternalLevel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2177,6 +2243,10 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.NumericUpDown numBoots;
         private System.Windows.Forms.Button btnMaxBoots;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.NumericUpDown numEternalSeals;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.NumericUpDown numInternalLevel;
     }
 }
 

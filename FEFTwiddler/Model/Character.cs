@@ -1,4 +1,5 @@
-﻿using FEFTwiddler.Extensions;
+﻿using System;
+using FEFTwiddler.Extensions;
 
 namespace FEFTwiddler.Model
 {
@@ -16,6 +17,7 @@ namespace FEFTwiddler.Model
         public bool IsBeast { get; set; }
         public bool CanUseDragonVein { get; set; }
 
+        public static byte MaxEternalSealsUsed = 0x2F;
         public byte Level { get; set; }
         public byte Experience { get; set; }
         public byte InternalLevel { get; set; }
@@ -86,6 +88,62 @@ namespace FEFTwiddler.Model
         }
 
         #region Boundary Enforcement
+
+        /// <summary>
+        /// Get this character's max level, unmodified by eternal seals
+        /// </summary>
+        public byte GetBaseMaxLevel()
+        {
+            if (!Class.IsPromoted(ClassID)) return 20;
+            else return (byte)(IsPrepromote() ? 40 : 20);
+        }
+
+        /// <summary>
+        /// Get this character's max level after taking eternal seals into consideration
+        /// </summary>
+        /// <returns></returns>
+        public byte GetModifiedMaxLevel()
+        {
+            byte maxLevel = GetBaseMaxLevel();
+            if (!Class.IsPromoted(ClassID)) return maxLevel;
+            maxLevel += (byte)(EternalSealsUsed * 5);
+            return maxLevel;
+        }
+
+        /// <summary>
+        /// Get the max possible level this character could attain
+        /// </summary>
+        public byte GetTheoreticalMaxLevel()
+        {
+            if (!Class.IsPromoted(ClassID)) return 20;
+            else return (byte)(IsPrepromote() ? 255 : 235);
+        }
+
+        public byte FixLevel()
+        {
+            byte maxLevel = GetModifiedMaxLevel();
+            if (Level > maxLevel) return maxLevel;
+            else return Level;
+        }
+
+        public byte GetMaxEternalSealsUsed()
+        {
+            return (byte)(IsPrepromote() ? MaxEternalSealsUsed - 4 : MaxEternalSealsUsed);
+        }
+
+        public byte FixEternalSealsUsed()
+        {
+            byte maxEternalSealsUsed = GetMaxEternalSealsUsed();
+            if (EternalSealsUsed > maxEternalSealsUsed) return maxEternalSealsUsed;
+            else return EternalSealsUsed;
+        }
+
+        public byte GetMinimumEternalSealsForCurrentLevel()
+        {
+            var baseMaxLevel = GetBaseMaxLevel();
+            if (Level <= baseMaxLevel) return 0;
+            else return (byte)((Level - baseMaxLevel + 4) / 5);
+        }
 
         public static byte FixWeaponExperience(byte weaponExp)
         {
@@ -234,6 +292,14 @@ namespace FEFTwiddler.Model
         {
             return charId == Enums.Character.Kaden ||
                 charId == Enums.Character.Keaton;
+        }
+
+        /// <summary>
+        /// This character starts as a promoted class, and can level to 40 without using eternal seals.
+        /// </summary>
+        public bool IsPrepromote()
+        {
+            return InternalLevel < 10 && Class.IsPromoted(ClassID);
         }
 
         public int GetBlockSize()
