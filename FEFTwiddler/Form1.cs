@@ -6,7 +6,7 @@ using FEFTwiddler.Extensions;
 
 namespace FEFTwiddler
 {
-    public partial class Form1 : Form
+    public partial class FEFTwiddler : Form
     {
         private Model.SaveFile _saveFile;
         private Model.ChapterSave _chapterSave;
@@ -17,7 +17,7 @@ namespace FEFTwiddler
         private Data.ItemDatabase _itemDatabase;
         private Data.SkillDatabase _skillDatabase;
 
-        public Form1()
+        public FEFTwiddler()
         {
             InitializeComponent();
             InitializeDatabases();
@@ -247,10 +247,8 @@ namespace FEFTwiddler
 
         private Bitmap GetSkillImage(Enums.Skill skillId)
         {
-            var id = ((byte)skillId).ToString();
-            if (id.Length == 1) id = "00" + id;
-            else if (id.Length == 2) id = "0" + id;
-            var img = Properties.Resources.ResourceManager.GetObject("Skill_" + id);
+            var img = Properties.Resources.ResourceManager.GetObject(
+                        String.Format("Skill_{0,000}", (byte)skillId));
 
             return (Bitmap)img;
         }
@@ -337,11 +335,38 @@ namespace FEFTwiddler
             MessageBox.Show("File saved. Hope you made a backup!");
         }
 
-        private void btnAllSkillsNoNpc_Click(object sender, EventArgs e)
+        private void btnAllCharAllSkills_Click(object sender, EventArgs e)
         {
             foreach (var character in _chapterSave.Characters)
             {
-                character.LearnAllNonNpcSkills();
+                character.LearnAllSkills();
+            }
+            MessageBox.Show("Done!");
+        }
+
+        private void btnAllCharAllSkillsDLC_Click(object sender, EventArgs e)
+        {
+            foreach (var character in _chapterSave.Characters)
+            {
+                character.LearnAllSkillsDLC();
+            }
+            MessageBox.Show("Done!");
+        }
+
+        private void btnAllCharAllSkillsEnemy_Click(object sender, EventArgs e)
+        {
+            foreach (var character in _chapterSave.Characters)
+            {
+                character.LearnAllSkillsEnemy();
+            }
+            MessageBox.Show("Done!");
+        }
+
+        private void btnAllCharMaxStatue_Click(object sender, EventArgs e)
+        {
+            foreach (var character in _chapterSave.Characters)
+            {
+                character.maxStatue();
             }
             MessageBox.Show("Done!");
         }
@@ -597,6 +622,26 @@ namespace FEFTwiddler
         private void numExperience_ValueChanged(object sender, EventArgs e)
         {
             _selectedCharacter.Experience = (byte)numExperience.Value;
+        }
+
+        private void btnAllSkills_Click(object sender, EventArgs e)
+        {
+            _selectedCharacter.LearnAllSkills();
+        }
+
+        private void btnDLCSkills_Click(object sender, EventArgs e)
+        {
+            _selectedCharacter.LearnAllSkillsDLC();
+        }
+
+        private void btnEnemySkills_Click(object sender, EventArgs e)
+        {
+            _selectedCharacter.LearnAllSkillsEnemy();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

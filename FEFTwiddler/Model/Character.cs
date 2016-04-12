@@ -162,11 +162,40 @@ namespace FEFTwiddler.Model
 
         #region Cheats
 
-        public void LearnAllNonNpcSkills()
+        public void LearnAllSkills()
         {
-            // Learn the skills, but leave existing learned skills outside this range intact
-            var learnThese = new byte[] { 0xDF, 0xFF, 0x7F, 0xFB, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFE, 0xFF, 0xEF, 0xFF, 0xBF, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00 };
-            LearnedSkills = LearnedSkills.Or(learnThese);
+            LearnedSkills = LearnedSkills.Or(new byte[]
+            { 0xDF, 0xFF, 0x7F, 0xFB,
+              0xFF, 0xFF, 0xFF, 0xFF,
+              0xFF, 0xFE, 0xFF, 0xEF,
+              0xFF, 0xBF, 0x01, 0x00,
+              0x00, 0x00, 0x00, 0x00 });
+        }
+
+        public void LearnAllSkillsDLC()
+        {
+            LearnedSkills = LearnedSkills.Or(new byte[]
+            { 0xFF, 0xFF, 0xFF, 0xFF,
+              0xFF, 0xFF, 0xFF, 0xFF,
+              0xFF, 0xFE, 0xFF, 0xFF,
+              0xFF, 0xFF, 0x81, 0x03,
+              0xFF, 0xFF, 0xFF, 0xFF });
+        }
+
+        public void LearnAllSkillsEnemy()
+        {
+            LearnedSkills = LearnedSkills.Or(new byte[]
+            { 0xFF, 0xFF, 0xFF, 0xFF,
+              0xFF, 0xFF, 0xFF, 0xFF,
+              0xFF, 0xFF, 0xFF, 0xFF,
+              0xFF, 0xFF, 0xFF, 0xFF,
+              0xFF, 0xFF, 0xFF, 0xFF });
+        }
+
+        public void maxStatue()
+        {
+            BattleCount = Math.Max(BattleCount, (ushort) 100);
+            VictoryCount = Math.Max(VictoryCount, (ushort)100);
         }
 
         public void SRankAllWeapons()
