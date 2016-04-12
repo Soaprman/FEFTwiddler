@@ -79,6 +79,22 @@ namespace FEFTwiddler
             }
         }
 
+        private void UpdateHairColor(object sender, EventArgs e)
+        {
+            Byte[] NewHairColor = {0,0,0,255};
+            if(HairColorHex.Text.Length == 6 &&
+               Byte.TryParse(HairColorHex.Text.Substring(0,2), System.Globalization.NumberStyles.HexNumber, null, out NewHairColor[0]) &&
+               Byte.TryParse(HairColorHex.Text.Substring(2,2), System.Globalization.NumberStyles.HexNumber, null, out NewHairColor[1]) &&
+               Byte.TryParse(HairColorHex.Text.Substring(4,2), System.Globalization.NumberStyles.HexNumber, null, out NewHairColor[2]))
+            {
+                HairColor.BackColor = Color.FromArgb(NewHairColor[3],
+                                                     NewHairColor[2],
+                                                     NewHairColor[1],
+                                                     NewHairColor[0]);
+                _selectedCharacter.HairColor = NewHairColor;
+            }
+        }
+
         private void UpdateTitleBar(string path)
         {
             var directory = Path.GetDirectoryName(path);
@@ -175,6 +191,15 @@ namespace FEFTwiddler
                 cmbClass.Text = _classDatabase.GetByID(character.ClassID).DisplayName;
             else
                 cmbClass.Text = character.ClassID.ToString();
+
+            HairColor.BackColor = Color.FromArgb( character.HairColor[3],
+                                                  character.HairColor[2],
+                                                  character.HairColor[1],
+                                                  character.HairColor[0]);
+            HairColorHex.Text = String.Format(  "{0:X2}{1:X2}{2:X2}",
+                                                character.HairColor[0],
+                                                character.HairColor[1],
+                                                character.HairColor[2]);
 
             // Set eternal seals before level, since level's range is restricted by eternal seals
             numEternalSeals.Maximum = character.GetMaxEternalSealsUsed();

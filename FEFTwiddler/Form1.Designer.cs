@@ -184,6 +184,8 @@
             this.btnGiveEternalSeals = new System.Windows.Forms.Button();
             this.btnAllCharAllSkills = new System.Windows.Forms.Button();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.HairColor = new System.Windows.Forms.PictureBox();
+            this.HairColorHex = new System.Windows.Forms.MaskedTextBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -266,6 +268,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HairColor)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -874,6 +877,8 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.HairColorHex);
+            this.panel1.Controls.Add(this.HairColor);
             this.panel1.Controls.Add(this.AllSkillsEnemy);
             this.panel1.Controls.Add(this.btnAllSkillsDLC);
             this.panel1.Controls.Add(this.btnAllSkills);
@@ -1627,6 +1632,24 @@
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
             // 
+            // HairColor
+            // 
+            resources.ApplyResources(this.HairColor, "HairColor");
+            this.HairColor.Name = "HairColor";
+            this.HairColor.TabStop = false;
+            // 
+            // HairColorHex
+            // 
+            this.HairColorHex.AsciiOnly = true;
+            this.HairColorHex.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.HairColorHex.HidePromptOnLeave = true;
+            this.HairColorHex.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
+            resources.ApplyResources(this.HairColorHex, "HairColorHex");
+            this.HairColorHex.Name = "HairColorHex";
+            this.HairColorHex.SkipLiterals = false;
+            this.HairColorHex.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.HairColorHex.TextChanged += new System.EventHandler(this.UpdateHairColor);
+            // 
             // FEFTwiddler
             // 
             resources.ApplyResources(this, "$this");
@@ -1722,6 +1745,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.HairColor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1883,6 +1907,8 @@
         private System.Windows.Forms.Button AllCharMaxStatue;
         private System.Windows.Forms.Button AllCharAllSkillsEnemy;
         private System.Windows.Forms.Button AllCharAllSkillsDLC;
+        private System.Windows.Forms.MaskedTextBox HairColorHex;
+        private System.Windows.Forms.PictureBox HairColor;
     }
 }
 
