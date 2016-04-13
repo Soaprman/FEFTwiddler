@@ -1,926 +1,1156 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <root>
-  <skill id="0" name="None">
+  <skill id="0" name="None" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="None" />
     <text lang="Japanese" displayName="無し" />
+    <learnedSkillInfo byteOffset="0" bitMask="128" />
   </skill>
-  <skill id="1" name="HPPlus5">
+  <skill id="1" name="HPPlus5" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="HP +5" />
     <text lang="Japanese" displayName="【最大ＨＰ+5】" />
+    <learnedSkillInfo byteOffset="0" bitMask="64" />
   </skill>
-  <skill id="2" name="StrengthPlus2">
+  <skill id="2" name="StrengthPlus2" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Strength +2" />
     <text lang="Japanese" displayName="【力+2】" />
+    <learnedSkillInfo byteOffset="0" bitMask="32" />
   </skill>
-  <skill id="3" name="MagicPlus2">
+  <skill id="3" name="MagicPlus2" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Magic +2" />
     <text lang="Japanese" displayName="【魔力+2】" />
+    <learnedSkillInfo byteOffset="0" bitMask="16" />
   </skill>
-  <skill id="4" name="SkillPlus2">
+  <skill id="4" name="SkillPlus2" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Skill +2" />
     <text lang="Japanese" displayName="【技+2】" />
+    <learnedSkillInfo byteOffset="0" bitMask="8" />
   </skill>
-  <skill id="5" name="SpeedPlus2">
+  <skill id="5" name="SpeedPlus2" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Speed +2" />
     <text lang="Japanese" displayName="【速さ+2】" />
+    <learnedSkillInfo byteOffset="0" bitMask="4" />
   </skill>
-  <skill id="6" name="LuckPlus4">
+  <skill id="6" name="LuckPlus4" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Luck +4" />
     <text lang="Japanese" displayName="【幸運+4】" />
+    <learnedSkillInfo byteOffset="0" bitMask="2" />
   </skill>
-  <skill id="7" name="DefensePlus2">
+  <skill id="7" name="DefensePlus2" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Defense +2" />
     <text lang="Japanese" displayName="【守備+2】" />
+    <learnedSkillInfo byteOffset="0" bitMask="1" />
   </skill>
-  <skill id="8" name="ResistancePlus2">
+  <skill id="8" name="ResistancePlus2" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Resistance +2" />
     <text lang="Japanese" displayName="【魔防+2】" />
+    <learnedSkillInfo byteOffset="1" bitMask="128" />
   </skill>
-  <skill id="9" name="MovementPlus1">
+  <skill id="9" name="MovementPlus1" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Movement +1" />
     <text lang="Japanese" displayName="【移動+1】" />
+    <learnedSkillInfo byteOffset="1" bitMask="64" />
   </skill>
-  <skill id="10" name="DraconicHex">
+  <skill id="10" name="DraconicHex" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Draconic Hex" />
     <text lang="Japanese" displayName="【竜呪】" />
+    <learnedSkillInfo byteOffset="1" bitMask="32" />
   </skill>
-  <skill id="11" name="SealStrength">
+  <skill id="11" name="SealStrength" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Seal Strength" />
     <text lang="Japanese" displayName="【力封じ】" />
+    <learnedSkillInfo byteOffset="1" bitMask="16" />
   </skill>
-  <skill id="12" name="SealMagic">
+  <skill id="12" name="SealMagic" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Seal Magic" />
     <text lang="Japanese" displayName="【魔力封じ】" />
+    <learnedSkillInfo byteOffset="1" bitMask="8" />
   </skill>
-  <skill id="13" name="SealSpeed">
+  <skill id="13" name="SealSpeed" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Seal Speed" />
     <text lang="Japanese" displayName="【速さ封じ】" />
+    <learnedSkillInfo byteOffset="1" bitMask="4" />
   </skill>
-  <skill id="14" name="SealDefense">
+  <skill id="14" name="SealDefense" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Seal Defense" />
     <text lang="Japanese" displayName="【守備封じ】" />
+    <learnedSkillInfo byteOffset="1" bitMask="2" />
   </skill>
-  <skill id="15" name="SealResistance">
+  <skill id="15" name="SealResistance" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Seal Resistance" />
     <text lang="Japanese" displayName="【魔防封じ】" />
+    <learnedSkillInfo byteOffset="1" bitMask="1" />
   </skill>
-  <skill id="16" name="RallyStrength">
+  <skill id="16" name="RallyStrength" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Strength" />
     <text lang="Japanese" displayName="【力の叫び】" />
+    <learnedSkillInfo byteOffset="2" bitMask="128" />
   </skill>
-  <skill id="17" name="RallyMagic">
+  <skill id="17" name="RallyMagic" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Magic" />
     <text lang="Japanese" displayName="【魔力の叫び】" />
+    <learnedSkillInfo byteOffset="2" bitMask="64" />
   </skill>
-  <skill id="18" name="RallySkill">
+  <skill id="18" name="RallySkill" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Skill" />
     <text lang="Japanese" displayName="【技の叫び】" />
+    <learnedSkillInfo byteOffset="2" bitMask="32" />
   </skill>
-  <skill id="19" name="RallySpeed">
+  <skill id="19" name="RallySpeed" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Speed" />
     <text lang="Japanese" displayName="【速さの叫び】" />
+    <learnedSkillInfo byteOffset="2" bitMask="16" />
   </skill>
-  <skill id="20" name="RallyLuck">
+  <skill id="20" name="RallyLuck" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Luck" />
     <text lang="Japanese" displayName="【幸運の叫び】" />
+    <learnedSkillInfo byteOffset="2" bitMask="8" />
   </skill>
-  <skill id="21" name="RallyDefense">
+  <skill id="21" name="RallyDefense" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Defense" />
     <text lang="Japanese" displayName="【守備の叫び】" />
+    <learnedSkillInfo byteOffset="2" bitMask="4" />
   </skill>
-  <skill id="22" name="RallyResistance">
+  <skill id="22" name="RallyResistance" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Resistance" />
     <text lang="Japanese" displayName="【魔防の叫び】" />
+    <learnedSkillInfo byteOffset="2" bitMask="2" />
   </skill>
-  <skill id="23" name="RallyMovement">
+  <skill id="23" name="RallyMovement" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Movement" />
     <text lang="Japanese" displayName="【移動の叫び】" />
+    <learnedSkillInfo byteOffset="2" bitMask="1" />
   </skill>
-  <skill id="24" name="InspiringSong">
+  <skill id="24" name="InspiringSong" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Inspiring Song" />
     <text lang="Japanese" displayName="【特別な歌】" />
+    <learnedSkillInfo byteOffset="3" bitMask="128" />
   </skill>
-  <skill id="25" name="Lethality">
+  <skill id="25" name="Lethality" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Lethality" />
     <text lang="Japanese" displayName="【滅殺】" />
+    <learnedSkillInfo byteOffset="3" bitMask="64" />
   </skill>
-  <skill id="26" name="Aether">
+  <skill id="26" name="Aether" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Aether" />
     <text lang="Japanese" displayName="【天空】" />
+    <learnedSkillInfo byteOffset="3" bitMask="32" />
   </skill>
-  <skill id="27" name="Astra">
+  <skill id="27" name="Astra" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Astra" />
     <text lang="Japanese" displayName="【流星】" />
+    <learnedSkillInfo byteOffset="3" bitMask="16" />
   </skill>
-  <skill id="28" name="DragonFang">
+  <skill id="28" name="DragonFang" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Dragon Fang" />
     <text lang="Japanese" displayName="【竜穿】" />
+    <learnedSkillInfo byteOffset="3" bitMask="8" />
   </skill>
-  <skill id="29" name="Sol">
+  <skill id="29" name="Sol" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Sol" />
     <text lang="Japanese" displayName="【太陽】" />
+    <learnedSkillInfo byteOffset="3" bitMask="4" />
   </skill>
-  <skill id="30" name="Luna">
+  <skill id="30" name="Luna" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Luna" />
     <text lang="Japanese" displayName="【月光】" />
+    <learnedSkillInfo byteOffset="3" bitMask="2" />
   </skill>
-  <skill id="31" name="RendHeaven">
+  <skill id="31" name="RendHeaven" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Rend Heaven" />
     <text lang="Japanese" displayName="【破天】" />
+    <learnedSkillInfo byteOffset="3" bitMask="1" />
   </skill>
-  <skill id="32" name="Vengeance">
+  <skill id="32" name="Vengeance" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Vengeance" />
     <text lang="Japanese" displayName="【復讐】" />
+    <learnedSkillInfo byteOffset="4" bitMask="128" />
   </skill>
-  <skill id="33" name="Pavise">
+  <skill id="33" name="Pavise" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Pavise" />
     <text lang="Japanese" displayName="【大盾】" />
+    <learnedSkillInfo byteOffset="4" bitMask="64" />
   </skill>
-  <skill id="34" name="Aegis">
+  <skill id="34" name="Aegis" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Aegis" />
     <text lang="Japanese" displayName="【聖盾】" />
+    <learnedSkillInfo byteOffset="4" bitMask="32" />
   </skill>
-  <skill id="35" name="DragonWard">
+  <skill id="35" name="DragonWard" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Dragon Ward" />
     <text lang="Japanese" displayName="【竜盾】" />
+    <learnedSkillInfo byteOffset="4" bitMask="16" />
   </skill>
-  <skill id="36" name="Miracle">
+  <skill id="36" name="Miracle" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Miracle" />
     <text lang="Japanese" displayName="【祈り】" />
+    <learnedSkillInfo byteOffset="4" bitMask="8" />
   </skill>
-  <skill id="37" name="Counter">
+  <skill id="37" name="Counter" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Counter" />
     <text lang="Japanese" displayName="【カウンター】" />
+    <learnedSkillInfo byteOffset="4" bitMask="4" />
   </skill>
-  <skill id="38" name="MagicCounter">
+  <skill id="38" name="MagicCounter" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Countermagic" />
     <text lang="Japanese" displayName="【魔法カウンター】" />
+    <learnedSkillInfo byteOffset="4" bitMask="2" />
   </skill>
-  <skill id="39" name="Vantage">
+  <skill id="39" name="Vantage" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Vantage" />
     <text lang="Japanese" displayName="【待ち伏せ】" />
+    <learnedSkillInfo byteOffset="4" bitMask="1" />
   </skill>
-  <skill id="40" name="Beastbane">
+  <skill id="40" name="Beastbane" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Beastbane" />
     <text lang="Japanese" displayName="【獣特効】" />
+    <learnedSkillInfo byteOffset="5" bitMask="128" />
   </skill>
-  <skill id="41" name="Golembane">
+  <skill id="41" name="Golembane" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Golembane" />
     <text lang="Japanese" displayName="【人形崩し】" />
+    <learnedSkillInfo byteOffset="5" bitMask="64" />
   </skill>
-  <skill id="42" name="NohrianTrust">
+  <skill id="42" name="NohrianTrust" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Nohrian Trust" />
     <text lang="Japanese" displayName="【暗夜】" />
+    <learnedSkillInfo byteOffset="5" bitMask="32" />
   </skill>
-  <skill id="43" name="HoshidanUnity">
+  <skill id="43" name="HoshidanUnity" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Hoshidan Unity" />
     <text lang="Japanese" displayName="【白夜】" />
+    <learnedSkillInfo byteOffset="5" bitMask="16" />
   </skill>
-  <skill id="44" name="Shelter">
+  <skill id="44" name="Shelter" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Shelter" />
     <text lang="Japanese" displayName="【救出】" />
+    <learnedSkillInfo byteOffset="5" bitMask="8" />
   </skill>
-  <skill id="45" name="Shove">
+  <skill id="45" name="Shove" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Shove" />
     <text lang="Japanese" displayName="【体当たり】" />
+    <learnedSkillInfo byteOffset="5" bitMask="4" />
   </skill>
-  <skill id="46" name="Lunge">
+  <skill id="46" name="Lunge" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Lunge" />
     <text lang="Japanese" displayName="【切り込み】" />
+    <learnedSkillInfo byteOffset="5" bitMask="2" />
   </skill>
-  <skill id="47" name="Swap">
+  <skill id="47" name="Swap" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Swap" />
     <text lang="Japanese" displayName="【入れ替え】" />
+    <learnedSkillInfo byteOffset="5" bitMask="1" />
   </skill>
-  <skill id="48" name="Replicate">
+  <skill id="48" name="Replicate" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Replicate" />
     <text lang="Japanese" displayName="【写し身人形】" />
+    <learnedSkillInfo byteOffset="6" bitMask="128" />
   </skill>
-  <skill id="49" name="QuickDraw">
+  <skill id="49" name="QuickDraw" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Quick Draw" />
     <text lang="Japanese" displayName="【先手必勝】" />
+    <learnedSkillInfo byteOffset="6" bitMask="64" />
   </skill>
-  <skill id="50" name="StrongRiposte">
+  <skill id="50" name="StrongRiposte" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Strong Riposte" />
     <text lang="Japanese" displayName="【後手不敗】" />
+    <learnedSkillInfo byteOffset="6" bitMask="32" />
   </skill>
-  <skill id="51" name="ElbowRoom">
+  <skill id="51" name="ElbowRoom" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Elbow Room" />
     <text lang="Japanese" displayName="【広所突撃】" />
+    <learnedSkillInfo byteOffset="6" bitMask="16" />
   </skill>
-  <skill id="52" name="NaturalCover">
+  <skill id="52" name="NaturalCover" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Natural Cover" />
     <text lang="Japanese" displayName="【閉所防御】" />
+    <learnedSkillInfo byteOffset="6" bitMask="8" />
   </skill>
-  <skill id="53" name="Evenhanded">
+  <skill id="53" name="Evenhanded" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Evenhanded" />
     <text lang="Japanese" displayName="【偶像の幻】" />
+    <learnedSkillInfo byteOffset="6" bitMask="4" />
   </skill>
-  <skill id="54" name="OddShaped">
+  <skill id="54" name="OddShaped" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Odd Shaped" />
     <text lang="Japanese" displayName="【奇襲の牙】" />
+    <learnedSkillInfo byteOffset="6" bitMask="2" />
   </skill>
-  <skill id="55" name="LifeAndDeath">
+  <skill id="55" name="LifeAndDeath" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Life and Death" />
     <text lang="Japanese" displayName="【死線】" />
+    <learnedSkillInfo byteOffset="6" bitMask="1" />
   </skill>
-  <skill id="56" name="Spendthrift">
+  <skill id="56" name="Spendthrift" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Spendthrift" />
     <text lang="Japanese" displayName="【お大尽】" />
+    <learnedSkillInfo byteOffset="7" bitMask="128" />
   </skill>
-  <skill id="57" name="DuelistsBlow">
+  <skill id="57" name="DuelistsBlow" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Duelist's Blow" />
     <text lang="Japanese" displayName="【清流の一撃】" />
+    <learnedSkillInfo byteOffset="7" bitMask="64" />
   </skill>
-  <skill id="58" name="DartingBlow">
+  <skill id="58" name="DartingBlow" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Darting Blow" />
     <text lang="Japanese" displayName="【飛燕の一撃】" />
+    <learnedSkillInfo byteOffset="7" bitMask="32" />
   </skill>
-  <skill id="59" name="DeathBlow">
+  <skill id="59" name="DeathBlow" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Death Blow" />
     <text lang="Japanese" displayName="【鬼神の一撃】" />
+    <learnedSkillInfo byteOffset="7" bitMask="16" />
   </skill>
-  <skill id="60" name="CertainBlow">
+  <skill id="60" name="CertainBlow" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Certain Blow" />
     <text lang="Japanese" displayName="【凶鳥の一撃】" />
+    <learnedSkillInfo byteOffset="7" bitMask="8" />
   </skill>
-  <skill id="61" name="ArmoredBlow">
+  <skill id="61" name="ArmoredBlow" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Armored Blow" />
     <text lang="Japanese" displayName="【金剛の一撃】" />
+    <learnedSkillInfo byteOffset="7" bitMask="4" />
   </skill>
-  <skill id="62" name="WardingBlow">
+  <skill id="62" name="WardingBlow" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Warding Blow" />
     <text lang="Japanese" displayName="【明鏡の一撃】" />
+    <learnedSkillInfo byteOffset="7" bitMask="2" />
   </skill>
-  <skill id="63" name="Trample">
+  <skill id="63" name="Trample" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Trample" />
     <text lang="Japanese" displayName="【見下す者】" />
+    <learnedSkillInfo byteOffset="7" bitMask="1" />
   </skill>
-  <skill id="64" name="WaryFighter">
+  <skill id="64" name="WaryFighter" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Wary Fighter" />
     <text lang="Japanese" displayName="【守備隊形】" />
+    <learnedSkillInfo byteOffset="8" bitMask="128" />
   </skill>
-  <skill id="65" name="Swordfaire">
+  <skill id="65" name="Swordfaire" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Swordfaire" />
     <text lang="Japanese" displayName="【剣の達人】" />
+    <learnedSkillInfo byteOffset="8" bitMask="64" />
   </skill>
-  <skill id="66" name="Lancefaire">
+  <skill id="66" name="Lancefaire" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Lancefaire" />
     <text lang="Japanese" displayName="【槍の達人】" />
+    <learnedSkillInfo byteOffset="8" bitMask="32" />
   </skill>
-  <skill id="67" name="Axefaire">
+  <skill id="67" name="Axefaire" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Axefaire" />
     <text lang="Japanese" displayName="【斧の達人】" />
+    <learnedSkillInfo byteOffset="8" bitMask="16" />
   </skill>
-  <skill id="68" name="Shurikenfaire">
+  <skill id="68" name="Shurikenfaire" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Shurikenfaire" />
     <text lang="Japanese" displayName="【暗器の達人】" />
+    <learnedSkillInfo byteOffset="8" bitMask="8" />
   </skill>
-  <skill id="69" name="Bowfaire">
+  <skill id="69" name="Bowfaire" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Bowfaire" />
     <text lang="Japanese" displayName="【弓の達人】" />
+    <learnedSkillInfo byteOffset="8" bitMask="4" />
   </skill>
-  <skill id="70" name="Tomefaire">
+  <skill id="70" name="Tomefaire" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Tomefaire" />
     <text lang="Japanese" displayName="【魔の達人】" />
+    <learnedSkillInfo byteOffset="8" bitMask="2" />
   </skill>
-  <skill id="71" name="Defender">
+  <skill id="71" name="Defender" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Defender" />
     <text lang="Japanese" displayName="【守り手】" />
+    <learnedSkillInfo byteOffset="8" bitMask="1" />
   </skill>
-  <skill id="72" name="Charm">
+  <skill id="72" name="Charm" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Charm" />
     <text lang="Japanese" displayName="【カリスマ】" />
+    <learnedSkillInfo byteOffset="9" bitMask="128" />
   </skill>
-  <skill id="73" name="Gentilhomme">
+  <skill id="73" name="Gentilhomme" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Gentilhomme" />
     <text lang="Japanese" displayName="【名家の令息】" />
+    <learnedSkillInfo byteOffset="9" bitMask="64" />
   </skill>
-  <skill id="74" name="Demoiselle">
+  <skill id="74" name="Demoiselle" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Demoiselle" />
     <text lang="Japanese" displayName="【深窓の令嬢】" />
+    <learnedSkillInfo byteOffset="9" bitMask="32" />
   </skill>
-  <skill id="75" name="Inspiration">
+  <skill id="75" name="Inspiration" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Inspiration" />
     <text lang="Japanese" displayName="【戦闘指揮】" />
+    <learnedSkillInfo byteOffset="9" bitMask="16" />
   </skill>
-  <skill id="76" name="MaleficAura">
+  <skill id="76" name="MaleficAura" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Malefic Aura" />
     <text lang="Japanese" displayName="【魔の風】" />
+    <learnedSkillInfo byteOffset="9" bitMask="8" />
   </skill>
-  <skill id="77" name="VoiceOfPeace">
+  <skill id="77" name="VoiceOfPeace" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Voice of Peace" />
     <text lang="Japanese" displayName="【平和の声】" />
+    <learnedSkillInfo byteOffset="9" bitMask="4" />
   </skill>
-  <skill id="78" name="ForeignPrincess">
+  <skill id="78" name="ForeignPrincess" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Foreign Princess" />
     <text lang="Japanese" displayName="【異邦の王女】" />
+    <learnedSkillInfo byteOffset="9" bitMask="2" />
   </skill>
-  <skill id="79" name="Swordbreaker">
+  <skill id="79" name="Swordbreaker" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Swordbreaker" />
     <text lang="Japanese" displayName="【剣殺し】" />
+    <learnedSkillInfo byteOffset="9" bitMask="1" />
   </skill>
-  <skill id="80" name="Lancebreaker">
+  <skill id="80" name="Lancebreaker" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Lancebreaker" />
     <text lang="Japanese" displayName="【槍殺し】" />
+    <learnedSkillInfo byteOffset="10" bitMask="128" />
   </skill>
-  <skill id="81" name="Axebreaker">
+  <skill id="81" name="Axebreaker" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Axebreaker" />
     <text lang="Japanese" displayName="【斧殺し】" />
+    <learnedSkillInfo byteOffset="10" bitMask="64" />
   </skill>
-  <skill id="82" name="Shurikenbreaker">
+  <skill id="82" name="Shurikenbreaker" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Shurikenbreaker" />
     <text lang="Japanese" displayName="【暗器殺し】" />
+    <learnedSkillInfo byteOffset="10" bitMask="32" />
   </skill>
-  <skill id="83" name="Bowbreaker">
+  <skill id="83" name="Bowbreaker" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Bowbreaker" />
     <text lang="Japanese" displayName="【弓殺し】" />
+    <learnedSkillInfo byteOffset="10" bitMask="16" />
   </skill>
-  <skill id="84" name="Tomebreaker">
+  <skill id="84" name="Tomebreaker" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Tomebreaker" />
     <text lang="Japanese" displayName="【魔殺し】" />
+    <learnedSkillInfo byteOffset="10" bitMask="8" />
   </skill>
-  <skill id="85" name="Gamble">
+  <skill id="85" name="Gamble" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Gamble" />
     <text lang="Japanese" displayName="【大振り】" />
+    <learnedSkillInfo byteOffset="10" bitMask="4" />
   </skill>
-  <skill id="86" name="Underdog">
+  <skill id="86" name="Underdog" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Underdog" />
     <text lang="Japanese" displayName="【下剋上】" />
+    <learnedSkillInfo byteOffset="10" bitMask="2" />
   </skill>
-  <skill id="87" name="Lucky7">
+  <skill id="87" name="Lucky7" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Lucky Seven" />
     <text lang="Japanese" displayName="【ラッキー7】" />
+    <learnedSkillInfo byteOffset="10" bitMask="1" />
   </skill>
-  <skill id="88" name="AirSuperiority">
+  <skill id="88" name="AirSuperiority" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Air Superiority" />
     <text lang="Japanese" displayName="【天翔ける】" />
+    <learnedSkillInfo byteOffset="11" bitMask="128" />
   </skill>
-  <skill id="89" name="Heartseeker">
+  <skill id="89" name="Heartseeker" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Heartseeker" />
     <text lang="Japanese" displayName="【呪縛】" />
+    <learnedSkillInfo byteOffset="11" bitMask="64" />
   </skill>
-  <skill id="90" name="Quixotic">
+  <skill id="90" name="Quixotic" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Quixotic" />
     <text lang="Japanese" displayName="【傾奇者】" />
+    <learnedSkillInfo byteOffset="11" bitMask="32" />
   </skill>
-  <skill id="91" name="GoodFortune">
+  <skill id="91" name="GoodFortune" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Good Fortune" />
     <text lang="Japanese" displayName="【しぶとい心】" />
+    <learnedSkillInfo byteOffset="11" bitMask="16" />
   </skill>
-  <skill id="92" name="Relief">
+  <skill id="92" name="Relief" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Relief" />
     <text lang="Japanese" displayName="【リフレッシュ】" />
+    <learnedSkillInfo byteOffset="11" bitMask="8" />
   </skill>
-  <skill id="93" name="Camaraderie">
+  <skill id="93" name="Camaraderie" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Camaraderie" />
     <text lang="Japanese" displayName="【和の心】" />
+    <learnedSkillInfo byteOffset="11" bitMask="4" />
   </skill>
-  <skill id="94" name="Renewal">
+  <skill id="94" name="Renewal" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Renewal" />
     <text lang="Japanese" displayName="【回復】" />
+    <learnedSkillInfo byteOffset="11" bitMask="2" />
   </skill>
-  <skill id="95" name="EvenBetter">
+  <skill id="95" name="EvenBetter" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Even Better" />
     <text lang="Japanese" displayName="【偶然のまどろみ】" />
+    <learnedSkillInfo byteOffset="11" bitMask="1" />
   </skill>
-  <skill id="96" name="BetterOdds">
+  <skill id="96" name="BetterOdds" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Better Odds" />
     <text lang="Japanese" displayName="【奇妙な鳴き声】" />
+    <learnedSkillInfo byteOffset="12" bitMask="128" />
   </skill>
-  <skill id="97" name="Amaterasu">
+  <skill id="97" name="Amaterasu" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Amaterasu" />
     <text lang="Japanese" displayName="【天照らす】" />
+    <learnedSkillInfo byteOffset="12" bitMask="64" />
   </skill>
-  <skill id="98" name="Lifetaker">
+  <skill id="98" name="Lifetaker" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Lifetaker" />
     <text lang="Japanese" displayName="【生命吸収】" />
+    <learnedSkillInfo byteOffset="12" bitMask="32" />
   </skill>
-  <skill id="99" name="PotentPotion">
+  <skill id="99" name="PotentPotion" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Potent Potion" />
     <text lang="Japanese" displayName="【よく効く薬】" />
+    <learnedSkillInfo byteOffset="12" bitMask="16" />
   </skill>
-  <skill id="100" name="LiveToServe">
+  <skill id="100" name="LiveToServe" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Live to Serve" />
     <text lang="Japanese" displayName="【ご奉仕の喜び】" />
+    <learnedSkillInfo byteOffset="12" bitMask="8" />
   </skill>
-  <skill id="101" name="PoisonStrike">
+  <skill id="101" name="PoisonStrike" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Poison Strike" />
     <text lang="Japanese" displayName="【蛇毒】" />
+    <learnedSkillInfo byteOffset="12" bitMask="4" />
   </skill>
-  <skill id="102" name="SavageBlow">
+  <skill id="102" name="SavageBlow" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Savage Blow" />
     <text lang="Japanese" displayName="【死の吐息】" />
+    <learnedSkillInfo byteOffset="12" bitMask="2" />
   </skill>
-  <skill id="103" name="GrislyWound">
+  <skill id="103" name="GrislyWound" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Grisly Wound" />
     <text lang="Japanese" displayName="【四牙】" />
+    <learnedSkillInfo byteOffset="12" bitMask="1" />
   </skill>
-  <skill id="104" name="SalvageBlow">
+  <skill id="104" name="SalvageBlow" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Salvage Blow" />
     <text lang="Japanese" displayName="【匠の技】" />
+    <learnedSkillInfo byteOffset="13" bitMask="128" />
   </skill>
-  <skill id="105" name="Profiteer">
+  <skill id="105" name="Profiteer" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Profiteer" />
     <text lang="Japanese" displayName="【左うちわ】" />
+    <learnedSkillInfo byteOffset="13" bitMask="64" />
   </skill>
-  <skill id="106" name="Nobility">
+  <skill id="106" name="Nobility" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Nobility" />
     <text lang="Japanese" displayName="【高貴なる血統】" />
+    <learnedSkillInfo byteOffset="13" bitMask="32" />
   </skill>
-  <skill id="107" name="FutureSight">
+  <skill id="107" name="FutureSight" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Future Sight" />
     <text lang="Japanese" displayName="【おみくじ】" />
+    <learnedSkillInfo byteOffset="13" bitMask="16" />
   </skill>
-  <skill id="108" name="Aptitude">
+  <skill id="108" name="Aptitude" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Aptitude" />
     <text lang="Japanese" displayName="【良成長】" />
+    <learnedSkillInfo byteOffset="13" bitMask="8" />
   </skill>
-  <skill id="109" name="QuickSalve">
+  <skill id="109" name="QuickSalve" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Quick Salve" />
     <text lang="Japanese" displayName="【常備薬】" />
+    <learnedSkillInfo byteOffset="13" bitMask="4" />
   </skill>
-  <skill id="110" name="Galeforce">
+  <skill id="110" name="Galeforce" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Galeforce" />
     <text lang="Japanese" displayName="【疾風迅雷】" />
+    <learnedSkillInfo byteOffset="13" bitMask="2" />
   </skill>
-  <skill id="111" name="Pass">
+  <skill id="111" name="Pass" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Pass" />
     <text lang="Japanese" displayName="【すり抜け】" />
+    <learnedSkillInfo byteOffset="13" bitMask="1" />
   </skill>
-  <skill id="112" name="Locktouch">
+  <skill id="112" name="Locktouch" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Locktouch" />
     <text lang="Japanese" displayName="【鍵開け】" />
+    <learnedSkillInfo byteOffset="14" bitMask="128" />
   </skill>
-  <skill id="113" name="Brynhildr">
+  <skill id="113" name="Brynhildr" enemyOnly="false" dlc="false" personal="false" unlearnable="true">
     <text lang="English" displayName="Brynhildr" />
     <text lang="Japanese" displayName="【ブリュンヒルデ】" />
+    <learnedSkillInfo byteOffset="14" bitMask="64" />
   </skill>
-  <skill id="114" name="Dragonskin">
+  <skill id="114" name="Dragonskin" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Dragonskin" />
     <text lang="Japanese" displayName="【竜鱗】" />
+    <learnedSkillInfo byteOffset="14" bitMask="32" />
   </skill>
-  <skill id="115" name="DivineShield">
+  <skill id="115" name="DivineShield" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Divine Shield" />
     <text lang="Japanese" displayName="【神盾】" />
+    <learnedSkillInfo byteOffset="14" bitMask="16" />
   </skill>
-  <skill id="116" name="HitAvoidPlus10">
+  <skill id="116" name="HitAvoidPlus10" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Hit/Avo +10" />
     <text lang="Japanese" displayName="【命中回避+10】" />
+    <learnedSkillInfo byteOffset="14" bitMask="8" />
   </skill>
-  <skill id="117" name="HitAvoidPlus20">
+  <skill id="117" name="HitAvoidPlus20" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Hit/Avo +20" />
     <text lang="Japanese" displayName="【命中回避+20】" />
+    <learnedSkillInfo byteOffset="14" bitMask="4" />
   </skill>
-  <skill id="118" name="ResistStatus">
+  <skill id="118" name="ResistStatus" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Resist Status" />
     <text lang="Japanese" displayName="【状態異常耐性】" />
+    <learnedSkillInfo byteOffset="14" bitMask="2" />
   </skill>
-  <skill id="119" name="ImmuneStatus">
+  <skill id="119" name="ImmuneStatus" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Immune Status" />
     <text lang="Japanese" displayName="【状態異常無効】" />
+    <learnedSkillInfo byteOffset="14" bitMask="1" />
   </skill>
-  <skill id="120" name="BoldStance">
+  <skill id="120" name="BoldStance" enemyOnly="false" dlc="true" personal="false" unlearnable="false">
     <text lang="English" displayName="Bold Stance" />
     <text lang="Japanese" displayName="【攻防一体の陣】" />
+    <learnedSkillInfo byteOffset="15" bitMask="128" />
   </skill>
-  <skill id="121" name="PointBlank">
+  <skill id="121" name="PointBlank" enemyOnly="false" dlc="true" personal="false" unlearnable="false">
     <text lang="English" displayName="Point Blank" />
     <text lang="Japanese" displayName="【近接射撃】" />
+    <learnedSkillInfo byteOffset="15" bitMask="64" />
   </skill>
-  <skill id="122" name="WingedShield">
+  <skill id="122" name="WingedShield" enemyOnly="false" dlc="true" personal="false" unlearnable="false">
     <text lang="English" displayName="Winged Shield" />
     <text lang="Japanese" displayName="【翼盾】" />
+    <learnedSkillInfo byteOffset="15" bitMask="32" />
   </skill>
-  <skill id="123" name="VoidCurse">
+  <skill id="123" name="VoidCurse" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Void Curse" />
     <text lang="Japanese" displayName="【虚無の呪い】" />
+    <learnedSkillInfo byteOffset="15" bitMask="16" />
   </skill>
-  <skill id="124" name="SelfDestruct">
+  <skill id="124" name="SelfDestruct" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Self-Destruct" />
     <text lang="Japanese" displayName="【自壊】" />
+    <learnedSkillInfo byteOffset="15" bitMask="8" />
   </skill>
-  <skill id="125" name="StaffSavant">
+  <skill id="125" name="StaffSavant" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Staff Savant" />
     <text lang="Japanese" displayName="【無限の杖】" />
+    <learnedSkillInfo byteOffset="15" bitMask="4" />
   </skill>
-  <skill id="126" name="Immobilize">
+  <skill id="126" name="Immobilize" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Immobilize" />
     <text lang="Japanese" displayName="【凍結】" />
+    <learnedSkillInfo byteOffset="15" bitMask="2" />
   </skill>
-  <skill id="127" name="InevitableEnd">
+  <skill id="127" name="InevitableEnd" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Inevitable End" />
     <text lang="Japanese" displayName="【負の連鎖】" />
+    <learnedSkillInfo byteOffset="15" bitMask="1" />
   </skill>
-  <skill id="128" name="EvenKeel">
+  <skill id="128" name="EvenKeel" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Even Keel" />
     <text lang="Japanese" displayName="【偶人の空蝉】" />
+    <learnedSkillInfo byteOffset="16" bitMask="128" />
   </skill>
-  <skill id="129" name="IronWill">
+  <skill id="129" name="IronWill" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Iron Will" />
     <text lang="Japanese" displayName="【精神統一】" />
+    <learnedSkillInfo byteOffset="16" bitMask="64" />
   </skill>
-  <skill id="130" name="Clarity">
+  <skill id="130" name="Clarity" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Clarity" />
     <text lang="Japanese" displayName="【心頭滅却】" />
+    <learnedSkillInfo byteOffset="16" bitMask="32" />
   </skill>
-  <skill id="131" name="Aggressor">
+  <skill id="131" name="Aggressor" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Aggressor" />
     <text lang="Japanese" displayName="【居合一閃】" />
+    <learnedSkillInfo byteOffset="16" bitMask="16" />
   </skill>
-  <skill id="132" name="DualStriker">
+  <skill id="132" name="DualStriker" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Dual Striker" />
     <text lang="Japanese" displayName="【攻陣＋】" />
+    <learnedSkillInfo byteOffset="16" bitMask="8" />
   </skill>
-  <skill id="133" name="Awakening">
+  <skill id="133" name="Awakening" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Awakening" />
     <text lang="Japanese" displayName="【覚醒】" />
+    <learnedSkillInfo byteOffset="16" bitMask="4" />
   </skill>
-  <skill id="134" name="TacticalAdvice">
+  <skill id="134" name="TacticalAdvice" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Tactical Advice" />
     <text lang="Japanese" displayName="【戦術指南】" />
+    <learnedSkillInfo byteOffset="16" bitMask="2" />
   </skill>
-  <skill id="135" name="Solidarity">
+  <skill id="135" name="Solidarity" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Solidarity" />
     <text lang="Japanese" displayName="【方陣】" />
+    <learnedSkillInfo byteOffset="16" bitMask="1" />
   </skill>
-  <skill id="136" name="Ignis">
+  <skill id="136" name="Ignis" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Ignis" />
     <text lang="Japanese" displayName="【華炎】" />
+    <learnedSkillInfo byteOffset="17" bitMask="128" />
   </skill>
-  <skill id="137" name="RallySpectrum">
+  <skill id="137" name="RallySpectrum" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Spectrum" />
     <text lang="Japanese" displayName="【七色の叫び】" />
+    <learnedSkillInfo byteOffset="17" bitMask="64" />
   </skill>
-  <skill id="138" name="Paragon">
+  <skill id="138" name="Paragon" enemyOnly="false" dlc="true" personal="false" unlearnable="false">
     <text lang="English" displayName="Paragon" />
     <text lang="Japanese" displayName="【エリート】" />
+    <learnedSkillInfo byteOffset="17" bitMask="32" />
   </skill>
-  <skill id="139" name="BeastShield">
+  <skill id="139" name="BeastShield" enemyOnly="false" dlc="true" personal="false" unlearnable="false">
     <text lang="English" displayName="Armor Shield" />
     <text lang="Japanese" displayName="【鎧盾】" />
+    <learnedSkillInfo byteOffset="17" bitMask="16" />
   </skill>
-  <skill id="140" name="ArmorShield">
+  <skill id="140" name="ArmorShield" enemyOnly="false" dlc="true" personal="false" unlearnable="false">
     <text lang="English" displayName="Beast Shield" />
     <text lang="Japanese" displayName="【獣盾】" />
+    <learnedSkillInfo byteOffset="17" bitMask="8" />
   </skill>
-  <skill id="141" name="Shadowgift">
+  <skill id="141" name="Shadowgift" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Shadowgift" />
     <text lang="Japanese" displayName="【暗闇の加護】" />
+    <learnedSkillInfo byteOffset="17" bitMask="4" />
   </skill>
-  <skill id="142" name="StrengthTaker">
+  <skill id="142" name="StrengthTaker" enemyOnly="false" dlc="true" personal="false" unlearnable="false">
     <text lang="English" displayName="Strengthtaker" />
     <text lang="Japanese" displayName="【力の吸収】" />
+    <learnedSkillInfo byteOffset="17" bitMask="2" />
   </skill>
-  <skill id="143" name="MagicTaker">
+  <skill id="143" name="MagicTaker" enemyOnly="false" dlc="true" personal="false" unlearnable="false">
     <text lang="English" displayName="Magictaker" />
     <text lang="Japanese" displayName="【魔力の吸収】" />
+    <learnedSkillInfo byteOffset="17" bitMask="1" />
   </skill>
-  <skill id="144" name="SkillTaker">
+  <skill id="144" name="SkillTaker" enemyOnly="false" dlc="true" personal="false" unlearnable="false">
     <text lang="English" displayName="Skilltaker" />
     <text lang="Japanese" displayName="【技の吸収】" />
+    <learnedSkillInfo byteOffset="18" bitMask="128" />
   </skill>
-  <skill id="145" name="SpeedTaker">
+  <skill id="145" name="SpeedTaker" enemyOnly="false" dlc="true" personal="false" unlearnable="false">
     <text lang="English" displayName="Speedtaker" />
     <text lang="Japanese" displayName="【速さの吸収】" />
+    <learnedSkillInfo byteOffset="18" bitMask="64" />
   </skill>
-  <skill id="146" name="LuckTaker">
+  <skill id="146" name="LuckTaker" enemyOnly="false" dlc="true" personal="false" unlearnable="false">
     <text lang="English" displayName="Lucktaker" />
     <text lang="Japanese" displayName="【幸運の吸収】" />
+    <learnedSkillInfo byteOffset="18" bitMask="32" />
   </skill>
-  <skill id="147" name="DefenseTaker">
+  <skill id="147" name="DefenseTaker" enemyOnly="false" dlc="true" personal="false" unlearnable="false">
     <text lang="English" displayName="Defensetaker" />
     <text lang="Japanese" displayName="【守備の吸収】" />
+    <learnedSkillInfo byteOffset="18" bitMask="16" />
   </skill>
-  <skill id="148" name="ResistanceTaker">
+  <skill id="148" name="ResistanceTaker" enemyOnly="false" dlc="true" personal="false" unlearnable="false">
     <text lang="English" displayName="Resistancetaker" />
     <text lang="Japanese" displayName="【魔防の吸収】" />
+    <learnedSkillInfo byteOffset="18" bitMask="8" />
   </skill>
-  <skill id="149" name="Survey">
+  <skill id="149" name="Survey" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Survey" />
     <text lang="Japanese" displayName="【測量術】" />
+    <learnedSkillInfo byteOffset="18" bitMask="4" />
   </skill>
-  <skill id="150" name="OpportunityShot">
+  <skill id="150" name="OpportunityShot" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Opportunity Shot" />
     <text lang="Japanese" displayName="【自動砲台】" />
+    <learnedSkillInfo byteOffset="18" bitMask="2" />
   </skill>
-  <skill id="151" name="RifledBarrel">
+  <skill id="151" name="RifledBarrel" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Rifled Barrel" />
     <text lang="Japanese" displayName="【砲身改造】" />
+    <learnedSkillInfo byteOffset="18" bitMask="1" />
   </skill>
-  <skill id="152" name="Surefooted">
+  <skill id="152" name="Surefooted" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Surefooted" />
     <text lang="Japanese" displayName="【悪路踏破】" />
+    <learnedSkillInfo byteOffset="19" bitMask="128" />
   </skill>
-  <skill id="153" name="WitchsBrew">
+  <skill id="153" name="WitchsBrew" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Witch's Brew" />
     <text lang="Japanese" displayName="【魔女の大釜】" />
+    <learnedSkillInfo byteOffset="19" bitMask="64" />
   </skill>
-  <skill id="154" name="Warp">
+  <skill id="154" name="Warp" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Warp" />
     <text lang="Japanese" displayName="【ワープ】" />
+    <learnedSkillInfo byteOffset="19" bitMask="32" />
   </skill>
-  <skill id="155" name="ToxicBrew">
+  <skill id="155" name="ToxicBrew" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Toxic Brew" />
     <text lang="Japanese" displayName="【魔女の毒薬】" />
+    <learnedSkillInfo byteOffset="19" bitMask="16" />
   </skill>
-  <skill id="156" name="DancingBlade">
+  <skill id="156" name="DancingBlade" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Dancing Blade" />
     <text lang="Japanese" displayName="【柔剣】" />
+    <learnedSkillInfo byteOffset="19" bitMask="8" />
   </skill>
-  <skill id="157" name="DualGuardsman">
+  <skill id="157" name="DualGuardsman" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Dual Guardsman" />
     <text lang="Japanese" displayName="【防陣＋】" />
+    <learnedSkillInfo byteOffset="19" bitMask="4" />
   </skill>
-  <skill id="158" name="HeavyBlade">
+  <skill id="158" name="HeavyBlade" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Heavy Blade" />
     <text lang="Japanese" displayName="【剛剣】" />
+    <learnedSkillInfo byteOffset="19" bitMask="2" />
   </skill>
-  <skill id="159" name="VeteranIntuition">
+  <skill id="159" name="VeteranIntuition" enemyOnly="true" dlc="false" personal="false" unlearnable="false">
     <text lang="English" displayName="Veteran Intuition" />
     <text lang="Japanese" displayName="【歴戦の勘】" />
+    <learnedSkillInfo byteOffset="19" bitMask="1" />
   </skill>
-  <skill id="160" name="Supportive">
+  <skill id="160" name="Supportive" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Supportive" />
     <text lang="Japanese" displayName="【不思議な魅力】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="161" name="ForcefulPartner">
+  <skill id="161" name="ForcefulPartner" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Forceful Partner" />
     <text lang="Japanese" displayName="【絶対進攻】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="162" name="DevotedPartner">
+  <skill id="162" name="DevotedPartner" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Devoted Partner" />
     <text lang="Japanese" displayName="【絶対援護】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="163" name="EvasivePartner">
+  <skill id="163" name="EvasivePartner" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Evasive Partner" />
     <text lang="Japanese" displayName="【絶対死守】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="164" name="FieryBlood">
+  <skill id="164" name="FieryBlood" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Fiery Blood" />
     <text lang="Japanese" displayName="【炎の血】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="165" name="MiraculousSave">
+  <skill id="165" name="MiraculousSave" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Miraculous Save" />
     <text lang="Japanese" displayName="【絆の祈り】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="166" name="HealingDescant">
+  <skill id="166" name="HealingDescant" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Healing Descant" />
     <text lang="Japanese" displayName="【癒しの声】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="167" name="QuietStrength">
+  <skill id="167" name="QuietStrength" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Quiet Strength" />
     <text lang="Japanese" displayName="【小さな声援】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="168" name="FearsomeBlow">
+  <skill id="168" name="FearsomeBlow" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Fearsome Blow" />
     <text lang="Japanese" displayName="【お転婆】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="169" name="Perfectionist">
+  <skill id="169" name="Perfectionist" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Perfectionist" />
     <text lang="Japanese" displayName="【完璧主義】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="170" name="VowOfFriendship">
+  <skill id="170" name="VowOfFriendship" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Vow of Friendship" />
     <text lang="Japanese" displayName="【友情の誓い】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="171" name="Pyrotechnics">
+  <skill id="171" name="Pyrotechnics" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Pyrotechnics" />
     <text lang="Japanese" displayName="【爆炎使い】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="172" name="Capture">
+  <skill id="172" name="Capture" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Capture" />
     <text lang="Japanese" displayName="【白夜の捕縛術】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="173" name="RallyingCry">
+  <skill id="173" name="RallyingCry" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Rallying Cry" />
     <text lang="Japanese" displayName="【叱咤激励】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="174" name="DivineRetribution">
+  <skill id="174" name="DivineRetribution" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Divine Retribution" />
     <text lang="Japanese" displayName="【天罰】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="175" name="Optimistic">
+  <skill id="175" name="Optimistic" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Optimistic" />
     <text lang="Japanese" displayName="【ぼんやり】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="176" name="Pride">
+  <skill id="176" name="Pride" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Pride" />
     <text lang="Japanese" displayName="【尊大】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="177" name="NohrEnmity">
+  <skill id="177" name="NohrEnmity" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Nohr Enmity" />
     <text lang="Japanese" displayName="【暗夜嫌い】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="178" name="TripleThreat">
+  <skill id="178" name="TripleThreat" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Triple Threat" />
     <text lang="Japanese" displayName="【悪あがき】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="179" name="Competitive">
+  <skill id="179" name="Competitive" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Competitive" />
     <text lang="Japanese" displayName="【対抗意識】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="180" name="ShurikenMastery">
+  <skill id="180" name="ShurikenMastery" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Shuriken Mastery" />
     <text lang="Japanese" displayName="【忍法車返し】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="181" name="MorbidCelebration">
+  <skill id="181" name="MorbidCelebration" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Morbid Celebration" />
     <text lang="Japanese" displayName="【勝者の愉悦】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="182" name="Reciprocity">
+  <skill id="182" name="Reciprocity" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Reciprocity" />
     <text lang="Japanese" displayName="【恩返し】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="183" name="Bushido">
+  <skill id="183" name="Bushido" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Bushido" />
     <text lang="Japanese" displayName="【武士道】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="184" name="InExtremis">
+  <skill id="184" name="InExtremis" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="In Extremis" />
     <text lang="Japanese" displayName="【勝利への執念】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="185" name="Highwayman">
+  <skill id="185" name="Highwayman" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Highwayman" />
     <text lang="Japanese" displayName="【ダーティファイト】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="186" name="LilysPoise">
+  <skill id="186" name="LilysPoise" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Lily's Poise" />
     <text lang="Japanese" displayName="【可憐な花】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="187" name="Misfortunate">
+  <skill id="187" name="Misfortunate" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Misfortunate" />
     <text lang="Japanese" displayName="【不運の塊】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="188" name="Puissance">
+  <skill id="188" name="Puissance" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Puissance" />
     <text lang="Japanese" displayName="【怪力】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="189" name="AchingBlood">
+  <skill id="189" name="AchingBlood" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Aching Blood" />
     <text lang="Japanese" displayName="【血の疼き】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="190" name="Kidnap">
+  <skill id="190" name="Kidnap" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Kidnap" />
     <text lang="Japanese" displayName="【暗夜の拘束術】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="191" name="Countercurse">
+  <skill id="191" name="Countercurse" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Countercurse" />
     <text lang="Japanese" displayName="【呪詛返し】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="192" name="RosesThorns">
+  <skill id="192" name="RosesThorns" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Rose's Thorns" />
     <text lang="Japanese" displayName="【妖艶な花】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="193" name="FierceRival">
+  <skill id="193" name="FierceRival" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Fierce Rival" />
     <text lang="Japanese" displayName="【負けん気】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="194" name="Opportunist">
+  <skill id="194" name="Opportunist" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Opportunist" />
     <text lang="Japanese" displayName="【奇襲任務】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="195" name="FancyFootwork">
+  <skill id="195" name="FancyFootwork" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Fancy Footwork" />
     <text lang="Japanese" displayName="【青の踊り】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="196" name="Bloodthirst">
+  <skill id="196" name="Bloodthirst" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Bloodthirst" />
     <text lang="Japanese" displayName="【殺戮本能】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="197" name="FierceMien">
+  <skill id="197" name="FierceMien" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Fierce Mien" />
     <text lang="Japanese" displayName="【強面】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="198" name="Unmask">
+  <skill id="198" name="Unmask" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Unmask" />
     <text lang="Japanese" displayName="【女の本性】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="199" name="Pragmatic">
+  <skill id="199" name="Pragmatic" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Pragmatic" />
     <text lang="Japanese" displayName="【冷血】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="200" name="Collector">
+  <skill id="200" name="Collector" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Collector" />
     <text lang="Japanese" displayName="【拾いもの】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="201" name="Chivalry">
+  <skill id="201" name="Chivalry" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Chivalry" />
     <text lang="Japanese" displayName="【騎士道】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="202" name="Peacebringer">
+  <skill id="202" name="Peacebringer" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Peacebringer" />
     <text lang="Japanese" displayName="【美しき王】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="203" name="WindDisciple">
+  <skill id="203" name="WindDisciple" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Wind Disciple" />
     <text lang="Japanese" displayName="【風の血】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="204" name="Perspicacious">
+  <skill id="204" name="Perspicacious" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Perspicacious" />
     <text lang="Japanese" displayName="【軍略伝授】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="205" name="IcyBlood">
+  <skill id="205" name="IcyBlood" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Icy Blood" />
     <text lang="Japanese" displayName="【氷の血】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="206" name="Forager">
+  <skill id="206" name="Forager" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Forager" />
     <text lang="Japanese" displayName="【農地の主】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="207" name="DraconicHeir">
+  <skill id="207" name="DraconicHeir" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Draconic Heir" />
     <text lang="Japanese" displayName="【竜の御子】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="208" name="BornSteward">
+  <skill id="208" name="BornSteward" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Born Steward" />
     <text lang="Japanese" displayName="【執事の嗜み】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="209" name="PerfectPitch">
+  <skill id="209" name="PerfectPitch" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Perfect Pitch" />
     <text lang="Japanese" displayName="【チューニング】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="210" name="Mischievous">
+  <skill id="210" name="Mischievous" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Mischievous" />
     <text lang="Japanese" displayName="【おっちょこちょい】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="211" name="LuckyCharm">
+  <skill id="211" name="LuckyCharm" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Lucky Charm" />
     <text lang="Japanese" displayName="【幸運のおまじない】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="212" name="NobleCause">
+  <skill id="212" name="NobleCause" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Noble Cause" />
     <text lang="Japanese" displayName="【大義の勇】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="213" name="Optimist">
+  <skill id="213" name="Optimist" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Optimist" />
     <text lang="Japanese" displayName="【前向き】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="214" name="SweetTooth">
+  <skill id="214" name="SweetTooth" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Sweet Tooth" />
     <text lang="Japanese" displayName="【甘党】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="215" name="Playthings">
+  <skill id="215" name="Playthings" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Playthings" />
     <text lang="Japanese" displayName="【じゃれつき】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="216" name="Calm">
+  <skill id="216" name="Calm" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Calm" />
     <text lang="Japanese" displayName="【冷静沈着】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="217" name="Haiku">
+  <skill id="217" name="Haiku" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Haiku" />
     <text lang="Japanese" displayName="【五・七・五】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="218" name="Prodigy">
+  <skill id="218" name="Prodigy" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Prodigy" />
     <text lang="Japanese" displayName="【天才肌】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="219" name="Vendetta">
+  <skill id="219" name="Vendetta" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Vendetta" />
     <text lang="Japanese" displayName="【執念】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="220" name="Gallant">
+  <skill id="220" name="Gallant" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Gallant" />
     <text lang="Japanese" displayName="【レディーファースト】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="221" name="FierceCounter">
+  <skill id="221" name="FierceCounter" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Guarded Bravery" />
     <text lang="Japanese" displayName="【臆病】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="222" name="GuardedBravery">
+  <skill id="222" name="GuardedBravery" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Fierce Counter" />
     <text lang="Japanese" displayName="【だまし討ち】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="223" name="Scavenge">
+  <skill id="223" name="Scavenge" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Goody Basket" />
     <text lang="Japanese" displayName="【ひろい食い】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="224" name="FortunateSon">
+  <skill id="224" name="FortunateSon" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Fortunate Son" />
     <text lang="Japanese" displayName="【強運の塊】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="225" name="Bibliophile">
+  <skill id="225" name="Bibliophile" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Bibliophile" />
     <text lang="Japanese" displayName="【乙女心の躍動】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="226" name="Sisterhood">
+  <skill id="226" name="Sisterhood" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Sisterhood" />
     <text lang="Japanese" displayName="【女の子好き】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="227" name="Daydream">
+  <skill id="227" name="Daydream" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Daydream" />
     <text lang="Japanese" displayName="【邪な空想】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
-  <skill id="228" name="MakeAKilling">
+  <skill id="228" name="MakeAKilling" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="Make a Killing" />
     <text lang="Japanese" displayName="【一攫千金】" />
+    <learnedSkillInfo byteOffset="0" bitMask="0" />
   </skill>
   <!--
   Template:
-  <skill id="0" name="InternalName">
+  <skill id="0" name="InternalName" enemyOnly="false" dlc="false" personal="true" unlearnable="false">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <learnedSkillInfo byteOffset="0" bitMask="1" />
   </skill>
   -->
 </root>

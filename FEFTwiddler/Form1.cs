@@ -12,11 +12,6 @@ namespace FEFTwiddler
         private Model.ChapterSave _chapterSave;
         private Model.Character _selectedCharacter;
 
-        private Data.CharacterDatabase _characterDatabase;
-        private Data.ClassDatabase _classDatabase;
-        private Data.ItemDatabase _itemDatabase;
-        private Data.SkillDatabase _skillDatabase;
-
         public Form1()
         {
             InitializeComponent();
@@ -27,10 +22,7 @@ namespace FEFTwiddler
         {
             // TODO: Let user specify language
             // Will need to call SetLanguage on all databases when switching and refresh GUI for display names
-            _characterDatabase = new Data.CharacterDatabase(Enums.Language.English);
-            _classDatabase = new Data.ClassDatabase(Enums.Language.English);
-            _itemDatabase = new Data.ItemDatabase(Enums.Language.English);
-            _skillDatabase = new Data.SkillDatabase(Enums.Language.English);
+            Data.Database.SetLanguage(Enums.Language.English);
         }
 
         private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -168,11 +160,11 @@ namespace FEFTwiddler
         private void LoadCharacter(Model.Character character)
         {
             if (Enum.IsDefined(typeof(Enums.Character), character.CharacterID))
-                lblName.Text = _characterDatabase.GetByID(character.CharacterID).DisplayName;
+                lblName.Text = Data.Database.Characters.GetByID(character.CharacterID).DisplayName;
             else
                 lblName.Text = character.CharacterID.ToString();
             if (Enum.IsDefined(typeof(Enums.Class), character.ClassID))
-                cmbClass.Text = _classDatabase.GetByID(character.ClassID).DisplayName;
+                cmbClass.Text = Data.Database.Classes.GetByID(character.ClassID).DisplayName;
             else
                 cmbClass.Text = character.ClassID.ToString();
 
@@ -191,15 +183,15 @@ namespace FEFTwiddler
             chkEinherjar.Checked = character.IsEinherjar;
             chkRecruited.Checked = character.IsRecruited;
 
-            cmbSkill1.Text = _skillDatabase.GetByID(character.EquippedSkill_1).DisplayName;
+            cmbSkill1.Text = Data.Database.Skills.GetByID(character.EquippedSkill_1).DisplayName;
             pictSkill1.Image = GetSkillImage(character.EquippedSkill_1);
-            cmbSkill2.Text = _skillDatabase.GetByID(character.EquippedSkill_2).DisplayName;
+            cmbSkill2.Text = Data.Database.Skills.GetByID(character.EquippedSkill_2).DisplayName;
             pictSkill2.Image = GetSkillImage(character.EquippedSkill_2);
-            cmbSkill3.Text = _skillDatabase.GetByID(character.EquippedSkill_3).DisplayName;
+            cmbSkill3.Text = Data.Database.Skills.GetByID(character.EquippedSkill_3).DisplayName;
             pictSkill3.Image = GetSkillImage(character.EquippedSkill_3);
-            cmbSkill4.Text = _skillDatabase.GetByID(character.EquippedSkill_4).DisplayName;
+            cmbSkill4.Text = Data.Database.Skills.GetByID(character.EquippedSkill_4).DisplayName;
             pictSkill4.Image = GetSkillImage(character.EquippedSkill_4);
-            cmbSkill5.Text = _skillDatabase.GetByID(character.EquippedSkill_5).DisplayName;
+            cmbSkill5.Text = Data.Database.Skills.GetByID(character.EquippedSkill_5).DisplayName;
             pictSkill5.Image = GetSkillImage(character.EquippedSkill_5);
 
             cmbHeadwear.Text = character.Headwear.ToString();
@@ -262,8 +254,8 @@ namespace FEFTwiddler
             if (Enum.IsDefined(typeof(Enums.Character), character.CharacterID) &&
                 Enum.IsDefined(typeof(Enums.Class), character.ClassID))
             {
-                var characterData = _characterDatabase.GetByID(character.CharacterID);
-                var classData = _classDatabase.GetByID(character.ClassID);
+                var characterData = Data.Database.Characters.GetByID(character.CharacterID);
+                var classData = Data.Database.Classes.GetByID(character.ClassID);
                 byte[] trueStats = new byte[] {
                     (byte)(characterData.Base_HP  + classData.Base_HP  + character.StatBytes1[0]),
                     (byte)(characterData.Base_Str + classData.Base_Str + character.StatBytes1[1]),
@@ -471,7 +463,7 @@ namespace FEFTwiddler
 
         private string GetItemString(Model.InventoryItem item)
         {
-            var data = _itemDatabase.GetByID(item.ItemID);
+            var data = Data.Database.Items.GetByID(item.ItemID);
 
             var equipped = (item.IsEquipped ? "(E) " : "");
             var displayName = data.DisplayName;
