@@ -1634,6 +1634,7 @@
             // 
             // HairColor
             // 
+            this.HairColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.HairColor, "HairColor");
             this.HairColor.Name = "HairColor";
             this.HairColor.TabStop = false;

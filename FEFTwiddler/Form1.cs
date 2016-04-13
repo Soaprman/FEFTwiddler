@@ -273,7 +273,7 @@ namespace FEFTwiddler
         private Bitmap GetSkillImage(Enums.Skill skillId)
         {
             var img = Properties.Resources.ResourceManager.GetObject(
-                        String.Format("Skill_{0,000}", (byte)skillId));
+                        String.Format("Skill_{0:D3}", (byte)skillId));
 
             return (Bitmap)img;
         }

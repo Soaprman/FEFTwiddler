@@ -134,7 +134,6 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Resources\Data\Skills.xml" />
-    <Content Include="Resources\FEFTwiddler.ico" />
     <Content Include="Resources\Images\MaterialIcons\Material_amber.png" />
     <Content Include="Resources\Images\MaterialIcons\Material_beans.png" />
     <Content Include="Resources\Images\MaterialIcons\Material_berries.png" />

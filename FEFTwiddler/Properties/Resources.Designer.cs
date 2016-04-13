@@ -63,18 +63,16 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;root&gt;
+        ///  &lt;character id=&quot;0&quot; name=&quot;None&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;None&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;無し&quot; /&gt;
+        ///    &lt;baseStats hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; res=&quot;0&quot; /&gt;
+        ///    &lt;modifier hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; res=&quot;0&quot; /&gt;
+        ///  &lt;/character&gt;
         ///  &lt;character id=&quot;1&quot; name=&quot;Corrin_M&quot;&gt;
         ///    &lt;text lang=&quot;English&quot; displayName=&quot;Corrin (M)&quot; /&gt;
-        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;Kamui (M)&quot; /&gt;
-        ///    &lt;baseStats hp=&quot;19&quot; str=&quot;7&quot; mag=&quot;4&quot; skl=&quot;7&quot; spd=&quot;6&quot; lck=&quot;5&quot; def=&quot;6&quot; res=&quot;2&quot; /&gt;
-        ///  &lt;/character&gt;
-        ///  
-        ///  &lt;!--
-        ///  Template:
-        ///  &lt;character id=&quot;0&quot; name=&quot;InternalName&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;DisplayName&quot; /&gt;
-        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;DisplayName&quot; /&gt;
-        ///    &lt;baseStats hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; sk [rest of string was truncated]&quot;;.
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;カムイ&quot; /&gt;
+        ///    &lt;baseStats hp=&quot;2&quot; str= [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Characters {
             get {
@@ -85,18 +83,16 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;root&gt;
+        ///  &lt;class id=&quot;0&quot; name=&quot;None&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;None&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;無し&quot; /&gt;
+        ///    &lt;baseStats hp=&quot;1&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; res=&quot;0&quot; /&gt;
+        ///    &lt;maxStats hp=&quot;40&quot; str=&quot;15&quot; mag=&quot;15&quot; skl=&quot;15&quot; spd=&quot;15&quot; lck=&quot;15&quot; def=&quot;15&quot; res=&quot;15&quot; /&gt;
+        ///  &lt;/class&gt;
         ///  &lt;class id=&quot;1&quot; name=&quot;NohrNoble_M&quot;&gt;
         ///    &lt;text lang=&quot;English&quot; displayName=&quot;Nohr Noble (M)&quot; /&gt;
-        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;Dark Blood (M)&quot; /&gt;
-        ///    &lt;baseStats hp=&quot;18&quot; str=&quot;8&quot; mag=&quot;4&quot; skl=&quot;4&quot; spd=&quot;7&quot; lck=&quot;2&quot; def=&quot;6&quot; res=&quot;6&quot; /&gt;
-        ///  &lt;/class&gt;
-        ///
-        ///  &lt;!--
-        ///  Template:
-        ///  &lt;class id=&quot;0&quot; name=&quot;InternalName&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;DisplayName&quot; /&gt;
-        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;DisplayName&quot; /&gt;
-        ///    &lt;baseStats hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl= [rest of string was truncated]&quot;;.
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;ダークブラッド男&quot; /&gt;
+        ///    &lt;baseStats hp= [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Classes {
             get {
@@ -107,12 +103,17 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;root&gt;
-        ///  &lt;item id=&quot;0&quot; name=&quot;None&quot; displayName=&quot;(None)&quot; type=&quot;Unknown&quot; maxUses=&quot;0&quot;/&gt;
-        ///  &lt;item id=&quot;1&quot; name=&quot;BronzeSword&quot; displayName=&quot;Bronze Sword&quot; type=&quot;Sword&quot; maxUses=&quot;0&quot;/&gt;
-        ///  &lt;item id=&quot;2&quot; name=&quot;IronSword&quot; displayName=&quot;Iron Sword&quot; type=&quot;Sword&quot; maxUses=&quot;0&quot;/&gt;
-        ///  &lt;item id=&quot;3&quot; name=&quot;SteelSword&quot; displayName=&quot;Steel Sword&quot; type=&quot;Sword&quot; maxUses=&quot;0&quot;/&gt;
-        ///  &lt;item id=&quot;4&quot; name=&quot;SilverSword&quot; displayName=&quot;Silver Sword&quot; type=&quot;Sword&quot; maxUses=&quot;0&quot;/&gt;
-        ///  &lt;item id=&quot;5&quot; name=&quot;BraveSword&quot; di [rest of string was truncated]&quot;;.
+        ///  &lt;item id=&quot;0&quot; name=&quot;None&quot; type=&quot;Unknown&quot; maxUses=&quot;0&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;(None)&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;無し&quot; /&gt;
+        ///  &lt;/item&gt;
+        ///  &lt;item id=&quot;1&quot; name=&quot;BronzeSword&quot; type=&quot;Sword&quot; maxUses=&quot;0&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Bronze Sword&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;青銅の剣&quot; /&gt;
+        ///  &lt;/item&gt;
+        ///  &lt;item id=&quot;2&quot; name=&quot;IronSword&quot; type=&quot;Sword&quot; maxUses=&quot;0&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Iron Sword&quot; /&gt;
+        ///    &lt;text lang=&quot;Japan [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Items {
             get {
@@ -123,33 +124,24 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;root&gt;
+        ///  &lt;skill id=&quot;0&quot; name=&quot;None&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;None&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;無し&quot; /&gt;
+        ///  &lt;/skill&gt;
         ///  &lt;skill id=&quot;1&quot; name=&quot;HPPlus5&quot;&gt;
         ///    &lt;text lang=&quot;English&quot; displayName=&quot;HP +5&quot; /&gt;
-        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;HP +5&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;【最大ＨＰ+5】&quot; /&gt;
         ///  &lt;/skill&gt;
-        ///
-        ///  &lt;!--
-        ///  Template:
-        ///  &lt;skill id=&quot;0&quot; name=&quot;InternalName&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;DisplayName&quot; /&gt;
-        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;DisplayName&quot; /&gt;
+        ///  &lt;skill id=&quot;2&quot; name=&quot;StrengthPlus2&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Strength +2&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;【力+2】&quot; /&gt;
         ///  &lt;/skill&gt;
-        ///  --&gt;
-        ///&lt;/root&gt;.
+        ///  &lt;skill id=&quot;3&quot; name=&quot;MagicPlus2&quot;&gt;
+        ///   [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Skills {
             get {
                 return ResourceManager.GetString("Data_Skills", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon FEFTwiddler {
-            get {
-                object obj = ResourceManager.GetObject("FEFTwiddler", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
             }
         }
         
