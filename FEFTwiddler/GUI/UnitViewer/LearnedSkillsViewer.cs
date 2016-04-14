@@ -8,13 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FEFTwiddler.GUI
+namespace FEFTwiddler.GUI.UnitViewer
 {
-    public partial class LearnedSkills : Form
+    public partial class LearnedSkillsViewer : Form
     {
         private Model.Character _character;
 
-        public LearnedSkills(Model.Character character)
+        public LearnedSkillsViewer(Model.Character character)
         {
             _character = character;
             InitializeComponent();

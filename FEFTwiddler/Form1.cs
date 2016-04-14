@@ -16,27 +16,27 @@ namespace FEFTwiddler
         private Model.ChapterSave _chapterSave;
         private Model.Character _selectedCharacter;
 
-        private ItemPanel[] inventory;
+        private ItemPanel[] _inventory;
 
         public FEFTwiddler()
         {
             InitializeComponent();
             InitializeDatabases();
 
-            inventory = new ItemPanel[5];
-            inventory[0] = new ItemPanel(null,
+            _inventory = new ItemPanel[5];
+            _inventory[0] = new ItemPanel(null,
                 ItemPic_1, ItemNameBox_1, ItemIsEquipped_1,
                 ItemForgesBox_1, ItemQuantBox_1, ItemHexBox_1);
-            inventory[1] = new ItemPanel(null,
+            _inventory[1] = new ItemPanel(null,
                 ItemPic_2, ItemNameBox_2, ItemIsEquipped_2,
                 ItemForgesBox_2, ItemQuantBox_2, ItemHexBox_2);
-            inventory[2] = new ItemPanel(null,
+            _inventory[2] = new ItemPanel(null,
                 ItemPic_3, ItemNameBox_3, ItemIsEquipped_3,
                 ItemForgesBox_3, ItemQuantBox_3, ItemHexBox_3);
-            inventory[3] = new ItemPanel(null,
+            _inventory[3] = new ItemPanel(null,
                 ItemPic_4, ItemNameBox_4, ItemIsEquipped_4,
                 ItemForgesBox_4, ItemQuantBox_4, ItemHexBox_4);
-            inventory[4] = new ItemPanel(null,
+            _inventory[4] = new ItemPanel(null,
                 ItemPic_5, ItemNameBox_5, ItemIsEquipped_5,
                 ItemForgesBox_5, ItemQuantBox_5, ItemHexBox_5);
         }
@@ -253,18 +253,16 @@ namespace FEFTwiddler
             numStaff.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Staff);
             numStone.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Stone);
 
-            inventory[0].LoadItem(character.Item_1);
-            inventory[1].LoadItem(character.Item_2);
-            inventory[2].LoadItem(character.Item_3);
-            inventory[3].LoadItem(character.Item_4);
-            inventory[4].LoadItem(character.Item_5);
+            _inventory[0].LoadItem(character.Item_1);
+            _inventory[1].LoadItem(character.Item_2);
+            _inventory[2].LoadItem(character.Item_3);
+            _inventory[3].LoadItem(character.Item_4);
+            _inventory[4].LoadItem(character.Item_5);
 
             txtStatBytes.Text = GetStatBytesString(character);
 
             numBattles.Value = character.BattleCount;
             numVictories.Value = character.VictoryCount;
-
-            //EnableControls();
         }
 
         private void PopulatePickers()
@@ -368,18 +366,6 @@ namespace FEFTwiddler
             }
 
             return str;
-        }
-
-        private void EnableControls()
-        {
-            cmbClass.Enabled = true;
-            numLevel.Enabled = true;
-            numExperience.Enabled = true;
-            cmbSkill1.Enabled = true;
-            cmbSkill2.Enabled = true;
-            cmbSkill3.Enabled = true;
-            cmbSkill4.Enabled = true;
-            cmbSkill5.Enabled = true;
         }
 
         private void saveFileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -673,7 +659,7 @@ namespace FEFTwiddler
 
         private void btnMaxForges_Click(object sender, EventArgs e)
         {
-            foreach (ItemPanel item in inventory)
+            foreach (ItemPanel item in _inventory)
             {
                 item.SetForges(7);
             }
@@ -681,7 +667,7 @@ namespace FEFTwiddler
 
         private void btnMaxCharges_Click(object sender, EventArgs e)
         {
-            foreach(ItemPanel item in inventory)
+            foreach(ItemPanel item in _inventory)
             {
                 item.SetCharges(35);
             }
@@ -779,7 +765,7 @@ namespace FEFTwiddler
 
         private void btnViewLearnedSkills_Click(object sender, EventArgs e)
         {
-            var popup = new GUI.LearnedSkills(_selectedCharacter);
+            var popup = new GUI.UnitViewer.LearnedSkillsViewer(_selectedCharacter);
             popup.Show();
         }
 
@@ -916,7 +902,7 @@ namespace FEFTwiddler
 
             try
             {
-                if (data.Type.hasCharges())
+                if (data.Type.HasCharges())
                 {
                     Charges.Enabled = true;
                     Charges.Value = item.Uses;
@@ -927,7 +913,7 @@ namespace FEFTwiddler
                     Charges.Value = 1;
                 }
 
-                if (data.Type.hasForges())
+                if (data.Type.HasForges())
                 {
                     Forges.Enabled = true;
                     Forges.Value = item.Uses;
@@ -991,7 +977,7 @@ namespace FEFTwiddler
         public void SetForges(int val)
         {
             var data = ItemDb.GetByID(item.ItemID);
-            if (data.Type.hasForges())
+            if (data.Type.HasForges())
             {
                 item.Uses = (byte) Math.Max(7, Math.Min(0, val));
                 UpdatePanel();
@@ -1001,7 +987,7 @@ namespace FEFTwiddler
         public void SetCharges(int val)
         {
             var data = ItemDb.GetByID(item.ItemID);
-            if (data.Type.hasCharges())
+            if (data.Type.HasCharges())
             {
                 item.Uses = (byte)Math.Max(35, Math.Min(0, val));
                 UpdatePanel();

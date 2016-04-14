@@ -1,6 +1,6 @@
-﻿namespace FEFTwiddler.GUI
+﻿namespace FEFTwiddler.GUI.UnitViewer
 {
-    partial class LearnedSkills
+    partial class LearnedSkillsViewer
     {
         /// <summary>
         /// Required designer variable.
