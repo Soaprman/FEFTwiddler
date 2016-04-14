@@ -99,25 +99,84 @@
             this.numCrystal = new System.Windows.Forms.NumericUpDown();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnViewLearnedSkills = new System.Windows.Forms.Button();
-            this.btnAllSkills = new System.Windows.Forms.Button();
-            this.btnAllSkillsDLC = new System.Windows.Forms.Button();
-            this.AllSkillsEnemy = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.chkIncludeEnemyOnlySkills = new System.Windows.Forms.CheckBox();
-            this.cmbSkill1 = new System.Windows.Forms.ComboBox();
-            this.pictSkill1 = new System.Windows.Forms.PictureBox();
-            this.pictSkill2 = new System.Windows.Forms.PictureBox();
-            this.cmbSkill2 = new System.Windows.Forms.ComboBox();
-            this.pictSkill3 = new System.Windows.Forms.PictureBox();
-            this.cmbSkill3 = new System.Windows.Forms.ComboBox();
-            this.pictSkill4 = new System.Windows.Forms.PictureBox();
-            this.cmbSkill4 = new System.Windows.Forms.ComboBox();
-            this.pictSkill5 = new System.Windows.Forms.PictureBox();
-            this.cmbSkill5 = new System.Windows.Forms.ComboBox();
+            this.MaxQuantAll = new System.Windows.Forms.Button();
+            this.MaxForgeAll = new System.Windows.Forms.Button();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.ItemQuantBox_5 = new System.Windows.Forms.NumericUpDown();
+            this.ItemHexBox_5 = new System.Windows.Forms.MaskedTextBox();
+            this.ItemForgesBox_5 = new System.Windows.Forms.NumericUpDown();
+            this.ItemIsEquipped_5 = new System.Windows.Forms.CheckBox();
+            this.ItemPic_5 = new System.Windows.Forms.PictureBox();
+            this.ItemNameBox_5 = new System.Windows.Forms.ComboBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.ItemQuantBox_4 = new System.Windows.Forms.NumericUpDown();
+            this.ItemHexBox_4 = new System.Windows.Forms.MaskedTextBox();
+            this.ItemForgesBox_4 = new System.Windows.Forms.NumericUpDown();
+            this.ItemIsEquipped_4 = new System.Windows.Forms.CheckBox();
+            this.ItemPic_4 = new System.Windows.Forms.PictureBox();
+            this.ItemNameBox_4 = new System.Windows.Forms.ComboBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.ItemQuantBox_3 = new System.Windows.Forms.NumericUpDown();
+            this.ItemHexBox_3 = new System.Windows.Forms.MaskedTextBox();
+            this.ItemForgesBox_3 = new System.Windows.Forms.NumericUpDown();
+            this.ItemIsEquipped_3 = new System.Windows.Forms.CheckBox();
+            this.ItemPic_3 = new System.Windows.Forms.PictureBox();
+            this.ItemNameBox_3 = new System.Windows.Forms.ComboBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.ItemQuantBox_2 = new System.Windows.Forms.NumericUpDown();
+            this.ItemHexBox_2 = new System.Windows.Forms.MaskedTextBox();
+            this.ItemForgesBox_2 = new System.Windows.Forms.NumericUpDown();
+            this.ItemIsEquipped_2 = new System.Windows.Forms.CheckBox();
+            this.ItemPic_2 = new System.Windows.Forms.PictureBox();
+            this.ItemNameBox_2 = new System.Windows.Forms.ComboBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.ItemQuantBox_1 = new System.Windows.Forms.NumericUpDown();
+            this.ItemHexBox_1 = new System.Windows.Forms.MaskedTextBox();
+            this.ItemForgesBox_1 = new System.Windows.Forms.NumericUpDown();
+            this.ItemIsEquipped_1 = new System.Windows.Forms.CheckBox();
+            this.ItemPic_1 = new System.Windows.Forms.PictureBox();
+            this.ItemNameBox_1 = new System.Windows.Forms.ComboBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.numStone = new System.Windows.Forms.NumericUpDown();
+            this.lblStoneRank = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.numStaff = new System.Windows.Forms.NumericUpDown();
+            this.lblStaffRank = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.numTome = new System.Windows.Forms.NumericUpDown();
+            this.lblTomeRank = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.numBow = new System.Windows.Forms.NumericUpDown();
+            this.lblBowRank = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.numShuriken = new System.Windows.Forms.NumericUpDown();
+            this.lblShurikenRank = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.numAxe = new System.Windows.Forms.NumericUpDown();
+            this.lblAxeRank = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.numLance = new System.Windows.Forms.NumericUpDown();
+            this.lblLanceRank = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.lblSwordRank = new System.Windows.Forms.Label();
+            this.numSword = new System.Windows.Forms.NumericUpDown();
             this.HairColorHex = new System.Windows.Forms.MaskedTextBox();
             this.HairColor = new System.Windows.Forms.PictureBox();
+            this.AllSkillsEnemy = new System.Windows.Forms.Button();
+            this.btnAllSkillsDLC = new System.Windows.Forms.Button();
+            this.btnAllSkills = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.numInternalLevel = new System.Windows.Forms.NumericUpDown();
             this.label20 = new System.Windows.Forms.Label();
@@ -132,36 +191,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.txtStatBytes = new System.Windows.Forms.TextBox();
-            this.lblInventory5 = new System.Windows.Forms.Label();
-            this.lblInventory4 = new System.Windows.Forms.Label();
-            this.lblInventory3 = new System.Windows.Forms.Label();
-            this.lblInventory2 = new System.Windows.Forms.Label();
-            this.lblInventory1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.lblStoneRank = new System.Windows.Forms.Label();
-            this.lblStaffRank = new System.Windows.Forms.Label();
-            this.lblTomeRank = new System.Windows.Forms.Label();
-            this.lblBowRank = new System.Windows.Forms.Label();
-            this.lblShurikenRank = new System.Windows.Forms.Label();
-            this.lblAxeRank = new System.Windows.Forms.Label();
-            this.lblLanceRank = new System.Windows.Forms.Label();
-            this.lblSwordRank = new System.Windows.Forms.Label();
-            this.numStone = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
-            this.numStaff = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.numTome = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
-            this.numBow = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.numShuriken = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.numAxe = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.numLance = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.numSword = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -178,6 +208,16 @@
             this.numExperience = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.numLevel = new System.Windows.Forms.NumericUpDown();
+            this.cmbSkill5 = new System.Windows.Forms.ComboBox();
+            this.pictSkill5 = new System.Windows.Forms.PictureBox();
+            this.cmbSkill4 = new System.Windows.Forms.ComboBox();
+            this.pictSkill4 = new System.Windows.Forms.PictureBox();
+            this.cmbSkill3 = new System.Windows.Forms.ComboBox();
+            this.pictSkill3 = new System.Windows.Forms.PictureBox();
+            this.cmbSkill2 = new System.Windows.Forms.ComboBox();
+            this.pictSkill2 = new System.Windows.Forms.PictureBox();
+            this.cmbSkill1 = new System.Windows.Forms.ComboBox();
+            this.pictSkill1 = new System.Windows.Forms.PictureBox();
             this.cmbClass = new System.Windows.Forms.ComboBox();
             this.lblName = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -243,37 +283,63 @@
             ((System.ComponentModel.ISupportInitialize)(this.numCrystal)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill5)).BeginInit();
+            this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemQuantBox_5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForgesBox_5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemPic_5)).BeginInit();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemQuantBox_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForgesBox_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemPic_4)).BeginInit();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemQuantBox_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForgesBox_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemPic_3)).BeginInit();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemQuantBox_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForgesBox_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemPic_2)).BeginInit();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemQuantBox_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForgesBox_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemPic_1)).BeginInit();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numStone)).BeginInit();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numStaff)).BeginInit();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTome)).BeginInit();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBow)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numShuriken)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAxe)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLance)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HairColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numInternalLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numEternalSeals)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBoots)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numVictories)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBattles)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numStone)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numStaff)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numTome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numBow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numShuriken)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numAxe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numLance)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numSword)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numExperience)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -883,10 +949,30 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Controls.Add(this.MaxQuantAll);
+            this.panel1.Controls.Add(this.MaxForgeAll);
+            this.panel1.Controls.Add(this.panel14);
+            this.panel1.Controls.Add(this.panel13);
+            this.panel1.Controls.Add(this.panel12);
+            this.panel1.Controls.Add(this.panel11);
+            this.panel1.Controls.Add(this.label25);
+            this.panel1.Controls.Add(this.label24);
+            this.panel1.Controls.Add(this.label23);
+            this.panel1.Controls.Add(this.label22);
+            this.panel1.Controls.Add(this.panel10);
+            this.panel1.Controls.Add(this.panel9);
+            this.panel1.Controls.Add(this.panel8);
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.HairColorHex);
             this.panel1.Controls.Add(this.HairColor);
+            this.panel1.Controls.Add(this.AllSkillsEnemy);
+            this.panel1.Controls.Add(this.btnAllSkillsDLC);
+            this.panel1.Controls.Add(this.btnAllSkills);
             this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.numInternalLevel);
             this.panel1.Controls.Add(this.label20);
@@ -901,36 +987,7 @@
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.txtStatBytes);
-            this.panel1.Controls.Add(this.lblInventory5);
-            this.panel1.Controls.Add(this.lblInventory4);
-            this.panel1.Controls.Add(this.lblInventory3);
-            this.panel1.Controls.Add(this.lblInventory2);
-            this.panel1.Controls.Add(this.lblInventory1);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.lblStoneRank);
-            this.panel1.Controls.Add(this.lblStaffRank);
-            this.panel1.Controls.Add(this.lblTomeRank);
-            this.panel1.Controls.Add(this.lblBowRank);
-            this.panel1.Controls.Add(this.lblShurikenRank);
-            this.panel1.Controls.Add(this.lblAxeRank);
-            this.panel1.Controls.Add(this.lblLanceRank);
-            this.panel1.Controls.Add(this.lblSwordRank);
-            this.panel1.Controls.Add(this.numStone);
-            this.panel1.Controls.Add(this.pictureBox30);
-            this.panel1.Controls.Add(this.numStaff);
-            this.panel1.Controls.Add(this.pictureBox28);
-            this.panel1.Controls.Add(this.numTome);
-            this.panel1.Controls.Add(this.pictureBox29);
-            this.panel1.Controls.Add(this.numBow);
-            this.panel1.Controls.Add(this.pictureBox26);
-            this.panel1.Controls.Add(this.numShuriken);
-            this.panel1.Controls.Add(this.pictureBox27);
-            this.panel1.Controls.Add(this.numAxe);
-            this.panel1.Controls.Add(this.pictureBox25);
-            this.panel1.Controls.Add(this.numLance);
-            this.panel1.Controls.Add(this.pictureBox24);
-            this.panel1.Controls.Add(this.numSword);
-            this.panel1.Controls.Add(this.pictureBox23);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -947,41 +1004,706 @@
             this.panel1.Controls.Add(this.numExperience);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.numLevel);
+            this.panel1.Controls.Add(this.cmbSkill5);
+            this.panel1.Controls.Add(this.pictSkill5);
+            this.panel1.Controls.Add(this.cmbSkill4);
+            this.panel1.Controls.Add(this.pictSkill4);
+            this.panel1.Controls.Add(this.cmbSkill3);
+            this.panel1.Controls.Add(this.pictSkill3);
+            this.panel1.Controls.Add(this.cmbSkill2);
+            this.panel1.Controls.Add(this.pictSkill2);
+            this.panel1.Controls.Add(this.cmbSkill1);
+            this.panel1.Controls.Add(this.pictSkill1);
             this.panel1.Controls.Add(this.cmbClass);
             this.panel1.Controls.Add(this.lblName);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
-            // groupBox2
+            // MaxQuantAll
             // 
-            this.groupBox2.Controls.Add(this.btnViewLearnedSkills);
-            this.groupBox2.Controls.Add(this.btnAllSkills);
-            this.groupBox2.Controls.Add(this.btnAllSkillsDLC);
-            this.groupBox2.Controls.Add(this.AllSkillsEnemy);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.TabStop = false;
+            resources.ApplyResources(this.MaxQuantAll, "MaxQuantAll");
+            this.MaxQuantAll.Name = "MaxQuantAll";
+            this.MaxQuantAll.UseVisualStyleBackColor = true;
+            this.MaxQuantAll.Click += new System.EventHandler(this.btnMaxCharges_Click);
             // 
-            // btnViewLearnedSkills
+            // MaxForgeAll
             // 
-            resources.ApplyResources(this.btnViewLearnedSkills, "btnViewLearnedSkills");
-            this.btnViewLearnedSkills.Name = "btnViewLearnedSkills";
-            this.btnViewLearnedSkills.UseVisualStyleBackColor = true;
-            this.btnViewLearnedSkills.Click += new System.EventHandler(this.btnViewLearnedSkills_Click);
+            resources.ApplyResources(this.MaxForgeAll, "MaxForgeAll");
+            this.MaxForgeAll.Name = "MaxForgeAll";
+            this.MaxForgeAll.UseVisualStyleBackColor = true;
+            this.MaxForgeAll.Click += new System.EventHandler(this.btnMaxForges_Click);
             // 
-            // btnAllSkills
+            // panel14
             // 
-            resources.ApplyResources(this.btnAllSkills, "btnAllSkills");
-            this.btnAllSkills.Name = "btnAllSkills";
-            this.btnAllSkills.UseVisualStyleBackColor = true;
-            this.btnAllSkills.Click += new System.EventHandler(this.btnAllSkills_Click);
+            this.panel14.Controls.Add(this.ItemQuantBox_5);
+            this.panel14.Controls.Add(this.ItemHexBox_5);
+            this.panel14.Controls.Add(this.ItemForgesBox_5);
+            this.panel14.Controls.Add(this.ItemIsEquipped_5);
+            this.panel14.Controls.Add(this.ItemPic_5);
+            this.panel14.Controls.Add(this.ItemNameBox_5);
+            resources.ApplyResources(this.panel14, "panel14");
+            this.panel14.Name = "panel14";
             // 
-            // btnAllSkillsDLC
+            // ItemQuantBox_5
             // 
-            resources.ApplyResources(this.btnAllSkillsDLC, "btnAllSkillsDLC");
-            this.btnAllSkillsDLC.Name = "btnAllSkillsDLC";
-            this.btnAllSkillsDLC.UseVisualStyleBackColor = true;
-            this.btnAllSkillsDLC.Click += new System.EventHandler(this.btnDLCSkills_Click);
+            resources.ApplyResources(this.ItemQuantBox_5, "ItemQuantBox_5");
+            this.ItemQuantBox_5.Maximum = new decimal(new int[] {
+            35,
+            0,
+            0,
+            0});
+            this.ItemQuantBox_5.Name = "ItemQuantBox_5";
+            // 
+            // ItemHexBox_5
+            // 
+            this.ItemHexBox_5.AllowPromptAsInput = false;
+            this.ItemHexBox_5.AsciiOnly = true;
+            this.ItemHexBox_5.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            resources.ApplyResources(this.ItemHexBox_5, "ItemHexBox_5");
+            this.ItemHexBox_5.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
+            this.ItemHexBox_5.Name = "ItemHexBox_5";
+            this.ItemHexBox_5.ResetOnPrompt = false;
+            this.ItemHexBox_5.SkipLiterals = false;
+            this.ItemHexBox_5.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // ItemForgesBox_5
+            // 
+            resources.ApplyResources(this.ItemForgesBox_5, "ItemForgesBox_5");
+            this.ItemForgesBox_5.Maximum = new decimal(new int[] {
+            7,
+            0,
+            0,
+            0});
+            this.ItemForgesBox_5.Name = "ItemForgesBox_5";
+            // 
+            // ItemIsEquipped_5
+            // 
+            resources.ApplyResources(this.ItemIsEquipped_5, "ItemIsEquipped_5");
+            this.ItemIsEquipped_5.Name = "ItemIsEquipped_5";
+            this.ItemIsEquipped_5.UseVisualStyleBackColor = true;
+            // 
+            // ItemPic_5
+            // 
+            resources.ApplyResources(this.ItemPic_5, "ItemPic_5");
+            this.ItemPic_5.Name = "ItemPic_5";
+            this.ItemPic_5.TabStop = false;
+            // 
+            // ItemNameBox_5
+            // 
+            this.ItemNameBox_5.FormattingEnabled = true;
+            resources.ApplyResources(this.ItemNameBox_5, "ItemNameBox_5");
+            this.ItemNameBox_5.Name = "ItemNameBox_5";
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.ItemQuantBox_4);
+            this.panel13.Controls.Add(this.ItemHexBox_4);
+            this.panel13.Controls.Add(this.ItemForgesBox_4);
+            this.panel13.Controls.Add(this.ItemIsEquipped_4);
+            this.panel13.Controls.Add(this.ItemPic_4);
+            this.panel13.Controls.Add(this.ItemNameBox_4);
+            resources.ApplyResources(this.panel13, "panel13");
+            this.panel13.Name = "panel13";
+            // 
+            // ItemQuantBox_4
+            // 
+            resources.ApplyResources(this.ItemQuantBox_4, "ItemQuantBox_4");
+            this.ItemQuantBox_4.Maximum = new decimal(new int[] {
+            35,
+            0,
+            0,
+            0});
+            this.ItemQuantBox_4.Name = "ItemQuantBox_4";
+            // 
+            // ItemHexBox_4
+            // 
+            this.ItemHexBox_4.AllowPromptAsInput = false;
+            this.ItemHexBox_4.AsciiOnly = true;
+            this.ItemHexBox_4.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            resources.ApplyResources(this.ItemHexBox_4, "ItemHexBox_4");
+            this.ItemHexBox_4.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
+            this.ItemHexBox_4.Name = "ItemHexBox_4";
+            this.ItemHexBox_4.ResetOnPrompt = false;
+            this.ItemHexBox_4.SkipLiterals = false;
+            this.ItemHexBox_4.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // ItemForgesBox_4
+            // 
+            resources.ApplyResources(this.ItemForgesBox_4, "ItemForgesBox_4");
+            this.ItemForgesBox_4.Maximum = new decimal(new int[] {
+            7,
+            0,
+            0,
+            0});
+            this.ItemForgesBox_4.Name = "ItemForgesBox_4";
+            // 
+            // ItemIsEquipped_4
+            // 
+            resources.ApplyResources(this.ItemIsEquipped_4, "ItemIsEquipped_4");
+            this.ItemIsEquipped_4.Name = "ItemIsEquipped_4";
+            this.ItemIsEquipped_4.UseVisualStyleBackColor = true;
+            // 
+            // ItemPic_4
+            // 
+            resources.ApplyResources(this.ItemPic_4, "ItemPic_4");
+            this.ItemPic_4.Name = "ItemPic_4";
+            this.ItemPic_4.TabStop = false;
+            // 
+            // ItemNameBox_4
+            // 
+            this.ItemNameBox_4.FormattingEnabled = true;
+            resources.ApplyResources(this.ItemNameBox_4, "ItemNameBox_4");
+            this.ItemNameBox_4.Name = "ItemNameBox_4";
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.ItemQuantBox_3);
+            this.panel12.Controls.Add(this.ItemHexBox_3);
+            this.panel12.Controls.Add(this.ItemForgesBox_3);
+            this.panel12.Controls.Add(this.ItemIsEquipped_3);
+            this.panel12.Controls.Add(this.ItemPic_3);
+            this.panel12.Controls.Add(this.ItemNameBox_3);
+            resources.ApplyResources(this.panel12, "panel12");
+            this.panel12.Name = "panel12";
+            // 
+            // ItemQuantBox_3
+            // 
+            resources.ApplyResources(this.ItemQuantBox_3, "ItemQuantBox_3");
+            this.ItemQuantBox_3.Maximum = new decimal(new int[] {
+            35,
+            0,
+            0,
+            0});
+            this.ItemQuantBox_3.Name = "ItemQuantBox_3";
+            // 
+            // ItemHexBox_3
+            // 
+            this.ItemHexBox_3.AllowPromptAsInput = false;
+            this.ItemHexBox_3.AsciiOnly = true;
+            this.ItemHexBox_3.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            resources.ApplyResources(this.ItemHexBox_3, "ItemHexBox_3");
+            this.ItemHexBox_3.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
+            this.ItemHexBox_3.Name = "ItemHexBox_3";
+            this.ItemHexBox_3.ResetOnPrompt = false;
+            this.ItemHexBox_3.SkipLiterals = false;
+            this.ItemHexBox_3.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // ItemForgesBox_3
+            // 
+            resources.ApplyResources(this.ItemForgesBox_3, "ItemForgesBox_3");
+            this.ItemForgesBox_3.Maximum = new decimal(new int[] {
+            7,
+            0,
+            0,
+            0});
+            this.ItemForgesBox_3.Name = "ItemForgesBox_3";
+            // 
+            // ItemIsEquipped_3
+            // 
+            resources.ApplyResources(this.ItemIsEquipped_3, "ItemIsEquipped_3");
+            this.ItemIsEquipped_3.Name = "ItemIsEquipped_3";
+            this.ItemIsEquipped_3.UseVisualStyleBackColor = true;
+            // 
+            // ItemPic_3
+            // 
+            resources.ApplyResources(this.ItemPic_3, "ItemPic_3");
+            this.ItemPic_3.Name = "ItemPic_3";
+            this.ItemPic_3.TabStop = false;
+            // 
+            // ItemNameBox_3
+            // 
+            this.ItemNameBox_3.FormattingEnabled = true;
+            resources.ApplyResources(this.ItemNameBox_3, "ItemNameBox_3");
+            this.ItemNameBox_3.Name = "ItemNameBox_3";
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.ItemQuantBox_2);
+            this.panel11.Controls.Add(this.ItemHexBox_2);
+            this.panel11.Controls.Add(this.ItemForgesBox_2);
+            this.panel11.Controls.Add(this.ItemIsEquipped_2);
+            this.panel11.Controls.Add(this.ItemPic_2);
+            this.panel11.Controls.Add(this.ItemNameBox_2);
+            resources.ApplyResources(this.panel11, "panel11");
+            this.panel11.Name = "panel11";
+            // 
+            // ItemQuantBox_2
+            // 
+            resources.ApplyResources(this.ItemQuantBox_2, "ItemQuantBox_2");
+            this.ItemQuantBox_2.Maximum = new decimal(new int[] {
+            35,
+            0,
+            0,
+            0});
+            this.ItemQuantBox_2.Name = "ItemQuantBox_2";
+            // 
+            // ItemHexBox_2
+            // 
+            this.ItemHexBox_2.AllowPromptAsInput = false;
+            this.ItemHexBox_2.AsciiOnly = true;
+            this.ItemHexBox_2.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            resources.ApplyResources(this.ItemHexBox_2, "ItemHexBox_2");
+            this.ItemHexBox_2.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
+            this.ItemHexBox_2.Name = "ItemHexBox_2";
+            this.ItemHexBox_2.ResetOnPrompt = false;
+            this.ItemHexBox_2.SkipLiterals = false;
+            this.ItemHexBox_2.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // ItemForgesBox_2
+            // 
+            resources.ApplyResources(this.ItemForgesBox_2, "ItemForgesBox_2");
+            this.ItemForgesBox_2.Maximum = new decimal(new int[] {
+            7,
+            0,
+            0,
+            0});
+            this.ItemForgesBox_2.Name = "ItemForgesBox_2";
+            // 
+            // ItemIsEquipped_2
+            // 
+            resources.ApplyResources(this.ItemIsEquipped_2, "ItemIsEquipped_2");
+            this.ItemIsEquipped_2.Name = "ItemIsEquipped_2";
+            this.ItemIsEquipped_2.UseVisualStyleBackColor = true;
+            // 
+            // ItemPic_2
+            // 
+            resources.ApplyResources(this.ItemPic_2, "ItemPic_2");
+            this.ItemPic_2.Name = "ItemPic_2";
+            this.ItemPic_2.TabStop = false;
+            // 
+            // ItemNameBox_2
+            // 
+            this.ItemNameBox_2.FormattingEnabled = true;
+            resources.ApplyResources(this.ItemNameBox_2, "ItemNameBox_2");
+            this.ItemNameBox_2.Name = "ItemNameBox_2";
+            // 
+            // label25
+            // 
+            resources.ApplyResources(this.label25, "label25");
+            this.label25.Name = "label25";
+            // 
+            // label24
+            // 
+            resources.ApplyResources(this.label24, "label24");
+            this.label24.Name = "label24";
+            // 
+            // label23
+            // 
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.Name = "label23";
+            // 
+            // label22
+            // 
+            resources.ApplyResources(this.label22, "label22");
+            this.label22.Name = "label22";
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.ItemQuantBox_1);
+            this.panel10.Controls.Add(this.ItemHexBox_1);
+            this.panel10.Controls.Add(this.ItemForgesBox_1);
+            this.panel10.Controls.Add(this.ItemIsEquipped_1);
+            this.panel10.Controls.Add(this.ItemPic_1);
+            this.panel10.Controls.Add(this.ItemNameBox_1);
+            resources.ApplyResources(this.panel10, "panel10");
+            this.panel10.Name = "panel10";
+            // 
+            // ItemQuantBox_1
+            // 
+            resources.ApplyResources(this.ItemQuantBox_1, "ItemQuantBox_1");
+            this.ItemQuantBox_1.Maximum = new decimal(new int[] {
+            35,
+            0,
+            0,
+            0});
+            this.ItemQuantBox_1.Name = "ItemQuantBox_1";
+            // 
+            // ItemHexBox_1
+            // 
+            this.ItemHexBox_1.AllowPromptAsInput = false;
+            this.ItemHexBox_1.AsciiOnly = true;
+            this.ItemHexBox_1.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            resources.ApplyResources(this.ItemHexBox_1, "ItemHexBox_1");
+            this.ItemHexBox_1.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
+            this.ItemHexBox_1.Name = "ItemHexBox_1";
+            this.ItemHexBox_1.ResetOnPrompt = false;
+            this.ItemHexBox_1.SkipLiterals = false;
+            this.ItemHexBox_1.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // ItemForgesBox_1
+            // 
+            resources.ApplyResources(this.ItemForgesBox_1, "ItemForgesBox_1");
+            this.ItemForgesBox_1.Maximum = new decimal(new int[] {
+            7,
+            0,
+            0,
+            0});
+            this.ItemForgesBox_1.Name = "ItemForgesBox_1";
+            // 
+            // ItemIsEquipped_1
+            // 
+            resources.ApplyResources(this.ItemIsEquipped_1, "ItemIsEquipped_1");
+            this.ItemIsEquipped_1.Name = "ItemIsEquipped_1";
+            this.ItemIsEquipped_1.UseVisualStyleBackColor = true;
+            // 
+            // ItemPic_1
+            // 
+            resources.ApplyResources(this.ItemPic_1, "ItemPic_1");
+            this.ItemPic_1.Name = "ItemPic_1";
+            this.ItemPic_1.TabStop = false;
+            // 
+            // ItemNameBox_1
+            // 
+            this.ItemNameBox_1.FormattingEnabled = true;
+            resources.ApplyResources(this.ItemNameBox_1, "ItemNameBox_1");
+            this.ItemNameBox_1.Name = "ItemNameBox_1";
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.pictureBox30);
+            this.panel9.Controls.Add(this.numStone);
+            this.panel9.Controls.Add(this.lblStoneRank);
+            resources.ApplyResources(this.panel9, "panel9");
+            this.panel9.Name = "panel9";
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_stone;
+            resources.ApplyResources(this.pictureBox30, "pictureBox30");
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.TabStop = false;
+            // 
+            // numStone
+            // 
+            resources.ApplyResources(this.numStone, "numStone");
+            this.numStone.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numStone.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numStone.Name = "numStone";
+            this.numStone.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numStone.ValueChanged += new System.EventHandler(this.numStone_ValueChanged);
+            // 
+            // lblStoneRank
+            // 
+            resources.ApplyResources(this.lblStoneRank, "lblStoneRank");
+            this.lblStoneRank.Name = "lblStoneRank";
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.pictureBox28);
+            this.panel8.Controls.Add(this.numStaff);
+            this.panel8.Controls.Add(this.lblStaffRank);
+            resources.ApplyResources(this.panel8, "panel8");
+            this.panel8.Name = "panel8";
+            // 
+            // pictureBox28
+            // 
+            this.pictureBox28.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_staff;
+            resources.ApplyResources(this.pictureBox28, "pictureBox28");
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.TabStop = false;
+            // 
+            // numStaff
+            // 
+            resources.ApplyResources(this.numStaff, "numStaff");
+            this.numStaff.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numStaff.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numStaff.Name = "numStaff";
+            this.numStaff.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numStaff.ValueChanged += new System.EventHandler(this.numStaff_ValueChanged);
+            // 
+            // lblStaffRank
+            // 
+            resources.ApplyResources(this.lblStaffRank, "lblStaffRank");
+            this.lblStaffRank.Name = "lblStaffRank";
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.pictureBox29);
+            this.panel7.Controls.Add(this.numTome);
+            this.panel7.Controls.Add(this.lblTomeRank);
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_tome;
+            resources.ApplyResources(this.pictureBox29, "pictureBox29");
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.TabStop = false;
+            // 
+            // numTome
+            // 
+            resources.ApplyResources(this.numTome, "numTome");
+            this.numTome.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numTome.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numTome.Name = "numTome";
+            this.numTome.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numTome.ValueChanged += new System.EventHandler(this.numTome_ValueChanged);
+            // 
+            // lblTomeRank
+            // 
+            resources.ApplyResources(this.lblTomeRank, "lblTomeRank");
+            this.lblTomeRank.Name = "lblTomeRank";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.pictureBox26);
+            this.panel6.Controls.Add(this.numBow);
+            this.panel6.Controls.Add(this.lblBowRank);
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.Name = "panel6";
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_bow;
+            resources.ApplyResources(this.pictureBox26, "pictureBox26");
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.TabStop = false;
+            // 
+            // numBow
+            // 
+            resources.ApplyResources(this.numBow, "numBow");
+            this.numBow.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numBow.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numBow.Name = "numBow";
+            this.numBow.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numBow.ValueChanged += new System.EventHandler(this.numBow_ValueChanged);
+            // 
+            // lblBowRank
+            // 
+            resources.ApplyResources(this.lblBowRank, "lblBowRank");
+            this.lblBowRank.Name = "lblBowRank";
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.pictureBox27);
+            this.panel5.Controls.Add(this.numShuriken);
+            this.panel5.Controls.Add(this.lblShurikenRank);
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Name = "panel5";
+            // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_shuriken;
+            resources.ApplyResources(this.pictureBox27, "pictureBox27");
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.TabStop = false;
+            // 
+            // numShuriken
+            // 
+            resources.ApplyResources(this.numShuriken, "numShuriken");
+            this.numShuriken.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numShuriken.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numShuriken.Name = "numShuriken";
+            this.numShuriken.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numShuriken.ValueChanged += new System.EventHandler(this.numShuriken_ValueChanged);
+            // 
+            // lblShurikenRank
+            // 
+            resources.ApplyResources(this.lblShurikenRank, "lblShurikenRank");
+            this.lblShurikenRank.Name = "lblShurikenRank";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.pictureBox25);
+            this.panel4.Controls.Add(this.numAxe);
+            this.panel4.Controls.Add(this.lblAxeRank);
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_axe;
+            resources.ApplyResources(this.pictureBox25, "pictureBox25");
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.TabStop = false;
+            // 
+            // numAxe
+            // 
+            resources.ApplyResources(this.numAxe, "numAxe");
+            this.numAxe.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numAxe.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numAxe.Name = "numAxe";
+            this.numAxe.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numAxe.ValueChanged += new System.EventHandler(this.numAxe_ValueChanged);
+            // 
+            // lblAxeRank
+            // 
+            resources.ApplyResources(this.lblAxeRank, "lblAxeRank");
+            this.lblAxeRank.Name = "lblAxeRank";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.pictureBox24);
+            this.panel3.Controls.Add(this.numLance);
+            this.panel3.Controls.Add(this.lblLanceRank);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_lance;
+            resources.ApplyResources(this.pictureBox24, "pictureBox24");
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.TabStop = false;
+            // 
+            // numLance
+            // 
+            resources.ApplyResources(this.numLance, "numLance");
+            this.numLance.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numLance.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numLance.Name = "numLance";
+            this.numLance.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numLance.ValueChanged += new System.EventHandler(this.numLance_ValueChanged);
+            // 
+            // lblLanceRank
+            // 
+            resources.ApplyResources(this.lblLanceRank, "lblLanceRank");
+            this.lblLanceRank.Name = "lblLanceRank";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox23);
+            this.panel2.Controls.Add(this.lblSwordRank);
+            this.panel2.Controls.Add(this.numSword);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_sword;
+            resources.ApplyResources(this.pictureBox23, "pictureBox23");
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.TabStop = false;
+            // 
+            // lblSwordRank
+            // 
+            resources.ApplyResources(this.lblSwordRank, "lblSwordRank");
+            this.lblSwordRank.Name = "lblSwordRank";
+            // 
+            // numSword
+            // 
+            resources.ApplyResources(this.numSword, "numSword");
+            this.numSword.Maximum = new decimal(new int[] {
+            251,
+            0,
+            0,
+            0});
+            this.numSword.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numSword.Name = "numSword";
+            this.numSword.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numSword.ValueChanged += new System.EventHandler(this.numSword_ValueChanged);
+            // 
+            // HairColorHex
+            // 
+            this.HairColorHex.AsciiOnly = true;
+            this.HairColorHex.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            resources.ApplyResources(this.HairColorHex, "HairColorHex");
+            this.HairColorHex.HidePromptOnLeave = true;
+            this.HairColorHex.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
+            this.HairColorHex.Name = "HairColorHex";
+            this.HairColorHex.SkipLiterals = false;
+            this.HairColorHex.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.HairColorHex.TextChanged += new System.EventHandler(this.UpdateHairColor);
+            // 
+            // HairColor
+            // 
+            this.HairColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.HairColor, "HairColor");
+            this.HairColor.Name = "HairColor";
+            this.HairColor.TabStop = false;
             // 
             // AllSkillsEnemy
             // 
@@ -990,122 +1712,19 @@
             this.AllSkillsEnemy.UseVisualStyleBackColor = true;
             this.AllSkillsEnemy.Click += new System.EventHandler(this.btnEnemySkills_Click);
             // 
-            // groupBox1
+            // btnAllSkillsDLC
             // 
-            this.groupBox1.Controls.Add(this.chkIncludeEnemyOnlySkills);
-            this.groupBox1.Controls.Add(this.cmbSkill1);
-            this.groupBox1.Controls.Add(this.pictSkill1);
-            this.groupBox1.Controls.Add(this.pictSkill2);
-            this.groupBox1.Controls.Add(this.cmbSkill2);
-            this.groupBox1.Controls.Add(this.pictSkill3);
-            this.groupBox1.Controls.Add(this.cmbSkill3);
-            this.groupBox1.Controls.Add(this.pictSkill4);
-            this.groupBox1.Controls.Add(this.cmbSkill4);
-            this.groupBox1.Controls.Add(this.pictSkill5);
-            this.groupBox1.Controls.Add(this.cmbSkill5);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
+            resources.ApplyResources(this.btnAllSkillsDLC, "btnAllSkillsDLC");
+            this.btnAllSkillsDLC.Name = "btnAllSkillsDLC";
+            this.btnAllSkillsDLC.UseVisualStyleBackColor = true;
+            this.btnAllSkillsDLC.Click += new System.EventHandler(this.btnDLCSkills_Click);
             // 
-            // chkIncludeEnemyOnlySkills
+            // btnAllSkills
             // 
-            resources.ApplyResources(this.chkIncludeEnemyOnlySkills, "chkIncludeEnemyOnlySkills");
-            this.chkIncludeEnemyOnlySkills.Name = "chkIncludeEnemyOnlySkills";
-            this.chkIncludeEnemyOnlySkills.UseVisualStyleBackColor = true;
-            this.chkIncludeEnemyOnlySkills.CheckedChanged += new System.EventHandler(this.chkIncludeEnemyOnlySkills_CheckedChanged);
-            // 
-            // cmbSkill1
-            // 
-            this.cmbSkill1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSkill1.FormattingEnabled = true;
-            resources.ApplyResources(this.cmbSkill1, "cmbSkill1");
-            this.cmbSkill1.Name = "cmbSkill1";
-            this.cmbSkill1.SelectedIndexChanged += new System.EventHandler(this.cmbSkill1_SelectedIndexChanged);
-            this.cmbSkill1.Leave += new System.EventHandler(this.cmbSkill1_Leave);
-            // 
-            // pictSkill1
-            // 
-            resources.ApplyResources(this.pictSkill1, "pictSkill1");
-            this.pictSkill1.Name = "pictSkill1";
-            this.pictSkill1.TabStop = false;
-            // 
-            // pictSkill2
-            // 
-            resources.ApplyResources(this.pictSkill2, "pictSkill2");
-            this.pictSkill2.Name = "pictSkill2";
-            this.pictSkill2.TabStop = false;
-            // 
-            // cmbSkill2
-            // 
-            this.cmbSkill2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSkill2.FormattingEnabled = true;
-            resources.ApplyResources(this.cmbSkill2, "cmbSkill2");
-            this.cmbSkill2.Name = "cmbSkill2";
-            this.cmbSkill2.SelectedIndexChanged += new System.EventHandler(this.cmbSkill2_SelectedIndexChanged);
-            this.cmbSkill2.Leave += new System.EventHandler(this.cmbSkill2_Leave);
-            // 
-            // pictSkill3
-            // 
-            resources.ApplyResources(this.pictSkill3, "pictSkill3");
-            this.pictSkill3.Name = "pictSkill3";
-            this.pictSkill3.TabStop = false;
-            // 
-            // cmbSkill3
-            // 
-            this.cmbSkill3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSkill3.FormattingEnabled = true;
-            resources.ApplyResources(this.cmbSkill3, "cmbSkill3");
-            this.cmbSkill3.Name = "cmbSkill3";
-            this.cmbSkill3.SelectedIndexChanged += new System.EventHandler(this.cmbSkill3_SelectedIndexChanged);
-            this.cmbSkill3.Leave += new System.EventHandler(this.cmbSkill3_Leave);
-            // 
-            // pictSkill4
-            // 
-            resources.ApplyResources(this.pictSkill4, "pictSkill4");
-            this.pictSkill4.Name = "pictSkill4";
-            this.pictSkill4.TabStop = false;
-            // 
-            // cmbSkill4
-            // 
-            this.cmbSkill4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSkill4.FormattingEnabled = true;
-            resources.ApplyResources(this.cmbSkill4, "cmbSkill4");
-            this.cmbSkill4.Name = "cmbSkill4";
-            this.cmbSkill4.SelectedIndexChanged += new System.EventHandler(this.cmbSkill4_SelectedIndexChanged);
-            this.cmbSkill4.Leave += new System.EventHandler(this.cmbSkill4_Leave);
-            // 
-            // pictSkill5
-            // 
-            resources.ApplyResources(this.pictSkill5, "pictSkill5");
-            this.pictSkill5.Name = "pictSkill5";
-            this.pictSkill5.TabStop = false;
-            // 
-            // cmbSkill5
-            // 
-            this.cmbSkill5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSkill5.FormattingEnabled = true;
-            resources.ApplyResources(this.cmbSkill5, "cmbSkill5");
-            this.cmbSkill5.Name = "cmbSkill5";
-            this.cmbSkill5.SelectedIndexChanged += new System.EventHandler(this.cmbSkill5_SelectedIndexChanged);
-            this.cmbSkill5.Leave += new System.EventHandler(this.cmbSkill5_Leave);
-            // 
-            // HairColorHex
-            // 
-            this.HairColorHex.AsciiOnly = true;
-            this.HairColorHex.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.HairColorHex.HidePromptOnLeave = true;
-            this.HairColorHex.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
-            resources.ApplyResources(this.HairColorHex, "HairColorHex");
-            this.HairColorHex.Name = "HairColorHex";
-            this.HairColorHex.SkipLiterals = false;
-            this.HairColorHex.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.HairColorHex.TextChanged += new System.EventHandler(this.UpdateHairColor);
-            // 
-            // HairColor
-            // 
-            resources.ApplyResources(this.HairColor, "HairColor");
-            this.HairColor.Name = "HairColor";
-            this.HairColor.TabStop = false;
+            resources.ApplyResources(this.btnAllSkills, "btnAllSkills");
+            this.btnAllSkills.Name = "btnAllSkills";
+            this.btnAllSkills.UseVisualStyleBackColor = true;
+            this.btnAllSkills.Click += new System.EventHandler(this.btnAllSkills_Click);
             // 
             // label21
             // 
@@ -1212,299 +1831,10 @@
             resources.ApplyResources(this.txtStatBytes, "txtStatBytes");
             this.txtStatBytes.Name = "txtStatBytes";
             // 
-            // lblInventory5
-            // 
-            resources.ApplyResources(this.lblInventory5, "lblInventory5");
-            this.lblInventory5.Name = "lblInventory5";
-            // 
-            // lblInventory4
-            // 
-            resources.ApplyResources(this.lblInventory4, "lblInventory4");
-            this.lblInventory4.Name = "lblInventory4";
-            // 
-            // lblInventory3
-            // 
-            resources.ApplyResources(this.lblInventory3, "lblInventory3");
-            this.lblInventory3.Name = "lblInventory3";
-            // 
-            // lblInventory2
-            // 
-            resources.ApplyResources(this.lblInventory2, "lblInventory2");
-            this.lblInventory2.Name = "lblInventory2";
-            // 
-            // lblInventory1
-            // 
-            resources.ApplyResources(this.lblInventory1, "lblInventory1");
-            this.lblInventory1.Name = "lblInventory1";
-            // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            // 
-            // lblStoneRank
-            // 
-            resources.ApplyResources(this.lblStoneRank, "lblStoneRank");
-            this.lblStoneRank.Name = "lblStoneRank";
-            // 
-            // lblStaffRank
-            // 
-            resources.ApplyResources(this.lblStaffRank, "lblStaffRank");
-            this.lblStaffRank.Name = "lblStaffRank";
-            // 
-            // lblTomeRank
-            // 
-            resources.ApplyResources(this.lblTomeRank, "lblTomeRank");
-            this.lblTomeRank.Name = "lblTomeRank";
-            // 
-            // lblBowRank
-            // 
-            resources.ApplyResources(this.lblBowRank, "lblBowRank");
-            this.lblBowRank.Name = "lblBowRank";
-            // 
-            // lblShurikenRank
-            // 
-            resources.ApplyResources(this.lblShurikenRank, "lblShurikenRank");
-            this.lblShurikenRank.Name = "lblShurikenRank";
-            // 
-            // lblAxeRank
-            // 
-            resources.ApplyResources(this.lblAxeRank, "lblAxeRank");
-            this.lblAxeRank.Name = "lblAxeRank";
-            // 
-            // lblLanceRank
-            // 
-            resources.ApplyResources(this.lblLanceRank, "lblLanceRank");
-            this.lblLanceRank.Name = "lblLanceRank";
-            // 
-            // lblSwordRank
-            // 
-            resources.ApplyResources(this.lblSwordRank, "lblSwordRank");
-            this.lblSwordRank.Name = "lblSwordRank";
-            // 
-            // numStone
-            // 
-            resources.ApplyResources(this.numStone, "numStone");
-            this.numStone.Maximum = new decimal(new int[] {
-            251,
-            0,
-            0,
-            0});
-            this.numStone.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numStone.Name = "numStone";
-            this.numStone.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numStone.ValueChanged += new System.EventHandler(this.numStone_ValueChanged);
-            // 
-            // pictureBox30
-            // 
-            this.pictureBox30.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_stone;
-            resources.ApplyResources(this.pictureBox30, "pictureBox30");
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.TabStop = false;
-            // 
-            // numStaff
-            // 
-            resources.ApplyResources(this.numStaff, "numStaff");
-            this.numStaff.Maximum = new decimal(new int[] {
-            251,
-            0,
-            0,
-            0});
-            this.numStaff.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numStaff.Name = "numStaff";
-            this.numStaff.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numStaff.ValueChanged += new System.EventHandler(this.numStaff_ValueChanged);
-            // 
-            // pictureBox28
-            // 
-            this.pictureBox28.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_staff;
-            resources.ApplyResources(this.pictureBox28, "pictureBox28");
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.TabStop = false;
-            // 
-            // numTome
-            // 
-            resources.ApplyResources(this.numTome, "numTome");
-            this.numTome.Maximum = new decimal(new int[] {
-            251,
-            0,
-            0,
-            0});
-            this.numTome.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numTome.Name = "numTome";
-            this.numTome.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numTome.ValueChanged += new System.EventHandler(this.numTome_ValueChanged);
-            // 
-            // pictureBox29
-            // 
-            this.pictureBox29.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_tome;
-            resources.ApplyResources(this.pictureBox29, "pictureBox29");
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.TabStop = false;
-            // 
-            // numBow
-            // 
-            resources.ApplyResources(this.numBow, "numBow");
-            this.numBow.Maximum = new decimal(new int[] {
-            251,
-            0,
-            0,
-            0});
-            this.numBow.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numBow.Name = "numBow";
-            this.numBow.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numBow.ValueChanged += new System.EventHandler(this.numBow_ValueChanged);
-            // 
-            // pictureBox26
-            // 
-            this.pictureBox26.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_bow;
-            resources.ApplyResources(this.pictureBox26, "pictureBox26");
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.TabStop = false;
-            // 
-            // numShuriken
-            // 
-            resources.ApplyResources(this.numShuriken, "numShuriken");
-            this.numShuriken.Maximum = new decimal(new int[] {
-            251,
-            0,
-            0,
-            0});
-            this.numShuriken.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numShuriken.Name = "numShuriken";
-            this.numShuriken.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numShuriken.ValueChanged += new System.EventHandler(this.numShuriken_ValueChanged);
-            // 
-            // pictureBox27
-            // 
-            this.pictureBox27.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_shuriken;
-            resources.ApplyResources(this.pictureBox27, "pictureBox27");
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.TabStop = false;
-            // 
-            // numAxe
-            // 
-            resources.ApplyResources(this.numAxe, "numAxe");
-            this.numAxe.Maximum = new decimal(new int[] {
-            251,
-            0,
-            0,
-            0});
-            this.numAxe.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numAxe.Name = "numAxe";
-            this.numAxe.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numAxe.ValueChanged += new System.EventHandler(this.numAxe_ValueChanged);
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_axe;
-            resources.ApplyResources(this.pictureBox25, "pictureBox25");
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.TabStop = false;
-            // 
-            // numLance
-            // 
-            resources.ApplyResources(this.numLance, "numLance");
-            this.numLance.Maximum = new decimal(new int[] {
-            251,
-            0,
-            0,
-            0});
-            this.numLance.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numLance.Name = "numLance";
-            this.numLance.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numLance.ValueChanged += new System.EventHandler(this.numLance_ValueChanged);
-            // 
-            // pictureBox24
-            // 
-            this.pictureBox24.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_lance;
-            resources.ApplyResources(this.pictureBox24, "pictureBox24");
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.TabStop = false;
-            // 
-            // numSword
-            // 
-            resources.ApplyResources(this.numSword, "numSword");
-            this.numSword.Maximum = new decimal(new int[] {
-            251,
-            0,
-            0,
-            0});
-            this.numSword.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numSword.Name = "numSword";
-            this.numSword.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numSword.ValueChanged += new System.EventHandler(this.numSword_ValueChanged);
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.Image = global::FEFTwiddler.Properties.Resources.WeaponExp_sword;
-            resources.ApplyResources(this.pictureBox23, "pictureBox23");
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.TabStop = false;
             // 
             // label8
             // 
@@ -1614,6 +1944,67 @@
             0,
             0});
             this.numLevel.ValueChanged += new System.EventHandler(this.numLevel_ValueChanged);
+            // 
+            // cmbSkill5
+            // 
+            this.cmbSkill5.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbSkill5, "cmbSkill5");
+            this.cmbSkill5.Name = "cmbSkill5";
+            // 
+            // pictSkill5
+            // 
+            resources.ApplyResources(this.pictSkill5, "pictSkill5");
+            this.pictSkill5.Name = "pictSkill5";
+            this.pictSkill5.TabStop = false;
+            // 
+            // cmbSkill4
+            // 
+            this.cmbSkill4.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbSkill4, "cmbSkill4");
+            this.cmbSkill4.Name = "cmbSkill4";
+            // 
+            // pictSkill4
+            // 
+            resources.ApplyResources(this.pictSkill4, "pictSkill4");
+            this.pictSkill4.Name = "pictSkill4";
+            this.pictSkill4.TabStop = false;
+            // 
+            // cmbSkill3
+            // 
+            this.cmbSkill3.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbSkill3, "cmbSkill3");
+            this.cmbSkill3.Name = "cmbSkill3";
+            // 
+            // pictSkill3
+            // 
+            resources.ApplyResources(this.pictSkill3, "pictSkill3");
+            this.pictSkill3.Name = "pictSkill3";
+            this.pictSkill3.TabStop = false;
+            // 
+            // cmbSkill2
+            // 
+            this.cmbSkill2.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbSkill2, "cmbSkill2");
+            this.cmbSkill2.Name = "cmbSkill2";
+            // 
+            // pictSkill2
+            // 
+            resources.ApplyResources(this.pictSkill2, "pictSkill2");
+            this.pictSkill2.Name = "pictSkill2";
+            this.pictSkill2.TabStop = false;
+            // 
+            // cmbSkill1
+            // 
+            this.cmbSkill1.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbSkill1, "cmbSkill1");
+            this.cmbSkill1.Name = "cmbSkill1";
+            this.cmbSkill1.SelectedIndexChanged += new System.EventHandler(this.cmbSkill1_SelectedIndexChanged);
+            // 
+            // pictSkill1
+            // 
+            resources.ApplyResources(this.pictSkill1, "pictSkill1");
+            this.pictSkill1.Name = "pictSkill1";
+            this.pictSkill1.TabStop = false;
             // 
             // cmbClass
             // 
@@ -1766,38 +2157,76 @@
             this.tabPage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill5)).EndInit();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemQuantBox_5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForgesBox_5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemPic_5)).EndInit();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemQuantBox_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForgesBox_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemPic_4)).EndInit();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemQuantBox_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForgesBox_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemPic_3)).EndInit();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemQuantBox_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForgesBox_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemPic_2)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemQuantBox_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForgesBox_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemPic_1)).EndInit();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numStone)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numStaff)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTome)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBow)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numShuriken)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAxe)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLance)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HairColor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numInternalLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numEternalSeals)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBoots)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numVictories)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBattles)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numStone)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numStaff)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numTome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numBow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numShuriken)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numAxe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numLance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numSword)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numExperience)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1898,8 +2327,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox23;
-        private System.Windows.Forms.NumericUpDown numSword;
         private System.Windows.Forms.NumericUpDown numStone;
         private System.Windows.Forms.PictureBox pictureBox30;
         private System.Windows.Forms.NumericUpDown numStaff;
@@ -1908,26 +2335,11 @@
         private System.Windows.Forms.PictureBox pictureBox29;
         private System.Windows.Forms.NumericUpDown numBow;
         private System.Windows.Forms.PictureBox pictureBox26;
-        private System.Windows.Forms.NumericUpDown numShuriken;
-        private System.Windows.Forms.PictureBox pictureBox27;
-        private System.Windows.Forms.NumericUpDown numAxe;
-        private System.Windows.Forms.PictureBox pictureBox25;
-        private System.Windows.Forms.NumericUpDown numLance;
-        private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.Label lblStoneRank;
         private System.Windows.Forms.Label lblStaffRank;
         private System.Windows.Forms.Label lblTomeRank;
         private System.Windows.Forms.Label lblBowRank;
-        private System.Windows.Forms.Label lblShurikenRank;
-        private System.Windows.Forms.Label lblAxeRank;
-        private System.Windows.Forms.Label lblLanceRank;
-        private System.Windows.Forms.Label lblSwordRank;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label lblInventory5;
-        private System.Windows.Forms.Label lblInventory4;
-        private System.Windows.Forms.Label lblInventory3;
-        private System.Windows.Forms.Label lblInventory2;
-        private System.Windows.Forms.Label lblInventory1;
         private System.Windows.Forms.NumericUpDown numVisitPoints;
         private System.Windows.Forms.NumericUpDown numBattlePoints;
         private System.Windows.Forms.Label label11;
@@ -1962,10 +2374,67 @@
         private System.Windows.Forms.Button AllCharAllSkillsDLC;
         private System.Windows.Forms.MaskedTextBox HairColorHex;
         private System.Windows.Forms.PictureBox HairColor;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox chkIncludeEnemyOnlySkills;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnViewLearnedSkills;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.PictureBox pictureBox27;
+        private System.Windows.Forms.NumericUpDown numShuriken;
+        private System.Windows.Forms.Label lblShurikenRank;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.NumericUpDown numAxe;
+        private System.Windows.Forms.Label lblAxeRank;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox24;
+        private System.Windows.Forms.NumericUpDown numLance;
+        private System.Windows.Forms.Label lblLanceRank;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox23;
+        private System.Windows.Forms.Label lblSwordRank;
+        private System.Windows.Forms.NumericUpDown numSword;
+        private System.Windows.Forms.PictureBox ItemPic_1;
+        private System.Windows.Forms.ComboBox ItemNameBox_1;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.NumericUpDown ItemQuantBox_5;
+        private System.Windows.Forms.MaskedTextBox ItemHexBox_5;
+        private System.Windows.Forms.NumericUpDown ItemForgesBox_5;
+        private System.Windows.Forms.CheckBox ItemIsEquipped_5;
+        private System.Windows.Forms.PictureBox ItemPic_5;
+        private System.Windows.Forms.ComboBox ItemNameBox_5;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.NumericUpDown ItemQuantBox_4;
+        private System.Windows.Forms.MaskedTextBox ItemHexBox_4;
+        private System.Windows.Forms.NumericUpDown ItemForgesBox_4;
+        private System.Windows.Forms.CheckBox ItemIsEquipped_4;
+        private System.Windows.Forms.PictureBox ItemPic_4;
+        private System.Windows.Forms.ComboBox ItemNameBox_4;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.NumericUpDown ItemQuantBox_3;
+        private System.Windows.Forms.MaskedTextBox ItemHexBox_3;
+        private System.Windows.Forms.NumericUpDown ItemForgesBox_3;
+        private System.Windows.Forms.CheckBox ItemIsEquipped_3;
+        private System.Windows.Forms.PictureBox ItemPic_3;
+        private System.Windows.Forms.ComboBox ItemNameBox_3;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.NumericUpDown ItemQuantBox_2;
+        private System.Windows.Forms.MaskedTextBox ItemHexBox_2;
+        private System.Windows.Forms.NumericUpDown ItemForgesBox_2;
+        private System.Windows.Forms.CheckBox ItemIsEquipped_2;
+        private System.Windows.Forms.PictureBox ItemPic_2;
+        private System.Windows.Forms.ComboBox ItemNameBox_2;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.NumericUpDown ItemQuantBox_1;
+        private System.Windows.Forms.MaskedTextBox ItemHexBox_1;
+        private System.Windows.Forms.NumericUpDown ItemForgesBox_1;
+        private System.Windows.Forms.CheckBox ItemIsEquipped_1;
+        private System.Windows.Forms.Button MaxQuantAll;
+        private System.Windows.Forms.Button MaxForgeAll;
     }
 }
 
