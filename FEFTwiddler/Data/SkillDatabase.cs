@@ -23,6 +23,17 @@ namespace FEFTwiddler.Data
             return FromElement(row);
         }
 
+        public IEnumerable<Skill> GetAll()
+        {
+            var elements = _data.Elements("skill");
+            var rows = new List<Skill>();
+            foreach (var e in elements)
+            {
+                rows.Add(FromElement(e));
+            }
+            return rows;
+        }
+
         private Skill FromElement(XElement row)
         {
             var displayName = GetDisplayName(row);

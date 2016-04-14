@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using FEFTwiddler.Extensions;
@@ -19,6 +20,22 @@ namespace FEFTwiddler.Data
                 .Where((x) => x.Attribute("id").Value == ((byte)classId).ToString())
                 .First();
 
+            return FromElement(row);
+        }
+
+        public IEnumerable<Class> GetAll()
+        {
+            var elements = _data.Elements("class");
+            var rows = new List<Class>();
+            foreach (var e in elements)
+            {
+                rows.Add(FromElement(e));
+            }
+            return rows;
+        }
+
+        private Class FromElement(XElement row)
+        {
             var displayName = GetDisplayName(row);
             var baseStats = row.Elements("baseStats").First();
             var maxStats = row.Elements("maxStats").First();
