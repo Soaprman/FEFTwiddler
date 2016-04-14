@@ -496,7 +496,7 @@ namespace FEFTwiddler.Model
             chunk = new byte[20];
             br.Read(chunk, 0, 20);
 
-            character.LearnedSkills = chunk;
+            character.LearnedSkills = new LearnedSkills(chunk);
 
             // Extra data on deployed characters in battle prep saves.
             // Might contain debuffs, status effects, and other battle-specific status info
@@ -676,7 +676,7 @@ namespace FEFTwiddler.Model
             bw.BaseStream.Seek(47, SeekOrigin.Current);
 
             // Learned skills
-            bw.Write(character.LearnedSkills);
+            bw.Write(character.LearnedSkills.Bytes);
 
             // Stuff only on deployed characters
             if (character.IsDeployed)

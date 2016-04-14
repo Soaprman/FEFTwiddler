@@ -72,7 +72,7 @@ namespace FEFTwiddler.Model
         public byte Boots { get; set; }
         public byte[] DLCClassFlags { get; set; }
         public byte[] HairColor { get; set; }
-        public byte[] LearnedSkills { get; set; }
+        public LearnedSkills LearnedSkills { get; set; }
 
         public Enums.Headwear Headwear { get; set; }
         public Enums.Facewear Facewear { get; set; }
@@ -164,7 +164,8 @@ namespace FEFTwiddler.Model
 
         public void LearnAllSkills()
         {
-            LearnedSkills = LearnedSkills.Or(new byte[]
+            // Learn the skills, but leave existing learned skills outside this range intact
+            LearnedSkills.Add(new byte[]
             { 0xDF, 0xFF, 0x7F, 0xFB,
               0xFF, 0xFF, 0xFF, 0xFF,
               0xFF, 0xFE, 0xFF, 0xEF,
@@ -174,7 +175,8 @@ namespace FEFTwiddler.Model
 
         public void LearnAllSkillsDLC()
         {
-            LearnedSkills = LearnedSkills.Or(new byte[]
+            // TODO: Change array to include only DLC skills
+            LearnedSkills.Add(new byte[]
             { 0xFF, 0xFF, 0xFF, 0xFF,
               0xFF, 0xFF, 0xFF, 0xFF,
               0xFF, 0xFE, 0xFF, 0xFF,
@@ -184,7 +186,8 @@ namespace FEFTwiddler.Model
 
         public void LearnAllSkillsEnemy()
         {
-            LearnedSkills = LearnedSkills.Or(new byte[]
+            // TODO: Change array to include only enemy skills
+            LearnedSkills.Add(new byte[]
             { 0xFF, 0xFF, 0xFF, 0xFF,
               0xFF, 0xFF, 0xFF, 0xFF,
               0xFF, 0xFF, 0xFF, 0xFF,
@@ -192,9 +195,9 @@ namespace FEFTwiddler.Model
               0xFF, 0xFF, 0xFF, 0xFF });
         }
 
-        public void maxStatue()
+        public void MaximizeStatues()
         {
-            BattleCount = Math.Max(BattleCount, (ushort) 100);
+            BattleCount = Math.Max(BattleCount, (ushort)100);
             VictoryCount = Math.Max(VictoryCount, (ushort)100);
         }
 

@@ -42,22 +42,69 @@ namespace FEFTwiddler.Data
             }
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
         /// <summary>
         /// Leaving this in case more batch XML changing is needed
         /// </summary>
         protected void UpdateXmlStructure()
         {
-            var items = _data.Elements("item");
-            foreach (var item in items)
+            var rows = _data.Elements("skill");
+            for (var i = 0; i < rows.Count(); i++)
             {
-                var displayName = item.GetAttribute("displayName");
-                var langEn = XElement.Parse(@"<text lang=""English"" displayName=""" + displayName + @""" />");
-                item.Add(langEn);
-                var langJp = XElement.Parse(@"<text lang=""Japanese"" displayName=""" + "DisplayName" + @""" />");
-                item.Add(langJp);
+                var row = rows.ElementAt(i);
 
-                item.Attributes("displayName").First().Remove();
-                //item.Attributes().Reverse(); // Maintain the order of attributes in the XML document
+                if (i <= 112)
+                {
+                    row.SetAttributeValue("enemyOnly", "false");
+                    row.SetAttributeValue("dlc", "false");
+                    row.SetAttributeValue("personal", "false");
+                    row.SetAttributeValue("unlearnable", "false");
+                }
+                else if (i <= 159)
+                {
+                    row.SetAttributeValue("enemyOnly", "true");
+                    row.SetAttributeValue("dlc", "false");
+                    row.SetAttributeValue("personal", "false");
+                    row.SetAttributeValue("unlearnable", "false");
+                }
+                else
+                {
+                    row.SetAttributeValue("enemyOnly", "false");
+                    row.SetAttributeValue("dlc", "false");
+                    row.SetAttributeValue("personal", "true");
+                    row.SetAttributeValue("unlearnable", "false");
+                }
+
+
+
+
+
+
+
+                //var lsi = row.Elements("learnedSkillInfo").First();
+                //var byteOffset = i / 8;
+                //var bitMask = Math.Pow(2, (7 - (i % 8)));
+
+                //if (byteOffset > 19)
+                //{
+                //    byteOffset = 0;
+                //    bitMask = 0;
+                //}
+
+                //lsi.SetAttributeValue("byteOffset", byteOffset);
+                //lsi.SetAttributeValue("bitMask", bitMask);
             }
             var breakpoint = true;
         }
