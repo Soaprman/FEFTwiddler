@@ -1947,8 +1947,8 @@
             // 
             // cmbSkill5
             // 
-            resources.ApplyResources(this.cmbSkill5, "cmbSkill5");
             this.cmbSkill5.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbSkill5, "cmbSkill5");
             this.cmbSkill5.Name = "cmbSkill5";
             // 
             // pictSkill5
@@ -1959,8 +1959,8 @@
             // 
             // cmbSkill4
             // 
-            resources.ApplyResources(this.cmbSkill4, "cmbSkill4");
             this.cmbSkill4.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbSkill4, "cmbSkill4");
             this.cmbSkill4.Name = "cmbSkill4";
             // 
             // pictSkill4
@@ -1971,8 +1971,8 @@
             // 
             // cmbSkill3
             // 
-            resources.ApplyResources(this.cmbSkill3, "cmbSkill3");
             this.cmbSkill3.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbSkill3, "cmbSkill3");
             this.cmbSkill3.Name = "cmbSkill3";
             // 
             // pictSkill3
@@ -1983,8 +1983,8 @@
             // 
             // cmbSkill2
             // 
-            resources.ApplyResources(this.cmbSkill2, "cmbSkill2");
             this.cmbSkill2.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbSkill2, "cmbSkill2");
             this.cmbSkill2.Name = "cmbSkill2";
             // 
             // pictSkill2
@@ -1995,8 +1995,8 @@
             // 
             // cmbSkill1
             // 
-            resources.ApplyResources(this.cmbSkill1, "cmbSkill1");
             this.cmbSkill1.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbSkill1, "cmbSkill1");
             this.cmbSkill1.Name = "cmbSkill1";
             this.cmbSkill1.SelectedIndexChanged += new System.EventHandler(this.cmbSkill1_SelectedIndexChanged);
             // 
