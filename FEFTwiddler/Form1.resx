@@ -125,7 +125,7 @@
     <value>0, 0</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>624, 24</value>
+    <value>724, 24</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
@@ -153,7 +153,7 @@
     <value>File</value>
   </data>
   <data name="openFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>124, 22</value>
   </data>
   <data name="openFileToolStripMenuItem.Text" xml:space="preserve">
     <value>Open File</value>
@@ -894,14 +894,14 @@
     <value>59</value>
   </data>
   <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+    <value>4, 22</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>590, 493</value>
+    <value>690, 495</value>
   </data>
   <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -920,6 +920,339 @@
   </data>
   <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnViewLearnedSkills.Name" xml:space="preserve">
+    <value>btnViewLearnedSkills</value>
+  </data>
+  <data name="&gt;&gt;btnViewLearnedSkills.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnViewLearnedSkills.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;btnViewLearnedSkills.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnAllSkills.Name" xml:space="preserve">
+    <value>btnAllSkills</value>
+  </data>
+  <data name="&gt;&gt;btnAllSkills.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAllSkills.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;btnAllSkills.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnAllSkillsDLC.Name" xml:space="preserve">
+    <value>btnAllSkillsDLC</value>
+  </data>
+  <data name="&gt;&gt;btnAllSkillsDLC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAllSkillsDLC.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;btnAllSkillsDLC.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;AllSkillsEnemy.Name" xml:space="preserve">
+    <value>AllSkillsEnemy</value>
+  </data>
+  <data name="&gt;&gt;AllSkillsEnemy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AllSkillsEnemy.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;AllSkillsEnemy.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>401, 324</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 151</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Learned Skills</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chkIncludeEnemyOnlySkills.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkIncludeEnemyOnlySkills.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 161</value>
+  </data>
+  <data name="chkIncludeEnemyOnlySkills.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 17</value>
+  </data>
+  <data name="chkIncludeEnemyOnlySkills.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="chkIncludeEnemyOnlySkills.Text" xml:space="preserve">
+    <value>Include Enemy-Only Skills</value>
+  </data>
+  <data name="&gt;&gt;chkIncludeEnemyOnlySkills.Name" xml:space="preserve">
+    <value>chkIncludeEnemyOnlySkills</value>
+  </data>
+  <data name="&gt;&gt;chkIncludeEnemyOnlySkills.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkIncludeEnemyOnlySkills.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkIncludeEnemyOnlySkills.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cmbSkill1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 23</value>
+  </data>
+  <data name="cmbSkill1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cmbSkill1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill1.Name" xml:space="preserve">
+    <value>cmbSkill1</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pictSkill1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 21</value>
+  </data>
+  <data name="pictSkill1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="pictSkill1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pictSkill1.Name" xml:space="preserve">
+    <value>pictSkill1</value>
+  </data>
+  <data name="&gt;&gt;pictSkill1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictSkill1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;pictSkill1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pictSkill2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 48</value>
+  </data>
+  <data name="pictSkill2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="pictSkill2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pictSkill2.Name" xml:space="preserve">
+    <value>pictSkill2</value>
+  </data>
+  <data name="&gt;&gt;pictSkill2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictSkill2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;pictSkill2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cmbSkill2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 50</value>
+  </data>
+  <data name="cmbSkill2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cmbSkill2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill2.Name" xml:space="preserve">
+    <value>cmbSkill2</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pictSkill3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 75</value>
+  </data>
+  <data name="pictSkill3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="pictSkill3.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;pictSkill3.Name" xml:space="preserve">
+    <value>pictSkill3</value>
+  </data>
+  <data name="&gt;&gt;pictSkill3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictSkill3.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;pictSkill3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cmbSkill3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 77</value>
+  </data>
+  <data name="cmbSkill3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cmbSkill3.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill3.Name" xml:space="preserve">
+    <value>cmbSkill3</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill3.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pictSkill4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 102</value>
+  </data>
+  <data name="pictSkill4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="pictSkill4.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;pictSkill4.Name" xml:space="preserve">
+    <value>pictSkill4</value>
+  </data>
+  <data name="&gt;&gt;pictSkill4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictSkill4.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;pictSkill4.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cmbSkill4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 104</value>
+  </data>
+  <data name="cmbSkill4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cmbSkill4.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill4.Name" xml:space="preserve">
+    <value>cmbSkill4</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill4.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill4.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="pictSkill5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 130</value>
+  </data>
+  <data name="pictSkill5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="pictSkill5.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;pictSkill5.Name" xml:space="preserve">
+    <value>pictSkill5</value>
+  </data>
+  <data name="&gt;&gt;pictSkill5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictSkill5.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;pictSkill5.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="cmbSkill5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 132</value>
+  </data>
+  <data name="cmbSkill5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cmbSkill5.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill5.Name" xml:space="preserve">
+    <value>cmbSkill5</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill5.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;cmbSkill5.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>401, 134</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 183</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Equipped Skills</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="HairColorHex.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 56</value>
@@ -943,7 +1276,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;HairColorHex.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="HairColor.Location" type="System.Drawing.Point, System.Drawing">
     <value>235, 30</value>
@@ -964,85 +1297,13 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;HairColor.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="AllSkillsEnemy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 208</value>
-  </data>
-  <data name="AllSkillsEnemy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 21</value>
-  </data>
-  <data name="AllSkillsEnemy.TabIndex" type="System.Int32, mscorlib">
-    <value>74</value>
-  </data>
-  <data name="AllSkillsEnemy.Text" xml:space="preserve">
-    <value>Even Enemy Skills!</value>
-  </data>
-  <data name="&gt;&gt;AllSkillsEnemy.Name" xml:space="preserve">
-    <value>AllSkillsEnemy</value>
-  </data>
-  <data name="&gt;&gt;AllSkillsEnemy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AllSkillsEnemy.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;AllSkillsEnemy.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnAllSkillsDLC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>362, 180</value>
-  </data>
-  <data name="btnAllSkillsDLC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 22</value>
-  </data>
-  <data name="btnAllSkillsDLC.TabIndex" type="System.Int32, mscorlib">
-    <value>73</value>
-  </data>
-  <data name="btnAllSkillsDLC.Text" xml:space="preserve">
-    <value>DLC Skills too!</value>
-  </data>
-  <data name="&gt;&gt;btnAllSkillsDLC.Name" xml:space="preserve">
-    <value>btnAllSkillsDLC</value>
-  </data>
-  <data name="&gt;&gt;btnAllSkillsDLC.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAllSkillsDLC.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnAllSkillsDLC.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="btnAllSkills.Location" type="System.Drawing.Point, System.Drawing">
-    <value>362, 153</value>
-  </data>
-  <data name="btnAllSkills.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 21</value>
-  </data>
-  <data name="btnAllSkills.TabIndex" type="System.Int32, mscorlib">
-    <value>72</value>
-  </data>
-  <data name="btnAllSkills.Text" xml:space="preserve">
-    <value>All Skills!</value>
-  </data>
-  <data name="&gt;&gt;btnAllSkills.Name" xml:space="preserve">
-    <value>btnAllSkills</value>
-  </data>
-  <data name="&gt;&gt;btnAllSkills.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAllSkills.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnAllSkills.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="label21.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 32</value>
+    <value>471, 32</value>
   </data>
   <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 13</value>
@@ -1063,13 +1324,13 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="numInternalLevel.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="numInternalLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>431, 30</value>
+    <value>531, 30</value>
   </data>
   <data name="numInternalLevel.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 20</value>
@@ -1087,13 +1348,13 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numInternalLevel.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="label20.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>360, 84</value>
+    <value>460, 84</value>
   </data>
   <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 13</value>
@@ -1114,10 +1375,10 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="numEternalSeals.Location" type="System.Drawing.Point, System.Drawing">
-    <value>431, 82</value>
+    <value>531, 82</value>
   </data>
   <data name="numEternalSeals.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 20</value>
@@ -1135,13 +1396,13 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numEternalSeals.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="label19.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 110</value>
+    <value>495, 110</value>
   </data>
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 13</value>
@@ -1162,10 +1423,10 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="numBoots.Location" type="System.Drawing.Point, System.Drawing">
-    <value>431, 108</value>
+    <value>531, 108</value>
   </data>
   <data name="numBoots.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 20</value>
@@ -1183,7 +1444,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numBoots.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="chkDeployed.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1213,7 +1474,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkDeployed.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="numVictories.Location" type="System.Drawing.Point, System.Drawing">
     <value>299, 324</value>
@@ -1234,7 +1495,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numVictories.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1261,7 +1522,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="numBattles.Location" type="System.Drawing.Point, System.Drawing">
     <value>299, 298</value>
@@ -1282,7 +1543,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numBattles.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
   </data>
   <data name="label17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1309,7 +1570,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>14</value>
   </data>
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1339,7 +1600,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>15</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1366,7 +1627,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>16</value>
   </data>
   <data name="txtStatBytes.Font" type="System.Drawing.Font, System.Drawing">
     <value>Courier New, 8.25pt</value>
@@ -1396,7 +1657,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;txtStatBytes.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>17</value>
   </data>
   <data name="lblInventory5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1423,7 +1684,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblInventory5.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>18</value>
   </data>
   <data name="lblInventory4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1450,7 +1711,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblInventory4.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>19</value>
   </data>
   <data name="lblInventory3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1477,7 +1738,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblInventory3.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>20</value>
   </data>
   <data name="lblInventory2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1504,7 +1765,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblInventory2.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>21</value>
   </data>
   <data name="lblInventory1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1531,7 +1792,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblInventory1.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>22</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1558,7 +1819,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>23</value>
   </data>
   <data name="lblStoneRank.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1588,7 +1849,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblStoneRank.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>24</value>
   </data>
   <data name="lblStaffRank.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1618,7 +1879,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblStaffRank.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>25</value>
   </data>
   <data name="lblTomeRank.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1648,7 +1909,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblTomeRank.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>26</value>
   </data>
   <data name="lblBowRank.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1678,7 +1939,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblBowRank.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>27</value>
   </data>
   <data name="lblShurikenRank.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1708,7 +1969,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblShurikenRank.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>28</value>
   </data>
   <data name="lblAxeRank.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1738,7 +1999,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblAxeRank.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>29</value>
   </data>
   <data name="lblLanceRank.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1768,7 +2029,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblLanceRank.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>30</value>
   </data>
   <data name="lblSwordRank.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1798,7 +2059,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblSwordRank.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>31</value>
   </data>
   <data name="numStone.Location" type="System.Drawing.Point, System.Drawing">
     <value>316, 271</value>
@@ -1819,7 +2080,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numStone.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>32</value>
   </data>
   <data name="pictureBox30.Location" type="System.Drawing.Point, System.Drawing">
     <value>316, 249</value>
@@ -1840,7 +2101,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox30.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>33</value>
   </data>
   <data name="numStaff.Location" type="System.Drawing.Point, System.Drawing">
     <value>272, 271</value>
@@ -1861,7 +2122,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numStaff.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>34</value>
   </data>
   <data name="pictureBox28.Location" type="System.Drawing.Point, System.Drawing">
     <value>272, 249</value>
@@ -1882,7 +2143,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox28.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>35</value>
   </data>
   <data name="numTome.Location" type="System.Drawing.Point, System.Drawing">
     <value>228, 271</value>
@@ -1903,7 +2164,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numTome.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>36</value>
   </data>
   <data name="pictureBox29.Location" type="System.Drawing.Point, System.Drawing">
     <value>228, 249</value>
@@ -1924,7 +2185,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox29.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>37</value>
   </data>
   <data name="numBow.Location" type="System.Drawing.Point, System.Drawing">
     <value>184, 271</value>
@@ -1945,7 +2206,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numBow.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>38</value>
   </data>
   <data name="pictureBox26.Location" type="System.Drawing.Point, System.Drawing">
     <value>184, 249</value>
@@ -1966,7 +2227,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox26.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>39</value>
   </data>
   <data name="numShuriken.Location" type="System.Drawing.Point, System.Drawing">
     <value>140, 271</value>
@@ -1987,7 +2248,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numShuriken.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>40</value>
   </data>
   <data name="pictureBox27.Location" type="System.Drawing.Point, System.Drawing">
     <value>140, 249</value>
@@ -2008,7 +2269,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox27.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>41</value>
   </data>
   <data name="numAxe.Location" type="System.Drawing.Point, System.Drawing">
     <value>96, 271</value>
@@ -2029,7 +2290,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numAxe.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>42</value>
   </data>
   <data name="pictureBox25.Location" type="System.Drawing.Point, System.Drawing">
     <value>96, 249</value>
@@ -2050,7 +2311,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox25.ZOrder" xml:space="preserve">
-    <value>44</value>
+    <value>43</value>
   </data>
   <data name="numLance.Location" type="System.Drawing.Point, System.Drawing">
     <value>52, 271</value>
@@ -2071,7 +2332,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numLance.ZOrder" xml:space="preserve">
-    <value>45</value>
+    <value>44</value>
   </data>
   <data name="pictureBox24.Location" type="System.Drawing.Point, System.Drawing">
     <value>52, 249</value>
@@ -2092,7 +2353,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox24.ZOrder" xml:space="preserve">
-    <value>46</value>
+    <value>45</value>
   </data>
   <data name="numSword.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 271</value>
@@ -2113,7 +2374,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numSword.ZOrder" xml:space="preserve">
-    <value>47</value>
+    <value>46</value>
   </data>
   <data name="pictureBox23.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 249</value>
@@ -2134,7 +2395,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox23.ZOrder" xml:space="preserve">
-    <value>48</value>
+    <value>47</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2161,7 +2422,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>49</value>
+    <value>48</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2188,7 +2449,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>50</value>
+    <value>49</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2215,7 +2476,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>51</value>
+    <value>50</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2242,7 +2503,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>52</value>
+    <value>51</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2269,7 +2530,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>53</value>
+    <value>52</value>
   </data>
   <data name="cmbFacewear.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2293,7 +2554,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;cmbFacewear.ZOrder" xml:space="preserve">
-    <value>54</value>
+    <value>53</value>
   </data>
   <data name="cmbHeadwear.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2317,7 +2578,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;cmbHeadwear.ZOrder" xml:space="preserve">
-    <value>55</value>
+    <value>54</value>
   </data>
   <data name="cmbArmwear.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2341,7 +2602,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;cmbArmwear.ZOrder" xml:space="preserve">
-    <value>56</value>
+    <value>55</value>
   </data>
   <data name="cmbUnderwear.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2365,7 +2626,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;cmbUnderwear.ZOrder" xml:space="preserve">
-    <value>57</value>
+    <value>56</value>
   </data>
   <data name="chkRecruited.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2395,7 +2656,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkRecruited.ZOrder" xml:space="preserve">
-    <value>58</value>
+    <value>57</value>
   </data>
   <data name="chkEinherjar.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2425,7 +2686,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkEinherjar.ZOrder" xml:space="preserve">
-    <value>59</value>
+    <value>58</value>
   </data>
   <data name="chkDead.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2455,13 +2716,13 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkDead.ZOrder" xml:space="preserve">
-    <value>60</value>
+    <value>59</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>401, 58</value>
+    <value>501, 58</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 13</value>
@@ -2482,10 +2743,10 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>61</value>
+    <value>60</value>
   </data>
   <data name="numExperience.Location" type="System.Drawing.Point, System.Drawing">
-    <value>431, 56</value>
+    <value>531, 56</value>
   </data>
   <data name="numExperience.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 20</value>
@@ -2503,13 +2764,13 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numExperience.ZOrder" xml:space="preserve">
-    <value>62</value>
+    <value>61</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>409, 7</value>
+    <value>509, 7</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 13</value>
@@ -2530,10 +2791,10 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>63</value>
+    <value>62</value>
   </data>
   <data name="numLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>431, 4</value>
+    <value>531, 4</value>
   </data>
   <data name="numLevel.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 20</value>
@@ -2551,232 +2812,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numLevel.ZOrder" xml:space="preserve">
-    <value>64</value>
-  </data>
-  <data name="cmbSkill5.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cmbSkill5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 208</value>
-  </data>
-  <data name="cmbSkill5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
-  </data>
-  <data name="cmbSkill5.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill5.Name" xml:space="preserve">
-    <value>cmbSkill5</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill5.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill5.ZOrder" xml:space="preserve">
-    <value>65</value>
-  </data>
-  <data name="pictSkill5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 206</value>
-  </data>
-  <data name="pictSkill5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 24</value>
-  </data>
-  <data name="pictSkill5.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;pictSkill5.Name" xml:space="preserve">
-    <value>pictSkill5</value>
-  </data>
-  <data name="&gt;&gt;pictSkill5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictSkill5.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;pictSkill5.ZOrder" xml:space="preserve">
-    <value>66</value>
-  </data>
-  <data name="cmbSkill4.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cmbSkill4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 180</value>
-  </data>
-  <data name="cmbSkill4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
-  </data>
-  <data name="cmbSkill4.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill4.Name" xml:space="preserve">
-    <value>cmbSkill4</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill4.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill4.ZOrder" xml:space="preserve">
-    <value>67</value>
-  </data>
-  <data name="pictSkill4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 178</value>
-  </data>
-  <data name="pictSkill4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 24</value>
-  </data>
-  <data name="pictSkill4.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;pictSkill4.Name" xml:space="preserve">
-    <value>pictSkill4</value>
-  </data>
-  <data name="&gt;&gt;pictSkill4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictSkill4.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;pictSkill4.ZOrder" xml:space="preserve">
-    <value>68</value>
-  </data>
-  <data name="cmbSkill3.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cmbSkill3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 153</value>
-  </data>
-  <data name="cmbSkill3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
-  </data>
-  <data name="cmbSkill3.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill3.Name" xml:space="preserve">
-    <value>cmbSkill3</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill3.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill3.ZOrder" xml:space="preserve">
-    <value>69</value>
-  </data>
-  <data name="pictSkill3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 151</value>
-  </data>
-  <data name="pictSkill3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 24</value>
-  </data>
-  <data name="pictSkill3.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;pictSkill3.Name" xml:space="preserve">
-    <value>pictSkill3</value>
-  </data>
-  <data name="&gt;&gt;pictSkill3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictSkill3.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;pictSkill3.ZOrder" xml:space="preserve">
-    <value>70</value>
-  </data>
-  <data name="cmbSkill2.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cmbSkill2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 126</value>
-  </data>
-  <data name="cmbSkill2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
-  </data>
-  <data name="cmbSkill2.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill2.Name" xml:space="preserve">
-    <value>cmbSkill2</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill2.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill2.ZOrder" xml:space="preserve">
-    <value>71</value>
-  </data>
-  <data name="pictSkill2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 124</value>
-  </data>
-  <data name="pictSkill2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 24</value>
-  </data>
-  <data name="pictSkill2.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;pictSkill2.Name" xml:space="preserve">
-    <value>pictSkill2</value>
-  </data>
-  <data name="&gt;&gt;pictSkill2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictSkill2.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;pictSkill2.ZOrder" xml:space="preserve">
-    <value>72</value>
-  </data>
-  <data name="cmbSkill1.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cmbSkill1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 99</value>
-  </data>
-  <data name="cmbSkill1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
-  </data>
-  <data name="cmbSkill1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill1.Name" xml:space="preserve">
-    <value>cmbSkill1</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;cmbSkill1.ZOrder" xml:space="preserve">
-    <value>73</value>
-  </data>
-  <data name="pictSkill1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 97</value>
-  </data>
-  <data name="pictSkill1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 24</value>
-  </data>
-  <data name="pictSkill1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;pictSkill1.Name" xml:space="preserve">
-    <value>pictSkill1</value>
-  </data>
-  <data name="&gt;&gt;pictSkill1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictSkill1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;pictSkill1.ZOrder" xml:space="preserve">
-    <value>74</value>
+    <value>63</value>
   </data>
   <data name="cmbClass.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2800,7 +2836,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;cmbClass.ZOrder" xml:space="preserve">
-    <value>75</value>
+    <value>64</value>
   </data>
   <data name="lblName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2830,13 +2866,13 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblName.ZOrder" xml:space="preserve">
-    <value>76</value>
+    <value>65</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 6</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>474, 485</value>
+    <value>574, 485</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2875,13 +2911,13 @@
     <value>1</value>
   </data>
   <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+    <value>4, 22</value>
   </data>
   <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>590, 493</value>
+    <value>690, 495</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2986,13 +3022,13 @@
     <value>6</value>
   </data>
   <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+    <value>4, 22</value>
   </data>
   <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>590, 493</value>
+    <value>690, 495</value>
   </data>
   <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3019,7 +3055,7 @@
     <value>13, 28</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>598, 521</value>
+    <value>698, 521</value>
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -4374,6 +4410,102 @@
   <data name="&gt;&gt;numCrystal.ZOrder" xml:space="preserve">
     <value>59</value>
   </data>
+  <data name="btnViewLearnedSkills.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 20</value>
+  </data>
+  <data name="btnViewLearnedSkills.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 23</value>
+  </data>
+  <data name="btnViewLearnedSkills.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnViewLearnedSkills.Text" xml:space="preserve">
+    <value>View Learned Skills</value>
+  </data>
+  <data name="&gt;&gt;btnViewLearnedSkills.Name" xml:space="preserve">
+    <value>btnViewLearnedSkills</value>
+  </data>
+  <data name="&gt;&gt;btnViewLearnedSkills.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnViewLearnedSkills.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;btnViewLearnedSkills.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnAllSkills.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 66</value>
+  </data>
+  <data name="btnAllSkills.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 21</value>
+  </data>
+  <data name="btnAllSkills.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="btnAllSkills.Text" xml:space="preserve">
+    <value>Learn All Skills!</value>
+  </data>
+  <data name="&gt;&gt;btnAllSkills.Name" xml:space="preserve">
+    <value>btnAllSkills</value>
+  </data>
+  <data name="&gt;&gt;btnAllSkills.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAllSkills.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;btnAllSkills.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnAllSkillsDLC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 92</value>
+  </data>
+  <data name="btnAllSkillsDLC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="btnAllSkillsDLC.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="btnAllSkillsDLC.Text" xml:space="preserve">
+    <value>DLC Skills too!</value>
+  </data>
+  <data name="&gt;&gt;btnAllSkillsDLC.Name" xml:space="preserve">
+    <value>btnAllSkillsDLC</value>
+  </data>
+  <data name="&gt;&gt;btnAllSkillsDLC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAllSkillsDLC.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;btnAllSkillsDLC.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="AllSkillsEnemy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 120</value>
+  </data>
+  <data name="AllSkillsEnemy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 21</value>
+  </data>
+  <data name="AllSkillsEnemy.TabIndex" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="AllSkillsEnemy.Text" xml:space="preserve">
+    <value>Even Enemy Skills!</value>
+  </data>
+  <data name="&gt;&gt;AllSkillsEnemy.Name" xml:space="preserve">
+    <value>AllSkillsEnemy</value>
+  </data>
+  <data name="&gt;&gt;AllSkillsEnemy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AllSkillsEnemy.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;AllSkillsEnemy.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="AllCharMaxStatue.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 315</value>
   </data>
@@ -4555,7 +4687,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>624, 561</value>
+    <value>724, 561</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -99,9 +99,25 @@
             this.numCrystal = new System.Windows.Forms.NumericUpDown();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.AllSkillsEnemy = new System.Windows.Forms.Button();
-            this.btnAllSkillsDLC = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnViewLearnedSkills = new System.Windows.Forms.Button();
             this.btnAllSkills = new System.Windows.Forms.Button();
+            this.btnAllSkillsDLC = new System.Windows.Forms.Button();
+            this.AllSkillsEnemy = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkIncludeEnemyOnlySkills = new System.Windows.Forms.CheckBox();
+            this.cmbSkill1 = new System.Windows.Forms.ComboBox();
+            this.pictSkill1 = new System.Windows.Forms.PictureBox();
+            this.pictSkill2 = new System.Windows.Forms.PictureBox();
+            this.cmbSkill2 = new System.Windows.Forms.ComboBox();
+            this.pictSkill3 = new System.Windows.Forms.PictureBox();
+            this.cmbSkill3 = new System.Windows.Forms.ComboBox();
+            this.pictSkill4 = new System.Windows.Forms.PictureBox();
+            this.cmbSkill4 = new System.Windows.Forms.ComboBox();
+            this.pictSkill5 = new System.Windows.Forms.PictureBox();
+            this.cmbSkill5 = new System.Windows.Forms.ComboBox();
+            this.HairColorHex = new System.Windows.Forms.MaskedTextBox();
+            this.HairColor = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
             this.numInternalLevel = new System.Windows.Forms.NumericUpDown();
             this.label20 = new System.Windows.Forms.Label();
@@ -162,16 +178,6 @@
             this.numExperience = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.numLevel = new System.Windows.Forms.NumericUpDown();
-            this.cmbSkill5 = new System.Windows.Forms.ComboBox();
-            this.pictSkill5 = new System.Windows.Forms.PictureBox();
-            this.cmbSkill4 = new System.Windows.Forms.ComboBox();
-            this.pictSkill4 = new System.Windows.Forms.PictureBox();
-            this.cmbSkill3 = new System.Windows.Forms.ComboBox();
-            this.pictSkill3 = new System.Windows.Forms.PictureBox();
-            this.cmbSkill2 = new System.Windows.Forms.ComboBox();
-            this.pictSkill2 = new System.Windows.Forms.PictureBox();
-            this.cmbSkill1 = new System.Windows.Forms.ComboBox();
-            this.pictSkill1 = new System.Windows.Forms.PictureBox();
             this.cmbClass = new System.Windows.Forms.ComboBox();
             this.lblName = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -184,8 +190,6 @@
             this.btnGiveEternalSeals = new System.Windows.Forms.Button();
             this.btnAllCharAllSkills = new System.Windows.Forms.Button();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.HairColor = new System.Windows.Forms.PictureBox();
-            this.HairColorHex = new System.Windows.Forms.MaskedTextBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -239,6 +243,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.numCrystal)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HairColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numInternalLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numEternalSeals)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBoots)).BeginInit();
@@ -262,13 +274,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numExperience)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numLevel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.HairColor)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -877,11 +883,10 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.HairColorHex);
             this.panel1.Controls.Add(this.HairColor);
-            this.panel1.Controls.Add(this.AllSkillsEnemy);
-            this.panel1.Controls.Add(this.btnAllSkillsDLC);
-            this.panel1.Controls.Add(this.btnAllSkills);
             this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.numInternalLevel);
             this.panel1.Controls.Add(this.label20);
@@ -942,27 +947,34 @@
             this.panel1.Controls.Add(this.numExperience);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.numLevel);
-            this.panel1.Controls.Add(this.cmbSkill5);
-            this.panel1.Controls.Add(this.pictSkill5);
-            this.panel1.Controls.Add(this.cmbSkill4);
-            this.panel1.Controls.Add(this.pictSkill4);
-            this.panel1.Controls.Add(this.cmbSkill3);
-            this.panel1.Controls.Add(this.pictSkill3);
-            this.panel1.Controls.Add(this.cmbSkill2);
-            this.panel1.Controls.Add(this.pictSkill2);
-            this.panel1.Controls.Add(this.cmbSkill1);
-            this.panel1.Controls.Add(this.pictSkill1);
             this.panel1.Controls.Add(this.cmbClass);
             this.panel1.Controls.Add(this.lblName);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
-            // AllSkillsEnemy
+            // groupBox2
             // 
-            resources.ApplyResources(this.AllSkillsEnemy, "AllSkillsEnemy");
-            this.AllSkillsEnemy.Name = "AllSkillsEnemy";
-            this.AllSkillsEnemy.UseVisualStyleBackColor = true;
-            this.AllSkillsEnemy.Click += new System.EventHandler(this.btnEnemySkills_Click);
+            this.groupBox2.Controls.Add(this.btnViewLearnedSkills);
+            this.groupBox2.Controls.Add(this.btnAllSkills);
+            this.groupBox2.Controls.Add(this.btnAllSkillsDLC);
+            this.groupBox2.Controls.Add(this.AllSkillsEnemy);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
+            // 
+            // btnViewLearnedSkills
+            // 
+            resources.ApplyResources(this.btnViewLearnedSkills, "btnViewLearnedSkills");
+            this.btnViewLearnedSkills.Name = "btnViewLearnedSkills";
+            this.btnViewLearnedSkills.UseVisualStyleBackColor = true;
+            this.btnViewLearnedSkills.Click += new System.EventHandler(this.btnViewLearnedSkills_Click);
+            // 
+            // btnAllSkills
+            // 
+            resources.ApplyResources(this.btnAllSkills, "btnAllSkills");
+            this.btnAllSkills.Name = "btnAllSkills";
+            this.btnAllSkills.UseVisualStyleBackColor = true;
+            this.btnAllSkills.Click += new System.EventHandler(this.btnAllSkills_Click);
             // 
             // btnAllSkillsDLC
             // 
@@ -971,12 +983,129 @@
             this.btnAllSkillsDLC.UseVisualStyleBackColor = true;
             this.btnAllSkillsDLC.Click += new System.EventHandler(this.btnDLCSkills_Click);
             // 
-            // btnAllSkills
+            // AllSkillsEnemy
             // 
-            resources.ApplyResources(this.btnAllSkills, "btnAllSkills");
-            this.btnAllSkills.Name = "btnAllSkills";
-            this.btnAllSkills.UseVisualStyleBackColor = true;
-            this.btnAllSkills.Click += new System.EventHandler(this.btnAllSkills_Click);
+            resources.ApplyResources(this.AllSkillsEnemy, "AllSkillsEnemy");
+            this.AllSkillsEnemy.Name = "AllSkillsEnemy";
+            this.AllSkillsEnemy.UseVisualStyleBackColor = true;
+            this.AllSkillsEnemy.Click += new System.EventHandler(this.btnEnemySkills_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.chkIncludeEnemyOnlySkills);
+            this.groupBox1.Controls.Add(this.cmbSkill1);
+            this.groupBox1.Controls.Add(this.pictSkill1);
+            this.groupBox1.Controls.Add(this.pictSkill2);
+            this.groupBox1.Controls.Add(this.cmbSkill2);
+            this.groupBox1.Controls.Add(this.pictSkill3);
+            this.groupBox1.Controls.Add(this.cmbSkill3);
+            this.groupBox1.Controls.Add(this.pictSkill4);
+            this.groupBox1.Controls.Add(this.cmbSkill4);
+            this.groupBox1.Controls.Add(this.pictSkill5);
+            this.groupBox1.Controls.Add(this.cmbSkill5);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
+            // chkIncludeEnemyOnlySkills
+            // 
+            resources.ApplyResources(this.chkIncludeEnemyOnlySkills, "chkIncludeEnemyOnlySkills");
+            this.chkIncludeEnemyOnlySkills.Name = "chkIncludeEnemyOnlySkills";
+            this.chkIncludeEnemyOnlySkills.UseVisualStyleBackColor = true;
+            this.chkIncludeEnemyOnlySkills.CheckedChanged += new System.EventHandler(this.chkIncludeEnemyOnlySkills_CheckedChanged);
+            // 
+            // cmbSkill1
+            // 
+            this.cmbSkill1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSkill1.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbSkill1, "cmbSkill1");
+            this.cmbSkill1.Name = "cmbSkill1";
+            this.cmbSkill1.SelectedIndexChanged += new System.EventHandler(this.cmbSkill1_SelectedIndexChanged);
+            this.cmbSkill1.Leave += new System.EventHandler(this.cmbSkill1_Leave);
+            // 
+            // pictSkill1
+            // 
+            resources.ApplyResources(this.pictSkill1, "pictSkill1");
+            this.pictSkill1.Name = "pictSkill1";
+            this.pictSkill1.TabStop = false;
+            // 
+            // pictSkill2
+            // 
+            resources.ApplyResources(this.pictSkill2, "pictSkill2");
+            this.pictSkill2.Name = "pictSkill2";
+            this.pictSkill2.TabStop = false;
+            // 
+            // cmbSkill2
+            // 
+            this.cmbSkill2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSkill2.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbSkill2, "cmbSkill2");
+            this.cmbSkill2.Name = "cmbSkill2";
+            this.cmbSkill2.SelectedIndexChanged += new System.EventHandler(this.cmbSkill2_SelectedIndexChanged);
+            this.cmbSkill2.Leave += new System.EventHandler(this.cmbSkill2_Leave);
+            // 
+            // pictSkill3
+            // 
+            resources.ApplyResources(this.pictSkill3, "pictSkill3");
+            this.pictSkill3.Name = "pictSkill3";
+            this.pictSkill3.TabStop = false;
+            // 
+            // cmbSkill3
+            // 
+            this.cmbSkill3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSkill3.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbSkill3, "cmbSkill3");
+            this.cmbSkill3.Name = "cmbSkill3";
+            this.cmbSkill3.SelectedIndexChanged += new System.EventHandler(this.cmbSkill3_SelectedIndexChanged);
+            this.cmbSkill3.Leave += new System.EventHandler(this.cmbSkill3_Leave);
+            // 
+            // pictSkill4
+            // 
+            resources.ApplyResources(this.pictSkill4, "pictSkill4");
+            this.pictSkill4.Name = "pictSkill4";
+            this.pictSkill4.TabStop = false;
+            // 
+            // cmbSkill4
+            // 
+            this.cmbSkill4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSkill4.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbSkill4, "cmbSkill4");
+            this.cmbSkill4.Name = "cmbSkill4";
+            this.cmbSkill4.SelectedIndexChanged += new System.EventHandler(this.cmbSkill4_SelectedIndexChanged);
+            this.cmbSkill4.Leave += new System.EventHandler(this.cmbSkill4_Leave);
+            // 
+            // pictSkill5
+            // 
+            resources.ApplyResources(this.pictSkill5, "pictSkill5");
+            this.pictSkill5.Name = "pictSkill5";
+            this.pictSkill5.TabStop = false;
+            // 
+            // cmbSkill5
+            // 
+            this.cmbSkill5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSkill5.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbSkill5, "cmbSkill5");
+            this.cmbSkill5.Name = "cmbSkill5";
+            this.cmbSkill5.SelectedIndexChanged += new System.EventHandler(this.cmbSkill5_SelectedIndexChanged);
+            this.cmbSkill5.Leave += new System.EventHandler(this.cmbSkill5_Leave);
+            // 
+            // HairColorHex
+            // 
+            this.HairColorHex.AsciiOnly = true;
+            this.HairColorHex.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.HairColorHex.HidePromptOnLeave = true;
+            this.HairColorHex.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
+            resources.ApplyResources(this.HairColorHex, "HairColorHex");
+            this.HairColorHex.Name = "HairColorHex";
+            this.HairColorHex.SkipLiterals = false;
+            this.HairColorHex.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.HairColorHex.TextChanged += new System.EventHandler(this.UpdateHairColor);
+            // 
+            // HairColor
+            // 
+            resources.ApplyResources(this.HairColor, "HairColor");
+            this.HairColor.Name = "HairColor";
+            this.HairColor.TabStop = false;
             // 
             // label21
             // 
@@ -1486,67 +1615,6 @@
             0});
             this.numLevel.ValueChanged += new System.EventHandler(this.numLevel_ValueChanged);
             // 
-            // cmbSkill5
-            // 
-            resources.ApplyResources(this.cmbSkill5, "cmbSkill5");
-            this.cmbSkill5.FormattingEnabled = true;
-            this.cmbSkill5.Name = "cmbSkill5";
-            // 
-            // pictSkill5
-            // 
-            resources.ApplyResources(this.pictSkill5, "pictSkill5");
-            this.pictSkill5.Name = "pictSkill5";
-            this.pictSkill5.TabStop = false;
-            // 
-            // cmbSkill4
-            // 
-            resources.ApplyResources(this.cmbSkill4, "cmbSkill4");
-            this.cmbSkill4.FormattingEnabled = true;
-            this.cmbSkill4.Name = "cmbSkill4";
-            // 
-            // pictSkill4
-            // 
-            resources.ApplyResources(this.pictSkill4, "pictSkill4");
-            this.pictSkill4.Name = "pictSkill4";
-            this.pictSkill4.TabStop = false;
-            // 
-            // cmbSkill3
-            // 
-            resources.ApplyResources(this.cmbSkill3, "cmbSkill3");
-            this.cmbSkill3.FormattingEnabled = true;
-            this.cmbSkill3.Name = "cmbSkill3";
-            // 
-            // pictSkill3
-            // 
-            resources.ApplyResources(this.pictSkill3, "pictSkill3");
-            this.pictSkill3.Name = "pictSkill3";
-            this.pictSkill3.TabStop = false;
-            // 
-            // cmbSkill2
-            // 
-            resources.ApplyResources(this.cmbSkill2, "cmbSkill2");
-            this.cmbSkill2.FormattingEnabled = true;
-            this.cmbSkill2.Name = "cmbSkill2";
-            // 
-            // pictSkill2
-            // 
-            resources.ApplyResources(this.pictSkill2, "pictSkill2");
-            this.pictSkill2.Name = "pictSkill2";
-            this.pictSkill2.TabStop = false;
-            // 
-            // cmbSkill1
-            // 
-            resources.ApplyResources(this.cmbSkill1, "cmbSkill1");
-            this.cmbSkill1.FormattingEnabled = true;
-            this.cmbSkill1.Name = "cmbSkill1";
-            this.cmbSkill1.SelectedIndexChanged += new System.EventHandler(this.cmbSkill1_SelectedIndexChanged);
-            // 
-            // pictSkill1
-            // 
-            resources.ApplyResources(this.pictSkill1, "pictSkill1");
-            this.pictSkill1.Name = "pictSkill1";
-            this.pictSkill1.TabStop = false;
-            // 
             // cmbClass
             // 
             resources.ApplyResources(this.cmbClass, "cmbClass");
@@ -1632,24 +1700,6 @@
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
             // 
-            // HairColor
-            // 
-            resources.ApplyResources(this.HairColor, "HairColor");
-            this.HairColor.Name = "HairColor";
-            this.HairColor.TabStop = false;
-            // 
-            // HairColorHex
-            // 
-            this.HairColorHex.AsciiOnly = true;
-            this.HairColorHex.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.HairColorHex.HidePromptOnLeave = true;
-            this.HairColorHex.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
-            resources.ApplyResources(this.HairColorHex, "HairColorHex");
-            this.HairColorHex.Name = "HairColorHex";
-            this.HairColorHex.SkipLiterals = false;
-            this.HairColorHex.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.HairColorHex.TextChanged += new System.EventHandler(this.UpdateHairColor);
-            // 
             // FEFTwiddler
             // 
             resources.ApplyResources(this, "$this");
@@ -1716,6 +1766,15 @@
             this.tabPage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSkill5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HairColor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numInternalLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numEternalSeals)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBoots)).EndInit();
@@ -1739,13 +1798,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numExperience)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numLevel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.HairColor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1909,6 +1962,10 @@
         private System.Windows.Forms.Button AllCharAllSkillsDLC;
         private System.Windows.Forms.MaskedTextBox HairColorHex;
         private System.Windows.Forms.PictureBox HairColor;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.CheckBox chkIncludeEnemyOnlySkills;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnViewLearnedSkills;
     }
 }
 
