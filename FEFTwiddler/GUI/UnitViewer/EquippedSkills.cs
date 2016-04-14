@@ -76,6 +76,7 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void CheckEnemyOnlyBoxIfSkillIsEnemyOnly(Enums.Skill skillId)
         {
+            if (chkIncludeEnemyOnlySkills.Checked) return;
             if (Data.Database.Skills.GetByID(skillId).IsEnemyOnly)
             {
                 chkIncludeEnemyOnlySkills.Checked = true;
