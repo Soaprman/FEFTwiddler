@@ -265,4 +265,116 @@
         CipherLucina = 0x300,
         CipherMinerva = 0x400
     }
+
+    public static class CharacterExtensions
+    {
+        public static bool IsCorrin(this Character charId)
+        {
+            return charId == Character.Corrin_F || charId == Character.Corrin_M;
+        }
+
+        public static bool IsAzura(this Character charId)
+        {
+            return charId == Character.Azura;
+        }
+
+        public static bool IsGen1Ordinary(this Character charId)
+        {
+            return charId == Character.Arthur ||
+                charId == Character.Azama ||
+                charId == Character.Benny ||
+                charId == Character.Beruka ||
+                charId == Character.Camilla ||
+                charId == Character.Charlotte ||
+                charId == Character.Effie ||
+                charId == Character.Elise ||
+                charId == Character.Felicia ||
+                charId == Character.Hana ||
+                charId == Character.Hayato ||
+                charId == Character.Hinata ||
+                charId == Character.Hinoka ||
+                charId == Character.Jakob ||
+                charId == Character.Kaden ||
+                charId == Character.Kagero ||
+                charId == Character.Kaze ||
+                charId == Character.Keaton ||
+                charId == Character.Laslow ||
+                charId == Character.Leo ||
+                charId == Character.Niles ||
+                charId == Character.Nyx ||
+                charId == Character.Oboro ||
+                charId == Character.Odin ||
+                charId == Character.Orochi ||
+                charId == Character.Peri ||
+                charId == Character.Rinkah ||
+                charId == Character.Ryoma ||
+                charId == Character.Saizo ||
+                charId == Character.Sakura ||
+                charId == Character.Selena ||
+                charId == Character.Setsuna ||
+                charId == Character.Silas ||
+                charId == Character.Subaki ||
+                charId == Character.Takumi ||
+                charId == Character.Xander;
+        }
+
+        public static bool IsGen1Special(this Character charId)
+        {
+            return charId == Character.Anna ||
+            charId == Character.Flora ||
+            charId == Character.Fuga ||
+            charId == Character.Gunter ||
+            charId == Character.Izana ||
+            charId == Character.Reina ||
+            charId == Character.Scarlet ||
+            charId == Character.Shura ||
+            charId == Character.Yukimura;
+        }
+
+        public static bool IsKana(this Character charId)
+        {
+            return charId == Character.Kana_F || charId == Character.Kana_M;
+        }
+
+        public static bool IsGen2Ordinary(this Character charId)
+        {
+            return Character.Shigure <= charId && charId <= Character.Nina;
+        }
+
+        public static bool IsBoss(this Character charId)
+        {
+            return Character.Daniela <= charId && charId <= Character.Zhara;
+        }
+
+        public static bool IsGeneric(this Character charId)
+        {
+            return Character.Paladin <= charId && charId <= Character.Lancer;
+        }
+
+        public static bool IsAmiibo(this Character charId)
+        {
+            return Character.Marth <= charId && charId <= Character.Robin;
+        }
+
+        public static bool IsRoyal(this Character charId)
+        {
+            return charId == Character.Corrin_M ||
+                charId == Character.Corrin_F ||
+                charId == Character.Azura ||
+                charId == Character.Sakura ||
+                charId == Character.Hinoka ||
+                charId == Character.Takumi ||
+                charId == Character.Ryoma ||
+                charId == Character.Elise ||
+                charId == Character.Leo ||
+                charId == Character.Camilla ||
+                charId == Character.Xander;
+        }
+
+        public static bool IsBeastCharacter(this Character charId)
+        {
+            return charId == Character.Kaden ||
+                charId == Character.Keaton;
+        }
+    }
 }

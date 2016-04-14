@@ -79,11 +79,77 @@
     <Compile Include="Extensions\ByteArrayExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\XElementExtensions.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="GUI\ChapterData\GoldAndPoints.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ChapterData\GoldAndPoints.Designer.cs">
+      <DependentUpon>GoldAndPoints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChapterData\Materials.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ChapterData\Materials.Designer.cs">
+      <DependentUpon>Materials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GUI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChapterData\Megacheats.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ChapterData\Megacheats.Designer.cs">
+      <DependentUpon>Megacheats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\Accessories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\Accessories.Designer.cs">
+      <DependentUpon>Accessories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\BattleData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\BattleData.Designer.cs">
+      <DependentUpon>BattleData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\Class.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\Class.Designer.cs">
+      <DependentUpon>Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\EquippedSkills.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\EquippedSkills.Designer.cs">
+      <DependentUpon>EquippedSkills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\Flags.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\Flags.Designer.cs">
+      <DependentUpon>Flags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\HairColor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\HairColor.Designer.cs">
+      <DependentUpon>HairColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\Inventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\LearnedSkills.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\LearnedSkills.Designer.cs">
+      <DependentUpon>LearnedSkills.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\UnitViewer\LearnedSkillsViewer.cs">
       <SubType>Form</SubType>
@@ -91,10 +157,27 @@
     <Compile Include="GUI\UnitViewer\LearnedSkillsViewer.Designer.cs">
       <DependentUpon>LearnedSkillsViewer.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\UnitViewer\LevelAndExperience.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\LevelAndExperience.Designer.cs">
+      <DependentUpon>LevelAndExperience.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\Stats.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\Stats.Designer.cs">
+      <DependentUpon>Stats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\WeaponExperience.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\WeaponExperience.Designer.cs">
+      <DependentUpon>WeaponExperience.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Building.cs" />
     <Compile Include="Model\ChapterSave.cs" />
     <Compile Include="Model\Character.cs" />
-    <Compile Include="Model\Class.cs" />
     <Compile Include="Model\ConvoyItem.cs" />
     <Compile Include="Model\InventoryItem.cs" />
     <Compile Include="Model\ISave.cs" />
@@ -106,14 +189,56 @@
     <Compile Include="Utils\Huffman8.cs" />
     <Compile Include="Model\SaveFile.cs" />
     <Compile Include="Utils\TypeConverter.cs" />
-    <EmbeddedResource Include="Form1.af.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\ChapterData\GoldAndPoints.resx">
+      <DependentUpon>GoldAndPoints.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\ChapterData\Materials.resx">
+      <DependentUpon>Materials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MainForm.af.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChapterData\Megacheats.resx">
+      <DependentUpon>Megacheats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UnitViewer\Accessories.resx">
+      <DependentUpon>Accessories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UnitViewer\BattleData.resx">
+      <DependentUpon>BattleData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UnitViewer\Class.resx">
+      <DependentUpon>Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UnitViewer\EquippedSkills.resx">
+      <DependentUpon>EquippedSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UnitViewer\Flags.resx">
+      <DependentUpon>Flags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UnitViewer\HairColor.resx">
+      <DependentUpon>HairColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UnitViewer\Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UnitViewer\LearnedSkills.resx">
+      <DependentUpon>LearnedSkills.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\LearnedSkillsViewer.resx">
       <DependentUpon>LearnedSkillsViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UnitViewer\LevelAndExperience.resx">
+      <DependentUpon>LevelAndExperience.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UnitViewer\Stats.resx">
+      <DependentUpon>Stats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UnitViewer\WeaponExperience.resx">
+      <DependentUpon>WeaponExperience.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

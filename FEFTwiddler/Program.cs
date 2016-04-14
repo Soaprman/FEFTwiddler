@@ -16,7 +16,7 @@ namespace FEFTwiddler
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FEFTwiddler());
+            Application.Run(new GUI.MainForm());
         }
     }
 }

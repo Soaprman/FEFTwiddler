@@ -1,4 +1,5 @@
 ﻿using System;
+using FEFTwiddler.Enums;
 using FEFTwiddler.Extensions;
 
 namespace FEFTwiddler.Model
@@ -94,7 +95,7 @@ namespace FEFTwiddler.Model
         /// </summary>
         public byte GetBaseMaxLevel()
         {
-            if (!Class.IsPromoted(ClassID)) return 20;
+            if (!ClassID.IsPromoted()) return 20;
             else return (byte)(IsPrepromote() ? 40 : 20);
         }
 
@@ -105,7 +106,7 @@ namespace FEFTwiddler.Model
         public byte GetModifiedMaxLevel()
         {
             byte maxLevel = GetBaseMaxLevel();
-            if (!Class.IsPromoted(ClassID)) return maxLevel;
+            if (!ClassID.IsPromoted()) return maxLevel;
             maxLevel += (byte)(EternalSealsUsed * 5);
             return maxLevel;
         }
@@ -115,7 +116,7 @@ namespace FEFTwiddler.Model
         /// </summary>
         public byte GetTheoreticalMaxLevel()
         {
-            if (!Class.IsPromoted(ClassID)) return 20;
+            if (!ClassID.IsPromoted()) return 20;
             else return (byte)(IsPrepromote() ? 255 : 235);
         }
 
@@ -217,121 +218,12 @@ namespace FEFTwiddler.Model
 
         #region Character enum lookup stuff
 
-        public static bool IsCorrin(Enums.Character charId)
-        {
-            return charId == Enums.Character.Corrin_F || charId == Enums.Character.Corrin_M;
-        }
-
-        public static bool IsAzura(Enums.Character charId)
-        {
-            return charId == Enums.Character.Azura;
-        }
-
-        public static bool IsGen1Ordinary(Enums.Character charId)
-        {
-            return charId == Enums.Character.Arthur ||
-                charId == Enums.Character.Azama ||
-                charId == Enums.Character.Benny ||
-                charId == Enums.Character.Beruka ||
-                charId == Enums.Character.Camilla ||
-                charId == Enums.Character.Charlotte ||
-                charId == Enums.Character.Effie ||
-                charId == Enums.Character.Elise ||
-                charId == Enums.Character.Felicia ||
-                charId == Enums.Character.Hana ||
-                charId == Enums.Character.Hayato ||
-                charId == Enums.Character.Hinata ||
-                charId == Enums.Character.Hinoka ||
-                charId == Enums.Character.Jakob ||
-                charId == Enums.Character.Kaden ||
-                charId == Enums.Character.Kagero ||
-                charId == Enums.Character.Kaze ||
-                charId == Enums.Character.Keaton ||
-                charId == Enums.Character.Laslow ||
-                charId == Enums.Character.Leo ||
-                charId == Enums.Character.Niles ||
-                charId == Enums.Character.Nyx ||
-                charId == Enums.Character.Oboro ||
-                charId == Enums.Character.Odin ||
-                charId == Enums.Character.Orochi ||
-                charId == Enums.Character.Peri ||
-                charId == Enums.Character.Rinkah ||
-                charId == Enums.Character.Ryoma ||
-                charId == Enums.Character.Saizo ||
-                charId == Enums.Character.Sakura ||
-                charId == Enums.Character.Selena ||
-                charId == Enums.Character.Setsuna ||
-                charId == Enums.Character.Silas ||
-                charId == Enums.Character.Subaki ||
-                charId == Enums.Character.Takumi ||
-                charId == Enums.Character.Xander;
-        }
-
-        public static bool IsGen1Special(Enums.Character charId)
-        {
-            return charId == Enums.Character.Anna ||
-            charId == Enums.Character.Flora ||
-            charId == Enums.Character.Fuga ||
-            charId == Enums.Character.Gunter ||
-            charId == Enums.Character.Izana ||
-            charId == Enums.Character.Reina ||
-            charId == Enums.Character.Scarlet ||
-            charId == Enums.Character.Shura ||
-            charId == Enums.Character.Yukimura;
-        }
-
-        public static bool IsKana(Enums.Character charId)
-        {
-            return charId == Enums.Character.Kana_F || charId == Enums.Character.Kana_M;
-        }
-
-        public static bool IsGen2Ordinary(Enums.Character charId)
-        {
-            return Enums.Character.Shigure <= charId && charId <= Enums.Character.Nina;
-        }
-
-        public static bool IsBoss(Enums.Character charId)
-        {
-            return Enums.Character.Daniela <= charId && charId <= Enums.Character.Zhara;
-        }
-
-        public static bool IsGeneric(Enums.Character charId)
-        {
-            return Enums.Character.Paladin <= charId && charId <= Enums.Character.Lancer;
-        }
-
-        public static bool IsAmiibo(Enums.Character charId)
-        {
-            return Enums.Character.Marth <= charId && charId <= Enums.Character.Robin;
-        }
-
-        public static bool IsRoyal(Enums.Character charId)
-        {
-            return charId == Enums.Character.Corrin_M ||
-                charId == Enums.Character.Corrin_F ||
-                charId == Enums.Character.Azura ||
-                charId == Enums.Character.Sakura ||
-                charId == Enums.Character.Hinoka ||
-                charId == Enums.Character.Takumi ||
-                charId == Enums.Character.Ryoma ||
-                charId == Enums.Character.Elise ||
-                charId == Enums.Character.Leo ||
-                charId == Enums.Character.Camilla ||
-                charId == Enums.Character.Xander;
-        }
-
-        public static bool IsBeastCharacter(Enums.Character charId)
-        {
-            return charId == Enums.Character.Kaden ||
-                charId == Enums.Character.Keaton;
-        }
-
         /// <summary>
         /// This character starts as a promoted class, and can level to 40 without using eternal seals.
         /// </summary>
         public bool IsPrepromote()
         {
-            return InternalLevel < 10 && Class.IsPromoted(ClassID);
+            return InternalLevel < 10 && ClassID.IsPromoted();
         }
 
         public int GetBlockSize()
@@ -466,13 +358,13 @@ namespace FEFTwiddler.Model
             supportSize -= 90;
 
             // Corrin has 44 bytes of stuff at the end
-            if (IsCorrin(this.CharacterID))
+            if (this.CharacterID.IsCorrin())
             {
                 supportSize -= 44;
             }
 
             // Gen 2 units have supports split into two blocks
-            if (IsKana(this.CharacterID) || IsGen2Ordinary(this.CharacterID))
+            if (this.CharacterID.IsKana() || this.CharacterID.IsGen2Ordinary())
             {
                 supportSize -= 42;
             }
@@ -483,7 +375,7 @@ namespace FEFTwiddler.Model
         public int GetSupportBlock2Size()
         {
             // Gen 2 units have supports split into two blocks
-            if (IsKana(this.CharacterID) || IsGen2Ordinary(this.CharacterID))
+            if (this.CharacterID.IsKana() || this.CharacterID.IsGen2Ordinary())
             {
                 return 42;
             }
@@ -495,7 +387,7 @@ namespace FEFTwiddler.Model
 
         public int GetEndBlockSize()
         {
-            if (IsCorrin(this.CharacterID))
+            if (this.CharacterID.IsCorrin())
             {
                 return 44;
             }

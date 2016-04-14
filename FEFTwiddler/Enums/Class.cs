@@ -137,4 +137,98 @@
         // More DLC
         PegasusKnight = 0x88,
     }
+
+    public static class ClassExtensions
+    {
+        public static bool IsPromoted(this Class classId)
+        {
+            return classId == Class.NohrNoble_M ||
+                classId == Class.NohrNoble_F ||
+                classId == Class.HoshidoNoble_M ||
+                classId == Class.HoshidoNoble_F ||
+                classId == Class.Paladin_M ||
+                classId == Class.Paladin_F ||
+                classId == Class.GreatKnight_M ||
+                classId == Class.GreatKnight_F ||
+                classId == Class.General_M ||
+                classId == Class.General_F ||
+                classId == Class.Berserker_M ||
+                classId == Class.Berserker_F ||
+                classId == Class.Hero_M ||
+                classId == Class.Hero_F ||
+                classId == Class.BowKnight_M ||
+                classId == Class.BowKnight_F ||
+                classId == Class.Adventurer_M ||
+                classId == Class.Adventurer_F ||
+                classId == Class.Swordmaster_M ||
+                classId == Class.Swordmaster_F ||
+                classId == Class.MasterOfArms_M ||
+                classId == Class.MasterOfArms_F ||
+                classId == Class.OniChieftain_M ||
+                classId == Class.OniChieftain_F ||
+                classId == Class.Blacksmith_M ||
+                classId == Class.Blacksmith_F ||
+                classId == Class.SpearMaster_M ||
+                classId == Class.SpearMaster_F ||
+                classId == Class.Basara_M ||
+                classId == Class.Basara_F ||
+                classId == Class.Onmyoji_M ||
+                classId == Class.Onmyoji_F ||
+                classId == Class.GreatMaster ||
+                classId == Class.Priestess ||
+                classId == Class.FalconKnight_M ||
+                classId == Class.FalconKnight_F ||
+                classId == Class.KinshiKnight_M ||
+                classId == Class.KinshiKnight_F ||
+                classId == Class.Sniper_M ||
+                classId == Class.Sniper_F ||
+                classId == Class.WyvernLord_M ||
+                classId == Class.WyvernLord_F ||
+                classId == Class.MaligKnight_M ||
+                classId == Class.MaligKnight_F ||
+                classId == Class.NinjaMaster_M ||
+                classId == Class.NinjaMaster_F ||
+                classId == Class.Mechanist_M ||
+                classId == Class.Mechanist_F ||
+                classId == Class.Merchant_M ||
+                classId == Class.Merchant_F ||
+                classId == Class.Sorcerer_M ||
+                classId == Class.Sorcerer_F ||
+                classId == Class.DarkKnight_M ||
+                classId == Class.DarkKnight_F ||
+                classId == Class.Strategist_M ||
+                classId == Class.Strategist_F ||
+                classId == Class.Butler ||
+                classId == Class.Maid ||
+                classId == Class.Wolfssegner_M ||
+                classId == Class.Wolfssegner_F ||
+                classId == Class.NineTails_M ||
+                classId == Class.NineTails_F ||
+                classId == Class.Songstress ||
+                classId == Class.Lancer ||
+                classId == Class.Faceless ||
+                classId == Class.Stoneborn ||
+                classId == Class.Automaton ||
+                classId == Class.AstralDragon ||
+                classId == Class.Dragon_M ||
+                classId == Class.Dragon_F ||
+                classId == Class.DarkDragon ||
+                classId == Class.InvisibleDragon1 ||
+                classId == Class.InvisibleDragon2 ||
+                classId == Class.DarkLord ||
+                classId == Class.Familiar ||
+                classId == Class.DreadFighter_M ||
+                classId == Class.DreadFighter_F ||
+                classId == Class.DarkFalcon_M ||
+                classId == Class.DarkFalcon_F ||
+                classId == Class.Ballistician ||
+                classId == Class.Witch ||
+                classId == Class.Lodestar ||
+                classId == Class.Vanguard ||
+                classId == Class.GreatLord ||
+                classId == Class.Grandmaster ||
+                classId == Class.Outrealm ||
+                classId == Class.PegasusKnight;
+        }
+    }
 }

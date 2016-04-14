@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
+using FEFTwiddler.Enums;
 using FEFTwiddler.Extensions;
 
 namespace FEFTwiddler.Model
@@ -350,11 +351,11 @@ namespace FEFTwiddler.Model
 
             // Process flags
             // character._IsCorrin = (chunk[0] & 0x01) == 0x01;
-            character.IsManakete = Model.Character.IsCorrin(character.CharacterID) ||
+            character.IsManakete = character.CharacterID.IsCorrin() ||
                 ((flags[2] & 0x80) == 0x80);
-            character.IsBeast = Model.Character.IsBeastCharacter(character.CharacterID) ||
+            character.IsBeast = character.CharacterID.IsBeastCharacter() ||
                 (flags[3] & 0x01) == 0x01;
-            character.CanUseDragonVein = Model.Character.IsRoyal(character.CharacterID) ||
+            character.CanUseDragonVein = character.CharacterID.IsRoyal() ||
                 ((flags[4] & 0x08) == 0x08);
 
             // Some bytes
@@ -576,15 +577,15 @@ namespace FEFTwiddler.Model
             // Flags
             chunk = new byte[8];
             bw.BaseStream.Read(chunk, 0, 8);
-            if (character.IsManakete && !Model.Character.IsCorrin(character.CharacterID))
+            if (character.IsManakete && !character.CharacterID.IsCorrin())
                 chunk[2] |= 0x80;
             else
                 chunk[2] &= 0x7F;
-            if (character.IsBeast && !Model.Character.IsBeastCharacter(character.CharacterID))
+            if (character.IsBeast && !character.CharacterID.IsBeastCharacter())
                 chunk[3] |= 0x01;
             else
                 chunk[3] &= 0xFE;
-            if (character.CanUseDragonVein && !Model.Character.IsRoyal(character.CharacterID))
+            if (character.CanUseDragonVein && !character.CharacterID.IsRoyal())
                 chunk[4] |= 0x08;
             else
                 chunk[4] &= 0xF7;
