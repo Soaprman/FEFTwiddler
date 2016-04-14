@@ -15,11 +15,6 @@ namespace FEFTwiddler
         private Model.ChapterSave _chapterSave;
         private Model.Character _selectedCharacter;
 
-        private Data.CharacterDatabase _characterDatabase;
-        private Data.ClassDatabase _classDatabase;
-        private Data.ItemDatabase _itemDatabase;
-        private Data.SkillDatabase _skillDatabase;
-
         private ItemPanel[] inventory;
 
         public FEFTwiddler()
@@ -28,24 +23,19 @@ namespace FEFTwiddler
             InitializeDatabases();
 
             inventory = new ItemPanel[5];
-            inventory[0] = new ItemPanel(
-                null, _itemDatabase,
+            inventory[0] = new ItemPanel(null,
                 ItemPic_1, ItemNameBox_1, ItemIsEquipped_1,
                 ItemForgesBox_1, ItemQuantBox_1, ItemHexBox_1);
-            inventory[1] = new ItemPanel(
-                null, _itemDatabase,
+            inventory[1] = new ItemPanel(null,
                 ItemPic_2, ItemNameBox_2, ItemIsEquipped_2,
                 ItemForgesBox_2, ItemQuantBox_2, ItemHexBox_2);
-            inventory[2] = new ItemPanel(
-                null, _itemDatabase,
+            inventory[2] = new ItemPanel(null,
                 ItemPic_3, ItemNameBox_3, ItemIsEquipped_3,
                 ItemForgesBox_3, ItemQuantBox_3, ItemHexBox_3);
-            inventory[3] = new ItemPanel(
-                null, _itemDatabase,
+            inventory[3] = new ItemPanel(null,
                 ItemPic_4, ItemNameBox_4, ItemIsEquipped_4,
                 ItemForgesBox_4, ItemQuantBox_4, ItemHexBox_4);
-            inventory[4] = new ItemPanel(
-                null, _itemDatabase,
+            inventory[4] = new ItemPanel(null,
                 ItemPic_5, ItemNameBox_5, ItemIsEquipped_5,
                 ItemForgesBox_5, ItemQuantBox_5, ItemHexBox_5);
         }
@@ -429,7 +419,7 @@ namespace FEFTwiddler
         {
             foreach (var character in _chapterSave.Characters)
             {
-                character.maxStatue();
+                character.MaximizeStatues();
             }
             MessageBox.Show("Done!");
         }
@@ -709,7 +699,7 @@ namespace FEFTwiddler
 
         private Data.ItemDatabase ItemDb;
 
-        public ItemPanel(InventoryItem Item, Data.ItemDatabase ItemDb,
+        public ItemPanel(InventoryItem Item,
             PictureBox Pic, ComboBox Name, CheckBox Equipped, NumericUpDown Forges, NumericUpDown Charges, MaskedTextBox Raw)
         {
             this.Pic = Pic;
@@ -718,7 +708,7 @@ namespace FEFTwiddler
             this.Forges = Forges;
             this.Charges = Charges;
             this.Raw = Raw;
-            this.ItemDb = ItemDb;
+            this.ItemDb = Data.Database.Items;
 
             this.item = Item;
 
