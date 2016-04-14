@@ -28,6 +28,8 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void InitializeControls()
         {
+            chkIncludeEnemyOnlySkills.Checked = false;
+
             cmbSkill1.DisplayMember = "DisplayName";
             cmbSkill1.ValueMember = "SkillID";
             cmbSkill1.DataSource = GetSkillDataSource();
@@ -51,16 +53,33 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void PopulateControls()
         {
+            CheckEnemyOnlyBoxIfSkillIsEnemyOnly(_character.EquippedSkill_1);
             cmbSkill1.SelectedValue = _character.EquippedSkill_1;
             pictSkill1.Image = GetSkillImage(_character.EquippedSkill_1);
+
+            CheckEnemyOnlyBoxIfSkillIsEnemyOnly(_character.EquippedSkill_2);
             cmbSkill2.SelectedValue = _character.EquippedSkill_2;
             pictSkill2.Image = GetSkillImage(_character.EquippedSkill_2);
+
+            CheckEnemyOnlyBoxIfSkillIsEnemyOnly(_character.EquippedSkill_3);
             cmbSkill3.SelectedValue = _character.EquippedSkill_3;
             pictSkill3.Image = GetSkillImage(_character.EquippedSkill_3);
+
+            CheckEnemyOnlyBoxIfSkillIsEnemyOnly(_character.EquippedSkill_4);
             cmbSkill4.SelectedValue = _character.EquippedSkill_4;
             pictSkill4.Image = GetSkillImage(_character.EquippedSkill_4);
+
+            CheckEnemyOnlyBoxIfSkillIsEnemyOnly(_character.EquippedSkill_5);
             cmbSkill5.SelectedValue = _character.EquippedSkill_5;
             pictSkill5.Image = GetSkillImage(_character.EquippedSkill_5);
+        }
+
+        private void CheckEnemyOnlyBoxIfSkillIsEnemyOnly(Enums.Skill skillId)
+        {
+            if (Data.Database.Skills.GetByID(skillId).IsEnemyOnly)
+            {
+                chkIncludeEnemyOnlySkills.Checked = true;
+            }
         }
 
         private IEnumerable<Data.Skill> GetSkillDataSource()
