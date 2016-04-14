@@ -637,7 +637,16 @@ namespace FEFTwiddler.Model
             bw.BaseStream.Seek(2, SeekOrigin.Current);
 
             // Skills
-            bw.BaseStream.Seek(10, SeekOrigin.Current);
+            bw.Write((byte)character.EquippedSkill_1);
+            bw.BaseStream.Seek(1, SeekOrigin.Current);
+            bw.Write((byte)character.EquippedSkill_2);
+            bw.BaseStream.Seek(1, SeekOrigin.Current);
+            bw.Write((byte)character.EquippedSkill_3);
+            bw.BaseStream.Seek(1, SeekOrigin.Current);
+            bw.Write((byte)character.EquippedSkill_4);
+            bw.BaseStream.Seek(1, SeekOrigin.Current);
+            bw.Write((byte)character.EquippedSkill_5);
+            bw.BaseStream.Seek(1, SeekOrigin.Current);
 
             // Inventory
             bw.BaseStream.Seek(1, SeekOrigin.Current);

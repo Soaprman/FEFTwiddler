@@ -188,6 +188,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             }
             else
             {
+                _character.EquippedSkill_1 = val;
                 _character.LearnedSkills.Add(val);
             }
         }
@@ -207,6 +208,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             }
             else
             {
+                _character.EquippedSkill_2 = val;
                 _character.LearnedSkills.Add(val);
             }
         }
@@ -225,6 +227,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             }
             else
             {
+                _character.EquippedSkill_3 = val;
                 _character.LearnedSkills.Add(val);
             }
         }
@@ -242,6 +245,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             }
             else
             {
+                _character.EquippedSkill_4 = val;
                 _character.LearnedSkills.Add(val);
             }
         }
@@ -254,6 +258,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             Enums.Skill val = (cmb.SelectedValue == null ? Enums.Skill.None : (Enums.Skill)cmb.SelectedValue);
             if (val != Enums.Skill.None)
             {
+                _character.EquippedSkill_5 = val;
                 _character.LearnedSkills.Add(val);
             }
         }
