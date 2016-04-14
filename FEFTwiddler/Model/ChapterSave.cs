@@ -9,6 +9,8 @@ namespace FEFTwiddler.Model
     /// <summary>
     /// A Fire Emblem Fates "Chapter" save
     /// </summary>
+    /// 
+
     public class ChapterSave : ISave
     {
         #region Member variables
@@ -45,6 +47,7 @@ namespace FEFTwiddler.Model
         #region Properties
 
         public byte[] AvatarName { get; set; }
+        public byte[] chunk { get; set; }
 
         public uint Gold { get; set; }
 
@@ -186,7 +189,7 @@ namespace FEFTwiddler.Model
 
         public void ReadHeaderData(BinaryReader br)
         {
-            byte[] chunk;
+ 
 
             // Stuff
             br.ReadBytes(0x0F);
@@ -206,8 +209,7 @@ namespace FEFTwiddler.Model
 
         public void ReadUserData(BinaryReader br)
         {
-            byte[] chunk;
-
+    
             // Stuff
             br.ReadBytes(0x09);
 
@@ -227,9 +229,7 @@ namespace FEFTwiddler.Model
 
         public void ReadFileData(BinaryReader br)
         {
-            byte[] chunk;
-
-            // Stuff
+              // Stuff
             br.ReadBytes(0x04);
 
             // Ruleset
@@ -261,7 +261,7 @@ namespace FEFTwiddler.Model
 
         public void WriteFileData(BinaryWriter bw)
         {
-            byte[] chunk;
+
 
             bw.BaseStream.Seek(_fileDataOffset, SeekOrigin.Begin);
 
@@ -322,8 +322,6 @@ namespace FEFTwiddler.Model
 
         private void ReadCurrentCharacter(BinaryReader br)
         {
-            byte[] chunk;
-
             var character = new Character();
 
             // To make writing easier
@@ -566,7 +564,7 @@ namespace FEFTwiddler.Model
 
         private void WriteCurrentCharacter(BinaryWriter bw, Model.Character character)
         {
-            byte[] chunk;
+
 
             bw.BaseStream.Seek(character.BinaryPosition, SeekOrigin.Begin);
 
@@ -732,7 +730,6 @@ namespace FEFTwiddler.Model
 
         public void ReadMyCastle(BinaryReader br)
         {
-            byte[] chunk;
 
             // Stuff
             br.ReadBytes(0x6C);
@@ -822,7 +819,7 @@ namespace FEFTwiddler.Model
 
         public void WriteMyCastle(BinaryWriter bw)
         {
-            byte[] chunk;
+
 
             bw.BaseStream.Seek(_myCastleOffset, SeekOrigin.Begin);
 

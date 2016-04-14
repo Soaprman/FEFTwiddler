@@ -107,7 +107,8 @@ namespace FEFTwiddler.Data
                 lsi.SetAttributeValue("byteOffset", byteOffset);
                 lsi.SetAttributeValue("bitMask", bitMask);
             }
-            var breakpoint = true;
+            // This appears to be a useless boolean initiliazization and assignment
+            // var breakpoint = true;
         }
     }
 }
