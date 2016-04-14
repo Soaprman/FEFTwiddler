@@ -639,7 +639,16 @@ namespace FEFTwiddler.Model
             bw.BaseStream.Seek(10, SeekOrigin.Current);
 
             // Inventory
-            bw.BaseStream.Seek(25, SeekOrigin.Current);
+            bw.BaseStream.Seek(1, SeekOrigin.Current);
+            bw.Write(character.Item_1.Raw());
+            bw.BaseStream.Seek(1, SeekOrigin.Current);
+            bw.Write(character.Item_2.Raw());
+            bw.BaseStream.Seek(1, SeekOrigin.Current);
+            bw.Write(character.Item_3.Raw());
+            bw.BaseStream.Seek(1, SeekOrigin.Current);
+            bw.Write(character.Item_4.Raw());
+            bw.BaseStream.Seek(1, SeekOrigin.Current);
+            bw.Write(character.Item_5.Raw());
 
             // Supports
             int supportCount = bw.BaseStream.ReadByte();

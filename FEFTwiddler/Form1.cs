@@ -3,6 +3,8 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using FEFTwiddler.Extensions;
+using FEFTwiddler.Model;
+using FEFTwiddler.Enums;
 
 namespace FEFTwiddler
 {
@@ -17,10 +19,34 @@ namespace FEFTwiddler
         private Data.ItemDatabase _itemDatabase;
         private Data.SkillDatabase _skillDatabase;
 
+        private ItemPanel[] inventory;
+
         public FEFTwiddler()
         {
             InitializeComponent();
             InitializeDatabases();
+
+            inventory = new ItemPanel[5];
+            inventory[0] = new ItemPanel(
+                null, _itemDatabase,
+                ItemPic_1, ItemNameBox_1, ItemIsEquipped_1,
+                ItemForgesBox_1, ItemQuantBox_1, ItemHexBox_1);
+            inventory[1] = new ItemPanel(
+                null, _itemDatabase,
+                ItemPic_2, ItemNameBox_2, ItemIsEquipped_2,
+                ItemForgesBox_2, ItemQuantBox_2, ItemHexBox_2);
+            inventory[2] = new ItemPanel(
+                null, _itemDatabase,
+                ItemPic_3, ItemNameBox_3, ItemIsEquipped_3,
+                ItemForgesBox_3, ItemQuantBox_3, ItemHexBox_3);
+            inventory[3] = new ItemPanel(
+                null, _itemDatabase,
+                ItemPic_4, ItemNameBox_4, ItemIsEquipped_4,
+                ItemForgesBox_4, ItemQuantBox_4, ItemHexBox_4);
+            inventory[4] = new ItemPanel(
+                null, _itemDatabase,
+                ItemPic_5, ItemNameBox_5, ItemIsEquipped_5,
+                ItemForgesBox_5, ItemQuantBox_5, ItemHexBox_5);
         }
 
         private void InitializeDatabases()
@@ -81,16 +107,13 @@ namespace FEFTwiddler
 
         private void UpdateHairColor(object sender, EventArgs e)
         {
-            Byte[] NewHairColor = {0,0,0,255};
-            if(HairColorHex.Text.Length == 6 &&
-               Byte.TryParse(HairColorHex.Text.Substring(0,2), System.Globalization.NumberStyles.HexNumber, null, out NewHairColor[0]) &&
-               Byte.TryParse(HairColorHex.Text.Substring(2,2), System.Globalization.NumberStyles.HexNumber, null, out NewHairColor[1]) &&
-               Byte.TryParse(HairColorHex.Text.Substring(4,2), System.Globalization.NumberStyles.HexNumber, null, out NewHairColor[2]))
+            Byte[] NewHairColor = new byte[4];
+            if(NewHairColor.TryParseHex(HairColorHex.Text + "FF"))
             {
                 HairColor.BackColor = Color.FromArgb(NewHairColor[3],
-                                                     NewHairColor[2],
+                                                     NewHairColor[0],
                                                      NewHairColor[1],
-                                                     NewHairColor[0]);
+                                                     NewHairColor[2]);
                 _selectedCharacter.HairColor = NewHairColor;
             }
         }
@@ -193,9 +216,9 @@ namespace FEFTwiddler
                 cmbClass.Text = character.ClassID.ToString();
 
             HairColor.BackColor = Color.FromArgb( character.HairColor[3],
-                                                  character.HairColor[2],
+                                                  character.HairColor[0],
                                                   character.HairColor[1],
-                                                  character.HairColor[0]);
+                                                  character.HairColor[2]);
             HairColorHex.Text = String.Format(  "{0:X2}{1:X2}{2:X2}",
                                                 character.HairColor[0],
                                                 character.HairColor[1],
@@ -241,11 +264,11 @@ namespace FEFTwiddler
             numStaff.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Staff);
             numStone.Value = Model.Character.FixWeaponExperience(character.WeaponExperience_Stone);
 
-            lblInventory1.Text = GetItemString(character.Item_1);
-            lblInventory2.Text = GetItemString(character.Item_2);
-            lblInventory3.Text = GetItemString(character.Item_3);
-            lblInventory4.Text = GetItemString(character.Item_4);
-            lblInventory5.Text = GetItemString(character.Item_5);
+            inventory[0].LoadItem(character.Item_1);
+            inventory[1].LoadItem(character.Item_2);
+            inventory[2].LoadItem(character.Item_3);
+            inventory[3].LoadItem(character.Item_4);
+            inventory[4].LoadItem(character.Item_5);
 
             txtStatBytes.Text = GetStatBytesString(character);
 
@@ -519,34 +542,6 @@ namespace FEFTwiddler
             return Color.Black;
         }
 
-        private string GetItemString(Model.InventoryItem item)
-        {
-            var data = _itemDatabase.GetByID(item.ItemID);
-
-            var equipped = (item.IsEquipped ? "(E) " : "");
-            var displayName = data.DisplayName;
-            string uses;
-            if (data.Type == Enums.ItemType.Sword ||
-                data.Type == Enums.ItemType.Lance ||
-                data.Type == Enums.ItemType.Axe ||
-                data.Type == Enums.ItemType.Shuriken ||
-                data.Type == Enums.ItemType.Bow ||
-                data.Type == Enums.ItemType.Tome ||
-                data.Type == Enums.ItemType.Stone ||
-                data.Type == Enums.ItemType.NPC ||
-                data.Type == Enums.ItemType.Unknown)
-            {
-                if (item.Uses > 0) uses = "+" + item.Uses.ToString();
-                else uses = "";
-            }
-            else
-            {
-                uses = "x" + item.Uses.ToString() + "/" + data.MaximumUses.ToString();
-            }
-            var nameId = (item.ItemNameID > 0 ? "NameID: " + item.ItemNameID.ToString() : "");
-            return String.Format("{0} {1} {2} {3}", equipped, displayName, uses, nameId);
-        }
-
         private void btn99DragonVeinPoints_Click(object sender, EventArgs e)
         {
             numDragonVeinPoints.Value = 99;
@@ -664,9 +659,164 @@ namespace FEFTwiddler
             _selectedCharacter.LearnAllSkillsEnemy();
         }
 
+        private void btnMaxForges_Click(object sender, EventArgs e)
+        {
+            foreach (ItemPanel item in inventory)
+            {
+                item.SetForges(7);
+            }
+        }
+
+        private void btnMaxCharges_Click(object sender, EventArgs e)
+        {
+            foreach(ItemPanel item in inventory)
+            {
+                item.SetCharges(35);
+            }
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+    }
+
+    class ItemPanel
+    {
+        private PictureBox Pic;
+        private ComboBox Name;
+        private CheckBox Equipped;
+        private NumericUpDown Forges;
+        private NumericUpDown Charges;
+        private MaskedTextBox Raw;
+
+        private InventoryItem item;
+
+        private Data.ItemDatabase ItemDb;
+
+        public ItemPanel(InventoryItem Item, Data.ItemDatabase ItemDb,
+            PictureBox Pic, ComboBox Name, CheckBox Equipped, NumericUpDown Forges, NumericUpDown Charges, MaskedTextBox Raw)
+        {
+            this.Pic = Pic;
+            this.Name = Name;
+            this.Equipped = Equipped;
+            this.Forges = Forges;
+            this.Charges = Charges;
+            this.Raw = Raw;
+            this.ItemDb = ItemDb;
+
+            this.item = Item;
+
+            Name.DataSource = Enum.GetValues(typeof(Enums.Item));
+
+            Equipped.Enabled = false;
+            Name.Enabled = false;
+        }
+
+        public void LoadItem(InventoryItem Item)
+        {
+            item = Item;
+            UpdatePanel();
+        }
+
+        public void UpdatePanel()
+        {
+            EventsOff();
+            var data = ItemDb.GetByID(item.ItemID);
+            Name.Text = data.DisplayName;
+
+            try
+            {
+                if (data.Type.hasCharges())
+                {
+                    Charges.Enabled = true;
+                    Charges.Value = item.Uses;
+                }
+                else
+                {
+                    Charges.Enabled = false;
+                    Charges.Value = 1;
+                }
+
+                if (data.Type.hasForges())
+                {
+                    Forges.Enabled = true;
+                    Forges.Value = item.Uses;
+                    Equipped.Checked = item.IsEquipped;
+                }
+                else
+                {
+                    Forges.Enabled = false;
+                    Forges.Value = 0;
+                    Equipped.Checked = false;
+                }
+                Raw.Text = item.Hex();
+            }
+            catch(ArgumentOutOfRangeException e)
+            { }
+            
+            EventsOn();
+        }
+
+        private void LoadRaw(String hex_string)
+        {
+            byte[] Hex = new byte[4];
+            if (Hex.TryParseHex(hex_string))
+            {
+                item.Reparse(Hex);
+            }
+        }
+
+        private void ForgesChanged(object sender, EventArgs e)
+        {
+            item.Uses = (byte)Forges.Value;
+            UpdatePanel();
+        }
+
+        private void ChargesChanged(object sender, EventArgs e)
+        {
+            item.Uses = (byte)Charges.Value;
+            UpdatePanel();
+        }
+
+        private void RawChanged(object sender, EventArgs e)
+        {
+            LoadRaw(Raw.Text);
+            UpdatePanel();
+        }
+
+        private void EventsOn()
+        {
+            Forges.ValueChanged += ForgesChanged;
+            Charges.ValueChanged += ChargesChanged;
+            Raw.TextChanged += RawChanged;
+        }
+
+        private void EventsOff()
+        {
+            Forges.ValueChanged -= ForgesChanged;
+            Charges.ValueChanged -= ChargesChanged;
+            Raw.TextChanged -= RawChanged;
+        }
+
+        public void SetForges(int val)
+        {
+            var data = ItemDb.GetByID(item.ItemID);
+            if (data.Type.hasForges())
+            {
+                item.Uses = (byte) Math.Max(7, Math.Min(0, val));
+                UpdatePanel();
+            }
+        }
+
+        public void SetCharges(int val)
+        {
+            var data = ItemDb.GetByID(item.ItemID);
+            if (data.Type.hasCharges())
+            {
+                item.Uses = (byte)Math.Max(35, Math.Min(0, val));
+                UpdatePanel();
+            }
         }
     }
 }
