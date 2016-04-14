@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
@@ -53,10 +54,7 @@ namespace FEFTwiddler
         {
             // TODO: Let user specify language
             // Will need to call SetLanguage on all databases when switching and refresh GUI for display names
-            _characterDatabase = new Data.CharacterDatabase(Enums.Language.English);
-            _classDatabase = new Data.ClassDatabase(Enums.Language.English);
-            _itemDatabase = new Data.ItemDatabase(Enums.Language.English);
-            _skillDatabase = new Data.SkillDatabase(Enums.Language.English);
+            Data.Database.SetLanguage(Enums.Language.English);
         }
 
         private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -207,11 +205,11 @@ namespace FEFTwiddler
         private void LoadCharacter(Model.Character character)
         {
             if (Enum.IsDefined(typeof(Enums.Character), character.CharacterID))
-                lblName.Text = _characterDatabase.GetByID(character.CharacterID).DisplayName;
+                lblName.Text = Data.Database.Characters.GetByID(character.CharacterID).DisplayName;
             else
                 lblName.Text = character.CharacterID.ToString();
             if (Enum.IsDefined(typeof(Enums.Class), character.ClassID))
-                cmbClass.Text = _classDatabase.GetByID(character.ClassID).DisplayName;
+                cmbClass.SelectedValue = character.ClassID;
             else
                 cmbClass.Text = character.ClassID.ToString();
 
@@ -239,15 +237,15 @@ namespace FEFTwiddler
             chkEinherjar.Checked = character.IsEinherjar;
             chkRecruited.Checked = character.IsRecruited;
 
-            cmbSkill1.Text = _skillDatabase.GetByID(character.EquippedSkill_1).DisplayName;
+            cmbSkill1.SelectedValue = character.EquippedSkill_1;
             pictSkill1.Image = GetSkillImage(character.EquippedSkill_1);
-            cmbSkill2.Text = _skillDatabase.GetByID(character.EquippedSkill_2).DisplayName;
+            cmbSkill2.SelectedValue = character.EquippedSkill_2;
             pictSkill2.Image = GetSkillImage(character.EquippedSkill_2);
-            cmbSkill3.Text = _skillDatabase.GetByID(character.EquippedSkill_3).DisplayName;
+            cmbSkill3.SelectedValue = character.EquippedSkill_3;
             pictSkill3.Image = GetSkillImage(character.EquippedSkill_3);
-            cmbSkill4.Text = _skillDatabase.GetByID(character.EquippedSkill_4).DisplayName;
+            cmbSkill4.SelectedValue = character.EquippedSkill_4;
             pictSkill4.Image = GetSkillImage(character.EquippedSkill_4);
-            cmbSkill5.Text = _skillDatabase.GetByID(character.EquippedSkill_5).DisplayName;
+            cmbSkill5.SelectedValue = character.EquippedSkill_5;
             pictSkill5.Image = GetSkillImage(character.EquippedSkill_5);
 
             cmbHeadwear.Text = character.Headwear.ToString();
@@ -280,12 +278,29 @@ namespace FEFTwiddler
 
         private void PopulatePickers()
         {
-            cmbClass.DataSource = Enum.GetValues(typeof(Enums.Class));
-            cmbSkill1.DataSource = Enum.GetValues(typeof(Enums.Skill));
-            cmbSkill2.DataSource = Enum.GetValues(typeof(Enums.Skill));
-            cmbSkill3.DataSource = Enum.GetValues(typeof(Enums.Skill));
-            cmbSkill4.DataSource = Enum.GetValues(typeof(Enums.Skill));
-            cmbSkill5.DataSource = Enum.GetValues(typeof(Enums.Skill));
+            cmbClass.DisplayMember = "DisplayName";
+            cmbClass.ValueMember = "ClassID";
+            cmbClass.DataSource = Data.Database.Classes.GetAll();
+
+            cmbSkill1.DisplayMember = "DisplayName";
+            cmbSkill1.ValueMember = "SkillID";
+            cmbSkill1.DataSource = Data.Database.Skills.GetAll();
+
+            cmbSkill2.DisplayMember = "DisplayName";
+            cmbSkill2.ValueMember = "SkillID";
+            cmbSkill2.DataSource = Data.Database.Skills.GetAll();
+
+            cmbSkill3.DisplayMember = "DisplayName";
+            cmbSkill3.ValueMember = "SkillID";
+            cmbSkill3.DataSource = Data.Database.Skills.GetAll();
+
+            cmbSkill4.DisplayMember = "DisplayName";
+            cmbSkill4.ValueMember = "SkillID";
+            cmbSkill4.DataSource = Data.Database.Skills.GetAll();
+
+            cmbSkill5.DisplayMember = "DisplayName";
+            cmbSkill5.ValueMember = "SkillID";
+            cmbSkill5.DataSource = Data.Database.Skills.GetAll();
 
             cmbHeadwear.DataSource = Enum.GetValues(typeof(Enums.Headwear));
             cmbFacewear.DataSource = Enum.GetValues(typeof(Enums.Facewear));
@@ -308,8 +323,8 @@ namespace FEFTwiddler
             if (Enum.IsDefined(typeof(Enums.Character), character.CharacterID) &&
                 Enum.IsDefined(typeof(Enums.Class), character.ClassID))
             {
-                var characterData = _characterDatabase.GetByID(character.CharacterID);
-                var classData = _classDatabase.GetByID(character.ClassID);
+                var characterData = Data.Database.Characters.GetByID(character.CharacterID);
+                var classData = Data.Database.Classes.GetByID(character.ClassID);
                 byte[] trueStats = new byte[] {
                     (byte)(characterData.Base_HP  + classData.Base_HP  + character.StatBytes1[0]),
                     (byte)(characterData.Base_Str + classData.Base_Str + character.StatBytes1[1]),
