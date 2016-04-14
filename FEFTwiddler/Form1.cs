@@ -928,7 +928,7 @@ namespace FEFTwiddler
                 Raw.Text = item.Hex();
             }
             catch(ArgumentOutOfRangeException e)
-            { }
+            { Console.WriteLine(e); }
             
             EventsOn();
         }
