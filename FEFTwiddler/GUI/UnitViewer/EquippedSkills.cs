@@ -188,9 +188,9 @@ namespace FEFTwiddler.GUI.UnitViewer
             }
             else
             {
-                _character.EquippedSkill_1 = val;
                 _character.LearnedSkills.Add(val);
             }
+            UpdateEquippedSkills();
         }
 
         private void cmbSkill2_Leave(object sender, EventArgs e)
@@ -208,9 +208,9 @@ namespace FEFTwiddler.GUI.UnitViewer
             }
             else
             {
-                _character.EquippedSkill_2 = val;
                 _character.LearnedSkills.Add(val);
             }
+            UpdateEquippedSkills();
         }
 
         private void cmbSkill3_Leave(object sender, EventArgs e)
@@ -227,9 +227,9 @@ namespace FEFTwiddler.GUI.UnitViewer
             }
             else
             {
-                _character.EquippedSkill_3 = val;
                 _character.LearnedSkills.Add(val);
             }
+            UpdateEquippedSkills();
         }
 
         private void cmbSkill4_Leave(object sender, EventArgs e)
@@ -245,9 +245,9 @@ namespace FEFTwiddler.GUI.UnitViewer
             }
             else
             {
-                _character.EquippedSkill_4 = val;
                 _character.LearnedSkills.Add(val);
             }
+            UpdateEquippedSkills();
         }
 
         private void cmbSkill5_Leave(object sender, EventArgs e)
@@ -258,9 +258,18 @@ namespace FEFTwiddler.GUI.UnitViewer
             Enums.Skill val = (cmb.SelectedValue == null ? Enums.Skill.None : (Enums.Skill)cmb.SelectedValue);
             if (val != Enums.Skill.None)
             {
-                _character.EquippedSkill_5 = val;
                 _character.LearnedSkills.Add(val);
             }
+            UpdateEquippedSkills();
+        }
+
+        private void UpdateEquippedSkills()
+        {
+            _character.EquippedSkill_1 = (Enums.Skill)cmbSkill1.SelectedValue;
+            _character.EquippedSkill_2 = (Enums.Skill)cmbSkill2.SelectedValue;
+            _character.EquippedSkill_3 = (Enums.Skill)cmbSkill3.SelectedValue;
+            _character.EquippedSkill_4 = (Enums.Skill)cmbSkill4.SelectedValue;
+            _character.EquippedSkill_5 = (Enums.Skill)cmbSkill5.SelectedValue;
         }
     }
 }
