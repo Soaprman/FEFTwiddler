@@ -43,6 +43,7 @@
             this.btnViewLearnedSkills.TabIndex = 75;
             this.btnViewLearnedSkills.Text = "View Learned Skills";
             this.btnViewLearnedSkills.UseVisualStyleBackColor = true;
+            this.btnViewLearnedSkills.Click += new System.EventHandler(this.btnViewLearnedSkills_Click);
             // 
             // btnAllSkills
             // 
@@ -53,6 +54,7 @@
             this.btnAllSkills.TabIndex = 76;
             this.btnAllSkills.Text = "Learn All Skills!";
             this.btnAllSkills.UseVisualStyleBackColor = true;
+            this.btnAllSkills.Click += new System.EventHandler(this.btnAllSkills_Click);
             // 
             // btnAllSkillsDLC
             // 
@@ -63,6 +65,7 @@
             this.btnAllSkillsDLC.TabIndex = 77;
             this.btnAllSkillsDLC.Text = "DLC Skills too!";
             this.btnAllSkillsDLC.UseVisualStyleBackColor = true;
+            this.btnAllSkillsDLC.Click += new System.EventHandler(this.btnDLCSkills_Click);
             // 
             // AllSkillsEnemy
             // 
@@ -73,6 +76,7 @@
             this.AllSkillsEnemy.TabIndex = 78;
             this.AllSkillsEnemy.Text = "Even Enemy Skills!";
             this.AllSkillsEnemy.UseVisualStyleBackColor = true;
+            this.AllSkillsEnemy.Click += new System.EventHandler(this.btnEnemySkills_Click);
             // 
             // LearnedSkills
             // 
