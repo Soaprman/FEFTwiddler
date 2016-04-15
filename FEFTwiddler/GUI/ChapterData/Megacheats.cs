@@ -98,5 +98,23 @@ namespace FEFTwiddler.GUI.ChapterData
             }
             MessageBox.Show("Done!");
         }
+
+        private void btn1Boots_Click(object sender, EventArgs e)
+        {
+            foreach (var character in _chapterSave.Characters)
+            {
+                character.Boots = (byte)1;
+            }
+            MessageBox.Show("Done!");
+        }
+
+        private void btn0Boots_Click(object sender, EventArgs e)
+        {
+            foreach (var character in _chapterSave.Characters)
+            {
+                character.Boots = (byte)0;
+            }
+            MessageBox.Show("Done!");
+        }
     }
 }

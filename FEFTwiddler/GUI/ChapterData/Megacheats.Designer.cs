@@ -35,6 +35,8 @@
             this.btnMaxWeaponExp = new System.Windows.Forms.Button();
             this.btnGiveEternalSeals = new System.Windows.Forms.Button();
             this.btnAllCharAllSkills = new System.Windows.Forms.Button();
+            this.btn1Boots = new System.Windows.Forms.Button();
+            this.btn0Boots = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AllCharMaxStatue
@@ -115,10 +117,34 @@
             this.btnAllCharAllSkills.UseVisualStyleBackColor = true;
             this.btnAllCharAllSkills.Click += new System.EventHandler(this.btnAllCharAllSkills_Click);
             // 
-            // MegacheatsButtons
+            // btn1Boots
+            // 
+            this.btn1Boots.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn1Boots.Location = new System.Drawing.Point(227, 234);
+            this.btn1Boots.Name = "btn1Boots";
+            this.btn1Boots.Size = new System.Drawing.Size(82, 71);
+            this.btn1Boots.TabIndex = 14;
+            this.btn1Boots.Text = "Just 1 Boots";
+            this.btn1Boots.UseVisualStyleBackColor = true;
+            this.btn1Boots.Click += new System.EventHandler(this.btn1Boots_Click);
+            // 
+            // btn0Boots
+            // 
+            this.btn0Boots.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn0Boots.Location = new System.Drawing.Point(315, 234);
+            this.btn0Boots.Name = "btn0Boots";
+            this.btn0Boots.Size = new System.Drawing.Size(82, 71);
+            this.btn0Boots.TabIndex = 15;
+            this.btn0Boots.Text = "No Boots";
+            this.btn0Boots.UseVisualStyleBackColor = true;
+            this.btn0Boots.Click += new System.EventHandler(this.btn0Boots_Click);
+            // 
+            // Megacheats
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btn0Boots);
+            this.Controls.Add(this.btn1Boots);
             this.Controls.Add(this.AllCharMaxStatue);
             this.Controls.Add(this.AllCharAllSkillsEnemy);
             this.Controls.Add(this.AllCharAllSkillsDLC);
@@ -127,7 +153,7 @@
             this.Controls.Add(this.btnGiveEternalSeals);
             this.Controls.Add(this.btnAllCharAllSkills);
             this.Margin = new System.Windows.Forms.Padding(0);
-            this.Name = "MegacheatsButtons";
+            this.Name = "Megacheats";
             this.Size = new System.Drawing.Size(740, 480);
             this.ResumeLayout(false);
 
@@ -142,5 +168,7 @@
         private System.Windows.Forms.Button btnMaxWeaponExp;
         private System.Windows.Forms.Button btnGiveEternalSeals;
         private System.Windows.Forms.Button btnAllCharAllSkills;
+        private System.Windows.Forms.Button btn1Boots;
+        private System.Windows.Forms.Button btn0Boots;
     }
 }
