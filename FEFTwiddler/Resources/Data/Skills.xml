@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <root>
   <skill id="0" name="None" enemyOnly="false" dlc="false" personal="false" unlearnable="false">
-    <text lang="English" displayName="None" />
+    <text lang="English" displayName="(None)" />
     <text lang="Japanese" displayName="無し" />
     <learnedSkillInfo byteOffset="0" bitMask="1" />
   </skill>
