@@ -44,6 +44,10 @@ namespace FEFTwiddler.GUI.UnitViewer
             _inventory[4] = new ItemPanel(null,
                 ItemPic_5, ItemNameBox_5, ItemIsEquipped_5,
                 ItemForgesBox_5, ItemQuantBox_5, ItemHexBox_5);
+
+            // Temporary: Disable things for 0.5.0 build
+            MaxForgeAll.Enabled = false;
+            MaxQuantAll.Enabled = false;
         }
 
         private void PopulateControls()
@@ -102,6 +106,11 @@ namespace FEFTwiddler.GUI.UnitViewer
 
             Equipped.Enabled = false;
             Name.Enabled = false;
+
+            // Temporary: Disable things for 0.5.0 build
+            Forges.Enabled = false;
+            Charges.Enabled = false;
+            Raw.Enabled = false;
         }
 
         public void LoadItem(InventoryItem Item)
@@ -145,6 +154,11 @@ namespace FEFTwiddler.GUI.UnitViewer
             }
             catch (ArgumentOutOfRangeException e)
             { }
+
+            // Temporary: Disable things for 0.5.0 build
+            Forges.Enabled = false;
+            Charges.Enabled = false;
+            Raw.Enabled = false;
 
             EventsOn();
         }
