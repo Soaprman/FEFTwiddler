@@ -60,19 +60,25 @@ namespace FEFTwiddler.GUI
 
                 _chapterSave = Model.ChapterSave.FromSaveFile(_saveFile);
 
-                listBox1.DisplayMember = "CharacterID";
-                listBox1.ValueMember = "BinaryPosition"; // Sure, why not
-                listBox1.Items.Clear();
+                lstLiving.DisplayMember = "CharacterID";
+                lstLiving.ValueMember = "BinaryPosition"; // Sure, why not
+                lstLiving.Items.Clear();
+
+                lstDead.DisplayMember = "CharacterID";
+                lstDead.ValueMember = "BinaryPosition"; // Sure, why not
+                lstDead.Items.Clear();
                 foreach (var character in _chapterSave.Characters)
                 {
-                    listBox1.Items.Add(character);
+                    if (character.IsDead) lstDead.Items.Add(character);
+                    else lstLiving.Items.Add(character);
                 }
 
                 LoadChapterData();
 
                 tabControl1.Enabled = true;
 
-                listBox1.SelectedIndex = 0;
+                lstLiving.SelectedIndex = 0;
+                lstDead.ClearSelected();
             }
         }
 
@@ -118,14 +124,22 @@ namespace FEFTwiddler.GUI
 
         #region Event Handlers - Unit Viewer
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void SelectLivingCharacter(object sender, EventArgs e)
         {
-            var character = (Model.Character)listBox1.SelectedItem;
-            //var character = (from c in _chapterSave.Characters
-            //                 where c.BinaryPosition == characterId
-            //                 select c).FirstOrDefault();
+            var character = (Model.Character)lstLiving.SelectedItem;
+            if (character == null) return;
             _selectedCharacter = character;
             LoadCharacter(character);
+            lstDead.ClearSelected();
+        }
+
+        private void SelectDeadCharacter(object sender, EventArgs e)
+        {
+            var character = (Model.Character)lstDead.SelectedItem;
+            if (character == null) return;
+            _selectedCharacter = character;
+            LoadCharacter(character);
+            lstLiving.ClearSelected();
         }
 
         private void LoadCharacter(Model.Character character)

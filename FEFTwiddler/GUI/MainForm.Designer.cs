@@ -43,9 +43,12 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblName = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lstLiving = new System.Windows.Forms.ListBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lstDead = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.goldAndPoints1 = new FEFTwiddler.GUI.ChapterData.GoldAndPoints();
             this.materials1 = new FEFTwiddler.GUI.ChapterData.Materials();
             this.battleData1 = new FEFTwiddler.GUI.UnitViewer.BattleData();
             this.class1 = new FEFTwiddler.GUI.UnitViewer.Class();
@@ -59,7 +62,6 @@
             this.learnedSkills1 = new FEFTwiddler.GUI.UnitViewer.LearnedSkills();
             this.equippedSkills1 = new FEFTwiddler.GUI.UnitViewer.EquippedSkills();
             this.megacheats1 = new FEFTwiddler.GUI.ChapterData.Megacheats();
-            this.goldAndPoints1 = new FEFTwiddler.GUI.ChapterData.GoldAndPoints();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -127,8 +129,10 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.lstDead);
             this.tabPage1.Controls.Add(this.panel1);
-            this.tabPage1.Controls.Add(this.listBox1);
+            this.tabPage1.Controls.Add(this.lstLiving);
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -171,12 +175,12 @@
             resources.ApplyResources(this.lblName, "lblName");
             this.lblName.Name = "lblName";
             // 
-            // listBox1
+            // lstLiving
             // 
-            this.listBox1.FormattingEnabled = true;
-            resources.ApplyResources(this.listBox1, "listBox1");
-            this.listBox1.Name = "listBox1";
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.lstLiving.FormattingEnabled = true;
+            resources.ApplyResources(this.lstLiving, "lstLiving");
+            this.lstLiving.Name = "lstLiving";
+            this.lstLiving.SelectedIndexChanged += new System.EventHandler(this.SelectLivingCharacter);
             // 
             // tabPage2
             // 
@@ -189,6 +193,23 @@
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
+            // 
+            // lstDead
+            // 
+            this.lstDead.FormattingEnabled = true;
+            resources.ApplyResources(this.lstDead, "lstDead");
+            this.lstDead.Name = "lstDead";
+            this.lstDead.SelectedIndexChanged += new System.EventHandler(this.SelectDeadCharacter);
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // goldAndPoints1
+            // 
+            resources.ApplyResources(this.goldAndPoints1, "goldAndPoints1");
+            this.goldAndPoints1.Name = "goldAndPoints1";
             // 
             // materials1
             // 
@@ -255,11 +276,6 @@
             resources.ApplyResources(this.megacheats1, "megacheats1");
             this.megacheats1.Name = "megacheats1";
             // 
-            // goldAndPoints1
-            // 
-            resources.ApplyResources(this.goldAndPoints1, "goldAndPoints1");
-            this.goldAndPoints1.Name = "goldAndPoints1";
-            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -276,6 +292,7 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -293,7 +310,7 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lstLiving;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem1;
@@ -318,6 +335,8 @@
         private UnitViewer.Class class1;
         private UnitViewer.BattleData battleData1;
         private ChapterData.GoldAndPoints goldAndPoints1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox lstDead;
     }
 }
 
