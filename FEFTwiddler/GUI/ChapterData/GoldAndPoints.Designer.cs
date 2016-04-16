@@ -80,7 +80,7 @@
             this.numDragonVeinPoints.Name = "numDragonVeinPoints";
             this.numDragonVeinPoints.Size = new System.Drawing.Size(50, 20);
             this.numDragonVeinPoints.TabIndex = 71;
-            this.numDragonVeinPoints.Click += new System.EventHandler(this.numDragonVeinPoints_ValueChanged);
+            this.numDragonVeinPoints.ValueChanged += new System.EventHandler(this.numDragonVeinPoints_ValueChanged);
             // 
             // label13
             // 
