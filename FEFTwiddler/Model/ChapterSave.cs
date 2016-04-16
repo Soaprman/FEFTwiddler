@@ -84,7 +84,7 @@ namespace FEFTwiddler.Model
         public uint BattlePoints { get; set; }
         public uint VisitPoints { get; set; }
 
-        public Enums.Map CurrentMap { get; set; }
+        public Enums.Chapter CurrentChapter { get; set; }
 
         private List<Character> _characters = new List<Character>();
         public List<Character> Characters {
@@ -223,12 +223,8 @@ namespace FEFTwiddler.Model
             // Stuff
             br.ReadBytes(0x09);
 
-            // Map
-            chunk = new byte[1];
-            br.Read(chunk, 0, 1);
-
-            // TODO: Add this once the enum is better fleshed-out
-            //CurrentMap = (Enums.Map)chunk[0];
+            // Chapter
+            CurrentChapter = (Enums.Chapter)br.ReadByte();
 
             // Not sure about the rest. Guess it's a TODO.
         }
@@ -544,7 +540,13 @@ namespace FEFTwiddler.Model
             character.VictoryCount = (ushort)((chunk[3] << 8) | chunk[2]);
 
             // TODO
-            br.ReadBytes(5);
+            br.ReadBytes(2);
+
+            // Death chapter
+            character.DeathChapter = (Enums.Chapter)br.ReadByte();
+
+            // TODO
+            br.ReadBytes(2);
 
             // Determine end block size
             int endBlockSize;
@@ -725,7 +727,13 @@ namespace FEFTwiddler.Model
             bw.Write(BitConverter.GetBytes(character.VictoryCount));
 
             // TODO
-            bw.BaseStream.Seek(5, SeekOrigin.Current);
+            bw.BaseStream.Seek(2, SeekOrigin.Current);
+
+            // Death chapter
+            bw.Write((byte)character.DeathChapter);
+
+            // TODO
+            bw.BaseStream.Seek(2, SeekOrigin.Current);
 
             // Determine end block size
             int endBlockSize;

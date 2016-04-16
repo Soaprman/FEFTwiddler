@@ -64,6 +64,8 @@
     <Compile Include="Data\SkillDatabase.cs" />
     <Compile Include="Enums\Armwear.cs" />
     <Compile Include="Enums\Building.cs" />
+    <Compile Include="Enums\Chapter.cs" />
+    <Compile Include="Enums\ChapterType.cs" />
     <Compile Include="Enums\Character.cs" />
     <Compile Include="Enums\Class.cs" />
     <Compile Include="Enums\Difficulty.cs" />
@@ -72,7 +74,7 @@
     <Compile Include="Enums\Item.cs" />
     <Compile Include="Enums\ItemType.cs" />
     <Compile Include="Enums\Language.cs" />
-    <Compile Include="Enums\Map.cs" />
+    <Compile Include="Enums\Route.cs" />
     <Compile Include="Enums\Ruleset.cs" />
     <Compile Include="Enums\SaveFileType.cs" />
     <Compile Include="Enums\Skill.cs" />

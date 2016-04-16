@@ -32,6 +32,7 @@
             this.chkRecruited = new System.Windows.Forms.CheckBox();
             this.chkEinherjar = new System.Windows.Forms.CheckBox();
             this.chkDead = new System.Windows.Forms.CheckBox();
+            this.cmbDeathChapter = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // chkDeployed
@@ -81,11 +82,23 @@
             this.chkDead.TabIndex = 66;
             this.chkDead.Text = "Dead";
             this.chkDead.UseVisualStyleBackColor = true;
+            this.chkDead.CheckedChanged += new System.EventHandler(this.chkDead_CheckedChanged);
+            // 
+            // cmbDeathChapter
+            // 
+            this.cmbDeathChapter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDeathChapter.Enabled = false;
+            this.cmbDeathChapter.FormattingEnabled = true;
+            this.cmbDeathChapter.Location = new System.Drawing.Point(58, 23);
+            this.cmbDeathChapter.Name = "cmbDeathChapter";
+            this.cmbDeathChapter.Size = new System.Drawing.Size(139, 21);
+            this.cmbDeathChapter.TabIndex = 70;
             // 
             // Flags
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.cmbDeathChapter);
             this.Controls.Add(this.chkDeployed);
             this.Controls.Add(this.chkRecruited);
             this.Controls.Add(this.chkEinherjar);
@@ -104,5 +117,6 @@
         private System.Windows.Forms.CheckBox chkRecruited;
         private System.Windows.Forms.CheckBox chkEinherjar;
         private System.Windows.Forms.CheckBox chkDead;
+        private System.Windows.Forms.ComboBox cmbDeathChapter;
     }
 }

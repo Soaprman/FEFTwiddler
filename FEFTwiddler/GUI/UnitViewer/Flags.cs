@@ -30,6 +30,7 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void InitializeControls()
         {
+            cmbDeathChapter.DataSource = Enum.GetValues(typeof(Enums.Chapter));
         }
 
         private void PopulateControls()
@@ -38,6 +39,21 @@ namespace FEFTwiddler.GUI.UnitViewer
             chkDead.Checked = _character.IsDead;
             chkEinherjar.Checked = _character.IsEinherjar;
             chkRecruited.Checked = _character.IsRecruited;
+
+            cmbDeathChapter.Text = _character.DeathChapter.ToString();
+        }
+
+        private void chkDead_CheckedChanged(object sender, EventArgs e)
+        {
+            var chk = (CheckBox)sender;
+            if (chk.Checked)
+            {
+                // Kill
+            }
+            else
+            {
+                // Revive
+            }
         }
     }
 }

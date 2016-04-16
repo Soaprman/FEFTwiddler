@@ -83,6 +83,8 @@ namespace FEFTwiddler.Model
         public ushort BattleCount { get; set; }
         public ushort VictoryCount { get; set; }
 
+        public Enums.Chapter DeathChapter { get; set; }
+
         public override string ToString()
         {
             return CharacterID.ToString() + ": " + ClassID.ToString() +  " // lv" + Level.ToString() + " exp" + Experience.ToString();
