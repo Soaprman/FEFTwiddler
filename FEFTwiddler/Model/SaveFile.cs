@@ -154,6 +154,8 @@ namespace FEFTwiddler.Model
         /// </summary>
         public virtual void Write()
         {
+            WriteBackupFile();
+
             using (var fs = new FileStream(_filePath, FileMode.Open, FileAccess.ReadWrite))
             using (var bw = new BinaryWriter(fs))
             {
@@ -165,6 +167,14 @@ namespace FEFTwiddler.Model
                     case Enums.SaveFileType.Rating: WriteRatingFile(bw); break;
                 }
             }
+        }
+
+        private void WriteBackupFile()
+        {
+            var now = DateTime.Now;
+            var backupFilePath = _filePath + "_backup_" + now.ToString("yyyyMMdd_hhmmssfff");
+            File.Copy(_filePath, backupFilePath);
+            File.SetLastWriteTime(backupFilePath, now);
         }
 
         private void WriteChapterFile(BinaryWriter bw)

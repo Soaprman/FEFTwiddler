@@ -98,7 +98,7 @@ namespace FEFTwiddler.GUI
 
             _chapterSave.Write();
 
-            MessageBox.Show("File saved. Hope you made a backup!");
+            MessageBox.Show("File saved. A backup was made in the source directory as well.");
         }
 
         #endregion
