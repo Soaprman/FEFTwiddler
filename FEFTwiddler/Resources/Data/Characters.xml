@@ -8,13 +8,13 @@
   </character>
   <character id="1" name="Corrin_M">
     <text lang="English" displayName="Corrin (M)" />
-    <text lang="Japanese" displayName="カムイ" />
+    <text lang="Japanese" displayName="カムイ男" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
   <character id="2" name="Corrin_F">
     <text lang="English" displayName="Corrin (F)" />
-    <text lang="Japanese" displayName="カムイ" />
+    <text lang="Japanese" displayName="カムイ女" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
@@ -296,13 +296,13 @@
   </character>
   <character id="49" name="Kana_M">
     <text lang="English" displayName="Kana (M)" />
-    <text lang="Japanese" displayName="カンナ" />
+    <text lang="Japanese" displayName="カンナ男" />
     <baseStats hp="7" str="3" mag="6" skl="8" spd="8" lck="9" def="5" res="5" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
   <character id="50" name="Kana_F">
     <text lang="English" displayName="Kana (F)" />
-    <text lang="Japanese" displayName="カンナ" />
+    <text lang="Japanese" displayName="カンナ女" />
     <baseStats hp="7" str="3" mag="6" skl="8" spd="8" lck="9" def="5" res="5" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>

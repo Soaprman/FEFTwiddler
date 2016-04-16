@@ -1,0 +1,1490 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <building id="1" name="DawnArmory_1">
+    <text lang="English" displayName="Dawn Armory 1" />
+    <text lang="Japanese" displayName="白夜武器屋１" />
+  </building>
+  <building id="2" name="DawnArmory_2">
+    <text lang="English" displayName="Dawn Armory 2" />
+    <text lang="Japanese" displayName="白夜武器屋２" />
+  </building>
+  <building id="3" name="DawnArmory_3">
+    <text lang="English" displayName="Dawn Armory 3" />
+    <text lang="Japanese" displayName="白夜武器屋３" />
+  </building>
+  <building id="4" name="DuskArmory_1">
+    <text lang="English" displayName="Dusk Armory 1" />
+    <text lang="Japanese" displayName="暗夜武器屋１" />
+  </building>
+  <building id="5" name="DuskArmory_2">
+    <text lang="English" displayName="Dusk Armory 2" />
+    <text lang="Japanese" displayName="暗夜武器屋２" />
+  </building>
+  <building id="6" name="DuskArmory_3">
+    <text lang="English" displayName="Dusk Armory 3" />
+    <text lang="Japanese" displayName="暗夜武器屋３" />
+  </building>
+  <building id="7" name="RodShop_1">
+    <text lang="English" displayName="Rod Shop 1" />
+    <text lang="Japanese" displayName="白夜道具屋１" />
+  </building>
+  <building id="8" name="RodShop_2">
+    <text lang="English" displayName="Rod Shop 2" />
+    <text lang="Japanese" displayName="白夜道具屋２" />
+  </building>
+  <building id="9" name="RodShop_3">
+    <text lang="English" displayName="Rod Shop 3" />
+    <text lang="Japanese" displayName="白夜道具屋３" />
+  </building>
+  <building id="10" name="StaffStore_1">
+    <text lang="English" displayName="Staff Store 1" />
+    <text lang="Japanese" displayName="暗夜道具屋１" />
+  </building>
+  <building id="11" name="StaffStore_2">
+    <text lang="English" displayName="Staff Store 2" />
+    <text lang="Japanese" displayName="暗夜道具屋２" />
+  </building>
+  <building id="12" name="StaffStore_3">
+    <text lang="English" displayName="Staff Store 3" />
+    <text lang="Japanese" displayName="暗夜道具屋３" />
+  </building>
+  <building id="16" name="Smithy_1">
+    <text lang="English" displayName="Smithy 1" />
+    <text lang="Japanese" displayName="錬成屋１" />
+  </building>
+  <building id="17" name="Smithy_2">
+    <text lang="English" displayName="Smithy 2" />
+    <text lang="Japanese" displayName="錬成屋２" />
+  </building>
+  <building id="18" name="Smithy_3">
+    <text lang="English" displayName="Smithy 3" />
+    <text lang="Japanese" displayName="錬成屋３" />
+  </building>
+  <building id="19" name="Arena_1">
+    <text lang="English" displayName="Arena 1" />
+    <text lang="Japanese" displayName="闘技場１" />
+  </building>
+  <building id="20" name="Arena_2">
+    <text lang="English" displayName="Arena 2" />
+    <text lang="Japanese" displayName="闘技場２" />
+  </building>
+  <building id="21" name="Arena_3">
+    <text lang="English" displayName="Arena 3" />
+    <text lang="Japanese" displayName="闘技場３" />
+  </building>
+  <building id="22" name="Prison_1">
+    <text lang="English" displayName="Prison 1" />
+    <text lang="Japanese" displayName="牢屋１" />
+  </building>
+  <building id="23" name="Prison_2">
+    <text lang="English" displayName="Prison 2" />
+    <text lang="Japanese" displayName="牢屋２" />
+  </building>
+  <building id="24" name="Prison_3">
+    <text lang="English" displayName="Prison 3" />
+    <text lang="Japanese" displayName="牢屋３" />
+  </building>
+  <building id="28" name="LotteryShop_1">
+    <text lang="English" displayName="Lottery Shop 1" />
+    <text lang="Japanese" displayName="クジ引き屋１" />
+  </building>
+  <building id="29" name="LotteryShop_2">
+    <text lang="English" displayName="Lottery Shop 2" />
+    <text lang="Japanese" displayName="クジ引き屋２" />
+  </building>
+  <building id="30" name="LotteryShop_3">
+    <text lang="English" displayName="Lottery Shop 3" />
+    <text lang="Japanese" displayName="クジ引き屋３" />
+  </building>
+  <building id="31" name="MessHall_1">
+    <text lang="English" displayName="Mess Hall 1" />
+    <text lang="Japanese" displayName="食堂１" />
+  </building>
+  <building id="32" name="MessHall_2">
+    <text lang="English" displayName="Mess Hall 2" />
+    <text lang="Japanese" displayName="食堂２" />
+  </building>
+  <building id="33" name="MessHall_3">
+    <text lang="English" displayName="Mess Hall 3" />
+    <text lang="Japanese" displayName="食堂３" />
+  </building>
+  <building id="34" name="AccessoryShop_1">
+    <text lang="English" displayName="Accessory Shop 1" />
+    <text lang="Japanese" displayName="アクセサリー屋１" />
+  </building>
+  <building id="35" name="AccessoryShop_2">
+    <text lang="English" displayName="Accessory Shop 2" />
+    <text lang="Japanese" displayName="アクセサリー屋２" />
+  </building>
+  <building id="36" name="AccessoryShop_3">
+    <text lang="English" displayName="Accessory Shop 3" />
+    <text lang="Japanese" displayName="アクセサリー屋３" />
+  </building>
+  <building id="37" name="EinherjarShop_1">
+    <text lang="English" displayName="Einherjar Shop 1" />
+    <text lang="Japanese" displayName="魔符屋１" />
+  </building>
+  <building id="38" name="EinherjarShop_2">
+    <text lang="English" displayName="Einherjar Shop 2" />
+    <text lang="Japanese" displayName="魔符屋２" />
+  </building>
+  <building id="39" name="EinherjarShop_3">
+    <text lang="English" displayName="Einherjar Shop 3" />
+    <text lang="Japanese" displayName="魔符屋３" />
+  </building>
+  <building id="40" name="LilithTemple_1">
+    <text lang="English" displayName="Lilith's Temple 1" />
+    <text lang="Japanese" displayName="リリスの神殿１" />
+  </building>
+  <building id="41" name="LilithTemple_2">
+    <text lang="English" displayName="Lilith's Temple 2" />
+    <text lang="Japanese" displayName="リリスの神殿２" />
+  </building>
+  <building id="42" name="LilithTemple_3">
+    <text lang="English" displayName="Lilith's Temple 3" />
+    <text lang="Japanese" displayName="リリスの神殿３" />
+  </building>
+  <building id="43" name="RecordsHall_1">
+    <text lang="English" displayName="Records Hall 1" />
+    <text lang="Japanese" displayName="資料館１" />
+  </building>
+  <building id="44" name="RecordsHall_2">
+    <text lang="English" displayName="Records Hall 2" />
+    <text lang="Japanese" displayName="資料館２" />
+  </building>
+  <building id="45" name="RecordsHall_3">
+    <text lang="English" displayName="Records Hall 3" />
+    <text lang="Japanese" displayName="資料館３" />
+  </building>
+  <building id="46" name="Travelers'Plaza_1">
+    <text lang="English" displayName="Travelers' Plaza 1" />
+    <text lang="Japanese" displayName="旅人の広場１" />
+  </building>
+  <building id="47" name="Travelers'Plaza_2">
+    <text lang="English" displayName="Travelers' Plaza 2" />
+    <text lang="Japanese" displayName="旅人の広場２" />
+  </building>
+  <building id="48" name="Travelers'Plaza_3">
+    <text lang="English" displayName="Travelers' Plaza 3" />
+    <text lang="Japanese" displayName="旅人の広場３" />
+  </building>
+  <building id="49" name="PrivateQuarters_1">
+    <text lang="English" displayName="Private Quarters 1" />
+    <text lang="Japanese" displayName="マイルーム１" />
+  </building>
+  <building id="50" name="PrivateQuarters_2">
+    <text lang="English" displayName="Private Quarters 2" />
+    <text lang="Japanese" displayName="マイルーム２" />
+  </building>
+  <building id="51" name="PrivateQuarters_3">
+    <text lang="English" displayName="Private Quarters 3" />
+    <text lang="Japanese" displayName="マイルーム３" />
+  </building>
+  <building id="55" name="HotSpring_1">
+    <text lang="English" displayName="Hot Spring 1" />
+    <text lang="Japanese" displayName="温泉１" />
+  </building>
+  <building id="56" name="HotSpring_2">
+    <text lang="English" displayName="Hot Spring 2" />
+    <text lang="Japanese" displayName="温泉２" />
+  </building>
+  <building id="57" name="HotSpring_3">
+    <text lang="English" displayName="Hot Spring 3" />
+    <text lang="Japanese" displayName="温泉３" />
+  </building>
+  <building id="58" name="HuntingForest_1">
+    <text lang="English" displayName="Hunting Forest 1" />
+    <text lang="Japanese" displayName="獣狩りの森１" />
+  </building>
+  <building id="59" name="HuntingForest_2">
+    <text lang="English" displayName="Hunting Forest 2" />
+    <text lang="Japanese" displayName="獣狩りの森２" />
+  </building>
+  <building id="60" name="HuntingForest_3">
+    <text lang="English" displayName="Hunting Forest 3" />
+    <text lang="Japanese" displayName="獣狩りの森３" />
+  </building>
+  <building id="61" name="BeanFields_1">
+    <text lang="English" displayName="Bean Fields 1" />
+    <text lang="Japanese" displayName="大豆畑１" />
+  </building>
+  <building id="62" name="BeanFields_2">
+    <text lang="English" displayName="Bean Fields 2" />
+    <text lang="Japanese" displayName="大豆畑２" />
+  </building>
+  <building id="63" name="BeanFields_3">
+    <text lang="English" displayName="Bean Fields 3" />
+    <text lang="Japanese" displayName="大豆畑３" />
+  </building>
+  <building id="64" name="Dairy_1">
+    <text lang="English" displayName="Dairy 1" />
+    <text lang="Japanese" displayName="酪農場１" />
+  </building>
+  <building id="65" name="Dairy_2">
+    <text lang="English" displayName="Dairy 2" />
+    <text lang="Japanese" displayName="酪農場２" />
+  </building>
+  <building id="66" name="Dairy_3">
+    <text lang="English" displayName="Dairy 3" />
+    <text lang="Japanese" displayName="酪農場３" />
+  </building>
+  <building id="67" name="FishingHole_1">
+    <text lang="English" displayName="Fishing Hole 1" />
+    <text lang="Japanese" displayName="釣り堀１" />
+  </building>
+  <building id="68" name="FishingHole_2">
+    <text lang="English" displayName="Fishing Hole 2" />
+    <text lang="Japanese" displayName="釣り堀２" />
+  </building>
+  <building id="69" name="FishingHole_3">
+    <text lang="English" displayName="Fishing Hole 3" />
+    <text lang="Japanese" displayName="釣り堀３" />
+  </building>
+  <building id="70" name="CabbagePatch_1">
+    <text lang="English" displayName="Cabbage Patch 1" />
+    <text lang="Japanese" displayName="葉野菜の畑１" />
+  </building>
+  <building id="71" name="CabbagePatch_2">
+    <text lang="English" displayName="Cabbage Patch 2" />
+    <text lang="Japanese" displayName="葉野菜の畑２" />
+  </building>
+  <building id="72" name="CabbagePatch_3">
+    <text lang="English" displayName="Cabbage Patch 3" />
+    <text lang="Japanese" displayName="葉野菜の畑３" />
+  </building>
+  <building id="73" name="DaikonGarden_1">
+    <text lang="English" displayName="Daikon Garden 1" />
+    <text lang="Japanese" displayName="根野菜の畑１" />
+  </building>
+  <building id="74" name="DaikonGarden_2">
+    <text lang="English" displayName="Daikon Garden 2" />
+    <text lang="Japanese" displayName="根野菜の畑２" />
+  </building>
+  <building id="75" name="DaikonGarden_3">
+    <text lang="English" displayName="Daikon Garden 3" />
+    <text lang="Japanese" displayName="根野菜の畑３" />
+  </building>
+  <building id="76" name="BerryGarden_1">
+    <text lang="English" displayName="Berry Garden 1" />
+    <text lang="Japanese" displayName="ベリーの樹１" />
+  </building>
+  <building id="77" name="BerryGarden_2">
+    <text lang="English" displayName="Berry Garden 2" />
+    <text lang="Japanese" displayName="ベリーの樹２" />
+  </building>
+  <building id="78" name="BerryGarden_3">
+    <text lang="English" displayName="Berry Garden 3" />
+    <text lang="Japanese" displayName="ベリーの樹３" />
+  </building>
+  <building id="79" name="PeachOrchard_1">
+    <text lang="English" displayName="Peach Orchard 1" />
+    <text lang="Japanese" displayName="桃の樹１" />
+  </building>
+  <building id="80" name="PeachOrchard_2">
+    <text lang="English" displayName="Peach Orchard 2" />
+    <text lang="Japanese" displayName="桃の樹２" />
+  </building>
+  <building id="81" name="PeachOrchard_3">
+    <text lang="English" displayName="Peach Orchard 3" />
+    <text lang="Japanese" displayName="桃の樹３" />
+  </building>
+  <building id="82" name="WheatField_1">
+    <text lang="English" displayName="Wheat Field 1" />
+    <text lang="Japanese" displayName="麦畑１" />
+  </building>
+  <building id="83" name="WheatField_2">
+    <text lang="English" displayName="Wheat Field 2" />
+    <text lang="Japanese" displayName="麦畑２" />
+  </building>
+  <building id="84" name="WheatField_3">
+    <text lang="English" displayName="Wheat Field 3" />
+    <text lang="Japanese" displayName="麦畑３" />
+  </building>
+  <building id="85" name="RicePaddy_1">
+    <text lang="English" displayName="Rice Paddy 1" />
+    <text lang="Japanese" displayName="田１" />
+  </building>
+  <building id="86" name="RicePaddy_2">
+    <text lang="English" displayName="Rice Paddy 2" />
+    <text lang="Japanese" displayName="田２" />
+  </building>
+  <building id="87" name="RicePaddy_3">
+    <text lang="English" displayName="Rice Paddy 3" />
+    <text lang="Japanese" displayName="田３" />
+  </building>
+  <building id="88" name="PearlSpring_1">
+    <text lang="English" displayName="Pearl Spring 1" />
+    <text lang="Japanese" displayName="真珠の泉１" />
+  </building>
+  <building id="89" name="PearlSpring_2">
+    <text lang="English" displayName="Pearl Spring 2" />
+    <text lang="Japanese" displayName="真珠の泉２" />
+  </building>
+  <building id="90" name="PearlSpring_3">
+    <text lang="English" displayName="Pearl Spring 3" />
+    <text lang="Japanese" displayName="真珠の泉３" />
+  </building>
+  <building id="91" name="CoralSpring_1">
+    <text lang="English" displayName="Coral Spring 1" />
+    <text lang="Japanese" displayName="珊瑚の泉１" />
+  </building>
+  <building id="92" name="CoralSpring_2">
+    <text lang="English" displayName="Coral Spring 2" />
+    <text lang="Japanese" displayName="珊瑚の泉２" />
+  </building>
+  <building id="93" name="CoralSpring_3">
+    <text lang="English" displayName="Coral Spring 3" />
+    <text lang="Japanese" displayName="珊瑚の泉３" />
+  </building>
+  <building id="94" name="LapisSpring_1">
+    <text lang="English" displayName="Lapis Spring 1" />
+    <text lang="Japanese" displayName="瑠璃の泉１" />
+  </building>
+  <building id="95" name="LapisSpring_2">
+    <text lang="English" displayName="Lapis Spring 2" />
+    <text lang="Japanese" displayName="瑠璃の泉２" />
+  </building>
+  <building id="96" name="LapisSpring_3">
+    <text lang="English" displayName="Lapis Spring 3" />
+    <text lang="Japanese" displayName="瑠璃の泉３" />
+  </building>
+  <building id="97" name="JadeSpring_1">
+    <text lang="English" displayName="Jade Spring 1" />
+    <text lang="Japanese" displayName="翡翠の泉１" />
+  </building>
+  <building id="98" name="JadeSpring_2">
+    <text lang="English" displayName="Jade Spring 2" />
+    <text lang="Japanese" displayName="翡翠の泉２" />
+  </building>
+  <building id="99" name="JadeSpring_3">
+    <text lang="English" displayName="Jade Spring 3" />
+    <text lang="Japanese" displayName="翡翠の泉３" />
+  </building>
+  <building id="100" name="AmberSpring_1">
+    <text lang="English" displayName="Amber Spring 1" />
+    <text lang="Japanese" displayName="琥珀の泉１" />
+  </building>
+  <building id="101" name="AmberSpring_2">
+    <text lang="English" displayName="Amber Spring 2" />
+    <text lang="Japanese" displayName="琥珀の泉２" />
+  </building>
+  <building id="102" name="AmberSpring_3">
+    <text lang="English" displayName="Amber Spring 3" />
+    <text lang="Japanese" displayName="琥珀の泉３" />
+  </building>
+  <building id="103" name="QuartzSpring_1">
+    <text lang="English" displayName="Quartz Spring 1" />
+    <text lang="Japanese" displayName="紫水晶の泉１" />
+  </building>
+  <building id="104" name="QuartzSpring_2">
+    <text lang="English" displayName="Quartz Spring 2" />
+    <text lang="Japanese" displayName="紫水晶の泉２" />
+  </building>
+  <building id="105" name="QuartzSpring_3">
+    <text lang="English" displayName="Quartz Spring 3" />
+    <text lang="Japanese" displayName="紫水晶の泉３" />
+  </building>
+  <building id="106" name="CrystalMine_1">
+    <text lang="English" displayName="Crystal Mine 1" />
+    <text lang="Japanese" displayName="クリスタルの岩山１" />
+  </building>
+  <building id="107" name="CrystalMine_2">
+    <text lang="English" displayName="Crystal Mine 2" />
+    <text lang="Japanese" displayName="クリスタルの岩山２" />
+  </building>
+  <building id="108" name="CrystalMine_3">
+    <text lang="English" displayName="Crystal Mine 3" />
+    <text lang="Japanese" displayName="クリスタルの岩山３" />
+  </building>
+  <building id="109" name="RubyMine_1">
+    <text lang="English" displayName="Ruby Mine 1" />
+    <text lang="Japanese" displayName="ルビーの岩山１" />
+  </building>
+  <building id="110" name="RubyMine_2">
+    <text lang="English" displayName="Ruby Mine 2" />
+    <text lang="Japanese" displayName="ルビーの岩山２" />
+  </building>
+  <building id="111" name="RubyMine_3">
+    <text lang="English" displayName="Ruby Mine 3" />
+    <text lang="Japanese" displayName="ルビーの岩山３" />
+  </building>
+  <building id="112" name="SapphireMine_1">
+    <text lang="English" displayName="Sapphire Mine 1" />
+    <text lang="Japanese" displayName="サファイアの岩山１" />
+  </building>
+  <building id="113" name="SapphireMine_2">
+    <text lang="English" displayName="Sapphire Mine 2" />
+    <text lang="Japanese" displayName="サファイアの岩山２" />
+  </building>
+  <building id="114" name="SapphireMine_3">
+    <text lang="English" displayName="Sapphire Mine 3" />
+    <text lang="Japanese" displayName="サファイアの岩山３" />
+  </building>
+  <building id="115" name="EmeraldMine_1">
+    <text lang="English" displayName="Emerald Mine 1" />
+    <text lang="Japanese" displayName="エメラルドの岩山１" />
+  </building>
+  <building id="116" name="EmeraldMine_2">
+    <text lang="English" displayName="Emerald Mine 2" />
+    <text lang="Japanese" displayName="エメラルドの岩山２" />
+  </building>
+  <building id="117" name="EmeraldMine_3">
+    <text lang="English" displayName="Emerald Mine 3" />
+    <text lang="Japanese" displayName="エメラルドの岩山３" />
+  </building>
+  <building id="118" name="TopazMine_1">
+    <text lang="English" displayName="Topaz Mine 1" />
+    <text lang="Japanese" displayName="トパーズの岩山１" />
+  </building>
+  <building id="119" name="TopazMine_2">
+    <text lang="English" displayName="Topaz Mine 2" />
+    <text lang="Japanese" displayName="トパーズの岩山２" />
+  </building>
+  <building id="120" name="TopazMine_3">
+    <text lang="English" displayName="Topaz Mine 3" />
+    <text lang="Japanese" displayName="トパーズの岩山３" />
+  </building>
+  <building id="121" name="OnyxMine_1">
+    <text lang="English" displayName="Onyx Mine 1" />
+    <text lang="Japanese" displayName="オニキスの岩山１" />
+  </building>
+  <building id="122" name="OnyxMine_2">
+    <text lang="English" displayName="Onyx Mine 2" />
+    <text lang="Japanese" displayName="オニキスの岩山２" />
+  </building>
+  <building id="123" name="OnyxMine_3">
+    <text lang="English" displayName="Onyx Mine 3" />
+    <text lang="Japanese" displayName="オニキスの岩山３" />
+  </building>
+  <building id="124" name="DawnDragon_1">
+    <text lang="English" displayName="Dawn Dragon 1" />
+    <text lang="Japanese" displayName="光竜の像１" />
+  </building>
+  <building id="125" name="DawnDragon_2">
+    <text lang="English" displayName="Dawn Dragon 2" />
+    <text lang="Japanese" displayName="光竜の像２" />
+  </building>
+  <building id="126" name="DawnDragon_3">
+    <text lang="English" displayName="Dawn Dragon 3" />
+    <text lang="Japanese" displayName="光竜の像３" />
+  </building>
+  <building id="127" name="DuskDragon_1">
+    <text lang="English" displayName="Dusk Dragon 1" />
+    <text lang="Japanese" displayName="闇竜の像１" />
+  </building>
+  <building id="128" name="DuskDragon_2">
+    <text lang="English" displayName="Dusk Dragon 2" />
+    <text lang="Japanese" displayName="闇竜の像２" />
+  </building>
+  <building id="129" name="DuskDragon_3">
+    <text lang="English" displayName="Dusk Dragon 3" />
+    <text lang="Japanese" displayName="闇竜の像３" />
+  </building>
+  <building id="130" name="GolemA_1">
+    <text lang="English" displayName="Golem A 1" />
+    <text lang="Japanese" displayName="ゴーレムA１" />
+  </building>
+  <building id="131" name="GolemA_2">
+    <text lang="English" displayName="Golem A 2" />
+    <text lang="Japanese" displayName="ゴーレムA２" />
+  </building>
+  <building id="132" name="GolemA_3">
+    <text lang="English" displayName="Golem A 3" />
+    <text lang="Japanese" displayName="ゴーレムA３" />
+  </building>
+  <building id="133" name="GolemB_1">
+    <text lang="English" displayName="Golem B 1" />
+    <text lang="Japanese" displayName="ゴーレムB１" />
+  </building>
+  <building id="134" name="GolemB_2">
+    <text lang="English" displayName="Golem B 2" />
+    <text lang="Japanese" displayName="ゴーレムB２" />
+  </building>
+  <building id="135" name="GolemB_3">
+    <text lang="English" displayName="Golem B 3" />
+    <text lang="Japanese" displayName="ゴーレムB３" />
+  </building>
+  <building id="136" name="GolemC_1">
+    <text lang="English" displayName="Golem C 1" />
+    <text lang="Japanese" displayName="ゴーレムC１" />
+  </building>
+  <building id="137" name="GolemC_2">
+    <text lang="English" displayName="Golem C 2" />
+    <text lang="Japanese" displayName="ゴーレムC２" />
+  </building>
+  <building id="138" name="GolemC_3">
+    <text lang="English" displayName="Golem C 3" />
+    <text lang="Japanese" displayName="ゴーレムC３" />
+  </building>
+  <building id="139" name="PuppetA_1">
+    <text lang="English" displayName="Puppet A 1" />
+    <text lang="Japanese" displayName="絡繰人形・天１" />
+  </building>
+  <building id="140" name="PuppetA_2">
+    <text lang="English" displayName="Puppet A 2" />
+    <text lang="Japanese" displayName="絡繰人形・天２" />
+  </building>
+  <building id="141" name="PuppetA_3">
+    <text lang="English" displayName="Puppet A 3" />
+    <text lang="Japanese" displayName="絡繰人形・天３" />
+  </building>
+  <building id="142" name="PuppetB_1">
+    <text lang="English" displayName="Puppet B 1" />
+    <text lang="Japanese" displayName="絡繰人形・地１" />
+  </building>
+  <building id="143" name="PuppetB_2">
+    <text lang="English" displayName="Puppet B 2" />
+    <text lang="Japanese" displayName="絡繰人形・地２" />
+  </building>
+  <building id="144" name="PuppetB_3">
+    <text lang="English" displayName="Puppet B 3" />
+    <text lang="Japanese" displayName="絡繰人形・地３" />
+  </building>
+  <building id="145" name="PuppetC_1">
+    <text lang="English" displayName="Puppet C 1" />
+    <text lang="Japanese" displayName="絡繰人形・人１" />
+  </building>
+  <building id="146" name="PuppetC_2">
+    <text lang="English" displayName="Puppet C 2" />
+    <text lang="Japanese" displayName="絡繰人形・人２" />
+  </building>
+  <building id="147" name="PuppetC_3">
+    <text lang="English" displayName="Puppet C 3" />
+    <text lang="Japanese" displayName="絡繰人形・人３" />
+  </building>
+  <building id="148" name="Ballista_1">
+    <text lang="English" displayName="Ballista 1" />
+    <text lang="Japanese" displayName="弓砲台１" />
+  </building>
+  <building id="149" name="Ballista_2">
+    <text lang="English" displayName="Ballista 2" />
+    <text lang="Japanese" displayName="弓砲台２" />
+  </building>
+  <building id="150" name="Ballista_3">
+    <text lang="English" displayName="Ballista 3" />
+    <text lang="Japanese" displayName="弓砲台３" />
+  </building>
+  <building id="151" name="FireOrb_1">
+    <text lang="English" displayName="Fire Orb 1" />
+    <text lang="Japanese" displayName="魔道砲台１" />
+  </building>
+  <building id="152" name="FireOrb_2">
+    <text lang="English" displayName="Fire Orb 2" />
+    <text lang="Japanese" displayName="魔道砲台２" />
+  </building>
+  <building id="153" name="FireOrb_3">
+    <text lang="English" displayName="Fire Orb 3" />
+    <text lang="Japanese" displayName="魔道砲台３" />
+  </building>
+  <building id="154" name="Launcher_1">
+    <text lang="English" displayName="Launcher 1" />
+    <text lang="Japanese" displayName="暗器砲台１" />
+  </building>
+  <building id="155" name="Launcher_2">
+    <text lang="English" displayName="Launcher 2" />
+    <text lang="Japanese" displayName="暗器砲台２" />
+  </building>
+  <building id="156" name="Launcher_3">
+    <text lang="English" displayName="Launcher 3" />
+    <text lang="Japanese" displayName="暗器砲台３" />
+  </building>
+  <building id="157" name="CorrinMStatue_1">
+    <text lang="English" displayName="Corrin (M) Statue 1" />
+    <text lang="Japanese" displayName="カムイ男の像１" />
+  </building>
+  <building id="158" name="CorrinMStatue_2">
+    <text lang="English" displayName="Corrin (M) Statue 2" />
+    <text lang="Japanese" displayName="カムイ男の像２" />
+  </building>
+  <building id="159" name="CorrinMStatue_3">
+    <text lang="English" displayName="Corrin (M) Statue 3" />
+    <text lang="Japanese" displayName="カムイ男の像３" />
+  </building>
+  <building id="160" name="CorrinFStatue_1">
+    <text lang="English" displayName="Corrin (F) Statue 1" />
+    <text lang="Japanese" displayName="カムイ女の像１" />
+  </building>
+  <building id="161" name="CorrinFStatue_2">
+    <text lang="English" displayName="Corrin (F) Statue 2" />
+    <text lang="Japanese" displayName="カムイ女の像２" />
+  </building>
+  <building id="162" name="CorrinFStatue_3">
+    <text lang="English" displayName="Corrin (F) Statue 3" />
+    <text lang="Japanese" displayName="カムイ女の像３" />
+  </building>
+  <building id="163" name="GunterStatue_1">
+    <text lang="English" displayName="Gunter Statue 1" />
+    <text lang="Japanese" displayName="ギュンターの像１" />
+  </building>
+  <building id="164" name="GunterStatue_2">
+    <text lang="English" displayName="Gunter Statue 2" />
+    <text lang="Japanese" displayName="ギュンターの像２" />
+  </building>
+  <building id="165" name="GunterStatue_3">
+    <text lang="English" displayName="Gunter Statue 3" />
+    <text lang="Japanese" displayName="ギュンターの像３" />
+  </building>
+  <building id="166" name="FeliciaStatue_1">
+    <text lang="English" displayName="Felicia Statue 1" />
+    <text lang="Japanese" displayName="フェリシアの像１" />
+  </building>
+  <building id="167" name="FeliciaStatue_2">
+    <text lang="English" displayName="Felicia Statue 2" />
+    <text lang="Japanese" displayName="フェリシアの像２" />
+  </building>
+  <building id="168" name="FeliciaStatue_3">
+    <text lang="English" displayName="Felicia Statue 3" />
+    <text lang="Japanese" displayName="フェリシアの像３" />
+  </building>
+  <building id="169" name="JakobStatue_1">
+    <text lang="English" displayName="Jakob Statue 1" />
+    <text lang="Japanese" displayName="ジョーカーの像１" />
+  </building>
+  <building id="170" name="JakobStatue_2">
+    <text lang="English" displayName="Jakob Statue 2" />
+    <text lang="Japanese" displayName="ジョーカーの像２" />
+  </building>
+  <building id="171" name="JakobStatue_3">
+    <text lang="English" displayName="Jakob Statue 3" />
+    <text lang="Japanese" displayName="ジョーカーの像３" />
+  </building>
+  <building id="172" name="RinkahStatue_1">
+    <text lang="English" displayName="Rinkah Statue 1" />
+    <text lang="Japanese" displayName="リンカの像１" />
+  </building>
+  <building id="173" name="RinkahStatue_2">
+    <text lang="English" displayName="Rinkah Statue 2" />
+    <text lang="Japanese" displayName="リンカの像２" />
+  </building>
+  <building id="174" name="RinkahStatue_3">
+    <text lang="English" displayName="Rinkah Statue 3" />
+    <text lang="Japanese" displayName="リンカの像３" />
+  </building>
+  <building id="175" name="KazeStatue_1">
+    <text lang="English" displayName="Kaze Statue 1" />
+    <text lang="Japanese" displayName="スズカゼの像１" />
+  </building>
+  <building id="176" name="KazeStatue_2">
+    <text lang="English" displayName="Kaze Statue 2" />
+    <text lang="Japanese" displayName="スズカゼの像２" />
+  </building>
+  <building id="177" name="KazeStatue_3">
+    <text lang="English" displayName="Kaze Statue 3" />
+    <text lang="Japanese" displayName="スズカゼの像３" />
+  </building>
+  <building id="178" name="SakuraStatue_1">
+    <text lang="English" displayName="Sakura Statue 1" />
+    <text lang="Japanese" displayName="サクラの像１" />
+  </building>
+  <building id="179" name="SakuraStatue_2">
+    <text lang="English" displayName="Sakura Statue 2" />
+    <text lang="Japanese" displayName="サクラの像２" />
+  </building>
+  <building id="180" name="SakuraStatue_3">
+    <text lang="English" displayName="Sakura Statue 3" />
+    <text lang="Japanese" displayName="サクラの像３" />
+  </building>
+  <building id="181" name="AzuraStatue_1">
+    <text lang="English" displayName="Azura Statue 1" />
+    <text lang="Japanese" displayName="アクアの像１" />
+  </building>
+  <building id="182" name="AzuraStatue_2">
+    <text lang="English" displayName="Azura Statue 2" />
+    <text lang="Japanese" displayName="アクアの像２" />
+  </building>
+  <building id="183" name="AzuraStatue_3">
+    <text lang="English" displayName="Azura Statue 3" />
+    <text lang="Japanese" displayName="アクアの像３" />
+  </building>
+  <building id="184" name="HanaStatue_1">
+    <text lang="English" displayName="Hana Statue 1" />
+    <text lang="Japanese" displayName="カザハナの像１" />
+  </building>
+  <building id="185" name="HanaStatue_2">
+    <text lang="English" displayName="Hana Statue 2" />
+    <text lang="Japanese" displayName="カザハナの像２" />
+  </building>
+  <building id="186" name="HanaStatue_3">
+    <text lang="English" displayName="Hana Statue 3" />
+    <text lang="Japanese" displayName="カザハナの像３" />
+  </building>
+  <building id="187" name="SubakiStatue_1">
+    <text lang="English" displayName="Subaki Statue 1" />
+    <text lang="Japanese" displayName="ツバキの像１" />
+  </building>
+  <building id="188" name="SubakiStatue_2">
+    <text lang="English" displayName="Subaki Statue 2" />
+    <text lang="Japanese" displayName="ツバキの像２" />
+  </building>
+  <building id="189" name="SubakiStatue_3">
+    <text lang="English" displayName="Subaki Statue 3" />
+    <text lang="Japanese" displayName="ツバキの像３" />
+  </building>
+  <building id="190" name="SilasStatue_1">
+    <text lang="English" displayName="Silas Statue 1" />
+    <text lang="Japanese" displayName="サイラスの像１" />
+  </building>
+  <building id="191" name="SilasStatue_2">
+    <text lang="English" displayName="Silas Statue 2" />
+    <text lang="Japanese" displayName="サイラスの像２" />
+  </building>
+  <building id="192" name="SilasStatue_3">
+    <text lang="English" displayName="Silas Statue 3" />
+    <text lang="Japanese" displayName="サイラスの像３" />
+  </building>
+  <building id="193" name="SaizoStatue_1">
+    <text lang="English" displayName="Saizo Statue 1" />
+    <text lang="Japanese" displayName="サイゾウの像１" />
+  </building>
+  <building id="194" name="SaizoStatue_2">
+    <text lang="English" displayName="Saizo Statue 2" />
+    <text lang="Japanese" displayName="サイゾウの像２" />
+  </building>
+  <building id="195" name="SaizoStatue_3">
+    <text lang="English" displayName="Saizo Statue 3" />
+    <text lang="Japanese" displayName="サイゾウの像３" />
+  </building>
+  <building id="196" name="OrochiStatue_1">
+    <text lang="English" displayName="Orochi Statue 1" />
+    <text lang="Japanese" displayName="オロチの像１" />
+  </building>
+  <building id="197" name="OrochiStatue_2">
+    <text lang="English" displayName="Orochi Statue 2" />
+    <text lang="Japanese" displayName="オロチの像２" />
+  </building>
+  <building id="198" name="OrochiStatue_3">
+    <text lang="English" displayName="Orochi Statue 3" />
+    <text lang="Japanese" displayName="オロチの像３" />
+  </building>
+  <building id="199" name="HinokaStatue_1">
+    <text lang="English" displayName="Hinoka Statue 1" />
+    <text lang="Japanese" displayName="ヒノカの像１" />
+  </building>
+  <building id="200" name="HinokaStatue_2">
+    <text lang="English" displayName="Hinoka Statue 2" />
+    <text lang="Japanese" displayName="ヒノカの像２" />
+  </building>
+  <building id="201" name="HinokaStatue_3">
+    <text lang="English" displayName="Hinoka Statue 3" />
+    <text lang="Japanese" displayName="ヒノカの像３" />
+  </building>
+  <building id="202" name="AzamaStatue_1">
+    <text lang="English" displayName="Azama Statue 1" />
+    <text lang="Japanese" displayName="アサマの像１" />
+  </building>
+  <building id="203" name="AzamaStatue_2">
+    <text lang="English" displayName="Azama Statue 2" />
+    <text lang="Japanese" displayName="アサマの像２" />
+  </building>
+  <building id="204" name="AzamaStatue_3">
+    <text lang="English" displayName="Azama Statue 3" />
+    <text lang="Japanese" displayName="アサマの像３" />
+  </building>
+  <building id="205" name="SetsunaStatue_1">
+    <text lang="English" displayName="Setsuna Statue 1" />
+    <text lang="Japanese" displayName="セツナの像１" />
+  </building>
+  <building id="206" name="SetsunaStatue_2">
+    <text lang="English" displayName="Setsuna Statue 2" />
+    <text lang="Japanese" displayName="セツナの像２" />
+  </building>
+  <building id="207" name="SetsunaStatue_3">
+    <text lang="English" displayName="Setsuna Statue 3" />
+    <text lang="Japanese" displayName="セツナの像３" />
+  </building>
+  <building id="208" name="HayatoStatue_1">
+    <text lang="English" displayName="Hayato Statue 1" />
+    <text lang="Japanese" displayName="ツクヨミの像１" />
+  </building>
+  <building id="209" name="HayatoStatue_2">
+    <text lang="English" displayName="Hayato Statue 2" />
+    <text lang="Japanese" displayName="ツクヨミの像２" />
+  </building>
+  <building id="210" name="HayatoStatue_3">
+    <text lang="English" displayName="Hayato Statue 3" />
+    <text lang="Japanese" displayName="ツクヨミの像３" />
+  </building>
+  <building id="211" name="OboroStatue_1">
+    <text lang="English" displayName="Oboro Statue 1" />
+    <text lang="Japanese" displayName="オボロの像１" />
+  </building>
+  <building id="212" name="OboroStatue_2">
+    <text lang="English" displayName="Oboro Statue 2" />
+    <text lang="Japanese" displayName="オボロの像２" />
+  </building>
+  <building id="213" name="OboroStatue_3">
+    <text lang="English" displayName="Oboro Statue 3" />
+    <text lang="Japanese" displayName="オボロの像３" />
+  </building>
+  <building id="214" name="HinataStatue_1">
+    <text lang="English" displayName="Hinata Statue 1" />
+    <text lang="Japanese" displayName="ヒナタの像１" />
+  </building>
+  <building id="215" name="HinataStatue_2">
+    <text lang="English" displayName="Hinata Statue 2" />
+    <text lang="Japanese" displayName="ヒナタの像２" />
+  </building>
+  <building id="216" name="HinataStatue_3">
+    <text lang="English" displayName="Hinata Statue 3" />
+    <text lang="Japanese" displayName="ヒナタの像３" />
+  </building>
+  <building id="217" name="TakumiStatue_1">
+    <text lang="English" displayName="Takumi Statue 1" />
+    <text lang="Japanese" displayName="タクミの像１" />
+  </building>
+  <building id="218" name="TakumiStatue_2">
+    <text lang="English" displayName="Takumi Statue 2" />
+    <text lang="Japanese" displayName="タクミの像２" />
+  </building>
+  <building id="219" name="TakumiStatue_3">
+    <text lang="English" displayName="Takumi Statue 3" />
+    <text lang="Japanese" displayName="タクミの像３" />
+  </building>
+  <building id="220" name="KageroStatue_1">
+    <text lang="English" displayName="Kagero Statue 1" />
+    <text lang="Japanese" displayName="カゲロウの像１" />
+  </building>
+  <building id="221" name="KageroStatue_2">
+    <text lang="English" displayName="Kagero Statue 2" />
+    <text lang="Japanese" displayName="カゲロウの像２" />
+  </building>
+  <building id="222" name="KageroStatue_3">
+    <text lang="English" displayName="Kagero Statue 3" />
+    <text lang="Japanese" displayName="カゲロウの像３" />
+  </building>
+  <building id="223" name="ReinaStatue_1">
+    <text lang="English" displayName="Reina Statue 1" />
+    <text lang="Japanese" displayName="ユウギリの像１" />
+  </building>
+  <building id="224" name="ReinaStatue_2">
+    <text lang="English" displayName="Reina Statue 2" />
+    <text lang="Japanese" displayName="ユウギリの像２" />
+  </building>
+  <building id="225" name="ReinaStatue_3">
+    <text lang="English" displayName="Reina Statue 3" />
+    <text lang="Japanese" displayName="ユウギリの像３" />
+  </building>
+  <building id="226" name="KadenStatue_1">
+    <text lang="English" displayName="Kaden Statue 1" />
+    <text lang="Japanese" displayName="ニシキの像１" />
+  </building>
+  <building id="227" name="KadenStatue_2">
+    <text lang="English" displayName="Kaden Statue 2" />
+    <text lang="Japanese" displayName="ニシキの像２" />
+  </building>
+  <building id="228" name="KadenStatue_3">
+    <text lang="English" displayName="Kaden Statue 3" />
+    <text lang="Japanese" displayName="ニシキの像３" />
+  </building>
+  <building id="229" name="RyomaStatue_1">
+    <text lang="English" displayName="Ryoma Statue 1" />
+    <text lang="Japanese" displayName="リョウマの像１" />
+  </building>
+  <building id="230" name="RyomaStatue_2">
+    <text lang="English" displayName="Ryoma Statue 2" />
+    <text lang="Japanese" displayName="リョウマの像２" />
+  </building>
+  <building id="231" name="RyomaStatue_3">
+    <text lang="English" displayName="Ryoma Statue 3" />
+    <text lang="Japanese" displayName="リョウマの像３" />
+  </building>
+  <building id="232" name="ScarletStatue_1">
+    <text lang="English" displayName="Scarlet Statue 1" />
+    <text lang="Japanese" displayName="クリムゾンの像１" />
+  </building>
+  <building id="233" name="ScarletStatue_2">
+    <text lang="English" displayName="Scarlet Statue 2" />
+    <text lang="Japanese" displayName="クリムゾンの像２" />
+  </building>
+  <building id="234" name="ScarletStatue_3">
+    <text lang="English" displayName="Scarlet Statue 3" />
+    <text lang="Japanese" displayName="クリムゾンの像３" />
+  </building>
+  <building id="235" name="ShuraStatue_1">
+    <text lang="English" displayName="Shura Statue 1" />
+    <text lang="Japanese" displayName="アシュラの像１" />
+  </building>
+  <building id="236" name="ShuraStatue_2">
+    <text lang="English" displayName="Shura Statue 2" />
+    <text lang="Japanese" displayName="アシュラの像２" />
+  </building>
+  <building id="237" name="ShuraStatue_3">
+    <text lang="English" displayName="Shura Statue 3" />
+    <text lang="Japanese" displayName="アシュラの像３" />
+  </building>
+  <building id="238" name="EliseStatue_1">
+    <text lang="English" displayName="Elise Statue 1" />
+    <text lang="Japanese" displayName="エリーゼの像１" />
+  </building>
+  <building id="239" name="EliseStatue_2">
+    <text lang="English" displayName="Elise Statue 2" />
+    <text lang="Japanese" displayName="エリーゼの像２" />
+  </building>
+  <building id="240" name="EliseStatue_3">
+    <text lang="English" displayName="Elise Statue 3" />
+    <text lang="Japanese" displayName="エリーゼの像３" />
+  </building>
+  <building id="241" name="ArthurStatue_1">
+    <text lang="English" displayName="Arthur Statue 1" />
+    <text lang="Japanese" displayName="ハロルドの像１" />
+  </building>
+  <building id="242" name="ArthurStatue_2">
+    <text lang="English" displayName="Arthur Statue 2" />
+    <text lang="Japanese" displayName="ハロルドの像２" />
+  </building>
+  <building id="243" name="ArthurStatue_3">
+    <text lang="English" displayName="Arthur Statue 3" />
+    <text lang="Japanese" displayName="ハロルドの像３" />
+  </building>
+  <building id="244" name="EffieStatue_1">
+    <text lang="English" displayName="Effie Statue 1" />
+    <text lang="Japanese" displayName="エルフィの像１" />
+  </building>
+  <building id="245" name="EffieStatue_2">
+    <text lang="English" displayName="Effie Statue 2" />
+    <text lang="Japanese" displayName="エルフィの像２" />
+  </building>
+  <building id="246" name="EffieStatue_3">
+    <text lang="English" displayName="Effie Statue 3" />
+    <text lang="Japanese" displayName="エルフィの像３" />
+  </building>
+  <building id="247" name="OdinStatue_1">
+    <text lang="English" displayName="Odin Statue 1" />
+    <text lang="Japanese" displayName="オーディンの像１" />
+  </building>
+  <building id="248" name="OdinStatue_2">
+    <text lang="English" displayName="Odin Statue 2" />
+    <text lang="Japanese" displayName="オーディンの像２" />
+  </building>
+  <building id="249" name="OdinStatue_3">
+    <text lang="English" displayName="Odin Statue 3" />
+    <text lang="Japanese" displayName="オーディンの像３" />
+  </building>
+  <building id="250" name="NilesStatue_1">
+    <text lang="English" displayName="Niles Statue 1" />
+    <text lang="Japanese" displayName="ゼロの像１" />
+  </building>
+  <building id="251" name="NilesStatue_2">
+    <text lang="English" displayName="Niles Statue 2" />
+    <text lang="Japanese" displayName="ゼロの像２" />
+  </building>
+  <building id="252" name="NilesStatue_3">
+    <text lang="English" displayName="Niles Statue 3" />
+    <text lang="Japanese" displayName="ゼロの像３" />
+  </building>
+  <building id="253" name="NyxStatue_1">
+    <text lang="English" displayName="Nyx Statue 1" />
+    <text lang="Japanese" displayName="ニュクスの像１" />
+  </building>
+  <building id="254" name="NyxStatue_2">
+    <text lang="English" displayName="Nyx Statue 2" />
+    <text lang="Japanese" displayName="ニュクスの像２" />
+  </building>
+  <building id="255" name="NyxStatue_3">
+    <text lang="English" displayName="Nyx Statue 3" />
+    <text lang="Japanese" displayName="ニュクスの像３" />
+  </building>
+  <building id="256" name="CamillaStatue_1">
+    <text lang="English" displayName="Camilla Statue 1" />
+    <text lang="Japanese" displayName="カミラの像１" />
+  </building>
+  <building id="257" name="CamillaStatue_2">
+    <text lang="English" displayName="Camilla Statue 2" />
+    <text lang="Japanese" displayName="カミラの像２" />
+  </building>
+  <building id="258" name="CamillaStatue_3">
+    <text lang="English" displayName="Camilla Statue 3" />
+    <text lang="Japanese" displayName="カミラの像３" />
+  </building>
+  <building id="259" name="SelenaStatue_1">
+    <text lang="English" displayName="Selena Statue 1" />
+    <text lang="Japanese" displayName="ルーナの像１" />
+  </building>
+  <building id="260" name="SelenaStatue_2">
+    <text lang="English" displayName="Selena Statue 2" />
+    <text lang="Japanese" displayName="ルーナの像２" />
+  </building>
+  <building id="261" name="SelenaStatue_3">
+    <text lang="English" displayName="Selena Statue 3" />
+    <text lang="Japanese" displayName="ルーナの像３" />
+  </building>
+  <building id="262" name="BerukaStatue_1">
+    <text lang="English" displayName="Beruka Statue 1" />
+    <text lang="Japanese" displayName="ベルカの像１" />
+  </building>
+  <building id="263" name="BerukaStatue_2">
+    <text lang="English" displayName="Beruka Statue 2" />
+    <text lang="Japanese" displayName="ベルカの像２" />
+  </building>
+  <building id="264" name="BerukaStatue_3">
+    <text lang="English" displayName="Beruka Statue 3" />
+    <text lang="Japanese" displayName="ベルカの像３" />
+  </building>
+  <building id="265" name="LaslowStatue_1">
+    <text lang="English" displayName="Laslow Statue 1" />
+    <text lang="Japanese" displayName="ラズワルドの像１" />
+  </building>
+  <building id="266" name="LaslowStatue_2">
+    <text lang="English" displayName="Laslow Statue 2" />
+    <text lang="Japanese" displayName="ラズワルドの像２" />
+  </building>
+  <building id="267" name="LaslowStatue_3">
+    <text lang="English" displayName="Laslow Statue 3" />
+    <text lang="Japanese" displayName="ラズワルドの像３" />
+  </building>
+  <building id="268" name="PeriStatue_1">
+    <text lang="English" displayName="Peri Statue 1" />
+    <text lang="Japanese" displayName="ピエリの像１" />
+  </building>
+  <building id="269" name="PeriStatue_2">
+    <text lang="English" displayName="Peri Statue 2" />
+    <text lang="Japanese" displayName="ピエリの像２" />
+  </building>
+  <building id="270" name="PeriStatue_3">
+    <text lang="English" displayName="Peri Statue 3" />
+    <text lang="Japanese" displayName="ピエリの像３" />
+  </building>
+  <building id="271" name="BennyStatue_1">
+    <text lang="English" displayName="Benny Statue 1" />
+    <text lang="Japanese" displayName="ブノワの像１" />
+  </building>
+  <building id="272" name="BennyStatue_2">
+    <text lang="English" displayName="Benny Statue 2" />
+    <text lang="Japanese" displayName="ブノワの像２" />
+  </building>
+  <building id="273" name="BennyStatue_3">
+    <text lang="English" displayName="Benny Statue 3" />
+    <text lang="Japanese" displayName="ブノワの像３" />
+  </building>
+  <building id="274" name="CharlotteStatue_1">
+    <text lang="English" displayName="Charlotte Statue 1" />
+    <text lang="Japanese" displayName="シャーロッテの像１" />
+  </building>
+  <building id="275" name="CharlotteStatue_2">
+    <text lang="English" displayName="Charlotte Statue 2" />
+    <text lang="Japanese" displayName="シャーロッテの像２" />
+  </building>
+  <building id="276" name="CharlotteStatue_3">
+    <text lang="English" displayName="Charlotte Statue 3" />
+    <text lang="Japanese" displayName="シャーロッテの像３" />
+  </building>
+  <building id="277" name="LeoStatue_1">
+    <text lang="English" displayName="Leo Statue 1" />
+    <text lang="Japanese" displayName="レオンの像１" />
+  </building>
+  <building id="278" name="LeoStatue_2">
+    <text lang="English" displayName="Leo Statue 2" />
+    <text lang="Japanese" displayName="レオンの像２" />
+  </building>
+  <building id="279" name="LeoStatue_3">
+    <text lang="English" displayName="Leo Statue 3" />
+    <text lang="Japanese" displayName="レオンの像３" />
+  </building>
+  <building id="280" name="KeatonStatue_1">
+    <text lang="English" displayName="Keaton Statue 1" />
+    <text lang="Japanese" displayName="フランネルの像１" />
+  </building>
+  <building id="281" name="KeatonStatue_2">
+    <text lang="English" displayName="Keaton Statue 2" />
+    <text lang="Japanese" displayName="フランネルの像２" />
+  </building>
+  <building id="282" name="KeatonStatue_3">
+    <text lang="English" displayName="Keaton Statue 3" />
+    <text lang="Japanese" displayName="フランネルの像３" />
+  </building>
+  <building id="283" name="XanderStatue_1">
+    <text lang="English" displayName="Xander Statue 1" />
+    <text lang="Japanese" displayName="マークスの像１" />
+  </building>
+  <building id="284" name="XanderStatue_2">
+    <text lang="English" displayName="Xander Statue 2" />
+    <text lang="Japanese" displayName="マークスの像２" />
+  </building>
+  <building id="285" name="XanderStatue_3">
+    <text lang="English" displayName="Xander Statue 3" />
+    <text lang="Japanese" displayName="マークスの像３" />
+  </building>
+  <building id="286" name="IzanaStatue_1">
+    <text lang="English" displayName="Izana Statue 1" />
+    <text lang="Japanese" displayName="イザナの像１" />
+  </building>
+  <building id="287" name="IzanaStatue_2">
+    <text lang="English" displayName="Izana Statue 2" />
+    <text lang="Japanese" displayName="イザナの像２" />
+  </building>
+  <building id="288" name="IzanaStatue_3">
+    <text lang="English" displayName="Izana Statue 3" />
+    <text lang="Japanese" displayName="イザナの像３" />
+  </building>
+  <building id="289" name="YukimuraStatue_1">
+    <text lang="English" displayName="Yukimura Statue 1" />
+    <text lang="Japanese" displayName="ユキムラの像１" />
+  </building>
+  <building id="290" name="YukimuraStatue_2">
+    <text lang="English" displayName="Yukimura Statue 2" />
+    <text lang="Japanese" displayName="ユキムラの像２" />
+  </building>
+  <building id="291" name="YukimuraStatue_3">
+    <text lang="English" displayName="Yukimura Statue 3" />
+    <text lang="Japanese" displayName="ユキムラの像３" />
+  </building>
+  <building id="292" name="FloraStatue_1">
+    <text lang="English" displayName="Flora Statue 1" />
+    <text lang="Japanese" displayName="フローラの像１" />
+  </building>
+  <building id="293" name="FloraStatue_2">
+    <text lang="English" displayName="Flora Statue 2" />
+    <text lang="Japanese" displayName="フローラの像２" />
+  </building>
+  <building id="294" name="FloraStatue_3">
+    <text lang="English" displayName="Flora Statue 3" />
+    <text lang="Japanese" displayName="フローラの像３" />
+  </building>
+  <building id="295" name="MozuStatue_1">
+    <text lang="English" displayName="Mozu Statue 1" />
+    <text lang="Japanese" displayName="モズメの像１" />
+  </building>
+  <building id="296" name="MozuStatue_2">
+    <text lang="English" displayName="Mozu Statue 2" />
+    <text lang="Japanese" displayName="モズメの像２" />
+  </building>
+  <building id="297" name="MozuStatue_3">
+    <text lang="English" displayName="Mozu Statue 3" />
+    <text lang="Japanese" displayName="モズメの像３" />
+  </building>
+  <building id="298" name="KanaMStatue_1">
+    <text lang="English" displayName="Kana (M) Statue 1" />
+    <text lang="Japanese" displayName="カンナ男の像１" />
+  </building>
+  <building id="299" name="KanaMStatue_2">
+    <text lang="English" displayName="Kana (M) Statue 2" />
+    <text lang="Japanese" displayName="カンナ男の像２" />
+  </building>
+  <building id="300" name="KanaMStatue_3">
+    <text lang="English" displayName="Kana (M) Statue 3" />
+    <text lang="Japanese" displayName="カンナ男の像３" />
+  </building>
+  <building id="301" name="KanaFStatue_1">
+    <text lang="English" displayName="Kana (F) Statue 1" />
+    <text lang="Japanese" displayName="カンナ女の像１" />
+  </building>
+  <building id="302" name="KanaFStatue_2">
+    <text lang="English" displayName="Kana (F) Statue 2" />
+    <text lang="Japanese" displayName="カンナ女の像２" />
+  </building>
+  <building id="303" name="KanaFStatue_3">
+    <text lang="English" displayName="Kana (F) Statue 3" />
+    <text lang="Japanese" displayName="カンナ女の像３" />
+  </building>
+  <building id="304" name="ShigureStatue_1">
+    <text lang="English" displayName="Shigure Statue 1" />
+    <text lang="Japanese" displayName="シグレの像１" />
+  </building>
+  <building id="305" name="ShigureStatue_2">
+    <text lang="English" displayName="Shigure Statue 2" />
+    <text lang="Japanese" displayName="シグレの像２" />
+  </building>
+  <building id="306" name="ShigureStatue_3">
+    <text lang="English" displayName="Shigure Statue 3" />
+    <text lang="Japanese" displayName="シグレの像３" />
+  </building>
+  <building id="307" name="DwyerStatue_1">
+    <text lang="English" displayName="Dwyer Statue 1" />
+    <text lang="Japanese" displayName="ディーアの像１" />
+  </building>
+  <building id="308" name="DwyerStatue_2">
+    <text lang="English" displayName="Dwyer Statue 2" />
+    <text lang="Japanese" displayName="ディーアの像２" />
+  </building>
+  <building id="309" name="DwyerStatue_3">
+    <text lang="English" displayName="Dwyer Statue 3" />
+    <text lang="Japanese" displayName="ディーアの像３" />
+  </building>
+  <building id="310" name="SophieStatue_1">
+    <text lang="English" displayName="Sophie Statue 1" />
+    <text lang="Japanese" displayName="ゾフィーの像１" />
+  </building>
+  <building id="311" name="SophieStatue_2">
+    <text lang="English" displayName="Sophie Statue 2" />
+    <text lang="Japanese" displayName="ゾフィーの像２" />
+  </building>
+  <building id="312" name="SophieStatue_3">
+    <text lang="English" displayName="Sophie Statue 3" />
+    <text lang="Japanese" displayName="ゾフィーの像３" />
+  </building>
+  <building id="313" name="MidoriStatue_1">
+    <text lang="English" displayName="Midori Statue 1" />
+    <text lang="Japanese" displayName="ミドリコの像１" />
+  </building>
+  <building id="314" name="MidoriStatue_2">
+    <text lang="English" displayName="Midori Statue 2" />
+    <text lang="Japanese" displayName="ミドリコの像２" />
+  </building>
+  <building id="315" name="MidoriStatue_3">
+    <text lang="English" displayName="Midori Statue 3" />
+    <text lang="Japanese" displayName="ミドリコの像３" />
+  </building>
+  <building id="316" name="ShiroStatue_1">
+    <text lang="English" displayName="Shiro Statue 1" />
+    <text lang="Japanese" displayName="シノノメの像１" />
+  </building>
+  <building id="317" name="ShiroStatue_2">
+    <text lang="English" displayName="Shiro Statue 2" />
+    <text lang="Japanese" displayName="シノノメの像２" />
+  </building>
+  <building id="318" name="ShiroStatue_3">
+    <text lang="English" displayName="Shiro Statue 3" />
+    <text lang="Japanese" displayName="シノノメの像３" />
+  </building>
+  <building id="319" name="KiragiStatue_1">
+    <text lang="English" displayName="Kiragi Statue 1" />
+    <text lang="Japanese" displayName="キサラギの像１" />
+  </building>
+  <building id="320" name="KiragiStatue_2">
+    <text lang="English" displayName="Kiragi Statue 2" />
+    <text lang="Japanese" displayName="キサラギの像２" />
+  </building>
+  <building id="321" name="KiragiStatue_3">
+    <text lang="English" displayName="Kiragi Statue 3" />
+    <text lang="Japanese" displayName="キサラギの像３" />
+  </building>
+  <building id="322" name="AsugiStatue_1">
+    <text lang="English" displayName="Asugi Statue 1" />
+    <text lang="Japanese" displayName="グレイの像１" />
+  </building>
+  <building id="323" name="AsugiStatue_2">
+    <text lang="English" displayName="Asugi Statue 2" />
+    <text lang="Japanese" displayName="グレイの像２" />
+  </building>
+  <building id="324" name="AsugiStatue_3">
+    <text lang="English" displayName="Asugi Statue 3" />
+    <text lang="Japanese" displayName="グレイの像３" />
+  </building>
+  <building id="325" name="SelkieStatue_1">
+    <text lang="English" displayName="Selkie Statue 1" />
+    <text lang="Japanese" displayName="キヌの像１" />
+  </building>
+  <building id="326" name="SelkieStatue_2">
+    <text lang="English" displayName="Selkie Statue 2" />
+    <text lang="Japanese" displayName="キヌの像２" />
+  </building>
+  <building id="327" name="SelkieStatue_3">
+    <text lang="English" displayName="Selkie Statue 3" />
+    <text lang="Japanese" displayName="キヌの像３" />
+  </building>
+  <building id="328" name="HisameStatue_1">
+    <text lang="English" displayName="Hisame Statue 1" />
+    <text lang="Japanese" displayName="ヒサメの像１" />
+  </building>
+  <building id="329" name="HisameStatue_2">
+    <text lang="English" displayName="Hisame Statue 2" />
+    <text lang="Japanese" displayName="ヒサメの像２" />
+  </building>
+  <building id="330" name="HisameStatue_3">
+    <text lang="English" displayName="Hisame Statue 3" />
+    <text lang="Japanese" displayName="ヒサメの像３" />
+  </building>
+  <building id="331" name="MitamaStatue_1">
+    <text lang="English" displayName="Mitama Statue 1" />
+    <text lang="Japanese" displayName="ミタマの像１" />
+  </building>
+  <building id="332" name="MitamaStatue_2">
+    <text lang="English" displayName="Mitama Statue 2" />
+    <text lang="Japanese" displayName="ミタマの像２" />
+  </building>
+  <building id="333" name="MitamaStatue_3">
+    <text lang="English" displayName="Mitama Statue 3" />
+    <text lang="Japanese" displayName="ミタマの像３" />
+  </building>
+  <building id="334" name="CaeldoriStatue_1">
+    <text lang="English" displayName="Caeldori Statue 1" />
+    <text lang="Japanese" displayName="マトイの像１" />
+  </building>
+  <building id="335" name="CaeldoriStatue_2">
+    <text lang="English" displayName="Caeldori Statue 2" />
+    <text lang="Japanese" displayName="マトイの像２" />
+  </building>
+  <building id="336" name="CaeldoriStatue_3">
+    <text lang="English" displayName="Caeldori Statue 3" />
+    <text lang="Japanese" displayName="マトイの像３" />
+  </building>
+  <building id="337" name="RhajatStatue_1">
+    <text lang="English" displayName="Rhajat Statue 1" />
+    <text lang="Japanese" displayName="シャラの像１" />
+  </building>
+  <building id="338" name="RhajatStatue_2">
+    <text lang="English" displayName="Rhajat Statue 2" />
+    <text lang="Japanese" displayName="シャラの像２" />
+  </building>
+  <building id="339" name="RhajatStatue_3">
+    <text lang="English" displayName="Rhajat Statue 3" />
+    <text lang="Japanese" displayName="シャラの像３" />
+  </building>
+  <building id="340" name="SiegbertStatue_1">
+    <text lang="English" displayName="Siegbert Statue 1" />
+    <text lang="Japanese" displayName="ジークベルトの像１" />
+  </building>
+  <building id="341" name="SiegbertStatue_2">
+    <text lang="English" displayName="Siegbert Statue 2" />
+    <text lang="Japanese" displayName="ジークベルトの像２" />
+  </building>
+  <building id="342" name="SiegbertStatue_3">
+    <text lang="English" displayName="Siegbert Statue 3" />
+    <text lang="Japanese" displayName="ジークベルトの像３" />
+  </building>
+  <building id="343" name="ForrestStatue_1">
+    <text lang="English" displayName="Forrest Statue 1" />
+    <text lang="Japanese" displayName="フォレオの像１" />
+  </building>
+  <building id="344" name="ForrestStatue_2">
+    <text lang="English" displayName="Forrest Statue 2" />
+    <text lang="Japanese" displayName="フォレオの像２" />
+  </building>
+  <building id="345" name="ForrestStatue_3">
+    <text lang="English" displayName="Forrest Statue 3" />
+    <text lang="Japanese" displayName="フォレオの像３" />
+  </building>
+  <building id="346" name="IgnatiusStatue_1">
+    <text lang="English" displayName="Ignatius Statue 1" />
+    <text lang="Japanese" displayName="イグニスの像１" />
+  </building>
+  <building id="347" name="IgnatiusStatue_2">
+    <text lang="English" displayName="Ignatius Statue 2" />
+    <text lang="Japanese" displayName="イグニスの像２" />
+  </building>
+  <building id="348" name="IgnatiusStatue_3">
+    <text lang="English" displayName="Ignatius Statue 3" />
+    <text lang="Japanese" displayName="イグニスの像３" />
+  </building>
+  <building id="349" name="VelouriaStatue_1">
+    <text lang="English" displayName="Velouria Statue 1" />
+    <text lang="Japanese" displayName="ベロアの像１" />
+  </building>
+  <building id="350" name="VelouriaStatue_2">
+    <text lang="English" displayName="Velouria Statue 2" />
+    <text lang="Japanese" displayName="ベロアの像２" />
+  </building>
+  <building id="351" name="VelouriaStatue_3">
+    <text lang="English" displayName="Velouria Statue 3" />
+    <text lang="Japanese" displayName="ベロアの像３" />
+  </building>
+  <building id="352" name="PercyStatue_1">
+    <text lang="English" displayName="Percy Statue 1" />
+    <text lang="Japanese" displayName="ルッツの像１" />
+  </building>
+  <building id="353" name="PercyStatue_2">
+    <text lang="English" displayName="Percy Statue 2" />
+    <text lang="Japanese" displayName="ルッツの像２" />
+  </building>
+  <building id="354" name="PercyStatue_3">
+    <text lang="English" displayName="Percy Statue 3" />
+    <text lang="Japanese" displayName="ルッツの像３" />
+  </building>
+  <building id="355" name="OpheliaStatue_1">
+    <text lang="English" displayName="Ophelia Statue 1" />
+    <text lang="Japanese" displayName="オフェリアの像１" />
+  </building>
+  <building id="356" name="OpheliaStatue_2">
+    <text lang="English" displayName="Ophelia Statue 2" />
+    <text lang="Japanese" displayName="オフェリアの像２" />
+  </building>
+  <building id="357" name="OpheliaStatue_3">
+    <text lang="English" displayName="Ophelia Statue 3" />
+    <text lang="Japanese" displayName="オフェリアの像３" />
+  </building>
+  <building id="358" name="SoleilStatue_1">
+    <text lang="English" displayName="Soleil Statue 1" />
+    <text lang="Japanese" displayName="ソレイユの像１" />
+  </building>
+  <building id="359" name="SoleilStatue_2">
+    <text lang="English" displayName="Soleil Statue 2" />
+    <text lang="Japanese" displayName="ソレイユの像２" />
+  </building>
+  <building id="360" name="SoleilStatue_3">
+    <text lang="English" displayName="Soleil Statue 3" />
+    <text lang="Japanese" displayName="ソレイユの像３" />
+  </building>
+  <building id="361" name="NinaStatue_1">
+    <text lang="English" displayName="Nina Statue 1" />
+    <text lang="Japanese" displayName="エポニーヌの像１" />
+  </building>
+  <building id="362" name="NinaStatue_2">
+    <text lang="English" displayName="Nina Statue 2" />
+    <text lang="Japanese" displayName="エポニーヌの像２" />
+  </building>
+  <building id="363" name="NinaStatue_3">
+    <text lang="English" displayName="Nina Statue 3" />
+    <text lang="Japanese" displayName="エポニーヌの像３" />
+  </building>
+  <building id="364" name="AnnaStatue_1">
+    <text lang="English" displayName="Anna Statue 1" />
+    <text lang="Japanese" displayName="アンナの像１" />
+  </building>
+  <building id="365" name="AnnaStatue_2">
+    <text lang="English" displayName="Anna Statue 2" />
+    <text lang="Japanese" displayName="アンナの像２" />
+  </building>
+  <building id="366" name="AnnaStatue_3">
+    <text lang="English" displayName="Anna Statue 3" />
+    <text lang="Japanese" displayName="アンナの像３" />
+  </building>
+  <building id="367" name="FugaStatue_1">
+    <text lang="English" displayName="Fuga Statue 1" />
+    <text lang="Japanese" displayName="フウガの像１" />
+  </building>
+  <building id="368" name="FugaStatue_2">
+    <text lang="English" displayName="Fuga Statue 2" />
+    <text lang="Japanese" displayName="フウガの像２" />
+  </building>
+  <building id="369" name="FugaStatue_3">
+    <text lang="English" displayName="Fuga Statue 3" />
+    <text lang="Japanese" displayName="フウガの像３" />
+  </building>
+  <building id="501" name="HoshidanGlade">
+    <text lang="English" displayName="Hoshidan Glade" />
+    <text lang="Japanese" displayName="白夜の林" />
+  </building>
+  <building id="502" name="NohrianGlade">
+    <text lang="English" displayName="Nohrian Glade" />
+    <text lang="Japanese" displayName="暗夜の林" />
+  </building>
+  <building id="503" name="HoshidanSquare">
+    <text lang="English" displayName="Hoshidan Square" />
+    <text lang="Japanese" displayName="白夜模様床" />
+  </building>
+  <building id="504" name="NohrianRound">
+    <text lang="English" displayName="Nohrian Round" />
+    <text lang="Japanese" displayName="暗夜模様床" />
+  </building>
+  <building id="505" name="HealingTile">
+    <text lang="English" displayName="Healing Tile" />
+    <text lang="Japanese" displayName="回復床" />
+  </building>
+  <building id="506" name="Caltrops">
+    <text lang="English" displayName="Caltrops" />
+    <text lang="Japanese" displayName="まきびし" />
+  </building>
+  <building id="507" name="Fort">
+    <text lang="English" displayName="Fort" />
+    <text lang="Japanese" displayName="砦" />
+  </building>
+  <building id="508" name="Pillars">
+    <text lang="English" displayName="Pillars" />
+    <text lang="Japanese" displayName="柱" />
+  </building>
+  <building id="509" name="IceSculpture">
+    <text lang="English" displayName="Ice Sculpture" />
+    <text lang="Japanese" displayName="氷の結晶" />
+  </building>
+  <building id="510" name="Grave">
+    <text lang="English" displayName="Grave" />
+    <text lang="Japanese" displayName="墓" />
+  </building>
+  <!--
+  Template:
+  <building id="0" name="InternalName">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </building>
+  -->
+</root>
