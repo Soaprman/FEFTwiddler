@@ -51,6 +51,8 @@
   <ItemGroup>
     <Compile Include="Config.cs" />
     <Compile Include="Data\BaseDatabase.cs" />
+    <Compile Include="Data\Building.cs" />
+    <Compile Include="Data\BuildingDatabase.cs" />
     <Compile Include="Data\Character.cs" />
     <Compile Include="Data\CharacterDatabase.cs" />
     <Compile Include="Data\Class.cs" />
@@ -264,6 +266,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Data\Buildings.xml" />
     <Content Include="Resources\Data\Characters.xml" />
     <Content Include="Resources\Data\Classes.xml" />
     <Content Include="Resources\Data\Items.xml">

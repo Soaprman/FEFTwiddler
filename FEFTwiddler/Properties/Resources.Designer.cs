@@ -63,6 +63,27 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;root&gt;
+        ///  &lt;building id=&quot;1&quot; name=&quot;DawnArmory_1&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Dawn Armory 1&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;白夜武器屋１&quot; /&gt;
+        ///  &lt;/building&gt;
+        ///  &lt;building id=&quot;2&quot; name=&quot;DawnArmory_2&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Dawn Armory 2&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;白夜武器屋２&quot; /&gt;
+        ///  &lt;/building&gt;
+        ///  &lt;building id=&quot;3&quot; name=&quot;DawnArmory_3&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Dawn Armory 3&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Data_Buildings {
+            get {
+                return ResourceManager.GetString("Data_Buildings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///&lt;root&gt;
         ///  &lt;character id=&quot;0&quot; name=&quot;None&quot;&gt;
         ///    &lt;text lang=&quot;English&quot; displayName=&quot;None&quot; /&gt;
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;無し&quot; /&gt;
@@ -71,8 +92,8 @@ namespace FEFTwiddler.Properties {
         ///  &lt;/character&gt;
         ///  &lt;character id=&quot;1&quot; name=&quot;Corrin_M&quot;&gt;
         ///    &lt;text lang=&quot;English&quot; displayName=&quot;Corrin (M)&quot; /&gt;
-        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;カムイ&quot; /&gt;
-        ///    &lt;baseStats hp=&quot;2&quot; str= [rest of string was truncated]&quot;;.
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;カムイ男&quot; /&gt;
+        ///    &lt;baseStats hp=&quot;2&quot; str [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Characters {
             get {
@@ -124,20 +145,15 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;root&gt;
-        ///  &lt;skill id=&quot;0&quot; name=&quot;None&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;None&quot; /&gt;
+        ///  &lt;skill id=&quot;0&quot; name=&quot;None&quot; enemyOnly=&quot;false&quot; dlc=&quot;false&quot; personal=&quot;false&quot; unlearnable=&quot;false&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;(None)&quot; /&gt;
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;無し&quot; /&gt;
+        ///    &lt;learnedSkillInfo byteOffset=&quot;0&quot; bitMask=&quot;1&quot; /&gt;
         ///  &lt;/skill&gt;
-        ///  &lt;skill id=&quot;1&quot; name=&quot;HPPlus5&quot;&gt;
+        ///  &lt;skill id=&quot;1&quot; name=&quot;HPPlus5&quot; enemyOnly=&quot;false&quot; dlc=&quot;false&quot; personal=&quot;false&quot; unlearnable=&quot;false&quot;&gt;
         ///    &lt;text lang=&quot;English&quot; displayName=&quot;HP +5&quot; /&gt;
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;【最大ＨＰ+5】&quot; /&gt;
-        ///  &lt;/skill&gt;
-        ///  &lt;skill id=&quot;2&quot; name=&quot;StrengthPlus2&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Strength +2&quot; /&gt;
-        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;【力+2】&quot; /&gt;
-        ///  &lt;/skill&gt;
-        ///  &lt;skill id=&quot;3&quot; name=&quot;MagicPlus2&quot;&gt;
-        ///   [rest of string was truncated]&quot;;.
+        ///    &lt;learned [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Skills {
             get {
