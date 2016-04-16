@@ -79,7 +79,7 @@ namespace FEFTwiddler.GUI
         private void UpdateTitleBar(string path)
         {
             var directory = Path.GetDirectoryName(path);
-            if (directory.Length > 50) directory = "..." + directory.Right(50); // Arbitary choice that I find tends to fit
+            if (directory.Length > 80) directory = "..." + directory.Right(80); // Arbitary choice that I find tends to fit
             var truncatedPath = directory + "\\" + Path.GetFileName(path);
             this.Text = "FEFTwiddler - " + truncatedPath;
         }
