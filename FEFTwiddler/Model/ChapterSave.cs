@@ -54,6 +54,10 @@ namespace FEFTwiddler.Model
 
         public ushort DragonVeinPoint { get; set; }
 
+        public byte[] UnlockedStatues1 { get; set; }
+        public byte[] UnlockedStatues2 { get; set; }
+        public byte[] UnlockedStatues3 { get; set; }
+
         public byte MaterialQuantity_Crystal { get; set; }
         public byte MaterialQuantity_Ruby { get; set; }
         public byte MaterialQuantity_Sapphire { get; set; }
@@ -124,6 +128,13 @@ namespace FEFTwiddler.Model
             MaterialQuantity_Daikon = max;
             MaterialQuantity_Peaches = max;
             MaterialQuantity_Rice = max;
+        }
+
+        public void UnlockAllStatues()
+        {
+            UnlockedStatues1 = new byte[] { 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF };
+            UnlockedStatues2 = new byte[] { 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF };
+            UnlockedStatues3 = new byte[] { 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF };
         }
 
         #endregion
@@ -759,7 +770,37 @@ namespace FEFTwiddler.Model
             DragonVeinPoint = (ushort)((chunk[1] << 8) | chunk[0]);
 
             // Stuff
-            br.ReadBytes(0x182);
+            br.ReadBytes(0x2);
+
+            // Unlocked buildings block 1? (begins with XX XX XX F1 FF)
+            br.ReadBytes(0x14);
+            chunk = new byte[0x1B];
+            br.Read(chunk, 0, 0x1B);
+            UnlockedStatues1 = chunk;
+            br.ReadBytes(0x11);
+
+            // Stuff (a bunch of 0x00s)
+            br.ReadBytes(0x40);
+
+            // Unlocked buildings block 2? (begins with XX XX XX F1 FF)
+            br.ReadBytes(0x14);
+            chunk = new byte[0x1B];
+            br.Read(chunk, 0, 0x1B);
+            UnlockedStatues2 = chunk;
+            br.ReadBytes(0x11);
+
+            // Stuff (a bunch of 0x00s)
+            br.ReadBytes(0x40);
+
+            // Unlocked buildings block 3? (begins with XX XX XX F1 FF)
+            br.ReadBytes(0x14);
+            chunk = new byte[0x1B];
+            br.Read(chunk, 0, 0x1B);
+            UnlockedStatues3 = chunk;
+            br.ReadBytes(0x11);
+
+            // Stuff (a bunch of 0x00s)
+            br.ReadBytes(0x40);
 
             // Materials
             chunk = new byte[0x16];
@@ -850,7 +891,31 @@ namespace FEFTwiddler.Model
             bw.BaseStream.Write(chunk, 0, 0x2);
 
             // Stuff
-            bw.BaseStream.Seek(0x182, SeekOrigin.Current);
+            bw.BaseStream.Seek(0x2, SeekOrigin.Current);
+
+            // Unlocked buildings block 1? (begins with XX XX XX F1 FF)
+            bw.BaseStream.Seek(0x14, SeekOrigin.Current);
+            bw.BaseStream.Write(UnlockedStatues1, 0, 0x1B);
+            bw.BaseStream.Seek(0x11, SeekOrigin.Current);
+
+            // Stuff (a bunch of 0x00s)
+            bw.BaseStream.Seek(0x40, SeekOrigin.Current);
+
+            // Unlocked buildings block 2? (begins with XX XX XX F1 FF)
+            bw.BaseStream.Seek(0x14, SeekOrigin.Current);
+            bw.BaseStream.Write(UnlockedStatues2, 0, 0x1B);
+            bw.BaseStream.Seek(0x11, SeekOrigin.Current);
+
+            // Stuff (a bunch of 0x00s)
+            bw.BaseStream.Seek(0x40, SeekOrigin.Current);
+
+            // Unlocked buildings block 3? (begins with XX XX XX F1 FF)
+            bw.BaseStream.Seek(0x14, SeekOrigin.Current);
+            bw.BaseStream.Write(UnlockedStatues3, 0, 0x1B);
+            bw.BaseStream.Seek(0x11, SeekOrigin.Current);
+
+            // Stuff (a bunch of 0x00s)
+            bw.BaseStream.Seek(0x40, SeekOrigin.Current);
 
             // Materials
             chunk = new byte[] {

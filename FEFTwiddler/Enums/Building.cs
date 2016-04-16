@@ -149,6 +149,7 @@
         // Izana, Fuga, Yukimura, Flora, Mozu, KanaM, KanaF, Shigure, Dwyer, Sophie, Midori, Shiro, Kiragi
         // Asugi, Selkie, Hisame, Mitama, Caeldori, Rhajat, Siegbert, Forrest, Percy
         // Ignatius, Velouria, Percy, Ophelia, Soleil, Nina, Anna
+        // Note: Fuga actually might be the bottom one after Anna
         HoshidanGlade = 0x1F5,
         NohrianGlade = 0x1F6,
         HoshidanSquare = 0x1F7, // guess
