@@ -180,6 +180,7 @@
       <DependentUpon>WeaponExperience.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Building.cs" />
+    <Compile Include="Model\ChapterHistoryEntry.cs" />
     <Compile Include="Model\ChapterSave.cs" />
     <Compile Include="Model\Character.cs" />
     <Compile Include="Model\ConvoyItem.cs" />

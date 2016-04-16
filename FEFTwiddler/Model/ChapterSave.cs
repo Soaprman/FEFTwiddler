@@ -85,6 +85,7 @@ namespace FEFTwiddler.Model
         public uint VisitPoints { get; set; }
 
         public Enums.Chapter CurrentChapter { get; set; }
+        public List<ChapterHistoryEntry> ChapterHistory { get; set; }
 
         private List<Character> _characters = new List<Character>();
         public List<Character> Characters {
@@ -226,7 +227,32 @@ namespace FEFTwiddler.Model
             // Chapter
             CurrentChapter = (Enums.Chapter)br.ReadByte();
 
+            // Stuff
+            br.ReadBytes(0x04);
+
+            // Chapter history
+            var chapterCount = br.ReadByte();
+            if (chapterCount > 0)
+            {
+                ChapterHistory = new List<ChapterHistoryEntry>();
+                for (var i = 0; i < chapterCount; i++)
+                {
+                    var entry = new ChapterHistoryEntry();
+
+                    chunk = new byte[0x10];
+                    br.Read(chunk, 0, 0x10);
+
+                    entry.ChapterID = (Enums.Chapter)chunk[0x1];
+                    entry.TurnCount = chunk[0x2];
+                    entry.HeroCharacterID_1 = (Enums.Character)(ushort)((chunk[0x9] * 0x100) + chunk[0x8]);
+                    entry.HeroCharacterID_2 = (Enums.Character)(ushort)((chunk[0xD] * 0x100) + chunk[0xC]);
+
+                    ChapterHistory.Add(entry);
+                }
+            }
+
             // Not sure about the rest. Guess it's a TODO.
+            // In 038/Chapter0_dec, the next bytes are 00 80, then a bunch of 00s with a couple 30s in the mix
         }
 
         #endregion
