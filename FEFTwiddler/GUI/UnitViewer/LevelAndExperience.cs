@@ -30,10 +30,13 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void InitializeControls()
         {
+            BindEventHandlers();
         }
 
         private void PopulateControls()
         {
+            UnbindEventHandlers();
+
             // Set eternal seals before level, since level's range is restricted by eternal seals
             numEternalSeals.Maximum = _character.GetMaxEternalSealsUsed();
             numEternalSeals.Value = _character.FixEternalSealsUsed();
@@ -43,9 +46,27 @@ namespace FEFTwiddler.GUI.UnitViewer
             numInternalLevel.Value = _character.InternalLevel;
             numExperience.Value = _character.Experience;
             numBoots.Value = Model.Character.FixBoots(_character.Boots);
+
+            BindEventHandlers();
         }
 
-        private void numLevel_ValueChanged(object sender, EventArgs e)
+        private void BindEventHandlers()
+        {
+            numLevel.ValueChanged += UpdateLevel;
+            numEternalSeals.ValueChanged += UpdateEternalSeals;
+            numExperience.ValueChanged += UpdateExperience;
+            numBoots.ValueChanged += UpdateBoots;
+        }
+
+        private void UnbindEventHandlers()
+        {
+            numLevel.ValueChanged -= UpdateLevel;
+            numEternalSeals.ValueChanged -= UpdateEternalSeals;
+            numExperience.ValueChanged -= UpdateExperience;
+            numBoots.ValueChanged -= UpdateBoots;
+        }
+
+        private void UpdateLevel(object sender, EventArgs e)
         {
             _character.Level = (byte)numLevel.Value;
 
@@ -69,7 +90,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             }
         }
 
-        private void numEternalSeals_ValueChanged(object sender, EventArgs e)
+        private void UpdateEternalSeals(object sender, EventArgs e)
         {
             _character.EternalSealsUsed = (byte)numEternalSeals.Value;
 
@@ -92,12 +113,12 @@ namespace FEFTwiddler.GUI.UnitViewer
             }
         }
 
-        private void numExperience_ValueChanged(object sender, EventArgs e)
+        private void UpdateExperience(object sender, EventArgs e)
         {
             _character.Experience = (byte)numExperience.Value;
         }
 
-        private void numBoots_ValueChanged(object sender, EventArgs e)
+        private void UpdateBoots(object sender, EventArgs e)
         {
             _character.Boots = (byte)numBoots.Value;
         }

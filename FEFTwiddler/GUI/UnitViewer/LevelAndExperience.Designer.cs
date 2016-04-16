@@ -94,7 +94,6 @@
             this.numEternalSeals.Name = "numEternalSeals";
             this.numEternalSeals.Size = new System.Drawing.Size(38, 20);
             this.numEternalSeals.TabIndex = 78;
-            this.numEternalSeals.ValueChanged += new System.EventHandler(this.numEternalSeals_ValueChanged);
             // 
             // label19
             // 
@@ -117,7 +116,6 @@
             this.numBoots.Name = "numBoots";
             this.numBoots.Size = new System.Drawing.Size(38, 20);
             this.numBoots.TabIndex = 76;
-            this.numBoots.ValueChanged += new System.EventHandler(this.numBoots_ValueChanged);
             // 
             // label2
             // 
@@ -140,7 +138,6 @@
             this.numExperience.Name = "numExperience";
             this.numExperience.Size = new System.Drawing.Size(38, 20);
             this.numExperience.TabIndex = 74;
-            this.numExperience.ValueChanged += new System.EventHandler(this.numExperience_ValueChanged);
             // 
             // label1
             // 
@@ -173,7 +170,6 @@
             0,
             0,
             0});
-            this.numLevel.ValueChanged += new System.EventHandler(this.numLevel_ValueChanged);
             // 
             // LevelAndExperience
             // 
