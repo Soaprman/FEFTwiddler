@@ -572,254 +572,46 @@ namespace FEFTwiddler.Model
 
             character.IsAbsent = isAbsent;
 
-            // TODO
-            br.ReadBytes(1);
+            chunk = new byte[Model.Character.RawBlock1Length];
+            br.Read(chunk, 0, Model.Character.RawBlock1Length);
+            character.RawBlock1 = chunk;
 
-            // Read flags
-            byte[] flags = new byte[8];
-            br.Read(flags, 0, 8);
+            chunk = new byte[Model.Character.RawInventoryLength];
+            br.Read(chunk, 0, Model.Character.RawInventoryLength);
+            character.RawInventory = chunk;
 
-            // Character main data
-            chunk = new byte[8];
-            br.Read(chunk, 0, 8);
+            chunk = new byte[0x01];
+            br.Read(chunk, 0, 0x01);
+            character.RawNumberOfSupports = chunk.First();
 
-            character.Level = chunk[0];
-            character.Experience = chunk[1];
-            character.InternalLevel = chunk[2];
-            character.EternalSealsUsed = chunk[3];
-            character.CharacterID = (Enums.Character)(ushort)(chunk[4] + chunk[5] * 0x100);
-            character.ClassID = (Enums.Class)chunk[6];
-            character.Unknown011 = chunk[7];
+            chunk = new byte[character.RawNumberOfSupports];
+            br.Read(chunk, 0, character.RawNumberOfSupports);
+            character.RawSupports = chunk;
 
-            // Process flags
-            // character._IsCorrin = (chunk[0] & 0x01) == 0x01;
-            character.IsManakete = character.CharacterID.IsCorrin() ||
-                ((flags[2] & 0x80) == 0x80);
-            character.IsBeast = character.CharacterID.IsBeastCharacter() ||
-                (flags[3] & 0x01) == 0x01;
-            character.CanUseDragonVein = character.CharacterID.IsRoyal() ||
-                ((flags[4] & 0x08) == 0x08);
+            chunk = new byte[Model.Character.RawBlock2Length];
+            br.Read(chunk, 0, Model.Character.RawBlock2Length);
+            character.RawBlock2 = chunk;
 
-            // Some bytes
-            chunk = new byte[2];
-            br.Read(chunk, 0, 2);
-            character.UnknownBytesBeforeStatBytes1 = chunk;
+            chunk = new byte[Model.Character.RawLearnedSkillsLength];
+            br.Read(chunk, 0, Model.Character.RawLearnedSkillsLength);
+            character.RawLearnedSkills = chunk;
 
-            // Some bytes
-            chunk = new byte[12];
-            br.Read(chunk, 0, 12);
-            character.UnknownBytesBeforeStatBytes2 = chunk;
+            var depLength = (character.IsDeployed ? Model.Character.RawDeployedUnitInfoLengthIfDeployed : Model.Character.RawDeployedUnitInfoLengthIfNotDeployed);
+            chunk = new byte[depLength];
+            br.Read(chunk, 0, depLength);
+            character.RawDeployedUnitInfo = chunk;
 
-            // Stat bytes 1
-            chunk = new byte[8];
-            br.Read(chunk, 0, 8);
-            character.StatBytes1 = (sbyte[])(Array)chunk;
+            chunk = new byte[Model.Character.RawBlock3Length];
+            br.Read(chunk, 0, Model.Character.RawBlock3Length);
+            character.RawBlock3 = chunk;
 
-            // Statue bonuses
-            chunk = new byte[8];
-            br.Read(chunk, 0, 8);
-            character.StatueBonuses = chunk;
+            chunk = new byte[0x01];
+            br.Read(chunk, 0, 0x01);
+            character.RawEndBlockType = chunk.First();
 
-            // Some bytes
-            chunk = new byte[8];
-            br.Read(chunk, 0, 8);
-            character.UnknownBytesBetweenStatBytes = chunk;
-
-            // Stat bytes 2
-            chunk = new byte[8];
-            br.Read(chunk, 0, 8);
-            character.StatBytes2 = (sbyte[])(Array)chunk;
-
-            // Weapon exp and HP
-            chunk = new byte[9];
-            br.Read(chunk, 0, 9);
-
-            character.WeaponExperience_Sword = chunk[0];
-            character.WeaponExperience_Lance = chunk[1];
-            character.WeaponExperience_Axe = chunk[2];
-            character.WeaponExperience_Shuriken = chunk[3];
-            character.WeaponExperience_Bow = chunk[4];
-            character.WeaponExperience_Tome = chunk[5];
-            character.WeaponExperience_Staff = chunk[6];
-            character.WeaponExperience_Stone = chunk[7];
-            character.MaximumHP = chunk[8];
-
-            // Map position (battle prep only)
-            chunk = new byte[2];
-            br.Read(chunk, 0, 2);
-            character.Position_FromLeft = chunk[0];
-            character.Position_FromTop = chunk[0];
-            character.IsDeployed = character.Position_FromLeft != 0xFF || character.Position_FromTop != 0xFF; // There might be an actual flag for this, but this works too
-
-            // Filler - FF FF
-            br.ReadBytes(2);
-
-            // Flags block (shield, dead, etc)
-            chunk = new byte[5];
-            br.Read(chunk, 0, 5);
-
-            character.IsDead = chunk[0] == 0x18; // Scarlet
-            character.IsEinherjar = (chunk[3] & 0x08) == 0x08;
-            //character.IsEinherjar = chunk[1] == 0x01; // Quatro, generic einherjar
-            //character.IsRecruited = chunk[3] == 0x30; // Captured bosses
-            //character.IsRecruited = chunk[3] == 0x18; // Quatro, generic einherjar
-            //character.IsRecruited = chunk[3] == 0x38; // Named einherjars (Niles, etc)
-            character.IsRecruited = (chunk[3] & 0x10) == 0x10;
-
-            // Filler - 00 00 00 FF FF 00
-            br.ReadBytes(6);
-
-            // TODO
-            br.ReadBytes(2);
-
-            // Skills
-            chunk = new byte[10];
-            br.Read(chunk, 0, 10);
-
-            character.EquippedSkill_1 = (Enums.Skill)chunk[0];
-            character.EquippedSkill_2 = (Enums.Skill)chunk[2];
-            character.EquippedSkill_3 = (Enums.Skill)chunk[4];
-            character.EquippedSkill_4 = (Enums.Skill)chunk[6];
-            character.EquippedSkill_5 = (Enums.Skill)chunk[8];
-
-            // Inventory
-            br.ReadBytes(1);
-            chunk = new byte[4];
-            br.Read(chunk, 0, 4);
-            character.Item_1 = new InventoryItem(chunk);
-            br.ReadBytes(1);
-            chunk = new byte[4];
-            br.Read(chunk, 0, 4);
-            character.Item_2 = new InventoryItem(chunk);
-            br.ReadBytes(1);
-            chunk = new byte[4];
-            br.Read(chunk, 0, 4);
-            character.Item_3 = new InventoryItem(chunk);
-            br.ReadBytes(1);
-            chunk = new byte[4];
-            br.Read(chunk, 0, 4);
-            character.Item_4 = new InventoryItem(chunk);
-            br.ReadBytes(1);
-            chunk = new byte[4];
-            br.Read(chunk, 0, 4);
-            character.Item_5 = new InventoryItem(chunk);
-
-            // Supports
-            byte supportCount = br.ReadByte();
-            if (supportCount > 0)
-            {
-                chunk = new byte[supportCount];
-                br.Read(chunk, 0, supportCount);
-                character.MainSupports = chunk;
-            }
-
-            // TODO
-            br.ReadBytes(7);
-
-            // Boots
-            character.Boots = br.ReadByte();
-
-            // TODO
-            br.ReadBytes(9);
-
-            // DLC class flags
-            chunk = new byte[2];
-            br.Read(chunk, 0, 2);
-            character.DLCClassFlags = chunk;
-
-            // Hair color
-            chunk = new byte[4];
-            br.Read(chunk, 0, 4);
-            character.HairColor = chunk;
-
-            // TODO
-            br.ReadBytes(13);
-
-            // 77, 76, or 75
-            character.UnknownSeventySomething = br.ReadByte();
-
-            // TODO
-            br.ReadBytes(33);
-
-            // Learned skills
-            chunk = new byte[20];
-            br.Read(chunk, 0, 20);
-
-            character.LearnedSkills = new LearnedSkills(chunk);
-
-            // Extra data on deployed characters in battle prep saves.
-            // Might contain debuffs, status effects, and other battle-specific status info
-            // This is what it looks like in my "030_Chapter1" save:
-            // 00 00 00 00 00 FF FF 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
-            if (character.IsDeployed)
-            {
-                br.ReadBytes(54);
-            }
-
-            // TODO (this is the 02 that comes after the learned skills block)
-            br.ReadBytes(1);
-
-            // TODO
-            br.ReadBytes(4);
-
-            // Accessories
-            chunk = new byte[4];
-            br.Read(chunk, 0, 4);
-
-            character.Headwear = (Enums.Headwear)chunk[0];
-            character.Facewear = (Enums.Facewear)chunk[1];
-            character.Armwear = (Enums.Armwear)chunk[2];
-            character.Underwear = (Enums.Underwear)chunk[3];
-
-            // TODO
-            br.ReadBytes(1);
-
-            // Battles and Victories
-            chunk = new byte[4];
-            br.Read(chunk, 0, 4);
-            character.BattleCount = (ushort)((chunk[1] << 8) | chunk[0]);
-            character.VictoryCount = (ushort)((chunk[3] << 8) | chunk[2]);
-
-            // TODO
-            br.ReadBytes(2);
-
-            // Death chapter
-            character.DeathChapter = (Enums.Chapter)br.ReadByte();
-
-            // TODO
-            br.ReadBytes(2);
-
-            // Determine end block size
-            int endBlockSize;
-            byte endByte = br.ReadByte();
-            switch (endByte)
-            {
-                case 0x04:
-                    endBlockSize = 44;
-                    break;
-                case 0x01:
-                    endBlockSize = 42;
-                    break;
-                default:
-                    endBlockSize = 0;
-                    break;
-            }
-
-            // TODO
-            if (endBlockSize == 44)
-            {
-                // Avatar
-                chunk = new byte[0x18];
-                br.Read(chunk, 0, 0x18);
-
-                character.CorrinName = chunk;
-
-                br.ReadBytes(endBlockSize - 0x18);
-            }
-            else
-            {
-                br.ReadBytes(endBlockSize);
-            }
+            chunk = new byte[character.GetRawEndBlockSize()];
+            br.Read(chunk, 0, character.GetRawEndBlockSize());
+            character.RawEndBlock = chunk;
 
             _characters.Add(character);
         }
@@ -882,177 +674,7 @@ namespace FEFTwiddler.Model
 
         private void WriteCurrentCharacter(BinaryWriter bw, Model.Character character)
         {
-            byte[] chunk;
-
-            // TODO
-            bw.BaseStream.Seek(1, SeekOrigin.Current);
-
-            // Flags
-            chunk = new byte[8];
-            bw.BaseStream.Read(chunk, 0, 8);
-            if (character.IsManakete && !character.CharacterID.IsCorrin())
-                chunk[2] |= 0x80;
-            else
-                chunk[2] &= 0x7F;
-            if (character.IsBeast && !character.CharacterID.IsBeastCharacter())
-                chunk[3] |= 0x01;
-            else
-                chunk[3] &= 0xFE;
-            if (character.CanUseDragonVein && !character.CharacterID.IsRoyal())
-                chunk[4] |= 0x08;
-            else
-                chunk[4] &= 0xF7;
-            bw.BaseStream.Seek(-8, SeekOrigin.Current);
-            bw.BaseStream.Write(chunk, 0, 8);
-
-            // Character main data
-            chunk = new byte[] {
-                character.Level,
-                character.Experience,
-                character.InternalLevel,
-                character.EternalSealsUsed,
-                (byte)((ushort)character.CharacterID & 0xFF),
-                (byte)(((ushort)character.CharacterID >> 8) & 0xFF),
-                (byte)character.ClassID,
-                character.Unknown011
-            };
-            bw.Write(chunk);
-
-            // TODO
-            bw.BaseStream.Seek(46, SeekOrigin.Current);
-
-            // Weapon exp
-            chunk = new byte[] {
-                character.WeaponExperience_Sword,
-                character.WeaponExperience_Lance,
-                character.WeaponExperience_Axe,
-                character.WeaponExperience_Shuriken,
-                character.WeaponExperience_Bow,
-                character.WeaponExperience_Tome,
-                character.WeaponExperience_Staff,
-                character.WeaponExperience_Stone
-            };
-            bw.Write(chunk);
-
-            // Max HP
-            bw.BaseStream.Seek(1, SeekOrigin.Current);
-
-            // Filler - FF FF FF FF
-            bw.BaseStream.Seek(4, SeekOrigin.Current);
-
-            // Flags block (shield, dead, etc)
-            bw.BaseStream.Seek(5, SeekOrigin.Current);
-
-            // Filler - 00 00 00 FF FF 00
-            bw.BaseStream.Seek(6, SeekOrigin.Current);
-
-            // TODO
-            bw.BaseStream.Seek(2, SeekOrigin.Current);
-
-            // Skills
-            bw.Write((byte)character.EquippedSkill_1);
-            bw.BaseStream.Seek(1, SeekOrigin.Current);
-            bw.Write((byte)character.EquippedSkill_2);
-            bw.BaseStream.Seek(1, SeekOrigin.Current);
-            bw.Write((byte)character.EquippedSkill_3);
-            bw.BaseStream.Seek(1, SeekOrigin.Current);
-            bw.Write((byte)character.EquippedSkill_4);
-            bw.BaseStream.Seek(1, SeekOrigin.Current);
-            bw.Write((byte)character.EquippedSkill_5);
-            bw.BaseStream.Seek(1, SeekOrigin.Current);
-
-            // Inventory
-            bw.BaseStream.Seek(1, SeekOrigin.Current);
-            bw.Write(character.Item_1.Raw);
-            bw.BaseStream.Seek(1, SeekOrigin.Current);
-            bw.Write(character.Item_2.Raw);
-            bw.BaseStream.Seek(1, SeekOrigin.Current);
-            bw.Write(character.Item_3.Raw);
-            bw.BaseStream.Seek(1, SeekOrigin.Current);
-            bw.Write(character.Item_4.Raw);
-            bw.BaseStream.Seek(1, SeekOrigin.Current);
-            bw.Write(character.Item_5.Raw);
-
-            // Supports
-            int supportCount = bw.BaseStream.ReadByte();
-            if (supportCount > 0)
-            {
-                bw.BaseStream.Seek(supportCount, SeekOrigin.Current);
-            }
-
-            // TODO
-            bw.BaseStream.Seek(7, SeekOrigin.Current);
-
-            // Boots
-            bw.Write(character.Boots);
-
-            // TODO
-            bw.BaseStream.Seek(9, SeekOrigin.Current);
-
-            // DLC class flags
-            bw.Write(character.DLCClassFlags);
-
-            // Hair color
-            bw.Write(character.HairColor);
-
-            // TODO
-            bw.BaseStream.Seek(47, SeekOrigin.Current);
-
-            // Learned skills
-            bw.Write(character.LearnedSkills.Bytes);
-
-            // Stuff only on deployed characters
-            if (character.IsDeployed)
-            {
-                bw.BaseStream.Seek(54, SeekOrigin.Current);
-            }
-
-            // TODO
-            bw.BaseStream.Seek(5, SeekOrigin.Current);
-
-            // Accessories
-            chunk = new byte[] {
-                (byte)character.Headwear,
-                (byte)character.Facewear,
-                (byte)character.Armwear,
-                (byte)character.Underwear
-            };
-            bw.Write(chunk);
-
-            // TODO
-            bw.BaseStream.Seek(1, SeekOrigin.Current);
-
-            // Battles and Victories
-            bw.Write(BitConverter.GetBytes(character.BattleCount));
-            bw.Write(BitConverter.GetBytes(character.VictoryCount));
-
-            // TODO
-            bw.BaseStream.Seek(2, SeekOrigin.Current);
-
-            // Death chapter
-            bw.Write((byte)character.DeathChapter);
-
-            // TODO
-            bw.BaseStream.Seek(2, SeekOrigin.Current);
-
-            // Determine end block size
-            int endBlockSize;
-            int endByte = bw.BaseStream.ReadByte();
-            switch (endByte)
-            {
-                case 0x04:
-                    endBlockSize = 44;
-                    break;
-                case 0x01:
-                    endBlockSize = 42;
-                    break;
-                default:
-                    endBlockSize = 0;
-                    break;
-            }
-
-            // TODO
-            bw.BaseStream.Seek(endBlockSize, SeekOrigin.Current);
+            bw.Write(character.Raw);
         }
 
         #endregion

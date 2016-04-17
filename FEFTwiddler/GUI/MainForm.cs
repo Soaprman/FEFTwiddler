@@ -148,7 +148,7 @@ namespace FEFTwiddler.GUI
             {
                 if (character.CorrinName != null)
                 {
-                    lblName.Text = Utils.TypeConverter.ToString(character.CorrinName);
+                    lblName.Text = character.CorrinName;
                 }
                 else
                 {
