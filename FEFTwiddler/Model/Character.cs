@@ -88,6 +88,11 @@ namespace FEFTwiddler.Model
             return CharacterID.ToString() + ": " + ClassID.ToString() +  " // lv" + Level.ToString() + " exp" + Experience.ToString();
         }
 
+        private Data.Character GetData()
+        {
+            return Data.Database.Characters.GetByID(CharacterID);
+        }
+
         #region Boundary Enforcement
 
         /// <summary>
@@ -211,7 +216,7 @@ namespace FEFTwiddler.Model
             WeaponExperience_Bow = MaxWeaponExperience;
             WeaponExperience_Tome = MaxWeaponExperience;
             WeaponExperience_Staff = MaxWeaponExperience;
-            WeaponExperience_Stone = MaxWeaponExperience;
+            WeaponExperience_Stone = (GetData().CanUseStones ? MaxWeaponExperience : MinWeaponExperience);
         }
 
         #endregion

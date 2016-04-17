@@ -22,5 +22,7 @@
         public sbyte Modifier_Lck { get; set; }
         public sbyte Modifier_Def { get; set; }
         public sbyte Modifier_Res { get; set; }
+
+        public bool CanUseStones { get; set; }
     }
 }
