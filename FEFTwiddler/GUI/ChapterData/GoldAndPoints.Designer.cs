@@ -31,20 +31,10 @@
             this.btn99DragonVeinPoints = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.numDragonVeinPoints = new System.Windows.Forms.NumericUpDown();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.btn9999VisitPoints = new System.Windows.Forms.Button();
-            this.btn9999BattlePoints = new System.Windows.Forms.Button();
-            this.numVisitPoints = new System.Windows.Forms.NumericUpDown();
-            this.numBattlePoints = new System.Windows.Forms.NumericUpDown();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.btnMaxGold = new System.Windows.Forms.Button();
             this.numGold = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numDragonVeinPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numVisitPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numBattlePoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numGold)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,100 +71,6 @@
             this.numDragonVeinPoints.Size = new System.Drawing.Size(50, 20);
             this.numDragonVeinPoints.TabIndex = 71;
             this.numDragonVeinPoints.ValueChanged += new System.EventHandler(this.numDragonVeinPoints_ValueChanged);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
-            this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label13.Location = new System.Drawing.Point(2, 127);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(263, 13);
-            this.label13.TabIndex = 70;
-            this.label13.Text = "After that, the values will revert to what\'s stored online.";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
-            this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label12.Location = new System.Drawing.Point(2, 112);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(232, 13);
-            this.label12.TabIndex = 69;
-            this.label12.Text = "These will last until you update your castle data.";
-            // 
-            // btn9999VisitPoints
-            // 
-            this.btn9999VisitPoints.Enabled = false;
-            this.btn9999VisitPoints.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn9999VisitPoints.Location = new System.Drawing.Point(167, 86);
-            this.btn9999VisitPoints.Name = "btn9999VisitPoints";
-            this.btn9999VisitPoints.Size = new System.Drawing.Size(75, 23);
-            this.btn9999VisitPoints.TabIndex = 68;
-            this.btn9999VisitPoints.Text = "9999";
-            this.btn9999VisitPoints.UseVisualStyleBackColor = true;
-            this.btn9999VisitPoints.Click += new System.EventHandler(this.btn9999VisitPoints_Click);
-            // 
-            // btn9999BattlePoints
-            // 
-            this.btn9999BattlePoints.Enabled = false;
-            this.btn9999BattlePoints.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn9999BattlePoints.Location = new System.Drawing.Point(167, 60);
-            this.btn9999BattlePoints.Name = "btn9999BattlePoints";
-            this.btn9999BattlePoints.Size = new System.Drawing.Size(75, 23);
-            this.btn9999BattlePoints.TabIndex = 67;
-            this.btn9999BattlePoints.Text = "9999";
-            this.btn9999BattlePoints.UseVisualStyleBackColor = true;
-            this.btn9999BattlePoints.Click += new System.EventHandler(this.btn9999BattlePoints_Click);
-            // 
-            // numVisitPoints
-            // 
-            this.numVisitPoints.Enabled = false;
-            this.numVisitPoints.Location = new System.Drawing.Point(81, 87);
-            this.numVisitPoints.Maximum = new decimal(new int[] {
-            999999,
-            0,
-            0,
-            0});
-            this.numVisitPoints.Name = "numVisitPoints";
-            this.numVisitPoints.Size = new System.Drawing.Size(78, 20);
-            this.numVisitPoints.TabIndex = 66;
-            this.numVisitPoints.Click += new System.EventHandler(this.numVisitPoints_ValueChanged);
-            // 
-            // numBattlePoints
-            // 
-            this.numBattlePoints.Enabled = false;
-            this.numBattlePoints.Location = new System.Drawing.Point(81, 61);
-            this.numBattlePoints.Maximum = new decimal(new int[] {
-            999999,
-            0,
-            0,
-            0});
-            this.numBattlePoints.Name = "numBattlePoints";
-            this.numBattlePoints.Size = new System.Drawing.Size(78, 20);
-            this.numBattlePoints.TabIndex = 65;
-            this.numBattlePoints.Click += new System.EventHandler(this.numBattlePoints_ValueChanged);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label11.Location = new System.Drawing.Point(14, 90);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(61, 13);
-            this.label11.TabIndex = 64;
-            this.label11.Text = "Visit Points:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label10.Location = new System.Drawing.Point(6, 63);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(69, 13);
-            this.label10.TabIndex = 63;
-            this.label10.Text = "Battle Points:";
             // 
             // btnMaxGold
             // 
@@ -217,14 +113,6 @@
             this.Controls.Add(this.btn99DragonVeinPoints);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.numDragonVeinPoints);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.btn9999VisitPoints);
-            this.Controls.Add(this.btn9999BattlePoints);
-            this.Controls.Add(this.numVisitPoints);
-            this.Controls.Add(this.numBattlePoints);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.btnMaxGold);
             this.Controls.Add(this.numGold);
             this.Controls.Add(this.label3);
@@ -232,8 +120,6 @@
             this.Name = "GoldAndPoints";
             this.Size = new System.Drawing.Size(268, 146);
             ((System.ComponentModel.ISupportInitialize)(this.numDragonVeinPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numVisitPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numBattlePoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numGold)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -245,14 +131,6 @@
         private System.Windows.Forms.Button btn99DragonVeinPoints;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.NumericUpDown numDragonVeinPoints;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button btn9999VisitPoints;
-        private System.Windows.Forms.Button btn9999BattlePoints;
-        private System.Windows.Forms.NumericUpDown numVisitPoints;
-        private System.Windows.Forms.NumericUpDown numBattlePoints;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnMaxGold;
         private System.Windows.Forms.NumericUpDown numGold;
         private System.Windows.Forms.Label label3;
