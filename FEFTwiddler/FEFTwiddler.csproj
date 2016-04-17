@@ -81,6 +81,7 @@
     <Compile Include="Enums\Underwear.cs" />
     <Compile Include="Extensions\BinaryReaderExtensions.cs" />
     <Compile Include="Extensions\ByteArrayExtensions.cs" />
+    <Compile Include="Extensions\StreamExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\XElementExtensions.cs" />
     <Compile Include="GUI\ChapterData\GoldAndPoints.cs">
@@ -188,6 +189,7 @@
     <Compile Include="Model\ISave.cs" />
     <Compile Include="Model\Item.cs" />
     <Compile Include="Model\LearnedSkills.cs" />
+    <Compile Include="Model\Shop.cs" />
     <Compile Include="Model\ShopItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

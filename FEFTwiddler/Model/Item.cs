@@ -1,23 +1,29 @@
-﻿using System;
-
-namespace FEFTwiddler.Model
+﻿namespace FEFTwiddler.Model
 {
     public abstract class Item
     {
-        private byte[] _bytes;
-
-        public Item(byte[] bytes)
+        protected byte[] _raw;
+        public byte[] Raw
         {
-            _bytes = bytes;
-
-            ReparseID(_bytes[0], _bytes[1]);
+            get { return _raw; }
         }
 
-        public void ReparseID(byte low, byte high)
+        public Item(byte[] raw)
         {
-            ItemID = (Enums.Item)(low + high * 0x100);
+            _raw = raw;
         }
 
-        public Enums.Item ItemID { get; set; }
+        public Enums.Item ItemID
+        {
+            get
+            {
+                return (Enums.Item)(_raw[0] + _raw[1] * 0x100);
+            }
+            set
+            {
+                _raw[0] = (byte)(((int)value) & 0xFF);        // I am so sorry
+                _raw[1] = (byte)((((int)value) >> 8) & 0xFF); // So very sorry
+            }
+        }
     }
 }

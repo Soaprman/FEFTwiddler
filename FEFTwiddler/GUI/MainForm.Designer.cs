@@ -39,6 +39,8 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.lblAvatarName = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lstDead = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -46,8 +48,6 @@
             this.lstLiving = new System.Windows.Forms.ListBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lstDead = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.goldAndPoints1 = new FEFTwiddler.GUI.ChapterData.GoldAndPoints();
             this.materials1 = new FEFTwiddler.GUI.ChapterData.Materials();
             this.battleData1 = new FEFTwiddler.GUI.UnitViewer.BattleData();
@@ -138,6 +138,18 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Enter += new System.EventHandler(this.tabPage1_Enter);
             // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // lstDead
+            // 
+            this.lstDead.FormattingEnabled = true;
+            resources.ApplyResources(this.lstDead, "lstDead");
+            this.lstDead.Name = "lstDead";
+            this.lstDead.SelectedIndexChanged += new System.EventHandler(this.SelectDeadCharacter);
+            // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -193,18 +205,6 @@
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
-            // 
-            // lstDead
-            // 
-            this.lstDead.FormattingEnabled = true;
-            resources.ApplyResources(this.lstDead, "lstDead");
-            this.lstDead.Name = "lstDead";
-            this.lstDead.SelectedIndexChanged += new System.EventHandler(this.SelectDeadCharacter);
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
             // 
             // goldAndPoints1
             // 

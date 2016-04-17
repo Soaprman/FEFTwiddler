@@ -7,10 +7,9 @@ namespace FEFTwiddler.Model
     public class Character
     {
         /// <summary>
-        /// The location of this character in the hex
+        /// This character joined before the chapter 6 split, left, and hasn't rejoined yet
         /// </summary>
-        /// <remarks>This technique goes out the window if we allow adding or switching character positions. But it's fine for now.</remarks>
-        public long BinaryPosition { get; set; }
+        public bool IsAbsent { get; set; }
 
         // There are 64 flags here.
         // public bool _IsCorrin { get; set; }
@@ -73,6 +72,10 @@ namespace FEFTwiddler.Model
         public byte Boots { get; set; }
         public byte[] DLCClassFlags { get; set; }
         public byte[] HairColor { get; set; }
+        /// <summary>
+        /// Some value that seems to always be 0x75, 0x76, or 0x77
+        /// </summary>
+        public byte UnknownSeventySomething { get; set; }
         public LearnedSkills LearnedSkills { get; set; }
 
         public Enums.Headwear Headwear { get; set; }
@@ -84,6 +87,8 @@ namespace FEFTwiddler.Model
         public ushort VictoryCount { get; set; }
 
         public Enums.Chapter DeathChapter { get; set; }
+
+        public byte[] CorrinName { get; set; }
 
         public override string ToString()
         {

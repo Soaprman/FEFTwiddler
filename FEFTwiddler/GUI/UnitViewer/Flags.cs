@@ -39,6 +39,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             chkDead.Checked = _character.IsDead;
             chkEinherjar.Checked = _character.IsEinherjar;
             chkRecruited.Checked = _character.IsRecruited;
+            chkAbsent.Checked = _character.IsAbsent;
 
             cmbDeathChapter.Text = _character.DeathChapter.ToString();
         }

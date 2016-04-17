@@ -33,6 +33,7 @@
             this.chkEinherjar = new System.Windows.Forms.CheckBox();
             this.chkDead = new System.Windows.Forms.CheckBox();
             this.cmbDeathChapter = new System.Windows.Forms.ComboBox();
+            this.chkAbsent = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // chkDeployed
@@ -94,10 +95,23 @@
             this.cmbDeathChapter.Size = new System.Drawing.Size(139, 21);
             this.cmbDeathChapter.TabIndex = 70;
             // 
+            // chkAbsent
+            // 
+            this.chkAbsent.AutoSize = true;
+            this.chkAbsent.Enabled = false;
+            this.chkAbsent.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.chkAbsent.Location = new System.Drawing.Point(3, 95);
+            this.chkAbsent.Name = "chkAbsent";
+            this.chkAbsent.Size = new System.Drawing.Size(194, 17);
+            this.chkAbsent.TabIndex = 71;
+            this.chkAbsent.Text = "Absent (left at ch 6, hasn\'t returned)";
+            this.chkAbsent.UseVisualStyleBackColor = true;
+            // 
             // Flags
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.chkAbsent);
             this.Controls.Add(this.cmbDeathChapter);
             this.Controls.Add(this.chkDeployed);
             this.Controls.Add(this.chkRecruited);
@@ -105,7 +119,7 @@
             this.Controls.Add(this.chkDead);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Flags";
-            this.Size = new System.Drawing.Size(200, 90);
+            this.Size = new System.Drawing.Size(200, 115);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,5 +132,6 @@
         private System.Windows.Forms.CheckBox chkEinherjar;
         private System.Windows.Forms.CheckBox chkDead;
         private System.Windows.Forms.ComboBox cmbDeathChapter;
+        private System.Windows.Forms.CheckBox chkAbsent;
     }
 }

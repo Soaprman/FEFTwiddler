@@ -4,14 +4,21 @@ namespace FEFTwiddler.Model
 {
     public class ShopItem : Item
     {
-        public ShopItem(byte[] bytes) : base(bytes)
+        public ShopItem(byte[] raw) : base(raw)
         {
-            if (bytes.Length != 4) throw new ArgumentException("Shop items must be 4 bytes");
-            CurrentNumberForSale = bytes[2];
-            MaxNumberForSale = bytes[3];
+            if (raw.Length != 4) throw new ArgumentException("Shop items must be 4 bytes");
         }
 
-        public byte CurrentNumberForSale { get; set; }
-        public byte MaxNumberForSale { get; set; }
+        public byte CurrentNumberForSale
+        {
+            get { return _raw[2]; }
+            set { _raw[2] = value; }
+        }
+
+        public byte MaxNumberForSale
+        {
+            get { return _raw[3]; }
+            set { _raw[3] = value; }
+        }
     }
 }

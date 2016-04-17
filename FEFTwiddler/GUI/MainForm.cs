@@ -61,11 +61,11 @@ namespace FEFTwiddler.GUI
                 _chapterSave = Model.ChapterSave.FromSaveFile(_saveFile);
 
                 lstLiving.DisplayMember = "CharacterID";
-                lstLiving.ValueMember = "BinaryPosition"; // Sure, why not
+                lstLiving.ValueMember = "CharacterID";
                 lstLiving.Items.Clear();
 
                 lstDead.DisplayMember = "CharacterID";
-                lstDead.ValueMember = "BinaryPosition"; // Sure, why not
+                lstDead.ValueMember = "CharacterID";
                 lstDead.Items.Clear();
                 foreach (var character in _chapterSave.Characters)
                 {
@@ -145,7 +145,16 @@ namespace FEFTwiddler.GUI
         private void LoadCharacter(Model.Character character)
         {
             if (Enum.IsDefined(typeof(Enums.Character), character.CharacterID))
-                lblName.Text = Data.Database.Characters.GetByID(character.CharacterID).DisplayName;
+            {
+                if (character.CorrinName != null)
+                {
+                    lblName.Text = Utils.TypeConverter.ToString(character.CorrinName);
+                }
+                else
+                {
+                    lblName.Text = Data.Database.Characters.GetByID(character.CharacterID).DisplayName;
+                }
+            }
             else
                 lblName.Text = character.CharacterID.ToString();
 

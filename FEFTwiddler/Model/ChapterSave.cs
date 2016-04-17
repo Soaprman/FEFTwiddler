@@ -16,24 +16,6 @@ namespace FEFTwiddler.Model
 
         private SaveFile _file;
 
-        /// <summary>You know, just so we're clear!</summary>
-        private long _headerOffset = 0;
-        /// <summary>Hex: 0x52455355 / Text: RESU</summary>
-        private byte[] _userMarker = new byte[] { 0x52, 0x45, 0x53, 0x55 };
-        private long _userOffset;
-        /// <summary>Hex: 0x30000000FFFF / Text: 0...ÿÿ</summary>
-        /// <remarks>This is some hacky shit right here. It sure would be nice to figure out the size of the USER block...</remarks>
-        private byte[] _fileDataMarker = new byte[] { 0x30, 0x00, 0x00, 0x00, 0xFF, 0xFF };
-        private long _fileDataOffset;
-        /// <summary>Hex: 0x504F4853 / Text: POHS</summary>
-        private byte[] _shopMarker = new byte[] { 0x50, 0x4F, 0x48, 0x53 };
-        private long _shopOffset;
-        /// <summary>Hex: 0x54494E55 / Text: TINU</summary>
-        private byte[] _characterMarker = new byte[] { 0x54, 0x49, 0x4E, 0x55 };
-        private long _characterOffset;
-        /// <summary>Hex: 0x49464552 / Text: IFER</summary>
-        private byte[] _weaponNameMarker = new byte[] { 0x49, 0x46, 0x45, 0x52 };
-        private long _weaponNameOffset;
         /// <summary>Hex: 0x4E415254 / Text: NART</summary>
         private byte[] _convoyMarker = new byte[] { 0x4E, 0x41, 0x52, 0x54 };
         private long _convoyOffset;
@@ -46,6 +28,11 @@ namespace FEFTwiddler.Model
         #region Properties
 
         public byte[] AvatarName { get; set; }
+
+        public Shop HoshidoArmory { get; set; }
+        public Shop NohrArmory { get; set; }
+        public Shop HoshidoStore { get; set; }
+        public Shop NohrStore { get; set; }
 
         public uint Gold { get; set; }
 
@@ -161,18 +148,13 @@ namespace FEFTwiddler.Model
             using (var br = new BinaryReader(ms))
             {
                 ReadHeaderData(br);
-
-                br.AdvanceToValue(_userMarker);
-                _fileDataOffset = br.BaseStream.Position;
+                ReadCompressionRegionData(br);
                 ReadUserData(br);
-
-                br.AdvanceToValue(_fileDataMarker);
-                _fileDataOffset = br.BaseStream.Position;
-                ReadFileData(br);
-
-                br.AdvanceToValue(_characterMarker);
-                _characterOffset = br.BaseStream.Position;
+                ReadSPOTData(br);
+                ReadShopData(br);
                 ReadCharacters(br);
+                //ReadWeaponNameData(br);
+                //ReadConvoyData(br);
 
                 br.AdvanceToValue(_myCastleMarker);
                 _myCastleOffset = br.BaseStream.Position;
@@ -185,8 +167,15 @@ namespace FEFTwiddler.Model
             using (var ms = new MemoryStream(_file.DecompressedBytes))
             using (var bw = new BinaryWriter(ms))
             {
-                WriteFileData(bw);
+                WriteHeaderData(bw);
+                WriteCompressionRegionData(bw);
+                WriteUserData(bw);
+                WriteSPOTData(bw);
+                WriteShopData(bw);
                 WriteCharacters(bw);
+                //WriteWeaponNameData(bw);
+                //WriteConvoyData(bw);
+
                 WriteMyCastle(bw);
             }
 
@@ -205,12 +194,40 @@ namespace FEFTwiddler.Model
             br.ReadBytes(0x0F);
 
             // Avatar name
-            chunk = new byte[24];
-            br.Read(chunk, 0, 24);
+            chunk = new byte[0x18];
+            br.Read(chunk, 0, 0x18);
 
             AvatarName = chunk;
 
-            // Not sure about the rest. Guess it's a TODO.
+            // TODO
+            br.ReadBytes(0x99);
+        }
+
+        public void WriteHeaderData(BinaryWriter bw)
+        {
+            bw.BaseStream.Seek(0xC0, SeekOrigin.Current);
+        }
+
+        #endregion
+
+        #region Compression Region IO
+
+        public void ReadCompressionRegionData(BinaryReader br)
+        {
+            // EDNI
+            br.ReadBytes(0x4);
+
+            // Stuff
+            br.ReadBytes(0x80);
+        }
+
+        public void WriteCompressionRegionData(BinaryWriter bw)
+        {
+            // EDNI
+            bw.BaseStream.Seek(0x4, SeekOrigin.Current);
+
+            // Stuff
+            bw.BaseStream.Seek(0x80, SeekOrigin.Current);
         }
 
         #endregion
@@ -220,6 +237,9 @@ namespace FEFTwiddler.Model
         public void ReadUserData(BinaryReader br)
         {
             byte[] chunk;
+
+            // RESU
+            br.ReadBytes(0x04);
 
             // Stuff
             br.ReadBytes(0x09);
@@ -231,37 +251,18 @@ namespace FEFTwiddler.Model
             br.ReadBytes(0x04);
 
             // Chapter history
+            ChapterHistory = new List<ChapterHistoryEntry>();
             var chapterCount = br.ReadByte();
-            if (chapterCount > 0)
+            for (var i = 0; i < chapterCount; i++)
             {
-                ChapterHistory = new List<ChapterHistoryEntry>();
-                for (var i = 0; i < chapterCount; i++)
-                {
-                    var entry = new ChapterHistoryEntry();
+                chunk = new byte[0x10];
+                br.Read(chunk, 0, 0x10);
 
-                    chunk = new byte[0x10];
-                    br.Read(chunk, 0, 0x10);
-
-                    entry.ChapterID = (Enums.Chapter)chunk[0x1];
-                    entry.TurnCount = chunk[0x2];
-                    entry.HeroCharacterID_1 = (Enums.Character)(ushort)((chunk[0x9] * 0x100) + chunk[0x8]);
-                    entry.HeroCharacterID_2 = (Enums.Character)(ushort)((chunk[0xD] * 0x100) + chunk[0xC]);
-
-                    ChapterHistory.Add(entry);
-                }
+                ChapterHistory.Add(new ChapterHistoryEntry(chunk));
             }
 
-            // Not sure about the rest. Guess it's a TODO.
-            // In 038/Chapter0_dec, the next bytes are 00 80, then a bunch of 00s with a couple 30s in the mix
-        }
-
-        #endregion
-
-        #region File Data IO
-
-        public void ReadFileData(BinaryReader br)
-        {
-            byte[] chunk;
+            // Stuff (block of mostly 00s that starts with 00 80 and ends with 30 00 00 00 FF FF)
+            br.ReadBytes(0xE1);
 
             // Stuff
             br.ReadBytes(0x04);
@@ -290,14 +291,43 @@ namespace FEFTwiddler.Model
 
             Gold = BitConverter.ToUInt32(chunk, 0);
 
-            // Not sure about the rest. Guess it's a TODO.
+            // TODO
+            br.ReadBytes(0x14);
+
+            // FF FF FF FF
+            br.ReadBytes(0x04);
+
+            // Stuff (ends with 0x02)
+            br.ReadBytes(0x4D);
+
+            // TODO
+            //br.ReadBytes(0x49A);
+            // 0x216 in 9Hopper save
         }
 
-        public void WriteFileData(BinaryWriter bw)
+        public void WriteUserData(BinaryWriter bw)
         {
-            byte[] chunk;
+            // RESU
+            bw.BaseStream.Seek(0x04, SeekOrigin.Current);
 
-            bw.BaseStream.Seek(_fileDataOffset, SeekOrigin.Begin);
+            // Stuff
+            bw.BaseStream.Seek(0x09, SeekOrigin.Current);
+
+            // Chapter
+            bw.Write((byte)CurrentChapter);
+
+            // Stuff
+            bw.BaseStream.Seek(0x04, SeekOrigin.Current);
+
+            // Chapter history
+            bw.Write((byte)ChapterHistory.Count);
+            foreach (var chapterEntry in ChapterHistory)
+            {
+                bw.Write(chapterEntry.Raw);
+            }
+
+            // Stuff (block of mostly 00s that starts with 00 80 and ends with 30 00 00 00 FF FF)
+            bw.BaseStream.Seek(0xE1, SeekOrigin.Current);
 
             // Stuff
             bw.BaseStream.Seek(0x04, SeekOrigin.Current);
@@ -317,7 +347,183 @@ namespace FEFTwiddler.Model
             // Gold
             bw.Write(Gold);
 
-            // Not sure about the rest. Guess it's a TODO.
+            // TODO
+            bw.BaseStream.Seek(0x14, SeekOrigin.Current);
+
+            // FF FF FF FF
+            bw.BaseStream.Seek(0x04, SeekOrigin.Current);
+
+            // Stuff (ends with 0x02)
+            bw.BaseStream.Seek(0x4D, SeekOrigin.Current);
+
+            // TODO
+            //bw.BaseStream.Seek(0x49A, SeekOrigin.Current);
+            // 0x216 in 9Hopper save
+        }
+
+        #endregion
+
+        #region SPOT Region IO
+
+        // TODO: Rename these when it's known what SPOT is (maybe Spotpass?)
+
+        public void ReadSPOTData(BinaryReader br)
+        {
+            // TOPS
+            //br.ReadBytes(0x04);
+            // Use this until User Data size is fully understood
+            br.BaseStream.AdvanceToValue(new byte[] { 0x54, 0x4F, 0x50, 0x53 });
+
+            // Stuff
+            br.ReadBytes(0x1C);
+
+            // Stuff
+            var blockCount = br.ReadByte();
+            for (var i = 0; i < blockCount; i++)
+            {
+                br.ReadBytes(0x21);
+            }
+        }
+
+        public void WriteSPOTData(BinaryWriter bw)
+        {
+            // TOPS
+            //bw.BaseStream.Seek(0x04, SeekOrigin.Current);
+            // Use this until User Data size is fully understood
+            bw.BaseStream.AdvanceToValue(new byte[] { 0x54, 0x4F, 0x50, 0x53 });
+
+            // Stuff
+            bw.BaseStream.Seek(0x1C, SeekOrigin.Current);
+
+            var blockCount = bw.BaseStream.ReadByte();
+            for (var i = 0; i < blockCount; i++)
+            {
+                bw.BaseStream.Seek(0x21, SeekOrigin.Current);
+            }
+        }
+
+        #endregion
+
+        #region Shop IO
+
+        public void ReadShopData(BinaryReader br)
+        {
+            byte[] chunk; byte itemCount;
+
+            // POHS
+            br.ReadBytes(0x04);
+
+            // 00
+            br.ReadBytes(0x01);
+
+            // Dawn Armory
+            chunk = new byte[0x03];
+            br.Read(chunk, 0, 0x03);
+
+            HoshidoArmory = new Shop();
+            HoshidoArmory.Level = chunk[1];
+            itemCount = chunk[2];
+            for (var i = 0; i < itemCount; i++)
+            {
+                chunk = new byte[0x04];
+                br.Read(chunk, 0, 0x04);
+                HoshidoArmory.Items.Add(new ShopItem(chunk));
+            }
+
+            // Dusk Armory
+            chunk = new byte[0x03];
+            br.Read(chunk, 0, 0x03);
+
+            NohrArmory = new Shop();
+            NohrArmory.Level = chunk[1];
+            itemCount = chunk[2];
+            for (var i = 0; i < itemCount; i++)
+            {
+                chunk = new byte[0x04];
+                br.Read(chunk, 0, 0x04);
+                NohrArmory.Items.Add(new ShopItem(chunk));
+            }
+
+            // Rod Shop
+            chunk = new byte[0x03];
+            br.Read(chunk, 0, 0x03);
+
+            HoshidoStore = new Shop();
+            HoshidoStore.Level = chunk[1];
+            itemCount = chunk[2];
+            for (var i = 0; i < itemCount; i++)
+            {
+                chunk = new byte[0x04];
+                br.Read(chunk, 0, 0x04);
+                HoshidoStore.Items.Add(new ShopItem(chunk));
+            }
+
+            // Staff Store
+            chunk = new byte[0x03];
+            br.Read(chunk, 0, 0x03);
+
+            NohrStore = new Shop();
+            NohrStore.Level = chunk[1];
+            itemCount = chunk[2];
+            for (var i = 0; i < itemCount; i++)
+            {
+                chunk = new byte[0x04];
+                br.Read(chunk, 0, 0x04);
+                NohrStore.Items.Add(new ShopItem(chunk));
+            }
+        }
+
+        public void WriteShopData(BinaryWriter bw)
+        {
+            // POHS
+            bw.BaseStream.Seek(0x04, SeekOrigin.Current);
+
+            // 00
+            bw.BaseStream.Seek(0x01, SeekOrigin.Current);
+
+            // Dawn Armory
+            bw.Write(new byte[] {
+                0x00,
+                HoshidoArmory.Level,
+                (byte)HoshidoArmory.Items.Count
+            });
+            foreach (var item in HoshidoArmory.Items)
+            {
+                bw.Write(item.Raw);
+            }
+
+            // Dusk Armory
+            bw.Write(new byte[] {
+                0x00,
+                NohrArmory.Level,
+                (byte)NohrArmory.Items.Count
+            });
+            foreach (var item in NohrArmory.Items)
+            {
+                bw.Write(item.Raw);
+            }
+
+            // Rod Shop
+            bw.Write(new byte[] {
+                0x00,
+                HoshidoStore.Level,
+                (byte)HoshidoStore.Items.Count
+            });
+            foreach (var item in HoshidoStore.Items)
+            {
+                bw.Write(item.Raw);
+            }
+
+            // Staff Store
+            bw.Write(new byte[] {
+                0x00,
+                NohrStore.Level,
+                (byte)NohrStore.Items.Count
+            });
+            foreach (var item in NohrStore.Items)
+            {
+                bw.Write(item.Raw);
+            }
         }
 
         #endregion
@@ -326,6 +532,9 @@ namespace FEFTwiddler.Model
 
         private void ReadCharacters(BinaryReader br)
         {
+            // TINU
+            br.ReadBytes(4);
+
             // 01
             br.ReadBytes(1);
 
@@ -339,11 +548,12 @@ namespace FEFTwiddler.Model
                 {
                     case 0x00: // Deployed living units (battle prep only)
                     case 0x03: // Undeployed living units (all living units in my castle)
+                    case 0x05: // If after chapter 6, units you had at some point before the split who haven't rejoined yet (or at least I think that's what this is)
                     case 0x06: // Dead units
                         var characterCount = br.ReadByte();
                         for (var i = 0; i < characterCount; i++)
                         {
-                            ReadCurrentCharacter(br);
+                            ReadCurrentCharacter(br, nextBlock == 0x05);
                         }
                         break;
                     case 0xFF: // End of unit block
@@ -354,14 +564,13 @@ namespace FEFTwiddler.Model
             }
         }
 
-        private void ReadCurrentCharacter(BinaryReader br)
+        private void ReadCurrentCharacter(BinaryReader br, bool isAbsent)
         {
             byte[] chunk;
 
             var character = new Character();
 
-            // To make writing easier
-            character.BinaryPosition = br.BaseStream.Position;
+            character.IsAbsent = isAbsent;
 
             // TODO
             br.ReadBytes(1);
@@ -524,7 +733,13 @@ namespace FEFTwiddler.Model
             character.HairColor = chunk;
 
             // TODO
-            br.ReadBytes(47);
+            br.ReadBytes(13);
+
+            // 77, 76, or 75
+            character.UnknownSeventySomething = br.ReadByte();
+
+            // TODO
+            br.ReadBytes(33);
 
             // Learned skills
             chunk = new byte[20];
@@ -591,24 +806,83 @@ namespace FEFTwiddler.Model
             }
 
             // TODO
-            br.ReadBytes(endBlockSize);
+            if (endBlockSize == 44)
+            {
+                // Avatar
+                chunk = new byte[0x18];
+                br.Read(chunk, 0, 0x18);
+
+                character.CorrinName = chunk;
+
+                br.ReadBytes(endBlockSize - 0x18);
+            }
+            else
+            {
+                br.ReadBytes(endBlockSize);
+            }
 
             _characters.Add(character);
         }
 
         private void WriteCharacters(BinaryWriter bw)
         {
-            foreach (var character in _characters)
+            // TINU
+            bw.BaseStream.Seek(4, SeekOrigin.Current);
+
+            // 01
+            bw.BaseStream.Seek(1, SeekOrigin.Current);
+
+            var deployedCharacters = _characters.Where((x) => !x.IsAbsent && x.IsDeployed).ToList();
+            if (deployedCharacters.Count > 0)
             {
-                WriteCurrentCharacter(bw, character);
+                bw.Write((byte)0x00);
+                bw.Write((byte)deployedCharacters.Count);
+                foreach (var character in deployedCharacters)
+                {
+                    WriteCurrentCharacter(bw, character);
+                }
             }
+
+            var livingCharacters = _characters.Where((x) => !x.IsAbsent && !x.IsDeployed && !x.IsDead).ToList();
+            if (livingCharacters.Count > 0)
+            {
+                bw.Write((byte)0x03);
+                bw.Write((byte)livingCharacters.Count);
+                foreach (var character in livingCharacters)
+                {
+                    WriteCurrentCharacter(bw, character);
+                }
+            }
+
+            var absentCharacters = _characters.Where((x) => x.IsAbsent).ToList();
+            if (absentCharacters.Count > 0)
+            {
+                bw.Write((byte)0x05);
+                bw.Write((byte)absentCharacters.Count);
+                foreach (var character in absentCharacters)
+                {
+                    WriteCurrentCharacter(bw, character);
+                }
+            }
+
+            var deadCharacters = _characters.Where((x) => x.IsDead).ToList();
+            if (deadCharacters.Count > 0)
+            {
+                bw.Write((byte)0x06);
+                bw.Write((byte)deadCharacters.Count);
+                foreach (var character in deadCharacters)
+                {
+                    WriteCurrentCharacter(bw, character);
+                }
+            }
+
+            // End character block
+            bw.Write((byte)0xFF);
         }
 
         private void WriteCurrentCharacter(BinaryWriter bw, Model.Character character)
         {
             byte[] chunk;
-
-            bw.BaseStream.Seek(character.BinaryPosition, SeekOrigin.Begin);
 
             // TODO
             bw.BaseStream.Seek(1, SeekOrigin.Current);
@@ -689,15 +963,15 @@ namespace FEFTwiddler.Model
 
             // Inventory
             bw.BaseStream.Seek(1, SeekOrigin.Current);
-            bw.Write(character.Item_1.Raw());
+            bw.Write(character.Item_1.Raw);
             bw.BaseStream.Seek(1, SeekOrigin.Current);
-            bw.Write(character.Item_2.Raw());
+            bw.Write(character.Item_2.Raw);
             bw.BaseStream.Seek(1, SeekOrigin.Current);
-            bw.Write(character.Item_3.Raw());
+            bw.Write(character.Item_3.Raw);
             bw.BaseStream.Seek(1, SeekOrigin.Current);
-            bw.Write(character.Item_4.Raw());
+            bw.Write(character.Item_4.Raw);
             bw.BaseStream.Seek(1, SeekOrigin.Current);
-            bw.Write(character.Item_5.Raw());
+            bw.Write(character.Item_5.Raw);
 
             // Supports
             int supportCount = bw.BaseStream.ReadByte();
@@ -779,6 +1053,38 @@ namespace FEFTwiddler.Model
 
             // TODO
             bw.BaseStream.Seek(endBlockSize, SeekOrigin.Current);
+        }
+
+        #endregion
+
+        #region Weapon Name IO
+
+        public void ReadWeaponNameData(BinaryReader br)
+        {
+            // IFER
+            br.ReadBytes(0x04);
+        }
+
+        public void WriteWeaponNameData(BinaryWriter bw)
+        {
+            // IFER
+            bw.BaseStream.Seek(0x04, SeekOrigin.Current);
+        }
+
+        #endregion
+
+        #region Convoy IO
+
+        public void ReadConvoyData(BinaryReader br)
+        {
+            // NART
+            br.ReadBytes(0x04);
+        }
+
+        public void WriteConvoyData(BinaryWriter bw)
+        {
+            // NART
+            bw.BaseStream.Seek(0x04, SeekOrigin.Current);
         }
 
         #endregion
