@@ -60,11 +60,15 @@ namespace FEFTwiddler.Data
         /// </summary>
         protected void UpdateXmlStructure()
         {
-            var rows = _data.Elements("skill");
+            var rows = _data.Elements("character");
             for (var i = 0; i < rows.Count(); i++)
             {
                 var row = rows.ElementAt(i);
 
+                var flags = XElement.Parse(@"<flags canUseStones=""false""/>");
+                row.Add(flags);
+
+                // skill flags
                 //if (i <= 112)
                 //{
                 //    row.SetAttributeValue("enemyOnly", "false");
@@ -87,25 +91,20 @@ namespace FEFTwiddler.Data
                 //    row.SetAttributeValue("unlearnable", "false");
                 //}
 
+                // learned skill info
+                //var lsi = row.Elements("learnedSkillInfo").First();
+                //var byteOffset = i / 8;
+                ////var bitMask = Math.Pow(2, (7 - (i % 8)));
+                //var bitMask = Math.Pow(2, (i % 8));
 
+                //if (byteOffset > 19)
+                //{
+                //    byteOffset = 0;
+                //    bitMask = 0;
+                //}
 
-
-
-
-
-                var lsi = row.Elements("learnedSkillInfo").First();
-                var byteOffset = i / 8;
-                //var bitMask = Math.Pow(2, (7 - (i % 8)));
-                var bitMask = Math.Pow(2, (i % 8));
-
-                if (byteOffset > 19)
-                {
-                    byteOffset = 0;
-                    bitMask = 0;
-                }
-
-                lsi.SetAttributeValue("byteOffset", byteOffset);
-                lsi.SetAttributeValue("bitMask", bitMask);
+                //lsi.SetAttributeValue("byteOffset", byteOffset);
+                //lsi.SetAttributeValue("bitMask", bitMask);
             }
             var breakpoint = true;
         }

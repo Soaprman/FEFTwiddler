@@ -31,10 +31,6 @@ namespace FEFTwiddler.GUI.ChapterData
             numGold.Value = _chapterSave.Gold;
 
             numDragonVeinPoints.Value = _chapterSave.DragonVeinPoint / 100;
-
-            // TODO: Add these after fixing ChapterSave
-            //numBattlePoints.Value = _chapterSave.BattlePoints;
-            //numVisitPoints.Value = _chapterSave.VisitPoints;
         }
 
         private void btnMaxGold_Click(object sender, EventArgs e)
@@ -47,16 +43,6 @@ namespace FEFTwiddler.GUI.ChapterData
             numDragonVeinPoints.Value = 99;
         }
 
-        private void btn9999BattlePoints_Click(object sender, EventArgs e)
-        {
-            numBattlePoints.Value = 9999;
-        }
-
-        private void btn9999VisitPoints_Click(object sender, EventArgs e)
-        {
-            numVisitPoints.Value = 9999;
-        }
-
         private void numGold_ValueChanged(object sender, EventArgs e)
         {
             _chapterSave.Gold = (uint)(numGold.Value);
@@ -65,16 +51,6 @@ namespace FEFTwiddler.GUI.ChapterData
         private void numDragonVeinPoints_ValueChanged(object sender, EventArgs e)
         {
             _chapterSave.DragonVeinPoint = (ushort)(numDragonVeinPoints.Value * 100);
-        }
-
-        private void numBattlePoints_ValueChanged(object sender, EventArgs e)
-        {
-            _chapterSave.BattlePoints = (uint)numBattlePoints.Value;
-        }
-
-        private void numVisitPoints_ValueChanged(object sender, EventArgs e)
-        {
-            _chapterSave.VisitPoints = (uint)numVisitPoints.Value;
         }
     }
 }

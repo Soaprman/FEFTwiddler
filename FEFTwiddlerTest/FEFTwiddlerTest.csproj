@@ -72,6 +72,7 @@
     <None Include="Resources\TestSaves\Chapter\Decompressed\9Hopper_Chapter1_dec" />
     <None Include="Resources\TestSaves\Chapter\Decompressed\cokacommando_Chapter0_dec" />
     <None Include="Resources\TestSaves\Chapter\Decompressed\EldinTokuro_Chapter0_dec" />
+    <None Include="Resources\TestSaves\Chapter\Decompressed\Soap_000_Chapter0_dec" />
     <None Include="Resources\TestSaves\Chapter\Decompressed\Soap_027_Chapter0_dec" />
     <None Include="Resources\TestSaves\Chapter\Decompressed\Soap_027_Chapter1_dec" />
     <None Include="Resources\TestSaves\Chapter\Decompressed\Soap_027_Chapter2_dec" />

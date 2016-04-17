@@ -41,7 +41,17 @@ namespace FEFTwiddler.GUI.UnitViewer
             numBow.Value = Model.Character.FixWeaponExperience(_character.WeaponExperience_Bow);
             numTome.Value = Model.Character.FixWeaponExperience(_character.WeaponExperience_Tome);
             numStaff.Value = Model.Character.FixWeaponExperience(_character.WeaponExperience_Staff);
-            numStone.Value = Model.Character.FixWeaponExperience(_character.WeaponExperience_Stone);
+
+            if (Data.Database.Characters.GetByID(_character.CharacterID).CanUseStones)
+            {
+                numStone.Value = Model.Character.FixWeaponExperience(_character.WeaponExperience_Stone);
+                numStone.Enabled = true;
+            }
+            else
+            {
+                numStone.Value = Model.Character.MinWeaponExperience;
+                numStone.Enabled = false;
+            }
         }
 
         private void numSword_ValueChanged(object sender, EventArgs e)
