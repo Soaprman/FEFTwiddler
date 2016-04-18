@@ -727,6 +727,34 @@ namespace FEFTwiddler.Model
             }
         }
 
+        public Enums.Stat Boon
+        {
+            get
+            {
+                try { VerifyEndBlockSizeIfCorrin(); } catch (MissingFieldException) { return Enums.Stat.None; }
+                return (Enums.Stat)_rawEndBlock[0x1A];
+            }
+            set
+            {
+                VerifyEndBlockSizeIfCorrin();
+                _rawEndBlock[0x1A] = (byte)value;
+            }
+        }
+
+        public Enums.Stat Bane
+        {
+            get
+            {
+                try { VerifyEndBlockSizeIfCorrin(); } catch (MissingFieldException) { return Enums.Stat.None; }
+                return (Enums.Stat)_rawEndBlock[0x1B];
+            }
+            set
+            {
+                VerifyEndBlockSizeIfCorrin();
+                _rawEndBlock[0x1B] = (byte)value;
+            }
+        }
+
         private void VerifyEndBlockSizeIfCorrin()
         {
             if (_rawEndBlock.Length != GetRawEndBlockSizeByType(0x04)) throw new MissingFieldException("Field does not exist in this character's end block");
@@ -736,7 +764,91 @@ namespace FEFTwiddler.Model
 
         #region End Block Properties (Child)
 
-        // It's all unknown for now. Hooray!
+        public Enums.Character FatherID
+        {
+            get
+            {
+                try { VerifyEndBlockSizeIfChild(); } catch (MissingFieldException) { return Enums.Character.None; }
+                return (Enums.Character)((_rawEndBlock[0x4] << 8) | _rawEndBlock[0x3]);
+            }
+            set
+            {
+                VerifyEndBlockSizeIfChild();
+                _rawEndBlock[0x3] = (byte)((ushort)value & 0xFF);
+                _rawEndBlock[0x4] = (byte)(((ushort)value >> 8) & 0xFF);
+            }
+        }
+
+        public Enums.Stat FatherBoon
+        {
+            get
+            {
+                try { VerifyEndBlockSizeIfChild(); } catch (MissingFieldException) { return Enums.Stat.None; }
+                return (Enums.Stat)_rawEndBlock[0x5];
+            }
+            set
+            {
+                VerifyEndBlockSizeIfChild();
+                _rawEndBlock[0x5] = (byte)value;
+            }
+        }
+
+        public Enums.Stat FatherBane
+        {
+            get
+            {
+                try { VerifyEndBlockSizeIfChild(); } catch (MissingFieldException) { return Enums.Stat.None; }
+                return (Enums.Stat)_rawEndBlock[0x6];
+            }
+            set
+            {
+                VerifyEndBlockSizeIfChild();
+                _rawEndBlock[0x6] = (byte)value;
+            }
+        }
+
+        public Enums.Character MotherID
+        {
+            get
+            {
+                try { VerifyEndBlockSizeIfChild(); } catch (MissingFieldException) { return Enums.Character.None; }
+                return (Enums.Character)((_rawEndBlock[0x12] << 8) | _rawEndBlock[0x11]);
+            }
+            set
+            {
+                VerifyEndBlockSizeIfChild();
+                _rawEndBlock[0x11] = (byte)((ushort)value & 0xFF);
+                _rawEndBlock[0x12] = (byte)(((ushort)value >> 8) & 0xFF);
+            }
+        }
+
+        public Enums.Stat MotherBoon
+        {
+            get
+            {
+                try { VerifyEndBlockSizeIfChild(); } catch (MissingFieldException) { return Enums.Stat.None; }
+                return (Enums.Stat)_rawEndBlock[0x13];
+            }
+            set
+            {
+                VerifyEndBlockSizeIfChild();
+                _rawEndBlock[0x13] = (byte)value;
+            }
+        }
+
+        public Enums.Stat MotherBane
+        {
+            get
+            {
+                try { VerifyEndBlockSizeIfChild(); } catch (MissingFieldException) { return Enums.Stat.None; }
+                return (Enums.Stat)_rawEndBlock[0x14];
+            }
+            set
+            {
+                VerifyEndBlockSizeIfChild();
+                _rawEndBlock[0x14] = (byte)value;
+            }
+        }
 
         private void VerifyEndBlockSizeIfChild()
         {

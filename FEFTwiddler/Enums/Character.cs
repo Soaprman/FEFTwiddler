@@ -2,6 +2,7 @@
 {
     public enum Character : ushort
     {
+        None = 0x00,
         Corrin_M = 0x01,
         Corrin_F = 0x02,
         Gunter = 0x03,

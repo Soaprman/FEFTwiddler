@@ -24,5 +24,7 @@
         public sbyte Modifier_Res { get; set; }
 
         public bool CanUseStones { get; set; }
+        public bool IsCorrin { get; set; }
+        public bool IsChild { get; set; }
     }
 }

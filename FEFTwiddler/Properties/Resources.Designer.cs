@@ -73,7 +73,7 @@ namespace FEFTwiddler.Properties {
         ///  &lt;/building&gt;
         ///  &lt;building id=&quot;3&quot; name=&quot;DawnArmory_3&quot;&gt;
         ///    &lt;text lang=&quot;English&quot; displayName=&quot;Dawn Armory 3&quot; /&gt;
-        ///    &lt;text lang=&quot;Japanese&quot; displayName [rest of string was truncated]&quot;;.
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;白夜武器屋３&quot; /&gt; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Buildings {
             get {
@@ -89,11 +89,10 @@ namespace FEFTwiddler.Properties {
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;無し&quot; /&gt;
         ///    &lt;baseStats hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; res=&quot;0&quot; /&gt;
         ///    &lt;modifier hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; res=&quot;0&quot; /&gt;
+        ///    &lt;flags canUseStones=&quot;false&quot; isCorrin=&quot;false&quot; isChild=&quot;false&quot; /&gt;
         ///  &lt;/character&gt;
         ///  &lt;character id=&quot;1&quot; name=&quot;Corrin_M&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Corrin (M)&quot; /&gt;
-        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;カムイ男&quot; /&gt;
-        ///    &lt;baseStats hp=&quot;2&quot; str [rest of string was truncated]&quot;;.
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Corrin (M) [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Characters {
             get {
@@ -158,6 +157,26 @@ namespace FEFTwiddler.Properties {
         internal static string Data_Skills {
             get {
                 return ResourceManager.GetString("Data_Skills", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///&lt;root&gt;
+        ///  &lt;stat id=&quot;0&quot; name=&quot;None&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;None&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;無し&quot; /&gt;
+        ///    &lt;boonStats hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; res=&quot;0&quot; /&gt;
+        ///    &lt;baneStats hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; res=&quot;0&quot; /&gt;
+        ///  &lt;/stat&gt;
+        ///  &lt;stat id=&quot;1&quot; name=&quot;HP&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;HP&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;HP&quot; /&gt;
+        ///    &lt;boonStats hp=&quot;0&quot; str=&quot;1&quot; mag=&quot;1&quot; skl=&quot;0 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Data_Stats {
+            get {
+                return ResourceManager.GetString("Data_Stats", resourceCulture);
             }
         }
         

@@ -5,7 +5,7 @@ using FEFTwiddler.Extensions;
 
 namespace FEFTwiddler.Data
 {
-    class BuildingDatabase : BaseDatabase
+    public class BuildingDatabase : BaseDatabase
     {
         public BuildingDatabase(Enums.Language language) : base(language)
         {

@@ -44,7 +44,9 @@ namespace FEFTwiddler.Data
                 Modifier_Lck = modifier.GetAttribute<sbyte>("lck"),
                 Modifier_Def = modifier.GetAttribute<sbyte>("def"),
                 Modifier_Res = modifier.GetAttribute<sbyte>("res"),
-                CanUseStones = flags.GetAttribute<bool>("canUseStones")
+                CanUseStones = flags.GetAttribute<bool>("canUseStones"),
+                IsCorrin = flags.GetAttribute<bool>("isCorrin"),
+                IsChild = flags.GetAttribute<bool>("isChild")
             };
         }
     }
