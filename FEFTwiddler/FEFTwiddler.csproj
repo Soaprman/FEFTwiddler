@@ -98,6 +98,15 @@
     <Compile Include="GUI\ChapterData\Materials.Designer.cs">
       <DependentUpon>Materials.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Controls\HexBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Controls\HexBox.Designer.cs">
+      <DependentUpon>HexBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Controls\HexBoxMaskedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="GUI\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +154,12 @@
     </Compile>
     <Compile Include="GUI\UnitViewer\HairColor.Designer.cs">
       <DependentUpon>HairColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\HexEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\HexEditor.Designer.cs">
+      <DependentUpon>HexEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\UnitViewer\Inventory.cs">
       <SubType>UserControl</SubType>
@@ -204,6 +219,9 @@
     <EmbeddedResource Include="GUI\ChapterData\Materials.resx">
       <DependentUpon>Materials.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Controls\HexBox.resx">
+      <DependentUpon>HexBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\MainForm.af.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\HairColor.resx">
       <DependentUpon>HairColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UnitViewer\HexEditor.resx">
+      <DependentUpon>HexEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\Inventory.resx">
       <DependentUpon>Inventory.cs</DependentUpon>

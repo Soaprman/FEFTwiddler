@@ -176,6 +176,14 @@ namespace FEFTwiddler.GUI
             LoadCharacter(_selectedCharacter);
         }
 
+        private void btnOpenHexEditor_Click(object sender, EventArgs e)
+        {
+            var hex = new GUI.UnitViewer.HexEditor(_selectedCharacter);
+            hex.ShowDialog();
+            LoadCharacter(_selectedCharacter);
+        }
+
         #endregion
+
     }
 }

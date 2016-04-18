@@ -14,12 +14,10 @@ namespace FEFTwiddlerTest.Model
         {
             byte expected; byte actual;
 
-            var character = new Character()
-            {
-                CharacterID = FEFTwiddler.Enums.Character.Felicia,
-                ClassID = FEFTwiddler.Enums.Class.Maid,
-                InternalLevel = 0
-            };
+            var character = Character.Create();
+            character.CharacterID = FEFTwiddler.Enums.Character.Felicia;
+            character.ClassID = FEFTwiddler.Enums.Class.Maid;
+            character.InternalLevel = 0;
 
             character.EternalSealsUsed = 0;
 
@@ -39,12 +37,10 @@ namespace FEFTwiddlerTest.Model
         {
             byte expected; byte actual;
 
-            var character = new Character()
-            {
-                CharacterID = FEFTwiddler.Enums.Character.Flora,
-                ClassID = FEFTwiddler.Enums.Class.Maid,
-                InternalLevel = 20
-            };
+            var character = Character.Create();
+            character.CharacterID = FEFTwiddler.Enums.Character.Flora;
+            character.ClassID = FEFTwiddler.Enums.Class.Maid;
+            character.InternalLevel = 20;
 
             character.EternalSealsUsed = 0;
 
@@ -64,12 +60,10 @@ namespace FEFTwiddlerTest.Model
         {
             byte expected; byte actual;
 
-            var character = new Character()
-            {
-                CharacterID = FEFTwiddler.Enums.Character.Elise,
-                ClassID = FEFTwiddler.Enums.Class.Troubadour_F,
-                InternalLevel = 0
-            };
+            var character = Character.Create();
+            character.CharacterID = FEFTwiddler.Enums.Character.Elise;
+            character.ClassID = FEFTwiddler.Enums.Class.Troubadour_F;
+            character.InternalLevel = 0;
 
             character.EternalSealsUsed = 0;
 
@@ -89,12 +83,10 @@ namespace FEFTwiddlerTest.Model
         {
             byte expected; byte actual;
 
-            var character = new Character()
-            {
-                CharacterID = FEFTwiddler.Enums.Character.Felicia,
-                ClassID = FEFTwiddler.Enums.Class.Maid,
-                InternalLevel = 0
-            };
+            var character = Character.Create();
+            character.CharacterID = FEFTwiddler.Enums.Character.Felicia;
+            character.ClassID = FEFTwiddler.Enums.Class.Maid;
+            character.InternalLevel = 0;
 
             character.Level = 1;
 
@@ -132,12 +124,10 @@ namespace FEFTwiddlerTest.Model
         {
             byte expected; byte actual;
 
-            var character = new Character()
-            {
-                CharacterID = FEFTwiddler.Enums.Character.Flora,
-                ClassID = FEFTwiddler.Enums.Class.Maid,
-                InternalLevel = 20
-            };
+            var character = Character.Create();
+            character.CharacterID = FEFTwiddler.Enums.Character.Flora;
+            character.ClassID = FEFTwiddler.Enums.Class.Maid;
+            character.InternalLevel = 20;
 
             character.Level = 1;
 
@@ -175,12 +165,10 @@ namespace FEFTwiddlerTest.Model
         {
             byte expected; byte actual;
 
-            var character = new Character()
-            {
-                CharacterID = FEFTwiddler.Enums.Character.Elise,
-                ClassID = FEFTwiddler.Enums.Class.Troubadour_F,
-                InternalLevel = 0
-            };
+            var character = Character.Create();
+            character.CharacterID = FEFTwiddler.Enums.Character.Elise;
+            character.ClassID = FEFTwiddler.Enums.Class.Troubadour_F;
+            character.InternalLevel = 0;
 
             character.Level = 1;
 
