@@ -56,7 +56,7 @@ namespace FEFTwiddler.GUI.Controls
                 lbl.Height = (int)(maskedBox.Height * 1.4);
                 lbl.Font = new Font("Courier New", 9.75f);
                 lbl.ForeColor = Color.Blue;
-                lbl.Text = string.Format("{0:X2}", row);
+                lbl.Text = string.Format("{0:X2}", row * BytesPerRow);
                 pnlRowLabels.Controls.Add(lbl);
                 pnlRowLabels.Height = 2 + (int)(pnlRowLabels.Controls.Count * (lbl.Height * 1.4));
 
