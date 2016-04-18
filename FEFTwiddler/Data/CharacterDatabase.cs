@@ -28,23 +28,31 @@ namespace FEFTwiddler.Data
             {
                 CharacterID = (Enums.Character)row.GetAttribute<ushort>("id"),
                 DisplayName = displayName,
-                Base_HP = baseStats.GetAttribute<sbyte>("hp"),
-                Base_Str = baseStats.GetAttribute<sbyte>("str"),
-                Base_Mag = baseStats.GetAttribute<sbyte>("mag"),
-                Base_Skl = baseStats.GetAttribute<sbyte>("skl"),
-                Base_Spd = baseStats.GetAttribute<sbyte>("spd"),
-                Base_Lck = baseStats.GetAttribute<sbyte>("lck"),
-                Base_Def = baseStats.GetAttribute<sbyte>("def"),
-                Base_Res = baseStats.GetAttribute<sbyte>("res"),
-                Modifier_HP = modifier.GetAttribute<sbyte>("hp"),
-                Modifier_Str = modifier.GetAttribute<sbyte>("str"),
-                Modifier_Mag = modifier.GetAttribute<sbyte>("mag"),
-                Modifier_Skl = modifier.GetAttribute<sbyte>("skl"),
-                Modifier_Spd = modifier.GetAttribute<sbyte>("spd"),
-                Modifier_Lck = modifier.GetAttribute<sbyte>("lck"),
-                Modifier_Def = modifier.GetAttribute<sbyte>("def"),
-                Modifier_Res = modifier.GetAttribute<sbyte>("res"),
-                CanUseStones = flags.GetAttribute<bool>("canUseStones")
+                BaseStats = new Model.Stat
+                {
+                    HP = baseStats.GetAttribute<sbyte>("hp"),
+                    Str = baseStats.GetAttribute<sbyte>("str"),
+                    Mag = baseStats.GetAttribute<sbyte>("mag"),
+                    Skl = baseStats.GetAttribute<sbyte>("skl"),
+                    Spd = baseStats.GetAttribute<sbyte>("spd"),
+                    Lck = baseStats.GetAttribute<sbyte>("lck"),
+                    Def = baseStats.GetAttribute<sbyte>("def"),
+                    Res = baseStats.GetAttribute<sbyte>("res")
+                },
+                Modifiers = new Model.Stat
+                {
+                    HP = modifier.GetAttribute<sbyte>("hp"),
+                    Str = modifier.GetAttribute<sbyte>("str"),
+                    Mag = modifier.GetAttribute<sbyte>("mag"),
+                    Skl = modifier.GetAttribute<sbyte>("skl"),
+                    Spd = modifier.GetAttribute<sbyte>("spd"),
+                    Lck = modifier.GetAttribute<sbyte>("lck"),
+                    Def = modifier.GetAttribute<sbyte>("def"),
+                    Res = modifier.GetAttribute<sbyte>("res")
+                },
+                CanUseStones = flags.GetAttribute<bool>("canUseStones"),
+                IsCorrin = flags.GetAttribute<bool>("isCorrin"),
+                IsChild = flags.GetAttribute<bool>("isChild")
             };
         }
     }

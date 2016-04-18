@@ -44,22 +44,28 @@ namespace FEFTwiddler.Data
             {
                 ClassID = (Enums.Class)row.GetAttribute<byte>("id"),
                 DisplayName = displayName,
-                Base_HP = baseStats.GetAttribute<byte>("hp"),
-                Base_Str = baseStats.GetAttribute<byte>("str"),
-                Base_Mag = baseStats.GetAttribute<byte>("mag"),
-                Base_Skl = baseStats.GetAttribute<byte>("skl"),
-                Base_Spd = baseStats.GetAttribute<byte>("spd"),
-                Base_Lck = baseStats.GetAttribute<byte>("lck"),
-                Base_Def = baseStats.GetAttribute<byte>("def"),
-                Base_Res = baseStats.GetAttribute<byte>("res"),
-                Max_HP = maxStats.GetAttribute<byte>("hp"),
-                Max_Str = maxStats.GetAttribute<byte>("str"),
-                Max_Mag = maxStats.GetAttribute<byte>("mag"),
-                Max_Skl = maxStats.GetAttribute<byte>("skl"),
-                Max_Spd = maxStats.GetAttribute<byte>("spd"),
-                Max_Lck = maxStats.GetAttribute<byte>("lck"),
-                Max_Def = maxStats.GetAttribute<byte>("def"),
-                Max_Res = maxStats.GetAttribute<byte>("res")
+                BaseStats = new Model.Stat()
+                {
+                    HP = baseStats.GetAttribute<sbyte>("hp"),
+                    Str = baseStats.GetAttribute<sbyte>("str"),
+                    Mag = baseStats.GetAttribute<sbyte>("mag"),
+                    Skl = baseStats.GetAttribute<sbyte>("skl"),
+                    Spd = baseStats.GetAttribute<sbyte>("spd"),
+                    Lck = baseStats.GetAttribute<sbyte>("lck"),
+                    Def = baseStats.GetAttribute<sbyte>("def"),
+                    Res = baseStats.GetAttribute<sbyte>("res")
+                },
+                MaximumStats = new Model.Stat()
+                {
+                    HP = maxStats.GetAttribute<sbyte>("hp"),
+                    Str = maxStats.GetAttribute<sbyte>("str"),
+                    Mag = maxStats.GetAttribute<sbyte>("mag"),
+                    Skl = maxStats.GetAttribute<sbyte>("skl"),
+                    Spd = maxStats.GetAttribute<sbyte>("spd"),
+                    Lck = maxStats.GetAttribute<sbyte>("lck"),
+                    Def = maxStats.GetAttribute<sbyte>("def"),
+                    Res = maxStats.GetAttribute<sbyte>("res")
+                }
             };
         }
     }

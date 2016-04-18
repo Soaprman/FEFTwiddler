@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <stat id="0" name="None">
+    <text lang="English" displayName="None" />
+    <text lang="Japanese" displayName="無し" />
+    <boonStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <baneStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </stat>
+  <stat id="1" name="HP">
+    <text lang="English" displayName="HP" />
+    <text lang="Japanese" displayName="HP" />
+    <boonStats hp="0" str="1" mag="1" skl="0" spd="0" lck="2" def="2" res="2" />
+    <baneStats hp="0" str="-1" mag="-1" skl="0" spd="0" lck="-1" def="-1" res="-1" />
+  </stat>
+  <stat id="2" name="Str">
+    <text lang="English" displayName="Strength" />
+    <text lang="Japanese" displayName="力" />
+    <boonStats hp="0" str="4" mag="0" skl="2" spd="0" lck="0" def="2" res="0" />
+    <baneStats hp="0" str="-3" mag="0" skl="-1" spd="0" lck="0" def="-1" res="0" />
+  </stat>
+  <stat id="3" name="Mag">
+    <text lang="English" displayName="Magic" />
+    <text lang="Japanese" displayName="魔力" />
+    <boonStats hp="0" str="0" mag="4" skl="0" spd="2" lck="0" def="0" res="2" />
+    <baneStats hp="0" str="0" mag="-3" skl="0" spd="-1" lck="0" def="0" res="-1" />
+  </stat>
+  <stat id="4" name="Skl">
+    <text lang="English" displayName="Skill" />
+    <text lang="Japanese" displayName="技" />
+    <boonStats hp="0" str="2" mag="0" skl="4" spd="0" lck="0" def="2" res="0" />
+    <baneStats hp="0" str="-1" mag="0" skl="-3" spd="0" lck="0" def="-1" res="0" />
+  </stat>
+  <stat id="5" name="Spd">
+    <text lang="English" displayName="Speed" />
+    <text lang="Japanese" displayName="速さ" />
+    <boonStats hp="0" str="0" mag="0" skl="2" spd="4" lck="2" def="0" res="0" />
+    <baneStats hp="0" str="0" mag="0" skl="-1" spd="-3" lck="-1" def="0" res="0" />
+  </stat>
+  <stat id="6" name="Lck">
+    <text lang="English" displayName="Luck" />
+    <text lang="Japanese" displayName="幸運" />
+    <boonStats hp="0" str="2" mag="2" skl="0" spd="0" lck="4" def="0" res="0" />
+    <baneStats hp="0" str="-1" mag="-1" skl="0" spd="0" lck="-3" def="0" res="0" />
+  </stat>
+  <stat id="7" name="Def">
+    <text lang="English" displayName="Defense" />
+    <text lang="Japanese" displayName="守備" />
+    <boonStats hp="0" str="0" mag="0" skl="0" spd="0" lck="2" def="4" res="2" />
+    <baneStats hp="0" str="0" mag="0" skl="0" spd="0" lck="-1" def="-3" res="-1" />
+  </stat>
+  <stat id="8" name="Res">
+    <text lang="English" displayName="Resistance" />
+    <text lang="Japanese" displayName="魔防" />
+    <boonStats hp="0" str="0" mag="2" skl="0" spd="2" lck="0" def="0" res="4" />
+    <baneStats hp="0" str="0" mag="-1" skl="0" spd="-1" lck="0" def="0" res="-3" />
+  </stat>
+  <!--
+  Template:
+  <stat id="0" name="InternalName">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+    <boonStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <baneStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </stat>
+  -->
+</root>

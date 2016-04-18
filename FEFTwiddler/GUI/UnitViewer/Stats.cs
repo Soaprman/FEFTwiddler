@@ -46,55 +46,62 @@ namespace FEFTwiddler.GUI.UnitViewer
             {
                 var characterData = Data.Database.Characters.GetByID(character.CharacterID);
                 var classData = Data.Database.Classes.GetByID(character.ClassID);
-                byte[] trueStats = new byte[] {
-                    (byte)(characterData.Base_HP  + classData.Base_HP  + character.Stat_HP_Gained),
-                    (byte)(characterData.Base_Str + classData.Base_Str + character.Stat_Str_Gained),
-                    (byte)(characterData.Base_Mag + classData.Base_Mag + character.Stat_Mag_Gained),
-                    (byte)(characterData.Base_Skl + classData.Base_Skl + character.Stat_Skl_Gained),
-                    (byte)(characterData.Base_Spd + classData.Base_Spd + character.Stat_Spd_Gained),
-                    (byte)(characterData.Base_Lck + classData.Base_Lck + character.Stat_Lck_Gained),
-                    (byte)(characterData.Base_Def + classData.Base_Def + character.Stat_Def_Gained),
-                    (byte)(characterData.Base_Res + classData.Base_Res + character.Stat_Res_Gained)
-                };
-                byte[] caps = new byte[] {
-                    (byte)(classData.Max_HP  + characterData.Modifier_HP  + character.Stat_HP_StatueBonus),
-                    (byte)(classData.Max_Str + characterData.Modifier_Str + character.Stat_Str_StatueBonus),
-                    (byte)(classData.Max_Mag + characterData.Modifier_Mag + character.Stat_Mag_StatueBonus),
-                    (byte)(classData.Max_Skl + characterData.Modifier_Skl + character.Stat_Skl_StatueBonus),
-                    (byte)(classData.Max_Spd + characterData.Modifier_Spd + character.Stat_Spd_StatueBonus),
-                    (byte)(classData.Max_Lck + characterData.Modifier_Lck + character.Stat_Lck_StatueBonus),
-                    (byte)(classData.Max_Def + characterData.Modifier_Def + character.Stat_Def_StatueBonus),
-                    (byte)(classData.Max_Res + characterData.Modifier_Res + character.Stat_Res_StatueBonus)
-                };
-                for (int i = 0; i < 8; i++)
+                Model.Stat trueStats = characterData.BaseStats + classData.BaseStats + character.GainedStats;
+                Model.Stat caps;
+                if (characterData.IsCorrin)
                 {
-                    if (trueStats[i] < caps[i])
-                        str += trueStats[i].ToString() + '-';
-                    else
-                        str += caps[i].ToString() + '-';
+                    caps = classData.MaximumStats +
+                        Data.Database.Stats.GetByID(character.Boon).BoonStats +
+                        Data.Database.Stats.GetByID(character.Bane).BaneStats +
+                        character.StatueBonusStats;
                 }
+                else if (characterData.IsChild)
+                {
+                    caps = classData.MaximumStats +
+                        Data.Database.Characters.GetByID(character.FatherID).Modifiers +
+                        Data.Database.Stats.GetByID(character.FatherBoon).BoonStats +
+                        Data.Database.Stats.GetByID(character.FatherBane).BaneStats +
+                        Data.Database.Characters.GetByID(character.MotherID).Modifiers +
+                        Data.Database.Stats.GetByID(character.MotherBoon).BoonStats +
+                        Data.Database.Stats.GetByID(character.MotherBane).BaneStats +
+                        character.StatueBonusStats;
+                }
+                else
+                {
+                    caps = classData.MaximumStats + characterData.Modifiers + character.StatueBonusStats;
+                }
+                if (trueStats.HP < caps.HP) str += trueStats.HP.ToString() + "-"; else str += caps.HP.ToString() + "-";
+                if (trueStats.Str < caps.Str) str += trueStats.Str.ToString() + "-"; else str += caps.Str.ToString() + "-";
+                if (trueStats.Mag < caps.Mag) str += trueStats.Mag.ToString() + "-"; else str += caps.Mag.ToString() + "-";
+                if (trueStats.Skl < caps.Skl) str += trueStats.Skl.ToString() + "-"; else str += caps.Skl.ToString() + "-";
+                if (trueStats.Spd < caps.Spd) str += trueStats.Spd.ToString() + "-"; else str += caps.Spd.ToString() + "-";
+                if (trueStats.Lck < caps.Lck) str += trueStats.Lck.ToString() + "-"; else str += caps.Lck.ToString() + "-";
+                if (trueStats.Def < caps.Def) str += trueStats.Def.ToString() + "-"; else str += caps.Def.ToString() + "-";
+                if (trueStats.Res < caps.Res) str += trueStats.Res.ToString(); else str += caps.Res.ToString();
+                this.Enabled = true;
             }
             else
             {
                 str += string.Format("{0}-{1}-{2}-{3}-{4}-{5}-{6}-{7}", 
-                    character.Stat_HP_Gained,
-                    character.Stat_Str_Gained,
-                    character.Stat_Mag_Gained,
-                    character.Stat_Skl_Gained,
-                    character.Stat_Spd_Gained,
-                    character.Stat_Lck_Gained,
-                    character.Stat_Def_Gained,
-                    character.Stat_Res_Gained);
+                    character.GainedStats.HP,
+                    character.GainedStats.Str,
+                    character.GainedStats.Mag,
+                    character.GainedStats.Skl,
+                    character.GainedStats.Spd,
+                    character.GainedStats.Lck,
+                    character.GainedStats.Def,
+                    character.GainedStats.Res);
                 str += Environment.NewLine;
                 str += string.Format("{0}-{1}-{2}-{3}-{4}-{5}-{6}-{7}",
-                    character.Stat_HP_StatueBonus,
-                    character.Stat_Str_StatueBonus,
-                    character.Stat_Mag_StatueBonus,
-                    character.Stat_Skl_StatueBonus,
-                    character.Stat_Spd_StatueBonus,
-                    character.Stat_Lck_StatueBonus,
-                    character.Stat_Def_StatueBonus,
-                    character.Stat_Res_StatueBonus);
+                    character.StatueBonusStats.HP,
+                    character.StatueBonusStats.Str,
+                    character.StatueBonusStats.Mag,
+                    character.StatueBonusStats.Skl,
+                    character.StatueBonusStats.Spd,
+                    character.StatueBonusStats.Lck,
+                    character.StatueBonusStats.Def,
+                    character.StatueBonusStats.Res);
+                this.Enabled = false;
             }
 
             return str;
