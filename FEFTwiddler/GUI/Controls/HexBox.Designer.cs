@@ -46,6 +46,7 @@
             // 
             // pnlRows
             // 
+            this.pnlRows.BackColor = System.Drawing.SystemColors.Window;
             this.pnlRows.Location = new System.Drawing.Point(28, 19);
             this.pnlRows.Name = "pnlRows";
             this.pnlRows.Size = new System.Drawing.Size(384, 10);
@@ -53,7 +54,8 @@
             // 
             // pnlRowLabels
             // 
-            this.pnlRowLabels.Location = new System.Drawing.Point(1, 23);
+            this.pnlRowLabels.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.pnlRowLabels.Location = new System.Drawing.Point(1, 22);
             this.pnlRowLabels.Name = "pnlRowLabels";
             this.pnlRowLabels.Size = new System.Drawing.Size(25, 10);
             this.pnlRowLabels.TabIndex = 5;
@@ -62,6 +64,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.pnlRowLabels);
             this.Controls.Add(this.pnlRows);
