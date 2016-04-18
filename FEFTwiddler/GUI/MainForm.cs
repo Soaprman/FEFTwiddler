@@ -159,6 +159,10 @@ namespace FEFTwiddler.GUI
                 {
                     lblName.Text = character.CorrinName;
                 }
+                else if (Data.Database.Characters.GetByID(character.CharacterID).IsPrisoner)
+                {
+                    lblName.Text = Data.Database.Prisoners.GetByID(character.PrisonerID).DisplayName;
+                }
                 else
                 {
                     lblName.Text = Data.Database.Characters.GetByID(character.CharacterID).DisplayName;

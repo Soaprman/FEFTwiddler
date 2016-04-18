@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <prisoner id="0">
+    <text lang="English" displayName="None" />
+    <text lang="Japanese" displayName="無し" />
+  </prisoner>
+  <prisoner id="1">
+    <text lang="English" displayName="Akihiro" />
+    <text lang="Japanese" displayName="シモツキ" />
+  </prisoner>
+  <prisoner id="2">
+    <text lang="English" displayName="Daisuke" />
+    <text lang="Japanese" displayName="キクヅキ" />
+  </prisoner>
+  <prisoner id="3">
+    <text lang="English" displayName="Hajime" />
+    <text lang="Japanese" displayName="コトワリ" />
+  </prisoner>
+  <prisoner id="4">
+    <text lang="English" displayName="Hideaki" />
+    <text lang="Japanese" displayName="フチマシ" />
+  </prisoner>
+  <prisoner id="5">
+    <text lang="English" displayName="Kaede" />
+    <text lang="Japanese" displayName="ヨイヤミ" />
+  </prisoner>
+  <prisoner id="6">
+    <text lang="English" displayName="Kento" />
+    <text lang="Japanese" displayName="ツゴモリ" />
+  </prisoner>
+  <prisoner id="7">
+    <text lang="English" displayName="Kazuki" />
+    <text lang="Japanese" displayName="イニシエ" />
+  </prisoner>
+  <prisoner id="8">
+    <text lang="English" displayName="Masahiko" />
+    <text lang="Japanese" displayName="ウシトラ" />
+  </prisoner>
+  <prisoner id="9">
+    <text lang="English" displayName="Mitsuru" />
+    <text lang="Japanese" displayName="イヌワシ" />
+  </prisoner>
+  <prisoner id="10">
+    <text lang="English" displayName="Nobu" />
+    <text lang="Japanese" displayName="トヂメ" />
+  </prisoner>
+  <prisoner id="11">
+    <text lang="English" displayName="Saburo" />
+    <text lang="Japanese" displayName="セミマル" />
+  </prisoner>
+  <prisoner id="12">
+    <text lang="English" displayName="Yoichi" />
+    <text lang="Japanese" displayName="ミチノク" />
+  </prisoner>
+  <prisoner id="13">
+    <text lang="English" displayName="Kazunari" />
+    <text lang="Japanese" displayName="サムシロ" />
+  </prisoner>
+  <prisoner id="14">
+    <text lang="English" displayName="Rintaro" />
+    <text lang="Japanese" displayName="イカルガ" />
+  </prisoner>
+  <prisoner id="15">
+    <text lang="English" displayName="Kazuma" />
+    <text lang="Japanese" displayName="サザナミ" />
+  </prisoner>
+  <prisoner id="16">
+    <text lang="English" displayName="Hidetora" />
+    <text lang="Japanese" displayName="カイドウ" />
+  </prisoner>
+  <prisoner id="17">
+    <text lang="English" displayName="Yamato" />
+    <text lang="Japanese" displayName="イカヅチ" />
+  </prisoner>
+  <prisoner id="18">
+    <text lang="English" displayName="Takanori" />
+    <text lang="Japanese" displayName="インロウ" />
+  </prisoner>
+  <prisoner id="19">
+    <text lang="English" displayName="Tomihiko" />
+    <text lang="Japanese" displayName="ヤブサメ" />
+  </prisoner>
+  <prisoner id="20">
+    <text lang="English" displayName="Kenshi" />
+    <text lang="Japanese" displayName="カミカゼ" />
+  </prisoner>
+  <prisoner id="21">
+    <text lang="English" displayName="Jinpei" />
+    <text lang="Japanese" displayName="ハシダテ" />
+  </prisoner>
+  <prisoner id="22">
+    <text lang="English" displayName="Yohei" />
+    <text lang="Japanese" displayName="ササハラ" />
+  </prisoner>
+  <prisoner id="23">
+    <text lang="English" displayName="Ariyoshi" />
+    <text lang="Japanese" displayName="アジロギ" />
+  </prisoner>
+  <prisoner id="24">
+    <text lang="English" displayName="Mizuki" />
+    <text lang="Japanese" displayName="フナヒト" />
+  </prisoner>
+  <prisoner id="25">
+    <text lang="English" displayName="Ukyo" />
+    <text lang="Japanese" displayName="カササギ" />
+  </prisoner>
+  <prisoner id="26">
+    <text lang="English" displayName="Ren" />
+    <text lang="Japanese" displayName="サネカズラ" />
+  </prisoner>
+  <prisoner id="27">
+    <text lang="English" displayName="Hiroyuki" />
+    <text lang="Japanese" displayName="ナガツキ" />
+  </prisoner>
+  <prisoner id="28">
+    <text lang="English" displayName="Tamaki" />
+    <text lang="Japanese" displayName="アリアケ" />
+  </prisoner>
+  <prisoner id="29">
+    <text lang="English" displayName="Jin" />
+    <text lang="Japanese" displayName="シガラミ" />
+  </prisoner>
+  <prisoner id="30">
+    <text lang="English" displayName="Hiromi" />
+    <text lang="Japanese" displayName="ツリフネ" />
+  </prisoner>
+  <prisoner id="51">
+    <text lang="English" displayName="Gerald" />
+    <text lang="Japanese" displayName="エルザス" />
+  </prisoner>
+  <prisoner id="52">
+    <text lang="English" displayName="Hendrik" />
+    <text lang="Japanese" displayName="ティルビッツ" />
+  </prisoner>
+  <prisoner id="53">
+    <text lang="English" displayName="Bernd" />
+    <text lang="Japanese" displayName="ウェーゼル" />
+  </prisoner>
+  <prisoner id="54">
+    <text lang="English" displayName="Fritz" />
+    <text lang="Japanese" displayName="ブラント" />
+  </prisoner>
+  <prisoner id="55">
+    <text lang="English" displayName="Christof" />
+    <text lang="Japanese" displayName="ゴットハルト" />
+  </prisoner>
+  <prisoner id="56">
+    <text lang="English" displayName="Elmar" />
+    <text lang="Japanese" displayName="テオドリヒ" />
+  </prisoner>
+  <prisoner id="57">
+    <text lang="English" displayName="Virgil" />
+    <text lang="Japanese" displayName="ヴィルギル" />
+  </prisoner>
+  <prisoner id="58">
+    <text lang="English" displayName="Hubert" />
+    <text lang="Japanese" displayName="ヨルク" />
+  </prisoner>
+  <prisoner id="59">
+    <text lang="English" displayName="Konrad" />
+    <text lang="Japanese" displayName="グラウデンツ" />
+  </prisoner>
+  <prisoner id="60">
+    <text lang="English" displayName="Ludwig" />
+    <text lang="Japanese" displayName="ヴォルフ" />
+  </prisoner>
+  <prisoner id="61">
+    <text lang="English" displayName="Oskar" />
+    <text lang="Japanese" displayName="ザクセン" />
+  </prisoner>
+  <prisoner id="62">
+    <text lang="English" displayName="Reinhard" />
+    <text lang="Japanese" displayName="イルティス" />
+  </prisoner>
+  <prisoner id="63">
+    <text lang="English" displayName="Sven" />
+    <text lang="Japanese" displayName="ドラッヘ" />
+  </prisoner>
+  <prisoner id="64">
+    <text lang="English" displayName="Tobias" />
+    <text lang="Japanese" displayName="レオパルド" />
+  </prisoner>
+  <prisoner id="65">
+    <text lang="English" displayName="Wenzel" />
+    <text lang="Japanese" displayName="ブリッツ" />
+  </prisoner>
+  <prisoner id="66">
+    <text lang="English" displayName="Andreas" />
+    <text lang="Japanese" displayName="ゼンメル" />
+  </prisoner>
+  <prisoner id="67">
+    <text lang="English" displayName="Otto" />
+    <text lang="Japanese" displayName="クレメル" />
+  </prisoner>
+  <prisoner id="68">
+    <text lang="English" displayName="Helmut" />
+    <text lang="Japanese" displayName="フェルス" />
+  </prisoner>
+  <prisoner id="69">
+    <text lang="English" displayName="Simon" />
+    <text lang="Japanese" displayName="ジーモン" />
+  </prisoner>
+  <prisoner id="70">
+    <text lang="English" displayName="Manfred" />
+    <text lang="Japanese" displayName="エグモント" />
+  </prisoner>
+  <prisoner id="71">
+    <text lang="English" displayName="Wolfgang" />
+    <text lang="Japanese" displayName="グラーフ" />
+  </prisoner>
+  <prisoner id="72">
+    <text lang="English" displayName="Stefan" />
+    <text lang="Japanese" displayName="ルクス" />
+  </prisoner>
+  <prisoner id="73">
+    <text lang="English" displayName="Roderick" />
+    <text lang="Japanese" displayName="アルバトロス" />
+  </prisoner>
+  <prisoner id="74">
+    <text lang="English" displayName="Tancred" />
+    <text lang="Japanese" displayName="エルベ" />
+  </prisoner>
+  <prisoner id="75">
+    <text lang="English" displayName="Theobald" />
+    <text lang="Japanese" displayName="オーサ" />
+  </prisoner>
+  <prisoner id="76">
+    <text lang="English" displayName="Leonard" />
+    <text lang="Japanese" displayName="ザスニッツ" />
+  </prisoner>
+  <prisoner id="77">
+    <text lang="English" displayName="Liam" />
+    <text lang="Japanese" displayName="ゲパルト" />
+  </prisoner>
+  <prisoner id="78">
+    <text lang="English" displayName="Bertram" />
+    <text lang="Japanese" displayName="ツォーベル" />
+  </prisoner>
+  <prisoner id="79">
+    <text lang="English" displayName="Roland" />
+    <text lang="Japanese" displayName="ブレムゼ" />
+  </prisoner>
+  <prisoner id="80">
+    <text lang="English" displayName="Edsel" />
+    <text lang="Japanese" displayName="ヤグアル" />
+  </prisoner>
+  <prisoner id="101">
+    <text lang="English" displayName="Madoka" />
+    <text lang="Japanese" displayName="ウヅキ" />
+  </prisoner>
+  <prisoner id="102">
+    <text lang="English" displayName="Kanade" />
+    <text lang="Japanese" displayName="ハヅキ" />
+  </prisoner>
+  <prisoner id="103">
+    <text lang="English" displayName="Chiaki" />
+    <text lang="Japanese" displayName="シロタエ" />
+  </prisoner>
+  <prisoner id="104">
+    <text lang="English" displayName="Mikasa" />
+    <text lang="Japanese" displayName="ミカサ" />
+  </prisoner>
+  <prisoner id="105">
+    <text lang="English" displayName="Komachi" />
+    <text lang="Japanese" displayName="コマチ" />
+  </prisoner>
+  <prisoner id="106">
+    <text lang="English" displayName="Momiji" />
+    <text lang="Japanese" displayName="モミジ" />
+  </prisoner>
+  <prisoner id="107">
+    <text lang="English" displayName="Eriko" />
+    <text lang="Japanese" displayName="シロギク" />
+  </prisoner>
+  <prisoner id="108">
+    <text lang="English" displayName="Asuka" />
+    <text lang="Japanese" displayName="ハツセ" />
+  </prisoner>
+  <prisoner id="109">
+    <text lang="English" displayName="Koromo" />
+    <text lang="Japanese" displayName="コロモ" />
+  </prisoner>
+  <prisoner id="110">
+    <text lang="English" displayName="Akane" />
+    <text lang="Japanese" displayName="ミヨシノ" />
+  </prisoner>
+  <prisoner id="111">
+    <text lang="English" displayName="Hiroe" />
+    <text lang="Japanese" displayName="ミソギ" />
+  </prisoner>
+  <prisoner id="112">
+    <text lang="English" displayName="Fumi" />
+    <text lang="Japanese" displayName="ワカバ" />
+  </prisoner>
+  <prisoner id="113">
+    <text lang="English" displayName="Saya" />
+    <text lang="Japanese" displayName="ハルサメ" />
+  </prisoner>
+  <prisoner id="114">
+    <text lang="English" displayName="Hotaru" />
+    <text lang="Japanese" displayName="アサツユ" />
+  </prisoner>
+  <prisoner id="115">
+    <text lang="English" displayName="Haru" />
+    <text lang="Japanese" displayName="スミレ" />
+  </prisoner>
+  <prisoner id="116">
+    <text lang="English" displayName="Kasumi" />
+    <text lang="Japanese" displayName="カスミ" />
+  </prisoner>
+  <prisoner id="117">
+    <text lang="English" displayName="Chihiro" />
+    <text lang="Japanese" displayName="ツバメ" />
+  </prisoner>
+  <prisoner id="118">
+    <text lang="English" displayName="Suzume" />
+    <text lang="Japanese" displayName="スズメ" />
+  </prisoner>
+  <prisoner id="119">
+    <text lang="English" displayName="Ruri" />
+    <text lang="Japanese" displayName="ツキアカリ" />
+  </prisoner>
+  <prisoner id="120">
+    <text lang="English" displayName="Yayoi" />
+    <text lang="Japanese" displayName="ホシアカリ" />
+  </prisoner>
+  <prisoner id="121">
+    <text lang="English" displayName="Tomoe" />
+    <text lang="Japanese" displayName="ヤエ" />
+  </prisoner>
+  <prisoner id="122">
+    <text lang="English" displayName="Kanon" />
+    <text lang="Japanese" displayName="ココノエ" />
+  </prisoner>
+  <prisoner id="123">
+    <text lang="English" displayName="Sorane" />
+    <text lang="Japanese" displayName="ソラネ" />
+  </prisoner>
+  <prisoner id="124">
+    <text lang="English" displayName="Yoriko" />
+    <text lang="Japanese" displayName="アサジフ" />
+  </prisoner>
+  <prisoner id="125">
+    <text lang="English" displayName="Yukari" />
+    <text lang="Japanese" displayName="ヨモギフ" />
+  </prisoner>
+  <prisoner id="126">
+    <text lang="English" displayName="Naomi" />
+    <text lang="Japanese" displayName="ワカナ" />
+  </prisoner>
+  <prisoner id="127">
+    <text lang="English" displayName="Shizue" />
+    <text lang="Japanese" displayName="ハツシモ" />
+  </prisoner>
+  <prisoner id="128">
+    <text lang="English" displayName="Nanoha" />
+    <text lang="Japanese" displayName="シラキク" />
+  </prisoner>
+  <prisoner id="129">
+    <text lang="English" displayName="Miyabi" />
+    <text lang="Japanese" displayName="シラユキ" />
+  </prisoner>
+  <prisoner id="130">
+    <text lang="English" displayName="Suzuran" />
+    <text lang="Japanese" displayName="カスガ" />
+  </prisoner>
+  <prisoner id="151">
+    <text lang="English" displayName="Adele" />
+    <text lang="Japanese" displayName="アルマ" />
+  </prisoner>
+  <prisoner id="152">
+    <text lang="English" displayName="Beatrice" />
+    <text lang="Japanese" displayName="ベアトリーゼ" />
+  </prisoner>
+  <prisoner id="153">
+    <text lang="English" displayName="Hilda" />
+    <text lang="Japanese" displayName="ベッティ" />
+  </prisoner>
+  <prisoner id="154">
+    <text lang="English" displayName="Brigitta" />
+    <text lang="Japanese" displayName="ブリギッタ" />
+  </prisoner>
+  <prisoner id="155">
+    <text lang="English" displayName="Cordula" />
+    <text lang="Japanese" displayName="コルドラ" />
+  </prisoner>
+  <prisoner id="156">
+    <text lang="English" displayName="Dora" />
+    <text lang="Japanese" displayName="ドーラ" />
+  </prisoner>
+  <prisoner id="157">
+    <text lang="English" displayName="Ingrid" />
+    <text lang="Japanese" displayName="シュフティ" />
+  </prisoner>
+  <prisoner id="158">
+    <text lang="English" displayName="Kirsten" />
+    <text lang="Japanese" displayName="ニクセ" />
+  </prisoner>
+  <prisoner id="159">
+    <text lang="English" displayName="Lotte" />
+    <text lang="Japanese" displayName="ミーナ" />
+  </prisoner>
+  <prisoner id="160">
+    <text lang="English" displayName="Margot" />
+    <text lang="Japanese" displayName="ユリカ" />
+  </prisoner>
+  <prisoner id="161">
+    <text lang="English" displayName="Stella" />
+    <text lang="Japanese" displayName="ヘクセ" />
+  </prisoner>
+  <prisoner id="162">
+    <text lang="English" displayName="Ursula" />
+    <text lang="Japanese" displayName="ガウナ" />
+  </prisoner>
+  <prisoner id="163">
+    <text lang="English" displayName="Freyja" />
+    <text lang="Japanese" displayName="フレイヤ" />
+  </prisoner>
+  <prisoner id="164">
+    <text lang="English" displayName="Verona" />
+    <text lang="Japanese" displayName="ベアテ" />
+  </prisoner>
+  <prisoner id="165">
+    <text lang="English" displayName="Gisela" />
+    <text lang="Japanese" displayName="ダイナ" />
+  </prisoner>
+  <prisoner id="166">
+    <text lang="English" displayName="Gretel" />
+    <text lang="Japanese" displayName="グレーテル" />
+  </prisoner>
+  <prisoner id="167">
+    <text lang="English" displayName="Judith" />
+    <text lang="Japanese" displayName="ユーディト" />
+  </prisoner>
+  <prisoner id="168">
+    <text lang="English" displayName="Karline" />
+    <text lang="Japanese" displayName="カルリーネ" />
+  </prisoner>
+  <prisoner id="169">
+    <text lang="English" displayName="Annette" />
+    <text lang="Japanese" displayName="マルグレート" />
+  </prisoner>
+  <prisoner id="170">
+    <text lang="English" displayName="Ernesta" />
+    <text lang="Japanese" displayName="ローザリエ" />
+  </prisoner>
+  <prisoner id="171">
+    <text lang="English" displayName="Romy" />
+    <text lang="Japanese" displayName="ロミー" />
+  </prisoner>
+  <prisoner id="172">
+    <text lang="English" displayName="Astrid" />
+    <text lang="Japanese" displayName="ナナ" />
+  </prisoner>
+  <prisoner id="173">
+    <text lang="English" displayName="Lulu" />
+    <text lang="Japanese" displayName="ルル" />
+  </prisoner>
+  <prisoner id="174">
+    <text lang="English" displayName="Nina" />
+    <text lang="Japanese" displayName="フロリアン" />
+  </prisoner>
+  <prisoner id="175">
+    <text lang="English" displayName="Thelma" />
+    <text lang="Japanese" displayName="テレマ" />
+  </prisoner>
+  <prisoner id="176">
+    <text lang="English" displayName="Rita" />
+    <text lang="Japanese" displayName="リタ" />
+  </prisoner>
+  <prisoner id="177">
+    <text lang="English" displayName="Marta" />
+    <text lang="Japanese" displayName="マルテ" />
+  </prisoner>
+  <prisoner id="178">
+    <text lang="English" displayName="Marion" />
+    <text lang="Japanese" displayName="エーリカ" />
+  </prisoner>
+  <prisoner id="179">
+    <text lang="English" displayName="Ilse" />
+    <text lang="Japanese" displayName="イルゼ" />
+  </prisoner>
+  <prisoner id="180">
+    <text lang="English" displayName="Louisa" />
+    <text lang="Japanese" displayName="ファティマ" />
+  </prisoner>
+  <prisoner id="201">
+    <text lang="English" displayName="Ippei" />
+    <text lang="Japanese" displayName="イッパク" />
+  </prisoner>
+  <prisoner id="202">
+    <text lang="English" displayName="Jitaro" />
+    <text lang="Japanese" displayName="ジコク" />
+  </prisoner>
+  <prisoner id="203">
+    <text lang="English" displayName="Minori" />
+    <text lang="Japanese" displayName="サンペキ" />
+  </prisoner>
+  <prisoner id="204">
+    <text lang="English" displayName="Shinobu" />
+    <text lang="Japanese" displayName="シロク" />
+  </prisoner>
+  <prisoner id="205">
+    <text lang="English" displayName="Goro" />
+    <text lang="Japanese" displayName="ゴオウ" />
+  </prisoner>
+  <prisoner id="206">
+    <text lang="English" displayName="Musashi" />
+    <text lang="Japanese" displayName="ロッパク" />
+  </prisoner>
+  <prisoner id="207">
+    <text lang="English" displayName="Nanaki" />
+    <text lang="Japanese" displayName="シチセキ" />
+  </prisoner>
+  <prisoner id="208">
+    <text lang="English" displayName="Hachio" />
+    <text lang="Japanese" displayName="ハッパク" />
+  </prisoner>
+  <prisoner id="209">
+    <text lang="English" displayName="Konoe" />
+    <text lang="Japanese" displayName="キュウシ" />
+  </prisoner>
+  <prisoner id="221">
+    <text lang="English" displayName="Unil" />
+    <text lang="Japanese" displayName="アインス" />
+  </prisoner>
+  <prisoner id="222">
+    <text lang="English" displayName="Dua" />
+    <text lang="Japanese" displayName="ツヴァイ" />
+  </prisoner>
+  <prisoner id="223">
+    <text lang="English" displayName="Trim" />
+    <text lang="Japanese" displayName="ドライ" />
+  </prisoner>
+  <prisoner id="224">
+    <text lang="English" displayName="Quatro" />
+    <text lang="Japanese" displayName="フィーア" />
+  </prisoner>
+  <prisoner id="225">
+    <text lang="English" displayName="Penvo" />
+    <text lang="Japanese" displayName="フュンフ" />
+  </prisoner>
+  <prisoner id="226">
+    <text lang="English" displayName="Xestu" />
+    <text lang="Japanese" displayName="ゼクス" />
+  </prisoner>
+  <prisoner id="227">
+    <text lang="English" displayName="Hepto" />
+    <text lang="Japanese" displayName="ズィーベン" />
+  </prisoner>
+  <prisoner id="228">
+    <text lang="English" displayName="Octu" />
+    <text lang="Japanese" displayName="アハト" />
+  </prisoner>
+  <!--
+  Template:
+  <prisoner id="0">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </prisoner>
+  -->
+</root>

@@ -637,7 +637,16 @@ namespace FEFTwiddler.Model
             set { _rawBlock2[0x07] = value; }
         }
 
-        // Eight unknown bytes (0x08 through 0x0F)
+        // Six unknown bytes (0x08 through 0x0D)
+
+        /// <summary>
+        /// Prisoner (generic captured unit) ID
+        /// </summary>
+        public byte PrisonerID
+        {
+            get { return _rawBlock2[0xE]; }
+            set { _rawBlock2[0xE] = value; }
+        }
 
         public byte[] DLCClassFlags
         {

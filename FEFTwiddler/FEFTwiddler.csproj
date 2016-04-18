@@ -60,6 +60,8 @@
     <Compile Include="Data\Database.cs" />
     <Compile Include="Data\Item.cs" />
     <Compile Include="Data\ItemDatabase.cs" />
+    <Compile Include="Data\Prisoner.cs" />
+    <Compile Include="Data\PrisonerDatabase.cs" />
     <Compile Include="Data\Skill.cs" />
     <Compile Include="Data\SkillDatabase.cs" />
     <Compile Include="Data\Stat.cs" />
@@ -599,6 +601,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\Data\Stats.xml" />
+    <None Include="Resources\Data\Prisoners.xml" />
     <Content Include="revelation_icon.ico" />
   </ItemGroup>
   <ItemGroup />
