@@ -277,150 +277,93 @@ namespace FEFTwiddler.Model
 
         // Twelve unknown bytes (0x13 through 0x1E)
 
-        public sbyte Stat_HP_Gained
+        public Stat GainedStats
         {
-            get { return (sbyte)_rawBlock1[0x1F]; }
-            set { _rawBlock1[0x1F] = (byte)value; }
+            get
+            {
+                return new Stat
+                {
+                    HP = (sbyte)_rawBlock1[0x1F],
+                    Str = (sbyte)_rawBlock1[0x20],
+                    Mag = (sbyte)_rawBlock1[0x21],
+                    Skl = (sbyte)_rawBlock1[0x22],
+                    Spd = (sbyte)_rawBlock1[0x23],
+                    Lck = (sbyte)_rawBlock1[0x24],
+                    Def = (sbyte)_rawBlock1[0x25],
+                    Res = (sbyte)_rawBlock1[0x26]
+                };
+            }
+            set
+            {
+                _rawBlock1[0x1F] = (byte)value.HP;
+                _rawBlock1[0x20] = (byte)value.Str;
+                _rawBlock1[0x21] = (byte)value.Mag;
+                _rawBlock1[0x22] = (byte)value.Skl;
+                _rawBlock1[0x23] = (byte)value.Spd;
+                _rawBlock1[0x24] = (byte)value.Lck;
+                _rawBlock1[0x25] = (byte)value.Def;
+                _rawBlock1[0x26] = (byte)value.Res;
+            }
         }
 
-        public sbyte Stat_Str_Gained
+        public Stat StatueBonusStats
         {
-            get { return (sbyte)_rawBlock1[0x20]; }
-            set { _rawBlock1[0x20] = (byte)value; }
-        }
-
-        public sbyte Stat_Mag_Gained
-        {
-            get { return (sbyte)_rawBlock1[0x21]; }
-            set { _rawBlock1[0x21] = (byte)value; }
-        }
-
-        public sbyte Stat_Skl_Gained
-        {
-            get { return (sbyte)_rawBlock1[0x22]; }
-            set { _rawBlock1[0x22] = (byte)value; }
-        }
-
-        public sbyte Stat_Spd_Gained
-        {
-            get { return (sbyte)_rawBlock1[0x23]; }
-            set { _rawBlock1[0x23] = (byte)value; }
-        }
-
-        public sbyte Stat_Lck_Gained
-        {
-            get { return (sbyte)_rawBlock1[0x24]; }
-            set { _rawBlock1[0x24] = (byte)value; }
-        }
-
-        public sbyte Stat_Def_Gained
-        {
-            get { return (sbyte)_rawBlock1[0x25]; }
-            set { _rawBlock1[0x25] = (byte)value; }
-        }
-
-        public sbyte Stat_Res_Gained
-        {
-            get { return (sbyte)_rawBlock1[0x26]; }
-            set { _rawBlock1[0x26] = (byte)value; }
-        }
-
-        public byte Stat_HP_StatueBonus
-        {
-            get { return _rawBlock1[0x27]; }
-            set { _rawBlock1[0x27] = value; }
-        }
-
-        public byte Stat_Str_StatueBonus
-        {
-            get { return _rawBlock1[0x28]; }
-            set { _rawBlock1[0x28] = value; }
-        }
-
-        public byte Stat_Mag_StatueBonus
-        {
-            get { return _rawBlock1[0x29]; }
-            set { _rawBlock1[0x29] = value; }
-        }
-
-        public byte Stat_Skl_StatueBonus
-        {
-            get { return _rawBlock1[0x2A]; }
-            set { _rawBlock1[0x2A] = value; }
-        }
-
-        public byte Stat_Spd_StatueBonus
-        {
-            get { return _rawBlock1[0x2B]; }
-            set { _rawBlock1[0x2B] = value; }
-        }
-
-        public byte Stat_Lck_StatueBonus
-        {
-            get { return _rawBlock1[0x2C]; }
-            set { _rawBlock1[0x2C] = value; }
-        }
-
-        public byte Stat_Def_StatueBonus
-        {
-            get { return _rawBlock1[0x2D]; }
-            set { _rawBlock1[0x2D] = value; }
-        }
-
-        public byte Stat_Res_StatueBonus
-        {
-            get { return _rawBlock1[0x2E]; }
-            set { _rawBlock1[0x2E] = value; }
+            get
+            {
+                return new Stat
+                {
+                    HP = (sbyte)_rawBlock1[0x27],
+                    Str = (sbyte)_rawBlock1[0x28],
+                    Mag = (sbyte)_rawBlock1[0x29],
+                    Skl = (sbyte)_rawBlock1[0x2A],
+                    Spd = (sbyte)_rawBlock1[0x2B],
+                    Lck = (sbyte)_rawBlock1[0x2C],
+                    Def = (sbyte)_rawBlock1[0x2D],
+                    Res = (sbyte)_rawBlock1[0x2E]
+                };
+            }
+            set
+            {
+                _rawBlock1[0x27] = (byte)value.HP;
+                _rawBlock1[0x28] = (byte)value.Str;
+                _rawBlock1[0x29] = (byte)value.Mag;
+                _rawBlock1[0x2A] = (byte)value.Skl;
+                _rawBlock1[0x2B] = (byte)value.Spd;
+                _rawBlock1[0x2C] = (byte)value.Lck;
+                _rawBlock1[0x2D] = (byte)value.Def;
+                _rawBlock1[0x2E] = (byte)value.Res;
+            }
         }
 
         // Eight unknown bytes (0x2F through 0x36)
 
-        public sbyte Stat_HP_ExtraGained
+        public Stat ExtraGainedStats
         {
-            get { return (sbyte)_rawBlock1[0x37]; }
-            set { _rawBlock1[0x37] = (byte)value; }
-        }
-
-        public sbyte Stat_Str_ExtraGained
-        {
-            get { return (sbyte)_rawBlock1[0x38]; }
-            set { _rawBlock1[0x38] = (byte)value; }
-        }
-
-        public sbyte Stat_Mag_ExtraGained
-        {
-            get { return (sbyte)_rawBlock1[0x39]; }
-            set { _rawBlock1[0x39] = (byte)value; }
-        }
-
-        public sbyte Stat_Skl_ExtraGained
-        {
-            get { return (sbyte)_rawBlock1[0x3A]; }
-            set { _rawBlock1[0x3A] = (byte)value; }
-        }
-
-        public sbyte Stat_Spd_ExtraGained
-        {
-            get { return (sbyte)_rawBlock1[0x3B]; }
-            set { _rawBlock1[0x3B] = (byte)value; }
-        }
-
-        public sbyte Stat_Lck_ExtraGained
-        {
-            get { return (sbyte)_rawBlock1[0x3C]; }
-            set { _rawBlock1[0x3C] = (byte)value; }
-        }
-
-        public sbyte Stat_Def_ExtraGained
-        {
-            get { return (sbyte)_rawBlock1[0x3D]; }
-            set { _rawBlock1[0x3D] = (byte)value; }
-        }
-
-        public sbyte Stat_Res_ExtraGained
-        {
-            get { return (sbyte)_rawBlock1[0x3E]; }
-            set { _rawBlock1[0x3E] = (byte)value; }
+            get
+            {
+                return new Stat
+                {
+                    HP = (sbyte)_rawBlock1[0x37],
+                    Str = (sbyte)_rawBlock1[0x38],
+                    Mag = (sbyte)_rawBlock1[0x39],
+                    Skl = (sbyte)_rawBlock1[0x3A],
+                    Spd = (sbyte)_rawBlock1[0x3B],
+                    Lck = (sbyte)_rawBlock1[0x3C],
+                    Def = (sbyte)_rawBlock1[0x3D],
+                    Res = (sbyte)_rawBlock1[0x3E]
+                };
+            }
+            set
+            {
+                _rawBlock1[0x37] = (byte)value.HP;
+                _rawBlock1[0x38] = (byte)value.Str;
+                _rawBlock1[0x39] = (byte)value.Mag;
+                _rawBlock1[0x3A] = (byte)value.Skl;
+                _rawBlock1[0x3B] = (byte)value.Spd;
+                _rawBlock1[0x3C] = (byte)value.Lck;
+                _rawBlock1[0x3D] = (byte)value.Def;
+                _rawBlock1[0x3E] = (byte)value.Res;
+            }
         }
 
         public byte WeaponExperience_Sword
