@@ -48,6 +48,7 @@
             this.hexRawSupports = new FEFTwiddler.GUI.Controls.HexBox();
             this.hexRawInventory = new FEFTwiddler.GUI.Controls.HexBox();
             this.hexRawBlock1 = new FEFTwiddler.GUI.Controls.HexBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -234,11 +235,21 @@
             this.hexRawBlock1.Size = new System.Drawing.Size(413, 181);
             this.hexRawBlock1.TabIndex = 0;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(756, 449);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(304, 13);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Save at your own risk! If the program crashes, it\'s your problem.";
+            // 
             // HexEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1072, 540);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lblRawEndBlockType);
             this.Controls.Add(this.lblRawNumberOfSupports);
@@ -289,5 +300,6 @@
         private System.Windows.Forms.Label lblRawNumberOfSupports;
         private System.Windows.Forms.Label lblRawEndBlockType;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Label label9;
     }
 }

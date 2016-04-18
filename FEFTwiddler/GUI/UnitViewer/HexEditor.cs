@@ -18,6 +18,12 @@ namespace FEFTwiddler.GUI.UnitViewer
         {
             _character = character;
             InitializeComponent();
+            SetTitle();
+        }
+
+        private void SetTitle()
+        {
+            this.Text = "Hex editing: " + Data.Database.Characters.GetByID(_character.CharacterID).DisplayName;
         }
 
         private void HexEditor_Load(object sender, EventArgs e)

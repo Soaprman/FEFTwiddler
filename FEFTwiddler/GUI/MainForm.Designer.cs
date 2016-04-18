@@ -44,6 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lstDead = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnOpenHexEditor = new System.Windows.Forms.Button();
             this.battleData1 = new FEFTwiddler.GUI.UnitViewer.BattleData();
             this.class1 = new FEFTwiddler.GUI.UnitViewer.Class();
             this.flags1 = new FEFTwiddler.GUI.UnitViewer.Flags();
@@ -62,7 +63,6 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.megacheats1 = new FEFTwiddler.GUI.ChapterData.Megacheats();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnOpenHexEditor = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -180,6 +180,13 @@
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
+            // btnOpenHexEditor
+            // 
+            resources.ApplyResources(this.btnOpenHexEditor, "btnOpenHexEditor");
+            this.btnOpenHexEditor.Name = "btnOpenHexEditor";
+            this.btnOpenHexEditor.UseVisualStyleBackColor = true;
+            this.btnOpenHexEditor.Click += new System.EventHandler(this.btnOpenHexEditor_Click);
+            // 
             // battleData1
             // 
             resources.ApplyResources(this.battleData1, "battleData1");
@@ -277,13 +284,6 @@
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
-            // 
-            // btnOpenHexEditor
-            // 
-            resources.ApplyResources(this.btnOpenHexEditor, "btnOpenHexEditor");
-            this.btnOpenHexEditor.Name = "btnOpenHexEditor";
-            this.btnOpenHexEditor.UseVisualStyleBackColor = true;
-            this.btnOpenHexEditor.Click += new System.EventHandler(this.btnOpenHexEditor_Click);
             // 
             // MainForm
             // 
