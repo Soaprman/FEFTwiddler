@@ -892,7 +892,51 @@ namespace FEFTwiddler.Model
 
         #endregion
 
-        #region Skill Cheats
+        #region Skill Helpers and Cheats
+
+        public void UnequipUnlearnedSkills()
+        {
+            if (!LearnedSkills.Contains(EquippedSkill_1)) EquippedSkill_1 = Enums.Skill.None;
+            if (!LearnedSkills.Contains(EquippedSkill_2)) EquippedSkill_2 = Enums.Skill.None;
+            if (!LearnedSkills.Contains(EquippedSkill_3)) EquippedSkill_3 = Enums.Skill.None;
+            if (!LearnedSkills.Contains(EquippedSkill_4)) EquippedSkill_4 = Enums.Skill.None;
+            if (!LearnedSkills.Contains(EquippedSkill_5)) EquippedSkill_5 = Enums.Skill.None;
+
+            CollapseEquippedSkills();
+        }
+
+        /// <summary>
+        /// Shifts Nones from the middle of the skill list to the bottom
+        /// </summary>
+        public void CollapseEquippedSkills()
+        {
+            if (EquippedSkill_4 == Enums.Skill.None)
+            {
+                EquippedSkill_4 = EquippedSkill_5;
+                EquippedSkill_5 = Enums.Skill.None;
+            }
+            if (EquippedSkill_3 == Enums.Skill.None)
+            {
+                EquippedSkill_3 = EquippedSkill_4;
+                EquippedSkill_4 = EquippedSkill_5;
+                EquippedSkill_5 = Enums.Skill.None;
+            }
+            if (EquippedSkill_2 == Enums.Skill.None)
+            {
+                EquippedSkill_2 = EquippedSkill_3;
+                EquippedSkill_3 = EquippedSkill_4;
+                EquippedSkill_4 = EquippedSkill_5;
+                EquippedSkill_5 = Enums.Skill.None;
+            }
+            if (EquippedSkill_1 == Enums.Skill.None)
+            {
+                EquippedSkill_1 = EquippedSkill_2;
+                EquippedSkill_2 = EquippedSkill_3;
+                EquippedSkill_3 = EquippedSkill_4;
+                EquippedSkill_4 = EquippedSkill_5;
+                EquippedSkill_5 = Enums.Skill.None;
+            }
+        }
 
         public void LearnNormalClassSkills()
         {
@@ -970,72 +1014,84 @@ namespace FEFTwiddler.Model
         {
             var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsNormalClassSkill);
             foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+            UnequipUnlearnedSkills();
         }
 
         public void UnlearnCorrinOnlySkills()
         {
             var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsCorrinOnlySkill);
             foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+            UnequipUnlearnedSkills();
         }
 
         public void UnlearnAzuraOnlySkills()
         {
             var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsAzuraOnlySkill);
             foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+            UnequipUnlearnedSkills();
         }
 
         public void UnlearnBeastOnlySkills()
         {
             var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsKitsuneOnlySkill && x.IsWolfskinOnlySkill);
             foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+            UnequipUnlearnedSkills();
         }
 
         public void UnlearnKitsuneOnlySkills()
         {
             var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsKitsuneOnlySkill && !x.IsWolfskinOnlySkill);
             foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+            UnequipUnlearnedSkills();
         }
 
         public void UnlearnWolfskinOnlySkills()
         {
             var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsWolfskinOnlySkill && !x.IsKitsuneOnlySkill);
             foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+            UnequipUnlearnedSkills();
         }
 
         public void UnlearnVillagerOnlySkills()
         {
             var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsVillagerOnlySkill);
             foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+            UnequipUnlearnedSkills();
         }
 
         public void UnlearnPathBonusClassSkills()
         {
             var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsPathBonusClassSkill);
             foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+            UnequipUnlearnedSkills();
         }
 
         public void UnlearnDlcClassSkills()
         {
             var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsDlcClassSkill && !x.IsAmiiboClassSkill);
             foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+            UnequipUnlearnedSkills();
         }
 
         public void UnlearnAmiiboClassSkills()
         {
             var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsAmiiboClassSkill);
             foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+            UnequipUnlearnedSkills();
         }
 
         public void UnlearnEnemyAndNpcSkills()
         {
             var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsEnemyAndNpcSkill);
             foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+            UnequipUnlearnedSkills();
         }
 
         public void UnlearnAllSkills()
         {
             var unlearnThese = Data.Database.Skills.GetAllLearnable();
             foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+            UnequipUnlearnedSkills();
         }
 
         #endregion
