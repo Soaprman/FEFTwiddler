@@ -74,6 +74,10 @@ namespace FEFTwiddler.Model
         public Enums.Chapter CurrentChapter { get; set; }
         public List<ChapterHistoryEntry> ChapterHistory { get; set; }
 
+        // These are hacks that can hopefully one day be removed
+        public int ChapterHistoryOriginalCount { get; set; }
+        public const int ChapterHistoryEntryLength = 0x10;
+
         private List<Character> _characters = new List<Character>();
         public List<Character> Characters {
             get
@@ -81,6 +85,9 @@ namespace FEFTwiddler.Model
                 return _characters;
             }
         }
+
+        // Another massive hack
+        private int ModifiedArraySizeRelativeToOriginalSize = 0;
 
         #endregion
 
@@ -164,7 +171,7 @@ namespace FEFTwiddler.Model
 
         public void Write()
         {
-            using (var ms = new MemoryStream(_file.DecompressedBytes))
+            using (var ms = new MemoryStream(_file.DecompressedBytes, 0, _file.DecompressedBytes.Length, true, true))
             using (var bw = new BinaryWriter(ms))
             {
                 WriteHeaderData(bw);
@@ -177,6 +184,17 @@ namespace FEFTwiddler.Model
                 //WriteConvoyData(bw);
 
                 WriteMyCastle(bw);
+            }
+
+            // Adjust array length based on changes made during the write process
+            if (ModifiedArraySizeRelativeToOriginalSize < 0)
+            {
+                var bytes = _file.DecompressedBytes;
+                _file.DecompressedBytes = bytes.Take(bytes.Length + ModifiedArraySizeRelativeToOriginalSize).ToArray();
+            }
+            else if (ModifiedArraySizeRelativeToOriginalSize > 0)
+            {
+                // Not implemented yet
             }
 
             _file.Write();
@@ -260,6 +278,7 @@ namespace FEFTwiddler.Model
 
                 ChapterHistory.Add(new ChapterHistoryEntry(chunk));
             }
+            ChapterHistoryOriginalCount = ChapterHistory.Count;
 
             // Stuff (block of mostly 00s that starts with 00 80 and ends with 30 00 00 00 FF FF)
             br.ReadBytes(0xE1);
@@ -324,6 +343,20 @@ namespace FEFTwiddler.Model
             foreach (var chapterEntry in ChapterHistory)
             {
                 bw.Write(chapterEntry.Raw);
+            }
+            // Hack: If entries have been removed, "collapse" the save to fit
+            // TODO: Refactor this whole file to work in a different way, maybe?
+            for (var i = ChapterHistory.Count; i < ChapterHistoryOriginalCount; i++)
+            {
+                var ms = (MemoryStream)(bw.BaseStream);
+                var position = ms.Position;
+                var buffer = ms.GetBuffer();
+                Buffer.BlockCopy(buffer, (int)(position + ChapterHistoryEntryLength), buffer, (int)position, (int)(ms.Length - ChapterHistoryEntryLength - position));
+                ms.SetLength(ms.Length - ChapterHistoryEntryLength);
+                ModifiedArraySizeRelativeToOriginalSize -= ChapterHistoryEntryLength;
+
+                // Also make sure future offset-based things start off in the right spot!
+                _myCastleOffset -= ChapterHistoryEntryLength;
             }
 
             // Stuff (block of mostly 00s that starts with 00 80 and ends with 30 00 00 00 FF FF)

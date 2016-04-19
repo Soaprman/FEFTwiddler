@@ -90,6 +90,15 @@
     <Compile Include="Extensions\StreamExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\XElementExtensions.cs" />
+    <Compile Include="GUI\ChapterData\ChapterHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChapterData\ChapterHistory.Designer.cs">
+      <DependentUpon>ChapterHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChapterData\ChapterHistoryPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="GUI\ChapterData\GoldAndPoints.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -221,6 +230,9 @@
     <Compile Include="Utils\Huffman8.cs" />
     <Compile Include="Model\SaveFile.cs" />
     <Compile Include="Utils\TypeConverter.cs" />
+    <EmbeddedResource Include="GUI\ChapterData\ChapterHistory.resx">
+      <DependentUpon>ChapterHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ChapterData\GoldAndPoints.resx">
       <DependentUpon>GoldAndPoints.cs</DependentUpon>
     </EmbeddedResource>

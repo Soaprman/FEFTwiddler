@@ -121,6 +121,12 @@ namespace FEFTwiddler.GUI
             megacheatsMain1.LoadChapterSave(_chapterSave);
         }
 
+        private void btnChapterHistory_Click(object sender, EventArgs e)
+        {
+            var popup = new GUI.ChapterData.ChapterHistory(_chapterSave);
+            popup.ShowDialog();
+        }
+
         #endregion
 
         #region Event Handlers - Unit Viewer
@@ -220,6 +226,5 @@ namespace FEFTwiddler.GUI
         }
 
         #endregion
-
     }
 }

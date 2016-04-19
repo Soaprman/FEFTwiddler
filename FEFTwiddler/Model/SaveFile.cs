@@ -30,6 +30,7 @@ namespace FEFTwiddler.Model
         public byte[] DecompressedBytes
         {
             get { return _decompressedBytes;  }
+            set { _decompressedBytes = value; }
         }
 
         protected byte[] _compMarker = new byte[] { 0x50, 0x4D, 0x4F, 0x43 }; // COMP backwards
@@ -156,7 +157,7 @@ namespace FEFTwiddler.Model
         {
             WriteBackupFile();
 
-            using (var fs = new FileStream(_filePath, FileMode.Open, FileAccess.ReadWrite))
+            using (var fs = new FileStream(_filePath, FileMode.Create, FileAccess.ReadWrite))
             using (var bw = new BinaryWriter(fs))
             {
                 switch (_type)
