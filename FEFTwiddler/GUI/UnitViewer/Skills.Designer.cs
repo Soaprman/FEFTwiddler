@@ -54,7 +54,6 @@
             this.cmbSkill1.Name = "cmbSkill1";
             this.cmbSkill1.Size = new System.Drawing.Size(121, 21);
             this.cmbSkill1.TabIndex = 14;
-            this.cmbSkill1.SelectedIndexChanged += new System.EventHandler(this.cmbSkill1_SelectedIndexChanged);
             // 
             // pictSkill1
             // 
@@ -82,7 +81,6 @@
             this.cmbSkill2.Name = "cmbSkill2";
             this.cmbSkill2.Size = new System.Drawing.Size(121, 21);
             this.cmbSkill2.TabIndex = 16;
-            this.cmbSkill2.SelectedIndexChanged += new System.EventHandler(this.cmbSkill2_SelectedIndexChanged);
             // 
             // pictSkill3
             // 
@@ -101,7 +99,6 @@
             this.cmbSkill3.Name = "cmbSkill3";
             this.cmbSkill3.Size = new System.Drawing.Size(121, 21);
             this.cmbSkill3.TabIndex = 18;
-            this.cmbSkill3.SelectedIndexChanged += new System.EventHandler(this.cmbSkill3_SelectedIndexChanged);
             // 
             // pictSkill4
             // 
@@ -120,7 +117,6 @@
             this.cmbSkill4.Name = "cmbSkill4";
             this.cmbSkill4.Size = new System.Drawing.Size(121, 21);
             this.cmbSkill4.TabIndex = 20;
-            this.cmbSkill4.SelectedIndexChanged += new System.EventHandler(this.cmbSkill4_SelectedIndexChanged);
             // 
             // pictSkill5
             // 
@@ -139,7 +135,6 @@
             this.cmbSkill5.Name = "cmbSkill5";
             this.cmbSkill5.Size = new System.Drawing.Size(121, 21);
             this.cmbSkill5.TabIndex = 22;
-            this.cmbSkill5.SelectedIndexChanged += new System.EventHandler(this.cmbSkill5_SelectedIndexChanged);
             // 
             // btnEditLearnedSkills
             // 

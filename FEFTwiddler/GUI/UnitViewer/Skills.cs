@@ -29,8 +29,18 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void InitializeControls()
         {
-            UnbindEvents();
+        }
 
+        private void PopulateControls()
+        {
+            UnbindEvents();
+            BindDataSources();
+            ReadEquippedSkills();
+            BindEvents();
+        }
+
+        private void BindDataSources()
+        {
             cmbSkill1.DisplayMember = "DisplayName";
             cmbSkill1.ValueMember = "SkillID";
             cmbSkill1.DataSource = GetSkillDataSource();
@@ -55,65 +65,32 @@ namespace FEFTwiddler.GUI.UnitViewer
             cmbSkill5.ValueMember = "SkillID";
             cmbSkill5.DataSource = GetSkillDataSource();
             cmbSkill5.SelectedValue = Enums.Skill.None;
-
-            BindEvents();
-        }
-
-        private void PopulateControls()
-        {
-            // Because the DataSource now depends on a character's learned skills
-            InitializeControls();
-
-            UnbindEvents();
-
-            cmbSkill1.SelectedValue = _character.EquippedSkill_1;
-            if (cmbSkill1.Text == "") cmbSkill1.SelectedValue = Enums.Skill.None;
-            UpdateSkillImage1();
-
-            cmbSkill2.SelectedValue = _character.EquippedSkill_2;
-            if (cmbSkill2.Text == "") cmbSkill2.SelectedValue = Enums.Skill.None;
-            UpdateSkillImage2();
-
-            cmbSkill3.SelectedValue = _character.EquippedSkill_3;
-            if (cmbSkill3.Text == "") cmbSkill3.SelectedValue = Enums.Skill.None;
-            UpdateSkillImage3();
-
-            cmbSkill4.SelectedValue = _character.EquippedSkill_4;
-            if (cmbSkill4.Text == "") cmbSkill4.SelectedValue = Enums.Skill.None;
-            UpdateSkillImage4();
-
-            cmbSkill5.SelectedValue = _character.EquippedSkill_5;
-            if (cmbSkill5.Text == "") cmbSkill5.SelectedValue = Enums.Skill.None;
-            UpdateSkillImage5();
-
-            CollapseEquippedSkills();
-
-            BindEvents();
         }
 
         private void UnbindEvents()
         {
-            cmbSkill1.SelectedIndexChanged -= cmbSkill1_SelectedIndexChanged;
-            cmbSkill2.SelectedIndexChanged -= cmbSkill2_SelectedIndexChanged;
-            cmbSkill3.SelectedIndexChanged -= cmbSkill3_SelectedIndexChanged;
-            cmbSkill4.SelectedIndexChanged -= cmbSkill4_SelectedIndexChanged;
-            cmbSkill5.SelectedIndexChanged -= cmbSkill5_SelectedIndexChanged;
+            cmbSkill1.SelectedIndexChanged -= ChangeSkill1;
+            cmbSkill2.SelectedIndexChanged -= ChangeSkill2;
+            cmbSkill3.SelectedIndexChanged -= ChangeSkill3;
+            cmbSkill4.SelectedIndexChanged -= ChangeSkill4;
+            cmbSkill5.SelectedIndexChanged -= ChangeSkill5;
         }
 
         private void BindEvents()
         {
-            cmbSkill1.SelectedIndexChanged += cmbSkill1_SelectedIndexChanged;
-            cmbSkill2.SelectedIndexChanged += cmbSkill2_SelectedIndexChanged;
-            cmbSkill3.SelectedIndexChanged += cmbSkill3_SelectedIndexChanged;
-            cmbSkill4.SelectedIndexChanged += cmbSkill4_SelectedIndexChanged;
-            cmbSkill5.SelectedIndexChanged += cmbSkill5_SelectedIndexChanged;
+            cmbSkill1.SelectedIndexChanged += ChangeSkill1;
+            cmbSkill2.SelectedIndexChanged += ChangeSkill2;
+            cmbSkill3.SelectedIndexChanged += ChangeSkill3;
+            cmbSkill4.SelectedIndexChanged += ChangeSkill4;
+            cmbSkill5.SelectedIndexChanged += ChangeSkill5;
         }
 
         private void btnEditLearnedSkills_Click(object sender, EventArgs e)
         {
             var popup = new GUI.UnitViewer.LearnedSkillsViewer(_character);
             popup.ShowDialog();
-            LoadCharacter(_character);
+            _character.UnequipUnlearnedSkills();
+            PopulateControls();
         }
 
         private IEnumerable<Data.Skill> GetSkillDataSource()
@@ -134,64 +111,69 @@ namespace FEFTwiddler.GUI.UnitViewer
             return (Bitmap)img;
         }
 
-        private void cmbSkill1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ChangeSkill1(object sender, EventArgs e)
         {
-            if (_character == null) return;
-            var cmb = (ComboBox)sender;
+            UnbindEvents();
+            WriteEquippedSkills();
+            ReadEquippedSkills();
+            BindEvents();
+        }
 
-            Enums.Skill val = (cmb.SelectedValue == null ? Enums.Skill.None : (Enums.Skill)cmb.SelectedValue);
-            _character.EquippedSkill_1 = val;
+        private void ChangeSkill2(object sender, EventArgs e)
+        {
+            UnbindEvents();
+            WriteEquippedSkills();
+            ReadEquippedSkills();
+            BindEvents();
+        }
+
+        private void ChangeSkill3(object sender, EventArgs e)
+        {
+            UnbindEvents();
+            WriteEquippedSkills();
+            ReadEquippedSkills();
+            BindEvents();
+        }
+
+        private void ChangeSkill4(object sender, EventArgs e)
+        {
+            UnbindEvents();
+            WriteEquippedSkills();
+            ReadEquippedSkills();
+            BindEvents();
+        }
+
+        private void ChangeSkill5(object sender, EventArgs e)
+        {
+            UnbindEvents();
+            WriteEquippedSkills();
+            ReadEquippedSkills();
+            BindEvents();
+        }
+
+        #region Model to GUI
+
+        private void ReadEquippedSkills()
+        {
+            cmbSkill1.SelectedValue = _character.EquippedSkill_1;
+            if (cmbSkill1.Text == "") cmbSkill1.SelectedValue = Enums.Skill.None;
             UpdateSkillImage1();
-            CollapseEquippedSkills();
-            UpdateEquippedSkills();
-        }
 
-        private void cmbSkill2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (_character == null) return;
-            var cmb = (ComboBox)sender;
-
-            Enums.Skill val = (cmb.SelectedValue == null ? Enums.Skill.None : (Enums.Skill)cmb.SelectedValue);
-            _character.EquippedSkill_2 = val;
+            cmbSkill2.SelectedValue = _character.EquippedSkill_2;
+            if (cmbSkill2.Text == "") cmbSkill2.SelectedValue = Enums.Skill.None;
             UpdateSkillImage2();
-            CollapseEquippedSkills();
-            UpdateEquippedSkills();
-        }
 
-        private void cmbSkill3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (_character == null) return;
-            var cmb = (ComboBox)sender;
-
-            Enums.Skill val = (cmb.SelectedValue == null ? Enums.Skill.None : (Enums.Skill)cmb.SelectedValue);
-            _character.EquippedSkill_3 = val;
+            cmbSkill3.SelectedValue = _character.EquippedSkill_3;
+            if (cmbSkill3.Text == "") cmbSkill3.SelectedValue = Enums.Skill.None;
             UpdateSkillImage3();
-            CollapseEquippedSkills();
-            UpdateEquippedSkills();
-        }
 
-        private void cmbSkill4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (_character == null) return;
-            var cmb = (ComboBox)sender;
-
-            Enums.Skill val = (cmb.SelectedValue == null ? Enums.Skill.None : (Enums.Skill)cmb.SelectedValue);
-            _character.EquippedSkill_4 = val;
+            cmbSkill4.SelectedValue = _character.EquippedSkill_4;
+            if (cmbSkill4.Text == "") cmbSkill4.SelectedValue = Enums.Skill.None;
             UpdateSkillImage4();
-            CollapseEquippedSkills();
-            UpdateEquippedSkills();
-        }
 
-        private void cmbSkill5_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (_character == null) return;
-            var cmb = (ComboBox)sender;
-
-            Enums.Skill val = (cmb.SelectedValue == null ? Enums.Skill.None : (Enums.Skill)cmb.SelectedValue);
-            _character.EquippedSkill_5 = val;
+            cmbSkill5.SelectedValue = _character.EquippedSkill_5;
+            if (cmbSkill5.Text == "") cmbSkill5.SelectedValue = Enums.Skill.None;
             UpdateSkillImage5();
-            CollapseEquippedSkills();
-            UpdateEquippedSkills();
         }
 
         private void UpdateSkillImage1()
@@ -219,41 +201,21 @@ namespace FEFTwiddler.GUI.UnitViewer
             pictSkill5.Image = GetSkillImage((Enums.Skill)cmbSkill5.SelectedValue);
         }
 
-        /// <summary>
-        /// Removes any Nones from the middle of the skill list
-        /// </summary>
-        private void CollapseEquippedSkills()
-        {
-            var skills = new List<Enums.Skill>();
+        #endregion
 
-            skills.Add((Enums.Skill)cmbSkill1.SelectedValue);
-            skills.Add((Enums.Skill)cmbSkill2.SelectedValue);
-            skills.Add((Enums.Skill)cmbSkill3.SelectedValue);
-            skills.Add((Enums.Skill)cmbSkill4.SelectedValue);
-            skills.Add((Enums.Skill)cmbSkill5.SelectedValue);
+        #region GUI to Model
 
-            skills.RemoveAll((x) => x == Enums.Skill.None);
-
-            if (skills.Count >= 5) cmbSkill5.SelectedValue = skills[4]; else cmbSkill5.SelectedValue = Enums.Skill.None;
-            if (skills.Count >= 4) cmbSkill4.SelectedValue = skills[3]; else cmbSkill4.SelectedValue = Enums.Skill.None;
-            if (skills.Count >= 3) cmbSkill3.SelectedValue = skills[2]; else cmbSkill3.SelectedValue = Enums.Skill.None;
-            if (skills.Count >= 2) cmbSkill2.SelectedValue = skills[1]; else cmbSkill2.SelectedValue = Enums.Skill.None;
-            if (skills.Count >= 1) cmbSkill1.SelectedValue = skills[0]; else cmbSkill1.SelectedValue = Enums.Skill.None;
-
-            UpdateSkillImage1();
-            UpdateSkillImage2();
-            UpdateSkillImage3();
-            UpdateSkillImage4();
-            UpdateSkillImage5();
-        }
-
-        private void UpdateEquippedSkills()
+        private void WriteEquippedSkills()
         {
             _character.EquippedSkill_1 = (Enums.Skill)cmbSkill1.SelectedValue;
             _character.EquippedSkill_2 = (Enums.Skill)cmbSkill2.SelectedValue;
             _character.EquippedSkill_3 = (Enums.Skill)cmbSkill3.SelectedValue;
             _character.EquippedSkill_4 = (Enums.Skill)cmbSkill4.SelectedValue;
             _character.EquippedSkill_5 = (Enums.Skill)cmbSkill5.SelectedValue;
+
+            _character.CollapseEquippedSkills();
         }
+
+        #endregion
     }
 }
