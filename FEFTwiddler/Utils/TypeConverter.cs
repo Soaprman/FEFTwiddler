@@ -8,13 +8,13 @@ namespace FEFTwiddler.Utils
         /// <summary>
         /// Converts a string to an array of two-byte characters.
         /// </summary>
-        /// <remarks>Currently only supports single-byte characters</remarks>
         public static byte[] ToByteArray(string str, int numberOfCharacters)
         {
             if (String.IsNullOrEmpty(str)) return new byte[0];
 
             var byteArray = new byte[numberOfCharacters * 2];
-            byteArray = Encoding.Unicode.GetBytes(str);
+            var newArray = Encoding.Unicode.GetBytes(str);
+            Array.Copy(newArray, byteArray, newArray.Length);
             return byteArray;
         }
 
