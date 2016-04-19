@@ -16,7 +16,7 @@ namespace FEFTwiddler.GUI.UnitViewer
         public LearnedSkillsViewer(Model.Character character)
         {
             _character = character;
-            _tempLearnedSkills = new Model.LearnedSkills(_character.LearnedSkills.Bytes.ToArray());
+            _tempLearnedSkills = new Model.LearnedSkills(_character.LearnedSkills.Raw.ToArray());
             InitializeComponent();
         }
 
