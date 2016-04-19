@@ -163,8 +163,7 @@ namespace FEFTwiddler.GUI
             stats1.LoadCharacter(_selectedCharacter);
             flags1.LoadCharacter(_selectedCharacter);
             battleData1.LoadCharacter(_selectedCharacter);
-            equippedSkills1.LoadCharacter(_selectedCharacter);
-            learnedSkills1.LoadCharacter(_selectedCharacter);
+            skills1.LoadCharacter(_selectedCharacter);
             inventory1.LoadCharacter(_selectedCharacter);
             accessories1.LoadCharacter(_selectedCharacter);
             hairColor1.LoadCharacter(_selectedCharacter);

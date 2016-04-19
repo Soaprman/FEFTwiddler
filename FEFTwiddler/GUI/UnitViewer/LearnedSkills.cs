@@ -32,23 +32,23 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void btnAllSkills_Click(object sender, EventArgs e)
         {
-            _character.LearnAllSkills();
+            _character.LearnNormalClassSkills();
         }
 
         private void btnDLCSkills_Click(object sender, EventArgs e)
         {
-            _character.LearnAllSkillsDLC();
+            _character.LearnPathBonusClassSkills();
         }
 
         private void btnEnemySkills_Click(object sender, EventArgs e)
         {
-            _character.LearnAllSkillsEnemy();
+            //_character.LearnEnemySkills();
         }
 
         private void btnViewLearnedSkills_Click(object sender, EventArgs e)
         {
             var popup = new GUI.UnitViewer.LearnedSkillsViewer(_character);
-            popup.Show();
+            popup.ShowDialog();
         }
     }
 }

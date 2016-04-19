@@ -894,9 +894,8 @@ namespace FEFTwiddler.Model
 
         #region Cheats
 
-        public void LearnAllSkills()
+        public void LearnNormalClassSkills()
         {
-            // Learn the skills, but leave existing learned skills outside this range intact
             LearnedSkills.Add(new byte[]
             { 0xDF, 0xFF, 0x7F, 0xFB,
               0xFF, 0xFF, 0xFF, 0xFF,
@@ -905,20 +904,18 @@ namespace FEFTwiddler.Model
               0x00, 0x00, 0x00, 0x00 });
         }
 
-        public void LearnAllSkillsDLC()
+        public void LearnPathBonusClassSkills()
         {
-            // TODO: Change array to include only DLC skills
             LearnedSkills.Add(new byte[]
-            { 0xFF, 0xFF, 0xFF, 0xFF,
+            { 0xFF, 0xFF, 0xFF, 0xFE,
               0xFF, 0xFF, 0xFF, 0xFF,
-              0xFF, 0xFE, 0xFF, 0xFF,
-              0xFF, 0xFF, 0x81, 0x03,
+              0xFF, 0xFF, 0xFF, 0xFF,
+              0xFF, 0xFF, 0x01, 0x07,
               0xFF, 0xFF, 0xFF, 0xFF });
         }
 
-        public void LearnAllSkillsEnemy()
+        public void LearnDLCClassSkills()
         {
-            // TODO: Change array to include only enemy skills
             LearnedSkills.Add(new byte[]
             { 0xFF, 0xFF, 0xFF, 0xFF,
               0xFF, 0xFF, 0xFF, 0xFF,
@@ -926,6 +923,28 @@ namespace FEFTwiddler.Model
               0xFF, 0xFF, 0xFF, 0xFF,
               0xFF, 0xFF, 0xFF, 0xFF });
         }
+
+        public void LearnAmiiboClassSkills()
+        {
+            LearnedSkills.Add(new byte[]
+            { 0xFF, 0xFF, 0xFF, 0xFF,
+              0xFF, 0xFF, 0xFF, 0xFF,
+              0xFF, 0xFF, 0xFF, 0xFF,
+              0xFF, 0xFF, 0xFF, 0xFF,
+              0xFF, 0xFF, 0xFF, 0xFF });
+        }
+
+        public void LearnEnemyAndNPCSkills()
+        {
+            LearnedSkills.Add(new byte[]
+            { 0xFF, 0xFF, 0xFF, 0xFF,
+              0xFF, 0xFF, 0xFF, 0xFF,
+              0xFF, 0xFF, 0xFF, 0xFF,
+              0xFF, 0xFF, 0xFF, 0xFF,
+              0xFF, 0xFF, 0xFF, 0xFF });
+        }
+
+        // TODO: Unlearn cheats
 
         public void MaximizeStatues()
         {

@@ -40,7 +40,7 @@ namespace FEFTwiddler.GUI.ChapterData
         {
             foreach (var character in _chapterSave.Characters)
             {
-                character.LearnAllSkills();
+                character.LearnNormalClassSkills();
             }
             MessageBox.Show("Done!");
         }
@@ -49,7 +49,7 @@ namespace FEFTwiddler.GUI.ChapterData
         {
             foreach (var character in _chapterSave.Characters)
             {
-                character.LearnAllSkillsDLC();
+                character.LearnPathBonusClassSkills();
             }
             MessageBox.Show("Done!");
         }
@@ -58,7 +58,7 @@ namespace FEFTwiddler.GUI.ChapterData
         {
             foreach (var character in _chapterSave.Characters)
             {
-                character.LearnAllSkillsEnemy();
+                //character.LearnEnemySkills();
             }
             MessageBox.Show("Done!");
         }

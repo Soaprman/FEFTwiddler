@@ -83,6 +83,7 @@
     <Compile Include="Enums\Stat.cs" />
     <Compile Include="Enums\Underwear.cs" />
     <Compile Include="Extensions\BinaryReaderExtensions.cs" />
+    <Compile Include="Extensions\BitmapExtensions.cs" />
     <Compile Include="Extensions\ByteArrayExtensions.cs" />
     <Compile Include="Extensions\ByteExtensions.cs" />
     <Compile Include="Extensions\IEnumerableExtensions.cs" />
@@ -140,11 +141,11 @@
     <Compile Include="GUI\UnitViewer\Class.Designer.cs">
       <DependentUpon>Class.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\UnitViewer\EquippedSkills.cs">
+    <Compile Include="GUI\UnitViewer\Skills.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\UnitViewer\EquippedSkills.Designer.cs">
-      <DependentUpon>EquippedSkills.cs</DependentUpon>
+    <Compile Include="GUI\UnitViewer\Skills.Designer.cs">
+      <DependentUpon>Skills.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\UnitViewer\Flags.cs">
       <SubType>UserControl</SubType>
@@ -244,8 +245,8 @@
     <EmbeddedResource Include="GUI\UnitViewer\Class.resx">
       <DependentUpon>Class.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\UnitViewer\EquippedSkills.resx">
-      <DependentUpon>EquippedSkills.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\UnitViewer\Skills.resx">
+      <DependentUpon>Skills.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\Flags.resx">
       <DependentUpon>Flags.cs</DependentUpon>
