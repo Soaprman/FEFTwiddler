@@ -640,7 +640,7 @@
     <text lang="English" displayName="Nobility" />
     <text lang="Japanese" displayName="【高貴なる血統】" />
     <learnedSkillInfo byteOffset="13" bitMask="4" />
-    <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
+    <categories normalClass="false" corrinOnly="true" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="107" name="FutureSight" personal="false" unlearnable="false">
     <text lang="English" displayName="Future Sight" />
