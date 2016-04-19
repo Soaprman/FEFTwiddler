@@ -120,8 +120,8 @@ namespace FEFTwiddler.GUI.UnitViewer
         {
             if (_character == null) return new List<Data.Skill>();
 
-            return Data.Database.Skills.GetAll()
-                .Where((x) => !x.IsUnlearnable && !x.IsPersonal && _character.LearnedSkills.Contains(x.SkillID))
+            return Data.Database.Skills.GetAllLearnable()
+                .Where((x) => _character.LearnedSkills.Contains(x.SkillID))
                 .OrderBy((x) => x.DisplayName)
                 .ToList();
         }

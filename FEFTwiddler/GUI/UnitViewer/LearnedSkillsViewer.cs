@@ -24,7 +24,7 @@ namespace FEFTwiddler.GUI.UnitViewer
         {
             this.Text = "Learned Skills for " + Data.Database.Characters.GetByID(_character.CharacterID).DisplayName;
 
-            var allSkills = Data.Database.Skills.GetAll().Where((x) => !x.IsPersonal && !x.IsUnlearnable && x.SkillID != Enums.Skill.None).OrderBy((x) => x.DisplayName);
+            var allSkills = Data.Database.Skills.GetAllLearnable().Where((x) => x.SkillID != Enums.Skill.None).OrderBy((x) => x.DisplayName);
             IEnumerable<Data.Skill> someSkills;
 
             someSkills = allSkills.Where((x) => x.IsNormalClassSkill);

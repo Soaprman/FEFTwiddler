@@ -23,6 +23,9 @@ namespace FEFTwiddler.Data
             return FromElement(row);
         }
 
+        /// <summary>
+        /// Get all skills (even unlearnable ones)
+        /// </summary>
         public IEnumerable<Skill> GetAll()
         {
             var elements = _data.Elements("skill");
@@ -30,6 +33,21 @@ namespace FEFTwiddler.Data
             foreach (var e in elements)
             {
                 rows.Add(FromElement(e));
+            }
+            return rows;
+        }
+
+        /// <summary>
+        /// Get all learnable (i.e. not personal or defined as unlearnable) skills
+        /// </summary>
+        public IEnumerable<Skill> GetAllLearnable()
+        {
+            var elements = _data.Elements("skill");
+            var rows = new List<Skill>();
+            foreach (var e in elements)
+            {
+                var skill = FromElement(e);
+                if (!skill.IsPersonal && !skill.IsUnlearnable) rows.Add(skill);
             }
             return rows;
         }
