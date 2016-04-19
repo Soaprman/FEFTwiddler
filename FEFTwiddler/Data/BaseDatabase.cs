@@ -60,13 +60,24 @@ namespace FEFTwiddler.Data
         /// </summary>
         protected void UpdateXmlStructure()
         {
-            var rows = _data.Elements("character");
+            var rows = _data.Elements("skill");
             for (var i = 0; i < rows.Count(); i++)
             {
                 var row = rows.ElementAt(i);
 
-                var flags = XElement.Parse(@"<flags canUseStones=""false""/>");
-                row.Add(flags);
+                var categories = XElement.Parse(@"<categories corrinOnly=""false"" azuraOnly=""false"" kitsuneOnly=""false"" wolfskinOnly=""false"" pathBonusClass=""false"" dlcClass=""false"" amiiboClass=""false"" enemyAndNpc=""false"" />");
+                row.Add(categories);
+
+                categories.SetAttributeValue("dlcClass", row.GetAttribute("dlc"));
+                categories.SetAttributeValue("enemyAndNpc", row.GetAttribute("enemyOnly"));
+                var removeAttrs = row.Attributes().Where((x) => x.Name == "dlc" || x.Name == "enemyOnly");
+                foreach (var attr in removeAttrs)
+                {
+                    attr.Remove();
+                }
+
+                //var flags = XElement.Parse(@"<flags canUseStones=""false""/>");
+                //row.Add(flags);
 
                 // skill flags
                 //if (i <= 112)

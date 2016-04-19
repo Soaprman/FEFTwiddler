@@ -38,17 +38,26 @@ namespace FEFTwiddler.Data
         {
             var displayName = GetDisplayName(row);
             var learnedSkillInfo = row.Elements("learnedSkillInfo").First();
+            var categories = row.Elements("categories").First();
 
             return new Skill
             {
                 SkillID = (Enums.Skill)row.GetAttribute<byte>("id"),
                 DisplayName = displayName,
-                IsEnemyOnly = row.GetAttribute("enemyOnly", false),
-                IsDLC = row.GetAttribute("dlc", false),
                 IsPersonal = row.GetAttribute("personal", false),
                 IsUnlearnable = row.GetAttribute("unlearnable", false),
                 LearnedSkillByteOffset = learnedSkillInfo.GetAttribute<byte>("byteOffset"),
-                LearnedSkillBitMask = learnedSkillInfo.GetAttribute<byte>("bitMask")
+                LearnedSkillBitMask = learnedSkillInfo.GetAttribute<byte>("bitMask"),
+                IsNormalClassSkill = categories.GetAttribute<bool>("normalClass"),
+                IsCorrinOnlySkill = categories.GetAttribute<bool>("corrinOnly"),
+                IsAzuraOnlySkill = categories.GetAttribute<bool>("azuraOnly"),
+                IsKitsuneOnlySkill = categories.GetAttribute<bool>("kitsuneOnly"),
+                IsWolfskinOnlySkill = categories.GetAttribute<bool>("wolfskinOnly"),
+                IsVillagerOnlySkill = categories.GetAttribute<bool>("villagerOnly"),
+                IsPathBonusClassSkill = categories.GetAttribute<bool>("pathBonusClass"),
+                IsDlcClassSkill = categories.GetAttribute<bool>("dlcClass"),
+                IsAmiiboClassSkill = categories.GetAttribute<bool>("amiiboClass"),
+                IsEnemyAndNpcSkill = categories.GetAttribute<bool>("enemyAndNpc")
             };
         }
     }

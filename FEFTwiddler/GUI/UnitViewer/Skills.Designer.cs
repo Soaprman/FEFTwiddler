@@ -1,6 +1,6 @@
 ﻿namespace FEFTwiddler.GUI.UnitViewer
 {
-    partial class EquippedSkills
+    partial class Skills
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.chkIncludeEnemyOnlySkills = new System.Windows.Forms.CheckBox();
             this.cmbSkill1 = new System.Windows.Forms.ComboBox();
             this.pictSkill1 = new System.Windows.Forms.PictureBox();
             this.pictSkill2 = new System.Windows.Forms.PictureBox();
@@ -39,24 +38,13 @@
             this.cmbSkill4 = new System.Windows.Forms.ComboBox();
             this.pictSkill5 = new System.Windows.Forms.PictureBox();
             this.cmbSkill5 = new System.Windows.Forms.ComboBox();
+            this.btnEditLearnedSkills = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill5)).BeginInit();
             this.SuspendLayout();
-            // 
-            // chkIncludeEnemyOnlySkills
-            // 
-            this.chkIncludeEnemyOnlySkills.AutoSize = true;
-            this.chkIncludeEnemyOnlySkills.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.chkIncludeEnemyOnlySkills.Location = new System.Drawing.Point(3, 142);
-            this.chkIncludeEnemyOnlySkills.Name = "chkIncludeEnemyOnlySkills";
-            this.chkIncludeEnemyOnlySkills.Size = new System.Drawing.Size(142, 17);
-            this.chkIncludeEnemyOnlySkills.TabIndex = 23;
-            this.chkIncludeEnemyOnlySkills.Text = "Include enemy-only skills";
-            this.chkIncludeEnemyOnlySkills.UseVisualStyleBackColor = true;
-            this.chkIncludeEnemyOnlySkills.CheckedChanged += new System.EventHandler(this.chkIncludeEnemyOnlySkills_CheckedChanged);
             // 
             // cmbSkill1
             // 
@@ -67,7 +55,6 @@
             this.cmbSkill1.Size = new System.Drawing.Size(121, 21);
             this.cmbSkill1.TabIndex = 14;
             this.cmbSkill1.SelectedIndexChanged += new System.EventHandler(this.cmbSkill1_SelectedIndexChanged);
-            this.cmbSkill1.Leave += new System.EventHandler(this.cmbSkill1_Leave);
             // 
             // pictSkill1
             // 
@@ -96,7 +83,6 @@
             this.cmbSkill2.Size = new System.Drawing.Size(121, 21);
             this.cmbSkill2.TabIndex = 16;
             this.cmbSkill2.SelectedIndexChanged += new System.EventHandler(this.cmbSkill2_SelectedIndexChanged);
-            this.cmbSkill2.Leave += new System.EventHandler(this.cmbSkill2_Leave);
             // 
             // pictSkill3
             // 
@@ -116,7 +102,6 @@
             this.cmbSkill3.Size = new System.Drawing.Size(121, 21);
             this.cmbSkill3.TabIndex = 18;
             this.cmbSkill3.SelectedIndexChanged += new System.EventHandler(this.cmbSkill3_SelectedIndexChanged);
-            this.cmbSkill3.Leave += new System.EventHandler(this.cmbSkill3_Leave);
             // 
             // pictSkill4
             // 
@@ -136,7 +121,6 @@
             this.cmbSkill4.Size = new System.Drawing.Size(121, 21);
             this.cmbSkill4.TabIndex = 20;
             this.cmbSkill4.SelectedIndexChanged += new System.EventHandler(this.cmbSkill4_SelectedIndexChanged);
-            this.cmbSkill4.Leave += new System.EventHandler(this.cmbSkill4_Leave);
             // 
             // pictSkill5
             // 
@@ -156,13 +140,22 @@
             this.cmbSkill5.Size = new System.Drawing.Size(121, 21);
             this.cmbSkill5.TabIndex = 22;
             this.cmbSkill5.SelectedIndexChanged += new System.EventHandler(this.cmbSkill5_SelectedIndexChanged);
-            this.cmbSkill5.Leave += new System.EventHandler(this.cmbSkill5_Leave);
             // 
-            // EquippedSkills
+            // btnEditLearnedSkills
+            // 
+            this.btnEditLearnedSkills.Location = new System.Drawing.Point(3, 141);
+            this.btnEditLearnedSkills.Name = "btnEditLearnedSkills";
+            this.btnEditLearnedSkills.Size = new System.Drawing.Size(151, 23);
+            this.btnEditLearnedSkills.TabIndex = 23;
+            this.btnEditLearnedSkills.Text = "Edit Learned Skills";
+            this.btnEditLearnedSkills.UseVisualStyleBackColor = true;
+            this.btnEditLearnedSkills.Click += new System.EventHandler(this.btnEditLearnedSkills_Click);
+            // 
+            // Skills
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.chkIncludeEnemyOnlySkills);
+            this.Controls.Add(this.btnEditLearnedSkills);
             this.Controls.Add(this.cmbSkill1);
             this.Controls.Add(this.pictSkill1);
             this.Controls.Add(this.pictSkill2);
@@ -174,21 +167,18 @@
             this.Controls.Add(this.pictSkill5);
             this.Controls.Add(this.cmbSkill5);
             this.Margin = new System.Windows.Forms.Padding(0);
-            this.Name = "EquippedSkills";
-            this.Size = new System.Drawing.Size(158, 163);
+            this.Name = "Skills";
+            this.Size = new System.Drawing.Size(158, 168);
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictSkill5)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.CheckBox chkIncludeEnemyOnlySkills;
         private System.Windows.Forms.ComboBox cmbSkill1;
         private System.Windows.Forms.PictureBox pictSkill1;
         private System.Windows.Forms.PictureBox pictSkill2;
@@ -199,5 +189,6 @@
         private System.Windows.Forms.ComboBox cmbSkill4;
         private System.Windows.Forms.PictureBox pictSkill5;
         private System.Windows.Forms.ComboBox cmbSkill5;
+        private System.Windows.Forms.Button btnEditLearnedSkills;
     }
 }
