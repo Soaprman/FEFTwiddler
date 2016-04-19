@@ -46,6 +46,7 @@ namespace FEFTwiddler.GUI.Controls
                 maskedBox.Row = row;
                 maskedBox.Width = 380;
                 maskedBox.Mask = GetMaskedBoxPattern(bytesInRow);
+                if (maskedBox.Mask == "") maskedBox.Enabled = false;
                 maskedBox.Text = GetMaskedBoxText(row);
                 maskedBox.Font = new Font("Courier New", 10);
                 maskedBox.BorderStyle = BorderStyle.None;
