@@ -80,7 +80,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(917, 465);
+            this.btnSave.Location = new System.Drawing.Point(892, 465);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(143, 63);
             this.btnSave.TabIndex = 6;
@@ -100,7 +100,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(552, 9);
+            this.label5.Location = new System.Drawing.Point(527, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 13);
             this.label5.TabIndex = 10;
@@ -109,7 +109,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(533, 76);
+            this.label6.Location = new System.Drawing.Point(508, 76);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(114, 13);
             this.label6.TabIndex = 12;
@@ -118,7 +118,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(582, 212);
+            this.label7.Location = new System.Drawing.Point(557, 212);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 13);
             this.label7.TabIndex = 14;
@@ -127,7 +127,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(569, 281);
+            this.label8.Location = new System.Drawing.Point(544, 281);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 13);
             this.label8.TabIndex = 16;
@@ -147,7 +147,7 @@
             // 
             this.lblRawEndBlockType.AutoSize = true;
             this.lblRawEndBlockType.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRawEndBlockType.Location = new System.Drawing.Point(569, 303);
+            this.lblRawEndBlockType.Location = new System.Drawing.Point(544, 303);
             this.lblRawEndBlockType.Name = "lblRawEndBlockType";
             this.lblRawEndBlockType.Size = new System.Drawing.Size(72, 16);
             this.lblRawEndBlockType.TabIndex = 18;
@@ -155,7 +155,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(743, 465);
+            this.btnCancel.Location = new System.Drawing.Point(718, 465);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(143, 63);
             this.btnCancel.TabIndex = 19;
@@ -165,8 +165,9 @@
             // 
             // hexRawEndBlock
             // 
+            this.hexRawEndBlock.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.hexRawEndBlock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.hexRawEndBlock.Location = new System.Drawing.Point(650, 281);
+            this.hexRawEndBlock.Location = new System.Drawing.Point(625, 281);
             this.hexRawEndBlock.Margin = new System.Windows.Forms.Padding(0);
             this.hexRawEndBlock.Name = "hexRawEndBlock";
             this.hexRawEndBlock.Size = new System.Drawing.Size(413, 136);
@@ -174,8 +175,9 @@
             // 
             // hexRawBlock3
             // 
+            this.hexRawBlock3.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.hexRawBlock3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.hexRawBlock3.Location = new System.Drawing.Point(650, 212);
+            this.hexRawBlock3.Location = new System.Drawing.Point(625, 212);
             this.hexRawBlock3.Margin = new System.Windows.Forms.Padding(0);
             this.hexRawBlock3.Name = "hexRawBlock3";
             this.hexRawBlock3.Size = new System.Drawing.Size(413, 69);
@@ -183,8 +185,9 @@
             // 
             // hexRawDeployedUnitInfo
             // 
+            this.hexRawDeployedUnitInfo.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.hexRawDeployedUnitInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.hexRawDeployedUnitInfo.Location = new System.Drawing.Point(650, 76);
+            this.hexRawDeployedUnitInfo.Location = new System.Drawing.Point(625, 76);
             this.hexRawDeployedUnitInfo.Margin = new System.Windows.Forms.Padding(0);
             this.hexRawDeployedUnitInfo.Name = "hexRawDeployedUnitInfo";
             this.hexRawDeployedUnitInfo.Size = new System.Drawing.Size(413, 136);
@@ -192,8 +195,9 @@
             // 
             // hexRawLearnedSkills
             // 
+            this.hexRawLearnedSkills.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.hexRawLearnedSkills.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.hexRawLearnedSkills.Location = new System.Drawing.Point(650, 9);
+            this.hexRawLearnedSkills.Location = new System.Drawing.Point(625, 9);
             this.hexRawLearnedSkills.Margin = new System.Windows.Forms.Padding(0);
             this.hexRawLearnedSkills.Name = "hexRawLearnedSkills";
             this.hexRawLearnedSkills.Size = new System.Drawing.Size(413, 67);
@@ -201,6 +205,7 @@
             // 
             // hexRawBlock2
             // 
+            this.hexRawBlock2.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.hexRawBlock2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.hexRawBlock2.Location = new System.Drawing.Point(92, 396);
             this.hexRawBlock2.Margin = new System.Windows.Forms.Padding(0);
@@ -210,6 +215,7 @@
             // 
             // hexRawSupports
             // 
+            this.hexRawSupports.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.hexRawSupports.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.hexRawSupports.Location = new System.Drawing.Point(92, 260);
             this.hexRawSupports.Margin = new System.Windows.Forms.Padding(0);
@@ -219,6 +225,7 @@
             // 
             // hexRawInventory
             // 
+            this.hexRawInventory.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.hexRawInventory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.hexRawInventory.Location = new System.Drawing.Point(92, 190);
             this.hexRawInventory.Margin = new System.Windows.Forms.Padding(0);
@@ -228,6 +235,7 @@
             // 
             // hexRawBlock1
             // 
+            this.hexRawBlock1.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.hexRawBlock1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.hexRawBlock1.Location = new System.Drawing.Point(92, 9);
             this.hexRawBlock1.Margin = new System.Windows.Forms.Padding(0);
@@ -238,7 +246,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(756, 449);
+            this.label9.Location = new System.Drawing.Point(731, 449);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(304, 13);
             this.label9.TabIndex = 20;
@@ -248,7 +256,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1072, 540);
+            this.ClientSize = new System.Drawing.Size(1046, 540);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lblRawEndBlockType);
