@@ -11,6 +11,7 @@ namespace FEFTwiddler.GUI
         private Model.SaveFile _saveFile;
         private Model.ChapterSave _chapterSave;
         private Model.Character _selectedCharacter;
+        private Controls.Blanket _unitViewerBlanket;
 
         public MainForm()
         {
@@ -20,7 +21,7 @@ namespace FEFTwiddler.GUI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            _unitViewerBlanket = GUI.Controls.Blanket.AttachTo(pnlUnitView);
         }
 
         private void InitializeDatabases()
@@ -144,6 +145,8 @@ namespace FEFTwiddler.GUI
 
         private void LoadCharacter(Model.Character character)
         {
+            var message = "";
+
             if (Enum.IsDefined(typeof(Enums.Character), character.CharacterID))
             {
                 if (character.CorrinName != null)
@@ -156,18 +159,52 @@ namespace FEFTwiddler.GUI
                 }
             }
             else
+            {
                 lblName.Text = character.CharacterID.ToString();
+            }
 
-            class1.LoadCharacter(_selectedCharacter);
-            levelAndExperience1.LoadCharacter(_selectedCharacter);
-            stats1.LoadCharacter(_selectedCharacter);
-            flags1.LoadCharacter(_selectedCharacter);
-            battleData1.LoadCharacter(_selectedCharacter);
-            skills1.LoadCharacter(_selectedCharacter);
-            inventory1.LoadCharacter(_selectedCharacter);
-            accessories1.LoadCharacter(_selectedCharacter);
-            hairColor1.LoadCharacter(_selectedCharacter);
-            weaponExperience1.LoadCharacter(_selectedCharacter);
+            try { class1.LoadCharacter(_selectedCharacter); }
+            catch (Exception) { message += Environment.NewLine + "Error loading Class data"; }
+
+            try { levelAndExperience1.LoadCharacter(_selectedCharacter); }
+            catch (Exception) { message += Environment.NewLine + "Error loading Level and Experience data"; }
+
+            try { stats1.LoadCharacter(_selectedCharacter); }
+            catch (Exception) { message += Environment.NewLine + "Error loading Stats data"; }
+
+            try { flags1.LoadCharacter(_selectedCharacter); }
+            catch (Exception) { message += Environment.NewLine + "Error loading Flags data"; }
+
+            try { battleData1.LoadCharacter(_selectedCharacter); }
+            catch (Exception) { message += Environment.NewLine + "Error loading Battle data"; }
+
+            try { skills1.LoadCharacter(_selectedCharacter); }
+            catch (Exception) { message += Environment.NewLine + "Error loading Skills data"; }
+
+            try { inventory1.LoadCharacter(_selectedCharacter); }
+            catch (Exception) { message += Environment.NewLine + "Error loading Inventory data"; }
+
+            try { accessories1.LoadCharacter(_selectedCharacter); }
+            catch (Exception) { message += Environment.NewLine + "Error loading Accessories data"; }
+
+            try { hairColor1.LoadCharacter(_selectedCharacter); }
+            catch (Exception) { message += Environment.NewLine + "Error loading Hair Color data"; }
+
+            try { weaponExperience1.LoadCharacter(_selectedCharacter); }
+            catch (Exception) { message += Environment.NewLine + "Error loading Weapon Experience data"; }
+
+            if (message.Length > 0)
+            {
+                message = "One or more values is invalid for this character. You can still use the hex editor, though." + Environment.NewLine + Environment.NewLine + message;
+                _unitViewerBlanket.SetMessage(message);
+                _unitViewerBlanket.Cover();
+
+                btnOpenHexEditor.BringToFront();
+            }
+            else
+            {
+                _unitViewerBlanket.Uncover();
+            }
         }
 
         private void tabPage1_Enter(object sender, EventArgs e)

@@ -108,6 +108,9 @@
     <Compile Include="GUI\ChapterData\Megacheats\Skills.Designer.cs">
       <DependentUpon>Skills.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Controls\Blanket.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="GUI\Controls\HexBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
