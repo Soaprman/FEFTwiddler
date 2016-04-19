@@ -51,7 +51,15 @@ namespace FEFTwiddler.GUI.UnitViewer
                 flwAzuraOnlySkills.Controls.Add(icon);
             }
 
-            someSkills = allSkills.Where((x) => x.IsKitsuneOnlySkill);
+            someSkills = allSkills.Where((x) => x.IsKitsuneOnlySkill && x.IsWolfskinOnlySkill);
+            foreach (var skill in someSkills)
+            {
+                var icon = new SkillIcon(_tempLearnedSkills, skill);
+                toolTip1.SetToolTip(icon, skill.DisplayName);
+                flwBeastOnlySkills.Controls.Add(icon);
+            }
+
+            someSkills = allSkills.Where((x) => x.IsKitsuneOnlySkill && !x.IsWolfskinOnlySkill);
             foreach (var skill in someSkills)
             {
                 var icon = new SkillIcon(_tempLearnedSkills, skill);
@@ -59,7 +67,7 @@ namespace FEFTwiddler.GUI.UnitViewer
                 flwKitsuneOnlySkills.Controls.Add(icon);
             }
 
-            someSkills = allSkills.Where((x) => x.IsWolfskinOnlySkill);
+            someSkills = allSkills.Where((x) => x.IsWolfskinOnlySkill && !x.IsKitsuneOnlySkill);
             foreach (var skill in someSkills)
             {
                 var icon = new SkillIcon(_tempLearnedSkills, skill);
@@ -162,6 +170,22 @@ namespace FEFTwiddler.GUI.UnitViewer
         private void btnLearnAzuraOnlySkills_Click(object sender, EventArgs e)
         {
             foreach (SkillIcon skillIcon in flwAzuraOnlySkills.Controls)
+            {
+                skillIcon.Enable();
+            }
+        }
+
+        private void btnUnlearnBeastOnlySkills_Click(object sender, EventArgs e)
+        {
+            foreach (SkillIcon skillIcon in flwBeastOnlySkills.Controls)
+            {
+                skillIcon.Disable();
+            }
+        }
+
+        private void btnLearnBeastOnlySkills_Click(object sender, EventArgs e)
+        {
+            foreach (SkillIcon skillIcon in flwBeastOnlySkills.Controls)
             {
                 skillIcon.Enable();
             }

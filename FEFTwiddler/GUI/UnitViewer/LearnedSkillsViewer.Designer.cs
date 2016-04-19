@@ -74,6 +74,10 @@
             this.btnUnlearnAmiiboClassSkills = new System.Windows.Forms.Button();
             this.btnLearnEnemyAndNpcSkills = new System.Windows.Forms.Button();
             this.btnUnlearnEnemyAndNpcSkills = new System.Windows.Forms.Button();
+            this.btnLearnBeastOnlySkills = new System.Windows.Forms.Button();
+            this.btnUnlearnBeastOnlySkills = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.flwBeastOnlySkills = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // flwNormalClassSkills
@@ -194,7 +198,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(285, 117);
+            this.label6.Location = new System.Drawing.Point(285, 171);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(91, 13);
             this.label6.TabIndex = 14;
@@ -205,7 +209,7 @@
             this.flwKitsuneOnlySkills.AutoScroll = true;
             this.flwKitsuneOnlySkills.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flwKitsuneOnlySkills.Cursor = System.Windows.Forms.Cursors.Default;
-            this.flwKitsuneOnlySkills.Location = new System.Drawing.Point(288, 133);
+            this.flwKitsuneOnlySkills.Location = new System.Drawing.Point(288, 187);
             this.flwKitsuneOnlySkills.Name = "flwKitsuneOnlySkills";
             this.flwKitsuneOnlySkills.Size = new System.Drawing.Size(182, 35);
             this.flwKitsuneOnlySkills.TabIndex = 13;
@@ -213,7 +217,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(285, 171);
+            this.label7.Location = new System.Drawing.Point(285, 225);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 13);
             this.label7.TabIndex = 16;
@@ -224,7 +228,7 @@
             this.flwWolfskinOnlySkills.AutoScroll = true;
             this.flwWolfskinOnlySkills.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flwWolfskinOnlySkills.Cursor = System.Windows.Forms.Cursors.Default;
-            this.flwWolfskinOnlySkills.Location = new System.Drawing.Point(288, 187);
+            this.flwWolfskinOnlySkills.Location = new System.Drawing.Point(288, 241);
             this.flwWolfskinOnlySkills.Name = "flwWolfskinOnlySkills";
             this.flwWolfskinOnlySkills.Size = new System.Drawing.Size(182, 35);
             this.flwWolfskinOnlySkills.TabIndex = 15;
@@ -232,7 +236,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(285, 225);
+            this.label8.Location = new System.Drawing.Point(285, 279);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(90, 13);
             this.label8.TabIndex = 18;
@@ -243,7 +247,7 @@
             this.flwVillagerOnlySkills.AutoScroll = true;
             this.flwVillagerOnlySkills.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flwVillagerOnlySkills.Cursor = System.Windows.Forms.Cursors.Default;
-            this.flwVillagerOnlySkills.Location = new System.Drawing.Point(288, 241);
+            this.flwVillagerOnlySkills.Location = new System.Drawing.Point(288, 295);
             this.flwVillagerOnlySkills.Name = "flwVillagerOnlySkills";
             this.flwVillagerOnlySkills.Size = new System.Drawing.Size(182, 35);
             this.flwVillagerOnlySkills.TabIndex = 17;
@@ -295,7 +299,7 @@
             // btnLearnKitsuneOnlySkills
             // 
             this.btnLearnKitsuneOnlySkills.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLearnKitsuneOnlySkills.Location = new System.Drawing.Point(476, 145);
+            this.btnLearnKitsuneOnlySkills.Location = new System.Drawing.Point(476, 199);
             this.btnLearnKitsuneOnlySkills.Name = "btnLearnKitsuneOnlySkills";
             this.btnLearnKitsuneOnlySkills.Size = new System.Drawing.Size(23, 23);
             this.btnLearnKitsuneOnlySkills.TabIndex = 24;
@@ -306,7 +310,7 @@
             // btnUnlearnKitsuneOnlySkills
             // 
             this.btnUnlearnKitsuneOnlySkills.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUnlearnKitsuneOnlySkills.Location = new System.Drawing.Point(476, 120);
+            this.btnUnlearnKitsuneOnlySkills.Location = new System.Drawing.Point(476, 174);
             this.btnUnlearnKitsuneOnlySkills.Name = "btnUnlearnKitsuneOnlySkills";
             this.btnUnlearnKitsuneOnlySkills.Size = new System.Drawing.Size(23, 23);
             this.btnUnlearnKitsuneOnlySkills.TabIndex = 23;
@@ -317,7 +321,7 @@
             // btnLearnWolfskinOnlySkills
             // 
             this.btnLearnWolfskinOnlySkills.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLearnWolfskinOnlySkills.Location = new System.Drawing.Point(476, 199);
+            this.btnLearnWolfskinOnlySkills.Location = new System.Drawing.Point(476, 253);
             this.btnLearnWolfskinOnlySkills.Name = "btnLearnWolfskinOnlySkills";
             this.btnLearnWolfskinOnlySkills.Size = new System.Drawing.Size(23, 23);
             this.btnLearnWolfskinOnlySkills.TabIndex = 26;
@@ -328,7 +332,7 @@
             // btnUnlearnWolfskinOnlySkills
             // 
             this.btnUnlearnWolfskinOnlySkills.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUnlearnWolfskinOnlySkills.Location = new System.Drawing.Point(476, 174);
+            this.btnUnlearnWolfskinOnlySkills.Location = new System.Drawing.Point(476, 228);
             this.btnUnlearnWolfskinOnlySkills.Name = "btnUnlearnWolfskinOnlySkills";
             this.btnUnlearnWolfskinOnlySkills.Size = new System.Drawing.Size(23, 23);
             this.btnUnlearnWolfskinOnlySkills.TabIndex = 25;
@@ -339,7 +343,7 @@
             // btnLearnVillagerOnlySkills
             // 
             this.btnLearnVillagerOnlySkills.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLearnVillagerOnlySkills.Location = new System.Drawing.Point(476, 253);
+            this.btnLearnVillagerOnlySkills.Location = new System.Drawing.Point(476, 307);
             this.btnLearnVillagerOnlySkills.Name = "btnLearnVillagerOnlySkills";
             this.btnLearnVillagerOnlySkills.Size = new System.Drawing.Size(23, 23);
             this.btnLearnVillagerOnlySkills.TabIndex = 28;
@@ -350,7 +354,7 @@
             // btnUnlearnVillagerOnlySkills
             // 
             this.btnUnlearnVillagerOnlySkills.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUnlearnVillagerOnlySkills.Location = new System.Drawing.Point(476, 228);
+            this.btnUnlearnVillagerOnlySkills.Location = new System.Drawing.Point(476, 282);
             this.btnUnlearnVillagerOnlySkills.Name = "btnUnlearnVillagerOnlySkills";
             this.btnUnlearnVillagerOnlySkills.Size = new System.Drawing.Size(23, 23);
             this.btnUnlearnVillagerOnlySkills.TabIndex = 27;
@@ -522,11 +526,56 @@
             this.btnUnlearnEnemyAndNpcSkills.UseVisualStyleBackColor = true;
             this.btnUnlearnEnemyAndNpcSkills.Click += new System.EventHandler(this.btnUnlearnEnemyAndNpcSkills_Click);
             // 
+            // btnLearnBeastOnlySkills
+            // 
+            this.btnLearnBeastOnlySkills.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLearnBeastOnlySkills.Location = new System.Drawing.Point(476, 145);
+            this.btnLearnBeastOnlySkills.Name = "btnLearnBeastOnlySkills";
+            this.btnLearnBeastOnlySkills.Size = new System.Drawing.Size(23, 23);
+            this.btnLearnBeastOnlySkills.TabIndex = 44;
+            this.btnLearnBeastOnlySkills.Text = "+";
+            this.btnLearnBeastOnlySkills.UseVisualStyleBackColor = true;
+            this.btnLearnBeastOnlySkills.Click += new System.EventHandler(this.btnLearnBeastOnlySkills_Click);
+            // 
+            // btnUnlearnBeastOnlySkills
+            // 
+            this.btnUnlearnBeastOnlySkills.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUnlearnBeastOnlySkills.Location = new System.Drawing.Point(476, 120);
+            this.btnUnlearnBeastOnlySkills.Name = "btnUnlearnBeastOnlySkills";
+            this.btnUnlearnBeastOnlySkills.Size = new System.Drawing.Size(23, 23);
+            this.btnUnlearnBeastOnlySkills.TabIndex = 43;
+            this.btnUnlearnBeastOnlySkills.Text = "-";
+            this.btnUnlearnBeastOnlySkills.UseVisualStyleBackColor = true;
+            this.btnUnlearnBeastOnlySkills.Click += new System.EventHandler(this.btnUnlearnBeastOnlySkills_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(285, 117);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(83, 13);
+            this.label13.TabIndex = 42;
+            this.label13.Text = "Beast-only Skills";
+            // 
+            // flwBeastOnlySkills
+            // 
+            this.flwBeastOnlySkills.AutoScroll = true;
+            this.flwBeastOnlySkills.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flwBeastOnlySkills.Cursor = System.Windows.Forms.Cursors.Default;
+            this.flwBeastOnlySkills.Location = new System.Drawing.Point(288, 133);
+            this.flwBeastOnlySkills.Name = "flwBeastOnlySkills";
+            this.flwBeastOnlySkills.Size = new System.Drawing.Size(182, 35);
+            this.flwBeastOnlySkills.TabIndex = 41;
+            // 
             // LearnedSkillsViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 484);
+            this.Controls.Add(this.btnLearnBeastOnlySkills);
+            this.Controls.Add(this.btnUnlearnBeastOnlySkills);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.flwBeastOnlySkills);
             this.Controls.Add(this.btnLearnEnemyAndNpcSkills);
             this.Controls.Add(this.btnUnlearnEnemyAndNpcSkills);
             this.Controls.Add(this.btnLearnAmiiboClassSkills);
@@ -625,5 +674,9 @@
         private System.Windows.Forms.Button btnUnlearnAmiiboClassSkills;
         private System.Windows.Forms.Button btnLearnEnemyAndNpcSkills;
         private System.Windows.Forms.Button btnUnlearnEnemyAndNpcSkills;
+        private System.Windows.Forms.Button btnLearnBeastOnlySkills;
+        private System.Windows.Forms.Button btnUnlearnBeastOnlySkills;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.FlowLayoutPanel flwBeastOnlySkills;
     }
 }
