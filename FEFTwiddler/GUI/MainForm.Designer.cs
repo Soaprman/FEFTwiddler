@@ -58,7 +58,7 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lstLiving = new System.Windows.Forms.ListBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.megacheats1 = new FEFTwiddler.GUI.ChapterData.Megacheats();
+            this.megacheatsMain1 = new FEFTwiddler.GUI.ChapterData.MegacheatsMain();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.skills1 = new FEFTwiddler.GUI.UnitViewer.Skills();
             this.menuStrip1.SuspendLayout();
@@ -249,15 +249,15 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.megacheats1);
+            this.tabPage2.Controls.Add(this.megacheatsMain1);
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // megacheats1
             // 
-            resources.ApplyResources(this.megacheats1, "megacheats1");
-            this.megacheats1.Name = "megacheats1";
+            resources.ApplyResources(this.megacheatsMain1, "megacheats1");
+            this.megacheatsMain1.Name = "megacheats1";
             // 
             // saveToolStripMenuItem
             // 
@@ -319,7 +319,7 @@
         private UnitViewer.LevelAndExperience levelAndExperience1;
         private UnitViewer.Stats stats1;
         private UnitViewer.Accessories accessories1;
-        private ChapterData.Megacheats megacheats1;
+        private ChapterData.MegacheatsMain megacheatsMain1;
         private UnitViewer.Flags flags1;
         private UnitViewer.Class class1;
         private UnitViewer.BattleData battleData1;

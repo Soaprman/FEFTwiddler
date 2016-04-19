@@ -117,7 +117,7 @@ namespace FEFTwiddler.GUI
 
             goldAndPoints1.LoadChapterSave(_chapterSave);
             materials1.LoadChapterSave(_chapterSave);
-            megacheats1.LoadChapterSave(_chapterSave);
+            megacheatsMain1.LoadChapterSave(_chapterSave);
         }
 
         #endregion

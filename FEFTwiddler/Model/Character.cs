@@ -892,59 +892,155 @@ namespace FEFTwiddler.Model
 
         #endregion
 
-        #region Cheats
+        #region Skill Cheats
 
         public void LearnNormalClassSkills()
         {
-            LearnedSkills.Add(new byte[]
-            { 0xDF, 0xFF, 0x7F, 0xFB,
-              0xFF, 0xFF, 0xFF, 0xFF,
-              0xFF, 0xFE, 0xFF, 0xEF,
-              0xFF, 0xBF, 0x01, 0x00,
-              0x00, 0x00, 0x00, 0x00 });
+            var learnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsNormalClassSkill);
+            foreach (var skill in learnThese) LearnedSkills.Add(skill.SkillID);
+        }
+
+        public void LearnCorrinOnlySkills()
+        {
+            var learnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsCorrinOnlySkill);
+            foreach (var skill in learnThese) LearnedSkills.Add(skill.SkillID);
+        }
+
+        public void LearnAzuraOnlySkills()
+        {
+            var learnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsAzuraOnlySkill);
+            foreach (var skill in learnThese) LearnedSkills.Add(skill.SkillID);
+        }
+
+        public void LearnBeastOnlySkills()
+        {
+            var learnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsKitsuneOnlySkill && x.IsWolfskinOnlySkill);
+            foreach (var skill in learnThese) LearnedSkills.Add(skill.SkillID);
+        }
+
+        public void LearnKitsuneOnlySkills()
+        {
+            var learnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsKitsuneOnlySkill && !x.IsWolfskinOnlySkill);
+            foreach (var skill in learnThese) LearnedSkills.Add(skill.SkillID);
+        }
+
+        public void LearnWolfskinOnlySkills()
+        {
+            var learnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsWolfskinOnlySkill && !x.IsKitsuneOnlySkill);
+            foreach (var skill in learnThese) LearnedSkills.Add(skill.SkillID);
+        }
+
+        public void LearnVillagerOnlySkills()
+        {
+            var learnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsVillagerOnlySkill);
+            foreach (var skill in learnThese) LearnedSkills.Add(skill.SkillID);
         }
 
         public void LearnPathBonusClassSkills()
         {
-            LearnedSkills.Add(new byte[]
-            { 0xFF, 0xFF, 0xFF, 0xFE,
-              0xFF, 0xFF, 0xFF, 0xFF,
-              0xFF, 0xFF, 0xFF, 0xFF,
-              0xFF, 0xFF, 0x01, 0x07,
-              0xFF, 0xFF, 0xFF, 0xFF });
+            var learnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsPathBonusClassSkill);
+            foreach (var skill in learnThese) LearnedSkills.Add(skill.SkillID);
         }
 
-        public void LearnDLCClassSkills()
+        public void LearnDlcClassSkills()
         {
-            LearnedSkills.Add(new byte[]
-            { 0xFF, 0xFF, 0xFF, 0xFF,
-              0xFF, 0xFF, 0xFF, 0xFF,
-              0xFF, 0xFF, 0xFF, 0xFF,
-              0xFF, 0xFF, 0xFF, 0xFF,
-              0xFF, 0xFF, 0xFF, 0xFF });
+            var learnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsDlcClassSkill && !x.IsAmiiboClassSkill);
+            foreach (var skill in learnThese) LearnedSkills.Add(skill.SkillID);
         }
 
         public void LearnAmiiboClassSkills()
         {
-            LearnedSkills.Add(new byte[]
-            { 0xFF, 0xFF, 0xFF, 0xFF,
-              0xFF, 0xFF, 0xFF, 0xFF,
-              0xFF, 0xFF, 0xFF, 0xFF,
-              0xFF, 0xFF, 0xFF, 0xFF,
-              0xFF, 0xFF, 0xFF, 0xFF });
+            var learnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsAmiiboClassSkill);
+            foreach (var skill in learnThese) LearnedSkills.Add(skill.SkillID);
         }
 
-        public void LearnEnemyAndNPCSkills()
+        public void LearnEnemyAndNpcSkills()
         {
-            LearnedSkills.Add(new byte[]
-            { 0xFF, 0xFF, 0xFF, 0xFF,
-              0xFF, 0xFF, 0xFF, 0xFF,
-              0xFF, 0xFF, 0xFF, 0xFF,
-              0xFF, 0xFF, 0xFF, 0xFF,
-              0xFF, 0xFF, 0xFF, 0xFF });
+            var learnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsEnemyAndNpcSkill);
+            foreach (var skill in learnThese) LearnedSkills.Add(skill.SkillID);
         }
 
-        // TODO: Unlearn cheats
+        public void LearnAllSkills()
+        {
+            var learnThese = Data.Database.Skills.GetAllLearnable();
+            foreach (var skill in learnThese) LearnedSkills.Add(skill.SkillID);
+        }
+
+        public void UnlearnNormalClassSkills()
+        {
+            var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsNormalClassSkill);
+            foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+        }
+
+        public void UnlearnCorrinOnlySkills()
+        {
+            var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsCorrinOnlySkill);
+            foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+        }
+
+        public void UnlearnAzuraOnlySkills()
+        {
+            var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsAzuraOnlySkill);
+            foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+        }
+
+        public void UnlearnBeastOnlySkills()
+        {
+            var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsKitsuneOnlySkill && x.IsWolfskinOnlySkill);
+            foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+        }
+
+        public void UnlearnKitsuneOnlySkills()
+        {
+            var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsKitsuneOnlySkill && !x.IsWolfskinOnlySkill);
+            foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+        }
+
+        public void UnlearnWolfskinOnlySkills()
+        {
+            var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsWolfskinOnlySkill && !x.IsKitsuneOnlySkill);
+            foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+        }
+
+        public void UnlearnVillagerOnlySkills()
+        {
+            var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsVillagerOnlySkill);
+            foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+        }
+
+        public void UnlearnPathBonusClassSkills()
+        {
+            var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsPathBonusClassSkill);
+            foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+        }
+
+        public void UnlearnDlcClassSkills()
+        {
+            var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsDlcClassSkill && !x.IsAmiiboClassSkill);
+            foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+        }
+
+        public void UnlearnAmiiboClassSkills()
+        {
+            var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsAmiiboClassSkill);
+            foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+        }
+
+        public void UnlearnEnemyAndNpcSkills()
+        {
+            var unlearnThese = Data.Database.Skills.GetAllLearnable().Where((x) => x.IsEnemyAndNpcSkill);
+            foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+        }
+
+        public void UnlearnAllSkills()
+        {
+            var unlearnThese = Data.Database.Skills.GetAllLearnable();
+            foreach (var skill in unlearnThese) LearnedSkills.Remove(skill.SkillID);
+        }
+
+        #endregion
+
+        #region Other Cheats
 
         public void MaximizeStatues()
         {

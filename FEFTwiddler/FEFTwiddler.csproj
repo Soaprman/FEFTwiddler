@@ -102,6 +102,12 @@
     <Compile Include="GUI\ChapterData\Materials.Designer.cs">
       <DependentUpon>Materials.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\ChapterData\Megacheats\Skills.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ChapterData\Megacheats\Skills.Designer.cs">
+      <DependentUpon>Skills.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Controls\HexBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -117,11 +123,11 @@
     <Compile Include="GUI\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\ChapterData\Megacheats.cs">
+    <Compile Include="GUI\ChapterData\MegacheatsMain.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\ChapterData\Megacheats.Designer.cs">
-      <DependentUpon>Megacheats.cs</DependentUpon>
+    <Compile Include="GUI\ChapterData\MegacheatsMain.Designer.cs">
+      <DependentUpon>MegacheatsMain.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\UnitViewer\Accessories.cs">
       <SubType>UserControl</SubType>
@@ -218,6 +224,9 @@
     <EmbeddedResource Include="GUI\ChapterData\Materials.resx">
       <DependentUpon>Materials.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChapterData\Megacheats\Skills.resx">
+      <DependentUpon>Skills.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Controls\HexBox.resx">
       <DependentUpon>HexBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -227,8 +236,8 @@
     <EmbeddedResource Include="GUI\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\ChapterData\Megacheats.resx">
-      <DependentUpon>Megacheats.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\ChapterData\MegacheatsMain.resx">
+      <DependentUpon>MegacheatsMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\Accessories.resx">
       <DependentUpon>Accessories.cs</DependentUpon>

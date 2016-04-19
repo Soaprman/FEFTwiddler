@@ -12,11 +12,11 @@ using System.Windows.Forms;
 namespace FEFTwiddler.GUI.ChapterData
 {
     [Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", typeof(IDesigner))]
-    public partial class Megacheats : UserControl
+    public partial class MegacheatsMain : UserControl
     {
         private Model.ChapterSave _chapterSave;
 
-        public Megacheats()
+        public MegacheatsMain()
         {
             InitializeComponent();
             InitializeControls();
@@ -25,6 +25,9 @@ namespace FEFTwiddler.GUI.ChapterData
         public void LoadChapterSave(Model.ChapterSave chapterSave)
         {
             _chapterSave = chapterSave;
+
+            skills1.LoadChapterSave(_chapterSave);
+
             PopulateControls();
         }
 

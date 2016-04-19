@@ -121,7 +121,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             if (_character == null) return new List<Data.Skill>();
 
             return Data.Database.Skills.GetAllLearnable()
-                .Where((x) => _character.LearnedSkills.Contains(x.SkillID))
+                .Where((x) => _character.LearnedSkills.Contains(x.SkillID) || x.SkillID == Enums.Skill.None)
                 .OrderBy((x) => x.DisplayName)
                 .ToList();
         }
