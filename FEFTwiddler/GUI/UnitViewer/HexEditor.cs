@@ -25,7 +25,10 @@ namespace FEFTwiddler.GUI.UnitViewer
         {
             if (Enum.IsDefined(typeof(Enums.Character), _character.CharacterID))
             {
-                this.Text = "Hex editing: " + Data.Database.Characters.GetByID(_character.CharacterID).DisplayName;
+                if (_character.CorrinName == null)
+                    this.Text = "Hex editing: " + Data.Database.Characters.GetByID(_character.CharacterID).DisplayName;
+                else
+                    this.Text = "Hex editing: " + _character.CorrinName;
             }
             else
             {

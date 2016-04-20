@@ -96,7 +96,11 @@ namespace FEFTwiddler.Data
                 MainSupportCount = mainSupports.GetAttribute<byte>("count"),
                 FamilySupportCount = familySupports.GetAttribute<byte>("count"),
                 HairColor = Color.FromArgb(hairColor.GetAttribute<byte>("a"), hairColor.GetAttribute<byte>("r"), hairColor.GetAttribute<byte>("g"), hairColor.GetAttribute<byte>("b")),
-                IsPrisoner = flags.GetAttribute<bool>("isPrisoner")
+                IsPrisoner = flags.GetAttribute<bool>("isPrisoner"),
+                IsFemale = flags.GetAttribute<bool>("isFemale"),
+                IsManakete = flags.GetAttribute<bool>("isManakete"),
+                IsBeast = flags.GetAttribute<bool>("isBeast"),
+                CanUseDragonVein = flags.GetAttribute<bool>("canUseDragonVein")
             };
 
             character.EndBlockType = GetEndBlockType(character);

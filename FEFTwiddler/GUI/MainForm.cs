@@ -203,6 +203,9 @@ namespace FEFTwiddler.GUI
             try { weaponExperience1.LoadCharacter(_selectedCharacter); }
             catch (Exception) { message += Environment.NewLine + "Error loading Weapon Experience data"; }
 
+            try { dragonVein1.LoadCharacter(_selectedCharacter); }
+            catch (Exception) { message += Environment.NewLine + "Error loading Dragon Vein data"; }
+
             if (message.Length > 0)
             {
                 message = "One or more values is invalid for this character. You can still use the hex editor, though." + Environment.NewLine + Environment.NewLine + message;

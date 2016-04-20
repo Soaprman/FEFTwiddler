@@ -5,7 +5,7 @@
     <text lang="Japanese" displayName="無し" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -15,7 +15,7 @@
     <text lang="Japanese" displayName="カムイ男" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="true" isChild="false" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="true" isChild="false" isPrisoner="false" isFemale="false" isManakete="true" isBeast="false" canUseDragonVein="true" />
     <mainSupports count="67" />
     <familySupports count="0" />
     <hairColor r="128" g="128" b="128" a="255" />
@@ -25,7 +25,7 @@
     <text lang="Japanese" displayName="カムイ女" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="true" isChild="false" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="true" isChild="false" isPrisoner="false" isFemale="true" isManakete="true" isBeast="false" canUseDragonVein="true" />
     <mainSupports count="67" />
     <familySupports count="0" />
     <hairColor r="128" g="128" b="128" a="255" />
@@ -35,7 +35,7 @@
     <text lang="Japanese" displayName="ギュンター" />
     <baseStats hp="3" str="0" mag="0" skl="9" spd="2" lck="6" def="0" res="2" />
     <modifier hp="0" str="2" mag="0" skl="1" spd="-2" lck="0" def="2" res="-2" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="3" />
     <familySupports count="0" />
     <hairColor r="200" g="188" b="200" a="255" />
@@ -45,7 +45,7 @@
     <text lang="Japanese" displayName="フェリシア" />
     <baseStats hp="1" str="1" mag="4" skl="1" spd="2" lck="8" def="0" res="5" />
     <modifier hp="0" str="-2" mag="2" skl="0" spd="1" lck="0" def="-1" res="1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="24" />
     <familySupports count="0" />
     <hairColor r="230" g="200" b="180" a="255" />
@@ -55,7 +55,7 @@
     <text lang="Japanese" displayName="ジョーカー" />
     <baseStats hp="3" str="4" mag="1" skl="3" spd="1" lck="6" def="2" res="2" />
     <modifier hp="0" str="2" mag="-2" skl="2" spd="0" lck="-1" def="0" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="24" />
     <familySupports count="0" />
     <hairColor r="210" g="210" b="195" a="255" />
@@ -65,7 +65,7 @@
     <text lang="Japanese" displayName="リンカ" />
     <baseStats hp="2" str="2" mag="1" skl="4" spd="3" lck="5" def="3" res="2" />
     <modifier hp="0" str="-1" mag="0" skl="-2" spd="1" lck="0" def="2" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="245" g="237" b="220" a="255" />
@@ -75,7 +75,7 @@
     <text lang="Japanese" displayName="スズカゼ" />
     <baseStats hp="3" str="4" mag="0" skl="1" spd="4" lck="3" def="2" res="7" />
     <modifier hp="0" str="-2" mag="0" skl="2" spd="3" lck="-2" def="-1" res="1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="24" />
     <familySupports count="0" />
     <hairColor r="125" g="150" b="130" a="255" />
@@ -85,7 +85,7 @@
     <text lang="Japanese" displayName="サクラ" />
     <baseStats hp="0" str="3" mag="3" skl="0" spd="2" lck="5" def="3" res="2" />
     <modifier hp="0" str="0" mag="2" skl="-1" spd="1" lck="0" def="-1" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="207" g="120" b="110" a="255" />
@@ -95,7 +95,7 @@
     <text lang="Japanese" displayName="アクア" />
     <baseStats hp="0" str="2" mag="2" skl="2" spd="3" lck="3" def="2" res="4" />
     <modifier hp="0" str="0" mag="0" skl="1" spd="3" lck="0" def="-3" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" />
     <mainSupports count="24" />
     <familySupports count="0" />
     <hairColor r="238" g="232" b="223" a="255" />
@@ -105,7 +105,7 @@
     <text lang="Japanese" displayName="カザハナ" />
     <baseStats hp="3" str="3" mag="0" skl="4" spd="3" lck="2" def="3" res="6" />
     <modifier hp="0" str="1" mag="0" skl="1" spd="2" lck="-1" def="-3" res="1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="165" g="141" b="123" a="255" />
@@ -115,7 +115,7 @@
     <text lang="Japanese" displayName="ツバキ" />
     <baseStats hp="6" str="5" mag="0" skl="8" spd="3" lck="3" def="7" res="4" />
     <modifier hp="0" str="-1" mag="0" skl="2" spd="-2" lck="-1" def="3" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="138" g="65" b="68" a="255" />
@@ -125,7 +125,7 @@
     <text lang="Japanese" displayName="サイラス" />
     <baseStats hp="5" str="5" mag="0" skl="4" spd="3" lck="4" def="5" res="2" />
     <modifier hp="0" str="1" mag="0" skl="2" spd="0" lck="-1" def="0" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="24" />
     <familySupports count="0" />
     <hairColor r="170" g="180" b="180" a="255" />
@@ -135,7 +135,7 @@
     <text lang="Japanese" displayName="サイゾウ" />
     <baseStats hp="7" str="8" mag="3" skl="6" spd="3" lck="8" def="6" res="4" />
     <modifier hp="0" str="1" mag="0" skl="3" spd="-2" lck="0" def="1" res="-2" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="145" g="67" b="67" a="255" />
@@ -145,7 +145,7 @@
     <text lang="Japanese" displayName="オロチ" />
     <baseStats hp="5" str="0" mag="5" skl="6" spd="1" lck="5" def="4" res="7" />
     <modifier hp="0" str="0" mag="3" skl="2" spd="-2" lck="-1" def="-2" res="1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="140" g="123" b="140" a="255" />
@@ -155,7 +155,7 @@
     <text lang="Japanese" displayName="ヒノカ" />
     <baseStats hp="7" str="6" mag="4" skl="8" spd="9" lck="8" def="7" res="9" />
     <modifier hp="0" str="1" mag="-1" skl="-1" spd="1" lck="0" def="-1" res="2" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="180" g="45" b="45" a="255" />
@@ -165,7 +165,7 @@
     <text lang="Japanese" displayName="アサマ" />
     <baseStats hp="8" str="9" mag="4" skl="4" spd="5" lck="8" def="8" res="3" />
     <modifier hp="0" str="2" mag="-3" skl="0" spd="1" lck="0" def="1" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="120" g="95" b="96" a="255" />
@@ -175,7 +175,7 @@
     <text lang="Japanese" displayName="セツナ" />
     <baseStats hp="2" str="3" mag="0" skl="2" spd="5" lck="4" def="1" res="2" />
     <modifier hp="0" str="0" mag="0" skl="1" spd="3" lck="-1" def="-1" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="100" g="138" b="145" a="255" />
@@ -185,7 +185,7 @@
     <text lang="Japanese" displayName="ツクヨミ" />
     <baseStats hp="1" str="1" mag="0" skl="0" spd="1" lck="7" def="3" res="2" />
     <modifier hp="0" str="0" mag="1" skl="-1" spd="2" lck="1" def="-1" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="139" g="90" b="92" a="255" />
@@ -195,7 +195,7 @@
     <text lang="Japanese" displayName="オボロ" />
     <baseStats hp="8" str="7" mag="0" skl="5" spd="6" lck="9" def="8" res="6" />
     <modifier hp="0" str="1" mag="-1" skl="1" spd="1" lck="-1" def="1" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="100" g="112" b="140" a="255" />
@@ -205,7 +205,7 @@
     <text lang="Japanese" displayName="ヒナタ" />
     <baseStats hp="9" str="7" mag="0" skl="4" spd="6" lck="7" def="9" res="1" />
     <modifier hp="0" str="1" mag="0" skl="-1" spd="-2" lck="0" def="2" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="111" g="85" b="75" a="255" />
@@ -215,7 +215,7 @@
     <text lang="Japanese" displayName="タクミ" />
     <baseStats hp="9" str="8" mag="0" skl="10" spd="6" lck="11" def="6" res="3" />
     <modifier hp="0" str="1" mag="0" skl="3" spd="-2" lck="1" def="0" res="-2" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="193" g="178" b="172" a="255" />
@@ -225,7 +225,7 @@
     <text lang="Japanese" displayName="カゲロウ" />
     <baseStats hp="6" str="12" mag="0" skl="2" spd="4" lck="6" def="6" res="7" />
     <modifier hp="0" str="3" mag="0" skl="-1" spd="-1" lck="0" def="-1" res="1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="75" g="57" b="53" a="255" />
@@ -235,7 +235,7 @@
     <text lang="Japanese" displayName="ユウギリ" />
     <baseStats hp="11" str="14" mag="3" skl="7" spd="13" lck="10" def="6" res="6" />
     <modifier hp="0" str="2" mag="0" skl="0" spd="2" lck="-1" def="-2" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="2" />
     <familySupports count="0" />
     <hairColor r="91" g="115" b="150" a="255" />
@@ -245,7 +245,7 @@
     <text lang="Japanese" displayName="ニシキ" />
     <baseStats hp="14" str="10" mag="0" skl="6" spd="11" lck="10" def="8" res="10" />
     <modifier hp="0" str="1" mag="0" skl="-3" spd="2" lck="1" def="-2" res="2" />
-    <flags canUseStones="true" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="true" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="211" g="145" b="70" a="255" />
@@ -255,7 +255,7 @@
     <text lang="Japanese" displayName="リョウマ" />
     <baseStats hp="18" str="14" mag="0" skl="11" spd="13" lck="16" def="11" res="8" />
     <modifier hp="0" str="1" mag="0" skl="2" spd="1" lck="1" def="-2" res="-2" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="88" g="51" b="45" a="255" />
@@ -265,7 +265,7 @@
     <text lang="Japanese" displayName="クリムゾン" />
     <baseStats hp="11" str="15" mag="4" skl="8" spd="13" lck="11" def="12" res="5" />
     <modifier hp="0" str="2" mag="0" skl="0" spd="1" lck="-1" def="1" res="-2" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="2" />
     <familySupports count="0" />
     <hairColor r="239" g="224" b="184" a="255" />
@@ -275,7 +275,7 @@
     <text lang="Japanese" displayName="アシュラ" />
     <baseStats hp="17" str="16" mag="5" skl="17" spd="17" lck="13" def="11" res="16" />
     <modifier hp="0" str="-1" mag="0" skl="-1" spd="3" lck="-1" def="-2" res="2" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="2" />
     <familySupports count="0" />
     <hairColor r="238" g="232" b="223" a="255" />
@@ -285,7 +285,7 @@
     <text lang="Japanese" displayName="エリーゼ" />
     <baseStats hp="4" str="2" mag="8" skl="-2" spd="5" lck="10" def="3" res="7" />
     <modifier hp="0" str="-1" mag="3" skl="-2" spd="1" lck="1" def="-3" res="1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="242" g="228" b="209" a="255" />
@@ -295,7 +295,7 @@
     <text lang="Japanese" displayName="ハロルド" />
     <baseStats hp="5" str="5" mag="0" skl="3" spd="2" lck="-1" def="5" res="3" />
     <modifier hp="0" str="1" mag="0" skl="3" spd="0" lck="-3" def="1" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="254" g="234" b="183" a="255" />
@@ -305,7 +305,7 @@
     <text lang="Japanese" displayName="エルフィ" />
     <baseStats hp="4" str="5" mag="0" skl="3" spd="2" lck="7" def="4" res="3" />
     <modifier hp="0" str="3" mag="0" skl="-1" spd="1" lck="0" def="-1" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="220" g="217" b="211" a="255" />
@@ -315,7 +315,7 @@
     <text lang="Japanese" displayName="オーディン" />
     <baseStats hp="5" str="5" mag="2" skl="7" spd="4" lck="8" def="3" res="2" />
     <modifier hp="0" str="0" mag="1" skl="1" spd="-1" lck="1" def="0" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="218" g="211" b="189" a="255" />
@@ -325,7 +325,7 @@
     <text lang="Japanese" displayName="ゼロ" />
     <baseStats hp="6" str="6" mag="4" skl="5" spd="7" lck="5" def="5" res="8" />
     <modifier hp="0" str="-2" mag="0" skl="-1" spd="3" lck="0" def="0" res="1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="245" g="243" b="240" a="255" />
@@ -335,7 +335,7 @@
     <text lang="Japanese" displayName="ニュクス" />
     <baseStats hp="4" str="1" mag="6" skl="2" spd="8" lck="2" def="1" res="3" />
     <modifier hp="0" str="0" mag="3" skl="-2" spd="2" lck="-1" def="-2" res="1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="106" g="97" b="112" a="255" />
@@ -345,7 +345,7 @@
     <text lang="Japanese" displayName="カミラ" />
     <baseStats hp="12" str="12" mag="5" skl="9" spd="14" lck="12" def="10" res="9" />
     <modifier hp="0" str="1" mag="-1" skl="1" spd="1" lck="-2" def="1" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="191" g="183" b="223" a="255" />
@@ -355,7 +355,7 @@
     <text lang="Japanese" displayName="ルーナ" />
     <baseStats hp="7" str="7" mag="3" skl="5" spd="9" lck="7" def="6" res="6" />
     <modifier hp="0" str="-1" mag="0" skl="-1" spd="2" lck="0" def="1" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="175" g="84" b="84" a="255" />
@@ -365,7 +365,7 @@
     <text lang="Japanese" displayName="ベルカ" />
     <baseStats hp="6" str="7" mag="0" skl="9" spd="5" lck="8" def="7" res="7" />
     <modifier hp="0" str="-1" mag="0" skl="2" spd="-2" lck="0" def="2" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="162" g="192" b="200" a="255" />
@@ -375,7 +375,7 @@
     <text lang="Japanese" displayName="ラズワルド" />
     <baseStats hp="11" str="10" mag="0" skl="9" spd="7" lck="12" def="5" res="5" />
     <modifier hp="0" str="1" mag="0" skl="2" spd="-1" lck="1" def="-1" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="153" g="145" b="145" a="255" />
@@ -385,7 +385,7 @@
     <text lang="Japanese" displayName="ピエリ" />
     <baseStats hp="8" str="7" mag="0" skl="4" spd="8" lck="6" def="5" res="7" />
     <modifier hp="0" str="1" mag="0" skl="-1" spd="1" lck="0" def="-2" res="2" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="135" g="191" b="216" a="255" />
@@ -395,7 +395,7 @@
     <text lang="Japanese" displayName="ブノワ" />
     <baseStats hp="12" str="7" mag="0" skl="10" spd="3" lck="9" def="11" res="9" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="-3" lck="0" def="3" res="1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="18" />
     <familySupports count="0" />
     <hairColor r="242" g="227" b="181" a="255" />
@@ -405,7 +405,7 @@
     <text lang="Japanese" displayName="シャーロッテ" />
     <baseStats hp="9" str="8" mag="0" skl="4" spd="7" lck="7" def="4" res="1" />
     <modifier hp="0" str="3" mag="0" skl="0" spd="2" lck="0" def="-2" res="-2" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="235" g="217" b="166" a="255" />
@@ -415,7 +415,7 @@
     <text lang="Japanese" displayName="レオン" />
     <baseStats hp="15" str="6" mag="14" skl="8" spd="10" lck="12" def="8" res="14" />
     <modifier hp="0" str="-2" mag="2" skl="0" spd="-2" lck="0" def="0" res="2" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="210" g="195" b="170" a="255" />
@@ -425,7 +425,7 @@
     <text lang="Japanese" displayName="フランネル" />
     <baseStats hp="16" str="11" mag="0" skl="6" spd="7" lck="9" def="12" res="7" />
     <modifier hp="0" str="3" mag="0" skl="-2" spd="-1" lck="0" def="2" res="-1" />
-    <flags canUseStones="true" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="true" canUseDragonVein="false" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="245" g="243" b="240" a="255" />
@@ -435,7 +435,7 @@
     <text lang="Japanese" displayName="マークス" />
     <baseStats hp="19" str="15" mag="3" skl="11" spd="8" lck="16" def="16" res="5" />
     <modifier hp="0" str="2" mag="-1" skl="-1" spd="-1" lck="2" def="1" res="-2" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" />
     <mainSupports count="19" />
     <familySupports count="0" />
     <hairColor r="208" g="194" b="159" a="255" />
@@ -445,7 +445,7 @@
     <text lang="Japanese" displayName="イザナ" />
     <baseStats hp="15" str="8" mag="16" skl="19" spd="11" lck="15" def="11" res="18" />
     <modifier hp="0" str="0" mag="1" skl="1" spd="-2" lck="0" def="0" res="1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="2" />
     <familySupports count="0" />
     <hairColor r="247" g="245" b="239" a="255" />
@@ -455,7 +455,7 @@
     <text lang="Japanese" displayName="フウガ" />
     <baseStats hp="21" str="21" mag="0" skl="21" spd="16" lck="15" def="22" res="12" />
     <modifier hp="0" str="2" mag="-1" skl="1" spd="0" lck="-1" def="2" res="-2" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="3" />
     <familySupports count="0" />
     <hairColor r="96" g="48" b="32" a="255" />
@@ -465,7 +465,7 @@
     <text lang="Japanese" displayName="ユキムラ" />
     <baseStats hp="20" str="18" mag="3" skl="20" spd="16" lck="16" def="15" res="16" />
     <modifier hp="0" str="-1" mag="0" skl="3" spd="-1" lck="0" def="-1" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="2" />
     <familySupports count="0" />
     <hairColor r="110" g="134" b="142" a="255" />
@@ -475,7 +475,7 @@
     <text lang="Japanese" displayName="フローラ" />
     <baseStats hp="11" str="14" mag="11" skl="16" spd="7" lck="7" def="9" res="19" />
     <modifier hp="0" str="1" mag="-1" skl="2" spd="0" lck="-1" def="1" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="3" />
     <familySupports count="0" />
     <hairColor r="192" g="224" b="231" a="255" />
@@ -485,7 +485,7 @@
     <text lang="Japanese" displayName="モズメ" />
     <baseStats hp="-1" str="1" mag="0" skl="1" spd="2" lck="0" def="0" res="1" />
     <modifier hp="0" str="0" mag="0" skl="1" spd="1" lck="1" def="0" res="-2" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="24" />
     <familySupports count="0" />
     <hairColor r="70" g="62" b="57" a="255" />
@@ -495,7 +495,7 @@
     <text lang="Japanese" displayName="カンナ男" />
     <baseStats hp="7" str="3" mag="6" skl="8" spd="8" lck="9" def="5" res="5" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="true" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="14" />
     <familySupports count="0" />
     <hairColor r="235" g="226" b="214" a="255" />
@@ -505,7 +505,7 @@
     <text lang="Japanese" displayName="カンナ女" />
     <baseStats hp="7" str="3" mag="6" skl="8" spd="8" lck="9" def="5" res="5" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="true" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="14" />
     <familySupports count="0" />
     <hairColor r="235" g="226" b="214" a="255" />
@@ -515,7 +515,7 @@
     <text lang="Japanese" displayName="シグレ" />
     <baseStats hp="9" str="6" mag="1" skl="7" spd="7" lck="5" def="8" res="7" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="15" />
     <familySupports count="0" />
     <hairColor r="238" g="232" b="223" a="255" />
@@ -525,7 +525,7 @@
     <text lang="Japanese" displayName="ディーア" />
     <baseStats hp="8" str="7" mag="7" skl="2" spd="6" lck="4" def="6" res="7" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="16" />
     <familySupports count="0" />
     <hairColor r="210" g="210" b="195" a="255" />
@@ -535,7 +535,7 @@
     <text lang="Japanese" displayName="ゾフィー" />
     <baseStats hp="8" str="6" mag="2" skl="7" spd="6" lck="7" def="4" res="6" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="16" />
     <familySupports count="0" />
     <hairColor r="170" g="180" b="180" a="255" />
@@ -545,7 +545,7 @@
     <text lang="Japanese" displayName="ミドリコ" />
     <baseStats hp="8" str="6" mag="2" skl="10" spd="4" lck="10" def="4" res="2" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="16" />
     <familySupports count="0" />
     <hairColor r="125" g="150" b="130" a="255" />
@@ -555,7 +555,7 @@
     <text lang="Japanese" displayName="シノノメ" />
     <baseStats hp="8" str="7" mag="0" skl="5" spd="3" lck="6" def="8" res="5" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="15" />
     <familySupports count="0" />
     <hairColor r="88" g="51" b="45" a="255" />
@@ -565,7 +565,7 @@
     <text lang="Japanese" displayName="キサラギ" />
     <baseStats hp="7" str="6" mag="0" skl="5" spd="6" lck="8" def="4" res="1" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="15" />
     <familySupports count="0" />
     <hairColor r="193" g="178" b="172" a="255" />
@@ -575,7 +575,7 @@
     <text lang="Japanese" displayName="グレイ" />
     <baseStats hp="6" str="7" mag="4" skl="7" spd="6" lck="9" def="4" res="9" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="15" />
     <familySupports count="0" />
     <hairColor r="145" g="67" b="67" a="255" />
@@ -585,7 +585,7 @@
     <text lang="Japanese" displayName="キヌ" />
     <baseStats hp="7" str="4" mag="3" skl="6" spd="7" lck="10" def="6" res="11" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="true" canUseDragonVein="false" />
     <mainSupports count="15" />
     <familySupports count="0" />
     <hairColor r="211" g="145" b="70" a="255" />
@@ -595,7 +595,7 @@
     <text lang="Japanese" displayName="ヒサメ" />
     <baseStats hp="6" str="6" mag="1" skl="7" spd="5" lck="4" def="5" res="4" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="15" />
     <familySupports count="0" />
     <hairColor r="111" g="85" b="75" a="255" />
@@ -605,7 +605,7 @@
     <text lang="Japanese" displayName="ミタマ" />
     <baseStats hp="6" str="7" mag="6" skl="6" spd="8" lck="10" def="3" res="5" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="15" />
     <familySupports count="0" />
     <hairColor r="120" g="95" b="96" a="255" />
@@ -615,7 +615,7 @@
     <text lang="Japanese" displayName="マトイ" />
     <baseStats hp="8" str="8" mag="3" skl="5" spd="6" lck="9" def="5" res="6" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="15" />
     <familySupports count="0" />
     <hairColor r="138" g="65" b="68" a="255" />
@@ -625,7 +625,7 @@
     <text lang="Japanese" displayName="シャラ" />
     <baseStats hp="8" str="1" mag="10" skl="0" spd="7" lck="6" def="5" res="12" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="15" />
     <familySupports count="0" />
     <hairColor r="139" g="90" b="92" a="255" />
@@ -635,7 +635,7 @@
     <text lang="Japanese" displayName="ジークベルト" />
     <baseStats hp="7" str="5" mag="2" skl="7" spd="6" lck="7" def="6" res="3" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="15" />
     <familySupports count="0" />
     <hairColor r="208" g="194" b="159" a="255" />
@@ -645,7 +645,7 @@
     <text lang="Japanese" displayName="フォレオ" />
     <baseStats hp="8" str="5" mag="9" skl="1" spd="4" lck="5" def="6" res="13" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="15" />
     <familySupports count="0" />
     <hairColor r="210" g="195" b="170" a="255" />
@@ -655,7 +655,7 @@
     <text lang="Japanese" displayName="イグニス" />
     <baseStats hp="8" str="7" mag="0" skl="6" spd="4" lck="7" def="6" res="7" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="15" />
     <familySupports count="0" />
     <hairColor r="242" g="227" b="181" a="255" />
@@ -665,7 +665,7 @@
     <text lang="Japanese" displayName="ベロア" />
     <baseStats hp="7" str="6" mag="0" skl="6" spd="6" lck="11" def="9" res="8" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="true" canUseDragonVein="false" />
     <mainSupports count="15" />
     <familySupports count="0" />
     <hairColor r="245" g="243" b="240" a="255" />
@@ -675,7 +675,7 @@
     <text lang="Japanese" displayName="ルッツ" />
     <baseStats hp="6" str="4" mag="0" skl="6" spd="6" lck="15" def="8" res="4" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="15" />
     <familySupports count="0" />
     <hairColor r="254" g="234" b="183" a="255" />
@@ -685,7 +685,7 @@
     <text lang="Japanese" displayName="オフェリア" />
     <baseStats hp="7" str="3" mag="6" skl="6" spd="7" lck="12" def="2" res="5" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="14" />
     <familySupports count="0" />
     <hairColor r="218" g="211" b="189" a="255" />
@@ -695,7 +695,7 @@
     <text lang="Japanese" displayName="ソレイユ" />
     <baseStats hp="6" str="7" mag="1" skl="3" spd="6" lck="7" def="5" res="6" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="15" />
     <familySupports count="0" />
     <hairColor r="153" g="145" b="145" a="255" />
@@ -705,7 +705,7 @@
     <text lang="Japanese" displayName="エポニーヌ" />
     <baseStats hp="5" str="8" mag="5" skl="5" spd="5" lck="11" def="3" res="10" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" />
+    <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="14" />
     <familySupports count="0" />
     <hairColor r="245" g="243" b="240" a="255" />
@@ -715,7 +715,7 @@
     <text lang="Japanese" displayName="アンナ" />
     <baseStats hp="7" str="6" mag="10" skl="6" spd="6" lck="14" def="4" res="11" />
     <modifier hp="0" str="-1" mag="1" skl="0" spd="-1" lck="2" def="-2" res="2" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="2" />
     <familySupports count="0" />
     <hairColor r="191" g="88" b="84" a="255" />
@@ -725,7 +725,7 @@
     <text lang="Japanese" displayName="ダニエラ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="1" skl="1" spd="0" lck="-1" def="-1" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -735,7 +735,7 @@
     <text lang="Japanese" displayName="ハイタカ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="0" skl="2" spd="2" lck="-2" def="-2" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -745,7 +745,7 @@
     <text lang="Japanese" displayName="クマゲラ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="0" skl="1" spd="0" lck="-1" def="1" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -755,7 +755,7 @@
     <text lang="Japanese" displayName="ウィリアム" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="2" mag="-1" skl="2" spd="-3" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -765,7 +765,7 @@
     <text lang="Japanese" displayName="ホルモン" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="-1" skl="-3" spd="2" lck="0" def="3" res="-2" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -775,7 +775,7 @@
     <text lang="Japanese" displayName="ナハト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="-1" skl="1" spd="0" lck="-1" def="1" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="79" g="83" b="73" a="255" />
@@ -785,7 +785,7 @@
     <text lang="Japanese" displayName="ドラジェ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="1" skl="-2" spd="-2" lck="2" def="1" res="1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="126" g="129" b="93" a="255" />
@@ -795,7 +795,7 @@
     <text lang="Japanese" displayName="バンバ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="-1" skl="1" spd="1" lck="-1" def="0" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -805,7 +805,7 @@
     <text lang="Japanese" displayName="ファンク" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="-1" mag="1" skl="2" spd="2" lck="-2" def="-2" res="1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -815,7 +815,7 @@
     <text lang="Japanese" displayName="ダイチ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="2" skl="2" spd="-1" lck="-1" def="-1" res="-2" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -825,7 +825,7 @@
     <text lang="Japanese" displayName="ガザック" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="-1" skl="-2" spd="-2" lck="-2" def="3" res="3" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -835,7 +835,7 @@
     <text lang="Japanese" displayName="セノウ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="-2" mag="2" skl="0" spd="1" lck="1" def="-3" res="1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -845,7 +845,7 @@
     <text lang="Japanese" displayName="ヴァスハラ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="-2" mag="2" skl="-2" spd="1" lck="3" def="-3" res="1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -855,7 +855,7 @@
     <text lang="Japanese" displayName="パラディン" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -865,7 +865,7 @@
     <text lang="Japanese" displayName="ソシアルナイト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -875,7 +875,7 @@
     <text lang="Japanese" displayName="グレートナイト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -885,7 +885,7 @@
     <text lang="Japanese" displayName="アーマーナイト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -895,7 +895,7 @@
     <text lang="Japanese" displayName="ジェネラル" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -905,7 +905,7 @@
     <text lang="Japanese" displayName="バーサーカー" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -915,7 +915,7 @@
     <text lang="Japanese" displayName="アクスファイター" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -925,7 +925,7 @@
     <text lang="Japanese" displayName="ブレイブヒーロー" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -935,7 +935,7 @@
     <text lang="Japanese" displayName="マーシナリー" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -945,7 +945,7 @@
     <text lang="Japanese" displayName="ボウナイト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -955,7 +955,7 @@
     <text lang="Japanese" displayName="シーフ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -965,7 +965,7 @@
     <text lang="Japanese" displayName="アドベンチャラー" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -975,7 +975,7 @@
     <text lang="Japanese" displayName="剣聖" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -985,7 +985,7 @@
     <text lang="Japanese" displayName="侍" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -995,7 +995,7 @@
     <text lang="Japanese" displayName="兵法者" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1005,7 +1005,7 @@
     <text lang="Japanese" displayName="修羅" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1015,7 +1015,7 @@
     <text lang="Japanese" displayName="鬼人" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1025,7 +1025,7 @@
     <text lang="Japanese" displayName="鍛冶" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1035,7 +1035,7 @@
     <text lang="Japanese" displayName="槍聖" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1045,7 +1045,7 @@
     <text lang="Japanese" displayName="槍術士" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1055,7 +1055,7 @@
     <text lang="Japanese" displayName="婆娑羅" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1065,7 +1065,7 @@
     <text lang="Japanese" displayName="呪い師" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1075,7 +1075,7 @@
     <text lang="Japanese" displayName="陰陽師" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1085,7 +1085,7 @@
     <text lang="Japanese" displayName="巫女" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1095,7 +1095,7 @@
     <text lang="Japanese" displayName="山伏" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1105,7 +1105,7 @@
     <text lang="Japanese" displayName="戦巫女" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1115,7 +1115,7 @@
     <text lang="Japanese" displayName="聖天馬武者" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1125,7 +1125,7 @@
     <text lang="Japanese" displayName="天馬武者" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1135,7 +1135,7 @@
     <text lang="Japanese" displayName="金鵄武者" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1145,7 +1145,7 @@
     <text lang="Japanese" displayName="弓使い" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1155,7 +1155,7 @@
     <text lang="Japanese" displayName="弓聖" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1165,7 +1165,7 @@
     <text lang="Japanese" displayName="ドラゴンマスター" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1175,7 +1175,7 @@
     <text lang="Japanese" displayName="ドラゴンナイト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1185,7 +1185,7 @@
     <text lang="Japanese" displayName="レヴナントナイト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1195,7 +1195,7 @@
     <text lang="Japanese" displayName="上忍" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1205,7 +1205,7 @@
     <text lang="Japanese" displayName="忍" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1215,7 +1215,7 @@
     <text lang="Japanese" displayName="絡繰師" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1225,7 +1225,7 @@
     <text lang="Japanese" displayName="薬商人" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1235,7 +1235,7 @@
     <text lang="Japanese" displayName="大商人" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1245,7 +1245,7 @@
     <text lang="Japanese" displayName="ソーサラー" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1255,7 +1255,7 @@
     <text lang="Japanese" displayName="ダークマージ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1265,7 +1265,7 @@
     <text lang="Japanese" displayName="ダークナイト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1275,7 +1275,7 @@
     <text lang="Japanese" displayName="ストラテジスト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1285,7 +1285,7 @@
     <text lang="Japanese" displayName="ロッドナイト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1295,7 +1295,7 @@
     <text lang="Japanese" displayName="メイド" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1305,7 +1305,7 @@
     <text lang="Japanese" displayName="村人" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1315,7 +1315,7 @@
     <text lang="Japanese" displayName="ランサー" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1325,7 +1325,7 @@
     <text lang="Japanese" displayName="アイネズ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1335,7 +1335,7 @@
     <text lang="Japanese" displayName="アズキ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1345,7 +1345,7 @@
     <text lang="Japanese" displayName="ウスベニ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1355,7 +1355,7 @@
     <text lang="Japanese" displayName="ウツブシ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1365,7 +1365,7 @@
     <text lang="Japanese" displayName="クレナイ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1375,7 +1375,7 @@
     <text lang="Japanese" displayName="コウゾメ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1385,7 +1385,7 @@
     <text lang="Japanese" displayName="コガネ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1395,7 +1395,7 @@
     <text lang="Japanese" displayName="シブカミ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1405,7 +1405,7 @@
     <text lang="Japanese" displayName="トキガラ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1415,7 +1415,7 @@
     <text lang="Japanese" displayName="トキワ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1425,7 +1425,7 @@
     <text lang="Japanese" displayName="ナデシコ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1435,7 +1435,7 @@
     <text lang="Japanese" displayName="ハイウメ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1445,7 +1445,7 @@
     <text lang="Japanese" displayName="ハジゾメ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1455,7 +1455,7 @@
     <text lang="Japanese" displayName="フタアイ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1465,7 +1465,7 @@
     <text lang="Japanese" displayName="ミズガキ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1475,7 +1475,7 @@
     <text lang="Japanese" displayName="ムラサキ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1485,7 +1485,7 @@
     <text lang="Japanese" displayName="モエギ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1495,7 +1495,7 @@
     <text lang="Japanese" displayName="ヤマブキ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1505,7 +1505,7 @@
     <text lang="Japanese" displayName="アイボリー" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1515,7 +1515,7 @@
     <text lang="Japanese" displayName="アンバー" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1525,7 +1525,7 @@
     <text lang="Japanese" displayName="カーキー" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1535,7 +1535,7 @@
     <text lang="Japanese" displayName="カーマイン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1545,7 +1545,7 @@
     <text lang="Japanese" displayName="コバルト" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1555,7 +1555,7 @@
     <text lang="Japanese" displayName="コルク" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1565,7 +1565,7 @@
     <text lang="Japanese" displayName="シアン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1575,7 +1575,7 @@
     <text lang="Japanese" displayName="スカーレット" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1585,7 +1585,7 @@
     <text lang="Japanese" displayName="セピア" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1595,7 +1595,7 @@
     <text lang="Japanese" displayName="バーミリオン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1605,7 +1605,7 @@
     <text lang="Japanese" displayName="パープル" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1615,7 +1615,7 @@
     <text lang="Japanese" displayName="バイオレット" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1625,7 +1625,7 @@
     <text lang="Japanese" displayName="ブラウン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1635,7 +1635,7 @@
     <text lang="Japanese" displayName="ブラック" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1645,7 +1645,7 @@
     <text lang="Japanese" displayName="ブロンド" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1655,7 +1655,7 @@
     <text lang="Japanese" displayName="ベージュ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1665,7 +1665,7 @@
     <text lang="Japanese" displayName="ホワイト" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1675,7 +1675,7 @@
     <text lang="Japanese" displayName="マゼンダ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1685,7 +1685,7 @@
     <text lang="Japanese" displayName="オボロヅキ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1695,7 +1695,7 @@
     <text lang="Japanese" displayName="モチヅキ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1705,7 +1705,7 @@
     <text lang="Japanese" displayName="イザヨイ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1715,7 +1715,7 @@
     <text lang="Japanese" displayName="アマツカゼ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1725,7 +1725,7 @@
     <text lang="Japanese" displayName="イブキ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1735,7 +1735,7 @@
     <text lang="Japanese" displayName="ツムジカゼ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1745,7 +1745,7 @@
     <text lang="Japanese" displayName="ツグミ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1755,7 +1755,7 @@
     <text lang="Japanese" displayName="ヒバリ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1765,7 +1765,7 @@
     <text lang="Japanese" displayName="ヤブサメ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1775,7 +1775,7 @@
     <text lang="Japanese" displayName="ブルームーン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1785,7 +1785,7 @@
     <text lang="Japanese" displayName="エクリプス" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1795,7 +1795,7 @@
     <text lang="Japanese" displayName="ルナ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1805,7 +1805,7 @@
     <text lang="Japanese" displayName="ガスト" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1815,7 +1815,7 @@
     <text lang="Japanese" displayName="ゲイル" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1825,7 +1825,7 @@
     <text lang="Japanese" displayName="ブリーズ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1835,7 +1835,7 @@
     <text lang="Japanese" displayName="アイビス" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1845,7 +1845,7 @@
     <text lang="Japanese" displayName="スパロウ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1855,7 +1855,7 @@
     <text lang="Japanese" displayName="フェザント" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1865,7 +1865,7 @@
     <text lang="Japanese" displayName="アサガオ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1875,7 +1875,7 @@
     <text lang="Japanese" displayName="アジサイ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1885,7 +1885,7 @@
     <text lang="Japanese" displayName="キキョウ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1895,7 +1895,7 @@
     <text lang="Japanese" displayName="サザンカ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1905,7 +1905,7 @@
     <text lang="Japanese" displayName="シャクナゲ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1915,7 +1915,7 @@
     <text lang="Japanese" displayName="スイレン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1925,7 +1925,7 @@
     <text lang="Japanese" displayName="スミレ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1935,7 +1935,7 @@
     <text lang="Japanese" displayName="ツツジ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1945,7 +1945,7 @@
     <text lang="Japanese" displayName="ツユクサ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1955,7 +1955,7 @@
     <text lang="Japanese" displayName="ナズナ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1965,7 +1965,7 @@
     <text lang="Japanese" displayName="ヒナゲシ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1975,7 +1975,7 @@
     <text lang="Japanese" displayName="ヒルガオ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1985,7 +1985,7 @@
     <text lang="Japanese" displayName="ホオズキ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -1995,7 +1995,7 @@
     <text lang="Japanese" displayName="モクレン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2005,7 +2005,7 @@
     <text lang="Japanese" displayName="ヤマユリ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2015,7 +2015,7 @@
     <text lang="Japanese" displayName="ユウガオ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2025,7 +2025,7 @@
     <text lang="Japanese" displayName="ユリ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2035,7 +2035,7 @@
     <text lang="Japanese" displayName="ヨルガオ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2045,7 +2045,7 @@
     <text lang="Japanese" displayName="アネモネ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2055,7 +2055,7 @@
     <text lang="Japanese" displayName="アマリリス" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2065,7 +2065,7 @@
     <text lang="Japanese" displayName="ガーベラ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2075,7 +2075,7 @@
     <text lang="Japanese" displayName="カモミール" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2085,7 +2085,7 @@
     <text lang="Japanese" displayName="サフラン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2095,7 +2095,7 @@
     <text lang="Japanese" displayName="シクラメン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2105,7 +2105,7 @@
     <text lang="Japanese" displayName="スイートピー" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2115,7 +2115,7 @@
     <text lang="Japanese" displayName="ダリア" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2125,7 +2125,7 @@
     <text lang="Japanese" displayName="バニラ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2135,7 +2135,7 @@
     <text lang="Japanese" displayName="フリージア" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2145,7 +2145,7 @@
     <text lang="Japanese" displayName="ベロニカ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2155,7 +2155,7 @@
     <text lang="Japanese" displayName="ポプラ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2165,7 +2165,7 @@
     <text lang="Japanese" displayName="マーガレット" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2175,7 +2175,7 @@
     <text lang="Japanese" displayName="メタセコイヤ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2185,7 +2185,7 @@
     <text lang="Japanese" displayName="ライラック" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2195,7 +2195,7 @@
     <text lang="Japanese" displayName="ラベンダー" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2205,7 +2205,7 @@
     <text lang="Japanese" displayName="ライチ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2215,7 +2215,7 @@
     <text lang="Japanese" displayName="リアトリス" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2225,7 +2225,7 @@
     <text lang="Japanese" displayName="アングル" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2235,7 +2235,7 @@
     <text lang="Japanese" displayName="イコール" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2245,7 +2245,7 @@
     <text lang="Japanese" displayName="エリア" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2255,7 +2255,7 @@
     <text lang="Japanese" displayName="カーブ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2265,7 +2265,7 @@
     <text lang="Japanese" displayName="グラフ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2275,7 +2275,7 @@
     <text lang="Japanese" displayName="シンメトリ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2285,7 +2285,7 @@
     <text lang="Japanese" displayName="スフィア" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2295,7 +2295,7 @@
     <text lang="Japanese" displayName="スクエア" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2305,7 +2305,7 @@
     <text lang="Japanese" displayName="セグメント" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2315,7 +2315,7 @@
     <text lang="Japanese" displayName="パラレル" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2325,7 +2325,7 @@
     <text lang="Japanese" displayName="フラクション" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2335,7 +2335,7 @@
     <text lang="Japanese" displayName="プラス" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2345,7 +2345,7 @@
     <text lang="Japanese" displayName="プレーン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2355,7 +2355,7 @@
     <text lang="Japanese" displayName="ベクトル" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2365,7 +2365,7 @@
     <text lang="Japanese" displayName="マイナス" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2375,7 +2375,7 @@
     <text lang="Japanese" displayName="ライン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2385,7 +2385,7 @@
     <text lang="Japanese" displayName="レディアス" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2395,7 +2395,7 @@
     <text lang="Japanese" displayName="ラジアン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2405,7 +2405,7 @@
     <text lang="Japanese" displayName="魔物" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="-1" res="-1" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2415,7 +2415,7 @@
     <text lang="Japanese" displayName="魔物" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="-1" res="-1" />
     <modifier hp="0" str="5" mag="5" skl="5" spd="5" lck="5" def="5" res="5" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2425,7 +2425,7 @@
     <text lang="Japanese" displayName="魔物" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="5" mag="5" skl="5" spd="5" lck="5" def="5" res="5" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2435,7 +2435,7 @@
     <text lang="Japanese" displayName="魔物" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="10" mag="10" skl="10" spd="10" lck="10" def="10" res="10" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2445,7 +2445,7 @@
     <text lang="Japanese" displayName="闘技者" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="99" mag="99" skl="99" spd="99" lck="99" def="99" res="99" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2455,7 +2455,7 @@
     <text lang="Japanese" displayName="リリス" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2465,7 +2465,7 @@
     <text lang="Japanese" displayName="店番" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2475,7 +2475,7 @@
     <text lang="Japanese" displayName="店番" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2485,7 +2485,7 @@
     <text lang="Japanese" displayName="店番" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2495,7 +2495,7 @@
     <text lang="Japanese" displayName="店番" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2505,7 +2505,7 @@
     <text lang="Japanese" displayName="マルス" />
     <baseStats hp="10" str="8" mag="2" skl="13" spd="13" lck="17" def="8" res="8" />
     <modifier hp="0" str="-1" mag="0" skl="1" spd="1" lck="1" def="0" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="190" g="190" b="190" a="255" />
@@ -2515,7 +2515,7 @@
     <text lang="Japanese" displayName="アイク" />
     <baseStats hp="11" str="10" mag="0" skl="9" spd="7" lck="13" def="9" res="7" />
     <modifier hp="0" str="2" mag="0" skl="0" spd="-1" lck="0" def="1" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="190" g="190" b="190" a="255" />
@@ -2525,7 +2525,7 @@
     <text lang="Japanese" displayName="ルキナ" />
     <baseStats hp="10" str="9" mag="2" skl="11" spd="12" lck="15" def="7" res="10" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="2" lck="0" def="-1" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="76" g="88" b="123" a="255" />
@@ -2535,7 +2535,7 @@
     <text lang="Japanese" displayName="ルフレ" />
     <baseStats hp="7" str="7" mag="11" skl="12" spd="6" lck="8" def="7" res="9" />
     <modifier hp="0" str="0" mag="2" skl="0" spd="0" lck="-1" def="-1" res="1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="190" g="190" b="190" a="255" />
@@ -2545,7 +2545,7 @@
     <text lang="Japanese" displayName="異界の人物" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2555,7 +2555,7 @@
     <text lang="Japanese" displayName="サイファマルス" />
     <baseStats hp="6" str="6" mag="2" skl="9" spd="9" lck="13" def="5" res="7" />
     <modifier hp="0" str="-1" mag="0" skl="1" spd="1" lck="1" def="0" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2565,7 +2565,7 @@
     <text lang="Japanese" displayName="サイファルキナ" />
     <baseStats hp="6" str="6" mag="2" skl="8" spd="9" lck="12" def="4" res="8" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="2" lck="0" def="-1" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild= false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2575,7 +2575,7 @@
     <text lang="Japanese" displayName="サイファミネルバ" />
     <baseStats hp="4" str="7" mag="0" skl="2" spd="7" lck="2" def="11" res="3" />
     <modifier hp="0" str="1" mag="0" skl="0" spd="1" lck="-2" def="3" res="-3" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
@@ -2587,7 +2587,7 @@
     <text lang="Japanese" displayName="DisplayName" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
     <hairColor r="255" g="255" b="255" a="255" />
