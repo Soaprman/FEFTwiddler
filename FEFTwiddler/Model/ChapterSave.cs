@@ -17,19 +17,20 @@ namespace FEFTwiddler.Model
         private SaveFile _file;
 
         // The offsets of each major "block" of the save.
-        private uint _headerOffset = 0x00000000;
-        private uint _compressionRegionOffset = 0x000000C0;
+        // These are probably actually uints but a Fates save should never be big enough for that to matter?
+        private int _headerOffset = 0x00000000;
+        private int _compressionRegionOffset = 0x000000C0;
         // These are stored in the compression region and will change if any of the blocks change size.
-        private uint _userOffset; // RESU
-        private uint _lk08Offset; // 80KL
-        private uint _spotOffset; // TOPS
-        private uint _shopOffset; // POHS
-        private uint _unitOffset; // TINU
-        private uint _weaponNameOffset; // IFER
-        private uint _convoyOffset; // NART
-        private uint _myCastleOffset; // 43AC
+        private int _userOffset; // RESU
+        private int _lk08Offset; // 80KL
+        private int _spotOffset; // TOPS
+        private int _shopOffset; // POHS
+        private int _unitOffset; // TINU
+        private int _weaponNameOffset; // IFER
+        private int _convoyOffset; // NART
+        private int _myCastleOffset; // 43AC
 
-        private uint _offsetShift = 0; // Helper variable for write process
+        private int _offsetShift = 0; // Helper variable for write process
         private int _fileSizeChange = 0; // Helper variable for write process
 
         #endregion
@@ -248,14 +249,14 @@ namespace FEFTwiddler.Model
             // EDNI
             br.ReadBytes(0x4);
 
-            _userOffset = br.ReadUInt32();
-            _lk08Offset = br.ReadUInt32();
-            _spotOffset = br.ReadUInt32();
-            _shopOffset = br.ReadUInt32();
-            _unitOffset = br.ReadUInt32();
-            _weaponNameOffset = br.ReadUInt32();
-            _convoyOffset = br.ReadUInt32();
-            _myCastleOffset = br.ReadUInt32();
+            _userOffset = br.ReadInt32();
+            _lk08Offset = br.ReadInt32();
+            _spotOffset = br.ReadInt32();
+            _shopOffset = br.ReadInt32();
+            _unitOffset = br.ReadInt32();
+            _weaponNameOffset = br.ReadInt32();
+            _convoyOffset = br.ReadInt32();
+            _myCastleOffset = br.ReadInt32();
 
             // Stuff (probably nothing)
             br.ReadBytes(0x60);
