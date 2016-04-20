@@ -485,9 +485,7 @@ namespace FEFTwiddler.Model
             br.BaseStream.Seek(_spotOffset, SeekOrigin.Begin);
 
             // TOPS
-            //br.ReadBytes(0x04);
-            // Use this until User Data size is fully understood
-            br.BaseStream.AdvanceToValue(new byte[] { 0x54, 0x4F, 0x50, 0x53 });
+            br.ReadBytes(0x04);
 
             // Stuff
             br.ReadBytes(0x1C);
@@ -505,9 +503,7 @@ namespace FEFTwiddler.Model
             bw.BaseStream.Seek(_spotOffset, SeekOrigin.Begin);
 
             // TOPS
-            //bw.BaseStream.Seek(0x04, SeekOrigin.Current);
-            // Use this until User Data size is fully understood
-            bw.BaseStream.AdvanceToValue(new byte[] { 0x54, 0x4F, 0x50, 0x53 });
+            bw.BaseStream.Seek(0x04, SeekOrigin.Current);
 
             // Stuff
             bw.BaseStream.Seek(0x1C, SeekOrigin.Current);
