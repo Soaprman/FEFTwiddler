@@ -16,12 +16,21 @@ namespace FEFTwiddler.Model
 
         private SaveFile _file;
 
-        /// <summary>Hex: 0x4E415254 / Text: NART</summary>
-        private byte[] _convoyMarker = new byte[] { 0x4E, 0x41, 0x52, 0x54 };
-        private long _convoyOffset;
-        /// <summary>Hex: 0x34334143 / Text: 43AC</summary>
-        private byte[] _myCastleMarker = new byte[] { 0x34, 0x33, 0x41, 0x43 };
-        private long _myCastleOffset;
+        // The offsets of each major "block" of the save.
+        private uint _headerOffset = 0x00000000;
+        private uint _compressionRegionOffset = 0x000000C0;
+        // These are stored in the compression region and will change if any of the blocks change size.
+        private uint _userOffset; // RESU
+        private uint _lk08Offset; // 80KL
+        private uint _spotOffset; // TOPS
+        private uint _shopOffset; // POHS
+        private uint _unitOffset; // TINU
+        private uint _weaponNameOffset; // IFER
+        private uint _convoyOffset; // NART
+        private uint _myCastleOffset; // 43AC
+
+        private uint _offsetShift = 0; // Helper variable for write process
+        private int _fileSizeChange = 0; // Helper variable for write process
 
         #endregion
 
@@ -85,9 +94,6 @@ namespace FEFTwiddler.Model
                 return _characters;
             }
         }
-
-        // Another massive hack
-        private int ModifiedArraySizeRelativeToOriginalSize = 0;
 
         #endregion
 
@@ -155,16 +161,15 @@ namespace FEFTwiddler.Model
             using (var br = new BinaryReader(ms))
             {
                 ReadHeaderData(br);
-                ReadCompressionRegionData(br);
+                ReadCompressionRegionData(br); // Read first because it contains offsets
+
                 ReadUserData(br);
+                ReadLK08Data(br);
                 ReadSPOTData(br);
                 ReadShopData(br);
                 ReadCharacters(br);
-                //ReadWeaponNameData(br);
-                //ReadConvoyData(br);
-
-                br.AdvanceToValue(_myCastleMarker);
-                _myCastleOffset = br.BaseStream.Position;
+                ReadWeaponNameData(br);
+                ReadConvoyData(br);
                 ReadMyCastle(br);
             }
         }
@@ -175,24 +180,26 @@ namespace FEFTwiddler.Model
             using (var bw = new BinaryWriter(ms))
             {
                 WriteHeaderData(bw);
-                WriteCompressionRegionData(bw);
+
                 WriteUserData(bw);
+                WriteLK08Data(bw);
                 WriteSPOTData(bw);
                 WriteShopData(bw);
                 WriteCharacters(bw);
-                //WriteWeaponNameData(bw);
-                //WriteConvoyData(bw);
-
+                WriteWeaponNameData(bw);
+                WriteConvoyData(bw);
                 WriteMyCastle(bw);
+
+                WriteCompressionRegionData(bw); // Write last because it contains offsets, which may have been modified along the way
             }
 
             // Adjust array length based on changes made during the write process
-            if (ModifiedArraySizeRelativeToOriginalSize < 0)
+            if (_fileSizeChange < 0)
             {
                 var bytes = _file.DecompressedBytes;
-                _file.DecompressedBytes = bytes.Take(bytes.Length + ModifiedArraySizeRelativeToOriginalSize).ToArray();
+                _file.DecompressedBytes = bytes.Take(bytes.Length + _fileSizeChange).ToArray();
             }
-            else if (ModifiedArraySizeRelativeToOriginalSize > 0)
+            else if (_fileSizeChange > 0)
             {
                 // Not implemented yet
             }
@@ -206,6 +213,8 @@ namespace FEFTwiddler.Model
 
         public void ReadHeaderData(BinaryReader br)
         {
+            br.BaseStream.Seek(_headerOffset, SeekOrigin.Begin);
+
             byte[] chunk;
 
             // Stuff
@@ -223,6 +232,8 @@ namespace FEFTwiddler.Model
 
         public void WriteHeaderData(BinaryWriter bw)
         {
+            bw.BaseStream.Seek(_headerOffset, SeekOrigin.Begin);
+
             bw.BaseStream.Seek(0xC0, SeekOrigin.Current);
         }
 
@@ -232,20 +243,43 @@ namespace FEFTwiddler.Model
 
         public void ReadCompressionRegionData(BinaryReader br)
         {
+            br.BaseStream.Seek(_compressionRegionOffset, SeekOrigin.Begin);
+
             // EDNI
             br.ReadBytes(0x4);
 
-            // Stuff
-            br.ReadBytes(0x80);
+            _userOffset = br.ReadUInt32();
+            _lk08Offset = br.ReadUInt32();
+            _spotOffset = br.ReadUInt32();
+            _shopOffset = br.ReadUInt32();
+            _unitOffset = br.ReadUInt32();
+            _weaponNameOffset = br.ReadUInt32();
+            _convoyOffset = br.ReadUInt32();
+            _myCastleOffset = br.ReadUInt32();
+
+            // Stuff (probably nothing)
+            br.ReadBytes(0x60);
         }
 
         public void WriteCompressionRegionData(BinaryWriter bw)
         {
+
+            bw.BaseStream.Seek(_compressionRegionOffset, SeekOrigin.Begin);
+
             // EDNI
             bw.BaseStream.Seek(0x4, SeekOrigin.Current);
 
-            // Stuff
-            bw.BaseStream.Seek(0x80, SeekOrigin.Current);
+            bw.Write(_userOffset);
+            bw.Write(_lk08Offset);
+            bw.Write(_spotOffset);
+            bw.Write(_shopOffset);
+            bw.Write(_unitOffset);
+            bw.Write(_weaponNameOffset);
+            bw.Write(_convoyOffset);
+            bw.Write(_myCastleOffset);
+
+            // Stuff (probably nothing)
+            bw.BaseStream.Seek(0x60, SeekOrigin.Current);
         }
 
         #endregion
@@ -254,6 +288,8 @@ namespace FEFTwiddler.Model
 
         public void ReadUserData(BinaryReader br)
         {
+            br.BaseStream.Seek(_userOffset, SeekOrigin.Begin);
+
             byte[] chunk;
 
             // RESU
@@ -326,6 +362,8 @@ namespace FEFTwiddler.Model
 
         public void WriteUserData(BinaryWriter bw)
         {
+            bw.BaseStream.Seek(_userOffset, SeekOrigin.Begin);
+
             // RESU
             bw.BaseStream.Seek(0x04, SeekOrigin.Current);
 
@@ -353,10 +391,9 @@ namespace FEFTwiddler.Model
                 var buffer = ms.GetBuffer();
                 Buffer.BlockCopy(buffer, (int)(position + ChapterHistoryEntryLength), buffer, (int)position, (int)(ms.Length - ChapterHistoryEntryLength - position));
                 ms.SetLength(ms.Length - ChapterHistoryEntryLength);
-                ModifiedArraySizeRelativeToOriginalSize -= ChapterHistoryEntryLength;
 
-                // Also make sure future offset-based things start off in the right spot!
-                _myCastleOffset -= ChapterHistoryEntryLength;
+                _fileSizeChange -= ChapterHistoryEntryLength;
+                _offsetShift -= ChapterHistoryEntryLength;
             }
 
             // Stuff (block of mostly 00s that starts with 00 80 and ends with 30 00 00 00 FF FF)
@@ -392,6 +429,49 @@ namespace FEFTwiddler.Model
             // TODO
             //bw.BaseStream.Seek(0x49A, SeekOrigin.Current);
             // 0x216 in 9Hopper save
+
+            UpdateOffsetsAfterWritingUserData();
+        }
+
+        public void UpdateOffsetsAfterWritingUserData()
+        {
+            _lk08Offset += _offsetShift;
+            _spotOffset += _offsetShift;
+            _shopOffset += _offsetShift;
+            _unitOffset += _offsetShift;
+            _weaponNameOffset += _offsetShift;
+            _convoyOffset += _offsetShift;
+            _myCastleOffset += _offsetShift;
+
+            _offsetShift = 0;
+        }
+
+        #endregion
+
+        #region LK08 Region IO
+
+        public void ReadLK08Data(BinaryReader br)
+        {
+            br.BaseStream.Seek(_lk08Offset, SeekOrigin.Begin);
+        }
+
+        public void WriteLK08Data(BinaryWriter bw)
+        {
+            bw.BaseStream.Seek(_lk08Offset, SeekOrigin.Begin);
+
+            UpdateOffsetsAfterWritingLK08Data();
+        }
+
+        public void UpdateOffsetsAfterWritingLK08Data()
+        {
+            _spotOffset += _offsetShift;
+            _shopOffset += _offsetShift;
+            _unitOffset += _offsetShift;
+            _weaponNameOffset += _offsetShift;
+            _convoyOffset += _offsetShift;
+            _myCastleOffset += _offsetShift;
+
+            _offsetShift = 0;
         }
 
         #endregion
@@ -402,6 +482,8 @@ namespace FEFTwiddler.Model
 
         public void ReadSPOTData(BinaryReader br)
         {
+            br.BaseStream.Seek(_spotOffset, SeekOrigin.Begin);
+
             // TOPS
             //br.ReadBytes(0x04);
             // Use this until User Data size is fully understood
@@ -420,6 +502,8 @@ namespace FEFTwiddler.Model
 
         public void WriteSPOTData(BinaryWriter bw)
         {
+            bw.BaseStream.Seek(_spotOffset, SeekOrigin.Begin);
+
             // TOPS
             //bw.BaseStream.Seek(0x04, SeekOrigin.Current);
             // Use this until User Data size is fully understood
@@ -433,6 +517,19 @@ namespace FEFTwiddler.Model
             {
                 bw.BaseStream.Seek(0x21, SeekOrigin.Current);
             }
+
+            UpdateOffsetsAfterWritingSPOTData();
+        }
+
+        public void UpdateOffsetsAfterWritingSPOTData()
+        {
+            _shopOffset += _offsetShift;
+            _unitOffset += _offsetShift;
+            _weaponNameOffset += _offsetShift;
+            _convoyOffset += _offsetShift;
+            _myCastleOffset += _offsetShift;
+
+            _offsetShift = 0;
         }
 
         #endregion
@@ -441,6 +538,8 @@ namespace FEFTwiddler.Model
 
         public void ReadShopData(BinaryReader br)
         {
+            br.BaseStream.Seek(_shopOffset, SeekOrigin.Begin);
+
             byte[] chunk; byte itemCount;
 
             // POHS
@@ -508,6 +607,8 @@ namespace FEFTwiddler.Model
 
         public void WriteShopData(BinaryWriter bw)
         {
+            bw.BaseStream.Seek(_shopOffset, SeekOrigin.Begin);
+
             // POHS
             bw.BaseStream.Seek(0x04, SeekOrigin.Current);
 
@@ -557,6 +658,18 @@ namespace FEFTwiddler.Model
             {
                 bw.Write(item.Raw);
             }
+
+            UpdateOffsetsAfterWritingShopData();
+        }
+
+        public void UpdateOffsetsAfterWritingShopData()
+        {
+            _unitOffset += _offsetShift;
+            _weaponNameOffset += _offsetShift;
+            _convoyOffset += _offsetShift;
+            _myCastleOffset += _offsetShift;
+
+            _offsetShift = 0;
         }
 
         #endregion
@@ -565,6 +678,8 @@ namespace FEFTwiddler.Model
 
         private void ReadCharacters(BinaryReader br)
         {
+            br.BaseStream.Seek(_unitOffset, SeekOrigin.Begin);
+
             // TINU
             br.ReadBytes(4);
 
@@ -651,6 +766,8 @@ namespace FEFTwiddler.Model
 
         private void WriteCharacters(BinaryWriter bw)
         {
+            bw.BaseStream.Seek(_unitOffset, SeekOrigin.Begin);
+
             // TINU
             bw.BaseStream.Seek(4, SeekOrigin.Current);
 
@@ -703,11 +820,22 @@ namespace FEFTwiddler.Model
 
             // End character block
             bw.Write((byte)0xFF);
+
+            UpdateOffsetsAfterWritingCharacterData();
         }
 
         private void WriteCurrentCharacter(BinaryWriter bw, Model.Character character)
         {
             bw.Write(character.Raw);
+        }
+
+        public void UpdateOffsetsAfterWritingCharacterData()
+        {
+            _weaponNameOffset += _offsetShift;
+            _convoyOffset += _offsetShift;
+            _myCastleOffset += _offsetShift;
+
+            _offsetShift = 0;
         }
 
         #endregion
@@ -716,14 +844,28 @@ namespace FEFTwiddler.Model
 
         public void ReadWeaponNameData(BinaryReader br)
         {
+            br.BaseStream.Seek(_weaponNameOffset, SeekOrigin.Begin);
+
             // IFER
             br.ReadBytes(0x04);
         }
 
         public void WriteWeaponNameData(BinaryWriter bw)
         {
+            bw.BaseStream.Seek(_weaponNameOffset, SeekOrigin.Begin);
+
             // IFER
             bw.BaseStream.Seek(0x04, SeekOrigin.Current);
+
+            UpdateOffsetsAfterWritingWeaponNameData();
+        }
+
+        public void UpdateOffsetsAfterWritingWeaponNameData()
+        {
+            _convoyOffset += _offsetShift;
+            _myCastleOffset += _offsetShift;
+
+            _offsetShift = 0;
         }
 
         #endregion
@@ -732,14 +874,27 @@ namespace FEFTwiddler.Model
 
         public void ReadConvoyData(BinaryReader br)
         {
+            br.BaseStream.Seek(_convoyOffset, SeekOrigin.Begin);
+
             // NART
             br.ReadBytes(0x04);
         }
 
         public void WriteConvoyData(BinaryWriter bw)
         {
+            bw.BaseStream.Seek(_convoyOffset, SeekOrigin.Begin);
+
             // NART
             bw.BaseStream.Seek(0x04, SeekOrigin.Current);
+
+            UpdateOffsetsAfterWritingConvoyData();
+        }
+
+        public void UpdateOffsetsAfterWritingConvoyData()
+        {
+            _myCastleOffset += _offsetShift;
+
+            _offsetShift = 0;
         }
 
         #endregion
@@ -748,7 +903,12 @@ namespace FEFTwiddler.Model
 
         public void ReadMyCastle(BinaryReader br)
         {
+            br.BaseStream.Seek(_myCastleOffset, SeekOrigin.Begin);
+
             byte[] chunk;
+
+            // 43AC
+            br.ReadBytes(0x04);
 
             // Stuff
             br.ReadBytes(0x6C);
@@ -868,9 +1028,12 @@ namespace FEFTwiddler.Model
 
         public void WriteMyCastle(BinaryWriter bw)
         {
+            bw.BaseStream.Seek(_myCastleOffset, SeekOrigin.Begin);
+
             byte[] chunk;
 
-            bw.BaseStream.Seek(_myCastleOffset, SeekOrigin.Begin);
+            // 43AC
+            bw.BaseStream.Seek(0x04, SeekOrigin.Current);
 
             // Stuff
             bw.BaseStream.Seek(0x6C, SeekOrigin.Current);
@@ -963,6 +1126,8 @@ namespace FEFTwiddler.Model
             //bw.Write(chunk);
 
             // Not sure about the rest. Guess it's a TODO.
+
+            // No offset update; this is the last section.
         }
 
         #endregion
