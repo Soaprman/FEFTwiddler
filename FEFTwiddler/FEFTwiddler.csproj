@@ -143,6 +143,12 @@
     <Compile Include="GUI\ChapterData\MegacheatsMain.Designer.cs">
       <DependentUpon>MegacheatsMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\NewGamePlus\NewGamePlusMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\NewGamePlus\NewGamePlusMain.Designer.cs">
+      <DependentUpon>NewGamePlusMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\UnitViewer\Accessories.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -256,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ChapterData\MegacheatsMain.resx">
       <DependentUpon>MegacheatsMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NewGamePlus\NewGamePlusMain.resx">
+      <DependentUpon>NewGamePlusMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\Accessories.resx">
       <DependentUpon>Accessories.cs</DependentUpon>
@@ -589,9 +598,7 @@
     <None Include="Resources\Data\Stats.xml" />
     <Content Include="revelation_icon.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GUI\NewGamePlus\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -276,6 +276,9 @@ namespace FEFTwiddler.Model
         // Two unknown bytes (0x11 through 0x12)
 
         // Twelve unknown bytes (0x13 through 0x1E)
+        // These changed seemingly at random after completing a chapter
+        // They even seem random on new files (no chapters played, not even prologue)
+        // It's entirely possible this is RNG-related, to preserve random numbers after a save to mitigate mid-battle save scumming
 
         public Stat GainedStats
         {
@@ -563,6 +566,10 @@ namespace FEFTwiddler.Model
         }
 
         // Thirteen unknown bytes (0x17 through 0x23)
+        // First one seems to always be 00? Need to double-check
+        // Next eight seem constant on a per-character basis. Corrin (M) and Sakura have the same values in my BR and RV saves
+        // In fact, those eight are the same on all characters I've seen. Values: 24 82 25 21 24 C3 4A 16
+        // Next four seem random...ish. Could be a separate RNG? Maybe for voice clips or something.
 
         /// <summary>Its purpose is unknown, but it always seems to be either 75, 76, or 77</summary>
         public byte UnknownSeventySomething
