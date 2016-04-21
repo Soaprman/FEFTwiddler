@@ -116,11 +116,11 @@
             // btnNewGamePlus
             // 
             this.btnNewGamePlus.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnNewGamePlus.Location = new System.Drawing.Point(626, 383);
+            this.btnNewGamePlus.Location = new System.Drawing.Point(585, 330);
             this.btnNewGamePlus.Name = "btnNewGamePlus";
-            this.btnNewGamePlus.Size = new System.Drawing.Size(111, 93);
+            this.btnNewGamePlus.Size = new System.Drawing.Size(152, 146);
             this.btnNewGamePlus.TabIndex = 17;
-            this.btnNewGamePlus.Text = "New Game Plus (click if you dare)";
+            this.btnNewGamePlus.Text = "New Game Plus (Rewind to chapter 7) (alpha) (click if you dare)";
             this.btnNewGamePlus.UseVisualStyleBackColor = true;
             this.btnNewGamePlus.Click += new System.EventHandler(this.btnNewGamePlus_Click);
             // 
