@@ -96,6 +96,15 @@ namespace FEFTwiddler.Model
             }
         }
 
+        private List<Battlefield> _battlefields = new List<Battlefield>();
+        public List<Battlefield> Battlefields
+        {
+            get
+            {
+                return _battlefields;
+            }
+        }
+
         #endregion
 
         #region Cheats
@@ -483,6 +492,8 @@ namespace FEFTwiddler.Model
 
         public void ReadSPOTData(BinaryReader br)
         {
+            byte[] chunk;
+
             br.BaseStream.Seek(_spotOffset, SeekOrigin.Begin);
 
             // TOPS
@@ -495,7 +506,9 @@ namespace FEFTwiddler.Model
             var blockCount = br.ReadByte();
             for (var i = 0; i < blockCount; i++)
             {
-                br.ReadBytes(0x21);
+                chunk = new byte[0x21];
+                br.Read(chunk, 0, 0x21);
+                _battlefields.Add(new Model.Battlefield(chunk));
             }
         }
 
@@ -509,10 +522,10 @@ namespace FEFTwiddler.Model
             // Stuff
             bw.BaseStream.Seek(0x1C, SeekOrigin.Current);
 
-            var blockCount = bw.BaseStream.ReadByte();
-            for (var i = 0; i < blockCount; i++)
+            bw.Write((byte)_battlefields.Count);
+            foreach (var battlefield in _battlefields)
             {
-                bw.BaseStream.Seek(0x21, SeekOrigin.Current);
+                bw.Write(battlefield.Raw);
             }
 
             UpdateOffsetsAfterWritingSPOTData();

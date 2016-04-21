@@ -65,6 +65,8 @@
     <Compile Include="Data\Stat.cs" />
     <Compile Include="Data\StatDatabase.cs" />
     <Compile Include="Enums\Armwear.cs" />
+    <Compile Include="Enums\Battlefield.cs" />
+    <Compile Include="Enums\BattlefieldStatus.cs" />
     <Compile Include="Enums\Building.cs" />
     <Compile Include="Enums\Chapter.cs" />
     <Compile Include="Enums\ChapterType.cs" />
@@ -213,6 +215,7 @@
     <Compile Include="GUI\UnitViewer\WeaponExperience.Designer.cs">
       <DependentUpon>WeaponExperience.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Battlefield.cs" />
     <Compile Include="Model\Building.cs" />
     <Compile Include="Model\ChapterHistoryEntry.cs" />
     <Compile Include="Model\ChapterSave.cs" />
