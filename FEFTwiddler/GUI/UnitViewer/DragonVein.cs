@@ -34,9 +34,16 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void PopulateControls()
         {
-            var isDefault = Data.Database.Characters.GetByID(_character.CharacterID).CanUseDragonVein;
-            chkDragonVein.Checked = _character.CanUseDragonVein || isDefault;
-            chkDragonVein.Enabled = !isDefault;
+            if (Enum.IsDefined(typeof(Enums.Character), _character.CharacterID))
+            {
+                var isDefault = Data.Database.Characters.GetByID(_character.CharacterID).CanUseDragonVein;
+                chkDragonVein.Checked = _character.CanUseDragonVein || isDefault;
+                chkDragonVein.Enabled = !isDefault;
+            }
+            else
+            {
+                chkDragonVein.Checked = _character.CanUseDragonVein;
+            }
         }
 
         private void chkDragonVein_CheckedChanged(object sender, EventArgs e)

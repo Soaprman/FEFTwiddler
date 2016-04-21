@@ -218,6 +218,12 @@
     <Compile Include="GUI\UnitViewer\LevelAndExperience.Designer.cs">
       <DependentUpon>LevelAndExperience.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\UnitViewer\StatEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\StatEditor.Designer.cs">
+      <DependentUpon>StatEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\UnitViewer\Stats.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -249,6 +255,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\Huffman8.cs" />
     <Compile Include="Model\SaveFile.cs" />
+    <Compile Include="Utils\StatUtil.cs" />
     <Compile Include="Utils\TypeConverter.cs" />
     <EmbeddedResource Include="GUI\ChapterData\ChapterHistory.resx">
       <DependentUpon>ChapterHistory.cs</DependentUpon>
@@ -309,6 +316,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\LevelAndExperience.resx">
       <DependentUpon>LevelAndExperience.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UnitViewer\StatEditor.resx">
+      <DependentUpon>StatEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\Stats.resx">
       <DependentUpon>Stats.cs</DependentUpon>

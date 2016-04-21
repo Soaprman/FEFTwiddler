@@ -28,48 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lblStats = new System.Windows.Forms.Label();
             this.txtStatBytes = new System.Windows.Forms.TextBox();
+            this.btnStats = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label15
+            // lblStats
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
-            this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label15.Location = new System.Drawing.Point(92, 2);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(104, 13);
-            this.label15.TabIndex = 63;
-            this.label15.Text = "(Edits are not saved)";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label14.Location = new System.Drawing.Point(1, 2);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(64, 13);
-            this.label14.TabIndex = 62;
-            this.label14.Text = "Stats (WIP):";
+            this.lblStats.AutoSize = true;
+            this.lblStats.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblStats.Location = new System.Drawing.Point(3, 8);
+            this.lblStats.Name = "lblStats";
+            this.lblStats.Size = new System.Drawing.Size(34, 13);
+            this.lblStats.TabIndex = 62;
+            this.lblStats.Text = "Stats:";
             // 
             // txtStatBytes
             // 
             this.txtStatBytes.Font = new System.Drawing.Font("Courier New", 8.25F);
-            this.txtStatBytes.Location = new System.Drawing.Point(4, 18);
+            this.txtStatBytes.Location = new System.Drawing.Point(3, 32);
             this.txtStatBytes.Multiline = true;
             this.txtStatBytes.Name = "txtStatBytes";
-            this.txtStatBytes.Size = new System.Drawing.Size(192, 34);
+            this.txtStatBytes.Size = new System.Drawing.Size(194, 20);
             this.txtStatBytes.TabIndex = 61;
             this.txtStatBytes.Text = "Stats";
+            // 
+            // btnStats
+            // 
+            this.btnStats.Location = new System.Drawing.Point(122, 3);
+            this.btnStats.Name = "btnStats";
+            this.btnStats.Size = new System.Drawing.Size(75, 23);
+            this.btnStats.TabIndex = 63;
+            this.btnStats.Text = "Edit...";
+            this.btnStats.UseVisualStyleBackColor = true;
+            this.btnStats.Click += new System.EventHandler(this.btnStats_Click);
             // 
             // Stats
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.btnStats);
+            this.Controls.Add(this.lblStats);
             this.Controls.Add(this.txtStatBytes);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Stats";
@@ -81,8 +80,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblStats;
         private System.Windows.Forms.TextBox txtStatBytes;
+        private System.Windows.Forms.Button btnStats;
     }
 }
