@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChapterHistory));
             this.flwChaptersCompleted = new System.Windows.Forms.FlowLayoutPanel();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -72,7 +71,8 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(194, 225);
             this.textBox1.TabIndex = 4;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
+            this.textBox1.Text = "Removing these does nothing for now... I think. Probably safest to just click Can" +
+    "cel and be on your merry way for the time being!";
             // 
             // ChapterHistory
             // 

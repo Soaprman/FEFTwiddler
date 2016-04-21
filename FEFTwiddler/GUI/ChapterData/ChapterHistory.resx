@@ -117,7 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>This page lets you view and remove entries from your chapter history. It's a work in progress, so I don't know what will happen yet, but I'm hoping it will let you replay chapters. As for the side effects... who knows? Anyway, be sure not to edit this unless you really want to see what happens.</value>
-  </data>
 </root>
