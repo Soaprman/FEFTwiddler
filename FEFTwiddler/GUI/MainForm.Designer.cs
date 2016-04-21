@@ -62,6 +62,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.megacheatsMain1 = new FEFTwiddler.GUI.ChapterData.MegacheatsMain();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabNewGamePlus = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -108,6 +109,7 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabNewGamePlus);
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -278,6 +280,12 @@
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
             // 
+            // tabNewGamePlus
+            // 
+            resources.ApplyResources(this.tabNewGamePlus, "tabNewGamePlus");
+            this.tabNewGamePlus.Name = "tabNewGamePlus";
+            this.tabNewGamePlus.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -338,6 +346,7 @@
         private System.Windows.Forms.Button btnOpenHexEditor;
         private UnitViewer.Skills skills1;
         private System.Windows.Forms.Button btnChapterHistory;
+        private System.Windows.Forms.TabPage tabNewGamePlus;
     }
 }
 
