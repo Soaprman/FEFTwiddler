@@ -35,6 +35,7 @@
             this.btn1Boots = new System.Windows.Forms.Button();
             this.btn0Boots = new System.Windows.Forms.Button();
             this.skills1 = new FEFTwiddler.GUI.ChapterData.Megacheats.Skills();
+            this.btnNewGamePlus = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AllCharMaxStatue
@@ -112,10 +113,22 @@
             this.skills1.Size = new System.Drawing.Size(557, 259);
             this.skills1.TabIndex = 16;
             // 
+            // btnNewGamePlus
+            // 
+            this.btnNewGamePlus.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnNewGamePlus.Location = new System.Drawing.Point(626, 383);
+            this.btnNewGamePlus.Name = "btnNewGamePlus";
+            this.btnNewGamePlus.Size = new System.Drawing.Size(111, 93);
+            this.btnNewGamePlus.TabIndex = 17;
+            this.btnNewGamePlus.Text = "New Game Plus (click if you dare)";
+            this.btnNewGamePlus.UseVisualStyleBackColor = true;
+            this.btnNewGamePlus.Click += new System.EventHandler(this.btnNewGamePlus_Click);
+            // 
             // MegacheatsMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnNewGamePlus);
             this.Controls.Add(this.skills1);
             this.Controls.Add(this.btn0Boots);
             this.Controls.Add(this.btn1Boots);
@@ -139,5 +152,6 @@
         private System.Windows.Forms.Button btn1Boots;
         private System.Windows.Forms.Button btn0Boots;
         private Megacheats.Skills skills1;
+        private System.Windows.Forms.Button btnNewGamePlus;
     }
 }
