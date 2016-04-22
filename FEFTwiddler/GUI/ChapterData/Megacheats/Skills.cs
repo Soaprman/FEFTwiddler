@@ -64,145 +64,145 @@ namespace FEFTwiddler.GUI.ChapterData.Megacheats
 
         public void LearnNormalClassSkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.LearnNormalClassSkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.LearnNormalClassSkills();
             MessageBox.Show("Done!");
         }
 
         public void LearnCorrinOnlySkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.LearnCorrinOnlySkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.LearnCorrinOnlySkills();
             MessageBox.Show("Done!");
         }
 
         public void LearnAzuraOnlySkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.LearnAzuraOnlySkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.LearnAzuraOnlySkills();
             MessageBox.Show("Done!");
         }
 
         public void LearnBeastOnlySkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.LearnBeastOnlySkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.LearnBeastOnlySkills();
             MessageBox.Show("Done!");
         }
 
         public void LearnKitsuneOnlySkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.LearnKitsuneOnlySkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.LearnKitsuneOnlySkills();
             MessageBox.Show("Done!");
         }
 
         public void LearnWolfskinOnlySkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.LearnWolfskinOnlySkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.LearnWolfskinOnlySkills();
             MessageBox.Show("Done!");
         }
 
         public void LearnVillagerOnlySkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.LearnVillagerOnlySkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.LearnVillagerOnlySkills();
             MessageBox.Show("Done!");
         }
 
         public void LearnPathBonusClassSkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.LearnPathBonusClassSkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.LearnPathBonusClassSkills();
             MessageBox.Show("Done!");
         }
 
         public void LearnDlcClassSkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.LearnDlcClassSkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.LearnDlcClassSkills();
             MessageBox.Show("Done!");
         }
 
         public void LearnAmiiboClassSkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.LearnAmiiboClassSkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.LearnAmiiboClassSkills();
             MessageBox.Show("Done!");
         }
 
         public void LearnEnemyAndNpcSkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.LearnEnemyAndNpcSkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.LearnEnemyAndNpcSkills();
             MessageBox.Show("Done!");
         }
 
         public void LearnAllSkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.LearnAllSkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.LearnAllSkills();
             MessageBox.Show("Done!");
         }
 
         public void UnlearnNormalClassSkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.UnlearnNormalClassSkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.UnlearnNormalClassSkills();
             MessageBox.Show("Done!");
         }
 
         public void UnlearnCorrinOnlySkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.UnlearnCorrinOnlySkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.UnlearnCorrinOnlySkills();
             MessageBox.Show("Done!");
         }
 
         public void UnlearnAzuraOnlySkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.UnlearnAzuraOnlySkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.UnlearnAzuraOnlySkills();
             MessageBox.Show("Done!");
         }
 
         public void UnlearnBeastOnlySkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.UnlearnBeastOnlySkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.UnlearnBeastOnlySkills();
             MessageBox.Show("Done!");
         }
 
         public void UnlearnKitsuneOnlySkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.UnlearnKitsuneOnlySkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.UnlearnKitsuneOnlySkills();
             MessageBox.Show("Done!");
         }
 
         public void UnlearnWolfskinOnlySkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.UnlearnWolfskinOnlySkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.UnlearnWolfskinOnlySkills();
             MessageBox.Show("Done!");
         }
 
         public void UnlearnVillagerOnlySkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.UnlearnVillagerOnlySkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.UnlearnVillagerOnlySkills();
             MessageBox.Show("Done!");
         }
 
         public void UnlearnPathBonusClassSkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.UnlearnPathBonusClassSkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.UnlearnPathBonusClassSkills();
             MessageBox.Show("Done!");
         }
 
         public void UnlearnDlcClassSkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.UnlearnDlcClassSkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.UnlearnDlcClassSkills();
             MessageBox.Show("Done!");
         }
 
         public void UnlearnAmiiboClassSkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.UnlearnAmiiboClassSkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.UnlearnAmiiboClassSkills();
             MessageBox.Show("Done!");
         }
 
         public void UnlearnEnemyAndNpcSkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.UnlearnEnemyAndNpcSkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.UnlearnEnemyAndNpcSkills();
             MessageBox.Show("Done!");
         }
 
         public void UnlearnAllSkills(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters) character.UnlearnAllSkills();
+            foreach (var character in _chapterSave.UnitRegion.Units) character.UnlearnAllSkills();
             MessageBox.Show("Done!");
         }
 

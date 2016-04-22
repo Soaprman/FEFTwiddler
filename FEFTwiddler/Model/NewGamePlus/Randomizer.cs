@@ -20,7 +20,7 @@ namespace FEFTwiddler.Model.NewGamePlus
 
         public void RandomizeClasses()
         {
-            foreach (var character in _chapterSave.Characters)
+            foreach (var character in _chapterSave.UnitRegion.Units)
             {
                 character.ClassID = GetRandomClass();
             }

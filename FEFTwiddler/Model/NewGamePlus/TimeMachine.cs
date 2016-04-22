@@ -22,11 +22,11 @@ namespace FEFTwiddler.Model.NewGamePlus
 
         public void RemoveEveryoneButCorrin()
         {
-            foreach (var character in _chapterSave.Characters)
+            foreach (var character in _chapterSave.UnitRegion.Units)
             {
                 if (!Data.Database.Characters.GetByID(character.CharacterID).IsCorrin)
                 {
-                    _chapterSave.Characters.Remove(character);
+                    _chapterSave.UnitRegion.Units.Remove(character);
                 }
             }
         }
@@ -38,7 +38,7 @@ namespace FEFTwiddler.Model.NewGamePlus
             {
                 var character = Model.Character.Create(characterData.CharacterID);
                 character.IsAbsent = true;
-                _chapterSave.Characters.Add(character);
+                _chapterSave.UnitRegion.Units.Add(character);
             }
         }
 
@@ -47,9 +47,9 @@ namespace FEFTwiddler.Model.NewGamePlus
 
         public void UnplayChapter(Enums.Chapter chapterId)
         {
-            _chapterSave.ChapterHistory.RemoveAll((x) => x.ChapterID == chapterId);
+            _chapterSave.UserRegion.ChapterHistory.RemoveAll((x) => x.ChapterID == chapterId);
 
-            var battlefields = _chapterSave.Battlefields.Where((x) => x.ChapterID == chapterId);
+            var battlefields = _chapterSave.BattlefieldRegion.Battlefields.Where((x) => x.ChapterID == chapterId);
             foreach (var battlefield in battlefields)
             {
                 battlefield.BattlefieldStatus = Enums.BattlefieldStatus.Available;
@@ -58,7 +58,7 @@ namespace FEFTwiddler.Model.NewGamePlus
 
         private void ReturnToChapter7()
         {
-            foreach (var battlefield in _chapterSave.Battlefields)
+            foreach (var battlefield in _chapterSave.BattlefieldRegion.Battlefields)
             {
                 switch (battlefield.ChapterID)
                 {

@@ -27,7 +27,7 @@ namespace FEFTwiddler.GUI.ChapterData
         
         private void PopulateHistoryPanel()
         {
-            foreach (var historyEntry in _chapterSave.ChapterHistory)
+            foreach (var historyEntry in _chapterSave.UserRegion.ChapterHistory)
             {
                 var panel = new ChapterHistoryPanel(historyEntry);
                 flwChaptersCompleted.Controls.Add(panel);
@@ -41,10 +41,10 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            _chapterSave.ChapterHistory = new List<Model.ChapterHistoryEntry>();
+            _chapterSave.UserRegion.ChapterHistory = new List<Model.ChapterHistoryEntry>();
             foreach (ChapterHistoryPanel panel in flwChaptersCompleted.Controls)
             {
-                _chapterSave.ChapterHistory.Add(panel.HistoryEntry);
+                _chapterSave.UserRegion.ChapterHistory.Add(panel.HistoryEntry);
             }
             this.Close();
         }

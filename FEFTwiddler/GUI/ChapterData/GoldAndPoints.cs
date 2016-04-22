@@ -28,9 +28,9 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void PopulateControls()
         {
-            numGold.Value = _chapterSave.Gold;
+            numGold.Value = _chapterSave.UserRegion.Gold;
 
-            numDragonVeinPoints.Value = _chapterSave.DragonVeinPoint / 100;
+            numDragonVeinPoints.Value = _chapterSave.MyCastleRegion.DragonVeinPoint / 100;
         }
 
         private void btnMaxGold_Click(object sender, EventArgs e)
@@ -45,12 +45,12 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void numGold_ValueChanged(object sender, EventArgs e)
         {
-            _chapterSave.Gold = (uint)(numGold.Value);
+            _chapterSave.UserRegion.Gold = (uint)(numGold.Value);
         }
 
         private void numDragonVeinPoints_ValueChanged(object sender, EventArgs e)
         {
-            _chapterSave.DragonVeinPoint = (ushort)(numDragonVeinPoints.Value * 100);
+            _chapterSave.MyCastleRegion.DragonVeinPoint = (ushort)(numDragonVeinPoints.Value * 100);
         }
     }
 }

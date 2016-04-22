@@ -68,7 +68,7 @@ namespace FEFTwiddler.GUI
                 lstDead.DisplayMember = "CharacterID";
                 lstDead.ValueMember = "CharacterID";
                 lstDead.Items.Clear();
-                foreach (var character in _chapterSave.Characters)
+                foreach (var character in _chapterSave.UnitRegion.Units)
                 {
                     if (character.IsDead) lstDead.Items.Add(character);
                     else lstLiving.Items.Add(character);
@@ -114,7 +114,7 @@ namespace FEFTwiddler.GUI
 
         private void LoadChapterData()
         {
-            lblAvatarName.Text = Utils.TypeConverter.ToString(_chapterSave.AvatarName);
+            lblAvatarName.Text = _chapterSave.Header.AvatarName;
 
             goldAndPoints1.LoadChapterSave(_chapterSave);
             materials1.LoadChapterSave(_chapterSave);

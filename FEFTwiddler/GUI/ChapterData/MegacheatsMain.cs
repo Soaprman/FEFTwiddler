@@ -42,7 +42,7 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void btnAllCharAllSkills_Click(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters)
+            foreach (var character in _chapterSave.UnitRegion.Units)
             {
                 character.LearnNormalClassSkills();
             }
@@ -51,7 +51,7 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void btnAllCharAllSkillsDLC_Click(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters)
+            foreach (var character in _chapterSave.UnitRegion.Units)
             {
                 character.LearnPathBonusClassSkills();
             }
@@ -60,7 +60,7 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void btnAllCharAllSkillsEnemy_Click(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters)
+            foreach (var character in _chapterSave.UnitRegion.Units)
             {
                 //character.LearnEnemySkills();
             }
@@ -69,7 +69,7 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void btnAllCharMaxStatue_Click(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters)
+            foreach (var character in _chapterSave.UnitRegion.Units)
             {
                 character.MaximizeStatues();
             }
@@ -78,7 +78,7 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void btnGiveEternalSeals_Click(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters)
+            foreach (var character in _chapterSave.UnitRegion.Units)
             {
                 character.EternalSealsUsed = 16;
             }
@@ -87,7 +87,7 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void btnMaxWeaponExp_Click(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters)
+            foreach (var character in _chapterSave.UnitRegion.Units)
             {
                 character.SRankAllWeapons();
             }
@@ -96,7 +96,7 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void btnMaxBoots_Click(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters)
+            foreach (var character in _chapterSave.UnitRegion.Units)
             {
                 character.Boots = Model.Character.MaxBoots;
             }
@@ -105,7 +105,7 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void btn1Boots_Click(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters)
+            foreach (var character in _chapterSave.UnitRegion.Units)
             {
                 character.Boots = (byte)1;
             }
@@ -114,7 +114,7 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void btn0Boots_Click(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.Characters)
+            foreach (var character in _chapterSave.UnitRegion.Units)
             {
                 character.Boots = (byte)0;
             }
