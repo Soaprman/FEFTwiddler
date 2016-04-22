@@ -63,6 +63,7 @@
             this.megacheatsMain1 = new FEFTwiddler.GUI.ChapterData.MegacheatsMain();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabNewGamePlus = new System.Windows.Forms.TabPage();
+            this.dragonVein1 = new FEFTwiddler.GUI.UnitViewer.DragonVein();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -172,6 +173,7 @@
             // pnlUnitView
             // 
             this.pnlUnitView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlUnitView.Controls.Add(this.dragonVein1);
             this.pnlUnitView.Controls.Add(this.btnOpenHexEditor);
             this.pnlUnitView.Controls.Add(this.battleData1);
             this.pnlUnitView.Controls.Add(this.class1);
@@ -286,6 +288,11 @@
             this.tabNewGamePlus.Name = "tabNewGamePlus";
             this.tabNewGamePlus.UseVisualStyleBackColor = true;
             // 
+            // dragonVein1
+            // 
+            resources.ApplyResources(this.dragonVein1, "dragonVein1");
+            this.dragonVein1.Name = "dragonVein1";
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -347,6 +354,7 @@
         private UnitViewer.Skills skills1;
         private System.Windows.Forms.Button btnChapterHistory;
         private System.Windows.Forms.TabPage tabNewGamePlus;
+        private UnitViewer.DragonVein dragonVein1;
     }
 }
 

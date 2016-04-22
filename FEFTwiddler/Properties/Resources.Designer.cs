@@ -92,7 +92,8 @@ namespace FEFTwiddler.Properties {
         ///    &lt;flags canUseStones=&quot;false&quot; isCorrin=&quot;false&quot; isChild=&quot;false&quot; /&gt;
         ///  &lt;/character&gt;
         ///  &lt;character id=&quot;1&quot; name=&quot;Corrin_M&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Corrin (M) [rest of string was truncated]&quot;;.
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Corrin (M)&quot; /&gt;
+        ///    &lt; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Characters {
             get {
@@ -138,6 +139,30 @@ namespace FEFTwiddler.Properties {
         internal static string Data_Items {
             get {
                 return ResourceManager.GetString("Data_Items", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///&lt;root&gt;
+        ///  &lt;prisoner id=&quot;0&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;None&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;無し&quot; /&gt;
+        ///  &lt;/prisoner&gt;
+        ///  &lt;prisoner id=&quot;1&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Akihiro&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;シモツキ&quot; /&gt;
+        ///  &lt;/prisoner&gt;
+        ///  &lt;prisoner id=&quot;2&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Daisuke&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;キクヅキ&quot; /&gt;
+        ///  &lt;/prisoner&gt;
+        ///  &lt;prisoner id=&quot;3&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;H [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Data_Prisoners {
+            get {
+                return ResourceManager.GetString("Data_Prisoners", resourceCulture);
             }
         }
         

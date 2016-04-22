@@ -20,5 +20,10 @@ namespace FEFTwiddler.Data
         public byte EndBlockType { get; set; }
 
         public Color HairColor { get; set; }
+        public bool IsPrisoner { get; set; }
+        public bool IsFemale { get; set; }
+        public bool IsManakete { get; set; }
+        public bool IsBeast { get; set; }
+        public bool CanUseDragonVein { get; set; }
     }
 }

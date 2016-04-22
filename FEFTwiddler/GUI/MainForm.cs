@@ -159,6 +159,10 @@ namespace FEFTwiddler.GUI
                 {
                     lblName.Text = character.CorrinName;
                 }
+                else if (Data.Database.Characters.GetByID(character.CharacterID).IsPrisoner)
+                {
+                    lblName.Text = Data.Database.Prisoners.GetByID(character.PrisonerID).DisplayName;
+                }
                 else
                 {
                     lblName.Text = Data.Database.Characters.GetByID(character.CharacterID).DisplayName;
@@ -198,6 +202,9 @@ namespace FEFTwiddler.GUI
 
             try { weaponExperience1.LoadCharacter(_selectedCharacter); }
             catch (Exception) { message += Environment.NewLine + "Error loading Weapon Experience data"; }
+
+            try { dragonVein1.LoadCharacter(_selectedCharacter); }
+            catch (Exception) { message += Environment.NewLine + "Error loading Dragon Vein data"; }
 
             if (message.Length > 0)
             {

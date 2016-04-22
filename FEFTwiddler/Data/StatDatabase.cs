@@ -20,34 +20,58 @@ namespace FEFTwiddler.Data
                 .First();
 
             var displayName = GetDisplayName(row);
-            var boonStats = row.Elements("boonStats").First();
-            var baneStats = row.Elements("baneStats").First();
+            var baseBoonModifiers = row.Elements("baseBoonModifiers").First();
+            var maxBoonModifiers = row.Elements("maxBoonModifiers").First();
+            var baseBaneModifiers = row.Elements("baseBaneModifiers").First();
+            var maxBaneModifiers = row.Elements("maxBaneModifiers").First();
 
             return new Stat
             {
                 StatID = (Enums.Stat)row.GetAttribute<byte>("id"),
                 DisplayName = displayName,
-                BoonStats = new Model.Stat()
+                BaseBoonModifiers = new Model.Stat()
                 {
-                    HP = boonStats.GetAttribute<sbyte>("hp"),
-                    Str = boonStats.GetAttribute<sbyte>("str"),
-                    Mag = boonStats.GetAttribute<sbyte>("mag"),
-                    Skl = boonStats.GetAttribute<sbyte>("skl"),
-                    Spd = boonStats.GetAttribute<sbyte>("spd"),
-                    Lck = boonStats.GetAttribute<sbyte>("lck"),
-                    Def = boonStats.GetAttribute<sbyte>("def"),
-                    Res = boonStats.GetAttribute<sbyte>("res")
+                    HP = baseBoonModifiers.GetAttribute<sbyte>("hp"),
+                    Str = baseBoonModifiers.GetAttribute<sbyte>("str"),
+                    Mag = baseBoonModifiers.GetAttribute<sbyte>("mag"),
+                    Skl = baseBoonModifiers.GetAttribute<sbyte>("skl"),
+                    Spd = baseBoonModifiers.GetAttribute<sbyte>("spd"),
+                    Lck = baseBoonModifiers.GetAttribute<sbyte>("lck"),
+                    Def = baseBoonModifiers.GetAttribute<sbyte>("def"),
+                    Res = baseBoonModifiers.GetAttribute<sbyte>("res")
                 },
-                BaneStats = new Model.Stat()
+                MaxBoonModifiers = new Model.Stat()
                 {
-                    HP = baneStats.GetAttribute<sbyte>("hp"),
-                    Str = baneStats.GetAttribute<sbyte>("str"),
-                    Mag = baneStats.GetAttribute<sbyte>("mag"),
-                    Skl = baneStats.GetAttribute<sbyte>("skl"),
-                    Spd = baneStats.GetAttribute<sbyte>("spd"),
-                    Lck = baneStats.GetAttribute<sbyte>("lck"),
-                    Def = baneStats.GetAttribute<sbyte>("def"),
-                    Res = baneStats.GetAttribute<sbyte>("res")
+                    HP = maxBoonModifiers.GetAttribute<sbyte>("hp"),
+                    Str = maxBoonModifiers.GetAttribute<sbyte>("str"),
+                    Mag = maxBoonModifiers.GetAttribute<sbyte>("mag"),
+                    Skl = maxBoonModifiers.GetAttribute<sbyte>("skl"),
+                    Spd = maxBoonModifiers.GetAttribute<sbyte>("spd"),
+                    Lck = maxBoonModifiers.GetAttribute<sbyte>("lck"),
+                    Def = maxBoonModifiers.GetAttribute<sbyte>("def"),
+                    Res = maxBoonModifiers.GetAttribute<sbyte>("res")
+                },
+                BaseBaneModifiers = new Model.Stat()
+                {
+                    HP = baseBaneModifiers.GetAttribute<sbyte>("hp"),
+                    Str = baseBaneModifiers.GetAttribute<sbyte>("str"),
+                    Mag = baseBaneModifiers.GetAttribute<sbyte>("mag"),
+                    Skl = baseBaneModifiers.GetAttribute<sbyte>("skl"),
+                    Spd = baseBaneModifiers.GetAttribute<sbyte>("spd"),
+                    Lck = baseBaneModifiers.GetAttribute<sbyte>("lck"),
+                    Def = baseBaneModifiers.GetAttribute<sbyte>("def"),
+                    Res = baseBaneModifiers.GetAttribute<sbyte>("res")
+                },
+                MaxBaneModifiers = new Model.Stat()
+                {
+                    HP = maxBaneModifiers.GetAttribute<sbyte>("hp"),
+                    Str = maxBaneModifiers.GetAttribute<sbyte>("str"),
+                    Mag = maxBaneModifiers.GetAttribute<sbyte>("mag"),
+                    Skl = maxBaneModifiers.GetAttribute<sbyte>("skl"),
+                    Spd = maxBaneModifiers.GetAttribute<sbyte>("spd"),
+                    Lck = maxBaneModifiers.GetAttribute<sbyte>("lck"),
+                    Def = maxBaneModifiers.GetAttribute<sbyte>("def"),
+                    Res = maxBaneModifiers.GetAttribute<sbyte>("res")
                 }
             };
         }
