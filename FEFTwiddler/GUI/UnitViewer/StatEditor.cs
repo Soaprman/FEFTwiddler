@@ -29,18 +29,30 @@ namespace FEFTwiddler.GUI.UnitViewer
             if (Enum.IsDefined(typeof(Enums.Character), _character.CharacterID))
             {
                 if (_character.CorrinName == null)
-                    this.Text = "Stat editing: " + Data.Database.Characters.GetByID(_character.CharacterID).DisplayName;
+                    this.Text = Data.Database.Characters.GetByID(_character.CharacterID).DisplayName + "'s stats";
                 else
-                    this.Text = "Stat editing: " + _character.CorrinName;
+                    this.Text =  _character.CorrinName + "'s stats";
             }
             else
             {
-                this.Text = "Stat editing: Some unknown character";
+                this.Text = "Some unknown character's stats";
             }
         }
 
         private void StatEditor_Load(object sender, EventArgs e)
         {
+            // Labels
+            var statData = Data.Database.Stats;
+            lblHP.Text = statData.GetByID(Enums.Stat.HP).DisplayName;
+            lblStr.Text = statData.GetByID(Enums.Stat.Strength).DisplayName;
+            lblMag.Text = statData.GetByID(Enums.Stat.Magic).DisplayName;
+            lblSkl.Text = statData.GetByID(Enums.Stat.Skill).DisplayName;
+            lblSpd.Text = statData.GetByID(Enums.Stat.Speed).DisplayName;
+            lblLck.Text = statData.GetByID(Enums.Stat.Luck).DisplayName;
+            lblDef.Text = statData.GetByID(Enums.Stat.Defense).DisplayName;
+            lblRes.Text = statData.GetByID(Enums.Stat.Resistance).DisplayName;
+
+            // Stats
             caps = Utils.StatUtil.CalculateStatCaps(_character);
             Model.Stat stats = Utils.StatUtil.CalculateStats(_character);
 
@@ -61,6 +73,46 @@ namespace FEFTwiddler.GUI.UnitViewer
             numLck.Value = stats.Lck;
             numDef.Value = stats.Def;
             numRes.Value = stats.Res;
+
+            // Tonic
+            Model.Stat tonicBonuses = _character.TonicBonusStats;
+            chkHPTonic.Checked = (tonicBonuses.HP == 5);
+            chkStrTonic.Checked = (tonicBonuses.Str == 2);
+            chkMagTonic.Checked = (tonicBonuses.Mag == 2);
+            chkSklTonic.Checked = (tonicBonuses.Skl == 2);
+            chkSpdTonic.Checked = (tonicBonuses.Spd == 2);
+            chkLckTonic.Checked = (tonicBonuses.Lck == 4);
+            chkDefTonic.Checked = (tonicBonuses.Def == 2);
+            chkResTonic.Checked = (tonicBonuses.Res == 2);
+
+            // Status
+            Model.Stat statusBonuses = _character.StatusBonusStats;
+            chkStrStatus.Checked = (statusBonuses.Str == 4);
+            chkMagStatus.Checked = (statusBonuses.Mag == 4);
+            chkSklStatus.Checked = (statusBonuses.Skl == 4);
+            chkSpdStatus.Checked = (statusBonuses.Spd == 4);
+            chkLckStatus.Checked = (statusBonuses.Lck == 4);
+            chkDefStatus.Checked = (statusBonuses.Def == 4);
+            chkResStatus.Checked = (statusBonuses.Res == 4);
+
+            // Meal
+            Model.Stat mealBonuses = _character.MealBonusStats;
+            SetMealCheckBox(chkStrMeal, mealBonuses.Str);
+            SetMealCheckBox(chkMagMeal, mealBonuses.Mag);
+            SetMealCheckBox(chkSklMeal, mealBonuses.Skl);
+            SetMealCheckBox(chkSpdMeal, mealBonuses.Spd);
+            SetMealCheckBox(chkLckMeal, mealBonuses.Lck);
+            SetMealCheckBox(chkDefMeal, mealBonuses.Def);
+        }
+
+        private void SetMealCheckBox(CheckBox chk, sbyte bonus)
+        {
+            switch (bonus)
+            {
+                case 2: chk.CheckState = CheckState.Checked; break;
+                case 0: chk.CheckState = CheckState.Unchecked; break;
+                default: chk.CheckState = CheckState.Indeterminate; break;
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -88,7 +140,63 @@ namespace FEFTwiddler.GUI.UnitViewer
             if (changes.Def != 0) { finalStats.Def = changes.Def; IsStatsChanged = true; }
             if (changes.Res != 0) { finalStats.Res = changes.Res; IsStatsChanged = true; }
             _character.GainedStats = finalStats;
+
+            // Tonic
+            Model.Stat tonicBonuses = new Model.Stat()
+            {
+                HP = chkHPTonic.Checked ? (sbyte)5 : (sbyte)0,
+                Str = chkStrTonic.Checked ? (sbyte)2 : (sbyte)0,
+                Mag = chkMagTonic.Checked ? (sbyte)2 : (sbyte)0,
+                Skl = chkSklTonic.Checked ? (sbyte)2 : (sbyte)0,
+                Spd = chkSpdTonic.Checked ? (sbyte)2 : (sbyte)0,
+                Lck = chkLckTonic.Checked ? (sbyte)4 : (sbyte)0,
+                Def = chkDefTonic.Checked ? (sbyte)2 : (sbyte)0,
+                Res = chkResTonic.Checked ? (sbyte)2 : (sbyte)0
+            };
+            _character.TonicBonusStats = tonicBonuses;
+
+            // Status
+            Model.Stat statusBonuses = new Model.Stat()
+            {
+                HP = 0,
+                Str = chkStrStatus.Checked ? (sbyte)4 : (sbyte)0,
+                Mag = chkMagStatus.Checked ? (sbyte)4 : (sbyte)0,
+                Skl = chkSklStatus.Checked ? (sbyte)4 : (sbyte)0,
+                Spd = chkSpdStatus.Checked ? (sbyte)4 : (sbyte)0,
+                Lck = chkLckStatus.Checked ? (sbyte)4 : (sbyte)0,
+                Def = chkDefStatus.Checked ? (sbyte)4 : (sbyte)0,
+                Res = chkResStatus.Checked ? (sbyte)4 : (sbyte)0
+            };
+            _character.StatusBonusStats = statusBonuses;
+
+            // Meal
+            Model.Stat oldMealBonuses = _character.MealBonusStats;
+            Model.Stat newMealBonuses = new Model.Stat()
+            {
+                HP = 0,
+                Str = GetMealCheckBox(chkStrMeal, oldMealBonuses.Str),
+                Mag = GetMealCheckBox(chkMagMeal, oldMealBonuses.Mag),
+                Skl = GetMealCheckBox(chkSklMeal, oldMealBonuses.Skl),
+                Spd = GetMealCheckBox(chkSpdMeal, oldMealBonuses.Spd),
+                Lck = GetMealCheckBox(chkLckMeal, oldMealBonuses.Lck),
+                Def = GetMealCheckBox(chkDefMeal, oldMealBonuses.Def),
+                Res = 0
+            };
+            _character.MealBonusStats = newMealBonuses;
+
             this.Close();
+        }
+
+        private sbyte GetMealCheckBox(CheckBox chk, sbyte oldBonus)
+        {
+            sbyte newBonus;
+            switch (chk.CheckState)
+            {
+                case CheckState.Checked: newBonus = 2; break;
+                case CheckState.Unchecked: newBonus = 0; break;
+                default: newBonus = oldBonus; break;
+            }
+            return newBonus;
         }
 
         private void btnMax_Click(object sender, EventArgs e)
@@ -101,6 +209,36 @@ namespace FEFTwiddler.GUI.UnitViewer
             numLck.Value = caps.Lck;
             numDef.Value = caps.Def;
             numRes.Value = caps.Res;
+        }
+
+        private void btnAllBonuses_Click(object sender, EventArgs e)
+        {
+            // Tonic
+            chkHPTonic.Checked = true;
+            chkStrTonic.Checked = true;
+            chkMagTonic.Checked = true;
+            chkSklTonic.Checked = true;
+            chkSpdTonic.Checked = true;
+            chkLckTonic.Checked = true;
+            chkDefTonic.Checked = true;
+            chkResTonic.Checked = true;
+
+            // Status
+            chkStrStatus.Checked = true;
+            chkMagStatus.Checked = true;
+            chkSklStatus.Checked = true;
+            chkSpdStatus.Checked = true;
+            chkLckStatus.Checked = true;
+            chkDefStatus.Checked = true;
+            chkResStatus.Checked = true;
+
+            // Meal
+            chkStrMeal.Checked = true;
+            chkMagMeal.Checked = true;
+            chkSklMeal.Checked = true;
+            chkSpdMeal.Checked = true;
+            chkLckMeal.Checked = true;
+            chkDefMeal.Checked = true;
         }
     }
 }

@@ -681,6 +681,105 @@ namespace FEFTwiddler.Model
             set { _rawBlock2[0x24] = value; }
         }
 
+        /// <summary>
+        /// Stat bonuses via Tonic items.
+        /// </summary>
+        public Stat TonicBonusStats
+        {
+            get
+            {
+                Stat stats = new Stat()
+                {
+                    HP = _rawBlock2[0x2B].GetFlag(0x01) ? (sbyte)5 : (sbyte)0,
+                    Str = _rawBlock2[0x2B].GetFlag(0x02) ? (sbyte)2 : (sbyte)0,
+                    Mag = _rawBlock2[0x2B].GetFlag(0x04) ? (sbyte)2 : (sbyte)0,
+                    Skl = _rawBlock2[0x2B].GetFlag(0x08) ? (sbyte)2 : (sbyte)0,
+                    Spd = _rawBlock2[0x2B].GetFlag(0x10) ? (sbyte)2 : (sbyte)0,
+                    Lck = _rawBlock2[0x2B].GetFlag(0x20) ? (sbyte)4 : (sbyte)0,
+                    Def = _rawBlock2[0x2B].GetFlag(0x40) ? (sbyte)2 : (sbyte)0,
+                    Res = _rawBlock2[0x2B].GetFlag(0x80) ? (sbyte)2 : (sbyte)0
+                };
+                return stats;
+            }
+            set
+            {
+                if (value.HP == 5) _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x01, true); else _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x01, false);
+                if (value.Str == 2) _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x02, true); else _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x02, false);
+                if (value.Mag == 2) _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x04, true); else _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x04, false);
+                if (value.Skl == 2) _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x08, true); else _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x08, false);
+                if (value.Spd == 2) _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x10, true); else _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x10, false);
+                if (value.Lck == 4) _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x20, true); else _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x20, false);
+                if (value.Def == 2) _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x40, true); else _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x40, false);
+                if (value.Res == 2) _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x80, true); else _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x80, false);
+            }
+        }
+
+        /// <summary>
+        /// Random bonuses in My Castle.
+        /// </summary>
+        public Stat StatusBonusStats
+        {
+            get
+            {
+                Stat stats = new Stat()
+                {
+                    HP = 0,
+                    Str = _rawBlock2[0x2C].GetFlag(0x02) ? (sbyte)4 : (sbyte)0,
+                    Mag = _rawBlock2[0x2C].GetFlag(0x04) ? (sbyte)4 : (sbyte)0,
+                    Skl = _rawBlock2[0x2C].GetFlag(0x08) ? (sbyte)4 : (sbyte)0,
+                    Spd = _rawBlock2[0x2C].GetFlag(0x10) ? (sbyte)4 : (sbyte)0,
+                    Lck = _rawBlock2[0x2C].GetFlag(0x20) ? (sbyte)4 : (sbyte)0,
+                    Def = _rawBlock2[0x2C].GetFlag(0x40) ? (sbyte)4 : (sbyte)0,
+                    Res = _rawBlock2[0x2C].GetFlag(0x80) ? (sbyte)4 : (sbyte)0
+                };
+                return stats;
+            }
+            set
+            {
+                //if (value.HP == 4) _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x01, true); else _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x01, false);
+                if (value.Str == 4) _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x02, true); else _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x02, false);
+                if (value.Mag == 4) _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x04, true); else _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x04, false);
+                if (value.Skl == 4) _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x08, true); else _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x08, false);
+                if (value.Spd == 4) _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x10, true); else _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x10, false);
+                if (value.Lck == 4) _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x20, true); else _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x20, false);
+                if (value.Def == 4) _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x40, true); else _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x40, false);
+                if (value.Res == 4) _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x80, true); else _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x80, false);
+            }
+        }
+
+        /// <summary>
+        /// Stat bonuses via Mess Hall
+        /// </summary>
+        public Stat MealBonusStats
+        {
+            get
+            {
+                Stat stats = new Stat();
+                if (_rawBlock2[0x2E].GetFlag(0x10)) stats.Str += 2;
+                if (_rawBlock2[0x2E].GetFlag(0x20)) stats.Str -= 1;
+                if (_rawBlock2[0x2E].GetFlag(0x40)) stats.Mag += 2;
+                if (_rawBlock2[0x2E].GetFlag(0x80)) stats.Mag -= 1;
+                if (_rawBlock2[0x2F].GetFlag(0x01)) stats.Skl += 2;
+                if (_rawBlock2[0x2F].GetFlag(0x02)) stats.Skl -= 1;
+                if (_rawBlock2[0x2F].GetFlag(0x04)) stats.Spd += 2;
+                if (_rawBlock2[0x2F].GetFlag(0x08)) stats.Spd -= 1;
+                if (_rawBlock2[0x2F].GetFlag(0x10)) stats.Lck += 2;
+                if (_rawBlock2[0x2F].GetFlag(0x20)) stats.Lck -= 1;
+                if (_rawBlock2[0x2F].GetFlag(0x40)) stats.Def += 2;
+                if (_rawBlock2[0x2F].GetFlag(0x80)) stats.Def -= 1;
+                return stats;
+            }
+            set
+            {
+                SetMealFlag(value.Str, 0x2E, 0x10, 0x20);
+                SetMealFlag(value.Mag, 0x2E, 0x40, 0x80);
+                SetMealFlag(value.Skl, 0x2F, 0x01, 0x02);
+                SetMealFlag(value.Spd, 0x2F, 0x04, 0x08);
+                SetMealFlag(value.Lck, 0x2F, 0x10, 0x20);
+                SetMealFlag(value.Def, 0x2F, 0x40, 0x80);
+            }
+        }
+
         // Thirty-three unknown bytes (0x25 through 0x45)
 
         #endregion
@@ -920,6 +1019,29 @@ namespace FEFTwiddler.Model
         private Data.Character GetData()
         {
             return Data.Database.Characters.GetByID(CharacterID);
+        }
+
+        private void SetMealFlag(sbyte value, int offset, byte mask1, byte mask2)
+        {
+            switch (value)
+            {
+                case 2:
+                    _rawBlock2[offset] = _rawBlock2[offset].SetFlag(mask1, true);
+                    _rawBlock2[offset] = _rawBlock2[offset].SetFlag(mask2, false);
+                    break;
+                case 1:
+                    _rawBlock2[offset] = _rawBlock2[offset].SetFlag(mask1, true);
+                    _rawBlock2[offset] = _rawBlock2[offset].SetFlag(mask2, true);
+                    break;
+                case -1:
+                    _rawBlock2[offset] = _rawBlock2[offset].SetFlag(mask1, false);
+                    _rawBlock2[offset] = _rawBlock2[offset].SetFlag(mask2, true);
+                    break;
+                default:
+                    _rawBlock2[offset] = _rawBlock2[offset].SetFlag(mask1, false);
+                    _rawBlock2[offset] = _rawBlock2[offset].SetFlag(mask2, false);
+                    break;
+            }
         }
 
         #endregion

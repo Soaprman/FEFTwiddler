@@ -48,6 +48,18 @@ namespace FEFTwiddler.Model
         /// </summary>
         public sbyte Res { get; set; }
 
+        public Stat()
+        {
+            HP = 0;
+            Str = 0;
+            Mag = 0;
+            Skl = 0;
+            Spd = 0;
+            Lck = 0;
+            Def = 0;
+            Res = 0;
+        }
+
         /// <summary>
         /// Add two stats.
         /// </summary>
@@ -94,7 +106,7 @@ namespace FEFTwiddler.Model
         /// Return stat string.
         /// </summary>
         /// <returns>Stat string</returns>
-        public string ToString()
+        public override string ToString()
         {
             return String.Format("{0}-{1}-{2}-{3}-{4}-{5}-{6}-{7}", HP, Str, Mag, Skl, Spd, Lck, Def, Res);
         }

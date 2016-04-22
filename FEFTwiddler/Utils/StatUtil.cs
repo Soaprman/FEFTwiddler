@@ -16,27 +16,31 @@ namespace FEFTwiddler.Utils
         public static Model.Stat CalculateBaseStats(Model.Character character)
         {
             Model.Stat baseStats = new Model.Stat();
-            if (Enum.IsDefined(typeof(Enums.Character), character.CharacterID) &&
-                Enum.IsDefined(typeof(Enums.Class), character.ClassID) &&
-                Enum.IsDefined(typeof(Enums.Stat), character.Boon) &&
-                Enum.IsDefined(typeof(Enums.Stat), character.Bane))
-            {
-                var characterData = Data.Database.Characters.GetByID(character.CharacterID);
-                var classData = Data.Database.Classes.GetByID(character.ClassID);
+            if (!Enum.IsDefined(typeof(Enums.Character), character.CharacterID) ||
+                !Enum.IsDefined(typeof(Enums.Class), character.ClassID))
+                return null;
+            
+            var characterData = Data.Database.Characters.GetByID(character.CharacterID);
+            var classData = Data.Database.Classes.GetByID(character.ClassID);
 
-                if (character.CorrinName != null) // Corrin and bond units
-                    baseStats = characterData.BaseStats +
+            // Corrin and Bond units
+            if (character.CorrinName != null)
+            {
+                if (Enum.IsDefined(typeof(Enums.Stat), character.Boon) &&
+                    Enum.IsDefined(typeof(Enums.Stat), character.Bane))
+                {
+                    return characterData.BaseStats +
                         Data.Database.Stats.GetByID(character.Boon).BaseBoonModifiers +
                         Data.Database.Stats.GetByID(character.Bane).BaseBaneModifiers +
-                        classData.BaseStats + character.GainedStats;
+                        classData.BaseStats;
+                }
                 else
-                    baseStats = characterData.BaseStats + classData.BaseStats + character.GainedStats;
+                    return null;
             }
-            else
+            else // All other units
             {
-                baseStats = null;
+                return characterData.BaseStats + classData.BaseStats;
             }
-            return baseStats;
         }
 
         /// <summary>
@@ -58,45 +62,42 @@ namespace FEFTwiddler.Utils
         /// <returns>Character's stat caps</returns>
         public static Model.Stat CalculateStatCaps(Model.Character character)
         {
-            Model.Stat caps = new Model.Stat();
-            if (Enum.IsDefined(typeof(Enums.Character), character.CharacterID) &&
-                Enum.IsDefined(typeof(Enums.Class), character.ClassID) &&
-                Enum.IsDefined(typeof(Enums.Stat), character.Boon) &&
-                Enum.IsDefined(typeof(Enums.Stat), character.Bane))
-            {
-                var characterData = Data.Database.Characters.GetByID(character.CharacterID);
-                var classData = Data.Database.Classes.GetByID(character.ClassID);
+            if (!Enum.IsDefined(typeof(Enums.Character), character.CharacterID) ||
+                !Enum.IsDefined(typeof(Enums.Class), character.ClassID))
+                return null;
 
-                if (character.CorrinName != null) // Corrin and bond units
+            var characterData = Data.Database.Characters.GetByID(character.CharacterID);
+            var classData = Data.Database.Classes.GetByID(character.ClassID);
+
+            if (character.CorrinName != null) // Corrin and bond units
+            {
+                if (Enum.IsDefined(typeof(Enums.Stat), character.Boon) &&
+                    Enum.IsDefined(typeof(Enums.Stat), character.Bane))
                 {
-                    caps = classData.MaximumStats +
+                    return classData.MaximumStats +
                         Data.Database.Stats.GetByID(character.Boon).MaxBoonModifiers +
                         Data.Database.Stats.GetByID(character.Bane).MaxBaneModifiers +
                         character.StatueBonusStats;
                 }
-                else if (characterData.IsChild) // Children
-                {
-                    var childBonusStats = new Model.Stat { HP = 0, Str = 1, Mag = 1, Skl = 1, Spd = 1, Lck = 1, Def = 1, Res = 1 };
-                    caps = classData.MaximumStats +
-                        Data.Database.Characters.GetByID(character.FatherID).Modifiers +
-                        Data.Database.Stats.GetByID(character.FatherBoon).MaxBoonModifiers +
-                        Data.Database.Stats.GetByID(character.FatherBane).MaxBaneModifiers +
-                        Data.Database.Characters.GetByID(character.MotherID).Modifiers +
-                        Data.Database.Stats.GetByID(character.MotherBoon).MaxBoonModifiers +
-                        Data.Database.Stats.GetByID(character.MotherBane).MaxBaneModifiers +
-                        childBonusStats +
-                        character.StatueBonusStats;
-                }
                 else
-                {
-                    caps = classData.MaximumStats + characterData.Modifiers + character.StatueBonusStats;
-                }
+                    return null;
             }
-            else
+            else if (characterData.IsChild) // Children
             {
-                caps = null;
+                var childBonusStats = new Model.Stat { HP = 0, Str = 1, Mag = 1, Skl = 1, Spd = 1, Lck = 1, Def = 1, Res = 1 };
+                return classData.MaximumStats +
+                    Data.Database.Characters.GetByID(character.FatherID).Modifiers +
+                    Data.Database.Stats.GetByID(character.FatherBoon).MaxBoonModifiers +
+                    Data.Database.Stats.GetByID(character.FatherBane).MaxBaneModifiers +
+                    Data.Database.Characters.GetByID(character.MotherID).Modifiers +
+                    Data.Database.Stats.GetByID(character.MotherBoon).MaxBoonModifiers +
+                    Data.Database.Stats.GetByID(character.MotherBane).MaxBaneModifiers +
+                    childBonusStats + character.StatueBonusStats;
             }
-            return caps;
+            else // All other units
+            {
+                return classData.MaximumStats + characterData.Modifiers + character.StatueBonusStats;
+            }
         }
 
         /// <summary>
