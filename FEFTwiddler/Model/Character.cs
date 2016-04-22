@@ -7,6 +7,8 @@ namespace FEFTwiddler.Model
 {
     public class Character
     {
+        #region Creation
+
         /// <summary>
         /// Create a new blank character
         /// </summary>
@@ -16,15 +18,107 @@ namespace FEFTwiddler.Model
             character.RawBlock1 = new byte[RawBlock1Length];
             character.RawInventory = new byte[RawInventoryLength];
             character.RawNumberOfSupports = 0x00;
-            character.RawSupports = new byte[0x00];
+            character.RawSupports = new byte[character.RawNumberOfSupports];
             character.RawBlock2 = new byte[RawBlock2Length];
             character.RawLearnedSkills = new byte[RawLearnedSkillsLength];
             character.RawDeployedUnitInfo = new byte[(character.IsDeployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed)];
             character.RawBlock3 = new byte[RawBlock3Length];
             character.RawEndBlockType = 0x00;
             character.RawEndBlock = new byte[0x00];
+            character.Initialize();
             return character;
         }
+
+        /// <summary>
+        /// Create a new "base" version of the given character
+        /// </summary>
+        public static Character Create(Enums.Character characterId)
+        {
+            var characterData = Data.Database.Characters.GetByID(characterId);
+
+            var character = new Character();
+            character.RawBlock1 = new byte[RawBlock1Length];
+            character.CharacterID = characterId;
+            character.RawInventory = new byte[RawInventoryLength];
+            character.RawNumberOfSupports = characterData.MainSupportCount;
+            character.RawSupports = new byte[character.RawNumberOfSupports];
+            character.RawBlock2 = new byte[RawBlock2Length];
+            character.RawLearnedSkills = new byte[RawLearnedSkillsLength];
+            character.RawDeployedUnitInfo = new byte[(character.IsDeployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed)];
+            character.RawBlock3 = new byte[RawBlock3Length];
+            character.RawEndBlockType = characterData.EndBlockType;
+            character.RawEndBlock = new byte[GetRawEndBlockSizeByType(character.RawEndBlockType)];
+            character.Initialize();
+            return character;
+        }
+
+        /// <summary>
+        /// Applies values to a character that are known to be the same among all characters
+        /// </summary>
+        public void Initialize()
+        {
+            _rawBlock1[0x00] = 0x07;
+
+            var characterData = Data.Database.Characters.GetByID(CharacterID);
+
+            Level = 1;
+
+            // These eleven bytes are random as far as I can tell
+            var randomBytes1 = new byte[0x0B];
+            (new Random()).NextBytes(randomBytes1);
+            Array.Copy(randomBytes1, 0x00, _rawBlock1, 0x13, 0x0B);
+
+            WeaponExperience_Sword = 1;
+            WeaponExperience_Lance = 1;
+            WeaponExperience_Axe = 1;
+            WeaponExperience_Shuriken = 1;
+            WeaponExperience_Bow = 1;
+            WeaponExperience_Tome = 1;
+            WeaponExperience_Staff = 1;
+            WeaponExperience_Stone = 1;
+
+            MaximumHP = (byte)characterData.BaseStats.HP;
+
+            _rawBlock1[0x48] = 0xFF;
+            _rawBlock1[0x49] = 0xFF;
+            _rawBlock1[0x4A] = 0xFF;
+            _rawBlock1[0x4B] = 0xFF;
+
+            _rawBlock1[0x54] = 0xFF;
+            _rawBlock1[0x55] = 0xFF;
+
+            HairColor[0] = characterData.HairColor.R;
+            HairColor[1] = characterData.HairColor.G;
+            HairColor[2] = characterData.HairColor.B;
+            HairColor[3] = characterData.HairColor.A;
+
+            _rawBlock2[0x17] = 0x00;
+            _rawBlock2[0x18] = 0x24;
+            _rawBlock2[0x19] = 0x82;
+            _rawBlock2[0x1A] = 0x25;
+            _rawBlock2[0x1B] = 0x21;
+            _rawBlock2[0x1C] = 0x24;
+            _rawBlock2[0x1D] = 0xC3;
+            _rawBlock2[0x1E] = 0x4A;
+            _rawBlock2[0x1F] = 0x16;
+
+            // These four bytes are random as far as I can tell
+            var randomBytes2 = new byte[0x04];
+            (new Random()).NextBytes(randomBytes2);
+            Array.Copy(randomBytes2, 0x00, _rawBlock2, 0x20, 0x04);
+
+            _rawBlock2[0x09] = 0x02;
+
+            _rawBlock2[0x28] = 0x02;
+            _rawBlock2[0x29] = 0x07;
+
+            _rawBlock2[0x41] = 0x01;
+            _rawBlock2[0x42] = 0x14;
+
+            _rawBlock3[0x00] = 0x02;
+        }
+
+        #endregion
 
         #region Raw Data
 
@@ -151,7 +245,7 @@ namespace FEFTwiddler.Model
         {
             return GetRawEndBlockSizeByType(RawEndBlockType);
         }
-        public int GetRawEndBlockSizeByType(byte rawEndBlockType)
+        public static int GetRawEndBlockSizeByType(byte rawEndBlockType)
         {
             switch (rawEndBlockType)
             {

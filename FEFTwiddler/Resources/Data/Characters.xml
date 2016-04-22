@@ -6,6 +6,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="1" name="Corrin_M">
     <text lang="English" displayName="Corrin (M)" />
@@ -13,6 +16,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="true" isChild="false" />
+    <mainSupports count="67" />
+    <familySupports count="0" />
+    <hairColor r="128" g="128" b="128" a="255" />
   </character>
   <character id="2" name="Corrin_F">
     <text lang="English" displayName="Corrin (F)" />
@@ -20,6 +26,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="true" isChild="false" />
+    <mainSupports count="67" />
+    <familySupports count="0" />
+    <hairColor r="128" g="128" b="128" a="255" />
   </character>
   <character id="3" name="Gunter">
     <text lang="English" displayName="Gunter" />
@@ -27,6 +36,9 @@
     <baseStats hp="3" str="0" mag="0" skl="9" spd="2" lck="6" def="0" res="2" />
     <modifier hp="0" str="2" mag="0" skl="1" spd="-2" lck="0" def="2" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="3" />
+    <familySupports count="0" />
+    <hairColor r="200" g="188" b="200" a="255" />
   </character>
   <character id="4" name="Felicia">
     <text lang="English" displayName="Felicia" />
@@ -34,6 +46,9 @@
     <baseStats hp="1" str="1" mag="4" skl="1" spd="2" lck="8" def="0" res="5" />
     <modifier hp="0" str="-2" mag="2" skl="0" spd="1" lck="0" def="-1" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="24" />
+    <familySupports count="0" />
+    <hairColor r="230" g="200" b="180" a="255" />
   </character>
   <character id="5" name="Jakob">
     <text lang="English" displayName="Jakob" />
@@ -41,6 +56,9 @@
     <baseStats hp="3" str="4" mag="1" skl="3" spd="1" lck="6" def="2" res="2" />
     <modifier hp="0" str="2" mag="-2" skl="2" spd="0" lck="-1" def="0" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="24" />
+    <familySupports count="0" />
+    <hairColor r="210" g="210" b="195" a="255" />
   </character>
   <character id="6" name="Rinkah">
     <text lang="English" displayName="Rinkah" />
@@ -48,6 +66,9 @@
     <baseStats hp="2" str="2" mag="1" skl="4" spd="3" lck="5" def="3" res="2" />
     <modifier hp="0" str="-1" mag="0" skl="-2" spd="1" lck="0" def="2" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="245" g="237" b="220" a="255" />
   </character>
   <character id="7" name="Kaze">
     <text lang="English" displayName="Kaze" />
@@ -55,6 +76,9 @@
     <baseStats hp="3" str="4" mag="0" skl="1" spd="4" lck="3" def="2" res="7" />
     <modifier hp="0" str="-2" mag="0" skl="2" spd="3" lck="-2" def="-1" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="24" />
+    <familySupports count="0" />
+    <hairColor r="125" g="150" b="130" a="255" />
   </character>
   <character id="8" name="Sakura">
     <text lang="English" displayName="Sakura" />
@@ -62,6 +86,9 @@
     <baseStats hp="0" str="3" mag="3" skl="0" spd="2" lck="5" def="3" res="2" />
     <modifier hp="0" str="0" mag="2" skl="-1" spd="1" lck="0" def="-1" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="207" g="120" b="110" a="255" />
   </character>
   <character id="9" name="Azura">
     <text lang="English" displayName="Azura" />
@@ -69,6 +96,9 @@
     <baseStats hp="0" str="2" mag="2" skl="2" spd="3" lck="3" def="2" res="4" />
     <modifier hp="0" str="0" mag="0" skl="1" spd="3" lck="0" def="-3" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="24" />
+    <familySupports count="0" />
+    <hairColor r="238" g="232" b="223" a="255" />
   </character>
   <character id="10" name="Hana">
     <text lang="English" displayName="Hana" />
@@ -76,6 +106,9 @@
     <baseStats hp="3" str="3" mag="0" skl="4" spd="3" lck="2" def="3" res="6" />
     <modifier hp="0" str="1" mag="0" skl="1" spd="2" lck="-1" def="-3" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="165" g="141" b="123" a="255" />
   </character>
   <character id="11" name="Subaki">
     <text lang="English" displayName="Subaki" />
@@ -83,6 +116,9 @@
     <baseStats hp="6" str="5" mag="0" skl="8" spd="3" lck="3" def="7" res="4" />
     <modifier hp="0" str="-1" mag="0" skl="2" spd="-2" lck="-1" def="3" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="138" g="65" b="68" a="255" />
   </character>
   <character id="12" name="Silas">
     <text lang="English" displayName="Silas" />
@@ -90,6 +126,9 @@
     <baseStats hp="5" str="5" mag="0" skl="4" spd="3" lck="4" def="5" res="2" />
     <modifier hp="0" str="1" mag="0" skl="2" spd="0" lck="-1" def="0" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="24" />
+    <familySupports count="0" />
+    <hairColor r="170" g="180" b="180" a="255" />
   </character>
   <character id="13" name="Saizo">
     <text lang="English" displayName="Saizo" />
@@ -97,6 +136,9 @@
     <baseStats hp="7" str="8" mag="3" skl="6" spd="3" lck="8" def="6" res="4" />
     <modifier hp="0" str="1" mag="0" skl="3" spd="-2" lck="0" def="1" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="145" g="67" b="67" a="255" />
   </character>
   <character id="14" name="Orochi">
     <text lang="English" displayName="Orochi" />
@@ -104,6 +146,9 @@
     <baseStats hp="5" str="0" mag="5" skl="6" spd="1" lck="5" def="4" res="7" />
     <modifier hp="0" str="0" mag="3" skl="2" spd="-2" lck="-1" def="-2" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="140" g="123" b="140" a="255" />
   </character>
   <character id="15" name="Hinoka">
     <text lang="English" displayName="Hinoka" />
@@ -111,6 +156,9 @@
     <baseStats hp="7" str="6" mag="4" skl="8" spd="9" lck="8" def="7" res="9" />
     <modifier hp="0" str="1" mag="-1" skl="-1" spd="1" lck="0" def="-1" res="2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="180" g="45" b="45" a="255" />
   </character>
   <character id="16" name="Azama">
     <text lang="English" displayName="Azama" />
@@ -118,6 +166,9 @@
     <baseStats hp="8" str="9" mag="4" skl="4" spd="5" lck="8" def="8" res="3" />
     <modifier hp="0" str="2" mag="-3" skl="0" spd="1" lck="0" def="1" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="120" g="95" b="96" a="255" />
   </character>
   <character id="17" name="Setsuna">
     <text lang="English" displayName="Setsuna" />
@@ -125,6 +176,9 @@
     <baseStats hp="2" str="3" mag="0" skl="2" spd="5" lck="4" def="1" res="2" />
     <modifier hp="0" str="0" mag="0" skl="1" spd="3" lck="-1" def="-1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="100" g="138" b="145" a="255" />
   </character>
   <character id="18" name="Hayato">
     <text lang="English" displayName="Hayato" />
@@ -132,6 +186,9 @@
     <baseStats hp="1" str="1" mag="0" skl="0" spd="1" lck="7" def="3" res="2" />
     <modifier hp="0" str="0" mag="1" skl="-1" spd="2" lck="1" def="-1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="139" g="90" b="92" a="255" />
   </character>
   <character id="19" name="Oboro">
     <text lang="English" displayName="Oboro" />
@@ -139,6 +196,9 @@
     <baseStats hp="8" str="7" mag="0" skl="5" spd="6" lck="9" def="8" res="6" />
     <modifier hp="0" str="1" mag="-1" skl="1" spd="1" lck="-1" def="1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="100" g="112" b="140" a="255" />
   </character>
   <character id="20" name="Hinata">
     <text lang="English" displayName="Hinata" />
@@ -146,6 +206,9 @@
     <baseStats hp="9" str="7" mag="0" skl="4" spd="6" lck="7" def="9" res="1" />
     <modifier hp="0" str="1" mag="0" skl="-1" spd="-2" lck="0" def="2" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="111" g="85" b="75" a="255" />
   </character>
   <character id="21" name="Takumi">
     <text lang="English" displayName="Takumi" />
@@ -153,6 +216,9 @@
     <baseStats hp="9" str="8" mag="0" skl="10" spd="6" lck="11" def="6" res="3" />
     <modifier hp="0" str="1" mag="0" skl="3" spd="-2" lck="1" def="0" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="193" g="178" b="172" a="255" />
   </character>
   <character id="22" name="Kagero">
     <text lang="English" displayName="Kagero" />
@@ -160,6 +226,9 @@
     <baseStats hp="6" str="12" mag="0" skl="2" spd="4" lck="6" def="6" res="7" />
     <modifier hp="0" str="3" mag="0" skl="-1" spd="-1" lck="0" def="-1" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="75" g="57" b="53" a="255" />
   </character>
   <character id="23" name="Reina">
     <text lang="English" displayName="Reina" />
@@ -167,6 +236,9 @@
     <baseStats hp="11" str="14" mag="3" skl="7" spd="13" lck="10" def="6" res="6" />
     <modifier hp="0" str="2" mag="0" skl="0" spd="2" lck="-1" def="-2" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="2" />
+    <familySupports count="0" />
+    <hairColor r="91" g="115" b="150" a="255" />
   </character>
   <character id="24" name="Kaden">
     <text lang="English" displayName="Kaden" />
@@ -174,6 +246,9 @@
     <baseStats hp="14" str="10" mag="0" skl="6" spd="11" lck="10" def="8" res="10" />
     <modifier hp="0" str="1" mag="0" skl="-3" spd="2" lck="1" def="-2" res="2" />
     <flags canUseStones="true" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="211" g="145" b="70" a="255" />
   </character>
   <character id="25" name="Ryoma">
     <text lang="English" displayName="Ryoma" />
@@ -181,6 +256,9 @@
     <baseStats hp="18" str="14" mag="0" skl="11" spd="13" lck="16" def="11" res="8" />
     <modifier hp="0" str="1" mag="0" skl="2" spd="1" lck="1" def="-2" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="88" g="51" b="45" a="255" />
   </character>
   <character id="26" name="Scarlet">
     <text lang="English" displayName="Scarlet" />
@@ -188,6 +266,9 @@
     <baseStats hp="11" str="15" mag="4" skl="8" spd="13" lck="11" def="12" res="5" />
     <modifier hp="0" str="2" mag="0" skl="0" spd="1" lck="-1" def="1" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="2" />
+    <familySupports count="0" />
+    <hairColor r="239" g="224" b="184" a="255" />
   </character>
   <character id="27" name="Shura">
     <text lang="English" displayName="Shura" />
@@ -195,6 +276,9 @@
     <baseStats hp="17" str="16" mag="5" skl="17" spd="17" lck="13" def="11" res="16" />
     <modifier hp="0" str="-1" mag="0" skl="-1" spd="3" lck="-1" def="-2" res="2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="2" />
+    <familySupports count="0" />
+    <hairColor r="238" g="232" b="223" a="255" />
   </character>
   <character id="28" name="Elise">
     <text lang="English" displayName="Elise" />
@@ -202,6 +286,9 @@
     <baseStats hp="4" str="2" mag="8" skl="-2" spd="5" lck="10" def="3" res="7" />
     <modifier hp="0" str="-1" mag="3" skl="-2" spd="1" lck="1" def="-3" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="242" g="228" b="209" a="255" />
   </character>
   <character id="29" name="Arthur">
     <text lang="English" displayName="Arthur" />
@@ -209,6 +296,9 @@
     <baseStats hp="5" str="5" mag="0" skl="3" spd="2" lck="-1" def="5" res="3" />
     <modifier hp="0" str="1" mag="0" skl="3" spd="0" lck="-3" def="1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="254" g="234" b="183" a="255" />
   </character>
   <character id="30" name="Effie">
     <text lang="English" displayName="Effie" />
@@ -216,6 +306,9 @@
     <baseStats hp="4" str="5" mag="0" skl="3" spd="2" lck="7" def="4" res="3" />
     <modifier hp="0" str="3" mag="0" skl="-1" spd="1" lck="0" def="-1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="220" g="217" b="211" a="255" />
   </character>
   <character id="31" name="Odin">
     <text lang="English" displayName="Odin" />
@@ -223,6 +316,9 @@
     <baseStats hp="5" str="5" mag="2" skl="7" spd="4" lck="8" def="3" res="2" />
     <modifier hp="0" str="0" mag="1" skl="1" spd="-1" lck="1" def="0" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="218" g="211" b="189" a="255" />
   </character>
   <character id="32" name="Niles">
     <text lang="English" displayName="Niles" />
@@ -230,6 +326,9 @@
     <baseStats hp="6" str="6" mag="4" skl="5" spd="7" lck="5" def="5" res="8" />
     <modifier hp="0" str="-2" mag="0" skl="-1" spd="3" lck="0" def="0" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="245" g="243" b="240" a="255" />
   </character>
   <character id="33" name="Nyx">
     <text lang="English" displayName="Nyx" />
@@ -237,6 +336,9 @@
     <baseStats hp="4" str="1" mag="6" skl="2" spd="8" lck="2" def="1" res="3" />
     <modifier hp="0" str="0" mag="3" skl="-2" spd="2" lck="-1" def="-2" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="106" g="97" b="112" a="255" />
   </character>
   <character id="34" name="Camilla">
     <text lang="English" displayName="Camilla" />
@@ -244,6 +346,9 @@
     <baseStats hp="12" str="12" mag="5" skl="9" spd="14" lck="12" def="10" res="9" />
     <modifier hp="0" str="1" mag="-1" skl="1" spd="1" lck="-2" def="1" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="191" g="183" b="223" a="255" />
   </character>
   <character id="35" name="Selena">
     <text lang="English" displayName="Selena" />
@@ -251,6 +356,9 @@
     <baseStats hp="7" str="7" mag="3" skl="5" spd="9" lck="7" def="6" res="6" />
     <modifier hp="0" str="-1" mag="0" skl="-1" spd="2" lck="0" def="1" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="175" g="84" b="84" a="255" />
   </character>
   <character id="36" name="Beruka">
     <text lang="English" displayName="Beruka" />
@@ -258,6 +366,9 @@
     <baseStats hp="6" str="7" mag="0" skl="9" spd="5" lck="8" def="7" res="7" />
     <modifier hp="0" str="-1" mag="0" skl="2" spd="-2" lck="0" def="2" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="162" g="192" b="200" a="255" />
   </character>
   <character id="37" name="Laslow">
     <text lang="English" displayName="Laslow" />
@@ -265,6 +376,9 @@
     <baseStats hp="11" str="10" mag="0" skl="9" spd="7" lck="12" def="5" res="5" />
     <modifier hp="0" str="1" mag="0" skl="2" spd="-1" lck="1" def="-1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="153" g="145" b="145" a="255" />
   </character>
   <character id="38" name="Peri">
     <text lang="English" displayName="Peri" />
@@ -272,6 +386,9 @@
     <baseStats hp="8" str="7" mag="0" skl="4" spd="8" lck="6" def="5" res="7" />
     <modifier hp="0" str="1" mag="0" skl="-1" spd="1" lck="0" def="-2" res="2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="135" g="191" b="216" a="255" />
   </character>
   <character id="39" name="Benny">
     <text lang="English" displayName="Benny" />
@@ -279,6 +396,9 @@
     <baseStats hp="12" str="7" mag="0" skl="10" spd="3" lck="9" def="11" res="9" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="-3" lck="0" def="3" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="18" />
+    <familySupports count="0" />
+    <hairColor r="242" g="227" b="181" a="255" />
   </character>
   <character id="40" name="Charlotte">
     <text lang="English" displayName="Charlotte" />
@@ -286,6 +406,9 @@
     <baseStats hp="9" str="8" mag="0" skl="4" spd="7" lck="7" def="4" res="1" />
     <modifier hp="0" str="3" mag="0" skl="0" spd="2" lck="0" def="-2" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="235" g="217" b="166" a="255" />
   </character>
   <character id="41" name="Leo">
     <text lang="English" displayName="Leo" />
@@ -293,6 +416,9 @@
     <baseStats hp="15" str="6" mag="14" skl="8" spd="10" lck="12" def="8" res="14" />
     <modifier hp="0" str="-2" mag="2" skl="0" spd="-2" lck="0" def="0" res="2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="210" g="195" b="170" a="255" />
   </character>
   <character id="42" name="Keaton">
     <text lang="English" displayName="Keaton" />
@@ -300,6 +426,9 @@
     <baseStats hp="16" str="11" mag="0" skl="6" spd="7" lck="9" def="12" res="7" />
     <modifier hp="0" str="3" mag="0" skl="-2" spd="-1" lck="0" def="2" res="-1" />
     <flags canUseStones="true" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="245" g="243" b="240" a="255" />
   </character>
   <character id="43" name="Xander">
     <text lang="English" displayName="Xander" />
@@ -307,6 +436,9 @@
     <baseStats hp="19" str="15" mag="3" skl="11" spd="8" lck="16" def="16" res="5" />
     <modifier hp="0" str="2" mag="-1" skl="-1" spd="-1" lck="2" def="1" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="19" />
+    <familySupports count="0" />
+    <hairColor r="208" g="194" b="159" a="255" />
   </character>
   <character id="44" name="Izana">
     <text lang="English" displayName="Izana" />
@@ -314,6 +446,9 @@
     <baseStats hp="15" str="8" mag="16" skl="19" spd="11" lck="15" def="11" res="18" />
     <modifier hp="0" str="0" mag="1" skl="1" spd="-2" lck="0" def="0" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="2" />
+    <familySupports count="0" />
+    <hairColor r="247" g="245" b="239" a="255" />
   </character>
   <character id="45" name="Fuga">
     <text lang="English" displayName="Fuga" />
@@ -321,6 +456,9 @@
     <baseStats hp="21" str="21" mag="0" skl="21" spd="16" lck="15" def="22" res="12" />
     <modifier hp="0" str="2" mag="-1" skl="1" spd="0" lck="-1" def="2" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="3" />
+    <familySupports count="0" />
+    <hairColor r="96" g="48" b="32" a="255" />
   </character>
   <character id="46" name="Yukimura">
     <text lang="English" displayName="Yukimura" />
@@ -328,6 +466,9 @@
     <baseStats hp="20" str="18" mag="3" skl="20" spd="16" lck="16" def="15" res="16" />
     <modifier hp="0" str="-1" mag="0" skl="3" spd="-1" lck="0" def="-1" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="2" />
+    <familySupports count="0" />
+    <hairColor r="110" g="134" b="142" a="255" />
   </character>
   <character id="47" name="Flora">
     <text lang="English" displayName="Flora" />
@@ -335,6 +476,9 @@
     <baseStats hp="11" str="14" mag="11" skl="16" spd="7" lck="7" def="9" res="19" />
     <modifier hp="0" str="1" mag="-1" skl="2" spd="0" lck="-1" def="1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="3" />
+    <familySupports count="0" />
+    <hairColor r="192" g="224" b="231" a="255" />
   </character>
   <character id="48" name="Mozu">
     <text lang="English" displayName="Mozu" />
@@ -342,6 +486,9 @@
     <baseStats hp="-1" str="1" mag="0" skl="1" spd="2" lck="0" def="0" res="1" />
     <modifier hp="0" str="0" mag="0" skl="1" spd="1" lck="1" def="0" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="24" />
+    <familySupports count="0" />
+    <hairColor r="70" g="62" b="57" a="255" />
   </character>
   <character id="49" name="Kana_M">
     <text lang="English" displayName="Kana (M)" />
@@ -349,6 +496,9 @@
     <baseStats hp="7" str="3" mag="6" skl="8" spd="8" lck="9" def="5" res="5" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="14" />
+    <familySupports count="0" />
+    <hairColor r="235" g="226" b="214" a="255" />
   </character>
   <character id="50" name="Kana_F">
     <text lang="English" displayName="Kana (F)" />
@@ -356,6 +506,9 @@
     <baseStats hp="7" str="3" mag="6" skl="8" spd="8" lck="9" def="5" res="5" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="14" />
+    <familySupports count="0" />
+    <hairColor r="235" g="226" b="214" a="255" />
   </character>
   <character id="51" name="Shigure">
     <text lang="English" displayName="Shigure" />
@@ -363,6 +516,9 @@
     <baseStats hp="9" str="6" mag="1" skl="7" spd="7" lck="5" def="8" res="7" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="15" />
+    <familySupports count="0" />
+    <hairColor r="238" g="232" b="223" a="255" />
   </character>
   <character id="52" name="Dwyer">
     <text lang="English" displayName="Dwyer" />
@@ -370,6 +526,9 @@
     <baseStats hp="8" str="7" mag="7" skl="2" spd="6" lck="4" def="6" res="7" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="16" />
+    <familySupports count="0" />
+    <hairColor r="210" g="210" b="195" a="255" />
   </character>
   <character id="53" name="Sophie">
     <text lang="English" displayName="Sophie" />
@@ -377,6 +536,9 @@
     <baseStats hp="8" str="6" mag="2" skl="7" spd="6" lck="7" def="4" res="6" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="16" />
+    <familySupports count="0" />
+    <hairColor r="170" g="180" b="180" a="255" />
   </character>
   <character id="54" name="Midori">
     <text lang="English" displayName="Midori" />
@@ -384,6 +546,9 @@
     <baseStats hp="8" str="6" mag="2" skl="10" spd="4" lck="10" def="4" res="2" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="16" />
+    <familySupports count="0" />
+    <hairColor r="125" g="150" b="130" a="255" />
   </character>
   <character id="55" name="Shiro">
     <text lang="English" displayName="Shiro" />
@@ -391,6 +556,9 @@
     <baseStats hp="8" str="7" mag="0" skl="5" spd="3" lck="6" def="8" res="5" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="15" />
+    <familySupports count="0" />
+    <hairColor r="88" g="51" b="45" a="255" />
   </character>
   <character id="56" name="Kiragi">
     <text lang="English" displayName="Kiragi" />
@@ -398,6 +566,9 @@
     <baseStats hp="7" str="6" mag="0" skl="5" spd="6" lck="8" def="4" res="1" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="15" />
+    <familySupports count="0" />
+    <hairColor r="193" g="178" b="172" a="255" />
   </character>
   <character id="57" name="Asugi">
     <text lang="English" displayName="Asugi" />
@@ -405,6 +576,9 @@
     <baseStats hp="6" str="7" mag="4" skl="7" spd="6" lck="9" def="4" res="9" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="15" />
+    <familySupports count="0" />
+    <hairColor r="145" g="67" b="67" a="255" />
   </character>
   <character id="58" name="Selkie">
     <text lang="English" displayName="Selkie" />
@@ -412,6 +586,9 @@
     <baseStats hp="7" str="4" mag="3" skl="6" spd="7" lck="10" def="6" res="11" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="15" />
+    <familySupports count="0" />
+    <hairColor r="211" g="145" b="70" a="255" />
   </character>
   <character id="59" name="Hisame">
     <text lang="English" displayName="Hisame" />
@@ -419,6 +596,9 @@
     <baseStats hp="6" str="6" mag="1" skl="7" spd="5" lck="4" def="5" res="4" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="15" />
+    <familySupports count="0" />
+    <hairColor r="111" g="85" b="75" a="255" />
   </character>
   <character id="60" name="Mitama">
     <text lang="English" displayName="Mitama" />
@@ -426,6 +606,9 @@
     <baseStats hp="6" str="7" mag="6" skl="6" spd="8" lck="10" def="3" res="5" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="15" />
+    <familySupports count="0" />
+    <hairColor r="120" g="95" b="96" a="255" />
   </character>
   <character id="61" name="Caeldori">
     <text lang="English" displayName="Caeldori" />
@@ -433,6 +616,9 @@
     <baseStats hp="8" str="8" mag="3" skl="5" spd="6" lck="9" def="5" res="6" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="15" />
+    <familySupports count="0" />
+    <hairColor r="138" g="65" b="68" a="255" />
   </character>
   <character id="62" name="Rhajat">
     <text lang="English" displayName="Rhajat" />
@@ -440,6 +626,9 @@
     <baseStats hp="8" str="1" mag="10" skl="0" spd="7" lck="6" def="5" res="12" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="15" />
+    <familySupports count="0" />
+    <hairColor r="139" g="90" b="92" a="255" />
   </character>
   <character id="63" name="Siegbert">
     <text lang="English" displayName="Siegbert" />
@@ -447,6 +636,9 @@
     <baseStats hp="7" str="5" mag="2" skl="7" spd="6" lck="7" def="6" res="3" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="15" />
+    <familySupports count="0" />
+    <hairColor r="208" g="194" b="159" a="255" />
   </character>
   <character id="64" name="Forrest">
     <text lang="English" displayName="Forrest" />
@@ -454,6 +646,9 @@
     <baseStats hp="8" str="5" mag="9" skl="1" spd="4" lck="5" def="6" res="13" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="15" />
+    <familySupports count="0" />
+    <hairColor r="210" g="195" b="170" a="255" />
   </character>
   <character id="65" name="Ignatius">
     <text lang="English" displayName="Ignatius" />
@@ -461,6 +656,9 @@
     <baseStats hp="8" str="7" mag="0" skl="6" spd="4" lck="7" def="6" res="7" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="15" />
+    <familySupports count="0" />
+    <hairColor r="242" g="227" b="181" a="255" />
   </character>
   <character id="66" name="Velouria">
     <text lang="English" displayName="Velouria" />
@@ -468,6 +666,9 @@
     <baseStats hp="7" str="6" mag="0" skl="6" spd="6" lck="11" def="9" res="8" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="15" />
+    <familySupports count="0" />
+    <hairColor r="245" g="243" b="240" a="255" />
   </character>
   <character id="67" name="Percy">
     <text lang="English" displayName="Percy" />
@@ -475,6 +676,9 @@
     <baseStats hp="6" str="4" mag="0" skl="6" spd="6" lck="15" def="8" res="4" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="15" />
+    <familySupports count="0" />
+    <hairColor r="254" g="234" b="183" a="255" />
   </character>
   <character id="68" name="Ophelia">
     <text lang="English" displayName="Ophelia" />
@@ -482,6 +686,9 @@
     <baseStats hp="7" str="3" mag="6" skl="6" spd="7" lck="12" def="2" res="5" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="14" />
+    <familySupports count="0" />
+    <hairColor r="218" g="211" b="189" a="255" />
   </character>
   <character id="69" name="Soleil">
     <text lang="English" displayName="Soleil" />
@@ -489,6 +696,9 @@
     <baseStats hp="6" str="7" mag="1" skl="3" spd="6" lck="7" def="5" res="6" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="15" />
+    <familySupports count="0" />
+    <hairColor r="153" g="145" b="145" a="255" />
   </character>
   <character id="70" name="Nina">
     <text lang="English" displayName="Nina" />
@@ -496,6 +706,9 @@
     <baseStats hp="5" str="8" mag="5" skl="5" spd="5" lck="11" def="3" res="10" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" />
+    <mainSupports count="14" />
+    <familySupports count="0" />
+    <hairColor r="245" g="243" b="240" a="255" />
   </character>
   <character id="71" name="Anna">
     <text lang="English" displayName="Anna" />
@@ -503,6 +716,9 @@
     <baseStats hp="7" str="6" mag="10" skl="6" spd="6" lck="14" def="4" res="11" />
     <modifier hp="0" str="-1" mag="1" skl="0" spd="-1" lck="2" def="-2" res="2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="2" />
+    <familySupports count="0" />
+    <hairColor r="191" g="88" b="84" a="255" />
   </character>
   <character id="72" name="Daniela">
     <text lang="English" displayName="Daniela" />
@@ -510,6 +726,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="1" skl="1" spd="0" lck="-1" def="-1" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="73" name="Haitaka">
     <text lang="English" displayName="Haitaka" />
@@ -517,6 +736,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="0" skl="2" spd="2" lck="-2" def="-2" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="74" name="Kumagera">
     <text lang="English" displayName="Kumagera" />
@@ -524,6 +746,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="0" skl="1" spd="0" lck="-1" def="1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="75" name="Lloyd">
     <text lang="English" displayName="Lloyd" />
@@ -531,6 +756,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="2" mag="-1" skl="2" spd="-3" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="76" name="Llewelyn">
     <text lang="English" displayName="Llewelyn" />
@@ -538,6 +766,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="-1" skl="-3" spd="2" lck="0" def="3" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="77" name="Nichol">
     <text lang="English" displayName="Nichol" />
@@ -545,6 +776,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="-1" skl="1" spd="0" lck="-1" def="1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="79" g="83" b="73" a="255" />
   </character>
   <character id="78" name="Candace">
     <text lang="English" displayName="Candace" />
@@ -552,6 +786,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="1" skl="-2" spd="-2" lck="2" def="1" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="126" g="129" b="93" a="255" />
   </character>
   <character id="79" name="Banba">
     <text lang="English" displayName="Tarba" />
@@ -559,6 +796,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="-1" skl="1" spd="1" lck="-1" def="0" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="80" name="Funke">
     <text lang="English" displayName="Funke" />
@@ -566,6 +806,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="-1" mag="1" skl="2" spd="2" lck="-2" def="-2" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="81" name="Daichi">
     <text lang="English" displayName="Daichi" />
@@ -573,6 +816,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="2" skl="2" spd="-1" lck="-1" def="-1" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="82" name="Gazak">
     <text lang="English" displayName="Gazak" />
@@ -580,6 +826,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="-1" skl="-2" spd="-2" lck="-2" def="3" res="3" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="83" name="Senno">
     <text lang="English" displayName="Senno" />
@@ -587,6 +836,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="-2" mag="2" skl="0" spd="1" lck="1" def="-3" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="84" name="Zhara">
     <text lang="English" displayName="Zhara" />
@@ -594,6 +846,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="-2" mag="2" skl="-2" spd="1" lck="3" def="-3" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="85" name="Paladin">
     <text lang="English" displayName="Captured Paladin" />
@@ -601,6 +856,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="86" name="Cavalier">
     <text lang="English" displayName="Captured Cavalier" />
@@ -608,6 +866,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="87" name="GreatKnight">
     <text lang="English" displayName="Captured Great Knight" />
@@ -615,6 +876,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="88" name="Knight">
     <text lang="English" displayName="Captured Knight" />
@@ -622,6 +886,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="89" name="General">
     <text lang="English" displayName="Captured General" />
@@ -629,6 +896,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="90" name="Berserker">
     <text lang="English" displayName="Captured Berserker" />
@@ -636,6 +906,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="91" name="Fighter">
     <text lang="English" displayName="Captured Fighter" />
@@ -643,6 +916,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="92" name="Hero">
     <text lang="English" displayName="Captured Brave Hero" />
@@ -650,6 +926,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="93" name="Mercenary">
     <text lang="English" displayName="Captured Mercenary" />
@@ -657,6 +936,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="94" name="BowKnight">
     <text lang="English" displayName="Captured Bow Knight" />
@@ -664,6 +946,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="95" name="Outlaw">
     <text lang="English" displayName="Captured Outlaw" />
@@ -671,6 +956,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="96" name="Adventurer">
     <text lang="English" displayName="Captured Adventurer" />
@@ -678,6 +966,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="97" name="Swordmaster">
     <text lang="English" displayName="Captured Swordmater" />
@@ -685,6 +976,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="98" name="Samurai">
     <text lang="English" displayName="Captured Samurai" />
@@ -692,6 +986,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="99" name="MasterOfArms">
     <text lang="English" displayName="Captured Master of Arms" />
@@ -699,6 +996,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="100" name="OniChieftain">
     <text lang="English" displayName="Captured Oni Chieftain" />
@@ -706,6 +1006,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="101" name="OniSavage">
     <text lang="English" displayName="Captured Oni Savage" />
@@ -713,6 +1016,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="102" name="Blacksmith">
     <text lang="English" displayName="Captured Blacksmith" />
@@ -720,6 +1026,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="103" name="SpearMaster">
     <text lang="English" displayName="Captured Spear Master" />
@@ -727,6 +1036,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="104" name="SpearFighter">
     <text lang="English" displayName="Captured Lance Fighter" />
@@ -734,6 +1046,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="105" name="Basara">
     <text lang="English" displayName="Captured Basara" />
@@ -741,6 +1056,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="106" name="Diviner">
     <text lang="English" displayName="Captured Diviner" />
@@ -748,6 +1066,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="107" name="Onmyoji">
     <text lang="English" displayName="Captured Onmyoji" />
@@ -755,6 +1076,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="108" name="ShrineMaiden">
     <text lang="English" displayName="Captured Shrine Maiden" />
@@ -762,6 +1086,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="109" name="Monk">
     <text lang="English" displayName="Captured Great Master" />
@@ -769,6 +1096,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="110" name="Priestess">
     <text lang="English" displayName="Captured Priestess" />
@@ -776,6 +1106,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="111" name="FalconKnight">
     <text lang="English" displayName="Captured Falcon Knight" />
@@ -783,6 +1116,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="112" name="SkyKnight">
     <text lang="English" displayName="Captured Sky Knight" />
@@ -790,6 +1126,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="113" name="KinshiKnight">
     <text lang="English" displayName="Captured Kinshi Knight" />
@@ -797,6 +1136,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="114" name="Archer">
     <text lang="English" displayName="Captured Archer" />
@@ -804,6 +1146,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="115" name="Sniper">
     <text lang="English" displayName="Captured Sniper" />
@@ -811,6 +1156,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="116" name="WyvernLord">
     <text lang="English" displayName="Captured Wyvern Lord" />
@@ -818,6 +1166,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="117" name="WyvernRider">
     <text lang="English" displayName="Captured Wyvern Rider" />
@@ -825,6 +1176,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="118" name="MaligKnight">
     <text lang="English" displayName="Captured Maig Knight" />
@@ -832,6 +1186,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="119" name="NinjaMaster">
     <text lang="English" displayName="Captured Elite Ninja" />
@@ -839,6 +1196,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="120" name="Ninja">
     <text lang="English" displayName="Captured Ninja" />
@@ -846,6 +1206,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="121" name="Mechanist">
     <text lang="English" displayName="Captured Mechanist" />
@@ -853,6 +1216,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="122" name="Apothecary">
     <text lang="English" displayName="Captured Apothecary" />
@@ -860,6 +1226,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="123" name="Merchant">
     <text lang="English" displayName="Captured Merchant" />
@@ -867,6 +1236,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="124" name="Sorcerer">
     <text lang="English" displayName="Captured Sorcerer" />
@@ -874,6 +1246,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="125" name="DarkMage">
     <text lang="English" displayName="Captured Dark Mage" />
@@ -881,6 +1256,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="126" name="DarkKnight">
     <text lang="English" displayName="Captured Dark Knight" />
@@ -888,6 +1266,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="127" name="Strategist">
     <text lang="English" displayName="Captured Tactician" />
@@ -895,6 +1276,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="128" name="Troubadour">
     <text lang="English" displayName="Captured Troubadour" />
@@ -902,6 +1286,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="129" name="Maid">
     <text lang="English" displayName="Captured Maid" />
@@ -909,6 +1296,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="130" name="Villager">
     <text lang="English" displayName="Captured Villager" />
@@ -916,6 +1306,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="131" name="Lancer">
     <text lang="English" displayName="Captured Lancer" />
@@ -923,6 +1316,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="132" name="BondUnitHH1">
     <text lang="English" displayName="Gin" />
@@ -930,6 +1326,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="133" name="BondUnitHH2">
     <text lang="English" displayName="Azuki" />
@@ -937,6 +1336,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="134" name="BondUnitHH3">
     <text lang="English" displayName="Hakuto" />
@@ -944,6 +1346,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="135" name="BondUnitHH4">
     <text lang="English" displayName="Kureha" />
@@ -951,6 +1356,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="136" name="BondUnitHH5">
     <text lang="English" displayName="Sango" />
@@ -958,6 +1366,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="137" name="BondUnitHH6">
     <text lang="English" displayName="Himawari" />
@@ -965,6 +1376,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="138" name="BondUnitHH7">
     <text lang="English" displayName="Kogane" />
@@ -972,6 +1386,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="139" name="BondUnitHH8">
     <text lang="English" displayName="Ai" />
@@ -979,6 +1396,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="140" name="BondUnitHH9">
     <text lang="English" displayName="Tetsu" />
@@ -986,6 +1406,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="141" name="BondUnitHH10">
     <text lang="English" displayName="Tokiwa" />
@@ -993,6 +1416,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="142" name="BondUnitHH11">
     <text lang="English" displayName="Suzaku" />
@@ -1000,6 +1426,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="143" name="BondUnitHH12">
     <text lang="English" displayName="Chigusa" />
@@ -1007,6 +1436,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="144" name="BondUnitHH13">
     <text lang="English" displayName="Renga" />
@@ -1014,6 +1446,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="145" name="BondUnitHH14">
     <text lang="English" displayName="Moegi" />
@@ -1021,6 +1456,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="146" name="BondUnitHH15">
     <text lang="English" displayName="Kohaku" />
@@ -1028,6 +1466,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="147" name="BondUnitHH16">
     <text lang="English" displayName="Murasaki" />
@@ -1035,6 +1476,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="148" name="BondUnitHH17">
     <text lang="English" displayName="Momotaro" />
@@ -1042,6 +1486,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="149" name="BondUnitHH18">
     <text lang="English" displayName="Sumire" />
@@ -1049,6 +1496,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="150" name="BondUnitNN1">
     <text lang="English" displayName="Rusty" />
@@ -1056,6 +1506,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="151" name="BondUnitNN2">
     <text lang="English" displayName="Amber" />
@@ -1063,6 +1516,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="152" name="BondUnitNN3">
     <text lang="English" displayName="Auburn" />
@@ -1070,6 +1526,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="153" name="BondUnitNN4">
     <text lang="English" displayName="Coral" />
@@ -1077,6 +1536,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="154" name="BondUnitNN5">
     <text lang="English" displayName="Hunter" />
@@ -1084,6 +1546,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="155" name="BondUnitNN6">
     <text lang="English" displayName="Hazel" />
@@ -1091,6 +1556,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="156" name="BondUnitNN7">
     <text lang="English" displayName="Cyan" />
@@ -1098,6 +1566,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="157" name="BondUnitNN8">
     <text lang="English" displayName="Fuchsia" />
@@ -1105,6 +1576,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="158" name="BondUnitNN9">
     <text lang="English" displayName="Jett" />
@@ -1112,6 +1586,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="159" name="BondUnitNN10">
     <text lang="English" displayName="Olive" />
@@ -1119,6 +1596,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="160" name="BondUnitNN11">
     <text lang="English" displayName="Slate" />
@@ -1126,6 +1606,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="161" name="BondUnitNN12">
     <text lang="English" displayName="Violet" />
@@ -1133,6 +1616,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="162" name="BondUnitNN13">
     <text lang="English" displayName="Sterling" />
@@ -1140,6 +1626,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="163" name="BondUnitNN14">
     <text lang="English" displayName="Ruby" />
@@ -1147,6 +1636,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="164" name="BondUnitNN15">
     <text lang="English" displayName="Tanner" />
@@ -1154,6 +1646,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="165" name="BondUnitNN16">
     <text lang="English" displayName="Kelly" />
@@ -1161,6 +1656,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="166" name="BondUnitNN17">
     <text lang="English" displayName="Teale" />
@@ -1168,6 +1666,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="167" name="BondUnitNN18">
     <text lang="English" displayName="Magenta" />
@@ -1175,6 +1676,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="168" name="BondUnitHN1">
     <text lang="English" displayName="Naoki" />
@@ -1182,6 +1686,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="169" name="BondUnitHN2">
     <text lang="English" displayName="Shizuku" />
@@ -1189,6 +1696,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="170" name="BondUnitHN3">
     <text lang="English" displayName="Kaito" />
@@ -1196,6 +1706,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="171" name="BondUnitHN4">
     <text lang="English" displayName="Wakaba" />
@@ -1203,6 +1716,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="172" name="BondUnitHN5">
     <text lang="English" displayName="Yukio" />
@@ -1210,6 +1726,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="173" name="BondUnitHN6">
     <text lang="English" displayName="Ibuki" />
@@ -1217,6 +1736,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="174" name="BondUnitHN7">
     <text lang="English" displayName="Riku" />
@@ -1224,6 +1746,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="175" name="BondUnitHN8">
     <text lang="English" displayName="Hibari" />
@@ -1231,6 +1756,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="176" name="BondUnitHN9">
     <text lang="English" displayName="Minato" />
@@ -1238,6 +1766,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="177" name="BondUnitHN10">
     <text lang="English" displayName="Aspen" />
@@ -1245,6 +1776,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="178" name="BondUnitHN11">
     <text lang="English" displayName="Cypress" />
@@ -1252,6 +1786,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="179" name="BondUnitHN12">
     <text lang="English" displayName="Daisy" />
@@ -1259,6 +1796,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="180" name="BondUnitHN13">
     <text lang="English" displayName="Thorn" />
@@ -1266,6 +1806,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="181" name="BondUnitHN14">
     <text lang="English" displayName="Primrose" />
@@ -1273,6 +1816,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="182" name="BondUnitHN15">
     <text lang="English" displayName="Quill" />
@@ -1280,6 +1826,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="183" name="BondUnitHN16">
     <text lang="English" displayName="Willow" />
@@ -1287,6 +1836,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="184" name="BondUnitHN17">
     <text lang="English" displayName="Flint" />
@@ -1294,6 +1846,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="185" name="BondUnitHN18">
     <text lang="English" displayName="Sequoia" />
@@ -1301,6 +1856,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="186" name="BondUnitHI1">
     <text lang="English" displayName="Shoga" />
@@ -1308,6 +1866,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="187" name="BondUnitHI2">
     <text lang="English" displayName="Anzu" />
@@ -1315,6 +1876,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="188" name="BondUnitHI3">
     <text lang="English" displayName="Inaho" />
@@ -1322,6 +1886,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="189" name="BondUnitHI4">
     <text lang="English" displayName="Yuzu" />
@@ -1329,6 +1896,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="190" name="BondUnitHI5">
     <text lang="English" displayName="Mugi" />
@@ -1336,6 +1906,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="191" name="BondUnitHI6">
     <text lang="English" displayName="Umeko" />
@@ -1343,6 +1916,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="192" name="BondUnitHI7">
     <text lang="English" displayName="Nori" />
@@ -1350,6 +1926,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="193" name="BondUnitHI8">
     <text lang="English" displayName="Kurumi" />
@@ -1357,6 +1936,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="194" name="BondUnitHI9">
     <text lang="English" displayName="Naruto" />
@@ -1364,6 +1946,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="195" name="BondUnitHI10">
     <text lang="English" displayName="Ringo" />
@@ -1371,6 +1956,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="196" name="BondUnitHI11">
     <text lang="English" displayName="Shoya" />
@@ -1378,6 +1966,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="197" name="BondUnitHI12">
     <text lang="English" displayName="Kiku" />
@@ -1385,6 +1976,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="198" name="BondUnitHI13">
     <text lang="English" displayName="Katsuo" />
@@ -1392,6 +1986,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="199" name="BondUnitHI14">
     <text lang="English" displayName="Ayu" />
@@ -1399,6 +1996,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="200" name="BondUnitHI15">
     <text lang="English" displayName="Takeshi" />
@@ -1406,6 +2006,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="201" name="BondUnitHI16">
     <text lang="English" displayName="Mizuna" />
@@ -1413,6 +2016,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="202" name="BondUnitHI17">
     <text lang="English" displayName="Koumei" />
@@ -1420,6 +2026,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="203" name="BondUnitHI18">
     <text lang="English" displayName="Shiori" />
@@ -1427,6 +2036,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="204" name="BondUnitNI1">
     <text lang="English" displayName="Sorrel" />
@@ -1434,6 +2046,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="205" name="BondUnitNI2">
     <text lang="English" displayName="Rosemary" />
@@ -1441,6 +2056,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="206" name="BondUnitNI3">
     <text lang="English" displayName="Bay" />
@@ -1448,6 +2066,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="207" name="BondUnitNI4">
     <text lang="English" displayName="Anise" />
@@ -1455,6 +2076,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="208" name="BondUnitNI5">
     <text lang="English" displayName="Saffron" />
@@ -1462,6 +2086,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="209" name="BondUnitNI6">
     <text lang="English" displayName="Pepper" />
@@ -1469,6 +2096,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="210" name="BondUnitNI7">
     <text lang="English" displayName="Basil" />
@@ -1476,6 +2106,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="211" name="BondUnitNI8">
     <text lang="English" displayName="Ginger" />
@@ -1483,6 +2116,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="212" name="BondUnitNI9">
     <text lang="English" displayName="Clove" />
@@ -1490,6 +2126,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="213" name="BondUnitNI10">
     <text lang="English" displayName="Mint" />
@@ -1497,6 +2136,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="214" name="BondUnitNI11">
     <text lang="English" displayName="Caraway" />
@@ -1504,6 +2146,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="215" name="BondUnitNI12">
     <text lang="English" displayName="Thyme" />
@@ -1511,6 +2156,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="216" name="BondUnitNI13">
     <text lang="English" displayName="Sage" />
@@ -1518,6 +2166,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="217" name="BondUnitNI14">
     <text lang="English" displayName="Cassia" />
@@ -1525,6 +2176,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="218" name="BondUnitNI15">
     <text lang="English" displayName="Dillan" />
@@ -1532,6 +2186,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="219" name="BondUnitNI16">
     <text lang="English" displayName="Lavender" />
@@ -1539,6 +2196,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="220" name="BondUnitNI17">
     <text lang="English" displayName="Fenn" />
@@ -1546,6 +2206,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="221" name="BondUnitNI18">
     <text lang="English" displayName="Perilla" />
@@ -1553,6 +2216,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="222" name="BondUnitII1">
     <text lang="English" displayName="Dimitri" />
@@ -1560,6 +2226,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="223" name="BondUnitII2">
     <text lang="English" displayName="Alexa" />
@@ -1567,6 +2236,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="224" name="BondUnitII3">
     <text lang="English" displayName="Galen" />
@@ -1574,6 +2246,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="225" name="BondUnitII4">
     <text lang="English" displayName="Althaea" />
@@ -1581,6 +2256,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="226" name="BondUnitII5">
     <text lang="English" displayName="Damien" />
@@ -1588,6 +2266,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="227" name="BondUnitII6">
     <text lang="English" displayName="Jacynth" />
@@ -1595,6 +2276,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="228" name="BondUnitII7">
     <text lang="English" displayName="Orion" />
@@ -1602,6 +2286,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="229" name="BondUnitII8">
     <text lang="English" displayName="Sophia" />
@@ -1609,6 +2296,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="230" name="BondUnitII9">
     <text lang="English" displayName="George" />
@@ -1616,6 +2306,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="231" name="BondUnitII10">
     <text lang="English" displayName="Eva" />
@@ -1623,6 +2316,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="232" name="BondUnitII11">
     <text lang="English" displayName="Theo" />
@@ -1630,6 +2326,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="233" name="BondUnitII12">
     <text lang="English" displayName="Helene" />
@@ -1637,6 +2336,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="234" name="BondUnitII13">
     <text lang="English" displayName="Spiro" />
@@ -1644,6 +2346,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="235" name="BondUnitII14">
     <text lang="English" displayName="Odele" />
@@ -1651,6 +2356,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="236" name="BondUnitII15">
     <text lang="English" displayName="Peter" />
@@ -1658,6 +2366,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="237" name="BondUnitII16">
     <text lang="English" displayName="Rhoda" />
@@ -1665,6 +2376,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="238" name="BondUnitII17">
     <text lang="English" displayName="Lukas" />
@@ -1672,6 +2386,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="239" name="BondUnitII18">
     <text lang="English" displayName="Charis" />
@@ -1679,6 +2396,9 @@
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="240" name="MonsterUnpromoted0">
     <text lang="English" displayName="Monster" />
@@ -1686,6 +2406,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="-1" res="-1" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="241" name="MonsterUnpromoted1">
     <text lang="English" displayName="Monster" />
@@ -1693,6 +2416,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="-1" res="-1" />
     <modifier hp="0" str="5" mag="5" skl="5" spd="5" lck="5" def="5" res="5" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="242" name="MonsterPromoted0">
     <text lang="English" displayName="Monster" />
@@ -1700,6 +2426,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="5" mag="5" skl="5" spd="5" lck="5" def="5" res="5" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="243" name="MonsterPromoted1">
     <text lang="English" displayName="Monster" />
@@ -1707,6 +2436,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="10" mag="10" skl="10" spd="10" lck="10" def="10" res="10" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="244" name="ArenaChallenger">
     <text lang="English" displayName="Opponent" />
@@ -1714,6 +2446,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="99" mag="99" skl="99" spd="99" lck="99" def="99" res="99" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="245" name="CastleLilith">
     <text lang="English" displayName="Lilith" />
@@ -1721,6 +2456,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="246" name="CastleHoshido_M">
     <text lang="English" displayName="Shopkeep" />
@@ -1728,6 +2466,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="247" name="CastleHoshido_F">
     <text lang="English" displayName="Shopkeep" />
@@ -1735,6 +2476,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="248" name="CastleNohr_M">
     <text lang="English" displayName="Shopkeep" />
@@ -1742,6 +2486,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="249" name="CastleNohr_F">
     <text lang="English" displayName="Shopkeep" />
@@ -1749,6 +2496,9 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="250" name="Marth">
     <text lang="English" displayName="Marth" />
@@ -1756,6 +2506,9 @@
     <baseStats hp="10" str="8" mag="2" skl="13" spd="13" lck="17" def="8" res="8" />
     <modifier hp="0" str="-1" mag="0" skl="1" spd="1" lck="1" def="0" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="190" g="190" b="190" a="255" />
   </character>
   <character id="251" name="Ike">
     <text lang="English" displayName="Ike" />
@@ -1763,6 +2516,9 @@
     <baseStats hp="11" str="10" mag="0" skl="9" spd="7" lck="13" def="9" res="7" />
     <modifier hp="0" str="2" mag="0" skl="0" spd="-1" lck="0" def="1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="190" g="190" b="190" a="255" />
   </character>
   <character id="252" name="Lucina">
     <text lang="English" displayName="Lucina" />
@@ -1770,6 +2526,9 @@
     <baseStats hp="10" str="9" mag="2" skl="11" spd="12" lck="15" def="7" res="10" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="2" lck="0" def="-1" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="76" g="88" b="123" a="255" />
   </character>
   <character id="253" name="Robin">
     <text lang="English" displayName="Robin" />
@@ -1777,6 +2536,9 @@
     <baseStats hp="7" str="7" mag="11" skl="12" spd="6" lck="8" def="7" res="9" />
     <modifier hp="0" str="0" mag="2" skl="0" spd="0" lck="-1" def="-1" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="190" g="190" b="190" a="255" />
   </character>
   <character id="254" name="Outrealm">
     <text lang="English" displayName="Outrealmer" />
@@ -1784,27 +2546,39 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="512" name="CipherMarth">
     <text lang="English" displayName="Cipher Marth" />
     <text lang="Japanese" displayName="サイファマルス" />
     <baseStats hp="6" str="6" mag="2" skl="9" spd="9" lck="13" def="5" res="7" />
     <modifier hp="0" str="-1" mag="0" skl="1" spd="1" lck="1" def="0" res="-1" />
-    <flags canUseStones="false" isCorrin="false" isChild = "false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="768" name="CipherLucina">
     <text lang="English" displayName="Cipher Lucina" />
     <text lang="Japanese" displayName="サイファルキナ" />
     <baseStats hp="6" str="6" mag="2" skl="8" spd="9" lck="12" def="4" res="8" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="2" lck="0" def="-1" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild = "false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <character id="1024" name="CipherMinerva">
     <text lang="English" displayName="Cipher Minerva" />
     <text lang="Japanese" displayName="サイファミネルバ" />
     <baseStats hp="4" str="7" mag="0" skl="2" spd="7" lck="2" def="11" res="3" />
     <modifier hp="0" str="1" mag="0" skl="0" spd="1" lck="-2" def="3" res="-3" />
-    <flags canUseStones="false" isCorrin="false" isChild = "false" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" />
+    <mainSupports count="0" />
+    <familySupports count="0" />
+    <hairColor r="255" g="255" b="255" a="255" />
   </character>
   <!--
   Template:

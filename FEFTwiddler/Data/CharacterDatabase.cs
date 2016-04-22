@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Xml.Linq;
 using FEFTwiddler.Extensions;
@@ -19,12 +21,50 @@ namespace FEFTwiddler.Data
                 .Where((x) => x.Attribute("id").Value == ((ushort)characterId).ToString())
                 .First();
 
+            return FromElement(row);
+        }
+
+        /// <summary>
+        /// Get all characters
+        /// </summary>
+        public IEnumerable<Character> GetAll()
+        {
+            var elements = _data.Elements("character");
+            var rows = new List<Character>();
+            foreach (var e in elements)
+            {
+                rows.Add(FromElement(e));
+            }
+            return rows;
+        }
+
+        /// <summary>
+        /// Get all characters who are named and playable
+        /// </summary>
+        public IEnumerable<Character> GetAllNamedPlayable()
+        {
+            var elements = _data.Elements("character");
+            var rows = new List<Character>();
+            foreach (var e in elements)
+            {
+                var character = FromElement(e);
+                // CorrinM through Zhara
+                if ((ushort)character.CharacterID > 0 && (ushort)character.CharacterID <= 84) rows.Add(character);
+            }
+            return rows;
+        }
+
+        private Character FromElement(XElement row)
+        {
             var displayName = GetDisplayName(row);
             var baseStats = row.Elements("baseStats").First();
             var modifier = row.Elements("modifier").First();
             var flags = row.Elements("flags").First();
+            var mainSupports = row.Elements("mainSupports").First();
+            var familySupports = row.Elements("familySupports").First();
+            var hairColor = row.Elements("hairColor").First();
 
-            return new Character
+            var character = new Character
             {
                 CharacterID = (Enums.Character)row.GetAttribute<ushort>("id"),
                 DisplayName = displayName,
@@ -52,8 +92,22 @@ namespace FEFTwiddler.Data
                 },
                 CanUseStones = flags.GetAttribute<bool>("canUseStones"),
                 IsCorrin = flags.GetAttribute<bool>("isCorrin"),
-                IsChild = flags.GetAttribute<bool>("isChild")
+                IsChild = flags.GetAttribute<bool>("isChild"),
+                MainSupportCount = mainSupports.GetAttribute<byte>("count"),
+                FamilySupportCount = familySupports.GetAttribute<byte>("count"),
+                HairColor = Color.FromArgb(hairColor.GetAttribute<byte>("a"), hairColor.GetAttribute<byte>("r"), hairColor.GetAttribute<byte>("g"), hairColor.GetAttribute<byte>("b"))
             };
+
+            character.EndBlockType = GetEndBlockType(character);
+
+            return character;
+        }
+
+        public static byte GetEndBlockType(Character character)
+        {
+            if (character.IsCorrin) return 0x04;
+            else if (character.IsChild) return 0x01;
+            else return 0x00;
         }
     }
 }

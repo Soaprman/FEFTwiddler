@@ -37,6 +37,7 @@ namespace FEFTwiddler.Model
 
         #region Properties
 
+        public Enums.Game Game { get; set; }
         public byte[] AvatarName { get; set; }
 
         public Shop HoshidoArmory { get; set; }
@@ -47,7 +48,7 @@ namespace FEFTwiddler.Model
         public uint Gold { get; set; }
 
         public Enums.Difficulty Difficulty { get; set; }
-        public Enums.Ruleset Ruleset { get; set; }
+        public Enums.DeathPenalty Ruleset { get; set; }
 
         public ushort DragonVeinPoint { get; set; }
 
@@ -228,7 +229,13 @@ namespace FEFTwiddler.Model
             byte[] chunk;
 
             // Stuff
-            br.ReadBytes(0x0F);
+            br.ReadBytes(0x0B);
+
+            // Game
+            Game = (Enums.Game)br.ReadByte();
+
+            // Stuff
+            br.ReadBytes(0x03);
 
             // Avatar name
             chunk = new byte[0x18];
@@ -336,7 +343,7 @@ namespace FEFTwiddler.Model
             chunk = new byte[1];
             br.Read(chunk, 0, 1);
 
-            Ruleset = (Enums.Ruleset)chunk[0];
+            Ruleset = (Enums.DeathPenalty)chunk[0];
 
             // Stuff
             br.ReadBytes(0x04);

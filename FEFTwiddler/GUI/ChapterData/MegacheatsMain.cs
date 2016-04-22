@@ -33,6 +33,7 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void InitializeControls()
         {
+            btnNewGamePlus.Text = "Experimental New Game Plus mode. May have other effects that I haven't bothered writing on this button. Click at your own risk!";
         }
 
         private void PopulateControls()
@@ -122,31 +123,12 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void btnNewGamePlus_Click(object sender, EventArgs e)
         {
-            foreach (var battlefield in _chapterSave.Battlefields)
-            {
-                switch (battlefield.ChapterID)
-                {
-                    case Enums.Chapter.Prologue:
-                    case Enums.Chapter.Chapter1:
-                    case Enums.Chapter.Chapter2:
-                    case Enums.Chapter.Chapter3:
-                    case Enums.Chapter.Chapter4:
-                    case Enums.Chapter.Chapter5:
-                    case Enums.Chapter.Chapter6:
-                    case Enums.Chapter.Birthright_Chapter6:
-                    case Enums.Chapter.Conquest_Chapter6:
-                    case Enums.Chapter.Revelation_Chapter6:
-                        break; // Do nothing
-                    case Enums.Chapter.Birthright_Chapter7:
-                    case Enums.Chapter.Conquest_Chapter7:
-                    case Enums.Chapter.Revelation_Chapter7:
-                        battlefield.BattlefieldStatus = Enums.BattlefieldStatus.Available;
-                        break;
-                    default:
-                        battlefield.BattlefieldStatus = Enums.BattlefieldStatus.Unavailable;
-                        break;
-                }
-            }
+            var timeMachine = new Model.NewGamePlus.TimeMachine(_chapterSave);
+            var randomizer = new Model.NewGamePlus.Randomizer(_chapterSave);
+
+            timeMachine.InsertCharacters();
+            randomizer.RandomizeClasses();
+
             MessageBox.Show("Done! Remember... whatever happens, you asked for it!");
         }
     }

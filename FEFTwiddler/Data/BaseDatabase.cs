@@ -60,21 +60,45 @@ namespace FEFTwiddler.Data
         /// </summary>
         protected void UpdateXmlStructure()
         {
-            var rows = _data.Elements("skill");
+            var rows = _data.Elements("character");
             for (var i = 0; i < rows.Count(); i++)
             {
                 var row = rows.ElementAt(i);
 
-                var categories = XElement.Parse(@"<categories corrinOnly=""false"" azuraOnly=""false"" kitsuneOnly=""false"" wolfskinOnly=""false"" pathBonusClass=""false"" dlcClass=""false"" amiiboClass=""false"" enemyAndNpc=""false"" />");
-                row.Add(categories);
+                var hairColor = row.Elements("hairColor").First();
 
-                categories.SetAttributeValue("dlcClass", row.GetAttribute("dlc"));
-                categories.SetAttributeValue("enemyAndNpc", row.GetAttribute("enemyOnly"));
-                var removeAttrs = row.Attributes().Where((x) => x.Name == "dlc" || x.Name == "enemyOnly");
-                foreach (var attr in removeAttrs)
-                {
-                    attr.Remove();
-                }
+                var r = new byte[1];
+                r.TryParseHex(hairColor.GetAttribute("r"));
+                hairColor.SetAttributeValue("r", r[0]);
+
+                var g = new byte[1];
+                g.TryParseHex(hairColor.GetAttribute("g"));
+                hairColor.SetAttributeValue("g", g[0]);
+
+                var b = new byte[1];
+                b.TryParseHex(hairColor.GetAttribute("b"));
+                hairColor.SetAttributeValue("b", b[0]);
+
+
+                //var hairColor = XElement.Parse(@"<hairColor r=""255"" g=""255"" b=""255"" a=""255"" />");
+                //row.Add(hairColor);
+
+                //var mainSupports = XElement.Parse(@"<mainSupports count=""0"" />");
+                //row.Add(mainSupports);
+
+                //var familySupports = XElement.Parse(@"<familySupports count=""0"" />");
+                //row.Add(familySupports);
+
+                //var categories = XElement.Parse(@"<categories corrinOnly=""false"" azuraOnly=""false"" kitsuneOnly=""false"" wolfskinOnly=""false"" pathBonusClass=""false"" dlcClass=""false"" amiiboClass=""false"" enemyAndNpc=""false"" />");
+                //row.Add(categories);
+
+                //categories.SetAttributeValue("dlcClass", row.GetAttribute("dlc"));
+                //categories.SetAttributeValue("enemyAndNpc", row.GetAttribute("enemyOnly"));
+                //var removeAttrs = row.Attributes().Where((x) => x.Name == "dlc" || x.Name == "enemyOnly");
+                //foreach (var attr in removeAttrs)
+                //{
+                //    attr.Remove();
+                //}
 
                 //var flags = XElement.Parse(@"<flags canUseStones=""false""/>");
                 //row.Add(flags);

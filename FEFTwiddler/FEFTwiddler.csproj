@@ -74,12 +74,13 @@
     <Compile Include="Enums\Class.cs" />
     <Compile Include="Enums\Difficulty.cs" />
     <Compile Include="Enums\Facewear.cs" />
+    <Compile Include="Enums\Game.cs" />
     <Compile Include="Enums\Headwear.cs" />
     <Compile Include="Enums\Item.cs" />
     <Compile Include="Enums\ItemType.cs" />
     <Compile Include="Enums\Language.cs" />
     <Compile Include="Enums\Route.cs" />
-    <Compile Include="Enums\Ruleset.cs" />
+    <Compile Include="Enums\DeathPenalty.cs" />
     <Compile Include="Enums\SaveFileType.cs" />
     <Compile Include="Enums\Skill.cs" />
     <Compile Include="Enums\Stat.cs" />
@@ -231,6 +232,8 @@
     <Compile Include="Model\ISave.cs" />
     <Compile Include="Model\Item.cs" />
     <Compile Include="Model\LearnedSkills.cs" />
+    <Compile Include="Model\NewGamePlus\Randomizer.cs" />
+    <Compile Include="Model\NewGamePlus\TimeMachine.cs" />
     <Compile Include="Model\Shop.cs" />
     <Compile Include="Model\ShopItem.cs" />
     <Compile Include="Model\Stat.cs" />
