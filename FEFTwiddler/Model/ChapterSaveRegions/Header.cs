@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using FEFTwiddler.Extensions;
 
 namespace FEFTwiddler.Model.ChapterSaveRegions
 {
@@ -31,8 +32,37 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
             set { _raw[0x05] = (byte)value; }
         }
 
-        // One byte (0x06)
-        // DeathPenalty
+        // Classic mode is _raw[0x06] = 0x00
+
+        /// <summary>
+        /// This flag is turned on until chapter 6 if playing on Classic mode.
+        /// </summary>
+        public bool UnitsGoAbsentWhenKilled
+        {
+            get { return _raw[0x06].GetFlag(0x01); }
+            set { _raw[0x06] = _raw[0x06].SetFlag(0x01, value); }
+        }
+
+        /// <summary>
+        /// I've seen this on battle prep saves. It might only apply there.
+        /// </summary>
+        public bool UnknownDeathPenalty_Flag_0x02
+        {
+            get { return _raw[0x06].GetFlag(0x02); }
+            set { _raw[0x06] = _raw[0x06].SetFlag(0x02, value); }
+        }
+
+        public bool UnitsReviveAfterChapter
+        {
+            get { return _raw[0x06].GetFlag(0x04); }
+            set { _raw[0x06] = _raw[0x06].SetFlag(0x04, value); }
+        }
+
+        public bool UnitsReviveAfterTurn
+        {
+            get { return _raw[0x06].GetFlag(0x08); }
+            set { _raw[0x06] = _raw[0x06].SetFlag(0x08, value); }
+        }
 
         /// <summary>
         /// is 0xF0 on all but my less than ch 6 saves (where it is 0x00)

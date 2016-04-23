@@ -159,7 +159,7 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
         public bool UnitsGoAbsentWhenKilled
         {
             get { return _rawBlock2[0xE5].GetFlag(0x01); }
-            set { _rawBlock2[0xE5].SetFlag(0x01, value); }
+            set { _rawBlock2[0xE5] = _rawBlock2[0xE5].SetFlag(0x01, value); }
         }
 
         /// <summary>
@@ -168,19 +168,19 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
         public bool UnknownDeathPenalty_Flag_0x02
         {
             get { return _rawBlock2[0xE5].GetFlag(0x02); }
-            set { _rawBlock2[0xE5].SetFlag(0x02, value); }
+            set { _rawBlock2[0xE5] = _rawBlock2[0xE5].SetFlag(0x02, value); }
         }
 
         public bool UnitsReviveAfterChapter
         {
             get { return _rawBlock2[0xE5].GetFlag(0x04); }
-            set { _rawBlock2[0xE5].SetFlag(0x04, value); }
+            set { _rawBlock2[0xE5] = _rawBlock2[0xE5].SetFlag(0x04, value); }
         }
 
         public bool UnitsReviveAfterTurn
         {
             get { return _rawBlock2[0xE5].GetFlag(0x08); }
-            set { _rawBlock2[0xE5].SetFlag(0x08, value); }
+            set { _rawBlock2[0xE5] = _rawBlock2[0xE5].SetFlag(0x08, value); }
         }
 
         // Three unknown bytes (0xE6 through 0xE8)

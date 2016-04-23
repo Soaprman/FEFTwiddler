@@ -114,6 +114,7 @@ namespace FEFTwiddler.GUI
             goldAndPoints1.LoadChapterSave(_chapterSave);
             materials1.LoadChapterSave(_chapterSave);
             megacheatsMain1.LoadChapterSave(_chapterSave);
+            difficulty1.LoadChapterSave(_chapterSave);
         }
 
         private void btnChapterHistory_Click(object sender, EventArgs e)

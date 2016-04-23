@@ -45,6 +45,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lstDead = new System.Windows.Forms.ListBox();
             this.pnlUnitView = new System.Windows.Forms.Panel();
+            this.dragonVein1 = new FEFTwiddler.GUI.UnitViewer.DragonVein();
             this.btnOpenHexEditor = new System.Windows.Forms.Button();
             this.battleData1 = new FEFTwiddler.GUI.UnitViewer.BattleData();
             this.class1 = new FEFTwiddler.GUI.UnitViewer.Class();
@@ -61,9 +62,9 @@
             this.lstLiving = new System.Windows.Forms.ListBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.megacheatsMain1 = new FEFTwiddler.GUI.ChapterData.MegacheatsMain();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabNewGamePlus = new System.Windows.Forms.TabPage();
-            this.dragonVein1 = new FEFTwiddler.GUI.UnitViewer.DragonVein();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.difficulty1 = new FEFTwiddler.GUI.ChapterData.Difficulty();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -117,6 +118,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.difficulty1);
             this.tabPage3.Controls.Add(this.btnChapterHistory);
             this.tabPage3.Controls.Add(this.goldAndPoints1);
             this.tabPage3.Controls.Add(this.materials1);
@@ -188,6 +190,11 @@
             this.pnlUnitView.Controls.Add(this.lblName);
             resources.ApplyResources(this.pnlUnitView, "pnlUnitView");
             this.pnlUnitView.Name = "pnlUnitView";
+            // 
+            // dragonVein1
+            // 
+            resources.ApplyResources(this.dragonVein1, "dragonVein1");
+            this.dragonVein1.Name = "dragonVein1";
             // 
             // btnOpenHexEditor
             // 
@@ -277,21 +284,21 @@
             resources.ApplyResources(this.megacheatsMain1, "megacheatsMain1");
             this.megacheatsMain1.Name = "megacheatsMain1";
             // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
-            // 
             // tabNewGamePlus
             // 
             resources.ApplyResources(this.tabNewGamePlus, "tabNewGamePlus");
             this.tabNewGamePlus.Name = "tabNewGamePlus";
             this.tabNewGamePlus.UseVisualStyleBackColor = true;
             // 
-            // dragonVein1
+            // saveToolStripMenuItem
             // 
-            resources.ApplyResources(this.dragonVein1, "dragonVein1");
-            this.dragonVein1.Name = "dragonVein1";
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
+            // 
+            // difficulty1
+            // 
+            resources.ApplyResources(this.difficulty1, "difficulty1");
+            this.difficulty1.Name = "difficulty1";
             // 
             // MainForm
             // 
@@ -355,6 +362,7 @@
         private System.Windows.Forms.Button btnChapterHistory;
         private System.Windows.Forms.TabPage tabNewGamePlus;
         private UnitViewer.DragonVein dragonVein1;
+        private ChapterData.Difficulty difficulty1;
     }
 }
 

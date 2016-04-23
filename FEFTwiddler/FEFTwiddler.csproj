@@ -104,6 +104,12 @@
     <Compile Include="GUI\ChapterData\ChapterHistoryPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="GUI\ChapterData\Difficulty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ChapterData\Difficulty.Designer.cs">
+      <DependentUpon>Difficulty.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ChapterData\GoldAndPoints.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -270,6 +276,9 @@
     <Compile Include="Utils\TypeConverter.cs" />
     <EmbeddedResource Include="GUI\ChapterData\ChapterHistory.resx">
       <DependentUpon>ChapterHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChapterData\Difficulty.resx">
+      <DependentUpon>Difficulty.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ChapterData\GoldAndPoints.resx">
       <DependentUpon>GoldAndPoints.cs</DependentUpon>
