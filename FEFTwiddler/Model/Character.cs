@@ -1050,6 +1050,12 @@ namespace FEFTwiddler.Model
 
         public static byte MaxEternalSealsUsed = 0x2F;
         public static byte MinWeaponExperience = 0x01;
+        public static byte WeaponExperienceForRankE = 1;
+        public static byte WeaponExperienceForRankD = 21;
+        public static byte WeaponExperienceForRankC = 51;
+        public static byte WeaponExperienceForRankB = 96;
+        public static byte WeaponExperienceForRankA = 161;
+        public static byte WeaponExperienceForRankS = 251;
         public static byte MaxWeaponExperience = 0xFB;
         public static byte MaxBoots = 0x02;
 

@@ -39,6 +39,8 @@ namespace FEFTwiddler.Data
             var displayName = GetDisplayName(row);
             var baseStats = row.Elements("baseStats").First();
             var maxStats = row.Elements("maxStats").First();
+            var growthRates = row.Elements("growthRates").First();
+            var weaponsUsed = row.Elements("weaponsUsed").First();
 
             return new Class
             {
@@ -65,7 +67,26 @@ namespace FEFTwiddler.Data
                     Lck = maxStats.GetAttribute<sbyte>("lck"),
                     Def = maxStats.GetAttribute<sbyte>("def"),
                     Res = maxStats.GetAttribute<sbyte>("res")
-                }
+                },
+                GrowthRates = new Model.Stat()
+                {
+                    HP = growthRates.GetAttribute<sbyte>("hp"),
+                    Str = growthRates.GetAttribute<sbyte>("str"),
+                    Mag = growthRates.GetAttribute<sbyte>("mag"),
+                    Skl = growthRates.GetAttribute<sbyte>("skl"),
+                    Spd = growthRates.GetAttribute<sbyte>("spd"),
+                    Lck = growthRates.GetAttribute<sbyte>("lck"),
+                    Def = growthRates.GetAttribute<sbyte>("def"),
+                    Res = growthRates.GetAttribute<sbyte>("res")
+                },
+                UsesSword = weaponsUsed.GetAttribute<bool>("sword"),
+                UsesLance = weaponsUsed.GetAttribute<bool>("lance"),
+                UsesAxe = weaponsUsed.GetAttribute<bool>("axe"),
+                UsesShuriken = weaponsUsed.GetAttribute<bool>("shuriken"),
+                UsesBow = weaponsUsed.GetAttribute<bool>("bow"),
+                UsesTome = weaponsUsed.GetAttribute<bool>("tome"),
+                UsesStaff = weaponsUsed.GetAttribute<bool>("staff"),
+                UsesStone = weaponsUsed.GetAttribute<bool>("stone")
             };
         }
     }

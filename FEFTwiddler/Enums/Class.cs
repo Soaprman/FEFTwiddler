@@ -75,8 +75,8 @@
         WyvernRider_F = 0x46,
         MaligKnight_M = 0x47,
         MaligKnight_F = 0x48,
-        NinjaMaster_M = 0x49,
-        NinjaMaster_F = 0x4A,
+        MasterNinja_M = 0x49,
+        MasterNinja_F = 0x4A,
         Ninja_M = 0x4B,
         Ninja_F = 0x4C,
         Mechanist_M = 0x4D,
@@ -115,8 +115,8 @@
         Stoneborn = 0x6C,
         Automaton = 0x6D,
         AstralDragon = 0x6E,
-        Dragon_M = 0x6F,
-        Dragon_F = 0x70,
+        FeralDragon_M = 0x6F,
+        FeralDragon_F = 0x70,
         DarkDragon = 0x71,
         InvisibleDragon1 = 0x72,
         InvisibleDragon2 = 0x73,
@@ -186,8 +186,8 @@
                 classId == Class.WyvernLord_F ||
                 classId == Class.MaligKnight_M ||
                 classId == Class.MaligKnight_F ||
-                classId == Class.NinjaMaster_M ||
-                classId == Class.NinjaMaster_F ||
+                classId == Class.MasterNinja_M ||
+                classId == Class.MasterNinja_F ||
                 classId == Class.Mechanist_M ||
                 classId == Class.Mechanist_F ||
                 classId == Class.Merchant_M ||
@@ -210,8 +210,8 @@
                 classId == Class.Stoneborn ||
                 classId == Class.Automaton ||
                 classId == Class.AstralDragon ||
-                classId == Class.Dragon_M ||
-                classId == Class.Dragon_F ||
+                classId == Class.FeralDragon_M ||
+                classId == Class.FeralDragon_F ||
                 classId == Class.DarkDragon ||
                 classId == Class.InvisibleDragon1 ||
                 classId == Class.InvisibleDragon2 ||

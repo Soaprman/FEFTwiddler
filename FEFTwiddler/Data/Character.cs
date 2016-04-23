@@ -9,6 +9,7 @@ namespace FEFTwiddler.Data
 
         public Model.Stat BaseStats;
         public Model.Stat Modifiers;
+        public Model.Stat GrowthRates;
 
         public bool CanUseStones { get; set; }
         public bool IsCorrin { get; set; }

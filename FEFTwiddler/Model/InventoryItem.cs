@@ -9,6 +9,12 @@ namespace FEFTwiddler.Model
             if (raw.Length != 4) throw new ArgumentException("Inventory items must be 4 bytes");
         }
 
+        public static InventoryItem FromID(Enums.Item itemId)
+        {
+            var raw = new byte[] { (byte)itemId, (byte)((ushort)itemId >> 8), 0x00, 0x00 };
+            return new InventoryItem(raw);
+        }
+
         /// <summary>
         /// A reference to the name of the item. Not sure quite how this works yet.
         /// </summary>

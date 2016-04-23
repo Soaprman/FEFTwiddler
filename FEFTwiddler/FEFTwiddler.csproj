@@ -87,6 +87,7 @@
     <Compile Include="Enums\Skill.cs" />
     <Compile Include="Enums\Stat.cs" />
     <Compile Include="Enums\Underwear.cs" />
+    <Compile Include="Enums\WeaponRank.cs" />
     <Compile Include="Extensions\BinaryReaderExtensions.cs" />
     <Compile Include="Extensions\BitmapExtensions.cs" />
     <Compile Include="Extensions\ByteArrayExtensions.cs" />

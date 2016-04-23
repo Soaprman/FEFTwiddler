@@ -41,14 +41,16 @@ namespace FEFTwiddler.Data
         {
             var displayName = GetDisplayName(row);
 
+            var categories = row.Elements("categories").First();
+
             return new Item
             {
                 ItemID = (Enums.Item)row.GetAttribute<ushort>("id"),
                 DisplayName = displayName,
                 Type = (Enums.ItemType)Enum.Parse(typeof(Enums.ItemType), row.GetAttribute("type")),
+                WeaponRank = (Enums.WeaponRank)Enum.Parse(typeof(Enums.WeaponRank), row.GetAttribute("rank")),
                 MaximumUses = row.GetAttribute<byte>("maxUses"),
-                IsEnemyOnly = row.GetAttribute("enemyOnly", false),
-                IsMapOnly = row.GetAttribute("mapOnly", false)
+                IsNpcOnly = categories.GetAttribute("npcOnly", false)
             };
         }
     }

@@ -59,6 +59,7 @@ namespace FEFTwiddler.Data
             var displayName = GetDisplayName(row);
             var baseStats = row.Elements("baseStats").First();
             var modifier = row.Elements("modifier").First();
+            var growthRates = row.Elements("growthRates").First();
             var flags = row.Elements("flags").First();
             var mainSupports = row.Elements("mainSupports").First();
             var familySupports = row.Elements("familySupports").First();
@@ -89,6 +90,17 @@ namespace FEFTwiddler.Data
                     Lck = modifier.GetAttribute<sbyte>("lck"),
                     Def = modifier.GetAttribute<sbyte>("def"),
                     Res = modifier.GetAttribute<sbyte>("res")
+                },
+                GrowthRates = new Model.Stat()
+                {
+                    HP = growthRates.GetAttribute<sbyte>("hp"),
+                    Str = growthRates.GetAttribute<sbyte>("str"),
+                    Mag = growthRates.GetAttribute<sbyte>("mag"),
+                    Skl = growthRates.GetAttribute<sbyte>("skl"),
+                    Spd = growthRates.GetAttribute<sbyte>("spd"),
+                    Lck = growthRates.GetAttribute<sbyte>("lck"),
+                    Def = growthRates.GetAttribute<sbyte>("def"),
+                    Res = growthRates.GetAttribute<sbyte>("res")
                 },
                 CanUseStones = flags.GetAttribute<bool>("canUseStones"),
                 IsCorrin = flags.GetAttribute<bool>("isCorrin"),

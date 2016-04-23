@@ -24,7 +24,7 @@ namespace FEFTwiddlerTest.Data
             Assert.AreEqual("Bronze Sword", itemData.DisplayName);
             Assert.AreEqual(0, itemData.MaximumUses);
             Assert.AreEqual(ItemType.Sword, itemData.Type);
-            Assert.AreEqual(false, itemData.IsEnemyOnly);
+            Assert.AreEqual(false, itemData.IsNpcOnly);
         }
 
     }

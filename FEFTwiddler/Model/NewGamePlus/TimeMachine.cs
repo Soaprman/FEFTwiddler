@@ -22,11 +22,11 @@ namespace FEFTwiddler.Model.NewGamePlus
 
         public void RemoveEveryoneButCorrin()
         {
-            foreach (var character in _chapterSave.UnitRegion.Units)
+            foreach (var unit in _chapterSave.UnitRegion.Units)
             {
-                if (!Data.Database.Characters.GetByID(character.CharacterID).IsCorrin)
+                if (!Data.Database.Characters.GetByID(unit.CharacterID).IsCorrin)
                 {
-                    _chapterSave.UnitRegion.Units.Remove(character);
+                    _chapterSave.UnitRegion.Units.Remove(unit);
                 }
             }
         }
@@ -36,10 +36,53 @@ namespace FEFTwiddler.Model.NewGamePlus
             var characterDatas = Data.Database.Characters.GetAllNamedPlayable().Where((x) => !x.IsCorrin);
             foreach (var characterData in characterDatas)
             {
-                var character = Model.Character.Create(characterData.CharacterID);
-                character.IsAbsent = true;
-                _chapterSave.UnitRegion.Units.Add(character);
+                var unit = Model.Character.Create(characterData.CharacterID);
+                unit.IsAbsent = true;
+                _chapterSave.UnitRegion.Units.Add(unit);
             }
+        }
+
+        public void LevelUpAllUnits()
+        {
+            foreach (var unit in _chapterSave.UnitRegion.Units)
+            {
+                // TODO: Remove fixed value, determine based on which game is being played
+                LevelUp(unit, 19);
+            }
+        }
+
+        /// <summary>
+        /// Level a unit, giving them the average gains that their growth rates would dictate
+        /// </summary>
+        public void LevelUp(Model.Character unit, int levels)
+        {
+            var characterGrowthRates = Data.Database.Characters.GetByID(unit.CharacterID).GrowthRates;
+            var classGrowthRates = Data.Database.Classes.GetByID(unit.ClassID).GrowthRates;
+            var combinedGrowthRates = characterGrowthRates + classGrowthRates;
+
+            int hp; int str; int mag; int skl; int spd; int lck; int def; int res;
+            hp = str = mag = skl = spd = lck = def = res = 0;
+            for (var i = 0; i < levels; i++)
+            {
+                hp += combinedGrowthRates.HP;
+                str += combinedGrowthRates.Str;
+                mag += combinedGrowthRates.Mag;
+                skl += combinedGrowthRates.Skl;
+                spd += combinedGrowthRates.Spd;
+                lck += combinedGrowthRates.Lck;
+                def += combinedGrowthRates.Def;
+                res += combinedGrowthRates.Res;
+            }
+
+            unit.Level += (byte)levels;
+            unit.GainedStats.HP += (sbyte)(hp / 100);
+            unit.GainedStats.Str += (sbyte)(str / 100);
+            unit.GainedStats.Mag += (sbyte)(mag / 100);
+            unit.GainedStats.Skl += (sbyte)(skl / 100);
+            unit.GainedStats.Spd += (sbyte)(spd / 100);
+            unit.GainedStats.Lck += (sbyte)(lck / 100);
+            unit.GainedStats.Def += (sbyte)(def / 100);
+            unit.GainedStats.Res += (sbyte)(res / 100);
         }
 
         // TODO: Level up characters to where they should be

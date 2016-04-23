@@ -5,6 +5,7 @@
         public Enums.Item ItemID { get; set; }
         public string DisplayName { get; set; }
         public Enums.ItemType Type { get; set; }
+        public Enums.WeaponRank WeaponRank { get; set; }
 
         /// <summary>
         /// The maximum number of uses for this item. 0 = no maximum
@@ -14,7 +15,7 @@
         /// <summary>
         /// Whether the item is normally only seen in the hands of an enemy or NPC
         /// </summary>
-        public bool IsEnemyOnly { get; set; }
+        public bool IsNpcOnly { get; set; }
 
         /// <summary>
         /// Whether the item disappears when leaving a map (example: Chest Key)

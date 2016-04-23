@@ -126,8 +126,11 @@ namespace FEFTwiddler.GUI.ChapterData
             var timeMachine = new Model.NewGamePlus.TimeMachine(_chapterSave);
             var randomizer = new Model.NewGamePlus.Randomizer(_chapterSave);
 
+            timeMachine.RemoveEveryoneButCorrin();
             timeMachine.InsertCharacters();
             randomizer.RandomizeClasses();
+            randomizer.EquipWeapons();
+            timeMachine.LevelUpAllUnits();
 
             MessageBox.Show("Done! Remember... whatever happens, you asked for it!");
         }
