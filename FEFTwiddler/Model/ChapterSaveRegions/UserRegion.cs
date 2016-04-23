@@ -114,18 +114,89 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
 
         #region Block 2 Properties
 
-        // 225 unknown bytes (0x00 through 0xE0)
-        // (block of mostly 00s that starts with 00 80 and ends with 30 00 00 00 FF FF)
+        // 223 unknown bytes (0x00 through 0xDE)
+        // (block of mostly 00s that starts with 00 80 and ends with 30 00 00 00)
 
-        // Four unknown bytes (0xE1 through 0xE4)
-
-        public Enums.DeathPenalty DeathPenalty
+        // These four are FF FF FF FF on my chapter 27 saves, but there are lower values on other saves.
+        public byte Unknown_Block2_0xDF
         {
-            get { return (Enums.DeathPenalty)_rawBlock2[0xE5]; }
-            set { _rawBlock2[0xE5] = (byte)value; }
+            get { return _rawBlock2[0xDF]; }
+            set { _rawBlock2[0xDF] = value; }
+        }
+        public byte Unknown_Block2_0xE0
+        {
+            get { return _rawBlock2[0xE0]; }
+            set { _rawBlock2[0xE0] = value; }
+        }
+        public byte Unknown_Block2_0xE1
+        {
+            get { return _rawBlock2[0xE1]; }
+            set { _rawBlock2[0xE1] = value; }
+        }
+        public byte Unknown_Block2_0xE2
+        {
+            get { return _rawBlock2[0xE2]; }
+            set { _rawBlock2[0xE2] = value; }
         }
 
-        // Four unknown bytes (0xE6 through 0xE9)
+        /// <summary>
+        /// Values observed: 0x00, 0x01, 0x03
+        /// </summary>
+        public byte Unknown_Block2_0xE3
+        {
+            get { return _rawBlock2[0xE3]; }
+            set { _rawBlock2[0xE3] = value; }
+        }
+
+        // One unknown byte (0xE4)
+        // Always 00?
+
+        // Classic mode is _rawBlock2[0xE5] = 0x00
+
+        /// <summary>
+        /// This flag is turned on until chapter 6 if playing on Classic mode.
+        /// </summary>
+        public bool UnitsGoAbsentWhenKilled
+        {
+            get { return _rawBlock2[0xE5].GetFlag(0x01); }
+            set { _rawBlock2[0xE5].SetFlag(0x01, value); }
+        }
+
+        /// <summary>
+        /// I've seen this on battle prep saves. It might only apply there.
+        /// </summary>
+        public bool UnknownDeathPenalty_Flag_0x02
+        {
+            get { return _rawBlock2[0xE5].GetFlag(0x02); }
+            set { _rawBlock2[0xE5].SetFlag(0x02, value); }
+        }
+
+        public bool UnitsReviveAfterChapter
+        {
+            get { return _rawBlock2[0xE5].GetFlag(0x04); }
+            set { _rawBlock2[0xE5].SetFlag(0x04, value); }
+        }
+
+        public bool UnitsReviveAfterTurn
+        {
+            get { return _rawBlock2[0xE5].GetFlag(0x08); }
+            set { _rawBlock2[0xE5].SetFlag(0x08, value); }
+        }
+
+        // Three unknown bytes (0xE6 through 0xE8)
+        // Probably time elapsed
+
+        /// <summary>
+        /// It's 0x04 on my battle prep saves.
+        /// It's 0x01 on my revelation chapter 27 save.
+        /// It's 0x02 on my birthright chapter 27 save.
+        /// It's 0x01 on all my "new" saves.
+        /// </summary>
+        public byte Unknown_Block2_0xE9
+        {
+            get { return _rawBlock2[0xE9]; }
+            set { _rawBlock2[0xE9] = value; }
+        }
 
         public Enums.Difficulty Difficulty
         {
@@ -133,7 +204,38 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
             set { _rawBlock2[0xEA] = (byte)value; }
         }
 
-        // Three unknown bytes (0xEB through 0xED)
+        // One unknown byte (0xEB)
+        // Maybe always 00
+
+        /// <summary>
+        /// Might be story progress.
+        /// It's 0x00 in my before-prologue save.
+        /// It's 0x01 in my before-chapter1 save.
+        /// It's 0x02 in my before-chapter2 save.
+        /// It's 0x03 in my before-chapter3 save.
+        /// It's 0x05 in EldinTokuro_Chapter0_dec, which is on revelation chapter 7.
+        /// It's 0x11 in hollablack2/Chapter1 save, which is on "chapter 16: pleasure palace".
+        /// It's 0x26 on my chapter27 saves.
+        /// </summary>
+        public byte Unknown_Block2_0xEC
+        {
+            get { return _rawBlock2[0xEC]; }
+            set { _rawBlock2[0xEC] = value; }
+        }
+
+        /// <summary>
+        /// Might have to do with DLC stuff in possession.
+        /// When I set it to 0x00, the game gave the "DLC is missing" message after booting a save.
+        /// It's 0x03 on my three chapter 27 saves (regardless of game).
+        /// It's 0x00 on my fresh save before the prologue.
+        /// It's 0x01 on my pre-chapter 6 saves.
+        /// It's 0x01 on EldinTokuro_Chapter0_dec.
+        /// </summary>
+        public byte Unknown_Block2_0xED
+        {
+            get { return _rawBlock2[0xED]; }
+            set { _rawBlock2[0xED] = value; }
+        }
 
         public uint Gold
         {
@@ -147,12 +249,108 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
             }
         }
 
-        // Twenty unknown bytes (0xF2 through 0x105)
+        // Six unknown bytes (0xF2 through 0xF7)
+
+        /// <summary>
+        /// Might be DLC-related or region-related
+        /// 0x01 on all saves except 9Hopper's save (which also has a 70KL section instead of an 80KL section)
+        /// 9Hopper's save has Cipher DLC so it is prob a Japanese save?
+        /// </summary>
+        public byte Unknown_Block2_0xF8
+        {
+            get { return _rawBlock2[0xF8]; }
+            set { _rawBlock2[0xF8] = value; }
+        }
+
+        // One unknown byte (0xF9)
+
+        /// <summary>
+        /// 0x1E on my "new" save
+        /// 0x1C on my ch27 BR save
+        /// 0x5E on my pre-ch6 saves
+        /// 0x14 on my RV battle prep saves
+        /// </summary>
+        public byte Unknown_Block2_0xFA
+        {
+            get { return _rawBlock2[0xFA]; }
+            set { _rawBlock2[0xFA] = value; }
+        }
+
+        /// <summary>
+        /// 0x1E on my "new" save
+        /// 0x16 on my ch27 BR save
+        /// 0x5E on my pre-ch6 saves
+        /// 0x5E on my RV battle prep saves
+        /// </summary>
+        public byte Unknown_Block2_0xFB
+        {
+            get { return _rawBlock2[0xFB]; }
+            set { _rawBlock2[0xFB] = value; }
+        }
+
+        // Two unknown bytes (0xFC through 0xFD)
+
+        /// <summary>
+        /// It's 0x01 on saves before and immediately after the prologue.
+        /// It's also 0x01 on EldinTokuro's save.
+        /// It's 0x00 on other saves.
+        /// </summary>
+        public byte Unknown_Block2_0xFE
+        {
+            get { return _rawBlock2[0xFE]; }
+            set { _rawBlock2[0xFE] = value; }
+        }
+
+        // Two unknown bytes (0xFF through 0x100)
+
+        /// <summary>
+        /// It is 0x01 on saves before the prologue.
+        /// It is 0x00 on other saves.
+        /// </summary>
+        public byte Unknown_Block2_0x101
+        {
+            get { return _rawBlock2[0x101]; }
+            set { _rawBlock2[0x101] = value; }
+        }
+
+        /// <summary>
+        /// It is 0x02 on saves before the prologue. (example: 044\Chapter0)
+        /// It is 0x01 on 044\Chapter1 and 044\Chapter2.
+        /// It is 0x01 on my chapter 27 revelation saves.
+        /// It is 0x02 on my chapter 27 birthright save.
+        /// </summary>
+        public byte Unknown_Block2_0x102
+        {
+            get { return _rawBlock2[0x102]; }
+            set { _rawBlock2[0x102] = value; }
+        }
+
+        // Three unknown bytes (0x103 through 0x105)
+        // Always 00 00 80?
 
         // Four unknown bytes (0x106 through 0x109)
         // Always FF FF FF FF?
 
-        // Sixty-eight unknown bytes (0x10A through 0x14E)
+        /// <summary>
+        /// Seems related to story progress.
+        /// It's 0x24 in my chapter 27 saves (regardless of game).
+        /// It's 0x00 in my pre-chapter 6 saves.
+        /// It's 0x10 in EldinTokuro_Chapter0_dec.
+        /// It's 0x08 in hollablack2\Chapter1_dec.
+        /// </summary>
+        public byte Unknown_Block2_0x10A
+        {
+            get { return _rawBlock2[0x10A]; }
+            set { _rawBlock2[0x10A] = value; }
+        }
+
+        // Three unknown bytes (0x10B through 0x10D)
+        // Always 00 01 04, I think.
+
+        // Sixty-four unknown bytes (0x10E through 0x14D)
+        // This seems like four sets of sixteen random values.
+        // When I saved in a separate slot after being each chapter, the middle two "rows" had the same values, but the top and bottom "rows" changed.
+        // There probably isn't anything interesting in here.
 
         #endregion
     }

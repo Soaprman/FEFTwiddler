@@ -31,6 +31,16 @@ namespace FEFTwiddler.GUI
             Data.Database.SetLanguage(Enums.Language.English);
         }
 
+        public static MainForm GetFromHere(Control ctl)
+        {
+            var parent = ctl.Parent;
+            while (parent.GetType() != typeof(MainForm))
+            {
+                parent = parent.Parent;
+            }
+            return (MainForm)parent;
+        }
+
         #region Load
 
         private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -61,25 +71,10 @@ namespace FEFTwiddler.GUI
 
                 _chapterSave = Model.ChapterSave.FromSaveFile(_saveFile);
 
-                lstLiving.DisplayMember = "CharacterID";
-                lstLiving.ValueMember = "CharacterID";
-                lstLiving.Items.Clear();
-
-                lstDead.DisplayMember = "CharacterID";
-                lstDead.ValueMember = "CharacterID";
-                lstDead.Items.Clear();
-                foreach (var character in _chapterSave.UnitRegion.Units)
-                {
-                    if (character.IsDead) lstDead.Items.Add(character);
-                    else lstLiving.Items.Add(character);
-                }
-
                 LoadChapterData();
+                LoadUnitViewer();
 
                 tabControl1.Enabled = true;
-
-                lstLiving.SelectedIndex = 0;
-                lstDead.ClearSelected();
             }
         }
 
@@ -110,7 +105,7 @@ namespace FEFTwiddler.GUI
 
         #endregion
 
-        #region Event Handlers - Chapter Data
+        #region Chapter Data
 
         private void LoadChapterData()
         {
@@ -129,7 +124,26 @@ namespace FEFTwiddler.GUI
 
         #endregion
 
-        #region Event Handlers - Unit Viewer
+        #region Unit Viewer
+
+        public void LoadUnitViewer()
+        {
+            lstLiving.DisplayMember = "CharacterID";
+            lstLiving.ValueMember = "CharacterID";
+            lstLiving.Items.Clear();
+
+            lstDead.DisplayMember = "CharacterID";
+            lstDead.ValueMember = "CharacterID";
+            lstDead.Items.Clear();
+            foreach (var character in _chapterSave.UnitRegion.Units)
+            {
+                if (character.IsDead) lstDead.Items.Add(character);
+                else lstLiving.Items.Add(character);
+            }
+
+            lstLiving.SelectedIndex = 0;
+            lstDead.ClearSelected();
+        }
 
         private void SelectLivingCharacter(object sender, EventArgs e)
         {

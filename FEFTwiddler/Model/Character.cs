@@ -21,11 +21,12 @@ namespace FEFTwiddler.Model
             character.RawSupports = new byte[character.RawNumberOfSupports];
             character.RawBlock2 = new byte[RawBlock2Length];
             character.RawLearnedSkills = new byte[RawLearnedSkillsLength];
-            character.RawDeployedUnitInfo = new byte[(character.IsDeployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed)];
             character.RawBlock3 = new byte[RawBlock3Length];
             character.RawEndBlockType = 0x00;
             character.RawEndBlock = new byte[0x00];
             character.Initialize();
+            // These go after Initialize because it sets stuff like IsDeployed
+            character.RawDeployedUnitInfo = new byte[(character.IsDeployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed)];
             return character;
         }
 
@@ -44,11 +45,12 @@ namespace FEFTwiddler.Model
             character.RawSupports = new byte[character.RawNumberOfSupports];
             character.RawBlock2 = new byte[RawBlock2Length];
             character.RawLearnedSkills = new byte[RawLearnedSkillsLength];
-            character.RawDeployedUnitInfo = new byte[(character.IsDeployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed)];
             character.RawBlock3 = new byte[RawBlock3Length];
             character.RawEndBlockType = characterData.EndBlockType;
             character.RawEndBlock = new byte[GetRawEndBlockSizeByType(character.RawEndBlockType)];
             character.Initialize();
+            // These go after Initialize because it sets stuff like IsDeployed
+            character.RawDeployedUnitInfo = new byte[(character.IsDeployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed)];
             return character;
         }
 
@@ -619,11 +621,11 @@ namespace FEFTwiddler.Model
 
         #region Support Properties
 
-        public byte NumberOfSupports
-        {
-            get { return _rawBlock1[0x7C]; }
-            set { _rawBlock1[0x7C] = value; }
-        }
+        //public byte NumberOfSupports
+        //{
+        //    get { return _rawBlock1[0x7C]; }
+        //    set { _rawBlock1[0x7C] = value; }
+        //}
 
         #endregion
 

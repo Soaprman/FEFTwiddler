@@ -143,5 +143,6 @@ namespace FEFTwiddler.Model.NewGamePlus
         }
 
         // TODO: Give weapons + items based on class. also A rank all weapon exp
+        // TODO: Give skills (retain locktouch if original class had it?)
     }
 }

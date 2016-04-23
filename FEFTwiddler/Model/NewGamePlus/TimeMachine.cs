@@ -22,18 +22,12 @@ namespace FEFTwiddler.Model.NewGamePlus
 
         public void RemoveEveryoneButCorrin()
         {
-            foreach (var unit in _chapterSave.UnitRegion.Units)
-            {
-                if (!Data.Database.Characters.GetByID(unit.CharacterID).IsCorrin)
-                {
-                    _chapterSave.UnitRegion.Units.Remove(unit);
-                }
-            }
+            _chapterSave.UnitRegion.Units.RemoveAll((x) => !Data.Database.Characters.GetByID(x.CharacterID).IsCorrin);
         }
 
         public void InsertCharacters()
         {
-            var characterDatas = Data.Database.Characters.GetAllNamedPlayable().Where((x) => !x.IsCorrin);
+            var characterDatas = Data.Database.Characters.GetAllNamedPlayable().Where((x) => !x.IsCorrin && x.CharacterID < Enums.Character.Kana_M);
             foreach (var characterData in characterDatas)
             {
                 var unit = Model.Character.Create(characterData.CharacterID);
@@ -50,6 +44,9 @@ namespace FEFTwiddler.Model.NewGamePlus
                 LevelUp(unit, 19);
             }
         }
+
+        // TODO: Revert Corrin
+        // Remove marriage byte (otherwise paralogue 2 stays available)
 
         /// <summary>
         /// Level a unit, giving them the average gains that their growth rates would dictate
@@ -85,9 +82,6 @@ namespace FEFTwiddler.Model.NewGamePlus
             unit.GainedStats.Res += (sbyte)(res / 100);
         }
 
-        // TODO: Level up characters to where they should be
-        // Required: Growth rates in database
-
         public void UnplayChapter(Enums.Chapter chapterId)
         {
             _chapterSave.UserRegion.ChapterHistory.RemoveAll((x) => x.ChapterID == chapterId);
@@ -99,7 +93,37 @@ namespace FEFTwiddler.Model.NewGamePlus
             }
         }
 
-        private void ReturnToChapter7()
+        public void ReturnToPrologue()
+        {
+            foreach (var battlefield in _chapterSave.BattlefieldRegion.Battlefields)
+            {
+                battlefield.BattlefieldStatus = Enums.BattlefieldStatus.Unavailable;
+                battlefield.Unknown_0x05 = 0xFF;
+                battlefield.Unknown_0x06 = 0xFF;
+                battlefield.RemoveEnemies();
+            }
+            _chapterSave.UserRegion.Unknown_Block2_0xDF = 0x00;
+            _chapterSave.UserRegion.Unknown_Block2_0xE0 = 0x00;
+            _chapterSave.UserRegion.Unknown_Block2_0xE1 = 0x00;
+            _chapterSave.UserRegion.Unknown_Block2_0xE2 = 0x00;
+            _chapterSave.UserRegion.Unknown_Block2_0xE3 = 0x00;
+            _chapterSave.UserRegion.Unknown_Block2_0xEC = 0x00;
+            _chapterSave.UserRegion.Unknown_Block2_0xED = 0x00;
+            _chapterSave.UserRegion.Unknown_Block2_0xFA = 0x5E;
+            _chapterSave.UserRegion.Unknown_Block2_0xFB = 0x5E;
+            _chapterSave.UserRegion.Unknown_Block2_0xFE = 0x01;
+            _chapterSave.UserRegion.Unknown_Block2_0x101 = 0x01;
+            _chapterSave.UserRegion.Unknown_Block2_0x102 = 0x02;
+            _chapterSave.UserRegion.Unknown_Block2_0x10A = 0x00;
+            _chapterSave.UserRegion.ChapterHistory.Clear();
+            _chapterSave.UserRegion.CurrentChapter = Enums.Chapter.Prologue;
+            _chapterSave.Header.CurrentChapter = Enums.Chapter.Prologue;
+            _chapterSave.Header.Unknown_0x07 = 0x00;
+            _chapterSave.Header.Unknown_0x08 = 0x00;
+            _chapterSave.Header.ChapterName = "Randomized New Game";
+        }
+
+        public void ReturnToChapter7()
         {
             foreach (var battlefield in _chapterSave.BattlefieldRegion.Battlefields)
             {
@@ -120,11 +144,26 @@ namespace FEFTwiddler.Model.NewGamePlus
                     case Enums.Chapter.Conquest_Chapter7:
                     case Enums.Chapter.Revelation_Chapter7:
                         battlefield.BattlefieldStatus = Enums.BattlefieldStatus.Available;
+                        _chapterSave.UserRegion.ChapterHistory.RemoveAll((x) => x.ChapterID == battlefield.ChapterID);
                         break;
                     default:
                         battlefield.BattlefieldStatus = Enums.BattlefieldStatus.Unavailable;
+                        _chapterSave.UserRegion.ChapterHistory.RemoveAll((x) => x.ChapterID == battlefield.ChapterID);
                         break;
                 }
+            }
+
+            switch (_chapterSave.Header.Game)
+            {
+                case Enums.Game.Birthright:
+                    _chapterSave.UserRegion.CurrentChapter = Enums.Chapter.Birthright_Chapter7;
+                    break;
+                case Enums.Game.Conquest:
+                    _chapterSave.UserRegion.CurrentChapter = Enums.Chapter.Conquest_Chapter7;
+                    break;
+                case Enums.Game.Revelation:
+                    _chapterSave.UserRegion.CurrentChapter = Enums.Chapter.Revelation_Chapter7;
+                    break;
             }
         }
     }

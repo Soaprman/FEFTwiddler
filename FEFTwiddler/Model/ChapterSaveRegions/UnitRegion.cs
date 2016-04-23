@@ -131,7 +131,8 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
 
         // TOPS (four bytes) (0x00 through 0x03)
 
-        // Twenty-eight unknown bytes (0x04 through 0x1F)
+        // One unknown byte (0x04)
+        // Always 01, I think
 
         #endregion
 
