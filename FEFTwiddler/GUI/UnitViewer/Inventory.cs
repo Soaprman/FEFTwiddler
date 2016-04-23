@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.ComponentModel.Design;
+using System.Linq;
 using System.Windows.Forms;
 using FEFTwiddler.Enums;
 using FEFTwiddler.Extensions;
@@ -44,10 +45,6 @@ namespace FEFTwiddler.GUI.UnitViewer
             _inventory[4] = new ItemPanel(null,
                 ItemPic_5, ItemNameBox_5, ItemIsEquipped_5,
                 ItemForgesBox_5, ItemQuantBox_5, ItemHexBox_5);
-
-            // Temporary: Disable things for 0.5.0 build
-            MaxForgeAll.Enabled = false;
-            MaxQuantAll.Enabled = false;
         }
 
         private void PopulateControls()
@@ -102,15 +99,12 @@ namespace FEFTwiddler.GUI.UnitViewer
 
             this.item = Item;
 
-            Name.DataSource = Enum.GetValues(typeof(Enums.Item));
-
-            Equipped.Enabled = false;
-            Name.Enabled = false;
-
-            // Temporary: Disable things for 0.5.0 build
-            Forges.Enabled = false;
-            Charges.Enabled = false;
-            Raw.Enabled = false;
+            Name.ValueMember = "ItemID";
+            Name.DisplayMember = "DisplayName";
+            Name.DataSource = ItemDb.GetAll()
+                .Where((x) => (x.Type != ItemType.Unknown) || x.ItemID == Enums.Item.None)
+                .OrderBy((x) => x.DisplayName)
+                .ToList();
         }
 
         public void LoadItem(InventoryItem Item)
@@ -123,10 +117,12 @@ namespace FEFTwiddler.GUI.UnitViewer
         {
             EventsOff();
             var data = ItemDb.GetByID(item.ItemID);
-            Name.Text = data.DisplayName;
 
             try
             {
+                Name.SelectedValue = item.ItemID;
+                Equipped.Checked = item.IsEquipped;
+
                 if (data.Type.HasCharges())
                 {
                     Charges.Enabled = true;
@@ -155,11 +151,6 @@ namespace FEFTwiddler.GUI.UnitViewer
             catch (ArgumentOutOfRangeException e)
             { }
 
-            // Temporary: Disable things for 0.5.0 build
-            Forges.Enabled = false;
-            Charges.Enabled = false;
-            Raw.Enabled = false;
-
             EventsOn();
         }
 
@@ -170,6 +161,19 @@ namespace FEFTwiddler.GUI.UnitViewer
             {
                 item.Reparse(Hex);
             }
+        }
+
+        private void NameChanged(object sender, EventArgs e)
+        {
+            item.ItemID = (Enums.Item)Name.SelectedValue;
+            UpdatePanel();
+        }
+
+        private void EquippedChanged(object sender, EventArgs e)
+        {
+            // TODO: Enforce one item equipped at a time by unchecking the other boxes?
+            item.IsEquipped = Equipped.Checked;
+            UpdatePanel();
         }
 
         private void ForgesChanged(object sender, EventArgs e)
@@ -192,6 +196,8 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void EventsOn()
         {
+            Name.SelectedValueChanged += NameChanged;
+            Equipped.CheckedChanged += EquippedChanged;
             Forges.ValueChanged += ForgesChanged;
             Charges.ValueChanged += ChargesChanged;
             Raw.TextChanged += RawChanged;
@@ -199,6 +205,8 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void EventsOff()
         {
+            Name.SelectedValueChanged -= NameChanged;
+            Equipped.CheckedChanged -= EquippedChanged;
             Forges.ValueChanged -= ForgesChanged;
             Charges.ValueChanged -= ChargesChanged;
             Raw.TextChanged -= RawChanged;

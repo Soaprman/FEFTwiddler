@@ -186,6 +186,7 @@
             // 
             // ItemNameBox_5
             // 
+            this.ItemNameBox_5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.ItemNameBox_5.FormattingEnabled = true;
             this.ItemNameBox_5.ItemHeight = 13;
             this.ItemNameBox_5.Location = new System.Drawing.Point(25, 2);
@@ -267,6 +268,7 @@
             // 
             // ItemNameBox_4
             // 
+            this.ItemNameBox_4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.ItemNameBox_4.FormattingEnabled = true;
             this.ItemNameBox_4.ItemHeight = 13;
             this.ItemNameBox_4.Location = new System.Drawing.Point(25, 2);
@@ -348,6 +350,7 @@
             // 
             // ItemNameBox_3
             // 
+            this.ItemNameBox_3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.ItemNameBox_3.FormattingEnabled = true;
             this.ItemNameBox_3.ItemHeight = 13;
             this.ItemNameBox_3.Location = new System.Drawing.Point(25, 2);
@@ -429,6 +432,7 @@
             // 
             // ItemNameBox_2
             // 
+            this.ItemNameBox_2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.ItemNameBox_2.FormattingEnabled = true;
             this.ItemNameBox_2.ItemHeight = 13;
             this.ItemNameBox_2.Location = new System.Drawing.Point(25, 2);
@@ -550,6 +554,7 @@
             // 
             // ItemNameBox_1
             // 
+            this.ItemNameBox_1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.ItemNameBox_1.FormattingEnabled = true;
             this.ItemNameBox_1.ItemHeight = 13;
             this.ItemNameBox_1.Location = new System.Drawing.Point(25, 2);

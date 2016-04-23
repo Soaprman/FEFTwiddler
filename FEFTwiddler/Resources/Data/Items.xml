@@ -773,7 +773,8 @@
     <text lang="Japanese" displayName="風神弓" />
   </item>
   <item id="193" name="FujinYumi2" type="Bow" maxUses="0">
-    <text lang="English" displayName="Fujin Yumi" />
+    <!-- Name is to distinguish it from the other Fujin Yumi in the picker.-->
+    <text lang="English" displayName="Fujin Yumi (Bronze)" />
     <text lang="Japanese" displayName="風神弓" />
   </item>
   <item id="194" name="Skadi" type="Bow" maxUses="0">
@@ -969,7 +970,8 @@
     <text lang="Japanese" displayName="ドロー" />
   </item>
   <item id="242" name="EntrapNohr27" type="Staff" maxUses="1">
-    <text lang="English" displayName="Entrap" />
+    <!-- Name is to distinguish it from the other Entrap in the picker.-->
+    <text lang="English" displayName="Entrap (Nohr 27)" />
     <text lang="Japanese" displayName="ドロー" />
   </item>
   <item id="243" name="Bifröst" type="Staff" maxUses="1">
@@ -1273,7 +1275,8 @@
     <text lang="Japanese" displayName="黒天馬の翼" />
   </item>
   <item id="318" name="Ganglari2" type="Sword" maxUses="0">
-    <text lang="English" displayName="Ganglari" />
+    <!-- Name is to distinguish it from the other Ganglari in the picker.-->
+    <text lang="English" displayName="Ganglari (Reward)" />
     <text lang="Japanese" displayName="ガングレリ" />
   </item>
   <item id="319" name="GoldBar" type="Held" maxUses="0">
@@ -1432,7 +1435,7 @@
     <text lang="English" displayName="Exalt's Brand" />
     <text lang="Japanese" displayName="聖痕の紋章" />
   </item>
-  <item id="358" name="Unknown358" type="Unknown" maxUses="DDDDDDD">
+  <item id="358" name="Unknown358" type="Unknown" maxUses="0">
     <text lang="English" displayName="Falchion" />
     <text lang="Japanese" displayName="神剣ファルシオン" />
   </item>
@@ -1444,7 +1447,7 @@
     <text lang="English" displayName="First Blood" />
     <text lang="Japanese" displayName="神祖竜の血" />
   </item>
-  <item id="361" name="Unknown361" type="Consumable" maxUses="1">
+  <item id="361" name="Unknown361" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="displayName" />
   </item>
@@ -1464,107 +1467,107 @@
     <text lang="English" displayName="Aether" />
     <text lang="Japanese" displayName="天空の書" />
   </item>
-  <item id="366" name="Unknown366" type="Unknown" maxUses="DDDDDDD">
+  <item id="366" name="Unknown366" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="367" name="Unknown367" type="Unknown" maxUses="DDDDDDD">
+  <item id="367" name="Unknown367" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="368" name="Unknown368" type="Unknown" maxUses="DDDDDDD">
+  <item id="368" name="Unknown368" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="369" name="Unknown369" type="Unknown" maxUses="DDDDDDD">
+  <item id="369" name="Unknown369" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="370" name="Unknown370" type="Unknown" maxUses="DDDDDDD">
+  <item id="370" name="Unknown370" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="371" name="Unknown371" type="Unknown" maxUses="DDDDDDD">
+  <item id="371" name="Unknown371" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="372" name="Unknown372" type="Unknown" maxUses="DDDDDDD">
+  <item id="372" name="Unknown372" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="373" name="Unknown373" type="Unknown" maxUses="DDDDDDD">
+  <item id="373" name="Unknown373" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="374" name="Unknown374" type="Unknown" maxUses="DDDDDDD">
+  <item id="374" name="Unknown374" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="375" name="Unknown375" type="Unknown" maxUses="DDDDDDD">
+  <item id="375" name="Unknown375" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="376" name="Unknown376" type="Unknown" maxUses="DDDDDDD">
+  <item id="376" name="Unknown376" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="377" name="Unknown377" type="Unknown" maxUses="DDDDDDD">
+  <item id="377" name="Unknown377" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="378" name="Unknown378" type="Unknown" maxUses="DDDDDDD">
+  <item id="378" name="Unknown378" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="379" name="Unknown379" type="Unknown" maxUses="DDDDDDD">
+  <item id="379" name="Unknown379" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="380" name="Unknown380" type="Unknown" maxUses="DDDDDDD">
+  <item id="380" name="Unknown380" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="381" name="Unknown381" type="Unknown" maxUses="DDDDDDD">
+  <item id="381" name="Unknown381" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="382" name="Unknown382" type="Unknown" maxUses="DDDDDDD">
+  <item id="382" name="Unknown382" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="383" name="Unknown383" type="Unknown" maxUses="DDDDDDD">
+  <item id="383" name="Unknown383" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="384" name="Unknown384" type="Unknown" maxUses="DDDDDDD">
+  <item id="384" name="Unknown384" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="385" name="Unknown385" type="Unknown" maxUses="DDDDDDD">
+  <item id="385" name="Unknown385" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="386" name="Unknown386" type="Unknown" maxUses="DDDDDDD">
+  <item id="386" name="Unknown386" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="387" name="Unknown387" type="Unknown" maxUses="DDDDDDD">
+  <item id="387" name="Unknown387" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="388" name="Unknown388" type="Unknown" maxUses="DDDDDDD">
+  <item id="388" name="Unknown388" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="389" name="Unknown389" type="Unknown" maxUses="DDDDDDD">
+  <item id="389" name="Unknown389" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="390" name="Unknown390" type="Unknown" maxUses="DDDDDDD">
+  <item id="390" name="Unknown390" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>
-  <item id="391" name="Unknown391" type="Unknown" maxUses="DDDDDDD">
+  <item id="391" name="Unknown391" type="Unknown" maxUses="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
   </item>

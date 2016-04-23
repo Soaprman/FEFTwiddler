@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using FEFTwiddler.Extensions;
@@ -19,6 +20,25 @@ namespace FEFTwiddler.Data
                 .Where((x) => x.Attribute("id").Value == ((ushort)itemId).ToString())
                 .First();
 
+            return FromElement(row);
+        }
+
+        /// <summary>
+        /// Get all skills (even unlearnable ones)
+        /// </summary>
+        public IEnumerable<Item> GetAll()
+        {
+            var elements = _data.Elements("item");
+            var rows = new List<Item>();
+            foreach (var e in elements)
+            {
+                rows.Add(FromElement(e));
+            }
+            return rows;
+        }
+
+        private Item FromElement(XElement row)
+        {
             var displayName = GetDisplayName(row);
 
             return new Item
