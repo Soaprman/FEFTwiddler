@@ -51,7 +51,6 @@
             // chkRecruited
             // 
             this.chkRecruited.AutoSize = true;
-            this.chkRecruited.Enabled = false;
             this.chkRecruited.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.chkRecruited.Location = new System.Drawing.Point(3, 72);
             this.chkRecruited.Name = "chkRecruited";
@@ -63,7 +62,6 @@
             // chkEinherjar
             // 
             this.chkEinherjar.AutoSize = true;
-            this.chkEinherjar.Enabled = false;
             this.chkEinherjar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.chkEinherjar.Location = new System.Drawing.Point(3, 49);
             this.chkEinherjar.Name = "chkEinherjar";
