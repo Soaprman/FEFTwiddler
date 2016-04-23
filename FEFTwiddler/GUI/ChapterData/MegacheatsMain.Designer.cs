@@ -36,6 +36,7 @@
             this.btn0Boots = new System.Windows.Forms.Button();
             this.skills1 = new FEFTwiddler.GUI.ChapterData.Megacheats.Skills();
             this.btnNewGamePlus = new System.Windows.Forms.Button();
+            this.btnMaxStats = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AllCharMaxStatue
@@ -124,10 +125,22 @@
             this.btnNewGamePlus.UseVisualStyleBackColor = true;
             this.btnNewGamePlus.Click += new System.EventHandler(this.btnNewGamePlus_Click);
             // 
+            // btnMaxStats
+            // 
+            this.btnMaxStats.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnMaxStats.Location = new System.Drawing.Point(227, 330);
+            this.btnMaxStats.Name = "btnMaxStats";
+            this.btnMaxStats.Size = new System.Drawing.Size(218, 62);
+            this.btnMaxStats.TabIndex = 18;
+            this.btnMaxStats.Text = "Set all characters\' gained stats to 99";
+            this.btnMaxStats.UseVisualStyleBackColor = true;
+            this.btnMaxStats.Click += new System.EventHandler(this.btnMaxStats_Click);
+            // 
             // MegacheatsMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnMaxStats);
             this.Controls.Add(this.btnNewGamePlus);
             this.Controls.Add(this.skills1);
             this.Controls.Add(this.btn0Boots);
@@ -153,5 +166,6 @@
         private System.Windows.Forms.Button btn0Boots;
         private Megacheats.Skills skills1;
         private System.Windows.Forms.Button btnNewGamePlus;
+        private System.Windows.Forms.Button btnMaxStats;
     }
 }

@@ -121,6 +121,25 @@ namespace FEFTwiddler.GUI.ChapterData
             MessageBox.Show("Done!");
         }
 
+        private void btnMaxStats_Click(object sender, EventArgs e)
+        {
+            sbyte max = 0x63;
+            foreach (var character in _chapterSave.UnitRegion.Units)
+            {
+                character.GainedStats = new Model.Stat {
+                    HP = max,
+                    Str = max,
+                    Mag = max,
+                    Skl = max,
+                    Spd = max,
+                    Lck = max,
+                    Def = max,
+                    Res = max
+                };
+            }
+            MessageBox.Show("Done!");
+        }
+
         private void btnNewGamePlus_Click(object sender, EventArgs e)
         {
             var timeMachine = new Model.NewGamePlus.TimeMachine(_chapterSave);
