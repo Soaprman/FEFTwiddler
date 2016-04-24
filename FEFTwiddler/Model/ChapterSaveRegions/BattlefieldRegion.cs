@@ -32,8 +32,8 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
                     RawBlock1 = br.ReadBytes(RawBlock1Length);
 
                     Battlefields = new List<Battlefield>();
-                    var chapterCount = br.ReadByte();
-                    for (var i = 0; i < chapterCount; i++)
+                    var battlefieldCount = br.ReadByte();
+                    for (var i = 0; i < battlefieldCount; i++)
                     {
                         Battlefields.Add(new Battlefield(br.ReadBytes(0x21)));
                     }
@@ -77,7 +77,15 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
 
         // TOPS (four bytes) (0x00 through 0x03)
 
-        // Twenty-eight unknown bytes (0x04 through 0x1F)
+        // Twenty-seven unknown bytes (0x04 through 0x1E)
+        // The last thirteen bytes had this sequence on both my ch27 RV save and my "new" save, so it probably isn't something that changes much:
+        // 77 00 00 00 00 DF F2 64 6E B4 1E 05 00
+
+        public Enums.Chapter CurrentChapter
+        {
+            get { return (Enums.Chapter)_rawBlock1[0x1F]; }
+            set { _rawBlock1[0x1F] = (byte)value; }
+        }
 
         #endregion
 

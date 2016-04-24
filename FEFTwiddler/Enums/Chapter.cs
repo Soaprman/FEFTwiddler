@@ -110,7 +110,7 @@
         Revelation_Invasion1 = 0x69,
         Revelation_Invasion2 = 0x6A,
         Revelation_Invasion3 = 0x6B,
-        Chapter6 = 0x6C,
+        Chapter6 = 0x6C, // Branch of Fate
         DragonsGate = 0x6D,
         Ending = 0x6E,
         // Unknown 0x6F - 0x74

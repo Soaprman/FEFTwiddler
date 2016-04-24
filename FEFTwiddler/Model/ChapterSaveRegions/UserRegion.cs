@@ -92,7 +92,48 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
 
         // RESU (four bytes) (0x00 through 0x03)
 
-        // Nine unknown bytes (0x04 through 0x0C)
+        // One unknown byte (0x04)
+        // 0x04 is always 06?
+
+        /// <summary>
+        /// changed 2A > 4E between branch of fate and RV chapter 7
+        /// Is 0x43 on a "new" save
+        /// </summary>
+        public byte Unknown_Block1_0x05
+        {
+            get { return _rawBlock1[0x05]; }
+            set { _rawBlock1[0x05] = value; }
+        }
+
+        public byte[] TimeElapsed
+        {
+            get { return _rawBlock1.Skip(0x06).Take(0x03).ToArray(); }
+            set { Array.Copy(value, 0x00, _rawBlock1, 0x06, 0x03); }
+        }
+
+        // These three look similar to elapsed time but they're not the same.
+        public byte Unknown_Block1_0x0A
+        {
+            get { return _rawBlock1[0x0A]; }
+            set { _rawBlock1[0x0A] = value; }
+        }
+        public byte Unknown_Block1_0x0B
+        {
+            get { return _rawBlock1[0x0B]; }
+            set { _rawBlock1[0x0B] = value; }
+        }
+        public byte Unknown_Block1_0x0C
+        {
+            get { return _rawBlock1[0x0C]; }
+            set { _rawBlock1[0x0C] = value; }
+        }
+
+        // One unknown byte (0x0C)
+        // Always 00?
+
+        // 0x06 changed 6C > 8F between branch of fate and RV chapter 7
+        // 0x08 changed 45 > 34 between branch of fate and RV chapter 7
+        // 0x09 changed 2D > 6F between branch of fate and RV chapter 7
 
         public Enums.Chapter CurrentChapter
         {
@@ -183,8 +224,35 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
             set { _rawBlock2[0xE5] = _rawBlock2[0xE5].SetFlag(0x08, value); }
         }
 
-        // Three unknown bytes (0xE6 through 0xE8)
-        // Probably time elapsed
+        /// <summary>
+        /// I've seen this on saves made at the chapter 6 branch of fate
+        /// </summary>
+        public bool UnknownDeathPenalty_Flag_0x10
+        {
+            get { return _rawBlock2[0xE5].GetFlag(0x10); }
+            set { _rawBlock2[0xE5] = _rawBlock2[0xE5].SetFlag(0x10, value); }
+        }
+
+        // Not sure what these three are.
+        // 04 F0 C7 on my ch27 RV save
+        // 01 00 00 on my "new" save
+        // CHANGING THIS TO 01 00 00 DID IT. AFTER ALL THAT OTHER SHIT
+        // WE RANDOMIZED NOW FAM. WE RANDOMIZED NOW
+        public byte Unknown_Block2_0xE6
+        {
+            get { return _rawBlock2[0xE6]; }
+            set { _rawBlock2[0xE6] = value; }
+        }
+        public byte Unknown_Block2_0xE7
+        {
+            get { return _rawBlock2[0xE7]; }
+            set { _rawBlock2[0xE7] = value; }
+        }
+        public byte Unknown_Block2_0xE8
+        {
+            get { return _rawBlock2[0xE8]; }
+            set { _rawBlock2[0xE8] = value; }
+        }
 
         /// <summary>
         /// It's 0x04 on my battle prep saves.
@@ -204,8 +272,11 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
             set { _rawBlock2[0xEA] = (byte)value; }
         }
 
-        // One unknown byte (0xEB)
-        // Maybe always 00
+        public Enums.Game Game
+        {
+            get { return (Enums.Game)_rawBlock2[0xEB]; }
+            set { _rawBlock2[0xEB] = (byte)value; }
+        }
 
         /// <summary>
         /// Might be story progress.
@@ -213,7 +284,9 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
         /// It's 0x01 in my before-chapter1 save.
         /// It's 0x02 in my before-chapter2 save.
         /// It's 0x03 in my before-chapter3 save.
+        /// It's 0x04 on 054\Chapter0, which is on ch 6 branch.
         /// It's 0x05 in EldinTokuro_Chapter0_dec, which is on revelation chapter 7.
+        /// It's 0x05 on 054\Chapter2, which is on RV ch 7.
         /// It's 0x11 in hollablack2/Chapter1 save, which is on "chapter 16: pleasure palace".
         /// It's 0x26 on my chapter27 saves.
         /// </summary>

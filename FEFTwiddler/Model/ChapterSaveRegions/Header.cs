@@ -65,6 +65,15 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
         }
 
         /// <summary>
+        /// I've seen this on saves made at the chapter 6 branch of fate
+        /// </summary>
+        public bool UnknownDeathPenalty_Flag_0x10
+        {
+            get { return _raw[0x06].GetFlag(0x10); }
+            set { _raw[0x06] = _raw[0x06].SetFlag(0x10, value); }
+        }
+
+        /// <summary>
         /// is 0xF0 on all but my less than ch 6 saves (where it is 0x00)
         /// </summary>
         public byte Unknown_0x07
@@ -107,18 +116,25 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
         public string AvatarName
         {
             get { return Utils.TypeConverter.ToString(_raw.Skip(0x0F).Take(0x18).ToArray()); }
-            set { Array.Copy(Utils.TypeConverter.ToByteArray(value, 0x4B), 0x00, _raw, 0x0F, 0x18); }
+            set { Array.Copy(Utils.TypeConverter.ToByteArray(value, 0x0C), 0x00, _raw, 0x0F, 0x18); }
         }
 
         // Two unknown bytes (0x27 through 0x28)
         // Probably always 00 00, separates avatar and chapter names
 
         // The length here is a total guess
-        // Chapter Name (0x29 through 0xBD)
-        public string ChapterName
+        // Chapter Name (0x29 through 0x48) (example: "Chapter 6")
+        public string ChapterName1
         {
-            get { return Utils.TypeConverter.ToString(_raw.Skip(0x29).Take(0x96).ToArray()); }
-            set { Array.Copy(Utils.TypeConverter.ToByteArray(value, 0x4B), 0x00, _raw, 0x29, 0x96); }
+            get { return Utils.TypeConverter.ToString(_raw.Skip(0x29).Take(0x20).ToArray()); }
+            set { Array.Copy(Utils.TypeConverter.ToByteArray(value, 0x10), 0x00, _raw, 0x29, 0x20); }
+        }
+
+        // Chapter Name (0x49 through 0xBD) (example: "The Path Is Yours")
+        public string ChapterName2
+        {
+            get { return Utils.TypeConverter.ToString(_raw.Skip(0x49).Take(0x76).ToArray()); }
+            set { Array.Copy(Utils.TypeConverter.ToByteArray(value, 0x3B), 0x00, _raw, 0x49, 0x76); }
         }
 
         // One unknown byte (0xBF)
