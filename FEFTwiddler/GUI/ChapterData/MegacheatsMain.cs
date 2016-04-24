@@ -33,7 +33,7 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void InitializeControls()
         {
-            btnNewGamePlus.Text = "Experimental New Game Plus mode. May have other effects that I haven't bothered writing on this button. Click at your own risk!";
+            btnMysteryCheat.Text = "Experimental New Game Plus mode. May have other effects that I haven't bothered writing on this button. Click at your own risk!";
         }
 
         private void PopulateControls()
@@ -140,22 +140,13 @@ namespace FEFTwiddler.GUI.ChapterData
             MessageBox.Show("Done!");
         }
 
-        private void btnNewGamePlus_Click(object sender, EventArgs e)
+        private void btnMysteryCheat_Click(object sender, EventArgs e)
         {
-            var timeMachine = new Model.NewGamePlus.TimeMachine(_chapterSave);
-            var randomizer = new Model.NewGamePlus.Randomizer(_chapterSave);
-
-            timeMachine.RemoveEveryoneButCorrin();
-            timeMachine.InsertCharacters();
-            randomizer.RandomizeClasses();
-            randomizer.EquipWeapons();
-            timeMachine.LevelUpAllUnits();
-            //timeMachine.ReturnToChapter7();
-            timeMachine.ReturnToPrologue();
+            Model.Cheats.MysteryCheat(_chapterSave);
 
             MainForm.GetFromHere(this).LoadUnitViewer();
 
-            MessageBox.Show("Done! Remember... whatever happens, you asked for it!");
+            MessageBox.Show("Oh my! Do you have any idea what you just did?");
         }
     }
 }

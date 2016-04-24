@@ -35,7 +35,7 @@
             this.btn1Boots = new System.Windows.Forms.Button();
             this.btn0Boots = new System.Windows.Forms.Button();
             this.skills1 = new FEFTwiddler.GUI.ChapterData.Megacheats.Skills();
-            this.btnNewGamePlus = new System.Windows.Forms.Button();
+            this.btnMysteryCheat = new System.Windows.Forms.Button();
             this.btnMaxStats = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -114,16 +114,19 @@
             this.skills1.Size = new System.Drawing.Size(557, 259);
             this.skills1.TabIndex = 16;
             // 
-            // btnNewGamePlus
+            // btnMysteryCheat
             // 
-            this.btnNewGamePlus.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnNewGamePlus.Location = new System.Drawing.Point(585, 330);
-            this.btnNewGamePlus.Name = "btnNewGamePlus";
-            this.btnNewGamePlus.Size = new System.Drawing.Size(152, 146);
-            this.btnNewGamePlus.TabIndex = 17;
-            this.btnNewGamePlus.Text = "New Game Plus (Rewind to chapter 7) (alpha) (click if you dare)";
-            this.btnNewGamePlus.UseVisualStyleBackColor = true;
-            this.btnNewGamePlus.Click += new System.EventHandler(this.btnNewGamePlus_Click);
+            this.btnMysteryCheat.BackColor = System.Drawing.SystemColors.Control;
+            this.btnMysteryCheat.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMysteryCheat.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnMysteryCheat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnMysteryCheat.Location = new System.Drawing.Point(616, 356);
+            this.btnMysteryCheat.Name = "btnMysteryCheat";
+            this.btnMysteryCheat.Size = new System.Drawing.Size(120, 120);
+            this.btnMysteryCheat.TabIndex = 17;
+            this.btnMysteryCheat.Text = "?";
+            this.btnMysteryCheat.UseVisualStyleBackColor = false;
+            this.btnMysteryCheat.Click += new System.EventHandler(this.btnMysteryCheat_Click);
             // 
             // btnMaxStats
             // 
@@ -141,7 +144,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnMaxStats);
-            this.Controls.Add(this.btnNewGamePlus);
+            this.Controls.Add(this.btnMysteryCheat);
             this.Controls.Add(this.skills1);
             this.Controls.Add(this.btn0Boots);
             this.Controls.Add(this.btn1Boots);
@@ -165,7 +168,7 @@
         private System.Windows.Forms.Button btn1Boots;
         private System.Windows.Forms.Button btn0Boots;
         private Megacheats.Skills skills1;
-        private System.Windows.Forms.Button btnNewGamePlus;
+        private System.Windows.Forms.Button btnMysteryCheat;
         private System.Windows.Forms.Button btnMaxStats;
     }
 }

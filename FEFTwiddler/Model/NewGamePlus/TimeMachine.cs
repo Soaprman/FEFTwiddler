@@ -83,6 +83,11 @@ namespace FEFTwiddler.Model.NewGamePlus
             unit.GainedStats.Res += (sbyte)(res / 100);
         }
 
+        public void EmptyConvoy()
+        {
+            _chapterSave.ConvoyRegion.Convoy.Clear();
+        }
+
         public void UnplayChapter(Enums.Chapter chapterId)
         {
             _chapterSave.UserRegion.ChapterHistory.RemoveAll((x) => x.ChapterID == chapterId);
