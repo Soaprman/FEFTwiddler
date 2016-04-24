@@ -388,7 +388,7 @@
             this.flwDlcClassSkills.Cursor = System.Windows.Forms.Cursors.Default;
             this.flwDlcClassSkills.Location = new System.Drawing.Point(521, 79);
             this.flwDlcClassSkills.Name = "flwDlcClassSkills";
-            this.flwDlcClassSkills.Size = new System.Drawing.Size(281, 70);
+            this.flwDlcClassSkills.Size = new System.Drawing.Size(281, 99);
             this.flwDlcClassSkills.TabIndex = 4;
             // 
             // flwAmiiboClassSkills
@@ -396,7 +396,7 @@
             this.flwAmiiboClassSkills.AutoScroll = true;
             this.flwAmiiboClassSkills.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flwAmiiboClassSkills.Cursor = System.Windows.Forms.Cursors.Default;
-            this.flwAmiiboClassSkills.Location = new System.Drawing.Point(521, 168);
+            this.flwAmiiboClassSkills.Location = new System.Drawing.Point(521, 197);
             this.flwAmiiboClassSkills.Name = "flwAmiiboClassSkills";
             this.flwAmiiboClassSkills.Size = new System.Drawing.Size(281, 70);
             this.flwAmiiboClassSkills.TabIndex = 5;
@@ -406,7 +406,7 @@
             this.flwEnemyAndNpcSkills.AutoScroll = true;
             this.flwEnemyAndNpcSkills.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flwEnemyAndNpcSkills.Cursor = System.Windows.Forms.Cursors.Default;
-            this.flwEnemyAndNpcSkills.Location = new System.Drawing.Point(521, 257);
+            this.flwEnemyAndNpcSkills.Location = new System.Drawing.Point(521, 286);
             this.flwEnemyAndNpcSkills.Name = "flwEnemyAndNpcSkills";
             this.flwEnemyAndNpcSkills.Size = new System.Drawing.Size(281, 70);
             this.flwEnemyAndNpcSkills.TabIndex = 6;
@@ -423,7 +423,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(518, 152);
+            this.label11.Location = new System.Drawing.Point(518, 181);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(93, 13);
             this.label11.TabIndex = 31;
@@ -432,7 +432,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(518, 241);
+            this.label12.Location = new System.Drawing.Point(518, 270);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(112, 13);
             this.label12.TabIndex = 32;
@@ -463,7 +463,7 @@
             // btnLearnDlcClassSkills
             // 
             this.btnLearnDlcClassSkills.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLearnDlcClassSkills.Location = new System.Drawing.Point(808, 126);
+            this.btnLearnDlcClassSkills.Location = new System.Drawing.Point(808, 155);
             this.btnLearnDlcClassSkills.Name = "btnLearnDlcClassSkills";
             this.btnLearnDlcClassSkills.Size = new System.Drawing.Size(23, 23);
             this.btnLearnDlcClassSkills.TabIndex = 36;
@@ -474,7 +474,7 @@
             // btnUnlearnDlcClassSkills
             // 
             this.btnUnlearnDlcClassSkills.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUnlearnDlcClassSkills.Location = new System.Drawing.Point(808, 101);
+            this.btnUnlearnDlcClassSkills.Location = new System.Drawing.Point(808, 130);
             this.btnUnlearnDlcClassSkills.Name = "btnUnlearnDlcClassSkills";
             this.btnUnlearnDlcClassSkills.Size = new System.Drawing.Size(23, 23);
             this.btnUnlearnDlcClassSkills.TabIndex = 35;
@@ -485,7 +485,7 @@
             // btnLearnAmiiboClassSkills
             // 
             this.btnLearnAmiiboClassSkills.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLearnAmiiboClassSkills.Location = new System.Drawing.Point(808, 215);
+            this.btnLearnAmiiboClassSkills.Location = new System.Drawing.Point(808, 244);
             this.btnLearnAmiiboClassSkills.Name = "btnLearnAmiiboClassSkills";
             this.btnLearnAmiiboClassSkills.Size = new System.Drawing.Size(23, 23);
             this.btnLearnAmiiboClassSkills.TabIndex = 38;
@@ -496,7 +496,7 @@
             // btnUnlearnAmiiboClassSkills
             // 
             this.btnUnlearnAmiiboClassSkills.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUnlearnAmiiboClassSkills.Location = new System.Drawing.Point(808, 190);
+            this.btnUnlearnAmiiboClassSkills.Location = new System.Drawing.Point(808, 219);
             this.btnUnlearnAmiiboClassSkills.Name = "btnUnlearnAmiiboClassSkills";
             this.btnUnlearnAmiiboClassSkills.Size = new System.Drawing.Size(23, 23);
             this.btnUnlearnAmiiboClassSkills.TabIndex = 37;
@@ -507,7 +507,7 @@
             // btnLearnEnemyAndNpcSkills
             // 
             this.btnLearnEnemyAndNpcSkills.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLearnEnemyAndNpcSkills.Location = new System.Drawing.Point(808, 304);
+            this.btnLearnEnemyAndNpcSkills.Location = new System.Drawing.Point(808, 333);
             this.btnLearnEnemyAndNpcSkills.Name = "btnLearnEnemyAndNpcSkills";
             this.btnLearnEnemyAndNpcSkills.Size = new System.Drawing.Size(23, 23);
             this.btnLearnEnemyAndNpcSkills.TabIndex = 40;
@@ -518,7 +518,7 @@
             // btnUnlearnEnemyAndNpcSkills
             // 
             this.btnUnlearnEnemyAndNpcSkills.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUnlearnEnemyAndNpcSkills.Location = new System.Drawing.Point(808, 279);
+            this.btnUnlearnEnemyAndNpcSkills.Location = new System.Drawing.Point(808, 308);
             this.btnUnlearnEnemyAndNpcSkills.Name = "btnUnlearnEnemyAndNpcSkills";
             this.btnUnlearnEnemyAndNpcSkills.Size = new System.Drawing.Size(23, 23);
             this.btnUnlearnEnemyAndNpcSkills.TabIndex = 39;
