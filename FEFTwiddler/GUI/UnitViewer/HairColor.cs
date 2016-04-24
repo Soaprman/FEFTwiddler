@@ -50,6 +50,7 @@ namespace FEFTwiddler.GUI.UnitViewer
                                                      NewHairColor[1],
                                                      NewHairColor[2]);
                 _character.HairColor = NewHairColor;
+                if (_character.AvatarHairColor != null) _character.AvatarHairColor = NewHairColor;
             }
         }
     }
