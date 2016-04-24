@@ -34,9 +34,9 @@
             this.btnGiveEternalSeals = new System.Windows.Forms.Button();
             this.btn1Boots = new System.Windows.Forms.Button();
             this.btn0Boots = new System.Windows.Forms.Button();
-            this.skills1 = new FEFTwiddler.GUI.ChapterData.Megacheats.Skills();
             this.btnMysteryCheat = new System.Windows.Forms.Button();
             this.btnMaxStats = new System.Windows.Forms.Button();
+            this.skills1 = new FEFTwiddler.GUI.ChapterData.Megacheats.Skills();
             this.SuspendLayout();
             // 
             // AllCharMaxStatue
@@ -106,14 +106,6 @@
             this.btn0Boots.UseVisualStyleBackColor = true;
             this.btn0Boots.Click += new System.EventHandler(this.btn0Boots_Click);
             // 
-            // skills1
-            // 
-            this.skills1.Location = new System.Drawing.Point(3, 0);
-            this.skills1.Margin = new System.Windows.Forms.Padding(0);
-            this.skills1.Name = "skills1";
-            this.skills1.Size = new System.Drawing.Size(557, 259);
-            this.skills1.TabIndex = 16;
-            // 
             // btnMysteryCheat
             // 
             this.btnMysteryCheat.BackColor = System.Drawing.SystemColors.Control;
@@ -138,6 +130,14 @@
             this.btnMaxStats.Text = "Set all characters\' gained stats to 99";
             this.btnMaxStats.UseVisualStyleBackColor = true;
             this.btnMaxStats.Click += new System.EventHandler(this.btnMaxStats_Click);
+            // 
+            // skills1
+            // 
+            this.skills1.Location = new System.Drawing.Point(3, 0);
+            this.skills1.Margin = new System.Windows.Forms.Padding(0);
+            this.skills1.Name = "skills1";
+            this.skills1.Size = new System.Drawing.Size(557, 259);
+            this.skills1.TabIndex = 16;
             // 
             // MegacheatsMain
             // 

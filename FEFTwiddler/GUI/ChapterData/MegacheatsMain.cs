@@ -33,7 +33,6 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void InitializeControls()
         {
-            btnMysteryCheat.Text = "Experimental New Game Plus mode. May have other effects that I haven't bothered writing on this button. Click at your own risk!";
         }
 
         private void PopulateControls()
