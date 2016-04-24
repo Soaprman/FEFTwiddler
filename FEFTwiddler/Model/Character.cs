@@ -909,6 +909,21 @@ namespace FEFTwiddler.Model
             }
         }
 
+        public byte[] AvatarHairColor
+         {
+             get
+             {
+                 try { VerifyEndBlockSizeIfCorrin(); } catch (MissingFieldException) { return null; }
+                 return _rawEndBlock.Skip(0x22).Take(0x04).ToArray();
+             }
+             set
+             {
+                 if (value.Length != 0x04) throw new ArgumentException("AvatarHairColor must be 0x04 bytes long");
+                 Array.Copy(value, 0x00, _rawEndBlock, 0x22, 0x04);
+             }
+         }
+ 
+
         private void VerifyEndBlockSizeIfCorrin()
         {
             if (_rawEndBlock.Length != GetRawEndBlockSizeByType(0x04)) throw new MissingFieldException("Field does not exist in this character's end block");

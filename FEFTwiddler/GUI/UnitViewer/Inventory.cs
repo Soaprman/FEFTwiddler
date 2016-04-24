@@ -71,6 +71,11 @@ namespace FEFTwiddler.GUI.UnitViewer
                 item.SetCharges(35);
             }
         }
+
+        private void Inventory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
     class ItemPanel

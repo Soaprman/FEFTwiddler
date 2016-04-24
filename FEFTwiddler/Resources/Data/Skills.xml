@@ -850,7 +850,7 @@
     <text lang="English" displayName="Shadowgift" />
     <text lang="Japanese" displayName="【暗闇の加護】" />
     <learnedSkillInfo byteOffset="17" bitMask="32" />
-    <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="true" />
+    <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="142" name="StrengthTaker" personal="false" unlearnable="false">
     <text lang="English" displayName="Strengthtaker" />

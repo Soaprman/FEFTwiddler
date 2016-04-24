@@ -38,6 +38,7 @@
             this.btnNewGamePlus = new System.Windows.Forms.Button();
             this.btnMaxStats = new System.Windows.Forms.Button();
             this.btnDragonVein = new System.Windows.Forms.Button();
+            this.ultraCheat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AllCharMaxStatue
@@ -155,10 +156,22 @@
             this.btnDragonVein.UseVisualStyleBackColor = true;
             this.btnDragonVein.Click += new System.EventHandler(this.btnDragonVein_Click_1);
             // 
+            // ultraCheat
+            // 
+            this.ultraCheat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.ultraCheat.Location = new System.Drawing.Point(878, 270);
+            this.ultraCheat.Name = "ultraCheat";
+            this.ultraCheat.Size = new System.Drawing.Size(228, 39);
+            this.ultraCheat.TabIndex = 21;
+            this.ultraCheat.Text = "Ultra Cheats";
+            this.ultraCheat.UseVisualStyleBackColor = true;
+            this.ultraCheat.Click += new System.EventHandler(this.ultraCheat_Click);
+            // 
             // MegacheatsMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.ultraCheat);
             this.Controls.Add(this.btnDragonVein);
             this.Controls.Add(this.btnMaxStats);
             this.Controls.Add(this.btnNewGamePlus);
@@ -188,5 +201,6 @@
         private System.Windows.Forms.Button btnNewGamePlus;
         private System.Windows.Forms.Button btnMaxStats;
         private System.Windows.Forms.Button btnDragonVein;
+        private System.Windows.Forms.Button ultraCheat;
     }
 }

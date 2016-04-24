@@ -15,6 +15,24 @@ namespace FEFTwiddler.GUI.ChapterData
     public partial class MegacheatsMain : UserControl
     {
         private Model.ChapterSave _chapterSave;
+        private Model.Stat caps;
+
+        private System.Windows.Forms.Label lblHP;
+        private System.Windows.Forms.NumericUpDown numHP;
+        private System.Windows.Forms.Label lblStr;
+        private System.Windows.Forms.NumericUpDown numStr;
+        private System.Windows.Forms.Label lblMag;
+        private System.Windows.Forms.NumericUpDown numMag;
+        private System.Windows.Forms.Label lblSkl;
+        private System.Windows.Forms.NumericUpDown numSkl;
+        private System.Windows.Forms.Label lblSpd;
+        private System.Windows.Forms.NumericUpDown numSpd;
+        private System.Windows.Forms.Label lblLck;
+        private System.Windows.Forms.NumericUpDown numLck;
+        private System.Windows.Forms.Label lblDef;
+        private System.Windows.Forms.NumericUpDown numDef;
+        private System.Windows.Forms.Label lblRes;
+        private System.Windows.Forms.NumericUpDown numRes;
 
         public MegacheatsMain()
         {
@@ -144,7 +162,7 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void btnDragonVein_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Starting!");
+         //   MessageBox.Show("Starting!");
             foreach (var character in _chapterSave.UnitRegion.Units)
             {
                 character.CanUseDragonVein.Equals(true);
@@ -178,6 +196,42 @@ namespace FEFTwiddler.GUI.ChapterData
                 character.CanUseDragonVein = true;
             }
             MessageBox.Show("Done!");
+        }
+
+        private void ultraCheat_Click(object sender, EventArgs e)
+        {
+            
+            foreach (var character in _chapterSave.UnitRegion.Units)
+            {
+                character.CanUseDragonVein = true;
+                character.Boots = Model.Character.MaxBoots;
+                character.SRankAllWeapons();
+                character.EternalSealsUsed = 16;
+                caps = Utils.StatUtil.CalculateStatCaps(character);
+                Model.Stat stats = Utils.StatUtil.CalculateStats(character);
+
+                numHP.Maximum = caps.HP;
+                numStr.Maximum = caps.Str;
+                numMag.Maximum = caps.Mag;
+                numSkl.Maximum = caps.Skl;
+                numSpd.Maximum = caps.Spd;
+                numLck.Maximum = caps.Lck;
+                numDef.Maximum = caps.Def;
+                numRes.Maximum = caps.Res;
+                character.GainedStats = new Model.Stat
+                {
+
+                    HP = caps.HP,
+                    Str = caps.Str,
+                    Mag = caps.Mag,
+                    Skl = caps.Skl,
+                    Spd = caps.Spd,
+                    Lck = caps.Lck,
+                    Def = caps.Def,
+                    Res = caps.Res
+                };
+            }
+
         }
     }
 }
