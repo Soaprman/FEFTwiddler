@@ -45,7 +45,7 @@ namespace FEFTwiddler.GUI.UnitViewer
 
             numInternalLevel.Value = _character.InternalLevel;
             numExperience.Value = _character.Experience;
-            numBoots.Value = Model.Character.FixBoots(_character.Boots);
+            //numBoots.Value = Model.Character.FixBoots(_character.Boots);
 
             BindEventHandlers();
         }
@@ -55,7 +55,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             numLevel.ValueChanged += UpdateLevel;
             numEternalSeals.ValueChanged += UpdateEternalSeals;
             numExperience.ValueChanged += UpdateExperience;
-            numBoots.ValueChanged += UpdateBoots;
+            //numBoots.ValueChanged += UpdateBoots;
         }
 
         private void UnbindEventHandlers()
@@ -63,7 +63,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             numLevel.ValueChanged -= UpdateLevel;
             numEternalSeals.ValueChanged -= UpdateEternalSeals;
             numExperience.ValueChanged -= UpdateExperience;
-            numBoots.ValueChanged -= UpdateBoots;
+            //numBoots.ValueChanged -= UpdateBoots;
         }
 
         private void UpdateLevel(object sender, EventArgs e)
@@ -118,9 +118,14 @@ namespace FEFTwiddler.GUI.UnitViewer
             _character.Experience = (byte)numExperience.Value;
         }
 
-        private void UpdateBoots(object sender, EventArgs e)
+        /*private void UpdateBoots(object sender, EventArgs e)
         {
             _character.Boots = (byte)numBoots.Value;
         }
+
+        private void numBoots_ValueChanged(object sender, EventArgs e)
+        {
+
+        }*/
     }
 }

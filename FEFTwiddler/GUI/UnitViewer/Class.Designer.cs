@@ -36,19 +36,21 @@
             this.cmbClass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbClass.Enabled = false;
             this.cmbClass.FormattingEnabled = true;
-            this.cmbClass.Location = new System.Drawing.Point(2, 2);
+            this.cmbClass.Location = new System.Drawing.Point(3, 3);
+            this.cmbClass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbClass.Name = "cmbClass";
-            this.cmbClass.Size = new System.Drawing.Size(121, 21);
+            this.cmbClass.Size = new System.Drawing.Size(180, 28);
             this.cmbClass.TabIndex = 2;
+            this.cmbClass.SelectedIndexChanged += new System.EventHandler(this.cmbClass_SelectedIndexChanged);
             // 
             // Class
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.cmbClass);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Class";
-            this.Size = new System.Drawing.Size(125, 25);
+            this.Size = new System.Drawing.Size(188, 38);
             this.ResumeLayout(false);
 
         }

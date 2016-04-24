@@ -15,6 +15,7 @@ namespace FEFTwiddler.GUI.UnitViewer
     public partial class Class : UserControl
     {
         private Model.Character _character;
+        private byte[] _rawBlock1;
 
         public Class()
         {
@@ -41,6 +42,13 @@ namespace FEFTwiddler.GUI.UnitViewer
                 cmbClass.SelectedValue = _character.ClassID;
             else
                 cmbClass.Text = _character.ClassID.ToString();
+        }
+
+        
+
+        private void cmbClass_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

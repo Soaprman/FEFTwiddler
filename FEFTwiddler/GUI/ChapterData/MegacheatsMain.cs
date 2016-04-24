@@ -110,6 +110,8 @@ namespace FEFTwiddler.GUI.ChapterData
                 character.Boots = (byte)1;
             }
             MessageBox.Show("Done!");
+
+            
         }
 
         private void btn0Boots_Click(object sender, EventArgs e)
@@ -140,6 +142,16 @@ namespace FEFTwiddler.GUI.ChapterData
             MessageBox.Show("Done!");
         }
 
+        private void btnDragonVein_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Starting!");
+            foreach (var character in _chapterSave.UnitRegion.Units)
+            {
+                character.CanUseDragonVein.Equals(true);
+            }
+            MessageBox.Show("Done!");
+        }
+
         private void btnNewGamePlus_Click(object sender, EventArgs e)
         {
             var timeMachine = new Model.NewGamePlus.TimeMachine(_chapterSave);
@@ -156,6 +168,16 @@ namespace FEFTwiddler.GUI.ChapterData
             MainForm.GetFromHere(this).LoadUnitViewer();
 
             MessageBox.Show("Done! Remember... whatever happens, you asked for it!");
+        }
+
+        private void btnDragonVein_Click_1(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Starting!");
+            foreach (var character in _chapterSave.UnitRegion.Units)
+            {
+                character.CanUseDragonVein = true;
+            }
+            MessageBox.Show("Done!");
         }
     }
 }

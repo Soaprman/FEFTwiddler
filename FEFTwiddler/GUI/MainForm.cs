@@ -212,8 +212,7 @@ namespace FEFTwiddler.GUI
             try { accessories1.LoadCharacter(_selectedCharacter); }
             catch (Exception) { message += Environment.NewLine + "Error loading Accessories data"; }
 
-            try { hairColor1.LoadCharacter(_selectedCharacter); }
-            catch (Exception) { message += Environment.NewLine + "Error loading Hair Color data"; }
+            hairColor1.LoadCharacter(_selectedCharacter);
 
             try { weaponExperience1.LoadCharacter(_selectedCharacter); }
             catch (Exception) { message += Environment.NewLine + "Error loading Weapon Experience data"; }
@@ -242,11 +241,32 @@ namespace FEFTwiddler.GUI
 
         private void btnOpenHexEditor_Click(object sender, EventArgs e)
         {
+            
             var hex = new GUI.UnitViewer.HexEditor(_selectedCharacter);
             hex.ShowDialog();
             LoadCharacter(_selectedCharacter);
         }
 
         #endregion
+
+        private void megacheatsMain1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void levelAndExperience1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAvatarName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

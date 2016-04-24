@@ -89,11 +89,8 @@ namespace FEFTwiddler.Properties {
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;無し&quot; /&gt;
         ///    &lt;baseStats hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; res=&quot;0&quot; /&gt;
         ///    &lt;modifier hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; res=&quot;0&quot; /&gt;
-        ///    &lt;flags canUseStones=&quot;false&quot; isCorrin=&quot;false&quot; isChild=&quot;false&quot; /&gt;
-        ///  &lt;/character&gt;
-        ///  &lt;character id=&quot;1&quot; name=&quot;Corrin_M&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Corrin (M)&quot; /&gt;
-        ///    &lt; [rest of string was truncated]&quot;;.
+        ///    &lt;flags canUseStones=&quot;false&quot; isCorrin=&quot;false&quot; isChild=&quot;false&quot; isPrisoner=&quot;false&quot; isFemale=&quot;false&quot; isManakete=&quot;false&quot; isBeast=&quot;false&quot; canUseDragonVein=&quot;false&quot; /&gt;
+        ///    &lt;mainSuppo [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Characters {
             get {
@@ -109,11 +106,8 @@ namespace FEFTwiddler.Properties {
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;無し&quot; /&gt;
         ///    &lt;baseStats hp=&quot;1&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; res=&quot;0&quot; /&gt;
         ///    &lt;maxStats hp=&quot;40&quot; str=&quot;15&quot; mag=&quot;15&quot; skl=&quot;15&quot; spd=&quot;15&quot; lck=&quot;15&quot; def=&quot;15&quot; res=&quot;15&quot; /&gt;
-        ///  &lt;/class&gt;
-        ///  &lt;class id=&quot;1&quot; name=&quot;NohrNoble_M&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Nohr Noble (M)&quot; /&gt;
-        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;ダークブラッド男&quot; /&gt;
-        ///    &lt;baseStats hp= [rest of string was truncated]&quot;;.
+        ///    &lt;weaponsUsed sword=&quot;false&quot; lance=&quot;false&quot; axe=&quot;false&quot; shuriken=&quot;false&quot; bow=&quot;false&quot; tome=&quot;false&quot; staff=&quot;false&quot; stone=&quot;false&quot; /&gt;
+        ///    &lt;growthRates hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl= [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Classes {
             get {
@@ -124,17 +118,17 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;root&gt;
-        ///  &lt;item id=&quot;0&quot; name=&quot;None&quot; type=&quot;Unknown&quot; maxUses=&quot;0&quot;&gt;
+        ///  &lt;item id=&quot;0&quot; name=&quot;None&quot; type=&quot;Unknown&quot; maxUses=&quot;0&quot; rank=&quot;0&quot;&gt;
         ///    &lt;text lang=&quot;English&quot; displayName=&quot;(None)&quot; /&gt;
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;無し&quot; /&gt;
+        ///    &lt;categories npcOnly=&quot;false&quot; personal=&quot;false&quot; /&gt;
         ///  &lt;/item&gt;
-        ///  &lt;item id=&quot;1&quot; name=&quot;BronzeSword&quot; type=&quot;Sword&quot; maxUses=&quot;0&quot;&gt;
+        ///  &lt;item id=&quot;1&quot; name=&quot;BronzeSword&quot; type=&quot;Sword&quot; maxUses=&quot;0&quot; rank=&quot;1&quot;&gt;
         ///    &lt;text lang=&quot;English&quot; displayName=&quot;Bronze Sword&quot; /&gt;
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;青銅の剣&quot; /&gt;
+        ///    &lt;categories npcOnly=&quot;false&quot; personal=&quot;false&quot; /&gt;
         ///  &lt;/item&gt;
-        ///  &lt;item id=&quot;2&quot; name=&quot;IronSword&quot; type=&quot;Sword&quot; maxUses=&quot;0&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Iron Sword&quot; /&gt;
-        ///    &lt;text lang=&quot;Japan [rest of string was truncated]&quot;;.
+        ///  &lt;item id [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Items {
             get {
@@ -158,7 +152,8 @@ namespace FEFTwiddler.Properties {
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;キクヅキ&quot; /&gt;
         ///  &lt;/prisoner&gt;
         ///  &lt;prisoner id=&quot;3&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;H [rest of string was truncated]&quot;;.
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Hajime&quot; /&gt;
+        ///    &lt; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Prisoners {
             get {
@@ -169,15 +164,13 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;root&gt;
-        ///  &lt;skill id=&quot;0&quot; name=&quot;None&quot; enemyOnly=&quot;false&quot; dlc=&quot;false&quot; personal=&quot;false&quot; unlearnable=&quot;false&quot;&gt;
+        ///  &lt;skill id=&quot;0&quot; name=&quot;None&quot; personal=&quot;false&quot; unlearnable=&quot;false&quot;&gt;
         ///    &lt;text lang=&quot;English&quot; displayName=&quot;(None)&quot; /&gt;
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;無し&quot; /&gt;
         ///    &lt;learnedSkillInfo byteOffset=&quot;0&quot; bitMask=&quot;1&quot; /&gt;
+        ///    &lt;categories normalClass=&quot;true&quot; corrinOnly=&quot;false&quot; azuraOnly=&quot;false&quot; kitsuneOnly=&quot;false&quot; wolfskinOnly=&quot;false&quot; villagerOnly=&quot;false&quot; pathBonusClass=&quot;false&quot; dlcClass=&quot;false&quot; amiiboClass=&quot;false&quot; enemyAndNpc=&quot;false&quot; /&gt;
         ///  &lt;/skill&gt;
-        ///  &lt;skill id=&quot;1&quot; name=&quot;HPPlus5&quot; enemyOnly=&quot;false&quot; dlc=&quot;false&quot; personal=&quot;false&quot; unlearnable=&quot;false&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;HP +5&quot; /&gt;
-        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;【最大ＨＰ+5】&quot; /&gt;
-        ///    &lt;learned [rest of string was truncated]&quot;;.
+        ///  &lt;skill id=&quot;1&quot; name=&quot;HP [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Skills {
             get {
@@ -191,13 +184,10 @@ namespace FEFTwiddler.Properties {
         ///  &lt;stat id=&quot;0&quot; name=&quot;None&quot;&gt;
         ///    &lt;text lang=&quot;English&quot; displayName=&quot;None&quot; /&gt;
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;無し&quot; /&gt;
-        ///    &lt;boonStats hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; res=&quot;0&quot; /&gt;
-        ///    &lt;baneStats hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; res=&quot;0&quot; /&gt;
-        ///  &lt;/stat&gt;
-        ///  &lt;stat id=&quot;1&quot; name=&quot;HP&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;HP&quot; /&gt;
-        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;HP&quot; /&gt;
-        ///    &lt;boonStats hp=&quot;0&quot; str=&quot;1&quot; mag=&quot;1&quot; skl=&quot;0 [rest of string was truncated]&quot;;.
+        ///    &lt;baseBoonModifiers hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; res=&quot;0&quot; /&gt;
+        ///    &lt;maxBoonModifiers hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; res=&quot;0&quot; /&gt;
+        ///    &lt;baseBaneModifiers hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; res=&quot;0&quot; /&gt;
+        ///    &lt;maxBaneModifiers hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; r [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Stats {
             get {

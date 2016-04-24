@@ -37,14 +37,16 @@
             this.skills1 = new FEFTwiddler.GUI.ChapterData.Megacheats.Skills();
             this.btnNewGamePlus = new System.Windows.Forms.Button();
             this.btnMaxStats = new System.Windows.Forms.Button();
+            this.btnDragonVein = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AllCharMaxStatue
             // 
             this.AllCharMaxStatue.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.AllCharMaxStatue.Location = new System.Drawing.Point(3, 330);
+            this.AllCharMaxStatue.Location = new System.Drawing.Point(4, 508);
+            this.AllCharMaxStatue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AllCharMaxStatue.Name = "AllCharMaxStatue";
-            this.AllCharMaxStatue.Size = new System.Drawing.Size(218, 62);
+            this.AllCharMaxStatue.Size = new System.Drawing.Size(327, 95);
             this.AllCharMaxStatue.TabIndex = 13;
             this.AllCharMaxStatue.Text = "Set Battles and Victories to a minimum of 100 for all Characters (allows lvl 3 st" +
     "atues)";
@@ -54,9 +56,10 @@
             // btnMaxBoots
             // 
             this.btnMaxBoots.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnMaxBoots.Location = new System.Drawing.Point(3, 262);
+            this.btnMaxBoots.Location = new System.Drawing.Point(4, 403);
+            this.btnMaxBoots.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMaxBoots.Name = "btnMaxBoots";
-            this.btnMaxBoots.Size = new System.Drawing.Size(218, 62);
+            this.btnMaxBoots.Size = new System.Drawing.Size(327, 95);
             this.btnMaxBoots.TabIndex = 10;
             this.btnMaxBoots.Text = "Make all characters have 2 Boots (movement +2)";
             this.btnMaxBoots.UseVisualStyleBackColor = true;
@@ -65,9 +68,10 @@
             // btnMaxWeaponExp
             // 
             this.btnMaxWeaponExp.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnMaxWeaponExp.Location = new System.Drawing.Point(3, 398);
+            this.btnMaxWeaponExp.Location = new System.Drawing.Point(4, 612);
+            this.btnMaxWeaponExp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMaxWeaponExp.Name = "btnMaxWeaponExp";
-            this.btnMaxWeaponExp.Size = new System.Drawing.Size(218, 62);
+            this.btnMaxWeaponExp.Size = new System.Drawing.Size(327, 95);
             this.btnMaxWeaponExp.TabIndex = 9;
             this.btnMaxWeaponExp.Text = "Give all characters S rank in all weapons";
             this.btnMaxWeaponExp.UseVisualStyleBackColor = true;
@@ -76,9 +80,10 @@
             // btnGiveEternalSeals
             // 
             this.btnGiveEternalSeals.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnGiveEternalSeals.Location = new System.Drawing.Point(227, 398);
+            this.btnGiveEternalSeals.Location = new System.Drawing.Point(340, 612);
+            this.btnGiveEternalSeals.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGiveEternalSeals.Name = "btnGiveEternalSeals";
-            this.btnGiveEternalSeals.Size = new System.Drawing.Size(218, 62);
+            this.btnGiveEternalSeals.Size = new System.Drawing.Size(327, 95);
             this.btnGiveEternalSeals.TabIndex = 8;
             this.btnGiveEternalSeals.Text = "Set all characters\' eternal seal count to 16 (allows leveling to 99)";
             this.btnGiveEternalSeals.UseVisualStyleBackColor = true;
@@ -87,9 +92,10 @@
             // btn1Boots
             // 
             this.btn1Boots.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn1Boots.Location = new System.Drawing.Point(227, 262);
+            this.btn1Boots.Location = new System.Drawing.Point(340, 403);
+            this.btn1Boots.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn1Boots.Name = "btn1Boots";
-            this.btn1Boots.Size = new System.Drawing.Size(82, 62);
+            this.btn1Boots.Size = new System.Drawing.Size(123, 95);
             this.btn1Boots.TabIndex = 14;
             this.btn1Boots.Text = "Just 1 Boots";
             this.btn1Boots.UseVisualStyleBackColor = true;
@@ -98,9 +104,10 @@
             // btn0Boots
             // 
             this.btn0Boots.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn0Boots.Location = new System.Drawing.Point(315, 262);
+            this.btn0Boots.Location = new System.Drawing.Point(472, 403);
+            this.btn0Boots.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn0Boots.Name = "btn0Boots";
-            this.btn0Boots.Size = new System.Drawing.Size(82, 62);
+            this.btn0Boots.Size = new System.Drawing.Size(123, 95);
             this.btn0Boots.TabIndex = 15;
             this.btn0Boots.Text = "No Boots";
             this.btn0Boots.UseVisualStyleBackColor = true;
@@ -108,18 +115,19 @@
             // 
             // skills1
             // 
-            this.skills1.Location = new System.Drawing.Point(3, 0);
+            this.skills1.Location = new System.Drawing.Point(4, 0);
             this.skills1.Margin = new System.Windows.Forms.Padding(0);
             this.skills1.Name = "skills1";
-            this.skills1.Size = new System.Drawing.Size(557, 259);
+            this.skills1.Size = new System.Drawing.Size(836, 398);
             this.skills1.TabIndex = 16;
             // 
             // btnNewGamePlus
             // 
             this.btnNewGamePlus.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnNewGamePlus.Location = new System.Drawing.Point(585, 330);
+            this.btnNewGamePlus.Location = new System.Drawing.Point(878, 508);
+            this.btnNewGamePlus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnNewGamePlus.Name = "btnNewGamePlus";
-            this.btnNewGamePlus.Size = new System.Drawing.Size(152, 146);
+            this.btnNewGamePlus.Size = new System.Drawing.Size(228, 225);
             this.btnNewGamePlus.TabIndex = 17;
             this.btnNewGamePlus.Text = "New Game Plus (Rewind to chapter 7) (alpha) (click if you dare)";
             this.btnNewGamePlus.UseVisualStyleBackColor = true;
@@ -128,18 +136,30 @@
             // btnMaxStats
             // 
             this.btnMaxStats.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnMaxStats.Location = new System.Drawing.Point(227, 330);
+            this.btnMaxStats.Location = new System.Drawing.Point(340, 508);
+            this.btnMaxStats.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMaxStats.Name = "btnMaxStats";
-            this.btnMaxStats.Size = new System.Drawing.Size(218, 62);
+            this.btnMaxStats.Size = new System.Drawing.Size(327, 95);
             this.btnMaxStats.TabIndex = 18;
             this.btnMaxStats.Text = "Set all characters\' gained stats to 99";
             this.btnMaxStats.UseVisualStyleBackColor = true;
             this.btnMaxStats.Click += new System.EventHandler(this.btnMaxStats_Click);
             // 
+            // btnDragonVein
+            // 
+            this.btnDragonVein.Location = new System.Drawing.Point(878, 43);
+            this.btnDragonVein.Name = "btnDragonVein";
+            this.btnDragonVein.Size = new System.Drawing.Size(228, 208);
+            this.btnDragonVein.TabIndex = 19;
+            this.btnDragonVein.Text = "All Units have Dragon Vein";
+            this.btnDragonVein.UseVisualStyleBackColor = true;
+            this.btnDragonVein.Click += new System.EventHandler(this.btnDragonVein_Click_1);
+            // 
             // MegacheatsMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnDragonVein);
             this.Controls.Add(this.btnMaxStats);
             this.Controls.Add(this.btnNewGamePlus);
             this.Controls.Add(this.skills1);
@@ -151,7 +171,7 @@
             this.Controls.Add(this.btnGiveEternalSeals);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "MegacheatsMain";
-            this.Size = new System.Drawing.Size(740, 480);
+            this.Size = new System.Drawing.Size(1110, 738);
             this.ResumeLayout(false);
 
         }
@@ -167,5 +187,6 @@
         private Megacheats.Skills skills1;
         private System.Windows.Forms.Button btnNewGamePlus;
         private System.Windows.Forms.Button btnMaxStats;
+        private System.Windows.Forms.Button btnDragonVein;
     }
 }
