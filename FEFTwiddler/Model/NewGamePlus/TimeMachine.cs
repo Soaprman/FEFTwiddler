@@ -41,7 +41,8 @@ namespace FEFTwiddler.Model.NewGamePlus
             foreach (var unit in _chapterSave.UnitRegion.Units)
             {
                 // TODO: Remove fixed value, determine based on which game is being played
-                LevelUp(unit, 19);
+                // Try without it this time
+                //LevelUp(unit, 19);
             }
         }
 

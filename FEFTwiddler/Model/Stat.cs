@@ -21,6 +21,7 @@ namespace FEFTwiddler.Model
 
         public Stat()
         {
+            _raw = new byte[0x08];
             HP = 0;
             Str = 0;
             Mag = 0;
