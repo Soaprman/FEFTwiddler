@@ -101,6 +101,7 @@
             this.MaxQuantAll.TabIndex = 109;
             this.MaxQuantAll.Text = "Max!";
             this.MaxQuantAll.UseVisualStyleBackColor = true;
+            this.MaxQuantAll.Click += new System.EventHandler(this.btnMaxCharges_Click);
             // 
             // MaxForgeAll
             // 
@@ -111,6 +112,7 @@
             this.MaxForgeAll.TabIndex = 108;
             this.MaxForgeAll.Text = "Max!";
             this.MaxForgeAll.UseVisualStyleBackColor = true;
+            this.MaxForgeAll.Click += new System.EventHandler(this.btnMaxForges_Click);
             // 
             // panel14
             // 
