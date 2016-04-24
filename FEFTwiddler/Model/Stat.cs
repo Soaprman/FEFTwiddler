@@ -1,52 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FEFTwiddler.Model
 {
+    /// <summary>
+    /// Used for both stats and stat gains.
+    /// Despite using sbytes, this is safe to use for gains because no combined growths go over 127% in Fates... I think.
+    /// </summary>
     public class Stat
     {
-        /// <summary>
-        /// HP
-        /// </summary>
-        public sbyte HP { get; set; }
-        
-        /// <summary>
-        /// Strength
-        /// </summary>
-        public sbyte Str { get; set; }
+        private byte[] _raw;
+        public byte[] Raw
+        {
+            get { return _raw; }
+        }
 
-        /// <summary>
-        /// Magic
-        /// </summary>
-        public sbyte Mag { get; set; }
-
-        /// <summary>
-        /// Skill
-        /// </summary>
-        public sbyte Skl { get; set; }
-
-        /// <summary>
-        /// Speed
-        /// </summary>
-        public sbyte Spd { get; set; }
-
-        /// <summary>
-        /// Luck
-        /// </summary>
-        public sbyte Lck { get; set; }
-
-        /// <summary>
-        /// Defense
-        /// </summary>
-        public sbyte Def { get; set; }
-
-        /// <summary>
-        /// Resistance
-        /// </summary>
-        public sbyte Res { get; set; }
+        public Stat(byte[] raw)
+        {
+            _raw = raw;
+        }
 
         public Stat()
         {
@@ -58,6 +29,78 @@ namespace FEFTwiddler.Model
             Lck = 0;
             Def = 0;
             Res = 0;
+        }
+
+        /// <summary>
+        /// HP
+        /// </summary>
+        public sbyte HP
+        {
+            get { return (sbyte)_raw[0x00]; }
+            set { _raw[0x00] = (byte)value; }
+        }
+        
+        /// <summary>
+        /// Strength
+        /// </summary>
+        public sbyte Str
+        {
+            get { return (sbyte)_raw[0x01]; }
+            set { _raw[0x01] = (byte)value; }
+        }
+
+        /// <summary>
+        /// Magic
+        /// </summary>
+        public sbyte Mag
+        {
+            get { return (sbyte)_raw[0x02]; }
+            set { _raw[0x02] = (byte)value; }
+        }
+
+        /// <summary>
+        /// Skill
+        /// </summary>
+        public sbyte Skl
+        {
+            get { return (sbyte)_raw[0x03]; }
+            set { _raw[0x03] = (byte)value; }
+        }
+
+        /// <summary>
+        /// Speed
+        /// </summary>
+        public sbyte Spd
+        {
+            get { return (sbyte)_raw[0x04]; }
+            set { _raw[0x04] = (byte)value; }
+        }
+
+        /// <summary>
+        /// Luck
+        /// </summary>
+        public sbyte Lck
+        {
+            get { return (sbyte)_raw[0x05]; }
+            set { _raw[0x05] = (byte)value; }
+        }
+
+        /// <summary>
+        /// Defense
+        /// </summary>
+        public sbyte Def
+        {
+            get { return (sbyte)_raw[0x06]; }
+            set { _raw[0x06] = (byte)value; }
+        }
+
+        /// <summary>
+        /// Resistance
+        /// </summary>
+        public sbyte Res
+        {
+            get { return (sbyte)_raw[0x07]; }
+            set { _raw[0x07] = (byte)value; }
         }
 
         /// <summary>
