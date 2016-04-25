@@ -180,9 +180,9 @@
             // ItemPic_5
             // 
             this.ItemPic_5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ItemPic_5.Location = new System.Drawing.Point(0, 0);
+            this.ItemPic_5.Location = new System.Drawing.Point(5, 4);
             this.ItemPic_5.Name = "ItemPic_5";
-            this.ItemPic_5.Size = new System.Drawing.Size(24, 24);
+            this.ItemPic_5.Size = new System.Drawing.Size(16, 16);
             this.ItemPic_5.TabIndex = 78;
             this.ItemPic_5.TabStop = false;
             // 
@@ -262,9 +262,9 @@
             // ItemPic_4
             // 
             this.ItemPic_4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ItemPic_4.Location = new System.Drawing.Point(0, 0);
+            this.ItemPic_4.Location = new System.Drawing.Point(5, 4);
             this.ItemPic_4.Name = "ItemPic_4";
-            this.ItemPic_4.Size = new System.Drawing.Size(24, 24);
+            this.ItemPic_4.Size = new System.Drawing.Size(16, 16);
             this.ItemPic_4.TabIndex = 78;
             this.ItemPic_4.TabStop = false;
             // 
@@ -344,9 +344,9 @@
             // ItemPic_3
             // 
             this.ItemPic_3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ItemPic_3.Location = new System.Drawing.Point(0, 0);
+            this.ItemPic_3.Location = new System.Drawing.Point(5, 4);
             this.ItemPic_3.Name = "ItemPic_3";
-            this.ItemPic_3.Size = new System.Drawing.Size(24, 24);
+            this.ItemPic_3.Size = new System.Drawing.Size(16, 16);
             this.ItemPic_3.TabIndex = 78;
             this.ItemPic_3.TabStop = false;
             // 
@@ -426,9 +426,9 @@
             // ItemPic_2
             // 
             this.ItemPic_2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ItemPic_2.Location = new System.Drawing.Point(0, 0);
+            this.ItemPic_2.Location = new System.Drawing.Point(5, 4);
             this.ItemPic_2.Name = "ItemPic_2";
-            this.ItemPic_2.Size = new System.Drawing.Size(24, 24);
+            this.ItemPic_2.Size = new System.Drawing.Size(16, 16);
             this.ItemPic_2.TabIndex = 78;
             this.ItemPic_2.TabStop = false;
             // 
@@ -548,9 +548,9 @@
             // ItemPic_1
             // 
             this.ItemPic_1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ItemPic_1.Location = new System.Drawing.Point(0, 0);
+            this.ItemPic_1.Location = new System.Drawing.Point(5, 4);
             this.ItemPic_1.Name = "ItemPic_1";
-            this.ItemPic_1.Size = new System.Drawing.Size(24, 24);
+            this.ItemPic_1.Size = new System.Drawing.Size(16, 16);
             this.ItemPic_1.TabIndex = 78;
             this.ItemPic_1.TabStop = false;
             // 

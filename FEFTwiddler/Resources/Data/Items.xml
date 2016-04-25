@@ -1603,12 +1603,12 @@
     <text lang="Japanese" displayName="小判" />
     <categories npcOnly="false" personal="false" />
   </item>
-  <item id="320" name="BattleSeal" type="Held" subType="HeldItem" maxUses="0" rank="0">
+  <item id="320" name="BattleSeal" type="Held" subType="Emblem" maxUses="0" rank="0">
     <text lang="English" displayName="Battle Seal" />
     <text lang="Japanese" displayName="戦闘王の紋章" />
     <categories npcOnly="false" personal="false" />
   </item>
-  <item id="321" name="VisitationSeal" type="Held" subType="HeldItem" maxUses="0" rank="0">
+  <item id="321" name="VisitationSeal" type="Held" subType="Emblem" maxUses="0" rank="0">
     <text lang="English" displayName="Visitation Seal" />
     <text lang="Japanese" displayName="訪問王の紋章" />
     <categories npcOnly="false" personal="false" />
@@ -1693,7 +1693,7 @@
     <text lang="Japanese" displayName="魔防の吸収の書" />
     <categories npcOnly="false" personal="false" />
   </item>
-  <item id="338" name="MasterEmblem" type="Held" subType="HeldItem" maxUses="0" rank="0">
+  <item id="338" name="MasterEmblem" type="Held" subType="Emblem" maxUses="0" rank="0">
     <text lang="English" displayName="Master Emblem" />
     <text lang="Japanese" displayName="絆の王の紋章" />
     <categories npcOnly="false" personal="false" />

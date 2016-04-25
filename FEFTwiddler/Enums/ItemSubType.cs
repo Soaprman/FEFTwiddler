@@ -29,7 +29,7 @@
         SpecialConsumable,
         ClassChanger,
         SkillScroll,
-        HeldItem,
+        Emblem,
         GoldBar,
         Gold,
         Key,
