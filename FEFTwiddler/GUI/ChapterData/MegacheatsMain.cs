@@ -143,19 +143,33 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void btnMaxStats_Click(object sender, EventArgs e)
         {
-            sbyte max = 0x63;
             foreach (var character in _chapterSave.UnitRegion.Units)
             {
-                character.GainedStats = new Model.Stat {
-                    HP = max,
-                    Str = max,
-                    Mag = max,
-                    Skl = max,
-                    Spd = max,
-                    Lck = max,
-                    Def = max,
-                    Res = max
+                
+                caps = Utils.StatUtil.CalculateStatCaps(character);
+                Model.Stat stats = Utils.StatUtil.CalculateStats(character);
+
+                /*               numHP.Maximum = caps.HP;
+                               numStr.Maximum = caps.Str;
+                               numMag.Maximum = caps.Mag;
+                               numSkl.Maximum = caps.Skl;
+                               numSpd.Maximum = caps.Spd;
+                               numLck.Maximum = caps.Lck;
+                               numDef.Maximum = caps.Def;
+                               numRes.Maximum = caps.Res;*/
+                character.GainedStats = new Model.Stat
+                {
+
+                    HP = caps.HP,
+                    Str = caps.Str,
+                    Mag = caps.Mag,
+                    Skl = caps.Skl,
+                    Spd = caps.Spd,
+                    Lck = caps.Lck,
+                    Def = caps.Def,
+                    Res = caps.Res
                 };
+
             }
             MessageBox.Show("Done!");
         }
@@ -210,14 +224,14 @@ namespace FEFTwiddler.GUI.ChapterData
                 caps = Utils.StatUtil.CalculateStatCaps(character);
                 Model.Stat stats = Utils.StatUtil.CalculateStats(character);
 
-                numHP.Maximum = caps.HP;
+ /*               numHP.Maximum = caps.HP;
                 numStr.Maximum = caps.Str;
                 numMag.Maximum = caps.Mag;
                 numSkl.Maximum = caps.Skl;
                 numSpd.Maximum = caps.Spd;
                 numLck.Maximum = caps.Lck;
                 numDef.Maximum = caps.Def;
-                numRes.Maximum = caps.Res;
+                numRes.Maximum = caps.Res;*/
                 character.GainedStats = new Model.Stat
                 {
 
@@ -230,8 +244,9 @@ namespace FEFTwiddler.GUI.ChapterData
                     Def = caps.Def,
                     Res = caps.Res
                 };
+               
             }
-
+             MessageBox.Show("Done!");
         }
     }
 }
