@@ -48,6 +48,7 @@ namespace FEFTwiddler.Data
                 ItemID = (Enums.Item)row.GetAttribute<ushort>("id"),
                 DisplayName = displayName,
                 Type = (Enums.ItemType)Enum.Parse(typeof(Enums.ItemType), row.GetAttribute("type")),
+                SubType = (Enums.ItemSubType)Enum.Parse(typeof(Enums.ItemSubType), row.GetAttribute("subType")),
                 WeaponRank = (Enums.WeaponRank)Enum.Parse(typeof(Enums.WeaponRank), row.GetAttribute("rank")),
                 MaximumUses = row.GetAttribute<byte>("maxUses"),
                 IsNpcOnly = categories.GetAttribute("npcOnly", false)

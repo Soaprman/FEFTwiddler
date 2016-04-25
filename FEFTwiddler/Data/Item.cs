@@ -5,6 +5,7 @@
         public Enums.Item ItemID { get; set; }
         public string DisplayName { get; set; }
         public Enums.ItemType Type { get; set; }
+        public Enums.ItemSubType SubType { get; set; }
         public Enums.WeaponRank WeaponRank { get; set; }
 
         /// <summary>

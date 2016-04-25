@@ -79,6 +79,7 @@
     <Compile Include="Enums\Game.cs" />
     <Compile Include="Enums\Headwear.cs" />
     <Compile Include="Enums\Item.cs" />
+    <Compile Include="Enums\ItemSubType.cs" />
     <Compile Include="Enums\ItemType.cs" />
     <Compile Include="Enums\Language.cs" />
     <Compile Include="Enums\Route.cs" />
