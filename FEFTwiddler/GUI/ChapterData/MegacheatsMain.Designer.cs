@@ -143,7 +143,7 @@
             this.btnMaxStats.Name = "btnMaxStats";
             this.btnMaxStats.Size = new System.Drawing.Size(327, 95);
             this.btnMaxStats.TabIndex = 18;
-            this.btnMaxStats.Text = "Set all characters\' gained stats to 99";
+            this.btnMaxStats.Text = "Set all characters\' gained stats to the max";
             this.btnMaxStats.UseVisualStyleBackColor = true;
             this.btnMaxStats.Click += new System.EventHandler(this.btnMaxStats_Click);
             // 
