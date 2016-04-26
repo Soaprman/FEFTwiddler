@@ -37,6 +37,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.difficulty1 = new FEFTwiddler.GUI.ChapterData.Difficulty();
             this.btnChapterHistory = new System.Windows.Forms.Button();
             this.goldAndPoints1 = new FEFTwiddler.GUI.ChapterData.GoldAndPoints();
             this.materials1 = new FEFTwiddler.GUI.ChapterData.Materials();
@@ -64,7 +65,8 @@
             this.megacheatsMain1 = new FEFTwiddler.GUI.ChapterData.MegacheatsMain();
             this.tabNewGamePlus = new System.Windows.Forms.TabPage();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.difficulty1 = new FEFTwiddler.GUI.ChapterData.Difficulty();
+            this.decompressorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.decompressFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -77,7 +79,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem1});
+            this.fileToolStripMenuItem1,
+            this.decompressorToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
@@ -126,6 +129,11 @@
             resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // difficulty1
+            // 
+            resources.ApplyResources(this.difficulty1, "difficulty1");
+            this.difficulty1.Name = "difficulty1";
             // 
             // btnChapterHistory
             // 
@@ -295,10 +303,18 @@
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
             // 
-            // difficulty1
+            // decompressorToolStripMenuItem
             // 
-            resources.ApplyResources(this.difficulty1, "difficulty1");
-            this.difficulty1.Name = "difficulty1";
+            this.decompressorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.decompressFileToolStripMenuItem});
+            this.decompressorToolStripMenuItem.Name = "decompressorToolStripMenuItem";
+            resources.ApplyResources(this.decompressorToolStripMenuItem, "decompressorToolStripMenuItem");
+            // 
+            // decompressFileToolStripMenuItem
+            // 
+            this.decompressFileToolStripMenuItem.Name = "decompressFileToolStripMenuItem";
+            resources.ApplyResources(this.decompressFileToolStripMenuItem, "decompressFileToolStripMenuItem");
+            this.decompressFileToolStripMenuItem.Click += new System.EventHandler(this.decompressFileToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -363,6 +379,8 @@
         private System.Windows.Forms.TabPage tabNewGamePlus;
         private UnitViewer.DragonVein dragonVein1;
         private ChapterData.Difficulty difficulty1;
+        private System.Windows.Forms.ToolStripMenuItem decompressorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem decompressFileToolStripMenuItem;
     }
 }
 

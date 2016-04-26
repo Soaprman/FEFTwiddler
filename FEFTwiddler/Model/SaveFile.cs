@@ -12,7 +12,8 @@ namespace FEFTwiddler.Model
     {
         #region Members and Properties
 
-        protected string _filePath;
+        protected string _inputFilePath;
+        protected string _outputFilePath;
 
         protected Enums.SaveFileType _type;
         public Enums.SaveFileType Type
@@ -47,21 +48,22 @@ namespace FEFTwiddler.Model
 
         private void ReadFromPath(string path)
         {
-            _filePath = path;
+            _inputFilePath = path;
+            _outputFilePath = path;
             Read();
         }
 
         #region Read
 
         /// <summary>
-        /// Read data into this object from the file at _originalPath
+        /// Read data into this object from the file at _inputFilePath
         /// </summary>
         public virtual void Read()
         {
             byte[] chunk;
             int length = GetFileLength();
 
-            using (var fs = new FileStream(_filePath, FileMode.Open, FileAccess.Read))
+            using (var fs = new FileStream(_inputFilePath, FileMode.Open, FileAccess.Read))
             using (var br = new BinaryReader(fs))
             {
                 // Read the first four bytes
@@ -73,9 +75,9 @@ namespace FEFTwiddler.Model
                     _isCompressed = true;
                     SetNonChapterType();
 
-                    br.BaseStream.Seek(0, SeekOrigin.Begin);
-                    byte[] compressedBytes = new byte[length];
-                    br.Read(compressedBytes, 0, length);
+                    br.BaseStream.Seek(0x10, SeekOrigin.Begin);
+                    byte[] compressedBytes = new byte[length - 0x10];
+                    br.Read(compressedBytes, 0, length - 0x10);
                     _decompressedBytes = Decompress(compressedBytes);
 
                     return;
@@ -135,15 +137,15 @@ namespace FEFTwiddler.Model
         /// <remarks>Maybe replace this with smarter detection in the future</remarks>
         private void SetNonChapterType()
         {
-            if (_filePath.IndexOf("Exchange") > -1) _type = Enums.SaveFileType.Exchange;
-            else if (_filePath.IndexOf("Global") > -1) _type = Enums.SaveFileType.Global;
-            else if (_filePath.IndexOf("Rating") > -1) _type = Enums.SaveFileType.Rating;
+            if (_inputFilePath.IndexOf("Exchange") > -1) _type = Enums.SaveFileType.Exchange;
+            else if (_inputFilePath.IndexOf("Global") > -1) _type = Enums.SaveFileType.Global;
+            else if (_inputFilePath.IndexOf("Rating") > -1) _type = Enums.SaveFileType.Rating;
             else _type = Enums.SaveFileType.Unknown;
         }
 
         private int GetFileLength()
         {
-            return (int)(new FileInfo(_filePath).Length);
+            return (int)(new FileInfo(_inputFilePath).Length);
         }
 
         #endregion
@@ -151,13 +153,23 @@ namespace FEFTwiddler.Model
         #region Write
 
         /// <summary>
-        /// Write data from this object into the file at _filePath
+        /// Decompress this file to the original path plus _dec
+        /// </summary>
+        public void Decompress()
+        {
+            _isCompressed = false;
+            _outputFilePath = _inputFilePath + "_dec";
+            Write();
+        }
+
+        /// <summary>
+        /// Write data from this object into the file at _outputFilePath
         /// </summary>
         public virtual void Write()
         {
             WriteBackupFile();
 
-            using (var fs = new FileStream(_filePath, FileMode.Create, FileAccess.ReadWrite))
+            using (var fs = new FileStream(_outputFilePath, FileMode.Create, FileAccess.ReadWrite))
             using (var bw = new BinaryWriter(fs))
             {
                 switch (_type)
@@ -173,9 +185,12 @@ namespace FEFTwiddler.Model
         private void WriteBackupFile()
         {
             var now = DateTime.Now;
-            var backupFilePath = _filePath + "_backup_" + now.ToString("yyyyMMdd_hhmmssfff");
-            File.Copy(_filePath, backupFilePath);
-            File.SetLastWriteTime(backupFilePath, now);
+            var backupFilePath = _outputFilePath + "_backup_" + now.ToString("yyyyMMdd_hhmmssfff");
+            if (File.Exists(_outputFilePath))
+            {
+                File.Copy(_outputFilePath, backupFilePath);
+                File.SetLastWriteTime(backupFilePath, now);
+            }
         }
 
         private void WriteChapterFile(BinaryWriter bw)
@@ -210,7 +225,15 @@ namespace FEFTwiddler.Model
 
         private void WriteGlobalFile(BinaryWriter bw)
         {
-            throw new NotImplementedException();
+            if (_isCompressed)
+            {
+                bw.Write(DecompressedBytes, 0, 0x10);
+                bw.Write(Compress(DecompressedBytes.Skip(0x10).ToArray()));
+            }
+            else
+            {
+                bw.Write(DecompressedBytes);
+            }
         }
 
         private void WriteRatingFile(BinaryWriter bw)

@@ -46,6 +46,7 @@ namespace FEFTwiddler.GUI
         private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openFileDialog1.FileName = "";
+            openFileDialog1.Filter = "'Chapter' save|*";
 
             var startupPath = Config.StartupPath;
             if (startupPath == "" || !Directory.Exists(startupPath)) startupPath = Application.StartupPath;
@@ -248,5 +249,32 @@ namespace FEFTwiddler.GUI
         }
 
         #endregion
+
+        private void decompressFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.FileName = "";
+            openFileDialog1.Filter = "'Chapter' or 'Global' save|*";
+
+            var startupPath = Config.StartupPath;
+            if (startupPath == "" || !Directory.Exists(startupPath)) startupPath = Application.StartupPath;
+            openFileDialog1.InitialDirectory = startupPath;
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                Config.StartupPath = Path.GetDirectoryName(openFileDialog1.FileName);
+
+                var saveFile = Model.SaveFile.FromPath(openFileDialog1.FileName);
+
+                if (saveFile.Type != Enums.SaveFileType.Chapter && saveFile.Type != Enums.SaveFileType.Global)
+                {
+                    MessageBox.Show("This type of save is not supported yet. Only 'Chapter' and 'Global' saves are supported right now.");
+                    return;
+                }
+
+                saveFile.Decompress();
+
+                MessageBox.Show("Done! Decompressed save written to the original filename but with _dec on the end.");
+            }
+        }
     }
 }

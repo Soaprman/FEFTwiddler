@@ -16,7 +16,7 @@ namespace FEFTwiddlerTest.Model
 
         private void ReadFromPath(string path)
         {
-            _filePath = path;
+            _inputFilePath = path;
             Read();
         }
 
@@ -28,16 +28,16 @@ namespace FEFTwiddlerTest.Model
 
         private void SwitchToCopy()
         {
-            _originalFilePath = _filePath;
+            _originalFilePath = _inputFilePath;
 
-            _filePath += "_Debug";
-            File.Copy(_originalFilePath, _filePath, true);
+            _inputFilePath += "_Debug";
+            File.Copy(_originalFilePath, _inputFilePath, true);
         }
 
         public bool DecompressedFilesAreIdentical()
         {
             using (var orig = File.OpenRead(_originalFilePath))
-            using (var copy = File.OpenRead(_filePath))
+            using (var copy = File.OpenRead(_inputFilePath))
             {
                 if (orig.Length != copy.Length) return false;
 
@@ -52,7 +52,7 @@ namespace FEFTwiddlerTest.Model
         public bool CompressedFilesAreIdentical()
         {
             using (var orig = File.OpenRead(_originalFilePath))
-            using (var copy = File.OpenRead(_filePath))
+            using (var copy = File.OpenRead(_inputFilePath))
             {
                 if (orig.Length != copy.Length) return false;
 
@@ -84,7 +84,7 @@ namespace FEFTwiddlerTest.Model
 
         public void Cleanup()
         {
-            File.Delete(_filePath);
+            File.Delete(_inputFilePath);
         }
     }
 }
