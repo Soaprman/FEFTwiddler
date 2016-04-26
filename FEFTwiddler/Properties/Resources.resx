@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -915,5 +915,98 @@
   </data>
   <data name="Data_Prisoners" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\data\prisoners.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ItemSubType_Axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Axe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Beaststone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Beaststone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Bow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Breath" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Breath.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_ClassChanger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_ClassChanger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Club" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Club.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Dagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Dagger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Dragonstone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Dragonstone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Emblem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Emblem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Fist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Fist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Gold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_GoldBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_GoldBar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_HealingItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_HealingItem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Katana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Katana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Key" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Lance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Naginata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Naginata.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Obstacle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Obstacle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Rock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Rock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Rod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Saw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Saw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Scroll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Scroll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Shuriken" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Shuriken.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_SkillScroll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_SkillScroll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_SpecialConsumable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_SpecialConsumable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Staff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Staff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_StatBooster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_StatBooster.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Sword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Tome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Tome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Unknown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Unknown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemSubType_Yumi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\ItemIcons\ItemSubType_Yumi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

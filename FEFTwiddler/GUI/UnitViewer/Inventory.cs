@@ -127,6 +127,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             {
                 Name.SelectedValue = item.ItemID;
                 Equipped.Checked = item.IsEquipped;
+                Pic.Image = data.GetIcon();
 
                 if (data.Type.HasCharges())
                 {

@@ -17,6 +17,7 @@
             timeMachine.InsertCharacters();
             randomizer.RandomizeClasses();
             randomizer.EquipWeapons();
+            timeMachine.EmptyConvoy();
             timeMachine.LevelUpAllUnits();
             timeMachine.ReturnToChapter7();
             //timeMachine.ReturnToPrologue();
