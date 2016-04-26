@@ -1074,7 +1074,7 @@ namespace FEFTwiddler.Model
         public static byte WeaponExperienceForRankA = 161;
         public static byte WeaponExperienceForRankS = 251;
         public static byte MaxWeaponExperience = 0xFB;
-        public static byte MaxBoots = 0x03;
+        public static byte MaxBoots = 0x10;
        // public static bool DragonVeinAll = true;
 
         /// <summary>

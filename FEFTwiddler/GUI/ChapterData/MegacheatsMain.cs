@@ -248,5 +248,14 @@ namespace FEFTwiddler.GUI.ChapterData
             }
              MessageBox.Show("Done!");
         }
+
+        private void btnMysteryCheat_Click(object sender, EventArgs e)
+        {
+            Model.Cheats.MysteryCheat(_chapterSave);
+
+            MainForm.GetFromHere(this).LoadUnitViewer();
+
+            MessageBox.Show("Oh my! Do you have any idea what you just did?");
+        }
     }
 }

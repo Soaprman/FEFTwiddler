@@ -41,7 +41,8 @@ namespace FEFTwiddler.Model.NewGamePlus
             foreach (var unit in _chapterSave.UnitRegion.Units)
             {
                 // TODO: Remove fixed value, determine based on which game is being played
-                LevelUp(unit, 19);
+                // Try without it this time
+                //LevelUp(unit, 19);
             }
         }
 
@@ -80,6 +81,11 @@ namespace FEFTwiddler.Model.NewGamePlus
             unit.GainedStats.Lck += (sbyte)(lck / 100);
             unit.GainedStats.Def += (sbyte)(def / 100);
             unit.GainedStats.Res += (sbyte)(res / 100);
+        }
+
+        public void EmptyConvoy()
+        {
+            _chapterSave.ConvoyRegion.Convoy.Clear();
         }
 
         public void UnplayChapter(Enums.Chapter chapterId)
@@ -144,7 +150,7 @@ namespace FEFTwiddler.Model.NewGamePlus
             _chapterSave.Header.Unknown_0x07 = 0x00;
             _chapterSave.Header.Unknown_0x08 = 0x00;
             _chapterSave.Header.Game = Enums.Game.Birthright;
-            _chapterSave.Header.ChapterName1 = "Prologue";
+            _chapterSave.Header.ChapterName1 = "Branch of Fates";
             _chapterSave.Header.ChapterName2 = "Randomized";
         }
 
@@ -161,13 +167,10 @@ namespace FEFTwiddler.Model.NewGamePlus
                     case Enums.Chapter.Chapter4:
                     case Enums.Chapter.Chapter5:
                     case Enums.Chapter.Chapter6:
+                        break; // Do nothing
                     case Enums.Chapter.Birthright_Chapter6:
                     case Enums.Chapter.Conquest_Chapter6:
                     case Enums.Chapter.Revelation_Chapter6:
-                        break; // Do nothing
-                    case Enums.Chapter.Birthright_Chapter7:
-                    case Enums.Chapter.Conquest_Chapter7:
-                    case Enums.Chapter.Revelation_Chapter7:
                         battlefield.BattlefieldStatus = Enums.BattlefieldStatus.Available;
                         _chapterSave.UserRegion.ChapterHistory.RemoveAll((x) => x.ChapterID == battlefield.ChapterID);
                         break;
@@ -178,18 +181,7 @@ namespace FEFTwiddler.Model.NewGamePlus
                 }
             }
 
-            switch (_chapterSave.Header.Game)
-            {
-                case Enums.Game.Birthright:
-                    _chapterSave.UserRegion.CurrentChapter = Enums.Chapter.Birthright_Chapter7;
-                    break;
-                case Enums.Game.Conquest:
-                    _chapterSave.UserRegion.CurrentChapter = Enums.Chapter.Conquest_Chapter7;
-                    break;
-                case Enums.Game.Revelation:
-                    _chapterSave.UserRegion.CurrentChapter = Enums.Chapter.Revelation_Chapter7;
-                    break;
-            }
+            
         }
 
         public void ClearBattlefields()

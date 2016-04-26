@@ -39,6 +39,7 @@
             this.btnMaxStats = new System.Windows.Forms.Button();
             this.btnDragonVein = new System.Windows.Forms.Button();
             this.ultraCheat = new System.Windows.Forms.Button();
+            this.btnMysteryCheat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AllCharMaxStatue
@@ -167,10 +168,21 @@
             this.ultraCheat.UseVisualStyleBackColor = true;
             this.ultraCheat.Click += new System.EventHandler(this.ultraCheat_Click);
             // 
+            // btnMysteryCheat
+            // 
+            this.btnMysteryCheat.Location = new System.Drawing.Point(878, 316);
+            this.btnMysteryCheat.Name = "btnMysteryCheat";
+            this.btnMysteryCheat.Size = new System.Drawing.Size(228, 57);
+            this.btnMysteryCheat.TabIndex = 22;
+            this.btnMysteryCheat.Text = "Mystery Cheat";
+            this.btnMysteryCheat.UseVisualStyleBackColor = true;
+            this.btnMysteryCheat.Click += new System.EventHandler(this.btnMysteryCheat_Click);
+            // 
             // MegacheatsMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnMysteryCheat);
             this.Controls.Add(this.ultraCheat);
             this.Controls.Add(this.btnDragonVein);
             this.Controls.Add(this.btnMaxStats);
@@ -202,5 +214,6 @@
         private System.Windows.Forms.Button btnMaxStats;
         private System.Windows.Forms.Button btnDragonVein;
         private System.Windows.Forms.Button ultraCheat;
+        private System.Windows.Forms.Button btnMysteryCheat;
     }
 }
