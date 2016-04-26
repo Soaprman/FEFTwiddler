@@ -205,7 +205,7 @@
     <value>FEFTwiddler.GUI.ChapterData.Difficulty, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;difficulty1.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+    <value>tabChapterData</value>
   </data>
   <data name="&gt;&gt;difficulty1.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -229,7 +229,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnChapterHistory.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+    <value>tabChapterData</value>
   </data>
   <data name="&gt;&gt;btnChapterHistory.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -253,7 +253,7 @@
     <value>FEFTwiddler.GUI.ChapterData.GoldAndPoints, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;goldAndPoints1.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+    <value>tabChapterData</value>
   </data>
   <data name="&gt;&gt;goldAndPoints1.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -277,7 +277,7 @@
     <value>FEFTwiddler.GUI.ChapterData.Materials, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;materials1.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+    <value>tabChapterData</value>
   </data>
   <data name="&gt;&gt;materials1.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -310,36 +310,36 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblAvatarName.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+    <value>tabChapterData</value>
   </data>
   <data name="&gt;&gt;lblAvatarName.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tabChapterData.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
-  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabChapterData.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabChapterData.Size" type="System.Drawing.Size, System.Drawing">
     <value>750, 495</value>
   </data>
-  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+  <data name="tabChapterData.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="tabPage3.Text" xml:space="preserve">
+  <data name="tabChapterData.Text" xml:space="preserve">
     <value>Chapter Data</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;tabChapterData.Name" xml:space="preserve">
+    <value>tabChapterData</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabChapterData.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabChapterData.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tabChapterData.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
@@ -367,7 +367,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>tabPage1</value>
+    <value>tabUnitViewer</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -388,7 +388,7 @@
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lstDead.Parent" xml:space="preserve">
-    <value>tabPage1</value>
+    <value>tabUnitViewer</value>
   </data>
   <data name="&gt;&gt;lstDead.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -754,7 +754,7 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pnlUnitView.Parent" xml:space="preserve">
-    <value>tabPage1</value>
+    <value>tabUnitViewer</value>
   </data>
   <data name="&gt;&gt;pnlUnitView.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -775,36 +775,36 @@
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lstLiving.Parent" xml:space="preserve">
-    <value>tabPage1</value>
+    <value>tabUnitViewer</value>
   </data>
   <data name="&gt;&gt;lstLiving.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tabUnitViewer.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
-  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabUnitViewer.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabUnitViewer.Size" type="System.Drawing.Size, System.Drawing">
     <value>750, 495</value>
   </data>
-  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+  <data name="tabUnitViewer.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="tabPage1.Text" xml:space="preserve">
+  <data name="tabUnitViewer.Text" xml:space="preserve">
     <value>Unit Viewer</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
+  <data name="&gt;&gt;tabUnitViewer.Name" xml:space="preserve">
+    <value>tabUnitViewer</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabUnitViewer.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabUnitViewer.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tabUnitViewer.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="megacheatsMain1.Location" type="System.Drawing.Point, System.Drawing">
@@ -826,36 +826,36 @@
     <value>FEFTwiddler.GUI.ChapterData.MegacheatsMain, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;megacheatsMain1.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+    <value>tabMegacheats</value>
   </data>
   <data name="&gt;&gt;megacheatsMain1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tabMegacheats.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
-  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabMegacheats.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabMegacheats.Size" type="System.Drawing.Size, System.Drawing">
     <value>750, 495</value>
   </data>
-  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+  <data name="tabMegacheats.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
+  <data name="tabMegacheats.Text" xml:space="preserve">
     <value>Megacheats</value>
   </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="&gt;&gt;tabMegacheats.Name" xml:space="preserve">
+    <value>tabMegacheats</value>
   </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabMegacheats.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabMegacheats.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tabMegacheats.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="tabNewGamePlus.Location" type="System.Drawing.Point, System.Drawing">
@@ -884,6 +884,57 @@
   </data>
   <data name="&gt;&gt;tabNewGamePlus.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="globalDataMain1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="globalDataMain1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="globalDataMain1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>740, 480</value>
+  </data>
+  <data name="globalDataMain1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;globalDataMain1.Name" xml:space="preserve">
+    <value>globalDataMain1</value>
+  </data>
+  <data name="&gt;&gt;globalDataMain1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.GlobalData.GlobalDataMain, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;globalDataMain1.Parent" xml:space="preserve">
+    <value>tabGlobalData</value>
+  </data>
+  <data name="&gt;&gt;globalDataMain1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabGlobalData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabGlobalData.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabGlobalData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 495</value>
+  </data>
+  <data name="tabGlobalData.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tabGlobalData.Text" xml:space="preserve">
+    <value>Global Data</value>
+  </data>
+  <data name="&gt;&gt;tabGlobalData.Name" xml:space="preserve">
+    <value>tabGlobalData</value>
+  </data>
+  <data name="&gt;&gt;tabGlobalData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabGlobalData.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabGlobalData.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="tabControl1.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -9803,6 +9854,18 @@
   <data name="&gt;&gt;saveFileToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;decompressorToolStripMenuItem.Name" xml:space="preserve">
+    <value>decompressorToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;decompressorToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;decompressFileToolStripMenuItem.Name" xml:space="preserve">
+    <value>decompressFileToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;decompressFileToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;fileToolStripMenuItem.Name" xml:space="preserve">
     <value>fileToolStripMenuItem</value>
   </data>
@@ -9819,18 +9882,6 @@
     <value>saveToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;saveToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;decompressorToolStripMenuItem.Name" xml:space="preserve">
-    <value>decompressorToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;decompressorToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;decompressFileToolStripMenuItem.Name" xml:space="preserve">
-    <value>decompressFileToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;decompressFileToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

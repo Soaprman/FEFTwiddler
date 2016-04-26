@@ -16,7 +16,7 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
         }
 
         public const int Offset = 0x00000000;
-        public const int Length = 0x10;
+        public const int Length = 0x84;
 
         // EDNI (four bytes) (0x00 through 0x03)
 
@@ -32,7 +32,7 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
             }
         }
 
-        public int Region2Offset
+        public int LogbookRegionOffset
         {
             get { return BitConverter.ToInt32(_raw, 0x08); }
             set

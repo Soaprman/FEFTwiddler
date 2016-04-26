@@ -1,8 +1,8 @@
 ﻿namespace FEFTwiddler.Model.GlobalSaveRegions
 {
-    public class Region2
+    public class LogbookRegion
     {
-        public Region2(byte[] raw)
+        public LogbookRegion(byte[] raw)
         {
             _raw = raw;
         }
@@ -17,6 +17,6 @@
 
         // The rest of the bytes
 
-        // This section looks like the LK08 region from ChapterSave
+        // The end of this section looks like the LK08 region from ChapterSave
     }
 }
