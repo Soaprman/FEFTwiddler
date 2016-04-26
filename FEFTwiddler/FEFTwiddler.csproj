@@ -260,6 +260,10 @@
     <Compile Include="Model\Character.cs" />
     <Compile Include="Model\Cheats.cs" />
     <Compile Include="Model\ConvoyItem.cs" />
+    <Compile Include="Model\GlobalSave.cs" />
+    <Compile Include="Model\GlobalSaveRegions\CompressionRegion.cs" />
+    <Compile Include="Model\GlobalSaveRegions\Region1.cs" />
+    <Compile Include="Model\GlobalSaveRegions\Region2.cs" />
     <Compile Include="Model\InventoryItem.cs" />
     <Compile Include="Model\ISave.cs" />
     <Compile Include="Model\Item.cs" />

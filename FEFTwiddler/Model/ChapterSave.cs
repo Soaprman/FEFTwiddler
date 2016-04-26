@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.IO;
-using FEFTwiddler.Enums;
-using FEFTwiddler.Extensions;
 
 namespace FEFTwiddler.Model
 {
