@@ -122,19 +122,9 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void btnMaxStats_Click(object sender, EventArgs e)
         {
-            sbyte max = 0x63;
             foreach (var character in _chapterSave.UnitRegion.Units)
             {
-                character.GainedStats = new Model.Stat {
-                    HP = max,
-                    Str = max,
-                    Mag = max,
-                    Skl = max,
-                    Spd = max,
-                    Lck = max,
-                    Def = max,
-                    Res = max
-                };
+                character.GainedStats = Utils.StatUtil.CalculateStatCaps(character);
             }
             MessageBox.Show("Done!");
         }
