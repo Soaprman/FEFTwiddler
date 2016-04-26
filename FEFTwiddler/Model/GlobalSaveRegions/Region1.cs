@@ -111,7 +111,46 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
 
         // 1ULG (four bytes) (0x00 through 0x03)
 
-        // Sixty-two unknown bytes (0x04 through 0x41)
+        // Forty-four unknown bytes (0x04 through 0x2F)
+
+        public uint UnlockedCharacterCount1
+        {
+            get
+            {
+                return BitConverter.ToUInt32(_rawBlock1, 0x30);
+            }
+            set
+            {
+                _rawBlock1[0x30] = (byte)(value);
+                _rawBlock1[0x31] = (byte)(value >> 8);
+                _rawBlock1[0x32] = (byte)(value >> 16);
+                _rawBlock1[0x33] = (byte)(value >> 24);
+            }
+        }
+
+        public uint UnlockedCharacterCount2
+        {
+            get
+            {
+                return BitConverter.ToUInt32(_rawBlock1, 0x34);
+            }
+            set
+            {
+                _rawBlock1[0x34] = (byte)(value);
+                _rawBlock1[0x35] = (byte)(value >> 8);
+                _rawBlock1[0x36] = (byte)(value >> 16);
+                _rawBlock1[0x37] = (byte)(value >> 24);
+            }
+        }
+
+        public byte[] UnlockedCharacters
+        {
+            get { return _rawBlock1.Skip(0x38).Take(0x09).ToArray(); }
+            set { Array.Copy(value, 0x00, _rawBlock1, 0x38, 0x09); }
+        }
+
+        // One unknown byte (0x41)
+        // Always 00?
 
         #endregion
 

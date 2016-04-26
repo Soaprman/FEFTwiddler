@@ -4,6 +4,11 @@
     {
         public static void UnlockSupportLog(GlobalSave globalSave)
         {
+            globalSave.Region1.UnlockedCharacterCount1 = 0x47;
+            globalSave.Region1.UnlockedCharacterCount2 = 0x47;
+            globalSave.Region1.UnlockedCharacters = new byte[] {
+                0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x7F
+            };
             globalSave.Region1.SupportCount1 = 0xDE1;
             globalSave.Region1.SupportCount2 = 0xDE1;
             globalSave.Region1.RawSupports = new byte[] {
