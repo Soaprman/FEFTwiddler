@@ -2758,7 +2758,7 @@
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
-    <hairColor r="190" g="190" b="190" a="255" />
+    <hairColor r="72" g="95" b="145" a="255" />
     <growthRates hp="45" str="30" mag="5" skl="50" spd="55" lck="60" def="35" res="20" />
   </character>
   <character id="251" name="Ike">
@@ -2769,7 +2769,7 @@
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
-    <hairColor r="190" g="190" b="190" a="255" />
+    <hairColor r="64" g="85" b="155" a="255" />
     <growthRates hp="50" str="45" mag="0" skl="40" spd="35" lck="45" def="40" res="10" />
   </character>
   <character id="252" name="Lucina">
@@ -2791,7 +2791,7 @@
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <mainSupports count="0" />
     <familySupports count="0" />
-    <hairColor r="190" g="190" b="190" a="255" />
+    <hairColor r="246" g="244" b="239" a="255" />
     <growthRates hp="35" str="30" mag="40" skl="45" spd="30" lck="25" def="25" res="40" />
   </character>
   <character id="254" name="Outrealm">
