@@ -39,92 +39,74 @@ namespace FEFTwiddler.GUI.ChapterData
         {
         }
 
-        private void btnAllCharAllSkills_Click(object sender, EventArgs e)
-        {
-            foreach (var character in _chapterSave.UnitRegion.Units)
-            {
-                character.LearnNormalClassSkills();
-            }
-            MessageBox.Show("Done!");
-        }
-
-        private void btnAllCharAllSkillsDLC_Click(object sender, EventArgs e)
-        {
-            foreach (var character in _chapterSave.UnitRegion.Units)
-            {
-                character.LearnPathBonusClassSkills();
-            }
-            MessageBox.Show("Done!");
-        }
-
-        private void btnAllCharAllSkillsEnemy_Click(object sender, EventArgs e)
-        {
-            foreach (var character in _chapterSave.UnitRegion.Units)
-            {
-                //character.LearnEnemySkills();
-            }
-            MessageBox.Show("Done!");
-        }
-
         private void btnAllCharMaxStatue_Click(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.UnitRegion.Units)
+            foreach (var unit in _chapterSave.UnitRegion.Units)
             {
-                character.MaximizeStatues();
+                unit.MaximizeStatues();
             }
             MessageBox.Show("Done!");
         }
 
         private void btnGiveEternalSeals_Click(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.UnitRegion.Units)
+            foreach (var unit in _chapterSave.UnitRegion.Units)
             {
-                character.EternalSealsUsed = 16;
+                unit.EternalSealsUsed = 16;
             }
             MessageBox.Show("Done!");
         }
 
         private void btnMaxWeaponExp_Click(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.UnitRegion.Units)
+            foreach (var unit in _chapterSave.UnitRegion.Units)
             {
-                character.SRankAllWeapons();
+                unit.SRankAllWeapons();
             }
             MessageBox.Show("Done!");
         }
 
         private void btnMaxBoots_Click(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.UnitRegion.Units)
+            foreach (var unit in _chapterSave.UnitRegion.Units)
             {
-                character.Boots = Model.Character.MaxBoots;
+                unit.Boots = Model.Character.MaxBoots;
             }
             MessageBox.Show("Done!");
         }
 
         private void btn1Boots_Click(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.UnitRegion.Units)
+            foreach (var unit in _chapterSave.UnitRegion.Units)
             {
-                character.Boots = (byte)1;
+                unit.Boots = (byte)1;
             }
             MessageBox.Show("Done!");
         }
 
         private void btn0Boots_Click(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.UnitRegion.Units)
+            foreach (var unit in _chapterSave.UnitRegion.Units)
             {
-                character.Boots = (byte)0;
+                unit.Boots = (byte)0;
             }
             MessageBox.Show("Done!");
         }
 
         private void btnMaxStats_Click(object sender, EventArgs e)
         {
-            foreach (var character in _chapterSave.UnitRegion.Units)
+            foreach (var unit in _chapterSave.UnitRegion.Units)
             {
-                character.GainedStats = Utils.StatUtil.CalculateStatCaps(character);
+                unit.GainedStats = Utils.StatUtil.CalculateStatCaps(unit);
+            }
+            MessageBox.Show("Done!");
+        }
+
+        private void btnGiveDragonBlood_Click(object sender, EventArgs e)
+        {
+            foreach (var unit in _chapterSave.UnitRegion.Units)
+            {
+                unit.CanUseDragonVein = true;
             }
             MessageBox.Show("Done!");
         }
@@ -137,5 +119,6 @@ namespace FEFTwiddler.GUI.ChapterData
 
             MessageBox.Show("Oh my! Do you have any idea what you just did?");
         }
+
     }
 }
