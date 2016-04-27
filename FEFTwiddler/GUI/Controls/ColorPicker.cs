@@ -82,7 +82,7 @@ namespace FEFTwiddler.GUI.Controls
             UnbindEvents();
             _colorDialog.Color = _color;
             _colorDialog.ShowDialog();
-            _color = _colorDialog.Color;
+            _color = Color.FromArgb(_color.A, _colorDialog.Color.R, _colorDialog.Color.G, _colorDialog.Color.B);
             BindEvents();
 
             UpdatePreview();
