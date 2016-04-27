@@ -4,7 +4,7 @@
     {
         public static void UnlockSupportLog(GlobalSave globalSave)
         {
-            globalSave.Region1.Unknown_Block1_0x2D = 0x01;
+            //globalSave.Region1.Unknown_Block1_0x2D = 0x01;
 
             globalSave.Region1.UnlockedCharacterCount1 = 0x47;
             globalSave.Region1.UnlockedCharacterCount2 = 0x47;

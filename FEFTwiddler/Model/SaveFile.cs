@@ -216,7 +216,7 @@ namespace FEFTwiddler.Model
             if (_isCompressed)
             {
                 bw.Write(DecompressedBytes, 0, 0xC0);
-                bw.Write(GetHeader(DecompressedBytes));
+                bw.Write(GetChapterHeader(DecompressedBytes));
                 bw.Write(Compress(DecompressedBytes.Skip(0xC0).ToArray()));
             }
             else
@@ -225,7 +225,7 @@ namespace FEFTwiddler.Model
             }
         }
 
-        private byte[] GetHeader(byte[] decompressedBytes)
+        private byte[] GetChapterHeader(byte[] decompressedBytes)
         {
             uint length = (uint)(decompressedBytes.Length - 0xC0);
             byte[] header = new byte[0x10];
@@ -245,13 +245,24 @@ namespace FEFTwiddler.Model
         {
             if (_isCompressed)
             {
-                bw.Write(DecompressedBytes, 0, 0x10);
-                bw.Write(Compress(DecompressedBytes.Skip(0x10).ToArray()));
+                bw.Write(GetGlobalHeader(DecompressedBytes));
+                bw.Write(Compress(DecompressedBytes.ToArray()));
             }
             else
             {
                 bw.Write(DecompressedBytes);
             }
+        }
+
+        private byte[] GetGlobalHeader(byte[] decompressedBytes)
+        {
+            uint length = (uint)(decompressedBytes.Length);
+            byte[] header = new byte[0x10];
+            Array.Copy(Encoding.ASCII.GetBytes("PMOC"), header, 0x4);
+            Array.Copy(BitConverter.GetBytes(2), 0, header, 0x4, 0x4); // 2 = Huffman-8 Compression.
+            Array.Copy(BitConverter.GetBytes(length), 0, header, 0x8, 0x4);
+            Array.Copy(BitConverter.GetBytes(GetChecksum(decompressedBytes)), 0, header, 0xC, 0x4); // CRC32 of Decompressed Data.
+            return header;
         }
 
         private void WriteRatingFile(BinaryWriter bw)
