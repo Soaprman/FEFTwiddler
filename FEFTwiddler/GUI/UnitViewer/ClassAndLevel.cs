@@ -38,21 +38,20 @@ namespace FEFTwiddler.GUI.UnitViewer
             _tooltip.SetToolTip(numEternalSeals, "The number of eternal seals used. Each seal increases this unit's level cap by 5.");
             _tooltip.SetToolTip(numBoots, "The number of shoes this unit is wearing. Barefooted units incur a movement penalty because the terrain makes their feet hurt.");
 
+            cmbClass.DisplayMember = "DisplayName";
+            cmbClass.ValueMember = "ClassID";
+
             BindEventHandlers();
         }
 
         private void PopulateControls()
         {
+            this.Invalidate();
             UnbindEventHandlers();
 
             if (Enum.IsDefined(typeof(Enums.Class), _character.ClassID))
             {
-                cmbClass.DisplayMember = "DisplayName";
-                cmbClass.ValueMember = "ClassID";
                 cmbClass.DataSource = GetClassDataSource();
-
-                cmbClass.Text = ""; // Just prevents some visual jumpiness to Nohr Noble when switching units
-
                 cmbClass.SelectedValue = _character.ClassID;
             }
             else
@@ -71,6 +70,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             numBoots.Value = Model.Character.FixBoots(_character.Boots);
 
             BindEventHandlers();
+            this.Refresh();
         }
 
         private List<Data.Class> GetClassDataSource()
