@@ -1,6 +1,6 @@
 ﻿namespace FEFTwiddler.GUI.UnitViewer
 {
-    partial class LevelAndExperience
+    partial class ClassAndLevel
     {
         /// <summary> 
         /// Required designer variable.
@@ -38,6 +38,7 @@
             this.numExperience = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.numLevel = new System.Windows.Forms.NumericUpDown();
+            this.cmbClass = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numInternalLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numEternalSeals)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBoots)).BeginInit();
@@ -49,7 +50,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label21.Location = new System.Drawing.Point(14, 31);
+            this.label21.Location = new System.Drawing.Point(91, 31);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(58, 13);
             this.label21.TabIndex = 81;
@@ -57,8 +58,7 @@
             // 
             // numInternalLevel
             // 
-            this.numInternalLevel.Enabled = false;
-            this.numInternalLevel.Location = new System.Drawing.Point(74, 29);
+            this.numInternalLevel.Location = new System.Drawing.Point(151, 29);
             this.numInternalLevel.Maximum = new decimal(new int[] {
             255,
             0,
@@ -77,7 +77,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label20.Location = new System.Drawing.Point(3, 83);
+            this.label20.Location = new System.Drawing.Point(80, 57);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(69, 13);
             this.label20.TabIndex = 79;
@@ -85,7 +85,7 @@
             // 
             // numEternalSeals
             // 
-            this.numEternalSeals.Location = new System.Drawing.Point(74, 81);
+            this.numEternalSeals.Location = new System.Drawing.Point(151, 55);
             this.numEternalSeals.Maximum = new decimal(new int[] {
             47,
             0,
@@ -99,7 +99,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label19.Location = new System.Drawing.Point(38, 109);
+            this.label19.Location = new System.Drawing.Point(2, 57);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(34, 13);
             this.label19.TabIndex = 77;
@@ -107,7 +107,7 @@
             // 
             // numBoots
             // 
-            this.numBoots.Location = new System.Drawing.Point(74, 107);
+            this.numBoots.Location = new System.Drawing.Point(38, 55);
             this.numBoots.Maximum = new decimal(new int[] {
             2,
             0,
@@ -121,7 +121,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(44, 57);
+            this.label2.Location = new System.Drawing.Point(8, 31);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 75;
@@ -129,7 +129,7 @@
             // 
             // numExperience
             // 
-            this.numExperience.Location = new System.Drawing.Point(74, 55);
+            this.numExperience.Location = new System.Drawing.Point(38, 29);
             this.numExperience.Maximum = new decimal(new int[] {
             99,
             0,
@@ -143,7 +143,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(52, 6);
+            this.label1.Location = new System.Drawing.Point(129, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(20, 13);
             this.label1.TabIndex = 73;
@@ -151,7 +151,7 @@
             // 
             // numLevel
             // 
-            this.numLevel.Location = new System.Drawing.Point(74, 3);
+            this.numLevel.Location = new System.Drawing.Point(151, 3);
             this.numLevel.Maximum = new decimal(new int[] {
             255,
             0,
@@ -171,10 +171,20 @@
             0,
             0});
             // 
-            // LevelAndExperience
+            // cmbClass
+            // 
+            this.cmbClass.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cmbClass.FormattingEnabled = true;
+            this.cmbClass.Location = new System.Drawing.Point(3, 3);
+            this.cmbClass.Name = "cmbClass";
+            this.cmbClass.Size = new System.Drawing.Size(121, 21);
+            this.cmbClass.TabIndex = 82;
+            // 
+            // ClassAndLevel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.cmbClass);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.numInternalLevel);
             this.Controls.Add(this.label20);
@@ -186,8 +196,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numLevel);
             this.Margin = new System.Windows.Forms.Padding(0);
-            this.Name = "LevelAndExperience";
-            this.Size = new System.Drawing.Size(115, 130);
+            this.Name = "ClassAndLevel";
+            this.Size = new System.Drawing.Size(192, 79);
             ((System.ComponentModel.ISupportInitialize)(this.numInternalLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numEternalSeals)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBoots)).EndInit();
@@ -210,5 +220,6 @@
         private System.Windows.Forms.NumericUpDown numExperience;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numLevel;
+        private System.Windows.Forms.ComboBox cmbClass;
     }
 }

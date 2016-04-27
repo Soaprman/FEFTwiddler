@@ -238,11 +238,8 @@ namespace FEFTwiddler.GUI
                 lblName.Text = character.CharacterID.ToString();
             }
 
-            try { class1.LoadCharacter(_selectedCharacter); }
-            catch (Exception) { message += Environment.NewLine + "Error loading Class data"; }
-
-            try { levelAndExperience1.LoadCharacter(_selectedCharacter); }
-            catch (Exception) { message += Environment.NewLine + "Error loading Level and Experience data"; }
+            try { classAndLevel1.LoadCharacter(_selectedCharacter); }
+            catch (Exception) { message += Environment.NewLine + "Error loading Class and Level data"; }
 
             try { stats1.LoadCharacter(_selectedCharacter); }
             catch (Exception) { message += Environment.NewLine + "Error loading Stats data"; }

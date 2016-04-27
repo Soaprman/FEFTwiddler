@@ -190,12 +190,6 @@
     <Compile Include="GUI\UnitViewer\BattleData.Designer.cs">
       <DependentUpon>BattleData.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\UnitViewer\Class.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\UnitViewer\Class.Designer.cs">
-      <DependentUpon>Class.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\UnitViewer\Skills.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -238,11 +232,11 @@
     <Compile Include="GUI\UnitViewer\LearnedSkillsViewer.Designer.cs">
       <DependentUpon>LearnedSkillsViewer.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\UnitViewer\LevelAndExperience.cs">
+    <Compile Include="GUI\UnitViewer\ClassAndLevel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\UnitViewer\LevelAndExperience.Designer.cs">
-      <DependentUpon>LevelAndExperience.cs</DependentUpon>
+    <Compile Include="GUI\UnitViewer\ClassAndLevel.Designer.cs">
+      <DependentUpon>ClassAndLevel.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\UnitViewer\StatEditor.cs">
       <SubType>Form</SubType>
@@ -343,9 +337,6 @@
     <EmbeddedResource Include="GUI\UnitViewer\BattleData.resx">
       <DependentUpon>BattleData.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\UnitViewer\Class.resx">
-      <DependentUpon>Class.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\Skills.resx">
       <DependentUpon>Skills.cs</DependentUpon>
     </EmbeddedResource>
@@ -367,8 +358,8 @@
     <EmbeddedResource Include="GUI\UnitViewer\LearnedSkillsViewer.resx">
       <DependentUpon>LearnedSkillsViewer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\UnitViewer\LevelAndExperience.resx">
-      <DependentUpon>LevelAndExperience.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\UnitViewer\ClassAndLevel.resx">
+      <DependentUpon>ClassAndLevel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\StatEditor.resx">
       <DependentUpon>StatEditor.cs</DependentUpon>

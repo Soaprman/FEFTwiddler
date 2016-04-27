@@ -35,6 +35,7 @@
             this.saveFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.decompressorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.decompressFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.compressFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -51,11 +52,9 @@
             this.dragonVein1 = new FEFTwiddler.GUI.UnitViewer.DragonVein();
             this.btnOpenHexEditor = new System.Windows.Forms.Button();
             this.battleData1 = new FEFTwiddler.GUI.UnitViewer.BattleData();
-            this.class1 = new FEFTwiddler.GUI.UnitViewer.Class();
             this.flags1 = new FEFTwiddler.GUI.UnitViewer.Flags();
             this.accessories1 = new FEFTwiddler.GUI.UnitViewer.Accessories();
             this.stats1 = new FEFTwiddler.GUI.UnitViewer.Stats();
-            this.levelAndExperience1 = new FEFTwiddler.GUI.UnitViewer.LevelAndExperience();
             this.weaponExperience1 = new FEFTwiddler.GUI.UnitViewer.WeaponExperience();
             this.hairColor1 = new FEFTwiddler.GUI.UnitViewer.HairColor();
             this.inventory1 = new FEFTwiddler.GUI.UnitViewer.Inventory();
@@ -69,7 +68,7 @@
             this.tabGlobalData = new System.Windows.Forms.TabPage();
             this.globalDataMain1 = new FEFTwiddler.GUI.GlobalData.GlobalDataMain();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.compressFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.classAndLevel1 = new FEFTwiddler.GUI.UnitViewer.ClassAndLevel();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabChapterData.SuspendLayout();
@@ -121,6 +120,12 @@
             this.decompressFileToolStripMenuItem.Name = "decompressFileToolStripMenuItem";
             resources.ApplyResources(this.decompressFileToolStripMenuItem, "decompressFileToolStripMenuItem");
             this.decompressFileToolStripMenuItem.Click += new System.EventHandler(this.decompressFileToolStripMenuItem_Click);
+            // 
+            // compressFileToolStripMenuItem
+            // 
+            this.compressFileToolStripMenuItem.Name = "compressFileToolStripMenuItem";
+            resources.ApplyResources(this.compressFileToolStripMenuItem, "compressFileToolStripMenuItem");
+            this.compressFileToolStripMenuItem.Click += new System.EventHandler(this.compressFileToolStripMenuItem_Click);
             // 
             // fileToolStripMenuItem
             // 
@@ -202,14 +207,13 @@
             // pnlUnitView
             // 
             this.pnlUnitView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlUnitView.Controls.Add(this.classAndLevel1);
             this.pnlUnitView.Controls.Add(this.dragonVein1);
             this.pnlUnitView.Controls.Add(this.btnOpenHexEditor);
             this.pnlUnitView.Controls.Add(this.battleData1);
-            this.pnlUnitView.Controls.Add(this.class1);
             this.pnlUnitView.Controls.Add(this.flags1);
             this.pnlUnitView.Controls.Add(this.accessories1);
             this.pnlUnitView.Controls.Add(this.stats1);
-            this.pnlUnitView.Controls.Add(this.levelAndExperience1);
             this.pnlUnitView.Controls.Add(this.weaponExperience1);
             this.pnlUnitView.Controls.Add(this.hairColor1);
             this.pnlUnitView.Controls.Add(this.inventory1);
@@ -235,11 +239,6 @@
             resources.ApplyResources(this.battleData1, "battleData1");
             this.battleData1.Name = "battleData1";
             // 
-            // class1
-            // 
-            resources.ApplyResources(this.class1, "class1");
-            this.class1.Name = "class1";
-            // 
             // flags1
             // 
             resources.ApplyResources(this.flags1, "flags1");
@@ -254,11 +253,6 @@
             // 
             resources.ApplyResources(this.stats1, "stats1");
             this.stats1.Name = "stats1";
-            // 
-            // levelAndExperience1
-            // 
-            resources.ApplyResources(this.levelAndExperience1, "levelAndExperience1");
-            this.levelAndExperience1.Name = "levelAndExperience1";
             // 
             // weaponExperience1
             // 
@@ -334,11 +328,10 @@
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
             // 
-            // compressFileToolStripMenuItem
+            // classAndLevel1
             // 
-            this.compressFileToolStripMenuItem.Name = "compressFileToolStripMenuItem";
-            resources.ApplyResources(this.compressFileToolStripMenuItem, "compressFileToolStripMenuItem");
-            this.compressFileToolStripMenuItem.Click += new System.EventHandler(this.compressFileToolStripMenuItem_Click);
+            resources.ApplyResources(this.classAndLevel1, "classAndLevel1");
+            this.classAndLevel1.Name = "classAndLevel1";
             // 
             // MainForm
             // 
@@ -388,12 +381,10 @@
         private UnitViewer.HairColor hairColor1;
         private UnitViewer.WeaponExperience weaponExperience1;
         private ChapterData.Materials materials1;
-        private UnitViewer.LevelAndExperience levelAndExperience1;
         private UnitViewer.Stats stats1;
         private UnitViewer.Accessories accessories1;
         private ChapterData.MegacheatsMain megacheatsMain1;
         private UnitViewer.Flags flags1;
-        private UnitViewer.Class class1;
         private UnitViewer.BattleData battleData1;
         private ChapterData.GoldAndPoints goldAndPoints1;
         private System.Windows.Forms.Label label1;
@@ -409,6 +400,7 @@
         private System.Windows.Forms.TabPage tabGlobalData;
         private GlobalData.GlobalDataMain globalDataMain1;
         private System.Windows.Forms.ToolStripMenuItem compressFileToolStripMenuItem;
+        private UnitViewer.ClassAndLevel classAndLevel1;
     }
 }
 
