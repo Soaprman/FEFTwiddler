@@ -6,7 +6,6 @@ namespace FEFTwiddler.Data
     {
         public Enums.Character CharacterID { get; set; }
         public string DisplayName { get; set; }
-        public Enums.Gender Gender { get; set; }
 
         public Model.Stat BaseStats;
         public Model.Stat Modifiers;

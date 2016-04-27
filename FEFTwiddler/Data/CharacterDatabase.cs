@@ -69,7 +69,6 @@ namespace FEFTwiddler.Data
             {
                 CharacterID = (Enums.Character)row.GetAttribute<ushort>("id"),
                 DisplayName = displayName,
-                Gender = (Enums.Gender)Enum.Parse(typeof(Enums.Gender), row.GetAttribute("gender")),
                 BaseStats = new Model.Stat
                 {
                     HP = baseStats.GetAttribute<sbyte>("hp"),

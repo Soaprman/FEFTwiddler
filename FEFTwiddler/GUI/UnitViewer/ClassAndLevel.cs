@@ -76,7 +76,7 @@ namespace FEFTwiddler.GUI.UnitViewer
         private List<Data.Class> GetClassDataSource()
         {
             var characterData = Data.Database.Characters.GetByID(_character.CharacterID);
-            var classes = Data.Database.Classes.GetAll().Where((x) => x.Gender == characterData.Gender).ToList();
+            var classes = Data.Database.Classes.GetAll().Where((x) => !x.IsNpcOnly && x.IsFemale == characterData.IsFemale).ToList();
             return classes;
         }
 

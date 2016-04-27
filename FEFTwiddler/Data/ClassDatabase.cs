@@ -47,7 +47,6 @@ namespace FEFTwiddler.Data
             {
                 ClassID = (Enums.Class)row.GetAttribute<byte>("id"),
                 DisplayName = displayName,
-                Gender = (Enums.Gender)Enum.Parse(typeof(Enums.Gender), row.GetAttribute("gender")),
                 BaseStats = new Model.Stat()
                 {
                     HP = baseStats.GetAttribute<sbyte>("hp"),
@@ -89,6 +88,8 @@ namespace FEFTwiddler.Data
                 UsesTome = weaponsUsed.GetAttribute<bool>("tome"),
                 UsesStaff = weaponsUsed.GetAttribute<bool>("staff"),
                 UsesStone = weaponsUsed.GetAttribute<bool>("stone"),
+                IsFemale = categories.GetAttribute<bool>("isFemale"),
+                IsNpcOnly = categories.GetAttribute<bool>("isNpcOnly"),
                 IsPromoted = categories.GetAttribute<bool>("isPromoted"),
                 IsSpecial = categories.GetAttribute<bool>("isSpecial")
             };
