@@ -4,6 +4,8 @@
     {
         public static void UnlockSupportLog(GlobalSave globalSave)
         {
+            globalSave.Region1.Unknown_Block1_0x2D = 0x01;
+
             globalSave.Region1.UnlockedCharacterCount1 = 0x47;
             globalSave.Region1.UnlockedCharacterCount2 = 0x47;
             globalSave.Region1.UnlockedCharacters = new byte[] {
@@ -41,6 +43,13 @@
                 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,
                 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x01
             };
+
+            //globalSave.Region1.UnknownUnlocks1 = new byte[] {
+            //    0x7F, 0x7F, 0x7F
+            //};
+            //globalSave.Region1.UnknownUnlocks2 = new byte[] {
+            //    0xFC, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF
+            //};
         }
 
         public static void UnlockAllStatues(ChapterSave chapterSave)

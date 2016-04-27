@@ -111,7 +111,17 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
 
         // 1ULG (four bytes) (0x00 through 0x03)
 
-        // Forty-four unknown bytes (0x04 through 0x2F)
+        // Forty-one unknown bytes (0x04 through 0x2C)
+
+        // Seems to be 01 in full support log saves
+        public byte Unknown_Block1_0x2D
+        {
+            get { return _rawBlock1[0x2D]; }
+            set { _rawBlock1[0x2D] = value; }
+        }
+
+        // Two unknown bytes (0x2E through 0x2F)
+        // Always 03 00?
 
         public uint UnlockedCharacterCount1
         {
@@ -170,7 +180,33 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
 
         #region Block 2
 
-        // Forty-two (0x26) unknown bytes (0x00 through 0x2f)
+        // Five unknown bytes (0x00 through 0x04)
+        // Always 00 18 00 00 00?
+
+        // 7F 7F 7F on the "completed" saves I have
+        // Maybe movies
+        public byte[] UnknownUnlocks1
+        {
+            get { return _rawBlock2.Skip(0x05).Take(0x03).ToArray(); }
+            set { Array.Copy(value, 0x00, _rawBlock2, 0x05, 0x03); }
+        }
+
+        // Five unknown bytes (0x08 through 0x0C)
+        // Always 00 80 00 00 00?
+
+        // FC FF FF FF FF FF FF FF FF FF FF FF on the "completed" saves I have
+        // Maybe music
+        public byte[] UnknownUnlocks2
+        {
+            get { return _rawBlock2.Skip(0x0D).Take(0x0C).ToArray(); }
+            set { Array.Copy(value, 0x00, _rawBlock2, 0x0D, 0x0C); }
+        }
+
+        // Two unknown bytes (0x19 through 0x1A)
+        // Not sure. They seem to vary
+
+        // Eleven unknown bytes (0x1B through 0x2F)
+        // Always 00 00 00 16 00 00 00 16 00 00 00?
 
         // Hair color block
         // Eighty-eight (0x58) bytes (0x26 through 0x7D)

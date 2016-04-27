@@ -66,9 +66,10 @@
             this.tabMegacheats = new System.Windows.Forms.TabPage();
             this.megacheatsMain1 = new FEFTwiddler.GUI.ChapterData.MegacheatsMain();
             this.tabNewGamePlus = new System.Windows.Forms.TabPage();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabGlobalData = new System.Windows.Forms.TabPage();
             this.globalDataMain1 = new FEFTwiddler.GUI.GlobalData.GlobalDataMain();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.compressFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabChapterData.SuspendLayout();
@@ -110,7 +111,8 @@
             // decompressorToolStripMenuItem
             // 
             this.decompressorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.decompressFileToolStripMenuItem});
+            this.decompressFileToolStripMenuItem,
+            this.compressFileToolStripMenuItem});
             this.decompressorToolStripMenuItem.Name = "decompressorToolStripMenuItem";
             resources.ApplyResources(this.decompressorToolStripMenuItem, "decompressorToolStripMenuItem");
             // 
@@ -315,11 +317,6 @@
             this.tabNewGamePlus.Name = "tabNewGamePlus";
             this.tabNewGamePlus.UseVisualStyleBackColor = true;
             // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
-            // 
             // tabGlobalData
             // 
             this.tabGlobalData.Controls.Add(this.globalDataMain1);
@@ -331,6 +328,17 @@
             // 
             resources.ApplyResources(this.globalDataMain1, "globalDataMain1");
             this.globalDataMain1.Name = "globalDataMain1";
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
+            // 
+            // compressFileToolStripMenuItem
+            // 
+            this.compressFileToolStripMenuItem.Name = "compressFileToolStripMenuItem";
+            resources.ApplyResources(this.compressFileToolStripMenuItem, "compressFileToolStripMenuItem");
+            this.compressFileToolStripMenuItem.Click += new System.EventHandler(this.compressFileToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -400,6 +408,7 @@
         private System.Windows.Forms.ToolStripMenuItem decompressFileToolStripMenuItem;
         private System.Windows.Forms.TabPage tabGlobalData;
         private GlobalData.GlobalDataMain globalDataMain1;
+        private System.Windows.Forms.ToolStripMenuItem compressFileToolStripMenuItem;
     }
 }
 

@@ -145,11 +145,17 @@
   <data name="decompressFileToolStripMenuItem.Text" xml:space="preserve">
     <value>Decompress File</value>
   </data>
+  <data name="compressFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
+  </data>
+  <data name="compressFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Compress File</value>
+  </data>
   <data name="decompressorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 20</value>
+    <value>89, 20</value>
   </data>
   <data name="decompressorToolStripMenuItem.Text" xml:space="preserve">
-    <value>Decompressor</value>
+    <value>Compression</value>
   </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -9882,6 +9888,12 @@
     <value>saveToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;saveToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;compressFileToolStripMenuItem.Name" xml:space="preserve">
+    <value>compressFileToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;compressFileToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

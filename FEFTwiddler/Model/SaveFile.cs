@@ -2,6 +2,7 @@
 using System.Linq;
 using System.IO;
 using System.Text;
+using FEFTwiddler.Extensions;
 
 namespace FEFTwiddler.Model
 {
@@ -159,6 +160,23 @@ namespace FEFTwiddler.Model
         {
             _isCompressed = false;
             _outputFilePath = _inputFilePath + "_dec";
+            Write();
+        }
+
+        /// <summary>
+        /// Compress this file to the original path, minus _dec if applicable
+        /// </summary>
+        public void Compress()
+        {
+            _isCompressed = true;
+            if (_inputFilePath.Right(4) == "_dec")
+            {
+                _outputFilePath = _inputFilePath.Substring(0, _inputFilePath.Length - 4) ;
+            }
+            else
+            {
+                _outputFilePath = _inputFilePath;
+            }
             Write();
         }
 
