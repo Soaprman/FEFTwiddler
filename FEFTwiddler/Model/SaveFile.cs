@@ -185,6 +185,8 @@ namespace FEFTwiddler.Model
         /// </summary>
         public virtual void Write()
         {
+            if (_outputFilePath == null) _outputFilePath = _inputFilePath;
+
             WriteBackupFile();
 
             using (var fs = new FileStream(_outputFilePath, FileMode.Create, FileAccess.ReadWrite))
