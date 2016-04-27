@@ -1,5 +1,5 @@
 # FEFTwiddler
-A feature-light work-in-progress save editor for Fire Emblem Fates
+A save editor for Fire Emblem Fates
 
 What this does:
 * Opens a "chapter" save
