@@ -50,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
+    <Compile Include="Data\Accessory.cs" />
+    <Compile Include="Data\AccessoryDatabase.cs" />
     <Compile Include="Data\BaseDatabase.cs" />
     <Compile Include="Data\Building.cs" />
     <Compile Include="Data\BuildingDatabase.cs" />
@@ -66,7 +68,8 @@
     <Compile Include="Data\SkillDatabase.cs" />
     <Compile Include="Data\Stat.cs" />
     <Compile Include="Data\StatDatabase.cs" />
-    <Compile Include="Enums\Armwear.cs" />
+    <Compile Include="Enums\Accessory.cs" />
+    <Compile Include="Enums\AccessoryType.cs" />
     <Compile Include="Enums\Battlefield.cs" />
     <Compile Include="Enums\BattlefieldStatus.cs" />
     <Compile Include="Enums\Building.cs" />
@@ -75,9 +78,7 @@
     <Compile Include="Enums\Character.cs" />
     <Compile Include="Enums\Class.cs" />
     <Compile Include="Enums\Difficulty.cs" />
-    <Compile Include="Enums\Facewear.cs" />
     <Compile Include="Enums\Game.cs" />
-    <Compile Include="Enums\Headwear.cs" />
     <Compile Include="Enums\Item.cs" />
     <Compile Include="Enums\ItemSubType.cs" />
     <Compile Include="Enums\ItemType.cs" />
@@ -86,7 +87,6 @@
     <Compile Include="Enums\SaveFileType.cs" />
     <Compile Include="Enums\Skill.cs" />
     <Compile Include="Enums\Stat.cs" />
-    <Compile Include="Enums\Underwear.cs" />
     <Compile Include="Enums\WeaponRank.cs" />
     <Compile Include="Extensions\BinaryReaderExtensions.cs" />
     <Compile Include="Extensions\BitmapExtensions.cs" />
@@ -402,6 +402,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Data\Accessories.xml" />
     <Content Include="Resources\Data\Buildings.xml" />
     <Content Include="Resources\Data\Characters.xml" />
     <Content Include="Resources\Data\Classes.xml" />

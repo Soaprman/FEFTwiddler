@@ -63,6 +63,25 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;root&gt;
+        ///  &lt;accessory id=&quot;0&quot; name=&quot;None&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;None&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;無し&quot; /&gt;
+        ///    &lt;flags isHeadwear=&quot;true&quot; isFacewear=&quot;true&quot; isArmwear=&quot;true&quot; isUnderwear=&quot;true&quot; /&gt;
+        ///  &lt;/accessory&gt;
+        ///  &lt;accessory id=&quot;1&quot; name=&quot;MarthsTiara&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Marth&apos;s Tiara&quot; /&gt;
+        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;マルスのティアラ&quot; /&gt;
+        ///    &lt;flags isHeadwear=&quot;true&quot; isFacewear=&quot;false&quot; isArmwear=&quot;false&quot; isUnderwear=&quot;f [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Data_Accessories {
+            get {
+                return ResourceManager.GetString("Data_Accessories", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///&lt;root&gt;
         ///  &lt;building id=&quot;1&quot; name=&quot;DawnArmory_1&quot;&gt;
         ///    &lt;text lang=&quot;English&quot; displayName=&quot;Dawn Armory 1&quot; /&gt;
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;白夜武器屋１&quot; /&gt;
@@ -150,7 +169,8 @@ namespace FEFTwiddler.Properties {
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;キクヅキ&quot; /&gt;
         ///  &lt;/prisoner&gt;
         ///  &lt;prisoner id=&quot;3&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;H [rest of string was truncated]&quot;;.
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Hajime&quot; /&gt;
+        ///    &lt; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Prisoners {
             get {
