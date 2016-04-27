@@ -304,14 +304,6 @@ namespace FEFTwiddler.Model
             get { return Position_FromLeft != 0xFF || Position_FromTop != 0xFF; }
         }
 
-        /// <summary>
-        /// This character starts as a promoted class, and can level to 40 without using eternal seals.
-        /// </summary>
-        public bool IsPrepromote()
-        {
-            return InternalLevel < 10 && ClassID.IsPromoted();
-        }
-
         #endregion
 
         #region Block 1 Properties
@@ -1014,7 +1006,7 @@ namespace FEFTwiddler.Model
 
         #region Boundary Enforcement
 
-        public static byte MaxEternalSealsUsed = 0x2F;
+        public const byte MaxEternalSealsUsed = 0x2B;
         public static byte MinWeaponExperience = 0x01;
         public static byte WeaponExperienceForRankE = 1;
         public static byte WeaponExperienceForRankD = 21;
@@ -1030,8 +1022,9 @@ namespace FEFTwiddler.Model
         /// </summary>
         public byte GetBaseMaxLevel()
         {
-            if (!ClassID.IsPromoted()) return 20;
-            else return (byte)(IsPrepromote() ? 40 : 20);
+            var classData = Data.Database.Classes.GetByID(ClassID);
+            if (classData.IsSpecial) return 40;
+            else return 20;
         }
 
         /// <summary>
@@ -1040,10 +1033,9 @@ namespace FEFTwiddler.Model
         /// <returns></returns>
         public byte GetModifiedMaxLevel()
         {
-            byte maxLevel = GetBaseMaxLevel();
-            if (!ClassID.IsPromoted()) return maxLevel;
-            maxLevel += (byte)(EternalSealsUsed * 5);
-            return maxLevel;
+            var classData = Data.Database.Classes.GetByID(ClassID);
+            if (!classData.IsPromoted && !classData.IsSpecial) return 20;
+            else return (byte)(GetBaseMaxLevel() + (EternalSealsUsed * 5));
         }
 
         /// <summary>
@@ -1051,8 +1043,10 @@ namespace FEFTwiddler.Model
         /// </summary>
         public byte GetTheoreticalMaxLevel()
         {
-            if (!ClassID.IsPromoted()) return 20;
-            else return (byte)(IsPrepromote() ? 255 : 235);
+            var classData = Data.Database.Classes.GetByID(ClassID);
+            if (classData.IsSpecial) return 255;
+            else if (classData.IsPromoted) return 235;
+            else return 20;
         }
 
         public byte FixLevel()
@@ -1062,15 +1056,9 @@ namespace FEFTwiddler.Model
             else return Level;
         }
 
-        public byte GetMaxEternalSealsUsed()
-        {
-            return (byte)(IsPrepromote() ? MaxEternalSealsUsed - 4 : MaxEternalSealsUsed);
-        }
-
         public byte FixEternalSealsUsed()
         {
-            byte maxEternalSealsUsed = GetMaxEternalSealsUsed();
-            if (EternalSealsUsed > maxEternalSealsUsed) return maxEternalSealsUsed;
+            if (EternalSealsUsed > MaxEternalSealsUsed) return MaxEternalSealsUsed;
             else return EternalSealsUsed;
         }
 

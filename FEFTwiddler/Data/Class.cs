@@ -4,6 +4,7 @@
     {
         public Enums.Class ClassID { get; set; }
         public string DisplayName { get; set; }
+        public Enums.Gender Gender { get; set; }
 
         public Model.Stat BaseStats;
         public Model.Stat MaximumStats;
@@ -17,5 +18,8 @@
         public bool UsesTome { get; set; }
         public bool UsesStaff { get; set; }
         public bool UsesStone { get; set; }
+
+        public bool IsPromoted { get; set; }
+        public bool IsSpecial { get; set; }
     }
 }

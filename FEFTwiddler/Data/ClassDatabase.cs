@@ -41,11 +41,13 @@ namespace FEFTwiddler.Data
             var maxStats = row.Elements("maxStats").First();
             var growthRates = row.Elements("growthRates").First();
             var weaponsUsed = row.Elements("weaponsUsed").First();
+            var categories = row.Elements("categories").First();
 
             return new Class
             {
                 ClassID = (Enums.Class)row.GetAttribute<byte>("id"),
                 DisplayName = displayName,
+                Gender = (Enums.Gender)Enum.Parse(typeof(Enums.Gender), row.GetAttribute("gender")),
                 BaseStats = new Model.Stat()
                 {
                     HP = baseStats.GetAttribute<sbyte>("hp"),
@@ -86,7 +88,9 @@ namespace FEFTwiddler.Data
                 UsesBow = weaponsUsed.GetAttribute<bool>("bow"),
                 UsesTome = weaponsUsed.GetAttribute<bool>("tome"),
                 UsesStaff = weaponsUsed.GetAttribute<bool>("staff"),
-                UsesStone = weaponsUsed.GetAttribute<bool>("stone")
+                UsesStone = weaponsUsed.GetAttribute<bool>("stone"),
+                IsPromoted = categories.GetAttribute<bool>("isPromoted"),
+                IsSpecial = categories.GetAttribute<bool>("isSpecial")
             };
         }
     }

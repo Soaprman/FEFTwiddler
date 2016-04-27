@@ -38,7 +38,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             UnbindEventHandlers();
 
             // Set eternal seals before level, since level's range is restricted by eternal seals
-            numEternalSeals.Maximum = _character.GetMaxEternalSealsUsed();
+            numEternalSeals.Maximum = Model.Character.MaxEternalSealsUsed;
             numEternalSeals.Value = _character.FixEternalSealsUsed();
             numLevel.Maximum = _character.GetTheoreticalMaxLevel();
             numLevel.Value = _character.FixLevel();

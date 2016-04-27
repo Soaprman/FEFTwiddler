@@ -79,6 +79,7 @@
     <Compile Include="Enums\Class.cs" />
     <Compile Include="Enums\Difficulty.cs" />
     <Compile Include="Enums\Game.cs" />
+    <Compile Include="Enums\Gender.cs" />
     <Compile Include="Enums\Item.cs" />
     <Compile Include="Enums\ItemSubType.cs" />
     <Compile Include="Enums\ItemType.cs" />

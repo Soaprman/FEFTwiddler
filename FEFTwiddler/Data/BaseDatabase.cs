@@ -65,9 +65,11 @@ namespace FEFTwiddler.Data
             {
                 var row = rows.ElementAt(i);
 
-                var growthRates = XElement.Parse(@"<growthRates hp=""0"" str=""0"" mag=""0"" skl=""0"" spd=""0"" lck=""0"" def=""0"" res=""0"" />");
+                row.SetAttributeValue("gender", "Male");
 
-                row.Add(growthRates);
+                var categories = XElement.Parse(@"<categories isPromoted=""false"" isSpecial=""false"" />");
+
+                row.Add(categories);
 
 
             }
