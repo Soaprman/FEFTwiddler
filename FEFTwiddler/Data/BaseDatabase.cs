@@ -60,16 +60,16 @@ namespace FEFTwiddler.Data
         /// </summary>
         protected void UpdateXmlStructure()
         {
-            var rows = _data.Elements("class");
+            var rows = _data.Elements("character");
             for (var i = 0; i < rows.Count(); i++)
             {
                 var row = rows.ElementAt(i);
 
                 row.SetAttributeValue("gender", "Male");
 
-                var categories = XElement.Parse(@"<categories isPromoted=""false"" isSpecial=""false"" />");
+                //var categories = XElement.Parse(@"<categories isPromoted=""false"" isSpecial=""false"" />");
 
-                row.Add(categories);
+                //row.Add(categories);
 
 
             }

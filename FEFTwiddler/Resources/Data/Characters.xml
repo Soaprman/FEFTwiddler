@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <root>
-  <character id="0" name="None">
+  <character id="0" name="None" gender="None">
     <text lang="English" displayName="None" />
     <text lang="Japanese" displayName="無し" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -11,7 +11,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="1" name="Corrin_M">
+  <character id="1" name="Corrin_M" gender="Male">
     <text lang="English" displayName="Corrin (M)" />
     <text lang="Japanese" displayName="カムイ男" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -22,7 +22,7 @@
     <hairColor r="128" g="128" b="128" a="255" />
     <growthRates hp="45" str="45" mag="30" skl="40" spd="45" lck="45" def="35" res="25" />
   </character>
-  <character id="2" name="Corrin_F">
+  <character id="2" name="Corrin_F" gender="Female">
     <text lang="English" displayName="Corrin (F)" />
     <text lang="Japanese" displayName="カムイ女" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -33,7 +33,7 @@
     <hairColor r="128" g="128" b="128" a="255" />
     <growthRates hp="45" str="45" mag="30" skl="40" spd="45" lck="45" def="35" res="25" />
   </character>
-  <character id="3" name="Gunter">
+  <character id="3" name="Gunter" gender="Male">
     <text lang="English" displayName="Gunter" />
     <text lang="Japanese" displayName="ギュンター" />
     <baseStats hp="3" str="0" mag="0" skl="9" spd="2" lck="6" def="0" res="2" />
@@ -44,7 +44,7 @@
     <hairColor r="200" g="188" b="200" a="255" />
     <growthRates hp="15" str="5" mag="0" skl="5" spd="0" lck="15" def="5" res="5" />
   </character>
-  <character id="4" name="Felicia">
+  <character id="4" name="Felicia" gender="Female">
     <text lang="English" displayName="Felicia" />
     <text lang="Japanese" displayName="フェリシア" />
     <baseStats hp="1" str="1" mag="4" skl="1" spd="2" lck="8" def="0" res="5" />
@@ -55,7 +55,7 @@
     <hairColor r="230" g="200" b="180" a="255" />
     <growthRates hp="40" str="10" mag="35" skl="30" spd="40" lck="55" def="15" res="35" />
   </character>
-  <character id="5" name="Jakob">
+  <character id="5" name="Jakob" gender="Male">
     <text lang="English" displayName="Jakob" />
     <text lang="Japanese" displayName="ジョーカー" />
     <baseStats hp="3" str="4" mag="1" skl="3" spd="1" lck="6" def="2" res="2" />
@@ -66,7 +66,7 @@
     <hairColor r="210" g="210" b="195" a="255" />
     <growthRates hp="50" str="30" mag="15" skl="40" spd="35" lck="45" def="25" res="25" />
   </character>
-  <character id="6" name="Rinkah">
+  <character id="6" name="Rinkah" gender="Female">
     <text lang="English" displayName="Rinkah" />
     <text lang="Japanese" displayName="リンカ" />
     <baseStats hp="2" str="2" mag="1" skl="4" spd="3" lck="5" def="3" res="2" />
@@ -77,7 +77,7 @@
     <hairColor r="245" g="237" b="220" a="255" />
     <growthRates hp="20" str="25" mag="15" skl="50" spd="45" lck="35" def="45" res="20" />
   </character>
-  <character id="7" name="Kaze">
+  <character id="7" name="Kaze" gender="Male">
     <text lang="English" displayName="Kaze" />
     <text lang="Japanese" displayName="スズカゼ" />
     <baseStats hp="3" str="4" mag="0" skl="1" spd="4" lck="3" def="2" res="7" />
@@ -88,7 +88,7 @@
     <hairColor r="125" g="150" b="130" a="255" />
     <growthRates hp="55" str="40" mag="0" skl="45" spd="65" lck="20" def="20" res="35" />
   </character>
-  <character id="8" name="Sakura">
+  <character id="8" name="Sakura" gender="Female">
     <text lang="English" displayName="Sakura" />
     <text lang="Japanese" displayName="サクラ" />
     <baseStats hp="0" str="3" mag="3" skl="0" spd="2" lck="5" def="3" res="2" />
@@ -99,7 +99,7 @@
     <hairColor r="207" g="120" b="110" a="255" />
     <growthRates hp="45" str="30" mag="50" skl="40" spd="40" lck="55" def="30" res="20" />
   </character>
-  <character id="9" name="Azura">
+  <character id="9" name="Azura" gender="Female">
     <text lang="English" displayName="Azura" />
     <text lang="Japanese" displayName="アクア" />
     <baseStats hp="0" str="2" mag="2" skl="2" spd="3" lck="3" def="2" res="4" />
@@ -110,7 +110,7 @@
     <hairColor r="238" g="232" b="223" a="255" />
     <growthRates hp="25" str="50" mag="25" skl="60" spd="60" lck="40" def="15" res="35" />
   </character>
-  <character id="10" name="Hana">
+  <character id="10" name="Hana" gender="Female">
     <text lang="English" displayName="Hana" />
     <text lang="Japanese" displayName="カザハナ" />
     <baseStats hp="3" str="3" mag="0" skl="4" spd="3" lck="2" def="3" res="6" />
@@ -121,7 +121,7 @@
     <hairColor r="165" g="141" b="123" a="255" />
     <growthRates hp="25" str="55" mag="10" skl="45" spd="55" lck="25" def="20" res="30" />
   </character>
-  <character id="11" name="Subaki">
+  <character id="11" name="Subaki" gender="Male">
     <text lang="English" displayName="Subaki" />
     <text lang="Japanese" displayName="ツバキ" />
     <baseStats hp="6" str="5" mag="0" skl="8" spd="3" lck="3" def="7" res="4" />
@@ -132,7 +132,7 @@
     <hairColor r="138" g="65" b="68" a="255" />
     <growthRates hp="55" str="30" mag="20" skl="50" spd="20" lck="25" def="45" res="5" />
   </character>
-  <character id="12" name="Silas">
+  <character id="12" name="Silas" gender="Male">
     <text lang="English" displayName="Silas" />
     <text lang="Japanese" displayName="サイラス" />
     <baseStats hp="5" str="5" mag="0" skl="4" spd="3" lck="4" def="5" res="2" />
@@ -143,7 +143,7 @@
     <hairColor r="170" g="180" b="180" a="255" />
     <growthRates hp="40" str="45" mag="5" skl="50" spd="40" lck="40" def="40" res="25" />
   </character>
-  <character id="13" name="Saizo">
+  <character id="13" name="Saizo" gender="Male">
     <text lang="English" displayName="Saizo" />
     <text lang="Japanese" displayName="サイゾウ" />
     <baseStats hp="7" str="8" mag="3" skl="6" spd="3" lck="8" def="6" res="4" />
@@ -154,7 +154,7 @@
     <hairColor r="145" g="67" b="67" a="255" />
     <growthRates hp="40" str="50" mag="45" skl="60" spd="30" lck="55" def="45" res="10" />
   </character>
-  <character id="14" name="Orochi">
+  <character id="14" name="Orochi" gender="Female">
     <text lang="English" displayName="Orochi" />
     <text lang="Japanese" displayName="オロチ" />
     <baseStats hp="5" str="0" mag="5" skl="6" spd="1" lck="5" def="4" res="7" />
@@ -165,7 +165,7 @@
     <hairColor r="140" g="123" b="140" a="255" />
     <growthRates hp="35" str="5" mag="65" skl="50" spd="15" lck="35" def="25" res="45" />
   </character>
-  <character id="15" name="Hinoka">
+  <character id="15" name="Hinoka" gender="Female">
     <text lang="English" displayName="Hinoka" />
     <text lang="Japanese" displayName="ヒノカ" />
     <baseStats hp="7" str="6" mag="4" skl="8" spd="9" lck="8" def="7" res="9" />
@@ -176,7 +176,7 @@
     <hairColor r="180" g="45" b="45" a="255" />
     <growthRates hp="45" str="45" mag="15" skl="40" spd="45" lck="40" def="35" res="40" />
   </character>
-  <character id="16" name="Azama">
+  <character id="16" name="Azama" gender="Male">
     <text lang="English" displayName="Azama" />
     <text lang="Japanese" displayName="アサマ" />
     <baseStats hp="8" str="9" mag="4" skl="4" spd="5" lck="8" def="8" res="3" />
@@ -187,7 +187,7 @@
     <hairColor r="120" g="95" b="96" a="255" />
     <growthRates hp="55" str="50" mag="20" skl="40" spd="45" lck="40" def="40" res="20" />
   </character>
-  <character id="17" name="Setsuna">
+  <character id="17" name="Setsuna" gender="Female">
     <text lang="English" displayName="Setsuna" />
     <text lang="Japanese" displayName="セツナ" />
     <baseStats hp="2" str="3" mag="0" skl="2" spd="5" lck="4" def="1" res="2" />
@@ -198,7 +198,7 @@
     <hairColor r="100" g="138" b="145" a="255" />
     <growthRates hp="30" str="20" mag="0" skl="30" spd="60" lck="30" def="15" res="40" />
   </character>
-  <character id="18" name="Hayato">
+  <character id="18" name="Hayato" gender="Male">
     <text lang="English" displayName="Hayato" />
     <text lang="Japanese" displayName="ツクヨミ" />
     <baseStats hp="1" str="1" mag="0" skl="0" spd="1" lck="7" def="3" res="2" />
@@ -209,7 +209,7 @@
     <hairColor r="139" g="90" b="92" a="255" />
     <growthRates hp="50" str="30" mag="40" skl="30" spd="45" lck="60" def="40" res="20" />
   </character>
-  <character id="19" name="Oboro">
+  <character id="19" name="Oboro" gender="Female">
     <text lang="English" displayName="Oboro" />
     <text lang="Japanese" displayName="オボロ" />
     <baseStats hp="8" str="7" mag="0" skl="5" spd="6" lck="9" def="8" res="6" />
@@ -220,7 +220,7 @@
     <hairColor r="100" g="112" b="140" a="255" />
     <growthRates hp="30" str="40" mag="20" skl="40" spd="40" lck="40" def="40" res="30" />
   </character>
-  <character id="20" name="Hinata">
+  <character id="20" name="Hinata" gender="Male">
     <text lang="English" displayName="Hinata" />
     <text lang="Japanese" displayName="ヒナタ" />
     <baseStats hp="9" str="7" mag="0" skl="4" spd="6" lck="7" def="9" res="1" />
@@ -231,7 +231,7 @@
     <hairColor r="111" g="85" b="75" a="255" />
     <growthRates hp="55" str="35" mag="0" skl="25" spd="15" lck="45" def="45" res="15" />
   </character>
-  <character id="21" name="Takumi">
+  <character id="21" name="Takumi" gender="Male">
     <text lang="English" displayName="Takumi" />
     <text lang="Japanese" displayName="タクミ" />
     <baseStats hp="9" str="8" mag="0" skl="10" spd="6" lck="11" def="6" res="3" />
@@ -242,7 +242,7 @@
     <hairColor r="193" g="178" b="172" a="255" />
     <growthRates hp="50" str="35" mag="0" skl="60" spd="40" lck="45" def="35" res="20" />
   </character>
-  <character id="22" name="Kagero">
+  <character id="22" name="Kagero" gender="Female">
     <text lang="English" displayName="Kagero" />
     <text lang="Japanese" displayName="カゲロウ" />
     <baseStats hp="6" str="12" mag="0" skl="2" spd="4" lck="6" def="6" res="7" />
@@ -253,7 +253,7 @@
     <hairColor r="75" g="57" b="53" a="255" />
     <growthRates hp="30" str="65" mag="0" skl="20" spd="50" lck="30" def="25" res="40" />
   </character>
-  <character id="23" name="Reina">
+  <character id="23" name="Reina" gender="Female">
     <text lang="English" displayName="Reina" />
     <text lang="Japanese" displayName="ユウギリ" />
     <baseStats hp="11" str="14" mag="3" skl="7" spd="13" lck="10" def="6" res="6" />
@@ -264,7 +264,7 @@
     <hairColor r="91" g="115" b="150" a="255" />
     <growthRates hp="40" str="45" mag="5" skl="20" spd="45" lck="10" def="20" res="10" />
   </character>
-  <character id="24" name="Kaden">
+  <character id="24" name="Kaden" gender="Male">
     <text lang="English" displayName="Kaden" />
     <text lang="Japanese" displayName="ニシキ" />
     <baseStats hp="14" str="10" mag="0" skl="6" spd="11" lck="10" def="8" res="10" />
@@ -275,7 +275,7 @@
     <hairColor r="211" g="145" b="70" a="255" />
     <growthRates hp="45" str="40" mag="10" skl="25" spd="45" lck="50" def="35" res="40" />
   </character>
-  <character id="25" name="Ryoma">
+  <character id="25" name="Ryoma" gender="Male">
     <text lang="English" displayName="Ryoma" />
     <text lang="Japanese" displayName="リョウマ" />
     <baseStats hp="18" str="14" mag="0" skl="11" spd="13" lck="16" def="11" res="8" />
@@ -286,7 +286,7 @@
     <hairColor r="88" g="51" b="45" a="255" />
     <growthRates hp="50" str="45" mag="0" skl="50" spd="45" lck="40" def="35" res="25" />
   </character>
-  <character id="26" name="Scarlet">
+  <character id="26" name="Scarlet" gender="Female">
     <text lang="English" displayName="Scarlet" />
     <text lang="Japanese" displayName="クリムゾン" />
     <baseStats hp="11" str="15" mag="4" skl="8" spd="13" lck="11" def="12" res="5" />
@@ -297,7 +297,7 @@
     <hairColor r="239" g="224" b="184" a="255" />
     <growthRates hp="30" str="45" mag="20" skl="40" spd="50" lck="40" def="25" res="20" />
   </character>
-  <character id="27" name="Shura">
+  <character id="27" name="Shura" gender="Male">
     <text lang="English" displayName="Shura" />
     <text lang="Japanese" displayName="アシュラ" />
     <baseStats hp="17" str="16" mag="5" skl="17" spd="17" lck="13" def="11" res="16" />
@@ -308,7 +308,7 @@
     <hairColor r="238" g="232" b="223" a="255" />
     <growthRates hp="30" str="25" mag="10" skl="20" spd="35" lck="30" def="15" res="35" />
   </character>
-  <character id="28" name="Elise">
+  <character id="28" name="Elise" gender="Female">
     <text lang="English" displayName="Elise" />
     <text lang="Japanese" displayName="エリーゼ" />
     <baseStats hp="4" str="2" mag="8" skl="-2" spd="5" lck="10" def="3" res="7" />
@@ -319,7 +319,7 @@
     <hairColor r="242" g="228" b="209" a="255" />
     <growthRates hp="30" str="5" mag="65" skl="25" spd="55" lck="70" def="15" res="40" />
   </character>
-  <character id="29" name="Arthur">
+  <character id="29" name="Arthur" gender="Male">
     <text lang="English" displayName="Arthur" />
     <text lang="Japanese" displayName="ハロルド" />
     <baseStats hp="5" str="5" mag="0" skl="3" spd="2" lck="-1" def="5" res="3" />
@@ -330,7 +330,7 @@
     <hairColor r="254" g="234" b="183" a="255" />
     <growthRates hp="50" str="45" mag="0" skl="55" spd="35" lck="5" def="45" res="20" />
   </character>
-  <character id="30" name="Effie">
+  <character id="30" name="Effie" gender="Female">
     <text lang="English" displayName="Effie" />
     <text lang="Japanese" displayName="エルフィ" />
     <baseStats hp="4" str="5" mag="0" skl="3" spd="2" lck="7" def="4" res="3" />
@@ -341,7 +341,7 @@
     <hairColor r="220" g="217" b="211" a="255" />
     <growthRates hp="35" str="60" mag="0" skl="35" spd="50" lck="50" def="35" res="30" />
   </character>
-  <character id="31" name="Odin">
+  <character id="31" name="Odin" gender="Male">
     <text lang="English" displayName="Odin" />
     <text lang="Japanese" displayName="オーディン" />
     <baseStats hp="5" str="5" mag="2" skl="7" spd="4" lck="8" def="3" res="2" />
@@ -352,7 +352,7 @@
     <hairColor r="218" g="211" b="189" a="255" />
     <growthRates hp="55" str="35" mag="30" skl="55" spd="35" lck="60" def="40" res="20" />
   </character>
-  <character id="32" name="Niles">
+  <character id="32" name="Niles" gender="Male">
     <text lang="English" displayName="Niles" />
     <text lang="Japanese" displayName="ゼロ" />
     <baseStats hp="6" str="6" mag="4" skl="5" spd="7" lck="5" def="5" res="8" />
@@ -363,7 +363,7 @@
     <hairColor r="245" g="243" b="240" a="255" />
     <growthRates hp="40" str="35" mag="20" skl="40" spd="50" lck="30" def="30" res="40" />
   </character>
-  <character id="33" name="Nyx">
+  <character id="33" name="Nyx" gender="Female">
     <text lang="English" displayName="Nyx" />
     <text lang="Japanese" displayName="ニュクス" />
     <baseStats hp="4" str="1" mag="6" skl="2" spd="8" lck="2" def="1" res="3" />
@@ -374,7 +374,7 @@
     <hairColor r="106" g="97" b="112" a="255" />
     <growthRates hp="30" str="5" mag="50" skl="35" spd="50" lck="20" def="15" res="30" />
   </character>
-  <character id="34" name="Camilla">
+  <character id="34" name="Camilla" gender="Female">
     <text lang="English" displayName="Camilla" />
     <text lang="Japanese" displayName="カミラ" />
     <baseStats hp="12" str="12" mag="5" skl="9" spd="14" lck="12" def="10" res="9" />
@@ -385,7 +385,7 @@
     <hairColor r="191" g="183" b="223" a="255" />
     <growthRates hp="40" str="50" mag="25" skl="50" spd="55" lck="25" def="35" res="45" />
   </character>
-  <character id="35" name="Selena">
+  <character id="35" name="Selena" gender="Female">
     <text lang="English" displayName="Selena" />
     <text lang="Japanese" displayName="ルーナ" />
     <baseStats hp="7" str="7" mag="3" skl="5" spd="9" lck="7" def="6" res="6" />
@@ -396,7 +396,7 @@
     <hairColor r="175" g="84" b="84" a="255" />
     <growthRates hp="40" str="30" mag="5" skl="25" spd="45" lck="30" def="45" res="30" />
   </character>
-  <character id="36" name="Beruka">
+  <character id="36" name="Beruka" gender="Female">
     <text lang="English" displayName="Beruka" />
     <text lang="Japanese" displayName="ベルカ" />
     <baseStats hp="6" str="7" mag="0" skl="9" spd="5" lck="8" def="7" res="7" />
@@ -407,7 +407,7 @@
     <hairColor r="162" g="192" b="200" a="255" />
     <growthRates hp="45" str="30" mag="10" skl="55" spd="30" lck="45" def="40" res="25" />
   </character>
-  <character id="37" name="Laslow">
+  <character id="37" name="Laslow" gender="Male">
     <text lang="English" displayName="Laslow" />
     <text lang="Japanese" displayName="ラズワルド" />
     <baseStats hp="11" str="10" mag="0" skl="9" spd="7" lck="12" def="5" res="5" />
@@ -418,7 +418,7 @@
     <hairColor r="153" g="145" b="145" a="255" />
     <growthRates hp="50" str="45" mag="0" skl="45" spd="30" lck="55" def="35" res="25" />
   </character>
-  <character id="38" name="Peri">
+  <character id="38" name="Peri" gender="Female">
     <text lang="English" displayName="Peri" />
     <text lang="Japanese" displayName="ピエリ" />
     <baseStats hp="8" str="7" mag="0" skl="4" spd="8" lck="6" def="5" res="7" />
@@ -429,7 +429,7 @@
     <hairColor r="135" g="191" b="216" a="255" />
     <growthRates hp="30" str="50" mag="5" skl="30" spd="50" lck="35" def="25" res="45" />
   </character>
-  <character id="39" name="Benny">
+  <character id="39" name="Benny" gender="Male">
     <text lang="English" displayName="Benny" />
     <text lang="Japanese" displayName="ブノワ" />
     <baseStats hp="12" str="7" mag="0" skl="10" spd="3" lck="9" def="11" res="9" />
@@ -440,7 +440,7 @@
     <hairColor r="242" g="227" b="181" a="255" />
     <growthRates hp="50" str="40" mag="0" skl="50" spd="10" lck="35" def="55" res="45" />
   </character>
-  <character id="40" name="Charlotte">
+  <character id="40" name="Charlotte" gender="Female">
     <text lang="English" displayName="Charlotte" />
     <text lang="Japanese" displayName="シャーロッテ" />
     <baseStats hp="9" str="8" mag="0" skl="4" spd="7" lck="7" def="4" res="1" />
@@ -451,7 +451,7 @@
     <hairColor r="235" g="217" b="166" a="255" />
     <growthRates hp="65" str="55" mag="0" skl="35" spd="50" lck="45" def="20" res="5" />
   </character>
-  <character id="41" name="Leo">
+  <character id="41" name="Leo" gender="Male">
     <text lang="English" displayName="Leo" />
     <text lang="Japanese" displayName="レオン" />
     <baseStats hp="15" str="6" mag="14" skl="8" spd="10" lck="12" def="8" res="14" />
@@ -462,7 +462,7 @@
     <hairColor r="210" g="195" b="170" a="255" />
     <growthRates hp="45" str="25" mag="55" skl="35" spd="45" lck="45" def="30" res="45" />
   </character>
-  <character id="42" name="Keaton">
+  <character id="42" name="Keaton" gender="Male">
     <text lang="English" displayName="Keaton" />
     <text lang="Japanese" displayName="フランネル" />
     <baseStats hp="16" str="11" mag="0" skl="6" spd="7" lck="9" def="12" res="7" />
@@ -473,7 +473,7 @@
     <hairColor r="245" g="243" b="240" a="255" />
     <growthRates hp="60" str="60" mag="0" skl="20" spd="35" lck="30" def="50" res="25" />
   </character>
-  <character id="43" name="Xander">
+  <character id="43" name="Xander" gender="Male">
     <text lang="English" displayName="Xander" />
     <text lang="Japanese" displayName="マークス" />
     <baseStats hp="19" str="15" mag="3" skl="11" spd="8" lck="16" def="16" res="5" />
@@ -484,7 +484,7 @@
     <hairColor r="208" g="194" b="159" a="255" />
     <growthRates hp="45" str="50" mag="5" skl="40" spd="35" lck="60" def="40" res="15" />
   </character>
-  <character id="44" name="Izana">
+  <character id="44" name="Izana" gender="Male">
     <text lang="English" displayName="Izana" />
     <text lang="Japanese" displayName="イザナ" />
     <baseStats hp="15" str="8" mag="16" skl="19" spd="11" lck="15" def="11" res="18" />
@@ -495,7 +495,7 @@
     <hairColor r="247" g="245" b="239" a="255" />
     <growthRates hp="45" str="15" mag="35" skl="55" spd="30" lck="45" def="35" res="35" />
   </character>
-  <character id="45" name="Fuga">
+  <character id="45" name="Fuga" gender="Male">
     <text lang="English" displayName="Fuga" />
     <text lang="Japanese" displayName="フウガ" />
     <baseStats hp="21" str="21" mag="0" skl="21" spd="16" lck="15" def="22" res="12" />
@@ -506,7 +506,7 @@
     <hairColor r="96" g="48" b="32" a="255" />
     <growthRates hp="20" str="20" mag="0" skl="15" spd="5" lck="20" def="10" res="10" />
   </character>
-  <character id="46" name="Yukimura">
+  <character id="46" name="Yukimura" gender="Male">
     <text lang="English" displayName="Yukimura" />
     <text lang="Japanese" displayName="ユキムラ" />
     <baseStats hp="20" str="18" mag="3" skl="20" spd="16" lck="16" def="15" res="16" />
@@ -517,7 +517,7 @@
     <hairColor r="110" g="134" b="142" a="255" />
     <growthRates hp="25" str="25" mag="5" skl="40" spd="15" lck="30" def="25" res="30" />
   </character>
-  <character id="47" name="Flora">
+  <character id="47" name="Flora" gender="Female">
     <text lang="English" displayName="Flora" />
     <text lang="Japanese" displayName="フローラ" />
     <baseStats hp="11" str="14" mag="11" skl="16" spd="7" lck="7" def="9" res="19" />
@@ -528,7 +528,7 @@
     <hairColor r="192" g="224" b="231" a="255" />
     <growthRates hp="35" str="40" mag="20" skl="45" spd="30" lck="35" def="30" res="30" />
   </character>
-  <character id="48" name="Mozu">
+  <character id="48" name="Mozu" gender="Female">
     <text lang="English" displayName="Mozu" />
     <text lang="Japanese" displayName="モズメ" />
     <baseStats hp="-1" str="1" mag="0" skl="1" spd="2" lck="0" def="0" res="1" />
@@ -539,7 +539,7 @@
     <hairColor r="70" g="62" b="57" a="255" />
     <growthRates hp="30" str="40" mag="5" skl="50" spd="55" lck="45" def="35" res="30" />
   </character>
-  <character id="49" name="Kana_M">
+  <character id="49" name="Kana_M" gender="Male">
     <text lang="English" displayName="Kana (M)" />
     <text lang="Japanese" displayName="カンナ男" />
     <baseStats hp="7" str="3" mag="6" skl="8" spd="8" lck="9" def="5" res="5" />
@@ -550,7 +550,7 @@
     <hairColor r="235" g="226" b="214" a="255" />
     <growthRates hp="30" str="35" mag="30" skl="40" spd="45" lck="45" def="25" res="25" />
   </character>
-  <character id="50" name="Kana_F">
+  <character id="50" name="Kana_F" gender="Female">
     <text lang="English" displayName="Kana (F)" />
     <text lang="Japanese" displayName="カンナ女" />
     <baseStats hp="7" str="3" mag="6" skl="8" spd="8" lck="9" def="5" res="5" />
@@ -561,7 +561,7 @@
     <hairColor r="235" g="226" b="214" a="255" />
     <growthRates hp="30" str="35" mag="30" skl="40" spd="45" lck="45" def="25" res="25" />
   </character>
-  <character id="51" name="Shigure">
+  <character id="51" name="Shigure" gender="Male">
     <text lang="English" displayName="Shigure" />
     <text lang="Japanese" displayName="シグレ" />
     <baseStats hp="9" str="6" mag="1" skl="7" spd="7" lck="5" def="8" res="7" />
@@ -572,7 +572,7 @@
     <hairColor r="238" g="232" b="223" a="255" />
     <growthRates hp="35" str="45" mag="5" skl="45" spd="35" lck="25" def="35" res="25" />
   </character>
-  <character id="52" name="Dwyer">
+  <character id="52" name="Dwyer" gender="Male">
     <text lang="English" displayName="Dwyer" />
     <text lang="Japanese" displayName="ディーア" />
     <baseStats hp="8" str="7" mag="7" skl="2" spd="6" lck="4" def="6" res="7" />
@@ -583,7 +583,7 @@
     <hairColor r="210" g="210" b="195" a="255" />
     <growthRates hp="45" str="45" mag="30" skl="20" spd="30" lck="30" def="30" res="35" />
   </character>
-  <character id="53" name="Sophie">
+  <character id="53" name="Sophie" gender="Female">
     <text lang="English" displayName="Sophie" />
     <text lang="Japanese" displayName="ゾフィー" />
     <baseStats hp="8" str="6" mag="2" skl="7" spd="6" lck="7" def="4" res="6" />
@@ -594,7 +594,7 @@
     <hairColor r="170" g="180" b="180" a="255" />
     <growthRates hp="35" str="35" mag="10" skl="55" spd="50" lck="35" def="25" res="35" />
   </character>
-  <character id="54" name="Midori">
+  <character id="54" name="Midori" gender="Female">
     <text lang="English" displayName="Midori" />
     <text lang="Japanese" displayName="ミドリコ" />
     <baseStats hp="8" str="6" mag="2" skl="10" spd="4" lck="10" def="4" res="2" />
@@ -605,7 +605,7 @@
     <hairColor r="125" g="150" b="130" a="255" />
     <growthRates hp="45" str="35" mag="5" skl="55" spd="35" lck="50" def="30" res="20" />
   </character>
-  <character id="55" name="Shiro">
+  <character id="55" name="Shiro" gender="Male">
     <text lang="English" displayName="Shiro" />
     <text lang="Japanese" displayName="シノノメ" />
     <baseStats hp="8" str="7" mag="0" skl="5" spd="3" lck="6" def="8" res="5" />
@@ -616,7 +616,7 @@
     <hairColor r="88" g="51" b="45" a="255" />
     <growthRates hp="50" str="50" mag="0" skl="40" spd="35" lck="35" def="45" res="30" />
   </character>
-  <character id="56" name="Kiragi">
+  <character id="56" name="Kiragi" gender="Male">
     <text lang="English" displayName="Kiragi" />
     <text lang="Japanese" displayName="キサラギ" />
     <baseStats hp="7" str="6" mag="0" skl="5" spd="6" lck="8" def="4" res="1" />
@@ -627,7 +627,7 @@
     <hairColor r="193" g="178" b="172" a="255" />
     <growthRates hp="45" str="40" mag="0" skl="45" spd="50" lck="45" def="40" res="15" />
   </character>
-  <character id="57" name="Asugi">
+  <character id="57" name="Asugi" gender="Male">
     <text lang="English" displayName="Asugi" />
     <text lang="Japanese" displayName="グレイ" />
     <baseStats hp="6" str="7" mag="4" skl="7" spd="6" lck="9" def="4" res="9" />
@@ -638,7 +638,7 @@
     <hairColor r="145" g="67" b="67" a="255" />
     <growthRates hp="40" str="45" mag="50" skl="55" spd="45" lck="50" def="30" res="20" />
   </character>
-  <character id="58" name="Selkie">
+  <character id="58" name="Selkie" gender="Female">
     <text lang="English" displayName="Selkie" />
     <text lang="Japanese" displayName="キヌ" />
     <baseStats hp="7" str="4" mag="3" skl="6" spd="7" lck="10" def="6" res="11" />
@@ -649,7 +649,7 @@
     <hairColor r="211" g="145" b="70" a="255" />
     <growthRates hp="35" str="30" mag="15" skl="35" spd="55" lck="60" def="30" res="50" />
   </character>
-  <character id="59" name="Hisame">
+  <character id="59" name="Hisame" gender="Male">
     <text lang="English" displayName="Hisame" />
     <text lang="Japanese" displayName="ヒサメ" />
     <baseStats hp="6" str="6" mag="1" skl="7" spd="5" lck="4" def="5" res="4" />
@@ -660,7 +660,7 @@
     <hairColor r="111" g="85" b="75" a="255" />
     <growthRates hp="50" str="40" mag="0" skl="40" spd="40" lck="25" def="30" res="20" />
   </character>
-  <character id="60" name="Mitama">
+  <character id="60" name="Mitama" gender="Female">
     <text lang="English" displayName="Mitama" />
     <text lang="Japanese" displayName="ミタマ" />
     <baseStats hp="6" str="7" mag="6" skl="6" spd="8" lck="10" def="3" res="5" />
@@ -671,7 +671,7 @@
     <hairColor r="120" g="95" b="96" a="255" />
     <growthRates hp="45" str="40" mag="35" skl="45" spd="50" lck="50" def="30" res="20" />
   </character>
-  <character id="61" name="Caeldori">
+  <character id="61" name="Caeldori" gender="Female">
     <text lang="English" displayName="Caeldori" />
     <text lang="Japanese" displayName="マトイ" />
     <baseStats hp="8" str="8" mag="3" skl="5" spd="6" lck="9" def="5" res="6" />
@@ -682,7 +682,7 @@
     <hairColor r="138" g="65" b="68" a="255" />
     <growthRates hp="55" str="35" mag="15" skl="40" spd="40" lck="45" def="35" res="20" />
   </character>
-  <character id="62" name="Rhajat">
+  <character id="62" name="Rhajat" gender="Female">
     <text lang="English" displayName="Rhajat" />
     <text lang="Japanese" displayName="シャラ" />
     <baseStats hp="8" str="1" mag="10" skl="0" spd="7" lck="6" def="5" res="12" />
@@ -693,7 +693,7 @@
     <hairColor r="139" g="90" b="92" a="255" />
     <growthRates hp="40" str="15" mag="60" skl="10" spd="50" lck="30" def="25" res="35" />
   </character>
-  <character id="63" name="Siegbert">
+  <character id="63" name="Siegbert" gender="Male">
     <text lang="English" displayName="Siegbert" />
     <text lang="Japanese" displayName="ジークベルト" />
     <baseStats hp="7" str="5" mag="2" skl="7" spd="6" lck="7" def="6" res="3" />
@@ -704,7 +704,7 @@
     <hairColor r="208" g="194" b="159" a="255" />
     <growthRates hp="40" str="45" mag="5" skl="45" spd="45" lck="45" def="35" res="20" />
   </character>
-  <character id="64" name="Forrest">
+  <character id="64" name="Forrest" gender="Male">
     <text lang="English" displayName="Forrest" />
     <text lang="Japanese" displayName="フォレオ" />
     <baseStats hp="8" str="5" mag="9" skl="1" spd="4" lck="5" def="6" res="13" />
@@ -715,7 +715,7 @@
     <hairColor r="210" g="195" b="170" a="255" />
     <growthRates hp="55" str="15" mag="65" skl="20" spd="35" lck="25" def="25" res="55" />
   </character>
-  <character id="65" name="Ignatius">
+  <character id="65" name="Ignatius" gender="Male">
     <text lang="English" displayName="Ignatius" />
     <text lang="Japanese" displayName="イグニス" />
     <baseStats hp="8" str="7" mag="0" skl="6" spd="4" lck="7" def="6" res="7" />
@@ -726,7 +726,7 @@
     <hairColor r="242" g="227" b="181" a="255" />
     <growthRates hp="40" str="50" mag="0" skl="40" spd="30" lck="55" def="45" res="35" />
   </character>
-  <character id="66" name="Velouria">
+  <character id="66" name="Velouria" gender="Female">
     <text lang="English" displayName="Velouria" />
     <text lang="Japanese" displayName="ベロア" />
     <baseStats hp="7" str="6" mag="0" skl="6" spd="6" lck="11" def="9" res="8" />
@@ -737,7 +737,7 @@
     <hairColor r="245" g="243" b="240" a="255" />
     <growthRates hp="50" str="50" mag="0" skl="40" spd="40" lck="35" def="45" res="30" />
   </character>
-  <character id="67" name="Percy">
+  <character id="67" name="Percy" gender="Male">
     <text lang="English" displayName="Percy" />
     <text lang="Japanese" displayName="ルッツ" />
     <baseStats hp="6" str="4" mag="0" skl="6" spd="6" lck="15" def="8" res="4" />
@@ -748,7 +748,7 @@
     <hairColor r="254" g="234" b="183" a="255" />
     <growthRates hp="30" str="30" mag="5" skl="45" spd="40" lck="75" def="55" res="15" />
   </character>
-  <character id="68" name="Ophelia">
+  <character id="68" name="Ophelia" gender="Female">
     <text lang="English" displayName="Ophelia" />
     <text lang="Japanese" displayName="オフェリア" />
     <baseStats hp="7" str="3" mag="6" skl="6" spd="7" lck="12" def="2" res="5" />
@@ -759,7 +759,7 @@
     <hairColor r="218" g="211" b="189" a="255" />
     <growthRates hp="45" str="15" mag="45" skl="40" spd="45" lck="65" def="20" res="30" />
   </character>
-  <character id="69" name="Soleil">
+  <character id="69" name="Soleil" gender="Female">
     <text lang="English" displayName="Soleil" />
     <text lang="Japanese" displayName="ソレイユ" />
     <baseStats hp="6" str="7" mag="1" skl="3" spd="6" lck="7" def="5" res="6" />
@@ -770,7 +770,7 @@
     <hairColor r="153" g="145" b="145" a="255" />
     <growthRates hp="25" str="60" mag="0" skl="35" spd="35" lck="45" def="35" res="40" />
   </character>
-  <character id="70" name="Nina">
+  <character id="70" name="Nina" gender="Female">
     <text lang="English" displayName="Nina" />
     <text lang="Japanese" displayName="エポニーヌ" />
     <baseStats hp="5" str="8" mag="5" skl="5" spd="5" lck="11" def="3" res="10" />
@@ -781,7 +781,7 @@
     <hairColor r="245" g="243" b="240" a="255" />
     <growthRates hp="30" str="45" mag="30" skl="35" spd="40" lck="50" def="25" res="45" />
   </character>
-  <character id="71" name="Anna">
+  <character id="71" name="Anna" gender="Female">
     <text lang="English" displayName="Anna" />
     <text lang="Japanese" displayName="アンナ" />
     <baseStats hp="7" str="6" mag="10" skl="6" spd="6" lck="14" def="4" res="11" />
@@ -792,7 +792,7 @@
     <hairColor r="191" g="88" b="84" a="255" />
     <growthRates hp="35" str="30" mag="55" skl="30" spd="40" lck="70" def="20" res="45" />
   </character>
-  <character id="72" name="Daniela">
+  <character id="72" name="Daniela" gender="Female">
     <text lang="English" displayName="Daniela" />
     <text lang="Japanese" displayName="ダニエラ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -803,7 +803,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="10" mag="55" skl="30" spd="45" lck="25" def="15" res="35" />
   </character>
-  <character id="73" name="Haitaka">
+  <character id="73" name="Haitaka" gender="Male">
     <text lang="English" displayName="Haitaka" />
     <text lang="Japanese" displayName="ハイタカ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -814,7 +814,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="40" str="50" mag="5" skl="45" spd="45" lck="15" def="35" res="30" />
   </character>
-  <character id="74" name="Kumagera">
+  <character id="74" name="Kumagera" gender="Male">
     <text lang="English" displayName="Kumagera" />
     <text lang="Japanese" displayName="クマゲラ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -825,7 +825,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="65" str="55" mag="10" skl="45" spd="20" lck="15" def="45" res="10" />
   </character>
-  <character id="75" name="Lloyd">
+  <character id="75" name="Lloyd" gender="Male">
     <text lang="English" displayName="Lloyd" />
     <text lang="Japanese" displayName="ウィリアム" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -836,7 +836,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="85" str="60" mag="5" skl="35" spd="30" lck="35" def="15" res="10" />
   </character>
-  <character id="76" name="Llewelyn">
+  <character id="76" name="Llewelyn" gender="Male">
     <text lang="English" displayName="Llewelyn" />
     <text lang="Japanese" displayName="ホルモン" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -847,7 +847,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="85" str="45" mag="5" skl="25" spd="45" lck="35" def="25" res="5" />
   </character>
-  <character id="77" name="Nichol">
+  <character id="77" name="Nichol" gender="Male">
     <text lang="English" displayName="Nichol" />
     <text lang="Japanese" displayName="ナハト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -858,7 +858,7 @@
     <hairColor r="79" g="83" b="73" a="255" />
     <growthRates hp="35" str="45" mag="20" skl="45" spd="45" lck="15" def="35" res="20" />
   </character>
-  <character id="78" name="Candace">
+  <character id="78" name="Candace" gender="Female">
     <text lang="English" displayName="Candace" />
     <text lang="Japanese" displayName="ドラジェ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -869,7 +869,7 @@
     <hairColor r="126" g="129" b="93" a="255" />
     <growthRates hp="45" str="20" mag="20" skl="20" spd="25" lck="55" def="35" res="35" />
   </character>
-  <character id="79" name="Banba">
+  <character id="79" name="Banba" gender="Male">
     <text lang="English" displayName="Tarba" />
     <text lang="Japanese" displayName="バンバ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -880,7 +880,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="55" str="45" mag="5" skl="45" spd="45" lck="35" def="25" res="10" />
   </character>
-  <character id="80" name="Funke">
+  <character id="80" name="Funke" gender="Male">
     <text lang="English" displayName="Funke" />
     <text lang="Japanese" displayName="ファンク" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -891,7 +891,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="30" str="25" mag="15" skl="25" spd="35" lck="25" def="25" res="30" />
   </character>
-  <character id="81" name="Daichi">
+  <character id="81" name="Daichi" gender="Male">
     <text lang="English" displayName="Daichi" />
     <text lang="Japanese" displayName="ダイチ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -902,7 +902,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="45" str="35" mag="35" skl="35" spd="25" lck="15" def="45" res="25" />
   </character>
-  <character id="82" name="Gazak">
+  <character id="82" name="Gazak" gender="Male">
     <text lang="English" displayName="Gazak" />
     <text lang="Japanese" displayName="ガザック" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -913,7 +913,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="75" str="40" mag="5" skl="25" spd="25" lck="15" def="65" res="15" />
   </character>
-  <character id="83" name="Senno">
+  <character id="83" name="Senno" gender="Male">
     <text lang="English" displayName="Senno" />
     <text lang="Japanese" displayName="セノウ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -924,7 +924,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="45" str="40" mag="20" skl="50" spd="30" lck="25" def="40" res="25" />
   </character>
-  <character id="84" name="Zhara">
+  <character id="84" name="Zhara" gender="Male">
     <text lang="English" displayName="Zhara" />
     <text lang="Japanese" displayName="ヴァスハラ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -935,7 +935,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="40" str="35" mag="10" skl="35" spd="35" lck="60" def="35" res="30" />
   </character>
-  <character id="85" name="Paladin">
+  <character id="85" name="Paladin" gender="Male">
     <text lang="English" displayName="Captured Paladin" />
     <text lang="Japanese" displayName="パラディン" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -946,7 +946,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="30" mag="0" skl="30" spd="30" lck="20" def="25" res="15" />
   </character>
-  <character id="86" name="Cavalier">
+  <character id="86" name="Cavalier" gender="Male">
     <text lang="English" displayName="Captured Cavalier" />
     <text lang="Japanese" displayName="ソシアルナイト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -957,7 +957,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="30" mag="0" skl="25" spd="30" lck="15" def="25" res="10" />
   </character>
-  <character id="87" name="GreatKnight">
+  <character id="87" name="GreatKnight" gender="Male">
     <text lang="English" displayName="Captured Great Knight" />
     <text lang="Japanese" displayName="グレートナイト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -968,7 +968,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="40" str="35" mag="0" skl="30" spd="25" lck="15" def="30" res="5" />
   </character>
-  <character id="88" name="Knight">
+  <character id="88" name="Knight" gender="Male">
     <text lang="English" displayName="Captured Knight" />
     <text lang="Japanese" displayName="アーマーナイト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -979,7 +979,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="40" str="35" mag="0" skl="25" spd="15" lck="15" def="30" res="5" />
   </character>
-  <character id="89" name="General">
+  <character id="89" name="General" gender="Male">
     <text lang="English" displayName="Captured General" />
     <text lang="Japanese" displayName="ジェネラル" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -990,7 +990,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="45" str="40" mag="0" skl="30" spd="15" lck="15" def="35" res="5" />
   </character>
-  <character id="90" name="Berserker">
+  <character id="90" name="Berserker" gender="Male">
     <text lang="English" displayName="Captured Berserker" />
     <text lang="Japanese" displayName="バーサーカー" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1001,7 +1001,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="50" str="45" mag="0" skl="35" spd="30" lck="10" def="10" res="0" />
   </character>
-  <character id="91" name="Fighter">
+  <character id="91" name="Fighter" gender="Male">
     <text lang="English" displayName="Captured Fighter" />
     <text lang="Japanese" displayName="アクスファイター" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1012,7 +1012,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="45" str="40" mag="0" skl="30" spd="25" lck="10" def="15" res="0" />
   </character>
-  <character id="92" name="Hero">
+  <character id="92" name="Hero" gender="Male">
     <text lang="English" displayName="Captured Hero" />
     <text lang="Japanese" displayName="ブレイブヒーロー" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1023,7 +1023,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="40" str="35" mag="0" skl="40" spd="40" lck="5" def="20" res="5" />
   </character>
-  <character id="93" name="Mercenary">
+  <character id="93" name="Mercenary" gender="Male">
     <text lang="English" displayName="Captured Mercenary" />
     <text lang="Japanese" displayName="マーシナリー" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1034,7 +1034,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="30" mag="0" skl="35" spd="30" lck="15" def="20" res="0" />
   </character>
-  <character id="94" name="BowKnight">
+  <character id="94" name="BowKnight" gender="Male">
     <text lang="English" displayName="Captured Bow Knight" />
     <text lang="Japanese" displayName="ボウナイト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1045,7 +1045,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="30" str="30" mag="0" skl="35" spd="35" lck="15" def="25" res="10" />
   </character>
-  <character id="95" name="Outlaw">
+  <character id="95" name="Outlaw" gender="Male">
     <text lang="English" displayName="Captured Outlaw" />
     <text lang="Japanese" displayName="シーフ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1056,7 +1056,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="30" str="25" mag="15" skl="20" spd="35" lck="15" def="20" res="15" />
   </character>
-  <character id="96" name="Adventurer">
+  <character id="96" name="Adventurer" gender="Male">
     <text lang="English" displayName="Captured Adventurer" />
     <text lang="Japanese" displayName="アドベンチャラー" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1067,7 +1067,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="30" mag="20" skl="20" spd="30" lck="20" def="20" res="15" />
   </character>
-  <character id="97" name="Swordmaster">
+  <character id="97" name="Swordmaster" gender="Male">
     <text lang="English" displayName="Captured Swordmaster" />
     <text lang="Japanese" displayName="剣聖" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1078,7 +1078,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="30" str="40" mag="0" skl="45" spd="40" lck="10" def="15" res="5" />
   </character>
-  <character id="98" name="Samurai">
+  <character id="98" name="Samurai" gender="Male">
     <text lang="English" displayName="Captured Samurai" />
     <text lang="Japanese" displayName="侍" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1089,7 +1089,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="30" str="35" mag="0" skl="40" spd="35" lck="10" def="15" res="5" />
   </character>
-  <character id="99" name="MasterOfArms">
+  <character id="99" name="MasterOfArms" gender="Male">
     <text lang="English" displayName="Captured Master of Arms" />
     <text lang="Japanese" displayName="兵法者" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1100,7 +1100,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="40" mag="0" skl="40" spd="35" lck="10" def="20" res="5" />
   </character>
-  <character id="100" name="OniChieftain">
+  <character id="100" name="OniChieftain" gender="Male">
     <text lang="English" displayName="Captured Oni Chieftain" />
     <text lang="Japanese" displayName="修羅" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1111,7 +1111,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="40" str="45" mag="10" skl="25" spd="25" lck="10" def="30" res="10" />
   </character>
-  <character id="101" name="OniSavage">
+  <character id="101" name="OniSavage" gender="Male">
     <text lang="English" displayName="Captured Oni Savage" />
     <text lang="Japanese" displayName="鬼人" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1122,7 +1122,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="40" mag="0" skl="25" spd="20" lck="10" def="30" res="10" />
   </character>
-  <character id="102" name="Blacksmith">
+  <character id="102" name="Blacksmith" gender="Male">
     <text lang="English" displayName="Captured Blacksmith" />
     <text lang="Japanese" displayName="鍛冶" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1133,7 +1133,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="40" str="40" mag="0" skl="35" spd="20" lck="10" def="30" res="10" />
   </character>
-  <character id="103" name="SpearMaster">
+  <character id="103" name="SpearMaster" gender="Male">
     <text lang="English" displayName="Captured Spear Master" />
     <text lang="Japanese" displayName="槍聖" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1144,7 +1144,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="45" mag="0" skl="45" spd="30" lck="10" def="15" res="5" />
   </character>
-  <character id="104" name="SpearFighter">
+  <character id="104" name="SpearFighter" gender="Male">
     <text lang="English" displayName="Captured Spear Fighter" />
     <text lang="Japanese" displayName="槍術士" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1155,7 +1155,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="40" mag="0" skl="40" spd="30" lck="10" def="10" res="5" />
   </character>
-  <character id="105" name="Basara">
+  <character id="105" name="Basara" gender="Male">
     <text lang="English" displayName="Captured Basara" />
     <text lang="Japanese" displayName="婆娑羅" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1166,7 +1166,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="35" mag="25" skl="40" spd="30" lck="10" def="15" res="10" />
   </character>
-  <character id="106" name="Diviner">
+  <character id="106" name="Diviner" gender="Male">
     <text lang="English" displayName="Captured Diviner" />
     <text lang="Japanese" displayName="呪い師" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1177,7 +1177,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="25" str="10" mag="35" skl="35" spd="25" lck="15" def="10" res="20" />
   </character>
-  <character id="107" name="Onmyoji">
+  <character id="107" name="Onmyoji" gender="Male">
     <text lang="English" displayName="Captured Onmyoji" />
     <text lang="Japanese" displayName="陰陽師" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1188,7 +1188,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="25" str="0" mag="40" skl="40" spd="25" lck="20" def="10" res="25" />
   </character>
-  <character id="108" name="ShrineMaiden">
+  <character id="108" name="ShrineMaiden" gender="Female">
     <text lang="English" displayName="Captured Shrine Maiden" />
     <text lang="Japanese" displayName="巫女" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1199,7 +1199,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="20" str="10" mag="40" skl="25" spd="25" lck="20" def="10" res="25" />
   </character>
-  <character id="109" name="GreatMaster">
+  <character id="109" name="GreatMaster" gender="Male">
     <text lang="English" displayName="Captured Great Master" />
     <text lang="Japanese" displayName="山伏" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1210,7 +1210,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="25" str="15" mag="35" skl="30" spd="20" lck="15" def="15" res="20" />
   </character>
-  <character id="110" name="Priestess">
+  <character id="110" name="Priestess" gender="Female">
     <text lang="English" displayName="Captured Priestess" />
     <text lang="Japanese" displayName="戦巫女" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1221,7 +1221,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="20" str="10" mag="40" skl="25" spd="25" lck="20" def="10" res="25" />
   </character>
-  <character id="111" name="FalconKnight">
+  <character id="111" name="FalconKnight" gender="Female">
     <text lang="English" displayName="Captured Falcon Knight" />
     <text lang="Japanese" displayName="聖天馬武者" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1232,7 +1232,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="25" str="30" mag="20" skl="35" spd="35" lck="15" def="20" res="15" />
   </character>
-  <character id="112" name="SkyKnight">
+  <character id="112" name="SkyKnight" gender="Female">
     <text lang="English" displayName="Captured Sky Knight" />
     <text lang="Japanese" displayName="天馬武者" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1243,7 +1243,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="25" str="25" mag="10" skl="35" spd="35" lck="15" def="15" res="15" />
   </character>
-  <character id="113" name="KinshiKnight">
+  <character id="113" name="KinshiKnight" gender="Female">
     <text lang="English" displayName="Captured Kinshi Knight" />
     <text lang="Japanese" displayName="金鵄武者" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1254,7 +1254,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="30" str="25" mag="10" skl="40" spd="35" lck="15" def="20" res="15" />
   </character>
-  <character id="114" name="Archer">
+  <character id="114" name="Archer" gender="Male">
     <text lang="English" displayName="Captured Archer" />
     <text lang="Japanese" displayName="弓使い" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1265,7 +1265,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="30" mag="0" skl="35" spd="30" lck="10" def="20" res="10" />
   </character>
-  <character id="115" name="Sniper">
+  <character id="115" name="Sniper" gender="Male">
     <text lang="English" displayName="Captured Sniper" />
     <text lang="Japanese" displayName="弓聖" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1276,7 +1276,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="35" mag="0" skl="40" spd="35" lck="10" def="20" res="10" />
   </character>
-  <character id="116" name="WyvernLord">
+  <character id="116" name="WyvernLord" gender="Male">
     <text lang="English" displayName="Captured Wyvern Lord" />
     <text lang="Japanese" displayName="ドラゴンマスター" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1287,7 +1287,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="40" str="45" mag="0" skl="35" spd="25" lck="10" def="25" res="5" />
   </character>
-  <character id="117" name="WyvernRider">
+  <character id="117" name="WyvernRider" gender="Male">
     <text lang="English" displayName="Captured Wyvern Rider" />
     <text lang="Japanese" displayName="ドラゴンナイト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1298,7 +1298,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="35" mag="0" skl="35" spd="25" lck="10" def="25" res="5" />
   </character>
-  <character id="118" name="MaligKnight">
+  <character id="118" name="MaligKnight" gender="Male">
     <text lang="English" displayName="Captured Malig Knight" />
     <text lang="Japanese" displayName="レヴナントナイト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1309,7 +1309,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="35" mag="15" skl="35" spd="25" lck="10" def="20" res="10" />
   </character>
-  <character id="119" name="MasterNinja">
+  <character id="119" name="MasterNinja" gender="Male">
     <text lang="English" displayName="Captured Master Ninja" />
     <text lang="Japanese" displayName="上忍" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1320,7 +1320,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="25" str="30" mag="0" skl="40" spd="45" lck="15" def="15" res="15" />
   </character>
-  <character id="120" name="Ninja">
+  <character id="120" name="Ninja" gender="Male">
     <text lang="English" displayName="Captured Ninja" />
     <text lang="Japanese" displayName="忍" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1331,7 +1331,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="25" str="25" mag="0" skl="40" spd="40" lck="15" def="15" res="10" />
   </character>
-  <character id="121" name="Mechanist">
+  <character id="121" name="Mechanist" gender="Male">
     <text lang="English" displayName="Captured Mechanist" />
     <text lang="Japanese" displayName="絡繰師" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1342,7 +1342,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="25" mag="0" skl="40" spd="40" lck="15" def="20" res="10" />
   </character>
-  <character id="122" name="Apothecary">
+  <character id="122" name="Apothecary" gender="Male">
     <text lang="English" displayName="Captured Apothecary" />
     <text lang="Japanese" displayName="薬商人" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1353,7 +1353,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="40" str="25" mag="0" skl="35" spd="25" lck="15" def="20" res="5" />
   </character>
-  <character id="123" name="Merchant">
+  <character id="123" name="Merchant" gender="Male">
     <text lang="English" displayName="Captured Merchant" />
     <text lang="Japanese" displayName="大商人" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1364,7 +1364,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="45" str="30" mag="0" skl="35" spd="25" lck="20" def="20" res="10" />
   </character>
-  <character id="124" name="Sorcerer">
+  <character id="124" name="Sorcerer" gender="Male">
     <text lang="English" displayName="Captured Sorcerer" />
     <text lang="Japanese" displayName="ソーサラー" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1375,7 +1375,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="0" mag="35" skl="40" spd="25" lck="15" def="15" res="20" />
   </character>
-  <character id="125" name="DarkMage">
+  <character id="125" name="DarkMage" gender="Male">
     <text lang="English" displayName="Captured Dark Mage" />
     <text lang="Japanese" displayName="ダークマージ" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1386,7 +1386,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="30" str="10" mag="30" skl="35" spd="25" lck="10" def="15" res="15" />
   </character>
-  <character id="126" name="DarkKnight">
+  <character id="126" name="DarkKnight" gender="Male">
     <text lang="English" displayName="Captured Dark Knight" />
     <text lang="Japanese" displayName="ダークナイト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1397,7 +1397,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="20" mag="30" skl="35" spd="25" lck="10" def="20" res="15" />
   </character>
-  <character id="127" name="Strategist">
+  <character id="127" name="Strategist" gender="Female">
     <text lang="English" displayName="Captured Strategist" />
     <text lang="Japanese" displayName="ストラテジスト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1408,7 +1408,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="30" str="10" mag="35" skl="25" spd="25" lck="20" def="20" res="25" />
   </character>
-  <character id="128" name="Troubadour">
+  <character id="128" name="Troubadour" gender="Female">
     <text lang="English" displayName="Captured Troubadour" />
     <text lang="Japanese" displayName="ロッドナイト" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1419,7 +1419,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="25" str="10" mag="35" skl="20" spd="25" lck="20" def="15" res="25" />
   </character>
-  <character id="129" name="Maid">
+  <character id="129" name="Maid" gender="Female">
     <text lang="English" displayName="Captured Maid" />
     <text lang="Japanese" displayName="メイド" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1430,7 +1430,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="30" str="20" mag="25" skl="30" spd="30" lck="15" def="20" res="20" />
   </character>
-  <character id="130" name="Villager">
+  <character id="130" name="Villager" gender="Male">
     <text lang="English" displayName="Captured Villager" />
     <text lang="Japanese" displayName="村人" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1441,7 +1441,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="35" str="30" mag="10" skl="25" spd="25" lck="20" def="20" res="10" />
   </character>
-  <character id="131" name="Lancer">
+  <character id="131" name="Lancer" gender="Male">
     <text lang="English" displayName="Captured Lancer" />
     <text lang="Japanese" displayName="ランサー" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -1452,7 +1452,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="40" str="35" mag="0" skl="30" spd="25" lck="10" def="25" res="0" />
   </character>
-  <character id="132" name="BondUnitHH1">
+  <character id="132" name="BondUnitHH1" gender="Male">
     <text lang="English" displayName="Gin" />
     <text lang="Japanese" displayName="アイネズ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1463,7 +1463,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="133" name="BondUnitHH2">
+  <character id="133" name="BondUnitHH2" gender="Male">
     <text lang="English" displayName="Azuki" />
     <text lang="Japanese" displayName="アズキ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1474,7 +1474,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="134" name="BondUnitHH3">
+  <character id="134" name="BondUnitHH3" gender="Male">
     <text lang="English" displayName="Hakuto" />
     <text lang="Japanese" displayName="ウスベニ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1485,7 +1485,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="135" name="BondUnitHH4">
+  <character id="135" name="BondUnitHH4" gender="Male">
     <text lang="English" displayName="Kureha" />
     <text lang="Japanese" displayName="ウツブシ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1496,7 +1496,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="136" name="BondUnitHH5">
+  <character id="136" name="BondUnitHH5" gender="Male">
     <text lang="English" displayName="Sango" />
     <text lang="Japanese" displayName="クレナイ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1507,7 +1507,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="137" name="BondUnitHH6">
+  <character id="137" name="BondUnitHH6" gender="Male">
     <text lang="English" displayName="Himawari" />
     <text lang="Japanese" displayName="コウゾメ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1518,7 +1518,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="138" name="BondUnitHH7">
+  <character id="138" name="BondUnitHH7" gender="Male">
     <text lang="English" displayName="Kogane" />
     <text lang="Japanese" displayName="コガネ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1529,7 +1529,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="139" name="BondUnitHH8">
+  <character id="139" name="BondUnitHH8" gender="Male">
     <text lang="English" displayName="Ai" />
     <text lang="Japanese" displayName="シブカミ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1540,7 +1540,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="140" name="BondUnitHH9">
+  <character id="140" name="BondUnitHH9" gender="Male">
     <text lang="English" displayName="Tetsu" />
     <text lang="Japanese" displayName="トキガラ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1551,7 +1551,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="141" name="BondUnitHH10">
+  <character id="141" name="BondUnitHH10" gender="Male">
     <text lang="English" displayName="Tokiwa" />
     <text lang="Japanese" displayName="トキワ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1562,7 +1562,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="142" name="BondUnitHH11">
+  <character id="142" name="BondUnitHH11" gender="Male">
     <text lang="English" displayName="Suzaku" />
     <text lang="Japanese" displayName="ナデシコ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1573,7 +1573,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="143" name="BondUnitHH12">
+  <character id="143" name="BondUnitHH12" gender="Male">
     <text lang="English" displayName="Chigusa" />
     <text lang="Japanese" displayName="ハイウメ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1584,7 +1584,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="144" name="BondUnitHH13">
+  <character id="144" name="BondUnitHH13" gender="Male">
     <text lang="English" displayName="Renga" />
     <text lang="Japanese" displayName="ハジゾメ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1595,7 +1595,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="145" name="BondUnitHH14">
+  <character id="145" name="BondUnitHH14" gender="Male">
     <text lang="English" displayName="Moegi" />
     <text lang="Japanese" displayName="フタアイ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1606,7 +1606,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="146" name="BondUnitHH15">
+  <character id="146" name="BondUnitHH15" gender="Male">
     <text lang="English" displayName="Kohaku" />
     <text lang="Japanese" displayName="ミズガキ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1617,7 +1617,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="147" name="BondUnitHH16">
+  <character id="147" name="BondUnitHH16" gender="Male">
     <text lang="English" displayName="Murasaki" />
     <text lang="Japanese" displayName="ムラサキ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1628,7 +1628,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="148" name="BondUnitHH17">
+  <character id="148" name="BondUnitHH17" gender="Male">
     <text lang="English" displayName="Momotaro" />
     <text lang="Japanese" displayName="モエギ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1639,7 +1639,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="149" name="BondUnitHH18">
+  <character id="149" name="BondUnitHH18" gender="Male">
     <text lang="English" displayName="Sumire" />
     <text lang="Japanese" displayName="ヤマブキ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1650,7 +1650,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="150" name="BondUnitNN1">
+  <character id="150" name="BondUnitNN1" gender="Male">
     <text lang="English" displayName="Rusty" />
     <text lang="Japanese" displayName="アイボリー" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1661,7 +1661,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="151" name="BondUnitNN2">
+  <character id="151" name="BondUnitNN2" gender="Male">
     <text lang="English" displayName="Amber" />
     <text lang="Japanese" displayName="アンバー" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1672,7 +1672,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="152" name="BondUnitNN3">
+  <character id="152" name="BondUnitNN3" gender="Male">
     <text lang="English" displayName="Auburn" />
     <text lang="Japanese" displayName="カーキー" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1683,7 +1683,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="153" name="BondUnitNN4">
+  <character id="153" name="BondUnitNN4" gender="Male">
     <text lang="English" displayName="Coral" />
     <text lang="Japanese" displayName="カーマイン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1694,7 +1694,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="154" name="BondUnitNN5">
+  <character id="154" name="BondUnitNN5" gender="Male">
     <text lang="English" displayName="Hunter" />
     <text lang="Japanese" displayName="コバルト" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1705,7 +1705,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="155" name="BondUnitNN6">
+  <character id="155" name="BondUnitNN6" gender="Male">
     <text lang="English" displayName="Hazel" />
     <text lang="Japanese" displayName="コルク" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1716,7 +1716,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="156" name="BondUnitNN7">
+  <character id="156" name="BondUnitNN7" gender="Male">
     <text lang="English" displayName="Cyan" />
     <text lang="Japanese" displayName="シアン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1727,7 +1727,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="157" name="BondUnitNN8">
+  <character id="157" name="BondUnitNN8" gender="Male">
     <text lang="English" displayName="Fuchsia" />
     <text lang="Japanese" displayName="スカーレット" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1738,7 +1738,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="158" name="BondUnitNN9">
+  <character id="158" name="BondUnitNN9" gender="Male">
     <text lang="English" displayName="Jett" />
     <text lang="Japanese" displayName="セピア" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1749,7 +1749,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="159" name="BondUnitNN10">
+  <character id="159" name="BondUnitNN10" gender="Male">
     <text lang="English" displayName="Olive" />
     <text lang="Japanese" displayName="バーミリオン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1760,7 +1760,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="160" name="BondUnitNN11">
+  <character id="160" name="BondUnitNN11" gender="Male">
     <text lang="English" displayName="Slate" />
     <text lang="Japanese" displayName="パープル" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1771,7 +1771,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="161" name="BondUnitNN12">
+  <character id="161" name="BondUnitNN12" gender="Male">
     <text lang="English" displayName="Violet" />
     <text lang="Japanese" displayName="バイオレット" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1782,7 +1782,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="162" name="BondUnitNN13">
+  <character id="162" name="BondUnitNN13" gender="Male">
     <text lang="English" displayName="Sterling" />
     <text lang="Japanese" displayName="ブラウン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1793,7 +1793,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="163" name="BondUnitNN14">
+  <character id="163" name="BondUnitNN14" gender="Male">
     <text lang="English" displayName="Ruby" />
     <text lang="Japanese" displayName="ブラック" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1804,7 +1804,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="164" name="BondUnitNN15">
+  <character id="164" name="BondUnitNN15" gender="Male">
     <text lang="English" displayName="Tanner" />
     <text lang="Japanese" displayName="ブロンド" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1815,7 +1815,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="165" name="BondUnitNN16">
+  <character id="165" name="BondUnitNN16" gender="Male">
     <text lang="English" displayName="Kelly" />
     <text lang="Japanese" displayName="ベージュ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1826,7 +1826,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="166" name="BondUnitNN17">
+  <character id="166" name="BondUnitNN17" gender="Male">
     <text lang="English" displayName="Teale" />
     <text lang="Japanese" displayName="ホワイト" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1837,7 +1837,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="167" name="BondUnitNN18">
+  <character id="167" name="BondUnitNN18" gender="Male">
     <text lang="English" displayName="Magenta" />
     <text lang="Japanese" displayName="マゼンダ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1848,7 +1848,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="168" name="BondUnitHN1">
+  <character id="168" name="BondUnitHN1" gender="Male">
     <text lang="English" displayName="Naoki" />
     <text lang="Japanese" displayName="オボロヅキ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1859,7 +1859,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="169" name="BondUnitHN2">
+  <character id="169" name="BondUnitHN2" gender="Male">
     <text lang="English" displayName="Shizuku" />
     <text lang="Japanese" displayName="モチヅキ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1870,7 +1870,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="170" name="BondUnitHN3">
+  <character id="170" name="BondUnitHN3" gender="Male">
     <text lang="English" displayName="Kaito" />
     <text lang="Japanese" displayName="イザヨイ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1881,7 +1881,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="171" name="BondUnitHN4">
+  <character id="171" name="BondUnitHN4" gender="Male">
     <text lang="English" displayName="Wakaba" />
     <text lang="Japanese" displayName="アマツカゼ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1892,7 +1892,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="172" name="BondUnitHN5">
+  <character id="172" name="BondUnitHN5" gender="Male">
     <text lang="English" displayName="Yukio" />
     <text lang="Japanese" displayName="イブキ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1903,7 +1903,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="173" name="BondUnitHN6">
+  <character id="173" name="BondUnitHN6" gender="Male">
     <text lang="English" displayName="Ibuki" />
     <text lang="Japanese" displayName="ツムジカゼ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1914,7 +1914,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="174" name="BondUnitHN7">
+  <character id="174" name="BondUnitHN7" gender="Male">
     <text lang="English" displayName="Riku" />
     <text lang="Japanese" displayName="ツグミ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1925,7 +1925,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="175" name="BondUnitHN8">
+  <character id="175" name="BondUnitHN8" gender="Male">
     <text lang="English" displayName="Hibari" />
     <text lang="Japanese" displayName="ヒバリ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1936,7 +1936,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="176" name="BondUnitHN9">
+  <character id="176" name="BondUnitHN9" gender="Male">
     <text lang="English" displayName="Minato" />
     <text lang="Japanese" displayName="ヤブサメ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1947,7 +1947,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="177" name="BondUnitHN10">
+  <character id="177" name="BondUnitHN10" gender="Male">
     <text lang="English" displayName="Aspen" />
     <text lang="Japanese" displayName="ブルームーン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1958,7 +1958,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="178" name="BondUnitHN11">
+  <character id="178" name="BondUnitHN11" gender="Male">
     <text lang="English" displayName="Cypress" />
     <text lang="Japanese" displayName="エクリプス" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1969,7 +1969,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="179" name="BondUnitHN12">
+  <character id="179" name="BondUnitHN12" gender="Male">
     <text lang="English" displayName="Daisy" />
     <text lang="Japanese" displayName="ルナ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1980,7 +1980,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="180" name="BondUnitHN13">
+  <character id="180" name="BondUnitHN13" gender="Male">
     <text lang="English" displayName="Thorn" />
     <text lang="Japanese" displayName="ガスト" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -1991,7 +1991,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="181" name="BondUnitHN14">
+  <character id="181" name="BondUnitHN14" gender="Male">
     <text lang="English" displayName="Primrose" />
     <text lang="Japanese" displayName="ゲイル" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2002,7 +2002,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="182" name="BondUnitHN15">
+  <character id="182" name="BondUnitHN15" gender="Male">
     <text lang="English" displayName="Quill" />
     <text lang="Japanese" displayName="ブリーズ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2013,7 +2013,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="183" name="BondUnitHN16">
+  <character id="183" name="BondUnitHN16" gender="Male">
     <text lang="English" displayName="Willow" />
     <text lang="Japanese" displayName="アイビス" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2024,7 +2024,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="184" name="BondUnitHN17">
+  <character id="184" name="BondUnitHN17" gender="Male">
     <text lang="English" displayName="Flint" />
     <text lang="Japanese" displayName="スパロウ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2035,7 +2035,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="185" name="BondUnitHN18">
+  <character id="185" name="BondUnitHN18" gender="Male">
     <text lang="English" displayName="Sequoia" />
     <text lang="Japanese" displayName="フェザント" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2046,7 +2046,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="186" name="BondUnitHI1">
+  <character id="186" name="BondUnitHI1" gender="Male">
     <text lang="English" displayName="Shoga" />
     <text lang="Japanese" displayName="アサガオ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2057,7 +2057,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="187" name="BondUnitHI2">
+  <character id="187" name="BondUnitHI2" gender="Male">
     <text lang="English" displayName="Anzu" />
     <text lang="Japanese" displayName="アジサイ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2068,7 +2068,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="188" name="BondUnitHI3">
+  <character id="188" name="BondUnitHI3" gender="Male">
     <text lang="English" displayName="Inaho" />
     <text lang="Japanese" displayName="キキョウ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2079,7 +2079,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="189" name="BondUnitHI4">
+  <character id="189" name="BondUnitHI4" gender="Male">
     <text lang="English" displayName="Yuzu" />
     <text lang="Japanese" displayName="サザンカ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2090,7 +2090,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="190" name="BondUnitHI5">
+  <character id="190" name="BondUnitHI5" gender="Male">
     <text lang="English" displayName="Mugi" />
     <text lang="Japanese" displayName="シャクナゲ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2101,7 +2101,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="191" name="BondUnitHI6">
+  <character id="191" name="BondUnitHI6" gender="Male">
     <text lang="English" displayName="Umeko" />
     <text lang="Japanese" displayName="スイレン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2112,7 +2112,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="192" name="BondUnitHI7">
+  <character id="192" name="BondUnitHI7" gender="Male">
     <text lang="English" displayName="Nori" />
     <text lang="Japanese" displayName="スミレ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2123,7 +2123,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="193" name="BondUnitHI8">
+  <character id="193" name="BondUnitHI8" gender="Male">
     <text lang="English" displayName="Kurumi" />
     <text lang="Japanese" displayName="ツツジ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2134,7 +2134,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="194" name="BondUnitHI9">
+  <character id="194" name="BondUnitHI9" gender="Male">
     <text lang="English" displayName="Naruto" />
     <text lang="Japanese" displayName="ツユクサ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2145,7 +2145,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="195" name="BondUnitHI10">
+  <character id="195" name="BondUnitHI10" gender="Male">
     <text lang="English" displayName="Ringo" />
     <text lang="Japanese" displayName="ナズナ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2156,7 +2156,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="196" name="BondUnitHI11">
+  <character id="196" name="BondUnitHI11" gender="Male">
     <text lang="English" displayName="Shoya" />
     <text lang="Japanese" displayName="ヒナゲシ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2167,7 +2167,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="197" name="BondUnitHI12">
+  <character id="197" name="BondUnitHI12" gender="Male">
     <text lang="English" displayName="Kiku" />
     <text lang="Japanese" displayName="ヒルガオ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2178,7 +2178,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="198" name="BondUnitHI13">
+  <character id="198" name="BondUnitHI13" gender="Male">
     <text lang="English" displayName="Katsuo" />
     <text lang="Japanese" displayName="ホオズキ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2189,7 +2189,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="199" name="BondUnitHI14">
+  <character id="199" name="BondUnitHI14" gender="Male">
     <text lang="English" displayName="Ayu" />
     <text lang="Japanese" displayName="モクレン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2200,7 +2200,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="200" name="BondUnitHI15">
+  <character id="200" name="BondUnitHI15" gender="Male">
     <text lang="English" displayName="Takeshi" />
     <text lang="Japanese" displayName="ヤマユリ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2211,7 +2211,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="201" name="BondUnitHI16">
+  <character id="201" name="BondUnitHI16" gender="Male">
     <text lang="English" displayName="Mizuna" />
     <text lang="Japanese" displayName="ユウガオ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2222,7 +2222,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="202" name="BondUnitHI17">
+  <character id="202" name="BondUnitHI17" gender="Male">
     <text lang="English" displayName="Koumei" />
     <text lang="Japanese" displayName="ユリ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2233,7 +2233,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="203" name="BondUnitHI18">
+  <character id="203" name="BondUnitHI18" gender="Male">
     <text lang="English" displayName="Shiori" />
     <text lang="Japanese" displayName="ヨルガオ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2244,7 +2244,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="204" name="BondUnitNI1">
+  <character id="204" name="BondUnitNI1" gender="Male">
     <text lang="English" displayName="Sorrel" />
     <text lang="Japanese" displayName="アネモネ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2255,7 +2255,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="205" name="BondUnitNI2">
+  <character id="205" name="BondUnitNI2" gender="Male">
     <text lang="English" displayName="Rosemary" />
     <text lang="Japanese" displayName="アマリリス" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2266,7 +2266,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="206" name="BondUnitNI3">
+  <character id="206" name="BondUnitNI3" gender="Male">
     <text lang="English" displayName="Bay" />
     <text lang="Japanese" displayName="ガーベラ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2277,7 +2277,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="207" name="BondUnitNI4">
+  <character id="207" name="BondUnitNI4" gender="Male">
     <text lang="English" displayName="Anise" />
     <text lang="Japanese" displayName="カモミール" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2288,7 +2288,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="208" name="BondUnitNI5">
+  <character id="208" name="BondUnitNI5" gender="Male">
     <text lang="English" displayName="Saffron" />
     <text lang="Japanese" displayName="サフラン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2299,7 +2299,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="209" name="BondUnitNI6">
+  <character id="209" name="BondUnitNI6" gender="Male">
     <text lang="English" displayName="Pepper" />
     <text lang="Japanese" displayName="シクラメン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2310,7 +2310,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="210" name="BondUnitNI7">
+  <character id="210" name="BondUnitNI7" gender="Male">
     <text lang="English" displayName="Basil" />
     <text lang="Japanese" displayName="スイートピー" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2321,7 +2321,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="211" name="BondUnitNI8">
+  <character id="211" name="BondUnitNI8" gender="Male">
     <text lang="English" displayName="Ginger" />
     <text lang="Japanese" displayName="ダリア" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2332,7 +2332,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="212" name="BondUnitNI9">
+  <character id="212" name="BondUnitNI9" gender="Male">
     <text lang="English" displayName="Clove" />
     <text lang="Japanese" displayName="バニラ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2343,7 +2343,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="213" name="BondUnitNI10">
+  <character id="213" name="BondUnitNI10" gender="Male">
     <text lang="English" displayName="Mint" />
     <text lang="Japanese" displayName="フリージア" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2354,7 +2354,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="214" name="BondUnitNI11">
+  <character id="214" name="BondUnitNI11" gender="Male">
     <text lang="English" displayName="Caraway" />
     <text lang="Japanese" displayName="ベロニカ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2365,7 +2365,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="215" name="BondUnitNI12">
+  <character id="215" name="BondUnitNI12" gender="Male">
     <text lang="English" displayName="Thyme" />
     <text lang="Japanese" displayName="ポプラ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2376,7 +2376,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="216" name="BondUnitNI13">
+  <character id="216" name="BondUnitNI13" gender="Male">
     <text lang="English" displayName="Sage" />
     <text lang="Japanese" displayName="マーガレット" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2387,7 +2387,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="217" name="BondUnitNI14">
+  <character id="217" name="BondUnitNI14" gender="Male">
     <text lang="English" displayName="Cassia" />
     <text lang="Japanese" displayName="メタセコイヤ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2398,7 +2398,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="218" name="BondUnitNI15">
+  <character id="218" name="BondUnitNI15" gender="Male">
     <text lang="English" displayName="Dillan" />
     <text lang="Japanese" displayName="ライラック" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2409,7 +2409,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="219" name="BondUnitNI16">
+  <character id="219" name="BondUnitNI16" gender="Male">
     <text lang="English" displayName="Lavender" />
     <text lang="Japanese" displayName="ラベンダー" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2420,7 +2420,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="220" name="BondUnitNI17">
+  <character id="220" name="BondUnitNI17" gender="Male">
     <text lang="English" displayName="Fenn" />
     <text lang="Japanese" displayName="ライチ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2431,7 +2431,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="221" name="BondUnitNI18">
+  <character id="221" name="BondUnitNI18" gender="Male">
     <text lang="English" displayName="Perilla" />
     <text lang="Japanese" displayName="リアトリス" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2442,7 +2442,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="222" name="BondUnitII1">
+  <character id="222" name="BondUnitII1" gender="Male">
     <text lang="English" displayName="Dimitri" />
     <text lang="Japanese" displayName="アングル" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2453,7 +2453,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="223" name="BondUnitII2">
+  <character id="223" name="BondUnitII2" gender="Male">
     <text lang="English" displayName="Alexa" />
     <text lang="Japanese" displayName="イコール" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2464,7 +2464,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="224" name="BondUnitII3">
+  <character id="224" name="BondUnitII3" gender="Male">
     <text lang="English" displayName="Galen" />
     <text lang="Japanese" displayName="エリア" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2475,7 +2475,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="225" name="BondUnitII4">
+  <character id="225" name="BondUnitII4" gender="Male">
     <text lang="English" displayName="Althaea" />
     <text lang="Japanese" displayName="カーブ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2486,7 +2486,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="226" name="BondUnitII5">
+  <character id="226" name="BondUnitII5" gender="Male">
     <text lang="English" displayName="Damien" />
     <text lang="Japanese" displayName="グラフ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2497,7 +2497,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="227" name="BondUnitII6">
+  <character id="227" name="BondUnitII6" gender="Male">
     <text lang="English" displayName="Jacynth" />
     <text lang="Japanese" displayName="シンメトリ" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2508,7 +2508,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="228" name="BondUnitII7">
+  <character id="228" name="BondUnitII7" gender="Male">
     <text lang="English" displayName="Orion" />
     <text lang="Japanese" displayName="スフィア" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2519,7 +2519,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="229" name="BondUnitII8">
+  <character id="229" name="BondUnitII8" gender="Male">
     <text lang="English" displayName="Sophia" />
     <text lang="Japanese" displayName="スクエア" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2530,7 +2530,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="230" name="BondUnitII9">
+  <character id="230" name="BondUnitII9" gender="Male">
     <text lang="English" displayName="George" />
     <text lang="Japanese" displayName="セグメント" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2541,7 +2541,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="231" name="BondUnitII10">
+  <character id="231" name="BondUnitII10" gender="Male">
     <text lang="English" displayName="Eva" />
     <text lang="Japanese" displayName="パラレル" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2552,7 +2552,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="232" name="BondUnitII11">
+  <character id="232" name="BondUnitII11" gender="Male">
     <text lang="English" displayName="Theo" />
     <text lang="Japanese" displayName="フラクション" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2563,7 +2563,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="233" name="BondUnitII12">
+  <character id="233" name="BondUnitII12" gender="Male">
     <text lang="English" displayName="Helene" />
     <text lang="Japanese" displayName="プラス" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2574,7 +2574,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="234" name="BondUnitII13">
+  <character id="234" name="BondUnitII13" gender="Male">
     <text lang="English" displayName="Spiro" />
     <text lang="Japanese" displayName="プレーン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2585,7 +2585,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="235" name="BondUnitII14">
+  <character id="235" name="BondUnitII14" gender="Male">
     <text lang="English" displayName="Odele" />
     <text lang="Japanese" displayName="ベクトル" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2596,7 +2596,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="236" name="BondUnitII15">
+  <character id="236" name="BondUnitII15" gender="Male">
     <text lang="English" displayName="Peter" />
     <text lang="Japanese" displayName="マイナス" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2607,7 +2607,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="237" name="BondUnitII16">
+  <character id="237" name="BondUnitII16" gender="Male">
     <text lang="English" displayName="Rhoda" />
     <text lang="Japanese" displayName="ライン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2618,7 +2618,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="238" name="BondUnitII17">
+  <character id="238" name="BondUnitII17" gender="Male">
     <text lang="English" displayName="Lukas" />
     <text lang="Japanese" displayName="レディアス" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2629,7 +2629,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="239" name="BondUnitII18">
+  <character id="239" name="BondUnitII18" gender="Male">
     <text lang="English" displayName="Charis" />
     <text lang="Japanese" displayName="ラジアン" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
@@ -2640,7 +2640,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="240" name="MonsterUnpromoted0">
+  <character id="240" name="MonsterUnpromoted0" gender="None">
     <text lang="English" displayName="Monster" />
     <text lang="Japanese" displayName="魔物" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="-1" res="-1" />
@@ -2651,7 +2651,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="241" name="MonsterUnpromoted1">
+  <character id="241" name="MonsterUnpromoted1" gender="None">
     <text lang="English" displayName="Monster" />
     <text lang="Japanese" displayName="魔物" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="-1" res="-1" />
@@ -2662,7 +2662,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="242" name="MonsterPromoted0">
+  <character id="242" name="MonsterPromoted0" gender="None">
     <text lang="English" displayName="Monster" />
     <text lang="Japanese" displayName="魔物" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -2673,7 +2673,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="243" name="MonsterPromoted1">
+  <character id="243" name="MonsterPromoted1" gender="None">
     <text lang="English" displayName="Monster" />
     <text lang="Japanese" displayName="魔物" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -2684,7 +2684,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="244" name="ArenaChallenger">
+  <character id="244" name="ArenaChallenger" gender="None">
     <text lang="English" displayName="Opponent" />
     <text lang="Japanese" displayName="闘技者" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -2695,7 +2695,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="245" name="CastleLilith">
+  <character id="245" name="CastleLilith" gender="None">
     <text lang="English" displayName="Lilith" />
     <text lang="Japanese" displayName="リリス" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -2706,7 +2706,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="246" name="CastleHoshido_M">
+  <character id="246" name="CastleHoshido_M" gender="Male">
     <text lang="English" displayName="Shopkeep" />
     <text lang="Japanese" displayName="店番" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -2717,7 +2717,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="247" name="CastleHoshido_F">
+  <character id="247" name="CastleHoshido_F" gender="Female">
     <text lang="English" displayName="Shopkeep" />
     <text lang="Japanese" displayName="店番" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -2728,7 +2728,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="248" name="CastleNohr_M">
+  <character id="248" name="CastleNohr_M" gender="Male">
     <text lang="English" displayName="Shopkeep" />
     <text lang="Japanese" displayName="店番" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -2739,7 +2739,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="249" name="CastleNohr_F">
+  <character id="249" name="CastleNohr_F" gender="Female">
     <text lang="English" displayName="Shopkeep" />
     <text lang="Japanese" displayName="店番" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -2750,7 +2750,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="250" name="Marth">
+  <character id="250" name="Marth" gender="Male">
     <text lang="English" displayName="Marth" />
     <text lang="Japanese" displayName="マルス" />
     <baseStats hp="10" str="8" mag="2" skl="13" spd="13" lck="17" def="8" res="8" />
@@ -2761,7 +2761,7 @@
     <hairColor r="72" g="95" b="145" a="255" />
     <growthRates hp="45" str="30" mag="5" skl="50" spd="55" lck="60" def="35" res="20" />
   </character>
-  <character id="251" name="Ike">
+  <character id="251" name="Ike" gender="Male">
     <text lang="English" displayName="Ike" />
     <text lang="Japanese" displayName="アイク" />
     <baseStats hp="11" str="10" mag="0" skl="9" spd="7" lck="13" def="9" res="7" />
@@ -2772,7 +2772,7 @@
     <hairColor r="64" g="85" b="155" a="255" />
     <growthRates hp="50" str="45" mag="0" skl="40" spd="35" lck="45" def="40" res="10" />
   </character>
-  <character id="252" name="Lucina">
+  <character id="252" name="Lucina" gender="Female">
     <text lang="English" displayName="Lucina" />
     <text lang="Japanese" displayName="ルキナ" />
     <baseStats hp="10" str="9" mag="2" skl="11" spd="12" lck="15" def="7" res="10" />
@@ -2783,7 +2783,7 @@
     <hairColor r="76" g="88" b="123" a="255" />
     <growthRates hp="40" str="35" mag="5" skl="45" spd="50" lck="50" def="25" res="35" />
   </character>
-  <character id="253" name="Robin">
+  <character id="253" name="Robin" gender="Male">
     <text lang="English" displayName="Robin" />
     <text lang="Japanese" displayName="ルフレ" />
     <baseStats hp="7" str="7" mag="11" skl="12" spd="6" lck="8" def="7" res="9" />
@@ -2794,7 +2794,7 @@
     <hairColor r="246" g="244" b="239" a="255" />
     <growthRates hp="35" str="30" mag="40" skl="45" spd="30" lck="25" def="25" res="40" />
   </character>
-  <character id="254" name="Outrealm">
+  <character id="254" name="Outrealm" gender="None">
     <text lang="English" displayName="Outrealmer" />
     <text lang="Japanese" displayName="異界の人物" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -2805,7 +2805,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
-  <character id="512" name="CipherMarth">
+  <character id="512" name="CipherMarth" gender="Male">
     <text lang="English" displayName="Cipher Marth" />
     <text lang="Japanese" displayName="サイファマルス" />
     <baseStats hp="6" str="6" mag="2" skl="9" spd="9" lck="13" def="5" res="7" />
@@ -2816,7 +2816,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="45" str="30" mag="5" skl="50" spd="55" lck="60" def="35" res="20" />
   </character>
-  <character id="768" name="CipherLucina">
+  <character id="768" name="CipherLucina" gender="Female">
     <text lang="English" displayName="Cipher Lucina" />
     <text lang="Japanese" displayName="サイファルキナ" />
     <baseStats hp="6" str="6" mag="2" skl="8" spd="9" lck="12" def="4" res="8" />
@@ -2827,7 +2827,7 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="40" str="35" mag="5" skl="45" spd="50" lck="50" def="25" res="35" />
   </character>
-  <character id="1024" name="CipherMinerva">
+  <character id="1024" name="CipherMinerva" gender="Female">
     <text lang="English" displayName="Cipher Minerva" />
     <text lang="Japanese" displayName="サイファミネルバ" />
     <baseStats hp="4" str="7" mag="0" skl="2" spd="7" lck="2" def="11" res="3" />
