@@ -757,27 +757,27 @@ namespace FEFTwiddler.Model
 
         // Four unknown bytes (0x01 through 0x04)
 
-        public Enums.Headwear Headwear
+        public Enums.Accessory Headwear
         {
-            get { return (Enums.Headwear)_rawBlock3[0x05]; }
+            get { return (Enums.Accessory)_rawBlock3[0x05]; }
             set { _rawBlock3[0x05] = (byte)value; }
         }
 
-        public Enums.Facewear Facewear
+        public Enums.Accessory Facewear
         {
-            get { return (Enums.Facewear)_rawBlock3[0x06]; }
+            get { return (Enums.Accessory)_rawBlock3[0x06]; }
             set { _rawBlock3[0x06] = (byte)value; }
         }
 
-        public Enums.Armwear Armwear
+        public Enums.Accessory Armwear
         {
-            get { return (Enums.Armwear)_rawBlock3[0x07]; }
+            get { return (Enums.Accessory)_rawBlock3[0x07]; }
             set { _rawBlock3[0x07] = (byte)value; }
         }
 
-        public Enums.Underwear Underwear
+        public Enums.Accessory Underwear
         {
-            get { return (Enums.Underwear)_rawBlock3[0x08]; }
+            get { return (Enums.Accessory)_rawBlock3[0x08]; }
             set { _rawBlock3[0x08] = (byte)value; }
         }
 

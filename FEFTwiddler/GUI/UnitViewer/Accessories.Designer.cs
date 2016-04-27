@@ -91,7 +91,6 @@
             // 
             // cmbFacewear
             // 
-            this.cmbFacewear.Enabled = false;
             this.cmbFacewear.FormattingEnabled = true;
             this.cmbFacewear.Location = new System.Drawing.Point(55, 46);
             this.cmbFacewear.Name = "cmbFacewear";
@@ -100,7 +99,6 @@
             // 
             // cmbHeadwear
             // 
-            this.cmbHeadwear.Enabled = false;
             this.cmbHeadwear.FormattingEnabled = true;
             this.cmbHeadwear.Location = new System.Drawing.Point(55, 19);
             this.cmbHeadwear.Name = "cmbHeadwear";
@@ -109,7 +107,6 @@
             // 
             // cmbArmwear
             // 
-            this.cmbArmwear.Enabled = false;
             this.cmbArmwear.FormattingEnabled = true;
             this.cmbArmwear.Location = new System.Drawing.Point(232, 19);
             this.cmbArmwear.Name = "cmbArmwear";
@@ -118,7 +115,6 @@
             // 
             // cmbUnderwear
             // 
-            this.cmbUnderwear.Enabled = false;
             this.cmbUnderwear.FormattingEnabled = true;
             this.cmbUnderwear.Location = new System.Drawing.Point(232, 46);
             this.cmbUnderwear.Name = "cmbUnderwear";

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <accessory id="0" name="None" type="None">
+    <text lang="English" displayName="(None)" />
+    <text lang="Japanese" displayName="無し" />
+  </accessory>
+  <accessory id="1" name="MarthsTiara" type="Headwear">
+    <text lang="English" displayName="Marth's Tiara" />
+    <text lang="Japanese" displayName="マルスのティアラ" />
+  </accessory>
+  <accessory id="2" name="DragonHairpin" type="Headwear">
+    <text lang="English" displayName="Dragon Hairpin" />
+    <text lang="Japanese" displayName="神竜の髪飾り" />
+  </accessory>
+  <accessory id="3" name="BearHat" type="Headwear">
+    <text lang="English" displayName="Bear Hat" />
+    <text lang="Japanese" displayName="熊の髪飾り" />
+  </accessory>
+  <accessory id="4" name="ButterflyMask" type="Facewear">
+    <text lang="English" displayName="Butterfly Mask" />
+    <text lang="Japanese" displayName="蝶の仮面" />
+  </accessory>
+  <accessory id="5" name="DragonFeather" type="Armwear">
+    <text lang="English" displayName="Dragon Feather" />
+    <text lang="Japanese" displayName="邪竜の羽根" />
+  </accessory>
+  <accessory id="6" name="RobinsBooks" type="Armwear">
+    <text lang="English" displayName="Robin's Books" />
+    <text lang="Japanese" displayName="ルフレの書架" />
+  </accessory>
+  <accessory id="7" name="IkesPauldron" type="Armwear">
+    <text lang="English" displayName="Ike's Pauldron" />
+    <text lang="Japanese" displayName="アイクの肩当て" />
+  </accessory>
+  <accessory id="8" name="YunePauldron" type="Armwear">
+    <text lang="English" displayName="Yune Pauldron" />
+    <text lang="Japanese" displayName="蒼炎の肩当て" />
+  </accessory>
+  <accessory id="9" name="PinkBeret" type="Headwear">
+    <text lang="English" displayName="Pink Beret" />
+    <text lang="Japanese" displayName="ピンクの帽子" />
+  </accessory>
+  <accessory id="10" name="TraineeGarb" type="Headwear">
+    <text lang="English" displayName="Trainee Garb" />
+    <text lang="Japanese" displayName="修験者の頭襟" />
+  </accessory>
+  <accessory id="11" name="MagesCirclet" type="Headwear">
+    <text lang="English" displayName="Mage's Circlet" />
+    <text lang="Japanese" displayName="魔道士の冠" />
+  </accessory>
+  <accessory id="12" name="PrincessBow" type="Headwear">
+    <text lang="English" displayName="Princess Bow" />
+    <text lang="Japanese" displayName="プリンセスリボン" />
+  </accessory>
+  <accessory id="13" name="DirtyKerchief" type="Headwear">
+    <text lang="English" displayName="Dirty Kerchief" />
+    <text lang="Japanese" displayName="頭巾" />
+  </accessory>
+  <accessory id="14" name="SimpleKerchief" type="Headwear">
+    <text lang="English" displayName="Simple Kerchief" />
+    <text lang="Japanese" displayName="素朴なカーチフ" />
+  </accessory>
+  <accessory id="15" name="FlowerBand" type="Headwear">
+    <text lang="English" displayName="Flower Band" />
+    <text lang="Japanese" displayName="花の髪飾り" />
+  </accessory>
+  <accessory id="16" name="GiantHaircomb" type="Headwear">
+    <text lang="English" displayName="Giant Haircomb" />
+    <text lang="Japanese" displayName="大きなクシ" />
+  </accessory>
+  <accessory id="17" name="LotteryHat" type="Headwear">
+    <text lang="English" displayName="Lottery Hat" />
+    <text lang="Japanese" displayName="クジ引き屋の帽子" />
+  </accessory>
+  <accessory id="18" name="PrincessCrown" type="Headwear">
+    <text lang="English" displayName="Princess Crown" />
+    <text lang="Japanese" displayName="プリンセスの冠" />
+  </accessory>
+  <accessory id="19" name="PrinceCrown" type="Headwear">
+    <text lang="English" displayName="Prince Crown" />
+    <text lang="Japanese" displayName="プリンスの冠" />
+  </accessory>
+  <accessory id="20" name="SunTiara" type="Headwear">
+    <text lang="English" displayName="Sun Tiara" />
+    <text lang="Japanese" displayName="女王の日輪" />
+  </accessory>
+  <accessory id="21" name="WhiteRibbon" type="Headwear">
+    <text lang="English" displayName="White Ribbon" />
+    <text lang="Japanese" displayName="白いリボン" />
+  </accessory>
+  <accessory id="22" name="Nightcap" type="Headwear">
+    <text lang="English" displayName="Nightcap" />
+    <text lang="Japanese" displayName="ナイトキャップ" />
+  </accessory>
+  <accessory id="23" name="GoldenClip" type="Headwear">
+    <text lang="English" displayName="Golden Clip" />
+    <text lang="Japanese" displayName="黄金の髪飾り" />
+  </accessory>
+  <accessory id="24" name="MaidsBand" type="Headwear">
+    <text lang="English" displayName="Maid's Band" />
+    <text lang="Japanese" displayName="メイドの髪飾り" />
+  </accessory>
+  <accessory id="25" name="ChefsHat" type="Headwear">
+    <text lang="English" displayName="Chef's Hat" />
+    <text lang="Japanese" displayName="コックの帽子" />
+  </accessory>
+  <accessory id="26" name="HeadTowel" type="Headwear">
+    <text lang="English" displayName="Head Towel" />
+    <text lang="Japanese" displayName="温泉の手拭い" />
+  </accessory>
+  <accessory id="27" name="NinjaMask" type="Facewear">
+    <text lang="English" displayName="Ninja Mask" />
+    <text lang="Japanese" displayName="忍の覆面" />
+  </accessory>
+  <accessory id="28" name="EffigyMask" type="Facewear">
+    <text lang="English" displayName="Effigy Mask" />
+    <text lang="Japanese" displayName="案山子のお面" />
+  </accessory>
+  <accessory id="29" name="RoundGlasses" type="Facewear">
+    <text lang="English" displayName="Round Glasses" />
+    <text lang="Japanese" displayName="丸メガネ" />
+  </accessory>
+  <accessory id="30" name="CrossEyepatch" type="Facewear">
+    <text lang="English" displayName="Cross Eyepatch" />
+    <text lang="Japanese" displayName="十字の眼帯" />
+  </accessory>
+  <accessory id="31" name="OniMask" type="Facewear">
+    <text lang="English" displayName="Oni Mask" />
+    <text lang="Japanese" displayName="鬼のお面" />
+  </accessory>
+  <accessory id="32" name="FacelessMask" type="Facewear">
+    <text lang="English" displayName="Faceless Mask" />
+    <text lang="Japanese" displayName="革のマスク" />
+  </accessory>
+  <accessory id="33" name="RoyalFeather" type="Facewear">
+    <text lang="English" displayName="Royal Feather" />
+    <text lang="Japanese" displayName="王妃の羽飾り" />
+  </accessory>
+  <accessory id="34" name="HeroMask" type="Facewear">
+    <text lang="English" displayName="Hero Mask" />
+    <text lang="Japanese" displayName="ヒーローのお面" />
+  </accessory>
+  <accessory id="35" name="EinherjarMask" type="Facewear">
+    <text lang="English" displayName="Einherjar Mask" />
+    <text lang="Japanese" displayName="魔符屋の仮面" />
+  </accessory>
+  <accessory id="36" name="SamuraiMask" type="Facewear">
+    <text lang="English" displayName="Samurai Mask" />
+    <text lang="Japanese" displayName="獅子の面当て" />
+  </accessory>
+  <accessory id="37" name="GolemMask" type="Facewear">
+    <text lang="English" displayName="Golem Mask" />
+    <text lang="Japanese" displayName="ゴーレムの面" />
+  </accessory>
+  <accessory id="38" name="TenguMask" type="Facewear">
+    <text lang="English" displayName="Tengu Mask" />
+    <text lang="Japanese" displayName="婆娑羅の面" />
+  </accessory>
+  <accessory id="39" name="JailerMask" type="Facewear">
+    <text lang="English" displayName="Jailer Mask" />
+    <text lang="Japanese" displayName="牢屋番の仮面" />
+  </accessory>
+  <accessory id="40" name="TintedGlasses" type="Facewear">
+    <text lang="English" displayName="Tinted Glasses" />
+    <text lang="Japanese" displayName="色つきメガネ" />
+  </accessory>
+  <accessory id="41" name="FoxTail" type="Armwear">
+    <text lang="English" displayName="Fox Tail" />
+    <text lang="Japanese" displayName="獣のしっぽ" />
+  </accessory>
+  <accessory id="42" name="NohrPauldron" type="Armwear">
+    <text lang="English" displayName="Nohr Pauldron" />
+    <text lang="Japanese" displayName="傭兵の盾" />
+  </accessory>
+  <accessory id="43" name="MedicineTrunk" type="Armwear">
+    <text lang="English" displayName="Medicine Trunk" />
+    <text lang="Japanese" displayName="商人の薬箱" />
+  </accessory>
+  <accessory id="44" name="LionShield" type="Armwear">
+    <text lang="English" displayName="Lion Shield" />
+    <text lang="Japanese" displayName="ライオンの盾" />
+  </accessory>
+  <accessory id="45" name="ArmoredShell" type="Armwear">
+    <text lang="English" displayName="Armored Shell" />
+    <text lang="Japanese" displayName="アーマーの甲羅" />
+  </accessory>
+  <accessory id="46" name="FoxPauldron" type="Armwear">
+    <text lang="English" displayName="Fox Pauldron" />
+    <text lang="Japanese" displayName="大型狐面" />
+  </accessory>
+  <accessory id="47" name="HeartPauldron" type="Armwear">
+    <text lang="English" displayName="Heart Pauldron" />
+    <text lang="Japanese" displayName="ハートの盾" />
+  </accessory>
+  <accessory id="48" name="BattleFlag" type="Armwear">
+    <text lang="English" displayName="Battle Flag" />
+    <text lang="Japanese" displayName="槍聖ののぼり" />
+  </accessory>
+  <accessory id="49" name="GeneralsShell" type="Armwear">
+    <text lang="English" displayName="General's Shell" />
+    <text lang="Japanese" displayName="ジェネラルの甲羅" />
+  </accessory>
+  <accessory id="50" name="WaterGourd" type="Armwear">
+    <text lang="English" displayName="Water Gourd" />
+    <text lang="Japanese" displayName="修羅のひょうたん" />
+  </accessory>
+  <accessory id="51" name="ArmoryShield" type="Armwear">
+    <text lang="English" displayName="Armory Shield" />
+    <text lang="Japanese" displayName="武器屋の証" />
+  </accessory>
+  <accessory id="52" name="ItemShield" type="Armwear">
+    <text lang="English" displayName="Item Shield" />
+    <text lang="Japanese" displayName="道具屋の証" />
+  </accessory>
+  <accessory id="53" name="ArenaShield" type="Armwear">
+    <text lang="English" displayName="Arena Shield" />
+    <text lang="Japanese" displayName="闘技士の証" />
+  </accessory>
+  <accessory id="54" name="SmithyShield" type="Armwear">
+    <text lang="English" displayName="Smithy Shield" />
+    <text lang="Japanese" displayName="錬成屋の証" />
+  </accessory>
+  <accessory id="55" name="BoldSwimsuit" type="Underwear">
+    <text lang="English" displayName="Bold Swimsuit" />
+    <text lang="Japanese" displayName="色っぽい水着" />
+  </accessory>
+  <accessory id="56" name="BathTowel" type="Underwear">
+    <text lang="English" displayName="Bath Towel" />
+    <text lang="Japanese" displayName="バスタオル" />
+  </accessory>
+  <accessory id="57" name="TropicalSuit" type="Underwear">
+    <text lang="English" displayName="Tropical Suit" />
+    <text lang="Japanese" displayName="草花の水着" />
+  </accessory>
+  <accessory id="58" name="DarkRobe" type="Underwear">
+    <text lang="English" displayName="Dark Robe" />
+    <text lang="Japanese" displayName="闇の衣" />
+  </accessory>
+  <accessory id="59" name="SeashellSuit" type="Underwear">
+    <text lang="English" displayName="Seashell Suit" />
+    <text lang="Japanese" displayName="貝殻の水着" />
+  </accessory>
+  <accessory id="60" name="DarkCrown" type="Headwear">
+    <text lang="English" displayName="Dark Crown" />
+    <text lang="Japanese" displayName="ダーククラウン" />
+  </accessory>
+  <accessory id="61" name="EmblemShield" type="Armwear">
+    <text lang="English" displayName="Emblem Shield" />
+    <text lang="Japanese" displayName="紋章の盾" />
+  </accessory>
+  <accessory id="62" name="HoshidoCrown" type="Facewear">
+    <text lang="English" displayName="Hoshido Crown" />
+    <text lang="Japanese" displayName="白夜の面当て" />
+  </accessory>
+  <accessory id="63" name="LoveBracelet" type="Armwear">
+    <text lang="English" displayName="Love Bracelet" />
+    <text lang="Japanese" displayName="愛の腕輪" />
+  </accessory>
+  <accessory id="64" name="TogaofLove" type="Underwear">
+    <text lang="English" displayName="Toga of Love" />
+    <text lang="Japanese" displayName="愛の水着" />
+  </accessory>
+  <accessory id="104" name="TintedGlasses1" type="Facewear">
+    <text lang="English" displayName="Tinted Glasses (DLC)" />
+    <text lang="Japanese" displayName="遮光メガネ" />
+  </accessory>
+  <accessory id="105" name="TintedGlasses2" type="Facewear">
+    <text lang="English" displayName="Tinted Glasses (DLC)" />
+    <text lang="Japanese" displayName="遮光メガネ" />
+  </accessory>
+  <accessory id="109" name="RimmedGlasses1" type="Facewear">
+    <text lang="English" displayName="Rimmed Glasses" />
+    <text lang="Japanese" displayName="黒縁メガネ" />
+  </accessory>
+  <accessory id="110" name="RimmedGlasses2" type="Facewear">
+    <text lang="English" displayName="Rimmed Glasses" />
+    <text lang="Japanese" displayName="黒縁メガネ" />
+  </accessory>
+  <accessory id="112" name="Face1" type="Facewear">
+    <text lang="English" displayName="Fox Mask" />
+    <text lang="Japanese" displayName="キツネのお面" />
+  </accessory>
+  <accessory id="114" name="Face2" type="Facewear">
+    <text lang="English" displayName="Pumpkin Mask" />
+    <text lang="Japanese" displayName="パンプキンヘッド" />
+  </accessory>
+  <!--
+  Template:
+  <accessory id="0" name="InternalName" type="None">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+  </accessory>
+  -->
+</root>

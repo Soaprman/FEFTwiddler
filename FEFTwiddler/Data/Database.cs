@@ -9,6 +9,7 @@
         public static BuildingDatabase Buildings = new BuildingDatabase(Enums.Language.English);
         public static StatDatabase Stats = new StatDatabase(Enums.Language.English);
         public static PrisonerDatabase Prisoners = new PrisonerDatabase(Enums.Language.English);
+        public static AccessoryDatabase Accessories = new AccessoryDatabase(Enums.Language.English);
 
         public static void SetLanguage(Enums.Language language)
         {
@@ -19,6 +20,7 @@
             Buildings.SetLanguage(language);
             Stats.SetLanguage(language);
             Prisoners.SetLanguage(language);
+            Accessories.SetLanguage(language);
         }
     }
 }
