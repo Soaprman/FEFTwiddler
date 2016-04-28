@@ -29,55 +29,57 @@
         private void InitializeComponent()
         {
             this.lblCorrinM = new System.Windows.Forms.Label();
-            this.colorCorrinM = new FEFTwiddler.GUI.Controls.ColorPicker();
-            this.colorCorrinF = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblCorrinF = new System.Windows.Forms.Label();
-            this.colorKanaM = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblKanaM = new System.Windows.Forms.Label();
-            this.colorKanaF = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblKanaF = new System.Windows.Forms.Label();
-            this.colorMidori = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblMidori = new System.Windows.Forms.Label();
-            this.colorSophie = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblSophie = new System.Windows.Forms.Label();
-            this.colorDwyer = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblDwyer = new System.Windows.Forms.Label();
-            this.colorShigure = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblShigure = new System.Windows.Forms.Label();
-            this.colorSelkie = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblSelkie = new System.Windows.Forms.Label();
-            this.colorAsugi = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblAsugi = new System.Windows.Forms.Label();
-            this.colorKiragi = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblKiragi = new System.Windows.Forms.Label();
-            this.colorShiro = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblShiro = new System.Windows.Forms.Label();
-            this.colorRhajat = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblRhajat = new System.Windows.Forms.Label();
-            this.colorCaeldori = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblCaeldori = new System.Windows.Forms.Label();
-            this.colorMitama = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblMitama = new System.Windows.Forms.Label();
-            this.colorHisame = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblHisame = new System.Windows.Forms.Label();
-            this.colorVelouria = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblVelouria = new System.Windows.Forms.Label();
-            this.colorIgnatius = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblIgnatius = new System.Windows.Forms.Label();
-            this.colorForrest = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblForrest = new System.Windows.Forms.Label();
-            this.colorSiegbert = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblSiegbert = new System.Windows.Forms.Label();
-            this.colorNina = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblNina = new System.Windows.Forms.Label();
-            this.colorSoleil = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblSoleil = new System.Windows.Forms.Label();
-            this.colorOphelia = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblOphelia = new System.Windows.Forms.Label();
-            this.colorPercy = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.lblPercy = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSaveAndClose = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.colorNina = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorSoleil = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorOphelia = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorPercy = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorVelouria = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorIgnatius = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorForrest = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorSiegbert = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorRhajat = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorCaeldori = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorMitama = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorHisame = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorSelkie = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorAsugi = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorKiragi = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorShiro = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorMidori = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorKanaF = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorSophie = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorKanaM = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorDwyer = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorCorrinF = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorShigure = new FEFTwiddler.GUI.Controls.ColorPicker();
+            this.colorCorrinM = new FEFTwiddler.GUI.Controls.ColorPicker();
             this.SuspendLayout();
             // 
             // lblCorrinM
@@ -89,26 +91,6 @@
             this.lblCorrinM.TabIndex = 0;
             this.lblCorrinM.Text = "CorrinM";
             // 
-            // colorCorrinM
-            // 
-            this.colorCorrinM.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorCorrinM.Location = new System.Drawing.Point(9, 22);
-            this.colorCorrinM.Margin = new System.Windows.Forms.Padding(0);
-            this.colorCorrinM.Name = "colorCorrinM";
-            this.colorCorrinM.OnChange = null;
-            this.colorCorrinM.Size = new System.Drawing.Size(100, 26);
-            this.colorCorrinM.TabIndex = 1;
-            // 
-            // colorCorrinF
-            // 
-            this.colorCorrinF.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorCorrinF.Location = new System.Drawing.Point(109, 22);
-            this.colorCorrinF.Margin = new System.Windows.Forms.Padding(0);
-            this.colorCorrinF.Name = "colorCorrinF";
-            this.colorCorrinF.OnChange = null;
-            this.colorCorrinF.Size = new System.Drawing.Size(100, 26);
-            this.colorCorrinF.TabIndex = 81;
-            // 
             // lblCorrinF
             // 
             this.lblCorrinF.AutoSize = true;
@@ -117,16 +99,6 @@
             this.lblCorrinF.Size = new System.Drawing.Size(40, 13);
             this.lblCorrinF.TabIndex = 80;
             this.lblCorrinF.Text = "CorrinF";
-            // 
-            // colorKanaM
-            // 
-            this.colorKanaM.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorKanaM.Location = new System.Drawing.Point(209, 22);
-            this.colorKanaM.Margin = new System.Windows.Forms.Padding(0);
-            this.colorKanaM.Name = "colorKanaM";
-            this.colorKanaM.OnChange = null;
-            this.colorKanaM.Size = new System.Drawing.Size(100, 26);
-            this.colorKanaM.TabIndex = 83;
             // 
             // lblKanaM
             // 
@@ -137,16 +109,6 @@
             this.lblKanaM.TabIndex = 82;
             this.lblKanaM.Text = "KanaM";
             // 
-            // colorKanaF
-            // 
-            this.colorKanaF.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorKanaF.Location = new System.Drawing.Point(309, 22);
-            this.colorKanaF.Margin = new System.Windows.Forms.Padding(0);
-            this.colorKanaF.Name = "colorKanaF";
-            this.colorKanaF.OnChange = null;
-            this.colorKanaF.Size = new System.Drawing.Size(100, 26);
-            this.colorKanaF.TabIndex = 85;
-            // 
             // lblKanaF
             // 
             this.lblKanaF.AutoSize = true;
@@ -155,16 +117,6 @@
             this.lblKanaF.Size = new System.Drawing.Size(38, 13);
             this.lblKanaF.TabIndex = 84;
             this.lblKanaF.Text = "KanaF";
-            // 
-            // colorMidori
-            // 
-            this.colorMidori.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorMidori.Location = new System.Drawing.Point(309, 61);
-            this.colorMidori.Margin = new System.Windows.Forms.Padding(0);
-            this.colorMidori.Name = "colorMidori";
-            this.colorMidori.OnChange = null;
-            this.colorMidori.Size = new System.Drawing.Size(100, 26);
-            this.colorMidori.TabIndex = 93;
             // 
             // lblMidori
             // 
@@ -175,16 +127,6 @@
             this.lblMidori.TabIndex = 92;
             this.lblMidori.Text = "Midori";
             // 
-            // colorSophie
-            // 
-            this.colorSophie.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorSophie.Location = new System.Drawing.Point(209, 61);
-            this.colorSophie.Margin = new System.Windows.Forms.Padding(0);
-            this.colorSophie.Name = "colorSophie";
-            this.colorSophie.OnChange = null;
-            this.colorSophie.Size = new System.Drawing.Size(100, 26);
-            this.colorSophie.TabIndex = 91;
-            // 
             // lblSophie
             // 
             this.lblSophie.AutoSize = true;
@@ -193,16 +135,6 @@
             this.lblSophie.Size = new System.Drawing.Size(40, 13);
             this.lblSophie.TabIndex = 90;
             this.lblSophie.Text = "Sophie";
-            // 
-            // colorDwyer
-            // 
-            this.colorDwyer.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorDwyer.Location = new System.Drawing.Point(109, 61);
-            this.colorDwyer.Margin = new System.Windows.Forms.Padding(0);
-            this.colorDwyer.Name = "colorDwyer";
-            this.colorDwyer.OnChange = null;
-            this.colorDwyer.Size = new System.Drawing.Size(100, 26);
-            this.colorDwyer.TabIndex = 89;
             // 
             // lblDwyer
             // 
@@ -213,16 +145,6 @@
             this.lblDwyer.TabIndex = 88;
             this.lblDwyer.Text = "Dwyer";
             // 
-            // colorShigure
-            // 
-            this.colorShigure.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorShigure.Location = new System.Drawing.Point(9, 61);
-            this.colorShigure.Margin = new System.Windows.Forms.Padding(0);
-            this.colorShigure.Name = "colorShigure";
-            this.colorShigure.OnChange = null;
-            this.colorShigure.Size = new System.Drawing.Size(100, 26);
-            this.colorShigure.TabIndex = 87;
-            // 
             // lblShigure
             // 
             this.lblShigure.AutoSize = true;
@@ -231,16 +153,6 @@
             this.lblShigure.Size = new System.Drawing.Size(43, 13);
             this.lblShigure.TabIndex = 86;
             this.lblShigure.Text = "Shigure";
-            // 
-            // colorSelkie
-            // 
-            this.colorSelkie.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorSelkie.Location = new System.Drawing.Point(309, 100);
-            this.colorSelkie.Margin = new System.Windows.Forms.Padding(0);
-            this.colorSelkie.Name = "colorSelkie";
-            this.colorSelkie.OnChange = null;
-            this.colorSelkie.Size = new System.Drawing.Size(100, 26);
-            this.colorSelkie.TabIndex = 101;
             // 
             // lblSelkie
             // 
@@ -251,16 +163,6 @@
             this.lblSelkie.TabIndex = 100;
             this.lblSelkie.Text = "Selkie";
             // 
-            // colorAsugi
-            // 
-            this.colorAsugi.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorAsugi.Location = new System.Drawing.Point(209, 100);
-            this.colorAsugi.Margin = new System.Windows.Forms.Padding(0);
-            this.colorAsugi.Name = "colorAsugi";
-            this.colorAsugi.OnChange = null;
-            this.colorAsugi.Size = new System.Drawing.Size(100, 26);
-            this.colorAsugi.TabIndex = 99;
-            // 
             // lblAsugi
             // 
             this.lblAsugi.AutoSize = true;
@@ -269,16 +171,6 @@
             this.lblAsugi.Size = new System.Drawing.Size(33, 13);
             this.lblAsugi.TabIndex = 98;
             this.lblAsugi.Text = "Asugi";
-            // 
-            // colorKiragi
-            // 
-            this.colorKiragi.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorKiragi.Location = new System.Drawing.Point(109, 100);
-            this.colorKiragi.Margin = new System.Windows.Forms.Padding(0);
-            this.colorKiragi.Name = "colorKiragi";
-            this.colorKiragi.OnChange = null;
-            this.colorKiragi.Size = new System.Drawing.Size(100, 26);
-            this.colorKiragi.TabIndex = 97;
             // 
             // lblKiragi
             // 
@@ -289,16 +181,6 @@
             this.lblKiragi.TabIndex = 96;
             this.lblKiragi.Text = "Kiragi";
             // 
-            // colorShiro
-            // 
-            this.colorShiro.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorShiro.Location = new System.Drawing.Point(9, 100);
-            this.colorShiro.Margin = new System.Windows.Forms.Padding(0);
-            this.colorShiro.Name = "colorShiro";
-            this.colorShiro.OnChange = null;
-            this.colorShiro.Size = new System.Drawing.Size(100, 26);
-            this.colorShiro.TabIndex = 95;
-            // 
             // lblShiro
             // 
             this.lblShiro.AutoSize = true;
@@ -307,16 +189,6 @@
             this.lblShiro.Size = new System.Drawing.Size(31, 13);
             this.lblShiro.TabIndex = 94;
             this.lblShiro.Text = "Shiro";
-            // 
-            // colorRhajat
-            // 
-            this.colorRhajat.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorRhajat.Location = new System.Drawing.Point(309, 139);
-            this.colorRhajat.Margin = new System.Windows.Forms.Padding(0);
-            this.colorRhajat.Name = "colorRhajat";
-            this.colorRhajat.OnChange = null;
-            this.colorRhajat.Size = new System.Drawing.Size(100, 26);
-            this.colorRhajat.TabIndex = 109;
             // 
             // lblRhajat
             // 
@@ -327,16 +199,6 @@
             this.lblRhajat.TabIndex = 108;
             this.lblRhajat.Text = "Rhajat";
             // 
-            // colorCaeldori
-            // 
-            this.colorCaeldori.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorCaeldori.Location = new System.Drawing.Point(209, 139);
-            this.colorCaeldori.Margin = new System.Windows.Forms.Padding(0);
-            this.colorCaeldori.Name = "colorCaeldori";
-            this.colorCaeldori.OnChange = null;
-            this.colorCaeldori.Size = new System.Drawing.Size(100, 26);
-            this.colorCaeldori.TabIndex = 107;
-            // 
             // lblCaeldori
             // 
             this.lblCaeldori.AutoSize = true;
@@ -345,16 +207,6 @@
             this.lblCaeldori.Size = new System.Drawing.Size(45, 13);
             this.lblCaeldori.TabIndex = 106;
             this.lblCaeldori.Text = "Caeldori";
-            // 
-            // colorMitama
-            // 
-            this.colorMitama.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorMitama.Location = new System.Drawing.Point(109, 139);
-            this.colorMitama.Margin = new System.Windows.Forms.Padding(0);
-            this.colorMitama.Name = "colorMitama";
-            this.colorMitama.OnChange = null;
-            this.colorMitama.Size = new System.Drawing.Size(100, 26);
-            this.colorMitama.TabIndex = 105;
             // 
             // lblMitama
             // 
@@ -365,16 +217,6 @@
             this.lblMitama.TabIndex = 104;
             this.lblMitama.Text = "Mitama";
             // 
-            // colorHisame
-            // 
-            this.colorHisame.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorHisame.Location = new System.Drawing.Point(9, 139);
-            this.colorHisame.Margin = new System.Windows.Forms.Padding(0);
-            this.colorHisame.Name = "colorHisame";
-            this.colorHisame.OnChange = null;
-            this.colorHisame.Size = new System.Drawing.Size(100, 26);
-            this.colorHisame.TabIndex = 103;
-            // 
             // lblHisame
             // 
             this.lblHisame.AutoSize = true;
@@ -383,16 +225,6 @@
             this.lblHisame.Size = new System.Drawing.Size(42, 13);
             this.lblHisame.TabIndex = 102;
             this.lblHisame.Text = "Hisame";
-            // 
-            // colorVelouria
-            // 
-            this.colorVelouria.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorVelouria.Location = new System.Drawing.Point(309, 178);
-            this.colorVelouria.Margin = new System.Windows.Forms.Padding(0);
-            this.colorVelouria.Name = "colorVelouria";
-            this.colorVelouria.OnChange = null;
-            this.colorVelouria.Size = new System.Drawing.Size(100, 26);
-            this.colorVelouria.TabIndex = 117;
             // 
             // lblVelouria
             // 
@@ -403,16 +235,6 @@
             this.lblVelouria.TabIndex = 116;
             this.lblVelouria.Text = "Velouria";
             // 
-            // colorIgnatius
-            // 
-            this.colorIgnatius.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorIgnatius.Location = new System.Drawing.Point(209, 178);
-            this.colorIgnatius.Margin = new System.Windows.Forms.Padding(0);
-            this.colorIgnatius.Name = "colorIgnatius";
-            this.colorIgnatius.OnChange = null;
-            this.colorIgnatius.Size = new System.Drawing.Size(100, 26);
-            this.colorIgnatius.TabIndex = 115;
-            // 
             // lblIgnatius
             // 
             this.lblIgnatius.AutoSize = true;
@@ -421,16 +243,6 @@
             this.lblIgnatius.Size = new System.Drawing.Size(44, 13);
             this.lblIgnatius.TabIndex = 114;
             this.lblIgnatius.Text = "Ignatius";
-            // 
-            // colorForrest
-            // 
-            this.colorForrest.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorForrest.Location = new System.Drawing.Point(109, 178);
-            this.colorForrest.Margin = new System.Windows.Forms.Padding(0);
-            this.colorForrest.Name = "colorForrest";
-            this.colorForrest.OnChange = null;
-            this.colorForrest.Size = new System.Drawing.Size(100, 26);
-            this.colorForrest.TabIndex = 113;
             // 
             // lblForrest
             // 
@@ -441,16 +253,6 @@
             this.lblForrest.TabIndex = 112;
             this.lblForrest.Text = "Forrest";
             // 
-            // colorSiegbert
-            // 
-            this.colorSiegbert.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorSiegbert.Location = new System.Drawing.Point(9, 178);
-            this.colorSiegbert.Margin = new System.Windows.Forms.Padding(0);
-            this.colorSiegbert.Name = "colorSiegbert";
-            this.colorSiegbert.OnChange = null;
-            this.colorSiegbert.Size = new System.Drawing.Size(100, 26);
-            this.colorSiegbert.TabIndex = 111;
-            // 
             // lblSiegbert
             // 
             this.lblSiegbert.AutoSize = true;
@@ -459,16 +261,6 @@
             this.lblSiegbert.Size = new System.Drawing.Size(46, 13);
             this.lblSiegbert.TabIndex = 110;
             this.lblSiegbert.Text = "Siegbert";
-            // 
-            // colorNina
-            // 
-            this.colorNina.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorNina.Location = new System.Drawing.Point(309, 217);
-            this.colorNina.Margin = new System.Windows.Forms.Padding(0);
-            this.colorNina.Name = "colorNina";
-            this.colorNina.OnChange = null;
-            this.colorNina.Size = new System.Drawing.Size(100, 26);
-            this.colorNina.TabIndex = 125;
             // 
             // lblNina
             // 
@@ -479,16 +271,6 @@
             this.lblNina.TabIndex = 124;
             this.lblNina.Text = "Nina";
             // 
-            // colorSoleil
-            // 
-            this.colorSoleil.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorSoleil.Location = new System.Drawing.Point(209, 217);
-            this.colorSoleil.Margin = new System.Windows.Forms.Padding(0);
-            this.colorSoleil.Name = "colorSoleil";
-            this.colorSoleil.OnChange = null;
-            this.colorSoleil.Size = new System.Drawing.Size(100, 26);
-            this.colorSoleil.TabIndex = 123;
-            // 
             // lblSoleil
             // 
             this.lblSoleil.AutoSize = true;
@@ -498,16 +280,6 @@
             this.lblSoleil.TabIndex = 122;
             this.lblSoleil.Text = "Soleil";
             // 
-            // colorOphelia
-            // 
-            this.colorOphelia.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorOphelia.Location = new System.Drawing.Point(109, 217);
-            this.colorOphelia.Margin = new System.Windows.Forms.Padding(0);
-            this.colorOphelia.Name = "colorOphelia";
-            this.colorOphelia.OnChange = null;
-            this.colorOphelia.Size = new System.Drawing.Size(100, 26);
-            this.colorOphelia.TabIndex = 121;
-            // 
             // lblOphelia
             // 
             this.lblOphelia.AutoSize = true;
@@ -516,16 +288,6 @@
             this.lblOphelia.Size = new System.Drawing.Size(43, 13);
             this.lblOphelia.TabIndex = 120;
             this.lblOphelia.Text = "Ophelia";
-            // 
-            // colorPercy
-            // 
-            this.colorPercy.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.colorPercy.Location = new System.Drawing.Point(9, 217);
-            this.colorPercy.Margin = new System.Windows.Forms.Padding(0);
-            this.colorPercy.Name = "colorPercy";
-            this.colorPercy.OnChange = null;
-            this.colorPercy.Size = new System.Drawing.Size(100, 26);
-            this.colorPercy.TabIndex = 119;
             // 
             // lblPercy
             // 
@@ -538,7 +300,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(72, 264);
+            this.btnCancel.Location = new System.Drawing.Point(74, 305);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(111, 30);
             this.btnCancel.TabIndex = 126;
@@ -548,7 +310,7 @@
             // 
             // btnSaveAndClose
             // 
-            this.btnSaveAndClose.Location = new System.Drawing.Point(235, 264);
+            this.btnSaveAndClose.Location = new System.Drawing.Point(237, 305);
             this.btnSaveAndClose.Name = "btnSaveAndClose";
             this.btnSaveAndClose.Size = new System.Drawing.Size(111, 30);
             this.btnSaveAndClose.TabIndex = 127;
@@ -556,11 +318,272 @@
             this.btnSaveAndClose.UseVisualStyleBackColor = true;
             this.btnSaveAndClose.Click += new System.EventHandler(this.btnSaveAndClose_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 258);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(320, 13);
+            this.label1.TabIndex = 128;
+            this.label1.Text = "If a child\'s hair color is disabled, that child\'s data does not exist yet.";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 271);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(391, 13);
+            this.label2.TabIndex = 129;
+            this.label2.Text = "To add a child\'s data, recruit either that child or any child after that child in" +
+    " this list.";
+            // 
+            // colorNina
+            // 
+            this.colorNina.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorNina.Location = new System.Drawing.Point(309, 217);
+            this.colorNina.Margin = new System.Windows.Forms.Padding(0);
+            this.colorNina.Name = "colorNina";
+            this.colorNina.OnChange = null;
+            this.colorNina.Size = new System.Drawing.Size(100, 26);
+            this.colorNina.TabIndex = 125;
+            // 
+            // colorSoleil
+            // 
+            this.colorSoleil.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorSoleil.Location = new System.Drawing.Point(209, 217);
+            this.colorSoleil.Margin = new System.Windows.Forms.Padding(0);
+            this.colorSoleil.Name = "colorSoleil";
+            this.colorSoleil.OnChange = null;
+            this.colorSoleil.Size = new System.Drawing.Size(100, 26);
+            this.colorSoleil.TabIndex = 123;
+            // 
+            // colorOphelia
+            // 
+            this.colorOphelia.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorOphelia.Location = new System.Drawing.Point(109, 217);
+            this.colorOphelia.Margin = new System.Windows.Forms.Padding(0);
+            this.colorOphelia.Name = "colorOphelia";
+            this.colorOphelia.OnChange = null;
+            this.colorOphelia.Size = new System.Drawing.Size(100, 26);
+            this.colorOphelia.TabIndex = 121;
+            // 
+            // colorPercy
+            // 
+            this.colorPercy.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorPercy.Location = new System.Drawing.Point(9, 217);
+            this.colorPercy.Margin = new System.Windows.Forms.Padding(0);
+            this.colorPercy.Name = "colorPercy";
+            this.colorPercy.OnChange = null;
+            this.colorPercy.Size = new System.Drawing.Size(100, 26);
+            this.colorPercy.TabIndex = 119;
+            // 
+            // colorVelouria
+            // 
+            this.colorVelouria.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorVelouria.Location = new System.Drawing.Point(309, 178);
+            this.colorVelouria.Margin = new System.Windows.Forms.Padding(0);
+            this.colorVelouria.Name = "colorVelouria";
+            this.colorVelouria.OnChange = null;
+            this.colorVelouria.Size = new System.Drawing.Size(100, 26);
+            this.colorVelouria.TabIndex = 117;
+            // 
+            // colorIgnatius
+            // 
+            this.colorIgnatius.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorIgnatius.Location = new System.Drawing.Point(209, 178);
+            this.colorIgnatius.Margin = new System.Windows.Forms.Padding(0);
+            this.colorIgnatius.Name = "colorIgnatius";
+            this.colorIgnatius.OnChange = null;
+            this.colorIgnatius.Size = new System.Drawing.Size(100, 26);
+            this.colorIgnatius.TabIndex = 115;
+            // 
+            // colorForrest
+            // 
+            this.colorForrest.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorForrest.Location = new System.Drawing.Point(109, 178);
+            this.colorForrest.Margin = new System.Windows.Forms.Padding(0);
+            this.colorForrest.Name = "colorForrest";
+            this.colorForrest.OnChange = null;
+            this.colorForrest.Size = new System.Drawing.Size(100, 26);
+            this.colorForrest.TabIndex = 113;
+            // 
+            // colorSiegbert
+            // 
+            this.colorSiegbert.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorSiegbert.Location = new System.Drawing.Point(9, 178);
+            this.colorSiegbert.Margin = new System.Windows.Forms.Padding(0);
+            this.colorSiegbert.Name = "colorSiegbert";
+            this.colorSiegbert.OnChange = null;
+            this.colorSiegbert.Size = new System.Drawing.Size(100, 26);
+            this.colorSiegbert.TabIndex = 111;
+            // 
+            // colorRhajat
+            // 
+            this.colorRhajat.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorRhajat.Location = new System.Drawing.Point(309, 139);
+            this.colorRhajat.Margin = new System.Windows.Forms.Padding(0);
+            this.colorRhajat.Name = "colorRhajat";
+            this.colorRhajat.OnChange = null;
+            this.colorRhajat.Size = new System.Drawing.Size(100, 26);
+            this.colorRhajat.TabIndex = 109;
+            // 
+            // colorCaeldori
+            // 
+            this.colorCaeldori.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorCaeldori.Location = new System.Drawing.Point(209, 139);
+            this.colorCaeldori.Margin = new System.Windows.Forms.Padding(0);
+            this.colorCaeldori.Name = "colorCaeldori";
+            this.colorCaeldori.OnChange = null;
+            this.colorCaeldori.Size = new System.Drawing.Size(100, 26);
+            this.colorCaeldori.TabIndex = 107;
+            // 
+            // colorMitama
+            // 
+            this.colorMitama.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorMitama.Location = new System.Drawing.Point(109, 139);
+            this.colorMitama.Margin = new System.Windows.Forms.Padding(0);
+            this.colorMitama.Name = "colorMitama";
+            this.colorMitama.OnChange = null;
+            this.colorMitama.Size = new System.Drawing.Size(100, 26);
+            this.colorMitama.TabIndex = 105;
+            // 
+            // colorHisame
+            // 
+            this.colorHisame.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorHisame.Location = new System.Drawing.Point(9, 139);
+            this.colorHisame.Margin = new System.Windows.Forms.Padding(0);
+            this.colorHisame.Name = "colorHisame";
+            this.colorHisame.OnChange = null;
+            this.colorHisame.Size = new System.Drawing.Size(100, 26);
+            this.colorHisame.TabIndex = 103;
+            // 
+            // colorSelkie
+            // 
+            this.colorSelkie.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorSelkie.Location = new System.Drawing.Point(309, 100);
+            this.colorSelkie.Margin = new System.Windows.Forms.Padding(0);
+            this.colorSelkie.Name = "colorSelkie";
+            this.colorSelkie.OnChange = null;
+            this.colorSelkie.Size = new System.Drawing.Size(100, 26);
+            this.colorSelkie.TabIndex = 101;
+            // 
+            // colorAsugi
+            // 
+            this.colorAsugi.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorAsugi.Location = new System.Drawing.Point(209, 100);
+            this.colorAsugi.Margin = new System.Windows.Forms.Padding(0);
+            this.colorAsugi.Name = "colorAsugi";
+            this.colorAsugi.OnChange = null;
+            this.colorAsugi.Size = new System.Drawing.Size(100, 26);
+            this.colorAsugi.TabIndex = 99;
+            // 
+            // colorKiragi
+            // 
+            this.colorKiragi.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorKiragi.Location = new System.Drawing.Point(109, 100);
+            this.colorKiragi.Margin = new System.Windows.Forms.Padding(0);
+            this.colorKiragi.Name = "colorKiragi";
+            this.colorKiragi.OnChange = null;
+            this.colorKiragi.Size = new System.Drawing.Size(100, 26);
+            this.colorKiragi.TabIndex = 97;
+            // 
+            // colorShiro
+            // 
+            this.colorShiro.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorShiro.Location = new System.Drawing.Point(9, 100);
+            this.colorShiro.Margin = new System.Windows.Forms.Padding(0);
+            this.colorShiro.Name = "colorShiro";
+            this.colorShiro.OnChange = null;
+            this.colorShiro.Size = new System.Drawing.Size(100, 26);
+            this.colorShiro.TabIndex = 95;
+            // 
+            // colorMidori
+            // 
+            this.colorMidori.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorMidori.Location = new System.Drawing.Point(309, 61);
+            this.colorMidori.Margin = new System.Windows.Forms.Padding(0);
+            this.colorMidori.Name = "colorMidori";
+            this.colorMidori.OnChange = null;
+            this.colorMidori.Size = new System.Drawing.Size(100, 26);
+            this.colorMidori.TabIndex = 93;
+            // 
+            // colorKanaF
+            // 
+            this.colorKanaF.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorKanaF.Location = new System.Drawing.Point(309, 22);
+            this.colorKanaF.Margin = new System.Windows.Forms.Padding(0);
+            this.colorKanaF.Name = "colorKanaF";
+            this.colorKanaF.OnChange = null;
+            this.colorKanaF.Size = new System.Drawing.Size(100, 26);
+            this.colorKanaF.TabIndex = 85;
+            // 
+            // colorSophie
+            // 
+            this.colorSophie.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorSophie.Location = new System.Drawing.Point(209, 61);
+            this.colorSophie.Margin = new System.Windows.Forms.Padding(0);
+            this.colorSophie.Name = "colorSophie";
+            this.colorSophie.OnChange = null;
+            this.colorSophie.Size = new System.Drawing.Size(100, 26);
+            this.colorSophie.TabIndex = 91;
+            // 
+            // colorKanaM
+            // 
+            this.colorKanaM.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorKanaM.Location = new System.Drawing.Point(209, 22);
+            this.colorKanaM.Margin = new System.Windows.Forms.Padding(0);
+            this.colorKanaM.Name = "colorKanaM";
+            this.colorKanaM.OnChange = null;
+            this.colorKanaM.Size = new System.Drawing.Size(100, 26);
+            this.colorKanaM.TabIndex = 83;
+            // 
+            // colorDwyer
+            // 
+            this.colorDwyer.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorDwyer.Location = new System.Drawing.Point(109, 61);
+            this.colorDwyer.Margin = new System.Windows.Forms.Padding(0);
+            this.colorDwyer.Name = "colorDwyer";
+            this.colorDwyer.OnChange = null;
+            this.colorDwyer.Size = new System.Drawing.Size(100, 26);
+            this.colorDwyer.TabIndex = 89;
+            // 
+            // colorCorrinF
+            // 
+            this.colorCorrinF.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorCorrinF.Location = new System.Drawing.Point(109, 22);
+            this.colorCorrinF.Margin = new System.Windows.Forms.Padding(0);
+            this.colorCorrinF.Name = "colorCorrinF";
+            this.colorCorrinF.OnChange = null;
+            this.colorCorrinF.Size = new System.Drawing.Size(100, 26);
+            this.colorCorrinF.TabIndex = 81;
+            // 
+            // colorShigure
+            // 
+            this.colorShigure.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorShigure.Location = new System.Drawing.Point(9, 61);
+            this.colorShigure.Margin = new System.Windows.Forms.Padding(0);
+            this.colorShigure.Name = "colorShigure";
+            this.colorShigure.OnChange = null;
+            this.colorShigure.Size = new System.Drawing.Size(100, 26);
+            this.colorShigure.TabIndex = 87;
+            // 
+            // colorCorrinM
+            // 
+            this.colorCorrinM.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.colorCorrinM.Location = new System.Drawing.Point(9, 22);
+            this.colorCorrinM.Margin = new System.Windows.Forms.Padding(0);
+            this.colorCorrinM.Name = "colorCorrinM";
+            this.colorCorrinM.OnChange = null;
+            this.colorCorrinM.Size = new System.Drawing.Size(100, 26);
+            this.colorCorrinM.TabIndex = 1;
+            // 
             // HairColors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(422, 308);
+            this.ClientSize = new System.Drawing.Size(422, 347);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSaveAndClose);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.colorNina);
@@ -670,5 +693,7 @@
         private System.Windows.Forms.Label lblPercy;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSaveAndClose;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -21,6 +21,10 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
                     .Concat(RawSupportCount2)
                     .Concat(RawSupports)
                     .Concat(RawBlock2)
+                    .Concat(RawHairColorCount1)
+                    .Concat(RawHairColorCount2)
+                    .Concat(RawHairColors)
+                    .Concat(RawBlock3)
                     .ToArray();
             }
             set
@@ -38,6 +42,13 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
                     RawSupports = br.ReadBytes(supportBytes);
 
                     RawBlock2 = br.ReadBytes(RawBlock2Length);
+
+                    HairColorCount1 = br.ReadUInt32();
+                    HairColorCount2 = br.ReadUInt32();
+
+                    RawHairColors = br.ReadBytes((int)HairColorCount1 * 4);
+
+                    RawBlock3 = br.ReadBytes(RawBlock3Length);
                 }
             }
         }
@@ -95,7 +106,7 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
             }
         }
 
-        public const int RawBlock2Length = 0xD7;
+        public const int RawBlock2Length = 0x1E;
         private byte[] _rawBlock2;
         public byte[] RawBlock2
         {
@@ -104,6 +115,56 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
             {
                 if (value.Length != RawBlock2Length) throw new ArgumentException("Region1 block 2 must be " + RawBlock2Length + " bytes in length");
                 _rawBlock2 = value;
+            }
+        }
+
+        public byte[] RawHairColorCount1
+        {
+            get
+            {
+                return new byte[]
+                {
+                    (byte)(HairColorCount1),
+                    (byte)(HairColorCount1 >> 8),
+                    (byte)(HairColorCount1 >> 16),
+                    (byte)(HairColorCount1 >> 24)
+                };
+            }
+        }
+
+        public byte[] RawHairColorCount2
+        {
+            get
+            {
+                return new byte[]
+                {
+                    (byte)(HairColorCount2),
+                    (byte)(HairColorCount2 >> 8),
+                    (byte)(HairColorCount2 >> 16),
+                    (byte)(HairColorCount2 >> 24)
+                };
+            }
+        }
+
+        private byte[] _rawHairColors;
+        public byte[] RawHairColors
+        {
+            get { return _rawHairColors; }
+            set
+            {
+                _rawHairColors = value;
+            }
+        }
+
+        public const int RawBlock3Length = 0x59;
+        private byte[] _rawBlock3;
+        public byte[] RawBlock3
+        {
+            get { return _rawBlock3; }
+            set
+            {
+                if (value.Length != RawBlock3Length) throw new ArgumentException("Region1 block 3 must be " + RawBlock3Length + " bytes in length");
+                _rawBlock3 = value;
             }
         }
 
@@ -153,6 +214,7 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
             }
         }
 
+        // Might be dynamic size based on UnlockedCharacterCount
         public byte[] UnlockedCharacters
         {
             get { return _rawBlock1.Skip(0x38).Take(0x09).ToArray(); }
@@ -205,332 +267,241 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
         // Two unknown bytes (0x19 through 0x1A)
         // Not sure. They seem to vary
 
-        // Eleven unknown bytes (0x1B through 0x2F)
-        // Always 00 00 00 16 00 00 00 16 00 00 00?
+        // Two unknown bytes (0x1B through 0x1C)
+        // Always 00 00?
 
-        // Hair color block
-        // Eighty-eight (0x58) bytes (0x26 through 0x7D)
+        #endregion
+
+        #region Hair Color Block
+
+        public uint HairColorCount1
+        {
+            get; set;
+        }
+
+        public uint HairColorCount2
+        {
+            get; set;
+        }
+
+        // Up to eighty-eight (0x58) bytes (0x00 through 0x57)
         // Why there gotta be so many of these damn kids?????
 
         public Color HairColor_KanaM
         {
-            get { return Color.FromArgb(_rawBlock2[0x29], _rawBlock2[0x26], _rawBlock2[0x27], _rawBlock2[0x28]); }
-            set
-            {
-                _rawBlock2[0x26] = value.R;
-                _rawBlock2[0x27] = value.G;
-                _rawBlock2[0x28] = value.B;
-                _rawBlock2[0x29] = value.A;
-            }
+            get { return GetChildHairColor(0x00); }
+            set { SetChildHairColor(0x00, value); }
         }
 
         public Color HairColor_KanaF
         {
-            get { return Color.FromArgb(_rawBlock2[0x2D], _rawBlock2[0x2A], _rawBlock2[0x2B], _rawBlock2[0x2C]); }
-            set
-            {
-                _rawBlock2[0x2A] = value.R;
-                _rawBlock2[0x2B] = value.G;
-                _rawBlock2[0x2C] = value.B;
-                _rawBlock2[0x2D] = value.A;
-            }
+            get { return GetChildHairColor(0x04); }
+            set { SetChildHairColor(0x04, value); }
         }
 
         public Color HairColor_Shigure
         {
-            get { return Color.FromArgb(_rawBlock2[0x31], _rawBlock2[0x2E], _rawBlock2[0x2F], _rawBlock2[0x30]); }
-            set
-            {
-                _rawBlock2[0x2E] = value.R;
-                _rawBlock2[0x2F] = value.G;
-                _rawBlock2[0x30] = value.B;
-                _rawBlock2[0x31] = value.A;
-            }
+            get { return GetChildHairColor(0x08); }
+            set { SetChildHairColor(0x08, value); }
         }
 
         public Color HairColor_Dwyer
         {
-            get { return Color.FromArgb(_rawBlock2[0x35], _rawBlock2[0x32], _rawBlock2[0x33], _rawBlock2[0x34]); }
-            set
-            {
-                _rawBlock2[0x32] = value.R;
-                _rawBlock2[0x33] = value.G;
-                _rawBlock2[0x34] = value.B;
-                _rawBlock2[0x35] = value.A;
-            }
+            get { return GetChildHairColor(0x0C); }
+            set { SetChildHairColor(0x0C, value); }
         }
 
         public Color HairColor_Sophie
         {
-            get { return Color.FromArgb(_rawBlock2[0x39], _rawBlock2[0x36], _rawBlock2[0x37], _rawBlock2[0x38]); }
-            set
-            {
-                _rawBlock2[0x36] = value.R;
-                _rawBlock2[0x37] = value.G;
-                _rawBlock2[0x38] = value.B;
-                _rawBlock2[0x39] = value.A;
-            }
+            get { return GetChildHairColor(0x10); }
+            set { SetChildHairColor(0x10, value); }
         }
 
         public Color HairColor_Midori
         {
-            get { return Color.FromArgb(_rawBlock2[0x3D], _rawBlock2[0x3A], _rawBlock2[0x3B], _rawBlock2[0x3C]); }
-            set
-            {
-                _rawBlock2[0x3A] = value.R;
-                _rawBlock2[0x3B] = value.G;
-                _rawBlock2[0x3C] = value.B;
-                _rawBlock2[0x3D] = value.A;
-            }
+            get { return GetChildHairColor(0x14); }
+            set { SetChildHairColor(0x14, value); }
         }
 
         public Color HairColor_Shiro
         {
-            get { return Color.FromArgb(_rawBlock2[0x41], _rawBlock2[0x3E], _rawBlock2[0x3F], _rawBlock2[0x40]); }
-            set
-            {
-                _rawBlock2[0x3E] = value.R;
-                _rawBlock2[0x3F] = value.G;
-                _rawBlock2[0x40] = value.B;
-                _rawBlock2[0x41] = value.A;
-            }
+            get { return GetChildHairColor(0x18); }
+            set { SetChildHairColor(0x18, value); }
         }
 
         public Color HairColor_Kiragi
         {
-            get { return Color.FromArgb(_rawBlock2[0x45], _rawBlock2[0x42], _rawBlock2[0x43], _rawBlock2[0x44]); }
-            set
-            {
-                _rawBlock2[0x42] = value.R;
-                _rawBlock2[0x43] = value.G;
-                _rawBlock2[0x44] = value.B;
-                _rawBlock2[0x45] = value.A;
-            }
+            get { return GetChildHairColor(0x1C); }
+            set { SetChildHairColor(0x1C, value); }
         }
 
         public Color HairColor_Asugi
         {
-            get { return Color.FromArgb(_rawBlock2[0x49], _rawBlock2[0x46], _rawBlock2[0x47], _rawBlock2[0x48]); }
-            set
-            {
-                _rawBlock2[0x46] = value.R;
-                _rawBlock2[0x47] = value.G;
-                _rawBlock2[0x48] = value.B;
-                _rawBlock2[0x49] = value.A;
-            }
+            get { return GetChildHairColor(0x20); }
+            set { SetChildHairColor(0x20, value); }
         }
 
         public Color HairColor_Selkie
         {
-            get { return Color.FromArgb(_rawBlock2[0x4D], _rawBlock2[0x4A], _rawBlock2[0x4B], _rawBlock2[0x4C]); }
-            set
-            {
-                _rawBlock2[0x4A] = value.R;
-                _rawBlock2[0x4B] = value.G;
-                _rawBlock2[0x4C] = value.B;
-                _rawBlock2[0x4D] = value.A;
-            }
+            get { return GetChildHairColor(0x24); }
+            set { SetChildHairColor(0x24, value); }
         }
 
         public Color HairColor_Hisame
         {
-            get { return Color.FromArgb(_rawBlock2[0x51], _rawBlock2[0x4E], _rawBlock2[0x4F], _rawBlock2[0x50]); }
-            set
-            {
-                _rawBlock2[0x4E] = value.R;
-                _rawBlock2[0x4F] = value.G;
-                _rawBlock2[0x50] = value.B;
-                _rawBlock2[0x51] = value.A;
-            }
+            get { return GetChildHairColor(0x28); }
+            set { SetChildHairColor(0x28, value); }
         }
 
         public Color HairColor_Mitama
         {
-            get { return Color.FromArgb(_rawBlock2[0x55], _rawBlock2[0x52], _rawBlock2[0x53], _rawBlock2[0x54]); }
-            set
-            {
-                _rawBlock2[0x52] = value.R;
-                _rawBlock2[0x53] = value.G;
-                _rawBlock2[0x54] = value.B;
-                _rawBlock2[0x55] = value.A;
-            }
+            get { return GetChildHairColor(0x2C); }
+            set { SetChildHairColor(0x2C, value); }
         }
 
         public Color HairColor_Caeldori
         {
-            get { return Color.FromArgb(_rawBlock2[0x59], _rawBlock2[0x56], _rawBlock2[0x57], _rawBlock2[0x58]); }
-            set
-            {
-                _rawBlock2[0x56] = value.R;
-                _rawBlock2[0x57] = value.G;
-                _rawBlock2[0x58] = value.B;
-                _rawBlock2[0x59] = value.A;
-            }
+            get { return GetChildHairColor(0x30); }
+            set { SetChildHairColor(0x30, value); }
         }
 
         public Color HairColor_Rhajat
         {
-            get { return Color.FromArgb(_rawBlock2[0x5D], _rawBlock2[0x5A], _rawBlock2[0x5B], _rawBlock2[0x5C]); }
-            set
-            {
-                _rawBlock2[0x5A] = value.R;
-                _rawBlock2[0x5B] = value.G;
-                _rawBlock2[0x5C] = value.B;
-                _rawBlock2[0x5D] = value.A;
-            }
+            get { return GetChildHairColor(0x34); }
+            set { SetChildHairColor(0x34, value); }
         }
 
         public Color HairColor_Siegbert
         {
-            get { return Color.FromArgb(_rawBlock2[0x61], _rawBlock2[0x5E], _rawBlock2[0x5F], _rawBlock2[0x60]); }
-            set
-            {
-                _rawBlock2[0x5E] = value.R;
-                _rawBlock2[0x5F] = value.G;
-                _rawBlock2[0x60] = value.B;
-                _rawBlock2[0x61] = value.A;
-            }
+            get { return GetChildHairColor(0x38); }
+            set { SetChildHairColor(0x38, value); }
         }
 
         public Color HairColor_Forrest
         {
-            get { return Color.FromArgb(_rawBlock2[0x65], _rawBlock2[0x62], _rawBlock2[0x63], _rawBlock2[0x64]); }
-            set
-            {
-                _rawBlock2[0x62] = value.R;
-                _rawBlock2[0x63] = value.G;
-                _rawBlock2[0x64] = value.B;
-                _rawBlock2[0x65] = value.A;
-            }
+            get { return GetChildHairColor(0x3C); }
+            set { SetChildHairColor(0x3C, value); }
         }
 
         public Color HairColor_Ignatius
         {
-            get { return Color.FromArgb(_rawBlock2[0x69], _rawBlock2[0x66], _rawBlock2[0x67], _rawBlock2[0x68]); }
-            set
-            {
-                _rawBlock2[0x66] = value.R;
-                _rawBlock2[0x67] = value.G;
-                _rawBlock2[0x68] = value.B;
-                _rawBlock2[0x69] = value.A;
-            }
+            get { return GetChildHairColor(0x40); }
+            set { SetChildHairColor(0x40, value); }
         }
 
         public Color HairColor_Velouria
         {
-            get { return Color.FromArgb(_rawBlock2[0x6D], _rawBlock2[0x6A], _rawBlock2[0x6B], _rawBlock2[0x6C]); }
-            set
-            {
-                _rawBlock2[0x6A] = value.R;
-                _rawBlock2[0x6B] = value.G;
-                _rawBlock2[0x6C] = value.B;
-                _rawBlock2[0x6D] = value.A;
-            }
+            get { return GetChildHairColor(0x44); }
+            set { SetChildHairColor(0x44, value); }
         }
 
         public Color HairColor_Percy
         {
-            get { return Color.FromArgb(_rawBlock2[0x71], _rawBlock2[0x6E], _rawBlock2[0x6F], _rawBlock2[0x70]); }
-            set
-            {
-                _rawBlock2[0x6E] = value.R;
-                _rawBlock2[0x6F] = value.G;
-                _rawBlock2[0x70] = value.B;
-                _rawBlock2[0x71] = value.A;
-            }
+            get { return GetChildHairColor(0x48); }
+            set { SetChildHairColor(0x48, value); }
         }
 
         public Color HairColor_Ophelia
         {
-            get { return Color.FromArgb(_rawBlock2[0x75], _rawBlock2[0x72], _rawBlock2[0x73], _rawBlock2[0x74]); }
-            set
-            {
-                _rawBlock2[0x72] = value.R;
-                _rawBlock2[0x73] = value.G;
-                _rawBlock2[0x74] = value.B;
-                _rawBlock2[0x75] = value.A;
-            }
+            get { return GetChildHairColor(0x4C); }
+            set { SetChildHairColor(0x4C, value); }
         }
 
         public Color HairColor_Soleil
         {
-            get { return Color.FromArgb(_rawBlock2[0x79], _rawBlock2[0x76], _rawBlock2[0x77], _rawBlock2[0x78]); }
-            set
-            {
-                _rawBlock2[0x76] = value.R;
-                _rawBlock2[0x77] = value.G;
-                _rawBlock2[0x78] = value.B;
-                _rawBlock2[0x79] = value.A;
-            }
+            get { return GetChildHairColor(0x50); }
+            set { SetChildHairColor(0x50, value); }
         }
 
         public Color HairColor_Nina
         {
-            get { return Color.FromArgb(_rawBlock2[0x7D], _rawBlock2[0x7A], _rawBlock2[0x7B], _rawBlock2[0x7C]); }
-            set
+            get { return GetChildHairColor(0x54); }
+            set { SetChildHairColor(0x54, value); }
+        }
+
+        private Color GetChildHairColor(int offset)
+        {
+            // Convert alpha to 255 here
+            try { return Color.FromArgb(255, _rawHairColors[offset], _rawHairColors[offset + 1], _rawHairColors[offset + 2]); }
+            catch (IndexOutOfRangeException)
             {
-                _rawBlock2[0x7A] = value.R;
-                _rawBlock2[0x7B] = value.G;
-                _rawBlock2[0x7C] = value.B;
-                _rawBlock2[0x7D] = value.A;
+                // There's no such thing as "Color.None", so here's a color that Fates will never produce.
+                // This way, the GUI can tell that no color was found and make its own decisions.
+                return Color.FromArgb(1,0,0,0);
             }
         }
 
-        // One unknown byte (0x7E)
+        private void SetChildHairColor(int offset, Color color)
+        {
+            try
+            {
+                _rawHairColors[offset] = color.R;
+                _rawHairColors[offset + 1] = color.G;
+                _rawHairColors[offset + 2] = color.B;
+                _rawHairColors[offset + 3] = color.A;
+            }
+            catch (IndexOutOfRangeException) { return; }
+        }
+
+        #endregion
+
+        #region Block 3
+
+        // One unknown byte (0x00)
         // Always 04?
 
         public string Name_CorrinM
         {
-            get { return Utils.TypeConverter.ToString(_rawBlock2.Skip(0x7E).Take(0x18).ToArray()); }
-            set { Array.Copy(Utils.TypeConverter.ToByteArray(value, 0x0C), 0x00, _rawBlock2, 0x7E, 0x18); }
+            get { return Utils.TypeConverter.ToString(_rawBlock3.Skip(0x01).Take(0x18).ToArray()); }
+            set { Array.Copy(Utils.TypeConverter.ToByteArray(value, 0x0C), 0x00, _rawBlock3, 0x01, 0x18); }
         }
 
-        // Ten unknown bytes (0x97 through 0xA0)
+        // Ten unknown bytes (0x19 through 0x22)
         // Probably hair style, face marks, etc. for Corrin M
 
         public Color HairColor_CorrinM
         {
-            get { return Color.FromArgb(_rawBlock2[0xA4], _rawBlock2[0xA1], _rawBlock2[0xA2], _rawBlock2[0xA3]); }
+            get { return Color.FromArgb(_rawBlock3[0x26], _rawBlock3[0x23], _rawBlock3[0x24], _rawBlock3[0x25]); }
             set
             {
-                _rawBlock2[0xA1] = value.R;
-                _rawBlock2[0xA2] = value.G;
-                _rawBlock2[0xA3] = value.B;
-                _rawBlock2[0xA4] = value.A;
+                _rawBlock3[0x23] = value.R;
+                _rawBlock3[0x24] = value.G;
+                _rawBlock3[0x25] = value.B;
+                _rawBlock3[0x26] = value.A;
             }
         }
 
-        // Five unknown bytes (0xA5 through 0xA9)
+        // Five unknown bytes (0x27 through 0x2B)
         // Probably some last info for Corrin M
 
-        // One unknown byte (0xAA)
+        // One unknown byte (0x2C)
         // Always 04?
 
         public string Name_CorrinF
         {
-            get { return Utils.TypeConverter.ToString(_rawBlock2.Skip(0xAA).Take(0x18).ToArray()); }
-            set { Array.Copy(Utils.TypeConverter.ToByteArray(value, 0x0C), 0x00, _rawBlock2, 0xAA, 0x18); }
+            get { return Utils.TypeConverter.ToString(_rawBlock3.Skip(0x2D).Take(0x18).ToArray()); }
+            set { Array.Copy(Utils.TypeConverter.ToByteArray(value, 0x0C), 0x00, _rawBlock3, 0x2D, 0x18); }
         }
 
-        // Ten unknown bytes (0xC3 through 0xCC)
+        // Ten unknown bytes (0x45 through 0x4E)
         // Probably hair style, face marks, etc. for Corrin F
 
         public Color HairColor_CorrinF
         {
-            get { return Color.FromArgb(_rawBlock2[0xD0], _rawBlock2[0xCD], _rawBlock2[0xCE], _rawBlock2[0xCF]); }
+            get { return Color.FromArgb(_rawBlock3[0x52], _rawBlock3[0x4F], _rawBlock3[0x50], _rawBlock3[0x51]); }
             set
             {
-                _rawBlock2[0xCD] = value.R;
-                _rawBlock2[0xCE] = value.G;
-                _rawBlock2[0xCF] = value.B;
-                _rawBlock2[0xD0] = value.A;
+                _rawBlock3[0x4F] = value.R;
+                _rawBlock3[0x50] = value.G;
+                _rawBlock3[0x51] = value.B;
+                _rawBlock3[0x52] = value.A;
             }
         }
 
-        // Five unknown bytes (0xD1 through 0xD5)
+        // Five unknown bytes (0x53 through 0x57)
         // Probably some last info for Corrin F
 
-        // One byte (0xD6)
+        // One byte (0x58)
         // Always 00?
 
         // End of block and region
