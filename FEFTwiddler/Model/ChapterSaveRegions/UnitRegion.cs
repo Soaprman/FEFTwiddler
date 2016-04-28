@@ -102,7 +102,7 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
                 var deadByGameplayUnits = Units.Where((x) => x.UnitBlock == Enums.UnitBlock.DeadByGameplay).ToList();
                 if (deadByGameplayUnits.Count > 0)
                 {
-                    rawUnits = rawUnits.Concat(((byte)0x06).Yield()).Concat(((byte)deadByGameplayUnits.Count).Yield());
+                    rawUnits = rawUnits.Concat(((byte)0x04).Yield()).Concat(((byte)deadByGameplayUnits.Count).Yield());
                     foreach (var unit in deadByGameplayUnits)
                     {
                         rawUnits = rawUnits.Concat(unit.Raw);
