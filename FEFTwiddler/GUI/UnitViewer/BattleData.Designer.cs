@@ -76,7 +76,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label17.Location = new System.Drawing.Point(4, 5);
+            this.label17.Location = new System.Drawing.Point(12, 5);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(39, 13);
             this.label17.TabIndex = 65;
@@ -90,8 +90,9 @@
             this.Controls.Add(this.label18);
             this.Controls.Add(this.numBattles);
             this.Controls.Add(this.label17);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "BattleData";
-            this.Size = new System.Drawing.Size(118, 54);
+            this.Size = new System.Drawing.Size(117, 53);
             ((System.ComponentModel.ISupportInitialize)(this.numVictories)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBattles)).EndInit();
             this.ResumeLayout(false);

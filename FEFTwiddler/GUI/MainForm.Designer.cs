@@ -40,35 +40,35 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabChapterData = new System.Windows.Forms.TabPage();
-            this.difficulty1 = new FEFTwiddler.GUI.ChapterData.Difficulty();
             this.btnChapterHistory = new System.Windows.Forms.Button();
-            this.goldAndPoints1 = new FEFTwiddler.GUI.ChapterData.GoldAndPoints();
-            this.materials1 = new FEFTwiddler.GUI.ChapterData.Materials();
             this.lblAvatarName = new System.Windows.Forms.Label();
             this.tabUnitViewer = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.lstDead = new System.Windows.Forms.ListBox();
             this.pnlUnitView = new System.Windows.Forms.Panel();
-            this.dragonVein1 = new FEFTwiddler.GUI.UnitViewer.DragonVein();
             this.btnOpenHexEditor = new System.Windows.Forms.Button();
-            this.battleData1 = new FEFTwiddler.GUI.UnitViewer.BattleData();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lstLiving = new System.Windows.Forms.ListBox();
+            this.tabMegacheats = new System.Windows.Forms.TabPage();
+            this.tabNewGamePlus = new System.Windows.Forms.TabPage();
+            this.tabGlobalData = new System.Windows.Forms.TabPage();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.difficulty1 = new FEFTwiddler.GUI.ChapterData.Difficulty();
+            this.goldAndPoints1 = new FEFTwiddler.GUI.ChapterData.GoldAndPoints();
+            this.materials1 = new FEFTwiddler.GUI.ChapterData.Materials();
+            this.classAndLevel1 = new FEFTwiddler.GUI.UnitViewer.ClassAndLevel();
+            this.dragonVein1 = new FEFTwiddler.GUI.UnitViewer.DragonVein();
             this.flags1 = new FEFTwiddler.GUI.UnitViewer.Flags();
             this.accessories1 = new FEFTwiddler.GUI.UnitViewer.Accessories();
             this.stats1 = new FEFTwiddler.GUI.UnitViewer.Stats();
             this.weaponExperience1 = new FEFTwiddler.GUI.UnitViewer.WeaponExperience();
             this.hairColor1 = new FEFTwiddler.GUI.UnitViewer.HairColor();
             this.inventory1 = new FEFTwiddler.GUI.UnitViewer.Inventory();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.skills1 = new FEFTwiddler.GUI.UnitViewer.Skills();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lstLiving = new System.Windows.Forms.ListBox();
-            this.tabMegacheats = new System.Windows.Forms.TabPage();
             this.megacheatsMain1 = new FEFTwiddler.GUI.ChapterData.MegacheatsMain();
-            this.tabNewGamePlus = new System.Windows.Forms.TabPage();
-            this.tabGlobalData = new System.Windows.Forms.TabPage();
             this.globalDataMain1 = new FEFTwiddler.GUI.GlobalData.GlobalDataMain();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.classAndLevel1 = new FEFTwiddler.GUI.UnitViewer.ClassAndLevel();
+            this.battleData1 = new FEFTwiddler.GUI.UnitViewer.BattleData();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabChapterData.SuspendLayout();
@@ -154,27 +154,12 @@
             this.tabChapterData.Name = "tabChapterData";
             this.tabChapterData.UseVisualStyleBackColor = true;
             // 
-            // difficulty1
-            // 
-            resources.ApplyResources(this.difficulty1, "difficulty1");
-            this.difficulty1.Name = "difficulty1";
-            // 
             // btnChapterHistory
             // 
             resources.ApplyResources(this.btnChapterHistory, "btnChapterHistory");
             this.btnChapterHistory.Name = "btnChapterHistory";
             this.btnChapterHistory.UseVisualStyleBackColor = true;
             this.btnChapterHistory.Click += new System.EventHandler(this.btnChapterHistory_Click);
-            // 
-            // goldAndPoints1
-            // 
-            resources.ApplyResources(this.goldAndPoints1, "goldAndPoints1");
-            this.goldAndPoints1.Name = "goldAndPoints1";
-            // 
-            // materials1
-            // 
-            resources.ApplyResources(this.materials1, "materials1");
-            this.materials1.Name = "materials1";
             // 
             // lblAvatarName
             // 
@@ -207,10 +192,10 @@
             // pnlUnitView
             // 
             this.pnlUnitView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlUnitView.Controls.Add(this.battleData1);
             this.pnlUnitView.Controls.Add(this.classAndLevel1);
             this.pnlUnitView.Controls.Add(this.dragonVein1);
             this.pnlUnitView.Controls.Add(this.btnOpenHexEditor);
-            this.pnlUnitView.Controls.Add(this.battleData1);
             this.pnlUnitView.Controls.Add(this.flags1);
             this.pnlUnitView.Controls.Add(this.accessories1);
             this.pnlUnitView.Controls.Add(this.stats1);
@@ -222,11 +207,6 @@
             resources.ApplyResources(this.pnlUnitView, "pnlUnitView");
             this.pnlUnitView.Name = "pnlUnitView";
             // 
-            // dragonVein1
-            // 
-            resources.ApplyResources(this.dragonVein1, "dragonVein1");
-            this.dragonVein1.Name = "dragonVein1";
-            // 
             // btnOpenHexEditor
             // 
             resources.ApplyResources(this.btnOpenHexEditor, "btnOpenHexEditor");
@@ -234,10 +214,74 @@
             this.btnOpenHexEditor.UseVisualStyleBackColor = true;
             this.btnOpenHexEditor.Click += new System.EventHandler(this.btnOpenHexEditor_Click);
             // 
-            // battleData1
+            // groupBox1
             // 
-            resources.ApplyResources(this.battleData1, "battleData1");
-            this.battleData1.Name = "battleData1";
+            this.groupBox1.Controls.Add(this.skills1);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
+            // lblName
+            // 
+            resources.ApplyResources(this.lblName, "lblName");
+            this.lblName.Name = "lblName";
+            // 
+            // lstLiving
+            // 
+            this.lstLiving.FormattingEnabled = true;
+            resources.ApplyResources(this.lstLiving, "lstLiving");
+            this.lstLiving.Name = "lstLiving";
+            this.lstLiving.SelectedIndexChanged += new System.EventHandler(this.SelectLivingCharacter);
+            // 
+            // tabMegacheats
+            // 
+            this.tabMegacheats.Controls.Add(this.megacheatsMain1);
+            resources.ApplyResources(this.tabMegacheats, "tabMegacheats");
+            this.tabMegacheats.Name = "tabMegacheats";
+            this.tabMegacheats.UseVisualStyleBackColor = true;
+            // 
+            // tabNewGamePlus
+            // 
+            resources.ApplyResources(this.tabNewGamePlus, "tabNewGamePlus");
+            this.tabNewGamePlus.Name = "tabNewGamePlus";
+            this.tabNewGamePlus.UseVisualStyleBackColor = true;
+            // 
+            // tabGlobalData
+            // 
+            this.tabGlobalData.Controls.Add(this.globalDataMain1);
+            resources.ApplyResources(this.tabGlobalData, "tabGlobalData");
+            this.tabGlobalData.Name = "tabGlobalData";
+            this.tabGlobalData.UseVisualStyleBackColor = true;
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
+            // 
+            // difficulty1
+            // 
+            resources.ApplyResources(this.difficulty1, "difficulty1");
+            this.difficulty1.Name = "difficulty1";
+            // 
+            // goldAndPoints1
+            // 
+            resources.ApplyResources(this.goldAndPoints1, "goldAndPoints1");
+            this.goldAndPoints1.Name = "goldAndPoints1";
+            // 
+            // materials1
+            // 
+            resources.ApplyResources(this.materials1, "materials1");
+            this.materials1.Name = "materials1";
+            // 
+            // classAndLevel1
+            // 
+            resources.ApplyResources(this.classAndLevel1, "classAndLevel1");
+            this.classAndLevel1.Name = "classAndLevel1";
+            // 
+            // dragonVein1
+            // 
+            resources.ApplyResources(this.dragonVein1, "dragonVein1");
+            this.dragonVein1.Name = "dragonVein1";
             // 
             // flags1
             // 
@@ -269,69 +313,25 @@
             resources.ApplyResources(this.inventory1, "inventory1");
             this.inventory1.Name = "inventory1";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.skills1);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
-            // 
             // skills1
             // 
             resources.ApplyResources(this.skills1, "skills1");
             this.skills1.Name = "skills1";
-            // 
-            // lblName
-            // 
-            resources.ApplyResources(this.lblName, "lblName");
-            this.lblName.Name = "lblName";
-            // 
-            // lstLiving
-            // 
-            this.lstLiving.FormattingEnabled = true;
-            resources.ApplyResources(this.lstLiving, "lstLiving");
-            this.lstLiving.Name = "lstLiving";
-            this.lstLiving.SelectedIndexChanged += new System.EventHandler(this.SelectLivingCharacter);
-            // 
-            // tabMegacheats
-            // 
-            this.tabMegacheats.Controls.Add(this.megacheatsMain1);
-            resources.ApplyResources(this.tabMegacheats, "tabMegacheats");
-            this.tabMegacheats.Name = "tabMegacheats";
-            this.tabMegacheats.UseVisualStyleBackColor = true;
             // 
             // megacheatsMain1
             // 
             resources.ApplyResources(this.megacheatsMain1, "megacheatsMain1");
             this.megacheatsMain1.Name = "megacheatsMain1";
             // 
-            // tabNewGamePlus
-            // 
-            resources.ApplyResources(this.tabNewGamePlus, "tabNewGamePlus");
-            this.tabNewGamePlus.Name = "tabNewGamePlus";
-            this.tabNewGamePlus.UseVisualStyleBackColor = true;
-            // 
-            // tabGlobalData
-            // 
-            this.tabGlobalData.Controls.Add(this.globalDataMain1);
-            resources.ApplyResources(this.tabGlobalData, "tabGlobalData");
-            this.tabGlobalData.Name = "tabGlobalData";
-            this.tabGlobalData.UseVisualStyleBackColor = true;
-            // 
             // globalDataMain1
             // 
             resources.ApplyResources(this.globalDataMain1, "globalDataMain1");
             this.globalDataMain1.Name = "globalDataMain1";
             // 
-            // saveToolStripMenuItem
+            // battleData1
             // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
-            // 
-            // classAndLevel1
-            // 
-            resources.ApplyResources(this.classAndLevel1, "classAndLevel1");
-            this.classAndLevel1.Name = "classAndLevel1";
+            resources.ApplyResources(this.battleData1, "battleData1");
+            this.battleData1.Name = "battleData1";
             // 
             // MainForm
             // 
@@ -385,7 +385,6 @@
         private UnitViewer.Accessories accessories1;
         private ChapterData.MegacheatsMain megacheatsMain1;
         private UnitViewer.Flags flags1;
-        private UnitViewer.BattleData battleData1;
         private ChapterData.GoldAndPoints goldAndPoints1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lstDead;
@@ -401,6 +400,7 @@
         private GlobalData.GlobalDataMain globalDataMain1;
         private System.Windows.Forms.ToolStripMenuItem compressFileToolStripMenuItem;
         private UnitViewer.ClassAndLevel classAndLevel1;
+        private UnitViewer.BattleData battleData1;
     }
 }
 
