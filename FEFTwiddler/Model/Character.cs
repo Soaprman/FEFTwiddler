@@ -487,6 +487,15 @@ namespace FEFTwiddler.Model
             set { _rawBlock1[0x4C] = _rawBlock1[0x4C].SetFlag(0x18, value); }
         }
 
+        /// <summary>
+        /// This unit is grayed out and cannot be selected during battle prep. (example: Scarlet in RV 18)
+        /// </summary>
+        public bool IsDisabled
+        {
+            get { return _rawBlock1[0x4D].GetFlag(0x08); }
+            set { _rawBlock1[0x4C] = _rawBlock1[0x4D].SetFlag(0x08, value); }
+        }
+
         public bool IsEinherjar
         {
             get { return _rawBlock1[0x4F].GetFlag(0x08); }

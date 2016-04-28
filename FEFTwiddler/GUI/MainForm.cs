@@ -121,6 +121,12 @@ namespace FEFTwiddler.GUI
 
         private void saveFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (_saveFile == null)
+            {
+                MessageBox.Show("No file is loaded");
+                return;
+            }
+
             switch (_saveFile.Type)
             {
                 case Enums.SaveFileType.Chapter:
