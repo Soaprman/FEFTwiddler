@@ -38,11 +38,11 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void PopulateControls()
         {
-            chkDeployed.Checked = _character.IsDeployed;
+            chkDeployed.Checked = _character.UnitBlock == Enums.UnitBlock.Deployed;
             chkDead.Checked = _character.IsDead;
             chkEinherjar.Checked = _character.IsEinherjar;
             chkRecruited.Checked = _character.IsRecruited;
-            chkAbsent.Checked = _character.IsAbsent;
+            chkAbsent.Checked = _character.UnitBlock == Enums.UnitBlock.Absent;
 
             cmbDeathChapter.Text = _character.DeathChapter.ToString();
         }

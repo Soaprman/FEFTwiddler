@@ -26,7 +26,7 @@ namespace FEFTwiddler.Model
             character.RawEndBlock = new byte[0x00];
             character.Initialize();
             // These go after Initialize because it sets stuff like IsDeployed
-            character.RawDeployedUnitInfo = new byte[(character.IsDeployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed)];
+            character.RawDeployedUnitInfo = new byte[(character.UnitBlock == UnitBlock.Deployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed)];
             return character;
         }
 
@@ -50,7 +50,7 @@ namespace FEFTwiddler.Model
             character.RawEndBlock = new byte[GetRawEndBlockSizeByType(character.RawEndBlockType)];
             character.Initialize();
             // These go after Initialize because it sets stuff like IsDeployed
-            character.RawDeployedUnitInfo = new byte[(character.IsDeployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed)];
+            character.RawDeployedUnitInfo = new byte[(character.UnitBlock == UnitBlock.Deployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed)];
             return character;
         }
 
@@ -236,7 +236,7 @@ namespace FEFTwiddler.Model
             get { return _rawDeployedUnitInfo; }
             set
             {
-                var length = (IsDeployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed);
+                var length = (UnitBlock == UnitBlock.Deployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed);
                 if (value.Length != length) throw new ArgumentException("Character deployed unit info block must be " + length + " bytes in length");
                 _rawDeployedUnitInfo = value;
             }
@@ -291,18 +291,9 @@ namespace FEFTwiddler.Model
          * */
 
         /// <summary>
-        /// This character joined before the chapter 6 split, left, and hasn't rejoined yet
+        /// Which block of the unit region this unit lies within
         /// </summary>
-        public bool IsAbsent { get; set; }
-
-        /// <summary>
-        /// Whether this character is deployed to the map
-        /// </summary>
-        /// <remarks>There might be an actual flag for this, but this works too</remarks>
-        public bool IsDeployed
-        {
-            get { return Position_FromLeft != 0xFF || Position_FromTop != 0xFF; }
-        }
+        public UnitBlock UnitBlock { get; set; }
 
         #endregion
 

@@ -48,7 +48,7 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
                                 var characterCount = br.ReadByte();
                                 for (var i = 0; i < characterCount; i++)
                                 {
-                                    ReadCurrentUnit(br, nextBlock == 0x05);
+                                    ReadCurrentUnit(br, (Enums.UnitBlock)nextBlock);
                                 }
                                 break;
                             case 0xFF: // End of unit block
@@ -79,7 +79,7 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
             {
                 IEnumerable<byte> rawUnits = new List<byte>();
 
-                var deployedUnits = Units.Where((x) => !x.IsAbsent && x.IsDeployed).ToList();
+                var deployedUnits = Units.Where((x) => x.UnitBlock == Enums.UnitBlock.Deployed).ToList();
                 if (deployedUnits.Count > 0)
                 {
                     rawUnits = rawUnits.Concat(((byte)0x00).Yield()).Concat(((byte)deployedUnits.Count).Yield());
@@ -89,7 +89,7 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
                     }
                 }
 
-                var livingUnits = Units.Where((x) => !x.IsAbsent && !x.IsDeployed && !x.IsDead).ToList();
+                var livingUnits = Units.Where((x) => x.UnitBlock == Enums.UnitBlock.Living).ToList();
                 if (livingUnits.Count > 0)
                 {
                     rawUnits = rawUnits.Concat(((byte)0x03).Yield()).Concat(((byte)livingUnits.Count).Yield());
@@ -99,7 +99,17 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
                     }
                 }
 
-                var absentUnits = Units.Where((x) => x.IsAbsent).ToList();
+                var deadByGameplayUnits = Units.Where((x) => x.UnitBlock == Enums.UnitBlock.DeadByGameplay).ToList();
+                if (deadByGameplayUnits.Count > 0)
+                {
+                    rawUnits = rawUnits.Concat(((byte)0x06).Yield()).Concat(((byte)deadByGameplayUnits.Count).Yield());
+                    foreach (var unit in deadByGameplayUnits)
+                    {
+                        rawUnits = rawUnits.Concat(unit.Raw);
+                    }
+                }
+
+                var absentUnits = Units.Where((x) => x.UnitBlock == Enums.UnitBlock.Absent).ToList();
                 if (absentUnits.Count > 0)
                 {
                     rawUnits = rawUnits.Concat(((byte)0x05).Yield()).Concat(((byte)absentUnits.Count).Yield());
@@ -109,11 +119,11 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
                     }
                 }
 
-                var deadUnits = Units.Where((x) => x.IsDead).ToList();
-                if (deadUnits.Count > 0)
+                var deadByPlotUnits = Units.Where((x) => x.UnitBlock == Enums.UnitBlock.DeadByPlot).ToList();
+                if (deadByPlotUnits.Count > 0)
                 {
-                    rawUnits = rawUnits.Concat(((byte)0x06).Yield()).Concat(((byte)deadUnits.Count).Yield());
-                    foreach (var unit in deadUnits)
+                    rawUnits = rawUnits.Concat(((byte)0x06).Yield()).Concat(((byte)deadByPlotUnits.Count).Yield());
+                    foreach (var unit in deadByPlotUnits)
                     {
                         rawUnits = rawUnits.Concat(unit.Raw);
                     }
@@ -143,13 +153,13 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
 
         #endregion
 
-        private void ReadCurrentUnit(BinaryReader br, bool isAbsent)
+        private void ReadCurrentUnit(BinaryReader br, Enums.UnitBlock unitBlock)
         {
             byte[] chunk;
 
             var unit = new Character();
 
-            unit.IsAbsent = isAbsent;
+            unit.UnitBlock = unitBlock;
 
             chunk = new byte[Model.Character.RawBlock1Length];
             br.Read(chunk, 0, Model.Character.RawBlock1Length);
@@ -175,7 +185,7 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
             br.Read(chunk, 0, Model.Character.RawLearnedSkillsLength);
             unit.RawLearnedSkills = chunk;
 
-            var depLength = (unit.IsDeployed ? Model.Character.RawDeployedUnitInfoLengthIfDeployed : Model.Character.RawDeployedUnitInfoLengthIfNotDeployed);
+            var depLength = (unit.UnitBlock == Enums.UnitBlock.Deployed ? Model.Character.RawDeployedUnitInfoLengthIfDeployed : Model.Character.RawDeployedUnitInfoLengthIfNotDeployed);
             chunk = new byte[depLength];
             br.Read(chunk, 0, depLength);
             unit.RawDeployedUnitInfo = chunk;

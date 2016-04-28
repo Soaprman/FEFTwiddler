@@ -31,7 +31,7 @@ namespace FEFTwiddler.Model.NewGamePlus
             foreach (var characterData in characterDatas)
             {
                 var unit = Model.Character.Create(characterData.CharacterID);
-                unit.IsAbsent = true;
+                unit.UnitBlock = Enums.UnitBlock.Absent;
                 _chapterSave.UnitRegion.Units.Add(unit);
             }
         }
