@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.Design;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FEFTwiddler.GUI.UnitViewer
@@ -14,6 +8,7 @@ namespace FEFTwiddler.GUI.UnitViewer
     [Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", typeof(IDesigner))]
     public partial class Flags : UserControl
     {
+        private ToolTip _tooltip = new ToolTip();
         private Model.Character _character;
 
         public Flags()
@@ -30,6 +25,9 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void InitializeControls()
         {
+            _tooltip.SetToolTip(chkEinherjar, "I don't know entirely what side effects changing this has. Click at your own risk!");
+            _tooltip.SetToolTip(chkRecruited, "I don't know entirely what side effects changing this has. Click at your own risk!");
+
             chkEinherjar.CheckedChanged += HandleEinherjarChecked;
             chkRecruited.CheckedChanged += HandleRecruitedChecked;
         }
