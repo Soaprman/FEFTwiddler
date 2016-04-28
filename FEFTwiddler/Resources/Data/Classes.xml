@@ -844,7 +844,7 @@
     <maxStats hp="50" str="28" mag="31" skl="33" spd="33" lck="32" def="29" res="29" />
     <weaponsUsed sword="false" lance="false" axe="false" shuriken="true" bow="false" tome="false" staff="false" stone="false" />
     <growthRates hp="0" str="10" mag="10" skl="15" spd="15" lck="10" def="5" res="10" />
-    <categories isPromoted="true" isSpecial="true" isFemale="false" isNpcOnly="false" />
+    <categories isPromoted="true" isSpecial="false" isFemale="false" isNpcOnly="false" />
   </class>
   <class id="94" name="Maid">
     <text lang="English" displayName="Maid" />
@@ -853,7 +853,7 @@
     <maxStats hp="50" str="28" mag="31" skl="33" spd="33" lck="32" def="29" res="29" />
     <weaponsUsed sword="false" lance="false" axe="false" shuriken="true" bow="false" tome="false" staff="false" stone="false" />
     <growthRates hp="0" str="10" mag="10" skl="15" spd="15" lck="10" def="5" res="10" />
-    <categories isPromoted="true" isSpecial="true" isFemale="true" isNpcOnly="false" />
+    <categories isPromoted="true" isSpecial="false" isFemale="true" isNpcOnly="false" />
   </class>
   <class id="95" name="Wolfskin_M">
     <text lang="English" displayName="Wolfskin (M)" />
