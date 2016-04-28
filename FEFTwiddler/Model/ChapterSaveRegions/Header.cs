@@ -118,8 +118,15 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
             set { _raw[0x0C] = (byte)value; }
         }
 
-        // Two unknown bytes (0x0D through 0x0E)
-        // 0x0D is probably IsBattlePrepSave (0x01 on battle prep saves, 0x00 otherwise)
+        // This is a guess but it seems to fit
+        // I haven't found a corresponding value in the user block though
+        public bool IsBattlePrepSave
+        {
+            get { return _raw[0x0D].GetFlag(0x01); }
+            set { _raw[0x0D] = _raw[0x0D].SetFlag(0x01, value); }
+        }
+
+        // One unknown byte (0x0E)
         // 0x0E is always 00 from what I've seen
 
         public string AvatarName

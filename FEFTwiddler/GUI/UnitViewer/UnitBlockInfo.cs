@@ -15,6 +15,7 @@ namespace FEFTwiddler.GUI.UnitViewer
     public partial class UnitBlockInfo : UserControl
     {
         private ToolTip _tooltip = new ToolTip();
+        private Model.ChapterSave _chapterSave;
         private Model.Character _unit;
 
         public UnitBlockInfo()
@@ -23,8 +24,9 @@ namespace FEFTwiddler.GUI.UnitViewer
             InitializeControls();
         }
 
-        public void LoadCharacter(Model.Character unit)
+        public void LoadCharacter(Model.ChapterSave chapterSave, Model.Character unit)
         {
+            _chapterSave = chapterSave;
             _unit = unit;
             PopulateControls();
         }
@@ -75,8 +77,6 @@ namespace FEFTwiddler.GUI.UnitViewer
                 if (!IsDead()) DisableDeathChapter();
             }
 
-            // TODO: Enable/disable deployed box based on whether save is on battle prep
-
             BindEvents();
         }
 
@@ -116,7 +116,10 @@ namespace FEFTwiddler.GUI.UnitViewer
         private void EnableAll()
         {
             rdoLiving.Enabled = true;
-            rdoDeployed.Enabled = true;
+
+            if (_chapterSave.Header.IsBattlePrepSave) rdoDeployed.Enabled = true;
+            else rdoDeployed.Enabled = false;
+
             rdoAbsent.Enabled = true;
             rdoDeadByGameplay.Enabled = true;
             rdoDeadByPlot.Enabled = true;

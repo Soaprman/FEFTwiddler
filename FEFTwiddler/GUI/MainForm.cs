@@ -282,7 +282,7 @@ namespace FEFTwiddler.GUI
             try { stats1.LoadCharacter(_selectedCharacter); }
             catch (Exception) { message += Environment.NewLine + "Error loading Stats data"; }
 
-            try { unitBlockInfo1.LoadCharacter(_selectedCharacter); }
+            try { unitBlockInfo1.LoadCharacter(_chapterSave, _selectedCharacter); }
             catch (Exception) { message += Environment.NewLine + "Error loading Unit Block Info data"; }
 
             try { flags1.LoadCharacter(_selectedCharacter); }
