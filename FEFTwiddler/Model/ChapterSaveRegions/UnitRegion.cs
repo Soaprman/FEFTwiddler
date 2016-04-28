@@ -42,8 +42,9 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
                         {
                             case 0x00: // Deployed living units (battle prep only)
                             case 0x03: // Undeployed living units (all living units in my castle)
+                            case 0x04: // Dead units (killed by gameplay)
                             case 0x05: // If after chapter 6, units you had at some point before the split who haven't rejoined yet (or at least I think that's what this is)
-                            case 0x06: // Dead units
+                            case 0x06: // Dead units (killed by plot)
                                 var characterCount = br.ReadByte();
                                 for (var i = 0; i < characterCount; i++)
                                 {

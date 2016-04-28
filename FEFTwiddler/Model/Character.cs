@@ -483,8 +483,14 @@ namespace FEFTwiddler.Model
 
         public bool IsDead
         {
-            get { return _rawBlock1[0x4C].GetFlag(0x18); }
-            set { _rawBlock1[0x4C] = _rawBlock1[0x4C].SetFlag(0x18, value); }
+            get { return _rawBlock1[0x4C].GetFlag(0x08); }
+            set { _rawBlock1[0x4C] = _rawBlock1[0x4C].SetFlag(0x08, value); }
+        }
+
+        public bool WasKilledByPlot
+        {
+            get { return _rawBlock1[0x4C].GetFlag(0x10); }
+            set { _rawBlock1[0x4C] = _rawBlock1[0x4C].SetFlag(0x10, value); }
         }
 
         /// <summary>
@@ -812,7 +818,17 @@ namespace FEFTwiddler.Model
             set { _rawBlock3[0x10] = (byte)value; }
         }
 
-        // Two unknown bytes (0x11 through 0x12)
+        // Not 100% sure on this, but:
+        // It shows in 062\Chapter0 for Mozu, who died in a "challenge"
+        // It does not show for Kagero, who died in a xenologue (ghostly gold)
+        // It does not show for Scarlet
+        public bool DiedOnChallengeMission
+        {
+            get { return _rawBlock3[0x11].GetFlag(0x01); }
+            set { _rawBlock3[0x4C] = _rawBlock3[0x11].SetFlag(0x01, value); }
+        }
+
+        // One unknown byte (0x12)
 
         #endregion
 
