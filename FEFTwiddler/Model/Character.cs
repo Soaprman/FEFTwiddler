@@ -1060,6 +1060,8 @@ namespace FEFTwiddler.Model
         /// </summary>
         public byte GetBaseMaxLevel()
         {
+            if (!Enum.IsDefined(typeof(Enums.Class), ClassID)) return 255;
+
             var classData = Data.Database.Classes.GetByID(ClassID);
             if (classData.IsSpecial) return 40;
             else return 20;
@@ -1071,6 +1073,8 @@ namespace FEFTwiddler.Model
         /// <returns></returns>
         public byte GetModifiedMaxLevel()
         {
+            if (!Enum.IsDefined(typeof(Enums.Class), ClassID)) return 255;
+
             var classData = Data.Database.Classes.GetByID(ClassID);
             if (!classData.IsPromoted && !classData.IsSpecial) return 20;
             else return (byte)(GetBaseMaxLevel() + (EternalSealsUsed * 5));
@@ -1081,6 +1085,8 @@ namespace FEFTwiddler.Model
         /// </summary>
         public byte GetTheoreticalMaxLevel()
         {
+            if (!Enum.IsDefined(typeof(Enums.Class), ClassID)) return 255;
+
             var classData = Data.Database.Classes.GetByID(ClassID);
             if (classData.IsSpecial) return 255;
             else if (classData.IsPromoted) return 235;
