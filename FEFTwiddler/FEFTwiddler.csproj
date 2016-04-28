@@ -250,6 +250,12 @@
     <Compile Include="GUI\UnitViewer\Stats.Designer.cs">
       <DependentUpon>Stats.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\UnitViewer\UnitBlockInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\UnitBlockInfo.Designer.cs">
+      <DependentUpon>UnitBlockInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\UnitViewer\WeaponExperience.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -366,6 +372,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\Stats.resx">
       <DependentUpon>Stats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UnitViewer\UnitBlockInfo.resx">
+      <DependentUpon>UnitBlockInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\WeaponExperience.resx">
       <DependentUpon>WeaponExperience.cs</DependentUpon>

@@ -110,10 +110,9 @@ namespace FEFTwiddler.Model.NewGamePlus
             // This is just setting them to what they're like in a legit "new" save.
             // I will list side effects as I find them in order to figure out what these are.
             // Side effect: Tutorials show for the battle prep and support menus when opening them.
-            _chapterSave.UserRegion.Unknown_Block1_0x05 = 0x43;
+            _chapterSave.UserRegion.Unknown_Block1_0x09 = 0x00;
             _chapterSave.UserRegion.Unknown_Block1_0x0A = 0x00;
             _chapterSave.UserRegion.Unknown_Block1_0x0B = 0x00;
-            _chapterSave.UserRegion.Unknown_Block1_0x0C = 0x00;
             _chapterSave.UserRegion.Unknown_Block2_0xDF = 0x00;
             _chapterSave.UserRegion.Unknown_Block2_0xE0 = 0x00;
             _chapterSave.UserRegion.Unknown_Block2_0xE1 = 0x00;

@@ -23,8 +23,17 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
         // One byte (0x00)
         // Always 0x01
 
-        // Four unknown bytes (0x01 through 0x04)
-        // Probably time elapsed
+        public uint TimeElapsed
+        {
+            get { return BitConverter.ToUInt32(_raw, 0x01); }
+            set
+            {
+                _raw[0x01] = (byte)(value);
+                _raw[0x02] = (byte)(value >> 8);
+                _raw[0x03] = (byte)(value >> 16);
+                _raw[0x04] = (byte)(value >> 24);
+            }
+        }
 
         public Enums.Chapter CurrentChapter
         {

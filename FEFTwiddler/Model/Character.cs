@@ -120,6 +120,28 @@ namespace FEFTwiddler.Model
             _rawBlock3[0x00] = 0x02;
         }
 
+        /// <summary>
+        /// This is just here because it belongs here conceptually
+        /// </summary>
+        public static byte[] GetEmptyDeployedInfoBlock()
+        {
+            return new byte[0];
+        }
+
+        /// <summary>
+        /// Get a blank deployed unit info block, in case you are switching this unit to deployed
+        /// </summary>
+        public static byte[] GetFullDeployedInfoBlock()
+        {
+            return new byte[]
+            {
+                0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF,
+                0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,
+                0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,
+                0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF
+            };
+        }
+
         #endregion
 
         #region Raw Data
@@ -816,7 +838,7 @@ namespace FEFTwiddler.Model
         public bool DiedOnChallengeMission
         {
             get { return _rawBlock3[0x11].GetFlag(0x01); }
-            set { _rawBlock3[0x4C] = _rawBlock3[0x11].SetFlag(0x01, value); }
+            set { _rawBlock3[0x11] = _rawBlock3[0x11].SetFlag(0x01, value); }
         }
 
         // One unknown byte (0x12)

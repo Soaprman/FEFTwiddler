@@ -95,23 +95,24 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
         // One unknown byte (0x04)
         // 0x04 is always 06?
 
-        /// <summary>
-        /// changed 2A > 4E between branch of fate and RV chapter 7
-        /// Is 0x43 on a "new" save
-        /// </summary>
-        public byte Unknown_Block1_0x05
+        public uint TimeElapsed
         {
-            get { return _rawBlock1[0x05]; }
-            set { _rawBlock1[0x05] = value; }
+            get { return BitConverter.ToUInt32(_rawBlock1, 0x05); }
+            set
+            {
+                _rawBlock1[0x05] = (byte)(value);
+                _rawBlock1[0x06] = (byte)(value >> 8);
+                _rawBlock1[0x07] = (byte)(value >> 16);
+                _rawBlock1[0x08] = (byte)(value >> 24);
+            }
         }
 
-        public byte[] TimeElapsed
+        // These four look similar to elapsed time but they're not the same.
+        public byte Unknown_Block1_0x09
         {
-            get { return _rawBlock1.Skip(0x06).Take(0x03).ToArray(); }
-            set { Array.Copy(value, 0x00, _rawBlock1, 0x06, 0x03); }
+            get { return _rawBlock1[0x09]; }
+            set { _rawBlock1[0x09] = value; }
         }
-
-        // These three look similar to elapsed time but they're not the same.
         public byte Unknown_Block1_0x0A
         {
             get { return _rawBlock1[0x0A]; }
@@ -127,13 +128,6 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
             get { return _rawBlock1[0x0C]; }
             set { _rawBlock1[0x0C] = value; }
         }
-
-        // One unknown byte (0x0C)
-        // Always 00?
-
-        // 0x06 changed 6C > 8F between branch of fate and RV chapter 7
-        // 0x08 changed 45 > 34 between branch of fate and RV chapter 7
-        // 0x09 changed 2D > 6F between branch of fate and RV chapter 7
 
         public Enums.Chapter CurrentChapter
         {
@@ -234,15 +228,16 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
         }
 
         // Not sure what these three are.
-        // 04 F0 C7 on my ch27 RV save
-        // 01 00 00 on my "new" save
-        // CHANGING THIS TO 01 00 00 DID IT. AFTER ALL THAT OTHER SHIT
-        // WE RANDOMIZED NOW FAM. WE RANDOMIZED NOW
+        // F0 C7 00 on my ch27 RV save
+        // 00 00 00 on my "new" save
+        // Changing these to 00 00 00 successfully kicked a save back to the prologue.
         public byte Unknown_Block2_0xE6
         {
             get { return _rawBlock2[0xE6]; }
             set { _rawBlock2[0xE6] = value; }
         }
+        // C7 on my castle RV ch 27
+        // C3 on battle prep RV ch 27
         public byte Unknown_Block2_0xE7
         {
             get { return _rawBlock2[0xE7]; }

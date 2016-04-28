@@ -57,9 +57,10 @@
             this.difficulty1 = new FEFTwiddler.GUI.ChapterData.Difficulty();
             this.goldAndPoints1 = new FEFTwiddler.GUI.ChapterData.GoldAndPoints();
             this.materials1 = new FEFTwiddler.GUI.ChapterData.Materials();
+            this.flags1 = new FEFTwiddler.GUI.UnitViewer.Flags();
+            this.battleData1 = new FEFTwiddler.GUI.UnitViewer.BattleData();
             this.classAndLevel1 = new FEFTwiddler.GUI.UnitViewer.ClassAndLevel();
             this.dragonVein1 = new FEFTwiddler.GUI.UnitViewer.DragonVein();
-            this.flags1 = new FEFTwiddler.GUI.UnitViewer.Flags();
             this.accessories1 = new FEFTwiddler.GUI.UnitViewer.Accessories();
             this.stats1 = new FEFTwiddler.GUI.UnitViewer.Stats();
             this.weaponExperience1 = new FEFTwiddler.GUI.UnitViewer.WeaponExperience();
@@ -68,7 +69,7 @@
             this.skills1 = new FEFTwiddler.GUI.UnitViewer.Skills();
             this.megacheatsMain1 = new FEFTwiddler.GUI.ChapterData.MegacheatsMain();
             this.globalDataMain1 = new FEFTwiddler.GUI.GlobalData.GlobalDataMain();
-            this.battleData1 = new FEFTwiddler.GUI.UnitViewer.BattleData();
+            this.unitBlockInfo1 = new FEFTwiddler.GUI.UnitViewer.UnitBlockInfo();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabChapterData.SuspendLayout();
@@ -192,11 +193,12 @@
             // pnlUnitView
             // 
             this.pnlUnitView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlUnitView.Controls.Add(this.unitBlockInfo1);
+            this.pnlUnitView.Controls.Add(this.flags1);
             this.pnlUnitView.Controls.Add(this.battleData1);
             this.pnlUnitView.Controls.Add(this.classAndLevel1);
             this.pnlUnitView.Controls.Add(this.dragonVein1);
             this.pnlUnitView.Controls.Add(this.btnOpenHexEditor);
-            this.pnlUnitView.Controls.Add(this.flags1);
             this.pnlUnitView.Controls.Add(this.accessories1);
             this.pnlUnitView.Controls.Add(this.stats1);
             this.pnlUnitView.Controls.Add(this.weaponExperience1);
@@ -273,6 +275,16 @@
             resources.ApplyResources(this.materials1, "materials1");
             this.materials1.Name = "materials1";
             // 
+            // flags1
+            // 
+            resources.ApplyResources(this.flags1, "flags1");
+            this.flags1.Name = "flags1";
+            // 
+            // battleData1
+            // 
+            resources.ApplyResources(this.battleData1, "battleData1");
+            this.battleData1.Name = "battleData1";
+            // 
             // classAndLevel1
             // 
             resources.ApplyResources(this.classAndLevel1, "classAndLevel1");
@@ -282,11 +294,6 @@
             // 
             resources.ApplyResources(this.dragonVein1, "dragonVein1");
             this.dragonVein1.Name = "dragonVein1";
-            // 
-            // flags1
-            // 
-            resources.ApplyResources(this.flags1, "flags1");
-            this.flags1.Name = "flags1";
             // 
             // accessories1
             // 
@@ -328,10 +335,10 @@
             resources.ApplyResources(this.globalDataMain1, "globalDataMain1");
             this.globalDataMain1.Name = "globalDataMain1";
             // 
-            // battleData1
+            // unitBlockInfo1
             // 
-            resources.ApplyResources(this.battleData1, "battleData1");
-            this.battleData1.Name = "battleData1";
+            resources.ApplyResources(this.unitBlockInfo1, "unitBlockInfo1");
+            this.unitBlockInfo1.Name = "unitBlockInfo1";
             // 
             // MainForm
             // 
@@ -384,7 +391,6 @@
         private UnitViewer.Stats stats1;
         private UnitViewer.Accessories accessories1;
         private ChapterData.MegacheatsMain megacheatsMain1;
-        private UnitViewer.Flags flags1;
         private ChapterData.GoldAndPoints goldAndPoints1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lstDead;
@@ -401,6 +407,8 @@
         private System.Windows.Forms.ToolStripMenuItem compressFileToolStripMenuItem;
         private UnitViewer.ClassAndLevel classAndLevel1;
         private UnitViewer.BattleData battleData1;
+        private UnitViewer.Flags flags1;
+        private UnitViewer.UnitBlockInfo unitBlockInfo1;
     }
 }
 

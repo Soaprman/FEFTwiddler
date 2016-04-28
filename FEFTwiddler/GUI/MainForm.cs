@@ -181,8 +181,20 @@ namespace FEFTwiddler.GUI
 
         #region Unit Viewer
 
+        /// <summary>
+        /// Load the unit viewer, then jump to a particular unit
+        /// </summary>
+        public void LoadUnitViewer(Model.Character unit)
+        {
+            LoadUnitViewer();
+            SelectUnit(unit);
+        }
+
         public void LoadUnitViewer()
         {
+            lstLiving.Invalidate();
+            lstDead.Invalidate();
+
             lstLiving.DisplayMember = "CharacterID";
             lstLiving.ValueMember = "CharacterID";
             lstLiving.Items.Clear();
@@ -190,14 +202,34 @@ namespace FEFTwiddler.GUI
             lstDead.DisplayMember = "CharacterID";
             lstDead.ValueMember = "CharacterID";
             lstDead.Items.Clear();
-            foreach (var character in _chapterSave.UnitRegion.Units)
+            foreach (var unit in _chapterSave.UnitRegion.Units)
             {
-                if (character.IsDead) lstDead.Items.Add(character);
-                else lstLiving.Items.Add(character);
+                if (IsDead(unit)) lstDead.Items.Add(unit);
+                else lstLiving.Items.Add(unit);
             }
 
             lstLiving.SelectedIndex = 0;
             lstDead.ClearSelected();
+
+            lstLiving.Refresh();
+            lstDead.Refresh();
+        }
+
+        private bool IsDead(Model.Character unit)
+        {
+            return unit.UnitBlock == Enums.UnitBlock.DeadByGameplay || unit.UnitBlock == Enums.UnitBlock.DeadByPlot;
+        }
+
+        public void SelectUnit(Model.Character unit)
+        {
+            if (lstLiving.Items.IndexOf(unit) > -1)
+            {
+                lstLiving.SelectedItem = unit;
+            }
+            else if (lstDead.Items.IndexOf(unit) > -1)
+            {
+                lstDead.SelectedItem = unit;
+            }
         }
 
         private void SelectLivingCharacter(object sender, EventArgs e)
@@ -249,6 +281,9 @@ namespace FEFTwiddler.GUI
 
             try { stats1.LoadCharacter(_selectedCharacter); }
             catch (Exception) { message += Environment.NewLine + "Error loading Stats data"; }
+
+            try { unitBlockInfo1.LoadCharacter(_selectedCharacter); }
+            catch (Exception) { message += Environment.NewLine + "Error loading Unit Block Info data"; }
 
             try { flags1.LoadCharacter(_selectedCharacter); }
             catch (Exception) { message += Environment.NewLine + "Error loading Flags data"; }
