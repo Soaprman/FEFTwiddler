@@ -21,13 +21,13 @@ namespace FEFTwiddlerTest.Model
 
             character.EternalSealsUsed = 0;
 
-            expected = 40;
+            expected = 20;
             actual = character.GetModifiedMaxLevel();
             Assert.AreEqual(expected, actual);
 
             character.EternalSealsUsed = 1;
 
-            expected = 45;
+            expected = 25;
             actual = character.GetModifiedMaxLevel();
             Assert.AreEqual(expected, actual);
         }
@@ -96,25 +96,25 @@ namespace FEFTwiddlerTest.Model
 
             character.Level = 40;
 
-            expected = 0;
+            expected = 4;
             actual = character.GetMinimumEternalSealsForCurrentLevel();
             Assert.AreEqual(expected, actual);
 
             character.Level = 41;
 
-            expected = 1;
+            expected = 5;
             actual = character.GetMinimumEternalSealsForCurrentLevel();
             Assert.AreEqual(expected, actual);
 
             character.Level = 45;
 
-            expected = 1;
+            expected = 5;
             actual = character.GetMinimumEternalSealsForCurrentLevel();
             Assert.AreEqual(expected, actual);
 
             character.Level = 46;
 
-            expected = 2;
+            expected = 6;
             actual = character.GetMinimumEternalSealsForCurrentLevel();
             Assert.AreEqual(expected, actual);
         }
