@@ -16,12 +16,14 @@ namespace FEFTwiddler.Model
         }
 
         /// <summary>
-        /// A reference to the name of the item. Not sure quite how this works yet.
+        /// A reference to the name of the weapon in the weapon name block.
+        /// This value is two greater than the corresponding ID in the weapon name block for some reason.
+        /// This returns the value as seen in the weapon name block (i.e. two is subtracted from it on get).
         /// </summary>
-        public byte ItemNameID
+        public byte WeaponNameID
         {
-            get { return _raw[2]; }
-            set { _raw[2] = value; }
+            get { return (byte)(_raw[2] - 2); }
+            set { _raw[2] = (byte)(value + 2); }
         }
 
         /// <summary>

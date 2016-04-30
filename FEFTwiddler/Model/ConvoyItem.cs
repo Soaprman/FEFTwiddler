@@ -26,8 +26,16 @@ namespace FEFTwiddler.Model
             }
         }
 
-        // One byte (0x03)
-        // Always 00?
+        /// <summary>
+        /// A reference to the name of the weapon in the weapon name block.
+        /// This value is two greater than the corresponding ID in the weapon name block for some reason.
+        /// This returns the value as seen in the weapon name block (i.e. two is subtracted from it on get).
+        /// </summary>
+        public byte WeaponNameID
+        {
+            get { return (byte)(_raw[0x03] - 2); }
+            set { _raw[0x03] = (byte)(value + 2); }
+        }
 
         /// <summary>
         /// Doubles as forge level. 0x41 and up, I think
