@@ -63,15 +63,17 @@ namespace FEFTwiddler.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;root&gt;
-        ///  &lt;accessory id=&quot;0&quot; name=&quot;None&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;None&quot; /&gt;
+        ///  &lt;accessory id=&quot;0&quot; name=&quot;None&quot; type=&quot;None&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;(None)&quot; /&gt;
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;無し&quot; /&gt;
-        ///    &lt;flags isHeadwear=&quot;true&quot; isFacewear=&quot;true&quot; isArmwear=&quot;true&quot; isUnderwear=&quot;true&quot; /&gt;
         ///  &lt;/accessory&gt;
-        ///  &lt;accessory id=&quot;1&quot; name=&quot;MarthsTiara&quot;&gt;
+        ///  &lt;accessory id=&quot;1&quot; name=&quot;MarthsTiara&quot; type=&quot;Headwear&quot;&gt;
         ///    &lt;text lang=&quot;English&quot; displayName=&quot;Marth&apos;s Tiara&quot; /&gt;
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;マルスのティアラ&quot; /&gt;
-        ///    &lt;flags isHeadwear=&quot;true&quot; isFacewear=&quot;false&quot; isArmwear=&quot;false&quot; isUnderwear=&quot;f [rest of string was truncated]&quot;;.
+        ///  &lt;/accessory&gt;
+        ///  &lt;accessory id=&quot;2&quot; name=&quot;DragonHairpin&quot; type=&quot;Headwear&quot;&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Dragon Hairpin&quot; /&gt;
+        ///     [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Accessories {
             get {
@@ -169,8 +171,7 @@ namespace FEFTwiddler.Properties {
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;キクヅキ&quot; /&gt;
         ///  &lt;/prisoner&gt;
         ///  &lt;prisoner id=&quot;3&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Hajime&quot; /&gt;
-        ///    &lt; [rest of string was truncated]&quot;;.
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;H [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Prisoners {
             get {
@@ -3048,6 +3049,16 @@ namespace FEFTwiddler.Properties {
         internal static System.Drawing.Bitmap WeaponExp_bow {
             get {
                 object obj = ResourceManager.GetObject("WeaponExp_bow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WeaponExp_consumable {
+            get {
+                object obj = ResourceManager.GetObject("WeaponExp_consumable", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

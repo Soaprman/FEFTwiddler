@@ -51,6 +51,7 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
             }
         }
 
+        public const int MaxConvoyCount = 500;
         public byte[] RawConvoyCount
         {
             get

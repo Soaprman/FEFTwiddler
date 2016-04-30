@@ -25,5 +25,11 @@
                 _raw[1] = (byte)((((int)value) >> 8) & 0xFF); // So very sorry
             }
         }
+
+        public const byte MinForges = 0;
+        public const byte MaxForges = 7;
+        public const byte MinUses = 1;
+        public const byte MinQuantity = 1;
+        public const byte MaxQuantity = 255;
     }
 }

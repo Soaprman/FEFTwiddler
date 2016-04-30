@@ -279,6 +279,393 @@
   <data name="&gt;&gt;tabChapterData.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>tabUnitViewer</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lstDead.Name" xml:space="preserve">
+    <value>lstDead</value>
+  </data>
+  <data name="&gt;&gt;lstDead.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstDead.Parent" xml:space="preserve">
+    <value>tabUnitViewer</value>
+  </data>
+  <data name="&gt;&gt;lstDead.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnlUnitView.Name" xml:space="preserve">
+    <value>pnlUnitView</value>
+  </data>
+  <data name="&gt;&gt;pnlUnitView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlUnitView.Parent" xml:space="preserve">
+    <value>tabUnitViewer</value>
+  </data>
+  <data name="&gt;&gt;pnlUnitView.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lstLiving.Name" xml:space="preserve">
+    <value>lstLiving</value>
+  </data>
+  <data name="&gt;&gt;lstLiving.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstLiving.Parent" xml:space="preserve">
+    <value>tabUnitViewer</value>
+  </data>
+  <data name="&gt;&gt;lstLiving.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabUnitViewer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabUnitViewer.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabUnitViewer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 495</value>
+  </data>
+  <data name="tabUnitViewer.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabUnitViewer.Text" xml:space="preserve">
+    <value>Unit Viewer</value>
+  </data>
+  <data name="&gt;&gt;tabUnitViewer.Name" xml:space="preserve">
+    <value>tabUnitViewer</value>
+  </data>
+  <data name="&gt;&gt;tabUnitViewer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabUnitViewer.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabUnitViewer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;megacheatsMain1.Name" xml:space="preserve">
+    <value>megacheatsMain1</value>
+  </data>
+  <data name="&gt;&gt;megacheatsMain1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.ChapterData.MegacheatsMain, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;megacheatsMain1.Parent" xml:space="preserve">
+    <value>tabMegacheats</value>
+  </data>
+  <data name="&gt;&gt;megacheatsMain1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabMegacheats.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabMegacheats.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabMegacheats.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 495</value>
+  </data>
+  <data name="tabMegacheats.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabMegacheats.Text" xml:space="preserve">
+    <value>Megacheats</value>
+  </data>
+  <data name="&gt;&gt;tabMegacheats.Name" xml:space="preserve">
+    <value>tabMegacheats</value>
+  </data>
+  <data name="&gt;&gt;tabMegacheats.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabMegacheats.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabMegacheats.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabNewGamePlus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabNewGamePlus.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabNewGamePlus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 495</value>
+  </data>
+  <data name="tabNewGamePlus.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabNewGamePlus.Text" xml:space="preserve">
+    <value>New Game Plus</value>
+  </data>
+  <data name="&gt;&gt;tabNewGamePlus.Name" xml:space="preserve">
+    <value>tabNewGamePlus</value>
+  </data>
+  <data name="&gt;&gt;tabNewGamePlus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabNewGamePlus.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabNewGamePlus.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;globalDataMain1.Name" xml:space="preserve">
+    <value>globalDataMain1</value>
+  </data>
+  <data name="&gt;&gt;globalDataMain1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.GlobalData.GlobalDataMain, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;globalDataMain1.Parent" xml:space="preserve">
+    <value>tabGlobalData</value>
+  </data>
+  <data name="&gt;&gt;globalDataMain1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabGlobalData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabGlobalData.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabGlobalData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 495</value>
+  </data>
+  <data name="tabGlobalData.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tabGlobalData.Text" xml:space="preserve">
+    <value>Global Data</value>
+  </data>
+  <data name="&gt;&gt;tabGlobalData.Name" xml:space="preserve">
+    <value>tabGlobalData</value>
+  </data>
+  <data name="&gt;&gt;tabGlobalData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabGlobalData.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabGlobalData.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="convoyMain1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="convoyMain1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="convoyMain1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>740, 480</value>
+  </data>
+  <data name="convoyMain1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;convoyMain1.Name" xml:space="preserve">
+    <value>convoyMain1</value>
+  </data>
+  <data name="&gt;&gt;convoyMain1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.Convoy.ConvoyMain, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;convoyMain1.Parent" xml:space="preserve">
+    <value>tabConvoy</value>
+  </data>
+  <data name="&gt;&gt;convoyMain1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabConvoy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabConvoy.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabConvoy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 495</value>
+  </data>
+  <data name="tabConvoy.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tabConvoy.Text" xml:space="preserve">
+    <value>Convoy</value>
+  </data>
+  <data name="&gt;&gt;tabConvoy.Name" xml:space="preserve">
+    <value>tabConvoy</value>
+  </data>
+  <data name="&gt;&gt;tabConvoy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabConvoy.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabConvoy.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tabControl1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 28</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>758, 521</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="difficulty1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 3</value>
+  </data>
+  <data name="difficulty1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="difficulty1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 98</value>
+  </data>
+  <data name="difficulty1.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;difficulty1.Name" xml:space="preserve">
+    <value>difficulty1</value>
+  </data>
+  <data name="&gt;&gt;difficulty1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.ChapterData.Difficulty, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;difficulty1.Parent" xml:space="preserve">
+    <value>tabChapterData</value>
+  </data>
+  <data name="&gt;&gt;difficulty1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnChapterHistory.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnChapterHistory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 466</value>
+  </data>
+  <data name="btnChapterHistory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 23</value>
+  </data>
+  <data name="btnChapterHistory.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="btnChapterHistory.Text" xml:space="preserve">
+    <value>Chapter History</value>
+  </data>
+  <data name="&gt;&gt;btnChapterHistory.Name" xml:space="preserve">
+    <value>btnChapterHistory</value>
+  </data>
+  <data name="&gt;&gt;btnChapterHistory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnChapterHistory.Parent" xml:space="preserve">
+    <value>tabChapterData</value>
+  </data>
+  <data name="&gt;&gt;btnChapterHistory.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="goldAndPoints1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 47</value>
+  </data>
+  <data name="goldAndPoints1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="goldAndPoints1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 146</value>
+  </data>
+  <data name="goldAndPoints1.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="&gt;&gt;goldAndPoints1.Name" xml:space="preserve">
+    <value>goldAndPoints1</value>
+  </data>
+  <data name="&gt;&gt;goldAndPoints1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.ChapterData.GoldAndPoints, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;goldAndPoints1.Parent" xml:space="preserve">
+    <value>tabChapterData</value>
+  </data>
+  <data name="&gt;&gt;goldAndPoints1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="materials1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>607, 3</value>
+  </data>
+  <data name="materials1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="materials1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 330</value>
+  </data>
+  <data name="materials1.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;materials1.Name" xml:space="preserve">
+    <value>materials1</value>
+  </data>
+  <data name="&gt;&gt;materials1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.ChapterData.Materials, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materials1.Parent" xml:space="preserve">
+    <value>tabChapterData</value>
+  </data>
+  <data name="&gt;&gt;materials1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblAvatarName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAvatarName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="lblAvatarName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblAvatarName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 7</value>
+  </data>
+  <data name="lblAvatarName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 20</value>
+  </data>
+  <data name="lblAvatarName.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="lblAvatarName.Text" xml:space="preserve">
+    <value>Avatar Name</value>
+  </data>
+  <data name="&gt;&gt;lblAvatarName.Name" xml:space="preserve">
+    <value>lblAvatarName</value>
+  </data>
+  <data name="&gt;&gt;lblAvatarName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAvatarName.Parent" xml:space="preserve">
+    <value>tabChapterData</value>
+  </data>
+  <data name="&gt;&gt;lblAvatarName.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -329,6 +716,183 @@
   </data>
   <data name="&gt;&gt;lstDead.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;unitBlockInfo1.Name" xml:space="preserve">
+    <value>unitBlockInfo1</value>
+  </data>
+  <data name="&gt;&gt;unitBlockInfo1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.UnitViewer.UnitBlockInfo, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;unitBlockInfo1.Parent" xml:space="preserve">
+    <value>pnlUnitView</value>
+  </data>
+  <data name="&gt;&gt;unitBlockInfo1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;flags1.Name" xml:space="preserve">
+    <value>flags1</value>
+  </data>
+  <data name="&gt;&gt;flags1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.UnitViewer.Flags, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;flags1.Parent" xml:space="preserve">
+    <value>pnlUnitView</value>
+  </data>
+  <data name="&gt;&gt;flags1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;battleData1.Name" xml:space="preserve">
+    <value>battleData1</value>
+  </data>
+  <data name="&gt;&gt;battleData1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.UnitViewer.BattleData, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;battleData1.Parent" xml:space="preserve">
+    <value>pnlUnitView</value>
+  </data>
+  <data name="&gt;&gt;battleData1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;classAndLevel1.Name" xml:space="preserve">
+    <value>classAndLevel1</value>
+  </data>
+  <data name="&gt;&gt;classAndLevel1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.UnitViewer.ClassAndLevel, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;classAndLevel1.Parent" xml:space="preserve">
+    <value>pnlUnitView</value>
+  </data>
+  <data name="&gt;&gt;classAndLevel1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dragonVein1.Name" xml:space="preserve">
+    <value>dragonVein1</value>
+  </data>
+  <data name="&gt;&gt;dragonVein1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.UnitViewer.DragonVein, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dragonVein1.Parent" xml:space="preserve">
+    <value>pnlUnitView</value>
+  </data>
+  <data name="&gt;&gt;dragonVein1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnOpenHexEditor.Name" xml:space="preserve">
+    <value>btnOpenHexEditor</value>
+  </data>
+  <data name="&gt;&gt;btnOpenHexEditor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOpenHexEditor.Parent" xml:space="preserve">
+    <value>pnlUnitView</value>
+  </data>
+  <data name="&gt;&gt;btnOpenHexEditor.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;accessories1.Name" xml:space="preserve">
+    <value>accessories1</value>
+  </data>
+  <data name="&gt;&gt;accessories1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.UnitViewer.Accessories, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;accessories1.Parent" xml:space="preserve">
+    <value>pnlUnitView</value>
+  </data>
+  <data name="&gt;&gt;accessories1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;stats1.Name" xml:space="preserve">
+    <value>stats1</value>
+  </data>
+  <data name="&gt;&gt;stats1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.UnitViewer.Stats, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;stats1.Parent" xml:space="preserve">
+    <value>pnlUnitView</value>
+  </data>
+  <data name="&gt;&gt;stats1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;weaponExperience1.Name" xml:space="preserve">
+    <value>weaponExperience1</value>
+  </data>
+  <data name="&gt;&gt;weaponExperience1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.UnitViewer.WeaponExperience, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;weaponExperience1.Parent" xml:space="preserve">
+    <value>pnlUnitView</value>
+  </data>
+  <data name="&gt;&gt;weaponExperience1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;hairColor1.Name" xml:space="preserve">
+    <value>hairColor1</value>
+  </data>
+  <data name="&gt;&gt;hairColor1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.UnitViewer.HairColor, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;hairColor1.Parent" xml:space="preserve">
+    <value>pnlUnitView</value>
+  </data>
+  <data name="&gt;&gt;hairColor1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;inventory1.Name" xml:space="preserve">
+    <value>inventory1</value>
+  </data>
+  <data name="&gt;&gt;inventory1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.UnitViewer.Inventory, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inventory1.Parent" xml:space="preserve">
+    <value>pnlUnitView</value>
+  </data>
+  <data name="&gt;&gt;inventory1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>pnlUnitView</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;lblName.Name" xml:space="preserve">
+    <value>lblName</value>
+  </data>
+  <data name="&gt;&gt;lblName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblName.Parent" xml:space="preserve">
+    <value>pnlUnitView</value>
+  </data>
+  <data name="&gt;&gt;lblName.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="pnlUnitView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 6</value>
+  </data>
+  <data name="pnlUnitView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>634, 485</value>
+  </data>
+  <data name="pnlUnitView.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnlUnitView.Name" xml:space="preserve">
+    <value>pnlUnitView</value>
+  </data>
+  <data name="&gt;&gt;pnlUnitView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlUnitView.Parent" xml:space="preserve">
+    <value>tabUnitViewer</value>
+  </data>
+  <data name="&gt;&gt;pnlUnitView.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="unitBlockInfo1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 24</value>
@@ -633,6 +1197,30 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="skills1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 10</value>
+  </data>
+  <data name="skills1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="skills1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 168</value>
+  </data>
+  <data name="skills1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;skills1.Name" xml:space="preserve">
+    <value>skills1</value>
+  </data>
+  <data name="&gt;&gt;skills1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.UnitViewer.Skills, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;skills1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;skills1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="lblName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -666,27 +1254,6 @@
   <data name="&gt;&gt;lblName.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="pnlUnitView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 6</value>
-  </data>
-  <data name="pnlUnitView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>634, 485</value>
-  </data>
-  <data name="pnlUnitView.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pnlUnitView.Name" xml:space="preserve">
-    <value>pnlUnitView</value>
-  </data>
-  <data name="&gt;&gt;pnlUnitView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlUnitView.Parent" xml:space="preserve">
-    <value>tabUnitViewer</value>
-  </data>
-  <data name="&gt;&gt;pnlUnitView.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="lstLiving.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 6</value>
   </data>
@@ -707,324 +1274,6 @@
   </data>
   <data name="&gt;&gt;lstLiving.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="tabUnitViewer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabUnitViewer.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabUnitViewer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>750, 495</value>
-  </data>
-  <data name="tabUnitViewer.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabUnitViewer.Text" xml:space="preserve">
-    <value>Unit Viewer</value>
-  </data>
-  <data name="&gt;&gt;tabUnitViewer.Name" xml:space="preserve">
-    <value>tabUnitViewer</value>
-  </data>
-  <data name="&gt;&gt;tabUnitViewer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabUnitViewer.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabUnitViewer.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;megacheatsMain1.Name" xml:space="preserve">
-    <value>megacheatsMain1</value>
-  </data>
-  <data name="&gt;&gt;megacheatsMain1.Type" xml:space="preserve">
-    <value>FEFTwiddler.GUI.ChapterData.MegacheatsMain, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;megacheatsMain1.Parent" xml:space="preserve">
-    <value>tabMegacheats</value>
-  </data>
-  <data name="&gt;&gt;megacheatsMain1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabMegacheats.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabMegacheats.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabMegacheats.Size" type="System.Drawing.Size, System.Drawing">
-    <value>750, 495</value>
-  </data>
-  <data name="tabMegacheats.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabMegacheats.Text" xml:space="preserve">
-    <value>Megacheats</value>
-  </data>
-  <data name="&gt;&gt;tabMegacheats.Name" xml:space="preserve">
-    <value>tabMegacheats</value>
-  </data>
-  <data name="&gt;&gt;tabMegacheats.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabMegacheats.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabMegacheats.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tabNewGamePlus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabNewGamePlus.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabNewGamePlus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>750, 495</value>
-  </data>
-  <data name="tabNewGamePlus.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tabNewGamePlus.Text" xml:space="preserve">
-    <value>New Game Plus</value>
-  </data>
-  <data name="&gt;&gt;tabNewGamePlus.Name" xml:space="preserve">
-    <value>tabNewGamePlus</value>
-  </data>
-  <data name="&gt;&gt;tabNewGamePlus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabNewGamePlus.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabNewGamePlus.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;globalDataMain1.Name" xml:space="preserve">
-    <value>globalDataMain1</value>
-  </data>
-  <data name="&gt;&gt;globalDataMain1.Type" xml:space="preserve">
-    <value>FEFTwiddler.GUI.GlobalData.GlobalDataMain, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;globalDataMain1.Parent" xml:space="preserve">
-    <value>tabGlobalData</value>
-  </data>
-  <data name="&gt;&gt;globalDataMain1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabGlobalData.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabGlobalData.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabGlobalData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>750, 495</value>
-  </data>
-  <data name="tabGlobalData.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="tabGlobalData.Text" xml:space="preserve">
-    <value>Global Data</value>
-  </data>
-  <data name="&gt;&gt;tabGlobalData.Name" xml:space="preserve">
-    <value>tabGlobalData</value>
-  </data>
-  <data name="&gt;&gt;tabGlobalData.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabGlobalData.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabGlobalData.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="tabControl1.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 28</value>
-  </data>
-  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>758, 521</value>
-  </data>
-  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnChapterHistory.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnChapterHistory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 466</value>
-  </data>
-  <data name="btnChapterHistory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 23</value>
-  </data>
-  <data name="btnChapterHistory.TabIndex" type="System.Int32, mscorlib">
-    <value>62</value>
-  </data>
-  <data name="btnChapterHistory.Text" xml:space="preserve">
-    <value>Chapter History</value>
-  </data>
-  <data name="&gt;&gt;btnChapterHistory.Name" xml:space="preserve">
-    <value>btnChapterHistory</value>
-  </data>
-  <data name="&gt;&gt;btnChapterHistory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnChapterHistory.Parent" xml:space="preserve">
-    <value>tabChapterData</value>
-  </data>
-  <data name="&gt;&gt;btnChapterHistory.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblAvatarName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblAvatarName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="lblAvatarName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblAvatarName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 7</value>
-  </data>
-  <data name="lblAvatarName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 20</value>
-  </data>
-  <data name="lblAvatarName.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="lblAvatarName.Text" xml:space="preserve">
-    <value>Avatar Name</value>
-  </data>
-  <data name="&gt;&gt;lblAvatarName.Name" xml:space="preserve">
-    <value>lblAvatarName</value>
-  </data>
-  <data name="&gt;&gt;lblAvatarName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblAvatarName.Parent" xml:space="preserve">
-    <value>tabChapterData</value>
-  </data>
-  <data name="&gt;&gt;lblAvatarName.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="saveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="saveToolStripMenuItem.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="difficulty1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>384, 3</value>
-  </data>
-  <data name="difficulty1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="difficulty1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 98</value>
-  </data>
-  <data name="difficulty1.TabIndex" type="System.Int32, mscorlib">
-    <value>63</value>
-  </data>
-  <data name="&gt;&gt;difficulty1.Name" xml:space="preserve">
-    <value>difficulty1</value>
-  </data>
-  <data name="&gt;&gt;difficulty1.Type" xml:space="preserve">
-    <value>FEFTwiddler.GUI.ChapterData.Difficulty, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;difficulty1.Parent" xml:space="preserve">
-    <value>tabChapterData</value>
-  </data>
-  <data name="&gt;&gt;difficulty1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="goldAndPoints1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 47</value>
-  </data>
-  <data name="goldAndPoints1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="goldAndPoints1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 146</value>
-  </data>
-  <data name="goldAndPoints1.TabIndex" type="System.Int32, mscorlib">
-    <value>61</value>
-  </data>
-  <data name="&gt;&gt;goldAndPoints1.Name" xml:space="preserve">
-    <value>goldAndPoints1</value>
-  </data>
-  <data name="&gt;&gt;goldAndPoints1.Type" xml:space="preserve">
-    <value>FEFTwiddler.GUI.ChapterData.GoldAndPoints, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;goldAndPoints1.Parent" xml:space="preserve">
-    <value>tabChapterData</value>
-  </data>
-  <data name="&gt;&gt;goldAndPoints1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="materials1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>607, 3</value>
-  </data>
-  <data name="materials1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="materials1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 330</value>
-  </data>
-  <data name="materials1.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
-  </data>
-  <data name="&gt;&gt;materials1.Name" xml:space="preserve">
-    <value>materials1</value>
-  </data>
-  <data name="&gt;&gt;materials1.Type" xml:space="preserve">
-    <value>FEFTwiddler.GUI.ChapterData.Materials, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materials1.Parent" xml:space="preserve">
-    <value>tabChapterData</value>
-  </data>
-  <data name="&gt;&gt;materials1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="skills1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 10</value>
-  </data>
-  <data name="skills1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="skills1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 168</value>
-  </data>
-  <data name="skills1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;skills1.Name" xml:space="preserve">
-    <value>skills1</value>
-  </data>
-  <data name="&gt;&gt;skills1.Type" xml:space="preserve">
-    <value>FEFTwiddler.GUI.UnitViewer.Skills, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;skills1.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;skills1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="megacheatsMain1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -1073,6 +1322,12 @@
   </data>
   <data name="&gt;&gt;globalDataMain1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="saveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="saveToolStripMenuItem.Text" xml:space="preserve">
+    <value>Save</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -9940,9 +10195,6 @@
         gK29AAAANDQ0NDQ0eDdLlWw0NDQ0NPw/AADgBwAAwAMAAIABAACAAQAAgAAAAIAAAAAAAAAAAAAAAAAA
         AAAAAAAAgAAAAIABAADBgwAA4AcAAAAAAAA=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FEFTwiddler</value>

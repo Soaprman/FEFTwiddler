@@ -84,6 +84,7 @@ namespace FEFTwiddler.GUI
                         tabUnitViewer.Enabled = true;
                         tabMegacheats.Enabled = true;
                         tabNewGamePlus.Enabled = true;
+                        tabConvoy.Enabled = true;
                         tabGlobalData.Enabled = false;
 
                         break;
@@ -97,6 +98,7 @@ namespace FEFTwiddler.GUI
                         tabUnitViewer.Enabled = false;
                         tabMegacheats.Enabled = false;
                         tabNewGamePlus.Enabled = false;
+                        tabConvoy.Enabled = false;
                         tabGlobalData.Enabled = true;
 
                         break;
@@ -169,6 +171,7 @@ namespace FEFTwiddler.GUI
             materials1.LoadChapterSave(_chapterSave);
             megacheatsMain1.LoadChapterSave(_chapterSave);
             difficulty1.LoadChapterSave(_chapterSave);
+            convoyMain1.LoadChapterSave(_chapterSave);
         }
 
         private void btnChapterHistory_Click(object sender, EventArgs e)

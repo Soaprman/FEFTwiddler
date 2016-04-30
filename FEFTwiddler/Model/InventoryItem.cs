@@ -17,13 +17,17 @@ namespace FEFTwiddler.Model
 
         /// <summary>
         /// A reference to the name of the weapon in the weapon name block.
-        /// This value is two greater than the corresponding ID in the weapon name block for some reason.
+        /// This value is two greater than the corresponding ID in the weapon name block for some reason (probably to differentiate it from 0).
         /// This returns the value as seen in the weapon name block (i.e. two is subtracted from it on get).
         /// </summary>
         public byte WeaponNameID
         {
             get { return (byte)(_raw[2] - 2); }
             set { _raw[2] = (byte)(value + 2); }
+        }
+        public bool IsNamed
+        {
+            get { return _raw[2] > 0; }
         }
 
         /// <summary>

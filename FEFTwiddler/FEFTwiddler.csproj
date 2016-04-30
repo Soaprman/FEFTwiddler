@@ -148,6 +148,18 @@
     <Compile Include="GUI\Controls\HexBoxMaskedTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="GUI\Convoy\ConvoyItemPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Convoy\ConvoyItemPanel.Designer.cs">
+      <DependentUpon>ConvoyItemPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Convoy\ConvoyMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Convoy\ConvoyMain.Designer.cs">
+      <DependentUpon>ConvoyMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\GlobalData\GlobalDataMain.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -319,6 +331,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Controls\HexBox.resx">
       <DependentUpon>HexBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Convoy\ConvoyItemPanel.resx">
+      <DependentUpon>ConvoyItemPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Convoy\ConvoyMain.resx">
+      <DependentUpon>ConvoyMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GlobalData\GlobalDataMain.resx">
       <DependentUpon>GlobalDataMain.cs</DependentUpon>
@@ -697,6 +715,7 @@
     <Content Include="Resources\Images\SkillIcons\Skill_228.png" />
     <Content Include="Resources\Images\WeaponExpIcons\WeaponExp_axe.png" />
     <Content Include="Resources\Images\WeaponExpIcons\WeaponExp_bow.png" />
+    <Content Include="Resources\Images\WeaponExpIcons\WeaponExp_consumable.png" />
     <Content Include="Resources\Images\WeaponExpIcons\WeaponExp_lance.png" />
     <Content Include="Resources\Images\WeaponExpIcons\WeaponExp_shuriken.png" />
     <Content Include="Resources\Images\WeaponExpIcons\WeaponExp_staff.png" />

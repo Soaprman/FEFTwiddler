@@ -9,6 +9,11 @@ namespace FEFTwiddler.Model
             if (raw.Length != 7) throw new ArgumentException("Convoy items must be 7 bytes");
         }
 
+        public static ConvoyItem Create()
+        {
+            return new ConvoyItem(new byte[7] { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 });
+        }
+
         // One byte (0x00)
         // Always 00?
 
@@ -28,13 +33,17 @@ namespace FEFTwiddler.Model
 
         /// <summary>
         /// A reference to the name of the weapon in the weapon name block.
-        /// This value is two greater than the corresponding ID in the weapon name block for some reason.
+        /// This value is two greater than the corresponding ID in the weapon name block for some reason (probably to differentiate it from 0).
         /// This returns the value as seen in the weapon name block (i.e. two is subtracted from it on get).
         /// </summary>
         public byte WeaponNameID
         {
             get { return (byte)(_raw[0x03] - 2); }
             set { _raw[0x03] = (byte)(value + 2); }
+        }
+        public bool IsNamed
+        {
+            get { return _raw[0x03] > 0; }
         }
 
         /// <summary>
