@@ -71,6 +71,8 @@ namespace FEFTwiddler.GUI
 
                 UpdateTitleBar(openFileDialog1.FileName);
 
+                Cursor.Current = Cursors.WaitCursor;
+
                 switch (_saveFile.Type)
                 {
                     case Enums.SaveFileType.Chapter:
@@ -104,6 +106,8 @@ namespace FEFTwiddler.GUI
                         break;
                     default: break;
                 }
+
+                Cursor.Current = Cursors.AppStarting;
 
                 tabControl1.Enabled = true;
             }
@@ -165,7 +169,7 @@ namespace FEFTwiddler.GUI
 
         private void LoadChapterData()
         {
-            lblAvatarName.Text = _chapterSave.Header.AvatarName;
+            lblAvatarName.Text = _chapterSave.Header.AvatarName;            
 
             goldAndPoints1.LoadChapterSave(_chapterSave);
             materials1.LoadChapterSave(_chapterSave);
