@@ -47,7 +47,7 @@ namespace FEFTwiddler.Model
         }
 
         /// <summary>
-        /// Doubles as forge level. 0x41 and up, I think
+        /// Forges for weapons, Charges for consumables and staves
         /// </summary>
         public byte Uses
         {

@@ -57,27 +57,58 @@ namespace FEFTwiddler.GUI.Convoy
 
             if (itemData.Type.HasCharges())
             {
-                numCharges.Minimum = Model.Item.MinUses;
-                numCharges.Maximum = itemData.MaximumUses;
-                if (numCharges.Minimum == numCharges.Maximum) numCharges.Enabled = false;
+                if (_item.Uses < Model.Item.MinUses || _item.Uses > itemData.MaximumUses)
+                {
+                    numCharges.Minimum = 0;
+                    numCharges.Maximum = 255;
+                    MarkChargesIllegal();
+                }
+                else
+                {
+                    numCharges.Minimum = Model.Item.MinUses;
+                    numCharges.Maximum = itemData.MaximumUses;
+                    if (numCharges.Minimum == numCharges.Maximum) numCharges.Enabled = false;
+                }
                 numCharges.Value = _item.Uses;
+
                 lblPlus.Text = "";
                 lblMaxCharges.Text = "/ " + itemData.MaximumUses.ToString();
             }
             else if (itemData.Type.HasForges())
             {
-                numCharges.Minimum = Model.Item.MinForges;
-                numCharges.Maximum = 7;
-                if (numCharges.Minimum == numCharges.Maximum) numCharges.Enabled = false;
+                if (_item.Uses < Model.Item.MinForges || _item.Uses > Model.Item.MaxForges)
+                {
+                    numCharges.Minimum = 0;
+                    numCharges.Maximum = 255;
+                    MarkChargesIllegal();
+                }
+                else
+                {
+                    numCharges.Minimum = Model.Item.MinForges;
+                    numCharges.Maximum = Model.Item.MaxForges;
+                    if (numCharges.Minimum == numCharges.Maximum) numCharges.Enabled = false;
+                }
                 numCharges.Value = _item.Uses;
+
                 lblPlus.Text = "+";
                 lblMaxCharges.Text = "";
             }
             else
             {
-                numCharges.Minimum = Model.Item.MinForges;
-                numCharges.Value = 0;
+                if (_item.Uses > 0)
+                {
+                    numCharges.Minimum = 255;
+                    numCharges.Maximum = 255;
+                    MarkChargesIllegal();
+                }
+                else
+                {
+                    numCharges.Minimum = 0;
+                    numCharges.Maximum = 0;
+                }
+                numCharges.Value = _item.Uses;
                 numCharges.Enabled = false;
+
                 lblPlus.Text = "";
                 lblMaxCharges.Text = "";
             }
@@ -139,6 +170,16 @@ namespace FEFTwiddler.GUI.Convoy
             ConvoyMain.GetFromHere(this).UpdateConvoyCount();
 
             this.Parent.Controls.Remove(this);
+        }
+
+        private void MarkChargesIllegal()
+        {
+            numCharges.BackColor = Color.LightCoral;
+        }
+
+        private void MarkChargesLegal()
+        {
+            numCharges.BackColor = SystemColors.Window;
         }
     }
 }
