@@ -96,7 +96,7 @@ namespace FEFTwiddler.GUI.Convoy
             flwConsumable.Controls.Clear();
         }
 
-        private void FillPage(Enums.ItemType itemType)
+        public void FillPage(Enums.ItemType itemType)
         {
             FillPage(GetFlowPanel(itemType));
         }
@@ -222,6 +222,28 @@ namespace FEFTwiddler.GUI.Convoy
             lblConvoySize.Text = string.Format("{0}/{1}", 
                 _chapterSave.ConvoyRegion.Convoy.Count, 
                 Model.ChapterSaveRegions.ConvoyRegion.MaxConvoyCount);
+        }
+
+        public void CombineItems(Model.ConvoyItem srcItem, Model.ConvoyItem destItem)
+        {
+            destItem.Quantity = (byte)Math.Min(destItem.Quantity + srcItem.Quantity, Model.Item.MaxQuantity);
+            _chapterSave.ConvoyRegion.Convoy.Remove(srcItem);
+
+            GetItemPanel(destItem).Repopulate();
+
+            var srcPanel = GetItemPanel(srcItem);
+            srcPanel.Parent.Controls.Remove(srcPanel);
+        }
+
+        private ConvoyItemPanel GetItemPanel(Model.ConvoyItem item)
+        {
+            var itemType = Data.Database.Items.GetByID(item.ItemID).Type;
+            var flowPanel = GetFlowPanel(itemType);
+            foreach (ConvoyItemPanel itemPanel in flowPanel.Controls)
+            {
+                if (itemPanel.Item == item) return itemPanel;
+            }
+            return null;
         }
 
         private FlowLayoutPanel GetFlowPanel(Enums.ItemType itemType)

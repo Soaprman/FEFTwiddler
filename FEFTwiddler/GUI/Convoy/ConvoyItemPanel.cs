@@ -12,7 +12,9 @@ namespace FEFTwiddler.GUI.Convoy
         private ToolTip _tooltip = new ToolTip();
 
         private Model.ChapterSave _chapterSave;
+
         private Model.ConvoyItem _item;
+        public Model.ConvoyItem Item { get { return _item; } }
 
         public ConvoyItemPanel()
         {
@@ -85,15 +87,22 @@ namespace FEFTwiddler.GUI.Convoy
             BindEvents();
         }
 
+        public void Repopulate()
+        {
+            PopulateControls();
+        }
+
         private void BindEvents()
         {
             numCharges.ValueChanged += ChangeCharges;
+            numCharges.Leave += CombineChargesAfterEdit;
             numQuantity.ValueChanged += ChangeQuantity;
         }
 
         private void UnbindEvents()
         {
             numCharges.ValueChanged -= ChangeCharges;
+            numCharges.Leave -= CombineChargesAfterEdit;
             numQuantity.ValueChanged -= ChangeQuantity;
         }
 
@@ -102,16 +111,34 @@ namespace FEFTwiddler.GUI.Convoy
             _item.Uses = (byte)numCharges.Value;
         }
 
+        private void CombineChargesAfterEdit(object sender, EventArgs e)
+        {
+            var sameItem = _chapterSave.ConvoyRegion.Convoy
+                .Where((x) => x != _item && x.ItemID == _item.ItemID && x.Uses == _item.Uses && x.WeaponNameID == _item.WeaponNameID && x.IsNamed == _item.IsNamed)
+                .FirstOrDefault();
+
+            if (sameItem != null)
+            {
+                ConvoyMain.GetFromHere(this).CombineItems(_item, sameItem);
+            }
+        }
+
         private void ChangeQuantity(object sender, EventArgs e)
         {
             _item.Quantity = (byte)numQuantity.Value;
 
             if (_item.Quantity == 0)
             {
-                _chapterSave.ConvoyRegion.Convoy.Remove(_item);
-                ConvoyMain.GetFromHere(this).UpdateConvoyCount();
-                this.Parent.Controls.Remove(this);
+                RemoveThisItem();
             }
+        }
+
+        private void RemoveThisItem()
+        {
+            _chapterSave.ConvoyRegion.Convoy.Remove(_item);
+            ConvoyMain.GetFromHere(this).UpdateConvoyCount();
+
+            this.Parent.Controls.Remove(this);
         }
     }
 }
