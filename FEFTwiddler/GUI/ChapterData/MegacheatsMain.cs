@@ -111,6 +111,15 @@ namespace FEFTwiddler.GUI.ChapterData
             MessageBox.Show("Done!");
         }
 
+        private void btnHearSealDlc_Click(object sender, EventArgs e)
+        {
+            foreach (var unit in _chapterSave.UnitRegion.Units)
+            {
+                unit.DLCClassFlags = new byte[] { 0xFF, 0xFF, 0xFF };
+            }
+            MessageBox.Show("Done!");
+        }
+
         private void btnMysteryCheat_Click(object sender, EventArgs e)
         {
             Model.Cheats.MysteryCheat(_chapterSave);
@@ -119,6 +128,5 @@ namespace FEFTwiddler.GUI.ChapterData
 
             MessageBox.Show("Oh my! Do you have any idea what you just did?");
         }
-
     }
 }

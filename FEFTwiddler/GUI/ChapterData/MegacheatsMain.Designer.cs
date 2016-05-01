@@ -39,6 +39,7 @@
             this.skills1 = new FEFTwiddler.GUI.ChapterData.Megacheats.Skills();
             this.label1 = new System.Windows.Forms.Label();
             this.btnGiveDragonBlood = new System.Windows.Forms.Button();
+            this.btnHearSealDlc = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AllCharMaxStatue
@@ -161,10 +162,22 @@
             this.btnGiveDragonBlood.UseVisualStyleBackColor = true;
             this.btnGiveDragonBlood.Click += new System.EventHandler(this.btnGiveDragonBlood_Click);
             // 
+            // btnHearSealDlc
+            // 
+            this.btnHearSealDlc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnHearSealDlc.Location = new System.Drawing.Point(274, 412);
+            this.btnHearSealDlc.Name = "btnHearSealDlc";
+            this.btnHearSealDlc.Size = new System.Drawing.Size(60, 60);
+            this.btnHearSealDlc.TabIndex = 21;
+            this.btnHearSealDlc.Text = "Heart seal to DLC classes";
+            this.btnHearSealDlc.UseVisualStyleBackColor = true;
+            this.btnHearSealDlc.Click += new System.EventHandler(this.btnHearSealDlc_Click);
+            // 
             // MegacheatsMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnHearSealDlc);
             this.Controls.Add(this.btnGiveDragonBlood);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnMaxStats);
@@ -197,5 +210,6 @@
         private System.Windows.Forms.Button btnMaxStats;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnGiveDragonBlood;
+        private System.Windows.Forms.Button btnHearSealDlc;
     }
 }
