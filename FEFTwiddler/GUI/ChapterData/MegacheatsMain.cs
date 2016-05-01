@@ -120,6 +120,17 @@ namespace FEFTwiddler.GUI.ChapterData
             MessageBox.Show("Done!");
         }
 
+        private void btnStatBonuses_Click(object sender, EventArgs e)
+        {
+            foreach (var unit in _chapterSave.UnitRegion.Units)
+            {
+                unit.TonicBonusStats = new Model.Stat { HP = 5, Str = 2, Mag = 2, Skl = 2, Spd = 2, Lck = 4, Def = 2, Res = 2 };
+                unit.StatusBonusStats = new Model.Stat { HP = 0, Str = 4, Mag = 4, Skl = 4, Spd = 4, Lck = 4, Def = 4, Res = 4 };
+                unit.MealBonusStats = new Model.Stat { HP = 0, Str = 2, Mag = 2, Skl = 2, Spd = 2, Lck = 2, Def = 2, Res = 0 };
+            }
+            MessageBox.Show("Done!");
+        }
+
         private void btnMysteryCheat_Click(object sender, EventArgs e)
         {
             Model.Cheats.MysteryCheat(_chapterSave);

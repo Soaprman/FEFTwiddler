@@ -40,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnGiveDragonBlood = new System.Windows.Forms.Button();
             this.btnHearSealDlc = new System.Windows.Forms.Button();
+            this.btnStatBonuses = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AllCharMaxStatue
@@ -173,10 +174,22 @@
             this.btnHearSealDlc.UseVisualStyleBackColor = true;
             this.btnHearSealDlc.Click += new System.EventHandler(this.btnHearSealDlc_Click);
             // 
+            // btnStatBonuses
+            // 
+            this.btnStatBonuses.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnStatBonuses.Location = new System.Drawing.Point(340, 412);
+            this.btnStatBonuses.Name = "btnStatBonuses";
+            this.btnStatBonuses.Size = new System.Drawing.Size(60, 60);
+            this.btnStatBonuses.TabIndex = 22;
+            this.btnStatBonuses.Text = "Give all stat bonuses";
+            this.btnStatBonuses.UseVisualStyleBackColor = true;
+            this.btnStatBonuses.Click += new System.EventHandler(this.btnStatBonuses_Click);
+            // 
             // MegacheatsMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnStatBonuses);
             this.Controls.Add(this.btnHearSealDlc);
             this.Controls.Add(this.btnGiveDragonBlood);
             this.Controls.Add(this.label1);
@@ -211,5 +224,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnGiveDragonBlood;
         private System.Windows.Forms.Button btnHearSealDlc;
+        private System.Windows.Forms.Button btnStatBonuses;
     }
 }
