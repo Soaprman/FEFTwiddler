@@ -43,7 +43,10 @@ namespace FEFTwiddler.GUI.Convoy
 
             cmbItem.ValueMember = "ItemID";
             cmbItem.DisplayMember = "DisplayName";
-            cmbItem.DataSource = Data.Database.Items.GetAll().OrderBy((x) => x.DisplayName).ToList();
+            cmbItem.DataSource = Data.Database.Items.GetAll()
+                .Where((x) => x.Type != ItemType.Unknown || x.ItemID == Item.None)
+                .OrderBy((x) => x.DisplayName)
+                .ToList();
 
             cmbItem.SelectedValueChanged += ChangeItem;
             btnAdd.Click += AddItem;
@@ -53,42 +56,33 @@ namespace FEFTwiddler.GUI.Convoy
 
         private void PopulateControls()
         {
-            FillPage(Enums.ItemType.Sword);
-            FillPage(Enums.ItemType.Lance);
-            FillPage(Enums.ItemType.Axe);
-            FillPage(Enums.ItemType.Shuriken);
-            FillPage(Enums.ItemType.Bow);
-            FillPage(Enums.ItemType.Tome);
-            FillPage(Enums.ItemType.Staff);
-            FillPage(Enums.ItemType.Stone);
-            FillPage(Enums.ItemType.Consumable);
+            FillAllPages();
 
             UpdateConvoyCount();
         }
 
-        private void FillPage(Enums.ItemType itemType)
+        private void FillAllPages()
         {
-            switch (itemType)
+            foreach (var item in _chapterSave.ConvoyRegion.Convoy.OrderBy((x) => x.ItemID))
             {
-                case ItemType.Sword: FillPage(flwSword, itemType); break;
-                case ItemType.Lance: FillPage(flwLance, itemType); break;
-                case ItemType.Axe: FillPage(flwAxe, itemType); break;
-                case ItemType.Shuriken: FillPage(flwShuriken, itemType); break;
-                case ItemType.Bow: FillPage(flwBow, itemType); break;
-                case ItemType.Tome: FillPage(flwTome, itemType); break;
-                case ItemType.Staff: FillPage(flwStaff, itemType); break;
-                case ItemType.Stone: FillPage(flwStone, itemType); break;
-                case ItemType.Consumable: FillPage(flwConsumable, itemType); break;
-                default: break;
+                var panel = MakeItemPanel(item);
+                var itemData = Data.Database.Items.GetByID(item.ItemID);
+                var flow = GetFlowPanel(itemData.Type);
+                flow.Controls.Add(panel);
             }
         }
 
-        private void FillPage(FlowLayoutPanel flowPanel, Enums.ItemType itemType)
+        private void FillPage(Enums.ItemType itemType)
+        {
+            FillPage(GetFlowPanel(itemType));
+        }
+
+        private void FillPage(FlowLayoutPanel flowPanel)
         {
             flowPanel.Invalidate();
 
             var items = _chapterSave.ConvoyRegion.Convoy
-                .Where((x) => Data.Database.Items.GetByID(x.ItemID).Type == itemType)
+                .Where(GetItemTypes(flowPanel))
                 .OrderBy((x) => x.ItemID);
 
             flowPanel.Controls.Clear();
@@ -101,6 +95,13 @@ namespace FEFTwiddler.GUI.Convoy
             }
 
             flowPanel.Refresh();
+        }
+
+        private ConvoyItemPanel MakeItemPanel(Model.ConvoyItem item)
+        {
+            var panel = new ConvoyItemPanel();
+            panel.LoadItem(_chapterSave, item);
+            return panel;
         }
 
         private void ChangeItem(object sender, EventArgs e)
@@ -197,6 +198,81 @@ namespace FEFTwiddler.GUI.Convoy
             lblConvoySize.Text = string.Format("{0}/{1}", 
                 _chapterSave.ConvoyRegion.Convoy.Count, 
                 Model.ChapterSaveRegions.ConvoyRegion.MaxConvoyCount);
+        }
+
+        private FlowLayoutPanel GetFlowPanel(Enums.ItemType itemType)
+        {
+            switch (itemType)
+            {
+                case ItemType.Sword:
+                    return flwSword;
+                case ItemType.Lance:
+                    return flwLance;
+                case ItemType.Axe:
+                    return flwAxe;
+                case ItemType.Shuriken:
+                    return flwShuriken;
+                case ItemType.Bow:
+                    return flwBow;
+                case ItemType.Tome:
+                    return flwTome;
+                case ItemType.Staff:
+                    return flwStaff;
+                case ItemType.Stone:
+                case ItemType.NPC:
+                    return flwStone;
+                case ItemType.Consumable:
+                case ItemType.Held:
+                    return flwConsumable;
+                default: // Should never be the case
+                    return flwConsumable;
+            }
+        }
+
+        private Func<Model.ConvoyItem, bool> GetItemTypes(FlowLayoutPanel flowPanel)
+        {
+            if (flowPanel == flwSword)
+            {
+                return (x) => Data.Database.Items.GetByID(x.ItemID).Type == ItemType.Sword;
+            }
+            else if (flowPanel == flwLance)
+            {
+                return (x) => Data.Database.Items.GetByID(x.ItemID).Type == ItemType.Lance;
+            }
+            else if (flowPanel == flwAxe)
+            {
+                return (x) => Data.Database.Items.GetByID(x.ItemID).Type == ItemType.Axe;
+            }
+            else if (flowPanel == flwShuriken)
+            {
+                return (x) => Data.Database.Items.GetByID(x.ItemID).Type == ItemType.Shuriken;
+            }
+            else if (flowPanel == flwBow)
+            {
+                return (x) => Data.Database.Items.GetByID(x.ItemID).Type == ItemType.Bow;
+            }
+            else if (flowPanel == flwTome)
+            {
+                return (x) => Data.Database.Items.GetByID(x.ItemID).Type == ItemType.Tome;
+            }
+            else if (flowPanel == flwStaff)
+            {
+                return (x) => Data.Database.Items.GetByID(x.ItemID).Type == ItemType.Staff;
+            }
+            else if (flowPanel == flwStone)
+            {
+                return (x) => Data.Database.Items.GetByID(x.ItemID).Type == ItemType.Stone ||
+                                Data.Database.Items.GetByID(x.ItemID).Type == ItemType.NPC;
+            }
+            else if (flowPanel == flwConsumable)
+            {
+                return (x) => Data.Database.Items.GetByID(x.ItemID).Type == ItemType.Consumable ||
+                                Data.Database.Items.GetByID(x.ItemID).Type == ItemType.Held;
+            }
+            else // Should never be the case
+            {
+                return (x) => true;
+            }
         }
 
         // A hack to make mouse wheel scrolling work in the convoy tabs
