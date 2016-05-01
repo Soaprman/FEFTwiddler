@@ -1963,7 +1963,12 @@
     <text lang="Japanese" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
-  <item id="392" name="Warp" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
+  <item id="392" name="Unknown392" type="Unknown" subType="Unknown" maxUses="0" rank="0">
+    <text lang="English" displayName="DisplayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+    <categories npcOnly="false" personal="false" />
+  </item>
+  <item id="393" name="Warp" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Warp" />
     <text lang="Japanese" displayName="ワープの書" />
     <categories npcOnly="false" personal="false" />

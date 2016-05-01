@@ -394,6 +394,7 @@
         Unknown389 = 389,
         Unknown390 = 390,
         Unknown391 = 391,
-        Warp = 392
+        Unknown392 = 392,
+        Warp = 393
     }
 }
