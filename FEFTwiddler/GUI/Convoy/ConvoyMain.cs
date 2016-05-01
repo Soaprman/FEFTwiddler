@@ -56,6 +56,7 @@ namespace FEFTwiddler.GUI.Convoy
 
         private void PopulateControls()
         {
+            ClearAllPages();
             FillAllPages();
 
             UpdateConvoyCount();
@@ -70,6 +71,19 @@ namespace FEFTwiddler.GUI.Convoy
                 var flow = GetFlowPanel(itemData.Type);
                 flow.Controls.Add(panel);
             }
+        }
+
+        private void ClearAllPages()
+        {
+            flwSword.Controls.Clear();
+            flwLance.Controls.Clear();
+            flwAxe.Controls.Clear();
+            flwShuriken.Controls.Clear();
+            flwBow.Controls.Clear();
+            flwTome.Controls.Clear();
+            flwStaff.Controls.Clear();
+            flwStone.Controls.Clear();
+            flwConsumable.Controls.Clear();
         }
 
         private void FillPage(Enums.ItemType itemType)
