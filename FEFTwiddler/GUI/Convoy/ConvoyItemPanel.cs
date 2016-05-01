@@ -167,6 +167,7 @@ namespace FEFTwiddler.GUI.Convoy
         private void RemoveThisItem()
         {
             _chapterSave.ConvoyRegion.Convoy.Remove(_item);
+            Utils.WeaponNameUtil.RemoveWeaponNameIfUnused(_chapterSave, _item.WeaponNameID);
             ConvoyMain.GetFromHere(this).UpdateConvoyCount();
 
             this.Parent.Controls.Remove(this);

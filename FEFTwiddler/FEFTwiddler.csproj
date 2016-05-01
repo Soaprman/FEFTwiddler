@@ -311,6 +311,7 @@
     <Compile Include="Model\SaveFile.cs" />
     <Compile Include="Utils\StatUtil.cs" />
     <Compile Include="Utils\TypeConverter.cs" />
+    <Compile Include="Utils\WeaponNameUtil.cs" />
     <EmbeddedResource Include="GUI\ChapterData\ChapterHistory.resx">
       <DependentUpon>ChapterHistory.cs</DependentUpon>
     </EmbeddedResource>

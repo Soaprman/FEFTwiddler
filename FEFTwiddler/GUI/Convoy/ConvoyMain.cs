@@ -228,6 +228,7 @@ namespace FEFTwiddler.GUI.Convoy
         {
             destItem.Quantity = (byte)Math.Min(destItem.Quantity + srcItem.Quantity, Model.Item.MaxQuantity);
             _chapterSave.ConvoyRegion.Convoy.Remove(srcItem);
+            Utils.WeaponNameUtil.RemoveWeaponNameIfUnused(_chapterSave, srcItem.WeaponNameID);
 
             GetItemPanel(destItem).Repopulate();
 
