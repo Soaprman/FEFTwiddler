@@ -23,6 +23,16 @@ namespace FEFTwiddler.GUI.Convoy
             InitializeControls();
         }
 
+        public static ConvoyMain GetFromHere(Control ctl)
+        {
+            var parent = ctl.Parent;
+            while (parent.GetType() != typeof(ConvoyMain))
+            {
+                parent = parent.Parent;
+            }
+            return (ConvoyMain)parent;
+        }
+
         public void LoadChapterSave(Model.ChapterSave chapterSave)
         {
             _chapterSave = chapterSave;
@@ -207,7 +217,7 @@ namespace FEFTwiddler.GUI.Convoy
             }
         }
 
-        private void UpdateConvoyCount()
+        public void UpdateConvoyCount()
         {
             lblConvoySize.Text = string.Format("{0}/{1}", 
                 _chapterSave.ConvoyRegion.Convoy.Count, 

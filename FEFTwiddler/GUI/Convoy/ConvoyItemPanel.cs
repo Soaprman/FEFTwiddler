@@ -89,6 +89,7 @@ namespace FEFTwiddler.GUI.Convoy
             if (_item.Quantity == 0)
             {
                 _chapterSave.ConvoyRegion.Convoy.Remove(_item);
+                ConvoyMain.GetFromHere(this).UpdateConvoyCount();
                 this.Parent.Controls.Remove(this);
             }
         }
