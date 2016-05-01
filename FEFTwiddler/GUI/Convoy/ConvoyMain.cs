@@ -233,6 +233,8 @@ namespace FEFTwiddler.GUI.Convoy
 
             var srcPanel = GetItemPanel(srcItem);
             srcPanel.Parent.Controls.Remove(srcPanel);
+
+            UpdateConvoyCount();
         }
 
         private ConvoyItemPanel GetItemPanel(Model.ConvoyItem item)
