@@ -32,12 +32,13 @@ namespace FEFTwiddler.GUI.Convoy
             _tooltip.SetToolTip(numCharges, "The number of charges (for consumables) or forges (for weapons).");
             _tooltip.SetToolTip(numQuantity, "The number of this item in the convoy. Set to 0 to remove this item from the list.");
 
-            numCharges.ValueChanged += ChangeCharges;
-            numQuantity.ValueChanged += ChangeQuantity;
+            BindEvents();
         }
 
         private void PopulateControls()
         {
+            UnbindEvents();
+
             var itemData = Data.Database.Items.GetByID(_item.ItemID);
 
             if (_item.IsNamed)
@@ -54,20 +55,25 @@ namespace FEFTwiddler.GUI.Convoy
 
             if (itemData.Type.HasCharges())
             {
+                numCharges.Minimum = Model.Item.MinUses;
                 numCharges.Maximum = itemData.MaximumUses;
+                if (numCharges.Minimum == numCharges.Maximum) numCharges.Enabled = false;
                 numCharges.Value = _item.Uses;
                 lblPlus.Text = "";
                 lblMaxCharges.Text = "/ " + itemData.MaximumUses.ToString();
             }
             else if (itemData.Type.HasForges())
             {
+                numCharges.Minimum = Model.Item.MinForges;
                 numCharges.Maximum = 7;
+                if (numCharges.Minimum == numCharges.Maximum) numCharges.Enabled = false;
                 numCharges.Value = _item.Uses;
                 lblPlus.Text = "+";
                 lblMaxCharges.Text = "";
             }
             else
             {
+                numCharges.Minimum = Model.Item.MinForges;
                 numCharges.Value = 0;
                 numCharges.Enabled = false;
                 lblPlus.Text = "";
@@ -75,6 +81,20 @@ namespace FEFTwiddler.GUI.Convoy
             }
 
             numQuantity.Value = _item.Quantity;
+
+            BindEvents();
+        }
+
+        private void BindEvents()
+        {
+            numCharges.ValueChanged += ChangeCharges;
+            numQuantity.ValueChanged += ChangeQuantity;
+        }
+
+        private void UnbindEvents()
+        {
+            numCharges.ValueChanged -= ChangeCharges;
+            numQuantity.ValueChanged -= ChangeQuantity;
         }
 
         private void ChangeCharges(object sender, EventArgs e)
