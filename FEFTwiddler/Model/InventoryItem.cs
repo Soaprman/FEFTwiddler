@@ -27,7 +27,13 @@ namespace FEFTwiddler.Model
         }
         public bool IsNamed
         {
-            get { return _raw[2] > 0; }
+            get
+            {
+                // In JRCrichton's save (issue #50), this value is set to 01.
+                // To my knowledge, 01 is an invalid value that can only be obtained by hex editing.
+                // TODO: Figure out if the value of 01 represents something here.
+                return _raw[2] >= 2;
+            }
         }
 
         /// <summary>
