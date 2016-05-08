@@ -601,7 +601,22 @@ namespace FEFTwiddler.Model
 
         #region Block 2 Properties
 
-        // Seven unknown bytes (0x00 through 0x06)
+        // One unknown byte (0x00)
+
+        public Enums.Character APlusSupportCharacter
+        {
+            get
+            {
+                return (Enums.Character)((_rawBlock2[0x02] << 8) | _rawBlock2[0x01]);
+            }
+            set
+            {
+                _rawBlock2[0x01] = (byte)(value);
+                _rawBlock2[0x02] = (byte)((ushort)value >> 8);
+            }
+        }
+
+        // Four unknown bytes (0x03 through 0x06)
 
         public byte Boots
         {

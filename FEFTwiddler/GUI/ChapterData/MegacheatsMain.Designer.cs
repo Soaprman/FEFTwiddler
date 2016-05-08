@@ -41,6 +41,7 @@
             this.btnGiveDragonBlood = new System.Windows.Forms.Button();
             this.btnHearSealDlc = new System.Windows.Forms.Button();
             this.btnStatBonuses = new System.Windows.Forms.Button();
+            this.btnResetSupports = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AllCharMaxStatue
@@ -185,10 +186,22 @@
             this.btnStatBonuses.UseVisualStyleBackColor = true;
             this.btnStatBonuses.Click += new System.EventHandler(this.btnStatBonuses_Click);
             // 
+            // btnResetSupports
+            // 
+            this.btnResetSupports.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnResetSupports.Location = new System.Drawing.Point(208, 276);
+            this.btnResetSupports.Name = "btnResetSupports";
+            this.btnResetSupports.Size = new System.Drawing.Size(60, 60);
+            this.btnResetSupports.TabIndex = 23;
+            this.btnResetSupports.Text = "Reset all supports";
+            this.btnResetSupports.UseVisualStyleBackColor = true;
+            this.btnResetSupports.Click += new System.EventHandler(this.btnResetSupports_Click);
+            // 
             // MegacheatsMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnResetSupports);
             this.Controls.Add(this.btnStatBonuses);
             this.Controls.Add(this.btnHearSealDlc);
             this.Controls.Add(this.btnGiveDragonBlood);
@@ -225,5 +238,6 @@
         private System.Windows.Forms.Button btnGiveDragonBlood;
         private System.Windows.Forms.Button btnHearSealDlc;
         private System.Windows.Forms.Button btnStatBonuses;
+        private System.Windows.Forms.Button btnResetSupports;
     }
 }

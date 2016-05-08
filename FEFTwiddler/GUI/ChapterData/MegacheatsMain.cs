@@ -120,6 +120,28 @@ namespace FEFTwiddler.GUI.ChapterData
             MessageBox.Show("Done!");
         }
 
+        private void btnResetSupports_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("This will reset all supports and the A+ rank choice." +
+                Environment.NewLine + "Child units will not cease to exist, which could cause issues if you re-establish S supports (this is untested)." +
+                Environment.NewLine + "Proceed?",
+                "Reset supports?",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question,
+                MessageBoxDefaultButton.Button2);
+            if (result != DialogResult.Yes) return;
+
+            foreach (var unit in _chapterSave.UnitRegion.Units)
+            {
+                // Sets all support bytes to 0x00
+                var supports = new byte[unit.RawNumberOfSupports];
+                unit.RawSupports = supports;
+
+                unit.APlusSupportCharacter = Enums.Character.None;
+            }
+            MessageBox.Show("Done!");
+        }
+
         private void btnStatBonuses_Click(object sender, EventArgs e)
         {
             foreach (var unit in _chapterSave.UnitRegion.Units)
