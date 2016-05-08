@@ -26,7 +26,8 @@
                    type == ItemType.Shuriken ||
                    type == ItemType.Bow      ||
                    type == ItemType.Tome     ||
-                   type == ItemType.Stone;
+                   type == ItemType.Stone    ||
+                   type == ItemType.NPC;
         }
 
         public static bool HasCharges(this ItemType type)
