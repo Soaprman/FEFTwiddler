@@ -4,7 +4,22 @@ namespace FEFTwiddler.Utils
 {
     public class WeaponNameUtil
     {
+        public static void RemoveAllUnusedWeaponNames(Model.ChapterSave chapterSave)
+        {
+            chapterSave.WeaponNameRegion.WeaponNames.RemoveAll((x) => !WeaponNameIsInUse(chapterSave, x.ID));
+        }
+
         public static void RemoveWeaponNameIfUnused(Model.ChapterSave chapterSave, byte nameId)
+        {
+            bool nameInUse = WeaponNameIsInUse(chapterSave, nameId);
+
+            if (!nameInUse)
+            {
+                chapterSave.WeaponNameRegion.WeaponNames.RemoveAll((x) => x.ID == nameId);
+            }
+        }
+
+        private static bool WeaponNameIsInUse(Model.ChapterSave chapterSave, byte nameId)
         {
             bool nameInUse = false;
 
@@ -24,10 +39,7 @@ namespace FEFTwiddler.Utils
                 }
             }
 
-            if (!nameInUse)
-            {
-                chapterSave.WeaponNameRegion.WeaponNames.RemoveAll((x) => x.ID == nameId);
-            }
+            return nameInUse;
         }
     }
 }

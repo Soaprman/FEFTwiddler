@@ -51,15 +51,16 @@
             this.flwConsumable = new System.Windows.Forms.FlowLayoutPanel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cmbItem = new System.Windows.Forms.ComboBox();
-            this.numCharges = new System.Windows.Forms.NumericUpDown();
-            this.numQuantity = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.picIcon = new System.Windows.Forms.PictureBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numQuantity = new System.Windows.Forms.NumericUpDown();
+            this.numCharges = new System.Windows.Forms.NumericUpDown();
+            this.cmbItem = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lblConvoySize = new System.Windows.Forms.Label();
+            this.btnEmptyConvoy = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabSword.SuspendLayout();
             this.tabLance.SuspendLayout();
@@ -71,9 +72,9 @@
             this.tabStone.SuspendLayout();
             this.tabConsumable.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numCharges)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCharges)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -307,26 +308,42 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add Item";
             // 
-            // cmbItem
+            // picIcon
             // 
-            this.cmbItem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
-            this.cmbItem.FormattingEnabled = true;
-            this.cmbItem.Location = new System.Drawing.Point(26, 20);
-            this.cmbItem.Name = "cmbItem";
-            this.cmbItem.Size = new System.Drawing.Size(138, 21);
-            this.cmbItem.TabIndex = 0;
+            this.picIcon.Location = new System.Drawing.Point(6, 22);
+            this.picIcon.Name = "picIcon";
+            this.picIcon.Size = new System.Drawing.Size(16, 16);
+            this.picIcon.TabIndex = 6;
+            this.picIcon.TabStop = false;
             // 
-            // numCharges
+            // btnAdd
             // 
-            this.numCharges.Location = new System.Drawing.Point(122, 47);
-            this.numCharges.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.numCharges.Name = "numCharges";
-            this.numCharges.Size = new System.Drawing.Size(42, 20);
-            this.numCharges.TabIndex = 1;
+            this.btnAdd.Location = new System.Drawing.Point(89, 100);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 5;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(23, 49);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Charges or forges:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(34, 76);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Quantity to add:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // numQuantity
             // 
@@ -350,42 +367,26 @@
             0,
             0});
             // 
-            // label1
+            // numCharges
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 76);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Quantity to add:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.numCharges.Location = new System.Drawing.Point(122, 47);
+            this.numCharges.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.numCharges.Name = "numCharges";
+            this.numCharges.Size = new System.Drawing.Size(42, 20);
+            this.numCharges.TabIndex = 1;
             // 
-            // label2
+            // cmbItem
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Charges or forges:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(89, 100);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 5;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // picIcon
-            // 
-            this.picIcon.Location = new System.Drawing.Point(6, 22);
-            this.picIcon.Name = "picIcon";
-            this.picIcon.Size = new System.Drawing.Size(16, 16);
-            this.picIcon.TabIndex = 6;
-            this.picIcon.TabStop = false;
+            this.cmbItem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cmbItem.FormattingEnabled = true;
+            this.cmbItem.Location = new System.Drawing.Point(26, 20);
+            this.cmbItem.Name = "cmbItem";
+            this.cmbItem.Size = new System.Drawing.Size(138, 21);
+            this.cmbItem.TabIndex = 0;
             // 
             // label3
             // 
@@ -405,10 +406,21 @@
             this.lblConvoySize.TabIndex = 3;
             this.lblConvoySize.Text = "000/500";
             // 
+            // btnEmptyConvoy
+            // 
+            this.btnEmptyConvoy.ForeColor = System.Drawing.Color.Red;
+            this.btnEmptyConvoy.Location = new System.Drawing.Point(9, 450);
+            this.btnEmptyConvoy.Name = "btnEmptyConvoy";
+            this.btnEmptyConvoy.Size = new System.Drawing.Size(113, 23);
+            this.btnEmptyConvoy.TabIndex = 7;
+            this.btnEmptyConvoy.Text = "Empty Convoy";
+            this.btnEmptyConvoy.UseVisualStyleBackColor = true;
+            // 
             // ConvoyMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnEmptyConvoy);
             this.Controls.Add(this.lblConvoySize);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
@@ -428,9 +440,9 @@
             this.tabConsumable.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numCharges)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCharges)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -468,5 +480,6 @@
         private System.Windows.Forms.PictureBox picIcon;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblConvoySize;
+        private System.Windows.Forms.Button btnEmptyConvoy;
     }
 }

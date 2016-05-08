@@ -61,6 +61,8 @@ namespace FEFTwiddler.GUI.Convoy
             cmbItem.SelectedValueChanged += ChangeItem;
             btnAdd.Click += AddItem;
 
+            btnEmptyConvoy.Click += EmptyConvoy;
+
             btnAdd.Enabled = false; // Because it starts on (None)
         }
 
@@ -328,6 +330,20 @@ namespace FEFTwiddler.GUI.Convoy
         private void FocusOnThis(object sender, EventArgs e)
         {
             ((Control)sender).Focus();
+        }
+
+        private void EmptyConvoy(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("This will remove ALL items from your convoy, regardless of their importance to the plot or sentimental value. Proceed?",
+                "Empty convoy?",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question,
+                MessageBoxDefaultButton.Button2);
+            if (result != DialogResult.Yes) return;
+
+            _chapterSave.ConvoyRegion.Convoy.Clear();
+            Utils.WeaponNameUtil.RemoveAllUnusedWeaponNames(_chapterSave);
+            PopulateControls();
         }
     }
 }
