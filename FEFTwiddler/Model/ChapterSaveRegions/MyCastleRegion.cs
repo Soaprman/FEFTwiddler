@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FEFTwiddler.Extensions;
 
 namespace FEFTwiddler.Model.ChapterSaveRegions
 {
@@ -69,6 +70,8 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
 
         // Sixty-four unknown bytes (0x1ED through 0x22C)
         // All 00s?
+
+        #region Material Quantity
 
         public byte MaterialQuantity_Crystal
         {
@@ -201,5 +204,125 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
             get { return _raw[0x242]; }
             set { _raw[0x242] = value; }
         }
+
+        #endregion
+
+        #region Material Discovered
+
+        public bool MaterialDiscovered_Crystal
+        {
+            get { return _raw[0x243].GetFlag(0x01); }
+            set { _raw[0x243] = _raw[0x243].SetFlag(0x01, value); }
+        }
+        public bool MaterialDiscovered_Ruby
+        {
+            get { return _raw[0x243].GetFlag(0x02); }
+            set { _raw[0x243] = _raw[0x243].SetFlag(0x02, value); }
+        }
+        public bool MaterialDiscovered_Sapphire
+        {
+            get { return _raw[0x243].GetFlag(0x04); }
+            set { _raw[0x243] = _raw[0x243].SetFlag(0x04, value); }
+        }
+        public bool MaterialDiscovered_Onyx
+        {
+            get { return _raw[0x243].GetFlag(0x08); }
+            set { _raw[0x243] = _raw[0x243].SetFlag(0x08, value); }
+        }
+        public bool MaterialDiscovered_Emerald
+        {
+            get { return _raw[0x243].GetFlag(0x10); }
+            set { _raw[0x243] = _raw[0x243].SetFlag(0x10, value); }
+        }
+        public bool MaterialDiscovered_Topaz
+        {
+            get { return _raw[0x243].GetFlag(0x20); }
+            set { _raw[0x243] = _raw[0x243].SetFlag(0x20, value); }
+        }
+        public bool MaterialDiscovered_Pearl
+        {
+            get { return _raw[0x243].GetFlag(0x40); }
+            set { _raw[0x243] = _raw[0x243].SetFlag(0x40, value); }
+        }
+        public bool MaterialDiscovered_Coral
+        {
+            get { return _raw[0x243].GetFlag(0x80); }
+            set { _raw[0x243] = _raw[0x243].SetFlag(0x80, value); }
+        }
+
+        public bool MaterialDiscovered_Lapis
+        {
+            get { return _raw[0x244].GetFlag(0x01); }
+            set { _raw[0x244] = _raw[0x244].SetFlag(0x01, value); }
+        }
+        public bool MaterialDiscovered_Quartz
+        {
+            get { return _raw[0x244].GetFlag(0x02); }
+            set { _raw[0x244] = _raw[0x244].SetFlag(0x02, value); }
+        }
+        public bool MaterialDiscovered_Jade
+        {
+            get { return _raw[0x244].GetFlag(0x04); }
+            set { _raw[0x244] = _raw[0x244].SetFlag(0x04, value); }
+        }
+        public bool MaterialDiscovered_Amber
+        {
+            get { return _raw[0x244].GetFlag(0x08); }
+            set { _raw[0x244] = _raw[0x244].SetFlag(0x08, value); }
+        }
+
+        public bool MaterialDiscovered_Meat
+        {
+            get { return _raw[0x245].GetFlag(0x01); }
+            set { _raw[0x245] = _raw[0x245].SetFlag(0x01, value); }
+        }
+        public bool MaterialDiscovered_Milk
+        {
+            get { return _raw[0x245].GetFlag(0x02); }
+            set { _raw[0x245] = _raw[0x245].SetFlag(0x02, value); }
+        }
+        public bool MaterialDiscovered_Cabbage
+        {
+            get { return _raw[0x245].GetFlag(0x04); }
+            set { _raw[0x245] = _raw[0x245].SetFlag(0x04, value); }
+        }
+        public bool MaterialDiscovered_Berries
+        {
+            get { return _raw[0x245].GetFlag(0x08); }
+            set { _raw[0x245] = _raw[0x245].SetFlag(0x08, value); }
+        }
+        public bool MaterialDiscovered_Wheat
+        {
+            get { return _raw[0x245].GetFlag(0x10); }
+            set { _raw[0x245] = _raw[0x245].SetFlag(0x10, value); }
+        }
+        public bool MaterialDiscovered_Beans
+        {
+            get { return _raw[0x245].GetFlag(0x20); }
+            set { _raw[0x245] = _raw[0x245].SetFlag(0x20, value); }
+        }
+        public bool MaterialDiscovered_Fish
+        {
+            get { return _raw[0x245].GetFlag(0x40); }
+            set { _raw[0x245] = _raw[0x245].SetFlag(0x40, value); }
+        }
+        public bool MaterialDiscovered_Daikon
+        {
+            get { return _raw[0x245].GetFlag(0x80); }
+            set { _raw[0x245] = _raw[0x245].SetFlag(0x80, value); }
+        }
+
+        public bool MaterialDiscovered_Peaches
+        {
+            get { return _raw[0x246].GetFlag(0x01); }
+            set { _raw[0x246] = _raw[0x246].SetFlag(0x01, value); }
+        }
+        public bool MaterialDiscovered_Rice
+        {
+            get { return _raw[0x246].GetFlag(0x02); }
+            set { _raw[0x246] = _raw[0x246].SetFlag(0x02, value); }
+        }
+
+        #endregion
     }
 }
