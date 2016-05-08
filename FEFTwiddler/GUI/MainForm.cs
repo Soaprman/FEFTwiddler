@@ -18,6 +18,10 @@ namespace FEFTwiddler.GUI
         {
             InitializeComponent();
             InitializeDatabases();
+
+            this.AllowDrop = true;
+            this.DragEnter += MainForm_DragEnter;
+            this.DragDrop += MainForm_DragDrop;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -44,6 +48,20 @@ namespace FEFTwiddler.GUI
 
         #region Load
 
+        private void MainForm_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop)) e.Effect = DragDropEffects.Copy;
+        }
+
+        private void MainForm_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] paths = (string[])e.Data.GetData(DataFormats.FileDrop);
+            if (paths.Length > 0)
+            {
+                LoadFile(paths[0]);
+            }
+        }
+
         private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openFileDialog1.FileName = "";
@@ -57,60 +75,65 @@ namespace FEFTwiddler.GUI
             {
                 Config.StartupPath = Path.GetDirectoryName(openFileDialog1.FileName);
 
-                var saveFile = Model.SaveFile.FromPath(openFileDialog1.FileName);
-
-                if (saveFile.Type != Enums.SaveFileType.Chapter && saveFile.Type != Enums.SaveFileType.Global)
-                {
-                    MessageBox.Show("This type of save is not supported yet. Only 'Chapter' and 'Global' saves are supported right now.");
-                    return;
-                }
-                else
-                {
-                    _saveFile = saveFile;
-                }
-
-                UpdateTitleBar(openFileDialog1.FileName);
-
-                Cursor.Current = Cursors.WaitCursor;
-
-                switch (_saveFile.Type)
-                {
-                    case Enums.SaveFileType.Chapter:
-                        _chapterSave = Model.ChapterSave.FromSaveFile(_saveFile);
-                        _globalSave = null;
-
-                        LoadChapterData();
-                        LoadUnitViewer();
-
-                        tabChapterData.Enabled = true;
-                        tabUnitViewer.Enabled = true;
-                        tabMegacheats.Enabled = true;
-                        tabNewGamePlus.Enabled = true;
-                        tabConvoy.Enabled = true;
-                        tabGlobalData.Enabled = false;
-
-                        break;
-                    case Enums.SaveFileType.Global:
-                        _globalSave = Model.GlobalSave.FromSaveFile(_saveFile);
-                        _chapterSave = null;
-
-                        LoadGlobalData();
-
-                        tabChapterData.Enabled = false;
-                        tabUnitViewer.Enabled = false;
-                        tabMegacheats.Enabled = false;
-                        tabNewGamePlus.Enabled = false;
-                        tabConvoy.Enabled = false;
-                        tabGlobalData.Enabled = true;
-
-                        break;
-                    default: break;
-                }
-
-                Cursor.Current = Cursors.AppStarting;
-
-                tabControl1.Enabled = true;
+                LoadFile(openFileDialog1.FileName);
             }
+        }
+
+        private void LoadFile(string path)
+        {
+            var saveFile = Model.SaveFile.FromPath(path);
+
+            if (saveFile.Type != Enums.SaveFileType.Chapter && saveFile.Type != Enums.SaveFileType.Global)
+            {
+                MessageBox.Show("This type of save is not supported yet. Only 'Chapter' and 'Global' saves are supported right now.");
+                return;
+            }
+            else
+            {
+                _saveFile = saveFile;
+            }
+
+            UpdateTitleBar(path);
+
+            Cursor.Current = Cursors.WaitCursor;
+
+            switch (_saveFile.Type)
+            {
+                case Enums.SaveFileType.Chapter:
+                    _chapterSave = Model.ChapterSave.FromSaveFile(_saveFile);
+                    _globalSave = null;
+
+                    LoadChapterData();
+                    LoadUnitViewer();
+
+                    tabChapterData.Enabled = true;
+                    tabUnitViewer.Enabled = true;
+                    tabMegacheats.Enabled = true;
+                    tabNewGamePlus.Enabled = true;
+                    tabConvoy.Enabled = true;
+                    tabGlobalData.Enabled = false;
+
+                    break;
+                case Enums.SaveFileType.Global:
+                    _globalSave = Model.GlobalSave.FromSaveFile(_saveFile);
+                    _chapterSave = null;
+
+                    LoadGlobalData();
+
+                    tabChapterData.Enabled = false;
+                    tabUnitViewer.Enabled = false;
+                    tabMegacheats.Enabled = false;
+                    tabNewGamePlus.Enabled = false;
+                    tabConvoy.Enabled = false;
+                    tabGlobalData.Enabled = true;
+
+                    break;
+                default: break;
+            }
+
+            Cursor.Current = Cursors.AppStarting;
+
+            tabControl1.Enabled = true;
         }
 
         private void UpdateTitleBar(string path)
@@ -353,6 +376,8 @@ namespace FEFTwiddler.GUI
 
         #endregion
 
+        #region Compression
+
         private void decompressFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openFileDialog1.FileName = "";
@@ -406,5 +431,7 @@ namespace FEFTwiddler.GUI
                 MessageBox.Show("Done! Compressed save written to the original filename, with _dec removed if applicable.");
             }
         }
+
+        #endregion
     }
 }
