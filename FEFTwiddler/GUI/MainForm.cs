@@ -280,6 +280,17 @@ namespace FEFTwiddler.GUI
             lstLiving.ClearSelected();
         }
 
+        public void DeselectUnit()
+        {
+            lstLiving.SelectedItem = null;
+            lstDead.SelectedItem = null;
+            _selectedCharacter = null;
+
+            var message = "No unit is selected.";
+            _unitViewerBlanket.SetMessage(message);
+            _unitViewerBlanket.Cover();
+        }
+
         private void LoadCharacter(Model.Character character)
         {
             if (character == null) return;
@@ -356,6 +367,52 @@ namespace FEFTwiddler.GUI
         private void tabPage1_Enter(object sender, EventArgs e)
         {
             LoadCharacter(_selectedCharacter);
+        }
+
+        private void btnDeleteUnit_Click(object sender, EventArgs e)
+        {
+            DialogResult result;
+
+            result = MessageBox.Show("Are you sure you want to remove this unit?",
+                "Remove unit?",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question,
+                MessageBoxDefaultButton.Button2);
+            if (result != DialogResult.Yes) return;
+
+            if (lstLiving.Items.Count == 1)
+            {
+                result = MessageBox.Show("This is your last living unit. No good can possibly come from removing this unit. Proceed anyway?",
+                    "Remove your last living unit?",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Exclamation,
+                    MessageBoxDefaultButton.Button2);
+                if (result != DialogResult.Yes) return;
+            }
+            else if (Enum.IsDefined(typeof(Enums.Character), _selectedCharacter.CharacterID) &&
+                Data.Database.Characters.GetByID(_selectedCharacter.CharacterID).IsCorrin &&
+                !_selectedCharacter.IsEinherjar) {
+
+                result = MessageBox.Show("You are about to remove a non-Einherjar Corrin. There's no telling what effect this may have on your game. Proceed?",
+                    "Remove Corrin?",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Exclamation,
+                    MessageBoxDefaultButton.Button2);
+                if (result != DialogResult.Yes) return;
+            }
+
+            _chapterSave.UnitRegion.Units.Remove(_selectedCharacter);
+
+            if (lstLiving.Items.IndexOf(_selectedCharacter) > -1)
+            {
+                lstLiving.Items.Remove(_selectedCharacter);
+                DeselectUnit();
+            }
+            else if (lstDead.Items.IndexOf(_selectedCharacter) > -1)
+            {
+                lstDead.Items.Remove(_selectedCharacter);
+                DeselectUnit();
+            }
         }
 
         private void btnOpenHexEditor_Click(object sender, EventArgs e)
