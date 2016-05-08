@@ -105,6 +105,9 @@ namespace FEFTwiddler.GUI.UnitViewer
 
             _character.ClassID = (Enums.Class)cmb.SelectedValue;
 
+            // Unlock the DLC class for heart sealing for later
+            if (_character.ClassID == Enums.Class.PegasusKnight) _character.HeartSeal_PegasusKnight = true;
+
             // If they changed to a class with a lower max level, drop the level to the new max
             var maxLevel = _character.GetModifiedMaxLevel();
             if (_character.Level > maxLevel)

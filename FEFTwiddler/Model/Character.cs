@@ -630,6 +630,12 @@ namespace FEFTwiddler.Model
             }
         }
 
+        public bool HeartSeal_PegasusKnight
+        {
+            get { return _rawBlock2[0x12].GetFlag(0x02); }
+            set { _rawBlock2[0x12] = _rawBlock2[0x12].SetFlag(0x02, value); }
+        }
+
         public byte[] HairColor
         {
             get { return _rawBlock2.Skip(0x13).Take(0x04).ToArray(); }
