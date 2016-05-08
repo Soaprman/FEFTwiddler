@@ -1,4 +1,5 @@
 ﻿using System;
+using FEFTwiddler.Extensions;
 
 namespace FEFTwiddler.Model
 {
@@ -55,11 +56,11 @@ namespace FEFTwiddler.Model
         {
             get
             {
-                return (_raw[3] & 0x40) == 0x40;
+                return _raw[0x03].GetFlag(0x40);
             }
             set
             {
-                _raw[3] = (byte)(Uses | ((value) ? (0x40) : (~0x40)));
+                _raw[0x03] = _raw[0x03].SetFlag(0x40, value);
             }
         }
 
