@@ -70,7 +70,7 @@ namespace FEFTwiddler.GUI.ChapterData
         {
             foreach (var unit in _chapterSave.UnitRegion.Units)
             {
-                unit.Boots = Model.Character.MaxBoots;
+                unit.Boots = Model.Unit.MaxBoots;
             }
             MessageBox.Show("Done!");
         }

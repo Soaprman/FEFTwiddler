@@ -14,7 +14,7 @@ namespace FEFTwiddler.GUI.UnitViewer
     [Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", typeof(IDesigner))]
     public partial class BattleData : UserControl
     {
-        private Model.Character _character;
+        private Model.Unit _unit;
 
         public BattleData()
         {
@@ -22,9 +22,9 @@ namespace FEFTwiddler.GUI.UnitViewer
             InitializeControls();
         }
 
-        public void LoadCharacter(Model.Character character)
+        public void LoadCharacter(Model.Unit unit)
         {
-            _character = character;
+            _unit = unit;
             PopulateControls();
         }
 
@@ -34,18 +34,18 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void PopulateControls()
         {
-            numBattles.Value = _character.BattleCount;
-            numVictories.Value = _character.VictoryCount;
+            numBattles.Value = _unit.BattleCount;
+            numVictories.Value = _unit.VictoryCount;
         }
 
         private void numBattles_ValueChanged(object sender, EventArgs e)
         {
-            _character.BattleCount = (ushort)numBattles.Value;
+            _unit.BattleCount = (ushort)numBattles.Value;
         }
 
         private void numVictories_ValueChanged(object sender, EventArgs e)
         {
-            _character.VictoryCount = (ushort)numVictories.Value;
+            _unit.VictoryCount = (ushort)numVictories.Value;
         }
     }
 }

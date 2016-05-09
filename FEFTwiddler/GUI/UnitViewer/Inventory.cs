@@ -12,7 +12,7 @@ namespace FEFTwiddler.GUI.UnitViewer
     [Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", typeof(IDesigner))]
     public partial class Inventory : UserControl
     {
-        private Model.Character _character;
+        private Model.Unit _unit;
         private ItemPanel[] _inventory;
 
         public Inventory()
@@ -21,9 +21,9 @@ namespace FEFTwiddler.GUI.UnitViewer
             InitializeControls();
         }
 
-        public void LoadCharacter(Model.Character character)
+        public void LoadCharacter(Model.Unit unit)
         {
-            _character = character;
+            _unit = unit;
             PopulateControls();
         }
 
@@ -49,11 +49,11 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void PopulateControls()
         {
-            _inventory[0].LoadItem(_character.Item_1);
-            _inventory[1].LoadItem(_character.Item_2);
-            _inventory[2].LoadItem(_character.Item_3);
-            _inventory[3].LoadItem(_character.Item_4);
-            _inventory[4].LoadItem(_character.Item_5);
+            _inventory[0].LoadItem(_unit.Item_1);
+            _inventory[1].LoadItem(_unit.Item_2);
+            _inventory[2].LoadItem(_unit.Item_3);
+            _inventory[3].LoadItem(_unit.Item_4);
+            _inventory[4].LoadItem(_unit.Item_5);
         }
 
         private void btnMaxForges_Click(object sender, EventArgs e)

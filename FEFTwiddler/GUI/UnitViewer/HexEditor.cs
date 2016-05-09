@@ -12,23 +12,23 @@ namespace FEFTwiddler.GUI.UnitViewer
 {
     public partial class HexEditor : Form
     {
-        private Model.Character _character;
+        private Model.Unit _unit;
 
-        public HexEditor(Model.Character character)
+        public HexEditor(Model.Unit unit)
         {
-            _character = character;
+            _unit = unit;
             InitializeComponent();
             SetTitle();
         }
 
         private void SetTitle()
         {
-            if (Enum.IsDefined(typeof(Enums.Character), _character.CharacterID))
+            if (Enum.IsDefined(typeof(Enums.Character), _unit.CharacterID))
             {
-                if (_character.CorrinName == null)
-                    this.Text = "Hex editing: " + Data.Database.Characters.GetByID(_character.CharacterID).DisplayName;
+                if (_unit.CorrinName == null)
+                    this.Text = "Hex editing: " + Data.Database.Characters.GetByID(_unit.CharacterID).DisplayName;
                 else
-                    this.Text = "Hex editing: " + _character.CorrinName;
+                    this.Text = "Hex editing: " + _unit.CorrinName;
             }
             else
             {
@@ -38,28 +38,28 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void HexEditor_Load(object sender, EventArgs e)
         {
-            hexRawBlock1.SetBytes(_character.RawBlock1);
-            hexRawInventory.SetBytes(_character.RawInventory);
-            hexRawSupports.SetBytes(_character.RawSupports);
-            lblRawNumberOfSupports.Text = string.Format("Count: {0:X2}", _character.RawNumberOfSupports);
-            hexRawBlock2.SetBytes(_character.RawBlock2);
-            hexRawLearnedSkills.SetBytes(_character.RawLearnedSkills);
-            hexRawDeployedUnitInfo.SetBytes(_character.RawDeployedUnitInfo);
-            hexRawBlock3.SetBytes(_character.RawBlock3);
-            lblRawEndBlockType.Text = string.Format("Type: {0:X2}", _character.RawEndBlockType);
-            hexRawEndBlock.SetBytes(_character.RawEndBlock);
+            hexRawBlock1.SetBytes(_unit.RawBlock1);
+            hexRawInventory.SetBytes(_unit.RawInventory);
+            hexRawSupports.SetBytes(_unit.RawSupports);
+            lblRawNumberOfSupports.Text = string.Format("Count: {0:X2}", _unit.RawNumberOfSupports);
+            hexRawBlock2.SetBytes(_unit.RawBlock2);
+            hexRawLearnedSkills.SetBytes(_unit.RawLearnedSkills);
+            hexRawDeployedUnitInfo.SetBytes(_unit.RawDeployedUnitInfo);
+            hexRawBlock3.SetBytes(_unit.RawBlock3);
+            lblRawEndBlockType.Text = string.Format("Type: {0:X2}", _unit.RawEndBlockType);
+            hexRawEndBlock.SetBytes(_unit.RawEndBlock);
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            _character.RawBlock1 = hexRawBlock1.GetBytes();
-            _character.RawInventory = hexRawInventory.GetBytes();
-            _character.RawSupports = hexRawSupports.GetBytes();
-            _character.RawBlock2 = hexRawBlock2.GetBytes();
-            _character.RawLearnedSkills = hexRawLearnedSkills.GetBytes();
-            _character.RawDeployedUnitInfo = hexRawDeployedUnitInfo.GetBytes();
-            _character.RawBlock3 = hexRawBlock3.GetBytes();
-            _character.RawEndBlock = hexRawEndBlock.GetBytes();
+            _unit.RawBlock1 = hexRawBlock1.GetBytes();
+            _unit.RawInventory = hexRawInventory.GetBytes();
+            _unit.RawSupports = hexRawSupports.GetBytes();
+            _unit.RawBlock2 = hexRawBlock2.GetBytes();
+            _unit.RawLearnedSkills = hexRawLearnedSkills.GetBytes();
+            _unit.RawDeployedUnitInfo = hexRawDeployedUnitInfo.GetBytes();
+            _unit.RawBlock3 = hexRawBlock3.GetBytes();
+            _unit.RawEndBlock = hexRawEndBlock.GetBytes();
 
             this.Close();
         }

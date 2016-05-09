@@ -14,7 +14,7 @@ namespace FEFTwiddler.GUI.UnitViewer
     [Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", typeof(IDesigner))]
     public partial class DragonVein : UserControl
     {
-        private Model.Character _character;
+        private Model.Unit _unit;
 
         public DragonVein()
         {
@@ -22,9 +22,9 @@ namespace FEFTwiddler.GUI.UnitViewer
             InitializeControls();
         }
 
-        public void LoadCharacter(Model.Character character)
+        public void LoadCharacter(Model.Unit unit)
         {
-            _character = character;
+            _unit = unit;
             PopulateControls();
         }
 
@@ -34,25 +34,25 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void PopulateControls()
         {
-            if (Enum.IsDefined(typeof(Enums.Character), _character.CharacterID))
+            if (Enum.IsDefined(typeof(Enums.Character), _unit.CharacterID))
             {
-                var isDefault = Data.Database.Characters.GetByID(_character.CharacterID).CanUseDragonVein;
-                chkDragonVein.Checked = _character.CanUseDragonVein || isDefault;
+                var isDefault = Data.Database.Characters.GetByID(_unit.CharacterID).CanUseDragonVein;
+                chkDragonVein.Checked = _unit.CanUseDragonVein || isDefault;
                 chkDragonVein.Enabled = !isDefault;
             }
             else
             {
-                chkDragonVein.Checked = _character.CanUseDragonVein;
+                chkDragonVein.Checked = _unit.CanUseDragonVein;
             }
         }
 
         private void chkDragonVein_CheckedChanged(object sender, EventArgs e)
         {
             // If a character can't use Dragon Vein by default
-            if (chkDragonVein.Checked && !Data.Database.Characters.GetByID(_character.CharacterID).CanUseDragonVein)
-                _character.CanUseDragonVein = true;
+            if (chkDragonVein.Checked && !Data.Database.Characters.GetByID(_unit.CharacterID).CanUseDragonVein)
+                _unit.CanUseDragonVein = true;
             else
-                _character.CanUseDragonVein = false;
+                _unit.CanUseDragonVein = false;
         }
     }
 }

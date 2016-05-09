@@ -10,7 +10,7 @@ namespace FEFTwiddler.GUI.UnitViewer
     [Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", typeof(IDesigner))]
     public partial class Accessories : UserControl
     {
-        private Model.Character _character;
+        private Model.Unit _unit;
 
         public Accessories()
         {
@@ -18,9 +18,9 @@ namespace FEFTwiddler.GUI.UnitViewer
             InitializeControls();
         }
 
-        public void LoadCharacter(Model.Character character)
+        public void LoadCharacter(Model.Unit unit)
         {
-            _character = character;
+            _unit = unit;
             PopulateControls();
         }
 
@@ -32,10 +32,10 @@ namespace FEFTwiddler.GUI.UnitViewer
         {
             UnbindEvents();
             BindDataSources();
-            cmbHeadwear.SelectedValue = _character.Headwear;
-            cmbFacewear.SelectedValue = _character.Facewear;
-            cmbArmwear.SelectedValue = _character.Armwear;
-            cmbUnderwear.SelectedValue = _character.Underwear;
+            cmbHeadwear.SelectedValue = _unit.Headwear;
+            cmbFacewear.SelectedValue = _unit.Facewear;
+            cmbArmwear.SelectedValue = _unit.Armwear;
+            cmbUnderwear.SelectedValue = _unit.Underwear;
             BindEvents();
         }
 
@@ -90,22 +90,22 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void ChangeHeadwear(object sender, EventArgs e)
         {
-            _character.Headwear = (Enums.Accessory)cmbHeadwear.SelectedValue;
+            _unit.Headwear = (Enums.Accessory)cmbHeadwear.SelectedValue;
         }
 
         private void ChangeFacewear(object sender, EventArgs e)
         {
-            _character.Facewear = (Enums.Accessory)cmbFacewear.SelectedValue;
+            _unit.Facewear = (Enums.Accessory)cmbFacewear.SelectedValue;
         }
 
         private void ChangeArmwear(object sender, EventArgs e)
         {
-            _character.Armwear = (Enums.Accessory)cmbArmwear.SelectedValue;
+            _unit.Armwear = (Enums.Accessory)cmbArmwear.SelectedValue;
         }
 
         private void ChangeUnderwear(object sender, EventArgs e)
         {
-            _character.Underwear = (Enums.Accessory)cmbUnderwear.SelectedValue;
+            _unit.Underwear = (Enums.Accessory)cmbUnderwear.SelectedValue;
         }
     }
 }

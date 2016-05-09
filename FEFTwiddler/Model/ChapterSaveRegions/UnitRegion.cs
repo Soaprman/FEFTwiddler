@@ -30,7 +30,7 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
                 {
                     RawBlock1 = br.ReadBytes(RawBlock1Length);
 
-                    Units = new List<Model.Character>();
+                    Units = new List<Model.Unit>();
 
                     bool stillReading = true;
                     while (stillReading)
@@ -45,8 +45,8 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
                             case 0x04: // Dead units (killed by gameplay)
                             case 0x05: // If after chapter 6, units you had at some point before the split who haven't rejoined yet (or at least I think that's what this is)
                             case 0x06: // Dead units (killed by plot)
-                                var characterCount = br.ReadByte();
-                                for (var i = 0; i < characterCount; i++)
+                                var unitCount = br.ReadByte();
+                                for (var i = 0; i < unitCount; i++)
                                 {
                                     ReadCurrentUnit(br, (Enums.UnitBlock)nextBlock);
                                 }
@@ -129,7 +129,7 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
                     }
                 }
 
-                // End character block
+                // End unit block
                 rawUnits = rawUnits.Concat(((byte)0xFF).Yield());
 
                 return rawUnits.ToArray();
@@ -149,7 +149,7 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
 
         #region Units Properties
 
-        public List<Character> Units { get; set; }
+        public List<Unit> Units { get; set; }
 
         #endregion
 
@@ -157,16 +157,16 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
         {
             byte[] chunk;
 
-            var unit = new Character();
+            var unit = new Unit();
 
             unit.UnitBlock = unitBlock;
 
-            chunk = new byte[Model.Character.RawBlock1Length];
-            br.Read(chunk, 0, Model.Character.RawBlock1Length);
+            chunk = new byte[Model.Unit.RawBlock1Length];
+            br.Read(chunk, 0, Model.Unit.RawBlock1Length);
             unit.RawBlock1 = chunk;
 
-            chunk = new byte[Model.Character.RawInventoryLength];
-            br.Read(chunk, 0, Model.Character.RawInventoryLength);
+            chunk = new byte[Model.Unit.RawInventoryLength];
+            br.Read(chunk, 0, Model.Unit.RawInventoryLength);
             unit.RawInventory = chunk;
 
             chunk = new byte[0x01];
@@ -177,21 +177,21 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
             br.Read(chunk, 0, unit.RawNumberOfSupports);
             unit.RawSupports = chunk;
 
-            chunk = new byte[Model.Character.RawBlock2Length];
-            br.Read(chunk, 0, Model.Character.RawBlock2Length);
+            chunk = new byte[Model.Unit.RawBlock2Length];
+            br.Read(chunk, 0, Model.Unit.RawBlock2Length);
             unit.RawBlock2 = chunk;
 
-            chunk = new byte[Model.Character.RawLearnedSkillsLength];
-            br.Read(chunk, 0, Model.Character.RawLearnedSkillsLength);
+            chunk = new byte[Model.Unit.RawLearnedSkillsLength];
+            br.Read(chunk, 0, Model.Unit.RawLearnedSkillsLength);
             unit.RawLearnedSkills = chunk;
 
-            var depLength = (unit.UnitBlock == Enums.UnitBlock.Deployed ? Model.Character.RawDeployedUnitInfoLengthIfDeployed : Model.Character.RawDeployedUnitInfoLengthIfNotDeployed);
+            var depLength = (unit.UnitBlock == Enums.UnitBlock.Deployed ? Model.Unit.RawDeployedUnitInfoLengthIfDeployed : Model.Unit.RawDeployedUnitInfoLengthIfNotDeployed);
             chunk = new byte[depLength];
             br.Read(chunk, 0, depLength);
             unit.RawDeployedUnitInfo = chunk;
 
-            chunk = new byte[Model.Character.RawBlock3Length];
-            br.Read(chunk, 0, Model.Character.RawBlock3Length);
+            chunk = new byte[Model.Unit.RawBlock3Length];
+            br.Read(chunk, 0, Model.Unit.RawBlock3Length);
             unit.RawBlock3 = chunk;
 
             chunk = new byte[0x01];

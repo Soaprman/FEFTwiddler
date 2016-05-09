@@ -16,7 +16,7 @@ namespace FEFTwiddler.GUI.UnitViewer
     {
         private ToolTip _tooltip = new ToolTip();
         private Model.ChapterSave _chapterSave;
-        private Model.Character _unit;
+        private Model.Unit _unit;
 
         public UnitBlockInfo()
         {
@@ -24,7 +24,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             InitializeControls();
         }
 
-        public void LoadCharacter(Model.ChapterSave chapterSave, Model.Character unit)
+        public void LoadCharacter(Model.ChapterSave chapterSave, Model.Unit unit)
         {
             _chapterSave = chapterSave;
             _unit = unit;
@@ -149,7 +149,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             if (_unit.UnitBlock == Enums.UnitBlock.Living) return;
 
             _unit.UnitBlock = Enums.UnitBlock.Living;
-            _unit.RawDeployedUnitInfo = Model.Character.GetEmptyDeployedInfoBlock();
+            _unit.RawDeployedUnitInfo = Model.Unit.GetEmptyDeployedInfoBlock();
             _unit.IsDead = false;
             _unit.WasKilledByPlot = false;
             _unit.DeathChapter = Enums.Chapter.None;
@@ -165,7 +165,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             if (_unit.UnitBlock == Enums.UnitBlock.Deployed) return;
 
             _unit.UnitBlock = Enums.UnitBlock.Deployed;
-            _unit.RawDeployedUnitInfo = Model.Character.GetFullDeployedInfoBlock();
+            _unit.RawDeployedUnitInfo = Model.Unit.GetFullDeployedInfoBlock();
             _unit.IsDead = false;
             _unit.WasKilledByPlot = false;
             _unit.DeathChapter = Enums.Chapter.None;
@@ -181,7 +181,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             if (_unit.UnitBlock == Enums.UnitBlock.Absent) return;
 
             _unit.UnitBlock = Enums.UnitBlock.Absent;
-            _unit.RawDeployedUnitInfo = Model.Character.GetEmptyDeployedInfoBlock();
+            _unit.RawDeployedUnitInfo = Model.Unit.GetEmptyDeployedInfoBlock();
             _unit.IsDead = false;
             _unit.WasKilledByPlot = false;
             _unit.DeathChapter = Enums.Chapter.None;
@@ -197,7 +197,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             if (_unit.UnitBlock == Enums.UnitBlock.DeadByGameplay) return;
 
             _unit.UnitBlock = Enums.UnitBlock.DeadByGameplay;
-            _unit.RawDeployedUnitInfo = Model.Character.GetEmptyDeployedInfoBlock();
+            _unit.RawDeployedUnitInfo = Model.Unit.GetEmptyDeployedInfoBlock();
             _unit.IsDead = true;
             _unit.WasKilledByPlot = false;
 
@@ -211,7 +211,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             if (_unit.UnitBlock == Enums.UnitBlock.DeadByPlot) return;
 
             _unit.UnitBlock = Enums.UnitBlock.DeadByPlot;
-            _unit.RawDeployedUnitInfo = Model.Character.GetEmptyDeployedInfoBlock();
+            _unit.RawDeployedUnitInfo = Model.Unit.GetEmptyDeployedInfoBlock();
             _unit.IsDead = true;
             _unit.WasKilledByPlot = true;
 

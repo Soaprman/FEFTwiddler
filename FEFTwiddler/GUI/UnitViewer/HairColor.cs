@@ -10,7 +10,7 @@ namespace FEFTwiddler.GUI.UnitViewer
     [Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", typeof(IDesigner))]
     public partial class HairColor : UserControl
     {
-        private Model.Character _character;
+        private Model.Unit _unit;
 
         public HairColor()
         {
@@ -18,9 +18,9 @@ namespace FEFTwiddler.GUI.UnitViewer
             InitializeControls();
         }
 
-        public void LoadCharacter(Model.Character character)
+        public void LoadCharacter(Model.Unit unit)
         {
-            _character = character;
+            _unit = unit;
             PopulateControls();
         }
 
@@ -30,14 +30,14 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void PopulateControls()
         {
-            HairColorBox.BackColor = Color.FromArgb(_character.HairColor[3],
-                                      _character.HairColor[0],
-                                      _character.HairColor[1],
-                                      _character.HairColor[2]);
+            HairColorBox.BackColor = Color.FromArgb(_unit.HairColor[3],
+                                      _unit.HairColor[0],
+                                      _unit.HairColor[1],
+                                      _unit.HairColor[2]);
             HairColorHex.Text = String.Format("{0:X2}{1:X2}{2:X2}",
-                                                _character.HairColor[0],
-                                                _character.HairColor[1],
-                                                _character.HairColor[2]);
+                                                _unit.HairColor[0],
+                                                _unit.HairColor[1],
+                                                _unit.HairColor[2]);
         }
 
         private void UpdateHairColor(object sender, EventArgs e)
@@ -49,8 +49,8 @@ namespace FEFTwiddler.GUI.UnitViewer
                                                      NewHairColor[0],
                                                      NewHairColor[1],
                                                      NewHairColor[2]);
-                _character.HairColor = NewHairColor;
-                if (_character.AvatarHairColor != null) _character.AvatarHairColor = NewHairColor;
+                _unit.HairColor = NewHairColor;
+                if (_unit.AvatarHairColor != null) _unit.AvatarHairColor = NewHairColor;
             }
         }
     }

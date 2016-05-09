@@ -30,7 +30,7 @@ namespace FEFTwiddler.Model.NewGamePlus
             var characterDatas = Data.Database.Characters.GetAllNamedPlayable().Where((x) => !x.IsCorrin && x.CharacterID < Enums.Character.Kana_M);
             foreach (var characterData in characterDatas)
             {
-                var unit = Model.Character.Create(characterData.CharacterID);
+                var unit = Model.Unit.Create(characterData.CharacterID);
                 unit.UnitBlock = Enums.UnitBlock.Absent;
                 _chapterSave.UnitRegion.Units.Add(unit);
             }
@@ -52,7 +52,7 @@ namespace FEFTwiddler.Model.NewGamePlus
         /// <summary>
         /// Level a unit, giving them the average gains that their growth rates would dictate
         /// </summary>
-        public void LevelUp(Model.Character unit, int levels)
+        public void LevelUp(Model.Unit unit, int levels)
         {
             var characterGrowthRates = Data.Database.Characters.GetByID(unit.CharacterID).GrowthRates;
             var classGrowthRates = Data.Database.Classes.GetByID(unit.ClassID).GrowthRates;

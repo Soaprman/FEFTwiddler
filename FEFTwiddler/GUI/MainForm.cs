@@ -11,7 +11,7 @@ namespace FEFTwiddler.GUI
         private Model.SaveFile _saveFile;
         private Model.ChapterSave _chapterSave;
         private Model.GlobalSave _globalSave;
-        private Model.Character _selectedCharacter;
+        private Model.Unit _selectedCharacter;
         private Controls.Blanket _unitViewerBlanket;
 
         public MainForm()
@@ -214,7 +214,7 @@ namespace FEFTwiddler.GUI
         /// <summary>
         /// Load the unit viewer, then jump to a particular unit
         /// </summary>
-        public void LoadUnitViewer(Model.Character unit)
+        public void LoadUnitViewer(Model.Unit unit)
         {
             LoadUnitViewer();
             SelectUnit(unit);
@@ -245,12 +245,12 @@ namespace FEFTwiddler.GUI
             lstDead.Refresh();
         }
 
-        private bool IsDead(Model.Character unit)
+        private bool IsDead(Model.Unit unit)
         {
             return unit.UnitBlock == Enums.UnitBlock.DeadByGameplay || unit.UnitBlock == Enums.UnitBlock.DeadByPlot;
         }
 
-        public void SelectUnit(Model.Character unit)
+        public void SelectUnit(Model.Unit unit)
         {
             if (lstLiving.Items.IndexOf(unit) > -1)
             {
@@ -264,7 +264,7 @@ namespace FEFTwiddler.GUI
 
         private void SelectLivingCharacter(object sender, EventArgs e)
         {
-            var character = (Model.Character)lstLiving.SelectedItem;
+            var character = (Model.Unit)lstLiving.SelectedItem;
             if (character == null) return;
             _selectedCharacter = character;
             LoadCharacter(character);
@@ -273,7 +273,7 @@ namespace FEFTwiddler.GUI
 
         private void SelectDeadCharacter(object sender, EventArgs e)
         {
-            var character = (Model.Character)lstDead.SelectedItem;
+            var character = (Model.Unit)lstDead.SelectedItem;
             if (character == null) return;
             _selectedCharacter = character;
             LoadCharacter(character);
@@ -291,7 +291,7 @@ namespace FEFTwiddler.GUI
             _unitViewerBlanket.Cover();
         }
 
-        private void LoadCharacter(Model.Character character)
+        private void LoadCharacter(Model.Unit character)
         {
             if (character == null) return;
 

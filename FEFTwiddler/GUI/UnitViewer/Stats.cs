@@ -14,7 +14,7 @@ namespace FEFTwiddler.GUI.UnitViewer
     [Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", typeof(IDesigner))]
     public partial class Stats : UserControl
     {
-        private Model.Character _character;
+        private Model.Unit _unit;
 
         public Stats()
         {
@@ -22,9 +22,9 @@ namespace FEFTwiddler.GUI.UnitViewer
             InitializeControls();
         }
 
-        public void LoadCharacter(Model.Character character)
+        public void LoadCharacter(Model.Unit unit)
         {
-            _character = character;
+            _unit = unit;
             PopulateControls();
         }
 
@@ -34,11 +34,11 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void PopulateControls()
         {
-            Model.Stat stats = Utils.StatUtil.CalculateStats(_character);
+            Model.Stat stats = Utils.StatUtil.CalculateStats(_unit);
             if (stats == null)
             {
                 lblStats.Text = "Stats (raw):";
-                txtStatBytes.Text = _character.GainedStats.ToString();
+                txtStatBytes.Text = _unit.GainedStats.ToString();
                 btnStats.Enabled = false;
             }
             else
@@ -51,7 +51,7 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void btnStats_Click(object sender, EventArgs e)
         {
-            StatEditor statEditor = new StatEditor(_character);
+            StatEditor statEditor = new StatEditor(_unit);
             statEditor.ShowDialog();
             if (statEditor.IsStatsChanged) PopulateControls();
         }

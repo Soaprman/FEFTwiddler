@@ -16,7 +16,7 @@ namespace FEFTwiddler.GUI.UnitViewer
     {
         private ToolTip _tooltip = new ToolTip();
 
-        private Model.Character _character;
+        private Model.Unit _unit;
 
         public ClassAndLevel()
         {
@@ -24,9 +24,9 @@ namespace FEFTwiddler.GUI.UnitViewer
             InitializeControls();
         }
 
-        public void LoadCharacter(Model.Character character)
+        public void LoadCharacter(Model.Unit unit)
         {
-            _character = character;
+            _unit = unit;
             PopulateControls();
         }
 
@@ -49,25 +49,25 @@ namespace FEFTwiddler.GUI.UnitViewer
             this.Invalidate();
             UnbindEventHandlers();
 
-            if (Enum.IsDefined(typeof(Enums.Class), _character.ClassID))
+            if (Enum.IsDefined(typeof(Enums.Class), _unit.ClassID))
             {
                 cmbClass.DataSource = GetClassDataSource();
-                cmbClass.SelectedValue = _character.ClassID;
+                cmbClass.SelectedValue = _unit.ClassID;
             }
             else
             {
-                cmbClass.Text = _character.ClassID.ToString();
+                cmbClass.Text = _unit.ClassID.ToString();
             }
 
             // Set eternal seals before level, since level's range is restricted by eternal seals
-            numEternalSeals.Maximum = Model.Character.MaxEternalSealsUsed;
-            numEternalSeals.Value = _character.FixEternalSealsUsed();
-            numLevel.Maximum = _character.GetTheoreticalMaxLevel();
-            numLevel.Value = _character.FixLevel();
+            numEternalSeals.Maximum = Model.Unit.MaxEternalSealsUsed;
+            numEternalSeals.Value = _unit.FixEternalSealsUsed();
+            numLevel.Maximum = _unit.GetTheoreticalMaxLevel();
+            numLevel.Value = _unit.FixLevel();
 
-            numInternalLevel.Value = _character.InternalLevel;
-            numExperience.Value = _character.Experience;
-            numBoots.Value = Model.Character.FixBoots(_character.Boots);
+            numInternalLevel.Value = _unit.InternalLevel;
+            numExperience.Value = _unit.Experience;
+            numBoots.Value = Model.Unit.FixBoots(_unit.Boots);
 
             BindEventHandlers();
             this.Refresh();
@@ -103,36 +103,36 @@ namespace FEFTwiddler.GUI.UnitViewer
         {
             var cmb = (ComboBox)sender;
 
-            _character.ClassID = (Enums.Class)cmb.SelectedValue;
+            _unit.ClassID = (Enums.Class)cmb.SelectedValue;
 
             // Unlock the DLC class for heart sealing for later
-            if (_character.ClassID == Enums.Class.PegasusKnight) _character.HeartSeal_PegasusKnight = true;
+            if (_unit.ClassID == Enums.Class.PegasusKnight) _unit.HeartSeal_PegasusKnight = true;
 
             // If they changed to a class with a lower max level, drop the level to the new max
-            var maxLevel = _character.GetModifiedMaxLevel();
-            if (_character.Level > maxLevel)
+            var maxLevel = _unit.GetModifiedMaxLevel();
+            if (_unit.Level > maxLevel)
             {
                 numLevel.Value = maxLevel;
-                _character.Level = maxLevel;
+                _unit.Level = maxLevel;
             }
         }
 
         private void UpdateLevel(object sender, EventArgs e)
         {
-            _character.Level = (byte)numLevel.Value;
+            _unit.Level = (byte)numLevel.Value;
 
-            var minEternalSeals = _character.GetMinimumEternalSealsForCurrentLevel();
-            if (_character.EternalSealsUsed < minEternalSeals)
+            var minEternalSeals = _unit.GetMinimumEternalSealsForCurrentLevel();
+            if (_unit.EternalSealsUsed < minEternalSeals)
             {
                 numEternalSeals.Value = minEternalSeals;
-                _character.EternalSealsUsed = minEternalSeals;
+                _unit.EternalSealsUsed = minEternalSeals;
             }
 
-            var maxLevel = _character.GetModifiedMaxLevel();
-            if (_character.Level == maxLevel)
+            var maxLevel = _unit.GetModifiedMaxLevel();
+            if (_unit.Level == maxLevel)
             {
                 numExperience.Value = 0;
-                _character.Experience = 0;
+                _unit.Experience = 0;
                 numExperience.Enabled = false;
             }
             else
@@ -143,24 +143,24 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void UpdateInternalLevel(object sender, EventArgs e)
         {
-            _character.InternalLevel = (byte)numInternalLevel.Value;
+            _unit.InternalLevel = (byte)numInternalLevel.Value;
         }
 
         private void UpdateEternalSeals(object sender, EventArgs e)
         {
-            _character.EternalSealsUsed = (byte)numEternalSeals.Value;
+            _unit.EternalSealsUsed = (byte)numEternalSeals.Value;
 
-            var maxLevel = _character.GetModifiedMaxLevel();
-            if (_character.Level > maxLevel)
+            var maxLevel = _unit.GetModifiedMaxLevel();
+            if (_unit.Level > maxLevel)
             {
                 numLevel.Value = maxLevel;
-                _character.Level = maxLevel;
+                _unit.Level = maxLevel;
             }
 
-            if (_character.Level == maxLevel)
+            if (_unit.Level == maxLevel)
             {
                 numExperience.Value = 0;
-                _character.Experience = 0;
+                _unit.Experience = 0;
                 numExperience.Enabled = false;
             }
             else
@@ -171,12 +171,12 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void UpdateExperience(object sender, EventArgs e)
         {
-            _character.Experience = (byte)numExperience.Value;
+            _unit.Experience = (byte)numExperience.Value;
         }
 
         private void UpdateBoots(object sender, EventArgs e)
         {
-            _character.Boots = (byte)numBoots.Value;
+            _unit.Boots = (byte)numBoots.Value;
         }
     }
 }

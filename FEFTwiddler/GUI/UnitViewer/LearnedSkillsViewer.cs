@@ -10,19 +10,19 @@ namespace FEFTwiddler.GUI.UnitViewer
 {
     public partial class LearnedSkillsViewer : Form
     {
-        private Model.Character _character;
+        private Model.Unit _unit;
         private Model.LearnedSkills _tempLearnedSkills;
 
-        public LearnedSkillsViewer(Model.Character character)
+        public LearnedSkillsViewer(Model.Unit unit)
         {
-            _character = character;
-            _tempLearnedSkills = new Model.LearnedSkills(_character.LearnedSkills.Raw.ToArray());
+            _unit = unit;
+            _tempLearnedSkills = new Model.LearnedSkills(_unit.LearnedSkills.Raw.ToArray());
             InitializeComponent();
         }
 
         private void LearnedSkills_Load(object sender, EventArgs e)
         {
-            this.Text = "Learned Skills for " + Data.Database.Characters.GetByID(_character.CharacterID).DisplayName;
+            this.Text = "Learned Skills for " + Data.Database.Characters.GetByID(_unit.CharacterID).DisplayName;
 
             var allSkills = Data.Database.Skills.GetAllLearnable().Where((x) => x.SkillID != Enums.Skill.None).OrderBy((x) => x.DisplayName);
             IEnumerable<Data.Skill> someSkills;
@@ -123,7 +123,7 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            _character.LearnedSkills = _tempLearnedSkills;
+            _unit.LearnedSkills = _tempLearnedSkills;
             this.Close();
         }
 

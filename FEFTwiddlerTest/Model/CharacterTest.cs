@@ -14,7 +14,7 @@ namespace FEFTwiddlerTest.Model
         {
             byte expected; byte actual;
 
-            var character = Character.Create();
+            var character = Unit.Create();
             character.CharacterID = FEFTwiddler.Enums.Character.Felicia;
             character.ClassID = FEFTwiddler.Enums.Class.Maid;
             character.InternalLevel = 0;
@@ -37,7 +37,7 @@ namespace FEFTwiddlerTest.Model
         {
             byte expected; byte actual;
 
-            var character = Character.Create();
+            var character = Unit.Create();
             character.CharacterID = FEFTwiddler.Enums.Character.Flora;
             character.ClassID = FEFTwiddler.Enums.Class.Maid;
             character.InternalLevel = 20;
@@ -60,7 +60,7 @@ namespace FEFTwiddlerTest.Model
         {
             byte expected; byte actual;
 
-            var character = Character.Create();
+            var character = Unit.Create();
             character.CharacterID = FEFTwiddler.Enums.Character.Elise;
             character.ClassID = FEFTwiddler.Enums.Class.Troubadour_F;
             character.InternalLevel = 0;
@@ -83,7 +83,7 @@ namespace FEFTwiddlerTest.Model
         {
             byte expected; byte actual;
 
-            var character = Character.Create();
+            var character = Unit.Create();
             character.CharacterID = FEFTwiddler.Enums.Character.Felicia;
             character.ClassID = FEFTwiddler.Enums.Class.Maid;
             character.InternalLevel = 0;
@@ -124,7 +124,7 @@ namespace FEFTwiddlerTest.Model
         {
             byte expected; byte actual;
 
-            var character = Character.Create();
+            var character = Unit.Create();
             character.CharacterID = FEFTwiddler.Enums.Character.Flora;
             character.ClassID = FEFTwiddler.Enums.Class.Maid;
             character.InternalLevel = 20;
@@ -165,7 +165,7 @@ namespace FEFTwiddlerTest.Model
         {
             byte expected; byte actual;
 
-            var character = Character.Create();
+            var character = Unit.Create();
             character.CharacterID = FEFTwiddler.Enums.Character.Elise;
             character.ClassID = FEFTwiddler.Enums.Class.Troubadour_F;
             character.InternalLevel = 0;

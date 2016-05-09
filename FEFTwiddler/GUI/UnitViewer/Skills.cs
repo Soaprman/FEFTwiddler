@@ -12,7 +12,7 @@ namespace FEFTwiddler.GUI.UnitViewer
     [Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", typeof(IDesigner))]
     public partial class Skills : UserControl
     {
-        private Model.Character _character;
+        private Model.Unit _unit;
 
         public Skills()
         {
@@ -20,10 +20,10 @@ namespace FEFTwiddler.GUI.UnitViewer
             InitializeControls();
         }
 
-        public void LoadCharacter(Model.Character character)
+        public void LoadCharacter(Model.Unit unit)
         {
-            if (character == null) return;
-            _character = character;
+            if (unit == null) return;
+            _unit = unit;
             PopulateControls();
         }
 
@@ -87,18 +87,18 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void btnEditLearnedSkills_Click(object sender, EventArgs e)
         {
-            var popup = new GUI.UnitViewer.LearnedSkillsViewer(_character);
+            var popup = new GUI.UnitViewer.LearnedSkillsViewer(_unit);
             popup.ShowDialog();
-            _character.UnequipUnlearnedSkills();
+            _unit.UnequipUnlearnedSkills();
             PopulateControls();
         }
 
         private IEnumerable<Data.Skill> GetSkillDataSource()
         {
-            if (_character == null) return new List<Data.Skill>();
+            if (_unit == null) return new List<Data.Skill>();
 
             return Data.Database.Skills.GetAllLearnable()
-                .Where((x) => _character.LearnedSkills.Contains(x.SkillID) || x.SkillID == Enums.Skill.None)
+                .Where((x) => _unit.LearnedSkills.Contains(x.SkillID) || x.SkillID == Enums.Skill.None)
                 .OrderBy((x) => x.DisplayName)
                 .ToList();
         }
@@ -155,23 +155,23 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void ReadEquippedSkills()
         {
-            cmbSkill1.SelectedValue = _character.EquippedSkill_1;
+            cmbSkill1.SelectedValue = _unit.EquippedSkill_1;
             if (cmbSkill1.Text == "") cmbSkill1.SelectedValue = Enums.Skill.None;
             UpdateSkillImage1();
 
-            cmbSkill2.SelectedValue = _character.EquippedSkill_2;
+            cmbSkill2.SelectedValue = _unit.EquippedSkill_2;
             if (cmbSkill2.Text == "") cmbSkill2.SelectedValue = Enums.Skill.None;
             UpdateSkillImage2();
 
-            cmbSkill3.SelectedValue = _character.EquippedSkill_3;
+            cmbSkill3.SelectedValue = _unit.EquippedSkill_3;
             if (cmbSkill3.Text == "") cmbSkill3.SelectedValue = Enums.Skill.None;
             UpdateSkillImage3();
 
-            cmbSkill4.SelectedValue = _character.EquippedSkill_4;
+            cmbSkill4.SelectedValue = _unit.EquippedSkill_4;
             if (cmbSkill4.Text == "") cmbSkill4.SelectedValue = Enums.Skill.None;
             UpdateSkillImage4();
 
-            cmbSkill5.SelectedValue = _character.EquippedSkill_5;
+            cmbSkill5.SelectedValue = _unit.EquippedSkill_5;
             if (cmbSkill5.Text == "") cmbSkill5.SelectedValue = Enums.Skill.None;
             UpdateSkillImage5();
         }
@@ -207,13 +207,13 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void WriteEquippedSkills()
         {
-            _character.EquippedSkill_1 = (Enums.Skill)cmbSkill1.SelectedValue;
-            _character.EquippedSkill_2 = (Enums.Skill)cmbSkill2.SelectedValue;
-            _character.EquippedSkill_3 = (Enums.Skill)cmbSkill3.SelectedValue;
-            _character.EquippedSkill_4 = (Enums.Skill)cmbSkill4.SelectedValue;
-            _character.EquippedSkill_5 = (Enums.Skill)cmbSkill5.SelectedValue;
+            _unit.EquippedSkill_1 = (Enums.Skill)cmbSkill1.SelectedValue;
+            _unit.EquippedSkill_2 = (Enums.Skill)cmbSkill2.SelectedValue;
+            _unit.EquippedSkill_3 = (Enums.Skill)cmbSkill3.SelectedValue;
+            _unit.EquippedSkill_4 = (Enums.Skill)cmbSkill4.SelectedValue;
+            _unit.EquippedSkill_5 = (Enums.Skill)cmbSkill5.SelectedValue;
 
-            _character.CollapseEquippedSkills();
+            _unit.CollapseEquippedSkills();
         }
 
         #endregion

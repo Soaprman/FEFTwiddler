@@ -13,7 +13,7 @@ namespace FEFTwiddler.Utils
         /// </summary>
         /// <param name="character"></param>
         /// <returns></returns>
-        public static Model.Stat CalculateBaseStats(Model.Character character)
+        public static Model.Stat CalculateBaseStats(Model.Unit character)
         {
             Model.Stat baseStats = new Model.Stat();
             if (!Enum.IsDefined(typeof(Enums.Character), character.CharacterID) ||
@@ -47,7 +47,7 @@ namespace FEFTwiddler.Utils
         /// Calculate the true stats for a character
         /// </summary>
         /// <returns>A character's true stats</returns>
-        public static Model.Stat CalculateTrueStats(Model.Character character)
+        public static Model.Stat CalculateTrueStats(Model.Unit character)
         {
             Model.Stat baseStats = CalculateBaseStats(character);
             if (baseStats != null)
@@ -60,7 +60,7 @@ namespace FEFTwiddler.Utils
         /// Calculate stat caps for a character
         /// </summary>
         /// <returns>Character's stat caps</returns>
-        public static Model.Stat CalculateStatCaps(Model.Character character)
+        public static Model.Stat CalculateStatCaps(Model.Unit character)
         {
             if (!Enum.IsDefined(typeof(Enums.Character), character.CharacterID) ||
                 !Enum.IsDefined(typeof(Enums.Class), character.ClassID))
@@ -104,7 +104,7 @@ namespace FEFTwiddler.Utils
         /// Calculate stats for a character
         /// </summary>
         /// <returns>Character's stats</returns>
-        public static Model.Stat CalculateStats(Model.Character character)
+        public static Model.Stat CalculateStats(Model.Unit character)
         {
             Model.Stat stats = new Model.Stat();
             Model.Stat trueStats = CalculateTrueStats(character);

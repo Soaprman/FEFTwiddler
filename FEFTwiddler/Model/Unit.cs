@@ -5,57 +5,57 @@ using FEFTwiddler.Extensions;
 
 namespace FEFTwiddler.Model
 {
-    public class Character
+    public class Unit
     {
         #region Creation
 
         /// <summary>
-        /// Create a new blank character
+        /// Create a new blank unit
         /// </summary>
-        public static Character Create()
+        public static Unit Create()
         {
-            var character = new Character();
-            character.RawBlock1 = new byte[RawBlock1Length];
-            character.RawInventory = new byte[RawInventoryLength];
-            character.RawNumberOfSupports = 0x00;
-            character.RawSupports = new byte[character.RawNumberOfSupports];
-            character.RawBlock2 = new byte[RawBlock2Length];
-            character.RawLearnedSkills = new byte[RawLearnedSkillsLength];
-            character.RawBlock3 = new byte[RawBlock3Length];
-            character.RawEndBlockType = 0x00;
-            character.RawEndBlock = new byte[0x00];
-            character.Initialize();
+            var unit = new Unit();
+            unit.RawBlock1 = new byte[RawBlock1Length];
+            unit.RawInventory = new byte[RawInventoryLength];
+            unit.RawNumberOfSupports = 0x00;
+            unit.RawSupports = new byte[unit.RawNumberOfSupports];
+            unit.RawBlock2 = new byte[RawBlock2Length];
+            unit.RawLearnedSkills = new byte[RawLearnedSkillsLength];
+            unit.RawBlock3 = new byte[RawBlock3Length];
+            unit.RawEndBlockType = 0x00;
+            unit.RawEndBlock = new byte[0x00];
+            unit.Initialize();
             // These go after Initialize because it sets stuff like IsDeployed
-            character.RawDeployedUnitInfo = new byte[(character.UnitBlock == UnitBlock.Deployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed)];
-            return character;
+            unit.RawDeployedUnitInfo = new byte[(unit.UnitBlock == UnitBlock.Deployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed)];
+            return unit;
         }
 
         /// <summary>
-        /// Create a new "base" version of the given character
+        /// Create a new "base" version of the given unit based on the unit's character data
         /// </summary>
-        public static Character Create(Enums.Character characterId)
+        public static Unit Create(Enums.Character characterId)
         {
             var characterData = Data.Database.Characters.GetByID(characterId);
 
-            var character = new Character();
-            character.RawBlock1 = new byte[RawBlock1Length];
-            character.CharacterID = characterId;
-            character.RawInventory = new byte[RawInventoryLength];
-            character.RawNumberOfSupports = characterData.MainSupportCount;
-            character.RawSupports = new byte[character.RawNumberOfSupports];
-            character.RawBlock2 = new byte[RawBlock2Length];
-            character.RawLearnedSkills = new byte[RawLearnedSkillsLength];
-            character.RawBlock3 = new byte[RawBlock3Length];
-            character.RawEndBlockType = characterData.EndBlockType;
-            character.RawEndBlock = new byte[GetRawEndBlockSizeByType(character.RawEndBlockType)];
-            character.Initialize();
+            var unit = new Unit();
+            unit.RawBlock1 = new byte[RawBlock1Length];
+            unit.CharacterID = characterId;
+            unit.RawInventory = new byte[RawInventoryLength];
+            unit.RawNumberOfSupports = characterData.MainSupportCount;
+            unit.RawSupports = new byte[unit.RawNumberOfSupports];
+            unit.RawBlock2 = new byte[RawBlock2Length];
+            unit.RawLearnedSkills = new byte[RawLearnedSkillsLength];
+            unit.RawBlock3 = new byte[RawBlock3Length];
+            unit.RawEndBlockType = characterData.EndBlockType;
+            unit.RawEndBlock = new byte[GetRawEndBlockSizeByType(unit.RawEndBlockType)];
+            unit.Initialize();
             // These go after Initialize because it sets stuff like IsDeployed
-            character.RawDeployedUnitInfo = new byte[(character.UnitBlock == UnitBlock.Deployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed)];
-            return character;
+            unit.RawDeployedUnitInfo = new byte[(unit.UnitBlock == UnitBlock.Deployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed)];
+            return unit;
         }
 
         /// <summary>
-        /// Applies values to a character that are known to be the same among all characters
+        /// Applies values to a unit that are known to be the same among all units
         /// </summary>
         public void Initialize()
         {
@@ -181,7 +181,7 @@ namespace FEFTwiddler.Model
             }
             set
             {
-                if (value.Length != RawBlock1Length) throw new ArgumentException("Character block 1 must be " + RawBlock1Length + " bytes in length");
+                if (value.Length != RawBlock1Length) throw new ArgumentException("Unit block 1 must be " + RawBlock1Length + " bytes in length");
                 _rawBlock1 = value;
                 _gainedStats = new Stat(_rawBlock1.Skip(0x1F).Take(0x08).ToArray());
                 _statueBonusStats = new Stat(_rawBlock1.Skip(0x27).Take(0x08).ToArray());
@@ -202,7 +202,7 @@ namespace FEFTwiddler.Model
             }
             set
             {
-                if (value.Length != RawInventoryLength) throw new ArgumentException("Character inventory block must be " + RawInventoryLength + " bytes in length");
+                if (value.Length != RawInventoryLength) throw new ArgumentException("Unit inventory block must be " + RawInventoryLength + " bytes in length");
                 Item_1 = new InventoryItem(value.Skip(0x01).Take(0x04).ToArray());
                 Item_2 = new InventoryItem(value.Skip(0x06).Take(0x04).ToArray());
                 Item_3 = new InventoryItem(value.Skip(0x0B).Take(0x04).ToArray());
@@ -219,7 +219,7 @@ namespace FEFTwiddler.Model
             get { return _rawSupports; }
             set
             {
-                if (value.Length != RawNumberOfSupports) throw new ArgumentException("Character support block is not equal to RawNumberOfSupports");
+                if (value.Length != RawNumberOfSupports) throw new ArgumentException("Unit support block is not equal to RawNumberOfSupports");
                 _rawSupports = value;
             }
         }
@@ -231,7 +231,7 @@ namespace FEFTwiddler.Model
             get { return _rawBlock2; }
             set
             {
-                if (value.Length != RawBlock2Length) throw new ArgumentException("Character block 2 must be " + RawBlock2Length + " bytes in length");
+                if (value.Length != RawBlock2Length) throw new ArgumentException("Unit block 2 must be " + RawBlock2Length + " bytes in length");
                 _rawBlock2 = value;
             }
         }
@@ -245,7 +245,7 @@ namespace FEFTwiddler.Model
             }
             set
             {
-                if (value.Length != RawLearnedSkillsLength) throw new ArgumentException("Character learned skills block must be " + RawLearnedSkillsLength + " bytes in length");
+                if (value.Length != RawLearnedSkillsLength) throw new ArgumentException("Unit learned skills block must be " + RawLearnedSkillsLength + " bytes in length");
                 LearnedSkills = new Model.LearnedSkills(value);
             }
         }
@@ -259,7 +259,7 @@ namespace FEFTwiddler.Model
             set
             {
                 var length = (UnitBlock == UnitBlock.Deployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed);
-                if (value.Length != length) throw new ArgumentException("Character deployed unit info block must be " + length + " bytes in length");
+                if (value.Length != length) throw new ArgumentException("Unit deployed unit info block must be " + length + " bytes in length");
                 _rawDeployedUnitInfo = value;
             }
         }
@@ -271,7 +271,7 @@ namespace FEFTwiddler.Model
             get { return _rawBlock3; }
             set
             {
-                if (value.Length != RawBlock3Length) throw new ArgumentException("Character block 3 must be " + RawBlock3Length + " bytes in length");
+                if (value.Length != RawBlock3Length) throw new ArgumentException("Unit block 3 must be " + RawBlock3Length + " bytes in length");
                 _rawBlock3 = value;
             }
         }
@@ -308,8 +308,8 @@ namespace FEFTwiddler.Model
         #region Meta Properties
 
         /* These are properties that are either:
-         * - Derived from other properties that exist in the character data, but have no bits themselves
-         * - Do not exist in the character data, and are set by the calling code
+         * - Derived from other properties that exist in the unit data, but have no bits themselves
+         * - Do not exist in the unit data, and are set by the calling code
          * */
 
         /// <summary>
@@ -663,8 +663,8 @@ namespace FEFTwiddler.Model
 
         // Thirteen unknown bytes (0x17 through 0x23)
         // First one seems to always be 00? Need to double-check
-        // Next eight seem constant on a per-character basis. Corrin (M) and Sakura have the same values in my BR and RV saves
-        // In fact, those eight are the same on all characters I've seen. Values: 24 82 25 21 24 C3 4A 16
+        // Next eight seem constant on a per-unit basis. Corrin (M) and Sakura have the same values in my BR and RV saves
+        // In fact, those eight are the same on all units I've seen. Values: 24 82 25 21 24 C3 4A 16
         // Next four seem random...ish. Could be a separate RNG? Maybe for voice clips or something.
 
         /// <summary>Its purpose is unknown, but it always seems to be either 75, 76, or 77</summary>
@@ -785,7 +785,7 @@ namespace FEFTwiddler.Model
 
         #region Deployed Unit Info Properties
 
-        // Extra data on deployed characters in battle prep saves.
+        // Extra data on deployed units in battle prep saves.
         // Might contain debuffs, status effects, and other battle-specific status info
         // This is what it looks like in my "030_Chapter1" save:
         // 00 00 00 00 00 FF FF 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
@@ -926,7 +926,7 @@ namespace FEFTwiddler.Model
 
         private void VerifyEndBlockSizeIfCorrin()
         {
-            if (_rawEndBlock.Length != GetRawEndBlockSizeByType(0x04)) throw new MissingFieldException("Field does not exist in this character's end block");
+            if (_rawEndBlock.Length != GetRawEndBlockSizeByType(0x04)) throw new MissingFieldException("Field does not exist in this unit's end block");
         }
 
         #endregion
@@ -1021,7 +1021,7 @@ namespace FEFTwiddler.Model
 
         private void VerifyEndBlockSizeIfChild()
         {
-            if (_rawEndBlock.Length != GetRawEndBlockSizeByType(0x01)) throw new MissingFieldException("Field does not exist in this character's end block");
+            if (_rawEndBlock.Length != GetRawEndBlockSizeByType(0x01)) throw new MissingFieldException("Field does not exist in this unit's end block");
         }
 
         #endregion
@@ -1077,7 +1077,7 @@ namespace FEFTwiddler.Model
         public static byte MaxBoots = 0x02;
 
         /// <summary>
-        /// Get this character's max level, unmodified by eternal seals
+        /// Get this unit's max level, unmodified by eternal seals
         /// </summary>
         public byte GetBaseMaxLevel()
         {
@@ -1089,7 +1089,7 @@ namespace FEFTwiddler.Model
         }
 
         /// <summary>
-        /// Get this character's max level after taking eternal seals into consideration
+        /// Get this unit's max level after taking eternal seals into consideration
         /// </summary>
         /// <returns></returns>
         public byte GetModifiedMaxLevel()
@@ -1102,7 +1102,7 @@ namespace FEFTwiddler.Model
         }
 
         /// <summary>
-        /// Get the max possible level this character could attain
+        /// Get the max possible level this unit could attain
         /// </summary>
         public byte GetTheoreticalMaxLevel()
         {

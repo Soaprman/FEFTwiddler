@@ -47,7 +47,7 @@ namespace FEFTwiddler.Model.NewGamePlus
                         .RandomElement(_rng);
 
                     items.Add(InventoryItem.FromID(weapon.ItemID));
-                    unit.WeaponExperience_Sword = Character.WeaponExperienceForRankB;
+                    unit.WeaponExperience_Sword = Unit.WeaponExperienceForRankB;
                 }
 
                 if (classData.UsesLance)
@@ -57,7 +57,7 @@ namespace FEFTwiddler.Model.NewGamePlus
                         .RandomElement(_rng);
 
                     items.Add(InventoryItem.FromID(weapon.ItemID));
-                    unit.WeaponExperience_Lance = Character.WeaponExperienceForRankB;
+                    unit.WeaponExperience_Lance = Unit.WeaponExperienceForRankB;
                 }
 
                 if (classData.UsesAxe)
@@ -67,7 +67,7 @@ namespace FEFTwiddler.Model.NewGamePlus
                         .RandomElement(_rng);
 
                     items.Add(InventoryItem.FromID(weapon.ItemID));
-                    unit.WeaponExperience_Axe = Character.WeaponExperienceForRankB;
+                    unit.WeaponExperience_Axe = Unit.WeaponExperienceForRankB;
                 }
 
                 if (classData.UsesShuriken)
@@ -77,7 +77,7 @@ namespace FEFTwiddler.Model.NewGamePlus
                         .RandomElement(_rng);
 
                     items.Add(InventoryItem.FromID(weapon.ItemID));
-                    unit.WeaponExperience_Shuriken = Character.WeaponExperienceForRankB;
+                    unit.WeaponExperience_Shuriken = Unit.WeaponExperienceForRankB;
                 }
 
                 if (classData.UsesBow)
@@ -87,7 +87,7 @@ namespace FEFTwiddler.Model.NewGamePlus
                         .RandomElement(_rng);
 
                     items.Add(InventoryItem.FromID(weapon.ItemID));
-                    unit.WeaponExperience_Bow = Character.WeaponExperienceForRankB;
+                    unit.WeaponExperience_Bow = Unit.WeaponExperienceForRankB;
                 }
 
                 if (classData.UsesTome)
@@ -97,7 +97,7 @@ namespace FEFTwiddler.Model.NewGamePlus
                         .RandomElement(_rng);
 
                     items.Add(InventoryItem.FromID(weapon.ItemID));
-                    unit.WeaponExperience_Tome = Character.WeaponExperienceForRankB;
+                    unit.WeaponExperience_Tome = Unit.WeaponExperienceForRankB;
                 }
 
                 if (classData.UsesStaff)
@@ -107,7 +107,7 @@ namespace FEFTwiddler.Model.NewGamePlus
                         .RandomElement(_rng);
 
                     items.Add(InventoryItem.FromID(weapon.ItemID));
-                    unit.WeaponExperience_Staff = Character.WeaponExperienceForRankB;
+                    unit.WeaponExperience_Staff = Unit.WeaponExperienceForRankB;
                 }
 
                 if (classData.UsesStone)
@@ -117,7 +117,7 @@ namespace FEFTwiddler.Model.NewGamePlus
                         .RandomElement(_rng);
 
                     items.Add(InventoryItem.FromID(weapon.ItemID));
-                    unit.WeaponExperience_Stone = Character.WeaponExperienceForRankB;
+                    unit.WeaponExperience_Stone = Unit.WeaponExperienceForRankB;
                 }
 
                 // Maybe a healing item too. Or some other consumable. Have fun!

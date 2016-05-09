@@ -9,7 +9,7 @@ namespace FEFTwiddler.GUI.UnitViewer
     public partial class Flags : UserControl
     {
         private ToolTip _tooltip = new ToolTip();
-        private Model.Character _character;
+        private Model.Unit _unit;
 
         public Flags()
         {
@@ -17,9 +17,9 @@ namespace FEFTwiddler.GUI.UnitViewer
             InitializeControls();
         }
 
-        public void LoadCharacter(Model.Character character)
+        public void LoadCharacter(Model.Unit unit)
         {
-            _character = character;
+            _unit = unit;
             PopulateControls();
         }
 
@@ -34,8 +34,8 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void PopulateControls()
         {
-            chkEinherjar.Checked = _character.IsEinherjar;
-            chkRecruited.Checked = _character.IsRecruited;
+            chkEinherjar.Checked = _unit.IsEinherjar;
+            chkRecruited.Checked = _unit.IsRecruited;
         }
 
         public void HandleEinherjarChecked(object sender, EventArgs e)
@@ -46,7 +46,7 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void UpdateEinherjar(bool isEinherjar)
         {
-            _character.IsEinherjar = isEinherjar;
+            _unit.IsEinherjar = isEinherjar;
         }
 
         public void HandleRecruitedChecked(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void UpdateRecruited(bool isRecruited)
         {
-            _character.IsRecruited = isRecruited;
+            _unit.IsRecruited = isRecruited;
         }
     }
 }

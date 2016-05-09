@@ -288,7 +288,7 @@
     <Compile Include="Model\ChapterSaveRegions\UnitRegion.cs" />
     <Compile Include="Model\ChapterSaveRegions\UserRegion.cs" />
     <Compile Include="Model\ChapterSaveRegions\WeaponNameRegion.cs" />
-    <Compile Include="Model\Character.cs" />
+    <Compile Include="Model\Unit.cs" />
     <Compile Include="Model\Cheats.cs" />
     <Compile Include="Model\ConvoyItem.cs" />
     <Compile Include="Model\GlobalSave.cs" />

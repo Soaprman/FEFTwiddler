@@ -12,26 +12,26 @@ namespace FEFTwiddler.GUI.UnitViewer
 {
     public partial class StatEditor : Form
     {
-        private Model.Character _character;
+        private Model.Unit _unit;
         private Model.Stat caps;
 
         public bool IsStatsChanged = false;
 
-        public StatEditor(Model.Character character)
+        public StatEditor(Model.Unit unit)
         {
-            _character = character;
+            _unit = unit;
             InitializeComponent();
             SetTitle();
         }
 
         private void SetTitle()
         {
-            if (Enum.IsDefined(typeof(Enums.Character), _character.CharacterID))
+            if (Enum.IsDefined(typeof(Enums.Character), _unit.CharacterID))
             {
-                if (_character.CorrinName == null)
-                    this.Text = Data.Database.Characters.GetByID(_character.CharacterID).DisplayName + "'s stats";
+                if (_unit.CorrinName == null)
+                    this.Text = Data.Database.Characters.GetByID(_unit.CharacterID).DisplayName + "'s stats";
                 else
-                    this.Text =  _character.CorrinName + "'s stats";
+                    this.Text =  _unit.CorrinName + "'s stats";
             }
             else
             {
@@ -53,8 +53,8 @@ namespace FEFTwiddler.GUI.UnitViewer
             lblRes.Text = statData.GetByID(Enums.Stat.Resistance).DisplayName;
 
             // Stats
-            caps = Utils.StatUtil.CalculateStatCaps(_character);
-            Model.Stat stats = Utils.StatUtil.CalculateStats(_character);
+            caps = Utils.StatUtil.CalculateStatCaps(_unit);
+            Model.Stat stats = Utils.StatUtil.CalculateStats(_unit);
 
             numHP.Maximum = caps.HP;
             numStr.Maximum = caps.Str;
@@ -75,7 +75,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             numRes.Value = stats.Res;
 
             // Tonic
-            Model.Stat tonicBonuses = _character.TonicBonusStats;
+            Model.Stat tonicBonuses = _unit.TonicBonusStats;
             chkHPTonic.Checked = (tonicBonuses.HP == 5);
             chkStrTonic.Checked = (tonicBonuses.Str == 2);
             chkMagTonic.Checked = (tonicBonuses.Mag == 2);
@@ -86,7 +86,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             chkResTonic.Checked = (tonicBonuses.Res == 2);
 
             // Status
-            Model.Stat statusBonuses = _character.StatusBonusStats;
+            Model.Stat statusBonuses = _unit.StatusBonusStats;
             chkStrStatus.Checked = (statusBonuses.Str == 4);
             chkMagStatus.Checked = (statusBonuses.Mag == 4);
             chkSklStatus.Checked = (statusBonuses.Skl == 4);
@@ -96,7 +96,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             chkResStatus.Checked = (statusBonuses.Res == 4);
 
             // Meal
-            Model.Stat mealBonuses = _character.MealBonusStats;
+            Model.Stat mealBonuses = _unit.MealBonusStats;
             SetMealCheckBox(chkStrMeal, mealBonuses.Str);
             SetMealCheckBox(chkMagMeal, mealBonuses.Mag);
             SetMealCheckBox(chkSklMeal, mealBonuses.Skl);
@@ -117,7 +117,7 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Model.Stat baseStats = Utils.StatUtil.CalculateBaseStats(_character);
+            Model.Stat baseStats = Utils.StatUtil.CalculateBaseStats(_unit);
             Model.Stat changes = new Model.Stat
             {
                 HP = (sbyte)numHP.Value,
@@ -129,7 +129,7 @@ namespace FEFTwiddler.GUI.UnitViewer
                 Def = (sbyte)numDef.Value,
                 Res = (sbyte)numRes.Value
             } - baseStats;
-            Model.Stat finalStats = _character.GainedStats;
+            Model.Stat finalStats = _unit.GainedStats;
 
             if (changes.HP != 0) { finalStats.HP = changes.HP; IsStatsChanged = true; }
             if (changes.Str != 0) { finalStats.Str = changes.Str; IsStatsChanged = true; }
@@ -139,7 +139,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             if (changes.Lck != 0) { finalStats.Lck = changes.Lck; IsStatsChanged = true; }
             if (changes.Def != 0) { finalStats.Def = changes.Def; IsStatsChanged = true; }
             if (changes.Res != 0) { finalStats.Res = changes.Res; IsStatsChanged = true; }
-            _character.GainedStats = finalStats;
+            _unit.GainedStats = finalStats;
 
             // Tonic
             Model.Stat tonicBonuses = new Model.Stat()
@@ -153,7 +153,7 @@ namespace FEFTwiddler.GUI.UnitViewer
                 Def = chkDefTonic.Checked ? (sbyte)2 : (sbyte)0,
                 Res = chkResTonic.Checked ? (sbyte)2 : (sbyte)0
             };
-            _character.TonicBonusStats = tonicBonuses;
+            _unit.TonicBonusStats = tonicBonuses;
 
             // Status
             Model.Stat statusBonuses = new Model.Stat()
@@ -167,10 +167,10 @@ namespace FEFTwiddler.GUI.UnitViewer
                 Def = chkDefStatus.Checked ? (sbyte)4 : (sbyte)0,
                 Res = chkResStatus.Checked ? (sbyte)4 : (sbyte)0
             };
-            _character.StatusBonusStats = statusBonuses;
+            _unit.StatusBonusStats = statusBonuses;
 
             // Meal
-            Model.Stat oldMealBonuses = _character.MealBonusStats;
+            Model.Stat oldMealBonuses = _unit.MealBonusStats;
             Model.Stat newMealBonuses = new Model.Stat()
             {
                 HP = 0,
@@ -182,7 +182,7 @@ namespace FEFTwiddler.GUI.UnitViewer
                 Def = GetMealCheckBox(chkDefMeal, oldMealBonuses.Def),
                 Res = 0
             };
-            _character.MealBonusStats = newMealBonuses;
+            _unit.MealBonusStats = newMealBonuses;
 
             this.Close();
         }
