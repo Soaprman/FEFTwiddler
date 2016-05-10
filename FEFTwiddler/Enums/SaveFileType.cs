@@ -6,6 +6,7 @@
         Chapter,
         Exchange,
         Global,
-        Rating
+        Rating,
+        Versus
     }
 }

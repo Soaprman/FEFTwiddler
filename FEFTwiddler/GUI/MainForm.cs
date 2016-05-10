@@ -450,9 +450,12 @@ namespace FEFTwiddler.GUI
 
                 var saveFile = Model.SaveFile.FromPath(openFileDialog1.FileName);
 
-                if (saveFile.Type != Enums.SaveFileType.Chapter && saveFile.Type != Enums.SaveFileType.Global)
+                if (!(saveFile.Type == Enums.SaveFileType.Chapter || 
+                    saveFile.Type == Enums.SaveFileType.Global || 
+                    saveFile.Type == Enums.SaveFileType.Exchange ||
+                    saveFile.Type == Enums.SaveFileType.Versus))
                 {
-                    MessageBox.Show("This type of save is not supported yet. Only 'Chapter' and 'Global' saves are supported right now.");
+                    MessageBox.Show("This type of save is not supported yet. Only 'Chapter', 'Global', 'Exchange', and 'Versus' saves are supported by the compression/decompression right now.");
                     return;
                 }
 
@@ -477,9 +480,12 @@ namespace FEFTwiddler.GUI
 
                 var saveFile = Model.SaveFile.FromPath(openFileDialog1.FileName);
 
-                if (saveFile.Type != Enums.SaveFileType.Chapter && saveFile.Type != Enums.SaveFileType.Global)
+                if (!(saveFile.Type == Enums.SaveFileType.Chapter ||
+                    saveFile.Type == Enums.SaveFileType.Global ||
+                    saveFile.Type == Enums.SaveFileType.Exchange ||
+                    saveFile.Type == Enums.SaveFileType.Versus))
                 {
-                    MessageBox.Show("This type of save is not supported yet. Only 'Chapter' and 'Global' saves are supported right now.");
+                    MessageBox.Show("This type of save is not supported yet. Only 'Chapter', 'Global', 'Exchange', and 'Versus' saves are supported by the compression/decompression right now.");
                     return;
                 }
 

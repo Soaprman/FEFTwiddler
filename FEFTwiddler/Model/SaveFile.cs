@@ -141,6 +141,7 @@ namespace FEFTwiddler.Model
             if (_inputFilePath.IndexOf("Exchange") > -1) _type = Enums.SaveFileType.Exchange;
             else if (_inputFilePath.IndexOf("Global") > -1) _type = Enums.SaveFileType.Global;
             else if (_inputFilePath.IndexOf("Rating") > -1) _type = Enums.SaveFileType.Rating;
+            else if (_inputFilePath.IndexOf("Versus") > -1) _type = Enums.SaveFileType.Versus;
             else _type = Enums.SaveFileType.Unknown;
         }
 
@@ -198,6 +199,7 @@ namespace FEFTwiddler.Model
                     case Enums.SaveFileType.Exchange: WriteExchangeFile(bw); break;
                     case Enums.SaveFileType.Global: WriteGlobalFile(bw); break;
                     case Enums.SaveFileType.Rating: WriteRatingFile(bw); break;
+                    case Enums.SaveFileType.Versus: WriteVersusFile(bw); break;
                 }
             }
         }
@@ -240,7 +242,26 @@ namespace FEFTwiddler.Model
 
         private void WriteExchangeFile(BinaryWriter bw)
         {
-            throw new NotImplementedException();
+            if (_isCompressed)
+            {
+                bw.Write(GetExchangeHeader(DecompressedBytes));
+                bw.Write(Compress(DecompressedBytes.ToArray()));
+            }
+            else
+            {
+                bw.Write(DecompressedBytes);
+            }
+        }
+
+        private byte[] GetExchangeHeader(byte[] decompressedBytes)
+        {
+            uint length = (uint)(decompressedBytes.Length);
+            byte[] header = new byte[0x10];
+            Array.Copy(Encoding.ASCII.GetBytes("PMOC"), header, 0x4);
+            Array.Copy(BitConverter.GetBytes(2), 0, header, 0x4, 0x4); // 2 = Huffman-8 Compression.
+            Array.Copy(BitConverter.GetBytes(length), 0, header, 0x8, 0x4);
+            Array.Copy(BitConverter.GetBytes(GetChecksum(decompressedBytes)), 0, header, 0xC, 0x4); // CRC32 of Decompressed Data.
+            return header;
         }
 
         private void WriteGlobalFile(BinaryWriter bw)
@@ -270,6 +291,30 @@ namespace FEFTwiddler.Model
         private void WriteRatingFile(BinaryWriter bw)
         {
             throw new NotImplementedException();
+        }
+
+        private void WriteVersusFile(BinaryWriter bw)
+        {
+            if (_isCompressed)
+            {
+                bw.Write(GetVersusHeader(DecompressedBytes));
+                bw.Write(Compress(DecompressedBytes.ToArray()));
+            }
+            else
+            {
+                bw.Write(DecompressedBytes);
+            }
+        }
+
+        private byte[] GetVersusHeader(byte[] decompressedBytes)
+        {
+            uint length = (uint)(decompressedBytes.Length);
+            byte[] header = new byte[0x10];
+            Array.Copy(Encoding.ASCII.GetBytes("PMOC"), header, 0x4);
+            Array.Copy(BitConverter.GetBytes(2), 0, header, 0x4, 0x4); // 2 = Huffman-8 Compression.
+            Array.Copy(BitConverter.GetBytes(length), 0, header, 0x8, 0x4);
+            Array.Copy(BitConverter.GetBytes(GetChecksum(decompressedBytes)), 0, header, 0xC, 0x4); // CRC32 of Decompressed Data.
+            return header;
         }
 
         /// <remarks>Taken directly from FEST. "It's just CRC32."</remarks>
