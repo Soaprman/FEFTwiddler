@@ -97,7 +97,7 @@ namespace FEFTwiddler.GUI.Convoy
             {
                 if (_item.Uses > 0)
                 {
-                    numCharges.Minimum = 255;
+                    numCharges.Minimum = 0;
                     numCharges.Maximum = 255;
                     MarkChargesIllegal();
                 }
