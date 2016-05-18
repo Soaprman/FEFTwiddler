@@ -22,7 +22,7 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void LearnedSkills_Load(object sender, EventArgs e)
         {
-            this.Text = "Learned Skills for " + Data.Database.Characters.GetByID(_unit.CharacterID).DisplayName;
+            SetTitle();
 
             var allSkills = Data.Database.Skills.GetAllLearnable().Where((x) => x.SkillID != Enums.Skill.None).OrderBy((x) => x.DisplayName);
             IEnumerable<Data.Skill> someSkills;
@@ -113,6 +113,21 @@ namespace FEFTwiddler.GUI.UnitViewer
                 var icon = new SkillIcon(_tempLearnedSkills, skill);
                 toolTip1.SetToolTip(icon, skill.DisplayName);
                 flwEnemyAndNpcSkills.Controls.Add(icon);
+            }
+        }
+
+        private void SetTitle()
+        {
+            if (Enum.IsDefined(typeof(Enums.Character), _unit.CharacterID))
+            {
+                if (_unit.CorrinName == null)
+                    this.Text = "Learned Skills for " + Data.Database.Characters.GetByID(_unit.CharacterID).DisplayName;
+                else
+                    this.Text = "Learned Skills for " + _unit.CorrinName;
+            }
+            else
+            {
+                this.Text = "Learned Skills for {Character ID " + _unit.CharacterID.ToString() + "}";
             }
         }
 
