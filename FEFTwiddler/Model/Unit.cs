@@ -565,14 +565,15 @@ namespace FEFTwiddler.Model
             set { _rawBlock1[0x47] = value; }
         }
 
-        /// <summary>Map position (battle prep only)</summary>
+        public const byte PositionIfNotDeployed = 0xFF;
+
+        /// <summary>Map position (battle prep only). Set to PositionIfNotDeployed out of battle or if not deployed.</summary>
         public byte Position_FromLeft
         {
             get { return _rawBlock1[0x48]; }
             set { _rawBlock1[0x48] = value; }
         }
-
-        /// <summary>Map position (battle prep only)</summary>
+        /// <summary>Map position (battle prep only). Set to PositionIfNotDeployed out of battle or if not deployed.</summary>
         public byte Position_FromTop
         {
             get { return _rawBlock1[0x49]; }

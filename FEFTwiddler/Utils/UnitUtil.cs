@@ -31,5 +31,28 @@ namespace FEFTwiddler.Utils
                 unit.Item_5.IsNamed = false;
             }
         }
+
+        public static void Undeploy(Model.Unit unit)
+        {
+            if (unit.UnitBlock == Enums.UnitBlock.Deployed)
+            {
+                unit.UnitBlock = Enums.UnitBlock.Living;
+                unit.Position_FromLeft = Model.Unit.PositionIfNotDeployed;
+                unit.Position_FromTop = Model.Unit.PositionIfNotDeployed;
+
+                unit.RawDeployedUnitInfo = Model.Unit.GetEmptyDeployedInfoBlock();
+            }
+        }
+
+        /// <summary>
+        /// Set a unit's block based on its data (whether it's dead, etc.)
+        /// </summary>
+        public static void FixBlock(Model.Unit unit)
+        {
+            if (unit.WasKilledByPlot) unit.UnitBlock = Enums.UnitBlock.DeadByPlot;
+            else if (unit.IsDead) unit.UnitBlock = Enums.UnitBlock.DeadByGameplay;
+            else if (unit.RawDeployedUnitInfo.Length > 0) unit.UnitBlock = Enums.UnitBlock.Deployed;
+            else unit.UnitBlock = Enums.UnitBlock.Living;
+        }
     }
 }

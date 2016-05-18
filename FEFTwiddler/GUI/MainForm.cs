@@ -400,6 +400,8 @@ namespace FEFTwiddler.GUI
                 // TODO: Handle units from other blocks?
                 unit.UnitBlock = Enums.UnitBlock.Living;
                 Utils.UnitUtil.RemoveNamesFromHeldWeaponsWithInvalidNames(_chapterSave, unit);
+                Utils.UnitUtil.FixBlock(unit);
+                Utils.UnitUtil.Undeploy(unit);
                 _chapterSave.UnitRegion.Units.Add(unit);
 
                 LoadUnitViewer();
