@@ -21,7 +21,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             InitializeControls();
         }
 
-        public void LoadCharacter(Model.Unit unit)
+        public void LoadUnit(Model.Unit unit)
         {
             _unit = unit;
             PopulateControls();

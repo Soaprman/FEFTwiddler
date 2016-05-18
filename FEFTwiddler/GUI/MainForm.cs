@@ -11,7 +11,7 @@ namespace FEFTwiddler.GUI
         private Model.SaveFile _saveFile;
         private Model.ChapterSave _chapterSave;
         private Model.GlobalSave _globalSave;
-        private Model.Unit _selectedCharacter;
+        private Model.Unit _selectedUnit;
         private Controls.Blanket _unitViewerBlanket;
 
         public MainForm()
@@ -269,21 +269,21 @@ namespace FEFTwiddler.GUI
             }
         }
 
-        private void SelectLivingCharacter(object sender, EventArgs e)
+        private void SelectLivingUnit(object sender, EventArgs e)
         {
-            var character = (Model.Unit)lstLiving.SelectedItem;
-            if (character == null) return;
-            _selectedCharacter = character;
-            LoadCharacter(character);
+            var unit = (Model.Unit)lstLiving.SelectedItem;
+            if (unit == null) return;
+            _selectedUnit = unit;
+            LoadUnit(unit);
             lstDead.ClearSelected();
         }
 
-        private void SelectDeadCharacter(object sender, EventArgs e)
+        private void SelectDeadUnit(object sender, EventArgs e)
         {
-            var character = (Model.Unit)lstDead.SelectedItem;
-            if (character == null) return;
-            _selectedCharacter = character;
-            LoadCharacter(character);
+            var unit = (Model.Unit)lstDead.SelectedItem;
+            if (unit == null) return;
+            _selectedUnit = unit;
+            LoadUnit(unit);
             lstLiving.ClearSelected();
         }
 
@@ -291,75 +291,75 @@ namespace FEFTwiddler.GUI
         {
             lstLiving.SelectedItem = null;
             lstDead.SelectedItem = null;
-            _selectedCharacter = null;
+            _selectedUnit = null;
 
             var message = "No unit is selected.";
             _unitViewerBlanket.SetMessage(message);
             _unitViewerBlanket.Cover();
         }
 
-        private void LoadCharacter(Model.Unit character)
+        private void LoadUnit(Model.Unit unit)
         {
-            if (character == null) return;
+            if (unit == null) return;
 
             var message = "";
 
-            if (Enum.IsDefined(typeof(Enums.Character), character.CharacterID))
+            if (Enum.IsDefined(typeof(Enums.Character), unit.CharacterID))
             {
-                if (character.CorrinName != null)
+                if (unit.CorrinName != null)
                 {
-                    lblName.Text = character.CorrinName;
+                    lblName.Text = unit.CorrinName;
                 }
-                else if (Data.Database.Characters.GetByID(character.CharacterID).IsPrisoner)
+                else if (Data.Database.Characters.GetByID(unit.CharacterID).IsPrisoner)
                 {
-                    lblName.Text = Data.Database.Prisoners.GetByID(character.PrisonerID).DisplayName;
+                    lblName.Text = Data.Database.Prisoners.GetByID(unit.PrisonerID).DisplayName;
                 }
                 else
                 {
-                    lblName.Text = Data.Database.Characters.GetByID(character.CharacterID).DisplayName;
+                    lblName.Text = Data.Database.Characters.GetByID(unit.CharacterID).DisplayName;
                 }
             }
             else
             {
-                lblName.Text = character.CharacterID.ToString();
+                lblName.Text = unit.CharacterID.ToString();
             }
 
-            try { classAndLevel1.LoadCharacter(_selectedCharacter); }
+            try { classAndLevel1.LoadUnit(_selectedUnit); }
             catch (Exception) { message += Environment.NewLine + "Error loading Class and Level data"; }
 
-            try { stats1.LoadCharacter(_selectedCharacter); }
+            try { stats1.LoadUnit(_selectedUnit); }
             catch (Exception) { message += Environment.NewLine + "Error loading Stats data"; }
 
-            try { unitBlockInfo1.LoadCharacter(_chapterSave, _selectedCharacter); }
+            try { unitBlockInfo1.LoadUnit(_chapterSave, _selectedUnit); }
             catch (Exception) { message += Environment.NewLine + "Error loading Unit Block Info data"; }
 
-            try { flags1.LoadCharacter(_selectedCharacter); }
+            try { flags1.LoadUnit(_selectedUnit); }
             catch (Exception) { message += Environment.NewLine + "Error loading Flags data"; }
 
-            try { battleData1.LoadCharacter(_selectedCharacter); }
+            try { battleData1.LoadUnit(_selectedUnit); }
             catch (Exception) { message += Environment.NewLine + "Error loading Battle data"; }
 
-            try { skills1.LoadCharacter(_selectedCharacter); }
+            try { skills1.LoadUnit(_selectedUnit); }
             catch (Exception) { message += Environment.NewLine + "Error loading Skills data"; }
 
-            try { inventory1.LoadCharacter(_selectedCharacter); }
+            try { inventory1.LoadUnit(_selectedUnit); }
             catch (Exception) { message += Environment.NewLine + "Error loading Inventory data"; }
 
-            try { accessories1.LoadCharacter(_selectedCharacter); }
+            try { accessories1.LoadUnit(_selectedUnit); }
             catch (Exception) { message += Environment.NewLine + "Error loading Accessories data"; }
 
-            try { hairColor1.LoadCharacter(_selectedCharacter); }
+            try { hairColor1.LoadUnit(_selectedUnit); }
             catch (Exception) { message += Environment.NewLine + "Error loading Hair Color data"; }
 
-            try { weaponExperience1.LoadCharacter(_selectedCharacter); }
+            try { weaponExperience1.LoadUnit(_selectedUnit); }
             catch (Exception) { message += Environment.NewLine + "Error loading Weapon Experience data"; }
 
-            try { dragonVein1.LoadCharacter(_selectedCharacter); }
+            try { dragonVein1.LoadUnit(_selectedUnit); }
             catch (Exception) { message += Environment.NewLine + "Error loading Dragon Vein data"; }
 
             if (message.Length > 0)
             {
-                message = "One or more values is invalid for this character. You can still use the hex editor, though." + Environment.NewLine + Environment.NewLine + message;
+                message = "One or more values is invalid for this unit. You can still use the hex editor, though." + Environment.NewLine + Environment.NewLine + message;
                 _unitViewerBlanket.SetMessage(message);
                 _unitViewerBlanket.Cover();
 
@@ -373,7 +373,7 @@ namespace FEFTwiddler.GUI
 
         private void tabPage1_Enter(object sender, EventArgs e)
         {
-            LoadCharacter(_selectedCharacter);
+            LoadUnit(_selectedUnit);
         }
 
         private void btnImportUnit_Click(object sender, EventArgs e)
@@ -419,7 +419,7 @@ namespace FEFTwiddler.GUI
             {
                 Config.UnitPath = Path.GetDirectoryName(saveFileDialog1.FileName);
 
-                _selectedCharacter.ToPath(saveFileDialog1.FileName);
+                _selectedUnit.ToPath(saveFileDialog1.FileName);
             }
         }
 
@@ -443,9 +443,9 @@ namespace FEFTwiddler.GUI
                     MessageBoxDefaultButton.Button2);
                 if (result != DialogResult.Yes) return;
             }
-            else if (Enum.IsDefined(typeof(Enums.Character), _selectedCharacter.CharacterID) &&
-                Data.Database.Characters.GetByID(_selectedCharacter.CharacterID).IsCorrin &&
-                !_selectedCharacter.IsEinherjar) {
+            else if (Enum.IsDefined(typeof(Enums.Character), _selectedUnit.CharacterID) &&
+                Data.Database.Characters.GetByID(_selectedUnit.CharacterID).IsCorrin &&
+                !_selectedUnit.IsEinherjar) {
 
                 result = MessageBox.Show("You are about to remove a non-Einherjar Corrin. There's no telling what effect this may have on your game. Proceed?",
                     "Remove Corrin?",
@@ -455,16 +455,16 @@ namespace FEFTwiddler.GUI
                 if (result != DialogResult.Yes) return;
             }
 
-            _chapterSave.UnitRegion.Units.Remove(_selectedCharacter);
+            _chapterSave.UnitRegion.Units.Remove(_selectedUnit);
 
-            if (lstLiving.Items.IndexOf(_selectedCharacter) > -1)
+            if (lstLiving.Items.IndexOf(_selectedUnit) > -1)
             {
-                lstLiving.Items.Remove(_selectedCharacter);
+                lstLiving.Items.Remove(_selectedUnit);
                 DeselectUnit();
             }
-            else if (lstDead.Items.IndexOf(_selectedCharacter) > -1)
+            else if (lstDead.Items.IndexOf(_selectedUnit) > -1)
             {
-                lstDead.Items.Remove(_selectedCharacter);
+                lstDead.Items.Remove(_selectedUnit);
                 DeselectUnit();
             }
 
@@ -473,9 +473,9 @@ namespace FEFTwiddler.GUI
 
         private void btnOpenHexEditor_Click(object sender, EventArgs e)
         {
-            var hex = new GUI.UnitViewer.HexEditor(_selectedCharacter);
+            var hex = new GUI.UnitViewer.HexEditor(_selectedUnit);
             hex.ShowDialog();
-            LoadCharacter(_selectedCharacter);
+            LoadUnit(_selectedUnit);
         }
 
         #endregion

@@ -24,7 +24,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             InitializeControls();
         }
 
-        public void LoadCharacter(Model.ChapterSave chapterSave, Model.Unit unit)
+        public void LoadUnit(Model.ChapterSave chapterSave, Model.Unit unit)
         {
             _chapterSave = chapterSave;
             _unit = unit;

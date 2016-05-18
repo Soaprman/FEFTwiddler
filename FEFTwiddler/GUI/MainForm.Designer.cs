@@ -199,7 +199,7 @@
             this.lstDead.FormattingEnabled = true;
             resources.ApplyResources(this.lstDead, "lstDead");
             this.lstDead.Name = "lstDead";
-            this.lstDead.SelectedIndexChanged += new System.EventHandler(this.SelectDeadCharacter);
+            this.lstDead.SelectedIndexChanged += new System.EventHandler(this.SelectDeadUnit);
             // 
             // pnlUnitView
             // 
@@ -254,7 +254,7 @@
             this.lstLiving.FormattingEnabled = true;
             resources.ApplyResources(this.lstLiving, "lstLiving");
             this.lstLiving.Name = "lstLiving";
-            this.lstLiving.SelectedIndexChanged += new System.EventHandler(this.SelectLivingCharacter);
+            this.lstLiving.SelectedIndexChanged += new System.EventHandler(this.SelectLivingUnit);
             // 
             // tabMegacheats
             // 

@@ -20,7 +20,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             InitializeControls();
         }
 
-        public void LoadCharacter(Model.Unit unit)
+        public void LoadUnit(Model.Unit unit)
         {
             if (unit == null) return;
             _unit = unit;
