@@ -40,7 +40,10 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabChapterData = new System.Windows.Forms.TabPage();
+            this.difficulty1 = new FEFTwiddler.GUI.ChapterData.Difficulty();
             this.btnChapterHistory = new System.Windows.Forms.Button();
+            this.goldAndPoints1 = new FEFTwiddler.GUI.ChapterData.GoldAndPoints();
+            this.materials1 = new FEFTwiddler.GUI.ChapterData.Materials();
             this.lblAvatarName = new System.Windows.Forms.Label();
             this.tabUnitViewer = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
@@ -67,16 +70,26 @@
             this.battleData1 = new FEFTwiddler.GUI.UnitViewer.BattleData();
             this.classAndLevel1 = new FEFTwiddler.GUI.UnitViewer.ClassAndLevel();
             this.dragonVein1 = new FEFTwiddler.GUI.UnitViewer.DragonVein();
+            this.btnOpenHexEditor = new System.Windows.Forms.Button();
             this.accessories1 = new FEFTwiddler.GUI.UnitViewer.Accessories();
             this.stats1 = new FEFTwiddler.GUI.UnitViewer.Stats();
             this.weaponExperience1 = new FEFTwiddler.GUI.UnitViewer.WeaponExperience();
             this.hairColor1 = new FEFTwiddler.GUI.UnitViewer.HairColor();
             this.inventory1 = new FEFTwiddler.GUI.UnitViewer.Inventory();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.skills1 = new FEFTwiddler.GUI.UnitViewer.Skills();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lstLiving = new System.Windows.Forms.ListBox();
+            this.tabMegacheats = new System.Windows.Forms.TabPage();
             this.megacheatsMain1 = new FEFTwiddler.GUI.ChapterData.MegacheatsMain();
+            this.tabNewGamePlus = new System.Windows.Forms.TabPage();
+            this.tabGlobalData = new System.Windows.Forms.TabPage();
             this.globalDataMain1 = new FEFTwiddler.GUI.GlobalData.GlobalDataMain();
+            this.tabConvoy = new System.Windows.Forms.TabPage();
             this.convoyMain1 = new FEFTwiddler.GUI.Convoy.ConvoyMain();
             this.lblUnitCount = new System.Windows.Forms.Label();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnSupport = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabChapterData.SuspendLayout();
@@ -164,12 +177,27 @@
             this.tabChapterData.Name = "tabChapterData";
             this.tabChapterData.UseVisualStyleBackColor = true;
             // 
+            // difficulty1
+            // 
+            resources.ApplyResources(this.difficulty1, "difficulty1");
+            this.difficulty1.Name = "difficulty1";
+            // 
             // btnChapterHistory
             // 
             resources.ApplyResources(this.btnChapterHistory, "btnChapterHistory");
             this.btnChapterHistory.Name = "btnChapterHistory";
             this.btnChapterHistory.UseVisualStyleBackColor = true;
             this.btnChapterHistory.Click += new System.EventHandler(this.btnChapterHistory_Click);
+            // 
+            // goldAndPoints1
+            // 
+            resources.ApplyResources(this.goldAndPoints1, "goldAndPoints1");
+            this.goldAndPoints1.Name = "goldAndPoints1";
+            // 
+            // materials1
+            // 
+            resources.ApplyResources(this.materials1, "materials1");
+            this.materials1.Name = "materials1";
             // 
             // lblAvatarName
             // 
@@ -205,6 +233,7 @@
             // 
             this.pnlUnitView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlUnitView.Controls.Add(this.btnExportUnit);
+            this.pnlUnitView.Controls.Add(this.btnSupport);
             this.pnlUnitView.Controls.Add(this.btnDeleteUnit);
             this.pnlUnitView.Controls.Add(this.unitBlockInfo1);
             this.pnlUnitView.Controls.Add(this.flags1);
@@ -304,21 +333,6 @@
             this.btnImportUnit.UseVisualStyleBackColor = true;
             this.btnImportUnit.Click += new System.EventHandler(this.btnImportUnit_Click);
             // 
-            // difficulty1
-            // 
-            resources.ApplyResources(this.difficulty1, "difficulty1");
-            this.difficulty1.Name = "difficulty1";
-            // 
-            // goldAndPoints1
-            // 
-            resources.ApplyResources(this.goldAndPoints1, "goldAndPoints1");
-            this.goldAndPoints1.Name = "goldAndPoints1";
-            // 
-            // materials1
-            // 
-            resources.ApplyResources(this.materials1, "materials1");
-            this.materials1.Name = "materials1";
-            // 
             // unitBlockInfo1
             // 
             resources.ApplyResources(this.unitBlockInfo1, "unitBlockInfo1");
@@ -343,6 +357,13 @@
             // 
             resources.ApplyResources(this.dragonVein1, "dragonVein1");
             this.dragonVein1.Name = "dragonVein1";
+            // 
+            // btnOpenHexEditor
+            // 
+            resources.ApplyResources(this.btnOpenHexEditor, "btnOpenHexEditor");
+            this.btnOpenHexEditor.Name = "btnOpenHexEditor";
+            this.btnOpenHexEditor.UseVisualStyleBackColor = true;
+            this.btnOpenHexEditor.Click += new System.EventHandler(this.btnOpenHexEditor_Click);
             // 
             // accessories1
             // 
@@ -369,20 +390,66 @@
             resources.ApplyResources(this.inventory1, "inventory1");
             this.inventory1.Name = "inventory1";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.skills1);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
             // skills1
             // 
             resources.ApplyResources(this.skills1, "skills1");
             this.skills1.Name = "skills1";
+            // 
+            // lblName
+            // 
+            resources.ApplyResources(this.lblName, "lblName");
+            this.lblName.Name = "lblName";
+            // 
+            // lstLiving
+            // 
+            this.lstLiving.FormattingEnabled = true;
+            resources.ApplyResources(this.lstLiving, "lstLiving");
+            this.lstLiving.Name = "lstLiving";
+            this.lstLiving.SelectedIndexChanged += new System.EventHandler(this.SelectLivingUnit);
+            // 
+            // tabMegacheats
+            // 
+            this.tabMegacheats.Controls.Add(this.megacheatsMain1);
+            resources.ApplyResources(this.tabMegacheats, "tabMegacheats");
+            this.tabMegacheats.Name = "tabMegacheats";
+            this.tabMegacheats.UseVisualStyleBackColor = true;
             // 
             // megacheatsMain1
             // 
             resources.ApplyResources(this.megacheatsMain1, "megacheatsMain1");
             this.megacheatsMain1.Name = "megacheatsMain1";
             // 
+            // tabNewGamePlus
+            // 
+            resources.ApplyResources(this.tabNewGamePlus, "tabNewGamePlus");
+            this.tabNewGamePlus.Name = "tabNewGamePlus";
+            this.tabNewGamePlus.UseVisualStyleBackColor = true;
+            // 
+            // tabGlobalData
+            // 
+            this.tabGlobalData.Controls.Add(this.globalDataMain1);
+            resources.ApplyResources(this.tabGlobalData, "tabGlobalData");
+            this.tabGlobalData.Name = "tabGlobalData";
+            this.tabGlobalData.UseVisualStyleBackColor = true;
+            // 
             // globalDataMain1
             // 
             resources.ApplyResources(this.globalDataMain1, "globalDataMain1");
             this.globalDataMain1.Name = "globalDataMain1";
+            // 
+            // tabConvoy
+            // 
+            this.tabConvoy.Controls.Add(this.convoyMain1);
+            resources.ApplyResources(this.tabConvoy, "tabConvoy");
+            this.tabConvoy.Name = "tabConvoy";
+            this.tabConvoy.UseVisualStyleBackColor = true;
             // 
             // convoyMain1
             // 
@@ -393,6 +460,17 @@
             // 
             resources.ApplyResources(this.lblUnitCount, "lblUnitCount");
             this.lblUnitCount.Name = "lblUnitCount";
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
+            // 
+            // btnSupport
+            // 
+            resources.ApplyResources(this.btnSupport, "btnSupport");
+            this.btnSupport.Name = "btnSupport";
+            this.btnSupport.UseVisualStyleBackColor = true;
+            this.btnSupport.Click += new System.EventHandler(this.btnSupport_Click);
             // 
             // MainForm
             // 
@@ -471,6 +549,7 @@
         private System.Windows.Forms.Button btnImportUnit;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Label lblUnitCount;
+        private System.Windows.Forms.Button btnSupport;
     }
 }
 

@@ -369,6 +369,21 @@ namespace FEFTwiddler.GUI
             {
                 _unitViewerBlanket.Uncover();
             }
+
+            // Support
+            if (Enum.IsDefined(typeof(Enums.Character), _selectedUnit.CharacterID))
+            {
+                var supportData = Data.Database.Characters.GetByID(_selectedUnit.CharacterID).SupportPool;
+                if ((_selectedUnit.RawNumberOfSupports != supportData.Length) ||
+                    (supportData.Length == 0))
+                {
+                    btnSupport.Enabled = false;
+                }
+                else
+                    btnSupport.Enabled = true;
+            }
+            else
+                btnSupport.Enabled = false;
         }
 
         private void tabPage1_Enter(object sender, EventArgs e)
@@ -479,6 +494,13 @@ namespace FEFTwiddler.GUI
         {
             var hex = new GUI.UnitViewer.HexEditor(_selectedUnit);
             hex.ShowDialog();
+            LoadUnit(_selectedUnit);
+        }
+
+        private void btnSupport_Click(object sender, EventArgs e)
+        {
+            var supportEditor = new UnitViewer.Supports(_chapterSave, _selectedUnit);
+            supportEditor.ShowDialog();
             LoadUnit(_selectedUnit);
         }
 

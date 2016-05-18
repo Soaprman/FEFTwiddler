@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Collections.Generic;
 
 namespace FEFTwiddler.Data
 {
@@ -15,9 +16,6 @@ namespace FEFTwiddler.Data
         public bool IsCorrin { get; set; }
         public bool IsChild { get; set; }
 
-        public byte MainSupportCount { get; set; }
-        public byte FamilySupportCount { get; set; }
-
         public byte EndBlockType { get; set; }
 
         public Color HairColor { get; set; }
@@ -26,5 +24,20 @@ namespace FEFTwiddler.Data
         public bool IsManakete { get; set; }
         public bool IsBeast { get; set; }
         public bool CanUseDragonVein { get; set; }
+
+        public class Support
+        {
+            public Enums.Character CharacterID { get; set; }
+            public sbyte C { get; set; }
+            public sbyte B { get; set; }
+            public sbyte A { get; set; }
+            public sbyte S { get; set; }
+
+            public bool HasSSupport
+            {
+                get { return S == -1; }
+            }
+        }
+        public Support[] SupportPool;
     }
 }

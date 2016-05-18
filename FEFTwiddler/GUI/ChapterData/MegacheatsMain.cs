@@ -136,7 +136,13 @@ namespace FEFTwiddler.GUI.ChapterData
                 // Sets all support bytes to 0x00
                 var supports = new byte[unit.RawNumberOfSupports];
                 unit.RawSupports = supports;
-
+                if (Enum.IsDefined(typeof(Enums.Character), unit.CharacterID) &&
+                    Data.Database.Characters.GetByID(unit.CharacterID).IsChild)
+                {
+                    unit.FatherSupport = 0;
+                    unit.MotherSupport = 0;
+                    unit.SiblingSupport = 0;
+                }
                 unit.APlusSupportCharacter = Enums.Character.None;
             }
             MessageBox.Show("Done!");

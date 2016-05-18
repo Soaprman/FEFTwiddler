@@ -190,6 +190,12 @@
     <Compile Include="GUI\NewGamePlus\NewGamePlusMain.Designer.cs">
       <DependentUpon>NewGamePlusMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\UnitViewer\SupportPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\SupportPanel.Designer.cs">
+      <DependentUpon>SupportPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\UnitViewer\Accessories.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -261,6 +267,12 @@
     </Compile>
     <Compile Include="GUI\UnitViewer\Stats.Designer.cs">
       <DependentUpon>Stats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\Supports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\Supports.Designer.cs">
+      <DependentUpon>Supports.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\UnitViewer\UnitBlockInfo.cs">
       <SubType>UserControl</SubType>
@@ -359,6 +371,9 @@
     <EmbeddedResource Include="GUI\NewGamePlus\NewGamePlusMain.resx">
       <DependentUpon>NewGamePlusMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UnitViewer\SupportPanel.resx">
+      <DependentUpon>SupportPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\Accessories.resx">
       <DependentUpon>Accessories.cs</DependentUpon>
     </EmbeddedResource>
@@ -394,6 +409,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\Stats.resx">
       <DependentUpon>Stats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UnitViewer\Supports.resx">
+      <DependentUpon>Supports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\UnitBlockInfo.resx">
       <DependentUpon>UnitBlockInfo.cs</DependentUpon>

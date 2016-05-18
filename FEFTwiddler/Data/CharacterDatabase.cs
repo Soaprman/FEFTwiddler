@@ -61,9 +61,8 @@ namespace FEFTwiddler.Data
             var modifier = row.Elements("modifier").First();
             var growthRates = row.Elements("growthRates").First();
             var flags = row.Elements("flags").First();
-            var mainSupports = row.Elements("mainSupports").First();
-            var familySupports = row.Elements("familySupports").First();
             var hairColor = row.Elements("hairColor").First();
+            var supportPool = ParseSupport(row.Element("supportPool")).ToArray();
 
             var character = new Character
             {
@@ -105,19 +104,41 @@ namespace FEFTwiddler.Data
                 CanUseStones = flags.GetAttribute<bool>("canUseStones"),
                 IsCorrin = flags.GetAttribute<bool>("isCorrin"),
                 IsChild = flags.GetAttribute<bool>("isChild"),
-                MainSupportCount = mainSupports.GetAttribute<byte>("count"),
-                FamilySupportCount = familySupports.GetAttribute<byte>("count"),
                 HairColor = Color.FromArgb(hairColor.GetAttribute<byte>("a"), hairColor.GetAttribute<byte>("r"), hairColor.GetAttribute<byte>("g"), hairColor.GetAttribute<byte>("b")),
                 IsPrisoner = flags.GetAttribute<bool>("isPrisoner"),
                 IsFemale = flags.GetAttribute<bool>("isFemale"),
                 IsManakete = flags.GetAttribute<bool>("isManakete"),
                 IsBeast = flags.GetAttribute<bool>("isBeast"),
-                CanUseDragonVein = flags.GetAttribute<bool>("canUseDragonVein")
+                CanUseDragonVein = flags.GetAttribute<bool>("canUseDragonVein"),
+                SupportPool = supportPool
             };
 
             character.EndBlockType = GetEndBlockType(character);
 
             return character;
+        }
+
+        private List<Character.Support> ParseSupport(XElement row)
+        {
+            var supportPool = new List<Character.Support>();
+
+            if (row != null)
+            {
+                var rawSupports = row.Elements("support");
+                foreach (XElement supportRow in rawSupports)
+                {
+                    Character.Support supportData = new Character.Support
+                    {
+                        CharacterID = (Enums.Character)supportRow.GetAttribute<ushort>("characterid"),
+                        C = supportRow.GetAttribute<sbyte>("C"),
+                        B = supportRow.GetAttribute<sbyte>("B"),
+                        A = supportRow.GetAttribute<sbyte>("A"),
+                        S = supportRow.GetAttribute<sbyte>("S")
+                    };
+                    supportPool.Add(supportData);
+                }
+            }
+            return supportPool;
         }
 
         public static byte GetEndBlockType(Character character)
