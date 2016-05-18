@@ -1813,7 +1813,7 @@
     <text lang="Japanese" displayName="displayName" />
     <categories npcOnly="false" personal="false" />
   </item>
-  <item id="362" name="VanguardBrand" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
+  <item id="362" name="VanguardBrand" type="Consumable" subType="ClassChanger" maxUses="1" rank="0">
     <text lang="English" displayName="Vanguard Brand" />
     <text lang="Japanese" displayName="神将の紋章" />
     <categories npcOnly="false" personal="false" />
