@@ -397,7 +397,9 @@ namespace FEFTwiddler.GUI
                 Config.UnitPath = Path.GetDirectoryName(openFileDialog1.FileName);
 
                 var unit = Model.Unit.FromPath(openFileDialog1.FileName);
+                // TODO: Handle units from other blocks?
                 unit.UnitBlock = Enums.UnitBlock.Living;
+                Utils.UnitUtil.RemoveNamesFromHeldWeaponsWithInvalidNames(_chapterSave, unit);
                 _chapterSave.UnitRegion.Units.Add(unit);
 
                 LoadUnitViewer();

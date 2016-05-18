@@ -35,6 +35,13 @@ namespace FEFTwiddler.Model
                 // TODO: Figure out if the value of 01 represents something here.
                 return _raw[2] >= 2;
             }
+            set
+            {
+                if (value && IsNamed) return;
+                else if (value && !IsNamed) _raw[2] = 2; // ID must be set separately. Default to 0
+                else if (!value && IsNamed) _raw[2] = 0;
+                else if (!value && !IsNamed) return;
+            }
         }
 
         /// <summary>
