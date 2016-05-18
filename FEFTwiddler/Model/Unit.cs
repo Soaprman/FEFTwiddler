@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using FEFTwiddler.Enums;
 using FEFTwiddler.Extensions;
@@ -8,6 +9,45 @@ namespace FEFTwiddler.Model
     public class Unit
     {
         #region Creation
+
+        /// <summary>
+        /// Import a unit from a binary file
+        /// </summary>
+        /// <exception cref="InvalidDataException">The unit data is invalid in some way</exception>
+        public static Unit FromPath(string path)
+        {
+            var unit = new Unit();
+
+            using (var fs = new FileStream(path, FileMode.Open, FileAccess.Read))
+            using (var br = new BinaryReader(fs))
+            {
+                try
+                {
+                    unit.UnitBlock = UnitBlock.Living; // Default to this
+                    unit.ReadFromReader(br);
+                }
+                catch (Exception)
+                {
+                    throw new InvalidDataException();
+                }
+            }
+
+            return unit;
+        }
+
+        /// <summary>
+        /// Export a unit to a binary file
+        /// </summary>
+        public void ToPath(string path)
+        {
+            using (var fs = new FileStream(path, FileMode.Create, FileAccess.ReadWrite))
+            using (var bw = new BinaryWriter(fs))
+            {
+                bw.Write(this.Raw);
+            }
+
+            File.SetLastWriteTime(path, DateTime.Now);
+        }
 
         /// <summary>
         /// Create a new blank unit
@@ -118,6 +158,56 @@ namespace FEFTwiddler.Model
             _rawBlock2[0x42] = 0x14;
 
             _rawBlock3[0x00] = 0x02;
+        }
+
+        /// <summary>
+        /// Read from a reader. Overwrites existing data.
+        /// </summary>
+        /// <remarks>For best results, set UnitBlock before calling this.</remarks>
+        public void ReadFromReader(BinaryReader br)
+        {
+            byte[] chunk;
+
+            chunk = new byte[RawBlock1Length];
+            br.Read(chunk, 0, RawBlock1Length);
+            this.RawBlock1 = chunk;
+
+            chunk = new byte[RawInventoryLength];
+            br.Read(chunk, 0, RawInventoryLength);
+            this.RawInventory = chunk;
+
+            chunk = new byte[0x01];
+            br.Read(chunk, 0, 0x01);
+            this.RawNumberOfSupports = chunk.First();
+
+            chunk = new byte[this.RawNumberOfSupports];
+            br.Read(chunk, 0, this.RawNumberOfSupports);
+            this.RawSupports = chunk;
+
+            chunk = new byte[RawBlock2Length];
+            br.Read(chunk, 0, RawBlock2Length);
+            this.RawBlock2 = chunk;
+
+            chunk = new byte[RawLearnedSkillsLength];
+            br.Read(chunk, 0, RawLearnedSkillsLength);
+            this.RawLearnedSkills = chunk;
+
+            var depLength = (this.UnitBlock == Enums.UnitBlock.Deployed ? RawDeployedUnitInfoLengthIfDeployed : RawDeployedUnitInfoLengthIfNotDeployed);
+            chunk = new byte[depLength];
+            br.Read(chunk, 0, depLength);
+            this.RawDeployedUnitInfo = chunk;
+
+            chunk = new byte[RawBlock3Length];
+            br.Read(chunk, 0, RawBlock3Length);
+            this.RawBlock3 = chunk;
+
+            chunk = new byte[0x01];
+            br.Read(chunk, 0, 0x01);
+            this.RawEndBlockType = chunk.First();
+
+            chunk = new byte[this.GetRawEndBlockSize()];
+            br.Read(chunk, 0, this.GetRawEndBlockSize());
+            this.RawEndBlock = chunk;
         }
 
         /// <summary>

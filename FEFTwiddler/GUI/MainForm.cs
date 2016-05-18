@@ -243,6 +243,13 @@ namespace FEFTwiddler.GUI
 
             lstLiving.Refresh();
             lstDead.Refresh();
+
+            UpdateUnitCount();
+        }
+
+        private void UpdateUnitCount()
+        {
+            lblUnitCount.Text = string.Format("Units: {0}/{1}", _chapterSave.UnitRegion.Units.Count, Model.ChapterSaveRegions.UnitRegion.MaxUnits);
         }
 
         private bool IsDead(Model.Unit unit)
@@ -369,6 +376,53 @@ namespace FEFTwiddler.GUI
             LoadCharacter(_selectedCharacter);
         }
 
+        private void btnImportUnit_Click(object sender, EventArgs e)
+        {
+            if (_chapterSave.UnitRegion.Units.Count >= Model.ChapterSaveRegions.UnitRegion.MaxUnits)
+            {
+                MessageBox.Show("You already have the maximum of " + Model.ChapterSaveRegions.UnitRegion.MaxUnits.ToString() + " units. Please remove one before adding another.");
+                return;
+            }
+
+            openFileDialog1.FileName = "";
+            openFileDialog1.Filter = "Fire Emblem Fates Unit|*.fe14unit";
+
+            var unitPath = Config.UnitPath;
+            if (unitPath == "" || !Directory.Exists(unitPath)) unitPath = Config.StartupPath;
+            if (unitPath == "" || !Directory.Exists(unitPath)) unitPath = Application.StartupPath;
+            openFileDialog1.InitialDirectory = unitPath;
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                Config.UnitPath = Path.GetDirectoryName(openFileDialog1.FileName);
+
+                var unit = Model.Unit.FromPath(openFileDialog1.FileName);
+                unit.UnitBlock = Enums.UnitBlock.Living;
+                _chapterSave.UnitRegion.Units.Add(unit);
+
+                LoadUnitViewer();
+                SelectUnit(unit);
+            }
+        }
+
+        private void btnExportUnit_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.FileName = "";
+            saveFileDialog1.Filter = "Fire Emblem Fates Unit|*.fe14unit";
+
+            var unitPath = Config.UnitPath;
+            if (unitPath == "" || !Directory.Exists(unitPath)) unitPath = Config.StartupPath;
+            if (unitPath == "" || !Directory.Exists(unitPath)) unitPath = Application.StartupPath;
+            saveFileDialog1.InitialDirectory = unitPath;
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                Config.UnitPath = Path.GetDirectoryName(saveFileDialog1.FileName);
+
+                _selectedCharacter.ToPath(saveFileDialog1.FileName);
+            }
+        }
+
         private void btnDeleteUnit_Click(object sender, EventArgs e)
         {
             DialogResult result;
@@ -413,6 +467,8 @@ namespace FEFTwiddler.GUI
                 lstDead.Items.Remove(_selectedCharacter);
                 DeselectUnit();
             }
+
+            UpdateUnitCount();
         }
 
         private void btnOpenHexEditor_Click(object sender, EventArgs e)
@@ -496,5 +552,6 @@ namespace FEFTwiddler.GUI
         }
 
         #endregion
+
     }
 }

@@ -27,6 +27,23 @@ namespace FEFTwiddler
             }
         }
 
+        public static string UnitPath
+        {
+            get
+            {
+                var root = GetConfigRoot();
+                var settings = root.Elements("misc").First();
+                return settings.GetAttribute("unitPath");
+            }
+            set
+            {
+                var root = GetConfigRoot();
+                var settings = root.Elements("misc").First();
+                settings.SetAttributeValue("unitPath", value);
+                SetConfigRoot(root);
+            }
+        }
+
         private static XElement GetConfigRoot()
         {
             try
@@ -37,7 +54,7 @@ namespace FEFTwiddler
             {
                 return XDocument.Parse(@"<?xml version=""1.0"" encoding=""utf-8"" ?>
 <root>
-  <misc startupPath="""" />
+  <misc startupPath="""" unitPath="""" />
 </root>
                 ").Root;
             }

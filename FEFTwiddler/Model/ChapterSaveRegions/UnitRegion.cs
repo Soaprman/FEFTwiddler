@@ -149,58 +149,18 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
 
         #region Units Properties
 
+        public const int MaxUnits = 100;
         public List<Unit> Units { get; set; }
 
         #endregion
 
         private void ReadCurrentUnit(BinaryReader br, Enums.UnitBlock unitBlock)
         {
-            byte[] chunk;
-
             var unit = new Unit();
 
             unit.UnitBlock = unitBlock;
 
-            chunk = new byte[Model.Unit.RawBlock1Length];
-            br.Read(chunk, 0, Model.Unit.RawBlock1Length);
-            unit.RawBlock1 = chunk;
-
-            chunk = new byte[Model.Unit.RawInventoryLength];
-            br.Read(chunk, 0, Model.Unit.RawInventoryLength);
-            unit.RawInventory = chunk;
-
-            chunk = new byte[0x01];
-            br.Read(chunk, 0, 0x01);
-            unit.RawNumberOfSupports = chunk.First();
-
-            chunk = new byte[unit.RawNumberOfSupports];
-            br.Read(chunk, 0, unit.RawNumberOfSupports);
-            unit.RawSupports = chunk;
-
-            chunk = new byte[Model.Unit.RawBlock2Length];
-            br.Read(chunk, 0, Model.Unit.RawBlock2Length);
-            unit.RawBlock2 = chunk;
-
-            chunk = new byte[Model.Unit.RawLearnedSkillsLength];
-            br.Read(chunk, 0, Model.Unit.RawLearnedSkillsLength);
-            unit.RawLearnedSkills = chunk;
-
-            var depLength = (unit.UnitBlock == Enums.UnitBlock.Deployed ? Model.Unit.RawDeployedUnitInfoLengthIfDeployed : Model.Unit.RawDeployedUnitInfoLengthIfNotDeployed);
-            chunk = new byte[depLength];
-            br.Read(chunk, 0, depLength);
-            unit.RawDeployedUnitInfo = chunk;
-
-            chunk = new byte[Model.Unit.RawBlock3Length];
-            br.Read(chunk, 0, Model.Unit.RawBlock3Length);
-            unit.RawBlock3 = chunk;
-
-            chunk = new byte[0x01];
-            br.Read(chunk, 0, 0x01);
-            unit.RawEndBlockType = chunk.First();
-
-            chunk = new byte[unit.GetRawEndBlockSize()];
-            br.Read(chunk, 0, unit.GetRawEndBlockSize());
-            unit.RawEndBlock = chunk;
+            unit.ReadFromReader(br);
 
             Units.Add(unit);
         }

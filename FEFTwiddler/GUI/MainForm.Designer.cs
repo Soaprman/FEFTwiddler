@@ -46,6 +46,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lstDead = new System.Windows.Forms.ListBox();
             this.pnlUnitView = new System.Windows.Forms.Panel();
+            this.btnDeleteUnit = new System.Windows.Forms.Button();
             this.btnOpenHexEditor = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblName = new System.Windows.Forms.Label();
@@ -55,7 +56,9 @@
             this.tabGlobalData = new System.Windows.Forms.TabPage();
             this.tabConvoy = new System.Windows.Forms.TabPage();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnDeleteUnit = new System.Windows.Forms.Button();
+            this.btnExportUnit = new System.Windows.Forms.Button();
+            this.btnImportUnit = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.difficulty1 = new FEFTwiddler.GUI.ChapterData.Difficulty();
             this.goldAndPoints1 = new FEFTwiddler.GUI.ChapterData.GoldAndPoints();
             this.materials1 = new FEFTwiddler.GUI.ChapterData.Materials();
@@ -73,6 +76,7 @@
             this.megacheatsMain1 = new FEFTwiddler.GUI.ChapterData.MegacheatsMain();
             this.globalDataMain1 = new FEFTwiddler.GUI.GlobalData.GlobalDataMain();
             this.convoyMain1 = new FEFTwiddler.GUI.Convoy.ConvoyMain();
+            this.lblUnitCount = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabChapterData.SuspendLayout();
@@ -174,6 +178,8 @@
             // 
             // tabUnitViewer
             // 
+            this.tabUnitViewer.Controls.Add(this.lblUnitCount);
+            this.tabUnitViewer.Controls.Add(this.btnImportUnit);
             this.tabUnitViewer.Controls.Add(this.label1);
             this.tabUnitViewer.Controls.Add(this.lstDead);
             this.tabUnitViewer.Controls.Add(this.pnlUnitView);
@@ -198,6 +204,7 @@
             // pnlUnitView
             // 
             this.pnlUnitView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlUnitView.Controls.Add(this.btnExportUnit);
             this.pnlUnitView.Controls.Add(this.btnDeleteUnit);
             this.pnlUnitView.Controls.Add(this.unitBlockInfo1);
             this.pnlUnitView.Controls.Add(this.flags1);
@@ -214,6 +221,14 @@
             this.pnlUnitView.Controls.Add(this.lblName);
             resources.ApplyResources(this.pnlUnitView, "pnlUnitView");
             this.pnlUnitView.Name = "pnlUnitView";
+            // 
+            // btnDeleteUnit
+            // 
+            resources.ApplyResources(this.btnDeleteUnit, "btnDeleteUnit");
+            this.btnDeleteUnit.ForeColor = System.Drawing.Color.Red;
+            this.btnDeleteUnit.Name = "btnDeleteUnit";
+            this.btnDeleteUnit.UseVisualStyleBackColor = true;
+            this.btnDeleteUnit.Click += new System.EventHandler(this.btnDeleteUnit_Click);
             // 
             // btnOpenHexEditor
             // 
@@ -273,13 +288,21 @@
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
             // 
-            // btnDeleteUnit
+            // btnExportUnit
             // 
-            resources.ApplyResources(this.btnDeleteUnit, "btnDeleteUnit");
-            this.btnDeleteUnit.ForeColor = System.Drawing.Color.Red;
-            this.btnDeleteUnit.Name = "btnDeleteUnit";
-            this.btnDeleteUnit.UseVisualStyleBackColor = true;
-            this.btnDeleteUnit.Click += new System.EventHandler(this.btnDeleteUnit_Click);
+            resources.ApplyResources(this.btnExportUnit, "btnExportUnit");
+            this.btnExportUnit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExportUnit.Name = "btnExportUnit";
+            this.btnExportUnit.UseVisualStyleBackColor = true;
+            this.btnExportUnit.Click += new System.EventHandler(this.btnExportUnit_Click);
+            // 
+            // btnImportUnit
+            // 
+            resources.ApplyResources(this.btnImportUnit, "btnImportUnit");
+            this.btnImportUnit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnImportUnit.Name = "btnImportUnit";
+            this.btnImportUnit.UseVisualStyleBackColor = true;
+            this.btnImportUnit.Click += new System.EventHandler(this.btnImportUnit_Click);
             // 
             // difficulty1
             // 
@@ -366,6 +389,11 @@
             resources.ApplyResources(this.convoyMain1, "convoyMain1");
             this.convoyMain1.Name = "convoyMain1";
             // 
+            // lblUnitCount
+            // 
+            resources.ApplyResources(this.lblUnitCount, "lblUnitCount");
+            this.lblUnitCount.Name = "lblUnitCount";
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -439,6 +467,10 @@
         private System.Windows.Forms.TabPage tabConvoy;
         private Convoy.ConvoyMain convoyMain1;
         private System.Windows.Forms.Button btnDeleteUnit;
+        private System.Windows.Forms.Button btnExportUnit;
+        private System.Windows.Forms.Button btnImportUnit;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Label lblUnitCount;
     }
 }
 
