@@ -81,7 +81,7 @@ namespace FEFTwiddler.Model
             unit.RawBlock1 = new byte[RawBlock1Length];
             unit.CharacterID = characterId;
             unit.RawInventory = new byte[RawInventoryLength];
-            unit.RawNumberOfSupports = characterData.MainSupportCount;
+            unit.RawNumberOfSupports = (byte)characterData.SupportPool.Length;
             unit.RawSupports = new byte[unit.RawNumberOfSupports];
             unit.RawBlock2 = new byte[RawBlock2Length];
             unit.RawLearnedSkills = new byte[RawLearnedSkillsLength];
@@ -1024,6 +1024,9 @@ namespace FEFTwiddler.Model
 
         #region End Block Properties (Child)
 
+        /// <summary>
+        /// Character ID of father
+        /// </summary>
         public Enums.Character FatherID
         {
             get
@@ -1039,6 +1042,9 @@ namespace FEFTwiddler.Model
             }
         }
 
+        /// <summary>
+        /// Boon stat of father. Default value is None.
+        /// </summary>
         public Enums.Stat FatherBoon
         {
             get
@@ -1053,6 +1059,9 @@ namespace FEFTwiddler.Model
             }
         }
 
+        /// <summary>
+        /// Bane stats of father. Default value is None.
+        /// </summary>
         public Enums.Stat FatherBane
         {
             get
@@ -1067,6 +1076,26 @@ namespace FEFTwiddler.Model
             }
         }
 
+        /// <summary>
+        /// Support point with father
+        /// </summary>
+        public sbyte FatherSupport
+        {
+            get
+            {
+                try { VerifyEndBlockSizeIfChild(); } catch (MissingFieldException) { return 0; }
+                return (sbyte)_rawEndBlock[0xD];
+            }
+            set
+            {
+                VerifyEndBlockSizeIfChild();
+                _rawEndBlock[0xD] = (byte)value;
+            }
+        }
+
+        /// <summary>
+        /// Character ID of mother
+        /// </summary>
         public Enums.Character MotherID
         {
             get
@@ -1082,6 +1111,9 @@ namespace FEFTwiddler.Model
             }
         }
 
+        /// <summary>
+        /// Boon stat of mother. Default value is None.
+        /// </summary>
         public Enums.Stat MotherBoon
         {
             get
@@ -1096,6 +1128,9 @@ namespace FEFTwiddler.Model
             }
         }
 
+        /// <summary>
+        /// Bane stat of mother. Default value is None.
+        /// </summary>
         public Enums.Stat MotherBane
         {
             get
@@ -1108,6 +1143,32 @@ namespace FEFTwiddler.Model
                 VerifyEndBlockSizeIfChild();
                 _rawEndBlock[0x14] = (byte)value;
             }
+        }
+
+        /// <summary>
+        /// Support point with mother.
+        /// </summary>
+        public sbyte MotherSupport
+        {
+            get
+            {
+                try { VerifyEndBlockSizeIfChild(); } catch (MissingFieldException) { return 0; }
+                return (sbyte)_rawEndBlock[0x1B];
+            }
+            set 
+            {
+                VerifyEndBlockSizeIfChild();
+                _rawEndBlock[0x1B] = (byte)value;
+            }
+        }
+
+        /// <summary>
+        /// Support point for sibling
+        /// </summary>
+        public sbyte SiblingSupport
+        {
+            get { return (sbyte)_rawEndBlock[0x1E]; }
+            set { _rawEndBlock[0x1E] = (byte)value; }
         }
 
         private void VerifyEndBlockSizeIfChild()

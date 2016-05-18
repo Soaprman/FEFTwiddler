@@ -28,10 +28,12 @@ namespace FEFTwiddler.GUI.UnitViewer
         {
             if (Enum.IsDefined(typeof(Enums.Character), _unit.CharacterID))
             {
-                if (_unit.CorrinName == null)
-                    this.Text = Data.Database.Characters.GetByID(_unit.CharacterID).DisplayName + "'s stats";
-                else
+                if (_unit.CorrinName != null)
                     this.Text =  _unit.CorrinName + "'s stats";
+                else if (Data.Database.Characters.GetByID(_unit.CharacterID).IsPrisoner)
+                    this.Text = Data.Database.Prisoners.GetByID(_unit.PrisonerID).DisplayName + "'s stats";
+                else
+                    this.Text = Data.Database.Characters.GetByID(_unit.CharacterID).DisplayName + "'s stats";
             }
             else
             {
