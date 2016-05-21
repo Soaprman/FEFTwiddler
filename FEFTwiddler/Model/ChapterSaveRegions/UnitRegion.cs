@@ -149,7 +149,8 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
 
         #region Units Properties
 
-        public const int MaxUnits = 100;
+        public const int SoftMaxUnits = 100;
+        public const int HardMaxUnits = 255;
         public List<Unit> Units { get; set; }
 
         #endregion

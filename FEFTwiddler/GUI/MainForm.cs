@@ -249,7 +249,7 @@ namespace FEFTwiddler.GUI
 
         private void UpdateUnitCount()
         {
-            lblUnitCount.Text = string.Format("Units: {0}/{1}", _chapterSave.UnitRegion.Units.Count, Model.ChapterSaveRegions.UnitRegion.MaxUnits);
+            lblUnitCount.Text = string.Format("Units: {0}/{1}", _chapterSave.UnitRegion.Units.Count, Model.ChapterSaveRegions.UnitRegion.HardMaxUnits);
         }
 
         private bool IsDead(Model.Unit unit)
@@ -393,10 +393,15 @@ namespace FEFTwiddler.GUI
 
         private void btnImportUnit_Click(object sender, EventArgs e)
         {
-            if (_chapterSave.UnitRegion.Units.Count >= Model.ChapterSaveRegions.UnitRegion.MaxUnits)
+            if (_chapterSave.UnitRegion.Units.Count >= Model.ChapterSaveRegions.UnitRegion.HardMaxUnits)
             {
-                MessageBox.Show("You already have the maximum of " + Model.ChapterSaveRegions.UnitRegion.MaxUnits.ToString() + " units. Please remove one before adding another.");
+                MessageBox.Show("You already have the maximum of " + Model.ChapterSaveRegions.UnitRegion.HardMaxUnits.ToString() + " units. Please remove one before adding another.");
                 return;
+            }
+
+            if (_chapterSave.UnitRegion.Units.Count == Model.ChapterSaveRegions.UnitRegion.SoftMaxUnits)
+            {
+                MessageBox.Show("The game normally does not allow you to recruit more than " + Model.ChapterSaveRegions.UnitRegion.SoftMaxUnits.ToString() + " units. It's possible to add more, but do so at your own risk.");
             }
 
             openFileDialog1.FileName = "";
