@@ -30,7 +30,7 @@
         {
             this.flwSupport = new System.Windows.Forms.FlowLayoutPanel();
             this.btnMaxSupports = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.btnMaxSupportsConversation = new System.Windows.Forms.Button();
             this.cmbAPlus = new System.Windows.Forms.ComboBox();
             this.lblAPlus = new System.Windows.Forms.Label();
@@ -60,15 +60,15 @@
             this.btnMaxSupports.UseVisualStyleBackColor = true;
             this.btnMaxSupports.Click += new System.EventHandler(this.btnMaxSupports_Click);
             // 
-            // btnSave
+            // btnClose
             // 
-            this.btnSave.Location = new System.Drawing.Point(12, 385);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(214, 23);
-            this.btnSave.TabIndex = 2;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnClose.Location = new System.Drawing.Point(12, 385);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(214, 23);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnMaxSupportsConversation
             // 
@@ -117,7 +117,7 @@
             this.Controls.Add(this.lblAPlus);
             this.Controls.Add(this.cmbAPlus);
             this.Controls.Add(this.btnMaxSupportsConversation);
-            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnMaxSupports);
             this.Controls.Add(this.flwSupport);
             this.MaximizeBox = false;
@@ -134,7 +134,7 @@
 
         private System.Windows.Forms.FlowLayoutPanel flwSupport;
         private System.Windows.Forms.Button btnMaxSupports;
-        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnMaxSupportsConversation;
         private System.Windows.Forms.ComboBox cmbAPlus;
         private System.Windows.Forms.Label lblAPlus;
