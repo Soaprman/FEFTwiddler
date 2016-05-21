@@ -82,10 +82,10 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
             {
                 return new byte[]
                 {
-                    (byte)(SupportCount1),
-                    (byte)(SupportCount1 >> 8),
-                    (byte)(SupportCount1 >> 16),
-                    (byte)(SupportCount1 >> 24)
+                    (byte)(UnlockedCharacterCount1),
+                    (byte)(UnlockedCharacterCount1 >> 8),
+                    (byte)(UnlockedCharacterCount1 >> 16),
+                    (byte)(UnlockedCharacterCount1 >> 24)
                 };
             }
         }
@@ -96,10 +96,10 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
             {
                 return new byte[]
                 {
-                    (byte)(SupportCount2),
-                    (byte)(SupportCount2 >> 8),
-                    (byte)(SupportCount2 >> 16),
-                    (byte)(SupportCount2 >> 24)
+                    (byte)(UnlockedCharacterCount2),
+                    (byte)(UnlockedCharacterCount2 >> 8),
+                    (byte)(UnlockedCharacterCount2 >> 16),
+                    (byte)(UnlockedCharacterCount2 >> 24)
                 };
             }
         }
