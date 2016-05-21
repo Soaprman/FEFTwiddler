@@ -17,14 +17,18 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
             get
             {
                 return RawBlock1
+                    .Concat(RawUnlockedCharacterCount1)
+                    .Concat(RawUnlockedCharacterCount2)
+                    .Concat(RawUnlockedCharacters)
+                    .Concat(RawBlock2)
                     .Concat(RawSupportCount1)
                     .Concat(RawSupportCount2)
                     .Concat(RawSupports)
-                    .Concat(RawBlock2)
+                    .Concat(RawBlock3)
                     .Concat(RawHairColorCount1)
                     .Concat(RawHairColorCount2)
                     .Concat(RawHairColors)
-                    .Concat(RawBlock3)
+                    .Concat(RawBlock4)
                     .ToArray();
             }
             set
@@ -34,26 +38,33 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
                 {
                     RawBlock1 = br.ReadBytes(RawBlock1Length);
 
-                    SupportCount1 = br.ReadUInt32();
-                    SupportCount2 = br.ReadUInt32();
-
-                    // Read supports
-                    var supportBytes = (int)((SupportCount1 / 8) + (SupportCount1 % 8 != 0 ? 1 : 0));
-                    RawSupports = br.ReadBytes(supportBytes);
+                    // Read unlocked characters
+                    UnlockedCharacterCount1 = br.ReadUInt32();
+                    UnlockedCharacterCount2 = br.ReadUInt32();
+                    var unlockedCharacterBytes = Utils.BitMath.ByteCountNeededForBitCount((int)UnlockedCharacterCount1);
+                    RawUnlockedCharacters = br.ReadBytes(unlockedCharacterBytes);
 
                     RawBlock2 = br.ReadBytes(RawBlock2Length);
+
+                    // Read supports
+                    SupportCount1 = br.ReadUInt32();
+                    SupportCount2 = br.ReadUInt32();
+                    var supportBytes = Utils.BitMath.ByteCountNeededForBitCount((int)SupportCount1);
+                    RawSupports = br.ReadBytes(supportBytes);
+
+                    RawBlock3 = br.ReadBytes(RawBlock3Length);
 
                     HairColorCount1 = br.ReadUInt32();
                     HairColorCount2 = br.ReadUInt32();
 
                     RawHairColors = br.ReadBytes((int)HairColorCount1 * 4);
 
-                    RawBlock3 = br.ReadBytes(RawBlock3Length);
+                    RawBlock4 = br.ReadBytes(RawBlock4Length);
                 }
             }
         }
 
-        public const int RawBlock1Length = 0x42;
+        public const int RawBlock1Length = 0x30;
         private byte[] _rawBlock1;
         public byte[] RawBlock1
         {
@@ -62,6 +73,59 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
             {
                 if (value.Length != RawBlock1Length) throw new ArgumentException("Region1 block 1 must be " + RawBlock1Length + " bytes in length");
                 _rawBlock1 = value;
+            }
+        }
+
+        public byte[] RawUnlockedCharacterCount1
+        {
+            get
+            {
+                return new byte[]
+                {
+                    (byte)(SupportCount1),
+                    (byte)(SupportCount1 >> 8),
+                    (byte)(SupportCount1 >> 16),
+                    (byte)(SupportCount1 >> 24)
+                };
+            }
+        }
+
+        public byte[] RawUnlockedCharacterCount2
+        {
+            get
+            {
+                return new byte[]
+                {
+                    (byte)(SupportCount2),
+                    (byte)(SupportCount2 >> 8),
+                    (byte)(SupportCount2 >> 16),
+                    (byte)(SupportCount2 >> 24)
+                };
+            }
+        }
+
+        private byte[] _rawUnlockedCharacters;
+        public byte[] RawUnlockedCharacters
+        {
+            get
+            {
+                return _rawUnlockedCharacters;
+            }
+            set
+            {
+                _rawUnlockedCharacters = value;
+            }
+        }
+
+        public const int RawBlock2Length = 0x01;
+        private byte[] _rawBlock2;
+        public byte[] RawBlock2
+        {
+            get { return _rawBlock2; }
+            set
+            {
+                if (value.Length != RawBlock2Length) throw new ArgumentException("Region1 block 2 must be " + RawBlock2Length + " bytes in length");
+                _rawBlock2 = value;
             }
         }
 
@@ -106,15 +170,15 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
             }
         }
 
-        public const int RawBlock2Length = 0x1E;
-        private byte[] _rawBlock2;
-        public byte[] RawBlock2
+        public const int RawBlock3Length = 0x1E;
+        private byte[] _rawBlock3;
+        public byte[] RawBlock3
         {
-            get { return _rawBlock2; }
+            get { return _rawBlock3; }
             set
             {
-                if (value.Length != RawBlock2Length) throw new ArgumentException("Region1 block 2 must be " + RawBlock2Length + " bytes in length");
-                _rawBlock2 = value;
+                if (value.Length != RawBlock3Length) throw new ArgumentException("Region1 block 3 must be " + RawBlock3Length + " bytes in length");
+                _rawBlock3 = value;
             }
         }
 
@@ -156,15 +220,15 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
             }
         }
 
-        public const int RawBlock3Length = 0x59;
-        private byte[] _rawBlock3;
-        public byte[] RawBlock3
+        public const int RawBlock4Length = 0x59;
+        private byte[] _rawBlock4;
+        public byte[] RawBlock4
         {
-            get { return _rawBlock3; }
+            get { return _rawBlock4; }
             set
             {
-                if (value.Length != RawBlock3Length) throw new ArgumentException("Region1 block 3 must be " + RawBlock3Length + " bytes in length");
-                _rawBlock3 = value;
+                if (value.Length != RawBlock4Length) throw new ArgumentException("Region1 block 4 must be " + RawBlock4Length + " bytes in length");
+                _rawBlock4 = value;
             }
         }
 
@@ -184,44 +248,25 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
         // Two unknown bytes (0x2E through 0x2F)
         // Always 03 00?
 
+        #endregion
+
+        #region Unlocked Characters
+
         public uint UnlockedCharacterCount1
         {
-            get
-            {
-                return BitConverter.ToUInt32(_rawBlock1, 0x30);
-            }
-            set
-            {
-                _rawBlock1[0x30] = (byte)(value);
-                _rawBlock1[0x31] = (byte)(value >> 8);
-                _rawBlock1[0x32] = (byte)(value >> 16);
-                _rawBlock1[0x33] = (byte)(value >> 24);
-            }
+            get; set;
         }
 
         public uint UnlockedCharacterCount2
         {
-            get
-            {
-                return BitConverter.ToUInt32(_rawBlock1, 0x34);
-            }
-            set
-            {
-                _rawBlock1[0x34] = (byte)(value);
-                _rawBlock1[0x35] = (byte)(value >> 8);
-                _rawBlock1[0x36] = (byte)(value >> 16);
-                _rawBlock1[0x37] = (byte)(value >> 24);
-            }
+            get; set;
         }
 
-        // Might be dynamic size based on UnlockedCharacterCount
-        public byte[] UnlockedCharacters
-        {
-            get { return _rawBlock1.Skip(0x38).Take(0x09).ToArray(); }
-            set { Array.Copy(value, 0x00, _rawBlock1, 0x38, 0x09); }
-        }
+        #endregion
 
-        // One unknown byte (0x41)
+        #region Block 2
+
+        // One unknown byte (0x00)
         // Always 00?
 
         #endregion
@@ -240,7 +285,7 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
 
         #endregion
 
-        #region Block 2
+        #region Block 3
 
         // Five unknown bytes (0x00 through 0x04)
         // Always 00 18 00 00 00?
@@ -249,8 +294,8 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
         // Maybe movies
         public byte[] UnknownUnlocks1
         {
-            get { return _rawBlock2.Skip(0x05).Take(0x03).ToArray(); }
-            set { Array.Copy(value, 0x00, _rawBlock2, 0x05, 0x03); }
+            get { return _rawBlock3.Skip(0x05).Take(0x03).ToArray(); }
+            set { Array.Copy(value, 0x00, _rawBlock3, 0x05, 0x03); }
         }
 
         // Five unknown bytes (0x08 through 0x0C)
@@ -260,8 +305,8 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
         // Maybe music
         public byte[] UnknownUnlocks2
         {
-            get { return _rawBlock2.Skip(0x0D).Take(0x0C).ToArray(); }
-            set { Array.Copy(value, 0x00, _rawBlock2, 0x0D, 0x0C); }
+            get { return _rawBlock3.Skip(0x0D).Take(0x0C).ToArray(); }
+            set { Array.Copy(value, 0x00, _rawBlock3, 0x0D, 0x0C); }
         }
 
         // Two unknown bytes (0x19 through 0x1A)
@@ -445,15 +490,15 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
 
         #endregion
 
-        #region Block 3
+        #region Block 4
 
         // One unknown byte (0x00)
         // Always 04?
 
         public string Name_CorrinM
         {
-            get { return Utils.TypeConverter.ToString(_rawBlock3.Skip(0x01).Take(0x18).ToArray()); }
-            set { Array.Copy(Utils.TypeConverter.ToByteArray(value, 0x0C), 0x00, _rawBlock3, 0x01, 0x18); }
+            get { return Utils.TypeConverter.ToString(_rawBlock4.Skip(0x01).Take(0x18).ToArray()); }
+            set { Array.Copy(Utils.TypeConverter.ToByteArray(value, 0x0C), 0x00, _rawBlock4, 0x01, 0x18); }
         }
 
         // Ten unknown bytes (0x19 through 0x22)
@@ -461,13 +506,13 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
 
         public Color HairColor_CorrinM
         {
-            get { return Color.FromArgb(_rawBlock3[0x26], _rawBlock3[0x23], _rawBlock3[0x24], _rawBlock3[0x25]); }
+            get { return Color.FromArgb(_rawBlock4[0x26], _rawBlock4[0x23], _rawBlock4[0x24], _rawBlock4[0x25]); }
             set
             {
-                _rawBlock3[0x23] = value.R;
-                _rawBlock3[0x24] = value.G;
-                _rawBlock3[0x25] = value.B;
-                _rawBlock3[0x26] = value.A;
+                _rawBlock4[0x23] = value.R;
+                _rawBlock4[0x24] = value.G;
+                _rawBlock4[0x25] = value.B;
+                _rawBlock4[0x26] = value.A;
             }
         }
 
@@ -479,8 +524,8 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
 
         public string Name_CorrinF
         {
-            get { return Utils.TypeConverter.ToString(_rawBlock3.Skip(0x2D).Take(0x18).ToArray()); }
-            set { Array.Copy(Utils.TypeConverter.ToByteArray(value, 0x0C), 0x00, _rawBlock3, 0x2D, 0x18); }
+            get { return Utils.TypeConverter.ToString(_rawBlock4.Skip(0x2D).Take(0x18).ToArray()); }
+            set { Array.Copy(Utils.TypeConverter.ToByteArray(value, 0x0C), 0x00, _rawBlock4, 0x2D, 0x18); }
         }
 
         // Ten unknown bytes (0x45 through 0x4E)
@@ -488,13 +533,13 @@ namespace FEFTwiddler.Model.GlobalSaveRegions
 
         public Color HairColor_CorrinF
         {
-            get { return Color.FromArgb(_rawBlock3[0x52], _rawBlock3[0x4F], _rawBlock3[0x50], _rawBlock3[0x51]); }
+            get { return Color.FromArgb(_rawBlock4[0x52], _rawBlock4[0x4F], _rawBlock4[0x50], _rawBlock4[0x51]); }
             set
             {
-                _rawBlock3[0x4F] = value.R;
-                _rawBlock3[0x50] = value.G;
-                _rawBlock3[0x51] = value.B;
-                _rawBlock3[0x52] = value.A;
+                _rawBlock4[0x4F] = value.R;
+                _rawBlock4[0x50] = value.G;
+                _rawBlock4[0x51] = value.B;
+                _rawBlock4[0x52] = value.A;
             }
         }
 

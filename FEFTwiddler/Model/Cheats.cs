@@ -8,7 +8,7 @@
 
             globalSave.Region1.UnlockedCharacterCount1 = 0x47;
             globalSave.Region1.UnlockedCharacterCount2 = 0x47;
-            globalSave.Region1.UnlockedCharacters = new byte[] {
+            globalSave.Region1.RawUnlockedCharacters = new byte[] {
                 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x7F
             };
             globalSave.Region1.SupportCount1 = 0xDE1;
