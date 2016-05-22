@@ -261,10 +261,10 @@ namespace FEFTwiddler.Model
             get
             {
                 var blah = (_rawBlock1.Take(0x1F))
-                    .Concat(_gainedStats.Raw)
-                    .Concat(_statueBonusStats.Raw)
+                    .Concat(_gainedStats?.Raw ?? new byte[0x08])
+                    .Concat(_statueBonusStats?.Raw ?? new byte[0x08])
                     .Concat(_rawBlock1.Skip(0x2F).Take(0x08))
-                    .Concat(_extraGainedStats.Raw)
+                    .Concat(_extraGainedStats?.Raw ?? new byte[0x08])
                     .Concat(_rawBlock1.Skip(0x3F))
                     .ToArray();
                 return blah;
