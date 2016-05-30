@@ -513,6 +513,7 @@ namespace FEFTwiddler.GUI
         {
             var traits = new UnitViewer.Traits(_selectedUnit);
             traits.ShowDialog();
+            LoadUnit(_selectedUnit);
         }
 
         #endregion

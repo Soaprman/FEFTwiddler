@@ -415,353 +415,332 @@ namespace FEFTwiddler.Model
 
         // Eight "flag" bytes (0x01 through 0x08)
 
-        public bool Flag_00_01
+        public bool Trait_IsFemale
         {
             get { return _rawBlock1[0x01].GetFlag(0x01); }
             set { _rawBlock1[0x01] = _rawBlock1[0x01].SetFlag(0x01, value); }
         }
-        public bool Flag_00_02
+        public bool Trait_Hero
         {
             get { return _rawBlock1[0x01].GetFlag(0x02); }
             set { _rawBlock1[0x01] = _rawBlock1[0x01].SetFlag(0x02, value); }
         }
-        public bool Flag_00_04
+        public bool Trait_Player
         {
             get { return _rawBlock1[0x01].GetFlag(0x04); }
             set { _rawBlock1[0x01] = _rawBlock1[0x01].SetFlag(0x04, value); }
         }
-        public bool Flag_00_08
+        public bool Trait_AdvancedClasses
         {
             get { return _rawBlock1[0x01].GetFlag(0x08); }
             set { _rawBlock1[0x01] = _rawBlock1[0x01].SetFlag(0x08, value); }
         }
-        public bool Flag_00_10
+        public bool Trait_Leader
         {
             get { return _rawBlock1[0x01].GetFlag(0x10); }
             set { _rawBlock1[0x01] = _rawBlock1[0x01].SetFlag(0x10, value); }
         }
-        public bool Flag_00_20
+        public bool Trait_DefeatCondition
         {
             get { return _rawBlock1[0x01].GetFlag(0x20); }
             set { _rawBlock1[0x01] = _rawBlock1[0x01].SetFlag(0x20, value); }
         }
-        public bool Flag_00_40
+        public bool Trait_MovementBan
         {
             get { return _rawBlock1[0x01].GetFlag(0x40); }
             set { _rawBlock1[0x01] = _rawBlock1[0x01].SetFlag(0x40, value); }
         }
-        public bool Flag_00_80
+        public bool Trait_HitBan
         {
             get { return _rawBlock1[0x01].GetFlag(0x80); }
             set { _rawBlock1[0x01] = _rawBlock1[0x01].SetFlag(0x80, value); }
         }
 
-        public bool Flag_01_01
+        public bool Trait_CriticalBan
         {
             get { return _rawBlock1[0x02].GetFlag(0x01); }
             set { _rawBlock1[0x02] = _rawBlock1[0x02].SetFlag(0x01, value); }
         }
-        public bool Flag_01_02
+        public bool Trait_AvoidBan
         {
             get { return _rawBlock1[0x02].GetFlag(0x02); }
             set { _rawBlock1[0x02] = _rawBlock1[0x02].SetFlag(0x02, value); }
         }
-        public bool Flag_01_04
+        public bool Trait_ForceHit
         {
             get { return _rawBlock1[0x02].GetFlag(0x04); }
             set { _rawBlock1[0x02] = _rawBlock1[0x02].SetFlag(0x04, value); }
         }
-        public bool Flag_01_08
+        public bool Trait_ForceCritical
         {
             get { return _rawBlock1[0x02].GetFlag(0x08); }
             set { _rawBlock1[0x02] = _rawBlock1[0x02].SetFlag(0x08, value); }
         }
-        public bool Flag_01_10
+        public bool Trait_ForceAvoid
         {
             get { return _rawBlock1[0x02].GetFlag(0x10); }
             set { _rawBlock1[0x02] = _rawBlock1[0x02].SetFlag(0x10, value); }
         }
-        public bool Flag_01_20
+        public bool Trait_ForceDodge
         {
             get { return _rawBlock1[0x02].GetFlag(0x20); }
             set { _rawBlock1[0x02] = _rawBlock1[0x02].SetFlag(0x20, value); }
         }
-        public bool Flag_01_40
+        public bool Trait_ResistStatus
         {
             get { return _rawBlock1[0x02].GetFlag(0x40); }
             set { _rawBlock1[0x02] = _rawBlock1[0x02].SetFlag(0x40, value); }
         }
-        public bool Flag_01_80
+        public bool Trait_ImmuneStatus
         {
             get { return _rawBlock1[0x02].GetFlag(0x80); }
             set { _rawBlock1[0x02] = _rawBlock1[0x02].SetFlag(0x80, value); }
         }
 
-        public bool Flag_02_01
+        public bool Trait_NegateLethality
         {
             get { return _rawBlock1[0x03].GetFlag(0x01); }
             set { _rawBlock1[0x03] = _rawBlock1[0x03].SetFlag(0x01, value); }
         }
-        public bool Flag_02_02
+        public bool Trait_02_02
         {
             get { return _rawBlock1[0x03].GetFlag(0x02); }
             set { _rawBlock1[0x03] = _rawBlock1[0x03].SetFlag(0x02, value); }
         }
-        public bool Flag_02_04
+        public bool Trait_02_04
         {
             get { return _rawBlock1[0x03].GetFlag(0x04); }
             set { _rawBlock1[0x03] = _rawBlock1[0x03].SetFlag(0x04, value); }
         }
-        public bool Flag_02_08
+        public bool Trait_DoubleExpWhenDefeated
         {
             get { return _rawBlock1[0x03].GetFlag(0x08); }
             set { _rawBlock1[0x03] = _rawBlock1[0x03].SetFlag(0x08, value); }
         }
-        public bool Flag_02_10
+        public bool Trait_HalfExpWhenDefeated
         {
             get { return _rawBlock1[0x03].GetFlag(0x10); }
             set { _rawBlock1[0x03] = _rawBlock1[0x03].SetFlag(0x10, value); }
         }
-        public bool Flag_02_20
+        public bool Trait_RareFacelessExp
         {
             get { return _rawBlock1[0x03].GetFlag(0x20); }
             set { _rawBlock1[0x03] = _rawBlock1[0x03].SetFlag(0x20, value); }
         }
-        public bool Flag_02_40
+        public bool Trait_ExpCorrection
         {
             get { return _rawBlock1[0x03].GetFlag(0x40); }
             set { _rawBlock1[0x03] = _rawBlock1[0x03].SetFlag(0x40, value); }
         }
-        public bool Flag_02_80
+        public bool Trait_IsManakete
         {
             get { return _rawBlock1[0x03].GetFlag(0x80); }
             set { _rawBlock1[0x03] = _rawBlock1[0x03].SetFlag(0x80, value); }
         }
 
-        public bool Flag_03_01
+        public bool Trait_IsBeast
         {
             get { return _rawBlock1[0x04].GetFlag(0x01); }
             set { _rawBlock1[0x04] = _rawBlock1[0x04].SetFlag(0x01, value); }
         }
-        public bool Flag_03_02
+        public bool Trait_Sing
         {
             get { return _rawBlock1[0x04].GetFlag(0x02); }
             set { _rawBlock1[0x04] = _rawBlock1[0x04].SetFlag(0x02, value); }
         }
-        public bool Flag_03_04
+        public bool Trait_DestroysVillages
         {
             get { return _rawBlock1[0x04].GetFlag(0x04); }
             set { _rawBlock1[0x04] = _rawBlock1[0x04].SetFlag(0x04, value); }
         }
-        public bool Flag_03_08
+        public bool Trait_EnemyOnly
         {
             get { return _rawBlock1[0x04].GetFlag(0x08); }
             set { _rawBlock1[0x04] = _rawBlock1[0x04].SetFlag(0x08, value); }
         }
-        public bool Flag_03_10
+        public bool Trait_03_10
         {
             get { return _rawBlock1[0x04].GetFlag(0x10); }
             set { _rawBlock1[0x04] = _rawBlock1[0x04].SetFlag(0x10, value); }
         }
-        public bool Flag_03_20
+        public bool Trait_03_20
         {
             get { return _rawBlock1[0x04].GetFlag(0x20); }
             set { _rawBlock1[0x04] = _rawBlock1[0x04].SetFlag(0x20, value); }
         }
-        public bool Flag_03_40
+        public bool Trait_Takumi
         {
             get { return _rawBlock1[0x04].GetFlag(0x40); }
             set { _rawBlock1[0x04] = _rawBlock1[0x04].SetFlag(0x40, value); }
         }
-        public bool Flag_03_80
+        public bool Trait_Ryoma
         {
             get { return _rawBlock1[0x04].GetFlag(0x80); }
             set { _rawBlock1[0x04] = _rawBlock1[0x04].SetFlag(0x80, value); }
         }
 
-        public bool Flag_04_01
+        public bool Trait_Leo
         {
             get { return _rawBlock1[0x05].GetFlag(0x01); }
             set { _rawBlock1[0x05] = _rawBlock1[0x05].SetFlag(0x01, value); }
         }
-        public bool Flag_04_02
+        public bool Trait_Xander
         {
             get { return _rawBlock1[0x05].GetFlag(0x02); }
             set { _rawBlock1[0x05] = _rawBlock1[0x05].SetFlag(0x02, value); }
         }
-        public bool Flag_04_04
+        public bool Trait_CannotUseSpecialWeapon
         {
             get { return _rawBlock1[0x05].GetFlag(0x04); }
             set { _rawBlock1[0x05] = _rawBlock1[0x05].SetFlag(0x04, value); }
         }
-        public bool Flag_04_08
+        public bool Trait_CanUseDragonVein
         {
             get { return _rawBlock1[0x05].GetFlag(0x08); }
             set { _rawBlock1[0x05] = _rawBlock1[0x05].SetFlag(0x08, value); }
         }
-        public bool Flag_04_10
+        public bool Trait_CannotUseAttackStance
         {
             get { return _rawBlock1[0x05].GetFlag(0x10); }
             set { _rawBlock1[0x05] = _rawBlock1[0x05].SetFlag(0x10, value); }
         }
-        public bool Flag_04_20
+        public bool Trait_CannotDoubleAttack
         {
             get { return _rawBlock1[0x05].GetFlag(0x20); }
             set { _rawBlock1[0x05] = _rawBlock1[0x05].SetFlag(0x20, value); }
         }
-        public bool Flag_04_40
+        public bool Trait_CannotBeInherited
         {
             get { return _rawBlock1[0x05].GetFlag(0x40); }
             set { _rawBlock1[0x05] = _rawBlock1[0x05].SetFlag(0x40, value); }
         }
-        public bool Flag_04_80
+        public bool Trait_CannotBeObtainedViaSupport
         {
             get { return _rawBlock1[0x05].GetFlag(0x80); }
             set { _rawBlock1[0x05] = _rawBlock1[0x05].SetFlag(0x80, value); }
         }
 
-        public bool Flag_05_01
+        public bool Trait_RouteLimited
         {
             get { return _rawBlock1[0x06].GetFlag(0x01); }
             set { _rawBlock1[0x06] = _rawBlock1[0x06].SetFlag(0x01, value); }
         }
-        public bool Flag_05_02
+        public bool Trait_05_02
         {
             get { return _rawBlock1[0x06].GetFlag(0x02); }
             set { _rawBlock1[0x06] = _rawBlock1[0x06].SetFlag(0x02, value); }
         }
-        public bool Flag_05_04
+        public bool Trait_CanUseStaff
         {
             get { return _rawBlock1[0x06].GetFlag(0x04); }
             set { _rawBlock1[0x06] = _rawBlock1[0x06].SetFlag(0x04, value); }
         }
-        public bool Flag_05_08
+        public bool Trait_CannotBeTraded
         {
             get { return _rawBlock1[0x06].GetFlag(0x08); }
             set { _rawBlock1[0x06] = _rawBlock1[0x06].SetFlag(0x08, value); }
         }
-        public bool Flag_05_10
+        public bool Trait_CannotObtainExp
         {
             get { return _rawBlock1[0x06].GetFlag(0x10); }
             set { _rawBlock1[0x06] = _rawBlock1[0x06].SetFlag(0x10, value); }
         }
-        public bool Flag_05_20
+        public bool Trait_CannotWarp
         {
             get { return _rawBlock1[0x06].GetFlag(0x20); }
             set { _rawBlock1[0x06] = _rawBlock1[0x06].SetFlag(0x20, value); }
         }
-        public bool Flag_05_40
+        public bool Trait_SalespersonInMyCastle
         {
             get { return _rawBlock1[0x06].GetFlag(0x40); }
             set { _rawBlock1[0x06] = _rawBlock1[0x06].SetFlag(0x40, value); }
         }
-        public bool Flag_05_80
+        public bool Trait_DefeatConditionWithdrawal
         {
             get { return _rawBlock1[0x06].GetFlag(0x80); }
             set { _rawBlock1[0x06] = _rawBlock1[0x06].SetFlag(0x80, value); }
         }
 
-        public bool Flag_06_01
+        public bool Trait_Ophelia
         {
             get { return _rawBlock1[0x07].GetFlag(0x01); }
             set { _rawBlock1[0x07] = _rawBlock1[0x07].SetFlag(0x01, value); }
         }
-        public bool Flag_06_02
+        public bool Trait_CannotTriggerOffensiveSkills
         {
             get { return _rawBlock1[0x07].GetFlag(0x02); }
             set { _rawBlock1[0x07] = _rawBlock1[0x07].SetFlag(0x02, value); }
         }
-        public bool Flag_06_04
+        public bool Trait_TriggerOffensiveSkills
         {
             get { return _rawBlock1[0x07].GetFlag(0x04); }
             set { _rawBlock1[0x07] = _rawBlock1[0x07].SetFlag(0x04, value); }
         }
-        public bool Flag_06_08
+        public bool Trait_Ties
         {
             get { return _rawBlock1[0x07].GetFlag(0x08); }
             set { _rawBlock1[0x07] = _rawBlock1[0x07].SetFlag(0x08, value); }
         }
-        public bool Flag_06_10
+        public bool Trait_CapturedUnit
         {
             get { return _rawBlock1[0x07].GetFlag(0x10); }
             set { _rawBlock1[0x07] = _rawBlock1[0x07].SetFlag(0x10, value); }
         }
-        public bool Flag_06_20
+        public bool Trait_AvoidMinus10
         {
             get { return _rawBlock1[0x07].GetFlag(0x20); }
             set { _rawBlock1[0x07] = _rawBlock1[0x07].SetFlag(0x20, value); }
         }
-        public bool Flag_06_40
+        public bool Trait_AvoidMinus20
         {
             get { return _rawBlock1[0x07].GetFlag(0x40); }
             set { _rawBlock1[0x07] = _rawBlock1[0x07].SetFlag(0x40, value); }
         }
-        public bool Flag_06_80
+        public bool Trait_AvoidPlus10
         {
             get { return _rawBlock1[0x07].GetFlag(0x80); }
             set { _rawBlock1[0x07] = _rawBlock1[0x07].SetFlag(0x80, value); }
         }
 
-        public bool Flag_07_01
+        public bool Trait_AvoidPlus20
         {
             get { return _rawBlock1[0x08].GetFlag(0x01); }
             set { _rawBlock1[0x08] = _rawBlock1[0x08].SetFlag(0x01, value); }
         }
-        public bool Flag_07_02
+        public bool Trait_HitPlus10
         {
             get { return _rawBlock1[0x08].GetFlag(0x02); }
             set { _rawBlock1[0x08] = _rawBlock1[0x08].SetFlag(0x02, value); }
         }
-        public bool Flag_07_04
+        public bool Trait_HitPlus20
         {
             get { return _rawBlock1[0x08].GetFlag(0x04); }
             set { _rawBlock1[0x08] = _rawBlock1[0x08].SetFlag(0x04, value); }
         }
-        public bool Flag_07_08
+        public bool Trait_HitPlus30
         {
             get { return _rawBlock1[0x08].GetFlag(0x08); }
             set { _rawBlock1[0x08] = _rawBlock1[0x08].SetFlag(0x08, value); }
         }
-        public bool Flag_07_10
+        public bool Trait_07_10
         {
             get { return _rawBlock1[0x08].GetFlag(0x10); }
             set { _rawBlock1[0x08] = _rawBlock1[0x08].SetFlag(0x10, value); }
         }
-        public bool Flag_07_20
+        public bool Trait_CannotBePromoted
         {
             get { return _rawBlock1[0x08].GetFlag(0x20); }
             set { _rawBlock1[0x08] = _rawBlock1[0x08].SetFlag(0x20, value); }
         }
-        public bool Flag_07_40
+        public bool Trait_IsAmiibo
         {
             get { return _rawBlock1[0x08].GetFlag(0x40); }
             set { _rawBlock1[0x08] = _rawBlock1[0x08].SetFlag(0x40, value); }
         }
-        public bool Flag_07_80
+        public bool Trait_07_80
         {
             get { return _rawBlock1[0x08].GetFlag(0x80); }
             set { _rawBlock1[0x08] = _rawBlock1[0x08].SetFlag(0x80, value); }
-        }
-
-
-
-
-        public bool IsManakete
-        {
-            get { return _rawBlock1[0x03].GetFlag(0x80); }
-            set { _rawBlock1[0x03] = _rawBlock1[0x03].SetFlag(0x80, value); }
-        }
-
-        public bool IsBeast
-        {
-            get { return _rawBlock1[0x04].GetFlag(0x01); }
-            set { _rawBlock1[0x04] = _rawBlock1[0x04].SetFlag(0x01, value); }
-        }
-
-        public bool CanUseDragonVein
-        {
-            get { return _rawBlock1[0x05].GetFlag(0x08); }
-            set { _rawBlock1[0x05] = _rawBlock1[0x05].SetFlag(0x08, value); }
         }
 
         // End "flag" bytes

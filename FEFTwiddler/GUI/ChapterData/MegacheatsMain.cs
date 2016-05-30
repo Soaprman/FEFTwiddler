@@ -106,7 +106,7 @@ namespace FEFTwiddler.GUI.ChapterData
         {
             foreach (var unit in _chapterSave.UnitRegion.Units)
             {
-                unit.CanUseDragonVein = true;
+                unit.Trait_CanUseDragonVein = true;
             }
             MessageBox.Show("Done!");
         }
