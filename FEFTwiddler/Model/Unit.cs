@@ -415,6 +415,337 @@ namespace FEFTwiddler.Model
 
         // Eight "flag" bytes (0x01 through 0x08)
 
+        public bool Flag_00_01
+        {
+            get { return _rawBlock1[0x01].GetFlag(0x01); }
+            set { _rawBlock1[0x01] = _rawBlock1[0x01].SetFlag(0x01, value); }
+        }
+        public bool Flag_00_02
+        {
+            get { return _rawBlock1[0x01].GetFlag(0x02); }
+            set { _rawBlock1[0x01] = _rawBlock1[0x01].SetFlag(0x02, value); }
+        }
+        public bool Flag_00_04
+        {
+            get { return _rawBlock1[0x01].GetFlag(0x04); }
+            set { _rawBlock1[0x01] = _rawBlock1[0x01].SetFlag(0x04, value); }
+        }
+        public bool Flag_00_08
+        {
+            get { return _rawBlock1[0x01].GetFlag(0x08); }
+            set { _rawBlock1[0x01] = _rawBlock1[0x01].SetFlag(0x08, value); }
+        }
+        public bool Flag_00_10
+        {
+            get { return _rawBlock1[0x01].GetFlag(0x10); }
+            set { _rawBlock1[0x01] = _rawBlock1[0x01].SetFlag(0x10, value); }
+        }
+        public bool Flag_00_20
+        {
+            get { return _rawBlock1[0x01].GetFlag(0x20); }
+            set { _rawBlock1[0x01] = _rawBlock1[0x01].SetFlag(0x20, value); }
+        }
+        public bool Flag_00_40
+        {
+            get { return _rawBlock1[0x01].GetFlag(0x40); }
+            set { _rawBlock1[0x01] = _rawBlock1[0x01].SetFlag(0x40, value); }
+        }
+        public bool Flag_00_80
+        {
+            get { return _rawBlock1[0x01].GetFlag(0x80); }
+            set { _rawBlock1[0x01] = _rawBlock1[0x01].SetFlag(0x80, value); }
+        }
+
+        public bool Flag_01_01
+        {
+            get { return _rawBlock1[0x02].GetFlag(0x01); }
+            set { _rawBlock1[0x02] = _rawBlock1[0x02].SetFlag(0x01, value); }
+        }
+        public bool Flag_01_02
+        {
+            get { return _rawBlock1[0x02].GetFlag(0x02); }
+            set { _rawBlock1[0x02] = _rawBlock1[0x02].SetFlag(0x02, value); }
+        }
+        public bool Flag_01_04
+        {
+            get { return _rawBlock1[0x02].GetFlag(0x04); }
+            set { _rawBlock1[0x02] = _rawBlock1[0x02].SetFlag(0x04, value); }
+        }
+        public bool Flag_01_08
+        {
+            get { return _rawBlock1[0x02].GetFlag(0x08); }
+            set { _rawBlock1[0x02] = _rawBlock1[0x02].SetFlag(0x08, value); }
+        }
+        public bool Flag_01_10
+        {
+            get { return _rawBlock1[0x02].GetFlag(0x10); }
+            set { _rawBlock1[0x02] = _rawBlock1[0x02].SetFlag(0x10, value); }
+        }
+        public bool Flag_01_20
+        {
+            get { return _rawBlock1[0x02].GetFlag(0x20); }
+            set { _rawBlock1[0x02] = _rawBlock1[0x02].SetFlag(0x20, value); }
+        }
+        public bool Flag_01_40
+        {
+            get { return _rawBlock1[0x02].GetFlag(0x40); }
+            set { _rawBlock1[0x02] = _rawBlock1[0x02].SetFlag(0x40, value); }
+        }
+        public bool Flag_01_80
+        {
+            get { return _rawBlock1[0x02].GetFlag(0x80); }
+            set { _rawBlock1[0x02] = _rawBlock1[0x02].SetFlag(0x80, value); }
+        }
+
+        public bool Flag_02_01
+        {
+            get { return _rawBlock1[0x03].GetFlag(0x01); }
+            set { _rawBlock1[0x03] = _rawBlock1[0x03].SetFlag(0x01, value); }
+        }
+        public bool Flag_02_02
+        {
+            get { return _rawBlock1[0x03].GetFlag(0x02); }
+            set { _rawBlock1[0x03] = _rawBlock1[0x03].SetFlag(0x02, value); }
+        }
+        public bool Flag_02_04
+        {
+            get { return _rawBlock1[0x03].GetFlag(0x04); }
+            set { _rawBlock1[0x03] = _rawBlock1[0x03].SetFlag(0x04, value); }
+        }
+        public bool Flag_02_08
+        {
+            get { return _rawBlock1[0x03].GetFlag(0x08); }
+            set { _rawBlock1[0x03] = _rawBlock1[0x03].SetFlag(0x08, value); }
+        }
+        public bool Flag_02_10
+        {
+            get { return _rawBlock1[0x03].GetFlag(0x10); }
+            set { _rawBlock1[0x03] = _rawBlock1[0x03].SetFlag(0x10, value); }
+        }
+        public bool Flag_02_20
+        {
+            get { return _rawBlock1[0x03].GetFlag(0x20); }
+            set { _rawBlock1[0x03] = _rawBlock1[0x03].SetFlag(0x20, value); }
+        }
+        public bool Flag_02_40
+        {
+            get { return _rawBlock1[0x03].GetFlag(0x40); }
+            set { _rawBlock1[0x03] = _rawBlock1[0x03].SetFlag(0x40, value); }
+        }
+        public bool Flag_02_80
+        {
+            get { return _rawBlock1[0x03].GetFlag(0x80); }
+            set { _rawBlock1[0x03] = _rawBlock1[0x03].SetFlag(0x80, value); }
+        }
+
+        public bool Flag_03_01
+        {
+            get { return _rawBlock1[0x04].GetFlag(0x01); }
+            set { _rawBlock1[0x04] = _rawBlock1[0x04].SetFlag(0x01, value); }
+        }
+        public bool Flag_03_02
+        {
+            get { return _rawBlock1[0x04].GetFlag(0x02); }
+            set { _rawBlock1[0x04] = _rawBlock1[0x04].SetFlag(0x02, value); }
+        }
+        public bool Flag_03_04
+        {
+            get { return _rawBlock1[0x04].GetFlag(0x04); }
+            set { _rawBlock1[0x04] = _rawBlock1[0x04].SetFlag(0x04, value); }
+        }
+        public bool Flag_03_08
+        {
+            get { return _rawBlock1[0x04].GetFlag(0x08); }
+            set { _rawBlock1[0x04] = _rawBlock1[0x04].SetFlag(0x08, value); }
+        }
+        public bool Flag_03_10
+        {
+            get { return _rawBlock1[0x04].GetFlag(0x10); }
+            set { _rawBlock1[0x04] = _rawBlock1[0x04].SetFlag(0x10, value); }
+        }
+        public bool Flag_03_20
+        {
+            get { return _rawBlock1[0x04].GetFlag(0x20); }
+            set { _rawBlock1[0x04] = _rawBlock1[0x04].SetFlag(0x20, value); }
+        }
+        public bool Flag_03_40
+        {
+            get { return _rawBlock1[0x04].GetFlag(0x40); }
+            set { _rawBlock1[0x04] = _rawBlock1[0x04].SetFlag(0x40, value); }
+        }
+        public bool Flag_03_80
+        {
+            get { return _rawBlock1[0x04].GetFlag(0x80); }
+            set { _rawBlock1[0x04] = _rawBlock1[0x04].SetFlag(0x80, value); }
+        }
+
+        public bool Flag_04_01
+        {
+            get { return _rawBlock1[0x05].GetFlag(0x01); }
+            set { _rawBlock1[0x05] = _rawBlock1[0x05].SetFlag(0x01, value); }
+        }
+        public bool Flag_04_02
+        {
+            get { return _rawBlock1[0x05].GetFlag(0x02); }
+            set { _rawBlock1[0x05] = _rawBlock1[0x05].SetFlag(0x02, value); }
+        }
+        public bool Flag_04_04
+        {
+            get { return _rawBlock1[0x05].GetFlag(0x04); }
+            set { _rawBlock1[0x05] = _rawBlock1[0x05].SetFlag(0x04, value); }
+        }
+        public bool Flag_04_08
+        {
+            get { return _rawBlock1[0x05].GetFlag(0x08); }
+            set { _rawBlock1[0x05] = _rawBlock1[0x05].SetFlag(0x08, value); }
+        }
+        public bool Flag_04_10
+        {
+            get { return _rawBlock1[0x05].GetFlag(0x10); }
+            set { _rawBlock1[0x05] = _rawBlock1[0x05].SetFlag(0x10, value); }
+        }
+        public bool Flag_04_20
+        {
+            get { return _rawBlock1[0x05].GetFlag(0x20); }
+            set { _rawBlock1[0x05] = _rawBlock1[0x05].SetFlag(0x20, value); }
+        }
+        public bool Flag_04_40
+        {
+            get { return _rawBlock1[0x05].GetFlag(0x40); }
+            set { _rawBlock1[0x05] = _rawBlock1[0x05].SetFlag(0x40, value); }
+        }
+        public bool Flag_04_80
+        {
+            get { return _rawBlock1[0x05].GetFlag(0x80); }
+            set { _rawBlock1[0x05] = _rawBlock1[0x05].SetFlag(0x80, value); }
+        }
+
+        public bool Flag_05_01
+        {
+            get { return _rawBlock1[0x06].GetFlag(0x01); }
+            set { _rawBlock1[0x06] = _rawBlock1[0x06].SetFlag(0x01, value); }
+        }
+        public bool Flag_05_02
+        {
+            get { return _rawBlock1[0x06].GetFlag(0x02); }
+            set { _rawBlock1[0x06] = _rawBlock1[0x06].SetFlag(0x02, value); }
+        }
+        public bool Flag_05_04
+        {
+            get { return _rawBlock1[0x06].GetFlag(0x04); }
+            set { _rawBlock1[0x06] = _rawBlock1[0x06].SetFlag(0x04, value); }
+        }
+        public bool Flag_05_08
+        {
+            get { return _rawBlock1[0x06].GetFlag(0x08); }
+            set { _rawBlock1[0x06] = _rawBlock1[0x06].SetFlag(0x08, value); }
+        }
+        public bool Flag_05_10
+        {
+            get { return _rawBlock1[0x06].GetFlag(0x10); }
+            set { _rawBlock1[0x06] = _rawBlock1[0x06].SetFlag(0x10, value); }
+        }
+        public bool Flag_05_20
+        {
+            get { return _rawBlock1[0x06].GetFlag(0x20); }
+            set { _rawBlock1[0x06] = _rawBlock1[0x06].SetFlag(0x20, value); }
+        }
+        public bool Flag_05_40
+        {
+            get { return _rawBlock1[0x06].GetFlag(0x40); }
+            set { _rawBlock1[0x06] = _rawBlock1[0x06].SetFlag(0x40, value); }
+        }
+        public bool Flag_05_80
+        {
+            get { return _rawBlock1[0x06].GetFlag(0x80); }
+            set { _rawBlock1[0x06] = _rawBlock1[0x06].SetFlag(0x80, value); }
+        }
+
+        public bool Flag_06_01
+        {
+            get { return _rawBlock1[0x07].GetFlag(0x01); }
+            set { _rawBlock1[0x07] = _rawBlock1[0x07].SetFlag(0x01, value); }
+        }
+        public bool Flag_06_02
+        {
+            get { return _rawBlock1[0x07].GetFlag(0x02); }
+            set { _rawBlock1[0x07] = _rawBlock1[0x07].SetFlag(0x02, value); }
+        }
+        public bool Flag_06_04
+        {
+            get { return _rawBlock1[0x07].GetFlag(0x04); }
+            set { _rawBlock1[0x07] = _rawBlock1[0x07].SetFlag(0x04, value); }
+        }
+        public bool Flag_06_08
+        {
+            get { return _rawBlock1[0x07].GetFlag(0x08); }
+            set { _rawBlock1[0x07] = _rawBlock1[0x07].SetFlag(0x08, value); }
+        }
+        public bool Flag_06_10
+        {
+            get { return _rawBlock1[0x07].GetFlag(0x10); }
+            set { _rawBlock1[0x07] = _rawBlock1[0x07].SetFlag(0x10, value); }
+        }
+        public bool Flag_06_20
+        {
+            get { return _rawBlock1[0x07].GetFlag(0x20); }
+            set { _rawBlock1[0x07] = _rawBlock1[0x07].SetFlag(0x20, value); }
+        }
+        public bool Flag_06_40
+        {
+            get { return _rawBlock1[0x07].GetFlag(0x40); }
+            set { _rawBlock1[0x07] = _rawBlock1[0x07].SetFlag(0x40, value); }
+        }
+        public bool Flag_06_80
+        {
+            get { return _rawBlock1[0x07].GetFlag(0x80); }
+            set { _rawBlock1[0x07] = _rawBlock1[0x07].SetFlag(0x80, value); }
+        }
+
+        public bool Flag_07_01
+        {
+            get { return _rawBlock1[0x08].GetFlag(0x01); }
+            set { _rawBlock1[0x08] = _rawBlock1[0x08].SetFlag(0x01, value); }
+        }
+        public bool Flag_07_02
+        {
+            get { return _rawBlock1[0x08].GetFlag(0x02); }
+            set { _rawBlock1[0x08] = _rawBlock1[0x08].SetFlag(0x02, value); }
+        }
+        public bool Flag_07_04
+        {
+            get { return _rawBlock1[0x08].GetFlag(0x04); }
+            set { _rawBlock1[0x08] = _rawBlock1[0x08].SetFlag(0x04, value); }
+        }
+        public bool Flag_07_08
+        {
+            get { return _rawBlock1[0x08].GetFlag(0x08); }
+            set { _rawBlock1[0x08] = _rawBlock1[0x08].SetFlag(0x08, value); }
+        }
+        public bool Flag_07_10
+        {
+            get { return _rawBlock1[0x08].GetFlag(0x10); }
+            set { _rawBlock1[0x08] = _rawBlock1[0x08].SetFlag(0x10, value); }
+        }
+        public bool Flag_07_20
+        {
+            get { return _rawBlock1[0x08].GetFlag(0x20); }
+            set { _rawBlock1[0x08] = _rawBlock1[0x08].SetFlag(0x20, value); }
+        }
+        public bool Flag_07_40
+        {
+            get { return _rawBlock1[0x08].GetFlag(0x40); }
+            set { _rawBlock1[0x08] = _rawBlock1[0x08].SetFlag(0x40, value); }
+        }
+        public bool Flag_07_80
+        {
+            get { return _rawBlock1[0x08].GetFlag(0x80); }
+            set { _rawBlock1[0x08] = _rawBlock1[0x08].SetFlag(0x80, value); }
+        }
+
+
+
+
         public bool IsManakete
         {
             get { return _rawBlock1[0x03].GetFlag(0x80); }

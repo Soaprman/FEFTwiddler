@@ -509,6 +509,12 @@ namespace FEFTwiddler.GUI
             LoadUnit(_selectedUnit);
         }
 
+        private void btnTraits_Click(object sender, EventArgs e)
+        {
+            var traits = new UnitViewer.Traits(_selectedUnit);
+            traits.ShowDialog();
+        }
+
         #endregion
 
         #region Global Data
@@ -583,6 +589,5 @@ namespace FEFTwiddler.GUI
         }
 
         #endregion
-
     }
 }

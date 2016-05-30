@@ -274,6 +274,12 @@
     <Compile Include="GUI\UnitViewer\Supports.Designer.cs">
       <DependentUpon>Supports.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\UnitViewer\Traits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\UnitViewer\Traits.Designer.cs">
+      <DependentUpon>Traits.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\UnitViewer\UnitBlockInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -413,6 +419,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\Supports.resx">
       <DependentUpon>Supports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UnitViewer\Traits.resx">
+      <DependentUpon>Traits.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\UnitBlockInfo.resx">
       <DependentUpon>UnitBlockInfo.cs</DependentUpon>
