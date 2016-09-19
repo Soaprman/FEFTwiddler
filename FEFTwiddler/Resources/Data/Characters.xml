@@ -3699,8 +3699,316 @@
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="40" str="50" mag="0" skl="25" spd="45" lck="15" def="50" res="15" />
   </character>
-  <!--
-  Template:
+  <!-- Start DeathChaos25's Custom DLC Characters -->
+  <character id="1536" name="Chrom">
+	<text lang="English" displayName="Chrom" />
+	<text lang="Japanese" displayName="クロム" />
+	<baseStats hp="2" str="1" mag="1" skl="3" spd="1" lck="1" def="0" res="-1" />
+	<modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+	<flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" />
+	<hairColor r="255" g="255" b="255" a="255" />
+	<growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="1537" name="Frederick">
+	<text lang="English" displayName="Frederick" />
+	<text lang="Japanese" displayName="フレデリク" />
+	<baseStats hp="7" str="3" mag="2" skl="6" spd="4" lck="3" def="4" res="1" />
+	<modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+	<flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
+	<hairColor r="255" g="255" b="255" a="255" />
+	<growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="1538" name="Lissa">
+	<text lang="English" displayName="Lissa" />
+	<text lang="Japanese" displayName="リズ" />
+	<baseStats hp="1" str="1" mag="1" skl="1" spd="0" lck="4" def="3" res="-2" />
+	<modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+	<flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" />
+	<hairColor r="255" g="255" b="255" a="255" />
+	<growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="1545" name="Arete">
+    <text lang="English" displayName="Arete" />
+    <text lang="Japanese" displayName="シェンメイ" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="6662" name="Arfoire">
+    <text lang="English" displayName="Arfoire" />
+    <text lang="Japanese" displayName="アールフォー" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="1539" name="Garon">
+    <text lang="English" displayName="Garon" />
+    <text lang="Japanese" displayName="ガロン" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="1542" name="HumanLilith">
+    <text lang="English" displayName="Lilith" />
+    <text lang="Japanese" displayName="リリス" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="1540" name="Mikoto">
+    <text lang="English" displayName="Mikoto" />
+    <text lang="Japanese" displayName="ミコト" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="1541" name="Sumeragi">
+    <text lang="English" displayName="Sumeragi" />
+    <text lang="Japanese" displayName="スメラギ" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <!-- Start Dylos's Custom DLC Characters -->
+  <character id="28498" name="Roy">
+    <text lang="English" displayName="Roy" />
+    <text lang="Japanese" displayName="ロイ" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="31052" name="Lyndis">
+    <text lang="English" displayName="Lyndis" />
+    <text lang="Japanese" displayName="リンディス" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <!-- Start Omegablu's Custom DLC Characters -->
+  <character id="6150" name="FloatingHeadAnankos">
+    <text lang="English" displayName="Floating Head Anankos" />
+    <text lang="Japanese" displayName="ハイドラ" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="8198" name="Anthony">
+    <text lang="English" displayName="Anthony" />
+    <text lang="Japanese" displayName="ロンタオ" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="6918" name="Arete">
+    <text lang="English" displayName="Arete" />
+    <text lang="Japanese" displayName="シェンメイ" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="514" name="HoFAzura">
+    <text lang="English" displayName="Azura (Heirs of Fate)" />
+    <text lang="Japanese" displayName="アクア" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="8454" name="Cordelia">
+    <text lang="English" displayName="Cordelia" />
+    <text lang="Japanese" displayName="ティアモ" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="5638" name="BlightDragonGaron">
+    <text lang="English" displayName="Blight Dragon Garon" />
+    <text lang="Japanese" displayName="ガロン" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="293" name="Gaius">
+    <text lang="English" displayName="Gaius" />
+    <text lang="Japanese" displayName="ガイア" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="4614" name="Hans">
+    <text lang="English" displayName="Hans" />
+    <text lang="Japanese" displayName="ガンズ" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="7942" name="HumanAnankos">
+    <text lang="English" displayName="Hidden Truths Anankos" />
+    <text lang="Japanese" displayName="ハイドラ" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="5382" name="Iago">
+    <text lang="English" displayName="Iago" />
+    <text lang="Japanese" displayName="マクベス" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="7686" name="Inigo">
+    <text lang="English" displayName="Inigo" />
+    <text lang="Japanese" displayName="アズール" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="8710" name="Jake">
+    <text lang="English" displayName="Jake" />
+    <text lang="Japanese" displayName="ジェイク" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="4358" name="Kilma">
+    <text lang="English" displayName="Kilma" />
+    <text lang="Japanese" displayName= "クーリア" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="4870" name="Kotaro">
+    <text lang="English" displayName="Kotaro" />
+    <text lang="Japanese" displayName= "コタロウ" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="5126" name="Omozu">
+    <text lang="English" displayName="Omozu" />
+    <text lang="Japanese" displayName= "モズ" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="7430" name="Owain">
+    <text lang="English" displayName="Owain" />
+    <text lang="Japanese" displayName= "ウード" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="7174" name="Severa">
+    <text lang="English" displayName="Severa" />
+    <text lang="Japanese" displayName= "セレナ" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="7174" name="Severa">
+    <text lang="English" displayName="Severa" />
+    <text lang="Japanese" displayName= "セレナ" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="31261" name="ShadowHumanAnankos">
+    <text lang="English" displayName="Shadow Human Anankos" />
+    <text lang="Japanese" displayName= "ハイドラ" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="6406" name="QQQ">
+    <text lang="English" displayName="???" />
+    <text lang="Japanese" displayName= "???" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="295" name="Tharja">
+    <text lang="English" displayName="Tharja" />
+    <text lang="Japanese" displayName= "サーリャ" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="5894" name="EmptyVesselGaron">
+    <text lang="English" displayName="Empty Vessel Garon" />
+    <text lang="Japanese" displayName= "ガロン" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <character id="4102" name="Zola">
+    <text lang="English" displayName="Zola" />
+    <text lang="Japanese" displayName= "ゾーラ" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
+    <hairColor r="255" g="255" b="255" a="255" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+  </character>
+  <!--Template:
   <character id="0" name="InternalName">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
@@ -3708,6 +4016,7 @@
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
     <hairColor r="255" g="255" b="255" a="255" />
+	<growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
   -->
 </root>

@@ -1161,7 +1161,7 @@
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <categories isPromoted="false" isSpecial="false" isFemale="false" isNpcOnly="true" />
   </class>
-  <class id="136" name="PegasusKnight">
+  <class id="136" name="PegasusKnight_M">
     <text lang="English" displayName="Pegasus Knight" />
     <text lang="Japanese" displayName="ペガサスナイト" />
     <baseStats hp="18" str="6" mag="1" skl="7" spd="10" lck="5" def="4" res="9" />
@@ -1169,6 +1169,79 @@
     <weaponsUsed sword="false" lance="true" axe="false" shuriken="false" bow="false" tome="false" staff="false" stone="false" />
     <growthRates hp="0" str="10" mag="0" skl="15" spd="20" lck="20" def="0" res="20" />
     <categories isPromoted="false" isSpecial="true" isFemale="true" isNpcOnly="false" />
+  </class>
+  <class id="129" name="Lord">
+	<text lang="English" displayName="Lord" />
+	<text lang="Japanese" displayName="ロード" />
+	<baseStats hp="18" str="8" mag="1" skl="8" spd="9" lck="5" def="7" res="3" />
+	<maxStats hp="60" str="30" mag="25" skl="32" spd="34" lck="35" def="29" res="31" />
+	<weaponsUsed sword="true" lance="true" axe="false" shuriken="false" bow="false" tome="false" staff="false" stone="false" />
+	<growthRates hp="15" str="15" mag="0" skl="10" spd="10" lck="15" def="10" res="5" />
+	<categories isPromoted="false" isSpecial="true" isFemale="false" isNpcOnly="true" />
+  </class>
+  <class id="131" name="Cleric">
+	<text lang="English" displayName="Cleric" />
+	<text lang="Japanese" displayName="シスター" />
+	<baseStats hp="16" str="0" mag="7" skl="6" spd="7" lck="2" def="3" res="6" />
+	<maxStats hp="45" str="25" mag="33" skl="31" spd="32" lck="27" def="25" res="31" />
+	<weaponsUsed sword="false" lance="false" axe="true" shuriken="false" bow="false" tome="false" staff="true" stone="false" />
+	<growthRates hp="0" str="0" mag="20" skl="10" spd="15" lck="0" def="0" res="15" />
+	<categories isPromoted="false" isSpecial="true" isFemale="true" isNpcOnly="true" />
+  </class>
+  <!-- Start Custom DLC Classes -->
+  <class id="137" name="SilentDragon">
+    <text lang="English" displayName="Silent Dragon" />
+    <text lang="Japanese" displayName="透魔竜" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <maxStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <weaponsUsed sword="false" lance="false" axe="false" shuriken="false" bow="false" tome="false" staff="false" stone="false" />
+    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <categories isPromoted="false" isSpecial="true" isFemale="false" isNpcOnly="false" />
+  </class>
+  <class id="144" name="Myrmidon">
+    <text lang="English" displayName="Myrmidon" />
+    <text lang="Japanese" displayName="剣士" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <maxStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <weaponsUsed sword="true" lance="false" axe="false" shuriken="false" bow="false" tome="false" staff="false" stone="false" />
+    <growthRates hp="0" str="0" mag="20" skl="0" spd="0" lck="0" def="0" res="0" />
+    <categories isPromoted="false" isSpecial="true" isFemale="false" isNpcOnly="false" />
+  </class>
+  <class id="145" name="Mercenary_I">
+    <text lang="English" displayName="Mercenary (Inigo)" />
+    <text lang="Japanese" displayName="傭兵" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <maxStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <weaponsUsed sword="true" lance="true" axe="false" shuriken="false" bow="false" tome="false" staff="false" stone="false" />
+    <growthRates hp="0" str="0" mag="20" skl="0" spd="0" lck="0" def="0" res="0" />
+    <categories isPromoted="false" isSpecial="true" isFemale="false" isNpcOnly="false" />
+  </class>
+  <class id="146" name="Mercenary_S">
+    <text lang="English" displayName="Mercenary (Severa)" />
+    <text lang="Japanese" displayName="傭兵" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <maxStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <weaponsUsed sword="true" lance="true" axe="false" shuriken="false" bow="false" tome="false" staff="false" stone="false" />
+    <growthRates hp="0" str="0" mag="20" skl="0" spd="0" lck="0" def="0" res="0" />
+    <categories isPromoted="false" isSpecial="true" isFemale="true" isNpcOnly="false" />
+  </class>
+  <class id="147" name="PegasusKnight_C">
+    <text lang="English" displayName="Pegasus Knight" />
+    <text lang="Japanese" displayName="ペガサスナイト" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <maxStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <weaponsUsed sword="false" lance="true" axe="false" shuriken="false" bow="false" tome="false" staff="false" stone="false" />
+    <growthRates hp="0" str="0" mag="20" skl="0" spd="0" lck="0" def="0" res="0" />
+    <categories isPromoted="false" isSpecial="true" isFemale="true" isNpcOnly="false" />
+  </class>
+  <class id="148" name="Thief">
+    <text lang="English" displayName="Thief" />
+    <text lang="Japanese" displayName="盗賊" />
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <maxStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <weaponsUsed sword="true" lance="false" axe="false" shuriken="false" bow="false" tome="false" staff="false" stone="false" />
+    <growthRates hp="0" str="0" mag="20" skl="0" spd="0" lck="0" def="0" res="0" />
+    <categories isPromoted="false" isSpecial="true" isFemale="false" isNpcOnly="false" />
   </class>
   <!--
   Template:
