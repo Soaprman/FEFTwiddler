@@ -3785,19 +3785,33 @@
   <character id="28498" name="Roy">
     <text lang="English" displayName="Roy" />
     <text lang="Japanese" displayName="ロイ" />
+<<<<<<< HEAD
     <baseStats hp="0" str="-1" mag="0" skl="3" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="-1" mag="0" skl="3" spd="0" lck="0" def="1" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" IsCustomDLC="true" />
     <hairColor r="180" g="45" b="62" a="255" />
+=======
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" IsCustomDLC="true" />
+    <hairColor r="255" g="255" b="255" a="255" />
+>>>>>>> origin/master
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
   <character id="31052" name="Lyndis">
     <text lang="English" displayName="Lyndis" />
     <text lang="Japanese" displayName="リンディス" />
+<<<<<<< HEAD
     <baseStats hp="0" str="0" mag="0" skl="2" spd="1" lck="2" def="0" res="0" />
     <modifier hp="0" str="2" mag="2" skl="2" spd="2" lck="0" def="-1" res="-4" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" IsCustomDLC="true" />
     <hairColor r="45" g="156" b="77" a="255" />
+=======
+    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" IsCustomDLC="true" />
+    <hairColor r="255" g="255" b="255" a="255" />
+>>>>>>> origin/master
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
   <!-- Start Omegablu's Custom DLC Characters -->
