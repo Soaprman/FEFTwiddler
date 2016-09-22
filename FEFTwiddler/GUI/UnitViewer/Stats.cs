@@ -47,6 +47,10 @@ namespace FEFTwiddler.GUI.UnitViewer
                 txtStatBytes.Text = stats.ToString();
                 btnStats.Enabled = true;
             }
+            if (Data.Database.Characters.GetByID(_unit.CharacterID).IsCustomDLC)
+            {
+                btnStats.Enabled = false;
+            }
         }
 
         private void btnStats_Click(object sender, EventArgs e)

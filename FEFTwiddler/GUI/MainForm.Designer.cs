@@ -40,10 +40,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabChapterData = new System.Windows.Forms.TabPage();
-            this.difficulty1 = new FEFTwiddler.GUI.ChapterData.Difficulty();
             this.btnChapterHistory = new System.Windows.Forms.Button();
-            this.goldAndPoints1 = new FEFTwiddler.GUI.ChapterData.GoldAndPoints();
-            this.materials1 = new FEFTwiddler.GUI.ChapterData.Materials();
             this.lblAvatarName = new System.Windows.Forms.Label();
             this.tabUnitViewer = new System.Windows.Forms.TabPage();
             this.lblUnitCount = new System.Windows.Forms.Label();
@@ -51,34 +48,37 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lstDead = new System.Windows.Forms.ListBox();
             this.pnlUnitView = new System.Windows.Forms.Panel();
+            this.btnTraits = new System.Windows.Forms.Button();
             this.btnExportUnit = new System.Windows.Forms.Button();
             this.btnSupport = new System.Windows.Forms.Button();
             this.btnDeleteUnit = new System.Windows.Forms.Button();
+            this.btnOpenHexEditor = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lstLiving = new System.Windows.Forms.ListBox();
+            this.tabMegacheats = new System.Windows.Forms.TabPage();
+            this.tabNewGamePlus = new System.Windows.Forms.TabPage();
+            this.tabGlobalData = new System.Windows.Forms.TabPage();
+            this.tabConvoy = new System.Windows.Forms.TabPage();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.difficulty1 = new FEFTwiddler.GUI.ChapterData.Difficulty();
+            this.goldAndPoints1 = new FEFTwiddler.GUI.ChapterData.GoldAndPoints();
+            this.materials1 = new FEFTwiddler.GUI.ChapterData.Materials();
             this.unitBlockInfo1 = new FEFTwiddler.GUI.UnitViewer.UnitBlockInfo();
             this.flags1 = new FEFTwiddler.GUI.UnitViewer.Flags();
             this.battleData1 = new FEFTwiddler.GUI.UnitViewer.BattleData();
             this.classAndLevel1 = new FEFTwiddler.GUI.UnitViewer.ClassAndLevel();
             this.dragonVein1 = new FEFTwiddler.GUI.UnitViewer.DragonVein();
-            this.btnOpenHexEditor = new System.Windows.Forms.Button();
             this.accessories1 = new FEFTwiddler.GUI.UnitViewer.Accessories();
             this.stats1 = new FEFTwiddler.GUI.UnitViewer.Stats();
             this.weaponExperience1 = new FEFTwiddler.GUI.UnitViewer.WeaponExperience();
             this.hairColor1 = new FEFTwiddler.GUI.UnitViewer.HairColor();
             this.inventory1 = new FEFTwiddler.GUI.UnitViewer.Inventory();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.skills1 = new FEFTwiddler.GUI.UnitViewer.Skills();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lstLiving = new System.Windows.Forms.ListBox();
-            this.tabMegacheats = new System.Windows.Forms.TabPage();
             this.megacheatsMain1 = new FEFTwiddler.GUI.ChapterData.MegacheatsMain();
-            this.tabNewGamePlus = new System.Windows.Forms.TabPage();
-            this.tabGlobalData = new System.Windows.Forms.TabPage();
             this.globalDataMain1 = new FEFTwiddler.GUI.GlobalData.GlobalDataMain();
-            this.tabConvoy = new System.Windows.Forms.TabPage();
             this.convoyMain1 = new FEFTwiddler.GUI.Convoy.ConvoyMain();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.btnTraits = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabChapterData.SuspendLayout();
@@ -92,6 +92,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem1,
             this.decompressorToolStripMenuItem});
@@ -166,27 +167,12 @@
             this.tabChapterData.Name = "tabChapterData";
             this.tabChapterData.UseVisualStyleBackColor = true;
             // 
-            // difficulty1
-            // 
-            resources.ApplyResources(this.difficulty1, "difficulty1");
-            this.difficulty1.Name = "difficulty1";
-            // 
             // btnChapterHistory
             // 
             resources.ApplyResources(this.btnChapterHistory, "btnChapterHistory");
             this.btnChapterHistory.Name = "btnChapterHistory";
             this.btnChapterHistory.UseVisualStyleBackColor = true;
             this.btnChapterHistory.Click += new System.EventHandler(this.btnChapterHistory_Click);
-            // 
-            // goldAndPoints1
-            // 
-            resources.ApplyResources(this.goldAndPoints1, "goldAndPoints1");
-            this.goldAndPoints1.Name = "goldAndPoints1";
-            // 
-            // materials1
-            // 
-            resources.ApplyResources(this.materials1, "materials1");
-            this.materials1.Name = "materials1";
             // 
             // lblAvatarName
             // 
@@ -254,6 +240,13 @@
             resources.ApplyResources(this.pnlUnitView, "pnlUnitView");
             this.pnlUnitView.Name = "pnlUnitView";
             // 
+            // btnTraits
+            // 
+            resources.ApplyResources(this.btnTraits, "btnTraits");
+            this.btnTraits.Name = "btnTraits";
+            this.btnTraits.UseVisualStyleBackColor = true;
+            this.btnTraits.Click += new System.EventHandler(this.btnTraits_Click);
+            // 
             // btnExportUnit
             // 
             resources.ApplyResources(this.btnExportUnit, "btnExportUnit");
@@ -276,6 +269,79 @@
             this.btnDeleteUnit.Name = "btnDeleteUnit";
             this.btnDeleteUnit.UseVisualStyleBackColor = true;
             this.btnDeleteUnit.Click += new System.EventHandler(this.btnDeleteUnit_Click);
+            // 
+            // btnOpenHexEditor
+            // 
+            resources.ApplyResources(this.btnOpenHexEditor, "btnOpenHexEditor");
+            this.btnOpenHexEditor.Name = "btnOpenHexEditor";
+            this.btnOpenHexEditor.UseVisualStyleBackColor = true;
+            this.btnOpenHexEditor.Click += new System.EventHandler(this.btnOpenHexEditor_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.skills1);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
+            // lblName
+            // 
+            resources.ApplyResources(this.lblName, "lblName");
+            this.lblName.Name = "lblName";
+            // 
+            // lstLiving
+            // 
+            this.lstLiving.FormattingEnabled = true;
+            resources.ApplyResources(this.lstLiving, "lstLiving");
+            this.lstLiving.Name = "lstLiving";
+            this.lstLiving.SelectedIndexChanged += new System.EventHandler(this.SelectLivingUnit);
+            // 
+            // tabMegacheats
+            // 
+            this.tabMegacheats.Controls.Add(this.megacheatsMain1);
+            resources.ApplyResources(this.tabMegacheats, "tabMegacheats");
+            this.tabMegacheats.Name = "tabMegacheats";
+            this.tabMegacheats.UseVisualStyleBackColor = true;
+            // 
+            // tabNewGamePlus
+            // 
+            resources.ApplyResources(this.tabNewGamePlus, "tabNewGamePlus");
+            this.tabNewGamePlus.Name = "tabNewGamePlus";
+            this.tabNewGamePlus.UseVisualStyleBackColor = true;
+            // 
+            // tabGlobalData
+            // 
+            this.tabGlobalData.Controls.Add(this.globalDataMain1);
+            resources.ApplyResources(this.tabGlobalData, "tabGlobalData");
+            this.tabGlobalData.Name = "tabGlobalData";
+            this.tabGlobalData.UseVisualStyleBackColor = true;
+            // 
+            // tabConvoy
+            // 
+            this.tabConvoy.Controls.Add(this.convoyMain1);
+            resources.ApplyResources(this.tabConvoy, "tabConvoy");
+            this.tabConvoy.Name = "tabConvoy";
+            this.tabConvoy.UseVisualStyleBackColor = true;
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
+            // 
+            // difficulty1
+            // 
+            resources.ApplyResources(this.difficulty1, "difficulty1");
+            this.difficulty1.Name = "difficulty1";
+            // 
+            // goldAndPoints1
+            // 
+            resources.ApplyResources(this.goldAndPoints1, "goldAndPoints1");
+            this.goldAndPoints1.Name = "goldAndPoints1";
+            // 
+            // materials1
+            // 
+            resources.ApplyResources(this.materials1, "materials1");
+            this.materials1.Name = "materials1";
             // 
             // unitBlockInfo1
             // 
@@ -302,13 +368,6 @@
             resources.ApplyResources(this.dragonVein1, "dragonVein1");
             this.dragonVein1.Name = "dragonVein1";
             // 
-            // btnOpenHexEditor
-            // 
-            resources.ApplyResources(this.btnOpenHexEditor, "btnOpenHexEditor");
-            this.btnOpenHexEditor.Name = "btnOpenHexEditor";
-            this.btnOpenHexEditor.UseVisualStyleBackColor = true;
-            this.btnOpenHexEditor.Click += new System.EventHandler(this.btnOpenHexEditor_Click);
-            // 
             // accessories1
             // 
             resources.ApplyResources(this.accessories1, "accessories1");
@@ -334,83 +393,25 @@
             resources.ApplyResources(this.inventory1, "inventory1");
             this.inventory1.Name = "inventory1";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.skills1);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
-            // 
             // skills1
             // 
             resources.ApplyResources(this.skills1, "skills1");
             this.skills1.Name = "skills1";
-            // 
-            // lblName
-            // 
-            resources.ApplyResources(this.lblName, "lblName");
-            this.lblName.Name = "lblName";
-            // 
-            // lstLiving
-            // 
-            this.lstLiving.FormattingEnabled = true;
-            resources.ApplyResources(this.lstLiving, "lstLiving");
-            this.lstLiving.Name = "lstLiving";
-            this.lstLiving.SelectedIndexChanged += new System.EventHandler(this.SelectLivingUnit);
-            // 
-            // tabMegacheats
-            // 
-            this.tabMegacheats.Controls.Add(this.megacheatsMain1);
-            resources.ApplyResources(this.tabMegacheats, "tabMegacheats");
-            this.tabMegacheats.Name = "tabMegacheats";
-            this.tabMegacheats.UseVisualStyleBackColor = true;
             // 
             // megacheatsMain1
             // 
             resources.ApplyResources(this.megacheatsMain1, "megacheatsMain1");
             this.megacheatsMain1.Name = "megacheatsMain1";
             // 
-            // tabNewGamePlus
-            // 
-            resources.ApplyResources(this.tabNewGamePlus, "tabNewGamePlus");
-            this.tabNewGamePlus.Name = "tabNewGamePlus";
-            this.tabNewGamePlus.UseVisualStyleBackColor = true;
-            // 
-            // tabGlobalData
-            // 
-            this.tabGlobalData.Controls.Add(this.globalDataMain1);
-            resources.ApplyResources(this.tabGlobalData, "tabGlobalData");
-            this.tabGlobalData.Name = "tabGlobalData";
-            this.tabGlobalData.UseVisualStyleBackColor = true;
-            // 
             // globalDataMain1
             // 
             resources.ApplyResources(this.globalDataMain1, "globalDataMain1");
             this.globalDataMain1.Name = "globalDataMain1";
             // 
-            // tabConvoy
-            // 
-            this.tabConvoy.Controls.Add(this.convoyMain1);
-            resources.ApplyResources(this.tabConvoy, "tabConvoy");
-            this.tabConvoy.Name = "tabConvoy";
-            this.tabConvoy.UseVisualStyleBackColor = true;
-            // 
             // convoyMain1
             // 
             resources.ApplyResources(this.convoyMain1, "convoyMain1");
             this.convoyMain1.Name = "convoyMain1";
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
-            // 
-            // btnTraits
-            // 
-            resources.ApplyResources(this.btnTraits, "btnTraits");
-            this.btnTraits.Name = "btnTraits";
-            this.btnTraits.UseVisualStyleBackColor = true;
-            this.btnTraits.Click += new System.EventHandler(this.btnTraits_Click);
             // 
             // MainForm
             // 

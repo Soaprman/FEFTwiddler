@@ -138,13 +138,13 @@
 		Lord = 0x81,
 		Cleric = 0x83,
         // More DLC
-        PegasusKnight_M = 0x88, // CipherMinerva's Pegasus Knight class
+        PegasusKnight_Minerva = 0x88, // CipherMinerva's Pegasus Knight class
 		// Omegablu Custom DLC
 		SilentDragon = 0x89, // Human Anankos
 		Myrmidon = 0x90,
-	    Mercenary_I = 0x91, // Inigo's Mercenary class
-		Mercenary_S = 0x92, // Severa's Mercenary class
-		PegasusKnight_C = 0x93, // Cordelia's Pegasus Knight class
+	    Mercenary_Inigo = 0x91, // Inigo's Mercenary class
+		Mercenary_Severa = 0x92, // Severa's Mercenary class
+		PegasusKnight_Cordelia = 0x93, // Cordelia's Pegasus Knight class
 		Thief = 0x94
     }
 }
