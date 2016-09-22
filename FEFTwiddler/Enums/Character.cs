@@ -274,14 +274,13 @@
 		Sumeragi = 0x605,
 		HumanLilith = 0x606,
 		Arfoire = 0x1A06,
-		Arete = 0x609,
+		DC25_Arete = 0x609,
 		// Omegablu Custom DLC
 		Zola = 0x1006,
 		Kilma = 0x1106,
 		Iago = 0x1506,
 		Hans = 0x1206,
-        QQQ = 0x1906,
-		// \u0032\u0032\u0032 = 0x1906,
+        Unknown = 0x1906,
 		BlightDragonGaron = 0x1606,
 		EmptyVesselGaron = 0x1706, 
 		FloatingHeadAnankos = 0x1806,
@@ -290,7 +289,8 @@
 		Cordelia = 0x2106,
 		Tharja = 0x127,
 		Gaius = 0x125,
-		Owain = 0x1D06,
+        Omega_Arete = 0x1B06,
+        Owain = 0x1D06,
 		Severa = 0x1C06,
 		Inigo = 0x1E06,
 		HumanAnankos = 0x1F06,
@@ -298,8 +298,8 @@
 		Anthony = 0x2006,
 		HoFAzura = 0x0202,
 		Jake = 0x2206,
-		// Dylos Custom DLC
-		Roy = 0x6F52,
+        // Dylos Custom DLC
+        Roy = 0x6F52,
 		Lyndis = 0x794C
     }
 
