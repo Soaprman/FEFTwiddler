@@ -134,17 +134,17 @@
         GreatLord = 0x7E,
         Grandmaster = 0x7F,
         Outrealm = 0x80,
-		// DeathChaos25 Custom DLC
-		Lord = 0x81,
-		Cleric = 0x83,
+	// DeathChaos25 Custom DLC
+	Lord = 0x81,
+	Cleric = 0x83,
         // More DLC
         PegasusKnight_Minerva = 0x88, // CipherMinerva's Pegasus Knight class
-		// Omegablu Custom DLC
-		SilentDragon = 0x89, // Human Anankos
-		Myrmidon = 0x90,
-	    Mercenary_Inigo = 0x91, // Inigo's Mercenary class
-		Mercenary_Severa = 0x92, // Severa's Mercenary class
-		PegasusKnight_Cordelia = 0x93, // Cordelia's Pegasus Knight class
-		Thief = 0x94
+	// Omegablu Custom DLC
+	SilentDragon = 0x89, // Human Anankos
+	Myrmidon = 0x90,
+	Mercenary_Inigo = 0x91, // Inigo's Mercenary class
+	Mercenary_Severa = 0x92, // Severa's Mercenary class
+	PegasusKnight_Cordelia = 0x93, // Cordelia's Pegasus Knight class
+	Thief = 0x94
     }
 }
