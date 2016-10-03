@@ -265,7 +265,6 @@
         CipherMarth = 0x200,
         CipherLucina = 0x300,
         CipherMinerva = 0x400,
-<<<<<<< HEAD
 		// DeathChaos25 Custom DLC
 		Chrom = 0x600,
 		Frederick = 0x601,
@@ -301,45 +300,7 @@
 		Jake = 0x2206,
         // Dylos Custom DLC
         Roy = 0x6F52,
-		Lyndis = 0x794C
-=======
-	// DeathChaos25 Custom DLC
-	Chrom = 0x600,
-	Frederick = 0x601,
-	Lissa = 0x602,
-	Garon = 0x603,
-	Mikoto = 0x604,
-	Sumeragi = 0x605,
-	HumanLilith = 0x606,
-	Arfoire = 0x1A06,
-	DC25_Arete = 0x609,
-	// Omegablu Custom DLC
-	Zola = 0x1006,
-	Kilma = 0x1106,
-	Iago = 0x1506,
-	Hans = 0x1206,
-        Unknown = 0x1906,
-	BlightDragonGaron = 0x1606,
-	EmptyVesselGaron = 0x1706, 
-	FloatingHeadAnankos = 0x1806,
-	Kotaro = 0x1306,
-	Omozu = 0x1406,
-	Cordelia = 0x2106,
-	Tharja = 0x127,
-	Gaius = 0x125,
-        Omega_Arete = 0x1B06,
-        Owain = 0x1D06,
-	Severa = 0x1C06,
-	Inigo = 0x1E06,
-	HumanAnankos = 0x1F06,
-	ShadowHumanAnankos = 0x7A1D,
-	Anthony = 0x2006,
-	HoFAzura = 0x0202,
-	Jake = 0x2206,
-        // Dylos Custom DLC
-        Roy = 0x6F52,
-	Lyndis = 0x794C
->>>>>>> origin/master
+		Lyndis = 0x794C,
     }
 
     public static class CharacterExtensions

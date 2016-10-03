@@ -3705,27 +3705,27 @@
 	<text lang="Japanese" displayName="クロム" />
 	<baseStats hp="2" str="1" mag="1" skl="3" spd="1" lck="1" def="0" res="-1" />
 	<modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-	<flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" IsCustomDLC="true"/>
+	<flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" IsCustomDLC="false"/>
 	<hairColor r="255" g="255" b="255" a="255" />
-	<growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+	<growthRates hp="45" str="40" mag="10" skl="40" spd="40" lck="70" def="35" res="20" />
   </character>
   <character id="1537" name="Frederick">
 	<text lang="English" displayName="Frederick" />
 	<text lang="Japanese" displayName="フレデリク" />
 	<baseStats hp="7" str="3" mag="2" skl="6" spd="4" lck="3" def="4" res="1" />
 	<modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-	<flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" IsCustomDLC="true" />
+	<flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" IsCustomDLC="false" />
 	<hairColor r="255" g="255" b="255" a="255" />
-	<growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+	<growthRates hp="60" str="40" mag="10" skl="40" spd="35" lck="40" def="40" res="20" />
   </character>
   <character id="1538" name="Lissa">
 	<text lang="English" displayName="Lissa" />
 	<text lang="Japanese" displayName="リズ" />
 	<baseStats hp="1" str="1" mag="1" skl="1" spd="0" lck="4" def="3" res="-2" />
 	<modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-	<flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" IsCustomDLC="true" />
+	<flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" IsCustomDLC="false" />
 	<hairColor r="255" g="255" b="255" a="255" />
-	<growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
+	<growthRates hp="35" str="25" mag="35" skl="30" spd="35" lck="65" def="15" res="35" />
   </character>
   <character id="1545" name="Arete">
     <text lang="English" displayName="Arete" />
@@ -3785,33 +3785,27 @@
   <character id="28498" name="Roy">
     <text lang="English" displayName="Roy" />
     <text lang="Japanese" displayName="ロイ" />
-<<<<<<< HEAD
     <baseStats hp="0" str="-1" mag="0" skl="3" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="-1" mag="0" skl="3" spd="0" lck="0" def="1" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" IsCustomDLC="true" />
     <hairColor r="180" g="45" b="62" a="255" />
-=======
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" IsCustomDLC="true" />
     <hairColor r="255" g="255" b="255" a="255" />
->>>>>>> origin/master
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
   <character id="31052" name="Lyndis">
     <text lang="English" displayName="Lyndis" />
     <text lang="Japanese" displayName="リンディス" />
-<<<<<<< HEAD
     <baseStats hp="0" str="0" mag="0" skl="2" spd="1" lck="2" def="0" res="0" />
     <modifier hp="0" str="2" mag="2" skl="2" spd="2" lck="0" def="-1" res="-4" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" IsCustomDLC="true" />
     <hairColor r="45" g="156" b="77" a="255" />
-=======
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" IsCustomDLC="true" />
     <hairColor r="255" g="255" b="255" a="255" />
->>>>>>> origin/master
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>
   <!-- Start Omegablu's Custom DLC Characters -->
@@ -3956,15 +3950,6 @@
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" IsCustomDLC="true" />
-    <hairColor r="255" g="255" b="255" a="255" />
-    <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-  </character>
-  <character id="7174" name="Severa">
-    <text lang="English" displayName="Severa" />
-    <text lang="Japanese" displayName= "セレナ" />
-    <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
-    <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" IsCustomDLC="true" />
     <hairColor r="255" g="255" b="255" a="255" />
     <growthRates hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
   </character>

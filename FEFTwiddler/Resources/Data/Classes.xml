@@ -1209,7 +1209,7 @@
   </class>
   <class id="145" name="Mercenary_Inigo">
     <text lang="English" displayName="Mercenary (Inigo)" />
-    <text lang="Japanese" displayName="傭兵" />
+    <text lang="Japanese" displayName="マーシナリー (アズール)" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <maxStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <weaponsUsed sword="true" lance="true" axe="false" shuriken="false" bow="false" tome="false" staff="false" stone="false" />
@@ -1218,7 +1218,7 @@
   </class>
   <class id="146" name="Mercenary_Severa">
     <text lang="English" displayName="Mercenary (Severa)" />
-    <text lang="Japanese" displayName="傭兵" />
+    <text lang="Japanese" displayName="マーシナリー (セレナ)" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <maxStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <weaponsUsed sword="true" lance="true" axe="false" shuriken="false" bow="false" tome="false" staff="false" stone="false" />
