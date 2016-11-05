@@ -9,7 +9,7 @@ namespace FEFTwiddler.Data
     {
         public BuildingDatabase(Enums.Language language) : base(language)
         {
-            _data = XElement.Parse(Properties.Resources.Data_Buildings);
+            LoadData(Properties.Resources.Data_Buildings);
         }
 
         public Building GetByID(Enums.Building buildingId)

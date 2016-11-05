@@ -10,7 +10,7 @@ namespace FEFTwiddler.Data
     {
         public ItemDatabase(Enums.Language language) : base(language)
         {
-            _data = XElement.Parse(Properties.Resources.Data_Items);
+            LoadData(Properties.Resources.Data_Items);
         }
 
         public Item GetByID(Enums.Item itemId)

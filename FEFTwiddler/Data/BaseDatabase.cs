@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 using FEFTwiddler.Extensions;
@@ -9,6 +10,7 @@ namespace FEFTwiddler.Data
     {
         protected XElement _data;
         protected Enums.Language _language;
+        private const string _addonDataDirectory = "AddonData";
 
         public BaseDatabase(Enums.Language language)
         {
@@ -18,6 +20,36 @@ namespace FEFTwiddler.Data
         public void SetLanguage(Enums.Language language)
         {
             _language = language;
+        }
+
+        protected void LoadData(string data)
+        {
+            _data = XElement.Parse(data);
+        }
+
+        protected void LoadAddonData(string addonDataSubDirectory)
+        {
+            var path = _addonDataDirectory + "/" + addonDataSubDirectory;
+            Directory.CreateDirectory(path);
+            var addonDataFiles = Directory.GetFiles(path, "*.xml");
+
+            foreach (var addonDataFile in addonDataFiles)
+            {
+                var addonData = XElement.Parse(File.ReadAllText(addonDataFile));
+
+                // Remove elements already in the data if we are overwriting them
+                // Hopefully this doesn't have *too* much impact on load time! TODO: Research ways to make this faster if needed
+                // It might be better to change calling code to use .Last instead of .First and for .GetAll calls to filter duplicates on-the-fly
+                var elements = addonData.Elements();
+                foreach (var element in elements)
+                {
+                    _data.Elements()
+                        .Where(x => x.GetAttribute("id") == element.GetAttribute("id"))
+                        .Remove();
+                }
+
+                _data.Add(addonData.Elements());
+            }
         }
 
         protected string GetDisplayName(XElement xe)

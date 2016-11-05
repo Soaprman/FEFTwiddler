@@ -10,7 +10,8 @@ namespace FEFTwiddler.Data
     {
         public ClassDatabase(Enums.Language language) : base(language)
         {
-            _data = XElement.Parse(Properties.Resources.Data_Classes);
+            LoadData(Properties.Resources.Data_Classes);
+            LoadAddonData("Classes");
         }
 
         public Class GetByID(Enums.Class classId)
