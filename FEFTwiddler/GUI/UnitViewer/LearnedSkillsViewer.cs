@@ -118,17 +118,7 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void SetTitle()
         {
-            if (Enum.IsDefined(typeof(Enums.Character), _unit.CharacterID))
-            {
-                if (_unit.CorrinName == null)
-                    this.Text = "Learned Skills for " + Data.Database.Characters.GetByID(_unit.CharacterID).DisplayName;
-                else
-                    this.Text = "Learned Skills for " + _unit.CorrinName;
-            }
-            else
-            {
-                this.Text = "Learned Skills for {Character ID " + _unit.CharacterID.ToString() + "}";
-            }
+            this.Text = "Learned Skills for " + _unit.GetDisplayName();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

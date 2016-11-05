@@ -21,7 +21,7 @@ namespace FEFTwiddler.Data
                 .Where((x) => x.Attribute("id").Value == ((byte)classId).ToString())
                 .First();
 
-            return FromElement(row);
+            return row != null ? FromElement(row) : null;
         }
 
         public IEnumerable<Class> GetAll()

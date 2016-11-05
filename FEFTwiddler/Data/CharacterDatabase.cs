@@ -22,7 +22,7 @@ namespace FEFTwiddler.Data
                 .Where((x) => x.Attribute("id").Value == ((ushort)characterId).ToString())
                 .First();
 
-            return FromElement(row);
+            return row != null ? FromElement(row) : null;
         }
 
         /// <summary>

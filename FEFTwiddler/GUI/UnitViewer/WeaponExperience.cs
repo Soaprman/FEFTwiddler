@@ -42,8 +42,9 @@ namespace FEFTwiddler.GUI.UnitViewer
             numTome.Value = Model.Unit.FixWeaponExperience(_unit.WeaponExperience_Tome);
             numStaff.Value = Model.Unit.FixWeaponExperience(_unit.WeaponExperience_Staff);
 
-            if (Enum.IsDefined(typeof(Enums.Character), _unit.CharacterID) &&
-                Data.Database.Characters.GetByID(_unit.CharacterID).CanUseStones)
+            var characterData = Data.Database.Characters.GetByID(_unit.CharacterID);
+
+            if (characterData != null && characterData.CanUseStones)
             {
                 numStone.Value = Model.Unit.FixWeaponExperience(_unit.WeaponExperience_Stone);
                 numStone.Enabled = true;

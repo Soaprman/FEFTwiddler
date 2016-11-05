@@ -16,12 +16,11 @@ namespace FEFTwiddler.Utils
         public static Model.Stat CalculateBaseStats(Model.Unit character)
         {
             Model.Stat baseStats = new Model.Stat();
-            if (!Enum.IsDefined(typeof(Enums.Character), character.CharacterID) ||
-                !Enum.IsDefined(typeof(Enums.Class), character.ClassID))
-                return null;
-            
+
             var characterData = Data.Database.Characters.GetByID(character.CharacterID);
             var classData = Data.Database.Classes.GetByID(character.ClassID);
+
+            if (characterData == null || classData == null) return null;
 
             // Corrin and Bond units
             if (character.CorrinName != null)
@@ -62,12 +61,10 @@ namespace FEFTwiddler.Utils
         /// <returns>Character's stat caps</returns>
         public static Model.Stat CalculateStatCaps(Model.Unit character)
         {
-            if (!Enum.IsDefined(typeof(Enums.Character), character.CharacterID) ||
-                !Enum.IsDefined(typeof(Enums.Class), character.ClassID))
-                return null;
-
             var characterData = Data.Database.Characters.GetByID(character.CharacterID);
             var classData = Data.Database.Classes.GetByID(character.ClassID);
+
+            if (characterData == null || classData == null) return null;
 
             if (character.CorrinName != null) // Corrin and bond units
             {

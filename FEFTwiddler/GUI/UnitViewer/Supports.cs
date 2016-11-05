@@ -26,19 +26,7 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void SetTitle()
         {
-            if (Enum.IsDefined(typeof(Enums.Character), _unit.CharacterID))
-            {
-                if (_unit.CorrinName != null)
-                    this.Text = _unit.CorrinName + "'s supports";
-                else if (Data.Database.Characters.GetByID(_unit.CharacterID).IsPrisoner)
-                    this.Text = Data.Database.Prisoners.GetByID(_unit.PrisonerID).DisplayName + "'s supports";
-                else
-                    this.Text = Data.Database.Characters.GetByID(_unit.CharacterID).DisplayName + "'s supports";
-            }
-            else
-            {
-                this.Text = "Some unknown character's supports";
-            }
+            this.Text = _unit.GetDisplayName() + "'s supports";
         }
 
         private void Supports_Load(object sender, EventArgs e)
