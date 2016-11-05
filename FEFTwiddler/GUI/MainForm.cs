@@ -306,6 +306,16 @@ namespace FEFTwiddler.GUI
 
             lblName.Text = unit.GetDisplayName();
 
+            if (!Enum.IsDefined(typeof(Enums.Character), unit.CharacterID) ||
+                !Enum.IsDefined(typeof(Enums.Class), unit.ClassID))
+            {
+                lblUsesCustomData.Show();
+            }
+            else
+            {
+                lblUsesCustomData.Hide();
+            }
+
             try { classAndLevel1.LoadUnit(_selectedUnit); }
             catch (Exception) { message += Environment.NewLine + "Error loading Class and Level data"; }
 
