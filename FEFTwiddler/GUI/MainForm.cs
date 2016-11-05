@@ -225,11 +225,11 @@ namespace FEFTwiddler.GUI
             lstLiving.Invalidate();
             lstDead.Invalidate();
 
-            lstLiving.DisplayMember = "CharacterID";
+            lstLiving.DisplayMember = "DisplayName";
             lstLiving.ValueMember = "CharacterID";
             lstLiving.Items.Clear();
 
-            lstDead.DisplayMember = "CharacterID";
+            lstDead.DisplayMember = "DisplayName";
             lstDead.ValueMember = "CharacterID";
             lstDead.Items.Clear();
             foreach (var unit in _chapterSave.UnitRegion.Units)

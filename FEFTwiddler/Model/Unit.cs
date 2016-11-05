@@ -1500,6 +1500,15 @@ namespace FEFTwiddler.Model
             return Data.Database.Characters.GetByID(CharacterID);
         }
 
+        /// <summary>
+        /// Property version for use in list boxes.
+        /// </summary>
+        /// <remarks>Call the method version elsewhere since it's cleaner (a property call kind of masks the DB lookup going on)</remarks>
+        public string DisplayName
+        {
+            get { return GetDisplayName(); }
+        }
+
         public string GetDisplayName()
         {
             if (CorrinName != null) return CorrinName;
