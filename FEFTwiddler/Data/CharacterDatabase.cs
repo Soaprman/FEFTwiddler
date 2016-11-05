@@ -20,7 +20,7 @@ namespace FEFTwiddler.Data
             var row = _data
                 .Elements("character")
                 .Where((x) => x.Attribute("id").Value == ((ushort)characterId).ToString())
-                .First();
+                .FirstOrDefault();
 
             return row != null ? FromElement(row) : null;
         }

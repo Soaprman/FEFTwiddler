@@ -19,7 +19,7 @@ namespace FEFTwiddler.Data
             var row = _data
                 .Elements("class")
                 .Where((x) => x.Attribute("id").Value == ((byte)classId).ToString())
-                .First();
+                .FirstOrDefault();
 
             return row != null ? FromElement(row) : null;
         }
