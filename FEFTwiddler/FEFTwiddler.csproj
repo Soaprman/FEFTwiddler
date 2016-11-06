@@ -97,6 +97,12 @@
     <Compile Include="Extensions\StreamExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\XElementExtensions.cs" />
+    <Compile Include="GUI\MyCastle\CastleMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MyCastle\CastleMap.Designer.cs">
+      <DependentUpon>CastleMap.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ChapterData\ChapterHistory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -376,6 +382,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ChapterData\MegacheatsMain.resx">
       <DependentUpon>MegacheatsMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MyCastle\CastleMap.resx">
+      <DependentUpon>CastleMap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\NewGamePlus\NewGamePlusMain.resx">
       <DependentUpon>NewGamePlusMain.cs</DependentUpon>

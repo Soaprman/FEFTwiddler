@@ -207,6 +207,12 @@ namespace FEFTwiddler.GUI
             popup.ShowDialog();
         }
 
+        private void btnCastleMap_Click(object sender, EventArgs e)
+        {
+            var popup = new GUI.MyCastle.CastleMap(_chapterSave.MyCastleRegion);
+            popup.ShowDialog();
+        }
+
         #endregion
 
         #region Unit Viewer
