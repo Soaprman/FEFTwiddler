@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace FEFTwiddler.Model
 {
@@ -7,7 +9,19 @@ namespace FEFTwiddler.Model
         private byte[] _raw;
         public byte[] Raw
         {
-            get { return _raw; }
+            get
+            {
+                if (IsLilithsTemple())
+                {
+                    // Re-add the four 00 bytes
+                    return _raw
+                        .Take(0x02)
+                        .Concat(new byte[] { 0x00, 0x00, 0x00, 0x00 })
+                        .Take(0x0B)
+                        .ToArray();
+                }
+                else { return _raw; }
+            }
         }
 
         public Building(byte[] raw)
@@ -95,6 +109,31 @@ namespace FEFTwiddler.Model
             return BuildingID == Enums.Building.TravelersPlaza_1 ||
                 BuildingID == Enums.Building.TravelersPlaza_2 ||
                 BuildingID == Enums.Building.TravelersPlaza_3;
+        }
+
+        public override string ToString()
+        {
+            return GetCondensedInformation();
+        }
+
+        public string GetCondensedInformation()
+        {
+            string name, left, top, facing;
+
+            name = BuildingID.ToString();
+            left = LeftPosition.ToString();
+            top = TopPosition.ToString();
+
+            switch (DirectionFacing)
+            {
+                case 0: facing = "down"; break;
+                case 1: facing = "left"; break;
+                case 2: facing = "up"; break;
+                case 3: facing = "right"; break;
+                default: facing = "???"; break;
+            }
+
+            return string.Format("{0} -- position: (left: {1}, top: {2}) -- facing: {3}", name, left, top, facing);
         }
     }
 }

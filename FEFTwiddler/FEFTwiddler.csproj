@@ -322,6 +322,8 @@
     <Compile Include="Model\Shop.cs" />
     <Compile Include="Model\ShopItem.cs" />
     <Compile Include="Model\Stat.cs" />
+    <Compile Include="Model\UnknownA.cs" />
+    <Compile Include="Model\UnknownB.cs" />
     <Compile Include="Model\WeaponName.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
