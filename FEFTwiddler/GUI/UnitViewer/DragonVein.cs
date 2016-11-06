@@ -34,9 +34,11 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void PopulateControls()
         {
-            if (Enum.IsDefined(typeof(Enums.Character), _unit.CharacterID))
+            var characterData = Data.Database.Characters.GetByID(_unit.CharacterID);
+
+            if (characterData != null)
             {
-                var isDefault = Data.Database.Characters.GetByID(_unit.CharacterID).CanUseDragonVein;
+                var isDefault = characterData.CanUseDragonVein;
                 chkDragonVein.Checked = _unit.Trait_CanUseDragonVein || isDefault;
                 chkDragonVein.Enabled = !isDefault;
             }
@@ -48,8 +50,10 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void chkDragonVein_CheckedChanged(object sender, EventArgs e)
         {
+            var characterData = Data.Database.Characters.GetByID(_unit.CharacterID);
+
             // If a character can't use Dragon Vein by default
-            if (chkDragonVein.Checked && !Data.Database.Characters.GetByID(_unit.CharacterID).CanUseDragonVein)
+            if (chkDragonVein.Checked && characterData != null && !characterData.CanUseDragonVein)
                 _unit.Trait_CanUseDragonVein = true;
             else
                 _unit.Trait_CanUseDragonVein = false;

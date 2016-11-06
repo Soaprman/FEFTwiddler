@@ -11,7 +11,8 @@ namespace FEFTwiddler.Data
     {
         public CharacterDatabase(Enums.Language language) : base(language)
         {
-            _data = XElement.Parse(Properties.Resources.Data_Characters);
+            LoadData(Properties.Resources.Data_Characters);
+            LoadAddonData("Characters");
         }
 
         public Character GetByID(Enums.Character characterId)
@@ -19,9 +20,9 @@ namespace FEFTwiddler.Data
             var row = _data
                 .Elements("character")
                 .Where((x) => x.Attribute("id").Value == ((ushort)characterId).ToString())
-                .First();
+                .FirstOrDefault();
 
-            return FromElement(row);
+            return row != null ? FromElement(row) : null;
         }
 
         /// <summary>

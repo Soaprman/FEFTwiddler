@@ -10,7 +10,8 @@ namespace FEFTwiddler.Data
     {
         public ClassDatabase(Enums.Language language) : base(language)
         {
-            _data = XElement.Parse(Properties.Resources.Data_Classes);
+            LoadData(Properties.Resources.Data_Classes);
+            LoadAddonData("Classes");
         }
 
         public Class GetByID(Enums.Class classId)
@@ -18,9 +19,9 @@ namespace FEFTwiddler.Data
             var row = _data
                 .Elements("class")
                 .Where((x) => x.Attribute("id").Value == ((byte)classId).ToString())
-                .First();
+                .FirstOrDefault();
 
-            return FromElement(row);
+            return row != null ? FromElement(row) : null;
         }
 
         public IEnumerable<Class> GetAll()

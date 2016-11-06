@@ -207,6 +207,12 @@ namespace FEFTwiddler.GUI
             popup.ShowDialog();
         }
 
+        private void btnCastleMap_Click(object sender, EventArgs e)
+        {
+            var popup = new GUI.MyCastle.CastleMap(_chapterSave.MyCastleRegion);
+            popup.ShowDialog();
+        }
+
         #endregion
 
         #region Unit Viewer
@@ -225,11 +231,11 @@ namespace FEFTwiddler.GUI
             lstLiving.Invalidate();
             lstDead.Invalidate();
 
-            lstLiving.DisplayMember = "CharacterID";
+            lstLiving.DisplayMember = "DisplayName";
             lstLiving.ValueMember = "CharacterID";
             lstLiving.Items.Clear();
 
-            lstDead.DisplayMember = "CharacterID";
+            lstDead.DisplayMember = "DisplayName";
             lstDead.ValueMember = "CharacterID";
             lstDead.Items.Clear();
             foreach (var unit in _chapterSave.UnitRegion.Units)
@@ -304,24 +310,16 @@ namespace FEFTwiddler.GUI
 
             var message = "";
 
-            if (Enum.IsDefined(typeof(Enums.Character), unit.CharacterID))
+            lblName.Text = unit.GetDisplayName();
+
+            if (!Enum.IsDefined(typeof(Enums.Character), unit.CharacterID) ||
+                !Enum.IsDefined(typeof(Enums.Class), unit.ClassID))
             {
-                if (unit.CorrinName != null)
-                {
-                    lblName.Text = unit.CorrinName;
-                }
-                else if (Data.Database.Characters.GetByID(unit.CharacterID).IsPrisoner)
-                {
-                    lblName.Text = Data.Database.Prisoners.GetByID(unit.PrisonerID).DisplayName;
-                }
-                else
-                {
-                    lblName.Text = Data.Database.Characters.GetByID(unit.CharacterID).DisplayName;
-                }
+                lblUsesCustomData.Show();
             }
             else
             {
-                lblName.Text = unit.CharacterID.ToString();
+                lblUsesCustomData.Hide();
             }
 
             try { classAndLevel1.LoadUnit(_selectedUnit); }
@@ -371,19 +369,15 @@ namespace FEFTwiddler.GUI
             }
 
             // Support
-            if (Enum.IsDefined(typeof(Enums.Character), _selectedUnit.CharacterID))
+            var supportData = Data.Database.Characters.GetByID(_selectedUnit.CharacterID)?.SupportPool;
+            if ((supportData != null) ||
+                (_selectedUnit.RawNumberOfSupports != supportData.Length) ||
+                (supportData.Length == 0))
             {
-                var supportData = Data.Database.Characters.GetByID(_selectedUnit.CharacterID).SupportPool;
-                if ((_selectedUnit.RawNumberOfSupports != supportData.Length) ||
-                    (supportData.Length == 0))
-                {
-                    btnSupport.Enabled = false;
-                }
-                else
-                    btnSupport.Enabled = true;
+                btnSupport.Enabled = false;
             }
             else
-                btnSupport.Enabled = false;
+                btnSupport.Enabled = true;
         }
 
         private void tabPage1_Enter(object sender, EventArgs e)

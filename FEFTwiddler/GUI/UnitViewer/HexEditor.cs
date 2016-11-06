@@ -23,17 +23,7 @@ namespace FEFTwiddler.GUI.UnitViewer
 
         private void SetTitle()
         {
-            if (Enum.IsDefined(typeof(Enums.Character), _unit.CharacterID))
-            {
-                if (_unit.CorrinName == null)
-                    this.Text = "Hex editing: " + Data.Database.Characters.GetByID(_unit.CharacterID).DisplayName;
-                else
-                    this.Text = "Hex editing: " + _unit.CorrinName;
-            }
-            else
-            {
-                this.Text = "Hex editing: Some uknown character";
-            }
+            this.Text = "Hex editing: " + _unit.GetDisplayName();
         }
 
         private void HexEditor_Load(object sender, EventArgs e)

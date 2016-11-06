@@ -195,6 +195,36 @@
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
   </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnCastleMap.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCastleMap.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 364</value>
+  </data>
+  <data name="btnCastleMap.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 96</value>
+  </data>
+  <data name="btnCastleMap.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="btnCastleMap.Text" xml:space="preserve">
+    <value>Castle Map
+(WIP, actual useful stuff coming maybe someday)
+</value>
+  </data>
+  <data name="&gt;&gt;btnCastleMap.Name" xml:space="preserve">
+    <value>btnCastleMap</value>
+  </data>
+  <data name="&gt;&gt;btnCastleMap.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCastleMap.Parent" xml:space="preserve">
+    <value>tabChapterData</value>
+  </data>
+  <data name="&gt;&gt;btnCastleMap.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="difficulty1.Location" type="System.Drawing.Point, System.Drawing">
     <value>576, 5</value>
   </data>
@@ -217,7 +247,7 @@
     <value>tabChapterData</value>
   </data>
   <data name="&gt;&gt;difficulty1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btnChapterHistory.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -247,7 +277,7 @@
     <value>tabChapterData</value>
   </data>
   <data name="&gt;&gt;btnChapterHistory.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="goldAndPoints1.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 72</value>
@@ -271,7 +301,7 @@
     <value>tabChapterData</value>
   </data>
   <data name="&gt;&gt;goldAndPoints1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="materials1.Location" type="System.Drawing.Point, System.Drawing">
     <value>910, 5</value>
@@ -295,7 +325,7 @@
     <value>tabChapterData</value>
   </data>
   <data name="&gt;&gt;materials1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="lblAvatarName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -331,7 +361,7 @@
     <value>tabChapterData</value>
   </data>
   <data name="&gt;&gt;lblAvatarName.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="tabChapterData.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 29</value>
@@ -365,6 +395,9 @@
   </data>
   <data name="lblUnitCount.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="lblUnitCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="lblUnitCount.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 6</value>
@@ -486,14 +519,51 @@
   <data name="&gt;&gt;lstDead.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="lblUsesCustomData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblUsesCustomData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblUsesCustomData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 9</value>
+  </data>
+  <data name="lblUsesCustomData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 13</value>
+  </data>
+  <data name="lblUsesCustomData.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="lblUsesCustomData.Text" xml:space="preserve">
+    <value>Uses custom data</value>
+  </data>
+  <data name="lblUsesCustomData.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblUsesCustomData.Name" xml:space="preserve">
+    <value>lblUsesCustomData</value>
+  </data>
+  <data name="&gt;&gt;lblUsesCustomData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblUsesCustomData.Parent" xml:space="preserve">
+    <value>pnlUnitView</value>
+  </data>
+  <data name="&gt;&gt;lblUsesCustomData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btnTraits.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnTraits.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>426, 126</value>
   </data>
   <data name="btnTraits.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
+=======
+    <value>284, 106</value>
+>>>>>>> refs/remotes/Soaprman/master
   </data>
   <data name="btnTraits.Size" type="System.Drawing.Size, System.Drawing">
     <value>226, 35</value>
@@ -514,7 +584,7 @@
     <value>pnlUnitView</value>
   </data>
   <data name="&gt;&gt;btnTraits.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btnExportUnit.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
@@ -547,13 +617,20 @@
     <value>pnlUnitView</value>
   </data>
   <data name="&gt;&gt;btnExportUnit.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="btnSupport.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btnSupport.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>426, 82</value>
   </data>
   <data name="btnSupport.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
+=======
+    <value>284, 77</value>
+>>>>>>> refs/remotes/Soaprman/master
   </data>
   <data name="btnSupport.Size" type="System.Drawing.Size, System.Drawing">
     <value>226, 35</value>
@@ -574,7 +651,7 @@
     <value>pnlUnitView</value>
   </data>
   <data name="&gt;&gt;btnSupport.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btnDeleteUnit.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
@@ -607,7 +684,7 @@
     <value>pnlUnitView</value>
   </data>
   <data name="&gt;&gt;btnDeleteUnit.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="unitBlockInfo1.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 37</value>
@@ -631,10 +708,14 @@
     <value>pnlUnitView</value>
   </data>
   <data name="&gt;&gt;unitBlockInfo1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="flags1.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>426, 6</value>
+=======
+    <value>284, 28</value>
+>>>>>>> refs/remotes/Soaprman/master
   </data>
   <data name="flags1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -655,7 +736,7 @@
     <value>pnlUnitView</value>
   </data>
   <data name="&gt;&gt;flags1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="battleData1.Location" type="System.Drawing.Point, System.Drawing">
     <value>770, 409</value>
@@ -679,7 +760,7 @@
     <value>pnlUnitView</value>
   </data>
   <data name="&gt;&gt;battleData1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="classAndLevel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>657, 3</value>
@@ -703,7 +784,7 @@
     <value>pnlUnitView</value>
   </data>
   <data name="&gt;&gt;classAndLevel1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="dragonVein1.Location" type="System.Drawing.Point, System.Drawing">
     <value>812, 495</value>
@@ -727,7 +808,7 @@
     <value>pnlUnitView</value>
   </data>
   <data name="&gt;&gt;dragonVein1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="btnOpenHexEditor.Font" type="System.Drawing.Font, System.Drawing">
     <value>Courier New, 9.75pt</value>
@@ -760,7 +841,7 @@
     <value>pnlUnitView</value>
   </data>
   <data name="&gt;&gt;btnOpenHexEditor.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="accessories1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 631</value>
@@ -784,7 +865,7 @@
     <value>pnlUnitView</value>
   </data>
   <data name="&gt;&gt;accessories1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="stats1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 249</value>
@@ -808,7 +889,7 @@
     <value>pnlUnitView</value>
   </data>
   <data name="&gt;&gt;stats1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="weaponExperience1.Location" type="System.Drawing.Point, System.Drawing">
     <value>561, 345</value>
@@ -832,7 +913,7 @@
     <value>pnlUnitView</value>
   </data>
   <data name="&gt;&gt;weaponExperience1.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="hairColor1.Location" type="System.Drawing.Point, System.Drawing">
     <value>756, 580</value>
@@ -856,7 +937,7 @@
     <value>pnlUnitView</value>
   </data>
   <data name="&gt;&gt;hairColor1.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="inventory1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 345</value>
@@ -880,7 +961,7 @@
     <value>pnlUnitView</value>
   </data>
   <data name="&gt;&gt;inventory1.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="skills1.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 15</value>
@@ -934,7 +1015,7 @@
     <value>pnlUnitView</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="lblName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -970,7 +1051,7 @@
     <value>pnlUnitView</value>
   </data>
   <data name="&gt;&gt;lblName.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="pnlUnitView.Location" type="System.Drawing.Point, System.Drawing">
     <value>165, 9</value>
@@ -10148,8 +10229,13 @@
         AAAAAAAAgAAAAIABAADBgwAA4AcAAAAAAAA=
 </value>
   </data>
+<<<<<<< HEAD
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
+=======
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+>>>>>>> refs/remotes/Soaprman/master
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FEFTwiddler</value>

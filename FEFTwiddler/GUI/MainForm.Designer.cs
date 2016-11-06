@@ -40,6 +40,10 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabChapterData = new System.Windows.Forms.TabPage();
+<<<<<<< HEAD
+=======
+            this.btnCastleMap = new System.Windows.Forms.Button();
+>>>>>>> refs/remotes/Soaprman/master
             this.btnChapterHistory = new System.Windows.Forms.Button();
             this.lblAvatarName = new System.Windows.Forms.Label();
             this.tabUnitViewer = new System.Windows.Forms.TabPage();
@@ -48,6 +52,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lstDead = new System.Windows.Forms.ListBox();
             this.pnlUnitView = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
+=======
+            this.lblUsesCustomData = new System.Windows.Forms.Label();
+>>>>>>> refs/remotes/Soaprman/master
             this.btnTraits = new System.Windows.Forms.Button();
             this.btnExportUnit = new System.Windows.Forms.Button();
             this.btnSupport = new System.Windows.Forms.Button();
@@ -158,6 +166,7 @@
             // 
             // tabChapterData
             // 
+            this.tabChapterData.Controls.Add(this.btnCastleMap);
             this.tabChapterData.Controls.Add(this.difficulty1);
             this.tabChapterData.Controls.Add(this.btnChapterHistory);
             this.tabChapterData.Controls.Add(this.goldAndPoints1);
@@ -167,6 +176,16 @@
             this.tabChapterData.Name = "tabChapterData";
             this.tabChapterData.UseVisualStyleBackColor = true;
             // 
+<<<<<<< HEAD
+=======
+            // btnCastleMap
+            // 
+            resources.ApplyResources(this.btnCastleMap, "btnCastleMap");
+            this.btnCastleMap.Name = "btnCastleMap";
+            this.btnCastleMap.UseVisualStyleBackColor = true;
+            this.btnCastleMap.Click += new System.EventHandler(this.btnCastleMap_Click);
+            // 
+>>>>>>> refs/remotes/Soaprman/master
             // btnChapterHistory
             // 
             resources.ApplyResources(this.btnChapterHistory, "btnChapterHistory");
@@ -220,6 +239,7 @@
             // pnlUnitView
             // 
             this.pnlUnitView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlUnitView.Controls.Add(this.lblUsesCustomData);
             this.pnlUnitView.Controls.Add(this.btnTraits);
             this.pnlUnitView.Controls.Add(this.btnExportUnit);
             this.pnlUnitView.Controls.Add(this.btnSupport);
@@ -240,6 +260,15 @@
             resources.ApplyResources(this.pnlUnitView, "pnlUnitView");
             this.pnlUnitView.Name = "pnlUnitView";
             // 
+<<<<<<< HEAD
+=======
+            // lblUsesCustomData
+            // 
+            resources.ApplyResources(this.lblUsesCustomData, "lblUsesCustomData");
+            this.lblUsesCustomData.ForeColor = System.Drawing.Color.Magenta;
+            this.lblUsesCustomData.Name = "lblUsesCustomData";
+            // 
+>>>>>>> refs/remotes/Soaprman/master
             // btnTraits
             // 
             resources.ApplyResources(this.btnTraits, "btnTraits");
@@ -492,6 +521,8 @@
         private System.Windows.Forms.Label lblUnitCount;
         private System.Windows.Forms.Button btnSupport;
         private System.Windows.Forms.Button btnTraits;
+        private System.Windows.Forms.Label lblUsesCustomData;
+        private System.Windows.Forms.Button btnCastleMap;
     }
 }
 

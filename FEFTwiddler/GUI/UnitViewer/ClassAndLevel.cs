@@ -49,7 +49,9 @@ namespace FEFTwiddler.GUI.UnitViewer
             this.Invalidate();
             UnbindEventHandlers();
 
-            if (Enum.IsDefined(typeof(Enums.Class), _unit.ClassID))
+            var classData = Data.Database.Classes.GetByID(_unit.ClassID);
+
+            if (classData != null)
             {
                 cmbClass.DataSource = GetClassDataSource();
                 cmbClass.SelectedValue = _unit.ClassID;

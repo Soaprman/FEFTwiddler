@@ -67,6 +67,7 @@ namespace FEFTwiddler.GUI.UnitViewer
 
             cmbDeathChapter.Text = _unit.DeathChapter.ToString();
 
+            // Disallow killing Corrin
             if (Enum.IsDefined(typeof(Enums.Character), _unit.CharacterID) && Data.Database.Characters.GetByID(_unit.CharacterID).IsCorrin && !_unit.IsEinherjar)
             {
                 DisableAll();

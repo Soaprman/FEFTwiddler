@@ -9,7 +9,7 @@ namespace FEFTwiddler.Data
     {
         public StatDatabase(Enums.Language language) : base(language)
         {
-            _data = XElement.Parse(Properties.Resources.Data_Stats);
+            LoadData(Properties.Resources.Data_Stats);
         }
 
         public Stat GetByID(Enums.Stat statId)
