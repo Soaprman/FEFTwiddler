@@ -73,6 +73,9 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
 
         #region Material Quantity
 
+        // A full material quantity block looks like:
+        // 63 63 63 63 63 63 63 63 63 63 63 63 63 63 63 63 63 63 63 63 63 63
+
         public byte MaterialQuantity_Crystal
         {
             get { return _raw[0x22D]; }
@@ -209,6 +212,9 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
 
         #region Material Discovered
 
+        // A completed material discovered block looks like:
+        // FF 0F FF 03
+
         public bool MaterialDiscovered_Crystal
         {
             get { return _raw[0x243].GetFlag(0x01); }
@@ -324,5 +330,70 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
         }
 
         #endregion
+
+        // Some stuff that I haven't got a clue about yet that varies in size
+        // I am calling this the HELL PATTERN
+        // Examples:
+        // 00 01 02 00 01 00 E0 07 00 00 09 00 E0 07 00 00 01 00 01 00 E0 07 00 00 00 00 
+        // 00 01 00 00 00 00 00 00 
+        // 00 00 03 00 1C 00 E0 07 00 00 0A 00 E0 07 00 00 3E 00 E0 07 00 00 00 00 03 00 1C 00 E0 07 00 00 0A 00 E0 07 00 00 3E 00 E0 07 00 00 
+        // 00 02 04 00 1C 00 E0 07 00 00 0A 00 E0 07 00 00 3E 00 E0 07 00 00 08 00 E0 07 00 00 00 00 04 00 1C 00 E0 07 00 00 0A 00 E0 07 00 00 3E 00 E0 07 00 00 08 00 E0 07 00 00
+        // 00 00 00 00 00 00 00 00
+        // 00 02 01 00 08 00 E0 07 00 00 00 00 01 00 08 00 E0 07 00 00
+        // 00 01 01 00 1E 00 E0 07 00 00 00 00 00 00
+        // 01 02 01 00 01 00 E0 07 00 00 01 00 01 00 E0 07 00 00 00 00
+        // 01 02 01 00 01 00 E0 07 00 00 00 00 00 00
+        /*
+         * Possible process:
+         * 
+         * First four bytes are flags
+         * 
+         * 
+         * 
+         * */
+
+
+        // Six bytes, the first is (always?) 0x02
+
+        // A byte saying how many four-byte things are coming up
+
+        // Four-byte things
+        // 00 XX YY ZZ
+        // XX: Usually 00, but I've seen 04
+        // YY: Usually 00, but I've seen 01 and 02
+        // ZZ: Some value, seems unique within the list
+
+        // 0x10B bytes
+        // 00 00 00 01, then some 01s, 02s, and 04s mostly, followed by a fat chunk of 00s
+
+        // Strings like Corrin name, castle greeting, etc
+        // From the beginning of corrin name to before the beginning of the four strings, there are 0x150 (336) bytes. This seems consistent
+        // 0x42 bytes per string, though that may include a 00 00 terminator or separator. There are four of these.
+
+        // 0x3B (59) bytes of stuff before the chaos block's starting 0x03 bytes
+        // Probably not terribly interesting values. Examples:
+        // My 026/Chapter0_dec save
+        // 00 00 00 00 17 11 14 20 00 08 00 00 00 FF 00 50 00 00 00 7F 00 00 00 00 00 00 00 00 00 00 50 00 00 00 FF FF FF 0F 00 00 00 00 00 00 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00
+        // "CART" save
+        // 00 00 00 00 17 11 14 20 00 08 00 00 00 00 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+        // CHAOS BLOCK
+        // 0x03 bytes: 02, then a ushort containing the number of entries in the chaos block
+        // Each entry is a 0x1E (30) byte string similar to this:
+        // 19 08 14 20 00 1D 00 FF FF FF CD CD CD CD 02 CD CD CD CD CD CD CD CD 02 FD CC 7A 03 00 0A 
+        // In that line, the OO bytes seem constant and the XX bytes seem to change:
+        // OO OO OO OO OO XX OO OO OO OO OO OO OO OO OO OO OO OO OO OO OO OO OO XX XX XX XX XX OO XX
+        // Column headers:
+        // AA BB CC DD EE FF GG HH II JJ KK LL MM NN OO PP QQ RR SS TT UU VV WW XX YY ZZ 11 22 33 44
+        // FF-GG: may be a ushort value. Values range from 0x03 to 0x46, with most higher values toward the bottom of the list.
+        // XX: is a value between 01-05, or FF.
+        // YY ZZ 11 22: are either 00 or seemingly random values. Seems similar to buildings...
+        // 33: has a value of 0x01 in four cases. FF values for those cases are: 22, 24, 11, 14
+        // ------- In another save, when FF's value is 11 or 14, 33's value is 00
+        // 44: mostly lowish values, sometimes FF
+
+        // 0x73 unknown bytes between chaos block entries and building entries
+
+        // Buildings
     }
 }
