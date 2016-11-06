@@ -370,7 +370,7 @@ namespace FEFTwiddler.GUI
 
             // Support
             var supportData = Data.Database.Characters.GetByID(_selectedUnit.CharacterID)?.SupportPool;
-            if ((supportData != null) ||
+            if ((supportData == null) ||
                 (_selectedUnit.RawNumberOfSupports != supportData.Length) ||
                 (supportData.Length == 0))
             {
