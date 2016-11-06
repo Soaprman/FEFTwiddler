@@ -209,7 +209,7 @@ namespace FEFTwiddler.GUI
 
         private void btnCastleMap_Click(object sender, EventArgs e)
         {
-            var popup = new GUI.MyCastle.CastleMap(_chapterSave.MyCastleRegion);
+            var popup = new GUI.ChapterData.CastleViewer(_chapterSave.MyCastleRegion);
             popup.ShowDialog();
         }
 

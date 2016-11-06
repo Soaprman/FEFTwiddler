@@ -1,6 +1,6 @@
-﻿namespace FEFTwiddler.GUI.MyCastle
+﻿namespace FEFTwiddler.GUI.ChapterData
 {
-    partial class CastleMap
+    partial class CastleViewer
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CastleMap));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CastleViewer));
             this.btnClose = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuildingList = new System.Windows.Forms.TextBox();
@@ -62,7 +62,7 @@
             this.txtBuildingList.Size = new System.Drawing.Size(627, 296);
             this.txtBuildingList.TabIndex = 2;
             // 
-            // CastleMap
+            // CastleViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -70,8 +70,8 @@
             this.Controls.Add(this.txtBuildingList);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnClose);
-            this.Name = "CastleMap";
-            this.Text = "CastleMap";
+            this.Name = "CastleViewer";
+            this.Text = "Castle Viewer";
             this.Load += new System.EventHandler(this.CastleMap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

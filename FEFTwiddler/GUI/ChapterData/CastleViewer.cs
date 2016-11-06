@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FEFTwiddler.Extensions;
 
-namespace FEFTwiddler.GUI.MyCastle
+namespace FEFTwiddler.GUI.ChapterData
 {
-    public partial class CastleMap : Form
+    public partial class CastleViewer : Form
     {
         private Model.ChapterSaveRegions.MyCastleRegion _castleRegion;
 
-        public CastleMap(Model.ChapterSaveRegions.MyCastleRegion castleRegion)
+        public CastleViewer(Model.ChapterSaveRegions.MyCastleRegion castleRegion)
         {
             _castleRegion = castleRegion;
             InitializeComponent();
