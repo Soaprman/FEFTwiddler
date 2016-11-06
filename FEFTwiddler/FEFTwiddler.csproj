@@ -73,6 +73,7 @@
     <Compile Include="Enums\Battlefield.cs" />
     <Compile Include="Enums\BattlefieldStatus.cs" />
     <Compile Include="Enums\Building.cs" />
+    <Compile Include="Enums\BuildingRank.cs" />
     <Compile Include="Enums\Chapter.cs" />
     <Compile Include="Enums\ChapterType.cs" />
     <Compile Include="Enums\Character.cs" />
