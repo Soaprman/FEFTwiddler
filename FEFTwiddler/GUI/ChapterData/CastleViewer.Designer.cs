@@ -32,11 +32,12 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuildingList = new System.Windows.Forms.TextBox();
+            this.castleMap1 = new FEFTwiddler.GUI.ChapterData.CastleMap();
             this.SuspendLayout();
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(568, 385);
+            this.btnClose.Location = new System.Drawing.Point(902, 635);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 0;
@@ -59,14 +60,22 @@
             this.txtBuildingList.Multiline = true;
             this.txtBuildingList.Name = "txtBuildingList";
             this.txtBuildingList.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtBuildingList.Size = new System.Drawing.Size(627, 296);
+            this.txtBuildingList.Size = new System.Drawing.Size(345, 296);
             this.txtBuildingList.TabIndex = 2;
+            // 
+            // castleMap1
+            // 
+            this.castleMap1.Location = new System.Drawing.Point(367, 83);
+            this.castleMap1.Name = "castleMap1";
+            this.castleMap1.Size = new System.Drawing.Size(530, 550);
+            this.castleMap1.TabIndex = 3;
             // 
             // CastleViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(655, 420);
+            this.ClientSize = new System.Drawing.Size(989, 670);
+            this.Controls.Add(this.castleMap1);
             this.Controls.Add(this.txtBuildingList);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnClose);
@@ -83,5 +92,6 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBuildingList;
+        private CastleMap castleMap1;
     }
 }

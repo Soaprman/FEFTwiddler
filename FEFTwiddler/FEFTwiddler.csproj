@@ -98,6 +98,12 @@
     <Compile Include="Extensions\StreamExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\XElementExtensions.cs" />
+    <Compile Include="GUI\ChapterData\CastleMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ChapterData\CastleMap.Designer.cs">
+      <DependentUpon>CastleMap.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ChapterData\CastleViewer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -342,6 +348,9 @@
     <Compile Include="Utils\TypeConverter.cs" />
     <Compile Include="Utils\UnitUtil.cs" />
     <Compile Include="Utils\WeaponNameUtil.cs" />
+    <EmbeddedResource Include="GUI\ChapterData\CastleMap.resx">
+      <DependentUpon>CastleMap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ChapterData\ChapterHistory.resx">
       <DependentUpon>ChapterHistory.cs</DependentUpon>
     </EmbeddedResource>
