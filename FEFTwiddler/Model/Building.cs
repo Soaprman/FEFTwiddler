@@ -14,10 +14,12 @@ namespace FEFTwiddler.Model
                 if (IsLilithsTemple())
                 {
                     // Re-add the four 00 bytes
-                    return _raw
-                        .Take(0x02)
+                    IEnumerable<byte> before = _raw.Take(0x02);
+                    IEnumerable<byte> after = _raw.Skip(0x02).Take(0x0B);
+
+                    return before
                         .Concat(new byte[] { 0x00, 0x00, 0x00, 0x00 })
-                        .Take(0x0B)
+                        .Concat(after)
                         .ToArray();
                 }
                 else { return _raw; }

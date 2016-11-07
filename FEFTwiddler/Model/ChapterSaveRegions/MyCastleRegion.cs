@@ -29,6 +29,7 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
                     .Concat(RawBlock4)
                     .Concat(RawBuildingCount.Yield())
                     .Concat(RawBuildings)
+                    .Concat(RawBlock5)
                     .ToArray();
             }
             set
@@ -100,6 +101,9 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
 
                         _buildings.Add(new Building(buildingBytes.ToArray()));
                     }
+
+                    // Block 5
+                    RawBlock5 = br.ReadBytes((int)br.BaseStream.Length - (int)br.BaseStream.Position); // Read to end
                 }
             }
         }
@@ -633,6 +637,22 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
         {
             get { return _buildings; }
         }
+
+        #endregion
+
+        #region Block 5
+
+        private byte[] _rawBlock5;
+        public byte[] RawBlock5
+        {
+            get { return _rawBlock5; }
+            set
+            {
+                _rawBlock5 = value;
+            }
+        }
+
+        // The last block. Covers the entire rest of the save file
 
         #endregion
     }
