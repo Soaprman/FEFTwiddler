@@ -237,19 +237,19 @@
   <building id="46" name="TravelersPlaza_1">
     <text lang="English" displayName="Travelers' Plaza 1" />
     <text lang="Japanese" displayName="旅人の広場１" />
-    <properties size="3" rank="1" isStatue="false" isGatheringSpot="false" isLilithsTemple="false" isTravelersPlaza="true" />
+    <properties size="5" rank="1" isStatue="false" isGatheringSpot="false" isLilithsTemple="false" isTravelersPlaza="true" />
     <image name="TravelersPlaza" usesRankBackground="false" />
   </building>
   <building id="47" name="TravelersPlaza_2">
     <text lang="English" displayName="Travelers' Plaza 2" />
     <text lang="Japanese" displayName="旅人の広場２" />
-    <properties size="3" rank="2" isStatue="false" isGatheringSpot="false" isLilithsTemple="false" isTravelersPlaza="true" />
+    <properties size="5" rank="2" isStatue="false" isGatheringSpot="false" isLilithsTemple="false" isTravelersPlaza="true" />
     <image name="TravelersPlaza" usesRankBackground="false" />
   </building>
   <building id="48" name="TravelersPlaza_3">
     <text lang="English" displayName="Travelers' Plaza 3" />
     <text lang="Japanese" displayName="旅人の広場３" />
-    <properties size="3" rank="3" isStatue="false" isGatheringSpot="false" isLilithsTemple="false" isTravelersPlaza="true" />
+    <properties size="5" rank="3" isStatue="false" isGatheringSpot="false" isLilithsTemple="false" isTravelersPlaza="true" />
     <image name="TravelersPlaza" usesRankBackground="false" />
   </building>
   <building id="49" name="PrivateQuarters_1">
