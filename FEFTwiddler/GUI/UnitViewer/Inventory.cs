@@ -148,7 +148,9 @@ namespace FEFTwiddler.GUI.UnitViewer
                     Forges.Value = 0;
                     Equipped.Enabled = false;
                     Equipped.Checked = false;
+                    item.IsEquipped = false;
                 }
+
                 Raw.Text = item.Hex();
             }
             catch (ArgumentOutOfRangeException e)
