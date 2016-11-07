@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 using FEFTwiddler.Extensions;
@@ -31,7 +29,7 @@ namespace FEFTwiddler.Data
         protected void LoadAddonData(string addonDataSubDirectory)
         {
             // Don't call this in design mode, since we may not have permission to do Directory stuff in the Visual Studio temp folders
-            if (LicenseManager.UsageMode == LicenseUsageMode.Designtime) return;
+            if (Config.InDesignMode()) return;
 
             var path = _addonDataDirectory + "/" + addonDataSubDirectory;
             Directory.CreateDirectory(path);

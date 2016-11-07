@@ -33,6 +33,9 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void picCastle_Paint(object sender, PaintEventArgs e)
         {
+            // Otherwise problems happen
+            if (this.DesignMode) return;
+
             DrawMapBackground(e.Graphics);
 
             //picCastle.BackColor = Color.FromArgb(255, 198, 154, 90);
@@ -42,7 +45,21 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void DrawMapBackground(Graphics g)
         {
-            g.DrawImage(Properties.Resources.Map_ChevoisStyle, 0, 0);
+            Bitmap mapBg;
+
+            switch (_castleRegion.CastleMap)
+            {
+                case Enums.CastleMap.Hoshidan: mapBg = Properties.Resources.Map_HoshidanStyle; break;
+                case Enums.CastleMap.WindTribe: mapBg = Properties.Resources.Map_WindTribeStyle; break;
+                case Enums.CastleMap.Izumite: mapBg = Properties.Resources.Map_IzumiteStyle; break;
+                case Enums.CastleMap.Nohrian: mapBg = Properties.Resources.Map_NohrianStyle; break;
+                case Enums.CastleMap.Chevois: mapBg = Properties.Resources.Map_ChevoisStyle; break;
+                case Enums.CastleMap.Nestrian: mapBg = Properties.Resources.Map_NestrianStyle; break;
+                default: mapBg = Properties.Resources.Map_HoshidanStyle; break; // Shouldn't happen
+            }
+
+            // Dimensions have to be specified. Otherwise, it draws it too big for some reason
+            g.DrawImage(mapBg, 0, 0, picCastle.Width, picCastle.Height);
         }
 
         /// <summary>

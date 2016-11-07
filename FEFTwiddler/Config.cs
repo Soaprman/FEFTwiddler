@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 using System.Windows.Forms;
@@ -42,6 +43,14 @@ namespace FEFTwiddler
                 settings.SetAttributeValue("unitPath", value);
                 SetConfigRoot(root);
             }
+        }
+
+        /// <summary>
+        /// Are we running in design mode in Visual Studio?
+        /// </summary>
+        public static bool InDesignMode()
+        {
+            return LicenseManager.UsageMode == LicenseUsageMode.Designtime;
         }
 
         private static XElement GetConfigRoot()

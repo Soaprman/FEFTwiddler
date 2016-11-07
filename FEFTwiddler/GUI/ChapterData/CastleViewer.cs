@@ -29,6 +29,8 @@ namespace FEFTwiddler.GUI.ChapterData
             {
                 txtBuildingList.Text += building.GetCondensedInformation() + Environment.NewLine;
             }
+
+            castleMap1.LoadCastleRegion(_castleRegion);
         }
 
         private void btnClose_Click(object sender, EventArgs e)

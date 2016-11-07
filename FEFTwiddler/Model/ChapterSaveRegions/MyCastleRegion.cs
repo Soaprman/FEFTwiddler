@@ -132,7 +132,15 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
             set { Array.Copy(Utils.TypeConverter.ToByteArray(value, 0x10), 0x00, _rawBlock1, 0x6F, 0x20); }
         }
 
-        // Twenty-five unknown bytes (0x90 through 0xA8)
+        // Eighteen unknown bytes (0x90 through 0xA1)
+
+        public Enums.CastleMap CastleMap
+        {
+            get { return (Enums.CastleMap)_rawBlock1[0xA2]; }
+            set { _rawBlock1[0xA2] = (byte)value; }
+        }
+
+        // Six unknown bytes (0xA3 through 0xA8)
 
         public ushort DragonVeinPoint
         {
