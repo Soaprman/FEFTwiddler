@@ -2187,7 +2187,7 @@
   <building id="505" name="HealingTile">
     <text lang="English" displayName="Healing Tile" />
     <text lang="Japanese" displayName="回復床" />
-    <properties size="3" rank="0" isStatue="false" isGatheringSpot="false" isLilithsTemple="false" isTravelersPlaza="false" />
+    <properties size="1" rank="0" isStatue="false" isGatheringSpot="false" isLilithsTemple="false" isTravelersPlaza="false" />
     <image name="HealingTile" usesRankBackground="false" />
   </building>
   <building id="506" name="Caltrops">
@@ -2199,13 +2199,13 @@
   <building id="507" name="Fort">
     <text lang="English" displayName="Fort" />
     <text lang="Japanese" displayName="砦" />
-    <properties size="3" rank="0" isStatue="false" isGatheringSpot="false" isLilithsTemple="false" isTravelersPlaza="false" />
+    <properties size="1" rank="0" isStatue="false" isGatheringSpot="false" isLilithsTemple="false" isTravelersPlaza="false" />
     <image name="Fort" usesRankBackground="false" />
   </building>
   <building id="508" name="Pillars">
     <text lang="English" displayName="Pillars" />
     <text lang="Japanese" displayName="柱" />
-    <properties size="3" rank="0" isStatue="false" isGatheringSpot="false" isLilithsTemple="false" isTravelersPlaza="false" />
+    <properties size="1" rank="0" isStatue="false" isGatheringSpot="false" isLilithsTemple="false" isTravelersPlaza="false" />
     <image name="Pillars" usesRankBackground="false" />
   </building>
   <building id="509" name="IceSculpture">
@@ -2217,7 +2217,7 @@
   <building id="510" name="Grave">
     <text lang="English" displayName="Grave" />
     <text lang="Japanese" displayName="墓" />
-    <properties size="3" rank="0" isStatue="false" isGatheringSpot="false" isLilithsTemple="false" isTravelersPlaza="false" />
+    <properties size="1" rank="0" isStatue="false" isGatheringSpot="false" isLilithsTemple="false" isTravelersPlaza="false" />
     <image name="Grave" usesRankBackground="false" />
   </building>
   <!--
