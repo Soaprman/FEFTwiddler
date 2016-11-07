@@ -23,7 +23,7 @@ namespace FEFTwiddler.GUI.Controls
 
         public void SetBytes(byte[] bytes)
         {
-            _bytes = bytes;
+            _bytes = (byte[])bytes.Clone();
             Resize();
         }
 
