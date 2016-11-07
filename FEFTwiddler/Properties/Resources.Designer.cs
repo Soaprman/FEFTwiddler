@@ -87,14 +87,12 @@ namespace FEFTwiddler.Properties {
         ///  &lt;building id=&quot;1&quot; name=&quot;DawnArmory_1&quot;&gt;
         ///    &lt;text lang=&quot;English&quot; displayName=&quot;Dawn Armory 1&quot; /&gt;
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;白夜武器屋１&quot; /&gt;
+        ///    &lt;properties size=&quot;3&quot; rank=&quot;1&quot; isStatue=&quot;false&quot; isGatheringSpot=&quot;false&quot; isLilithsTemple=&quot;false&quot; isTravelersPlaza=&quot;false&quot; /&gt;
+        ///    &lt;image name=&quot;DawnArmory&quot; usesRankBackground=&quot;true&quot; /&gt;
         ///  &lt;/building&gt;
         ///  &lt;building id=&quot;2&quot; name=&quot;DawnArmory_2&quot;&gt;
         ///    &lt;text lang=&quot;English&quot; displayName=&quot;Dawn Armory 2&quot; /&gt;
-        ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;白夜武器屋２&quot; /&gt;
-        ///  &lt;/building&gt;
-        ///  &lt;building id=&quot;3&quot; name=&quot;DawnArmory_3&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;Dawn Armory 3&quot; /&gt;
-        ///    &lt;text lang=&quot;Japanese&quot; displayName [rest of string was truncated]&quot;;.
+        ///    &lt;text lang [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Buildings {
             get {
@@ -106,12 +104,12 @@ namespace FEFTwiddler.Properties {
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;root&gt;
         ///  &lt;character id=&quot;0&quot; name=&quot;None&quot;&gt;
-        ///    &lt;text lang=&quot;English&quot; displayName=&quot;None&quot; /&gt;
+        ///    &lt;text lang=&quot;English&quot; displayName=&quot;(None)&quot; /&gt;
         ///    &lt;text lang=&quot;Japanese&quot; displayName=&quot;無し&quot; /&gt;
         ///    &lt;baseStats hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; res=&quot;0&quot; /&gt;
         ///    &lt;modifier hp=&quot;0&quot; str=&quot;0&quot; mag=&quot;0&quot; skl=&quot;0&quot; spd=&quot;0&quot; lck=&quot;0&quot; def=&quot;0&quot; res=&quot;0&quot; /&gt;
         ///    &lt;flags canUseStones=&quot;false&quot; isCorrin=&quot;false&quot; isChild=&quot;false&quot; isPrisoner=&quot;false&quot; isFemale=&quot;false&quot; isManakete=&quot;false&quot; isBeast=&quot;false&quot; canUseDragonVein=&quot;false&quot; /&gt;
-        ///    &lt;m [rest of string was truncated]&quot;;.
+        ///     [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Data_Characters {
             get {
@@ -519,6 +517,66 @@ namespace FEFTwiddler.Properties {
         internal static System.Drawing.Bitmap ItemSubType_Yumi {
             get {
                 object obj = ResourceManager.GetObject("ItemSubType_Yumi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Map_ChevoisStyle {
+            get {
+                object obj = ResourceManager.GetObject("Map_ChevoisStyle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Map_HoshidanStyle {
+            get {
+                object obj = ResourceManager.GetObject("Map_HoshidanStyle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Map_IzumiteStyle {
+            get {
+                object obj = ResourceManager.GetObject("Map_IzumiteStyle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Map_NestrianStyle {
+            get {
+                object obj = ResourceManager.GetObject("Map_NestrianStyle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Map_NohrianStyle {
+            get {
+                object obj = ResourceManager.GetObject("Map_NohrianStyle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Map_WindTribeStyle {
+            get {
+                object obj = ResourceManager.GetObject("Map_WindTribeStyle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
