@@ -33,13 +33,21 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void picCastle_Paint(object sender, PaintEventArgs e)
         {
-
+            DrawMapBackground(e.Graphics);
 
             //picCastle.BackColor = Color.FromArgb(255, 198, 154, 90);
 
             //DrawGrid(e.Graphics);
         }
 
+        private void DrawMapBackground(Graphics g)
+        {
+            g.DrawImage(Properties.Resources.Map_ChevoisStyle, 0, 0);
+        }
+
+        /// <summary>
+        /// Deprecated, but here as a code reference for now
+        /// </summary>
         private void DrawGrid(Graphics g)
         {
             // Grid size
