@@ -37,6 +37,7 @@ namespace FEFTwiddler.GUI.ChapterData
             if (this.DesignMode) return;
 
             DrawMapBackground(e.Graphics);
+            DrawBuildings(e.Graphics);
 
             //picCastle.BackColor = Color.FromArgb(255, 198, 154, 90);
 
@@ -60,6 +61,32 @@ namespace FEFTwiddler.GUI.ChapterData
 
             // Dimensions have to be specified. Otherwise, it draws it too big for some reason
             g.DrawImage(mapBg, 0, 0, picCastle.Width, picCastle.Height);
+        }
+
+        private void DrawBuildings(Graphics g)
+        {
+            int scale = 3;
+            int cellWidth = 6;
+            int cellHeight = 6;
+
+            Pen p = new Pen(Color.Black);
+            Brush b = new SolidBrush(Color.FromArgb(64, 0, 0, 0));
+
+            foreach (var building in _castleRegion.Buildings)
+            {
+                var data = Data.Database.Buildings.GetByID(building.BuildingID);
+
+                g.FillRectangle(b,
+                    scale * (building.LeftPosition - 1) * cellWidth,
+                    scale * (building.TopPosition - 1) * cellHeight,
+                    scale * data.Size * cellWidth,
+                    scale * data.Size * cellHeight);
+                g.DrawRectangle(p,
+                    scale * (building.LeftPosition - 1) * cellWidth,
+                    scale * (building.TopPosition - 1) * cellHeight,
+                    scale * data.Size * cellWidth,
+                    scale * data.Size * cellHeight);
+            }
         }
 
         /// <summary>
