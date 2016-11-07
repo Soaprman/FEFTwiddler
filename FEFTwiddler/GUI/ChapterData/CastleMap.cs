@@ -33,9 +33,11 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void picCastle_Paint(object sender, PaintEventArgs e)
         {
-            picCastle.BackColor = Color.FromArgb(255, 198, 154, 90);
 
-            DrawGrid(e.Graphics);
+
+            //picCastle.BackColor = Color.FromArgb(255, 198, 154, 90);
+
+            //DrawGrid(e.Graphics);
         }
 
         private void DrawGrid(Graphics g)
