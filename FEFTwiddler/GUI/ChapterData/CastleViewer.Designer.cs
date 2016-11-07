@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuildingList = new System.Windows.Forms.TextBox();
             this.castleMap1 = new FEFTwiddler.GUI.ChapterData.CastleMap();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnClose
@@ -70,11 +71,21 @@
             this.castleMap1.Size = new System.Drawing.Size(530, 550);
             this.castleMap1.TabIndex = 3;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(109, 450);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(156, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Ignore the drawing to your right!";
+            // 
             // CastleViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(989, 670);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.castleMap1);
             this.Controls.Add(this.txtBuildingList);
             this.Controls.Add(this.label1);
@@ -93,5 +104,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBuildingList;
         private CastleMap castleMap1;
+        private System.Windows.Forms.Label label2;
     }
 }
