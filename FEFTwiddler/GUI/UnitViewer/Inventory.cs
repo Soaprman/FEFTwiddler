@@ -139,12 +139,14 @@ namespace FEFTwiddler.GUI.UnitViewer
                 {
                     Forges.Enabled = true;
                     Forges.Value = item.Uses;
+                    Equipped.Enabled = true;
                     Equipped.Checked = item.IsEquipped;
                 }
                 else
                 {
                     Forges.Enabled = false;
                     Forges.Value = 0;
+                    Equipped.Enabled = false;
                     Equipped.Checked = false;
                 }
                 Raw.Text = item.Hex();
