@@ -514,6 +514,12 @@
     <Content Include="Resources\Images\ItemIcons\ItemSubType_Tome.png" />
     <Content Include="Resources\Images\ItemIcons\ItemSubType_Unknown.png" />
     <Content Include="Resources\Images\ItemIcons\ItemSubType_Yumi.png" />
+    <Content Include="Resources\Images\Maps\ChevoisStyle.png" />
+    <Content Include="Resources\Images\Maps\HoshidanStyle.png" />
+    <Content Include="Resources\Images\Maps\IzumiteStyle.png" />
+    <Content Include="Resources\Images\Maps\NestrianStyle.png" />
+    <Content Include="Resources\Images\Maps\NohrianStyle.png" />
+    <Content Include="Resources\Images\Maps\WindTribeStyle.png" />
     <Content Include="Resources\Images\MaterialIcons\Material_amber.png" />
     <Content Include="Resources\Images\MaterialIcons\Material_beans.png" />
     <Content Include="Resources\Images\MaterialIcons\Material_berries.png" />
