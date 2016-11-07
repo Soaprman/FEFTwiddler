@@ -127,7 +127,7 @@ namespace FEFTwiddler.GUI.UnitViewer
                 if (data.Type.HasCharges())
                 {
                     Charges.Enabled = true;
-                    Charges.Value = item.Uses;
+                    Charges.Value = item.Uses.Clamp((byte)Charges.Minimum, (byte)Charges.Maximum);
                 }
                 else
                 {
@@ -138,7 +138,7 @@ namespace FEFTwiddler.GUI.UnitViewer
                 if (data.Type.HasForges())
                 {
                     Forges.Enabled = true;
-                    Forges.Value = item.Uses;
+                    Forges.Value = item.Uses.Clamp((byte)Forges.Minimum, (byte)Forges.Maximum);
                     Equipped.Enabled = true;
                     Equipped.Checked = item.IsEquipped;
                 }

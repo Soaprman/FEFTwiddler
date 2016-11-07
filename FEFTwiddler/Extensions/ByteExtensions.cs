@@ -2,6 +2,11 @@
 {
     public static class ByteExtensions
     {
+        public static byte Clamp(this byte value, byte min, byte max)
+        {
+            return (byte)((value < min) ? min : (value > max) ? max : value);
+        }
+
         public static bool GetFlag(this byte thisByte, byte mask)
         {
             return (thisByte & mask) == mask;
