@@ -70,13 +70,15 @@ namespace FEFTwiddler.GUI.ChapterData
             int cellHeight = 6;
 
             Pen p = new Pen(Color.Black);
-            Brush b = new SolidBrush(Color.FromArgb(64, 0, 0, 0));
+            Brush buildingBrush = new SolidBrush(Color.FromArgb(64, 0, 0, 0));
+            Brush triangleBrush = new SolidBrush(Color.FromArgb(128, 0, 0, 0));
 
             foreach (var building in _castleRegion.Buildings)
             {
                 var data = Data.Database.Buildings.GetByID(building.BuildingID);
 
-                g.FillRectangle(b,
+                // Building outline
+                g.FillRectangle(buildingBrush,
                     scale * (building.LeftPosition - 1) * cellWidth,
                     scale * (building.TopPosition - 1) * cellHeight,
                     scale * data.Size * cellWidth,
@@ -86,6 +88,31 @@ namespace FEFTwiddler.GUI.ChapterData
                     scale * (building.TopPosition - 1) * cellHeight,
                     scale * data.Size * cellWidth,
                     scale * data.Size * cellHeight);
+
+                // Little arrow
+                switch (building.DirectionFacing)
+                {
+                    case 0: // Down
+                        break;
+                    case 1: // Left
+                        break;
+                    case 2: // Up
+                        g.FillPolygon(triangleBrush, new PointF[]
+                        {
+                            new PointF(
+                                scale * ((building.LeftPosition - 1) * cellWidth + (cellWidth * 0.5f) + (data.Size * cellWidth * 0.35f)),
+                                scale * ((building.TopPosition - 1) * cellHeight)),
+                            new PointF(
+                                scale * ((building.LeftPosition - 1) * cellWidth + (cellWidth * 0.25f) + (data.Size * cellWidth * 0.35f)),
+                                scale * ((building.TopPosition - 1) * cellHeight + (cellHeight * 0.5f))),
+                            new PointF(
+                                scale * ((building.LeftPosition - 1) * cellWidth + (cellWidth * 0.75f) + (data.Size * cellWidth * 0.35f)),
+                                scale * ((building.TopPosition - 1) * cellHeight + (cellHeight * 0.5f))),
+                        });
+                        break;
+                    case 3: // Right
+                        break;
+                }
             }
         }
 
