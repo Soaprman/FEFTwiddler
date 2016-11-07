@@ -93,24 +93,60 @@ namespace FEFTwiddler.GUI.ChapterData
                 switch (building.DirectionFacing)
                 {
                     case 0: // Down
+                        g.FillPolygon(triangleBrush, new PointF[]
+                        {
+                            new PointF(
+                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * cellWidth + (cellWidth * 0.0f)),
+                                scale * ((building.TopPosition + data.Size - 1) * cellHeight)),
+                            new PointF(
+                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * cellWidth + (cellWidth * -0.25f)),
+                                scale * ((building.TopPosition + data.Size - 1) * cellHeight - (cellHeight * 0.5f))),
+                            new PointF(
+                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * cellWidth + (cellWidth * 0.25f)),
+                                scale * ((building.TopPosition + data.Size - 1) * cellHeight - (cellHeight * 0.5f))),
+                        });
                         break;
                     case 1: // Left
+                        g.FillPolygon(triangleBrush, new PointF[]
+                        {
+                            new PointF(
+                                scale * ((building.LeftPosition - 1) * cellWidth),
+                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * cellHeight + (cellHeight * 0.0f))),
+                            new PointF(
+                                scale * ((building.LeftPosition - 1) * cellWidth + (cellWidth * 0.5f)),
+                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * cellHeight + (cellHeight * -0.25f))),
+                            new PointF(
+                                scale * ((building.LeftPosition - 1) * cellWidth + (cellWidth * 0.5f)),
+                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * cellHeight + (cellHeight * 0.25f))),
+                        });
                         break;
                     case 2: // Up
                         g.FillPolygon(triangleBrush, new PointF[]
                         {
                             new PointF(
-                                scale * ((building.LeftPosition - 1) * cellWidth + (cellWidth * 0.5f) + (data.Size * cellWidth * 0.35f)),
+                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * cellWidth + (cellWidth * 0.0f)),
                                 scale * ((building.TopPosition - 1) * cellHeight)),
                             new PointF(
-                                scale * ((building.LeftPosition - 1) * cellWidth + (cellWidth * 0.25f) + (data.Size * cellWidth * 0.35f)),
+                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * cellWidth + (cellWidth * -0.25f)),
                                 scale * ((building.TopPosition - 1) * cellHeight + (cellHeight * 0.5f))),
                             new PointF(
-                                scale * ((building.LeftPosition - 1) * cellWidth + (cellWidth * 0.75f) + (data.Size * cellWidth * 0.35f)),
+                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * cellWidth + (cellWidth * 0.25f)),
                                 scale * ((building.TopPosition - 1) * cellHeight + (cellHeight * 0.5f))),
                         });
                         break;
                     case 3: // Right
+                        g.FillPolygon(triangleBrush, new PointF[]
+                        {
+                            new PointF(
+                                scale * ((building.LeftPosition + data.Size - 1) * cellWidth),
+                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * cellHeight + (cellHeight * 0.0f))),
+                            new PointF(
+                                scale * ((building.LeftPosition + data.Size - 1) * cellWidth - (cellWidth * 0.5f)),
+                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * cellHeight + (cellHeight * -0.25f))),
+                            new PointF(
+                                scale * ((building.LeftPosition + data.Size - 1) * cellWidth - (cellWidth * 0.5f)),
+                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * cellHeight + (cellHeight * 0.25f))),
+                        });
                         break;
                 }
             }
