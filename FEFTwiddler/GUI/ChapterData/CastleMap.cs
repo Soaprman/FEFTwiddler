@@ -16,6 +16,14 @@ namespace FEFTwiddler.GUI.ChapterData
     {
         private Model.ChapterSaveRegions.MyCastleRegion _castleRegion;
 
+        // Numbers for drawing
+        private float scale = 3.0f; // Scale from virtual size to physical size
+        private int virtualCellWidth = 6;
+        private int virtualCellHeight = 6;
+
+        // Mouse stuff for event handling. Coordinates are relative to picCastle
+        private Point physicalMousePosition = Point.Empty;
+
         public CastleMap()
         {
             InitializeComponent();
@@ -33,11 +41,12 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void picCastle_Paint(object sender, PaintEventArgs e)
         {
-            // Otherwise problems happen
+            // Otherwise problems happen in Visual Studio
             if (this.DesignMode) return;
 
             DrawMapBackground(e.Graphics);
             DrawBuildings(e.Graphics);
+            DrawHoverOutline(e.Graphics);
 
             //picCastle.BackColor = Color.FromArgb(255, 198, 154, 90);
 
@@ -65,10 +74,6 @@ namespace FEFTwiddler.GUI.ChapterData
 
         private void DrawBuildings(Graphics g)
         {
-            int scale = 3;
-            int cellWidth = 6;
-            int cellHeight = 6;
-
             Pen p = new Pen(Color.Black);
             Brush buildingBrush = new SolidBrush(Color.FromArgb(64, 0, 0, 0));
             Brush triangleBrush = new SolidBrush(Color.FromArgb(128, 0, 0, 0));
@@ -79,15 +84,15 @@ namespace FEFTwiddler.GUI.ChapterData
 
                 // Building outline
                 g.FillRectangle(buildingBrush,
-                    scale * (building.LeftPosition - 1) * cellWidth,
-                    scale * (building.TopPosition - 1) * cellHeight,
-                    scale * data.Size * cellWidth,
-                    scale * data.Size * cellHeight);
+                    scale * (building.LeftPosition - 1) * virtualCellWidth,
+                    scale * (building.TopPosition - 1) * virtualCellHeight,
+                    scale * data.Size * virtualCellWidth,
+                    scale * data.Size * virtualCellHeight);
                 g.DrawRectangle(p,
-                    scale * (building.LeftPosition - 1) * cellWidth,
-                    scale * (building.TopPosition - 1) * cellHeight,
-                    scale * data.Size * cellWidth,
-                    scale * data.Size * cellHeight);
+                    scale * (building.LeftPosition - 1) * virtualCellWidth,
+                    scale * (building.TopPosition - 1) * virtualCellHeight,
+                    scale * data.Size * virtualCellWidth,
+                    scale * data.Size * virtualCellHeight);
 
                 // Little arrow
                 switch (building.DirectionFacing)
@@ -96,61 +101,91 @@ namespace FEFTwiddler.GUI.ChapterData
                         g.FillPolygon(triangleBrush, new PointF[]
                         {
                             new PointF(
-                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * cellWidth + (cellWidth * 0.0f)),
-                                scale * ((building.TopPosition + data.Size - 1) * cellHeight)),
+                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * 0.0f)),
+                                scale * ((building.TopPosition + data.Size - 1) * virtualCellHeight)),
                             new PointF(
-                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * cellWidth + (cellWidth * -0.25f)),
-                                scale * ((building.TopPosition + data.Size - 1) * cellHeight - (cellHeight * 0.5f))),
+                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * -0.25f)),
+                                scale * ((building.TopPosition + data.Size - 1) * virtualCellHeight - (virtualCellHeight * 0.5f))),
                             new PointF(
-                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * cellWidth + (cellWidth * 0.25f)),
-                                scale * ((building.TopPosition + data.Size - 1) * cellHeight - (cellHeight * 0.5f))),
+                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * 0.25f)),
+                                scale * ((building.TopPosition + data.Size - 1) * virtualCellHeight - (virtualCellHeight * 0.5f))),
                         });
                         break;
                     case 1: // Left
                         g.FillPolygon(triangleBrush, new PointF[]
                         {
                             new PointF(
-                                scale * ((building.LeftPosition - 1) * cellWidth),
-                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * cellHeight + (cellHeight * 0.0f))),
+                                scale * ((building.LeftPosition - 1) * virtualCellWidth),
+                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * 0.0f))),
                             new PointF(
-                                scale * ((building.LeftPosition - 1) * cellWidth + (cellWidth * 0.5f)),
-                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * cellHeight + (cellHeight * -0.25f))),
+                                scale * ((building.LeftPosition - 1) * virtualCellWidth + (virtualCellWidth * 0.5f)),
+                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * -0.25f))),
                             new PointF(
-                                scale * ((building.LeftPosition - 1) * cellWidth + (cellWidth * 0.5f)),
-                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * cellHeight + (cellHeight * 0.25f))),
+                                scale * ((building.LeftPosition - 1) * virtualCellWidth + (virtualCellWidth * 0.5f)),
+                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * 0.25f))),
                         });
                         break;
                     case 2: // Up
                         g.FillPolygon(triangleBrush, new PointF[]
                         {
                             new PointF(
-                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * cellWidth + (cellWidth * 0.0f)),
-                                scale * ((building.TopPosition - 1) * cellHeight)),
+                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * 0.0f)),
+                                scale * ((building.TopPosition - 1) * virtualCellHeight)),
                             new PointF(
-                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * cellWidth + (cellWidth * -0.25f)),
-                                scale * ((building.TopPosition - 1) * cellHeight + (cellHeight * 0.5f))),
+                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * -0.25f)),
+                                scale * ((building.TopPosition - 1) * virtualCellHeight + (virtualCellHeight * 0.5f))),
                             new PointF(
-                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * cellWidth + (cellWidth * 0.25f)),
-                                scale * ((building.TopPosition - 1) * cellHeight + (cellHeight * 0.5f))),
+                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * 0.25f)),
+                                scale * ((building.TopPosition - 1) * virtualCellHeight + (virtualCellHeight * 0.5f))),
                         });
                         break;
                     case 3: // Right
                         g.FillPolygon(triangleBrush, new PointF[]
                         {
                             new PointF(
-                                scale * ((building.LeftPosition + data.Size - 1) * cellWidth),
-                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * cellHeight + (cellHeight * 0.0f))),
+                                scale * ((building.LeftPosition + data.Size - 1) * virtualCellWidth),
+                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * 0.0f))),
                             new PointF(
-                                scale * ((building.LeftPosition + data.Size - 1) * cellWidth - (cellWidth * 0.5f)),
-                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * cellHeight + (cellHeight * -0.25f))),
+                                scale * ((building.LeftPosition + data.Size - 1) * virtualCellWidth - (virtualCellWidth * 0.5f)),
+                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * -0.25f))),
                             new PointF(
-                                scale * ((building.LeftPosition + data.Size - 1) * cellWidth - (cellWidth * 0.5f)),
-                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * cellHeight + (cellHeight * 0.25f))),
+                                scale * ((building.LeftPosition + data.Size - 1) * virtualCellWidth - (virtualCellWidth * 0.5f)),
+                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * 0.25f))),
                         });
                         break;
                 }
             }
         }
+
+        private void DrawHoverOutline(Graphics g)
+        {
+            Pen p = new Pen(Color.Yellow, scale);
+
+            if (physicalMousePosition != Point.Empty)
+            {
+                float physW = scale * virtualCellWidth;
+                float physH = scale * virtualCellHeight;
+                float physX = (float)Math.Floor(physicalMousePosition.X / physW) * physW;
+                float physY = (float)Math.Floor(physicalMousePosition.Y / physH) * physH;
+
+                g.DrawRectangle(p, physX, physY, physW, physH);
+            }
+        }
+
+        private void picCastle_MouseMove(object sender, MouseEventArgs e)
+        {
+            var picCastle = (PictureBox)sender;
+            physicalMousePosition = new Point(e.X - picCastle.Left, e.Y - picCastle.Top);
+            picCastle.Invalidate();
+        }
+
+        private void picCastle_MouseLeave(object sender, EventArgs e)
+        {
+            physicalMousePosition = Point.Empty;
+            picCastle.Invalidate();
+        }
+
+        #region "Deprecated"
 
         /// <summary>
         /// Deprecated, but here as a code reference for now
@@ -239,5 +274,7 @@ namespace FEFTwiddler.GUI.ChapterData
                 zoom * horizontalCells * cellWidth - 1,
                 zoom * verticalCells * cellHeight - 1);
         }
+
+        #endregion
     }
 }
