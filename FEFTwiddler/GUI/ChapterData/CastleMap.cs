@@ -97,11 +97,14 @@ namespace FEFTwiddler.GUI.ChapterData
             Brush buildingBrush = new SolidBrush(Color.FromArgb(64, 0, 0, 0));
             Brush triangleBrush = new SolidBrush(Color.FromArgb(128, 0, 0, 0));
 
+            // TODO: Maybe cycle through virtual map
             foreach (var building in _castleRegion.Buildings)
             {
+                // TODO: Maybe include in virtual map to improve performance
                 var data = Data.Database.Buildings.GetByID(building.BuildingID);
 
                 // Building outline
+                // TODO: Maybe use rectangles from virtual map
                 g.FillRectangle(buildingBrush,
                     scale * Shift(building.LeftPosition) * virtualCellWidth,
                     scale * Shift(building.TopPosition) * virtualCellHeight,
@@ -116,7 +119,7 @@ namespace FEFTwiddler.GUI.ChapterData
                 // Little arrow
                 switch (building.DirectionFacing)
                 {
-                    case 0: // Down
+                    case Enums.BuildingDirection.Down:
                         g.FillPolygon(triangleBrush, new PointF[]
                         {
                             new PointF(
@@ -130,7 +133,7 @@ namespace FEFTwiddler.GUI.ChapterData
                                 scale * ((Shift(building.TopPosition) + data.Size) * virtualCellHeight - (virtualCellHeight * 0.5f))),
                         });
                         break;
-                    case 1: // Left
+                    case Enums.BuildingDirection.Left:
                         g.FillPolygon(triangleBrush, new PointF[]
                         {
                             new PointF(
@@ -144,7 +147,7 @@ namespace FEFTwiddler.GUI.ChapterData
                                 scale * ((Shift(building.TopPosition) + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * 0.25f))),
                         });
                         break;
-                    case 2: // Up
+                    case Enums.BuildingDirection.Up:
                         g.FillPolygon(triangleBrush, new PointF[]
                         {
                             new PointF(
@@ -158,7 +161,7 @@ namespace FEFTwiddler.GUI.ChapterData
                                 scale * (Shift(building.TopPosition) * virtualCellHeight + (virtualCellHeight * 0.5f))),
                         });
                         break;
-                    case 3: // Right
+                    case Enums.BuildingDirection.Right:
                         g.FillPolygon(triangleBrush, new PointF[]
                         {
                             new PointF(
@@ -234,21 +237,21 @@ namespace FEFTwiddler.GUI.ChapterData
             else if (selectedBuilding == _selectedBuilding)
             {
                 // Rotate
-                if (_selectedBuilding.DirectionFacing == 0)
+                if (_selectedBuilding.DirectionFacing == Enums.BuildingDirection.Down)
                 {
-                    _selectedBuilding.DirectionFacing = 1;
+                    _selectedBuilding.DirectionFacing = Enums.BuildingDirection.Left;
                 }
-                else if (_selectedBuilding.DirectionFacing == 1)
+                else if (_selectedBuilding.DirectionFacing == Enums.BuildingDirection.Left)
                 {
-                    _selectedBuilding.DirectionFacing = 2;
+                    _selectedBuilding.DirectionFacing = Enums.BuildingDirection.Up;
                 }
-                else if (_selectedBuilding.DirectionFacing == 2)
+                else if (_selectedBuilding.DirectionFacing == Enums.BuildingDirection.Up)
                 {
-                    _selectedBuilding.DirectionFacing = 3;
+                    _selectedBuilding.DirectionFacing = Enums.BuildingDirection.Right;
                 }
-                else if (_selectedBuilding.DirectionFacing == 3)
+                else if (_selectedBuilding.DirectionFacing == Enums.BuildingDirection.Right)
                 {
-                    _selectedBuilding.DirectionFacing = 0;
+                    _selectedBuilding.DirectionFacing = Enums.BuildingDirection.Down;
                 }
             }
             else

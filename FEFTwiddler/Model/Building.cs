@@ -74,12 +74,12 @@ namespace FEFTwiddler.Model
         }
 
         /// <summary>
-        /// 0: down; 1: left; 2: up; 3: right
+        /// Which way it's facing
         /// </summary>
-        public byte DirectionFacing
+        public Enums.BuildingDirection DirectionFacing
         {
-            get { return _raw[0x07]; }
-            set { _raw[0x07] = value; }
+            get { return (Enums.BuildingDirection)_raw[0x07]; }
+            set { _raw[0x07] = (byte)value; }
         }
 
         // Four unknown bytes (0x08 through 0x0B)
@@ -128,10 +128,10 @@ namespace FEFTwiddler.Model
 
             switch (DirectionFacing)
             {
-                case 0: facing = "down"; break;
-                case 1: facing = "left"; break;
-                case 2: facing = "up"; break;
-                case 3: facing = "right"; break;
+                case Enums.BuildingDirection.Down: facing = "down"; break;
+                case Enums.BuildingDirection.Left: facing = "left"; break;
+                case Enums.BuildingDirection.Up: facing = "up"; break;
+                case Enums.BuildingDirection.Right: facing = "right"; break;
                 default: facing = "???"; break;
             }
 
