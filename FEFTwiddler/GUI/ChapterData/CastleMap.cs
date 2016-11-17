@@ -44,8 +44,8 @@ namespace FEFTwiddler.GUI.ChapterData
                 var data = Data.Database.Buildings.GetByID(building.BuildingID);
 
                 _virtualMap.Add(building, new Rectangle(
-                    virtualCellWidth * (building.LeftPosition - 1),
-                    virtualCellHeight * (building.TopPosition - 1),
+                    virtualCellWidth * Shift(building.LeftPosition),
+                    virtualCellHeight * Shift(building.TopPosition),
                     virtualCellWidth * data.Size,
                     virtualCellHeight * data.Size
                     ));
@@ -103,13 +103,13 @@ namespace FEFTwiddler.GUI.ChapterData
 
                 // Building outline
                 g.FillRectangle(buildingBrush,
-                    scale * (building.LeftPosition - 1) * virtualCellWidth,
-                    scale * (building.TopPosition - 1) * virtualCellHeight,
+                    scale * Shift(building.LeftPosition) * virtualCellWidth,
+                    scale * Shift(building.TopPosition) * virtualCellHeight,
                     scale * data.Size * virtualCellWidth,
                     scale * data.Size * virtualCellHeight);
                 g.DrawRectangle(p,
-                    scale * (building.LeftPosition - 1) * virtualCellWidth,
-                    scale * (building.TopPosition - 1) * virtualCellHeight,
+                    scale * Shift(building.LeftPosition) * virtualCellWidth,
+                    scale * Shift(building.TopPosition) * virtualCellHeight,
                     scale * data.Size * virtualCellWidth,
                     scale * data.Size * virtualCellHeight);
 
@@ -120,56 +120,56 @@ namespace FEFTwiddler.GUI.ChapterData
                         g.FillPolygon(triangleBrush, new PointF[]
                         {
                             new PointF(
-                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * 0.0f)),
-                                scale * ((building.TopPosition + data.Size - 1) * virtualCellHeight)),
+                                scale * ((Shift(building.LeftPosition) + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * 0.0f)),
+                                scale * ((Shift(building.TopPosition) + data.Size) * virtualCellHeight)),
                             new PointF(
-                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * -0.25f)),
-                                scale * ((building.TopPosition + data.Size - 1) * virtualCellHeight - (virtualCellHeight * 0.5f))),
+                                scale * ((Shift(building.LeftPosition) + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * -0.25f)),
+                                scale * ((Shift(building.TopPosition) + data.Size) * virtualCellHeight - (virtualCellHeight * 0.5f))),
                             new PointF(
-                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * 0.25f)),
-                                scale * ((building.TopPosition + data.Size - 1) * virtualCellHeight - (virtualCellHeight * 0.5f))),
+                                scale * ((Shift(building.LeftPosition) + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * 0.25f)),
+                                scale * ((Shift(building.TopPosition) + data.Size) * virtualCellHeight - (virtualCellHeight * 0.5f))),
                         });
                         break;
                     case 1: // Left
                         g.FillPolygon(triangleBrush, new PointF[]
                         {
                             new PointF(
-                                scale * ((building.LeftPosition - 1) * virtualCellWidth),
-                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * 0.0f))),
+                                scale * (Shift(building.LeftPosition) * virtualCellWidth),
+                                scale * ((Shift(building.TopPosition) + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * 0.0f))),
                             new PointF(
-                                scale * ((building.LeftPosition - 1) * virtualCellWidth + (virtualCellWidth * 0.5f)),
-                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * -0.25f))),
+                                scale * (Shift(building.LeftPosition) * virtualCellWidth + (virtualCellWidth * 0.5f)),
+                                scale * ((Shift(building.TopPosition) + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * -0.25f))),
                             new PointF(
-                                scale * ((building.LeftPosition - 1) * virtualCellWidth + (virtualCellWidth * 0.5f)),
-                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * 0.25f))),
+                                scale * (Shift(building.LeftPosition) * virtualCellWidth + (virtualCellWidth * 0.5f)),
+                                scale * ((Shift(building.TopPosition) + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * 0.25f))),
                         });
                         break;
                     case 2: // Up
                         g.FillPolygon(triangleBrush, new PointF[]
                         {
                             new PointF(
-                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * 0.0f)),
-                                scale * ((building.TopPosition - 1) * virtualCellHeight)),
+                                scale * ((Shift(building.LeftPosition) + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * 0.0f)),
+                                scale * (Shift(building.TopPosition) * virtualCellHeight)),
                             new PointF(
-                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * -0.25f)),
-                                scale * ((building.TopPosition - 1) * virtualCellHeight + (virtualCellHeight * 0.5f))),
+                                scale * ((Shift(building.LeftPosition) + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * -0.25f)),
+                                scale * (Shift(building.TopPosition) * virtualCellHeight + (virtualCellHeight * 0.5f))),
                             new PointF(
-                                scale * ((building.LeftPosition - 1 + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * 0.25f)),
-                                scale * ((building.TopPosition - 1) * virtualCellHeight + (virtualCellHeight * 0.5f))),
+                                scale * ((Shift(building.LeftPosition) + (data.Size * 0.5f)) * virtualCellWidth + (virtualCellWidth * 0.25f)),
+                                scale * (Shift(building.TopPosition) * virtualCellHeight + (virtualCellHeight * 0.5f))),
                         });
                         break;
                     case 3: // Right
                         g.FillPolygon(triangleBrush, new PointF[]
                         {
                             new PointF(
-                                scale * ((building.LeftPosition + data.Size - 1) * virtualCellWidth),
-                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * 0.0f))),
+                                scale * ((Shift(building.LeftPosition) + data.Size) * virtualCellWidth),
+                                scale * ((Shift(building.TopPosition) + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * 0.0f))),
                             new PointF(
-                                scale * ((building.LeftPosition + data.Size - 1) * virtualCellWidth - (virtualCellWidth * 0.5f)),
-                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * -0.25f))),
+                                scale * ((Shift(building.LeftPosition) + data.Size) * virtualCellWidth - (virtualCellWidth * 0.5f)),
+                                scale * ((Shift(building.TopPosition) + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * -0.25f))),
                             new PointF(
-                                scale * ((building.LeftPosition + data.Size - 1) * virtualCellWidth - (virtualCellWidth * 0.5f)),
-                                scale * ((building.TopPosition - 1 + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * 0.25f))),
+                                scale * ((Shift(building.LeftPosition) + data.Size) * virtualCellWidth - (virtualCellWidth * 0.5f)),
+                                scale * ((Shift(building.TopPosition) + (data.Size * 0.5f)) * virtualCellHeight + (virtualCellHeight * 0.25f))),
                         });
                         break;
                 }
@@ -199,8 +199,8 @@ namespace FEFTwiddler.GUI.ChapterData
             {
                 float physW = scale * virtualCellWidth * _selectedBuildingData.Size;
                 float physH = scale * virtualCellHeight * _selectedBuildingData.Size;
-                float physX = scale * virtualCellWidth * (_selectedBuilding.LeftPosition - 1);
-                float physY = scale * virtualCellHeight * (_selectedBuilding.TopPosition - 1);
+                float physX = scale * virtualCellWidth * Shift(_selectedBuilding.LeftPosition);
+                float physY = scale * virtualCellHeight * Shift(_selectedBuilding.TopPosition);
 
                 g.DrawRectangle(p, physX, physY, physW, physH);
             }
@@ -271,6 +271,15 @@ namespace FEFTwiddler.GUI.ChapterData
         {
             physicalMousePosition = Point.Empty;
             picCastle.Invalidate();
+        }
+
+        /// <summary>
+        /// Changes a one-indexed value to a zero-indexed value. For Model.Building position values, which are one-indexed
+        /// </summary>
+        /// <remarks>This is to cut down on all the stray "- 1" in the code</remarks>
+        private int Shift(int modelBuildingPosition)
+        {
+            return modelBuildingPosition - 1;
         }
 
         #region "Deprecated"
