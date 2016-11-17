@@ -44,8 +44,8 @@ namespace FEFTwiddler.GUI.ChapterData
                 var data = Data.Database.Buildings.GetByID(building.BuildingID);
 
                 _virtualMap.Add(building, new Rectangle(
-                    virtualCellWidth * building.LeftPosition,
-                    virtualCellHeight * building.TopPosition,
+                    virtualCellWidth * (building.LeftPosition - 1),
+                    virtualCellHeight * (building.TopPosition - 1),
                     virtualCellWidth * data.Size,
                     virtualCellHeight * data.Size
                     ));
