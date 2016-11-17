@@ -14,7 +14,11 @@ namespace FEFTwiddler.GUI.ChapterData
     [Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", typeof(IDesigner))]
     public partial class CastleMap : UserControl
     {
+        // Model
         private Model.ChapterSaveRegions.MyCastleRegion _castleRegion;
+        private Dictionary<Model.Building, Rectangle> _virtualMap;
+        private Model.Building _selectedBuilding;
+        private Data.Building _selectedBuildingData;
 
         // Numbers for drawing
         private float scale = 3.0f; // Scale from virtual size to physical size
@@ -32,6 +36,20 @@ namespace FEFTwiddler.GUI.ChapterData
         public void LoadCastleRegion(Model.ChapterSaveRegions.MyCastleRegion castleRegion)
         {
             _castleRegion = castleRegion;
+
+            // Build out the virtual map on load. It's cheaper than doing lookups as we go
+            _virtualMap = new Dictionary<Model.Building, Rectangle>();
+            foreach (var building in _castleRegion.Buildings)
+            {
+                var data = Data.Database.Buildings.GetByID(building.BuildingID);
+
+                _virtualMap.Add(building, new Rectangle(
+                    virtualCellWidth * building.LeftPosition,
+                    virtualCellHeight * building.TopPosition,
+                    virtualCellWidth * data.Size,
+                    virtualCellHeight * data.Size
+                    ));
+            }
         }
 
         private void CastleMap_Load(object sender, EventArgs e)
@@ -46,6 +64,7 @@ namespace FEFTwiddler.GUI.ChapterData
 
             DrawMapBackground(e.Graphics);
             DrawBuildings(e.Graphics);
+            DrawSelectionOutline(e.Graphics);
             DrawHoverOutline(e.Graphics);
 
             //picCastle.BackColor = Color.FromArgb(255, 198, 154, 90);
@@ -172,13 +191,82 @@ namespace FEFTwiddler.GUI.ChapterData
             }
         }
 
+        private void DrawSelectionOutline(Graphics g)
+        {
+            Pen p = new Pen(Color.Red, scale);
+
+            if (_selectedBuilding != null)
+            {
+                float physW = scale * virtualCellWidth * _selectedBuildingData.Size;
+                float physH = scale * virtualCellHeight * _selectedBuildingData.Size;
+                float physX = scale * virtualCellWidth * (_selectedBuilding.LeftPosition - 1);
+                float physY = scale * virtualCellHeight * (_selectedBuilding.TopPosition - 1);
+
+                g.DrawRectangle(p, physX, physY, physW, physH);
+            }
+        }
+
+        // Select a building or rotate it clockwise
+        private void picCastle_MouseClick(object sender, MouseEventArgs e)
+        {
+            int virtX = (int)(physicalMousePosition.X / scale);
+            int virtY = (int)(physicalMousePosition.Y / scale);
+
+            // Consult map
+            Model.Building selectedBuilding;
+            var virtualBuilding = _virtualMap.Where(x => x.Value.Contains(virtX, virtY)).FirstOrDefault();
+            if (!virtualBuilding.Equals(default(KeyValuePair<Model.Building, Rectangle>)))
+            {
+                selectedBuilding = virtualBuilding.Key;
+            }
+            else
+            {
+                selectedBuilding = null;
+            }
+
+            // Act
+            if (selectedBuilding == null)
+            {
+                // Deselect
+                _selectedBuilding = null;
+                _selectedBuildingData = null;
+            }
+            else if (selectedBuilding == _selectedBuilding)
+            {
+                // Rotate
+                if (_selectedBuilding.DirectionFacing == 0)
+                {
+                    _selectedBuilding.DirectionFacing = 1;
+                }
+                else if (_selectedBuilding.DirectionFacing == 1)
+                {
+                    _selectedBuilding.DirectionFacing = 2;
+                }
+                else if (_selectedBuilding.DirectionFacing == 2)
+                {
+                    _selectedBuilding.DirectionFacing = 3;
+                }
+                else if (_selectedBuilding.DirectionFacing == 3)
+                {
+                    _selectedBuilding.DirectionFacing = 0;
+                }
+            }
+            else
+            {
+                // Select
+                _selectedBuilding = selectedBuilding;
+                _selectedBuildingData = Data.Database.Buildings.GetByID(_selectedBuilding.BuildingID);
+            }
+        }
+
+        // Start showing hover outline
         private void picCastle_MouseMove(object sender, MouseEventArgs e)
         {
-            var picCastle = (PictureBox)sender;
             physicalMousePosition = new Point(e.X - picCastle.Left, e.Y - picCastle.Top);
             picCastle.Invalidate();
         }
 
+        // Stop showing hover outline
         private void picCastle_MouseLeave(object sender, EventArgs e)
         {
             physicalMousePosition = Point.Empty;

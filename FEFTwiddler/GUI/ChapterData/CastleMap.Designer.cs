@@ -41,6 +41,7 @@
             this.picCastle.TabIndex = 0;
             this.picCastle.TabStop = false;
             this.picCastle.Paint += new System.Windows.Forms.PaintEventHandler(this.picCastle_Paint);
+            this.picCastle.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picCastle_MouseClick);
             this.picCastle.MouseLeave += new System.EventHandler(this.picCastle_MouseLeave);
             this.picCastle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picCastle_MouseMove);
             // 
