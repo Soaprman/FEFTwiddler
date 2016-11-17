@@ -65,7 +65,7 @@ namespace FEFTwiddler.GUI.ChapterData
             DrawMapBackground(e.Graphics);
             DrawBuildings(e.Graphics);
             DrawSelectionOutline(e.Graphics);
-            DrawHoverOutline(e.Graphics);
+            DrawHoverHighlight(e.Graphics);
 
             //picCastle.BackColor = Color.FromArgb(255, 198, 154, 90);
 
@@ -176,9 +176,9 @@ namespace FEFTwiddler.GUI.ChapterData
             }
         }
 
-        private void DrawHoverOutline(Graphics g)
+        private void DrawHoverHighlight(Graphics g)
         {
-            Pen p = new Pen(Color.Yellow, scale);
+            Brush b = new SolidBrush(Color.FromArgb(128, 255, 255, 0));
 
             if (physicalMousePosition != Point.Empty)
             {
@@ -187,7 +187,7 @@ namespace FEFTwiddler.GUI.ChapterData
                 float physX = (float)Math.Floor(physicalMousePosition.X / physW) * physW;
                 float physY = (float)Math.Floor(physicalMousePosition.Y / physH) * physH;
 
-                g.DrawRectangle(p, physX, physY, physW, physH);
+                g.FillRectangle(b, physX, physY, physW, physH);
             }
         }
 
