@@ -38,7 +38,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(902, 635);
+            this.btnClose.Location = new System.Drawing.Point(933, 726);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 0;
@@ -68,7 +68,7 @@
             // 
             this.castleMap1.Location = new System.Drawing.Point(367, 83);
             this.castleMap1.Name = "castleMap1";
-            this.castleMap1.Size = new System.Drawing.Size(530, 550);
+            this.castleMap1.Size = new System.Drawing.Size(530, 568);
             this.castleMap1.TabIndex = 3;
             // 
             // label2
@@ -84,7 +84,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(989, 670);
+            this.ClientSize = new System.Drawing.Size(1020, 761);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.castleMap1);
             this.Controls.Add(this.txtBuildingList);

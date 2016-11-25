@@ -232,6 +232,7 @@ namespace FEFTwiddler.GUI.ChapterData
             {
                 // Deselect
                 _selectedBuilding = null;
+                lblSelectedBuilding.Text = "Selected: (none)";
                 _selectedBuildingData = null;
             }
             else if (selectedBuilding == _selectedBuilding)
@@ -258,6 +259,7 @@ namespace FEFTwiddler.GUI.ChapterData
             {
                 // Select
                 _selectedBuilding = selectedBuilding;
+                lblSelectedBuilding.Text = $"Selected: {_selectedBuilding.BuildingID.ToString()}";
                 _selectedBuildingData = Data.Database.Buildings.GetByID(_selectedBuilding.BuildingID);
             }
         }
