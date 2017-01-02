@@ -2,7 +2,11 @@
 <root>
   <character id="0" name="None">
     <text lang="English" displayName="(None)" />
-    <text lang="Japanese" displayName="無し" />
+    <text lang="Japanese" displayName="（無し）" />
+    <text lang="Spanish" displayName="(Nada)" />
+    <text lang="French" displayName="(Rien)" />
+    <text lang="German" displayName="(Keine)" />
+    <text lang="Italian" displayName="(Nessuna)" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -12,6 +16,10 @@
   <character id="1" name="Corrin_M">
     <text lang="English" displayName="Corrin (M)" />
     <text lang="Japanese" displayName="カムイ男" />
+    <text lang="Spanish" displayName="Corrin" />
+    <text lang="French" displayName="Corrin" />
+    <text lang="German" displayName="Corrin" />
+    <text lang="Italian" displayName="Corrin" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="true" isChild="false" isPrisoner="false" isFemale="false" isManakete="true" isBeast="false" canUseDragonVein="true" />
@@ -90,6 +98,10 @@
   <character id="2" name="Corrin_F">
     <text lang="English" displayName="Corrin (F)" />
     <text lang="Japanese" displayName="カムイ女" />
+    <text lang="Spanish" displayName="Corrin" />
+    <text lang="French" displayName="Corrin" />
+    <text lang="German" displayName="Corrin" />
+    <text lang="Italian" displayName="Corrin" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="true" isChild="false" isPrisoner="false" isFemale="true" isManakete="true" isBeast="false" canUseDragonVein="true" />
@@ -168,6 +180,10 @@
   <character id="3" name="Gunter">
     <text lang="English" displayName="Gunter" />
     <text lang="Japanese" displayName="ギュンター" />
+    <text lang="Spanish" displayName="Gunter" />
+    <text lang="French" displayName="Gunter" />
+    <text lang="German" displayName="Gunter" />
+    <text lang="Italian" displayName="Gunter" />
     <baseStats hp="3" str="0" mag="0" skl="9" spd="2" lck="6" def="0" res="2" />
     <modifier hp="0" str="2" mag="0" skl="1" spd="-2" lck="0" def="2" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -182,6 +198,10 @@
   <character id="4" name="Felicia">
     <text lang="English" displayName="Felicia" />
     <text lang="Japanese" displayName="フェリシア" />
+    <text lang="Spanish" displayName="Felicia" />
+    <text lang="French" displayName="Felicia" />
+    <text lang="German" displayName="Felicia" />
+    <text lang="Italian" displayName="Felicia" />
     <baseStats hp="1" str="1" mag="4" skl="1" spd="2" lck="8" def="0" res="5" />
     <modifier hp="0" str="-2" mag="2" skl="0" spd="1" lck="0" def="-1" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -217,6 +237,10 @@
   <character id="5" name="Jakob">
     <text lang="English" displayName="Jakob" />
     <text lang="Japanese" displayName="ジョーカー" />
+    <text lang="Spanish" displayName="Jakob" />
+    <text lang="French" displayName="Jakob" />
+    <text lang="German" displayName="Jakob" />
+    <text lang="Italian" displayName="Jakob" />
     <baseStats hp="3" str="4" mag="1" skl="3" spd="1" lck="6" def="2" res="2" />
     <modifier hp="0" str="2" mag="-2" skl="2" spd="0" lck="-1" def="0" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -252,6 +276,10 @@
   <character id="6" name="Rinkah">
     <text lang="English" displayName="Rinkah" />
     <text lang="Japanese" displayName="リンカ" />
+    <text lang="Spanish" displayName="Rinkah" />
+    <text lang="French" displayName="Rinkah" />
+    <text lang="German" displayName="Rinkah" />
+    <text lang="Italian" displayName="Rinkah" />
     <baseStats hp="2" str="2" mag="1" skl="4" spd="3" lck="5" def="3" res="2" />
     <modifier hp="0" str="-1" mag="0" skl="-2" spd="1" lck="0" def="2" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -282,6 +310,10 @@
   <character id="7" name="Kaze">
     <text lang="English" displayName="Kaze" />
     <text lang="Japanese" displayName="スズカゼ" />
+    <text lang="Spanish" displayName="Kaze" />
+    <text lang="French" displayName="Kaze" />
+    <text lang="German" displayName="Kaze" />
+    <text lang="Italian" displayName="Kaze" />
     <baseStats hp="3" str="4" mag="0" skl="1" spd="4" lck="3" def="2" res="7" />
     <modifier hp="0" str="-2" mag="0" skl="2" spd="3" lck="-2" def="-1" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -317,6 +349,10 @@
   <character id="8" name="Sakura">
     <text lang="English" displayName="Sakura" />
     <text lang="Japanese" displayName="サクラ" />
+    <text lang="Spanish" displayName="Sakura" />
+    <text lang="French" displayName="Sakura" />
+    <text lang="German" displayName="Sakura" />
+    <text lang="Italian" displayName="Sakura" />
     <baseStats hp="0" str="3" mag="3" skl="0" spd="2" lck="5" def="3" res="2" />
     <modifier hp="0" str="0" mag="2" skl="-1" spd="1" lck="0" def="-1" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" />
@@ -347,6 +383,10 @@
   <character id="9" name="Azura">
     <text lang="English" displayName="Azura" />
     <text lang="Japanese" displayName="アクア" />
+    <text lang="Spanish" displayName="Azura" />
+    <text lang="French" displayName="Azura" />
+    <text lang="German" displayName="Azura" />
+    <text lang="Italian" displayName="Azura" />
     <baseStats hp="0" str="2" mag="2" skl="2" spd="3" lck="3" def="2" res="4" />
     <modifier hp="0" str="0" mag="0" skl="1" spd="3" lck="0" def="-3" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" />
@@ -382,6 +422,10 @@
   <character id="10" name="Hana">
     <text lang="English" displayName="Hana" />
     <text lang="Japanese" displayName="カザハナ" />
+    <text lang="Spanish" displayName="Hana" />
+    <text lang="French" displayName="Hana" />
+    <text lang="German" displayName="Hana" />
+    <text lang="Italian" displayName="Hana" />
     <baseStats hp="3" str="3" mag="0" skl="4" spd="3" lck="2" def="3" res="6" />
     <modifier hp="0" str="1" mag="0" skl="1" spd="2" lck="-1" def="-3" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -412,6 +456,10 @@
   <character id="11" name="Subaki">
     <text lang="English" displayName="Subaki" />
     <text lang="Japanese" displayName="ツバキ" />
+    <text lang="Spanish" displayName="Subaki" />
+    <text lang="French" displayName="Subaki" />
+    <text lang="German" displayName="Subaki" />
+    <text lang="Italian" displayName="Subaki" />
     <baseStats hp="6" str="5" mag="0" skl="8" spd="3" lck="3" def="7" res="4" />
     <modifier hp="0" str="-1" mag="0" skl="2" spd="-2" lck="-1" def="3" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -442,6 +490,10 @@
   <character id="12" name="Silas">
     <text lang="English" displayName="Silas" />
     <text lang="Japanese" displayName="サイラス" />
+    <text lang="Spanish" displayName="Silas" />
+    <text lang="French" displayName="Silas" />
+    <text lang="German" displayName="Silas" />
+    <text lang="Italian" displayName="Silas" />
     <baseStats hp="5" str="5" mag="0" skl="4" spd="3" lck="4" def="5" res="2" />
     <modifier hp="0" str="1" mag="0" skl="2" spd="0" lck="-1" def="0" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -477,6 +529,10 @@
   <character id="13" name="Saizo">
     <text lang="English" displayName="Saizo" />
     <text lang="Japanese" displayName="サイゾウ" />
+    <text lang="Spanish" displayName="Saizo" />
+    <text lang="French" displayName="Saizo" />
+    <text lang="German" displayName="Saizo" />
+    <text lang="Italian" displayName="Saizo" />
     <baseStats hp="7" str="8" mag="3" skl="6" spd="3" lck="8" def="6" res="4" />
     <modifier hp="0" str="1" mag="0" skl="3" spd="-2" lck="0" def="1" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -507,6 +563,10 @@
   <character id="14" name="Orochi">
     <text lang="English" displayName="Orochi" />
     <text lang="Japanese" displayName="オロチ" />
+    <text lang="Spanish" displayName="Orochi" />
+    <text lang="French" displayName="Orochi" />
+    <text lang="German" displayName="Orochi" />
+    <text lang="Italian" displayName="Orochi" />
     <baseStats hp="5" str="0" mag="5" skl="6" spd="1" lck="5" def="4" res="7" />
     <modifier hp="0" str="0" mag="3" skl="2" spd="-2" lck="-1" def="-2" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -537,6 +597,10 @@
   <character id="15" name="Hinoka">
     <text lang="English" displayName="Hinoka" />
     <text lang="Japanese" displayName="ヒノカ" />
+    <text lang="Spanish" displayName="Hinoka" />
+    <text lang="French" displayName="Hinoka" />
+    <text lang="German" displayName="Hinoka" />
+    <text lang="Italian" displayName="Hinoka" />
     <baseStats hp="7" str="6" mag="4" skl="8" spd="9" lck="8" def="7" res="9" />
     <modifier hp="0" str="1" mag="-1" skl="-1" spd="1" lck="0" def="-1" res="2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" />
@@ -567,6 +631,10 @@
   <character id="16" name="Azama">
     <text lang="English" displayName="Azama" />
     <text lang="Japanese" displayName="アサマ" />
+    <text lang="Spanish" displayName="Azama" />
+    <text lang="French" displayName="Azama" />
+    <text lang="German" displayName="Azama" />
+    <text lang="Italian" displayName="Azama" />
     <baseStats hp="8" str="9" mag="4" skl="4" spd="5" lck="8" def="8" res="3" />
     <modifier hp="0" str="2" mag="-3" skl="0" spd="1" lck="0" def="1" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -597,6 +665,10 @@
   <character id="17" name="Setsuna">
     <text lang="English" displayName="Setsuna" />
     <text lang="Japanese" displayName="セツナ" />
+    <text lang="Spanish" displayName="Setsuna" />
+    <text lang="French" displayName="Setsuna" />
+    <text lang="German" displayName="Setsuna" />
+    <text lang="Italian" displayName="Setsuna" />
     <baseStats hp="2" str="3" mag="0" skl="2" spd="5" lck="4" def="1" res="2" />
     <modifier hp="0" str="0" mag="0" skl="1" spd="3" lck="-1" def="-1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -627,6 +699,10 @@
   <character id="18" name="Hayato">
     <text lang="English" displayName="Hayato" />
     <text lang="Japanese" displayName="ツクヨミ" />
+    <text lang="Spanish" displayName="Hayato" />
+    <text lang="French" displayName="Hayato" />
+    <text lang="German" displayName="Hayato" />
+    <text lang="Italian" displayName="Hayato" />
     <baseStats hp="1" str="1" mag="0" skl="0" spd="1" lck="7" def="3" res="2" />
     <modifier hp="0" str="0" mag="1" skl="-1" spd="2" lck="1" def="-1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -657,6 +733,10 @@
   <character id="19" name="Oboro">
     <text lang="English" displayName="Oboro" />
     <text lang="Japanese" displayName="オボロ" />
+    <text lang="Spanish" displayName="Oboro" />
+    <text lang="French" displayName="Oboro" />
+    <text lang="German" displayName="Oboro" />
+    <text lang="Italian" displayName="Oboro" />
     <baseStats hp="8" str="7" mag="0" skl="5" spd="6" lck="9" def="8" res="6" />
     <modifier hp="0" str="1" mag="-1" skl="1" spd="1" lck="-1" def="1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -687,6 +767,10 @@
   <character id="20" name="Hinata">
     <text lang="English" displayName="Hinata" />
     <text lang="Japanese" displayName="ヒナタ" />
+    <text lang="Spanish" displayName="Hinata" />
+    <text lang="French" displayName="Hinata" />
+    <text lang="German" displayName="Hinata" />
+    <text lang="Italian" displayName="Hinata" />
     <baseStats hp="9" str="7" mag="0" skl="4" spd="6" lck="7" def="9" res="1" />
     <modifier hp="0" str="1" mag="0" skl="-1" spd="-2" lck="0" def="2" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -717,6 +801,10 @@
   <character id="21" name="Takumi">
     <text lang="English" displayName="Takumi" />
     <text lang="Japanese" displayName="タクミ" />
+    <text lang="Spanish" displayName="Takumi" />
+    <text lang="French" displayName="Takumi" />
+    <text lang="German" displayName="Takumi" />
+    <text lang="Italian" displayName="Takumi" />
     <baseStats hp="9" str="8" mag="0" skl="10" spd="6" lck="11" def="6" res="3" />
     <modifier hp="0" str="1" mag="0" skl="3" spd="-2" lck="1" def="0" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" />
@@ -747,6 +835,10 @@
   <character id="22" name="Kagero">
     <text lang="English" displayName="Kagero" />
     <text lang="Japanese" displayName="カゲロウ" />
+    <text lang="Spanish" displayName="Kagero" />
+    <text lang="French" displayName="Kagero" />
+    <text lang="German" displayName="Kagero" />
+    <text lang="Italian" displayName="Kagero" />
     <baseStats hp="6" str="12" mag="0" skl="2" spd="4" lck="6" def="6" res="7" />
     <modifier hp="0" str="3" mag="0" skl="-1" spd="-1" lck="0" def="-1" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -777,6 +869,10 @@
   <character id="23" name="Reina">
     <text lang="English" displayName="Reina" />
     <text lang="Japanese" displayName="ユウギリ" />
+    <text lang="Spanish" displayName="Reyna" />
+    <text lang="French" displayName="Reina" />
+    <text lang="German" displayName="Reina" />
+    <text lang="Italian" displayName="Reina" />
     <baseStats hp="11" str="14" mag="3" skl="7" spd="13" lck="10" def="6" res="6" />
     <modifier hp="0" str="2" mag="0" skl="0" spd="2" lck="-1" def="-2" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -790,6 +886,10 @@
   <character id="24" name="Kaden">
     <text lang="English" displayName="Kaden" />
     <text lang="Japanese" displayName="ニシキ" />
+    <text lang="Spanish" displayName="Kaden" />
+    <text lang="French" displayName="Kaden" />
+    <text lang="German" displayName="Kaden" />
+    <text lang="Italian" displayName="Kaden" />
     <baseStats hp="14" str="10" mag="0" skl="6" spd="11" lck="10" def="8" res="10" />
     <modifier hp="0" str="1" mag="0" skl="-3" spd="2" lck="1" def="-2" res="2" />
     <flags canUseStones="true" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="true" canUseDragonVein="false" />
@@ -820,6 +920,10 @@
   <character id="25" name="Ryoma">
     <text lang="English" displayName="Ryoma" />
     <text lang="Japanese" displayName="リョウマ" />
+    <text lang="Spanish" displayName="Ryoma" />
+    <text lang="French" displayName="Ryoma" />
+    <text lang="German" displayName="Ryoma" />
+    <text lang="Italian" displayName="Ryoma" />
     <baseStats hp="18" str="14" mag="0" skl="11" spd="13" lck="16" def="11" res="8" />
     <modifier hp="0" str="1" mag="0" skl="2" spd="1" lck="1" def="-2" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" />
@@ -850,6 +954,10 @@
   <character id="26" name="Scarlet">
     <text lang="English" displayName="Scarlet" />
     <text lang="Japanese" displayName="クリムゾン" />
+    <text lang="Spanish" displayName="Scarlet" />
+    <text lang="French" displayName="Scarlet" />
+    <text lang="German" displayName="Scarlet" />
+    <text lang="Italian" displayName="Scarlet" />
     <baseStats hp="11" str="15" mag="4" skl="8" spd="13" lck="11" def="12" res="5" />
     <modifier hp="0" str="2" mag="0" skl="0" spd="1" lck="-1" def="1" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -863,6 +971,10 @@
   <character id="27" name="Shura">
     <text lang="English" displayName="Shura" />
     <text lang="Japanese" displayName="アシュラ" />
+    <text lang="Spanish" displayName="Shura" />
+    <text lang="French" displayName="Shura" />
+    <text lang="German" displayName="Shura" />
+    <text lang="Italian" displayName="Shura" />
     <baseStats hp="17" str="16" mag="5" skl="17" spd="17" lck="13" def="11" res="16" />
     <modifier hp="0" str="-1" mag="0" skl="-1" spd="3" lck="-1" def="-2" res="2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -876,6 +988,10 @@
   <character id="28" name="Elise">
     <text lang="English" displayName="Elise" />
     <text lang="Japanese" displayName="エリーゼ" />
+    <text lang="Spanish" displayName="Elise" />
+    <text lang="French" displayName="Elise" />
+    <text lang="German" displayName="Elise" />
+    <text lang="Italian" displayName="Elise" />
     <baseStats hp="4" str="2" mag="8" skl="-2" spd="5" lck="10" def="3" res="7" />
     <modifier hp="0" str="-1" mag="3" skl="-2" spd="1" lck="1" def="-3" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" />
@@ -906,6 +1022,10 @@
   <character id="29" name="Arthur">
     <text lang="English" displayName="Arthur" />
     <text lang="Japanese" displayName="ハロルド" />
+    <text lang="Spanish" displayName="Arthur" />
+    <text lang="French" displayName="Arthur" />
+    <text lang="German" displayName="Arthur" />
+    <text lang="Italian" displayName="Arthur" />
     <baseStats hp="5" str="5" mag="0" skl="3" spd="2" lck="-1" def="5" res="3" />
     <modifier hp="0" str="1" mag="0" skl="3" spd="0" lck="-3" def="1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -936,6 +1056,10 @@
   <character id="30" name="Effie">
     <text lang="English" displayName="Effie" />
     <text lang="Japanese" displayName="エルフィ" />
+    <text lang="Spanish" displayName="Effie" />
+    <text lang="French" displayName="Effie" />
+    <text lang="German" displayName="Effie" />
+    <text lang="Italian" displayName="Effie" />
     <baseStats hp="4" str="5" mag="0" skl="3" spd="2" lck="7" def="4" res="3" />
     <modifier hp="0" str="3" mag="0" skl="-1" spd="1" lck="0" def="-1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -966,6 +1090,10 @@
   <character id="31" name="Odin">
     <text lang="English" displayName="Odin" />
     <text lang="Japanese" displayName="オーディン" />
+    <text lang="Spanish" displayName="Odín" />
+    <text lang="French" displayName="Odin" />
+    <text lang="German" displayName="Odin" />
+    <text lang="Italian" displayName="Odin" />
     <baseStats hp="5" str="5" mag="2" skl="7" spd="4" lck="8" def="3" res="2" />
     <modifier hp="0" str="0" mag="1" skl="1" spd="-1" lck="1" def="0" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -996,6 +1124,10 @@
   <character id="32" name="Niles">
     <text lang="English" displayName="Niles" />
     <text lang="Japanese" displayName="ゼロ" />
+    <text lang="Spanish" displayName="Niles" />
+    <text lang="French" displayName="Niles" />
+    <text lang="German" displayName="Niles" />
+    <text lang="Italian" displayName="Niles" />
     <baseStats hp="6" str="6" mag="4" skl="5" spd="7" lck="5" def="5" res="8" />
     <modifier hp="0" str="-2" mag="0" skl="-1" spd="3" lck="0" def="0" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1026,6 +1158,10 @@
   <character id="33" name="Nyx">
     <text lang="English" displayName="Nyx" />
     <text lang="Japanese" displayName="ニュクス" />
+    <text lang="Spanish" displayName="Nyx" />
+    <text lang="French" displayName="Nyx" />
+    <text lang="German" displayName="Nyx" />
+    <text lang="Italian" displayName="Nyx" />
     <baseStats hp="4" str="1" mag="6" skl="2" spd="8" lck="2" def="1" res="3" />
     <modifier hp="0" str="0" mag="3" skl="-2" spd="2" lck="-1" def="-2" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1056,6 +1192,10 @@
   <character id="34" name="Camilla">
     <text lang="English" displayName="Camilla" />
     <text lang="Japanese" displayName="カミラ" />
+    <text lang="Spanish" displayName="Camilla" />
+    <text lang="French" displayName="Camilla" />
+    <text lang="German" displayName="Camilla" />
+    <text lang="Italian" displayName="Camilla" />
     <baseStats hp="12" str="12" mag="5" skl="9" spd="14" lck="12" def="10" res="9" />
     <modifier hp="0" str="1" mag="-1" skl="1" spd="1" lck="-2" def="1" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="true" />
@@ -1086,6 +1226,10 @@
   <character id="35" name="Selena">
     <text lang="English" displayName="Selena" />
     <text lang="Japanese" displayName="ルーナ" />
+    <text lang="Spanish" displayName="Selena" />
+    <text lang="French" displayName="Selena" />
+    <text lang="German" displayName="Selena" />
+    <text lang="Italian" displayName="Selena" />
     <baseStats hp="7" str="7" mag="3" skl="5" spd="9" lck="7" def="6" res="6" />
     <modifier hp="0" str="-1" mag="0" skl="-1" spd="2" lck="0" def="1" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1116,6 +1260,10 @@
   <character id="36" name="Beruka">
     <text lang="English" displayName="Beruka" />
     <text lang="Japanese" displayName="ベルカ" />
+    <text lang="Spanish" displayName="Beruka" />
+    <text lang="French" displayName="Beruka" />
+    <text lang="German" displayName="Beruka" />
+    <text lang="Italian" displayName="Beruka" />
     <baseStats hp="6" str="7" mag="0" skl="9" spd="5" lck="8" def="7" res="7" />
     <modifier hp="0" str="-1" mag="0" skl="2" spd="-2" lck="0" def="2" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1146,6 +1294,10 @@
   <character id="37" name="Laslow">
     <text lang="English" displayName="Laslow" />
     <text lang="Japanese" displayName="ラズワルド" />
+    <text lang="Spanish" displayName="Laslow" />
+    <text lang="French" displayName="Laslow" />
+    <text lang="German" displayName="Laslow" />
+    <text lang="Italian" displayName="Laslow" />
     <baseStats hp="11" str="10" mag="0" skl="9" spd="7" lck="12" def="5" res="5" />
     <modifier hp="0" str="1" mag="0" skl="2" spd="-1" lck="1" def="-1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1176,6 +1328,10 @@
   <character id="38" name="Peri">
     <text lang="English" displayName="Peri" />
     <text lang="Japanese" displayName="ピエリ" />
+    <text lang="Spanish" displayName="Peri" />
+    <text lang="French" displayName="Peri" />
+    <text lang="German" displayName="Peri" />
+    <text lang="Italian" displayName="Peri" />
     <baseStats hp="8" str="7" mag="0" skl="4" spd="8" lck="6" def="5" res="7" />
     <modifier hp="0" str="1" mag="0" skl="-1" spd="1" lck="0" def="-2" res="2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1206,6 +1362,10 @@
   <character id="39" name="Benny">
     <text lang="English" displayName="Benny" />
     <text lang="Japanese" displayName="ブノワ" />
+    <text lang="Spanish" displayName="Benny" />
+    <text lang="French" displayName="Benny" />
+    <text lang="German" displayName="Benny" />
+    <text lang="Italian" displayName="Benny" />
     <baseStats hp="12" str="7" mag="0" skl="10" spd="3" lck="9" def="11" res="9" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="-3" lck="0" def="3" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1235,6 +1395,10 @@
   <character id="40" name="Charlotte">
     <text lang="English" displayName="Charlotte" />
     <text lang="Japanese" displayName="シャーロッテ" />
+    <text lang="Spanish" displayName="Charlotte" />
+    <text lang="French" displayName="Charlotte" />
+    <text lang="German" displayName="Charlotte" />
+    <text lang="Italian" displayName="Charlotte" />
     <baseStats hp="9" str="8" mag="0" skl="4" spd="7" lck="7" def="4" res="1" />
     <modifier hp="0" str="3" mag="0" skl="0" spd="2" lck="0" def="-2" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1265,6 +1429,10 @@
   <character id="41" name="Leo">
     <text lang="English" displayName="Leo" />
     <text lang="Japanese" displayName="レオン" />
+    <text lang="Spanish" displayName="Leo" />
+    <text lang="French" displayName="Leo" />
+    <text lang="German" displayName="Leo" />
+    <text lang="Italian" displayName="Leo" />
     <baseStats hp="15" str="6" mag="14" skl="8" spd="10" lck="12" def="8" res="14" />
     <modifier hp="0" str="-2" mag="2" skl="0" spd="-2" lck="0" def="0" res="2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" />
@@ -1295,6 +1463,10 @@
   <character id="42" name="Keaton">
     <text lang="English" displayName="Keaton" />
     <text lang="Japanese" displayName="フランネル" />
+    <text lang="Spanish" displayName="Keaton" />
+    <text lang="French" displayName="Keaton" />
+    <text lang="German" displayName="Keaton" />
+    <text lang="Italian" displayName="Keaton" />
     <baseStats hp="16" str="11" mag="0" skl="6" spd="7" lck="9" def="12" res="7" />
     <modifier hp="0" str="3" mag="0" skl="-2" spd="-1" lck="0" def="2" res="-1" />
     <flags canUseStones="true" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="true" canUseDragonVein="false" />
@@ -1325,6 +1497,10 @@
   <character id="43" name="Xander">
     <text lang="English" displayName="Xander" />
     <text lang="Japanese" displayName="マークス" />
+    <text lang="Spanish" displayName="Xander" />
+    <text lang="French" displayName="Xander" />
+    <text lang="German" displayName="Xander" />
+    <text lang="Italian" displayName="Xander" />
     <baseStats hp="19" str="15" mag="3" skl="11" spd="8" lck="16" def="16" res="5" />
     <modifier hp="0" str="2" mag="-1" skl="-1" spd="-1" lck="2" def="1" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="true" />
@@ -1355,6 +1531,10 @@
   <character id="44" name="Izana">
     <text lang="English" displayName="Izana" />
     <text lang="Japanese" displayName="イザナ" />
+    <text lang="Spanish" displayName="Izana" />
+    <text lang="French" displayName="Izana" />
+    <text lang="German" displayName="Izana" />
+    <text lang="Italian" displayName="Izana" />
     <baseStats hp="15" str="8" mag="16" skl="19" spd="11" lck="15" def="11" res="18" />
     <modifier hp="0" str="0" mag="1" skl="1" spd="-2" lck="0" def="0" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1368,6 +1548,10 @@
   <character id="45" name="Fuga">
     <text lang="English" displayName="Fuga" />
     <text lang="Japanese" displayName="フウガ" />
+    <text lang="Spanish" displayName="Fuga" />
+    <text lang="French" displayName="Fuga" />
+    <text lang="German" displayName="Fuga" />
+    <text lang="Italian" displayName="Fuga" />
     <baseStats hp="21" str="21" mag="0" skl="21" spd="16" lck="15" def="22" res="12" />
     <modifier hp="0" str="2" mag="-1" skl="1" spd="0" lck="-1" def="2" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1382,6 +1566,10 @@
   <character id="46" name="Yukimura">
     <text lang="English" displayName="Yukimura" />
     <text lang="Japanese" displayName="ユキムラ" />
+    <text lang="Spanish" displayName="Yukimura" />
+    <text lang="French" displayName="Yukimura" />
+    <text lang="German" displayName="Yukimura" />
+    <text lang="Italian" displayName="Yukimura" />
     <baseStats hp="20" str="18" mag="3" skl="20" spd="16" lck="16" def="15" res="16" />
     <modifier hp="0" str="-1" mag="0" skl="3" spd="-1" lck="0" def="-1" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1395,6 +1583,10 @@
   <character id="47" name="Flora">
     <text lang="English" displayName="Flora" />
     <text lang="Japanese" displayName="フローラ" />
+    <text lang="Spanish" displayName="Flora" />
+    <text lang="French" displayName="Flora" />
+    <text lang="German" displayName="Flora" />
+    <text lang="Italian" displayName="Flora" />
     <baseStats hp="11" str="14" mag="11" skl="16" spd="7" lck="7" def="9" res="19" />
     <modifier hp="0" str="1" mag="-1" skl="2" spd="0" lck="-1" def="1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1409,6 +1601,10 @@
   <character id="48" name="Mozu">
     <text lang="English" displayName="Mozu" />
     <text lang="Japanese" displayName="モズメ" />
+    <text lang="Spanish" displayName="Mozu" />
+    <text lang="French" displayName="Mozu" />
+    <text lang="German" displayName="Mozu" />
+    <text lang="Italian" displayName="Mozu" />
     <baseStats hp="-1" str="1" mag="0" skl="1" spd="2" lck="0" def="0" res="1" />
     <modifier hp="0" str="0" mag="0" skl="1" spd="1" lck="1" def="0" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1444,6 +1640,10 @@
   <character id="49" name="Kana_M">
     <text lang="English" displayName="Kana (M)" />
     <text lang="Japanese" displayName="カンナ男" />
+    <text lang="Spanish" displayName="#N/A" />
+    <text lang="French" displayName="#N/A" />
+    <text lang="German" displayName="#N/A" />
+    <text lang="Italian" displayName="#N/A" />
     <baseStats hp="7" str="3" mag="6" skl="8" spd="8" lck="9" def="5" res="5" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="true" isBeast="false" canUseDragonVein="false" />
@@ -1468,6 +1668,10 @@
   <character id="50" name="Kana_F">
     <text lang="English" displayName="Kana (F)" />
     <text lang="Japanese" displayName="カンナ女" />
+    <text lang="Spanish" displayName="#N/A" />
+    <text lang="French" displayName="#N/A" />
+    <text lang="German" displayName="#N/A" />
+    <text lang="Italian" displayName="#N/A" />
     <baseStats hp="7" str="3" mag="6" skl="8" spd="8" lck="9" def="5" res="5" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="true" isBeast="false" canUseDragonVein="false" />
@@ -1493,6 +1697,10 @@
   <character id="51" name="Shigure">
     <text lang="English" displayName="Shigure" />
     <text lang="Japanese" displayName="シグレ" />
+    <text lang="Spanish" displayName="Shigure" />
+    <text lang="French" displayName="Shigure" />
+    <text lang="German" displayName="Shigure" />
+    <text lang="Italian" displayName="Shigure" />
     <baseStats hp="9" str="6" mag="1" skl="7" spd="7" lck="5" def="8" res="7" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1519,6 +1727,10 @@
   <character id="52" name="Dwyer">
     <text lang="English" displayName="Dwyer" />
     <text lang="Japanese" displayName="ディーア" />
+    <text lang="Spanish" displayName="Dwyer" />
+    <text lang="French" displayName="Dwyer" />
+    <text lang="German" displayName="Dwyer" />
+    <text lang="Italian" displayName="Dwyer" />
     <baseStats hp="8" str="7" mag="7" skl="2" spd="6" lck="4" def="6" res="7" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1546,6 +1758,10 @@
   <character id="53" name="Sophie">
     <text lang="English" displayName="Sophie" />
     <text lang="Japanese" displayName="ゾフィー" />
+    <text lang="Spanish" displayName="Sophie" />
+    <text lang="French" displayName="Sophie" />
+    <text lang="German" displayName="Sophie" />
+    <text lang="Italian" displayName="Sophie" />
     <baseStats hp="8" str="6" mag="2" skl="7" spd="6" lck="7" def="4" res="6" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1573,6 +1789,10 @@
   <character id="54" name="Midori">
     <text lang="English" displayName="Midori" />
     <text lang="Japanese" displayName="ミドリコ" />
+    <text lang="Spanish" displayName="Midori" />
+    <text lang="French" displayName="Midori" />
+    <text lang="German" displayName="Midori" />
+    <text lang="Italian" displayName="Midori" />
     <baseStats hp="8" str="6" mag="2" skl="10" spd="4" lck="10" def="4" res="2" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1600,6 +1820,10 @@
   <character id="55" name="Shiro">
     <text lang="English" displayName="Shiro" />
     <text lang="Japanese" displayName="シノノメ" />
+    <text lang="Spanish" displayName="Shiro" />
+    <text lang="French" displayName="Shiro" />
+    <text lang="German" displayName="Shiro" />
+    <text lang="Italian" displayName="Shiro" />
     <baseStats hp="8" str="7" mag="0" skl="5" spd="3" lck="6" def="8" res="5" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1626,6 +1850,10 @@
   <character id="56" name="Kiragi">
     <text lang="English" displayName="Kiragi" />
     <text lang="Japanese" displayName="キサラギ" />
+    <text lang="Spanish" displayName="Kiragi" />
+    <text lang="French" displayName="Kiragi" />
+    <text lang="German" displayName="Kiragi" />
+    <text lang="Italian" displayName="Kiragi" />
     <baseStats hp="7" str="6" mag="0" skl="5" spd="6" lck="8" def="4" res="1" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1652,6 +1880,10 @@
   <character id="57" name="Asugi">
     <text lang="English" displayName="Asugi" />
     <text lang="Japanese" displayName="グレイ" />
+    <text lang="Spanish" displayName="Asugi" />
+    <text lang="French" displayName="Asugi" />
+    <text lang="German" displayName="Asugi" />
+    <text lang="Italian" displayName="Asugi" />
     <baseStats hp="6" str="7" mag="4" skl="7" spd="6" lck="9" def="4" res="9" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1678,6 +1910,10 @@
   <character id="58" name="Selkie">
     <text lang="English" displayName="Selkie" />
     <text lang="Japanese" displayName="キヌ" />
+    <text lang="Spanish" displayName="Selkie" />
+    <text lang="French" displayName="Selkie" />
+    <text lang="German" displayName="Selkie" />
+    <text lang="Italian" displayName="Selkie" />
     <baseStats hp="7" str="4" mag="3" skl="6" spd="7" lck="10" def="6" res="11" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="true" canUseDragonVein="false" />
@@ -1704,6 +1940,10 @@
   <character id="59" name="Hisame">
     <text lang="English" displayName="Hisame" />
     <text lang="Japanese" displayName="ヒサメ" />
+    <text lang="Spanish" displayName="Hisame" />
+    <text lang="French" displayName="Hisame" />
+    <text lang="German" displayName="Hisame" />
+    <text lang="Italian" displayName="Hisame" />
     <baseStats hp="6" str="6" mag="1" skl="7" spd="5" lck="4" def="5" res="4" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1730,6 +1970,10 @@
   <character id="60" name="Mitama">
     <text lang="English" displayName="Mitama" />
     <text lang="Japanese" displayName="ミタマ" />
+    <text lang="Spanish" displayName="Mitama" />
+    <text lang="French" displayName="Mitama" />
+    <text lang="German" displayName="Mitama" />
+    <text lang="Italian" displayName="Mitama" />
     <baseStats hp="6" str="7" mag="6" skl="6" spd="8" lck="10" def="3" res="5" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1756,6 +2000,10 @@
   <character id="61" name="Caeldori">
     <text lang="English" displayName="Caeldori" />
     <text lang="Japanese" displayName="マトイ" />
+    <text lang="Spanish" displayName="Caeldori" />
+    <text lang="French" displayName="Caeldori" />
+    <text lang="German" displayName="Caeldori" />
+    <text lang="Italian" displayName="Caeldori" />
     <baseStats hp="8" str="8" mag="3" skl="5" spd="6" lck="9" def="5" res="6" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1782,6 +2030,10 @@
   <character id="62" name="Rhajat">
     <text lang="English" displayName="Rhajat" />
     <text lang="Japanese" displayName="シャラ" />
+    <text lang="Spanish" displayName="Rhajat" />
+    <text lang="French" displayName="Rhajat" />
+    <text lang="German" displayName="Rhajat" />
+    <text lang="Italian" displayName="Rhajat" />
     <baseStats hp="8" str="1" mag="10" skl="0" spd="7" lck="6" def="5" res="12" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1808,6 +2060,10 @@
   <character id="63" name="Siegbert">
     <text lang="English" displayName="Siegbert" />
     <text lang="Japanese" displayName="ジークベルト" />
+    <text lang="Spanish" displayName="Siegbert" />
+    <text lang="French" displayName="Siegbert" />
+    <text lang="German" displayName="Siegbert" />
+    <text lang="Italian" displayName="Siegbert" />
     <baseStats hp="7" str="5" mag="2" skl="7" spd="6" lck="7" def="6" res="3" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1834,6 +2090,10 @@
   <character id="64" name="Forrest">
     <text lang="English" displayName="Forrest" />
     <text lang="Japanese" displayName="フォレオ" />
+    <text lang="Spanish" displayName="Forrest" />
+    <text lang="French" displayName="Forrest" />
+    <text lang="German" displayName="Forrest" />
+    <text lang="Italian" displayName="Forrest" />
     <baseStats hp="8" str="5" mag="9" skl="1" spd="4" lck="5" def="6" res="13" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1860,6 +2120,10 @@
   <character id="65" name="Ignatius">
     <text lang="English" displayName="Ignatius" />
     <text lang="Japanese" displayName="イグニス" />
+    <text lang="Spanish" displayName="Ignatius" />
+    <text lang="French" displayName="Ignatius" />
+    <text lang="German" displayName="Ignatius" />
+    <text lang="Italian" displayName="Ignatius" />
     <baseStats hp="8" str="7" mag="0" skl="6" spd="4" lck="7" def="6" res="7" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1886,6 +2150,10 @@
   <character id="66" name="Velouria">
     <text lang="English" displayName="Velouria" />
     <text lang="Japanese" displayName="ベロア" />
+    <text lang="Spanish" displayName="Velouria" />
+    <text lang="French" displayName="Velouria" />
+    <text lang="German" displayName="Velouria" />
+    <text lang="Italian" displayName="Velouria" />
     <baseStats hp="7" str="6" mag="0" skl="6" spd="6" lck="11" def="9" res="8" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="true" canUseDragonVein="false" />
@@ -1912,6 +2180,10 @@
   <character id="67" name="Percy">
     <text lang="English" displayName="Percy" />
     <text lang="Japanese" displayName="ルッツ" />
+    <text lang="Spanish" displayName="Percy" />
+    <text lang="French" displayName="Percy" />
+    <text lang="German" displayName="Percy" />
+    <text lang="Italian" displayName="Percy" />
     <baseStats hp="6" str="4" mag="0" skl="6" spd="6" lck="15" def="8" res="4" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1938,6 +2210,10 @@
   <character id="68" name="Ophelia">
     <text lang="English" displayName="Ophelia" />
     <text lang="Japanese" displayName="オフェリア" />
+    <text lang="Spanish" displayName="Ophelia" />
+    <text lang="French" displayName="Ophelia" />
+    <text lang="German" displayName="Ophelia" />
+    <text lang="Italian" displayName="Ophelia" />
     <baseStats hp="7" str="3" mag="6" skl="6" spd="7" lck="12" def="2" res="5" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1963,6 +2239,10 @@
   <character id="69" name="Soleil">
     <text lang="English" displayName="Soleil" />
     <text lang="Japanese" displayName="ソレイユ" />
+    <text lang="Spanish" displayName="Soleil" />
+    <text lang="French" displayName="Soleil" />
+    <text lang="German" displayName="Soleil" />
+    <text lang="Italian" displayName="Soleil" />
     <baseStats hp="6" str="7" mag="1" skl="3" spd="6" lck="7" def="5" res="6" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -1989,6 +2269,10 @@
   <character id="70" name="Nina">
     <text lang="English" displayName="Nina" />
     <text lang="Japanese" displayName="エポニーヌ" />
+    <text lang="Spanish" displayName="Nina" />
+    <text lang="French" displayName="Nina" />
+    <text lang="German" displayName="Nina" />
+    <text lang="Italian" displayName="Nina" />
     <baseStats hp="5" str="8" mag="5" skl="5" spd="5" lck="11" def="3" res="10" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="true" isCorrin="false" isChild="true" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2014,6 +2298,10 @@
   <character id="71" name="Anna">
     <text lang="English" displayName="Anna" />
     <text lang="Japanese" displayName="アンナ" />
+    <text lang="Spanish" displayName="Anna" />
+    <text lang="French" displayName="Anna" />
+    <text lang="German" displayName="Anna" />
+    <text lang="Italian" displayName="Anna" />
     <baseStats hp="7" str="6" mag="10" skl="6" spd="6" lck="14" def="4" res="11" />
     <modifier hp="0" str="-1" mag="1" skl="0" spd="-1" lck="2" def="-2" res="2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2027,6 +2315,10 @@
   <character id="72" name="Daniela">
     <text lang="English" displayName="Daniela" />
     <text lang="Japanese" displayName="ダニエラ" />
+    <text lang="Spanish" displayName="Daniela" />
+    <text lang="French" displayName="Daniela" />
+    <text lang="German" displayName="Daniela" />
+    <text lang="Italian" displayName="Daniela" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="1" skl="1" spd="0" lck="-1" def="-1" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2036,6 +2328,10 @@
   <character id="73" name="Haitaka">
     <text lang="English" displayName="Haitaka" />
     <text lang="Japanese" displayName="ハイタカ" />
+    <text lang="Spanish" displayName="Haitaka" />
+    <text lang="French" displayName="Haitaka" />
+    <text lang="German" displayName="Haitaka" />
+    <text lang="Italian" displayName="Haitaka" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="0" skl="2" spd="2" lck="-2" def="-2" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2045,6 +2341,10 @@
   <character id="74" name="Kumagera">
     <text lang="English" displayName="Kumagera" />
     <text lang="Japanese" displayName="クマゲラ" />
+    <text lang="Spanish" displayName="Kumagera" />
+    <text lang="French" displayName="Kumagera" />
+    <text lang="German" displayName="Kumagera" />
+    <text lang="Italian" displayName="Kumagera" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="0" skl="1" spd="0" lck="-1" def="1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2054,6 +2354,10 @@
   <character id="75" name="Lloyd">
     <text lang="English" displayName="Lloyd" />
     <text lang="Japanese" displayName="ウィリアム" />
+    <text lang="Spanish" displayName="Lloyd" />
+    <text lang="French" displayName="Lloyd" />
+    <text lang="German" displayName="Lloyd" />
+    <text lang="Italian" displayName="Lloyd" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="2" mag="-1" skl="2" spd="-3" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2063,6 +2367,10 @@
   <character id="76" name="Llewelyn">
     <text lang="English" displayName="Llewelyn" />
     <text lang="Japanese" displayName="ホルモン" />
+    <text lang="Spanish" displayName="Llewelyn" />
+    <text lang="French" displayName="Llewelyn" />
+    <text lang="German" displayName="Llewelyn" />
+    <text lang="Italian" displayName="Llewelyn" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="-1" skl="-3" spd="2" lck="0" def="3" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2072,6 +2380,10 @@
   <character id="77" name="Nichol">
     <text lang="English" displayName="Nichol" />
     <text lang="Japanese" displayName="ナハト" />
+    <text lang="Spanish" displayName="Nichol" />
+    <text lang="French" displayName="Nichol" />
+    <text lang="German" displayName="Nichol" />
+    <text lang="Italian" displayName="Nichol" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="-1" skl="1" spd="0" lck="-1" def="1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2081,6 +2393,10 @@
   <character id="78" name="Candace">
     <text lang="English" displayName="Candace" />
     <text lang="Japanese" displayName="ドラジェ" />
+    <text lang="Spanish" displayName="Candace" />
+    <text lang="French" displayName="Candace" />
+    <text lang="German" displayName="Candace" />
+    <text lang="Italian" displayName="Candace" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="1" skl="-2" spd="-2" lck="2" def="1" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2090,6 +2406,10 @@
   <character id="79" name="Banba">
     <text lang="English" displayName="Tarba" />
     <text lang="Japanese" displayName="バンバ" />
+    <text lang="Spanish" displayName="Tarba" />
+    <text lang="French" displayName="Tarba" />
+    <text lang="German" displayName="Tarba" />
+    <text lang="Italian" displayName="Tarba" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="-1" skl="1" spd="1" lck="-1" def="0" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2099,6 +2419,10 @@
   <character id="80" name="Funke">
     <text lang="English" displayName="Funke" />
     <text lang="Japanese" displayName="ファンク" />
+    <text lang="Spanish" displayName="Funke" />
+    <text lang="French" displayName="Funke" />
+    <text lang="German" displayName="Funke" />
+    <text lang="Italian" displayName="Funke" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="-1" mag="1" skl="2" spd="2" lck="-2" def="-2" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2108,6 +2432,10 @@
   <character id="81" name="Daichi">
     <text lang="English" displayName="Daichi" />
     <text lang="Japanese" displayName="ダイチ" />
+    <text lang="Spanish" displayName="Daichi" />
+    <text lang="French" displayName="Daichi" />
+    <text lang="German" displayName="Daichi" />
+    <text lang="Italian" displayName="Daichi" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="2" skl="2" spd="-1" lck="-1" def="-1" res="-2" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2117,6 +2445,10 @@
   <character id="82" name="Gazak">
     <text lang="English" displayName="Gazak" />
     <text lang="Japanese" displayName="ガザック" />
+    <text lang="Spanish" displayName="Gazak" />
+    <text lang="French" displayName="Gazak" />
+    <text lang="German" displayName="Gazak" />
+    <text lang="Italian" displayName="Gazak" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="1" mag="-1" skl="-2" spd="-2" lck="-2" def="3" res="3" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2126,6 +2458,10 @@
   <character id="83" name="Senno">
     <text lang="English" displayName="Senno" />
     <text lang="Japanese" displayName="セノウ" />
+    <text lang="Spanish" displayName="Senno" />
+    <text lang="French" displayName="Senno" />
+    <text lang="German" displayName="Senno" />
+    <text lang="Italian" displayName="Senno" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="-2" mag="2" skl="0" spd="1" lck="1" def="-3" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2135,6 +2471,10 @@
   <character id="84" name="Zhara">
     <text lang="English" displayName="Zhara" />
     <text lang="Japanese" displayName="ヴァスハラ" />
+    <text lang="Spanish" displayName="Zhara" />
+    <text lang="French" displayName="Zhara" />
+    <text lang="German" displayName="Zhara" />
+    <text lang="Italian" displayName="Zhara" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="-2" mag="2" skl="-2" spd="1" lck="3" def="-3" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2144,6 +2484,10 @@
   <character id="85" name="Paladin">
     <text lang="English" displayName="Captured Paladin" />
     <text lang="Japanese" displayName="パラディン" />
+    <text lang="Spanish" displayName="Paladín" />
+    <text lang="French" displayName="Paladin" />
+    <text lang="German" displayName="Rittmeister" />
+    <text lang="Italian" displayName="Paladino" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2153,6 +2497,10 @@
   <character id="86" name="Cavalier">
     <text lang="English" displayName="Captured Cavalier" />
     <text lang="Japanese" displayName="ソシアルナイト" />
+    <text lang="Spanish" displayName="Jinete" />
+    <text lang="French" displayName="Cavalier" />
+    <text lang="German" displayName="Kavalier" />
+    <text lang="Italian" displayName="Fantino" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2162,6 +2510,10 @@
   <character id="87" name="GreatKnight">
     <text lang="English" displayName="Captured Great Knight" />
     <text lang="Japanese" displayName="グレートナイト" />
+    <text lang="Spanish" displayName="Jinete pesado" />
+    <text lang="French" displayName="Grand chevalier" />
+    <text lang="German" displayName="Erzritter" />
+    <text lang="Italian" displayName="Gran cavaliere" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2171,6 +2523,10 @@
   <character id="88" name="Knight">
     <text lang="English" displayName="Captured Knight" />
     <text lang="Japanese" displayName="アーマーナイト" />
+    <text lang="Spanish" displayName="Caballero" />
+    <text lang="French" displayName="Chevalier" />
+    <text lang="German" displayName="Ritter" />
+    <text lang="Italian" displayName="Cavaliere" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2180,6 +2536,10 @@
   <character id="89" name="General">
     <text lang="English" displayName="Captured General" />
     <text lang="Japanese" displayName="ジェネラル" />
+    <text lang="Spanish" displayName="General" />
+    <text lang="French" displayName="Général" />
+    <text lang="German" displayName="General" />
+    <text lang="Italian" displayName="Generale" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2189,6 +2549,10 @@
   <character id="90" name="Berserker">
     <text lang="English" displayName="Captured Berserker" />
     <text lang="Japanese" displayName="バーサーカー" />
+    <text lang="Spanish" displayName="Bárbaro" />
+    <text lang="French" displayName="Berserker" />
+    <text lang="German" displayName="Berserker" />
+    <text lang="Italian" displayName="Berserker" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2198,6 +2562,10 @@
   <character id="91" name="Fighter">
     <text lang="English" displayName="Captured Fighter" />
     <text lang="Japanese" displayName="アクスファイター" />
+    <text lang="Spanish" displayName="Luchador" />
+    <text lang="French" displayName="Combattant" />
+    <text lang="German" displayName="Kämpfer" />
+    <text lang="Italian" displayName="Lottatore" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2207,6 +2575,10 @@
   <character id="92" name="Hero">
     <text lang="English" displayName="Captured Hero" />
     <text lang="Japanese" displayName="ブレイブヒーロー" />
+    <text lang="Spanish" displayName="Campeón" />
+    <text lang="French" displayName="Héros" />
+    <text lang="German" displayName="Held" />
+    <text lang="Italian" displayName="Eroe" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2216,6 +2588,10 @@
   <character id="93" name="Mercenary">
     <text lang="English" displayName="Captured Mercenary" />
     <text lang="Japanese" displayName="マーシナリー" />
+    <text lang="Spanish" displayName="Mercenario" />
+    <text lang="French" displayName="Mercenaire" />
+    <text lang="German" displayName="Söldner" />
+    <text lang="Italian" displayName="Mercenario" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2225,6 +2601,10 @@
   <character id="94" name="BowKnight">
     <text lang="English" displayName="Captured Bow Knight" />
     <text lang="Japanese" displayName="ボウナイト" />
+    <text lang="Spanish" displayName="Caballero arco" />
+    <text lang="French" displayName="Cavalier archer" />
+    <text lang="German" displayName="Bogenritter" />
+    <text lang="Italian" displayName="Cavaliere arco" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2234,6 +2614,10 @@
   <character id="95" name="Outlaw">
     <text lang="English" displayName="Captured Outlaw" />
     <text lang="Japanese" displayName="シーフ" />
+    <text lang="Spanish" displayName="Granuja" />
+    <text lang="French" displayName="Hors-la-loi" />
+    <text lang="German" displayName="Gesetzloser" />
+    <text lang="Italian" displayName="Fuorilegge" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2243,6 +2627,10 @@
   <character id="96" name="Adventurer">
     <text lang="English" displayName="Captured Adventurer" />
     <text lang="Japanese" displayName="アドベンチャラー" />
+    <text lang="Spanish" displayName="Aventurero" />
+    <text lang="French" displayName="Aventurier" />
+    <text lang="German" displayName="Abenteurer" />
+    <text lang="Italian" displayName="Avventuriero" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2252,6 +2640,10 @@
   <character id="97" name="Swordmaster">
     <text lang="English" displayName="Captured Swordmaster" />
     <text lang="Japanese" displayName="剣聖" />
+    <text lang="Spanish" displayName="Espadachín" />
+    <text lang="French" displayName="Bretteur" />
+    <text lang="German" displayName="Schwertmeister" />
+    <text lang="Italian" displayName="Mastro di spada" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2261,6 +2653,10 @@
   <character id="98" name="Samurai">
     <text lang="English" displayName="Captured Samurai" />
     <text lang="Japanese" displayName="侍" />
+    <text lang="Spanish" displayName="Samurái" />
+    <text lang="French" displayName="Samouraï" />
+    <text lang="German" displayName="Samurai" />
+    <text lang="Italian" displayName="Samurai" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2270,6 +2666,10 @@
   <character id="99" name="MasterOfArms">
     <text lang="English" displayName="Captured Master of Arms" />
     <text lang="Japanese" displayName="兵法者" />
+    <text lang="Spanish" displayName="Campeador" />
+    <text lang="French" displayName="Maître d'armes" />
+    <text lang="German" displayName="Waffenmeister" />
+    <text lang="Italian" displayName="Mastro d'armi" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2279,6 +2679,10 @@
   <character id="100" name="OniChieftain">
     <text lang="English" displayName="Captured Oni Chieftain" />
     <text lang="Japanese" displayName="修羅" />
+    <text lang="Spanish" displayName="Oni jefe" />
+    <text lang="French" displayName="Chef Oni" />
+    <text lang="German" displayName="Oni-Häuptling" />
+    <text lang="Italian" displayName="Capotribù Oni" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2288,6 +2692,10 @@
   <character id="101" name="OniSavage">
     <text lang="English" displayName="Captured Oni Savage" />
     <text lang="Japanese" displayName="鬼人" />
+    <text lang="Spanish" displayName="Oni salvaje" />
+    <text lang="French" displayName="Sauvage Oni" />
+    <text lang="German" displayName="Oni-Barbar" />
+    <text lang="Italian" displayName="Selvaggio Oni" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2297,6 +2705,10 @@
   <character id="102" name="Blacksmith">
     <text lang="English" displayName="Captured Blacksmith" />
     <text lang="Japanese" displayName="鍛冶" />
+    <text lang="Spanish" displayName="Herrero" />
+    <text lang="French" displayName="Forgeron" />
+    <text lang="German" displayName="Schmied" />
+    <text lang="Italian" displayName="Fabbro" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2306,6 +2718,10 @@
   <character id="103" name="SpearMaster">
     <text lang="English" displayName="Captured Spear Master" />
     <text lang="Japanese" displayName="槍聖" />
+    <text lang="Spanish" displayName="Gran piquero" />
+    <text lang="French" displayName="Maître lancier" />
+    <text lang="German" displayName="Speermeister" />
+    <text lang="Italian" displayName="Mastro d'asta" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2315,6 +2731,10 @@
   <character id="104" name="SpearFighter">
     <text lang="English" displayName="Captured Spear Fighter" />
     <text lang="Japanese" displayName="槍術士" />
+    <text lang="Spanish" displayName="Piquero" />
+    <text lang="French" displayName="Lancier" />
+    <text lang="German" displayName="Speerkämpfer" />
+    <text lang="Italian" displayName="Lottatore asta" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2324,6 +2744,10 @@
   <character id="105" name="Basara">
     <text lang="English" displayName="Captured Basara" />
     <text lang="Japanese" displayName="婆娑羅" />
+    <text lang="Spanish" displayName="Basara" />
+    <text lang="French" displayName="Basara" />
+    <text lang="German" displayName="Basara" />
+    <text lang="Italian" displayName="Basara" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2333,6 +2757,10 @@
   <character id="106" name="Diviner">
     <text lang="English" displayName="Captured Diviner" />
     <text lang="Japanese" displayName="呪い師" />
+    <text lang="Spanish" displayName="Augur" />
+    <text lang="French" displayName="Devin" />
+    <text lang="German" displayName="Kleriker" />
+    <text lang="Italian" displayName="Veggente" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2342,6 +2770,10 @@
   <character id="107" name="Onmyoji">
     <text lang="English" displayName="Captured Onmyoji" />
     <text lang="Japanese" displayName="陰陽師" />
+    <text lang="Spanish" displayName="Espiritista" />
+    <text lang="French" displayName="Onmyoji" />
+    <text lang="German" displayName="Onmyoji" />
+    <text lang="Italian" displayName="Onmyoji" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2351,6 +2783,10 @@
   <character id="108" name="ShrineMaiden">
     <text lang="English" displayName="Captured Shrine Maiden" />
     <text lang="Japanese" displayName="巫女" />
+    <text lang="Spanish" displayName="Vestal" />
+    <text lang="French" displayName="Gardienne" />
+    <text lang="German" displayName="Schreinjungfer" />
+    <text lang="Italian" displayName="Miko" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2360,6 +2796,10 @@
   <character id="109" name="GreatMaster">
     <text lang="English" displayName="Captured Great Master" />
     <text lang="Japanese" displayName="山伏" />
+    <text lang="Spanish" displayName="Gran maestre" />
+    <text lang="French" displayName="Grand maître" />
+    <text lang="German" displayName="Erzmeister" />
+    <text lang="Italian" displayName="Sommo maestro" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2369,6 +2809,10 @@
   <character id="110" name="Priestess">
     <text lang="English" displayName="Captured Priestess" />
     <text lang="Japanese" displayName="戦巫女" />
+    <text lang="Spanish" displayName="Sacerdotisa" />
+    <text lang="French" displayName="Prêtresse" />
+    <text lang="German" displayName="Priesterin" />
+    <text lang="Italian" displayName="Sacerdotessa" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2378,6 +2822,10 @@
   <character id="111" name="FalconKnight">
     <text lang="English" displayName="Captured Falcon Knight" />
     <text lang="Japanese" displayName="聖天馬武者" />
+    <text lang="Spanish" displayName="Auriga" />
+    <text lang="French" displayName="Chev. faucon" />
+    <text lang="German" displayName="Falkenritter" />
+    <text lang="Italian" displayName="Cavaliere falco" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2387,6 +2835,10 @@
   <character id="112" name="SkyKnight">
     <text lang="English" displayName="Captured Sky Knight" />
     <text lang="Japanese" displayName="天馬武者" />
+    <text lang="Spanish" displayName="Auriga celeste" />
+    <text lang="French" displayName="Chev. céleste" />
+    <text lang="German" displayName="Luftritter" />
+    <text lang="Italian" displayName="Cavaliere alato" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2396,6 +2848,10 @@
   <character id="113" name="KinshiKnight">
     <text lang="English" displayName="Captured Kinshi Knight" />
     <text lang="Japanese" displayName="金鵄武者" />
+    <text lang="Spanish" displayName="Jinete kinshi" />
+    <text lang="French" displayName="Chev. kinshi" />
+    <text lang="German" displayName="Kinshi-Ritter" />
+    <text lang="Italian" displayName="Cavaliere kinshi" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2405,6 +2861,10 @@
   <character id="114" name="Archer">
     <text lang="English" displayName="Captured Archer" />
     <text lang="Japanese" displayName="弓使い" />
+    <text lang="Spanish" displayName="Arquero" />
+    <text lang="French" displayName="Archer" />
+    <text lang="German" displayName="Schütze" />
+    <text lang="Italian" displayName="Arciere" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2414,6 +2874,10 @@
   <character id="115" name="Sniper">
     <text lang="English" displayName="Captured Sniper" />
     <text lang="Japanese" displayName="弓聖" />
+    <text lang="Spanish" displayName="Tirador" />
+    <text lang="French" displayName="Archer d'élite" />
+    <text lang="German" displayName="Scharfschütze" />
+    <text lang="Italian" displayName="Tiratore scelto" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2423,6 +2887,10 @@
   <character id="116" name="WyvernLord">
     <text lang="English" displayName="Captured Wyvern Lord" />
     <text lang="Japanese" displayName="ドラゴンマスター" />
+    <text lang="Spanish" displayName="Paladín wyvern" />
+    <text lang="French" displayName="Lord wyverne" />
+    <text lang="German" displayName="Wyvernlord" />
+    <text lang="Italian" displayName="Lord viverna" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2432,6 +2900,10 @@
   <character id="117" name="WyvernRider">
     <text lang="English" displayName="Captured Wyvern Rider" />
     <text lang="Japanese" displayName="ドラゴンナイト" />
+    <text lang="Spanish" displayName="Jinete wyvern" />
+    <text lang="French" displayName="Chev. wyverne" />
+    <text lang="German" displayName="Wyvernritter" />
+    <text lang="Italian" displayName="Cav. viverna" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2441,6 +2913,10 @@
   <character id="118" name="MaligKnight">
     <text lang="English" displayName="Captured Malig Knight" />
     <text lang="Japanese" displayName="レヴナントナイト" />
+    <text lang="Spanish" displayName="Jinete espectral" />
+    <text lang="French" displayName="Belliciste" />
+    <text lang="German" displayName="Raubritter" />
+    <text lang="Italian" displayName="Cav. spettrale" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2450,6 +2926,10 @@
   <character id="119" name="MasterNinja">
     <text lang="English" displayName="Captured Master Ninja" />
     <text lang="Japanese" displayName="上忍" />
+    <text lang="Spanish" displayName="Maestro ninja" />
+    <text lang="French" displayName="Maître ninja" />
+    <text lang="German" displayName="Meisterninja" />
+    <text lang="Italian" displayName="Maestro ninja" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2459,6 +2939,10 @@
   <character id="120" name="Ninja">
     <text lang="English" displayName="Captured Ninja" />
     <text lang="Japanese" displayName="忍" />
+    <text lang="Spanish" displayName="Ninja" />
+    <text lang="French" displayName="Ninja" />
+    <text lang="German" displayName="Ninja" />
+    <text lang="Italian" displayName="Ninja" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2468,6 +2952,10 @@
   <character id="121" name="Mechanist">
     <text lang="English" displayName="Captured Mechanist" />
     <text lang="Japanese" displayName="絡繰師" />
+    <text lang="Spanish" displayName="Titiritero" />
+    <text lang="French" displayName="Machiniste" />
+    <text lang="German" displayName="Tüftler" />
+    <text lang="Italian" displayName="Burattinaio" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2477,6 +2965,10 @@
   <character id="122" name="Apothecary">
     <text lang="English" displayName="Captured Apothecary" />
     <text lang="Japanese" displayName="薬商人" />
+    <text lang="Spanish" displayName="Boticario" />
+    <text lang="French" displayName="Apothicaire" />
+    <text lang="German" displayName="Kräuterkundiger" />
+    <text lang="Italian" displayName="Speziale" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2486,6 +2978,10 @@
   <character id="123" name="Merchant">
     <text lang="English" displayName="Captured Merchant" />
     <text lang="Japanese" displayName="大商人" />
+    <text lang="Spanish" displayName="Mercader" />
+    <text lang="French" displayName="Négociant" />
+    <text lang="German" displayName="Händler" />
+    <text lang="Italian" displayName="Mercante" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2495,6 +2991,10 @@
   <character id="124" name="Sorcerer">
     <text lang="English" displayName="Captured Sorcerer" />
     <text lang="Japanese" displayName="ソーサラー" />
+    <text lang="Spanish" displayName="Hechicero" />
+    <text lang="French" displayName="Sorcier" />
+    <text lang="German" displayName="Zauberer" />
+    <text lang="Italian" displayName="Warlock" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2504,6 +3004,10 @@
   <character id="125" name="DarkMage">
     <text lang="English" displayName="Captured Dark Mage" />
     <text lang="Japanese" displayName="ダークマージ" />
+    <text lang="Spanish" displayName="Mago oscuro" />
+    <text lang="French" displayName="Mage noir" />
+    <text lang="German" displayName="Dunkelmagier" />
+    <text lang="Italian" displayName="Mago nero" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2513,6 +3017,10 @@
   <character id="126" name="DarkKnight">
     <text lang="English" displayName="Captured Dark Knight" />
     <text lang="Japanese" displayName="ダークナイト" />
+    <text lang="Spanish" displayName="Caball. oscuro" />
+    <text lang="French" displayName="Paladin noir" />
+    <text lang="German" displayName="Dunkelritter" />
+    <text lang="Italian" displayName="Cav. oscuro" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2522,6 +3030,10 @@
   <character id="127" name="Strategist">
     <text lang="English" displayName="Captured Strategist" />
     <text lang="Japanese" displayName="ストラテジスト" />
+    <text lang="Spanish" displayName="Gran estratega" />
+    <text lang="French" displayName="Maître stratège" />
+    <text lang="German" displayName="Großmeister" />
+    <text lang="Italian" displayName="Gran Maestro" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2531,6 +3043,10 @@
   <character id="128" name="Troubadour">
     <text lang="English" displayName="Captured Troubadour" />
     <text lang="Japanese" displayName="ロッドナイト" />
+    <text lang="Spanish" displayName="Trovador" />
+    <text lang="French" displayName="Troubadour" />
+    <text lang="German" displayName="Troubadour" />
+    <text lang="Italian" displayName="Trobador" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2540,6 +3056,10 @@
   <character id="129" name="Maid">
     <text lang="English" displayName="Captured Maid" />
     <text lang="Japanese" displayName="メイド" />
+    <text lang="Spanish" displayName="Criada" />
+    <text lang="French" displayName="Domestique" />
+    <text lang="German" displayName="Dienstmagd" />
+    <text lang="Italian" displayName="Cameriera" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2549,6 +3069,10 @@
   <character id="130" name="Villager">
     <text lang="English" displayName="Captured Villager" />
     <text lang="Japanese" displayName="村人" />
+    <text lang="Spanish" displayName="Aldeano" />
+    <text lang="French" displayName="Villageois" />
+    <text lang="German" displayName="Dörfler" />
+    <text lang="Italian" displayName="Cittadino" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2558,6 +3082,10 @@
   <character id="131" name="Lancer">
     <text lang="English" displayName="Captured Lancer" />
     <text lang="Japanese" displayName="ランサー" />
+    <text lang="Spanish" displayName="Lancero" />
+    <text lang="French" displayName="Sentinelle" />
+    <text lang="German" displayName="Wächter" />
+    <text lang="Italian" displayName="Lanciere" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="true" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2567,6 +3095,10 @@
   <character id="132" name="BondUnitHH1">
     <text lang="English" displayName="Gin" />
     <text lang="Japanese" displayName="アイネズ" />
+    <text lang="Spanish" displayName="Gin" />
+    <text lang="French" displayName="Gin" />
+    <text lang="German" displayName="Gin" />
+    <text lang="Italian" displayName="Gin" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2576,6 +3108,10 @@
   <character id="133" name="BondUnitHH2">
     <text lang="English" displayName="Azuki" />
     <text lang="Japanese" displayName="アズキ" />
+    <text lang="Spanish" displayName="Azuki" />
+    <text lang="French" displayName="Azuki" />
+    <text lang="German" displayName="Azuki" />
+    <text lang="Italian" displayName="Azuki" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2585,6 +3121,10 @@
   <character id="134" name="BondUnitHH3">
     <text lang="English" displayName="Hakuto" />
     <text lang="Japanese" displayName="ウスベニ" />
+    <text lang="Spanish" displayName="Hakuto" />
+    <text lang="French" displayName="Hakuto" />
+    <text lang="German" displayName="Hakuto" />
+    <text lang="Italian" displayName="Hakuto" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2594,6 +3134,10 @@
   <character id="135" name="BondUnitHH4">
     <text lang="English" displayName="Kureha" />
     <text lang="Japanese" displayName="ウツブシ" />
+    <text lang="Spanish" displayName="Kureha" />
+    <text lang="French" displayName="Kureha" />
+    <text lang="German" displayName="Kureha" />
+    <text lang="Italian" displayName="Kureha" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2603,6 +3147,10 @@
   <character id="136" name="BondUnitHH5">
     <text lang="English" displayName="Sango" />
     <text lang="Japanese" displayName="クレナイ" />
+    <text lang="Spanish" displayName="Sango" />
+    <text lang="French" displayName="Sango" />
+    <text lang="German" displayName="Sango" />
+    <text lang="Italian" displayName="Sango" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2612,6 +3160,10 @@
   <character id="137" name="BondUnitHH6">
     <text lang="English" displayName="Himawari" />
     <text lang="Japanese" displayName="コウゾメ" />
+    <text lang="Spanish" displayName="Himawari" />
+    <text lang="French" displayName="Himawari" />
+    <text lang="German" displayName="Himawari" />
+    <text lang="Italian" displayName="Himawari" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2621,6 +3173,10 @@
   <character id="138" name="BondUnitHH7">
     <text lang="English" displayName="Kogane" />
     <text lang="Japanese" displayName="コガネ" />
+    <text lang="Spanish" displayName="Kogane" />
+    <text lang="French" displayName="Kogane" />
+    <text lang="German" displayName="Kogane" />
+    <text lang="Italian" displayName="Kogane" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2630,6 +3186,10 @@
   <character id="139" name="BondUnitHH8">
     <text lang="English" displayName="Ai" />
     <text lang="Japanese" displayName="シブカミ" />
+    <text lang="Spanish" displayName="Ai" />
+    <text lang="French" displayName="Ai" />
+    <text lang="German" displayName="Ai" />
+    <text lang="Italian" displayName="Ai" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2639,6 +3199,10 @@
   <character id="140" name="BondUnitHH9">
     <text lang="English" displayName="Tetsu" />
     <text lang="Japanese" displayName="トキガラ" />
+    <text lang="Spanish" displayName="Tetsu" />
+    <text lang="French" displayName="Tetsu" />
+    <text lang="German" displayName="Tetsu" />
+    <text lang="Italian" displayName="Tetsu" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2648,6 +3212,10 @@
   <character id="141" name="BondUnitHH10">
     <text lang="English" displayName="Tokiwa" />
     <text lang="Japanese" displayName="トキワ" />
+    <text lang="Spanish" displayName="Tokiwa" />
+    <text lang="French" displayName="Tokiwa" />
+    <text lang="German" displayName="Tokiwa" />
+    <text lang="Italian" displayName="Tokiwa" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2657,6 +3225,10 @@
   <character id="142" name="BondUnitHH11">
     <text lang="English" displayName="Suzaku" />
     <text lang="Japanese" displayName="ナデシコ" />
+    <text lang="Spanish" displayName="Suzaku" />
+    <text lang="French" displayName="Suzaku" />
+    <text lang="German" displayName="Suzaku" />
+    <text lang="Italian" displayName="Suzaku" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2666,6 +3238,10 @@
   <character id="143" name="BondUnitHH12">
     <text lang="English" displayName="Chigusa" />
     <text lang="Japanese" displayName="ハイウメ" />
+    <text lang="Spanish" displayName="Chigusa" />
+    <text lang="French" displayName="Chigusa" />
+    <text lang="German" displayName="Chigusa" />
+    <text lang="Italian" displayName="Chigusa" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2675,6 +3251,10 @@
   <character id="144" name="BondUnitHH13">
     <text lang="English" displayName="Renga" />
     <text lang="Japanese" displayName="ハジゾメ" />
+    <text lang="Spanish" displayName="Renga" />
+    <text lang="French" displayName="Renga" />
+    <text lang="German" displayName="Renga" />
+    <text lang="Italian" displayName="Renga" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2684,6 +3264,10 @@
   <character id="145" name="BondUnitHH14">
     <text lang="English" displayName="Moegi" />
     <text lang="Japanese" displayName="フタアイ" />
+    <text lang="Spanish" displayName="Moegi" />
+    <text lang="French" displayName="Moegi" />
+    <text lang="German" displayName="Moegi" />
+    <text lang="Italian" displayName="Moegi" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2693,6 +3277,10 @@
   <character id="146" name="BondUnitHH15">
     <text lang="English" displayName="Kohaku" />
     <text lang="Japanese" displayName="ミズガキ" />
+    <text lang="Spanish" displayName="Kohaku" />
+    <text lang="French" displayName="Kohaku" />
+    <text lang="German" displayName="Kohaku" />
+    <text lang="Italian" displayName="Kohaku" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2702,6 +3290,10 @@
   <character id="147" name="BondUnitHH16">
     <text lang="English" displayName="Murasaki" />
     <text lang="Japanese" displayName="ムラサキ" />
+    <text lang="Spanish" displayName="Murasaki" />
+    <text lang="French" displayName="Murasaki" />
+    <text lang="German" displayName="Murasaki" />
+    <text lang="Italian" displayName="Murasaki" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2711,6 +3303,10 @@
   <character id="148" name="BondUnitHH17">
     <text lang="English" displayName="Momotaro" />
     <text lang="Japanese" displayName="モエギ" />
+    <text lang="Spanish" displayName="Momotaro" />
+    <text lang="French" displayName="Momotaro" />
+    <text lang="German" displayName="Momotaro" />
+    <text lang="Italian" displayName="Momotaro" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2720,6 +3316,10 @@
   <character id="149" name="BondUnitHH18">
     <text lang="English" displayName="Sumire" />
     <text lang="Japanese" displayName="ヤマブキ" />
+    <text lang="Spanish" displayName="Sumire" />
+    <text lang="French" displayName="Sumire" />
+    <text lang="German" displayName="Sumire" />
+    <text lang="Italian" displayName="Sumire" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2729,6 +3329,10 @@
   <character id="150" name="BondUnitNN1">
     <text lang="English" displayName="Rusty" />
     <text lang="Japanese" displayName="アイボリー" />
+    <text lang="Spanish" displayName="Cobre" />
+    <text lang="French" displayName="Rouillon" />
+    <text lang="German" displayName="Rostan" />
+    <text lang="Italian" displayName="Ruben" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2738,6 +3342,10 @@
   <character id="151" name="BondUnitNN2">
     <text lang="English" displayName="Amber" />
     <text lang="Japanese" displayName="アンバー" />
+    <text lang="Spanish" displayName="Ámbar" />
+    <text lang="French" displayName="Ambre" />
+    <text lang="German" displayName="Bernadin" />
+    <text lang="Italian" displayName="Ambrine" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2747,6 +3355,10 @@
   <character id="152" name="BondUnitNN3">
     <text lang="English" displayName="Auburn" />
     <text lang="Japanese" displayName="カーキー" />
+    <text lang="Spanish" displayName="Caoba" />
+    <text lang="French" displayName="Auburn" />
+    <text lang="German" displayName="Kastano" />
+    <text lang="Italian" displayName="Rammen" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2756,6 +3368,10 @@
   <character id="153" name="BondUnitNN4">
     <text lang="English" displayName="Coral" />
     <text lang="Japanese" displayName="カーマイン" />
+    <text lang="Spanish" displayName="Coral" />
+    <text lang="French" displayName="Corail" />
+    <text lang="German" displayName="Koralin" />
+    <text lang="Italian" displayName="Korel" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2765,6 +3381,10 @@
   <character id="154" name="BondUnitNN5">
     <text lang="English" displayName="Hunter" />
     <text lang="Japanese" displayName="コバルト" />
+    <text lang="Spanish" displayName="Zafiro" />
+    <text lang="French" displayName="Cobalt" />
+    <text lang="German" displayName="Jager" />
+    <text lang="Italian" displayName="Kobalt" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2774,6 +3394,10 @@
   <character id="155" name="BondUnitNN6">
     <text lang="English" displayName="Hazel" />
     <text lang="Japanese" displayName="コルク" />
+    <text lang="Spanish" displayName="Avellana" />
+    <text lang="French" displayName="Noisette" />
+    <text lang="German" displayName="Hazel" />
+    <text lang="Italian" displayName="Avelt" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2783,6 +3407,10 @@
   <character id="156" name="BondUnitNN7">
     <text lang="English" displayName="Cyan" />
     <text lang="Japanese" displayName="シアン" />
+    <text lang="Spanish" displayName="Añil" />
+    <text lang="French" displayName="Cyan" />
+    <text lang="German" displayName="Zyan" />
+    <text lang="Italian" displayName="Turggis" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2792,6 +3420,10 @@
   <character id="157" name="BondUnitNN8">
     <text lang="English" displayName="Fuchsia" />
     <text lang="Japanese" displayName="スカーレット" />
+    <text lang="Spanish" displayName="Rosa" />
+    <text lang="French" displayName="Fuchsia" />
+    <text lang="German" displayName="Fuchsia" />
+    <text lang="Italian" displayName="Fuchsie" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2801,6 +3433,10 @@
   <character id="158" name="BondUnitNN9">
     <text lang="English" displayName="Jett" />
     <text lang="Japanese" displayName="セピア" />
+    <text lang="Spanish" displayName="Ocre" />
+    <text lang="French" displayName="Sepian" />
+    <text lang="German" displayName="Sepius" />
+    <text lang="Italian" displayName="Brunn" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2810,6 +3446,10 @@
   <character id="159" name="BondUnitNN10">
     <text lang="English" displayName="Olive" />
     <text lang="Japanese" displayName="バーミリオン" />
+    <text lang="Spanish" displayName="Olivia" />
+    <text lang="French" displayName="Olive" />
+    <text lang="German" displayName="Olivia" />
+    <text lang="Italian" displayName="Oliberi" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2819,6 +3459,10 @@
   <character id="160" name="BondUnitNN11">
     <text lang="English" displayName="Slate" />
     <text lang="Japanese" displayName="パープル" />
+    <text lang="Spanish" displayName="Índigo" />
+    <text lang="French" displayName="Ardois" />
+    <text lang="German" displayName="Schifander" />
+    <text lang="Italian" displayName="Ardes" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2828,6 +3472,10 @@
   <character id="161" name="BondUnitNN12">
     <text lang="English" displayName="Violet" />
     <text lang="Japanese" displayName="バイオレット" />
+    <text lang="Spanish" displayName="Violeta" />
+    <text lang="French" displayName="Violet" />
+    <text lang="German" displayName="Violetta" />
+    <text lang="Italian" displayName="Fiolet" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2837,6 +3485,10 @@
   <character id="162" name="BondUnitNN13">
     <text lang="English" displayName="Sterling" />
     <text lang="Japanese" displayName="ブラウン" />
+    <text lang="Spanish" displayName="Zaíno" />
+    <text lang="French" displayName="Grison" />
+    <text lang="German" displayName="Argentus" />
+    <text lang="Italian" displayName="Silbarin" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2846,6 +3498,10 @@
   <character id="163" name="BondUnitNN14">
     <text lang="English" displayName="Ruby" />
     <text lang="Japanese" displayName="ブラック" />
+    <text lang="Spanish" displayName="Rubí" />
+    <text lang="French" displayName="Rubis" />
+    <text lang="German" displayName="Rubina" />
+    <text lang="Italian" displayName="Nerin" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2855,6 +3511,10 @@
   <character id="164" name="BondUnitNN15">
     <text lang="English" displayName="Tanner" />
     <text lang="Japanese" displayName="ブロンド" />
+    <text lang="Spanish" displayName="Rufo" />
+    <text lang="French" displayName="Blondus" />
+    <text lang="German" displayName="Tanner" />
+    <text lang="Italian" displayName="Golt" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2864,6 +3524,10 @@
   <character id="165" name="BondUnitNN16">
     <text lang="English" displayName="Kelly" />
     <text lang="Japanese" displayName="ベージュ" />
+    <text lang="Spanish" displayName="Aurora" />
+    <text lang="French" displayName="Beige" />
+    <text lang="German" displayName="Kila" />
+    <text lang="Italian" displayName="Sande" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2873,6 +3537,10 @@
   <character id="166" name="BondUnitNN17">
     <text lang="English" displayName="Teale" />
     <text lang="Japanese" displayName="ホワイト" />
+    <text lang="Spanish" displayName="Cerúleo" />
+    <text lang="French" displayName="Turquois" />
+    <text lang="German" displayName="Teale" />
+    <text lang="Italian" displayName="Wiss" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2882,6 +3550,10 @@
   <character id="167" name="BondUnitNN18">
     <text lang="English" displayName="Magenta" />
     <text lang="Japanese" displayName="マゼンダ" />
+    <text lang="Spanish" displayName="Carmina" />
+    <text lang="French" displayName="Magenta" />
+    <text lang="German" displayName="Magenta" />
+    <text lang="Italian" displayName="Paurpur" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2891,6 +3563,10 @@
   <character id="168" name="BondUnitHN1">
     <text lang="English" displayName="Naoki" />
     <text lang="Japanese" displayName="オボロヅキ" />
+    <text lang="Spanish" displayName="Naoki" />
+    <text lang="French" displayName="Naoki" />
+    <text lang="German" displayName="Naoki" />
+    <text lang="Italian" displayName="Naoki" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2900,6 +3576,10 @@
   <character id="169" name="BondUnitHN2">
     <text lang="English" displayName="Shizuku" />
     <text lang="Japanese" displayName="モチヅキ" />
+    <text lang="Spanish" displayName="Shizuku" />
+    <text lang="French" displayName="Shizuku" />
+    <text lang="German" displayName="Shizuku" />
+    <text lang="Italian" displayName="Shizuku" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2909,6 +3589,10 @@
   <character id="170" name="BondUnitHN3">
     <text lang="English" displayName="Kaito" />
     <text lang="Japanese" displayName="イザヨイ" />
+    <text lang="Spanish" displayName="Kaito" />
+    <text lang="French" displayName="Kaito" />
+    <text lang="German" displayName="Kaito" />
+    <text lang="Italian" displayName="Kaito" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2918,6 +3602,10 @@
   <character id="171" name="BondUnitHN4">
     <text lang="English" displayName="Wakaba" />
     <text lang="Japanese" displayName="アマツカゼ" />
+    <text lang="Spanish" displayName="Wakaba" />
+    <text lang="French" displayName="Wakaba" />
+    <text lang="German" displayName="Wakaba" />
+    <text lang="Italian" displayName="Wakaba" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2927,6 +3615,10 @@
   <character id="172" name="BondUnitHN5">
     <text lang="English" displayName="Yukio" />
     <text lang="Japanese" displayName="イブキ" />
+    <text lang="Spanish" displayName="Yukio" />
+    <text lang="French" displayName="Yukio" />
+    <text lang="German" displayName="Yukio" />
+    <text lang="Italian" displayName="Yukio" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2936,6 +3628,10 @@
   <character id="173" name="BondUnitHN6">
     <text lang="English" displayName="Ibuki" />
     <text lang="Japanese" displayName="ツムジカゼ" />
+    <text lang="Spanish" displayName="Ibuki" />
+    <text lang="French" displayName="Ibuki" />
+    <text lang="German" displayName="Ibuki" />
+    <text lang="Italian" displayName="Ibuki" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2945,6 +3641,10 @@
   <character id="174" name="BondUnitHN7">
     <text lang="English" displayName="Riku" />
     <text lang="Japanese" displayName="ツグミ" />
+    <text lang="Spanish" displayName="Riku" />
+    <text lang="French" displayName="Riku" />
+    <text lang="German" displayName="Riku" />
+    <text lang="Italian" displayName="Riku" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2954,6 +3654,10 @@
   <character id="175" name="BondUnitHN8">
     <text lang="English" displayName="Hibari" />
     <text lang="Japanese" displayName="ヒバリ" />
+    <text lang="Spanish" displayName="Hibari" />
+    <text lang="French" displayName="Hibari" />
+    <text lang="German" displayName="Hibari" />
+    <text lang="Italian" displayName="Hibari" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2963,6 +3667,10 @@
   <character id="176" name="BondUnitHN9">
     <text lang="English" displayName="Minato" />
     <text lang="Japanese" displayName="ヤブサメ" />
+    <text lang="Spanish" displayName="Minato" />
+    <text lang="French" displayName="Minato" />
+    <text lang="German" displayName="Minato" />
+    <text lang="Italian" displayName="Minato" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2972,6 +3680,10 @@
   <character id="177" name="BondUnitHN10">
     <text lang="English" displayName="Aspen" />
     <text lang="Japanese" displayName="ブルームーン" />
+    <text lang="Spanish" displayName="Magnolia" />
+    <text lang="French" displayName="Peuplia" />
+    <text lang="German" displayName="Espe" />
+    <text lang="Italian" displayName="Poplya" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2981,6 +3693,10 @@
   <character id="178" name="BondUnitHN11">
     <text lang="English" displayName="Cypress" />
     <text lang="Japanese" displayName="エクリプス" />
+    <text lang="Spanish" displayName="Cipriano" />
+    <text lang="French" displayName="Cyprès" />
+    <text lang="German" displayName="Zyprus" />
+    <text lang="Italian" displayName="Cyprens" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2990,6 +3706,10 @@
   <character id="179" name="BondUnitHN12">
     <text lang="English" displayName="Daisy" />
     <text lang="Japanese" displayName="ルナ" />
+    <text lang="Spanish" displayName="Margarita" />
+    <text lang="French" displayName="Marguerite" />
+    <text lang="German" displayName="Daisy" />
+    <text lang="Italian" displayName="Margerin" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -2999,6 +3719,10 @@
   <character id="180" name="BondUnitHN13">
     <text lang="English" displayName="Thorn" />
     <text lang="Japanese" displayName="ガスト" />
+    <text lang="Spanish" displayName="Espino" />
+    <text lang="French" displayName="Rosier" />
+    <text lang="German" displayName="Dornam" />
+    <text lang="Italian" displayName="Rosior" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3008,6 +3732,10 @@
   <character id="181" name="BondUnitHN14">
     <text lang="English" displayName="Primrose" />
     <text lang="Japanese" displayName="ゲイル" />
+    <text lang="Spanish" displayName="Petunia" />
+    <text lang="French" displayName="Primevère" />
+    <text lang="German" displayName="Primella" />
+    <text lang="Italian" displayName="Primoul" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3017,6 +3745,10 @@
   <character id="182" name="BondUnitHN15">
     <text lang="English" displayName="Quill" />
     <text lang="Japanese" displayName="ブリーズ" />
+    <text lang="Spanish" displayName="Pichón" />
+    <text lang="French" displayName="Tilleul" />
+    <text lang="German" displayName="Kilean" />
+    <text lang="Italian" displayName="Dardian" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3026,6 +3758,10 @@
   <character id="183" name="BondUnitHN16">
     <text lang="English" displayName="Willow" />
     <text lang="Japanese" displayName="アイビス" />
+    <text lang="Spanish" displayName="Mimbre" />
+    <text lang="French" displayName="Saule" />
+    <text lang="German" displayName="Weidra" />
+    <text lang="Italian" displayName="Salis" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3035,6 +3771,10 @@
   <character id="184" name="BondUnitHN17">
     <text lang="English" displayName="Flint" />
     <text lang="Japanese" displayName="スパロウ" />
+    <text lang="Spanish" displayName="Pietro" />
+    <text lang="French" displayName="Silex" />
+    <text lang="German" displayName="Flint" />
+    <text lang="Italian" displayName="Flint" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3044,6 +3784,10 @@
   <character id="185" name="BondUnitHN18">
     <text lang="English" displayName="Sequoia" />
     <text lang="Japanese" displayName="フェザント" />
+    <text lang="Spanish" displayName="Secoya" />
+    <text lang="French" displayName="Séquoia" />
+    <text lang="German" displayName="Sequia" />
+    <text lang="Italian" displayName="Seqva" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3053,6 +3797,10 @@
   <character id="186" name="BondUnitHI1">
     <text lang="English" displayName="Shoga" />
     <text lang="Japanese" displayName="アサガオ" />
+    <text lang="Spanish" displayName="Shoga" />
+    <text lang="French" displayName="Shoga" />
+    <text lang="German" displayName="Shoga" />
+    <text lang="Italian" displayName="Shoga" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3062,6 +3810,10 @@
   <character id="187" name="BondUnitHI2">
     <text lang="English" displayName="Anzu" />
     <text lang="Japanese" displayName="アジサイ" />
+    <text lang="Spanish" displayName="Anzu" />
+    <text lang="French" displayName="Anzu" />
+    <text lang="German" displayName="Anzu" />
+    <text lang="Italian" displayName="Anzu" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3071,6 +3823,10 @@
   <character id="188" name="BondUnitHI3">
     <text lang="English" displayName="Inaho" />
     <text lang="Japanese" displayName="キキョウ" />
+    <text lang="Spanish" displayName="Inaho" />
+    <text lang="French" displayName="Inaho" />
+    <text lang="German" displayName="Inaho" />
+    <text lang="Italian" displayName="Inaho" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3080,6 +3836,10 @@
   <character id="189" name="BondUnitHI4">
     <text lang="English" displayName="Yuzu" />
     <text lang="Japanese" displayName="サザンカ" />
+    <text lang="Spanish" displayName="Yuzu" />
+    <text lang="French" displayName="Yuzu" />
+    <text lang="German" displayName="Yuzu" />
+    <text lang="Italian" displayName="Yuzu" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3089,6 +3849,10 @@
   <character id="190" name="BondUnitHI5">
     <text lang="English" displayName="Mugi" />
     <text lang="Japanese" displayName="シャクナゲ" />
+    <text lang="Spanish" displayName="Mugi" />
+    <text lang="French" displayName="Mugi" />
+    <text lang="German" displayName="Mugi" />
+    <text lang="Italian" displayName="Mugi" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3098,6 +3862,10 @@
   <character id="191" name="BondUnitHI6">
     <text lang="English" displayName="Umeko" />
     <text lang="Japanese" displayName="スイレン" />
+    <text lang="Spanish" displayName="Umeko" />
+    <text lang="French" displayName="Umeko" />
+    <text lang="German" displayName="Umeko" />
+    <text lang="Italian" displayName="Umeko" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3107,6 +3875,10 @@
   <character id="192" name="BondUnitHI7">
     <text lang="English" displayName="Nori" />
     <text lang="Japanese" displayName="スミレ" />
+    <text lang="Spanish" displayName="Nori" />
+    <text lang="French" displayName="Nori" />
+    <text lang="German" displayName="Nori" />
+    <text lang="Italian" displayName="Nori" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3116,6 +3888,10 @@
   <character id="193" name="BondUnitHI8">
     <text lang="English" displayName="Kurumi" />
     <text lang="Japanese" displayName="ツツジ" />
+    <text lang="Spanish" displayName="Kurumi" />
+    <text lang="French" displayName="Kurumi" />
+    <text lang="German" displayName="Kurumi" />
+    <text lang="Italian" displayName="Kurumi" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3125,6 +3901,10 @@
   <character id="194" name="BondUnitHI9">
     <text lang="English" displayName="Naruto" />
     <text lang="Japanese" displayName="ツユクサ" />
+    <text lang="Spanish" displayName="Naruto" />
+    <text lang="French" displayName="Naruto" />
+    <text lang="German" displayName="Naruto" />
+    <text lang="Italian" displayName="Naruto" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3134,6 +3914,10 @@
   <character id="195" name="BondUnitHI10">
     <text lang="English" displayName="Ringo" />
     <text lang="Japanese" displayName="ナズナ" />
+    <text lang="Spanish" displayName="Ringo" />
+    <text lang="French" displayName="Ringo" />
+    <text lang="German" displayName="Ringo" />
+    <text lang="Italian" displayName="Ringo" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3143,6 +3927,10 @@
   <character id="196" name="BondUnitHI11">
     <text lang="English" displayName="Shoya" />
     <text lang="Japanese" displayName="ヒナゲシ" />
+    <text lang="Spanish" displayName="Shoya" />
+    <text lang="French" displayName="Shoya" />
+    <text lang="German" displayName="Shoya" />
+    <text lang="Italian" displayName="Shoya" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3152,6 +3940,10 @@
   <character id="197" name="BondUnitHI12">
     <text lang="English" displayName="Kiku" />
     <text lang="Japanese" displayName="ヒルガオ" />
+    <text lang="Spanish" displayName="Kiku" />
+    <text lang="French" displayName="Kiku" />
+    <text lang="German" displayName="Kiku" />
+    <text lang="Italian" displayName="Kiku" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3161,6 +3953,10 @@
   <character id="198" name="BondUnitHI13">
     <text lang="English" displayName="Katsuo" />
     <text lang="Japanese" displayName="ホオズキ" />
+    <text lang="Spanish" displayName="Katsuo" />
+    <text lang="French" displayName="Katsuo" />
+    <text lang="German" displayName="Katsuo" />
+    <text lang="Italian" displayName="Katsuo" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3170,6 +3966,10 @@
   <character id="199" name="BondUnitHI14">
     <text lang="English" displayName="Ayu" />
     <text lang="Japanese" displayName="モクレン" />
+    <text lang="Spanish" displayName="Ayu" />
+    <text lang="French" displayName="Ayu" />
+    <text lang="German" displayName="Ayu" />
+    <text lang="Italian" displayName="Ayu" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3179,6 +3979,10 @@
   <character id="200" name="BondUnitHI15">
     <text lang="English" displayName="Takeshi" />
     <text lang="Japanese" displayName="ヤマユリ" />
+    <text lang="Spanish" displayName="Takeshi" />
+    <text lang="French" displayName="Takeshi" />
+    <text lang="German" displayName="Takeshi" />
+    <text lang="Italian" displayName="Takeshi" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3188,6 +3992,10 @@
   <character id="201" name="BondUnitHI16">
     <text lang="English" displayName="Mizuna" />
     <text lang="Japanese" displayName="ユウガオ" />
+    <text lang="Spanish" displayName="Mizuna" />
+    <text lang="French" displayName="Mizuna" />
+    <text lang="German" displayName="Mizuna" />
+    <text lang="Italian" displayName="Mizuna" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3197,6 +4005,10 @@
   <character id="202" name="BondUnitHI17">
     <text lang="English" displayName="Koumei" />
     <text lang="Japanese" displayName="ユリ" />
+    <text lang="Spanish" displayName="Koumei" />
+    <text lang="French" displayName="Koumei" />
+    <text lang="German" displayName="Koumei" />
+    <text lang="Italian" displayName="Koumei" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3206,6 +4018,10 @@
   <character id="203" name="BondUnitHI18">
     <text lang="English" displayName="Shiori" />
     <text lang="Japanese" displayName="ヨルガオ" />
+    <text lang="Spanish" displayName="Shiori" />
+    <text lang="French" displayName="Shiori" />
+    <text lang="German" displayName="Shiori" />
+    <text lang="Italian" displayName="Shiori" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3215,6 +4031,10 @@
   <character id="204" name="BondUnitNI1">
     <text lang="English" displayName="Sorrel" />
     <text lang="Japanese" displayName="アネモネ" />
+    <text lang="Spanish" displayName="Romero" />
+    <text lang="French" displayName="Oseillan" />
+    <text lang="German" displayName="Rhabas" />
+    <text lang="Italian" displayName="Axecet" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3224,6 +4044,10 @@
   <character id="205" name="BondUnitNI2">
     <text lang="English" displayName="Rosemary" />
     <text lang="Japanese" displayName="アマリリス" />
+    <text lang="Spanish" displayName="Canela" />
+    <text lang="French" displayName="Romarine" />
+    <text lang="German" displayName="Rosmarie" />
+    <text lang="Italian" displayName="Rosym" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3233,6 +4057,10 @@
   <character id="206" name="BondUnitNI3">
     <text lang="English" displayName="Bay" />
     <text lang="Japanese" displayName="ガーベラ" />
+    <text lang="Spanish" displayName="Laureano" />
+    <text lang="French" displayName="Laurier" />
+    <text lang="German" displayName="Lorbert" />
+    <text lang="Italian" displayName="Allyor" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3242,6 +4070,10 @@
   <character id="207" name="BondUnitNI4">
     <text lang="English" displayName="Anise" />
     <text lang="Japanese" displayName="カモミール" />
+    <text lang="Spanish" displayName="Aniseta" />
+    <text lang="French" displayName="Anis" />
+    <text lang="German" displayName="Anisa" />
+    <text lang="Italian" displayName="Anis" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3251,6 +4083,10 @@
   <character id="208" name="BondUnitNI5">
     <text lang="English" displayName="Saffron" />
     <text lang="Japanese" displayName="サフラン" />
+    <text lang="Spanish" displayName="Azafrán" />
+    <text lang="French" displayName="Safron" />
+    <text lang="German" displayName="Saffron" />
+    <text lang="Italian" displayName="Saffron" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3260,6 +4096,10 @@
   <character id="209" name="BondUnitNI6">
     <text lang="English" displayName="Pepper" />
     <text lang="Japanese" displayName="シクラメン" />
+    <text lang="Spanish" displayName="Pimienta" />
+    <text lang="French" displayName="Paprika" />
+    <text lang="German" displayName="Pfeffina" />
+    <text lang="Italian" displayName="Paprya" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3269,6 +4109,10 @@
   <character id="210" name="BondUnitNI7">
     <text lang="English" displayName="Basil" />
     <text lang="Japanese" displayName="スイートピー" />
+    <text lang="Spanish" displayName="Cilantro" />
+    <text lang="French" displayName="Basile" />
+    <text lang="German" displayName="Basilikus" />
+    <text lang="Italian" displayName="Basil" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3278,6 +4122,10 @@
   <character id="211" name="BondUnitNI8">
     <text lang="English" displayName="Ginger" />
     <text lang="Japanese" displayName="ダリア" />
+    <text lang="Spanish" displayName="Jengibre" />
+    <text lang="French" displayName="Gingembre" />
+    <text lang="German" displayName="Ingwa" />
+    <text lang="Italian" displayName="Ginger" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3287,6 +4135,10 @@
   <character id="212" name="BondUnitNI9">
     <text lang="English" displayName="Clove" />
     <text lang="Japanese" displayName="バニラ" />
+    <text lang="Spanish" displayName="Silvestre" />
+    <text lang="French" displayName="Gyrofle" />
+    <text lang="German" displayName="Nelk" />
+    <text lang="Italian" displayName="Garfon" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3296,6 +4148,10 @@
   <character id="213" name="BondUnitNI10">
     <text lang="English" displayName="Mint" />
     <text lang="Japanese" displayName="フリージア" />
+    <text lang="Spanish" displayName="Menta" />
+    <text lang="French" displayName="Menthe" />
+    <text lang="German" displayName="Minzi" />
+    <text lang="Italian" displayName="Minty" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3305,6 +4161,10 @@
   <character id="214" name="BondUnitNI11">
     <text lang="English" displayName="Caraway" />
     <text lang="Japanese" displayName="ベロニカ" />
+    <text lang="Spanish" displayName="Comino" />
+    <text lang="French" displayName="Kumin" />
+    <text lang="German" displayName="Ajowan" />
+    <text lang="Italian" displayName="Cumin" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3314,6 +4174,10 @@
   <character id="215" name="BondUnitNI12">
     <text lang="English" displayName="Thyme" />
     <text lang="Japanese" displayName="ポプラ" />
+    <text lang="Spanish" displayName="Yerbaluna" />
+    <text lang="French" displayName="Thymelle" />
+    <text lang="German" displayName="Quendolin" />
+    <text lang="Italian" displayName="Timya" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3323,6 +4187,10 @@
   <character id="216" name="BondUnitNI13">
     <text lang="English" displayName="Sage" />
     <text lang="Japanese" displayName="マーガレット" />
+    <text lang="Spanish" displayName="Salvio" />
+    <text lang="French" displayName="Soge" />
+    <text lang="German" displayName="Salbian" />
+    <text lang="Italian" displayName="Salveon" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3332,6 +4200,10 @@
   <character id="217" name="BondUnitNI14">
     <text lang="English" displayName="Cassia" />
     <text lang="Japanese" displayName="メタセコイヤ" />
+    <text lang="Spanish" displayName="Cúrcuma" />
+    <text lang="French" displayName="Cassia" />
+    <text lang="German" displayName="Kassie" />
+    <text lang="Italian" displayName="Cassia" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3341,6 +4213,10 @@
   <character id="218" name="BondUnitNI15">
     <text lang="English" displayName="Dillan" />
     <text lang="Japanese" displayName="ライラック" />
+    <text lang="Spanish" displayName="Eneldo" />
+    <text lang="French" displayName="Anethin" />
+    <text lang="German" displayName="Dill" />
+    <text lang="Italian" displayName="Aneth" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3350,6 +4226,10 @@
   <character id="219" name="BondUnitNI16">
     <text lang="English" displayName="Lavender" />
     <text lang="Japanese" displayName="ラベンダー" />
+    <text lang="Spanish" displayName="Lavanda" />
+    <text lang="French" displayName="Lavande" />
+    <text lang="German" displayName="Lavander" />
+    <text lang="Italian" displayName="Lavandea" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3359,6 +4239,10 @@
   <character id="220" name="BondUnitNI17">
     <text lang="English" displayName="Fenn" />
     <text lang="Japanese" displayName="ライチ" />
+    <text lang="Spanish" displayName="Hinojo" />
+    <text lang="French" displayName="Stragon" />
+    <text lang="German" displayName="Farne" />
+    <text lang="Italian" displayName="Fenn" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3368,6 +4252,10 @@
   <character id="221" name="BondUnitNI18">
     <text lang="English" displayName="Perilla" />
     <text lang="Japanese" displayName="リアトリス" />
+    <text lang="Spanish" displayName="Perilla" />
+    <text lang="French" displayName="Perilla" />
+    <text lang="German" displayName="Perilla" />
+    <text lang="Italian" displayName="Perilla" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3377,6 +4265,10 @@
   <character id="222" name="BondUnitII1">
     <text lang="English" displayName="Dimitri" />
     <text lang="Japanese" displayName="アングル" />
+    <text lang="Spanish" displayName="Dimitri" />
+    <text lang="French" displayName="Dimitri" />
+    <text lang="German" displayName="Dimitri" />
+    <text lang="Italian" displayName="Dimitri" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3386,6 +4278,10 @@
   <character id="223" name="BondUnitII2">
     <text lang="English" displayName="Alexa" />
     <text lang="Japanese" displayName="イコール" />
+    <text lang="Spanish" displayName="Alexa" />
+    <text lang="French" displayName="Alexa" />
+    <text lang="German" displayName="Alexa" />
+    <text lang="Italian" displayName="Alexa" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3395,6 +4291,10 @@
   <character id="224" name="BondUnitII3">
     <text lang="English" displayName="Galen" />
     <text lang="Japanese" displayName="エリア" />
+    <text lang="Spanish" displayName="Galen" />
+    <text lang="French" displayName="Galen" />
+    <text lang="German" displayName="Galen" />
+    <text lang="Italian" displayName="Galen" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3404,6 +4304,10 @@
   <character id="225" name="BondUnitII4">
     <text lang="English" displayName="Althaea" />
     <text lang="Japanese" displayName="カーブ" />
+    <text lang="Spanish" displayName="Althaea" />
+    <text lang="French" displayName="Althaea" />
+    <text lang="German" displayName="Althaea" />
+    <text lang="Italian" displayName="Althea" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3413,6 +4317,10 @@
   <character id="226" name="BondUnitII5">
     <text lang="English" displayName="Damien" />
     <text lang="Japanese" displayName="グラフ" />
+    <text lang="Spanish" displayName="Damien" />
+    <text lang="French" displayName="Damien" />
+    <text lang="German" displayName="Damien" />
+    <text lang="Italian" displayName="Damien" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3422,6 +4330,10 @@
   <character id="227" name="BondUnitII6">
     <text lang="English" displayName="Jacynth" />
     <text lang="Japanese" displayName="シンメトリ" />
+    <text lang="Spanish" displayName="Jacynth" />
+    <text lang="French" displayName="Jacynth" />
+    <text lang="German" displayName="Jacynth" />
+    <text lang="Italian" displayName="Jacynth" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3431,6 +4343,10 @@
   <character id="228" name="BondUnitII7">
     <text lang="English" displayName="Orion" />
     <text lang="Japanese" displayName="スフィア" />
+    <text lang="Spanish" displayName="Orión" />
+    <text lang="French" displayName="Orion" />
+    <text lang="German" displayName="Orion" />
+    <text lang="Italian" displayName="Orion" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3440,6 +4356,10 @@
   <character id="229" name="BondUnitII8">
     <text lang="English" displayName="Sophia" />
     <text lang="Japanese" displayName="スクエア" />
+    <text lang="Spanish" displayName="Sophia" />
+    <text lang="French" displayName="Sophia" />
+    <text lang="German" displayName="Sophia" />
+    <text lang="Italian" displayName="Sophia" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3449,6 +4369,10 @@
   <character id="230" name="BondUnitII9">
     <text lang="English" displayName="George" />
     <text lang="Japanese" displayName="セグメント" />
+    <text lang="Spanish" displayName="George" />
+    <text lang="French" displayName="George" />
+    <text lang="German" displayName="George" />
+    <text lang="Italian" displayName="George" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3458,6 +4382,10 @@
   <character id="231" name="BondUnitII10">
     <text lang="English" displayName="Eva" />
     <text lang="Japanese" displayName="パラレル" />
+    <text lang="Spanish" displayName="Eva" />
+    <text lang="French" displayName="Eva" />
+    <text lang="German" displayName="Eva" />
+    <text lang="Italian" displayName="Eva" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3467,6 +4395,10 @@
   <character id="232" name="BondUnitII11">
     <text lang="English" displayName="Theo" />
     <text lang="Japanese" displayName="フラクション" />
+    <text lang="Spanish" displayName="Theo" />
+    <text lang="French" displayName="Theo" />
+    <text lang="German" displayName="Theo" />
+    <text lang="Italian" displayName="Theo" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3476,6 +4408,10 @@
   <character id="233" name="BondUnitII12">
     <text lang="English" displayName="Helene" />
     <text lang="Japanese" displayName="プラス" />
+    <text lang="Spanish" displayName="Helene" />
+    <text lang="French" displayName="Helene" />
+    <text lang="German" displayName="Helene" />
+    <text lang="Italian" displayName="Helene" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3485,6 +4421,10 @@
   <character id="234" name="BondUnitII13">
     <text lang="English" displayName="Spiro" />
     <text lang="Japanese" displayName="プレーン" />
+    <text lang="Spanish" displayName="Spiro" />
+    <text lang="French" displayName="Spiro" />
+    <text lang="German" displayName="Spiro" />
+    <text lang="Italian" displayName="Spiro" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3494,6 +4434,10 @@
   <character id="235" name="BondUnitII14">
     <text lang="English" displayName="Odele" />
     <text lang="Japanese" displayName="ベクトル" />
+    <text lang="Spanish" displayName="Odele" />
+    <text lang="French" displayName="Odele" />
+    <text lang="German" displayName="Odele" />
+    <text lang="Italian" displayName="Odele" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3503,6 +4447,10 @@
   <character id="236" name="BondUnitII15">
     <text lang="English" displayName="Peter" />
     <text lang="Japanese" displayName="マイナス" />
+    <text lang="Spanish" displayName="Peter" />
+    <text lang="French" displayName="Peter" />
+    <text lang="German" displayName="Peter" />
+    <text lang="Italian" displayName="Peter" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3512,6 +4460,10 @@
   <character id="237" name="BondUnitII16">
     <text lang="English" displayName="Rhoda" />
     <text lang="Japanese" displayName="ライン" />
+    <text lang="Spanish" displayName="Rhoda" />
+    <text lang="French" displayName="Rhoda" />
+    <text lang="German" displayName="Rhoda" />
+    <text lang="Italian" displayName="Rhoda" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3521,6 +4473,10 @@
   <character id="238" name="BondUnitII17">
     <text lang="English" displayName="Lukas" />
     <text lang="Japanese" displayName="レディアス" />
+    <text lang="Spanish" displayName="Lukas" />
+    <text lang="French" displayName="Lukas" />
+    <text lang="German" displayName="Lukas" />
+    <text lang="Italian" displayName="Lukas" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3530,6 +4486,10 @@
   <character id="239" name="BondUnitII18">
     <text lang="English" displayName="Charis" />
     <text lang="Japanese" displayName="ラジアン" />
+    <text lang="Spanish" displayName="Charis" />
+    <text lang="French" displayName="Charis" />
+    <text lang="German" displayName="Charis" />
+    <text lang="Italian" displayName="Charis" />
     <baseStats hp="2" str="0" mag="1" skl="3" spd="1" lck="3" def="1" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3539,6 +4499,10 @@
   <character id="240" name="MonsterUnpromoted0">
     <text lang="English" displayName="Monster" />
     <text lang="Japanese" displayName="魔物" />
+    <text lang="Spanish" displayName="Monstruo" />
+    <text lang="French" displayName="Monstre" />
+    <text lang="German" displayName="Monster" />
+    <text lang="Italian" displayName="Mostro" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="-1" res="-1" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3548,6 +4512,10 @@
   <character id="241" name="MonsterUnpromoted1">
     <text lang="English" displayName="Monster" />
     <text lang="Japanese" displayName="魔物" />
+    <text lang="Spanish" displayName="Monstruo" />
+    <text lang="French" displayName="Monstre" />
+    <text lang="German" displayName="Monster" />
+    <text lang="Italian" displayName="Mostro" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="-1" res="-1" />
     <modifier hp="0" str="5" mag="5" skl="5" spd="5" lck="5" def="5" res="5" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3557,6 +4525,10 @@
   <character id="242" name="MonsterPromoted0">
     <text lang="English" displayName="Monster" />
     <text lang="Japanese" displayName="魔物" />
+    <text lang="Spanish" displayName="Monstruo" />
+    <text lang="French" displayName="Monstre" />
+    <text lang="German" displayName="Monster" />
+    <text lang="Italian" displayName="Mostro" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="5" mag="5" skl="5" spd="5" lck="5" def="5" res="5" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3566,6 +4538,10 @@
   <character id="243" name="MonsterPromoted1">
     <text lang="English" displayName="Monster" />
     <text lang="Japanese" displayName="魔物" />
+    <text lang="Spanish" displayName="Monstruo" />
+    <text lang="French" displayName="Monstre" />
+    <text lang="German" displayName="Monster" />
+    <text lang="Italian" displayName="Mostro" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="10" mag="10" skl="10" spd="10" lck="10" def="10" res="10" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3575,6 +4551,10 @@
   <character id="244" name="ArenaChallenger">
     <text lang="English" displayName="Opponent" />
     <text lang="Japanese" displayName="闘技者" />
+    <text lang="Spanish" displayName="Adversario" />
+    <text lang="French" displayName="Adversaire" />
+    <text lang="German" displayName="Gegner" />
+    <text lang="Italian" displayName="Avversario" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="99" mag="99" skl="99" spd="99" lck="99" def="99" res="99" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3584,6 +4564,10 @@
   <character id="245" name="CastleLilith">
     <text lang="English" displayName="Lilith" />
     <text lang="Japanese" displayName="リリス" />
+    <text lang="Spanish" displayName="Lilith" />
+    <text lang="French" displayName="Lilith" />
+    <text lang="German" displayName="Lilith" />
+    <text lang="Italian" displayName="Lilith" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3593,6 +4577,10 @@
   <character id="246" name="CastleHoshido_M">
     <text lang="English" displayName="Shopkeep" />
     <text lang="Japanese" displayName="店番" />
+    <text lang="Spanish" displayName="Encargado" />
+    <text lang="French" displayName="Vendeur" />
+    <text lang="German" displayName="Soldat" />
+    <text lang="Italian" displayName="Addetto" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3602,6 +4590,10 @@
   <character id="247" name="CastleHoshido_F">
     <text lang="English" displayName="Shopkeep" />
     <text lang="Japanese" displayName="店番" />
+    <text lang="Spanish" displayName="Encargado" />
+    <text lang="French" displayName="Vendeur" />
+    <text lang="German" displayName="Soldat" />
+    <text lang="Italian" displayName="Addetto" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3611,6 +4603,10 @@
   <character id="248" name="CastleNohr_M">
     <text lang="English" displayName="Shopkeep" />
     <text lang="Japanese" displayName="店番" />
+    <text lang="Spanish" displayName="Encargado" />
+    <text lang="French" displayName="Vendeur" />
+    <text lang="German" displayName="Soldat" />
+    <text lang="Italian" displayName="Addetto" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3620,6 +4616,10 @@
   <character id="249" name="CastleNohr_F">
     <text lang="English" displayName="Shopkeep" />
     <text lang="Japanese" displayName="店番" />
+    <text lang="Spanish" displayName="Encargado" />
+    <text lang="French" displayName="Vendeur" />
+    <text lang="German" displayName="Soldat" />
+    <text lang="Italian" displayName="Addetto" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3629,6 +4629,10 @@
   <character id="250" name="Marth">
     <text lang="English" displayName="Marth" />
     <text lang="Japanese" displayName="マルス" />
+    <text lang="Spanish" displayName="Marth" />
+    <text lang="French" displayName="Marth" />
+    <text lang="German" displayName="Marth" />
+    <text lang="Italian" displayName="Marth" />
     <baseStats hp="10" str="8" mag="2" skl="13" spd="13" lck="17" def="8" res="8" />
     <modifier hp="0" str="-1" mag="0" skl="1" spd="1" lck="1" def="0" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3638,6 +4642,10 @@
   <character id="251" name="Ike">
     <text lang="English" displayName="Ike" />
     <text lang="Japanese" displayName="アイク" />
+    <text lang="Spanish" displayName="Ike" />
+    <text lang="French" displayName="Ike" />
+    <text lang="German" displayName="Ike" />
+    <text lang="Italian" displayName="Ike" />
     <baseStats hp="11" str="10" mag="0" skl="9" spd="7" lck="13" def="9" res="7" />
     <modifier hp="0" str="2" mag="0" skl="0" spd="-1" lck="0" def="1" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3647,6 +4655,10 @@
   <character id="252" name="Lucina">
     <text lang="English" displayName="Lucina" />
     <text lang="Japanese" displayName="ルキナ" />
+    <text lang="Spanish" displayName="Lucina" />
+    <text lang="French" displayName="Lucina" />
+    <text lang="German" displayName="Lucina" />
+    <text lang="Italian" displayName="Lucina" />
     <baseStats hp="10" str="9" mag="2" skl="11" spd="12" lck="15" def="7" res="10" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="2" lck="0" def="-1" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="true" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3656,6 +4668,10 @@
   <character id="253" name="Robin">
     <text lang="English" displayName="Robin" />
     <text lang="Japanese" displayName="ルフレ" />
+    <text lang="Spanish" displayName="Daraen" />
+    <text lang="French" displayName="Daraen" />
+    <text lang="German" displayName="Daraen" />
+    <text lang="Italian" displayName="Daraen" />
     <baseStats hp="7" str="7" mag="11" skl="12" spd="6" lck="8" def="7" res="9" />
     <modifier hp="0" str="0" mag="2" skl="0" spd="0" lck="-1" def="-1" res="1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3665,6 +4681,10 @@
   <character id="254" name="Outrealm">
     <text lang="English" displayName="Outrealmer" />
     <text lang="Japanese" displayName="異界の人物" />
+    <text lang="Spanish" displayName="U. alóctona" />
+    <text lang="French" displayName="Explorateur" />
+    <text lang="German" displayName="Reisender" />
+    <text lang="Italian" displayName="Altronauta" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3674,6 +4694,10 @@
   <character id="512" name="CipherMarth">
     <text lang="English" displayName="Cipher Marth" />
     <text lang="Japanese" displayName="サイファマルス" />
+    <text lang="Spanish" displayName="Cipher Marth" />
+    <text lang="French" displayName="Cipher Marth" />
+    <text lang="German" displayName="Cipher Marth" />
+    <text lang="Italian" displayName="Cipher Marth" />
     <baseStats hp="6" str="6" mag="2" skl="9" spd="9" lck="13" def="5" res="7" />
     <modifier hp="0" str="-1" mag="0" skl="1" spd="1" lck="1" def="0" res="-1" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3683,6 +4707,10 @@
   <character id="768" name="CipherLucina">
     <text lang="English" displayName="Cipher Lucina" />
     <text lang="Japanese" displayName="サイファルキナ" />
+    <text lang="Spanish" displayName="Cipher Lucina" />
+    <text lang="French" displayName="Cipher Lucina" />
+    <text lang="German" displayName="Cipher Lucina" />
+    <text lang="Italian" displayName="Cipher Lucina" />
     <baseStats hp="6" str="6" mag="2" skl="8" spd="9" lck="12" def="4" res="8" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="2" lck="0" def="-1" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3693,6 +4721,10 @@
   <character id="1024" name="CipherMinerva">
     <text lang="English" displayName="Cipher Minerva" />
     <text lang="Japanese" displayName="サイファミネルバ" />
+    <text lang="Spanish" displayName="Cipher Minerva" />
+    <text lang="French" displayName="Cipher Minerva" />
+    <text lang="German" displayName="Cipher Minerva" />
+    <text lang="Italian" displayName="Cipher Minerva" />
     <baseStats hp="4" str="7" mag="0" skl="2" spd="7" lck="2" def="11" res="3" />
     <modifier hp="0" str="1" mag="0" skl="0" spd="1" lck="-2" def="3" res="-3" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />
@@ -3704,6 +4736,10 @@
   <character id="0" name="InternalName">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
     <baseStats hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <modifier hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <flags canUseStones="false" isCorrin="false" isChild="false" isPrisoner="false" isFemale="false" isManakete="false" isBeast="false" canUseDragonVein="false" />

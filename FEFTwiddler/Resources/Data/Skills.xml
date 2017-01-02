@@ -2,1384 +2,2305 @@
 <root>
   <skill id="0" name="None" personal="false" unlearnable="false">
     <text lang="English" displayName="(None)" />
-    <text lang="Japanese" displayName="無し" />
+    <text lang="Japanese" displayName="（無し）" />
+    <text lang="Spanish" displayName="(Nada)" />
+    <text lang="French" displayName="(Rien)" />
+    <text lang="German" displayName="(Keine Fähigkeit)" />
+    <text lang="Italian" displayName="(Nessuna abilità)" />
     <learnedSkillInfo byteOffset="0" bitMask="1" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="1" name="HPPlus5" personal="false" unlearnable="false">
     <text lang="English" displayName="HP +5" />
     <text lang="Japanese" displayName="【最大ＨＰ+5】" />
+    <text lang="Spanish" displayName="PV + 5" />
+    <text lang="French" displayName="PV +5" />
+    <text lang="German" displayName="KP +5" />
+    <text lang="Italian" displayName="PS +5" />
     <learnedSkillInfo byteOffset="0" bitMask="2" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="2" name="StrengthPlus2" personal="false" unlearnable="false">
     <text lang="English" displayName="Strength +2" />
     <text lang="Japanese" displayName="【力+2】" />
+    <text lang="Spanish" displayName="Fuerza + 2" />
+    <text lang="French" displayName="Force +2" />
+    <text lang="German" displayName="Stärke +2" />
+    <text lang="Italian" displayName="Forza +2" />
     <learnedSkillInfo byteOffset="0" bitMask="4" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="3" name="MagicPlus2" personal="false" unlearnable="false">
     <text lang="English" displayName="Magic +2" />
     <text lang="Japanese" displayName="【魔力+2】" />
+    <text lang="Spanish" displayName="Magia + 2" />
+    <text lang="French" displayName="Magie +2" />
+    <text lang="German" displayName="Magie +2" />
+    <text lang="Italian" displayName="Magia +2" />
     <learnedSkillInfo byteOffset="0" bitMask="8" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="4" name="SkillPlus2" personal="false" unlearnable="false">
     <text lang="English" displayName="Skill +2" />
     <text lang="Japanese" displayName="【技+2】" />
+    <text lang="Spanish" displayName="Habilidad + 2" />
+    <text lang="French" displayName="Technique +2" />
+    <text lang="German" displayName="Fähigkeit +2" />
+    <text lang="Italian" displayName="Abilità +2" />
     <learnedSkillInfo byteOffset="0" bitMask="16" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="5" name="SpeedPlus2" personal="false" unlearnable="false">
     <text lang="English" displayName="Speed +2" />
     <text lang="Japanese" displayName="【速さ+2】" />
+    <text lang="Spanish" displayName="Velocidad + 2" />
+    <text lang="French" displayName="Vitesse +2" />
+    <text lang="German" displayName="Geschwindig. +2" />
+    <text lang="Italian" displayName="Velocità +2" />
     <learnedSkillInfo byteOffset="0" bitMask="32" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="true" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="6" name="LuckPlus4" personal="false" unlearnable="false">
     <text lang="English" displayName="Luck +4" />
     <text lang="Japanese" displayName="【幸運+4】" />
+    <text lang="Spanish" displayName="Suerte + 4" />
+    <text lang="French" displayName="Chance +4" />
+    <text lang="German" displayName="Glück +4" />
+    <text lang="Italian" displayName="Fortuna +4" />
     <learnedSkillInfo byteOffset="0" bitMask="64" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="true" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="7" name="DefensePlus2" personal="false" unlearnable="false">
     <text lang="English" displayName="Defense +2" />
     <text lang="Japanese" displayName="【守備+2】" />
+    <text lang="Spanish" displayName="Defensa + 2" />
+    <text lang="French" displayName="Défense +2" />
+    <text lang="German" displayName="Verteidigung +2" />
+    <text lang="Italian" displayName="Difesa +2" />
     <learnedSkillInfo byteOffset="0" bitMask="128" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="8" name="ResistancePlus2" personal="false" unlearnable="false">
     <text lang="English" displayName="Resistance +2" />
     <text lang="Japanese" displayName="【魔防+2】" />
+    <text lang="Spanish" displayName="Resistencia + 2" />
+    <text lang="French" displayName="Résistance +2" />
+    <text lang="German" displayName="Resistenz +2" />
+    <text lang="Italian" displayName="Resistenza +2" />
     <learnedSkillInfo byteOffset="1" bitMask="1" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="9" name="MovementPlus1" personal="false" unlearnable="false">
     <text lang="English" displayName="Movement +1" />
     <text lang="Japanese" displayName="【移動+1】" />
+    <text lang="Spanish" displayName="Movimiento + 1" />
+    <text lang="French" displayName="Mouvement +1" />
+    <text lang="German" displayName="Bewegung +1" />
+    <text lang="Italian" displayName="Movimento +1" />
     <learnedSkillInfo byteOffset="1" bitMask="2" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="10" name="DraconicHex" personal="false" unlearnable="false">
     <text lang="English" displayName="Draconic Hex" />
     <text lang="Japanese" displayName="【竜呪】" />
+    <text lang="Spanish" displayName="Dracomaleficio" />
+    <text lang="French" displayName="Aura dragunaire" />
+    <text lang="German" displayName="Drachenfluch" />
+    <text lang="Italian" displayName="Dracosortilegio" />
     <learnedSkillInfo byteOffset="1" bitMask="4" />
     <categories normalClass="false" corrinOnly="true" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="11" name="SealStrength" personal="false" unlearnable="false">
     <text lang="English" displayName="Seal Strength" />
     <text lang="Japanese" displayName="【力封じ】" />
+    <text lang="Spanish" displayName="Sellar fuerza" />
+    <text lang="French" displayName="Sceau force" />
+    <text lang="German" displayName="Stärke rauben" />
+    <text lang="Italian" displayName="Sigillaforza" />
     <learnedSkillInfo byteOffset="1" bitMask="8" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="12" name="SealMagic" personal="false" unlearnable="false">
     <text lang="English" displayName="Seal Magic" />
     <text lang="Japanese" displayName="【魔力封じ】" />
+    <text lang="Spanish" displayName="Sellar magia" />
+    <text lang="French" displayName="Sceau magie" />
+    <text lang="German" displayName="Magie rauben" />
+    <text lang="Italian" displayName="Sigillamagia" />
     <learnedSkillInfo byteOffset="1" bitMask="16" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="13" name="SealSpeed" personal="false" unlearnable="false">
     <text lang="English" displayName="Seal Speed" />
     <text lang="Japanese" displayName="【速さ封じ】" />
+    <text lang="Spanish" displayName="Sellar velocidad" />
+    <text lang="French" displayName="Sceau vitesse" />
+    <text lang="German" displayName="Geschw. rauben" />
+    <text lang="Italian" displayName="Sigillavelocità" />
     <learnedSkillInfo byteOffset="1" bitMask="32" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="14" name="SealDefense" personal="false" unlearnable="false">
     <text lang="English" displayName="Seal Defense" />
     <text lang="Japanese" displayName="【守備封じ】" />
+    <text lang="Spanish" displayName="Sellar defensa" />
+    <text lang="French" displayName="Sceau défense" />
+    <text lang="German" displayName="Verteidig. rauben" />
+    <text lang="Italian" displayName="Sigilladifesa" />
     <learnedSkillInfo byteOffset="1" bitMask="64" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="15" name="SealResistance" personal="false" unlearnable="false">
     <text lang="English" displayName="Seal Resistance" />
     <text lang="Japanese" displayName="【魔防封じ】" />
+    <text lang="Spanish" displayName="Sellar resistencia" />
+    <text lang="French" displayName="Sceau résistance" />
+    <text lang="German" displayName="Resistenz rauben" />
+    <text lang="Italian" displayName="Sigillaresistenza" />
     <learnedSkillInfo byteOffset="1" bitMask="128" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="16" name="RallyStrength" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Strength" />
     <text lang="Japanese" displayName="【力の叫び】" />
+    <text lang="Spanish" displayName="Potenciar: Fue" />
+    <text lang="French" displayName="Ralliement  : Frc" />
+    <text lang="German" displayName="Stärke sammeln" />
+    <text lang="Italian" displayName="Sprone forza" />
     <learnedSkillInfo byteOffset="2" bitMask="1" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="17" name="RallyMagic" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Magic" />
     <text lang="Japanese" displayName="【魔力の叫び】" />
+    <text lang="Spanish" displayName="Potenciar: Mag" />
+    <text lang="French" displayName="Ralliement  : Mag" />
+    <text lang="German" displayName="Magie sammeln" />
+    <text lang="Italian" displayName="Sprone magia" />
     <learnedSkillInfo byteOffset="2" bitMask="2" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="18" name="RallySkill" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Skill" />
     <text lang="Japanese" displayName="【技の叫び】" />
+    <text lang="Spanish" displayName="Potenciar: Hab" />
+    <text lang="French" displayName="Ralliement  : Tec" />
+    <text lang="German" displayName="Fähigk. sammeln" />
+    <text lang="Italian" displayName="Sprone abilità" />
     <learnedSkillInfo byteOffset="2" bitMask="4" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="19" name="RallySpeed" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Speed" />
     <text lang="Japanese" displayName="【速さの叫び】" />
+    <text lang="Spanish" displayName="Potenciar: Vel" />
+    <text lang="French" displayName="Ralliement  : Vit" />
+    <text lang="German" displayName="Ges. sammeln" />
+    <text lang="Italian" displayName="Sprone velocità" />
     <learnedSkillInfo byteOffset="2" bitMask="8" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="20" name="RallyLuck" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Luck" />
     <text lang="Japanese" displayName="【幸運の叫び】" />
+    <text lang="Spanish" displayName="Potenciar: Sue" />
+    <text lang="French" displayName="Ralliement  : Cha" />
+    <text lang="German" displayName="Glück sammeln" />
+    <text lang="Italian" displayName="Sprone fortuna" />
     <learnedSkillInfo byteOffset="2" bitMask="16" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="21" name="RallyDefense" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Defense" />
     <text lang="Japanese" displayName="【守備の叫び】" />
+    <text lang="Spanish" displayName="Potenciar: Def" />
+    <text lang="French" displayName="Ralliement  : Déf" />
+    <text lang="German" displayName="Verteid. sammeln" />
+    <text lang="Italian" displayName="Sprone difesa" />
     <learnedSkillInfo byteOffset="2" bitMask="32" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="22" name="RallyResistance" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Resistance" />
     <text lang="Japanese" displayName="【魔防の叫び】" />
+    <text lang="Spanish" displayName="Potenciar: Res" />
+    <text lang="French" displayName="Ralliement  : Rés" />
+    <text lang="German" displayName="Resist. sammeln" />
+    <text lang="Italian" displayName="Sprone res." />
     <learnedSkillInfo byteOffset="2" bitMask="64" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="23" name="RallyMovement" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Movement" />
     <text lang="Japanese" displayName="【移動の叫び】" />
+    <text lang="Spanish" displayName="Potenciar: Mov" />
+    <text lang="French" displayName="Ralliement  : Mvt" />
+    <text lang="German" displayName="Beweg. sammeln" />
+    <text lang="Italian" displayName="Sprone movim." />
     <learnedSkillInfo byteOffset="2" bitMask="128" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="true" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="24" name="InspiringSong" personal="false" unlearnable="false">
     <text lang="English" displayName="Inspiring Song" />
     <text lang="Japanese" displayName="【特別な歌】" />
+    <text lang="Spanish" displayName="Canto inspirador" />
+    <text lang="French" displayName="Chant exaltant" />
+    <text lang="German" displayName="Lied d. Eingabe" />
+    <text lang="Italian" displayName="Canto di carica" />
     <learnedSkillInfo byteOffset="3" bitMask="1" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="true" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="25" name="Lethality" personal="false" unlearnable="false">
     <text lang="English" displayName="Lethality" />
     <text lang="Japanese" displayName="【滅殺】" />
+    <text lang="Spanish" displayName="Letalidad" />
+    <text lang="French" displayName="Meurtrier" />
+    <text lang="German" displayName="Exitus" />
+    <text lang="Italian" displayName="Flagello" />
     <learnedSkillInfo byteOffset="3" bitMask="2" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="26" name="Aether" personal="false" unlearnable="false">
     <text lang="English" displayName="Aether" />
     <text lang="Japanese" displayName="【天空】" />
+    <text lang="Spanish" displayName="Éter" />
+    <text lang="French" displayName="Éther" />
+    <text lang="German" displayName="Aithir" />
+    <text lang="Italian" displayName="Etere" />
     <learnedSkillInfo byteOffset="3" bitMask="4" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="true" enemyAndNpc="false" />
   </skill>
   <skill id="27" name="Astra" personal="false" unlearnable="false">
     <text lang="English" displayName="Astra" />
     <text lang="Japanese" displayName="【流星】" />
+    <text lang="Spanish" displayName="Fobos" />
+    <text lang="French" displayName="Stellaire" />
+    <text lang="German" displayName="Astra" />
+    <text lang="Italian" displayName="Astra" />
     <learnedSkillInfo byteOffset="3" bitMask="8" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="28" name="DragonFang" personal="false" unlearnable="false">
     <text lang="English" displayName="Dragon Fang" />
     <text lang="Japanese" displayName="【竜穿】" />
+    <text lang="Spanish" displayName="Colmillo dragón" />
+    <text lang="French" displayName="Crocs de dragon" />
+    <text lang="German" displayName="Drachenbiss" />
+    <text lang="Italian" displayName="Zanna di drago" />
     <learnedSkillInfo byteOffset="3" bitMask="16" />
     <categories normalClass="false" corrinOnly="true" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="29" name="Sol" personal="false" unlearnable="false">
     <text lang="English" displayName="Sol" />
     <text lang="Japanese" displayName="【太陽】" />
+    <text lang="Spanish" displayName="Helios" />
+    <text lang="French" displayName="Solaire" />
+    <text lang="German" displayName="Sonne" />
+    <text lang="Italian" displayName="Sole" />
     <learnedSkillInfo byteOffset="3" bitMask="32" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="30" name="Luna" personal="false" unlearnable="false">
     <text lang="English" displayName="Luna" />
     <text lang="Japanese" displayName="【月光】" />
+    <text lang="Spanish" displayName="Selene" />
+    <text lang="French" displayName="Lunaire" />
+    <text lang="German" displayName="Mond" />
+    <text lang="Italian" displayName="Luna" />
     <learnedSkillInfo byteOffset="3" bitMask="64" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="31" name="RendHeaven" personal="false" unlearnable="false">
     <text lang="English" displayName="Rend Heaven" />
     <text lang="Japanese" displayName="【破天】" />
+    <text lang="Spanish" displayName="Desgarrar cielo" />
+    <text lang="French" displayName="Déchire-ciel" />
+    <text lang="German" displayName="Himmelsspalter" />
+    <text lang="Italian" displayName="Laceracielo" />
     <learnedSkillInfo byteOffset="3" bitMask="128" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="32" name="Vengeance" personal="false" unlearnable="false">
     <text lang="English" displayName="Vengeance" />
     <text lang="Japanese" displayName="【復讐】" />
+    <text lang="Spanish" displayName="Venganza" />
+    <text lang="French" displayName="Vengeance" />
+    <text lang="German" displayName="Vergeltung" />
+    <text lang="Italian" displayName="Taglione" />
     <learnedSkillInfo byteOffset="4" bitMask="1" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="33" name="Pavise" personal="false" unlearnable="false">
     <text lang="English" displayName="Pavise" />
     <text lang="Japanese" displayName="【大盾】" />
+    <text lang="Spanish" displayName="Pavés" />
+    <text lang="French" displayName="Protection" />
+    <text lang="German" displayName="Pavise" />
+    <text lang="Italian" displayName="Ultradifesa" />
     <learnedSkillInfo byteOffset="4" bitMask="2" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="34" name="Aegis" personal="false" unlearnable="false">
     <text lang="English" displayName="Aegis" />
     <text lang="Japanese" displayName="【聖盾】" />
+    <text lang="Spanish" displayName="Égida" />
+    <text lang="French" displayName="Égide" />
+    <text lang="German" displayName="Aegis" />
+    <text lang="Italian" displayName="Egida" />
     <learnedSkillInfo byteOffset="4" bitMask="4" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="35" name="DragonWard" personal="false" unlearnable="false">
     <text lang="English" displayName="Dragon Ward" />
     <text lang="Japanese" displayName="【竜盾】" />
+    <text lang="Spanish" displayName="Escudo dragón" />
+    <text lang="French" displayName="Dragon gardien" />
+    <text lang="German" displayName="Drachenrune" />
+    <text lang="Italian" displayName="Scudo draconico" />
     <learnedSkillInfo byteOffset="4" bitMask="8" />
     <categories normalClass="false" corrinOnly="true" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="36" name="Miracle" personal="false" unlearnable="false">
     <text lang="English" displayName="Miracle" />
     <text lang="Japanese" displayName="【祈り】" />
+    <text lang="Spanish" displayName="Milagro" />
+    <text lang="French" displayName="Miracle" />
+    <text lang="German" displayName="Arkanum" />
+    <text lang="Italian" displayName="Miracolo" />
     <learnedSkillInfo byteOffset="4" bitMask="16" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="37" name="Counter" personal="false" unlearnable="false">
     <text lang="English" displayName="Counter" />
     <text lang="Japanese" displayName="【カウンター】" />
+    <text lang="Spanish" displayName="Contrataque" />
+    <text lang="French" displayName="Contre" />
+    <text lang="German" displayName="Talion" />
+    <text lang="Italian" displayName="Contrattacco" />
     <learnedSkillInfo byteOffset="4" bitMask="32" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="38" name="MagicCounter" personal="false" unlearnable="false">
     <text lang="English" displayName="Countermagic" />
     <text lang="Japanese" displayName="【魔法カウンター】" />
+    <text lang="Spanish" displayName="Reflejar magia" />
+    <text lang="French" displayName="Contre magique" />
+    <text lang="German" displayName="Magiespiegel" />
+    <text lang="Italian" displayName="Contromagia" />
     <learnedSkillInfo byteOffset="4" bitMask="64" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="39" name="Vantage" personal="false" unlearnable="false">
     <text lang="English" displayName="Vantage" />
     <text lang="Japanese" displayName="【待ち伏せ】" />
+    <text lang="Spanish" displayName="Emboscada" />
+    <text lang="French" displayName="Initiative" />
+    <text lang="German" displayName="Vorteil" />
+    <text lang="Italian" displayName="Vantaggio" />
     <learnedSkillInfo byteOffset="4" bitMask="128" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="40" name="Beastbane" personal="false" unlearnable="false">
     <text lang="English" displayName="Beastbane" />
     <text lang="Japanese" displayName="【獣特効】" />
+    <text lang="Spanish" displayName="Cazabestias" />
+    <text lang="French" displayName="Fléau des bêtes" />
+    <text lang="German" displayName="Bestientod" />
+    <text lang="Italian" displayName="Affliggibestia" />
     <learnedSkillInfo byteOffset="5" bitMask="1" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="true" wolfskinOnly="true" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="41" name="Golembane" personal="false" unlearnable="false">
     <text lang="English" displayName="Golembane" />
     <text lang="Japanese" displayName="【人形崩し】" />
+    <text lang="Spanish" displayName="Cazagólems" />
+    <text lang="French" displayName="Fléau des pantins" />
+    <text lang="German" displayName="Golemtod" />
+    <text lang="Italian" displayName="Affliggigolem" />
     <learnedSkillInfo byteOffset="5" bitMask="2" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="42" name="NohrianTrust" personal="false" unlearnable="false">
     <text lang="English" displayName="Nohrian Trust" />
     <text lang="Japanese" displayName="【暗夜】" />
+    <text lang="Spanish" displayName="Confianza nohria" />
+    <text lang="French" displayName="Loyauté (Nohr)" />
+    <text lang="German" displayName="Nohrentreue" />
+    <text lang="Italian" displayName="Fiducia nohriana" />
     <learnedSkillInfo byteOffset="5" bitMask="4" />
     <categories normalClass="false" corrinOnly="true" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="43" name="HoshidanUnity" personal="false" unlearnable="false">
     <text lang="English" displayName="Hoshidan Unity" />
     <text lang="Japanese" displayName="【白夜】" />
+    <text lang="Spanish" displayName="Unión hoshidana" />
+    <text lang="French" displayName="Unité (Hoshido)" />
+    <text lang="German" displayName="Hoshidenbund" />
+    <text lang="Italian" displayName="Unità hoshidese" />
     <learnedSkillInfo byteOffset="5" bitMask="8" />
     <categories normalClass="false" corrinOnly="true" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="44" name="Shelter" personal="false" unlearnable="false">
     <text lang="English" displayName="Shelter" />
     <text lang="Japanese" displayName="【救出】" />
+    <text lang="Spanish" displayName="Refugiar" />
+    <text lang="French" displayName="Abri" />
+    <text lang="German" displayName="Zuflucht" />
+    <text lang="Italian" displayName="Riparo" />
     <learnedSkillInfo byteOffset="5" bitMask="16" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="45" name="Shove" personal="false" unlearnable="false">
     <text lang="English" displayName="Shove" />
     <text lang="Japanese" displayName="【体当たり】" />
+    <text lang="Spanish" displayName="Empujar" />
+    <text lang="French" displayName="Bousculer" />
+    <text lang="German" displayName="Stoß" />
+    <text lang="Italian" displayName="Spinta" />
     <learnedSkillInfo byteOffset="5" bitMask="32" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="46" name="Lunge" personal="false" unlearnable="false">
     <text lang="English" displayName="Lunge" />
     <text lang="Japanese" displayName="【切り込み】" />
+    <text lang="Spanish" displayName="Permutar" />
+    <text lang="French" displayName="Bascule" />
+    <text lang="German" displayName="Ausfallschritt" />
+    <text lang="Italian" displayName="Balzo" />
     <learnedSkillInfo byteOffset="5" bitMask="64" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="47" name="Swap" personal="false" unlearnable="false">
     <text lang="English" displayName="Swap" />
     <text lang="Japanese" displayName="【入れ替え】" />
+    <text lang="Spanish" displayName="Trocar" />
+    <text lang="French" displayName="Inverser" />
+    <text lang="German" displayName="Rochade" />
+    <text lang="Italian" displayName="Inversione" />
     <learnedSkillInfo byteOffset="5" bitMask="128" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="48" name="Replicate" personal="false" unlearnable="false">
     <text lang="English" displayName="Replicate" />
     <text lang="Japanese" displayName="【写し身人形】" />
+    <text lang="Spanish" displayName="Duplicar" />
+    <text lang="French" displayName="Dédoublement" />
+    <text lang="German" displayName="Doppelgänger" />
+    <text lang="Italian" displayName="Replica" />
     <learnedSkillInfo byteOffset="6" bitMask="1" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="49" name="QuickDraw" personal="false" unlearnable="false">
     <text lang="English" displayName="Quick Draw" />
     <text lang="Japanese" displayName="【先手必勝】" />
+    <text lang="Spanish" displayName="Primer impacto" />
+    <text lang="French" displayName="Coup éclair" />
+    <text lang="German" displayName="Flinker Hieb" />
+    <text lang="Italian" displayName="Iniziativa" />
     <learnedSkillInfo byteOffset="6" bitMask="2" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="50" name="StrongRiposte" personal="false" unlearnable="false">
     <text lang="English" displayName="Strong Riposte" />
     <text lang="Japanese" displayName="【後手不敗】" />
+    <text lang="Spanish" displayName="Réplica lacerante" />
+    <text lang="French" displayName="Puissante riposte" />
+    <text lang="German" displayName="Starke Riposte" />
+    <text lang="Italian" displayName="Botta e risposta" />
     <learnedSkillInfo byteOffset="6" bitMask="4" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="51" name="ElbowRoom" personal="false" unlearnable="false">
     <text lang="English" displayName="Elbow Room" />
     <text lang="Japanese" displayName="【広所突撃】" />
+    <text lang="Spanish" displayName="Ímpetu terrenal" />
+    <text lang="French" displayName="À l'aise" />
+    <text lang="German" displayName="Ellbogenfreiheit" />
+    <text lang="Italian" displayName="Spazio vitale" />
     <learnedSkillInfo byteOffset="6" bitMask="8" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="52" name="NaturalCover" personal="false" unlearnable="false">
     <text lang="English" displayName="Natural Cover" />
     <text lang="Japanese" displayName="【閉所防御】" />
+    <text lang="Spanish" displayName="Defensa terrenal" />
+    <text lang="French" displayName="Abri naturel" />
+    <text lang="German" displayName="Natürl. Deckung" />
+    <text lang="Italian" displayName="Riparo naturale" />
     <learnedSkillInfo byteOffset="6" bitMask="16" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="53" name="Evenhanded" personal="false" unlearnable="false">
     <text lang="English" displayName="Evenhanded" />
     <text lang="Japanese" displayName="【偶像の幻】" />
+    <text lang="Spanish" displayName="Furia a pares" />
+    <text lang="French" displayName="Rythme pair" />
+    <text lang="German" displayName="Geradlinig" />
+    <text lang="Italian" displayName="Imparzialità" />
     <learnedSkillInfo byteOffset="6" bitMask="32" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="true" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="54" name="OddShaped" personal="false" unlearnable="false">
     <text lang="English" displayName="Odd Shaped" />
     <text lang="Japanese" displayName="【奇襲の牙】" />
+    <text lang="Spanish" displayName="Embate impar" />
+    <text lang="French" displayName="Rythme impair" />
+    <text lang="German" displayName="Ungeraten" />
+    <text lang="Italian" displayName="Disparità" />
     <learnedSkillInfo byteOffset="6" bitMask="64" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="true" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="55" name="LifeAndDeath" personal="false" unlearnable="false">
     <text lang="English" displayName="Life and Death" />
     <text lang="Japanese" displayName="【死線】" />
+    <text lang="Spanish" displayName="Dar y tomar" />
+    <text lang="French" displayName="Vivre et mourir" />
+    <text lang="German" displayName="Lebensfaden" />
+    <text lang="Italian" displayName="Vita e morte" />
     <learnedSkillInfo byteOffset="6" bitMask="128" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="56" name="Spendthrift" personal="false" unlearnable="false">
     <text lang="English" displayName="Spendthrift" />
     <text lang="Japanese" displayName="【お大尽】" />
+    <text lang="Spanish" displayName="Soborno" />
+    <text lang="French" displayName="Grosse dépense" />
+    <text lang="German" displayName="Verschwender" />
+    <text lang="Italian" displayName="Spendaccione" />
     <learnedSkillInfo byteOffset="7" bitMask="1" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="57" name="DuelistsBlow" personal="false" unlearnable="false">
     <text lang="English" displayName="Duelist's Blow" />
     <text lang="Japanese" displayName="【清流の一撃】" />
+    <text lang="Spanish" displayName="Duelista ágil" />
+    <text lang="French" displayName="Coup de duelliste" />
+    <text lang="German" displayName="Duellistenschlag" />
+    <text lang="Italian" displayName="Piroetta elegante" />
     <learnedSkillInfo byteOffset="7" bitMask="2" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="58" name="DartingBlow" personal="false" unlearnable="false">
     <text lang="English" displayName="Darting Blow" />
     <text lang="Japanese" displayName="【飛燕の一撃】" />
+    <text lang="Spanish" displayName="Ofensa dúplice" />
+    <text lang="French" displayName="Coup foudroyant" />
+    <text lang="German" displayName="Sturzflughieb" />
+    <text lang="Italian" displayName="Colpo saetta" />
     <learnedSkillInfo byteOffset="7" bitMask="4" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="59" name="DeathBlow" personal="false" unlearnable="false">
     <text lang="English" displayName="Death Blow" />
     <text lang="Japanese" displayName="【鬼神の一撃】" />
+    <text lang="Spanish" displayName="Muerte inminente" />
+    <text lang="French" displayName="Coup fatal" />
+    <text lang="German" displayName="Voll ins Schwarze" />
+    <text lang="Italian" displayName="Colpo mortale" />
     <learnedSkillInfo byteOffset="7" bitMask="8" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="60" name="CertainBlow" personal="false" unlearnable="false">
     <text lang="English" displayName="Certain Blow" />
     <text lang="Japanese" displayName="【凶鳥の一撃】" />
+    <text lang="Spanish" displayName="Golpe certero" />
+    <text lang="French" displayName="Coup inéluctable" />
+    <text lang="German" displayName="Gezielter Hieb" />
+    <text lang="Italian" displayName="Colpo sicuro" />
     <learnedSkillInfo byteOffset="7" bitMask="16" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="61" name="ArmoredBlow" personal="false" unlearnable="false">
     <text lang="English" displayName="Armored Blow" />
     <text lang="Japanese" displayName="【金剛の一撃】" />
+    <text lang="Spanish" displayName="Ataque blindado" />
+    <text lang="French" displayName="Coup blindé" />
+    <text lang="German" displayName="Defensiver Hieb" />
+    <text lang="Italian" displayName="Colpo corazzato" />
     <learnedSkillInfo byteOffset="7" bitMask="32" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="62" name="WardingBlow" personal="false" unlearnable="false">
     <text lang="English" displayName="Warding Blow" />
     <text lang="Japanese" displayName="【明鏡の一撃】" />
+    <text lang="Spanish" displayName="Empuje antimagia" />
+    <text lang="French" displayName="Coup gardien" />
+    <text lang="German" displayName="Bannender Hieb" />
+    <text lang="Italian" displayName="Colpo scudo" />
     <learnedSkillInfo byteOffset="7" bitMask="64" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="63" name="Trample" personal="false" unlearnable="false">
     <text lang="English" displayName="Trample" />
     <text lang="Japanese" displayName="【見下す者】" />
+    <text lang="Spanish" displayName="Aplastamiento" />
+    <text lang="French" displayName="Piétinement" />
+    <text lang="German" displayName="Niederreiten" />
+    <text lang="Italian" displayName="Travolgimento" />
     <learnedSkillInfo byteOffset="7" bitMask="128" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="64" name="WaryFighter" personal="false" unlearnable="false">
     <text lang="English" displayName="Wary Fighter" />
     <text lang="Japanese" displayName="【守備隊形】" />
+    <text lang="Spanish" displayName="Guerrero previsor" />
+    <text lang="French" displayName="Guerrier méfiant" />
+    <text lang="German" displayName="Wachsamkeit" />
+    <text lang="Italian" displayName="Cautela" />
     <learnedSkillInfo byteOffset="8" bitMask="1" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="65" name="Swordfaire" personal="false" unlearnable="false">
     <text lang="English" displayName="Swordfaire" />
     <text lang="Japanese" displayName="【剣の達人】" />
+    <text lang="Spanish" displayName="Maestría: espada" />
+    <text lang="French" displayName="Art de l'épée" />
+    <text lang="German" displayName="Schwertspezialist" />
+    <text lang="Italian" displayName="Affinità spade" />
     <learnedSkillInfo byteOffset="8" bitMask="2" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="66" name="Lancefaire" personal="false" unlearnable="false">
     <text lang="English" displayName="Lancefaire" />
     <text lang="Japanese" displayName="【槍の達人】" />
+    <text lang="Spanish" displayName="Maestría: lanza" />
+    <text lang="French" displayName="Art de la lance" />
+    <text lang="German" displayName="Lanzenspezialist" />
+    <text lang="Italian" displayName="Affinità lance" />
     <learnedSkillInfo byteOffset="8" bitMask="4" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="67" name="Axefaire" personal="false" unlearnable="false">
     <text lang="English" displayName="Axefaire" />
     <text lang="Japanese" displayName="【斧の達人】" />
+    <text lang="Spanish" displayName="Maestría: hacha" />
+    <text lang="French" displayName="Art de la hache" />
+    <text lang="German" displayName="Axtspezialist" />
+    <text lang="Italian" displayName="Affinità asce" />
     <learnedSkillInfo byteOffset="8" bitMask="8" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="68" name="Shurikenfaire" personal="false" unlearnable="false">
     <text lang="English" displayName="Shurikenfaire" />
     <text lang="Japanese" displayName="【暗器の達人】" />
+    <text lang="Spanish" displayName="Maestría: shurik." />
+    <text lang="French" displayName="Art du shuriken" />
+    <text lang="German" displayName="Shurikenspez." />
+    <text lang="Italian" displayName="Affinità shuriken" />
     <learnedSkillInfo byteOffset="8" bitMask="16" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="69" name="Bowfaire" personal="false" unlearnable="false">
     <text lang="English" displayName="Bowfaire" />
     <text lang="Japanese" displayName="【弓の達人】" />
+    <text lang="Spanish" displayName="Maestría: arco" />
+    <text lang="French" displayName="Art de l'arc" />
+    <text lang="German" displayName="Bogenspezialist" />
+    <text lang="Italian" displayName="Affinità archi" />
     <learnedSkillInfo byteOffset="8" bitMask="32" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="70" name="Tomefaire" personal="false" unlearnable="false">
     <text lang="English" displayName="Tomefaire" />
     <text lang="Japanese" displayName="【魔の達人】" />
+    <text lang="Spanish" displayName="Maestría: grimor." />
+    <text lang="French" displayName="Art des tomes" />
+    <text lang="German" displayName="Zauberbuchspez." />
+    <text lang="Italian" displayName="Affinità tomi" />
     <learnedSkillInfo byteOffset="8" bitMask="64" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="71" name="Defender" personal="false" unlearnable="false">
     <text lang="English" displayName="Defender" />
     <text lang="Japanese" displayName="【守り手】" />
+    <text lang="Spanish" displayName="Defensa" />
+    <text lang="French" displayName="Appui" />
+    <text lang="German" displayName="Verteidiger" />
+    <text lang="Italian" displayName="Soccorso" />
     <learnedSkillInfo byteOffset="8" bitMask="128" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="72" name="Charm" personal="false" unlearnable="false">
     <text lang="English" displayName="Charm" />
     <text lang="Japanese" displayName="【カリスマ】" />
+    <text lang="Spanish" displayName="Carisma" />
+    <text lang="French" displayName="Charisme" />
+    <text lang="German" displayName="Charme" />
+    <text lang="Italian" displayName="Malia" />
     <learnedSkillInfo byteOffset="9" bitMask="1" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="true" enemyAndNpc="false" />
   </skill>
   <skill id="73" name="Gentilhomme" personal="false" unlearnable="false">
     <text lang="English" displayName="Gentilhomme" />
     <text lang="Japanese" displayName="【名家の令息】" />
+    <text lang="Spanish" displayName="Caballeroso" />
+    <text lang="French" displayName="Gentilhomme" />
+    <text lang="German" displayName="Gentilhomme" />
+    <text lang="Italian" displayName="Gentiluomo" />
     <learnedSkillInfo byteOffset="9" bitMask="2" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="74" name="Demoiselle" personal="false" unlearnable="false">
     <text lang="English" displayName="Demoiselle" />
     <text lang="Japanese" displayName="【深窓の令嬢】" />
+    <text lang="Spanish" displayName="Doncella" />
+    <text lang="French" displayName="Demoiselle" />
+    <text lang="German" displayName="Holde Maid" />
+    <text lang="Italian" displayName="Damigella" />
     <learnedSkillInfo byteOffset="9" bitMask="4" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="75" name="Inspiration" personal="false" unlearnable="false">
     <text lang="English" displayName="Inspiration" />
     <text lang="Japanese" displayName="【戦闘指揮】" />
+    <text lang="Spanish" displayName="Entusiasmar" />
+    <text lang="French" displayName="Inspiration" />
+    <text lang="German" displayName="Eingebung" />
+    <text lang="Italian" displayName="Ispirazione" />
     <learnedSkillInfo byteOffset="9" bitMask="8" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="76" name="MaleficAura" personal="false" unlearnable="false">
     <text lang="English" displayName="Malefic Aura" />
     <text lang="Japanese" displayName="【魔の風】" />
+    <text lang="Spanish" displayName="Halo perverso" />
+    <text lang="French" displayName="Aura maléfique" />
+    <text lang="German" displayName="Boshafte Aura" />
+    <text lang="Italian" displayName="Aura malefica" />
     <learnedSkillInfo byteOffset="9" bitMask="16" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="77" name="VoiceOfPeace" personal="false" unlearnable="false">
     <text lang="English" displayName="Voice of Peace" />
     <text lang="Japanese" displayName="【平和の声】" />
+    <text lang="Spanish" displayName="Canto pacífico" />
+    <text lang="French" displayName="Voix de la paix" />
+    <text lang="German" displayName="Friedenssänger" />
+    <text lang="Italian" displayName="Parole di pace" />
     <learnedSkillInfo byteOffset="9" bitMask="32" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="true" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="78" name="ForeignPrincess" personal="false" unlearnable="false">
     <text lang="English" displayName="Foreign Princess" />
     <text lang="Japanese" displayName="【異邦の王女】" />
+    <text lang="Spanish" displayName="Princesa foránea" />
+    <text lang="French" displayName="Noble étrangère" />
+    <text lang="German" displayName="Fremde Prinzess." />
+    <text lang="Italian" displayName="Sovrana straniera" />
     <learnedSkillInfo byteOffset="9" bitMask="64" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="true" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="79" name="Swordbreaker" personal="false" unlearnable="false">
     <text lang="English" displayName="Swordbreaker" />
     <text lang="Japanese" displayName="【剣殺し】" />
+    <text lang="Spanish" displayName="Partesables" />
+    <text lang="French" displayName="Anti-épée" />
+    <text lang="German" displayName="Schwertbrecher" />
+    <text lang="Italian" displayName="Spezzaspada" />
     <learnedSkillInfo byteOffset="9" bitMask="128" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="80" name="Lancebreaker" personal="false" unlearnable="false">
     <text lang="English" displayName="Lancebreaker" />
     <text lang="Japanese" displayName="【槍殺し】" />
+    <text lang="Spanish" displayName="Quiebralanzas" />
+    <text lang="French" displayName="Anti-lance" />
+    <text lang="German" displayName="Lanzenbrecher" />
+    <text lang="Italian" displayName="Spezzalancia" />
     <learnedSkillInfo byteOffset="10" bitMask="1" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="81" name="Axebreaker" personal="false" unlearnable="false">
     <text lang="English" displayName="Axebreaker" />
     <text lang="Japanese" displayName="【斧殺し】" />
+    <text lang="Spanish" displayName="Mellahachas" />
+    <text lang="French" displayName="Anti-hache" />
+    <text lang="German" displayName="Axtbrecher" />
+    <text lang="Italian" displayName="Spezzascia" />
     <learnedSkillInfo byteOffset="10" bitMask="2" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="82" name="Shurikenbreaker" personal="false" unlearnable="false">
     <text lang="English" displayName="Shurikenbreaker" />
     <text lang="Japanese" displayName="【暗器殺し】" />
+    <text lang="Spanish" displayName="Achatashurikens" />
+    <text lang="French" displayName="Anti-shuriken" />
+    <text lang="German" displayName="Shurikenbrecher" />
+    <text lang="Italian" displayName="Spezzashuriken" />
     <learnedSkillInfo byteOffset="10" bitMask="4" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="83" name="Bowbreaker" personal="false" unlearnable="false">
     <text lang="English" displayName="Bowbreaker" />
     <text lang="Japanese" displayName="【弓殺し】" />
+    <text lang="Spanish" displayName="Rompearcos" />
+    <text lang="French" displayName="Anti-arc" />
+    <text lang="German" displayName="Bogenbrecher" />
+    <text lang="Italian" displayName="Spezzarco" />
     <learnedSkillInfo byteOffset="10" bitMask="8" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="84" name="Tomebreaker" personal="false" unlearnable="false">
     <text lang="English" displayName="Tomebreaker" />
     <text lang="Japanese" displayName="【魔殺し】" />
+    <text lang="Spanish" displayName="Rajagrimorios" />
+    <text lang="French" displayName="Anti-tome" />
+    <text lang="German" displayName="Zauberbrecher" />
+    <text lang="Italian" displayName="Spezzatomo" />
     <learnedSkillInfo byteOffset="10" bitMask="16" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="85" name="Gamble" personal="false" unlearnable="false">
     <text lang="English" displayName="Gamble" />
     <text lang="Japanese" displayName="【大振り】" />
+    <text lang="Spanish" displayName="Ventura" />
+    <text lang="French" displayName="Aléa" />
+    <text lang="German" displayName="Fortuna" />
+    <text lang="Italian" displayName="Azzardo" />
     <learnedSkillInfo byteOffset="10" bitMask="32" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="86" name="Underdog" personal="false" unlearnable="false">
     <text lang="English" displayName="Underdog" />
     <text lang="Japanese" displayName="【下剋上】" />
+    <text lang="Spanish" displayName="Superación" />
+    <text lang="French" displayName="Combativité" />
+    <text lang="German" displayName="Außenseiter" />
+    <text lang="Italian" displayName="Equità" />
     <learnedSkillInfo byteOffset="10" bitMask="64" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="true" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="87" name="Lucky7" personal="false" unlearnable="false">
     <text lang="English" displayName="Lucky Seven" />
     <text lang="Japanese" displayName="【ラッキー7】" />
+    <text lang="Spanish" displayName="Fortuna" />
+    <text lang="French" displayName="Sept chances" />
+    <text lang="German" displayName="Glorreiche 7" />
+    <text lang="Italian" displayName="Jolly" />
     <learnedSkillInfo byteOffset="10" bitMask="128" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="88" name="AirSuperiority" personal="false" unlearnable="false">
     <text lang="English" displayName="Air Superiority" />
     <text lang="Japanese" displayName="【天翔ける】" />
+    <text lang="Spanish" displayName="Ventaja aérea" />
+    <text lang="French" displayName="Avantage aérien" />
+    <text lang="German" displayName="Luftüberlegenheit" />
+    <text lang="Italian" displayName="Aria di superiorità" />
     <learnedSkillInfo byteOffset="11" bitMask="1" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="89" name="Heartseeker" personal="false" unlearnable="false">
     <text lang="English" displayName="Heartseeker" />
     <text lang="Japanese" displayName="【呪縛】" />
+    <text lang="Spanish" displayName="Cazacorazones" />
+    <text lang="French" displayName="En plein cœur" />
+    <text lang="German" displayName="Herzsucher" />
+    <text lang="Italian" displayName="Abbatticuore" />
     <learnedSkillInfo byteOffset="11" bitMask="2" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="90" name="Quixotic" personal="false" unlearnable="false">
     <text lang="English" displayName="Quixotic" />
     <text lang="Japanese" displayName="【傾奇者】" />
+    <text lang="Spanish" displayName="Quijotismo" />
+    <text lang="French" displayName="Idéaliste" />
+    <text lang="German" displayName="Edle Torheit" />
+    <text lang="Italian" displayName="Idealista" />
     <learnedSkillInfo byteOffset="11" bitMask="4" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="91" name="GoodFortune" personal="false" unlearnable="false">
     <text lang="English" displayName="Good Fortune" />
     <text lang="Japanese" displayName="【しぶとい心】" />
+    <text lang="Spanish" displayName="Resiliencia" />
+    <text lang="French" displayName="Bonne fortune" />
+    <text lang="German" displayName="Glückspilz" />
+    <text lang="Italian" displayName="Buona fortuna" />
     <learnedSkillInfo byteOffset="11" bitMask="8" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="92" name="Relief" personal="false" unlearnable="false">
     <text lang="English" displayName="Relief" />
     <text lang="Japanese" displayName="【リフレッシュ】" />
+    <text lang="Spanish" displayName="Renovación" />
+    <text lang="French" displayName="Répit" />
+    <text lang="German" displayName="Entlastung" />
+    <text lang="Italian" displayName="Sollievo" />
     <learnedSkillInfo byteOffset="11" bitMask="16" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="true" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="93" name="Camaraderie" personal="false" unlearnable="false">
     <text lang="English" displayName="Camaraderie" />
     <text lang="Japanese" displayName="【和の心】" />
+    <text lang="Spanish" displayName="Camaradería" />
+    <text lang="French" displayName="Camaraderie" />
+    <text lang="German" displayName="Kameradschaft" />
+    <text lang="Italian" displayName="Cameratismo" />
     <learnedSkillInfo byteOffset="11" bitMask="32" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="94" name="Renewal" personal="false" unlearnable="false">
     <text lang="English" displayName="Renewal" />
     <text lang="Japanese" displayName="【回復】" />
+    <text lang="Spanish" displayName="Recuperación" />
+    <text lang="French" displayName="Guérison" />
+    <text lang="German" displayName="Heilung" />
+    <text lang="Italian" displayName="Guarigione" />
     <learnedSkillInfo byteOffset="11" bitMask="64" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="95" name="EvenBetter" personal="false" unlearnable="false">
     <text lang="English" displayName="Even Better" />
     <text lang="Japanese" displayName="【偶然のまどろみ】" />
+    <text lang="Spanish" displayName="Curación a pares" />
+    <text lang="French" displayName="Bonus pair" />
+    <text lang="German" displayName="Geradestehen" />
+    <text lang="Italian" displayName="Sollievo equo" />
     <learnedSkillInfo byteOffset="11" bitMask="128" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="true" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="96" name="BetterOdds" personal="false" unlearnable="false">
     <text lang="English" displayName="Better Odds" />
     <text lang="Japanese" displayName="【奇妙な鳴き声】" />
+    <text lang="Spanish" displayName="Sosiego impar" />
+    <text lang="French" displayName="Bonus impair" />
+    <text lang="German" displayName="Ungerade Wege" />
+    <text lang="Italian" displayName="Sollievo iniquo" />
     <learnedSkillInfo byteOffset="12" bitMask="1" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="true" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="97" name="Amaterasu" personal="false" unlearnable="false">
     <text lang="English" displayName="Amaterasu" />
     <text lang="Japanese" displayName="【天照らす】" />
+    <text lang="Spanish" displayName="Amaterasu" />
+    <text lang="French" displayName="Amaterasu" />
+    <text lang="German" displayName="Amaterasu" />
+    <text lang="Italian" displayName="Amaterasu" />
     <learnedSkillInfo byteOffset="12" bitMask="2" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="98" name="Lifetaker" personal="false" unlearnable="false">
     <text lang="English" displayName="Lifetaker" />
     <text lang="Japanese" displayName="【生命吸収】" />
+    <text lang="Spanish" displayName="Ejecución curativa" />
+    <text lang="French" displayName="Drain de vie" />
+    <text lang="German" displayName="Lebenssauger" />
+    <text lang="Italian" displayName="Risucchia vita" />
     <learnedSkillInfo byteOffset="12" bitMask="4" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="99" name="PotentPotion" personal="false" unlearnable="false">
     <text lang="English" displayName="Potent Potion" />
     <text lang="Japanese" displayName="【よく効く薬】" />
+    <text lang="Spanish" displayName="Poción poderosa" />
+    <text lang="French" displayName="Élixir puissant" />
+    <text lang="German" displayName="Verstärkertrank" />
+    <text lang="Italian" displayName="Pozione potente" />
     <learnedSkillInfo byteOffset="12" bitMask="8" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="100" name="LiveToServe" personal="false" unlearnable="false">
     <text lang="English" displayName="Live to Serve" />
     <text lang="Japanese" displayName="【ご奉仕の喜び】" />
+    <text lang="Spanish" displayName="Vivir para servir" />
+    <text lang="French" displayName="Dévoué serviteur" />
+    <text lang="German" displayName="Stets z. Diensten" />
+    <text lang="Italian" displayName="Cura reciproca" />
     <learnedSkillInfo byteOffset="12" bitMask="16" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="101" name="PoisonStrike" personal="false" unlearnable="false">
     <text lang="English" displayName="Poison Strike" />
     <text lang="Japanese" displayName="【蛇毒】" />
+    <text lang="Spanish" displayName="Ataque venenoso" />
+    <text lang="French" displayName="Frappe ciguë" />
+    <text lang="German" displayName="Vergiftete Klinge" />
+    <text lang="Italian" displayName="Colpo velenoso" />
     <learnedSkillInfo byteOffset="12" bitMask="32" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="102" name="SavageBlow" personal="false" unlearnable="false">
     <text lang="English" displayName="Savage Blow" />
     <text lang="Japanese" displayName="【死の吐息】" />
+    <text lang="Spanish" displayName="Arrebato brutal" />
+    <text lang="French" displayName="Coup sauvage" />
+    <text lang="German" displayName="Wilder Hieb" />
+    <text lang="Italian" displayName="Colpo selvaggio" />
     <learnedSkillInfo byteOffset="12" bitMask="64" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="103" name="GrislyWound" personal="false" unlearnable="false">
     <text lang="English" displayName="Grisly Wound" />
     <text lang="Japanese" displayName="【四牙】" />
+    <text lang="Spanish" displayName="Herida terrible" />
+    <text lang="French" displayName="Plaie profonde" />
+    <text lang="German" displayName="Grausame Wunde" />
+    <text lang="Italian" displayName="Ferita purulenta" />
     <learnedSkillInfo byteOffset="12" bitMask="128" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="true" wolfskinOnly="true" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="104" name="SalvageBlow" personal="false" unlearnable="false">
     <text lang="English" displayName="Salvage Blow" />
     <text lang="Japanese" displayName="【匠の技】" />
+    <text lang="Spanish" displayName="Saqueo póstumo" />
+    <text lang="French" displayName="Coup du pillard" />
+    <text lang="German" displayName="Wiederverwert." />
+    <text lang="Italian" displayName="Colpo fortunato" />
     <learnedSkillInfo byteOffset="13" bitMask="1" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="105" name="Profiteer" personal="false" unlearnable="false">
     <text lang="English" displayName="Profiteer" />
     <text lang="Japanese" displayName="【左うちわ】" />
+    <text lang="Spanish" displayName="Usura" />
+    <text lang="French" displayName="Profiteur" />
+    <text lang="German" displayName="Profitjäger" />
+    <text lang="Italian" displayName="Speculatore" />
     <learnedSkillInfo byteOffset="13" bitMask="2" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="106" name="Nobility" personal="false" unlearnable="false">
     <text lang="English" displayName="Nobility" />
     <text lang="Japanese" displayName="【高貴なる血統】" />
+    <text lang="Spanish" displayName="Hidalguía" />
+    <text lang="French" displayName="Noblesse" />
+    <text lang="German" displayName="Von edlem Geblüt" />
+    <text lang="Italian" displayName="Nobiltà" />
     <learnedSkillInfo byteOffset="13" bitMask="4" />
     <categories normalClass="false" corrinOnly="true" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="107" name="FutureSight" personal="false" unlearnable="false">
     <text lang="English" displayName="Future Sight" />
     <text lang="Japanese" displayName="【おみくじ】" />
+    <text lang="Spanish" displayName="Porvenir" />
+    <text lang="French" displayName="Prédiction" />
+    <text lang="German" displayName="Zukunftsdeuter" />
+    <text lang="Italian" displayName="Preveggenza" />
     <learnedSkillInfo byteOffset="13" bitMask="8" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="108" name="Aptitude" personal="false" unlearnable="false">
     <text lang="English" displayName="Aptitude" />
     <text lang="Japanese" displayName="【良成長】" />
+    <text lang="Spanish" displayName="Promesa" />
+    <text lang="French" displayName="Prodige" />
+    <text lang="German" displayName="Talentiert" />
+    <text lang="Italian" displayName="Talento" />
     <learnedSkillInfo byteOffset="13" bitMask="16" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="true" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="109" name="QuickSalve" personal="false" unlearnable="false">
     <text lang="English" displayName="Quick Salve" />
     <text lang="Japanese" displayName="【常備薬】" />
+    <text lang="Spanish" displayName="Consuelo súbito" />
+    <text lang="French" displayName="Soin éclair" />
+    <text lang="German" displayName="Erste Hilfe" />
+    <text lang="Italian" displayName="Balsamo fulmineo" />
     <learnedSkillInfo byteOffset="13" bitMask="32" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="110" name="Galeforce" personal="false" unlearnable="false">
     <text lang="English" displayName="Galeforce" />
     <text lang="Japanese" displayName="【疾風迅雷】" />
+    <text lang="Spanish" displayName="Impacto final" />
+    <text lang="French" displayName="Élan victorieux" />
+    <text lang="German" displayName="Wirbelwind" />
+    <text lang="Italian" displayName="Assalto impetuoso" />
     <learnedSkillInfo byteOffset="13" bitMask="64" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="true" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="111" name="Pass" personal="false" unlearnable="false">
     <text lang="English" displayName="Pass" />
     <text lang="Japanese" displayName="【すり抜け】" />
+    <text lang="Spanish" displayName="Pasar" />
+    <text lang="French" displayName="Passage" />
+    <text lang="German" displayName="Passieren" />
+    <text lang="Italian" displayName="Passaggio" />
     <learnedSkillInfo byteOffset="13" bitMask="128" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="112" name="Locktouch" personal="false" unlearnable="false">
     <text lang="English" displayName="Locktouch" />
     <text lang="Japanese" displayName="【鍵開け】" />
+    <text lang="Spanish" displayName="Descerrajar" />
+    <text lang="French" displayName="Crochetage" />
+    <text lang="German" displayName="Schlossknacker" />
+    <text lang="Italian" displayName="Scasso" />
     <learnedSkillInfo byteOffset="14" bitMask="1" />
     <categories normalClass="true" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="113" name="Brynhildr" personal="false" unlearnable="true">
     <text lang="English" displayName="Brynhildr" />
     <text lang="Japanese" displayName="【ブリュンヒルデ】" />
+    <text lang="Spanish" displayName="Brynhildr" />
+    <text lang="French" displayName="Brynhildr" />
+    <text lang="German" displayName="Brynhildr" />
+    <text lang="Italian" displayName="Brynhildr" />
     <learnedSkillInfo byteOffset="14" bitMask="2" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="114" name="Dragonskin" personal="false" unlearnable="false">
     <text lang="English" displayName="Dragonskin" />
     <text lang="Japanese" displayName="【竜鱗】" />
+    <text lang="Spanish" displayName="Piel dragontina" />
+    <text lang="French" displayName="Écailles dragon" />
+    <text lang="German" displayName="Drachenhaut" />
+    <text lang="Italian" displayName="Scaglie di drago" />
     <learnedSkillInfo byteOffset="14" bitMask="4" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="true" />
   </skill>
   <skill id="115" name="DivineShield" personal="false" unlearnable="false">
     <text lang="English" displayName="Divine Shield" />
     <text lang="Japanese" displayName="【神盾】" />
+    <text lang="Spanish" displayName="Escudo divino" />
+    <text lang="French" displayName="Bouclier divin" />
+    <text lang="German" displayName="Götterschild" />
+    <text lang="Italian" displayName="Scudo divino" />
     <learnedSkillInfo byteOffset="14" bitMask="8" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="true" />
   </skill>
   <skill id="116" name="HitAvoidPlus10" personal="false" unlearnable="false">
     <text lang="English" displayName="Hit/Avo +10" />
     <text lang="Japanese" displayName="【命中回避+10】" />
+    <text lang="Spanish" displayName="Gol y Esq + 10" />
+    <text lang="French" displayName="Prc/Esq +10" />
+    <text lang="German" displayName="Trf./Aw. +10" />
+    <text lang="Italian" displayName="Clp/Scv +10" />
     <learnedSkillInfo byteOffset="14" bitMask="16" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="true" />
   </skill>
   <skill id="117" name="HitAvoidPlus20" personal="false" unlearnable="false">
     <text lang="English" displayName="Hit/Avo +20" />
     <text lang="Japanese" displayName="【命中回避+20】" />
+    <text lang="Spanish" displayName="Gol y Esq + 20" />
+    <text lang="French" displayName="Prc/Esq +20" />
+    <text lang="German" displayName="Trf./Aw. +20" />
+    <text lang="Italian" displayName="Clp/Scv +20" />
     <learnedSkillInfo byteOffset="14" bitMask="32" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="true" />
   </skill>
   <skill id="118" name="ResistStatus" personal="false" unlearnable="false">
     <text lang="English" displayName="Resist Status" />
     <text lang="Japanese" displayName="【状態異常耐性】" />
+    <text lang="Spanish" displayName="Antídoto" />
+    <text lang="French" displayName="Défense naturelle" />
+    <text lang="German" displayName="Statusresistenz" />
+    <text lang="Italian" displayName="Irremovibilità" />
     <learnedSkillInfo byteOffset="14" bitMask="64" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="true" />
   </skill>
   <skill id="119" name="ImmuneStatus" personal="false" unlearnable="false">
     <text lang="English" displayName="Immune Status" />
     <text lang="Japanese" displayName="【状態異常無効】" />
+    <text lang="Spanish" displayName="Inmunizar" />
+    <text lang="French" displayName="Immunité" />
+    <text lang="German" displayName="Immunität" />
+    <text lang="Italian" displayName="Immunità" />
     <learnedSkillInfo byteOffset="14" bitMask="128" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="true" />
   </skill>
   <skill id="120" name="BoldStance" personal="false" unlearnable="false">
     <text lang="English" displayName="Bold Stance" />
     <text lang="Japanese" displayName="【攻防一体の陣】" />
+    <text lang="Spanish" displayName="Ademán audaz" />
+    <text lang="French" displayName="Posture hardie" />
+    <text lang="German" displayName="Draufgänger" />
+    <text lang="Italian" displayName="Audacia" />
     <learnedSkillInfo byteOffset="15" bitMask="1" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="121" name="PointBlank" personal="false" unlearnable="false">
     <text lang="English" displayName="Point Blank" />
     <text lang="Japanese" displayName="【近接射撃】" />
+    <text lang="Spanish" displayName="A quemarropa" />
+    <text lang="French" displayName="À bout portant" />
+    <text lang="German" displayName="Blattschuss" />
+    <text lang="Italian" displayName="Mischia" />
     <learnedSkillInfo byteOffset="15" bitMask="2" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="122" name="WingedShield" personal="false" unlearnable="false">
     <text lang="English" displayName="Winged Shield" />
     <text lang="Japanese" displayName="【翼盾】" />
+    <text lang="Spanish" displayName="Escudo alado" />
+    <text lang="French" displayName="Bouclier ailé" />
+    <text lang="German" displayName="Flügelschild" />
+    <text lang="Italian" displayName="Scudo alato" />
     <learnedSkillInfo byteOffset="15" bitMask="4" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="123" name="VoidCurse" personal="false" unlearnable="false">
     <text lang="English" displayName="Void Curse" />
     <text lang="Japanese" displayName="【虚無の呪い】" />
+    <text lang="Spanish" displayName="Mal de ojo" />
+    <text lang="French" displayName="Ingrat" />
+    <text lang="German" displayName="Fluch der Leere" />
+    <text lang="Italian" displayName="Vacuità" />
     <learnedSkillInfo byteOffset="15" bitMask="8" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="true" />
   </skill>
   <skill id="124" name="SelfDestruct" personal="false" unlearnable="false">
     <text lang="English" displayName="Self-Destruct" />
     <text lang="Japanese" displayName="【自壊】" />
+    <text lang="Spanish" displayName="Autodestrucción" />
+    <text lang="French" displayName="Autodestruction" />
+    <text lang="German" displayName="Selbstzerstörung" />
+    <text lang="Italian" displayName="Autodistruzione" />
     <learnedSkillInfo byteOffset="15" bitMask="16" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="true" />
   </skill>
   <skill id="125" name="StaffSavant" personal="false" unlearnable="false">
     <text lang="English" displayName="Staff Savant" />
     <text lang="Japanese" displayName="【無限の杖】" />
+    <text lang="Spanish" displayName="Bastón austero" />
+    <text lang="French" displayName="Expert ès bâtons" />
+    <text lang="German" displayName="Stab-Gelehrter" />
+    <text lang="Italian" displayName="Bastone eterno" />
     <learnedSkillInfo byteOffset="15" bitMask="32" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="true" />
   </skill>
   <skill id="126" name="Immobilize" personal="false" unlearnable="false">
     <text lang="English" displayName="Immobilize" />
     <text lang="Japanese" displayName="【凍結】" />
+    <text lang="Spanish" displayName="Inmovilizar" />
+    <text lang="French" displayName="Immobilisation" />
+    <text lang="German" displayName="Paralyse" />
+    <text lang="Italian" displayName="Paralisi" />
     <learnedSkillInfo byteOffset="15" bitMask="64" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="true" />
   </skill>
   <skill id="127" name="InevitableEnd" personal="false" unlearnable="false">
     <text lang="English" displayName="Inevitable End" />
     <text lang="Japanese" displayName="【負の連鎖】" />
+    <text lang="Spanish" displayName="Final ineluctable" />
+    <text lang="French" displayName="Fin inéluctable" />
+    <text lang="German" displayName="Schicksalsschlag" />
+    <text lang="Italian" displayName="Fine inevitabile" />
     <learnedSkillInfo byteOffset="15" bitMask="128" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="true" />
   </skill>
   <skill id="128" name="EvenKeel" personal="false" unlearnable="false">
     <text lang="English" displayName="Even Keel" />
     <text lang="Japanese" displayName="【偶人の空蝉】" />
+    <text lang="Spanish" displayName="Embrujo par" />
+    <text lang="French" displayName="Immunité paire" />
+    <text lang="German" displayName="Auf Augenhöhe" />
+    <text lang="Italian" displayName="Schivata pari" />
     <learnedSkillInfo byteOffset="16" bitMask="1" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="true" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="129" name="IronWill" personal="false" unlearnable="false">
     <text lang="English" displayName="Iron Will" />
     <text lang="Japanese" displayName="【精神統一】" />
+    <text lang="Spanish" displayName="Voluntad férrea" />
+    <text lang="French" displayName="Volonté de fer" />
+    <text lang="German" displayName="Eiserner Wille" />
+    <text lang="Italian" displayName="Volontà di ferro" />
     <learnedSkillInfo byteOffset="16" bitMask="2" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="true" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="130" name="Clarity" personal="false" unlearnable="false">
     <text lang="English" displayName="Clarity" />
     <text lang="Japanese" displayName="【心頭滅却】" />
+    <text lang="Spanish" displayName="Lucidez" />
+    <text lang="French" displayName="Clarté" />
+    <text lang="German" displayName="Klarheit" />
+    <text lang="Italian" displayName="Sgombra mente" />
     <learnedSkillInfo byteOffset="16" bitMask="4" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="true" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="131" name="Aggressor" personal="false" unlearnable="false">
     <text lang="English" displayName="Aggressor" />
     <text lang="Japanese" displayName="【居合一閃】" />
+    <text lang="Spanish" displayName="Ofensiva" />
+    <text lang="French" displayName="Offensive" />
+    <text lang="German" displayName="Aggressor" />
+    <text lang="Italian" displayName="Affondo" />
     <learnedSkillInfo byteOffset="16" bitMask="8" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="true" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="132" name="DualStriker" personal="false" unlearnable="false">
     <text lang="English" displayName="Dual Striker" />
     <text lang="Japanese" displayName="【攻陣＋】" />
+    <text lang="Spanish" displayName="Retaguardia" />
+    <text lang="French" displayName="Duo assassin" />
+    <text lang="German" displayName="Zweifachschlag" />
+    <text lang="Italian" displayName="Doppio colpo" />
     <learnedSkillInfo byteOffset="16" bitMask="16" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="true" enemyAndNpc="false" />
   </skill>
   <skill id="133" name="Awakening" personal="false" unlearnable="false">
     <text lang="English" displayName="Awakening" />
     <text lang="Japanese" displayName="【覚醒】" />
+    <text lang="Spanish" displayName="El despertar" />
+    <text lang="French" displayName="Éveil" />
+    <text lang="German" displayName="Awakening" />
+    <text lang="Italian" displayName="Risveglio" />
     <learnedSkillInfo byteOffset="16" bitMask="32" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="true" enemyAndNpc="false" />
   </skill>
   <skill id="134" name="TacticalAdvice" personal="false" unlearnable="false">
     <text lang="English" displayName="Tactical Advice" />
     <text lang="Japanese" displayName="【戦術指南】" />
+    <text lang="Spanish" displayName="Consejo táctico" />
+    <text lang="French" displayName="Conseil tactique" />
+    <text lang="German" displayName="Meisterleistung" />
+    <text lang="Italian" displayName="Perizia tattica" />
     <learnedSkillInfo byteOffset="16" bitMask="64" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="true" enemyAndNpc="false" />
   </skill>
   <skill id="135" name="Solidarity" personal="false" unlearnable="false">
     <text lang="English" displayName="Solidarity" />
     <text lang="Japanese" displayName="【方陣】" />
+    <text lang="Spanish" displayName="Solidaridad" />
+    <text lang="French" displayName="Solidarité" />
+    <text lang="German" displayName="Solidarität" />
+    <text lang="Italian" displayName="Solidarietà" />
     <learnedSkillInfo byteOffset="16" bitMask="128" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="true" enemyAndNpc="false" />
   </skill>
   <skill id="136" name="Ignis" personal="false" unlearnable="false">
     <text lang="English" displayName="Ignis" />
     <text lang="Japanese" displayName="【華炎】" />
+    <text lang="Spanish" displayName="Apolo" />
+    <text lang="French" displayName="Ignition" />
+    <text lang="German" displayName="Ignus" />
+    <text lang="Italian" displayName="Ignis" />
     <learnedSkillInfo byteOffset="17" bitMask="1" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="true" enemyAndNpc="false" />
   </skill>
   <skill id="137" name="RallySpectrum" personal="false" unlearnable="false">
     <text lang="English" displayName="Rally Spectrum" />
     <text lang="Japanese" displayName="【七色の叫び】" />
+    <text lang="Spanish" displayName="Potenciar: Todo" />
+    <text lang="French" displayName="Ralliement étendu" />
+    <text lang="German" displayName="Werte sammeln" />
+    <text lang="Italian" displayName="Grido di battaglia" />
     <learnedSkillInfo byteOffset="17" bitMask="2" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="true" enemyAndNpc="false" />
   </skill>
   <skill id="138" name="Paragon" personal="false" unlearnable="false">
     <text lang="English" displayName="Paragon" />
     <text lang="Japanese" displayName="【エリート】" />
+    <text lang="Spanish" displayName="Paragón" />
+    <text lang="French" displayName="Élite" />
+    <text lang="German" displayName="Elite" />
+    <text lang="Italian" displayName="Duplex" />
     <learnedSkillInfo byteOffset="17" bitMask="4" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="139" name="BeastShield" personal="false" unlearnable="false">
     <text lang="English" displayName="Armor Shield" />
     <text lang="Japanese" displayName="【鎧盾】" />
+    <text lang="Spanish" displayName="Escudo blindado" />
+    <text lang="French" displayName="Bouclier blindé" />
+    <text lang="German" displayName="Panzerschild" />
+    <text lang="Italian" displayName="Scudo pesante" />
     <learnedSkillInfo byteOffset="17" bitMask="8" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="140" name="ArmorShield" personal="false" unlearnable="false">
     <text lang="English" displayName="Beast Shield" />
     <text lang="Japanese" displayName="【獣盾】" />
+    <text lang="Spanish" displayName="Escudo bestial" />
+    <text lang="French" displayName="Bouclier bestial" />
+    <text lang="German" displayName="Bestienschild" />
+    <text lang="Italian" displayName="Scudo ferale" />
     <learnedSkillInfo byteOffset="17" bitMask="16" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="141" name="Shadowgift" personal="false" unlearnable="false">
     <text lang="English" displayName="Shadowgift" />
     <text lang="Japanese" displayName="【暗闇の加護】" />
+    <text lang="Spanish" displayName="Don oscuro" />
+    <text lang="French" displayName="Don des ombres" />
+    <text lang="German" displayName="Dunkle Gabe" />
+    <text lang="Italian" displayName="Dono oscuro" />
     <learnedSkillInfo byteOffset="17" bitMask="32" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="142" name="StrengthTaker" personal="false" unlearnable="false">
     <text lang="English" displayName="Strengthtaker" />
     <text lang="Japanese" displayName="【力の吸収】" />
+    <text lang="Spanish" displayName="Ejecución fuerte" />
+    <text lang="French" displayName="Vole-Force" />
+    <text lang="German" displayName="Stärkedieb" />
+    <text lang="Italian" displayName="Suggiforza" />
     <learnedSkillInfo byteOffset="17" bitMask="64" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="true" enemyAndNpc="false" />
   </skill>
   <skill id="143" name="MagicTaker" personal="false" unlearnable="false">
     <text lang="English" displayName="Magictaker" />
     <text lang="Japanese" displayName="【魔力の吸収】" />
+    <text lang="Spanish" displayName="Ejecución mágica" />
+    <text lang="French" displayName="Vole-Magie" />
+    <text lang="German" displayName="Magiedieb" />
+    <text lang="Italian" displayName="Suggimagia" />
     <learnedSkillInfo byteOffset="17" bitMask="128" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="144" name="SkillTaker" personal="false" unlearnable="false">
     <text lang="English" displayName="Skilltaker" />
     <text lang="Japanese" displayName="【技の吸収】" />
+    <text lang="Spanish" displayName="Ejecución hábil" />
+    <text lang="French" displayName="Vole-Technique" />
+    <text lang="German" displayName="Fähigkeitsdieb" />
+    <text lang="Italian" displayName="Suggiabilità" />
     <learnedSkillInfo byteOffset="18" bitMask="1" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="145" name="SpeedTaker" personal="false" unlearnable="false">
     <text lang="English" displayName="Speedtaker" />
     <text lang="Japanese" displayName="【速さの吸収】" />
+    <text lang="Spanish" displayName="Ejecución veloz" />
+    <text lang="French" displayName="Vole-Vitesse" />
+    <text lang="German" displayName="Geschwind.-Dieb" />
+    <text lang="Italian" displayName="Suggivelocità" />
     <learnedSkillInfo byteOffset="18" bitMask="2" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="true" enemyAndNpc="false" />
   </skill>
   <skill id="146" name="LuckTaker" personal="false" unlearnable="false">
     <text lang="English" displayName="Lucktaker" />
     <text lang="Japanese" displayName="【幸運の吸収】" />
+    <text lang="Spanish" displayName="Ejecución dichosa" />
+    <text lang="French" displayName="Vole-Chance" />
+    <text lang="German" displayName="Glücksdieb" />
+    <text lang="Italian" displayName="Suggifortuna" />
     <learnedSkillInfo byteOffset="18" bitMask="4" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="147" name="DefenseTaker" personal="false" unlearnable="false">
     <text lang="English" displayName="Defensetaker" />
     <text lang="Japanese" displayName="【守備の吸収】" />
+    <text lang="Spanish" displayName="Ejecución tutelar" />
+    <text lang="French" displayName="Vole-Défense" />
+    <text lang="German" displayName="Verteidig.-Dieb" />
+    <text lang="Italian" displayName="Suggidifesa" />
     <learnedSkillInfo byteOffset="18" bitMask="8" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="148" name="ResistanceTaker" personal="false" unlearnable="false">
     <text lang="English" displayName="Resistancetaker" />
     <text lang="Japanese" displayName="【魔防の吸収】" />
+    <text lang="Spanish" displayName="Ejecución sólida" />
+    <text lang="French" displayName="Vole-Résistance" />
+    <text lang="German" displayName="Resistenzdieb" />
+    <text lang="Italian" displayName="Suggiresistenza" />
     <learnedSkillInfo byteOffset="18" bitMask="16" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="149" name="Survey" personal="false" unlearnable="false">
     <text lang="English" displayName="Survey" />
     <text lang="Japanese" displayName="【測量術】" />
+    <text lang="Spanish" displayName="Otear" />
+    <text lang="French" displayName="Analyse" />
+    <text lang="German" displayName="Überblick" />
+    <text lang="Italian" displayName="Zoom" />
     <learnedSkillInfo byteOffset="18" bitMask="32" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="150" name="OpportunityShot" personal="false" unlearnable="false">
     <text lang="English" displayName="Opportunity Shot" />
     <text lang="Japanese" displayName="【自動砲台】" />
+    <text lang="Spanish" displayName="A tiro" />
+    <text lang="French" displayName="Fenêtre de tir" />
+    <text lang="German" displayName="Gute Gelegenheit" />
+    <text lang="Italian" displayName="Autocannone" />
     <learnedSkillInfo byteOffset="18" bitMask="64" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="151" name="RifledBarrel" personal="false" unlearnable="false">
     <text lang="English" displayName="Rifled Barrel" />
     <text lang="Japanese" displayName="【砲身改造】" />
+    <text lang="Spanish" displayName="Cañón trucado" />
+    <text lang="French" displayName="Barillet" />
+    <text lang="German" displayName="Kanonade" />
+    <text lang="Italian" displayName="Arma truccata" />
     <learnedSkillInfo byteOffset="18" bitMask="128" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="152" name="Surefooted" personal="false" unlearnable="false">
     <text lang="English" displayName="Surefooted" />
     <text lang="Japanese" displayName="【悪路踏破】" />
+    <text lang="Spanish" displayName="Determinación" />
+    <text lang="French" displayName="Agilité" />
+    <text lang="German" displayName="Leichtfüßig" />
+    <text lang="Italian" displayName="Piè sospinto" />
     <learnedSkillInfo byteOffset="19" bitMask="1" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="153" name="WitchsBrew" personal="false" unlearnable="false">
     <text lang="English" displayName="Witch's Brew" />
     <text lang="Japanese" displayName="【魔女の大釜】" />
+    <text lang="Spanish" displayName="Brebaje brujesco" />
+    <text lang="French" displayName="Philtre magique" />
+    <text lang="German" displayName="Hexentrank" />
+    <text lang="Italian" displayName="Filtro magico" />
     <learnedSkillInfo byteOffset="19" bitMask="2" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="154" name="Warp" personal="false" unlearnable="false">
     <text lang="English" displayName="Warp" />
     <text lang="Japanese" displayName="【ワープ】" />
+    <text lang="Spanish" displayName="Transportar" />
+    <text lang="French" displayName="Téléport" />
+    <text lang="German" displayName="Teleport" />
+    <text lang="Italian" displayName="Teletrasporto" />
     <learnedSkillInfo byteOffset="19" bitMask="4" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="155" name="ToxicBrew" personal="false" unlearnable="false">
     <text lang="English" displayName="Toxic Brew" />
     <text lang="Japanese" displayName="【魔女の毒薬】" />
+    <text lang="Spanish" displayName="Brebaje tóxico" />
+    <text lang="French" displayName="Mixture toxique" />
+    <text lang="German" displayName="Gifttrank" />
+    <text lang="Italian" displayName="Pozione tossica" />
     <learnedSkillInfo byteOffset="19" bitMask="8" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="true" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="156" name="DancingBlade" personal="false" unlearnable="false">
     <text lang="English" displayName="Dancing Blade" />
     <text lang="Japanese" displayName="【柔剣】" />
+    <text lang="Spanish" displayName="Danza del Sable" />
+    <text lang="French" displayName="Épée dansante" />
+    <text lang="German" displayName="Tanz-Klinge" />
+    <text lang="Italian" displayName="Lame danzanti" />
     <learnedSkillInfo byteOffset="19" bitMask="16" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="true" enemyAndNpc="false" />
   </skill>
   <skill id="157" name="DualGuardsman" personal="false" unlearnable="false">
     <text lang="English" displayName="Dual Guardsman" />
     <text lang="Japanese" displayName="【防陣＋】" />
+    <text lang="Spanish" displayName="Quite especial" />
+    <text lang="French" displayName="Duo protecteur" />
+    <text lang="German" displayName="Doppelwächter" />
+    <text lang="Italian" displayName="Doppia guardia" />
     <learnedSkillInfo byteOffset="19" bitMask="32" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="true" enemyAndNpc="false" />
   </skill>
   <skill id="158" name="HeavyBlade" personal="false" unlearnable="false">
     <text lang="English" displayName="Heavy Blade" />
     <text lang="Japanese" displayName="【剛剣】" />
+    <text lang="Spanish" displayName="Sable pesado" />
+    <text lang="French" displayName="Lame lourde" />
+    <text lang="German" displayName="Schwere Klinge" />
+    <text lang="Italian" displayName="Lame grevi" />
     <learnedSkillInfo byteOffset="19" bitMask="64" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="true" enemyAndNpc="false" />
   </skill>
   <skill id="159" name="VeteranIntuition" personal="false" unlearnable="false">
     <text lang="English" displayName="Veteran Intuition" />
     <text lang="Japanese" displayName="【歴戦の勘】" />
+    <text lang="Spanish" displayName="Pericia veterana" />
+    <text lang="French" displayName="Vétéran assagi" />
+    <text lang="German" displayName="Bauchgefühl" />
+    <text lang="Italian" displayName="Intuito maestro" />
     <learnedSkillInfo byteOffset="19" bitMask="128" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="true" enemyAndNpc="false" />
   </skill>
   <skill id="160" name="Supportive" personal="true" unlearnable="false">
     <text lang="English" displayName="Supportive" />
     <text lang="Japanese" displayName="【不思議な魅力】" />
+    <text lang="Spanish" displayName="Servicial" />
+    <text lang="French" displayName="Soutien utile" />
+    <text lang="German" displayName="Seite an Seite" />
+    <text lang="Italian" displayName="Comando" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="161" name="ForcefulPartner" personal="true" unlearnable="false">
     <text lang="English" displayName="Forceful Partner" />
     <text lang="Japanese" displayName="【絶対進攻】" />
+    <text lang="Spanish" displayName="Alianza robusta" />
+    <text lang="French" displayName="Partenaire efficace" />
+    <text lang="German" displayName="Starker Gefährte" />
+    <text lang="Italian" displayName="Compagno valente" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="162" name="DevotedPartner" personal="true" unlearnable="false">
     <text lang="English" displayName="Devoted Partner" />
     <text lang="Japanese" displayName="【絶対援護】" />
+    <text lang="Spanish" displayName="Alianza sincera" />
+    <text lang="French" displayName="Partenaire dévouée" />
+    <text lang="German" displayName="Ergebene Gefährtin" />
+    <text lang="Italian" displayName="Compagno fidato" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="163" name="EvasivePartner" personal="true" unlearnable="false">
     <text lang="English" displayName="Evasive Partner" />
     <text lang="Japanese" displayName="【絶対死守】" />
+    <text lang="Spanish" displayName="Alianza esquiva" />
+    <text lang="French" displayName="Partenaire agile" />
+    <text lang="German" displayName="Flinker Gefährte" />
+    <text lang="Italian" displayName="Compagno schivo" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="164" name="FieryBlood" personal="true" unlearnable="false">
     <text lang="English" displayName="Fiery Blood" />
     <text lang="Japanese" displayName="【炎の血】" />
+    <text lang="Spanish" displayName="Sangre exaltada" />
+    <text lang="French" displayName="Sang bouillant" />
+    <text lang="German" displayName="Feuriges Blut" />
+    <text lang="Italian" displayName="Sangue ardente" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="165" name="MiraculousSave" personal="true" unlearnable="false">
     <text lang="English" displayName="Miraculous Save" />
     <text lang="Japanese" displayName="【絆の祈り】" />
+    <text lang="Spanish" displayName="Rescate milagroso" />
+    <text lang="French" displayName="Sauvetage miracle" />
+    <text lang="German" displayName="In letzter Sekunde" />
+    <text lang="Italian" displayName="Parata miracolosa" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="166" name="HealingDescant" personal="true" unlearnable="false">
     <text lang="English" displayName="Healing Descant" />
     <text lang="Japanese" displayName="【癒しの声】" />
+    <text lang="Spanish" displayName="Voz sanadora" />
+    <text lang="French" displayName="Chant apaisant" />
+    <text lang="German" displayName="Segen der Heilung" />
+    <text lang="Italian" displayName="Discanto guaritore" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="167" name="QuietStrength" personal="true" unlearnable="false">
     <text lang="English" displayName="Quiet Strength" />
     <text lang="Japanese" displayName="【小さな声援】" />
+    <text lang="Spanish" displayName="Remanso de fuerza" />
+    <text lang="French" displayName="Force tranquille" />
+    <text lang="German" displayName="Innere Stärke" />
+    <text lang="Italian" displayName="Forza silente" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="168" name="FearsomeBlow" personal="true" unlearnable="false">
     <text lang="English" displayName="Fearsome Blow" />
     <text lang="Japanese" displayName="【お転婆】" />
+    <text lang="Spanish" displayName="Arrebato letal" />
+    <text lang="French" displayName="Coup redoutable" />
+    <text lang="German" displayName="Fürchterlicher Hieb" />
+    <text lang="Italian" displayName="Colpo bruto" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="169" name="Perfectionist" personal="true" unlearnable="false">
     <text lang="English" displayName="Perfectionist" />
     <text lang="Japanese" displayName="【完璧主義】" />
+    <text lang="Spanish" displayName="Perfeccionista" />
+    <text lang="French" displayName="Perfectionniste" />
+    <text lang="German" displayName="Perfektionist" />
+    <text lang="Italian" displayName="Perfezionismo" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="170" name="VowOfFriendship" personal="true" unlearnable="false">
     <text lang="English" displayName="Vow of Friendship" />
     <text lang="Japanese" displayName="【友情の誓い】" />
+    <text lang="Spanish" displayName="Pacto de amistad" />
+    <text lang="French" displayName="Serment d'amitié" />
+    <text lang="German" displayName="Freunde fürs Leben" />
+    <text lang="Italian" displayName="Voto d'amicizia" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="171" name="Pyrotechnics" personal="true" unlearnable="false">
     <text lang="English" displayName="Pyrotechnics" />
     <text lang="Japanese" displayName="【爆炎使い】" />
+    <text lang="Spanish" displayName="Pirotecnia" />
+    <text lang="French" displayName="Pyrotechnie" />
+    <text lang="German" displayName="Feuerwerk" />
+    <text lang="Italian" displayName="Fuochi d'artificio" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="172" name="Capture" personal="true" unlearnable="false">
     <text lang="English" displayName="Capture" />
     <text lang="Japanese" displayName="【白夜の捕縛術】" />
+    <text lang="Spanish" displayName="Apresar" />
+    <text lang="French" displayName="Capture" />
+    <text lang="German" displayName="Einfangen" />
+    <text lang="Italian" displayName="Cattura" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="173" name="RallyingCry" personal="true" unlearnable="false">
     <text lang="English" displayName="Rallying Cry" />
     <text lang="Japanese" displayName="【叱咤激励】" />
+    <text lang="Spanish" displayName="Grito potenciador" />
+    <text lang="French" displayName="Cri de ralliement" />
+    <text lang="German" displayName="Schlachtruf" />
+    <text lang="Italian" displayName="Grido di forza" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="174" name="DivineRetribution" personal="true" unlearnable="false">
     <text lang="English" displayName="Divine Retribution" />
     <text lang="Japanese" displayName="【天罰】" />
+    <text lang="Spanish" displayName="Justicia divina" />
+    <text lang="French" displayName="Punition divine" />
+    <text lang="German" displayName="Heilige Vergeltung" />
+    <text lang="Italian" displayName="Castigo divino" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="175" name="Optimistic" personal="true" unlearnable="false">
     <text lang="English" displayName="Optimistic" />
     <text lang="Japanese" displayName="【ぼんやり】" />
+    <text lang="Spanish" displayName="Optimista" />
+    <text lang="French" displayName="Optimiste" />
+    <text lang="German" displayName="Optimismus" />
+    <text lang="Italian" displayName="Ottimismo" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="176" name="Pride" personal="true" unlearnable="false">
     <text lang="English" displayName="Pride" />
     <text lang="Japanese" displayName="【尊大】" />
+    <text lang="Spanish" displayName="Orgullo" />
+    <text lang="French" displayName="Orgueil" />
+    <text lang="German" displayName="Stolz" />
+    <text lang="Italian" displayName="Orgoglio" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="177" name="NohrEnmity" personal="true" unlearnable="false">
     <text lang="English" displayName="Nohr Enmity" />
     <text lang="Japanese" displayName="【暗夜嫌い】" />
+    <text lang="Spanish" displayName="Hostil hacia Nohr" />
+    <text lang="French" displayName="Hostile à Nohr" />
+    <text lang="German" displayName="Todfeind Nohr" />
+    <text lang="Italian" displayName="Ostilità al Nohr" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="178" name="TripleThreat" personal="true" unlearnable="false">
     <text lang="English" displayName="Triple Threat" />
     <text lang="Japanese" displayName="【悪あがき】" />
+    <text lang="Spanish" displayName="Tríplice peligro" />
+    <text lang="French" displayName="Menace triple" />
+    <text lang="German" displayName="Dreifachhieb" />
+    <text lang="Italian" displayName="Tripla minaccia" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="179" name="Competitive" personal="true" unlearnable="false">
     <text lang="English" displayName="Competitive" />
     <text lang="Japanese" displayName="【対抗意識】" />
+    <text lang="Spanish" displayName="Pugna" />
+    <text lang="French" displayName="Compétitif" />
+    <text lang="German" displayName="Wettstreit" />
+    <text lang="Italian" displayName="Competitività" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="180" name="ShurikenMastery" personal="true" unlearnable="false">
     <text lang="English" displayName="Shuriken Mastery" />
     <text lang="Japanese" displayName="【忍法車返し】" />
+    <text lang="Spanish" displayName="Shuriken retorsivo" />
+    <text lang="French" displayName="Représailles" />
+    <text lang="German" displayName="Shurikenmeister" />
+    <text lang="Italian" displayName="Shuriken specchio" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="181" name="MorbidCelebration" personal="true" unlearnable="false">
     <text lang="English" displayName="Morbid Celebration" />
     <text lang="Japanese" displayName="【勝者の愉悦】" />
+    <text lang="Spanish" displayName="Fiesta macabra" />
+    <text lang="French" displayName="Fête macabre" />
+    <text lang="German" displayName="Morbides Fest" />
+    <text lang="Italian" displayName="Cerimonia macabra" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="182" name="Reciprocity" personal="true" unlearnable="false">
     <text lang="English" displayName="Reciprocity" />
     <text lang="Japanese" displayName="【恩返し】" />
+    <text lang="Spanish" displayName="Reciprocidad" />
+    <text lang="French" displayName="Réciprocité" />
+    <text lang="German" displayName="Wechselwirkung" />
+    <text lang="Italian" displayName="Reciprocità" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="183" name="Bushido" personal="true" unlearnable="false">
     <text lang="English" displayName="Bushido" />
     <text lang="Japanese" displayName="【武士道】" />
+    <text lang="Spanish" displayName="Bushido" />
+    <text lang="French" displayName="Bushido" />
+    <text lang="German" displayName="Bushido" />
+    <text lang="Italian" displayName="Bushido" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="184" name="InExtremis" personal="true" unlearnable="false">
     <text lang="English" displayName="In Extremis" />
     <text lang="Japanese" displayName="【勝利への執念】" />
+    <text lang="Spanish" displayName="Último aliento" />
+    <text lang="French" displayName="In extremis" />
+    <text lang="German" displayName="In Extremis" />
+    <text lang="Italian" displayName="In extremis" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="185" name="Highwayman" personal="true" unlearnable="false">
     <text lang="English" displayName="Highwayman" />
     <text lang="Japanese" displayName="【ダーティファイト】" />
+    <text lang="Spanish" displayName="Asaltacaminos" />
+    <text lang="French" displayName="Truand" />
+    <text lang="German" displayName="Wegelagerer" />
+    <text lang="Italian" displayName="Brigantaggio" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="186" name="LilysPoise" personal="true" unlearnable="false">
     <text lang="English" displayName="Lily's Poise" />
     <text lang="Japanese" displayName="【可憐な花】" />
+    <text lang="Spanish" displayName="Serenidad de lis" />
+    <text lang="French" displayName="Élégance" />
+    <text lang="German" displayName="Gelassenheit" />
+    <text lang="Italian" displayName="Portamento" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="187" name="Misfortunate" personal="true" unlearnable="false">
     <text lang="English" displayName="Misfortunate" />
     <text lang="Japanese" displayName="【不運の塊】" />
+    <text lang="Spanish" displayName="Desventura" />
+    <text lang="French" displayName="Malchanceux" />
+    <text lang="German" displayName="Pechvogel" />
+    <text lang="Italian" displayName="Malasorte" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="188" name="Puissance" personal="true" unlearnable="false">
     <text lang="English" displayName="Puissance" />
     <text lang="Japanese" displayName="【怪力】" />
+    <text lang="Spanish" displayName="Ingenio" />
+    <text lang="French" displayName="Puissance" />
+    <text lang="German" displayName="Kraftschub" />
+    <text lang="Italian" displayName="Strapotere" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="189" name="AchingBlood" personal="true" unlearnable="false">
     <text lang="English" displayName="Aching Blood" />
     <text lang="Japanese" displayName="【血の疼き】" />
+    <text lang="Spanish" displayName="Sangre afligida" />
+    <text lang="French" displayName="Sang maudit" />
+    <text lang="German" displayName="Kochendes Blut" />
+    <text lang="Italian" displayName="Sangue straziante" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="190" name="Kidnap" personal="true" unlearnable="false">
     <text lang="English" displayName="Kidnap" />
     <text lang="Japanese" displayName="【暗夜の拘束術】" />
+    <text lang="Spanish" displayName="Raptar" />
+    <text lang="French" displayName="Kidnapping" />
+    <text lang="German" displayName="Entführung" />
+    <text lang="Italian" displayName="Rapimento" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="191" name="Countercurse" personal="true" unlearnable="false">
     <text lang="English" displayName="Countercurse" />
     <text lang="Japanese" displayName="【呪詛返し】" />
+    <text lang="Spanish" displayName="Contrahechizo" />
+    <text lang="French" displayName="Contresort" />
+    <text lang="German" displayName="Bannfluch" />
+    <text lang="Italian" displayName="Contromaledizione" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="192" name="RosesThorns" personal="true" unlearnable="false">
     <text lang="English" displayName="Rose's Thorns" />
     <text lang="Japanese" displayName="【妖艶な花】" />
+    <text lang="Spanish" displayName="Espinas de rosa" />
+    <text lang="French" displayName="Épines de rose" />
+    <text lang="German" displayName="Dorn der Rose" />
+    <text lang="Italian" displayName="Spine di rosa" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="193" name="FierceRival" personal="true" unlearnable="false">
     <text lang="English" displayName="Fierce Rival" />
     <text lang="Japanese" displayName="【負けん気】" />
+    <text lang="Spanish" displayName="Émulo feroz" />
+    <text lang="French" displayName="Rival acharné" />
+    <text lang="German" displayName="Ewiger Rivale" />
+    <text lang="Italian" displayName="Nemico brutale" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="194" name="Opportunist" personal="true" unlearnable="false">
     <text lang="English" displayName="Opportunist" />
     <text lang="Japanese" displayName="【奇襲任務】" />
+    <text lang="Spanish" displayName="Oportunista" />
+    <text lang="French" displayName="Opportuniste" />
+    <text lang="German" displayName="Opportunist" />
+    <text lang="Italian" displayName="Opportunismo" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="195" name="FancyFootwork" personal="true" unlearnable="false">
     <text lang="English" displayName="Fancy Footwork" />
     <text lang="Japanese" displayName="【青の踊り】" />
+    <text lang="Spanish" displayName="Presteza elegante" />
+    <text lang="French" displayName="Bon jeu de jambes" />
+    <text lang="German" displayName="Kunstvolle Schritte" />
+    <text lang="Italian" displayName="Passo lesto" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="196" name="Bloodthirst" personal="true" unlearnable="false">
     <text lang="English" displayName="Bloodthirst" />
     <text lang="Japanese" displayName="【殺戮本能】" />
+    <text lang="Spanish" displayName="Sed de sangre" />
+    <text lang="French" displayName="Soif de sang" />
+    <text lang="German" displayName="Blutdurst" />
+    <text lang="Italian" displayName="Sete di sangue" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="197" name="FierceMien" personal="true" unlearnable="false">
     <text lang="English" displayName="Fierce Mien" />
     <text lang="Japanese" displayName="【強面】" />
+    <text lang="Spanish" displayName="Porte fiero" />
+    <text lang="French" displayName="Air féroce" />
+    <text lang="German" displayName="Grimasse" />
+    <text lang="Italian" displayName="Impeto feroce" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="198" name="Unmask" personal="true" unlearnable="false">
     <text lang="English" displayName="Unmask" />
     <text lang="Japanese" displayName="【女の本性】" />
+    <text lang="Spanish" displayName="Quitarse la careta" />
+    <text lang="French" displayName="Mesquinerie" />
+    <text lang="German" displayName="Wahres Gesicht" />
+    <text lang="Italian" displayName="Smascheramento" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="199" name="Pragmatic" personal="true" unlearnable="false">
     <text lang="English" displayName="Pragmatic" />
     <text lang="Japanese" displayName="【冷血】" />
+    <text lang="Spanish" displayName="Abusón" />
+    <text lang="French" displayName="Pragmatique" />
+    <text lang="German" displayName="Pragmatisch" />
+    <text lang="Italian" displayName="Pragmatismo" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="200" name="Collector" personal="true" unlearnable="false">
     <text lang="English" displayName="Collector" />
     <text lang="Japanese" displayName="【拾いもの】" />
+    <text lang="Spanish" displayName="Recolección" />
+    <text lang="French" displayName="Collectionneur" />
+    <text lang="German" displayName="Sammler" />
+    <text lang="Italian" displayName="Raccolta" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="201" name="Chivalry" personal="true" unlearnable="false">
     <text lang="English" displayName="Chivalry" />
     <text lang="Japanese" displayName="【騎士道】" />
+    <text lang="Spanish" displayName="Caballerosidad" />
+    <text lang="French" displayName="Chevalerie" />
+    <text lang="German" displayName="Ritterlichkeit" />
+    <text lang="Italian" displayName="Cavalleria" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="202" name="Peacebringer" personal="true" unlearnable="false">
     <text lang="English" displayName="Peacebringer" />
     <text lang="Japanese" displayName="【美しき王】" />
+    <text lang="Spanish" displayName="Conciliador" />
+    <text lang="French" displayName="Pacificateur" />
+    <text lang="German" displayName="Friedensstifter" />
+    <text lang="Italian" displayName="Pacificazione" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="203" name="WindDisciple" personal="true" unlearnable="false">
     <text lang="English" displayName="Wind Disciple" />
     <text lang="Japanese" displayName="【風の血】" />
+    <text lang="Spanish" displayName="Discípulo del viento" />
+    <text lang="French" displayName="Disciple du vent" />
+    <text lang="German" displayName="Diener des Windes" />
+    <text lang="Italian" displayName="Discepolo del vento" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="204" name="Perspicacious" personal="true" unlearnable="false">
     <text lang="English" displayName="Perspicacious" />
     <text lang="Japanese" displayName="【軍略伝授】" />
+    <text lang="Spanish" displayName="Perspicacia" />
+    <text lang="French" displayName="Perspicace" />
+    <text lang="German" displayName="Scharfsinn" />
+    <text lang="Italian" displayName="Perspicacia" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="205" name="IcyBlood" personal="true" unlearnable="false">
     <text lang="English" displayName="Icy Blood" />
     <text lang="Japanese" displayName="【氷の血】" />
+    <text lang="Spanish" displayName="Sangre gélida" />
+    <text lang="French" displayName="Sang-froid" />
+    <text lang="German" displayName="Eisiges Blut" />
+    <text lang="Italian" displayName="Sangue gelido" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="206" name="Forager" personal="true" unlearnable="false">
     <text lang="English" displayName="Forager" />
     <text lang="Japanese" displayName="【農地の主】" />
+    <text lang="Spanish" displayName="Montaraz" />
+    <text lang="French" displayName="Fureteur" />
+    <text lang="German" displayName="Kind vom Lande" />
+    <text lang="Italian" displayName="Foraggiamento" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="207" name="DraconicHeir" personal="true" unlearnable="false">
     <text lang="English" displayName="Draconic Heir" />
     <text lang="Japanese" displayName="【竜の御子】" />
+    <text lang="Spanish" displayName="Legado dragontino" />
+    <text lang="French" displayName="Héritier du dragon" />
+    <text lang="German" displayName="Erbe des Drachen" />
+    <text lang="Italian" displayName="Eredità del drago" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="208" name="BornSteward" personal="true" unlearnable="false">
     <text lang="English" displayName="Born Steward" />
     <text lang="Japanese" displayName="【執事の嗜み】" />
+    <text lang="Spanish" displayName="Servidor nato" />
+    <text lang="French" displayName="Intendant né" />
+    <text lang="German" displayName="Geborener Diener" />
+    <text lang="Italian" displayName="Onori di casa" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="209" name="PerfectPitch" personal="true" unlearnable="false">
     <text lang="English" displayName="Perfect Pitch" />
     <text lang="Japanese" displayName="【チューニング】" />
+    <text lang="Spanish" displayName="Tono perfecto" />
+    <text lang="French" displayName="Oreille absolue" />
+    <text lang="German" displayName="Absolutes Gehör" />
+    <text lang="Italian" displayName="Orecchio assoluto" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="210" name="Mischievous" personal="true" unlearnable="false">
     <text lang="English" displayName="Mischievous" />
     <text lang="Japanese" displayName="【おっちょこちょい】" />
+    <text lang="Spanish" displayName="Travesura" />
+    <text lang="French" displayName="Filouterie" />
+    <text lang="German" displayName="Schelm" />
+    <text lang="Italian" displayName="Tiro birichino" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="211" name="LuckyCharm" personal="true" unlearnable="false">
     <text lang="English" displayName="Lucky Charm" />
     <text lang="Japanese" displayName="【幸運のおまじない】" />
+    <text lang="Spanish" displayName="Suertilegio" />
+    <text lang="French" displayName="Sort de chance" />
+    <text lang="German" displayName="Glücksbringer" />
+    <text lang="Italian" displayName="Portafortuna" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="212" name="NobleCause" personal="true" unlearnable="false">
     <text lang="English" displayName="Noble Cause" />
     <text lang="Japanese" displayName="【大義の勇】" />
+    <text lang="Spanish" displayName="Noble causa" />
+    <text lang="French" displayName="Noble cause" />
+    <text lang="German" displayName="Edle Tat" />
+    <text lang="Italian" displayName="Causa nobile" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="213" name="Optimist" personal="true" unlearnable="false">
     <text lang="English" displayName="Optimist" />
     <text lang="Japanese" displayName="【前向き】" />
+    <text lang="Spanish" displayName="Positividad" />
+    <text lang="French" displayName="Positif" />
+    <text lang="German" displayName="Optimist" />
+    <text lang="Italian" displayName="Ottimista" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="214" name="SweetTooth" personal="true" unlearnable="false">
     <text lang="English" displayName="Sweet Tooth" />
     <text lang="Japanese" displayName="【甘党】" />
+    <text lang="Spanish" displayName="Goloso" />
+    <text lang="French" displayName="Saccarophile" />
+    <text lang="German" displayName="Naschkatze" />
+    <text lang="Italian" displayName="Ghiottoneria" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="215" name="Playthings" personal="true" unlearnable="false">
     <text lang="English" displayName="Playthings" />
     <text lang="Japanese" displayName="【じゃれつき】" />
+    <text lang="Spanish" displayName="Juguetes" />
+    <text lang="French" displayName="Enfantillages" />
+    <text lang="German" displayName="Spielkameraden" />
+    <text lang="Italian" displayName="Balocco" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="216" name="Calm" personal="true" unlearnable="false">
     <text lang="English" displayName="Calm" />
     <text lang="Japanese" displayName="【冷静沈着】" />
+    <text lang="Spanish" displayName="Relajación" />
+    <text lang="French" displayName="Calme" />
+    <text lang="German" displayName="Besonnenheit" />
+    <text lang="Italian" displayName="Calma" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="217" name="Haiku" personal="true" unlearnable="false">
     <text lang="English" displayName="Haiku" />
     <text lang="Japanese" displayName="【五・七・五】" />
+    <text lang="Spanish" displayName="Haiku" />
+    <text lang="French" displayName="Poésie" />
+    <text lang="German" displayName="Haiku" />
+    <text lang="Italian" displayName="Haiku" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="218" name="Prodigy" personal="true" unlearnable="false">
     <text lang="English" displayName="Prodigy" />
     <text lang="Japanese" displayName="【天才肌】" />
+    <text lang="Spanish" displayName="Prodigio" />
+    <text lang="French" displayName="Merveille" />
+    <text lang="German" displayName="Wunderkind" />
+    <text lang="Italian" displayName="Prodigio" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="219" name="Vendetta" personal="true" unlearnable="false">
     <text lang="English" displayName="Vendetta" />
     <text lang="Japanese" displayName="【執念】" />
+    <text lang="Spanish" displayName="Vendetta" />
+    <text lang="French" displayName="Vendetta" />
+    <text lang="German" displayName="Vendetta" />
+    <text lang="Italian" displayName="Vendetta" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="220" name="Gallant" personal="true" unlearnable="false">
     <text lang="English" displayName="Gallant" />
     <text lang="Japanese" displayName="【レディーファースト】" />
+    <text lang="Spanish" displayName="Cortesía" />
+    <text lang="French" displayName="Galant" />
+    <text lang="German" displayName="Galanterie" />
+    <text lang="Italian" displayName="Galanteria" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="221" name="FierceCounter" personal="true" unlearnable="false">
     <text lang="English" displayName="Guarded Bravery" />
     <text lang="Japanese" displayName="【臆病】" />
+    <text lang="Spanish" displayName="Valentía cauta" />
+    <text lang="French" displayName="Bravoure prudente" />
+    <text lang="German" displayName="Bedingter Mut" />
+    <text lang="Italian" displayName="Cauto coraggio" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="222" name="GuardedBravery" personal="true" unlearnable="false">
     <text lang="English" displayName="Fierce Counter" />
     <text lang="Japanese" displayName="【だまし討ち】" />
+    <text lang="Spanish" displayName="Respuesta fiera" />
+    <text lang="French" displayName="Contre féroce" />
+    <text lang="German" displayName="Überraschung" />
+    <text lang="Italian" displayName="Contrattacco ferale" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="223" name="Scavenge" personal="true" unlearnable="false">
     <text lang="English" displayName="Goody Basket" />
     <text lang="Japanese" displayName="【ひろい食い】" />
+    <text lang="Spanish" displayName="Cesta de aperitivos" />
+    <text lang="French" displayName="Panier garni" />
+    <text lang="German" displayName="Wundertüte" />
+    <text lang="Italian" displayName="Cestino delizioso" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="224" name="FortunateSon" personal="true" unlearnable="false">
     <text lang="English" displayName="Fortunate Son" />
     <text lang="Japanese" displayName="【強運の塊】" />
+    <text lang="Spanish" displayName="Hijo afortunado" />
+    <text lang="French" displayName="Fils chanceux" />
+    <text lang="German" displayName="Glückskind" />
+    <text lang="Italian" displayName="Figlio fortunato" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="225" name="Bibliophile" personal="true" unlearnable="false">
     <text lang="English" displayName="Bibliophile" />
     <text lang="Japanese" displayName="【乙女心の躍動】" />
+    <text lang="Spanish" displayName="Bibliofilia" />
+    <text lang="French" displayName="Bibliophile" />
+    <text lang="German" displayName="Bücherwurm" />
+    <text lang="Italian" displayName="Bibliofilia" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="226" name="Sisterhood" personal="true" unlearnable="false">
     <text lang="English" displayName="Sisterhood" />
     <text lang="Japanese" displayName="【女の子好き】" />
+    <text lang="Spanish" displayName="Hermanas" />
+    <text lang="French" displayName="Solidarité féminine" />
+    <text lang="German" displayName="Beste Freundinnen" />
+    <text lang="Italian" displayName="Sorellanza" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="227" name="Daydream" personal="true" unlearnable="false">
     <text lang="English" displayName="Daydream" />
     <text lang="Japanese" displayName="【邪な空想】" />
+    <text lang="Spanish" displayName="Fantasías" />
+    <text lang="French" displayName="Rêverie" />
+    <text lang="German" displayName="Tagträumer" />
+    <text lang="Italian" displayName="Fantasticheria" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <skill id="228" name="MakeAKilling" personal="true" unlearnable="false">
     <text lang="English" displayName="Make a Killing" />
     <text lang="Japanese" displayName="【一攫千金】" />
+    <text lang="Spanish" displayName="Liquidación total" />
+    <text lang="French" displayName="Prix du sang" />
+    <text lang="German" displayName="Todsicherer Profit" />
+    <text lang="Italian" displayName="Soldi facili" />
     <learnedSkillInfo byteOffset="0" bitMask="0" />
     <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   <!--
   Template:
-  <skill id="0" name="InternalName" enemyOnly="false" personal="true" unlearnable="false">
+  <skill id="0" name="InternalName" personal="false" unlearnable="false">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <learnedSkillInfo byteOffset="0" bitMask="1" />
+    <categories normalClass="false" corrinOnly="false" azuraOnly="false" kitsuneOnly="false" wolfskinOnly="false" villagerOnly="false" pathBonusClass="false" dlcClass="false" amiiboClass="false" enemyAndNpc="false" />
   </skill>
   -->
 </root>
