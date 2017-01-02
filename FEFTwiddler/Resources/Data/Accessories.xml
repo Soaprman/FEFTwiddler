@@ -2,293 +2,581 @@
 <root>
   <accessory id="0" name="None" type="None">
     <text lang="English" displayName="(None)" />
-    <text lang="Japanese" displayName="無し" />
+    <text lang="Japanese" displayName="（無し）" />
+    <text lang="Spanish" displayName="(Nada)" />
+    <text lang="French" displayName="(Rien)" />
+    <text lang="German" displayName="(Nichts)" />
+    <text lang="Italian" displayName="(Nessuna)" />
   </accessory>
   <accessory id="1" name="MarthsTiara" type="Headwear">
     <text lang="English" displayName="Marth's Tiara" />
     <text lang="Japanese" displayName="マルスのティアラ" />
+    <text lang="Spanish" displayName="Tiara de Marth" />
+    <text lang="French" displayName="Tiare de Marth" />
+    <text lang="German" displayName="Marths Tiara" />
+    <text lang="Italian" displayName="Tiara di Marth" />
   </accessory>
   <accessory id="2" name="DragonHairpin" type="Headwear">
     <text lang="English" displayName="Dragon Hairpin" />
     <text lang="Japanese" displayName="神竜の髪飾り" />
+    <text lang="Spanish" displayName="Horq. dragón" />
+    <text lang="French" displayName="Tiare dragon" />
+    <text lang="German" displayName="Drachenspange" />
+    <text lang="Italian" displayName="Diadema drago" />
   </accessory>
   <accessory id="3" name="BearHat" type="Headwear">
     <text lang="English" displayName="Bear Hat" />
     <text lang="Japanese" displayName="熊の髪飾り" />
+    <text lang="Spanish" displayName="Sombrero oso" />
+    <text lang="French" displayName="Coiffe d'ours" />
+    <text lang="German" displayName="Bärenhut" />
+    <text lang="Italian" displayName="Cappello orso" />
   </accessory>
   <accessory id="4" name="ButterflyMask" type="Facewear">
     <text lang="English" displayName="Butterfly Mask" />
     <text lang="Japanese" displayName="蝶の仮面" />
+    <text lang="Spanish" displayName="Pluma dragón" />
+    <text lang="French" displayName="Plume dragon" />
+    <text lang="German" displayName="Drachenfeder" />
+    <text lang="Italian" displayName="Piuma di drago" />
   </accessory>
   <accessory id="5" name="DragonFeather" type="Armwear">
     <text lang="English" displayName="Dragon Feather" />
     <text lang="Japanese" displayName="邪竜の羽根" />
+    <text lang="Spanish" displayName="Libros Daraen" />
+    <text lang="French" displayName="Livres Daraen" />
+    <text lang="German" displayName="Daraens Bücher" />
+    <text lang="Italian" displayName="Tomi di Daraen" />
   </accessory>
   <accessory id="6" name="RobinsBooks" type="Armwear">
     <text lang="English" displayName="Robin's Books" />
     <text lang="Japanese" displayName="ルフレの書架" />
+    <text lang="Spanish" displayName="Hombrera Ike" />
+    <text lang="French" displayName="Épaulière d'Ike" />
+    <text lang="German" displayName="Ikes Rüstung" />
+    <text lang="Italian" displayName="Spallina di Ike" />
   </accessory>
   <accessory id="7" name="IkesPauldron" type="Armwear">
     <text lang="English" displayName="Ike's Pauldron" />
     <text lang="Japanese" displayName="アイクの肩当て" />
+    <text lang="Spanish" displayName="Hombrera Yune" />
+    <text lang="French" displayName="Épaulière Yune" />
+    <text lang="German" displayName="Yunes Rüstung" />
+    <text lang="Italian" displayName="Spallina di Yune" />
   </accessory>
   <accessory id="8" name="YunePauldron" type="Armwear">
     <text lang="English" displayName="Yune Pauldron" />
     <text lang="Japanese" displayName="蒼炎の肩当て" />
+    <text lang="Spanish" displayName="Pañuelo sucio" />
+    <text lang="French" displayName="Capuche" />
+    <text lang="German" displayName="Flickenkopftuch" />
+    <text lang="Italian" displayName="Fazz. sporco" />
   </accessory>
   <accessory id="9" name="PinkBeret" type="Headwear">
     <text lang="English" displayName="Pink Beret" />
     <text lang="Japanese" displayName="ピンクの帽子" />
+    <text lang="Spanish" displayName="Pañuelo simple" />
+    <text lang="French" displayName="Fichu simple" />
+    <text lang="German" displayName="Weißes Tuch" />
+    <text lang="Italian" displayName="Copricapo" />
   </accessory>
   <accessory id="10" name="TraineeGarb" type="Headwear">
     <text lang="English" displayName="Trainee Garb" />
     <text lang="Japanese" displayName="修験者の頭襟" />
+    <text lang="Spanish" displayName="Flores" />
+    <text lang="French" displayName="Fleurs" />
+    <text lang="German" displayName="Blumenhaarreif" />
+    <text lang="Italian" displayName="Cerchietto fiori" />
   </accessory>
   <accessory id="11" name="MagesCirclet" type="Headwear">
     <text lang="English" displayName="Mage's Circlet" />
     <text lang="Japanese" displayName="魔道士の冠" />
+    <text lang="Spanish" displayName="Peina gigante" />
+    <text lang="French" displayName="Peigne géant" />
+    <text lang="German" displayName="Zierkamm, groß" />
+    <text lang="Italian" displayName="Grande pettine" />
   </accessory>
   <accessory id="12" name="PrincessBow" type="Headwear">
     <text lang="English" displayName="Princess Bow" />
     <text lang="Japanese" displayName="プリンセスリボン" />
+    <text lang="Spanish" displayName="Boina rosa" />
+    <text lang="French" displayName="Béret rose" />
+    <text lang="German" displayName="Pinkes Barett" />
+    <text lang="Italian" displayName="Basco rosa" />
   </accessory>
   <accessory id="13" name="DirtyKerchief" type="Headwear">
     <text lang="English" displayName="Dirty Kerchief" />
     <text lang="Japanese" displayName="頭巾" />
+    <text lang="Spanish" displayName="Cinta aprendiz" />
+    <text lang="French" displayName="Coiffe apprenti" />
+    <text lang="German" displayName="Lehrlingstiara" />
+    <text lang="Italian" displayName="Fascia asceta" />
   </accessory>
   <accessory id="14" name="SimpleKerchief" type="Headwear">
     <text lang="English" displayName="Simple Kerchief" />
     <text lang="Japanese" displayName="素朴なカーチフ" />
+    <text lang="Spanish" displayName="Cofia criada" />
+    <text lang="French" displayName="Coiffe servante" />
+    <text lang="German" displayName="Häubchen" />
+    <text lang="Italian" displayName="Crestina" />
   </accessory>
   <accessory id="15" name="FlowerBand" type="Headwear">
     <text lang="English" displayName="Flower Band" />
     <text lang="Japanese" displayName="花の髪飾り" />
+    <text lang="Spanish" displayName="Lazos princesa" />
+    <text lang="French" displayName="Rubans royaux" />
+    <text lang="German" displayName="Adelshaarband" />
+    <text lang="Italian" displayName="Fiocchi neri" />
   </accessory>
   <accessory id="16" name="GiantHaircomb" type="Headwear">
     <text lang="English" displayName="Giant Haircomb" />
     <text lang="Japanese" displayName="大きなクシ" />
+    <text lang="Spanish" displayName="Broche dorado" />
+    <text lang="French" displayName="Barrette dorée" />
+    <text lang="German" displayName="Goldspange" />
+    <text lang="Italian" displayName="Forcina d'oro" />
   </accessory>
   <accessory id="17" name="LotteryHat" type="Headwear">
     <text lang="English" displayName="Lottery Hat" />
     <text lang="Japanese" displayName="クジ引き屋の帽子" />
+    <text lang="Spanish" displayName="Diadema mago" />
+    <text lang="French" displayName="Tiare de mage" />
+    <text lang="German" displayName="Magierdiadem" />
+    <text lang="Italian" displayName="Cerchio mago" />
   </accessory>
   <accessory id="18" name="PrincessCrown" type="Headwear">
     <text lang="English" displayName="Princess Crown" />
     <text lang="Japanese" displayName="プリンセスの冠" />
+    <text lang="Spanish" displayName="Cor. princesa" />
+    <text lang="French" displayName="Tiare royale" />
+    <text lang="German" displayName="Adelskrone" />
+    <text lang="Italian" displayName="Diadema nero" />
   </accessory>
   <accessory id="19" name="PrinceCrown" type="Headwear">
     <text lang="English" displayName="Prince Crown" />
     <text lang="Japanese" displayName="プリンスの冠" />
+    <text lang="Spanish" displayName="Cor. príncipe" />
+    <text lang="French" displayName="Tiare de prince" />
+    <text lang="German" displayName="Prinzenkrone" />
+    <text lang="Italian" displayName="Corona nera" />
   </accessory>
   <accessory id="20" name="SunTiara" type="Headwear">
     <text lang="English" displayName="Sun Tiara" />
     <text lang="Japanese" displayName="女王の日輪" />
+    <text lang="Spanish" displayName="Tiara del sol" />
+    <text lang="French" displayName="Tiare solaire" />
+    <text lang="German" displayName="Sonnentiara" />
+    <text lang="Italian" displayName="Tiara del sole" />
   </accessory>
   <accessory id="21" name="WhiteRibbon" type="Headwear">
     <text lang="English" displayName="White Ribbon" />
     <text lang="Japanese" displayName="白いリボン" />
+    <text lang="Spanish" displayName="Lazo blanco" />
+    <text lang="French" displayName="Ruban blanc" />
+    <text lang="German" displayName="Weiße Schleife" />
+    <text lang="Italian" displayName="Fiocco bianco" />
   </accessory>
   <accessory id="22" name="Nightcap" type="Headwear">
     <text lang="English" displayName="Nightcap" />
     <text lang="Japanese" displayName="ナイトキャップ" />
+    <text lang="Spanish" displayName="Gorro noche" />
+    <text lang="French" displayName="Bonnet de nuit" />
+    <text lang="German" displayName="Schlafmütze" />
+    <text lang="Italian" displayName="Cuffia da notte" />
   </accessory>
   <accessory id="23" name="GoldenClip" type="Headwear">
     <text lang="English" displayName="Golden Clip" />
     <text lang="Japanese" displayName="黄金の髪飾り" />
+    <text lang="Spanish" displayName="Gorro arlequín" />
+    <text lang="French" displayName="Bonnet de fou" />
+    <text lang="German" displayName="Lotteriehut" />
+    <text lang="Italian" displayName="Cappello buffo" />
   </accessory>
   <accessory id="24" name="MaidsBand" type="Headwear">
     <text lang="English" displayName="Maid's Band" />
     <text lang="Japanese" displayName="メイドの髪飾り" />
+    <text lang="Spanish" displayName="Gorro de chef" />
+    <text lang="French" displayName="Toque de chef" />
+    <text lang="German" displayName="Kochmütze" />
+    <text lang="Italian" displayName="Cappello cuoco" />
   </accessory>
   <accessory id="25" name="ChefsHat" type="Headwear">
     <text lang="English" displayName="Chef's Hat" />
     <text lang="Japanese" displayName="コックの帽子" />
+    <text lang="Spanish" displayName="Toalla termas" />
+    <text lang="French" displayName="Serviette" />
+    <text lang="German" displayName="Handtuch" />
+    <text lang="Italian" displayName="Asciugamano" />
   </accessory>
   <accessory id="26" name="HeadTowel" type="Headwear">
     <text lang="English" displayName="Head Towel" />
     <text lang="Japanese" displayName="温泉の手拭い" />
+    <text lang="Spanish" displayName="Gafas redondas" />
+    <text lang="French" displayName="Verres ronds" />
+    <text lang="German" displayName="Runde Brille" />
+    <text lang="Italian" displayName="Occhiali tondi" />
   </accessory>
   <accessory id="27" name="NinjaMask" type="Facewear">
     <text lang="English" displayName="Ninja Mask" />
     <text lang="Japanese" displayName="忍の覆面" />
+    <text lang="Spanish" displayName="Parche cruz" />
+    <text lang="French" displayName="Cache-œil" />
+    <text lang="German" displayName="Kreuzklappe" />
+    <text lang="Italian" displayName="Benda crociata" />
   </accessory>
   <accessory id="28" name="EffigyMask" type="Facewear">
     <text lang="English" displayName="Effigy Mask" />
     <text lang="Japanese" displayName="案山子のお面" />
+    <text lang="Spanish" displayName="Máscara oni" />
+    <text lang="French" displayName="Masque d'Oni" />
+    <text lang="German" displayName="Onimaske" />
+    <text lang="Italian" displayName="Oni" />
   </accessory>
   <accessory id="29" name="RoundGlasses" type="Facewear">
     <text lang="English" displayName="Round Glasses" />
     <text lang="Japanese" displayName="丸メガネ" />
+    <text lang="Spanish" displayName="Cara inhumano" />
+    <text lang="French" displayName="Sans-Visage" />
+    <text lang="German" displayName="Ungesichtmaske" />
+    <text lang="Italian" displayName="Senzavolto" />
   </accessory>
   <accessory id="30" name="CrossEyepatch" type="Facewear">
     <text lang="English" displayName="Cross Eyepatch" />
     <text lang="Japanese" displayName="十字の眼帯" />
+    <text lang="Spanish" displayName="Antifaz ninja" />
+    <text lang="French" displayName="Masque ninja" />
+    <text lang="German" displayName="Ninjamaske" />
+    <text lang="Italian" displayName="Ninja" />
   </accessory>
   <accessory id="31" name="OniMask" type="Facewear">
     <text lang="English" displayName="Oni Mask" />
     <text lang="Japanese" displayName="鬼のお面" />
+    <text lang="Spanish" displayName="Espantapájaros" />
+    <text lang="French" displayName="Épouvantail" />
+    <text lang="German" displayName="Puppenmaske" />
+    <text lang="Italian" displayName="Fantoccio" />
   </accessory>
   <accessory id="32" name="FacelessMask" type="Facewear">
     <text lang="English" displayName="Faceless Mask" />
     <text lang="Japanese" displayName="革のマスク" />
+    <text lang="Spanish" displayName="Almete samurái" />
+    <text lang="French" displayName="Crinière du lion" />
+    <text lang="German" displayName="Samuraimaske" />
+    <text lang="Italian" displayName="Leone" />
   </accessory>
   <accessory id="33" name="RoyalFeather" type="Facewear">
     <text lang="English" displayName="Royal Feather" />
     <text lang="Japanese" displayName="王妃の羽飾り" />
+    <text lang="Spanish" displayName="Máscara pétreo" />
+    <text lang="French" displayName="Lithomasque" />
+    <text lang="German" displayName="Golemmaske" />
+    <text lang="Italian" displayName="Cuorpietra" />
   </accessory>
   <accessory id="34" name="HeroMask" type="Facewear">
     <text lang="English" displayName="Hero Mask" />
     <text lang="Japanese" displayName="ヒーローのお面" />
+    <text lang="Spanish" displayName="Máscara tengu" />
+    <text lang="French" displayName="Masque tengu" />
+    <text lang="German" displayName="Tengumaske" />
+    <text lang="Italian" displayName="Tengu" />
   </accessory>
   <accessory id="35" name="EinherjarMask" type="Facewear">
     <text lang="English" displayName="Einherjar Mask" />
     <text lang="Japanese" displayName="魔符屋の仮面" />
+    <text lang="Spanish" displayName="Antifaz héroe" />
+    <text lang="French" displayName="Masque héros" />
+    <text lang="German" displayName="Heldenmaske" />
+    <text lang="Italian" displayName="Eroe" />
   </accessory>
   <accessory id="36" name="SamuraiMask" type="Facewear">
     <text lang="English" displayName="Samurai Mask" />
     <text lang="Japanese" displayName="獅子の面当て" />
+    <text lang="Spanish" displayName="Pluma real" />
+    <text lang="French" displayName="Plume royale" />
+    <text lang="German" displayName="Adelsfeder" />
+    <text lang="Italian" displayName="Piuma regale" />
   </accessory>
   <accessory id="37" name="GolemMask" type="Facewear">
     <text lang="English" displayName="Golem Mask" />
     <text lang="Japanese" displayName="ゴーレムの面" />
+    <text lang="Spanish" displayName="Antifaz festivo" />
+    <text lang="French" displayName="Masq. Einherjar" />
+    <text lang="German" displayName="Einherjarmaske" />
+    <text lang="Italian" displayName="Einherjar" />
   </accessory>
   <accessory id="38" name="TenguMask" type="Facewear">
     <text lang="English" displayName="Tengu Mask" />
     <text lang="Japanese" displayName="婆娑羅の面" />
+    <text lang="Spanish" displayName="Másc. carcelera" />
+    <text lang="French" displayName="Masque geôlier" />
+    <text lang="German" displayName="Wärtermaske" />
+    <text lang="Italian" displayName="Carceriere" />
   </accessory>
   <accessory id="39" name="JailerMask" type="Facewear">
     <text lang="English" displayName="Jailer Mask" />
     <text lang="Japanese" displayName="牢屋番の仮面" />
+    <text lang="Spanish" displayName="Gafas tintadas" />
+    <text lang="French" displayName="Verres teintés" />
+    <text lang="German" displayName="Getönte Brille" />
+    <text lang="Italian" displayName="Occhiali sole" />
   </accessory>
   <accessory id="40" name="TintedGlasses" type="Facewear">
     <text lang="English" displayName="Tinted Glasses" />
     <text lang="Japanese" displayName="色つきメガネ" />
+    <text lang="Spanish" displayName="Caparazón" />
+    <text lang="French" displayName="Carapace" />
+    <text lang="German" displayName="Rückenpanzer" />
+    <text lang="Italian" displayName="Elmo corazzato" />
   </accessory>
   <accessory id="41" name="FoxTail" type="Armwear">
     <text lang="English" displayName="Fox Tail" />
     <text lang="Japanese" displayName="獣のしっぽ" />
+    <text lang="Spanish" displayName="Hombrera zorro" />
+    <text lang="French" displayName="Masque renard" />
+    <text lang="German" displayName="Fuchsrüstung" />
+    <text lang="Italian" displayName="Spallina volpe" />
   </accessory>
   <accessory id="42" name="NohrPauldron" type="Armwear">
     <text lang="English" displayName="Nohr Pauldron" />
     <text lang="Japanese" displayName="傭兵の盾" />
+    <text lang="Spanish" displayName="Cola de zorro" />
+    <text lang="French" displayName="Queue vulpine" />
+    <text lang="German" displayName="Fuchsschwanz" />
+    <text lang="Italian" displayName="Coda volpe" />
   </accessory>
   <accessory id="43" name="MedicineTrunk" type="Armwear">
     <text lang="English" displayName="Medicine Trunk" />
     <text lang="Japanese" displayName="商人の薬箱" />
+    <text lang="Spanish" displayName="Hombrera Nohr" />
+    <text lang="French" displayName="Bouclier merc." />
+    <text lang="German" displayName="Nohrenrüstung" />
+    <text lang="Italian" displayName="Spallina Nohr" />
   </accessory>
   <accessory id="44" name="LionShield" type="Armwear">
     <text lang="English" displayName="Lion Shield" />
     <text lang="Japanese" displayName="ライオンの盾" />
+    <text lang="Spanish" displayName="Botiquín" />
+    <text lang="French" displayName="Pharmacie" />
+    <text lang="German" displayName="Medizinkoffer" />
+    <text lang="Italian" displayName="Baule speziale" />
   </accessory>
   <accessory id="45" name="ArmoredShell" type="Armwear">
     <text lang="English" displayName="Armored Shell" />
     <text lang="Japanese" displayName="アーマーの甲羅" />
+    <text lang="Spanish" displayName="Escudo de león" />
+    <text lang="French" displayName="Bouclier léonin" />
+    <text lang="German" displayName="Löwenschild" />
+    <text lang="Italian" displayName="Scudo leone" />
   </accessory>
   <accessory id="46" name="FoxPauldron" type="Armwear">
     <text lang="English" displayName="Fox Pauldron" />
     <text lang="Japanese" displayName="大型狐面" />
+    <text lang="Spanish" displayName="Emblema" />
+    <text lang="French" displayName="Bouclier blason" />
+    <text lang="German" displayName="Emblemschild" />
+    <text lang="Italian" displayName="Scudo Emblema" />
   </accessory>
   <accessory id="47" name="HeartPauldron" type="Armwear">
     <text lang="English" displayName="Heart Pauldron" />
     <text lang="Japanese" displayName="ハートの盾" />
+    <text lang="Spanish" displayName="Homb. corazón" />
+    <text lang="French" displayName="Bouclier cœur" />
+    <text lang="German" displayName="Herzrüstung" />
+    <text lang="Italian" displayName="Spallina cuore" />
   </accessory>
   <accessory id="48" name="BattleFlag" type="Armwear">
     <text lang="English" displayName="Battle Flag" />
     <text lang="Japanese" displayName="槍聖ののぼり" />
+    <text lang="Spanish" displayName="Sashimono" />
+    <text lang="French" displayName="Sashimono" />
+    <text lang="German" displayName="Sashimono" />
+    <text lang="Italian" displayName="Stendardo" />
   </accessory>
   <accessory id="49" name="GeneralsShell" type="Armwear">
     <text lang="English" displayName="General's Shell" />
     <text lang="Japanese" displayName="ジェネラルの甲羅" />
+    <text lang="Spanish" displayName="Gran coraza" />
+    <text lang="French" displayName="Carap. général" />
+    <text lang="German" displayName="Generalspanzer" />
+    <text lang="Italian" displayName="Corazza gen." />
   </accessory>
   <accessory id="50" name="WaterGourd" type="Armwear">
     <text lang="English" displayName="Water Gourd" />
     <text lang="Japanese" displayName="修羅のひょうたん" />
+    <text lang="Spanish" displayName="Calabacino" />
+    <text lang="French" displayName="Gourde d'eau" />
+    <text lang="German" displayName="Kürbisflasche" />
+    <text lang="Italian" displayName="Fiasca d'acqua" />
   </accessory>
   <accessory id="51" name="ArmoryShield" type="Armwear">
     <text lang="English" displayName="Armory Shield" />
     <text lang="Japanese" displayName="武器屋の証" />
+    <text lang="Spanish" displayName="Escudo armería" />
+    <text lang="French" displayName="Signe armurerie" />
+    <text lang="German" displayName="Arsenalschild" />
+    <text lang="Italian" displayName="Scudo armeria" />
   </accessory>
   <accessory id="52" name="ItemShield" type="Armwear">
     <text lang="English" displayName="Item Shield" />
     <text lang="Japanese" displayName="道具屋の証" />
+    <text lang="Spanish" displayName="Escudo socorro" />
+    <text lang="French" displayName="Signe brocante" />
+    <text lang="German" displayName="Item-Schild" />
+    <text lang="Italian" displayName="Scudo emporio" />
   </accessory>
   <accessory id="53" name="ArenaShield" type="Armwear">
     <text lang="English" displayName="Arena Shield" />
     <text lang="Japanese" displayName="闘技士の証" />
+    <text lang="Spanish" displayName="Escudo herrero" />
+    <text lang="French" displayName="Signe de forge" />
+    <text lang="German" displayName="Schmiedeschild" />
+    <text lang="Italian" displayName="Scudo fabbro" />
   </accessory>
   <accessory id="54" name="SmithyShield" type="Armwear">
     <text lang="English" displayName="Smithy Shield" />
     <text lang="Japanese" displayName="錬成屋の証" />
+    <text lang="Spanish" displayName="Escudo coliseo" />
+    <text lang="French" displayName="Signe arène" />
+    <text lang="German" displayName="Arenaschild" />
+    <text lang="Italian" displayName="Scudo arena" />
   </accessory>
   <accessory id="55" name="BoldSwimsuit" type="Underwear">
     <text lang="English" displayName="Bold Swimsuit" />
     <text lang="Japanese" displayName="色っぽい水着" />
+    <text lang="Spanish" displayName="Bañador audaz" />
+    <text lang="French" displayName="Maillot coquet" />
+    <text lang="German" displayName="Frecher Bikini" />
+    <text lang="Italian" displayName="Costume ardito" />
   </accessory>
   <accessory id="56" name="BathTowel" type="Underwear">
     <text lang="English" displayName="Bath Towel" />
     <text lang="Japanese" displayName="バスタオル" />
+    <text lang="Spanish" displayName="Toalla de baño" />
+    <text lang="French" displayName="Sortie de bain" />
+    <text lang="German" displayName="Badetuch" />
+    <text lang="Italian" displayName="Telo da bagno" />
   </accessory>
   <accessory id="57" name="TropicalSuit" type="Underwear">
     <text lang="English" displayName="Tropical Suit" />
     <text lang="Japanese" displayName="草花の水着" />
+    <text lang="Spanish" displayName="Bañador natura" />
+    <text lang="French" displayName="Maillot tropical" />
+    <text lang="German" displayName="Tropenbikini" />
+    <text lang="Italian" displayName="Costume foglie" />
   </accessory>
   <accessory id="58" name="DarkRobe" type="Underwear">
     <text lang="English" displayName="Dark Robe" />
     <text lang="Japanese" displayName="闇の衣" />
+    <text lang="Spanish" displayName="Bata oscura" />
+    <text lang="French" displayName="Maillot sombre" />
+    <text lang="German" displayName="Dunkle Robe" />
+    <text lang="Italian" displayName="Manto oscuro" />
   </accessory>
   <accessory id="59" name="SeashellSuit" type="Underwear">
     <text lang="English" displayName="Seashell Suit" />
     <text lang="Japanese" displayName="貝殻の水着" />
+    <text lang="Spanish" displayName="Bañador de mar" />
+    <text lang="French" displayName="Mail. coquillage" />
+    <text lang="German" displayName="Muschelbikini" />
+    <text lang="Italian" displayName="Costume mare" />
   </accessory>
   <accessory id="60" name="DarkCrown" type="Headwear">
     <text lang="English" displayName="Dark Crown" />
     <text lang="Japanese" displayName="ダーククラウン" />
+    <text lang="Spanish" displayName="Corona oscura" />
+    <text lang="French" displayName="Tiare sombre" />
+    <text lang="German" displayName="Finstere Krone" />
+    <text lang="Italian" displayName="Corona oscura" />
   </accessory>
   <accessory id="61" name="EmblemShield" type="Armwear">
     <text lang="English" displayName="Emblem Shield" />
     <text lang="Japanese" displayName="紋章の盾" />
+    <text lang="Spanish" displayName="Mariposa" />
+    <text lang="French" displayName="Papillon" />
+    <text lang="German" displayName="Faltermaske" />
+    <text lang="Italian" displayName="Farfalla" />
   </accessory>
   <accessory id="62" name="HoshidoCrown" type="Facewear">
     <text lang="English" displayName="Hoshido Crown" />
     <text lang="Japanese" displayName="白夜の面当て" />
+    <text lang="Spanish" displayName="Almete real" />
+    <text lang="French" displayName="Coiffe Hoshido" />
+    <text lang="German" displayName="Hoshidenkrone" />
+    <text lang="Italian" displayName="Cor. Hoshido" />
   </accessory>
   <accessory id="63" name="LoveBracelet" type="Armwear">
     <text lang="English" displayName="Love Bracelet" />
     <text lang="Japanese" displayName="愛の腕輪" />
+    <text lang="Spanish" displayName="Brazalete amor" />
+    <text lang="French" displayName="Bracelet amour" />
+    <text lang="German" displayName="Liebesarmband" />
+    <text lang="Italian" displayName="Bracciale cuore" />
   </accessory>
   <accessory id="64" name="TogaofLove" type="Underwear">
     <text lang="English" displayName="Toga of Love" />
     <text lang="Japanese" displayName="愛の水着" />
+    <text lang="Spanish" displayName="Toga del amor" />
+    <text lang="French" displayName="Toge d'amour" />
+    <text lang="German" displayName="Liebestoga" />
+    <text lang="Italian" displayName="Toga dell'amore" />
   </accessory>
   <accessory id="104" name="TintedGlasses1" type="Facewear">
     <text lang="English" displayName="Tinted Glasses (DLC)" />
     <text lang="Japanese" displayName="遮光メガネ" />
+    <text lang="Spanish" displayName="Gafas de sol" />
+    <text lang="French" displayName="Lun. de soleil" />
+    <text lang="German" displayName="Sonnenbrille" />
+    <text lang="Italian" displayName="Occhiali da sole" />
   </accessory>
   <accessory id="105" name="TintedGlasses2" type="Facewear">
     <text lang="English" displayName="Tinted Glasses (DLC)" />
     <text lang="Japanese" displayName="遮光メガネ" />
+    <text lang="Spanish" displayName="Gafas de sol" />
+    <text lang="French" displayName="Lun. de soleil" />
+    <text lang="German" displayName="Sonnenbrille" />
+    <text lang="Italian" displayName="Occhiali da sole" />
   </accessory>
   <accessory id="109" name="RimmedGlasses1" type="Facewear">
     <text lang="English" displayName="Rimmed Glasses" />
     <text lang="Japanese" displayName="黒縁メガネ" />
+    <text lang="Spanish" displayName="Gafas oscuras" />
+    <text lang="French" displayName="Lunettes noires" />
+    <text lang="German" displayName="Hornbrille" />
+    <text lang="Italian" displayName="Occhiali" />
   </accessory>
   <accessory id="110" name="RimmedGlasses2" type="Facewear">
     <text lang="English" displayName="Rimmed Glasses" />
     <text lang="Japanese" displayName="黒縁メガネ" />
+    <text lang="Spanish" displayName="Gafas oscuras" />
+    <text lang="French" displayName="Lunettes noires" />
+    <text lang="German" displayName="Hornbrille" />
+    <text lang="Italian" displayName="Occhiali" />
   </accessory>
   <accessory id="112" name="Face1" type="Facewear">
     <text lang="English" displayName="Fox Mask" />
     <text lang="Japanese" displayName="キツネのお面" />
+    <text lang="Spanish" displayName="-" />
+    <text lang="French" displayName="-" />
+    <text lang="German" displayName="-" />
+    <text lang="Italian" displayName="-" />
   </accessory>
   <accessory id="114" name="Face2" type="Facewear">
     <text lang="English" displayName="Pumpkin Mask" />
     <text lang="Japanese" displayName="パンプキンヘッド" />
+    <text lang="Spanish" displayName="-" />
+    <text lang="French" displayName="-" />
+    <text lang="German" displayName="-" />
+    <text lang="Italian" displayName="-" />
   </accessory>
   <!--
   Template:
   <accessory id="0" name="InternalName" type="None">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
   </accessory>
   -->
 </root>

@@ -1,562 +1,1118 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <root>
   <prisoner id="0">
-    <text lang="English" displayName="None" />
-    <text lang="Japanese" displayName="無し" />
+    <text lang="English" displayName="(None)" />
+    <text lang="Japanese" displayName="（無し）" />
+    <text lang="Spanish" displayName="(Nada)" />
+    <text lang="French" displayName="(Rien)" />
+    <text lang="German" displayName="(Keine)" />
+    <text lang="Italian" displayName="(Nessuna)" />
   </prisoner>
   <prisoner id="1">
     <text lang="English" displayName="Akihiro" />
     <text lang="Japanese" displayName="シモツキ" />
+    <text lang="Spanish" displayName="Akihiro" />
+    <text lang="French" displayName="Akihiro" />
+    <text lang="German" displayName="Akihiro" />
+    <text lang="Italian" displayName="Akihiro" />
   </prisoner>
   <prisoner id="2">
     <text lang="English" displayName="Daisuke" />
     <text lang="Japanese" displayName="キクヅキ" />
+    <text lang="Spanish" displayName="Daisuke" />
+    <text lang="French" displayName="Daisuke" />
+    <text lang="German" displayName="Daisuke" />
+    <text lang="Italian" displayName="Daisuke" />
   </prisoner>
   <prisoner id="3">
     <text lang="English" displayName="Hajime" />
     <text lang="Japanese" displayName="コトワリ" />
+    <text lang="Spanish" displayName="Hajime" />
+    <text lang="French" displayName="Hajime" />
+    <text lang="German" displayName="Hajime" />
+    <text lang="Italian" displayName="Hajime" />
   </prisoner>
   <prisoner id="4">
     <text lang="English" displayName="Hideaki" />
     <text lang="Japanese" displayName="フチマシ" />
+    <text lang="Spanish" displayName="Hideaki" />
+    <text lang="French" displayName="Hideaki" />
+    <text lang="German" displayName="Hideaki" />
+    <text lang="Italian" displayName="Hideaki" />
   </prisoner>
   <prisoner id="5">
     <text lang="English" displayName="Kaede" />
     <text lang="Japanese" displayName="ヨイヤミ" />
+    <text lang="Spanish" displayName="Kaede" />
+    <text lang="French" displayName="Kaede" />
+    <text lang="German" displayName="Kaede" />
+    <text lang="Italian" displayName="Kaede" />
   </prisoner>
   <prisoner id="6">
     <text lang="English" displayName="Kento" />
     <text lang="Japanese" displayName="ツゴモリ" />
+    <text lang="Spanish" displayName="Kento" />
+    <text lang="French" displayName="Kento" />
+    <text lang="German" displayName="Kento" />
+    <text lang="Italian" displayName="Kento" />
   </prisoner>
   <prisoner id="7">
     <text lang="English" displayName="Kazuki" />
     <text lang="Japanese" displayName="イニシエ" />
+    <text lang="Spanish" displayName="Kazuki" />
+    <text lang="French" displayName="Kazuki" />
+    <text lang="German" displayName="Kazuki" />
+    <text lang="Italian" displayName="Kazuki" />
   </prisoner>
   <prisoner id="8">
     <text lang="English" displayName="Masahiko" />
     <text lang="Japanese" displayName="ウシトラ" />
+    <text lang="Spanish" displayName="Masahiko" />
+    <text lang="French" displayName="Masahiko" />
+    <text lang="German" displayName="Masahiko" />
+    <text lang="Italian" displayName="Masahiko" />
   </prisoner>
   <prisoner id="9">
     <text lang="English" displayName="Mitsuru" />
     <text lang="Japanese" displayName="イヌワシ" />
+    <text lang="Spanish" displayName="Mitsuru" />
+    <text lang="French" displayName="Mitsuru" />
+    <text lang="German" displayName="Mitsuru" />
+    <text lang="Italian" displayName="Mitsuru" />
   </prisoner>
   <prisoner id="10">
     <text lang="English" displayName="Nobu" />
     <text lang="Japanese" displayName="トヂメ" />
+    <text lang="Spanish" displayName="Nobu" />
+    <text lang="French" displayName="Nobu" />
+    <text lang="German" displayName="Nobu" />
+    <text lang="Italian" displayName="Nobu" />
   </prisoner>
   <prisoner id="11">
     <text lang="English" displayName="Saburo" />
     <text lang="Japanese" displayName="セミマル" />
+    <text lang="Spanish" displayName="Saburo" />
+    <text lang="French" displayName="Saburo" />
+    <text lang="German" displayName="Saburo" />
+    <text lang="Italian" displayName="Saburo" />
   </prisoner>
   <prisoner id="12">
     <text lang="English" displayName="Yoichi" />
     <text lang="Japanese" displayName="ミチノク" />
+    <text lang="Spanish" displayName="Yoichi" />
+    <text lang="French" displayName="Yoichi" />
+    <text lang="German" displayName="Yoichi" />
+    <text lang="Italian" displayName="Yoichi" />
   </prisoner>
   <prisoner id="13">
     <text lang="English" displayName="Kazunari" />
     <text lang="Japanese" displayName="サムシロ" />
+    <text lang="Spanish" displayName="Kazunari" />
+    <text lang="French" displayName="Kazunari" />
+    <text lang="German" displayName="Kazunari" />
+    <text lang="Italian" displayName="Kazunari" />
   </prisoner>
   <prisoner id="14">
     <text lang="English" displayName="Rintaro" />
     <text lang="Japanese" displayName="イカルガ" />
+    <text lang="Spanish" displayName="Rintaro" />
+    <text lang="French" displayName="Rintaro" />
+    <text lang="German" displayName="Rintaro" />
+    <text lang="Italian" displayName="Rintaro" />
   </prisoner>
   <prisoner id="15">
     <text lang="English" displayName="Kazuma" />
     <text lang="Japanese" displayName="サザナミ" />
+    <text lang="Spanish" displayName="Kazuma" />
+    <text lang="French" displayName="Kazuma" />
+    <text lang="German" displayName="Kazuma" />
+    <text lang="Italian" displayName="Kazuma" />
   </prisoner>
   <prisoner id="16">
     <text lang="English" displayName="Hidetora" />
     <text lang="Japanese" displayName="カイドウ" />
+    <text lang="Spanish" displayName="Hidetora" />
+    <text lang="French" displayName="Hidetora" />
+    <text lang="German" displayName="Hidetora" />
+    <text lang="Italian" displayName="Hidetora" />
   </prisoner>
   <prisoner id="17">
     <text lang="English" displayName="Yamato" />
     <text lang="Japanese" displayName="イカヅチ" />
+    <text lang="Spanish" displayName="Yamato" />
+    <text lang="French" displayName="Yamato" />
+    <text lang="German" displayName="Yamato" />
+    <text lang="Italian" displayName="Yamato" />
   </prisoner>
   <prisoner id="18">
     <text lang="English" displayName="Takanori" />
     <text lang="Japanese" displayName="インロウ" />
+    <text lang="Spanish" displayName="Takanori" />
+    <text lang="French" displayName="Takanori" />
+    <text lang="German" displayName="Takanori" />
+    <text lang="Italian" displayName="Takanori" />
   </prisoner>
   <prisoner id="19">
     <text lang="English" displayName="Tomihiko" />
     <text lang="Japanese" displayName="ヤブサメ" />
+    <text lang="Spanish" displayName="Tomihiko" />
+    <text lang="French" displayName="Tomihiko" />
+    <text lang="German" displayName="Tomihiko" />
+    <text lang="Italian" displayName="Tomihiko" />
   </prisoner>
   <prisoner id="20">
     <text lang="English" displayName="Kenshi" />
     <text lang="Japanese" displayName="カミカゼ" />
+    <text lang="Spanish" displayName="Kenshi" />
+    <text lang="French" displayName="Kenshi" />
+    <text lang="German" displayName="Kenshi" />
+    <text lang="Italian" displayName="Kenshi" />
   </prisoner>
   <prisoner id="21">
     <text lang="English" displayName="Jinpei" />
     <text lang="Japanese" displayName="ハシダテ" />
+    <text lang="Spanish" displayName="Jinpei" />
+    <text lang="French" displayName="Jinpei" />
+    <text lang="German" displayName="Jinpei" />
+    <text lang="Italian" displayName="Jinpei" />
   </prisoner>
   <prisoner id="22">
     <text lang="English" displayName="Yohei" />
     <text lang="Japanese" displayName="ササハラ" />
+    <text lang="Spanish" displayName="Yohei" />
+    <text lang="French" displayName="Yohei" />
+    <text lang="German" displayName="Yohei" />
+    <text lang="Italian" displayName="Yohei" />
   </prisoner>
   <prisoner id="23">
     <text lang="English" displayName="Ariyoshi" />
     <text lang="Japanese" displayName="アジロギ" />
+    <text lang="Spanish" displayName="Ariyoshi" />
+    <text lang="French" displayName="Ariyoshi" />
+    <text lang="German" displayName="Ariyoshi" />
+    <text lang="Italian" displayName="Ariyoshi" />
   </prisoner>
   <prisoner id="24">
     <text lang="English" displayName="Mizuki" />
     <text lang="Japanese" displayName="フナヒト" />
+    <text lang="Spanish" displayName="Mizuki" />
+    <text lang="French" displayName="Mizuki" />
+    <text lang="German" displayName="Mizuki" />
+    <text lang="Italian" displayName="Mizuki" />
   </prisoner>
   <prisoner id="25">
     <text lang="English" displayName="Ukyo" />
     <text lang="Japanese" displayName="カササギ" />
+    <text lang="Spanish" displayName="Ukyo" />
+    <text lang="French" displayName="Ukyo" />
+    <text lang="German" displayName="Ukyo" />
+    <text lang="Italian" displayName="Ukyo" />
   </prisoner>
   <prisoner id="26">
     <text lang="English" displayName="Ren" />
     <text lang="Japanese" displayName="サネカズラ" />
+    <text lang="Spanish" displayName="Ren" />
+    <text lang="French" displayName="Ren" />
+    <text lang="German" displayName="Ren" />
+    <text lang="Italian" displayName="Ren" />
   </prisoner>
   <prisoner id="27">
     <text lang="English" displayName="Hiroyuki" />
     <text lang="Japanese" displayName="ナガツキ" />
+    <text lang="Spanish" displayName="Hiroyuki" />
+    <text lang="French" displayName="Hiroyuki" />
+    <text lang="German" displayName="Hiroyuki" />
+    <text lang="Italian" displayName="Hiroyuki" />
   </prisoner>
   <prisoner id="28">
     <text lang="English" displayName="Tamaki" />
     <text lang="Japanese" displayName="アリアケ" />
+    <text lang="Spanish" displayName="Tamaki" />
+    <text lang="French" displayName="Tamaki" />
+    <text lang="German" displayName="Tamaki" />
+    <text lang="Italian" displayName="Tamaki" />
   </prisoner>
   <prisoner id="29">
     <text lang="English" displayName="Jin" />
     <text lang="Japanese" displayName="シガラミ" />
+    <text lang="Spanish" displayName="Jin" />
+    <text lang="French" displayName="Jin" />
+    <text lang="German" displayName="Jin" />
+    <text lang="Italian" displayName="Jin" />
   </prisoner>
   <prisoner id="30">
     <text lang="English" displayName="Hiromi" />
     <text lang="Japanese" displayName="ツリフネ" />
+    <text lang="Spanish" displayName="Hiromi" />
+    <text lang="French" displayName="Hiromi" />
+    <text lang="German" displayName="Hiromi" />
+    <text lang="Italian" displayName="Hiromi" />
   </prisoner>
   <prisoner id="51">
     <text lang="English" displayName="Gerald" />
     <text lang="Japanese" displayName="エルザス" />
+    <text lang="Spanish" displayName="Gerald" />
+    <text lang="French" displayName="Gerald" />
+    <text lang="German" displayName="Gerald" />
+    <text lang="Italian" displayName="Gerald" />
   </prisoner>
   <prisoner id="52">
     <text lang="English" displayName="Hendrik" />
     <text lang="Japanese" displayName="ティルビッツ" />
+    <text lang="Spanish" displayName="Hendrik" />
+    <text lang="French" displayName="Hendrik" />
+    <text lang="German" displayName="Hendrik" />
+    <text lang="Italian" displayName="Hendrik" />
   </prisoner>
   <prisoner id="53">
     <text lang="English" displayName="Bernd" />
     <text lang="Japanese" displayName="ウェーゼル" />
+    <text lang="Spanish" displayName="Bernd" />
+    <text lang="French" displayName="Bernd" />
+    <text lang="German" displayName="Bernd" />
+    <text lang="Italian" displayName="Bernd" />
   </prisoner>
   <prisoner id="54">
     <text lang="English" displayName="Fritz" />
     <text lang="Japanese" displayName="ブラント" />
+    <text lang="Spanish" displayName="Fritz" />
+    <text lang="French" displayName="Fritz" />
+    <text lang="German" displayName="Fritz" />
+    <text lang="Italian" displayName="Fritz" />
   </prisoner>
   <prisoner id="55">
     <text lang="English" displayName="Christof" />
     <text lang="Japanese" displayName="ゴットハルト" />
+    <text lang="Spanish" displayName="Christof" />
+    <text lang="French" displayName="Christof" />
+    <text lang="German" displayName="Christof" />
+    <text lang="Italian" displayName="Christof" />
   </prisoner>
   <prisoner id="56">
     <text lang="English" displayName="Elmar" />
     <text lang="Japanese" displayName="テオドリヒ" />
+    <text lang="Spanish" displayName="Elmar" />
+    <text lang="French" displayName="Elmar" />
+    <text lang="German" displayName="Elmar" />
+    <text lang="Italian" displayName="Elmar" />
   </prisoner>
   <prisoner id="57">
     <text lang="English" displayName="Virgil" />
     <text lang="Japanese" displayName="ヴィルギル" />
+    <text lang="Spanish" displayName="Virgil" />
+    <text lang="French" displayName="Virgil" />
+    <text lang="German" displayName="Virgil" />
+    <text lang="Italian" displayName="Virgil" />
   </prisoner>
   <prisoner id="58">
     <text lang="English" displayName="Hubert" />
     <text lang="Japanese" displayName="ヨルク" />
+    <text lang="Spanish" displayName="Hubert" />
+    <text lang="French" displayName="Hubert" />
+    <text lang="German" displayName="Hubert" />
+    <text lang="Italian" displayName="Hubert" />
   </prisoner>
   <prisoner id="59">
     <text lang="English" displayName="Konrad" />
     <text lang="Japanese" displayName="グラウデンツ" />
+    <text lang="Spanish" displayName="Konrad" />
+    <text lang="French" displayName="Konrad" />
+    <text lang="German" displayName="Konrad" />
+    <text lang="Italian" displayName="Konrad" />
   </prisoner>
   <prisoner id="60">
     <text lang="English" displayName="Ludwig" />
     <text lang="Japanese" displayName="ヴォルフ" />
+    <text lang="Spanish" displayName="Ludwig" />
+    <text lang="French" displayName="Ludwig" />
+    <text lang="German" displayName="Ludwig" />
+    <text lang="Italian" displayName="Ludwig" />
   </prisoner>
   <prisoner id="61">
     <text lang="English" displayName="Oskar" />
     <text lang="Japanese" displayName="ザクセン" />
+    <text lang="Spanish" displayName="Oskar" />
+    <text lang="French" displayName="Oskar" />
+    <text lang="German" displayName="Oskar" />
+    <text lang="Italian" displayName="Oskar" />
   </prisoner>
   <prisoner id="62">
     <text lang="English" displayName="Reinhard" />
     <text lang="Japanese" displayName="イルティス" />
+    <text lang="Spanish" displayName="Reinhard" />
+    <text lang="French" displayName="Reinhard" />
+    <text lang="German" displayName="Reinhard" />
+    <text lang="Italian" displayName="Reinhard" />
   </prisoner>
   <prisoner id="63">
     <text lang="English" displayName="Sven" />
     <text lang="Japanese" displayName="ドラッヘ" />
+    <text lang="Spanish" displayName="Sven" />
+    <text lang="French" displayName="Sven" />
+    <text lang="German" displayName="Sven" />
+    <text lang="Italian" displayName="Sven" />
   </prisoner>
   <prisoner id="64">
     <text lang="English" displayName="Tobias" />
     <text lang="Japanese" displayName="レオパルド" />
+    <text lang="Spanish" displayName="Tobías" />
+    <text lang="French" displayName="Tobias" />
+    <text lang="German" displayName="Tobias" />
+    <text lang="Italian" displayName="Tobias" />
   </prisoner>
   <prisoner id="65">
     <text lang="English" displayName="Wenzel" />
     <text lang="Japanese" displayName="ブリッツ" />
+    <text lang="Spanish" displayName="Wenzel" />
+    <text lang="French" displayName="Wenzel" />
+    <text lang="German" displayName="Wenzel" />
+    <text lang="Italian" displayName="Wenzel" />
   </prisoner>
   <prisoner id="66">
     <text lang="English" displayName="Andreas" />
     <text lang="Japanese" displayName="ゼンメル" />
+    <text lang="Spanish" displayName="Andreas" />
+    <text lang="French" displayName="Andreas" />
+    <text lang="German" displayName="Andreas" />
+    <text lang="Italian" displayName="Andreas" />
   </prisoner>
   <prisoner id="67">
     <text lang="English" displayName="Otto" />
     <text lang="Japanese" displayName="クレメル" />
+    <text lang="Spanish" displayName="Otto" />
+    <text lang="French" displayName="Otto" />
+    <text lang="German" displayName="Otto" />
+    <text lang="Italian" displayName="Otto" />
   </prisoner>
   <prisoner id="68">
     <text lang="English" displayName="Helmut" />
     <text lang="Japanese" displayName="フェルス" />
+    <text lang="Spanish" displayName="Helmut" />
+    <text lang="French" displayName="Helmut" />
+    <text lang="German" displayName="Helmut" />
+    <text lang="Italian" displayName="Mahinorm" />
   </prisoner>
   <prisoner id="69">
     <text lang="English" displayName="Simon" />
     <text lang="Japanese" displayName="ジーモン" />
+    <text lang="Spanish" displayName="Simón" />
+    <text lang="French" displayName="Simon" />
+    <text lang="German" displayName="Simon" />
+    <text lang="Italian" displayName="Simon" />
   </prisoner>
   <prisoner id="70">
     <text lang="English" displayName="Manfred" />
     <text lang="Japanese" displayName="エグモント" />
+    <text lang="Spanish" displayName="Manfred" />
+    <text lang="French" displayName="Manfred" />
+    <text lang="German" displayName="Manfred" />
+    <text lang="Italian" displayName="Manfred" />
   </prisoner>
   <prisoner id="71">
     <text lang="English" displayName="Wolfgang" />
     <text lang="Japanese" displayName="グラーフ" />
+    <text lang="Spanish" displayName="Wolfgang" />
+    <text lang="French" displayName="Wolfgang" />
+    <text lang="German" displayName="Wolfgang" />
+    <text lang="Italian" displayName="Wolfgang" />
   </prisoner>
   <prisoner id="72">
     <text lang="English" displayName="Stefan" />
     <text lang="Japanese" displayName="ルクス" />
+    <text lang="Spanish" displayName="Stefan" />
+    <text lang="French" displayName="Stefan" />
+    <text lang="German" displayName="Stefan" />
+    <text lang="Italian" displayName="Stefan" />
   </prisoner>
   <prisoner id="73">
     <text lang="English" displayName="Roderick" />
     <text lang="Japanese" displayName="アルバトロス" />
+    <text lang="Spanish" displayName="Roderick" />
+    <text lang="French" displayName="Roderick" />
+    <text lang="German" displayName="Roderick" />
+    <text lang="Italian" displayName="Roderick" />
   </prisoner>
   <prisoner id="74">
     <text lang="English" displayName="Tancred" />
     <text lang="Japanese" displayName="エルベ" />
+    <text lang="Spanish" displayName="Tancred" />
+    <text lang="French" displayName="Tancred" />
+    <text lang="German" displayName="Tancred" />
+    <text lang="Italian" displayName="Tancred" />
   </prisoner>
   <prisoner id="75">
     <text lang="English" displayName="Theobald" />
     <text lang="Japanese" displayName="オーサ" />
+    <text lang="Spanish" displayName="Theobald" />
+    <text lang="French" displayName="Theobald" />
+    <text lang="German" displayName="Theobald" />
+    <text lang="Italian" displayName="Theobald" />
   </prisoner>
   <prisoner id="76">
     <text lang="English" displayName="Leonard" />
     <text lang="Japanese" displayName="ザスニッツ" />
+    <text lang="Spanish" displayName="Leonard" />
+    <text lang="French" displayName="Leonard" />
+    <text lang="German" displayName="Leonard" />
+    <text lang="Italian" displayName="Leonard" />
   </prisoner>
   <prisoner id="77">
     <text lang="English" displayName="Liam" />
     <text lang="Japanese" displayName="ゲパルト" />
+    <text lang="Spanish" displayName="Liam" />
+    <text lang="French" displayName="Liam" />
+    <text lang="German" displayName="Liam" />
+    <text lang="Italian" displayName="Liam" />
   </prisoner>
   <prisoner id="78">
     <text lang="English" displayName="Bertram" />
     <text lang="Japanese" displayName="ツォーベル" />
+    <text lang="Spanish" displayName="Bertram" />
+    <text lang="French" displayName="Bertram" />
+    <text lang="German" displayName="Bertram" />
+    <text lang="Italian" displayName="Bertram" />
   </prisoner>
   <prisoner id="79">
     <text lang="English" displayName="Roland" />
     <text lang="Japanese" displayName="ブレムゼ" />
+    <text lang="Spanish" displayName="Roland" />
+    <text lang="French" displayName="Roland" />
+    <text lang="German" displayName="Roland" />
+    <text lang="Italian" displayName="Roland" />
   </prisoner>
   <prisoner id="80">
     <text lang="English" displayName="Edsel" />
     <text lang="Japanese" displayName="ヤグアル" />
+    <text lang="Spanish" displayName="Edsel" />
+    <text lang="French" displayName="Edsel" />
+    <text lang="German" displayName="Edsel" />
+    <text lang="Italian" displayName="Edsel" />
   </prisoner>
   <prisoner id="101">
     <text lang="English" displayName="Madoka" />
     <text lang="Japanese" displayName="ウヅキ" />
+    <text lang="Spanish" displayName="Madoka" />
+    <text lang="French" displayName="Madoka" />
+    <text lang="German" displayName="Madoka" />
+    <text lang="Italian" displayName="Madoka" />
   </prisoner>
   <prisoner id="102">
     <text lang="English" displayName="Kanade" />
     <text lang="Japanese" displayName="ハヅキ" />
+    <text lang="Spanish" displayName="Kanade" />
+    <text lang="French" displayName="Kanade" />
+    <text lang="German" displayName="Kanade" />
+    <text lang="Italian" displayName="Kanade" />
   </prisoner>
   <prisoner id="103">
     <text lang="English" displayName="Chiaki" />
     <text lang="Japanese" displayName="シロタエ" />
+    <text lang="Spanish" displayName="Chiaki" />
+    <text lang="French" displayName="Chiaki" />
+    <text lang="German" displayName="Chiaki" />
+    <text lang="Italian" displayName="Chiaki" />
   </prisoner>
   <prisoner id="104">
     <text lang="English" displayName="Mikasa" />
     <text lang="Japanese" displayName="ミカサ" />
+    <text lang="Spanish" displayName="Mikasa" />
+    <text lang="French" displayName="Mikasa" />
+    <text lang="German" displayName="Mikasa" />
+    <text lang="Italian" displayName="Mikasa" />
   </prisoner>
   <prisoner id="105">
     <text lang="English" displayName="Komachi" />
     <text lang="Japanese" displayName="コマチ" />
+    <text lang="Spanish" displayName="Komachi" />
+    <text lang="French" displayName="Komachi" />
+    <text lang="German" displayName="Komachi" />
+    <text lang="Italian" displayName="Komachi" />
   </prisoner>
   <prisoner id="106">
     <text lang="English" displayName="Momiji" />
     <text lang="Japanese" displayName="モミジ" />
+    <text lang="Spanish" displayName="Momiji" />
+    <text lang="French" displayName="Momiji" />
+    <text lang="German" displayName="Momiji" />
+    <text lang="Italian" displayName="Momiji" />
   </prisoner>
   <prisoner id="107">
     <text lang="English" displayName="Eriko" />
     <text lang="Japanese" displayName="シロギク" />
+    <text lang="Spanish" displayName="Eriko" />
+    <text lang="French" displayName="Eriko" />
+    <text lang="German" displayName="Eriko" />
+    <text lang="Italian" displayName="Eriko" />
   </prisoner>
   <prisoner id="108">
     <text lang="English" displayName="Asuka" />
     <text lang="Japanese" displayName="ハツセ" />
+    <text lang="Spanish" displayName="Asuka" />
+    <text lang="French" displayName="Asuka" />
+    <text lang="German" displayName="Asuka" />
+    <text lang="Italian" displayName="Asuka" />
   </prisoner>
   <prisoner id="109">
     <text lang="English" displayName="Koromo" />
     <text lang="Japanese" displayName="コロモ" />
+    <text lang="Spanish" displayName="Koromo" />
+    <text lang="French" displayName="Koromo" />
+    <text lang="German" displayName="Koromo" />
+    <text lang="Italian" displayName="Koromo" />
   </prisoner>
   <prisoner id="110">
     <text lang="English" displayName="Akane" />
     <text lang="Japanese" displayName="ミヨシノ" />
+    <text lang="Spanish" displayName="Akane" />
+    <text lang="French" displayName="Akane" />
+    <text lang="German" displayName="Akane" />
+    <text lang="Italian" displayName="Akane" />
   </prisoner>
   <prisoner id="111">
     <text lang="English" displayName="Hiroe" />
     <text lang="Japanese" displayName="ミソギ" />
+    <text lang="Spanish" displayName="Hiroe" />
+    <text lang="French" displayName="Hiroe" />
+    <text lang="German" displayName="Hiroe" />
+    <text lang="Italian" displayName="Hiroe" />
   </prisoner>
   <prisoner id="112">
     <text lang="English" displayName="Fumi" />
     <text lang="Japanese" displayName="ワカバ" />
+    <text lang="Spanish" displayName="Fumi" />
+    <text lang="French" displayName="Fumi" />
+    <text lang="German" displayName="Fumi" />
+    <text lang="Italian" displayName="Fumi" />
   </prisoner>
   <prisoner id="113">
     <text lang="English" displayName="Saya" />
     <text lang="Japanese" displayName="ハルサメ" />
+    <text lang="Spanish" displayName="Saya" />
+    <text lang="French" displayName="Saya" />
+    <text lang="German" displayName="Saya" />
+    <text lang="Italian" displayName="Saya" />
   </prisoner>
   <prisoner id="114">
     <text lang="English" displayName="Hotaru" />
     <text lang="Japanese" displayName="アサツユ" />
+    <text lang="Spanish" displayName="Hotaru" />
+    <text lang="French" displayName="Hotaru" />
+    <text lang="German" displayName="Hotaru" />
+    <text lang="Italian" displayName="Hotaru" />
   </prisoner>
   <prisoner id="115">
     <text lang="English" displayName="Haru" />
     <text lang="Japanese" displayName="スミレ" />
+    <text lang="Spanish" displayName="Haru" />
+    <text lang="French" displayName="Haru" />
+    <text lang="German" displayName="Haru" />
+    <text lang="Italian" displayName="Haru" />
   </prisoner>
   <prisoner id="116">
     <text lang="English" displayName="Kasumi" />
     <text lang="Japanese" displayName="カスミ" />
+    <text lang="Spanish" displayName="Kasumi" />
+    <text lang="French" displayName="Kasumi" />
+    <text lang="German" displayName="Kasumi" />
+    <text lang="Italian" displayName="Kasumi" />
   </prisoner>
   <prisoner id="117">
     <text lang="English" displayName="Chihiro" />
     <text lang="Japanese" displayName="ツバメ" />
+    <text lang="Spanish" displayName="Chihiro" />
+    <text lang="French" displayName="Chihiro" />
+    <text lang="German" displayName="Chihiro" />
+    <text lang="Italian" displayName="Chihiro" />
   </prisoner>
   <prisoner id="118">
     <text lang="English" displayName="Suzume" />
     <text lang="Japanese" displayName="スズメ" />
+    <text lang="Spanish" displayName="Suzume" />
+    <text lang="French" displayName="Suzume" />
+    <text lang="German" displayName="Suzume" />
+    <text lang="Italian" displayName="Suzume" />
   </prisoner>
   <prisoner id="119">
     <text lang="English" displayName="Ruri" />
     <text lang="Japanese" displayName="ツキアカリ" />
+    <text lang="Spanish" displayName="Ruri" />
+    <text lang="French" displayName="Ruri" />
+    <text lang="German" displayName="Ruri" />
+    <text lang="Italian" displayName="Ruri" />
   </prisoner>
   <prisoner id="120">
     <text lang="English" displayName="Yayoi" />
     <text lang="Japanese" displayName="ホシアカリ" />
+    <text lang="Spanish" displayName="Yayoi" />
+    <text lang="French" displayName="Yayoi" />
+    <text lang="German" displayName="Yayoi" />
+    <text lang="Italian" displayName="Yayoi" />
   </prisoner>
   <prisoner id="121">
     <text lang="English" displayName="Tomoe" />
     <text lang="Japanese" displayName="ヤエ" />
+    <text lang="Spanish" displayName="Tomoe" />
+    <text lang="French" displayName="Tomoe" />
+    <text lang="German" displayName="Tomoe" />
+    <text lang="Italian" displayName="Tomoe" />
   </prisoner>
   <prisoner id="122">
     <text lang="English" displayName="Kanon" />
     <text lang="Japanese" displayName="ココノエ" />
+    <text lang="Spanish" displayName="Kanon" />
+    <text lang="French" displayName="Kanon" />
+    <text lang="German" displayName="Kanon" />
+    <text lang="Italian" displayName="Kanon" />
   </prisoner>
   <prisoner id="123">
     <text lang="English" displayName="Sorane" />
     <text lang="Japanese" displayName="ソラネ" />
+    <text lang="Spanish" displayName="Sorane" />
+    <text lang="French" displayName="Sorane" />
+    <text lang="German" displayName="Sorane" />
+    <text lang="Italian" displayName="Sorane" />
   </prisoner>
   <prisoner id="124">
     <text lang="English" displayName="Yoriko" />
     <text lang="Japanese" displayName="アサジフ" />
+    <text lang="Spanish" displayName="Yoriko" />
+    <text lang="French" displayName="Yoriko" />
+    <text lang="German" displayName="Yoriko" />
+    <text lang="Italian" displayName="Yoriko" />
   </prisoner>
   <prisoner id="125">
     <text lang="English" displayName="Yukari" />
     <text lang="Japanese" displayName="ヨモギフ" />
+    <text lang="Spanish" displayName="Yukari" />
+    <text lang="French" displayName="Yukari" />
+    <text lang="German" displayName="Yukari" />
+    <text lang="Italian" displayName="Yukari" />
   </prisoner>
   <prisoner id="126">
     <text lang="English" displayName="Naomi" />
     <text lang="Japanese" displayName="ワカナ" />
+    <text lang="Spanish" displayName="Naomi" />
+    <text lang="French" displayName="Naomi" />
+    <text lang="German" displayName="Naomi" />
+    <text lang="Italian" displayName="Naomi" />
   </prisoner>
   <prisoner id="127">
     <text lang="English" displayName="Shizue" />
     <text lang="Japanese" displayName="ハツシモ" />
+    <text lang="Spanish" displayName="Shizue" />
+    <text lang="French" displayName="Shizue" />
+    <text lang="German" displayName="Shizue" />
+    <text lang="Italian" displayName="Shizue" />
   </prisoner>
   <prisoner id="128">
     <text lang="English" displayName="Nanoha" />
     <text lang="Japanese" displayName="シラキク" />
+    <text lang="Spanish" displayName="Nanoha" />
+    <text lang="French" displayName="Nanoha" />
+    <text lang="German" displayName="Nanoha" />
+    <text lang="Italian" displayName="Nanoha" />
   </prisoner>
   <prisoner id="129">
     <text lang="English" displayName="Miyabi" />
     <text lang="Japanese" displayName="シラユキ" />
+    <text lang="Spanish" displayName="Miyabi" />
+    <text lang="French" displayName="Miyabi" />
+    <text lang="German" displayName="Miyabi" />
+    <text lang="Italian" displayName="Miyabi" />
   </prisoner>
   <prisoner id="130">
     <text lang="English" displayName="Suzuran" />
     <text lang="Japanese" displayName="カスガ" />
+    <text lang="Spanish" displayName="Suzuran" />
+    <text lang="French" displayName="Suzuran" />
+    <text lang="German" displayName="Suzuran" />
+    <text lang="Italian" displayName="Suzuran" />
   </prisoner>
   <prisoner id="151">
     <text lang="English" displayName="Adele" />
     <text lang="Japanese" displayName="アルマ" />
+    <text lang="Spanish" displayName="Adele" />
+    <text lang="French" displayName="Adele" />
+    <text lang="German" displayName="Adele" />
+    <text lang="Italian" displayName="Adele" />
   </prisoner>
   <prisoner id="152">
     <text lang="English" displayName="Beatrice" />
     <text lang="Japanese" displayName="ベアトリーゼ" />
+    <text lang="Spanish" displayName="Beatrice" />
+    <text lang="French" displayName="Beatrice" />
+    <text lang="German" displayName="Beatrice" />
+    <text lang="Italian" displayName="Beatrice" />
   </prisoner>
   <prisoner id="153">
     <text lang="English" displayName="Hilda" />
     <text lang="Japanese" displayName="ベッティ" />
+    <text lang="Spanish" displayName="Hilda" />
+    <text lang="French" displayName="Hilda" />
+    <text lang="German" displayName="Hilda" />
+    <text lang="Italian" displayName="Hilda" />
   </prisoner>
   <prisoner id="154">
     <text lang="English" displayName="Brigitta" />
     <text lang="Japanese" displayName="ブリギッタ" />
+    <text lang="Spanish" displayName="Brigitta" />
+    <text lang="French" displayName="Brigitta" />
+    <text lang="German" displayName="Brigitta" />
+    <text lang="Italian" displayName="Brigitta" />
   </prisoner>
   <prisoner id="155">
     <text lang="English" displayName="Cordula" />
     <text lang="Japanese" displayName="コルドラ" />
+    <text lang="Spanish" displayName="Cordula" />
+    <text lang="French" displayName="Cordula" />
+    <text lang="German" displayName="Cordula" />
+    <text lang="Italian" displayName="Cordula" />
   </prisoner>
   <prisoner id="156">
     <text lang="English" displayName="Dora" />
     <text lang="Japanese" displayName="ドーラ" />
+    <text lang="Spanish" displayName="Dora" />
+    <text lang="French" displayName="Dora" />
+    <text lang="German" displayName="Dora" />
+    <text lang="Italian" displayName="Dora" />
   </prisoner>
   <prisoner id="157">
     <text lang="English" displayName="Ingrid" />
     <text lang="Japanese" displayName="シュフティ" />
+    <text lang="Spanish" displayName="Ingrid" />
+    <text lang="French" displayName="Ingrid" />
+    <text lang="German" displayName="Ingrid" />
+    <text lang="Italian" displayName="Ingrid" />
   </prisoner>
   <prisoner id="158">
     <text lang="English" displayName="Kirsten" />
     <text lang="Japanese" displayName="ニクセ" />
+    <text lang="Spanish" displayName="Kirsten" />
+    <text lang="French" displayName="Kirsten" />
+    <text lang="German" displayName="Kirsten" />
+    <text lang="Italian" displayName="Kirsten" />
   </prisoner>
   <prisoner id="159">
     <text lang="English" displayName="Lotte" />
     <text lang="Japanese" displayName="ミーナ" />
+    <text lang="Spanish" displayName="Lotte" />
+    <text lang="French" displayName="Lotte" />
+    <text lang="German" displayName="Lotte" />
+    <text lang="Italian" displayName="Lotte" />
   </prisoner>
   <prisoner id="160">
     <text lang="English" displayName="Margot" />
     <text lang="Japanese" displayName="ユリカ" />
+    <text lang="Spanish" displayName="Margot" />
+    <text lang="French" displayName="Margot" />
+    <text lang="German" displayName="Margot" />
+    <text lang="Italian" displayName="Margot" />
   </prisoner>
   <prisoner id="161">
     <text lang="English" displayName="Stella" />
     <text lang="Japanese" displayName="ヘクセ" />
+    <text lang="Spanish" displayName="Stella" />
+    <text lang="French" displayName="Stella" />
+    <text lang="German" displayName="Stella" />
+    <text lang="Italian" displayName="Stella" />
   </prisoner>
   <prisoner id="162">
     <text lang="English" displayName="Ursula" />
     <text lang="Japanese" displayName="ガウナ" />
+    <text lang="Spanish" displayName="Úrsula" />
+    <text lang="French" displayName="Ursula" />
+    <text lang="German" displayName="Ursula" />
+    <text lang="Italian" displayName="Ursel" />
   </prisoner>
   <prisoner id="163">
     <text lang="English" displayName="Freyja" />
     <text lang="Japanese" displayName="フレイヤ" />
+    <text lang="Spanish" displayName="Freyja" />
+    <text lang="French" displayName="Freyja" />
+    <text lang="German" displayName="Freyja" />
+    <text lang="Italian" displayName="Freyja" />
   </prisoner>
   <prisoner id="164">
     <text lang="English" displayName="Verona" />
     <text lang="Japanese" displayName="ベアテ" />
+    <text lang="Spanish" displayName="Verona" />
+    <text lang="French" displayName="Verona" />
+    <text lang="German" displayName="Verona" />
+    <text lang="Italian" displayName="Verona" />
   </prisoner>
   <prisoner id="165">
     <text lang="English" displayName="Gisela" />
     <text lang="Japanese" displayName="ダイナ" />
+    <text lang="Spanish" displayName="Gisela" />
+    <text lang="French" displayName="Gisela" />
+    <text lang="German" displayName="Gisela" />
+    <text lang="Italian" displayName="Gisela" />
   </prisoner>
   <prisoner id="166">
     <text lang="English" displayName="Gretel" />
     <text lang="Japanese" displayName="グレーテル" />
+    <text lang="Spanish" displayName="Gretel" />
+    <text lang="French" displayName="Gretel" />
+    <text lang="German" displayName="Gretel" />
+    <text lang="Italian" displayName="Gretel" />
   </prisoner>
   <prisoner id="167">
     <text lang="English" displayName="Judith" />
     <text lang="Japanese" displayName="ユーディト" />
+    <text lang="Spanish" displayName="Judith" />
+    <text lang="French" displayName="Judith" />
+    <text lang="German" displayName="Judith" />
+    <text lang="Italian" displayName="Judith" />
   </prisoner>
   <prisoner id="168">
     <text lang="English" displayName="Karline" />
     <text lang="Japanese" displayName="カルリーネ" />
+    <text lang="Spanish" displayName="Karline" />
+    <text lang="French" displayName="Karline" />
+    <text lang="German" displayName="Karline" />
+    <text lang="Italian" displayName="Karline" />
   </prisoner>
   <prisoner id="169">
     <text lang="English" displayName="Annette" />
     <text lang="Japanese" displayName="マルグレート" />
+    <text lang="Spanish" displayName="Annette" />
+    <text lang="French" displayName="Annette" />
+    <text lang="German" displayName="Annette" />
+    <text lang="Italian" displayName="Annette" />
   </prisoner>
   <prisoner id="170">
     <text lang="English" displayName="Ernesta" />
     <text lang="Japanese" displayName="ローザリエ" />
+    <text lang="Spanish" displayName="Ernesta" />
+    <text lang="French" displayName="Ernesta" />
+    <text lang="German" displayName="Ernesta" />
+    <text lang="Italian" displayName="Ernesta" />
   </prisoner>
   <prisoner id="171">
     <text lang="English" displayName="Romy" />
     <text lang="Japanese" displayName="ロミー" />
+    <text lang="Spanish" displayName="Romy" />
+    <text lang="French" displayName="Romy" />
+    <text lang="German" displayName="Romy" />
+    <text lang="Italian" displayName="Romy" />
   </prisoner>
   <prisoner id="172">
     <text lang="English" displayName="Astrid" />
     <text lang="Japanese" displayName="ナナ" />
+    <text lang="Spanish" displayName="Astrid" />
+    <text lang="French" displayName="Astrid" />
+    <text lang="German" displayName="Astrid" />
+    <text lang="Italian" displayName="Astrid" />
   </prisoner>
   <prisoner id="173">
     <text lang="English" displayName="Lulu" />
     <text lang="Japanese" displayName="ルル" />
+    <text lang="Spanish" displayName="Lulú" />
+    <text lang="French" displayName="Lulu" />
+    <text lang="German" displayName="Lulu" />
+    <text lang="Italian" displayName="Lulu" />
   </prisoner>
   <prisoner id="174">
     <text lang="English" displayName="Nina" />
     <text lang="Japanese" displayName="フロリアン" />
+    <text lang="Spanish" displayName="Nina" />
+    <text lang="French" displayName="Nina" />
+    <text lang="German" displayName="Nina" />
+    <text lang="Italian" displayName="Nina" />
   </prisoner>
   <prisoner id="175">
     <text lang="English" displayName="Thelma" />
     <text lang="Japanese" displayName="テレマ" />
+    <text lang="Spanish" displayName="Thelma" />
+    <text lang="French" displayName="Thelma" />
+    <text lang="German" displayName="Thelma" />
+    <text lang="Italian" displayName="Thelma" />
   </prisoner>
   <prisoner id="176">
     <text lang="English" displayName="Rita" />
     <text lang="Japanese" displayName="リタ" />
+    <text lang="Spanish" displayName="Rita" />
+    <text lang="French" displayName="Rita" />
+    <text lang="German" displayName="Rita" />
+    <text lang="Italian" displayName="Rita" />
   </prisoner>
   <prisoner id="177">
     <text lang="English" displayName="Marta" />
     <text lang="Japanese" displayName="マルテ" />
+    <text lang="Spanish" displayName="Marta" />
+    <text lang="French" displayName="Marta" />
+    <text lang="German" displayName="Marta" />
+    <text lang="Italian" displayName="Marta" />
   </prisoner>
   <prisoner id="178">
     <text lang="English" displayName="Marion" />
     <text lang="Japanese" displayName="エーリカ" />
+    <text lang="Spanish" displayName="Marion" />
+    <text lang="French" displayName="Marion" />
+    <text lang="German" displayName="Marion" />
+    <text lang="Italian" displayName="Marion" />
   </prisoner>
   <prisoner id="179">
     <text lang="English" displayName="Ilse" />
     <text lang="Japanese" displayName="イルゼ" />
+    <text lang="Spanish" displayName="Ilse" />
+    <text lang="French" displayName="Ilse" />
+    <text lang="German" displayName="Ilse" />
+    <text lang="Italian" displayName="Ilse" />
   </prisoner>
   <prisoner id="180">
     <text lang="English" displayName="Louisa" />
     <text lang="Japanese" displayName="ファティマ" />
+    <text lang="Spanish" displayName="Louisa" />
+    <text lang="French" displayName="Louisa" />
+    <text lang="German" displayName="Louisa" />
+    <text lang="Italian" displayName="Louisa" />
   </prisoner>
   <prisoner id="201">
     <text lang="English" displayName="Ippei" />
     <text lang="Japanese" displayName="イッパク" />
+    <text lang="Spanish" displayName="Ippei" />
+    <text lang="French" displayName="Ippei" />
+    <text lang="German" displayName="Ippei" />
+    <text lang="Italian" displayName="Ippei" />
   </prisoner>
   <prisoner id="202">
     <text lang="English" displayName="Jitaro" />
     <text lang="Japanese" displayName="ジコク" />
+    <text lang="Spanish" displayName="Jitaro" />
+    <text lang="French" displayName="Jitaro" />
+    <text lang="German" displayName="Jitaro" />
+    <text lang="Italian" displayName="Jitaro" />
   </prisoner>
   <prisoner id="203">
     <text lang="English" displayName="Minori" />
     <text lang="Japanese" displayName="サンペキ" />
+    <text lang="Spanish" displayName="Minori" />
+    <text lang="French" displayName="Minori" />
+    <text lang="German" displayName="Minori" />
+    <text lang="Italian" displayName="Minori" />
   </prisoner>
   <prisoner id="204">
     <text lang="English" displayName="Shinobu" />
     <text lang="Japanese" displayName="シロク" />
+    <text lang="Spanish" displayName="Shinobu" />
+    <text lang="French" displayName="Shinobu" />
+    <text lang="German" displayName="Shinobu" />
+    <text lang="Italian" displayName="Shinobu" />
   </prisoner>
   <prisoner id="205">
     <text lang="English" displayName="Goro" />
     <text lang="Japanese" displayName="ゴオウ" />
+    <text lang="Spanish" displayName="Goro" />
+    <text lang="French" displayName="Goro" />
+    <text lang="German" displayName="Goro" />
+    <text lang="Italian" displayName="Goro" />
   </prisoner>
   <prisoner id="206">
     <text lang="English" displayName="Musashi" />
     <text lang="Japanese" displayName="ロッパク" />
+    <text lang="Spanish" displayName="Musashi" />
+    <text lang="French" displayName="Musashi" />
+    <text lang="German" displayName="Musashi" />
+    <text lang="Italian" displayName="Musashi" />
   </prisoner>
   <prisoner id="207">
     <text lang="English" displayName="Nanaki" />
     <text lang="Japanese" displayName="シチセキ" />
+    <text lang="Spanish" displayName="Nanaki" />
+    <text lang="French" displayName="Nanaki" />
+    <text lang="German" displayName="Nanaki" />
+    <text lang="Italian" displayName="Nanaki" />
   </prisoner>
   <prisoner id="208">
     <text lang="English" displayName="Hachio" />
     <text lang="Japanese" displayName="ハッパク" />
+    <text lang="Spanish" displayName="Hachio" />
+    <text lang="French" displayName="Hachio" />
+    <text lang="German" displayName="Hachio" />
+    <text lang="Italian" displayName="Hachio" />
   </prisoner>
   <prisoner id="209">
     <text lang="English" displayName="Konoe" />
     <text lang="Japanese" displayName="キュウシ" />
+    <text lang="Spanish" displayName="Konoe" />
+    <text lang="French" displayName="Konoe" />
+    <text lang="German" displayName="Konoe" />
+    <text lang="Italian" displayName="Konoe" />
   </prisoner>
   <prisoner id="221">
     <text lang="English" displayName="Unil" />
     <text lang="Japanese" displayName="アインス" />
+    <text lang="Spanish" displayName="Mus" />
+    <text lang="French" displayName="Nemos" />
+    <text lang="German" displayName="Unil" />
+    <text lang="Italian" displayName="Ansuz" />
   </prisoner>
   <prisoner id="222">
     <text lang="English" displayName="Dua" />
     <text lang="Japanese" displayName="ツヴァイ" />
+    <text lang="Spanish" displayName="Bovis" />
+    <text lang="French" displayName="Lernos" />
+    <text lang="German" displayName="Dua" />
+    <text lang="Italian" displayName="Æsch" />
   </prisoner>
   <prisoner id="223">
     <text lang="English" displayName="Trim" />
     <text lang="Japanese" displayName="ドライ" />
+    <text lang="Spanish" displayName="Tigris" />
+    <text lang="French" displayName="Cerynos" />
+    <text lang="German" displayName="Trim" />
+    <text lang="Italian" displayName="Berkano" />
   </prisoner>
   <prisoner id="224">
     <text lang="English" displayName="Quatro" />
     <text lang="Japanese" displayName="フィーア" />
+    <text lang="Spanish" displayName="Lepus" />
+    <text lang="French" displayName="Erymos" />
+    <text lang="German" displayName="Quatro" />
+    <text lang="Italian" displayName="Cen" />
   </prisoner>
   <prisoner id="225">
     <text lang="English" displayName="Penvo" />
     <text lang="Japanese" displayName="フュンフ" />
+    <text lang="Spanish" displayName="Draco" />
+    <text lang="French" displayName="Augios" />
+    <text lang="German" displayName="Penvo" />
+    <text lang="Italian" displayName="Dagaz" />
   </prisoner>
   <prisoner id="226">
     <text lang="English" displayName="Xestu" />
     <text lang="Japanese" displayName="ゼクス" />
+    <text lang="Spanish" displayName="Anguilla" />
+    <text lang="French" displayName="Stymfos" />
+    <text lang="German" displayName="Xestu" />
+    <text lang="Italian" displayName="Ehwaz" />
   </prisoner>
   <prisoner id="227">
     <text lang="English" displayName="Hepto" />
     <text lang="Japanese" displayName="ズィーベン" />
+    <text lang="Spanish" displayName="Equus" />
+    <text lang="French" displayName="Crestos" />
+    <text lang="German" displayName="Hepto" />
+    <text lang="Italian" displayName="Ear" />
   </prisoner>
   <prisoner id="228">
     <text lang="English" displayName="Octu" />
     <text lang="Japanese" displayName="アハト" />
+    <text lang="Spanish" displayName="Ovis" />
+    <text lang="French" displayName="Diomos" />
+    <text lang="German" displayName="Octu" />
+    <text lang="Italian" displayName="Eihwaz" />
   </prisoner>
   <!--
   Template:
   <prisoner id="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
   </prisoner>
   -->
 </root>
