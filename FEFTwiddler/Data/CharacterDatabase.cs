@@ -111,6 +111,7 @@ namespace FEFTwiddler.Data
                 IsManakete = flags.GetAttribute<bool>("isManakete"),
                 IsBeast = flags.GetAttribute<bool>("isBeast"),
                 CanUseDragonVein = flags.GetAttribute<bool>("canUseDragonVein"),
+                IsCustomDLC = flags.GetAttribute<bool>("IsCustomDLC"),
                 SupportPool = supportPool
             };
 

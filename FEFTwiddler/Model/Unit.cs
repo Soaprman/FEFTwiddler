@@ -1046,7 +1046,7 @@ namespace FEFTwiddler.Model
             }
         }
 
-        public bool HeartSeal_PegasusKnight
+        public bool HeartSeal_PegasusKnightMinerva
         {
             get { return _rawBlock2[0x12].GetFlag(0x02); }
             set { _rawBlock2[0x12] = _rawBlock2[0x12].SetFlag(0x02, value); }

@@ -24,6 +24,7 @@ namespace FEFTwiddler.Data
         public bool IsManakete { get; set; }
         public bool IsBeast { get; set; }
         public bool CanUseDragonVein { get; set; }
+        public bool IsCustomDLC { get; set; }
 
         public class Support
         {
