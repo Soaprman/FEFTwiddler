@@ -93,6 +93,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             SetMealCheckBox(chkSpdMeal, mealBonuses.Spd);
             SetMealCheckBox(chkLckMeal, mealBonuses.Lck);
             SetMealCheckBox(chkDefMeal, mealBonuses.Def);
+            SetMealCheckBox(chkResMeal, mealBonuses.Res);
         }
 
         private void SetMealCheckBox(CheckBox chk, sbyte bonus)
@@ -170,13 +171,14 @@ namespace FEFTwiddler.GUI.UnitViewer
                 Spd = GetMealCheckBox(chkSpdMeal, oldMealBonuses.Spd),
                 Lck = GetMealCheckBox(chkLckMeal, oldMealBonuses.Lck),
                 Def = GetMealCheckBox(chkDefMeal, oldMealBonuses.Def),
-                Res = 0
+                Res = GetMealCheckBox(chkResMeal, oldMealBonuses.Res)
             };
             _unit.MealBonusStats = newMealBonuses;
 
             this.Close();
         }
 
+        // Convert checkbox state to bonus stat
         private sbyte GetMealCheckBox(CheckBox chk, sbyte oldBonus)
         {
             sbyte newBonus;
@@ -229,6 +231,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             chkSpdMeal.Checked = true;
             chkLckMeal.Checked = true;
             chkDefMeal.Checked = true;
+            chkResMeal.Checked = true;
         }
     }
 }

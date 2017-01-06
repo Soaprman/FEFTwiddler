@@ -455,7 +455,6 @@
             // chkResMeal
             // 
             this.chkResMeal.AutoSize = true;
-            this.chkResMeal.Enabled = false;
             this.chkResMeal.Location = new System.Drawing.Point(227, 210);
             this.chkResMeal.Name = "chkResMeal";
             this.chkResMeal.Size = new System.Drawing.Size(15, 14);
