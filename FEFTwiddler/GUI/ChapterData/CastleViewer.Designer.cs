@@ -68,7 +68,7 @@
             // 
             this.castleMap1.Location = new System.Drawing.Point(367, 83);
             this.castleMap1.Name = "castleMap1";
-            this.castleMap1.Size = new System.Drawing.Size(530, 568);
+            this.castleMap1.Size = new System.Drawing.Size(530, 598);
             this.castleMap1.TabIndex = 3;
             // 
             // label2

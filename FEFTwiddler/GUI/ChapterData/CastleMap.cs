@@ -211,30 +211,51 @@ namespace FEFTwiddler.GUI.ChapterData
             int virtX = (int)(physicalMousePosition.X / scale);
             int virtY = (int)(physicalMousePosition.Y / scale);
 
-            // Consult map
-            Model.Building selectedBuilding;
-            var virtualBuilding = _virtualMap.Where(x => x.Value.Contains(virtX, virtY)).FirstOrDefault();
-            if (!virtualBuilding.Equals(default(KeyValuePair<Model.Building, Rectangle>)))
-            {
-                selectedBuilding = virtualBuilding.Key;
-            }
-            else
-            {
-                selectedBuilding = null;
-            }
+            // TODO: Maybe compare point with current rectangle to shortcut past the "consult map" for rotations and make this feel more responsive
 
-            // Act
-            if (selectedBuilding == null)
+            if (e.Button == MouseButtons.Left) // Select or deselect (TODO: Move)
             {
-                DeselectBuilding();
+                // Consult map
+                Model.Building selectedBuilding;
+                var virtualBuilding = _virtualMap.Where(x => x.Value.Contains(virtX, virtY)).FirstOrDefault();
+                if (!virtualBuilding.Equals(default(KeyValuePair<Model.Building, Rectangle>)))
+                {
+                    selectedBuilding = virtualBuilding.Key;
+                }
+                else
+                {
+                    selectedBuilding = null;
+                }
+
+                // Act
+                if (selectedBuilding == null)
+                {
+                    DeselectBuilding();
+                }
+                else
+                {
+                    SelectBuilding(selectedBuilding);
+                }
             }
-            else if (selectedBuilding == _selectedBuilding)
+            else if (e.Button == MouseButtons.Right) // Rotate
             {
-                RotateBuilding(selectedBuilding);
-            }
-            else
-            {
-                SelectBuilding(selectedBuilding);
+                // Consult map
+                Model.Building selectedBuilding;
+                var virtualBuilding = _virtualMap.Where(x => x.Value.Contains(virtX, virtY)).FirstOrDefault();
+                if (!virtualBuilding.Equals(default(KeyValuePair<Model.Building, Rectangle>)))
+                {
+                    selectedBuilding = virtualBuilding.Key;
+                }
+                else
+                {
+                    selectedBuilding = null;
+                }
+
+                // Act
+                if (selectedBuilding != null)
+                {
+                    RotateBuilding(selectedBuilding);
+                }
             }
         }
 
@@ -278,7 +299,7 @@ namespace FEFTwiddler.GUI.ChapterData
         // Start showing hover outline
         private void picCastle_MouseMove(object sender, MouseEventArgs e)
         {
-            physicalMousePosition = new Point(e.X - picCastle.Left, e.Y - picCastle.Top);
+            physicalMousePosition = new Point(e.X, e.Y);
             picCastle.Invalidate();
         }
 
