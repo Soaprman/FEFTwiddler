@@ -1106,33 +1106,6 @@
   <data name="&gt;&gt;tabMegacheats.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="tabNewGamePlus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabNewGamePlus.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabNewGamePlus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>750, 495</value>
-  </data>
-  <data name="tabNewGamePlus.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tabNewGamePlus.Text" xml:space="preserve">
-    <value>New Game Plus</value>
-  </data>
-  <data name="&gt;&gt;tabNewGamePlus.Name" xml:space="preserve">
-    <value>tabNewGamePlus</value>
-  </data>
-  <data name="&gt;&gt;tabNewGamePlus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabNewGamePlus.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabNewGamePlus.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="globalDataMain1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
@@ -1182,7 +1155,7 @@
     <value>tabControl1</value>
   </data>
   <data name="&gt;&gt;tabGlobalData.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="convoyMain1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -1233,7 +1206,7 @@
     <value>tabControl1</value>
   </data>
   <data name="&gt;&gt;tabConvoy.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="tabControl1.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -10134,9 +10107,6 @@
         gK29AAAANDQ0NDQ0eDdLlWw0NDQ0NPw/AADgBwAAwAMAAIABAACAAQAAgAAAAIAAAAAAAAAAAAAAAAAA
         AAAAAAAAgAAAAIABAADBgwAA4AcAAAAAAAA=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FEFTwiddler</value>

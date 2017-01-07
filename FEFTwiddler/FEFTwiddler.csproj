@@ -214,12 +214,6 @@
     <Compile Include="GUI\ChapterData\MegacheatsMain.Designer.cs">
       <DependentUpon>MegacheatsMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\NewGamePlus\NewGamePlusMain.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\NewGamePlus\NewGamePlusMain.Designer.cs">
-      <DependentUpon>NewGamePlusMain.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\UnitViewer\SupportPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -412,9 +406,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ChapterData\CastleViewer.resx">
       <DependentUpon>CastleViewer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\NewGamePlus\NewGamePlusMain.resx">
-      <DependentUpon>NewGamePlusMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UnitViewer\SupportPanel.resx">
       <DependentUpon>SupportPanel.cs</DependentUpon>

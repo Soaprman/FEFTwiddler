@@ -109,7 +109,6 @@ namespace FEFTwiddler.GUI
                     tabChapterData.Enabled = true;
                     tabUnitViewer.Enabled = true;
                     tabMegacheats.Enabled = true;
-                    tabNewGamePlus.Enabled = true;
                     tabConvoy.Enabled = true;
                     tabGlobalData.Enabled = false;
 
@@ -123,7 +122,6 @@ namespace FEFTwiddler.GUI
                     tabChapterData.Enabled = false;
                     tabUnitViewer.Enabled = false;
                     tabMegacheats.Enabled = false;
-                    tabNewGamePlus.Enabled = false;
                     tabConvoy.Enabled = false;
                     tabGlobalData.Enabled = true;
 
