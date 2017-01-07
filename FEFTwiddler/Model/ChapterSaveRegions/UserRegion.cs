@@ -332,72 +332,142 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
 
         // One unknown byte (0xF9)
 
+        // Putting this here because it's as good a place as anywhere.
+        // The "Change BGM" setting is unaccounted for.
+
+        // A setting. Changed from 14 (in 075_0) to CB (in 075_1)
         /// <summary>
         /// 0x1E on my "new" save
         /// 0x1C on my ch27 BR save
         /// 0x5E on my pre-ch6 saves
         /// 0x14 on my RV battle prep saves
         /// </summary>
-        public byte Unknown_Block2_0xFA
+        public byte SettingsFlags_0xFA
         {
             get { return _rawBlock2[0xFA]; }
             set { _rawBlock2[0xFA] = value; }
         }
 
+        // A setting. Changed from 5E (in 075_0) to 80 (in 075_1)
         /// <summary>
         /// 0x1E on my "new" save
         /// 0x16 on my ch27 BR save
         /// 0x5E on my pre-ch6 saves
         /// 0x5E on my RV battle prep saves
         /// </summary>
-        public byte Unknown_Block2_0xFB
+        public byte SettingsFlags_0xFB
         {
             get { return _rawBlock2[0xFB]; }
             set { _rawBlock2[0xFB] = value; }
         }
 
-        // Two unknown bytes (0xFC through 0xFD)
+        // A setting. Changed from 01 (in 075_0) to 00 (in 075_1)
+        public byte Setting_0xFC
+        {
+            get { return _rawBlock2[0xFC]; }
+            set { _rawBlock2[0xFC] = value; }
+        }
+
+        // A setting. Changed from 00 (in 075_0) to 40 (in 075_1)
+        public byte Setting_0xFD
+        {
+            get { return _rawBlock2[0xFD]; }
+            set { _rawBlock2[0xFD] = value; }
+        }
 
         /// <summary>
-        /// It's 0x01 on saves before and immediately after the prologue.
-        /// It's also 0x01 on EldinTokuro's save.
-        /// It's 0x00 on other saves.
+        /// 01: On
+        /// 02: Your Units
+        /// 03 probably: Your Turn
+        /// 04: Custom (check units' BattleAnimationsEnabled flags)
+        /// 05 probably: Off
         /// </summary>
-        public byte Unknown_Block2_0xFE
+        public byte CombatAnimations
         {
             get { return _rawBlock2[0xFE]; }
             set { _rawBlock2[0xFE] = value; }
         }
 
-        // Two unknown bytes (0xFF through 0x100)
+        // One unknown byte (0xFF)
 
-        /// <summary>
-        /// It is 0x01 on saves before the prologue.
-        /// It is 0x00 on other saves.
-        /// </summary>
-        public byte Unknown_Block2_0x101
+        // A setting. Changed from 00 (in 075_0) to 01 (in 075_1)
+        // Guess is one of the following: Game Speed, Camera Pisitions, Skip Actions, Danger Area
+        public byte Setting_0x100
+        {
+            get { return _rawBlock2[0x100]; }
+            set { _rawBlock2[0x100] = value; }
+        }
+
+        // A setting. Changed from 00 (in 075_0) to 02 (in 075_1)
+        // Guess is one of the following: Game Speed, Camera Pisitions, Skip Actions, Danger Area
+        public byte Setting_0x101
         {
             get { return _rawBlock2[0x101]; }
             set { _rawBlock2[0x101] = value; }
         }
 
-        /// <summary>
-        /// It is 0x02 on saves before the prologue. (example: 044\Chapter0)
-        /// It is 0x01 on 044\Chapter1 and 044\Chapter2.
-        /// It is 0x01 on my chapter 27 revelation saves.
-        /// It is 0x02 on my chapter 27 birthright save.
-        /// </summary>
-        public byte Unknown_Block2_0x102
+        // A setting. Changed from 01 (in 075_0) to 02 (in 075_1)
+        // Guess is one of the following: Game Speed, Camera Pisitions, Skip Actions, Danger Area
+        public byte GameSpeed
         {
             get { return _rawBlock2[0x102]; }
             set { _rawBlock2[0x102] = value; }
         }
 
-        // Three unknown bytes (0x103 through 0x105)
-        // Always 00 00 80?
+        // A setting. Changed from 00 (in 075_0) to 01 (in 075_1)
+        // Guess is one of the following: Game Speed, Camera Pisitions, Skip Actions, Danger Area
+        public byte Setting_0x103
+        {
+            get { return _rawBlock2[0x103]; }
+            set { _rawBlock2[0x103] = value; }
+        }
 
-        // Four unknown bytes (0x106 through 0x109)
-        // Always FF FF FF FF?
+        // A setting. Changed from 00 (in 075_0) to 01 (in 075_1)
+        // Guess is one of the following: Game Speed, Camera Pisitions, Skip Actions, Danger Area
+        public byte Setting_0x104
+        {
+            get { return _rawBlock2[0x104]; }
+            set { _rawBlock2[0x104] = value; }
+        }
+
+        // One unknown byte (0x105)
+        // Always 80?
+
+        /// <summary>
+        /// Values: 00 through FF, not sure of increments (maybe 0x08)
+        /// </summary>
+        public byte MusicVolume
+        {
+            get { return _rawBlock2[0x106]; }
+            set { _rawBlock2[0x106] = value; }
+        }
+
+        /// <summary>
+        /// Values: 00 through FF, not sure of increments (maybe 0x08)
+        /// </summary>
+        public byte SfxVolume
+        {
+            get { return _rawBlock2[0x107]; }
+            set { _rawBlock2[0x107] = value; }
+        }
+
+        /// <summary>
+        /// Values: 00 through FF, not sure of increments (maybe 0x08)
+        /// </summary>
+        public byte SystemVolume
+        {
+            get { return _rawBlock2[0x108]; }
+            set { _rawBlock2[0x108] = value; }
+        }
+
+        /// <summary>
+        /// Values: 00 through FF, not sure of increments (maybe 0x08)
+        /// </summary>
+        public byte VoiceVolume
+        {
+            get { return _rawBlock2[0x109]; }
+            set { _rawBlock2[0x109] = value; }
+        }
 
         /// <summary>
         /// Seems related to story progress.

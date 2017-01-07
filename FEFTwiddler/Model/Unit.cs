@@ -928,6 +928,15 @@ namespace FEFTwiddler.Model
             set { _rawBlock1[0x4F] = _rawBlock1[0x4F].SetFlag(0x10, value); }
         }
 
+        /// <summary>
+        /// Whether the unit's battle animations are enabled in the custom battle animation options
+        /// </summary>
+        public bool BattleAnimationsEnabled
+        {
+            get { return _rawBlock1[0x4F].GetFlag(0x80); }
+            set { _rawBlock1[0x4F] = _rawBlock1[0x4F].SetFlag(0x80, value); }
+        }
+
         // Six unknown bytes (0x51 through 0x56)
         // Seems to always be 00 00 00 FF FF 00
 

@@ -123,11 +123,6 @@ namespace FEFTwiddler.Model.NewGamePlus
             _chapterSave.UserRegion.Unknown_Block2_0xE8 = 0x00;
             _chapterSave.UserRegion.Unknown_Block2_0xEC = 0x00;
             _chapterSave.UserRegion.Unknown_Block2_0xED = 0x00;
-            _chapterSave.UserRegion.Unknown_Block2_0xFA = 0x5E;
-            _chapterSave.UserRegion.Unknown_Block2_0xFB = 0x5E;
-            _chapterSave.UserRegion.Unknown_Block2_0xFE = 0x01;
-            _chapterSave.UserRegion.Unknown_Block2_0x101 = 0x01;
-            _chapterSave.UserRegion.Unknown_Block2_0x102 = 0x02;
             _chapterSave.UserRegion.Unknown_Block2_0x10A = 0x00;
 
             _chapterSave.UserRegion.Game = Enums.Game.Birthright;
