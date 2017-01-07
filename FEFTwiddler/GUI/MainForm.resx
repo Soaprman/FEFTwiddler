@@ -1106,57 +1106,6 @@
   <data name="&gt;&gt;tabMegacheats.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="globalDataMain1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="globalDataMain1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="globalDataMain1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>740, 480</value>
-  </data>
-  <data name="globalDataMain1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;globalDataMain1.Name" xml:space="preserve">
-    <value>globalDataMain1</value>
-  </data>
-  <data name="&gt;&gt;globalDataMain1.Type" xml:space="preserve">
-    <value>FEFTwiddler.GUI.GlobalData.GlobalDataMain, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;globalDataMain1.Parent" xml:space="preserve">
-    <value>tabGlobalData</value>
-  </data>
-  <data name="&gt;&gt;globalDataMain1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabGlobalData.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabGlobalData.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabGlobalData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>750, 495</value>
-  </data>
-  <data name="tabGlobalData.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="tabGlobalData.Text" xml:space="preserve">
-    <value>Global Data</value>
-  </data>
-  <data name="&gt;&gt;tabGlobalData.Name" xml:space="preserve">
-    <value>tabGlobalData</value>
-  </data>
-  <data name="&gt;&gt;tabGlobalData.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabGlobalData.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabGlobalData.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="convoyMain1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
@@ -1206,6 +1155,57 @@
     <value>tabControl1</value>
   </data>
   <data name="&gt;&gt;tabConvoy.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="globalDataMain1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="globalDataMain1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="globalDataMain1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>740, 480</value>
+  </data>
+  <data name="globalDataMain1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;globalDataMain1.Name" xml:space="preserve">
+    <value>globalDataMain1</value>
+  </data>
+  <data name="&gt;&gt;globalDataMain1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.GlobalData.GlobalDataMain, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;globalDataMain1.Parent" xml:space="preserve">
+    <value>tabGlobalData</value>
+  </data>
+  <data name="&gt;&gt;globalDataMain1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabGlobalData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabGlobalData.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabGlobalData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 495</value>
+  </data>
+  <data name="tabGlobalData.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tabGlobalData.Text" xml:space="preserve">
+    <value>Global Data</value>
+  </data>
+  <data name="&gt;&gt;tabGlobalData.Name" xml:space="preserve">
+    <value>tabGlobalData</value>
+  </data>
+  <data name="&gt;&gt;tabGlobalData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabGlobalData.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabGlobalData.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="tabControl1.Enabled" type="System.Boolean, mscorlib">

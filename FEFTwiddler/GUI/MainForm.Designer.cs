@@ -149,8 +149,8 @@
             this.tabControl1.Controls.Add(this.tabChapterData);
             this.tabControl1.Controls.Add(this.tabUnitViewer);
             this.tabControl1.Controls.Add(this.tabMegacheats);
-            this.tabControl1.Controls.Add(this.tabGlobalData);
             this.tabControl1.Controls.Add(this.tabConvoy);
+            this.tabControl1.Controls.Add(this.tabGlobalData);
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
