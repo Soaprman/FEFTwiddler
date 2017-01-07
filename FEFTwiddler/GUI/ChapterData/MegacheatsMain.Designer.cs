@@ -42,6 +42,7 @@
             this.btnHearSealDlc = new System.Windows.Forms.Button();
             this.btnStatBonuses = new System.Windows.Forms.Button();
             this.btnResetSupports = new System.Windows.Forms.Button();
+            this.btnUnlockAllStatues = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AllCharMaxStatue
@@ -197,10 +198,22 @@
             this.btnResetSupports.UseVisualStyleBackColor = true;
             this.btnResetSupports.Click += new System.EventHandler(this.btnResetSupports_Click);
             // 
+            // btnUnlockAllStatues
+            // 
+            this.btnUnlockAllStatues.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnUnlockAllStatues.Location = new System.Drawing.Point(208, 344);
+            this.btnUnlockAllStatues.Name = "btnUnlockAllStatues";
+            this.btnUnlockAllStatues.Size = new System.Drawing.Size(192, 60);
+            this.btnUnlockAllStatues.TabIndex = 24;
+            this.btnUnlockAllStatues.Text = "Unlock all statues (and build for free)";
+            this.btnUnlockAllStatues.UseVisualStyleBackColor = true;
+            this.btnUnlockAllStatues.Click += new System.EventHandler(this.btnUnlockAllStatues_Click);
+            // 
             // MegacheatsMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnUnlockAllStatues);
             this.Controls.Add(this.btnResetSupports);
             this.Controls.Add(this.btnStatBonuses);
             this.Controls.Add(this.btnHearSealDlc);
@@ -239,5 +252,6 @@
         private System.Windows.Forms.Button btnHearSealDlc;
         private System.Windows.Forms.Button btnStatBonuses;
         private System.Windows.Forms.Button btnResetSupports;
+        private System.Windows.Forms.Button btnUnlockAllStatues;
     }
 }

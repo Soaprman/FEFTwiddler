@@ -168,5 +168,11 @@ namespace FEFTwiddler.GUI.ChapterData
 
             MessageBox.Show("Oh my! Do you have any idea what you just did?");
         }
+
+        private void btnUnlockAllStatues_Click(object sender, EventArgs e)
+        {
+            Model.Cheats.UnlockAllStatues(_chapterSave);
+            MessageBox.Show("Done!");
+        }
     }
 }

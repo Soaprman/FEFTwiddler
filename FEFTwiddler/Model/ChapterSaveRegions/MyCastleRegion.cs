@@ -157,7 +157,21 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
         // Sixty-four semi-known bytes (0xAD through 0xEC)
         // Unlocked buildings block 1? (begins with XX XX XX F1 FF)
         // Skip 0x14 bytes
-        // UnlockedStatues1 = 0x1B bytes
+
+        /// <summary>
+        /// Statues paid for. Rebuilding one will not cost any dragon vein points
+        /// </summary>
+        /// <remarks>Haven't figured out which bit goes with each statue yet, and there seem to be leftover bits</remarks>
+        public byte[] StatuesPaidFor
+        {
+            get { return _rawBlock1.Skip(0xC1).Take(0x1B).ToArray(); }
+            set
+            {
+                if (value.Length != 0x1B) throw new ArgumentException("StatuesPaidFor block must be 0x1B bytes in length");
+                Array.Copy(value, 0x0, _rawBlock1, 0xC1, 0x1B);
+            }
+        }
+
         // Skip 0x11 bytes
 
         // Sixty-four unknown bytes (0xED through 0x12C)
@@ -166,7 +180,21 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
         // Sixty-four semi-known bytes (0x12D through 0x16C)
         // Unlocked buildings block 2? (begins with XX XX XX F1 FF)
         // Skip 0x14 bytes
-        // UnlockedStatues2 = 0x1B bytes
+
+        /// <summary>
+        /// Statues unlocked. This is recalculated based on units' battle counts when loading a save, so editing it is of limited use
+        /// </summary>
+        /// <remarks>Haven't figured out which bit goes with each statue yet, and there seem to be leftover bits</remarks>
+        public byte[] StatuesUnlocked
+        {
+            get { return _rawBlock1.Skip(0x141).Take(0x1B).ToArray(); }
+            set
+            {
+                if (value.Length != 0x1B) throw new ArgumentException("StatuesUnlocked block must be 0x1B bytes in length");
+                Array.Copy(value, 0x0, _rawBlock1, 0x141, 0x1B);
+            }
+        }
+
         // Skip 0x11 bytes
 
         // Sixty-four unknown bytes (0x16D through 0x1AC)
@@ -175,7 +203,21 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
         // Sixty-four semi-known bytes (0x1AD through 0x1EC)
         // Unlocked buildings block 3? (begins with XX XX XX F1 FF)
         // Skip 0x14 bytes
-        // UnlockedStatues3 = 0x1B bytes
+
+        /// <summary>
+        /// Statues marked as read so that they don't have the NEW! marker
+        /// </summary>
+        /// <remarks>Haven't figured out which bit goes with each statue yet, and there seem to be leftover bits</remarks>
+        public byte[] StatuesMarkedAsRead
+        {
+            get { return _rawBlock1.Skip(0x1C1).Take(0x1B).ToArray(); }
+            set
+            {
+                if (value.Length != 0x1B) throw new ArgumentException("StatuesMarkedAsRead block must be 0x1B bytes in length");
+                Array.Copy(value, 0x0, _rawBlock1, 0x1C1, 0x1B);
+            }
+        }
+
         // Skip 0x11 bytes
 
         // Sixty-four unknown bytes (0x1ED through 0x22C)
