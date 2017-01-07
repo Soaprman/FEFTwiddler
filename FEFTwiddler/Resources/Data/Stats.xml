@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <root>
   <stat id="0" name="None">
-    <text lang="English" displayName="None" />
-    <text lang="Japanese" displayName="無し" />
+    <text lang="English" displayName="(None)" />
+    <text lang="Japanese" displayName="（無し）" />
+    <text lang="Spanish" displayName="(Nada)" />
+    <text lang="French" displayName="(Rien)" />
+    <text lang="German" displayName="(Keine)" />
+    <text lang="Italian" displayName="(Nessuna)" />
     <baseBoonModifiers hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <maxBoonModifiers hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <baseBaneModifiers hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -11,6 +15,10 @@
   <stat id="1" name="HP">
     <text lang="English" displayName="HP" />
     <text lang="Japanese" displayName="HP" />
+    <text lang="Spanish" displayName="PV" />
+    <text lang="French" displayName="PV" />
+    <text lang="German" displayName="KP" />
+    <text lang="Italian" displayName="PS" />
     <baseBoonModifiers hp="3" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <maxBoonModifiers hp="0" str="1" mag="1" skl="0" spd="0" lck="2" def="2" res="2" />
     <baseBaneModifiers hp="-2" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -19,6 +27,10 @@
   <stat id="2" name="Str">
     <text lang="English" displayName="Strength" />
     <text lang="Japanese" displayName="力" />
+    <text lang="Spanish" displayName="Fuerza" />
+    <text lang="French" displayName="Force" />
+    <text lang="German" displayName="Stärke" />
+    <text lang="Italian" displayName="Forza" />
     <baseBoonModifiers hp="0" str="2" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <maxBoonModifiers hp="0" str="4" mag="0" skl="2" spd="0" lck="0" def="2" res="0" />
     <baseBaneModifiers hp="0" str="-1" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -27,6 +39,10 @@
   <stat id="3" name="Mag">
     <text lang="English" displayName="Magic" />
     <text lang="Japanese" displayName="魔力" />
+    <text lang="Spanish" displayName="Magia" />
+    <text lang="French" displayName="Magie" />
+    <text lang="German" displayName="Magie" />
+    <text lang="Italian" displayName="Magia" />
     <baseBoonModifiers hp="0" str="0" mag="3" skl="0" spd="0" lck="0" def="0" res="0" />
     <maxBoonModifiers hp="0" str="0" mag="4" skl="0" spd="2" lck="0" def="0" res="2" />
     <baseBaneModifiers hp="0" str="0" mag="-2" skl="0" spd="0" lck="0" def="0" res="0" />
@@ -35,6 +51,10 @@
   <stat id="4" name="Skl">
     <text lang="English" displayName="Skill" />
     <text lang="Japanese" displayName="技" />
+    <text lang="Spanish" displayName="Habilidad" />
+    <text lang="French" displayName="Technique" />
+    <text lang="German" displayName="Fähigkeit" />
+    <text lang="Italian" displayName="Abilità" />
     <baseBoonModifiers hp="0" str="0" mag="0" skl="3" spd="0" lck="0" def="0" res="0" />
     <maxBoonModifiers hp="0" str="2" mag="0" skl="4" spd="0" lck="0" def="2" res="0" />
     <baseBaneModifiers hp="0" str="0" mag="0" skl="-2" spd="0" lck="0" def="0" res="0" />
@@ -43,6 +63,10 @@
   <stat id="5" name="Spd">
     <text lang="English" displayName="Speed" />
     <text lang="Japanese" displayName="速さ" />
+    <text lang="Spanish" displayName="Velocidad" />
+    <text lang="French" displayName="Vitesse" />
+    <text lang="German" displayName="Geschwindigkeit" />
+    <text lang="Italian" displayName="Velocità" />
     <baseBoonModifiers hp="0" str="0" mag="0" skl="0" spd="2" lck="0" def="0" res="0" />
     <maxBoonModifiers hp="0" str="0" mag="0" skl="2" spd="4" lck="2" def="0" res="0" />
     <baseBaneModifiers hp="0" str="0" mag="0" skl="0" spd="-1" lck="0" def="0" res="0" />
@@ -51,6 +75,10 @@
   <stat id="6" name="Luk">
     <text lang="English" displayName="Luck" />
     <text lang="Japanese" displayName="幸運" />
+    <text lang="Spanish" displayName="Suerte" />
+    <text lang="French" displayName="Chance" />
+    <text lang="German" displayName="Glück" />
+    <text lang="Italian" displayName="Fortuna" />
     <baseBoonModifiers hp="0" str="0" mag="0" skl="0" spd="0" lck="3" def="0" res="0" />
     <maxBoonModifiers hp="0" str="2" mag="2" skl="0" spd="0" lck="4" def="0" res="0" />
     <baseBaneModifiers hp="0" str="0" mag="0" skl="0" spd="0" lck="-2" def="0" res="0" />
@@ -59,6 +87,10 @@
   <stat id="7" name="Def">
     <text lang="English" displayName="Defense" />
     <text lang="Japanese" displayName="守備" />
+    <text lang="Spanish" displayName="Defensa" />
+    <text lang="French" displayName="Défense" />
+    <text lang="German" displayName="Verteidigung" />
+    <text lang="Italian" displayName="Difesa" />
     <baseBoonModifiers hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="1" res="0" />
     <maxBoonModifiers hp="0" str="0" mag="0" skl="0" spd="0" lck="2" def="4" res="2" />
     <baseBaneModifiers hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="-1" res="0" />
@@ -67,6 +99,10 @@
   <stat id="8" name="Res">
     <text lang="English" displayName="Resistance" />
     <text lang="Japanese" displayName="魔防" />
+    <text lang="Spanish" displayName="Resistencia" />
+    <text lang="French" displayName="Résistance" />
+    <text lang="German" displayName="Resistenz" />
+    <text lang="Italian" displayName="Resistenza" />
     <baseBoonModifiers hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="1" />
     <maxBoonModifiers hp="0" str="0" mag="2" skl="0" spd="2" lck="0" def="0" res="4" />
     <baseBaneModifiers hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="-1" />
@@ -77,6 +113,10 @@
   <stat id="0" name="InternalName">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <baseBoonModifiers hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <maxBoonModifiers hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />
     <baseBaneModifiers hp="0" str="0" mag="0" skl="0" spd="0" lck="0" def="0" res="0" />

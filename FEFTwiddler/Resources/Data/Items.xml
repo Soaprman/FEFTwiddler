@@ -2,1981 +2,3560 @@
 <root>
   <item id="0" name="None" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="(None)" />
-    <text lang="Japanese" displayName="無し" />
+    <text lang="Japanese" displayName="（無し）" />
+    <text lang="Spanish" displayName="(Nada)" />
+    <text lang="French" displayName="(Rien)" />
+    <text lang="German" displayName="(Nichts)" />
+    <text lang="Italian" displayName="(Senza armi)" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="1" name="BronzeSword" type="Sword" subType="Sword" maxUses="0" rank="1">
     <text lang="English" displayName="Bronze Sword" />
     <text lang="Japanese" displayName="青銅の剣" />
+    <text lang="Spanish" displayName="Espada bronce" />
+    <text lang="French" displayName="Épée bronze" />
+    <text lang="German" displayName="Bronzeschwert" />
+    <text lang="Italian" displayName="Spada bronzo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="2" name="IronSword" type="Sword" subType="Sword" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Sword" />
     <text lang="Japanese" displayName="鉄の剣" />
+    <text lang="Spanish" displayName="Espada hierro" />
+    <text lang="French" displayName="Épée fer" />
+    <text lang="German" displayName="Eisenschwert" />
+    <text lang="Italian" displayName="Spada ferro" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="3" name="SteelSword" type="Sword" subType="Sword" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Sword" />
     <text lang="Japanese" displayName="鋼の剣" />
+    <text lang="Spanish" displayName="Espada acero" />
+    <text lang="French" displayName="Épée acier" />
+    <text lang="German" displayName="Stahlschwert" />
+    <text lang="Italian" displayName="Spada acciaio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="4" name="SilverSword" type="Sword" subType="Sword" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Sword" />
     <text lang="Japanese" displayName="銀の剣" />
+    <text lang="Spanish" displayName="Espada plata" />
+    <text lang="French" displayName="Épée argent" />
+    <text lang="German" displayName="Silberschwert" />
+    <text lang="Italian" displayName="Spada argento" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="5" name="BraveSword" type="Sword" subType="Sword" maxUses="0" rank="5">
     <text lang="English" displayName="Brave Sword" />
     <text lang="Japanese" displayName="勇者の剣" />
+    <text lang="Spanish" displayName="Espada valor" />
+    <text lang="French" displayName="Épée héros" />
+    <text lang="German" displayName="Kriegerschwert" />
+    <text lang="Italian" displayName="Spada forte" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="6" name="IronKukri" type="Sword" subType="Sword" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Kukri" />
     <text lang="Japanese" displayName="鉄の投撃剣" />
+    <text lang="Spanish" displayName="Kukri hierro" />
+    <text lang="French" displayName="Kukri fer" />
+    <text lang="German" displayName="Eisenkukri" />
+    <text lang="Italian" displayName="Kukri ferro" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="7" name="SteelKukri" type="Sword" subType="Sword" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Kukri" />
     <text lang="Japanese" displayName="鋼の投撃剣" />
+    <text lang="Spanish" displayName="Kukri acero" />
+    <text lang="French" displayName="Kukri acier" />
+    <text lang="German" displayName="Stahlkukri" />
+    <text lang="Italian" displayName="Kukri acciaio" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="8" name="SilverKukri" type="Sword" subType="Sword" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Kukri" />
     <text lang="Japanese" displayName="銀の投撃剣" />
+    <text lang="Spanish" displayName="Kukri plata" />
+    <text lang="French" displayName="Kukri argent" />
+    <text lang="German" displayName="Silberkukri" />
+    <text lang="Italian" displayName="Kukri argento" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="9" name="Armorslayer" type="Sword" subType="Sword" maxUses="0" rank="2">
     <text lang="English" displayName="Armorslayer" />
     <text lang="Japanese" displayName="アーマーキラー" />
+    <text lang="Spanish" displayName="Machacacor." />
+    <text lang="French" displayName="Cuiracide" />
+    <text lang="German" displayName="Panzerbrecher" />
+    <text lang="Italian" displayName="Frangicotta" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="10" name="Wyrmslayer" type="Sword" subType="Sword" maxUses="0" rank="2">
     <text lang="English" displayName="Wyrmslayer" />
     <text lang="Japanese" displayName="ドラゴンキラー" />
+    <text lang="Spanish" displayName="Machacawyrms" />
+    <text lang="French" displayName="Dracocide" />
+    <text lang="German" displayName="Wyrmtöter" />
+    <text lang="Italian" displayName="Attaccawyrm" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="11" name="KillingEdge" type="Sword" subType="Sword" maxUses="0" rank="3">
     <text lang="English" displayName="Killing Edge" />
     <text lang="Japanese" displayName="キルソード" />
+    <text lang="Spanish" displayName="Espada asesina" />
+    <text lang="French" displayName="Fer létal" />
+    <text lang="German" displayName="Schnitter" />
+    <text lang="Italian" displayName="Lama letale" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="12" name="LevinSword" type="Sword" subType="Sword" maxUses="0" rank="3">
     <text lang="English" displayName="Levin Sword" />
     <text lang="Japanese" displayName="サンダーソード" />
+    <text lang="Spanish" displayName="Espada trueno" />
+    <text lang="French" displayName="Épée orage" />
+    <text lang="German" displayName="Donnerschwert" />
+    <text lang="Italian" displayName="Spada folgore" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="13" name="Ganglari" type="Sword" subType="Sword" maxUses="0" rank="1">
     <text lang="English" displayName="Ganglari" />
     <text lang="Japanese" displayName="ガングレリ" />
+    <text lang="Spanish" displayName="Ganglari" />
+    <text lang="French" displayName="Ganglari" />
+    <text lang="German" displayName="Gangleri" />
+    <text lang="Italian" displayName="Ganglari" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="14" name="Siegfried" type="Sword" subType="Sword" maxUses="0" rank="1">
     <text lang="English" displayName="Siegfried" />
     <text lang="Japanese" displayName="ジークフリート" />
+    <text lang="Spanish" displayName="Siegfried" />
+    <text lang="French" displayName="Siegfried" />
+    <text lang="German" displayName="Siegfried" />
+    <text lang="Italian" displayName="Siegfried" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="15" name="Bottle" type="Sword" subType="Sword" maxUses="0" rank="1">
     <text lang="English" displayName="Bottle" />
     <text lang="Japanese" displayName="ワインボトル" />
+    <text lang="Spanish" displayName="Botella" />
+    <text lang="French" displayName="Bouteille" />
+    <text lang="German" displayName="Flasche" />
+    <text lang="Italian" displayName="Bottiglia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="16" name="Umbrella" type="Sword" subType="Sword" maxUses="0" rank="2">
     <text lang="English" displayName="Umbrella" />
     <text lang="Japanese" displayName="洋傘" />
+    <text lang="Spanish" displayName="Parasol" />
+    <text lang="French" displayName="Parapluie" />
+    <text lang="German" displayName="Schirm" />
+    <text lang="Italian" displayName="Ombrello" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="17" name="NohrianBlade" type="Sword" subType="Sword" maxUses="0" rank="2">
     <text lang="English" displayName="Nohrian Blade" />
     <text lang="Japanese" displayName="暗夜の漆黒剣" />
+    <text lang="Spanish" displayName="Sable Nohr" />
+    <text lang="French" displayName="Lame de Nohr" />
+    <text lang="German" displayName="Nohrklinge" />
+    <text lang="Italian" displayName="Spada Nohr" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="18" name="LeosIceblade" type="Sword" subType="Sword" maxUses="0" rank="4">
     <text lang="English" displayName="Leo's Iceblade" />
     <text lang="Japanese" displayName="レオンの冷剣" />
+    <text lang="Spanish" displayName="Hoja gélida Leo" />
+    <text lang="French" displayName="Épée gel (Leo)" />
+    <text lang="German" displayName="Leos Eisklinge" />
+    <text lang="Italian" displayName="Gelolama Leo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="19" name="SelenasBlade" type="Sword" subType="Sword" maxUses="0" rank="3">
     <text lang="English" displayName="Selena's Blade" />
     <text lang="Japanese" displayName="ルーナの鋭剣" />
+    <text lang="Spanish" displayName="Sable Selena" />
+    <text lang="French" displayName="Épée de Selena" />
+    <text lang="German" displayName="Selenas Klinge" />
+    <text lang="Italian" displayName="Spada Selena" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="20" name="LaslowsBlade" type="Sword" subType="Sword" maxUses="0" rank="3">
     <text lang="English" displayName="Laslow's Blade" />
     <text lang="Japanese" displayName="ラズワルドの舞剣" />
+    <text lang="Spanish" displayName="Sable Laslow" />
+    <text lang="French" displayName="Épée de Laslow" />
+    <text lang="German" displayName="Laslows Klinge" />
+    <text lang="Italian" displayName="Spada Laslow" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="21" name="BronzeKatana" type="Sword" subType="Katana" maxUses="0" rank="1">
-    <text lang="English" displayName="Bronze Katana" />
+    <text lang="English" displayName="Brass Katana" />
     <text lang="Japanese" displayName="青銅の刀" />
+    <text lang="Spanish" displayName="Katana bronce" />
+    <text lang="French" displayName="Katana cuivre" />
+    <text lang="German" displayName="Bronzekatana" />
+    <text lang="Italian" displayName="Katana bronzo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="22" name="IronKatana" type="Sword" subType="Katana" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Katana" />
     <text lang="Japanese" displayName="鉄の刀" />
+    <text lang="Spanish" displayName="Katana hierro" />
+    <text lang="French" displayName="Katana fer" />
+    <text lang="German" displayName="Eisenkatana" />
+    <text lang="Italian" displayName="Katana ferro" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="23" name="SteelKatana" type="Sword" subType="Katana" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Katana" />
     <text lang="Japanese" displayName="鋼の刀" />
+    <text lang="Spanish" displayName="Katana acero" />
+    <text lang="French" displayName="Katana acier" />
+    <text lang="German" displayName="Stahlkatana" />
+    <text lang="Italian" displayName="Katana acciaio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="24" name="SilverKatana" type="Sword" subType="Katana" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Katana" />
     <text lang="Japanese" displayName="銀の刀" />
+    <text lang="Spanish" displayName="Katana plata" />
+    <text lang="French" displayName="Katana argent" />
+    <text lang="German" displayName="Silberkatana" />
+    <text lang="Italian" displayName="Katana argento" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="25" name="VengeKatana" type="Sword" subType="Katana" maxUses="0" rank="5">
     <text lang="English" displayName="Venge Katana" />
     <text lang="Japanese" displayName="武者の刀" />
+    <text lang="Spanish" displayName="Katana vindicta" />
+    <text lang="French" displayName="Katana vengeur" />
+    <text lang="German" displayName="Rächerkatana" />
+    <text lang="Italian" displayName="Katana castigo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="26" name="IronKatti" type="Sword" subType="Katana" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Katti" />
     <text lang="Japanese" displayName="鉄の投撃刀" />
+    <text lang="Spanish" displayName="Katti hierro" />
+    <text lang="French" displayName="Katti fer" />
+    <text lang="German" displayName="Eisen-Katti" />
+    <text lang="Italian" displayName="Katti ferro" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="27" name="SteelKatti" type="Sword" subType="Katana" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Katti" />
     <text lang="Japanese" displayName="鋼の投撃刀" />
+    <text lang="Spanish" displayName="Katti acero" />
+    <text lang="French" displayName="Katti acier" />
+    <text lang="German" displayName="Stahl-Katti" />
+    <text lang="Italian" displayName="Katti acciaio" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="28" name="SilverKatti" type="Sword" subType="Katana" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Katti" />
     <text lang="Japanese" displayName="銀の投撃刀" />
+    <text lang="Spanish" displayName="Katti plata" />
+    <text lang="French" displayName="Katti argent" />
+    <text lang="German" displayName="Silber-Katti" />
+    <text lang="Italian" displayName="Katti argento" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="29" name="Kodachi" type="Sword" subType="Katana" maxUses="0" rank="2">
     <text lang="English" displayName="Kodachi" />
     <text lang="Japanese" displayName="小太刀" />
+    <text lang="Spanish" displayName="Kodachi" />
+    <text lang="French" displayName="Kodachi" />
+    <text lang="German" displayName="Kodachi" />
+    <text lang="Italian" displayName="Kodachi" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="30" name="Wakizashi" type="Sword" subType="Katana" maxUses="0" rank="4">
     <text lang="English" displayName="Wakizashi" />
     <text lang="Japanese" displayName="飛刀" />
+    <text lang="Spanish" displayName="Wakizashi" />
+    <text lang="French" displayName="Wakizashi" />
+    <text lang="German" displayName="Wakizashi" />
+    <text lang="Italian" displayName="Wakizashi" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="31" name="AxeSplitter" type="Sword" subType="Katana" maxUses="0" rank="2">
     <text lang="English" displayName="Axe Splitter" />
     <text lang="Japanese" displayName="斧斬りの刀" />
+    <text lang="Spanish" displayName="Partehachas" />
+    <text lang="French" displayName="Fléau de hache" />
+    <text lang="German" displayName="Axtspalter" />
+    <text lang="Italian" displayName="Frantuma asce" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="32" name="DualKatana" type="Sword" subType="Katana" maxUses="0" rank="3">
     <text lang="English" displayName="Dual Katana" />
     <text lang="Japanese" displayName="逆刀" />
+    <text lang="Spanish" displayName="Katana doble" />
+    <text lang="French" displayName="Katana double" />
+    <text lang="German" displayName="Doppelkatana" />
+    <text lang="Italian" displayName="Katana doppia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="33" name="PracticeKatana" type="Sword" subType="Katana" maxUses="0" rank="3">
     <text lang="English" displayName="Practice Katana" />
     <text lang="Japanese" displayName="居合刀" />
+    <text lang="Spanish" displayName="Katana práctica" />
+    <text lang="French" displayName="Katana novice" />
+    <text lang="German" displayName="Übungskatana" />
+    <text lang="Italian" displayName="Katana appren." />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="34" name="SpiritKatana" type="Sword" subType="Katana" maxUses="0" rank="3">
     <text lang="English" displayName="Spirit Katana" />
     <text lang="Japanese" displayName="霊刀" />
+    <text lang="Spanish" displayName="Katana espíritu" />
+    <text lang="French" displayName="Katana spirituel" />
+    <text lang="German" displayName="Geisterkatana" />
+    <text lang="Italian" displayName="Katana spirito" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="35" name="HagakureBlade" type="Sword" subType="Katana" maxUses="0" rank="6">
     <text lang="English" displayName="Hagakure Blade" />
     <text lang="Japanese" displayName="葉隠" />
+    <text lang="Spanish" displayName="Sable Hagakure" />
+    <text lang="French" displayName="Lame Hagakure" />
+    <text lang="German" displayName="Kriegerklinge" />
+    <text lang="Italian" displayName="Lama Hagakure" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="36" name="Yato" type="Sword" subType="Katana" maxUses="0" rank="1">
     <text lang="English" displayName="Yato" />
     <text lang="Japanese" displayName="夜刀神" />
+    <text lang="Spanish" displayName="Yato" />
+    <text lang="French" displayName="Yato" />
+    <text lang="German" displayName="Yato" />
+    <text lang="Italian" displayName="Yato" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="37" name="NobleYato" type="Sword" subType="Katana" maxUses="0" rank="1">
     <text lang="English" displayName="Noble Yato" />
     <text lang="Japanese" displayName="夜刀神・空夜" />
+    <text lang="Spanish" displayName="Yato noble" />
+    <text lang="French" displayName="Yato noble" />
+    <text lang="German" displayName="Edel-Yato" />
+    <text lang="Italian" displayName="Yato nobile" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="38" name="BlazingYato" type="Sword" subType="Katana" maxUses="0" rank="1">
     <text lang="English" displayName="Blazing Yato" />
     <text lang="Japanese" displayName="夜刀神・白夜" />
+    <text lang="Spanish" displayName="Yato llameante" />
+    <text lang="French" displayName="Yato éclatante" />
+    <text lang="German" displayName="Glühendes Yato" />
+    <text lang="Italian" displayName="Yato ardente" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="39" name="GrimYato" type="Sword" subType="Katana" maxUses="0" rank="1">
     <text lang="English" displayName="Grim Yato" />
     <text lang="Japanese" displayName="夜刀神・長夜" />
+    <text lang="Spanish" displayName="Yato funesta" />
+    <text lang="French" displayName="Yato funeste" />
+    <text lang="German" displayName="Finsteres Yato" />
+    <text lang="Italian" displayName="Yato mietitrice" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="40" name="ShadowYato" type="Sword" subType="Katana" maxUses="0" rank="1">
     <text lang="English" displayName="Shadow Yato" />
     <text lang="Japanese" displayName="夜刀神・暗夜" />
+    <text lang="Spanish" displayName="Yato sombría" />
+    <text lang="French" displayName="Yato de l'ombre" />
+    <text lang="German" displayName="Schatten-Yato" />
+    <text lang="Italian" displayName="Yato ombra" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="41" name="AlphaYato" type="Sword" subType="Katana" maxUses="0" rank="1">
     <text lang="English" displayName="Alpha Yato" />
     <text lang="Japanese" displayName="夜刀神・幻夜" />
+    <text lang="Spanish" displayName="Yato alfa" />
+    <text lang="French" displayName="Yato alpha" />
+    <text lang="German" displayName="Alpha-Yato" />
+    <text lang="Italian" displayName="Yato Alfa" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="42" name="OmegaYato" type="Sword" subType="Katana" maxUses="0" rank="1">
     <text lang="English" displayName="Omega Yato" />
     <text lang="Japanese" displayName="夜刀神・終夜" />
+    <text lang="Spanish" displayName="Yato omega" />
+    <text lang="French" displayName="Yato oméga" />
+    <text lang="German" displayName="Omega-Yato" />
+    <text lang="Italian" displayName="Yato Omega" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="43" name="Raijinto" type="Sword" subType="Katana" maxUses="0" rank="1">
     <text lang="English" displayName="Raijinto" />
     <text lang="Japanese" displayName="雷神刀" />
+    <text lang="Spanish" displayName="Raijinto" />
+    <text lang="French" displayName="Raijinto" />
+    <text lang="German" displayName="Raijinto" />
+    <text lang="Italian" displayName="Raijinto" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="44" name="DaikonRadish" type="Sword" subType="Katana" maxUses="0" rank="1">
     <text lang="English" displayName="Daikon Radish" />
     <text lang="Japanese" displayName="大根" />
+    <text lang="Spanish" displayName="Rábano blanco" />
+    <text lang="French" displayName="Daïkon" />
+    <text lang="German" displayName="Daikon-Rettich" />
+    <text lang="Italian" displayName="Daikon" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="45" name="Parasol" type="Sword" subType="Katana" maxUses="0" rank="2">
     <text lang="English" displayName="Parasol" />
     <text lang="Japanese" displayName="和傘" />
+    <text lang="Spanish" displayName="Sombrilla" />
+    <text lang="French" displayName="Ombrelle" />
+    <text lang="German" displayName="Parasol" />
+    <text lang="Italian" displayName="Parasole" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="46" name="RaiderKatana" type="Sword" subType="Katana" maxUses="0" rank="1">
     <text lang="English" displayName="Raider Katana" />
     <text lang="Japanese" displayName="追い剥ぎの刀" />
+    <text lang="Spanish" displayName="Katana felona" />
+    <text lang="French" displayName="Katana filou" />
+    <text lang="German" displayName="Räuberkatana" />
+    <text lang="Italian" displayName="Katana predone" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="47" name="SunriseKatana" type="Sword" subType="Katana" maxUses="0" rank="2">
     <text lang="English" displayName="Sunrise Katana" />
     <text lang="Japanese" displayName="白夜の霞刀" />
+    <text lang="Spanish" displayName="Katana aurora" />
+    <text lang="French" displayName="Katana auroral" />
+    <text lang="German" displayName="Sonnenkatana" />
+    <text lang="Italian" displayName="Katana aurora" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="48" name="TakumisShinai" type="Sword" subType="Katana" maxUses="0" rank="3">
     <text lang="English" displayName="Takumi's Shinai" />
     <text lang="Japanese" displayName="タクミの竹刀" />
+    <text lang="Spanish" displayName="Shinai Takumi" />
+    <text lang="French" displayName="Shinaï (Takumi)" />
+    <text lang="German" displayName="Takumis Shinai" />
+    <text lang="Italian" displayName="Shinai Takumi" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="49" name="HanasKatana" type="Sword" subType="Katana" maxUses="0" rank="3">
     <text lang="English" displayName="Hana's Katana" />
     <text lang="Japanese" displayName="カザハナの麗刀" />
+    <text lang="Spanish" displayName="Katana Hana" />
+    <text lang="French" displayName="Katana (Hana)" />
+    <text lang="German" displayName="Hanas Katana" />
+    <text lang="Italian" displayName="Katana di Hana" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="50" name="HinatasKatana" type="Sword" subType="Katana" maxUses="0" rank="4">
     <text lang="English" displayName="Hinata's Katana" />
     <text lang="Japanese" displayName="ヒナタの猛刀" />
+    <text lang="Spanish" displayName="Katana Hinata" />
+    <text lang="French" displayName="Katana (Hinata)" />
+    <text lang="German" displayName="Hinatas Katana" />
+    <text lang="Italian" displayName="Katana Hinata" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="51" name="BronzeLance" type="Lance" subType="Lance" maxUses="0" rank="1">
     <text lang="English" displayName="Bronze Lance" />
     <text lang="Japanese" displayName="青銅の槍" />
+    <text lang="Spanish" displayName="Lanza bronce" />
+    <text lang="French" displayName="Lance bronze" />
+    <text lang="German" displayName="Bronzelanze" />
+    <text lang="Italian" displayName="Lancia bronzo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="52" name="IronLance" type="Lance" subType="Lance" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Lance" />
     <text lang="Japanese" displayName="鉄の槍" />
+    <text lang="Spanish" displayName="Lanza hierro" />
+    <text lang="French" displayName="Lance fer" />
+    <text lang="German" displayName="Eisenlanze" />
+    <text lang="Italian" displayName="Lancia ferro" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="53" name="SteelLance" type="Lance" subType="Lance" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Lance" />
     <text lang="Japanese" displayName="鋼の槍" />
+    <text lang="Spanish" displayName="Lanza acero" />
+    <text lang="French" displayName="Lance acier" />
+    <text lang="German" displayName="Stahllanze" />
+    <text lang="Italian" displayName="Lancia acciaio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="54" name="SilverLance" type="Lance" subType="Lance" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Lance" />
     <text lang="Japanese" displayName="銀の槍" />
+    <text lang="Spanish" displayName="Lanza plata" />
+    <text lang="French" displayName="Lance argent" />
+    <text lang="German" displayName="Silberlanze" />
+    <text lang="Italian" displayName="Lancia argento" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="55" name="BraveLance" type="Lance" subType="Lance" maxUses="0" rank="5">
     <text lang="English" displayName="Brave Lance" />
     <text lang="Japanese" displayName="勇者の槍" />
+    <text lang="Spanish" displayName="Lanza valor" />
+    <text lang="French" displayName="Lance héros" />
+    <text lang="German" displayName="Kriegerlanze" />
+    <text lang="Italian" displayName="Lancia forte" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="56" name="IronJavelin" type="Lance" subType="Lance" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Javelin" />
     <text lang="Japanese" displayName="鉄の投撃槍" />
+    <text lang="Spanish" displayName="Jabalina hierro" />
+    <text lang="French" displayName="Javelot fer" />
+    <text lang="German" displayName="Eisenlangspeer" />
+    <text lang="Italian" displayName="Giav. ferro" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="57" name="SteelJavelin" type="Lance" subType="Lance" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Javelin" />
     <text lang="Japanese" displayName="鋼の投撃槍" />
+    <text lang="Spanish" displayName="Jabalina acero" />
+    <text lang="French" displayName="Javelot acier" />
+    <text lang="German" displayName="Stahllangspeer" />
+    <text lang="Italian" displayName="Giav. acciaio" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="58" name="SilverJavelin" type="Lance" subType="Lance" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Javelin" />
     <text lang="Japanese" displayName="銀の投撃槍" />
+    <text lang="Spanish" displayName="Jabalina plata" />
+    <text lang="French" displayName="Javelot argent" />
+    <text lang="German" displayName="Silberlangspeer" />
+    <text lang="Italian" displayName="Giav. argento" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="59" name="Javelin" type="Lance" subType="Lance" maxUses="0" rank="2">
     <text lang="English" displayName="Javelin" />
     <text lang="Japanese" displayName="手槍" />
+    <text lang="Spanish" displayName="Jabalina" />
+    <text lang="French" displayName="Javelot" />
+    <text lang="German" displayName="Langspeer" />
+    <text lang="Italian" displayName="Giavellotto" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="60" name="Spear" type="Lance" subType="Lance" maxUses="0" rank="4">
     <text lang="English" displayName="Spear" />
     <text lang="Japanese" displayName="スレンドスピア" />
+    <text lang="Spanish" displayName="Pica" />
+    <text lang="French" displayName="Épieu" />
+    <text lang="German" displayName="Speer" />
+    <text lang="Italian" displayName="Asta" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="61" name="BeastKiller" type="Lance" subType="Lance" maxUses="0" rank="2">
     <text lang="English" displayName="Beast Killer" />
     <text lang="Japanese" displayName="ビーストキラー" />
+    <text lang="Spanish" displayName="Aterrafieras" />
+    <text lang="French" displayName="Besticide" />
+    <text lang="German" displayName="Bestientöter" />
+    <text lang="Italian" displayName="Ammazzabestie" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="62" name="KillerLance" type="Lance" subType="Lance" maxUses="0" rank="3">
     <text lang="English" displayName="Killer Lance" />
     <text lang="Japanese" displayName="キラーランス" />
+    <text lang="Spanish" displayName="Lanza asesina" />
+    <text lang="French" displayName="Lance létale" />
+    <text lang="German" displayName="Meisterlanze" />
+    <text lang="Italian" displayName="Lancia letale" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="63" name="BlessedLance" type="Lance" subType="Lance" maxUses="0" rank="3">
     <text lang="English" displayName="Blessed Lance" />
     <text lang="Japanese" displayName="聖なる槍" />
+    <text lang="Spanish" displayName="Lanza bendita" />
+    <text lang="French" displayName="Lance bénie" />
+    <text lang="German" displayName="Sakrallanze" />
+    <text lang="Italian" displayName="Lc. benedetta" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="64" name="Broom" type="Lance" subType="Lance" maxUses="0" rank="1">
     <text lang="English" displayName="Broom" />
     <text lang="Japanese" displayName="ほうき" />
+    <text lang="Spanish" displayName="Escoba" />
+    <text lang="French" displayName="Balai" />
+    <text lang="German" displayName="Besen" />
+    <text lang="Italian" displayName="Scopa" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="65" name="Stick" type="Lance" subType="Lance" maxUses="0" rank="2">
     <text lang="English" displayName="Stick" />
     <text lang="Japanese" displayName="小枝" />
+    <text lang="Spanish" displayName="Palo" />
+    <text lang="French" displayName="Bâton" />
+    <text lang="German" displayName="Stecken" />
+    <text lang="Italian" displayName="Bastoncino" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="66" name="HexlockSpear" type="Lance" subType="Lance" maxUses="0" rank="3">
     <text lang="English" displayName="Hexlock Spear" />
     <text lang="Japanese" displayName="魔封じの槍" />
+    <text lang="Spanish" displayName="Pica cazamagia" />
+    <text lang="French" displayName="Épieu conjureur" />
+    <text lang="German" displayName="Bannspeer" />
+    <text lang="Italian" displayName="Asta antimago" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="67" name="XandersLance" type="Lance" subType="Lance" maxUses="0" rank="4">
     <text lang="English" displayName="Xander's Lance" />
     <text lang="Japanese" displayName="マークスの指南槍" />
+    <text lang="Spanish" displayName="Lanza Xander" />
+    <text lang="French" displayName="Lance (Xander)" />
+    <text lang="German" displayName="Xanders Lanze" />
+    <text lang="Italian" displayName="Lancia Xander" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="68" name="EffiesLance" type="Lance" subType="Lance" maxUses="0" rank="3">
     <text lang="English" displayName="Effie's Lance" />
     <text lang="Japanese" displayName="エルフィの大槍" />
+    <text lang="Spanish" displayName="Lanza Effie" />
+    <text lang="French" displayName="Lance (Effie)" />
+    <text lang="German" displayName="Effies Lanze" />
+    <text lang="Italian" displayName="Lancia di Effie" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="69" name="PerisLance" type="Lance" subType="Lance" maxUses="0" rank="2">
     <text lang="English" displayName="Peri's Lance" />
     <text lang="Japanese" displayName="ピエリの小槍" />
+    <text lang="Spanish" displayName="Lanza Peri" />
+    <text lang="French" displayName="Lance (Peri)" />
+    <text lang="German" displayName="Peris Lanze" />
+    <text lang="Italian" displayName="Lancia di Peri" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="70" name="BrassNaginata" type="Lance" subType="Naginata" maxUses="0" rank="1">
     <text lang="English" displayName="Brass Naginata" />
     <text lang="Japanese" displayName="青銅の薙刀" />
+    <text lang="Spanish" displayName="Nagina. bronce" />
+    <text lang="French" displayName="Naginata cuivre" />
+    <text lang="German" displayName="Bronzenaginata" />
+    <text lang="Italian" displayName="Nagin. bronzo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="71" name="IronNaginata" type="Lance" subType="Naginata" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Naginata" />
     <text lang="Japanese" displayName="鉄の薙刀" />
+    <text lang="Spanish" displayName="Naginata hierro" />
+    <text lang="French" displayName="Naginata fer" />
+    <text lang="German" displayName="Eisennaginata" />
+    <text lang="Italian" displayName="Naginata ferro" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="72" name="SteelNaginata" type="Lance" subType="Naginata" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Naginata" />
     <text lang="Japanese" displayName="鋼の薙刀" />
+    <text lang="Spanish" displayName="Naginata acero" />
+    <text lang="French" displayName="Naginata acier" />
+    <text lang="German" displayName="Stahlnaginata" />
+    <text lang="Italian" displayName="Nagin. acciaio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="73" name="SilverNaginata" type="Lance" subType="Naginata" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Naginata" />
     <text lang="Japanese" displayName="銀の薙刀" />
+    <text lang="Spanish" displayName="Naginata plata" />
+    <text lang="French" displayName="Naginata arg." />
+    <text lang="German" displayName="Silbernaginata" />
+    <text lang="Italian" displayName="Nagin. argento" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="74" name="VengeNaginata" type="Lance" subType="Naginata" maxUses="0" rank="5">
     <text lang="English" displayName="Venge Naginata" />
     <text lang="Japanese" displayName="武者の薙刀" />
+    <text lang="Spanish" displayName="Nagi. vindicta" />
+    <text lang="French" displayName="Naginata veng." />
+    <text lang="German" displayName="Rächernaginata" />
+    <text lang="Italian" displayName="Nagin. castigo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="75" name="IronNageyari" type="Lance" subType="Naginata" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Nageyari" />
     <text lang="Japanese" displayName="鉄の投撃薙刀" />
+    <text lang="Spanish" displayName="Nageyari hierro" />
+    <text lang="French" displayName="Nageyari fer" />
+    <text lang="German" displayName="Eisennageyari" />
+    <text lang="Italian" displayName="Nageyari ferro" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="76" name="SteelNageyari" type="Lance" subType="Naginata" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Nageyari" />
     <text lang="Japanese" displayName="鋼の投撃薙刀" />
+    <text lang="Spanish" displayName="Nageyari acero" />
+    <text lang="French" displayName="Nageyari acier" />
+    <text lang="German" displayName="Stahlnageyari" />
+    <text lang="Italian" displayName="Nage. acciaio" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="77" name="SilverNageyari" type="Lance" subType="Naginata" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Nageyari" />
     <text lang="Japanese" displayName="銀の投撃薙刀" />
+    <text lang="Spanish" displayName="Nageyari plata" />
+    <text lang="French" displayName="Nageyari argent" />
+    <text lang="German" displayName="Silbernageyari" />
+    <text lang="Italian" displayName="Nage. argento" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="78" name="Swordcatcher" type="Lance" subType="Naginata" maxUses="0" rank="2">
     <text lang="English" displayName="Swordcatcher" />
     <text lang="Japanese" displayName="剣薙ぎの薙刀" />
+    <text lang="Spanish" displayName="Rompespadas" />
+    <text lang="French" displayName="Attrape-épées" />
+    <text lang="German" displayName="Klingenbrecher" />
+    <text lang="Italian" displayName="Frangispada" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="79" name="DualNaginata" type="Lance" subType="Naginata" maxUses="0" rank="3">
     <text lang="English" displayName="Dual Naginata" />
     <text lang="Japanese" displayName="逆薙刀" />
+    <text lang="Spanish" displayName="Naginata doble" />
+    <text lang="French" displayName="Nagin. double" />
+    <text lang="German" displayName="Doppelnaginata" />
+    <text lang="Italian" displayName="Nagin. doppio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="80" name="GuardNaginata" type="Lance" subType="Naginata" maxUses="0" rank="3">
     <text lang="English" displayName="Guard Naginata" />
     <text lang="Japanese" displayName="守りの薙刀" />
+    <text lang="Spanish" displayName="Nagi. guardiana" />
+    <text lang="French" displayName="Naginata garde" />
+    <text lang="German" displayName="Wächternagi." />
+    <text lang="Italian" displayName="Naginata scudo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="81" name="BoltNaginata" type="Lance" subType="Naginata" maxUses="0" rank="3">
     <text lang="English" displayName="Bolt Naginata" />
     <text lang="Japanese" displayName="神雷の薙刀" />
+    <text lang="Spanish" displayName="Naginata rayo" />
+    <text lang="French" displayName="Naginata éclair" />
+    <text lang="German" displayName="Don.-Naginata" />
+    <text lang="Italian" displayName="Naginata lampo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="82" name="Waterwheel" type="Lance" subType="Naginata" maxUses="0" rank="6">
     <text lang="English" displayName="Waterwheel" />
     <text lang="Japanese" displayName="水車" />
+    <text lang="Spanish" displayName="Molino de agua" />
+    <text lang="French" displayName="Moulin à eau" />
+    <text lang="German" displayName="Wasserrad" />
+    <text lang="Italian" displayName="Ruota acqua" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="83" name="BambooPole" type="Lance" subType="Naginata" maxUses="0" rank="1">
     <text lang="English" displayName="Bamboo Pole" />
     <text lang="Japanese" displayName="竹竿" />
+    <text lang="Spanish" displayName="Caña de bambú" />
+    <text lang="French" displayName="Canne bambou" />
+    <text lang="German" displayName="Bambusstange" />
+    <text lang="Italian" displayName="Canna bambù" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="84" name="PineBranch" type="Lance" subType="Naginata" maxUses="0" rank="2">
     <text lang="English" displayName="Pine Branch" />
     <text lang="Japanese" displayName="松の木" />
+    <text lang="Spanish" displayName="Rama de abeto" />
+    <text lang="French" displayName="Branche de pin" />
+    <text lang="German" displayName="Kiefernzweig" />
+    <text lang="Italian" displayName="Ramo di pino" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="85" name="RaiderNaginata" type="Lance" subType="Naginata" maxUses="0" rank="1">
     <text lang="English" displayName="Raider Naginata" />
     <text lang="Japanese" displayName="追い剥ぎの薙刀" />
+    <text lang="Spanish" displayName="Naginata felona" />
+    <text lang="French" displayName="Naginata filou" />
+    <text lang="German" displayName="Räubernaginata" />
+    <text lang="Italian" displayName="Nagin. predone" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="86" name="BoldNaginata" type="Lance" subType="Naginata" maxUses="0" rank="3">
     <text lang="English" displayName="Bold Naginata" />
     <text lang="Japanese" displayName="捨て身の薙刀" />
+    <text lang="Spanish" displayName="Nagi. intrépida" />
+    <text lang="French" displayName="Naginata hardie" />
+    <text lang="German" displayName="Mutnaginata" />
+    <text lang="Italian" displayName="Nagin. audace" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="87" name="HinokasSpear" type="Lance" subType="Naginata" maxUses="0" rank="3">
     <text lang="English" displayName="Hinoka's Spear" />
     <text lang="Japanese" displayName="ヒノカの紅薙刀" />
+    <text lang="Spanish" displayName="Pica Hinoka" />
+    <text lang="French" displayName="Lance (Hinoka)" />
+    <text lang="German" displayName="Hinokas Speer" />
+    <text lang="Italian" displayName="Asta di Hinoka" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="88" name="SubakisPike" type="Lance" subType="Naginata" maxUses="0" rank="2">
     <text lang="English" displayName="Subaki's Pike" />
     <text lang="Japanese" displayName="ツバキの金薙刀" />
+    <text lang="Spanish" displayName="Lanza Subaki" />
+    <text lang="French" displayName="Pique (Subaki)" />
+    <text lang="German" displayName="Subakis Pike" />
+    <text lang="Italian" displayName="Picca di Subaki" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="89" name="OborosSpear" type="Lance" subType="Naginata" maxUses="0" rank="4">
     <text lang="English" displayName="Oboro's Spear" />
     <text lang="Japanese" displayName="オボロの漆薙刀" />
+    <text lang="Spanish" displayName="Pica Oboro" />
+    <text lang="French" displayName="Lance (Oboro)" />
+    <text lang="German" displayName="Oboros Speer" />
+    <text lang="Italian" displayName="Asta di Oboro" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="90" name="BronzeAxe" type="Axe" subType="Axe" maxUses="0" rank="1">
     <text lang="English" displayName="Bronze Axe" />
     <text lang="Japanese" displayName="青銅の斧" />
+    <text lang="Spanish" displayName="Hacha bronce" />
+    <text lang="French" displayName="Hache bronze" />
+    <text lang="German" displayName="Bronzeaxt" />
+    <text lang="Italian" displayName="Ascia bronzo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="91" name="IronAxe" type="Axe" subType="Axe" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Axe" />
     <text lang="Japanese" displayName="鉄の斧" />
+    <text lang="Spanish" displayName="Hacha hierro" />
+    <text lang="French" displayName="Hache fer" />
+    <text lang="German" displayName="Eisenaxt" />
+    <text lang="Italian" displayName="Ascia ferro" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="92" name="SteelAxe" type="Axe" subType="Axe" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Axe" />
     <text lang="Japanese" displayName="鋼の斧" />
+    <text lang="Spanish" displayName="Hacha acero" />
+    <text lang="French" displayName="Hache acier" />
+    <text lang="German" displayName="Stahlaxt" />
+    <text lang="Italian" displayName="Ascia acciaio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="93" name="SilverAxe" type="Axe" subType="Axe" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Axe" />
     <text lang="Japanese" displayName="銀の斧" />
+    <text lang="Spanish" displayName="Hacha plata" />
+    <text lang="French" displayName="Hache argent" />
+    <text lang="German" displayName="Silberaxt" />
+    <text lang="Italian" displayName="Ascia argento" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="94" name="BraveAxe" type="Axe" subType="Axe" maxUses="0" rank="5">
     <text lang="English" displayName="Brave Axe" />
     <text lang="Japanese" displayName="勇者の斧" />
+    <text lang="Spanish" displayName="Hacha valor" />
+    <text lang="French" displayName="Hache héros" />
+    <text lang="German" displayName="Kriegeraxt" />
+    <text lang="Italian" displayName="Ascia forte" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="95" name="IronStarAxe" type="Axe" subType="Axe" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Star Axe" />
     <text lang="Japanese" displayName="鉄の投撃斧" />
+    <text lang="Spanish" displayName="H. fugaz hierro" />
+    <text lang="French" displayName="Hache jet fer" />
+    <text lang="German" displayName="Eisensternaxt" />
+    <text lang="Italian" displayName="As. astro ferro" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="96" name="SteelStarAxe" type="Axe" subType="Axe" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Star Axe" />
     <text lang="Japanese" displayName="鋼の投撃斧" />
+    <text lang="Spanish" displayName="H. fugaz acero" />
+    <text lang="French" displayName="Hache jet acier" />
+    <text lang="German" displayName="Stahlsternaxt" />
+    <text lang="Italian" displayName="As. astro acc." />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="97" name="SilverStarAxe" type="Axe" subType="Axe" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Star Axe" />
     <text lang="Japanese" displayName="銀の投撃斧" />
+    <text lang="Spanish" displayName="H. fugaz plata" />
+    <text lang="French" displayName="Hache jet arg." />
+    <text lang="German" displayName="Silbersternaxt" />
+    <text lang="Italian" displayName="As. astro arg." />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="98" name="HandAxe" type="Axe" subType="Axe" maxUses="0" rank="2">
     <text lang="English" displayName="Hand Axe" />
     <text lang="Japanese" displayName="手斧" />
+    <text lang="Spanish" displayName="Hacha de mano" />
+    <text lang="French" displayName="Hachette" />
+    <text lang="German" displayName="Wurfbeil" />
+    <text lang="Italian" displayName="Scure" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="99" name="Tomahawk" type="Axe" subType="Axe" maxUses="0" rank="4">
     <text lang="English" displayName="Tomahawk" />
     <text lang="Japanese" displayName="トマホーク" />
+    <text lang="Spanish" displayName="Tomahawk" />
+    <text lang="French" displayName="Tomahawk" />
+    <text lang="German" displayName="Tomahawk" />
+    <text lang="Italian" displayName="Tomahawk" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="100" name="Hammer" type="Axe" subType="Axe" maxUses="0" rank="2">
     <text lang="English" displayName="Hammer" />
     <text lang="Japanese" displayName="ハンマー" />
+    <text lang="Spanish" displayName="Martillo" />
+    <text lang="French" displayName="Marteau" />
+    <text lang="German" displayName="Hammer" />
+    <text lang="Italian" displayName="Martello" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="101" name="BoltAxe" type="Axe" subType="Axe" maxUses="0" rank="3">
     <text lang="English" displayName="Bolt Axe" />
     <text lang="Japanese" displayName="ボルトアクス" />
+    <text lang="Spanish" displayName="Hacha rayo" />
+    <text lang="French" displayName="Tonnerre" />
+    <text lang="German" displayName="Donneraxt" />
+    <text lang="Italian" displayName="Ascia lampo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="102" name="KillerAxe" type="Axe" subType="Axe" maxUses="0" rank="3">
     <text lang="English" displayName="Killer Axe" />
     <text lang="Japanese" displayName="キラーアクス" />
+    <text lang="Spanish" displayName="Hacha asesina" />
+    <text lang="French" displayName="Hache létale" />
+    <text lang="German" displayName="Meisteraxt" />
+    <text lang="Italian" displayName="Ascia letale" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="103" name="Aurgelmir" type="Axe" subType="Axe" maxUses="0" rank="6">
     <text lang="English" displayName="Aurgelmir" />
     <text lang="Japanese" displayName="アウルゲルミル" />
+    <text lang="Spanish" displayName="Aurgelmir" />
+    <text lang="French" displayName="Aurgelmir" />
+    <text lang="German" displayName="Aurgelmir" />
+    <text lang="Italian" displayName="Aurgelmir" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="104" name="Bölverk" type="Axe" subType="Axe" maxUses="0" rank="6">
     <text lang="English" displayName="Bölverk" />
     <text lang="Japanese" displayName="ベルヴェルク" />
+    <text lang="Spanish" displayName="Bölverk" />
+    <text lang="French" displayName="Bölverk" />
+    <text lang="German" displayName="Bölverkr" />
+    <text lang="Italian" displayName="Bölverk" />
     <categories npcOnly="true" personal="true" />
   </item>
   <item id="105" name="FryingPan" type="Axe" subType="Axe" maxUses="0" rank="1">
     <text lang="English" displayName="Frying Pan" />
     <text lang="Japanese" displayName="フライパン" />
+    <text lang="Spanish" displayName="Sartén" />
+    <text lang="French" displayName="Poêle à frire" />
+    <text lang="German" displayName="Bratpfanne" />
+    <text lang="Italian" displayName="Padella" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="106" name="BoneAxe" type="Axe" subType="Axe" maxUses="0" rank="2">
     <text lang="English" displayName="Bone Axe" />
     <text lang="Japanese" displayName="獣の骨" />
+    <text lang="Spanish" displayName="Hacha ósea" />
+    <text lang="French" displayName="Hache os" />
+    <text lang="German" displayName="Knochenaxt" />
+    <text lang="Italian" displayName="Ascia d'osso" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="107" name="RaiderAxe" type="Axe" subType="Axe" maxUses="0" rank="1">
     <text lang="English" displayName="Raider Axe" />
     <text lang="Japanese" displayName="追い剥ぎの斧" />
+    <text lang="Spanish" displayName="Hacha felona" />
+    <text lang="French" displayName="Hache filou" />
+    <text lang="German" displayName="Räuberaxt" />
+    <text lang="Italian" displayName="Ascia predone" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="108" name="BerserkersAxe" type="Axe" subType="Axe" maxUses="0" rank="3">
     <text lang="English" displayName="Berserker's Axe" />
     <text lang="Japanese" displayName="狂戦士の斧" />
+    <text lang="Spanish" displayName="Hacha bárbara" />
+    <text lang="French" displayName="Hache berserk." />
+    <text lang="German" displayName="Berserkeraxt" />
+    <text lang="Italian" displayName="Ascia berserker" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="109" name="CamillasAxe" type="Axe" subType="Axe" maxUses="0" rank="4">
     <text lang="English" displayName="Camilla's Axe" />
     <text lang="Japanese" displayName="カミラの艶斧" />
+    <text lang="Spanish" displayName="Hacha Camilla" />
+    <text lang="French" displayName="Hache (Camill.)" />
+    <text lang="German" displayName="Camillas Axt" />
+    <text lang="Italian" displayName="Ascia Camilla" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="110" name="ArthursAxe" type="Axe" subType="Axe" maxUses="0" rank="2">
     <text lang="English" displayName="Arthur's Axe" />
     <text lang="Japanese" displayName="ハロルドの雄斧" />
+    <text lang="Spanish" displayName="Hacha Arthur" />
+    <text lang="French" displayName="Hache (Arthur)" />
+    <text lang="German" displayName="Arthurs Axt" />
+    <text lang="Italian" displayName="Ascia di Arthur" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="111" name="BerukasAxe" type="Axe" subType="Axe" maxUses="0" rank="3">
     <text lang="English" displayName="Beruka's Axe" />
     <text lang="Japanese" displayName="ベルカの殺斧" />
+    <text lang="Spanish" displayName="Hacha Beruka" />
+    <text lang="French" displayName="Hache (Beruka)" />
+    <text lang="German" displayName="Berukas Axt" />
+    <text lang="Italian" displayName="Ascia di Beruka" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="112" name="BrassClub" type="Axe" subType="Club" maxUses="0" rank="1">
     <text lang="English" displayName="Brass Club" />
     <text lang="Japanese" displayName="青銅の金棒" />
+    <text lang="Spanish" displayName="Porra bronce" />
+    <text lang="French" displayName="Batte cuivre" />
+    <text lang="German" displayName="Bronzekeule" />
+    <text lang="Italian" displayName="Clava bronzo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="113" name="IronClub" type="Axe" subType="Club" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Club" />
     <text lang="Japanese" displayName="鉄の金棒" />
+    <text lang="Spanish" displayName="Porra hierro" />
+    <text lang="French" displayName="Batte fer" />
+    <text lang="German" displayName="Eisenkeule" />
+    <text lang="Italian" displayName="Clava ferro" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="114" name="SteelClub" type="Axe" subType="Club" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Club" />
     <text lang="Japanese" displayName="鋼の金棒" />
+    <text lang="Spanish" displayName="Porra acero" />
+    <text lang="French" displayName="Batte acier" />
+    <text lang="German" displayName="Stahlkeule" />
+    <text lang="Italian" displayName="Clava acciaio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="115" name="SilverClub" type="Axe" subType="Club" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Club" />
     <text lang="Japanese" displayName="銀の金棒" />
+    <text lang="Spanish" displayName="Porra plata" />
+    <text lang="French" displayName="Batte argent" />
+    <text lang="German" displayName="Silberkeule" />
+    <text lang="Italian" displayName="Clava argento" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="116" name="VengeClub" type="Axe" subType="Club" maxUses="0" rank="5">
     <text lang="English" displayName="Venge Club" />
     <text lang="Japanese" displayName="武者の金棒" />
+    <text lang="Spanish" displayName="Porra vindicta" />
+    <text lang="French" displayName="Massue tueuse" />
+    <text lang="German" displayName="Rächerkeule" />
+    <text lang="Italian" displayName="Clava castigo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="117" name="IronMace" type="Axe" subType="Club" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Mace" />
     <text lang="Japanese" displayName="鉄の投撃金棒" />
+    <text lang="Spanish" displayName="Maza hierro" />
+    <text lang="French" displayName="Massue fer" />
+    <text lang="German" displayName="Eisenstreitkolb." />
+    <text lang="Italian" displayName="Mazza ferro" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="118" name="SteelMace" type="Axe" subType="Club" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Mace" />
     <text lang="Japanese" displayName="鋼の投撃金棒" />
+    <text lang="Spanish" displayName="Maza acero" />
+    <text lang="French" displayName="Massue acier" />
+    <text lang="German" displayName="Stahlstreitkolb." />
+    <text lang="Italian" displayName="Mazza acciaio" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="119" name="SilverMace" type="Axe" subType="Club" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Mace" />
     <text lang="Japanese" displayName="銀の投撃金棒" />
+    <text lang="Spanish" displayName="Maza plata" />
+    <text lang="French" displayName="Massue argent" />
+    <text lang="German" displayName="Silb.-Streitklb." />
+    <text lang="Italian" displayName="Mazza argento" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="120" name="ThrowingClub" type="Axe" subType="Club" maxUses="0" rank="2">
     <text lang="English" displayName="Throwing Club" />
     <text lang="Japanese" displayName="投げ棒" />
+    <text lang="Spanish" displayName="P. arrojadiza" />
+    <text lang="French" displayName="Batte de jet" />
+    <text lang="German" displayName="Wurfkeule" />
+    <text lang="Italian" displayName="Clava da lancio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="121" name="BatteringClub" type="Axe" subType="Club" maxUses="0" rank="4">
     <text lang="English" displayName="Battering Club" />
     <text lang="Japanese" displayName="破城の投げ棒" />
+    <text lang="Spanish" displayName="Porra atizadora" />
+    <text lang="French" displayName="Cogneur" />
+    <text lang="German" displayName="Schmetterkeule" />
+    <text lang="Italian" displayName="Cl. stordente" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="122" name="PikeRuinClub" type="Axe" subType="Club" maxUses="0" rank="2">
     <text lang="English" displayName="Pike-Ruin Club" />
     <text lang="Japanese" displayName="槍砕きの金棒" />
+    <text lang="Spanish" displayName="Porra antipicas" />
+    <text lang="French" displayName="Casse-lance" />
+    <text lang="German" displayName="Speerbrecher" />
+    <text lang="Italian" displayName="Cl. frangipicca" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="123" name="DualClub" type="Axe" subType="Club" maxUses="0" rank="3">
     <text lang="English" displayName="Dual Club" />
     <text lang="Japanese" displayName="逆金棒" />
+    <text lang="Spanish" displayName="Porra doble" />
+    <text lang="French" displayName="Double batte" />
+    <text lang="German" displayName="Doppelkeule" />
+    <text lang="Italian" displayName="Clava doppia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="124" name="GreatClub" type="Axe" subType="Club" maxUses="0" rank="3">
     <text lang="English" displayName="Great Club" />
     <text lang="Japanese" displayName="大金棒" />
+    <text lang="Spanish" displayName="Porra magna" />
+    <text lang="French" displayName="Grande batte" />
+    <text lang="German" displayName="Große Keule" />
+    <text lang="Italian" displayName="Grande clava" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="125" name="CarpStreamer" type="Axe" subType="Club" maxUses="0" rank="1">
     <text lang="English" displayName="Carp Streamer" />
     <text lang="Japanese" displayName="鯉のぼり" />
+    <text lang="Spanish" displayName="Koinobori" />
+    <text lang="French" displayName="Koinobori" />
+    <text lang="German" displayName="Koinobori" />
+    <text lang="Italian" displayName="Koinobori" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="126" name="Hoe" type="Axe" subType="Club" maxUses="0" rank="2">
     <text lang="English" displayName="Hoe" />
     <text lang="Japanese" displayName="クワ" />
+    <text lang="Spanish" displayName="Azada" />
+    <text lang="French" displayName="Houe" />
+    <text lang="German" displayName="Hacke" />
+    <text lang="Italian" displayName="Zappa" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="127" name="AdamantClub" type="Axe" subType="Club" maxUses="0" rank="3">
     <text lang="English" displayName="Adamant Club" />
     <text lang="Japanese" displayName="金剛の金棒" />
+    <text lang="Spanish" displayName="Porra tenaz" />
+    <text lang="French" displayName="Massue rigide" />
+    <text lang="German" displayName="Adamantkeule" />
+    <text lang="Italian" displayName="Cl. adamantina" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="128" name="RinkahsClub" type="Axe" subType="Club" maxUses="0" rank="3">
     <text lang="English" displayName="Rinkah's Club" />
     <text lang="Japanese" displayName="リンカの鬼金棒" />
+    <text lang="Spanish" displayName="Porra Rinkah" />
+    <text lang="French" displayName="Batte (Rinkah)" />
+    <text lang="German" displayName="Rinkahs Keule" />
+    <text lang="Italian" displayName="Clava di Rinkah" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="129" name="RyomasClub" type="Axe" subType="Club" maxUses="0" rank="2">
     <text lang="English" displayName="Ryoma's Club" />
     <text lang="Japanese" displayName="リョウマの鍛錬棒" />
+    <text lang="Spanish" displayName="Porra Ryoma" />
+    <text lang="French" displayName="Batte (Ryoma)" />
+    <text lang="German" displayName="Ryomas Keule" />
+    <text lang="Italian" displayName="Clava di Ryoma" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="130" name="FugasClub" type="Axe" subType="Club" maxUses="0" rank="4">
     <text lang="English" displayName="Fuga's Club" />
     <text lang="Japanese" displayName="フウガの疾風金棒" />
+    <text lang="Spanish" displayName="Porra Fuga" />
+    <text lang="French" displayName="Batte (Fuga)" />
+    <text lang="German" displayName="Fugas Keule" />
+    <text lang="Italian" displayName="Clava di Fuga" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="131" name="BronzeDagger" type="Shuriken" subType="Dagger" maxUses="0" rank="1">
     <text lang="English" displayName="Bronze Dagger" />
     <text lang="Japanese" displayName="青銅の暗器" />
+    <text lang="Spanish" displayName="Daga bronce" />
+    <text lang="French" displayName="Dague bronze" />
+    <text lang="German" displayName="Bronzedolch" />
+    <text lang="Italian" displayName="Pugn. bronzo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="132" name="IronDagger" type="Shuriken" subType="Dagger" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Dagger" />
     <text lang="Japanese" displayName="鉄の暗器" />
+    <text lang="Spanish" displayName="Daga hierro" />
+    <text lang="French" displayName="Dague fer" />
+    <text lang="German" displayName="Eisendolch" />
+    <text lang="Italian" displayName="Pugnale ferro" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="133" name="SteelDagger" type="Shuriken" subType="Dagger" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Dagger" />
     <text lang="Japanese" displayName="鋼の暗器" />
+    <text lang="Spanish" displayName="Daga acero" />
+    <text lang="French" displayName="Dague acier" />
+    <text lang="German" displayName="Stahldolch" />
+    <text lang="Italian" displayName="Pugn. acciaio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="134" name="SilverDagger" type="Shuriken" subType="Dagger" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Dagger" />
     <text lang="Japanese" displayName="銀の暗器" />
+    <text lang="Spanish" displayName="Daga plata" />
+    <text lang="French" displayName="Dague argent" />
+    <text lang="German" displayName="Silberdolch" />
+    <text lang="Italian" displayName="Pugn. argento" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="135" name="SoldiersKnife" type="Shuriken" subType="Dagger" maxUses="0" rank="5">
     <text lang="English" displayName="Soldier's Knife" />
     <text lang="Japanese" displayName="強者の暗器" />
+    <text lang="Spanish" displayName="Daga militar" />
+    <text lang="French" displayName="Dague militaire" />
+    <text lang="German" displayName="Soldatendolch" />
+    <text lang="Italian" displayName="Pugn. soldato" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="136" name="FruitKnife" type="Shuriken" subType="Dagger" maxUses="0" rank="2">
     <text lang="English" displayName="Fruit Knife" />
     <text lang="Japanese" displayName="果物ナイフ" />
+    <text lang="Spanish" displayName="Navaja frutera" />
+    <text lang="French" displayName="Couteau à fruit" />
+    <text lang="German" displayName="Obstmesser" />
+    <text lang="Italian" displayName="Coltello frutta" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="137" name="HuntersKnife" type="Shuriken" subType="Dagger" maxUses="0" rank="2">
     <text lang="English" displayName="Hunter's Knife" />
     <text lang="Japanese" displayName="獣狩りの暗器" />
+    <text lang="Spanish" displayName="Daga de caza" />
+    <text lang="French" displayName="Bestialicide" />
+    <text lang="German" displayName="Jägerdolch" />
+    <text lang="Italian" displayName="Pugnale caccia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="138" name="KrisKnife" type="Shuriken" subType="Dagger" maxUses="0" rank="3">
     <text lang="English" displayName="Kris Knife" />
     <text lang="Japanese" displayName="クリスナイフ" />
+    <text lang="Spanish" displayName="Kris" />
+    <text lang="French" displayName="Kriss" />
+    <text lang="German" displayName="Kris" />
+    <text lang="Italian" displayName="Kriss" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="139" name="QuillPen" type="Shuriken" subType="Dagger" maxUses="0" rank="1">
     <text lang="English" displayName="Quill Pen" />
     <text lang="Japanese" displayName="羽ペン" />
+    <text lang="Spanish" displayName="Pluma" />
+    <text lang="French" displayName="Plume d'oie" />
+    <text lang="German" displayName="Federkiel" />
+    <text lang="Italian" displayName="Penna d'oca" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="140" name="StaleBread" type="Shuriken" subType="Dagger" maxUses="0" rank="2">
     <text lang="English" displayName="Stale Bread" />
     <text lang="Japanese" displayName="固いパン" />
+    <text lang="Spanish" displayName="Pan duro" />
+    <text lang="French" displayName="Pain rassis" />
+    <text lang="German" displayName="Altes Brot" />
+    <text lang="Italian" displayName="Pane raffermo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="141" name="RaiderKnife" type="Shuriken" subType="Dagger" maxUses="0" rank="1">
     <text lang="English" displayName="Raider Knife" />
     <text lang="Japanese" displayName="追い剥ぎナイフ" />
+    <text lang="Spanish" displayName="Daga felona" />
+    <text lang="French" displayName="Dague filou" />
+    <text lang="German" displayName="Räuberdolch" />
+    <text lang="Italian" displayName="Pugn. predone" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="142" name="VotiveCandle" type="Shuriken" subType="Dagger" maxUses="0" rank="2">
     <text lang="English" displayName="Votive Candle" />
     <text lang="Japanese" displayName="祈りのロウソク" />
+    <text lang="Spanish" displayName="Candelabro" />
+    <text lang="French" displayName="Bougie votive" />
+    <text lang="German" displayName="Weihkerze" />
+    <text lang="Italian" displayName="Candela votiva" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="143" name="SacrificialKnife" type="Shuriken" subType="Dagger" maxUses="0" rank="3">
     <text lang="English" displayName="Sacrificial Knife" />
     <text lang="Japanese" displayName="死を呼ぶナイフ" />
+    <text lang="Spanish" displayName="Daga victimaria" />
+    <text lang="French" displayName="Couteau rituel" />
+    <text lang="German" displayName="Opferdolch" />
+    <text lang="Italian" displayName="Pugn. sacrificio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="144" name="FeliciasPlate" type="Shuriken" subType="Dagger" maxUses="0" rank="3">
     <text lang="English" displayName="Felicia's Plate" />
     <text lang="Japanese" displayName="フェリシアの氷皿" />
+    <text lang="Spanish" displayName="Plato Felicia" />
+    <text lang="French" displayName="Plat (Felicia)" />
+    <text lang="German" displayName="Felicias Teller" />
+    <text lang="Italian" displayName="Vass. di Felicia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="145" name="JakobsTray" type="Shuriken" subType="Dagger" maxUses="0" rank="4">
     <text lang="English" displayName="Jakob's Tray" />
     <text lang="Japanese" displayName="ジョーカーの食器" />
+    <text lang="Spanish" displayName="Bandeja Jakob" />
+    <text lang="French" displayName="Plateau (Jakob)" />
+    <text lang="German" displayName="Jakobs Tablett" />
+    <text lang="Italian" displayName="Vass. di Jakob" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="146" name="BrassShuriken" type="Shuriken" subType="Shuriken" maxUses="0" rank="1">
     <text lang="English" displayName="Brass Shuriken" />
     <text lang="Japanese" displayName="青銅の手裏剣" />
+    <text lang="Spanish" displayName="Shurik. bronce" />
+    <text lang="French" displayName="Shuriken cuivre" />
+    <text lang="German" displayName="Bronzeshuriken" />
+    <text lang="Italian" displayName="Shur. bronzo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="147" name="IronShuriken" type="Shuriken" subType="Shuriken" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Shuriken" />
     <text lang="Japanese" displayName="鉄の手裏剣" />
+    <text lang="Spanish" displayName="Shuriken hierro" />
+    <text lang="French" displayName="Shuriken fer" />
+    <text lang="German" displayName="Eisenshuriken" />
+    <text lang="Italian" displayName="Shuriken ferro" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="148" name="SteelShuriken" type="Shuriken" subType="Shuriken" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Shuriken" />
     <text lang="Japanese" displayName="鋼の手裏剣" />
+    <text lang="Spanish" displayName="Shuriken acero" />
+    <text lang="French" displayName="Shuriken acier" />
+    <text lang="German" displayName="Stahlshuriken" />
+    <text lang="Italian" displayName="Shur. acciaio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="149" name="SilverShuriken" type="Shuriken" subType="Shuriken" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Shuriken" />
     <text lang="Japanese" displayName="銀の手裏剣" />
+    <text lang="Spanish" displayName="Shuriken plata" />
+    <text lang="French" displayName="Shuriken arg." />
+    <text lang="German" displayName="Silbershuriken" />
+    <text lang="Italian" displayName="Shur. argento" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="150" name="SpysShuriken" type="Shuriken" subType="Shuriken" maxUses="0" rank="5">
     <text lang="English" displayName="Spy's Shuriken" />
     <text lang="Japanese" displayName="巧者の手裏剣" />
+    <text lang="Spanish" displayName="Shuriken espía" />
+    <text lang="French" displayName="Shuriken d'élite" />
+    <text lang="German" displayName="Ninjashuriken" />
+    <text lang="Italian" displayName="Shuriken spia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="151" name="DualShuriken" type="Shuriken" subType="Shuriken" maxUses="0" rank="3">
     <text lang="English" displayName="Dual Shuriken" />
     <text lang="Japanese" displayName="逆手裏剣" />
+    <text lang="Spanish" displayName="Shuriken doble" />
+    <text lang="French" displayName="Shurik. double" />
+    <text lang="German" displayName="Doppelshuriken" />
+    <text lang="Italian" displayName="Shur. doppio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="152" name="StingShuriken" type="Shuriken" subType="Shuriken" maxUses="0" rank="2">
     <text lang="English" displayName="Sting Shuriken" />
     <text lang="Japanese" displayName="針手裏剣" />
+    <text lang="Spanish" displayName="Shuriken aguja" />
+    <text lang="French" displayName="Shuriken dard" />
+    <text lang="German" displayName="Bo-Shuriken" />
+    <text lang="Italian" displayName="Shuriken ago" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="153" name="BarbShuriken" type="Shuriken" subType="Shuriken" maxUses="0" rank="3">
     <text lang="English" displayName="Barb Shuriken" />
     <text lang="Japanese" displayName="暗殺手裏剣" />
+    <text lang="Spanish" displayName="Shuriken púas" />
+    <text lang="French" displayName="Shuriken acéré" />
+    <text lang="German" displayName="Shaken" />
+    <text lang="Italian" displayName="Shaken" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="154" name="FlameShuriken" type="Shuriken" subType="Shuriken" maxUses="0" rank="3">
     <text lang="English" displayName="Flame Shuriken" />
     <text lang="Japanese" displayName="爆炎手裏剣" />
+    <text lang="Spanish" displayName="Shuriken fuego" />
+    <text lang="French" displayName="Shuriken de feu" />
+    <text lang="German" displayName="Feuershuriken" />
+    <text lang="Italian" displayName="Shur. ardente" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="155" name="Chakram" type="Shuriken" subType="Shuriken" maxUses="0" rank="6">
     <text lang="English" displayName="Chakram" />
     <text lang="Japanese" displayName="朧" />
+    <text lang="Spanish" displayName="Chakram" />
+    <text lang="French" displayName="Chakram" />
+    <text lang="German" displayName="Chakram" />
+    <text lang="Italian" displayName="Chakram" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="156" name="Chopstick" type="Shuriken" subType="Shuriken" maxUses="0" rank="1">
     <text lang="English" displayName="Chopstick" />
     <text lang="Japanese" displayName="菜箸" />
+    <text lang="Spanish" displayName="Palillo" />
+    <text lang="French" displayName="Baguette" />
+    <text lang="German" displayName="Essstäbchen" />
+    <text lang="Italian" displayName="Bacchetta cibo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="157" name="HairPin" type="Shuriken" subType="Shuriken" maxUses="0" rank="2">
     <text lang="English" displayName="Hair Pin" />
     <text lang="Japanese" displayName="かんざし" />
+    <text lang="Spanish" displayName="Horquilla" />
+    <text lang="French" displayName="Pince à cheveux" />
+    <text lang="German" displayName="Haarnadel" />
+    <text lang="Italian" displayName="Spilla capelli" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="158" name="Caltrop" type="Shuriken" subType="Shuriken" maxUses="0" rank="4">
     <text lang="English" displayName="Caltrop" />
     <text lang="Japanese" displayName="まきびし" />
+    <text lang="Spanish" displayName="Abrojo" />
+    <text lang="French" displayName="Makibishi" />
+    <text lang="German" displayName="Krähenfuß" />
+    <text lang="Italian" displayName="Tribolo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="159" name="KazesNeedle" type="Shuriken" subType="Shuriken" maxUses="0" rank="3">
     <text lang="English" displayName="Kaze's Needle" />
     <text lang="Japanese" displayName="スズカゼの疾風針" />
+    <text lang="Spanish" displayName="Cuchilla Kaze" />
+    <text lang="French" displayName="Aiguille (Kaze)" />
+    <text lang="German" displayName="Kazes Nadel" />
+    <text lang="Italian" displayName="Ago di Kaze" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="160" name="SaizosStar" type="Shuriken" subType="Shuriken" maxUses="0" rank="3">
     <text lang="English" displayName="Saizo's Star" />
     <text lang="Japanese" displayName="サイゾウの爆炎針" />
+    <text lang="Spanish" displayName="Estrella Saizo" />
+    <text lang="French" displayName="Étoile de Saizo" />
+    <text lang="German" displayName="Saizos Stern" />
+    <text lang="Italian" displayName="Shur. di Saizo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="161" name="KagerosDart" type="Shuriken" subType="Shuriken" maxUses="0" rank="2">
     <text lang="English" displayName="Kagero's Dart" />
     <text lang="Japanese" displayName="カゲロウの眩惑針" />
+    <text lang="Spanish" displayName="Dardo Kagero" />
+    <text lang="French" displayName="Kunaï (Kagero)" />
+    <text lang="German" displayName="Kageros Pfeil" />
+    <text lang="Italian" displayName="Dardo Kagero" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="162" name="BronzeBow" type="Bow" subType="Bow" maxUses="0" rank="1">
     <text lang="English" displayName="Bronze Bow" />
     <text lang="Japanese" displayName="青銅の弓" />
+    <text lang="Spanish" displayName="Arco bronce" />
+    <text lang="French" displayName="Arc bronze" />
+    <text lang="German" displayName="Bronzebogen" />
+    <text lang="Italian" displayName="Arco bronzo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="163" name="IronBow" type="Bow" subType="Bow" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Bow" />
     <text lang="Japanese" displayName="鉄の弓" />
+    <text lang="Spanish" displayName="Arco hierro" />
+    <text lang="French" displayName="Arc fer" />
+    <text lang="German" displayName="Eisenbogen" />
+    <text lang="Italian" displayName="Arco ferro" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="164" name="SteelBow" type="Bow" subType="Bow" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Bow" />
     <text lang="Japanese" displayName="鋼の弓" />
+    <text lang="Spanish" displayName="Arco acero" />
+    <text lang="French" displayName="Arc acier" />
+    <text lang="German" displayName="Stahlbogen" />
+    <text lang="Italian" displayName="Arco acciaio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="165" name="SilverBow" type="Bow" subType="Bow" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Bow" />
     <text lang="Japanese" displayName="銀の弓" />
+    <text lang="Spanish" displayName="Arco plata" />
+    <text lang="French" displayName="Arc argent" />
+    <text lang="German" displayName="Silberbogen" />
+    <text lang="Italian" displayName="Arco argento" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="166" name="CrescentBow" type="Bow" subType="Bow" maxUses="0" rank="5">
     <text lang="English" displayName="Crescent Bow" />
     <text lang="Japanese" displayName="強者の弓" />
+    <text lang="Spanish" displayName="Arco medialuna" />
+    <text lang="French" displayName="Arc croissant" />
+    <text lang="German" displayName="Sichelbogen" />
+    <text lang="Italian" displayName="Arco mezzaluna" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="167" name="IronShortbow" type="Bow" subType="Bow" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Shortbow" />
     <text lang="Japanese" displayName="鉄の近撃弓" />
+    <text lang="Spanish" displayName="A. corto hierro" />
+    <text lang="French" displayName="Arc court fer" />
+    <text lang="German" displayName="Eisenkurzbogen" />
+    <text lang="Italian" displayName="Ar. corto ferro" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="168" name="SteelShortbow" type="Bow" subType="Bow" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Shortbow" />
     <text lang="Japanese" displayName="鋼の近撃弓" />
+    <text lang="Spanish" displayName="A. corto acero" />
+    <text lang="French" displayName="Arc court acier" />
+    <text lang="German" displayName="Stahlkurzbogen" />
+    <text lang="Italian" displayName="Ar. corto acc." />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="169" name="SilverShortbow" type="Bow" subType="Bow" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Shortbow" />
     <text lang="Japanese" displayName="銀の近撃弓" />
+    <text lang="Spanish" displayName="A. corto plata" />
+    <text lang="French" displayName="Arc court arg." />
+    <text lang="German" displayName="Silberkurzbog." />
+    <text lang="Italian" displayName="Ar. corto arg." />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="170" name="MiniBow" type="Bow" subType="Bow" maxUses="0" rank="2">
     <text lang="English" displayName="Mini Bow" />
     <text lang="Japanese" displayName="ショートボウ" />
+    <text lang="Spanish" displayName="Miniarco" />
+    <text lang="French" displayName="Petit arc" />
+    <text lang="German" displayName="Miniaturbogen" />
+    <text lang="Italian" displayName="Miniarco" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="171" name="KillerBow" type="Bow" subType="Bow" maxUses="0" rank="3">
     <text lang="English" displayName="Killer Bow" />
     <text lang="Japanese" displayName="キラーボウ" />
+    <text lang="Spanish" displayName="Arco asesino" />
+    <text lang="French" displayName="Arc létal" />
+    <text lang="German" displayName="Meisterbogen" />
+    <text lang="Italian" displayName="Arco letale" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="172" name="BlessedBow" type="Bow" subType="Bow" maxUses="0" rank="3">
     <text lang="English" displayName="Blessed Bow" />
     <text lang="Japanese" displayName="聖なる弓" />
+    <text lang="Spanish" displayName="Arco bendito" />
+    <text lang="French" displayName="Arc béni" />
+    <text lang="German" displayName="Sakralbogen" />
+    <text lang="Italian" displayName="Ar. benedetto" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="173" name="ShiningBow" type="Bow" subType="Bow" maxUses="0" rank="3">
     <text lang="English" displayName="Shining Bow" />
     <text lang="Japanese" displayName="シャイニングボウ" />
+    <text lang="Spanish" displayName="Arco de luz" />
+    <text lang="French" displayName="Arc brillant" />
+    <text lang="German" displayName="Glanzbogen" />
+    <text lang="Italian" displayName="Ar. splendente" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="174" name="RubberBow" type="Bow" subType="Bow" maxUses="0" rank="1">
     <text lang="English" displayName="Rubber Bow" />
     <text lang="Japanese" displayName="ゴムの弓" />
+    <text lang="Spanish" displayName="Arco de goma" />
+    <text lang="French" displayName="Arc caoutchouc" />
+    <text lang="German" displayName="Gummibogen" />
+    <text lang="Italian" displayName="Arco di gomma" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="175" name="ViolinBow" type="Bow" subType="Bow" maxUses="0" rank="2">
     <text lang="English" displayName="Violin Bow" />
     <text lang="Japanese" displayName="バイオリンの弓" />
+    <text lang="Spanish" displayName="Arco violín" />
+    <text lang="French" displayName="Arc violon" />
+    <text lang="German" displayName="Geigenbogen" />
+    <text lang="Italian" displayName="Arco di violino" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="176" name="CupidBow" type="Bow" subType="Bow" maxUses="0" rank="1">
     <text lang="English" displayName="Cupid Bow" />
     <text lang="Japanese" displayName="キューピッドの弓" />
+    <text lang="Spanish" displayName="Arco de Cupido" />
+    <text lang="French" displayName="Arc de Cupidon" />
+    <text lang="German" displayName="Amorbogen" />
+    <text lang="Italian" displayName="Arco di Cupido" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="177" name="HuntersBow" type="Bow" subType="Bow" maxUses="0" rank="3">
     <text lang="English" displayName="Hunter's Bow" />
     <text lang="Japanese" displayName="狩人の弓" />
+    <text lang="Spanish" displayName="Arco de caza" />
+    <text lang="French" displayName="Arc de chasse" />
+    <text lang="German" displayName="Jagdbogen" />
+    <text lang="Italian" displayName="Arco da caccia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="178" name="AnnasBow" type="Bow" subType="Bow" maxUses="0" rank="4">
     <text lang="English" displayName="Anna's Bow" />
     <text lang="Japanese" displayName="アンナの福弓" />
+    <text lang="Spanish" displayName="Arco Anna" />
+    <text lang="French" displayName="Arc d'Anna" />
+    <text lang="German" displayName="Annas Bogen" />
+    <text lang="Italian" displayName="Arco di Anna" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="179" name="NilessBow" type="Bow" subType="Bow" maxUses="0" rank="3">
     <text lang="English" displayName="Niles's Bow" />
     <text lang="Japanese" displayName="ゼロの虐弓" />
+    <text lang="Spanish" displayName="Arco Niles" />
+    <text lang="French" displayName="Arc de Niles" />
+    <text lang="German" displayName="Niles' Bogen" />
+    <text lang="Italian" displayName="Arco di Niles" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="180" name="BrassYumi" type="Bow" subType="Yumi" maxUses="0" rank="1">
     <text lang="English" displayName="Brass Yumi" />
     <text lang="Japanese" displayName="青銅の和弓" />
+    <text lang="Spanish" displayName="Yumi bronce" />
+    <text lang="French" displayName="Yumi cuivre" />
+    <text lang="German" displayName="Bronzeyumi" />
+    <text lang="Italian" displayName="Yumi bronzo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="181" name="IronYumi" type="Bow" subType="Yumi" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Yumi" />
     <text lang="Japanese" displayName="鉄の和弓" />
+    <text lang="Spanish" displayName="Yumi hierro" />
+    <text lang="French" displayName="Yumi fer" />
+    <text lang="German" displayName="Eisenyumi" />
+    <text lang="Italian" displayName="Yumi ferro" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="182" name="SteelYumi" type="Bow" subType="Yumi" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Yumi" />
     <text lang="Japanese" displayName="鋼の和弓" />
+    <text lang="Spanish" displayName="Yumi acero" />
+    <text lang="French" displayName="Yumi acier" />
+    <text lang="German" displayName="Stahlyumi" />
+    <text lang="Italian" displayName="Yumi acciaio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="183" name="SilverYumi" type="Bow" subType="Yumi" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Yumi" />
     <text lang="Japanese" displayName="銀の和弓" />
+    <text lang="Spanish" displayName="Yumi plata" />
+    <text lang="French" displayName="Yumi argent" />
+    <text lang="German" displayName="Silberyumi" />
+    <text lang="Italian" displayName="Yumi argento" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="184" name="SpysYumi" type="Bow" subType="Yumi" maxUses="0" rank="5">
     <text lang="English" displayName="Spy's Yumi" />
     <text lang="Japanese" displayName="巧者の和弓" />
+    <text lang="Spanish" displayName="Yumi espía" />
+    <text lang="French" displayName="Yumi d'élite" />
+    <text lang="German" displayName="Ninjayumi" />
+    <text lang="Italian" displayName="Yumi spia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="185" name="IronHankyu" type="Bow" subType="Yumi" maxUses="0" rank="2">
     <text lang="English" displayName="Iron Hankyu" />
     <text lang="Japanese" displayName="鉄の近撃和弓" />
+    <text lang="Spanish" displayName="Hankyu hierro" />
+    <text lang="French" displayName="Hankyu fer" />
+    <text lang="German" displayName="Eisenhankyu" />
+    <text lang="Italian" displayName="Hankyu ferro" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="186" name="SteelHankyu" type="Bow" subType="Yumi" maxUses="0" rank="3">
     <text lang="English" displayName="Steel Hankyu" />
     <text lang="Japanese" displayName="鋼の近撃和弓" />
+    <text lang="Spanish" displayName="Hankyu acero" />
+    <text lang="French" displayName="Hankyu acier" />
+    <text lang="German" displayName="Stahlhankyu" />
+    <text lang="Italian" displayName="Hankyu acciaio" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="187" name="SilverHankyu" type="Bow" subType="Yumi" maxUses="0" rank="4">
     <text lang="English" displayName="Silver Hankyu" />
     <text lang="Japanese" displayName="銀の近撃和弓" />
+    <text lang="Spanish" displayName="Hankyu plata" />
+    <text lang="French" displayName="Hankyu argent" />
+    <text lang="German" displayName="Silberhankyu" />
+    <text lang="Italian" displayName="Hankyu argento" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="188" name="DualYumi" type="Bow" subType="Yumi" maxUses="0" rank="3">
     <text lang="English" displayName="Dual Yumi" />
     <text lang="Japanese" displayName="逆和弓" />
+    <text lang="Spanish" displayName="Yumi doble" />
+    <text lang="French" displayName="Yumi double" />
+    <text lang="German" displayName="Doppelyumi" />
+    <text lang="Italian" displayName="Yumi doppio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="189" name="IllusoryYumi" type="Bow" subType="Yumi" maxUses="0" rank="3">
     <text lang="English" displayName="Illusory Yumi" />
     <text lang="Japanese" displayName="明鏡の和弓" />
+    <text lang="Spanish" displayName="Yumi ilusorio" />
+    <text lang="French" displayName="Yumi illusoire" />
+    <text lang="German" displayName="Illusionsyumi" />
+    <text lang="Italian" displayName="Yumi illusione" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="190" name="SurefireYumi" type="Bow" subType="Yumi" maxUses="0" rank="4">
     <text lang="English" displayName="Surefire Yumi" />
     <text lang="Japanese" displayName="必中の和弓" />
+    <text lang="Spanish" displayName="Yumi certero" />
+    <text lang="French" displayName="Yumi infaillible" />
+    <text lang="German" displayName="Meisteryumi" />
+    <text lang="Italian" displayName="Yumi infallibile" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="191" name="Pursuer" type="Bow" subType="Yumi" maxUses="0" rank="6">
     <text lang="English" displayName="Pursuer" />
     <text lang="Japanese" displayName="残心" />
+    <text lang="Spanish" displayName="Rastreador" />
+    <text lang="French" displayName="Poursuivant" />
+    <text lang="German" displayName="Verfolger" />
+    <text lang="Italian" displayName="Persecutore" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="192" name="FujinYumi" type="Bow" subType="Yumi" maxUses="0" rank="1">
     <text lang="English" displayName="Fujin Yumi" />
     <text lang="Japanese" displayName="風神弓" />
+    <text lang="Spanish" displayName="Yumi Fujin" />
+    <text lang="French" displayName="Yumi Fujin" />
+    <text lang="German" displayName="Fujin Yumi" />
+    <text lang="Italian" displayName="Fujin Yumi" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="193" name="FujinYumi2" type="Bow" subType="Yumi" maxUses="0" rank="1">
-    <!-- Name is to distinguish it from the other Fujin Yumi in the picker.-->
     <text lang="English" displayName="Fujin Yumi (Prologue)" />
     <text lang="Japanese" displayName="風神弓" />
+    <text lang="Spanish" displayName="Yumi Fujin (Prólogo)" />
+    <text lang="French" displayName="Yumi Fujin (Prologue)" />
+    <text lang="German" displayName="Fujin Yumi (Prolog)" />
+    <text lang="Italian" displayName="Fujin Yumi (Prologo)" />
     <categories npcOnly="true" personal="true" />
   </item>
   <item id="194" name="Skadi" type="Bow" subType="Yumi" maxUses="0" rank="6">
     <text lang="English" displayName="Skadi" />
     <text lang="Japanese" displayName="スカディ" />
+    <text lang="Spanish" displayName="Skadi" />
+    <text lang="French" displayName="Skadi" />
+    <text lang="German" displayName="Skadi" />
+    <text lang="Italian" displayName="Skadi" />
     <categories npcOnly="true" personal="true" />
   </item>
   <item id="195" name="BambooYumi" type="Bow" subType="Yumi" maxUses="0" rank="1">
     <text lang="English" displayName="Bamboo Yumi" />
     <text lang="Japanese" displayName="竹の和弓" />
+    <text lang="Spanish" displayName="Yumi de bambú" />
+    <text lang="French" displayName="Yumi bambou" />
+    <text lang="German" displayName="Bambusyumi" />
+    <text lang="Italian" displayName="Yumi bambù" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="196" name="HarpYumi" type="Bow" subType="Yumi" maxUses="0" rank="2">
     <text lang="English" displayName="Harp Yumi" />
     <text lang="Japanese" displayName="琵琶の和弓" />
+    <text lang="Spanish" displayName="Yumi arpa" />
+    <text lang="French" displayName="Yumi harpe" />
+    <text lang="German" displayName="Harfenyumi" />
+    <text lang="Italian" displayName="Yumi arpa" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="197" name="RaiderYumi" type="Bow" subType="Yumi" maxUses="0" rank="1">
     <text lang="English" displayName="Raider Yumi" />
     <text lang="Japanese" displayName="追い剥ぎの和弓" />
+    <text lang="Spanish" displayName="Yumi felón" />
+    <text lang="French" displayName="Yumi filou" />
+    <text lang="German" displayName="Räuberyumi" />
+    <text lang="Italian" displayName="Yumi predone" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="198" name="SpellbaneYumi" type="Bow" subType="Yumi" maxUses="0" rank="3">
     <text lang="English" displayName="Spellbane Yumi" />
     <text lang="Japanese" displayName="破魔矢" />
+    <text lang="Spanish" displayName="Yumi antimagos" />
+    <text lang="French" displayName="Yumi paresort" />
+    <text lang="German" displayName="Bannyumi" />
+    <text lang="Italian" displayName="Yumi antimago" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="199" name="SidelongYumi" type="Bow" subType="Yumi" maxUses="0" rank="3">
     <text lang="English" displayName="Sidelong Yumi" />
     <text lang="Japanese" displayName="横撃ちの和弓" />
+    <text lang="Spanish" displayName="Yumi soslayado" />
+    <text lang="French" displayName="Yumi tordu" />
+    <text lang="German" displayName="Hüftyumi" />
+    <text lang="Italian" displayName="Yumi lungo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="200" name="MikotosYumi" type="Bow" subType="Yumi" maxUses="0" rank="4">
     <text lang="English" displayName="Mikoto's Yumi" />
     <text lang="Japanese" displayName="ミコトの霊弓" />
+    <text lang="Spanish" displayName="Yumi Mikoto" />
+    <text lang="French" displayName="Yumi (Mikoto)" />
+    <text lang="German" displayName="Mikotos Yumi" />
+    <text lang="Italian" displayName="Yumi di Mikoto" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="201" name="SetsunasYumi" type="Bow" subType="Yumi" maxUses="0" rank="2">
     <text lang="English" displayName="Setsuna's Yumi" />
     <text lang="Japanese" displayName="セツナの緩弓" />
+    <text lang="Spanish" displayName="Yumi Setsuna" />
+    <text lang="French" displayName="Yumi (Setsuna)" />
+    <text lang="German" displayName="Setsunas Yumi" />
+    <text lang="Italian" displayName="Yumi di Setsuna" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="202" name="Fire" type="Tome" subType="Tome" maxUses="0" rank="1">
     <text lang="English" displayName="Fire" />
     <text lang="Japanese" displayName="ファイアー" />
+    <text lang="Spanish" displayName="Fuego" />
+    <text lang="French" displayName="Feu" />
+    <text lang="German" displayName="Feuer" />
+    <text lang="Italian" displayName="Fuoco" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="203" name="Thunder" type="Tome" subType="Tome" maxUses="0" rank="2">
     <text lang="English" displayName="Thunder" />
     <text lang="Japanese" displayName="サンダー" />
+    <text lang="Spanish" displayName="Trueno" />
+    <text lang="French" displayName="Foudre" />
+    <text lang="German" displayName="Donner" />
+    <text lang="Italian" displayName="Tuono" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="204" name="Fimbulvetr" type="Tome" subType="Tome" maxUses="0" rank="3">
     <text lang="English" displayName="Fimbulvetr" />
     <text lang="Japanese" displayName="フィンブル" />
+    <text lang="Spanish" displayName="Fimbulvetr" />
+    <text lang="French" displayName="Fimbulvetr" />
+    <text lang="German" displayName="Fimbulwinter" />
+    <text lang="Italian" displayName="Fimbulvetr" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="205" name="Ragnarok" type="Tome" subType="Tome" maxUses="0" rank="4">
     <text lang="English" displayName="Ragnarok" />
     <text lang="Japanese" displayName="ライナロック" />
+    <text lang="Spanish" displayName="Ragnarok" />
+    <text lang="French" displayName="Ragnarök" />
+    <text lang="German" displayName="Ragnarök" />
+    <text lang="Italian" displayName="Ragnarok" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="206" name="Ginnungagap" type="Tome" subType="Tome" maxUses="0" rank="5">
     <text lang="English" displayName="Ginnungagap" />
     <text lang="Japanese" displayName="ギンヌンガガプ" />
+    <text lang="Spanish" displayName="Ginnungagap" />
+    <text lang="French" displayName="Ginnungagap" />
+    <text lang="German" displayName="Ginnungagap" />
+    <text lang="Italian" displayName="Ginnungagap" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="207" name="Lightning" type="Tome" subType="Tome" maxUses="0" rank="3">
     <text lang="English" displayName="Lightning" />
     <text lang="Japanese" displayName="ライトニング" />
+    <text lang="Spanish" displayName="Relámpago" />
+    <text lang="French" displayName="Lumière" />
+    <text lang="German" displayName="Blitz" />
+    <text lang="Italian" displayName="Lampo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="208" name="Mjölnir" type="Tome" subType="Tome" maxUses="0" rank="3">
     <text lang="English" displayName="Mjölnir" />
     <text lang="Japanese" displayName="ミョルニル" />
+    <text lang="Spanish" displayName="Mjölnir" />
+    <text lang="French" displayName="Mjölnir" />
+    <text lang="German" displayName="Mjölnir" />
+    <text lang="Italian" displayName="Mjölnir" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="209" name="Nosferatu" type="Tome" subType="Tome" maxUses="0" rank="2">
     <text lang="English" displayName="Nosferatu" />
     <text lang="Japanese" displayName="リザイア" />
+    <text lang="Spanish" displayName="Nosferatu" />
+    <text lang="French" displayName="Nosferatu" />
+    <text lang="German" displayName="Nosferatu" />
+    <text lang="Italian" displayName="Nosferatu" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="210" name="Excalibur" type="Tome" subType="Tome" maxUses="0" rank="6">
     <text lang="English" displayName="Excalibur" />
     <text lang="Japanese" displayName="エクスカリバー" />
+    <text lang="Spanish" displayName="Excalibur" />
+    <text lang="French" displayName="Excalibur" />
+    <text lang="German" displayName="Excalibur" />
+    <text lang="Italian" displayName="Excalibur" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="211" name="Brynhildr" type="Tome" subType="Tome" maxUses="0" rank="1">
     <text lang="English" displayName="Brynhildr" />
     <text lang="Japanese" displayName="ブリュンヒルデ" />
+    <text lang="Spanish" displayName="Brynhildr" />
+    <text lang="French" displayName="Brynhildr" />
+    <text lang="German" displayName="Brynhildr" />
+    <text lang="Italian" displayName="Brynhildr" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="212" name="Ember" type="Tome" subType="Tome" maxUses="0" rank="1">
     <text lang="English" displayName="Ember" />
     <text lang="Japanese" displayName="プチファイアー" />
+    <text lang="Spanish" displayName="Brasas" />
+    <text lang="French" displayName="Braise" />
+    <text lang="German" displayName="Funke" />
+    <text lang="Italian" displayName="Brace" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="213" name="Missiletainn" type="Tome" subType="Tome" maxUses="0" rank="1">
     <text lang="English" displayName="Missiletainn" />
     <text lang="Japanese" displayName="ミステルトィン" />
+    <text lang="Spanish" displayName="Misilteinn" />
+    <text lang="French" displayName="Miserteinn" />
+    <text lang="German" displayName="Mystelstein" />
+    <text lang="Italian" displayName="Misseltein" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="214" name="DisrobingGale" type="Tome" subType="Tome" maxUses="0" rank="1">
     <text lang="English" displayName="Disrobing Gale" />
     <text lang="Japanese" displayName="ローバー" />
+    <text lang="Spanish" displayName="Vendaval" />
+    <text lang="French" displayName="Coup de vent" />
+    <text lang="German" displayName="Sturmwind" />
+    <text lang="Italian" displayName="Turbine" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="215" name="SpeedThunder" type="Tome" subType="Tome" maxUses="0" rank="3">
     <text lang="English" displayName="Speed Thunder" />
     <text lang="Japanese" displayName="ブーストサンダー" />
+    <text lang="Spanish" displayName="Trueno veloz" />
+    <text lang="French" displayName="Vitesse éclair" />
+    <text lang="German" displayName="Kugelblitz" />
+    <text lang="Italian" displayName="Velocità lampo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="216" name="Moonlight" type="Tome" subType="Tome" maxUses="0" rank="2">
     <text lang="English" displayName="Moonlight" />
     <text lang="Japanese" displayName="ムーンライト" />
+    <text lang="Spanish" displayName="Luz de luna" />
+    <text lang="French" displayName="Clair de lune" />
+    <text lang="German" displayName="Mondschein" />
+    <text lang="Italian" displayName="Chiaro di luna" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="217" name="IagosTome" type="Tome" subType="Tome" maxUses="0" rank="4">
     <text lang="English" displayName="Iago's Tome" />
     <text lang="Japanese" displayName="マクベスの惑書" />
+    <text lang="Spanish" displayName="Grimorio Iago" />
+    <text lang="French" displayName="Tome de Iago" />
+    <text lang="German" displayName="Iagos Buch" />
+    <text lang="Italian" displayName="Tomo di Iago" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="218" name="OdinsGrimoire" type="Tome" subType="Tome" maxUses="0" rank="3">
     <text lang="English" displayName="Odin's Grimoire" />
     <text lang="Japanese" displayName="オーディンの黒書" />
+    <text lang="Spanish" displayName="Grimorio Odín" />
+    <text lang="French" displayName="Grimoire (Odin)" />
+    <text lang="German" displayName="Odins Grimoire" />
+    <text lang="Italian" displayName="Grimorio Odin" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="219" name="RatSpirit" type="Tome" subType="Scroll" maxUses="0" rank="1">
     <text lang="English" displayName="Rat Spirit" />
     <text lang="Japanese" displayName="鼠神・子" />
+    <text lang="Spanish" displayName="Espíritu rata" />
+    <text lang="French" displayName="Esprit rat" />
+    <text lang="German" displayName="Rattengeist" />
+    <text lang="Italian" displayName="Spirito topo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="220" name="OxSpirit" type="Tome" subType="Scroll" maxUses="0" rank="2">
     <text lang="English" displayName="Ox Spirit" />
     <text lang="Japanese" displayName="牛神・丑" />
+    <text lang="Spanish" displayName="Espíritu buey" />
+    <text lang="French" displayName="Esprit bœuf" />
+    <text lang="German" displayName="Ochsengeist" />
+    <text lang="Italian" displayName="Spirito bue" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="221" name="TigerSpirit" type="Tome" subType="Scroll" maxUses="0" rank="3">
     <text lang="English" displayName="Tiger Spirit" />
     <text lang="Japanese" displayName="虎神・寅" />
+    <text lang="Spanish" displayName="Espíritu tigre" />
+    <text lang="French" displayName="Esprit tigre" />
+    <text lang="German" displayName="Tigergeist" />
+    <text lang="Italian" displayName="Spirito tigre" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="222" name="RabbitSpirit" type="Tome" subType="Scroll" maxUses="0" rank="4">
     <text lang="English" displayName="Rabbit Spirit" />
     <text lang="Japanese" displayName="兎神・卯" />
+    <text lang="Spanish" displayName="Espíritu conejo" />
+    <text lang="French" displayName="Esprit lapin" />
+    <text lang="German" displayName="Hasengeist" />
+    <text lang="Italian" displayName="Spirito coniglio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="223" name="DragonSpirit" type="Tome" subType="Scroll" maxUses="0" rank="5">
     <text lang="English" displayName="Dragon Spirit" />
     <text lang="Japanese" displayName="龍神・辰" />
+    <text lang="Spanish" displayName="Espíritu dragón" />
+    <text lang="French" displayName="Esprit dragon" />
+    <text lang="German" displayName="Drachengeist" />
+    <text lang="Italian" displayName="Spirito drago" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="224" name="CalamityGate" type="Tome" subType="Scroll" maxUses="0" rank="3">
     <text lang="English" displayName="Calamity Gate" />
     <text lang="Japanese" displayName="逆神・丑寅" />
+    <text lang="Spanish" displayName="Calamidad" />
+    <text lang="French" displayName="Calamité" />
+    <text lang="German" displayName="Unheilstor" />
+    <text lang="Italian" displayName="Portale Rovina" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="225" name="SnakeSpirit" type="Tome" subType="Scroll" maxUses="0" rank="5">
     <text lang="English" displayName="Snake Spirit" />
     <text lang="Japanese" displayName="蛇神・巳" />
+    <text lang="Spanish" displayName="Espíritu sierpe" />
+    <text lang="French" displayName="Esprit serpent" />
+    <text lang="German" displayName="Schlangengeist" />
+    <text lang="Italian" displayName="Spir. serpente" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="226" name="HorseSpirit" type="Tome" subType="Scroll" maxUses="0" rank="2">
     <text lang="English" displayName="Horse Spirit" />
     <text lang="Japanese" displayName="馬神・午" />
+    <text lang="Spanish" displayName="Espíritu caballo" />
+    <text lang="French" displayName="Esprit cheval" />
+    <text lang="German" displayName="Pferdegeist" />
+    <text lang="Italian" displayName="Spirito cavallo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="227" name="SheepSpirit" type="Tome" subType="Scroll" maxUses="0" rank="2">
     <text lang="English" displayName="Sheep Spirit" />
     <text lang="Japanese" displayName="羊神・未" />
+    <text lang="Spanish" displayName="Espíritu cabra" />
+    <text lang="French" displayName="Esprit mouton" />
+    <text lang="German" displayName="Schafsgeist" />
+    <text lang="Italian" displayName="Spirito pecora" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="228" name="Paper" type="Tome" subType="Scroll" maxUses="0" rank="1">
     <text lang="English" displayName="Paper" />
     <text lang="Japanese" displayName="紙" />
+    <text lang="Spanish" displayName="Papel" />
+    <text lang="French" displayName="Papier" />
+    <text lang="German" displayName="Papier" />
+    <text lang="Italian" displayName="Foglio di carta" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="229" name="MalevolentText" type="Tome" subType="Scroll" maxUses="0" rank="2">
     <text lang="English" displayName="Malevolent Text" />
     <text lang="Japanese" displayName="古びた書物" />
+    <text lang="Spanish" displayName="Texto malévolo" />
+    <text lang="French" displayName="Blasphèmes" />
+    <text lang="German" displayName="Bösartiger Text" />
+    <text lang="Italian" displayName="Scritto malefico" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="230" name="MonkeySpirit" type="Tome" subType="Scroll" maxUses="0" rank="2">
     <text lang="English" displayName="Monkey Spirit" />
     <text lang="Japanese" displayName="猿神・申" />
+    <text lang="Spanish" displayName="Espíritu mono" />
+    <text lang="French" displayName="Esprit singe" />
+    <text lang="German" displayName="Affengeist" />
+    <text lang="Italian" displayName="Spirito scimmia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="231" name="BirdSpirit" type="Tome" subType="Scroll" maxUses="0" rank="3">
     <text lang="English" displayName="Bird Spirit" />
     <text lang="Japanese" displayName="鳥神・酉" />
+    <text lang="Spanish" displayName="Espíritu gallo" />
+    <text lang="French" displayName="Esprit oiseau" />
+    <text lang="German" displayName="Vogelgeist" />
+    <text lang="Italian" displayName="Spirito uccello" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="232" name="InkPainting" type="Tome" subType="Scroll" maxUses="0" rank="4">
     <text lang="English" displayName="Ink Painting" />
     <text lang="Japanese" displayName="虹の賢者の墨絵" />
+    <text lang="Spanish" displayName="Dibujo a tinta" />
+    <text lang="French" displayName="Peinture sumi-e" />
+    <text lang="German" displayName="Tintenbild" />
+    <text lang="Italian" displayName="Pitt. inchiostro" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="233" name="IzanasScroll" type="Tome" subType="Scroll" maxUses="0" rank="3">
     <text lang="English" displayName="Izana's Scroll" />
     <text lang="Japanese" displayName="イザナの古呪" />
+    <text lang="Spanish" displayName="Rollo de Izana" />
+    <text lang="French" displayName="Textes d'Izana" />
+    <text lang="German" displayName="Izanas Schrift" />
+    <text lang="Italian" displayName="Perg. di Izana" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="234" name="Heal" type="Staff" subType="Staff" maxUses="20" rank="1">
     <text lang="English" displayName="Heal" />
     <text lang="Japanese" displayName="ライブ" />
+    <text lang="Spanish" displayName="Curar" />
+    <text lang="French" displayName="Soin" />
+    <text lang="German" displayName="Heilung" />
+    <text lang="Italian" displayName="Cura" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="235" name="Mend" type="Staff" subType="Staff" maxUses="15" rank="2">
     <text lang="English" displayName="Mend" />
     <text lang="Japanese" displayName="リライブ" />
+    <text lang="Spanish" displayName="Mejorar" />
+    <text lang="French" displayName="Cure" />
+    <text lang="German" displayName="Pflege" />
+    <text lang="Italian" displayName="Rimedio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="236" name="Physic" type="Staff" subType="Staff" maxUses="5" rank="3">
     <text lang="English" displayName="Physic" />
     <text lang="Japanese" displayName="リブロー" />
+    <text lang="Spanish" displayName="Sanar" />
+    <text lang="French" displayName="Remède" />
+    <text lang="German" displayName="Purgativ" />
+    <text lang="Italian" displayName="Lenimento" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="237" name="Recover" type="Staff" subType="Staff" maxUses="5" rank="4">
     <text lang="English" displayName="Recover" />
     <text lang="Japanese" displayName="リカバー" />
+    <text lang="Spanish" displayName="Recuperar" />
+    <text lang="French" displayName="Restitution" />
+    <text lang="German" displayName="Erholung" />
+    <text lang="Italian" displayName="Recupero" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="238" name="Fortify" type="Staff" subType="Staff" maxUses="2" rank="5">
     <text lang="English" displayName="Fortify" />
     <text lang="Japanese" displayName="リザーブ" />
+    <text lang="Spanish" displayName="Fortalecer" />
+    <text lang="French" displayName="Halo" />
+    <text lang="German" displayName="Stärkung" />
+    <text lang="Italian" displayName="Balsamo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="239" name="Freeze" type="Staff" subType="Staff" maxUses="4" rank="2">
     <text lang="English" displayName="Freeze" />
     <text lang="Japanese" displayName="フリーズ" />
+    <text lang="Spanish" displayName="Congelar" />
+    <text lang="French" displayName="Gel" />
+    <text lang="German" displayName="Einfrieren" />
+    <text lang="Italian" displayName="Gelo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="240" name="Enfeeble" type="Staff" subType="Staff" maxUses="4" rank="3">
     <text lang="English" displayName="Enfeeble" />
     <text lang="Japanese" displayName="ウィークネス" />
+    <text lang="Spanish" displayName="Debilitar" />
+    <text lang="French" displayName="Affaiblissement" />
+    <text lang="German" displayName="Schwächung" />
+    <text lang="Italian" displayName="Afflizione" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="241" name="Entrap" type="Staff" subType="Staff" maxUses="2" rank="4">
     <text lang="English" displayName="Entrap" />
     <text lang="Japanese" displayName="ドロー" />
+    <text lang="Spanish" displayName="Atrapar" />
+    <text lang="French" displayName="Piège" />
+    <text lang="German" displayName="Falle" />
+    <text lang="Italian" displayName="Trappola" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="242" name="EntrapNohr27" type="Staff" subType="Staff" maxUses="1" rank="4">
-    <!-- Name is to distinguish it from the other Entrap in the picker.-->
     <text lang="English" displayName="Entrap (Nohr 27)" />
     <text lang="Japanese" displayName="ドロー" />
+    <text lang="Spanish" displayName="Atrapar (Nohr 27)" />
+    <text lang="French" displayName="Piège (Nohr 27)" />
+    <text lang="German" displayName="Falle (Nohr 27)" />
+    <text lang="Italian" displayName="Trappola (Nohr 27)" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="243" name="Bifröst" type="Staff" subType="Staff" maxUses="1" rank="6">
     <text lang="English" displayName="Bifröst" />
     <text lang="Japanese" displayName="ビフレスト" />
+    <text lang="Spanish" displayName="Bifröst" />
+    <text lang="French" displayName="Bifröst" />
+    <text lang="German" displayName="Bifröst" />
+    <text lang="Italian" displayName="Bifröst" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="244" name="CandyCane" type="Staff" subType="Staff" maxUses="5" rank="1">
     <text lang="English" displayName="Candy Cane" />
     <text lang="Japanese" displayName="お菓子の杖" />
+    <text lang="Spanish" displayName="Bastón dulce" />
+    <text lang="French" displayName="Sucre d'orge" />
+    <text lang="German" displayName="Zuckerstange" />
+    <text lang="Italian" displayName="Stecca dolce" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="245" name="MushroomStaff" type="Staff" subType="Staff" maxUses="5" rank="1">
     <text lang="English" displayName="Mushroom Staff" />
     <text lang="Japanese" displayName="キノコの杖" />
+    <text lang="Spanish" displayName="Bastón seta" />
+    <text lang="French" displayName="Bâton fongique" />
+    <text lang="German" displayName="Pilzstab" />
+    <text lang="Italian" displayName="Bastone funghi" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="246" name="BouquetStaff" type="Staff" subType="Staff" maxUses="3" rank="2">
     <text lang="English" displayName="Bouquet Staff" />
     <text lang="Japanese" displayName="花束の杖" />
+    <text lang="Spanish" displayName="Bastón ramo" />
+    <text lang="French" displayName="Bâton bouquet" />
+    <text lang="German" displayName="Blumenstab" />
+    <text lang="Italian" displayName="Bastone fiorito" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="247" name="ElisesStaff" type="Staff" subType="Staff" maxUses="1" rank="3">
     <text lang="English" displayName="Elise's Staff" />
     <text lang="Japanese" displayName="エリーゼの幼杖" />
+    <text lang="Spanish" displayName="Bastón Elise" />
+    <text lang="French" displayName="Bâton d'Elise" />
+    <text lang="German" displayName="Elises Stab" />
+    <text lang="Italian" displayName="Bastone Elise" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="248" name="LilithsStaff" type="Staff" subType="Staff" maxUses="1" rank="4">
     <text lang="English" displayName="Lilith's Staff" />
     <text lang="Japanese" displayName="リリスの星杖" />
+    <text lang="Spanish" displayName="Bastón Lilith" />
+    <text lang="French" displayName="Bâton de Lilith" />
+    <text lang="German" displayName="Liliths Stab" />
+    <text lang="Italian" displayName="Bastone Lilith" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="249" name="BloomFestal" type="Staff" subType="Rod" maxUses="20" rank="1">
     <text lang="English" displayName="Bloom Festal" />
     <text lang="Japanese" displayName="春祭" />
+    <text lang="Spanish" displayName="Fasto floral" />
+    <text lang="French" displayName="Fête printanière" />
+    <text lang="German" displayName="Blütenfest" />
+    <text lang="Italian" displayName="Festa dei fiori" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="250" name="SunFestal" type="Staff" subType="Rod" maxUses="15" rank="2">
     <text lang="English" displayName="Sun Festal" />
     <text lang="Japanese" displayName="夏祭" />
+    <text lang="Spanish" displayName="Fasto solar" />
+    <text lang="French" displayName="Fête estivale" />
+    <text lang="German" displayName="Sonnenfest" />
+    <text lang="Italian" displayName="Festa del sole" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="251" name="WaneFestal" type="Staff" subType="Rod" maxUses="5" rank="3">
     <text lang="English" displayName="Wane Festal" />
     <text lang="Japanese" displayName="秋祭" />
+    <text lang="Spanish" displayName="Fasto caduco" />
+    <text lang="French" displayName="Fête équinoxe" />
+    <text lang="German" displayName="Herbstfest" />
+    <text lang="Italian" displayName="Festa dei colori" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="252" name="MoonFestal" type="Staff" subType="Rod" maxUses="5" rank="4">
     <text lang="English" displayName="Moon Festal" />
     <text lang="Japanese" displayName="冬祭" />
+    <text lang="Spanish" displayName="Fasto lunar" />
+    <text lang="French" displayName="Fête hivernale" />
+    <text lang="German" displayName="Mondfest" />
+    <text lang="Italian" displayName="Festa della neve" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="253" name="GreatFestal" type="Staff" subType="Rod" maxUses="2" rank="5">
     <text lang="English" displayName="Great Festal" />
     <text lang="Japanese" displayName="大祭" />
+    <text lang="Spanish" displayName="Fasto mayor" />
+    <text lang="French" displayName="Grand festival" />
+    <text lang="German" displayName="Großes Fest" />
+    <text lang="Italian" displayName="Festa grande" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="254" name="Rescue" type="Staff" subType="Rod" maxUses="2" rank="2">
     <text lang="English" displayName="Rescue" />
     <text lang="Japanese" displayName="七難即滅" />
+    <text lang="Spanish" displayName="Rescatar" />
+    <text lang="French" displayName="Secours" />
+    <text lang="German" displayName="Rettung" />
+    <text lang="Italian" displayName="Soccorso" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="255" name="Silence" type="Staff" subType="Rod" maxUses="4" rank="3">
     <text lang="English" displayName="Silence" />
     <text lang="Japanese" displayName="神風招来" />
+    <text lang="Spanish" displayName="Silenciar" />
+    <text lang="French" displayName="Silence" />
+    <text lang="German" displayName="Schweigen" />
+    <text lang="Italian" displayName="Silenzio" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="256" name="HexingRod" type="Staff" subType="Rod" maxUses="3" rank="4">
     <text lang="English" displayName="Hexing Rod" />
     <text lang="Japanese" displayName="禍事罪穢" />
+    <text lang="Spanish" displayName="Vara maléfica" />
+    <text lang="French" displayName="Sceptre maudit" />
+    <text lang="German" displayName="Fluchrute" />
+    <text lang="Italian" displayName="Verga malevola" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="257" name="Lantern" type="Staff" subType="Rod" maxUses="5" rank="1">
     <text lang="English" displayName="Lantern" />
     <text lang="Japanese" displayName="ちょうちん" />
+    <text lang="Spanish" displayName="Farol" />
+    <text lang="French" displayName="Lanterne" />
+    <text lang="German" displayName="Laterne" />
+    <text lang="Italian" displayName="Lanterna" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="258" name="DumplingRod" type="Staff" subType="Rod" maxUses="3" rank="2">
     <text lang="English" displayName="Dumpling Rod" />
     <text lang="Japanese" displayName="団子串" />
+    <text lang="Spanish" displayName="Vara confitera" />
+    <text lang="French" displayName="Bâton de mochi" />
+    <text lang="German" displayName="Klößchenrute" />
+    <text lang="Italian" displayName="Spiedino dango" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="259" name="BambooBranch" type="Staff" subType="Rod" maxUses="3" rank="3">
     <text lang="English" displayName="Bamboo Branch" />
     <text lang="Japanese" displayName="笹飾り" />
+    <text lang="Spanish" displayName="Rama de bambú" />
+    <text lang="French" displayName="Tige de bambou" />
+    <text lang="German" displayName="Bambuszweig" />
+    <text lang="Italian" displayName="Stecca bambù" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="260" name="SakurasRod" type="Staff" subType="Rod" maxUses="10" rank="1">
     <text lang="English" displayName="Sakura's Rod" />
     <text lang="Japanese" displayName="サクラの小祓串" />
+    <text lang="Spanish" displayName="Vara de Sakura" />
+    <text lang="French" displayName="Sceptre (Saku.)" />
+    <text lang="German" displayName="Sakuras Rute" />
+    <text lang="Italian" displayName="Verga di Sakura" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="261" name="PurificationRod" type="Staff" subType="Rod" maxUses="1" rank="4">
     <text lang="English" displayName="Purification Rod" />
     <text lang="Japanese" displayName="アサマの捻れ祓串" />
+    <text lang="Spanish" displayName="Vara de pureza" />
+    <text lang="French" displayName="Sceptre lustral" />
+    <text lang="German" displayName="Reinigungsrute" />
+    <text lang="Italian" displayName="Verga ripristino" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="262" name="Dragonstone" type="Stone" subType="Dragonstone" maxUses="0" rank="1">
     <text lang="English" displayName="Dragonstone" />
     <text lang="Japanese" displayName="竜石" />
+    <text lang="Spanish" displayName="Piedra dragón" />
+    <text lang="French" displayName="Dracopierre" />
+    <text lang="German" displayName="Drachenstein" />
+    <text lang="Italian" displayName="Pietra drago" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="263" name="DragonstonePlus" type="Stone" subType="Dragonstone" maxUses="0" rank="3">
     <text lang="English" displayName="Dragonstone+" />
     <text lang="Japanese" displayName="真竜石" />
+    <text lang="Spanish" displayName="Piedra drag. +" />
+    <text lang="French" displayName="Dracopierre +" />
+    <text lang="German" displayName="Drachenstein+" />
+    <text lang="Italian" displayName="Pietra drago +" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="264" name="Beaststone" type="Stone" subType="Beaststone" maxUses="0" rank="1">
     <text lang="English" displayName="Beaststone" />
     <text lang="Japanese" displayName="獣石" />
+    <text lang="Spanish" displayName="Piedra bestia" />
+    <text lang="French" displayName="Bestipierre" />
+    <text lang="German" displayName="Bestienstein" />
+    <text lang="Italian" displayName="Pietra bestia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="265" name="Beastrune" type="Stone" subType="Beaststone" maxUses="0" rank="3">
     <text lang="English" displayName="Beastrune" />
     <text lang="Japanese" displayName="守獣石" />
+    <text lang="Spanish" displayName="Runa bestia" />
+    <text lang="French" displayName="Bestirune" />
+    <text lang="German" displayName="Bestienrune" />
+    <text lang="Italian" displayName="Runa bestia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="266" name="BeaststonePlus" type="Stone" subType="Beaststone" maxUses="0" rank="4">
     <text lang="English" displayName="Beaststone+" />
     <text lang="Japanese" displayName="超獣石" />
+    <text lang="Spanish" displayName="Piedra bestia +" />
+    <text lang="French" displayName="Bestipierre +" />
+    <text lang="German" displayName="Bestienstein+" />
+    <text lang="Italian" displayName="Pietra bestia +" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="267" name="DraconicRage" type="NPC" subType="Breath" maxUses="0" rank="1">
     <text lang="English" displayName="Draconic Rage" />
     <text lang="Japanese" displayName="水の飛沫" />
+    <text lang="Spanish" displayName="Ira dragontina" />
+    <text lang="French" displayName="Rage du dragon" />
+    <text lang="German" displayName="Drachenwut" />
+    <text lang="Italian" displayName="Dracofuria" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="268" name="DarkBreath" type="NPC" subType="Breath" maxUses="0" rank="6">
     <text lang="English" displayName="Dark Breath" />
     <text lang="Japanese" displayName="暗夜竜の翼" />
+    <text lang="Spanish" displayName="Aliento negro" />
+    <text lang="French" displayName="Souffle sombre" />
+    <text lang="German" displayName="Dunkler Atem" />
+    <text lang="Italian" displayName="Soffioscuro" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="269" name="InvisiblesBreath" type="NPC" subType="Breath" maxUses="0" rank="5">
     <text lang="English" displayName="Dragon Breath" />
     <text lang="Japanese" displayName="透魔竜のブレス" />
+    <text lang="Spanish" displayName="Aliento dragón" />
+    <text lang="French" displayName="Souffle dragon" />
+    <text lang="German" displayName="Drachenatem" />
+    <text lang="Italian" displayName="Soffio di drago" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="270" name="InvisiblesBreath2" type="NPC" subType="Breath" maxUses="0" rank="6">
     <text lang="English" displayName="Dragon Breath" />
     <text lang="Japanese" displayName="透魔竜のブレス" />
+    <text lang="Spanish" displayName="Aliento dragón" />
+    <text lang="French" displayName="Souffle dragon" />
+    <text lang="German" displayName="Drachenatem" />
+    <text lang="Italian" displayName="Soffio di drago" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="271" name="ShackledFist" type="NPC" subType="Fist" maxUses="0" rank="1">
     <text lang="English" displayName="Shackled Fist" />
     <text lang="Japanese" displayName="乱拳" />
+    <text lang="Spanish" displayName="Puño grilletes" />
+    <text lang="French" displayName="Poing enchaîné" />
+    <text lang="German" displayName="Kettenfaust" />
+    <text lang="Italian" displayName="Pugno in catene" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="272" name="Gauntlet" type="NPC" subType="Fist" maxUses="0" rank="4">
     <text lang="English" displayName="Gauntlet" />
     <text lang="Japanese" displayName="狂乱拳" />
+    <text lang="Spanish" displayName="Guantelete" />
+    <text lang="French" displayName="Gantelet" />
+    <text lang="German" displayName="Panzerhand" />
+    <text lang="Italian" displayName="Mittene" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="273" name="Rock" type="NPC" subType="Rock" maxUses="0" rank="1">
     <text lang="English" displayName="Rock" />
     <text lang="Japanese" displayName="岩塊" />
+    <text lang="Spanish" displayName="Roca" />
+    <text lang="French" displayName="Roc" />
+    <text lang="German" displayName="Fels" />
+    <text lang="Italian" displayName="Roccia" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="274" name="MassiveRock" type="NPC" subType="Rock" maxUses="0" rank="4">
     <text lang="English" displayName="Massive Rock" />
     <text lang="Japanese" displayName="巨岩塊" />
+    <text lang="Spanish" displayName="Roca enorme" />
+    <text lang="French" displayName="Roc massif" />
+    <text lang="German" displayName="Riesenfels" />
+    <text lang="Italian" displayName="Macigno" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="275" name="AstralBreath" type="NPC" subType="Breath" maxUses="0" rank="1">
     <text lang="English" displayName="Astral Breath" />
     <text lang="Japanese" displayName="星竜のブレス" />
+    <text lang="Spanish" displayName="Aliento astral" />
+    <text lang="French" displayName="Souffle astral" />
+    <text lang="German" displayName="Astralatem" />
+    <text lang="Italian" displayName="Soffio astrale" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="276" name="AstralBlessing" type="NPC" subType="Breath" maxUses="0" rank="1">
     <text lang="English" displayName="Astral Blessing" />
     <text lang="Japanese" displayName="星竜の加護" />
+    <text lang="Spanish" displayName="Favor astral" />
+    <text lang="French" displayName="Faveur astrale" />
+    <text lang="German" displayName="Astralsegen" />
+    <text lang="Italian" displayName="Favore astrale" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="277" name="Vulnerary" type="Consumable" subType="HealingItem" maxUses="3" rank="0">
     <text lang="English" displayName="Vulnerary" />
     <text lang="Japanese" displayName="傷薬" />
+    <text lang="Spanish" displayName="Poción" />
+    <text lang="French" displayName="Potion" />
+    <text lang="German" displayName="Heilmittel" />
+    <text lang="Italian" displayName="Unguento" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="278" name="Concoction" type="Consumable" subType="HealingItem" maxUses="2" rank="0">
     <text lang="English" displayName="Concoction" />
     <text lang="Japanese" displayName="調合薬" />
+    <text lang="Spanish" displayName="Brebaje" />
+    <text lang="French" displayName="Breuvage" />
+    <text lang="German" displayName="Mixtur" />
+    <text lang="Italian" displayName="Pozione" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="279" name="Elixir" type="Consumable" subType="HealingItem" maxUses="1" rank="0">
     <text lang="English" displayName="Elixir" />
     <text lang="Japanese" displayName="特効薬" />
+    <text lang="Spanish" displayName="Elixir" />
+    <text lang="French" displayName="Élixir" />
+    <text lang="German" displayName="Elixier" />
+    <text lang="Italian" displayName="Elisir" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="280" name="HPTonic" type="Consumable" subType="StatTonic" maxUses="1" rank="0">
     <text lang="English" displayName="HP Tonic" />
     <text lang="Japanese" displayName="ＨＰの薬" />
+    <text lang="Spanish" displayName="Tónico PV" />
+    <text lang="French" displayName="Tonique PV" />
+    <text lang="German" displayName="Trank der KP" />
+    <text lang="Italian" displayName="Tonico PS" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="281" name="StrengthTonic" type="Consumable" subType="StatTonic" maxUses="1" rank="0">
     <text lang="English" displayName="Strength Tonic" />
     <text lang="Japanese" displayName="力の薬" />
+    <text lang="Spanish" displayName="Tónico Fue" />
+    <text lang="French" displayName="Tonique Frc" />
+    <text lang="German" displayName="Trank der Stä." />
+    <text lang="Italian" displayName="Tonico forza" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="282" name="MagicTonic" type="Consumable" subType="StatTonic" maxUses="1" rank="0">
     <text lang="English" displayName="Magic Tonic" />
     <text lang="Japanese" displayName="魔力の薬" />
+    <text lang="Spanish" displayName="Tónico Mag" />
+    <text lang="French" displayName="Tonique Mag" />
+    <text lang="German" displayName="Trank der Mag." />
+    <text lang="Italian" displayName="Tonico magia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="283" name="SkillTonic" type="Consumable" subType="StatTonic" maxUses="1" rank="0">
     <text lang="English" displayName="Skill Tonic" />
     <text lang="Japanese" displayName="技の薬" />
+    <text lang="Spanish" displayName="Tónico Hab" />
+    <text lang="French" displayName="Tonique Tec" />
+    <text lang="German" displayName="Trank der Fäh." />
+    <text lang="Italian" displayName="Tonico abilità" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="284" name="SpeedTonic" type="Consumable" subType="StatTonic" maxUses="1" rank="0">
     <text lang="English" displayName="Speed Tonic" />
     <text lang="Japanese" displayName="速さの薬" />
+    <text lang="Spanish" displayName="Tónico Vel" />
+    <text lang="French" displayName="Tonique Vit" />
+    <text lang="German" displayName="Trank der Ges." />
+    <text lang="Italian" displayName="Tonico velocità" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="285" name="LuckTonic" type="Consumable" subType="StatTonic" maxUses="1" rank="0">
     <text lang="English" displayName="Luck Tonic" />
     <text lang="Japanese" displayName="幸運の薬" />
+    <text lang="Spanish" displayName="Tónico Sue" />
+    <text lang="French" displayName="Tonique Cha" />
+    <text lang="German" displayName="Trank des Glk." />
+    <text lang="Italian" displayName="Tonico fortuna" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="286" name="DefenseTonic" type="Consumable" subType="StatTonic" maxUses="1" rank="0">
     <text lang="English" displayName="Defense Tonic" />
     <text lang="Japanese" displayName="守備の薬" />
+    <text lang="Spanish" displayName="Tónico Def" />
+    <text lang="French" displayName="Tonique Déf" />
+    <text lang="German" displayName="Trank der Ver." />
+    <text lang="Italian" displayName="Tonico difesa" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="287" name="ResistanceTonic" type="Consumable" subType="StatTonic" maxUses="1" rank="0">
     <text lang="English" displayName="Resistance Tonic" />
     <text lang="Japanese" displayName="魔防の薬" />
+    <text lang="Spanish" displayName="Tónico Res" />
+    <text lang="French" displayName="Tonique Rés" />
+    <text lang="German" displayName="Trank der Res." />
+    <text lang="Italian" displayName="Ton. resistenza" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="288" name="AzurasSalve" type="Consumable" subType="SpecialConsumable" maxUses="1" rank="0">
     <text lang="English" displayName="Azura's Salve" />
     <text lang="Japanese" displayName="アクアの秘薬" />
+    <text lang="Spanish" displayName="Bálsamo Azura" />
+    <text lang="French" displayName="Baume d'Azura" />
+    <text lang="German" displayName="Azuras Salbe" />
+    <text lang="Italian" displayName="Balsamo Azura" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="289" name="GuntersPotion" type="Consumable" subType="SpecialConsumable" maxUses="1" rank="0">
     <text lang="English" displayName="Gunter's Potion" />
     <text lang="Japanese" displayName="ギュンターの良薬" />
+    <text lang="Spanish" displayName="Poción Gunter" />
+    <text lang="French" displayName="Potion (Gunt.)" />
+    <text lang="German" displayName="Gunters Trank" />
+    <text lang="Italian" displayName="Pozione Gunter" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="290" name="AsugisConfect" type="Consumable" subType="SpecialConsumable" maxUses="1" rank="0">
     <text lang="English" displayName="Asugi's Confect" />
     <text lang="Japanese" displayName="グレイの創作菓子" />
+    <text lang="Spanish" displayName="Dulce de Asugi" />
+    <text lang="French" displayName="Bonbon (Asugi)" />
+    <text lang="German" displayName="Asugis Konfekt" />
+    <text lang="Italian" displayName="Dolce di Asugi" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="291" name="RainbowTonic" type="Consumable" subType="SpecialConsumable" maxUses="1" rank="0">
     <text lang="English" displayName="Rainbow Tonic" />
     <text lang="Japanese" displayName="虹の秘薬" />
+    <text lang="Spanish" displayName="Tónico Lumen" />
+    <text lang="French" displayName="Tonique irisé" />
+    <text lang="German" displayName="Farbentrank" />
+    <text lang="Italian" displayName="Tonico irideo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="292" name="SeedOfTrust" type="Consumable" subType="SpecialConsumable" maxUses="1" rank="0">
     <text lang="English" displayName="Seed of Trust" />
     <text lang="Japanese" displayName="絆の種" />
+    <text lang="Spanish" displayName="Semilla lealtad" />
+    <text lang="French" displayName="Graine d'amitié" />
+    <text lang="German" displayName="Saat der Treue" />
+    <text lang="Italian" displayName="Seme amicizia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="293" name="AllegroHarp" type="Consumable" subType="SpecialConsumable" maxUses="1" rank="0">
     <text lang="English" displayName="Allegro Harp" />
     <text lang="Japanese" displayName="ハープ" />
+    <text lang="Spanish" displayName="Arpa alegro" />
+    <text lang="French" displayName="Harpe Allegro" />
+    <text lang="German" displayName="Allegro-Harfe" />
+    <text lang="Italian" displayName="Arpa" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="294" name="ShellHorn" type="Consumable" subType="SpecialConsumable" maxUses="1" rank="0">
     <text lang="English" displayName="Shell Horn" />
     <text lang="Japanese" displayName="ほら貝" />
+    <text lang="Spanish" displayName="Caracola" />
+    <text lang="French" displayName="Cor coquille" />
+    <text lang="German" displayName="Muschelflöte" />
+    <text lang="Italian" displayName="Conchiglia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="295" name="Saw" type="NPC" subType="Saw" maxUses="0" rank="1">
     <text lang="English" displayName="Saw" />
     <text lang="Japanese" displayName="絡繰鋸" />
+    <text lang="Spanish" displayName="Sierra" />
+    <text lang="French" displayName="Scie" />
+    <text lang="German" displayName="Säge" />
+    <text lang="Italian" displayName="Sega" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="296" name="BigSaw" type="NPC" subType="Saw" maxUses="0" rank="4">
     <text lang="English" displayName="Big Saw" />
     <text lang="Japanese" displayName="絡繰巨大鋸" />
+    <text lang="Spanish" displayName="Sierra grande" />
+    <text lang="French" displayName="Grande scie" />
+    <text lang="German" displayName="Riesensäge" />
+    <text lang="Italian" displayName="Sega grande" />
     <categories npcOnly="true" personal="false" />
   </item>
   <item id="297" name="DoorKey" type="Consumable" subType="Key" maxUses="1" rank="0">
     <text lang="English" displayName="Door Key" />
     <text lang="Japanese" displayName="扉の鍵" />
+    <text lang="Spanish" displayName="Llave puerta" />
+    <text lang="French" displayName="Clé porte" />
+    <text lang="German" displayName="Türschlüssel" />
+    <text lang="Italian" displayName="Chiave porta" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="298" name="ChestKey" type="Consumable" subType="Key" maxUses="1" rank="0">
     <text lang="English" displayName="Chest Key" />
     <text lang="Japanese" displayName="宝の鍵" />
+    <text lang="Spanish" displayName="Llave cofre" />
+    <text lang="French" displayName="Clé coffre" />
+    <text lang="German" displayName="Truhenschlü." />
+    <text lang="Italian" displayName="Chiave cassa" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="299" name="MasterKey" type="Consumable" subType="Key" maxUses="1" rank="0">
     <text lang="English" displayName="Master Key" />
     <text lang="Japanese" displayName="万能鍵" />
+    <text lang="Spanish" displayName="Llave maestra" />
+    <text lang="French" displayName="Passe" />
+    <text lang="German" displayName="Allzweckschlü." />
+    <text lang="Italian" displayName="Passepartout" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="300" name="SeraphRobe" type="Consumable" subType="StatBooster" maxUses="1" rank="0">
     <text lang="English" displayName="Seraph Robe" />
     <text lang="Japanese" displayName="天使の衣" />
+    <text lang="Spanish" displayName="Túnica angélica" />
+    <text lang="French" displayName="Robe sainte" />
+    <text lang="German" displayName="Engelsrobe" />
+    <text lang="Italian" displayName="Veste angelica" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="301" name="EnergyDrop" type="Consumable" subType="StatBooster" maxUses="1" rank="0">
     <text lang="English" displayName="Energy Drop" />
     <text lang="Japanese" displayName="力のしずく" />
+    <text lang="Spanish" displayName="Gota energía" />
+    <text lang="French" displayName="Goutte" />
+    <text lang="German" displayName="Energietropfen" />
+    <text lang="Italian" displayName="Fluido energia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="302" name="SpiritDust" type="Consumable" subType="StatBooster" maxUses="1" rank="0">
     <text lang="English" displayName="Spirit Dust" />
     <text lang="Japanese" displayName="精霊の粉" />
+    <text lang="Spanish" displayName="Polvo espiritual" />
+    <text lang="French" displayName="Poudre" />
+    <text lang="German" displayName="Geist" />
+    <text lang="Italian" displayName="Polvere spirito" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="303" name="SecretBook" type="Consumable" subType="StatBooster" maxUses="1" rank="0">
     <text lang="English" displayName="Secret Book" />
     <text lang="Japanese" displayName="秘伝の書" />
+    <text lang="Spanish" displayName="Libro secreto" />
+    <text lang="French" displayName="Tome secret" />
+    <text lang="German" displayName="Geheimbuch" />
+    <text lang="Italian" displayName="Tomo segreto" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="304" name="Speedwing" type="Consumable" subType="StatBooster" maxUses="1" rank="0">
     <text lang="English" displayName="Speedwing" />
     <text lang="Japanese" displayName="はやての羽" />
+    <text lang="Spanish" displayName="Alas veloces" />
+    <text lang="French" displayName="Aile éclair" />
+    <text lang="German" displayName="Tempofeder" />
+    <text lang="Italian" displayName="Ala rapida" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="305" name="GoddessIcon" type="Consumable" subType="StatBooster" maxUses="1" rank="0">
     <text lang="English" displayName="Goddess Icon" />
     <text lang="Japanese" displayName="女神の像" />
+    <text lang="Spanish" displayName="Icono diosa" />
+    <text lang="French" displayName="Icône divine" />
+    <text lang="German" displayName="Göttinnenikone" />
+    <text lang="Italian" displayName="Icona divina" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="306" name="Dracoshield" type="Consumable" subType="StatBooster" maxUses="1" rank="0">
     <text lang="English" displayName="Dracoshield" />
     <text lang="Japanese" displayName="竜の盾" />
+    <text lang="Spanish" displayName="Escudo dragón" />
+    <text lang="French" displayName="Écu dragon" />
+    <text lang="German" displayName="Draco-Schild" />
+    <text lang="Italian" displayName="Dragoscudo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="307" name="Talisman" type="Consumable" subType="StatBooster" maxUses="1" rank="0">
     <text lang="English" displayName="Talisman" />
     <text lang="Japanese" displayName="魔よけ" />
+    <text lang="Spanish" displayName="Talismán" />
+    <text lang="French" displayName="Talisman" />
+    <text lang="German" displayName="Talisman" />
+    <text lang="Italian" displayName="Talismano" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="308" name="DragonHerbs" type="Consumable" subType="StatBooster" maxUses="1" rank="0">
     <text lang="English" displayName="Dragon Herbs" />
     <text lang="Japanese" displayName="神竜草" />
+    <text lang="Spanish" displayName="Hierbas dragón" />
+    <text lang="French" displayName="Herbes dragon" />
+    <text lang="German" displayName="Drachenkräuter" />
+    <text lang="Italian" displayName="Erba drago" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="309" name="Boots" type="Consumable" subType="StatBooster" maxUses="1" rank="0">
     <text lang="English" displayName="Boots" />
     <text lang="Japanese" displayName="ブーツ" />
+    <text lang="Spanish" displayName="Botas" />
+    <text lang="French" displayName="Bottes" />
+    <text lang="German" displayName="Stiefel" />
+    <text lang="Italian" displayName="Stivali" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="310" name="ArmsScroll" type="Consumable" subType="StatBooster" maxUses="1" rank="0">
     <text lang="English" displayName="Arms Scroll" />
     <text lang="Japanese" displayName="術書" />
+    <text lang="Spanish" displayName="Rollo marcial" />
+    <text lang="French" displayName="Martialis" />
+    <text lang="German" displayName="Waffenschriftr." />
+    <text lang="Italian" displayName="Pergamena" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="311" name="MasterSeal" type="Consumable" subType="ClassChanger" maxUses="1" rank="0">
     <text lang="English" displayName="Master Seal" />
     <text lang="Japanese" displayName="マスタープルフ" />
+    <text lang="Spanish" displayName="Sello maestro" />
+    <text lang="French" displayName="Magister" />
+    <text lang="German" displayName="Meistersiegel" />
+    <text lang="Italian" displayName="Sigillo supremo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="312" name="HeartSeal" type="Consumable" subType="ClassChanger" maxUses="1" rank="0">
     <text lang="English" displayName="Heart Seal" />
     <text lang="Japanese" displayName="パラレルプルフ" />
+    <text lang="Spanish" displayName="Sello corazón" />
+    <text lang="French" displayName="Sceau du cœur" />
+    <text lang="German" displayName="Herzsiegel" />
+    <text lang="Italian" displayName="Sigillo cuore" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="313" name="PartnerSeal" type="Consumable" subType="ClassChanger" maxUses="1" rank="0">
     <text lang="English" displayName="Partner Seal" />
     <text lang="Japanese" displayName="マリッジプルフ" />
+    <text lang="Spanish" displayName="Sello alianza" />
+    <text lang="French" displayName="Sceau d'union" />
+    <text lang="German" displayName="Partnersiegel" />
+    <text lang="Italian" displayName="Sigillo compagno" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="314" name="FriendshipSeal" type="Consumable" subType="ClassChanger" maxUses="1" rank="0">
     <text lang="English" displayName="Friendship Seal" />
     <text lang="Japanese" displayName="バディプルフ" />
+    <text lang="Spanish" displayName="Sello amistad" />
+    <text lang="French" displayName="Sceau d'amitié" />
+    <text lang="German" displayName="Freundessiegel" />
+    <text lang="Italian" displayName="Sigillo amicizia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="315" name="EternalSeal" type="Consumable" subType="ClassChanger" maxUses="1" rank="0">
     <text lang="English" displayName="Eternal Seal" />
     <text lang="Japanese" displayName="エターナルプルフ" />
+    <text lang="Spanish" displayName="Sello eterno" />
+    <text lang="French" displayName="Sceau éternel" />
+    <text lang="German" displayName="Ewiges Siegel" />
+    <text lang="Italian" displayName="Sigillo eterno" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="316" name="DreadScroll" type="Consumable" subType="ClassChanger" maxUses="1" rank="0">
     <text lang="English" displayName="Dread Scroll" />
     <text lang="Japanese" displayName="魔戦士の巻物" />
+    <text lang="Spanish" displayName="R. ajusticiador" />
+    <text lang="French" displayName="Vir terrore" />
+    <text lang="German" displayName="Dunkelschriftr." />
+    <text lang="Italian" displayName="P. cuortempesta" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="317" name="EbonWing" type="Consumable" subType="ClassChanger" maxUses="1" rank="0">
     <text lang="English" displayName="Ebon Wing" />
     <text lang="Japanese" displayName="黒天馬の翼" />
+    <text lang="Spanish" displayName="Ala de ébano" />
+    <text lang="French" displayName="Aile d'ébène" />
+    <text lang="German" displayName="Finsterschwing." />
+    <text lang="Italian" displayName="Ala d'ebano" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="318" name="Ganglari2" type="Sword" subType="Sword" maxUses="0" rank="0">
     <!-- Name is to distinguish it from the other Ganglari in the picker.-->
     <text lang="English" displayName="Ganglari (Reward)" />
     <text lang="Japanese" displayName="ガングレリ" />
+    <text lang="Spanish" displayName="Ganglari (2)" />
+    <text lang="French" displayName="Ganglari (2)" />
+    <text lang="German" displayName="Gangleri (2)" />
+    <text lang="Italian" displayName="Ganglari (2)" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="319" name="GoldBar" type="Held" subType="GoldBar" maxUses="0" rank="0">
     <text lang="English" displayName="Gold Bar" />
     <text lang="Japanese" displayName="小判" />
+    <text lang="Spanish" displayName="Lingote de oro" />
+    <text lang="French" displayName="Lingot d'or" />
+    <text lang="German" displayName="Goldbarren" />
+    <text lang="Italian" displayName="Lingotto d'oro" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="320" name="BattleSeal" type="Held" subType="Emblem" maxUses="0" rank="0">
     <text lang="English" displayName="Battle Seal" />
     <text lang="Japanese" displayName="戦闘王の紋章" />
+    <text lang="Spanish" displayName="Sello batallador" />
+    <text lang="French" displayName="Sceau du brave" />
+    <text lang="German" displayName="Kampfsiegel" />
+    <text lang="Italian" displayName="Sigillo battaglia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="321" name="VisitationSeal" type="Held" subType="Emblem" maxUses="0" rank="0">
     <text lang="English" displayName="Visitation Seal" />
     <text lang="Japanese" displayName="訪問王の紋章" />
+    <text lang="Spanish" displayName="Sello visita real" />
+    <text lang="French" displayName="Sceau de l'hôte" />
+    <text lang="German" displayName="Besuchersiegel" />
+    <text lang="Italian" displayName="Sigillo visita" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="322" name="OffspringSeal" type="Consumable" subType="ClassChanger" maxUses="1" rank="0">
     <text lang="English" displayName="Offspring Seal" />
     <text lang="Japanese" displayName="チャイルドプルフ" />
+    <text lang="Spanish" displayName="Sello vástago" />
+    <text lang="French" displayName="Sceau héritier" />
+    <text lang="German" displayName="Erbschaftsiegel" />
+    <text lang="Italian" displayName="Sigillo progenie" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="323" name="SightingLens" type="Consumable" subType="ClassChanger" maxUses="1" rank="0">
     <text lang="English" displayName="Sighting Lens" />
     <text lang="Japanese" displayName="シューター砲台" />
+    <text lang="Spanish" displayName="Lente puntería" />
+    <text lang="French" displayName="Lunette" />
+    <text lang="German" displayName="Fernrohr" />
+    <text lang="Italian" displayName="Occhiali" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="324" name="WitchsMark" type="Consumable" subType="ClassChanger" maxUses="1" rank="0">
     <text lang="English" displayName="Witch's Mark" />
     <text lang="Japanese" displayName="魔女の魔法陣" />
+    <text lang="Spanish" displayName="Marca de bruja" />
+    <text lang="French" displayName="Nez crochu" />
+    <text lang="German" displayName="Hexenmal" />
+    <text lang="Italian" displayName="Marchio strega" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="325" name="Paragon" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Paragon" />
     <text lang="Japanese" displayName="エリートの書" />
+    <text lang="Spanish" displayName="Paragón" />
+    <text lang="French" displayName="Élite" />
+    <text lang="German" displayName="Elite" />
+    <text lang="Italian" displayName="Duplex" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="326" name="ArmorShield" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Armor Shield" />
     <text lang="Japanese" displayName="鎧盾の書" />
+    <text lang="Spanish" displayName="E. blindado" />
+    <text lang="French" displayName="Bouclier blindé" />
+    <text lang="German" displayName="Panzerschild" />
+    <text lang="Italian" displayName="Scudo pesante" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="327" name="BeastShield" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Beast Shield" />
     <text lang="Japanese" displayName="獣盾の書" />
+    <text lang="Spanish" displayName="Escudo bestial" />
+    <text lang="French" displayName="Bouclier bestial" />
+    <text lang="German" displayName="Bestienschild" />
+    <text lang="Italian" displayName="Scudo ferale" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="328" name="WingedShield" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Winged Shield" />
     <text lang="Japanese" displayName="翼盾の書" />
+    <text lang="Spanish" displayName="Escudo alado" />
+    <text lang="French" displayName="Bouclier ailé" />
+    <text lang="German" displayName="Flügelschild" />
+    <text lang="Italian" displayName="Scudo alato" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="329" name="PointBlank" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Point Blank" />
     <text lang="Japanese" displayName="近接射撃の書" />
+    <text lang="Spanish" displayName="A quemarropa" />
+    <text lang="French" displayName="À bout portant" />
+    <text lang="German" displayName="Blattschuss" />
+    <text lang="Italian" displayName="Mischia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="330" name="BoldStance" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Bold Stance" />
     <text lang="Japanese" displayName="攻防一体の陣の書" />
+    <text lang="Spanish" displayName="Ademán audaz" />
+    <text lang="French" displayName="Posture hardie" />
+    <text lang="German" displayName="Draufgänger" />
+    <text lang="Italian" displayName="Audacia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="331" name="Strengthtaker" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Strengthtaker" />
     <text lang="Japanese" displayName="力の吸収の書" />
+    <text lang="Spanish" displayName="Ejec. fuerte" />
+    <text lang="French" displayName="Vole-Force" />
+    <text lang="German" displayName="Stärkedieb" />
+    <text lang="Italian" displayName="Suggiforza" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="332" name="Magictaker" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Magictaker" />
     <text lang="Japanese" displayName="魔力の吸収の書" />
+    <text lang="Spanish" displayName="Ejec. mágica" />
+    <text lang="French" displayName="Vole-Magie" />
+    <text lang="German" displayName="Magiedieb" />
+    <text lang="Italian" displayName="Suggimagia" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="333" name="Skilltaker" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Skilltaker" />
     <text lang="Japanese" displayName="技の吸収の書" />
+    <text lang="Spanish" displayName="Ejecución hábil" />
+    <text lang="French" displayName="Vole-Technique" />
+    <text lang="German" displayName="Fäh.-Dieb" />
+    <text lang="Italian" displayName="Suggiabilità" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="334" name="Speedtaker" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Speedtaker" />
     <text lang="Japanese" displayName="速さの吸収の書" />
+    <text lang="Spanish" displayName="Ejecución veloz" />
+    <text lang="French" displayName="Vole-Vitesse" />
+    <text lang="German" displayName="Ges.-Dieb" />
+    <text lang="Italian" displayName="Suggivelocità" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="335" name="Lucktaker" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Lucktaker" />
     <text lang="Japanese" displayName="幸運の吸収の書" />
+    <text lang="Spanish" displayName="Ejec. dichosa" />
+    <text lang="French" displayName="Vole-Chance" />
+    <text lang="German" displayName="Glücksdieb" />
+    <text lang="Italian" displayName="Suggifortuna" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="336" name="Defensetaker" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Defensetaker" />
     <text lang="Japanese" displayName="守備の吸収の書" />
+    <text lang="Spanish" displayName="Ejec. tutelar" />
+    <text lang="French" displayName="Vole-Défense" />
+    <text lang="German" displayName="Ver.-Dieb" />
+    <text lang="Italian" displayName="Suggidifesa" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="337" name="Resistancetaker" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Resistancetaker" />
     <text lang="Japanese" displayName="魔防の吸収の書" />
+    <text lang="Spanish" displayName="Ejec. sólida" />
+    <text lang="French" displayName="Vole-Rés." />
+    <text lang="German" displayName="Resistenzdieb" />
+    <text lang="Italian" displayName="Suggiresistenza" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="338" name="MasterEmblem" type="Held" subType="Emblem" maxUses="0" rank="0">
     <text lang="English" displayName="Master Emblem" />
     <text lang="Japanese" displayName="絆の王の紋章" />
+    <text lang="Spanish" displayName="Embl. maestro" />
+    <text lang="French" displayName="Embl. Maître" />
+    <text lang="German" displayName="Meisteremblem" />
+    <text lang="Italian" displayName="Emblema supr." />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="339" name="Falchion" type="Sword" subType="Sword" maxUses="0" rank="1">
     <text lang="English" displayName="Falchion" />
     <text lang="Japanese" displayName="神剣ファルシオン" />
+    <text lang="Spanish" displayName="Falchion" />
+    <text lang="French" displayName="Falchion" />
+    <text lang="German" displayName="Falchion" />
+    <text lang="Italian" displayName="Falchion" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="340" name="Ragnell" type="Sword" subType="Sword" maxUses="0" rank="1">
     <text lang="English" displayName="Ragnell" />
     <text lang="Japanese" displayName="神剣ラグネル" />
+    <text lang="Spanish" displayName="Ragnell" />
+    <text lang="French" displayName="Ragnell" />
+    <text lang="German" displayName="Ragnell" />
+    <text lang="Italian" displayName="Ragnell" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="341" name="ParallelFalchion" type="Sword" subType="Sword" maxUses="0" rank="1">
     <text lang="English" displayName="Parallel Falchion" />
     <text lang="Japanese" displayName="裏剣ファルシオン" />
+    <text lang="Spanish" displayName="Falchion linaje" />
+    <text lang="French" displayName="Xéno-Falchion" />
+    <text lang="German" displayName="Dim.-Falchion" />
+    <text lang="Italian" displayName="Falchion gemina" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="342" name="Thoron" type="Tome" subType="Tome" maxUses="0" rank="1">
     <text lang="English" displayName="Thoron" />
     <text lang="Japanese" displayName="雷書トロン" />
+    <text lang="Spanish" displayName="Thoron" />
+    <text lang="French" displayName="Thoron" />
+    <text lang="German" displayName="Thoron" />
+    <text lang="Italian" displayName="Thoron" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="343" name="MarthsSpatha" type="Sword" subType="Sword" maxUses="0" rank="3">
     <text lang="English" displayName="Marth's Spatha" />
     <text lang="Japanese" displayName="マルスの模擬剣" />
+    <text lang="Spanish" displayName="Spatha Marth" />
+    <text lang="French" displayName="Spatha (Marth)" />
+    <text lang="German" displayName="Marths Spatha" />
+    <text lang="Italian" displayName="Lama di Marth" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="344" name="IkesBackup" type="Sword" subType="Sword" maxUses="0" rank="3">
     <text lang="English" displayName="Ike's Backup" />
     <text lang="Japanese" displayName="アイクの模擬剣" />
+    <text lang="Spanish" displayName="Repuesto Ike" />
+    <text lang="French" displayName="Soutien d'Ike" />
+    <text lang="German" displayName="Ikes Ersatz" />
+    <text lang="Italian" displayName="Lama di Ike" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="345" name="LucinasEstoc" type="Sword" subType="Sword" maxUses="0" rank="3">
     <text lang="English" displayName="Lucina's Estoc" />
     <text lang="Japanese" displayName="ルキナの模擬剣" />
+    <text lang="Spanish" displayName="Estoque Lucina" />
+    <text lang="French" displayName="Fer de Lucina" />
+    <text lang="German" displayName="Lucinas Estoc" />
+    <text lang="Italian" displayName="Lama di Lucina" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="346" name="RobinsPrimer" type="Tome" subType="Tome" maxUses="0" rank="3">
     <text lang="English" displayName="Robin's Primer" />
     <text lang="Japanese" displayName="ルフレの写本" />
+    <text lang="Spanish" displayName="Manual Daraen" />
+    <text lang="French" displayName="Livre de Daraen" />
+    <text lang="German" displayName="Daraens Kopie" />
+    <text lang="Italian" displayName="Libro di Daraen" />
     <categories npcOnly="false" personal="true" />
   </item>
   <item id="347" name="Gold1000" type="Held" subType="Gold" maxUses="0" rank="0">
     <text lang="English" displayName="1000G" />
     <text lang="Japanese" displayName="1000G" />
+    <text lang="Spanish" displayName="1000 M" />
+    <text lang="French" displayName="1 000 écus" />
+    <text lang="German" displayName="1.000 Gold" />
+    <text lang="Italian" displayName="1000 monete" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="348" name="Gold2000" type="Held" subType="Gold" maxUses="0" rank="0">
     <text lang="English" displayName="2000G" />
     <text lang="Japanese" displayName="2000G" />
+    <text lang="Spanish" displayName="2000 M" />
+    <text lang="French" displayName="2 000 écus" />
+    <text lang="German" displayName="2.000 Gold" />
+    <text lang="Italian" displayName="2000 monete" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="349" name="Gold3000" type="Held" subType="Gold" maxUses="0" rank="0">
     <text lang="English" displayName="3000G" />
     <text lang="Japanese" displayName="3000G" />
+    <text lang="Spanish" displayName="3000 M" />
+    <text lang="French" displayName="3 000 écus" />
+    <text lang="German" displayName="3.000 Gold" />
+    <text lang="Italian" displayName="3000 monete" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="350" name="Gold5000" type="Held" subType="Gold" maxUses="0" rank="0">
     <text lang="English" displayName="5000G" />
     <text lang="Japanese" displayName="5000G" />
+    <text lang="Spanish" displayName="5000 M" />
+    <text lang="French" displayName="5 000 écus" />
+    <text lang="German" displayName="5.000 Gold" />
+    <text lang="Italian" displayName="5000 monete" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="351" name="Gold7000" type="Held" subType="Gold" maxUses="0" rank="0">
     <text lang="English" displayName="7000G" />
     <text lang="Japanese" displayName="7000G" />
+    <text lang="Spanish" displayName="7000 M" />
+    <text lang="French" displayName="7 000 écus" />
+    <text lang="German" displayName="7.000 Gold" />
+    <text lang="Italian" displayName="7000 monete" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="352" name="Gold10000" type="Held" subType="Gold" maxUses="0" rank="0">
     <text lang="English" displayName="10000G" />
     <text lang="Japanese" displayName="10000G" />
+    <text lang="Spanish" displayName="10 000 M" />
+    <text lang="French" displayName="10 000 écus" />
+    <text lang="German" displayName="10.000 Gold" />
+    <text lang="Italian" displayName="10.000 monete" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="353" name="Gold20000" type="Held" subType="Gold" maxUses="0" rank="0">
     <text lang="English" displayName="20000G" />
     <text lang="Japanese" displayName="20000G" />
+    <text lang="Spanish" displayName="20 000 M" />
+    <text lang="French" displayName="20 000 écus" />
+    <text lang="German" displayName="20.000 Gold" />
+    <text lang="Italian" displayName="20.000 monete" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="354" name="Obstacle" type="Held" subType="Obstacle" maxUses="0" rank="0">
     <text lang="English" displayName="Obstacle" />
     <text lang="Japanese" displayName="障害物" />
+    <text lang="Spanish" displayName="Obstáculo" />
+    <text lang="French" displayName="Obstacle" />
+    <text lang="German" displayName="Hindernis" />
+    <text lang="Italian" displayName="Ostacolo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="355" name="Pebble" type="Shuriken" subType="Dagger" maxUses="0" rank="1">
     <text lang="English" displayName="Pebble" />
     <text lang="Japanese" displayName="小石" />
+    <text lang="Spanish" displayName="Piedra" />
+    <text lang="French" displayName="Caillou" />
+    <text lang="German" displayName="Kieselstein" />
+    <text lang="Italian" displayName="Ciottolo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="356" name="HerosBrand" type="Consumable" subType="ClassChanger" maxUses="1" rank="0">
     <text lang="English" displayName="Hero's Brand" />
     <text lang="Japanese" displayName="英雄王の紋章" />
+    <text lang="Spanish" displayName="Sello del Héroe" />
+    <text lang="French" displayName="Héroïsme" />
+    <text lang="German" displayName="Heldensiegel" />
+    <text lang="Italian" displayName="Re eroico" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="357" name="ExaltsBrand" type="Consumable" subType="ClassChanger" maxUses="1" rank="0">
     <text lang="English" displayName="Exalt's Brand" />
     <text lang="Japanese" displayName="聖痕の紋章" />
+    <text lang="Spanish" displayName="S. Venerable" />
+    <text lang="French" displayName="Sainteté" />
+    <text lang="German" displayName="Erhabenensiegel" />
+    <text lang="Italian" displayName="Eletta" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="358" name="Unknown358" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="Falchion" />
     <text lang="Japanese" displayName="神剣ファルシオン" />
+    <text lang="Spanish" displayName="Falchion" />
+    <text lang="French" displayName="Falchion" />
+    <text lang="German" displayName="Falchion" />
+    <text lang="Italian" displayName="Falchion" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="359" name="FellBrand" type="Consumable" subType="ClassChanger" maxUses="1" rank="0">
     <text lang="English" displayName="Fell Brand" />
     <text lang="Japanese" displayName="邪痕の紋章" />
+    <text lang="Spanish" displayName="Sello del Caído" />
+    <text lang="French" displayName="Déchéance" />
+    <text lang="German" displayName="Dämonensiegel" />
+    <text lang="Italian" displayName="Drago Maligno" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="360" name="FirstBlood" type="Consumable" subType="StatBooster" maxUses="1" rank="0">
     <text lang="English" displayName="First Blood" />
     <text lang="Japanese" displayName="神祖竜の血" />
+    <text lang="Spanish" displayName="S. primigenia" />
+    <text lang="French" displayName="Sang dragun." />
+    <text lang="German" displayName="Urblut" />
+    <text lang="Italian" displayName="Sangue primevo" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="361" name="Unknown361" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
-    <text lang="Japanese" displayName="displayName" />
+    <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="362" name="VanguardBrand" type="Consumable" subType="ClassChanger" maxUses="1" rank="0">
     <text lang="English" displayName="Vanguard Brand" />
     <text lang="Japanese" displayName="神将の紋章" />
+    <text lang="Spanish" displayName="Sello del adalid" />
+    <text lang="French" displayName="Rédemption" />
+    <text lang="German" displayName="Vorreitersiegel" />
+    <text lang="Italian" displayName="Condottiero" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="363" name="HeavyBlade" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Heavy Blade" />
     <text lang="Japanese" displayName="剛剣の書" />
+    <text lang="Spanish" displayName="Sable pesado" />
+    <text lang="French" displayName="Lame lourde" />
+    <text lang="German" displayName="Schwere Klinge" />
+    <text lang="Italian" displayName="Lame grevi" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="364" name="VeteranIntuition" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Veteran Intuition" />
     <text lang="Japanese" displayName="歴戦の勘の書" />
+    <text lang="Spanish" displayName="Pericia veterana" />
+    <text lang="French" displayName="Vétéran assagi" />
+    <text lang="German" displayName="Bauchgefühl" />
+    <text lang="Italian" displayName="Intuito maestro" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="365" name="Aether" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Aether" />
     <text lang="Japanese" displayName="天空の書" />
+    <text lang="Spanish" displayName="Éter" />
+    <text lang="French" displayName="Éther" />
+    <text lang="German" displayName="Aithir" />
+    <text lang="Italian" displayName="Etere" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="366" name="Unknown366" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="367" name="Unknown367" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="368" name="Unknown368" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="369" name="Unknown369" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="370" name="Unknown370" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="371" name="Unknown371" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="372" name="Unknown372" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="373" name="Unknown373" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="374" name="Unknown374" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="375" name="Unknown375" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="376" name="Unknown376" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="377" name="Unknown377" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="378" name="Unknown378" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="379" name="Unknown379" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="380" name="Unknown380" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="381" name="Unknown381" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="382" name="Unknown382" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="383" name="Unknown383" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="384" name="Unknown384" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="385" name="Unknown385" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="386" name="Unknown386" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="387" name="Unknown387" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="388" name="Unknown388" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="389" name="Unknown389" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="390" name="Unknown390" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="391" name="Unknown391" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="392" name="Unknown392" type="Unknown" subType="Unknown" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
     <categories npcOnly="false" personal="false" />
   </item>
   <item id="393" name="Warp" type="Consumable" subType="SkillScroll" maxUses="1" rank="0">
     <text lang="English" displayName="Warp" />
     <text lang="Japanese" displayName="ワープの書" />
+    <text lang="Spanish" displayName="Transportar" />
+    <text lang="French" displayName="Téléport" />
+    <text lang="German" displayName="Teleport" />
+    <text lang="Italian" displayName="Teletrasporto" />
     <categories npcOnly="false" personal="false" />
   </item>
   <!-- template: 
-  <item id="0" name="InternalName" type="ItemType" subType="Sword" maxUses="0">
+  <item id="0" name="InternalName" type="ItemType" subType="ItemSubType" maxUses="0" rank="0">
     <text lang="English" displayName="DisplayName" />
     <text lang="Japanese" displayName="DisplayName" />
+    <text lang="Spanish" displayName="DisplayName" />
+    <text lang="French" displayName="DisplayName" />
+    <text lang="German" displayName="DisplayName" />
+    <text lang="Italian" displayName="DisplayName" />
+    <categories npcOnly="false" personal="false" />
   </item>
   -->
 </root>
