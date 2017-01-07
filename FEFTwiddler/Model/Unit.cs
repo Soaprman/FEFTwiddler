@@ -1097,14 +1097,14 @@ namespace FEFTwiddler.Model
             }
             set
             {
-                if (value.HP == 5) _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x01, true); else _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x01, false);
-                if (value.Str == 2) _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x02, true); else _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x02, false);
-                if (value.Mag == 2) _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x04, true); else _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x04, false);
-                if (value.Skl == 2) _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x08, true); else _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x08, false);
-                if (value.Spd == 2) _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x10, true); else _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x10, false);
-                if (value.Lck == 4) _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x20, true); else _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x20, false);
-                if (value.Def == 2) _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x40, true); else _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x40, false);
-                if (value.Res == 2) _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x80, true); else _rawBlock2[0x2B] = _rawBlock2[0x2B].SetFlag(0x80, false);
+                _rawBlock2[0x2B].SetFlag(0x01, value.HP == 5);
+                _rawBlock2[0x2B].SetFlag(0x02, value.Str == 2);
+                _rawBlock2[0x2B].SetFlag(0x04, value.Mag == 2);
+                _rawBlock2[0x2B].SetFlag(0x08, value.Skl == 2);
+                _rawBlock2[0x2B].SetFlag(0x10, value.Spd == 2);
+                _rawBlock2[0x2B].SetFlag(0x20, value.Lck == 4);
+                _rawBlock2[0x2B].SetFlag(0x40, value.Def == 2);
+                _rawBlock2[0x2B].SetFlag(0x80, value.Res == 2);
             }
         }
 
@@ -1118,27 +1118,85 @@ namespace FEFTwiddler.Model
                 Stat stats = new Stat()
                 {
                     HP = 0,
-                    Str = _rawBlock2[0x2C].GetFlag(0x02) ? (sbyte)4 : (sbyte)0,
-                    Mag = _rawBlock2[0x2C].GetFlag(0x04) ? (sbyte)4 : (sbyte)0,
-                    Skl = _rawBlock2[0x2C].GetFlag(0x08) ? (sbyte)4 : (sbyte)0,
-                    Spd = _rawBlock2[0x2C].GetFlag(0x10) ? (sbyte)4 : (sbyte)0,
-                    Lck = _rawBlock2[0x2C].GetFlag(0x20) ? (sbyte)4 : (sbyte)0,
-                    Def = _rawBlock2[0x2C].GetFlag(0x40) ? (sbyte)4 : (sbyte)0,
-                    Res = _rawBlock2[0x2C].GetFlag(0x80) ? (sbyte)4 : (sbyte)0
+                    Str = _rawBlock2[0x2C].GetFlag(0x01) ? (sbyte)4 : (sbyte)0,
+                    Mag = _rawBlock2[0x2C].GetFlag(0x02) ? (sbyte)4 : (sbyte)0,
+                    Skl = _rawBlock2[0x2C].GetFlag(0x04) ? (sbyte)4 : (sbyte)0,
+                    Spd = _rawBlock2[0x2C].GetFlag(0x08) ? (sbyte)4 : (sbyte)0,
+                    Lck = _rawBlock2[0x2C].GetFlag(0x10) ? (sbyte)4 : (sbyte)0,
+                    Def = _rawBlock2[0x2C].GetFlag(0x20) ? (sbyte)4 : (sbyte)0,
+                    Res = _rawBlock2[0x2C].GetFlag(0x40) ? (sbyte)4 : (sbyte)0
                 };
                 return stats;
             }
             set
             {
-                //if (value.HP == 4) _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x01, true); else _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x01, false);
-                if (value.Str == 4) _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x02, true); else _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x02, false);
-                if (value.Mag == 4) _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x04, true); else _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x04, false);
-                if (value.Skl == 4) _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x08, true); else _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x08, false);
-                if (value.Spd == 4) _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x10, true); else _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x10, false);
-                if (value.Lck == 4) _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x20, true); else _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x20, false);
-                if (value.Def == 4) _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x40, true); else _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x40, false);
-                if (value.Res == 4) _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x80, true); else _rawBlock2[0x2C] = _rawBlock2[0x2C].SetFlag(0x80, false);
+                _rawBlock2[0x2C].SetFlag(0x01, value.Str == 4);
+                _rawBlock2[0x2C].SetFlag(0x02, value.Mag == 4);
+                _rawBlock2[0x2C].SetFlag(0x04, value.Skl == 4);
+                _rawBlock2[0x2C].SetFlag(0x08, value.Spd == 4);
+                _rawBlock2[0x2C].SetFlag(0x10, value.Lck == 4);
+                _rawBlock2[0x2C].SetFlag(0x20, value.Def == 4);
+                _rawBlock2[0x2C].SetFlag(0x40, value.Res == 4);
             }
+        }
+
+        /// <summary>
+        /// Bonus stat from Rally skill. Might be used in the future.
+        /// </summary>
+        public Stat RallyBonusStats
+        {
+            get
+            {
+                Stat stats = new Stat()
+                {
+                    HP = 0,
+                    Str = _rawBlock2[0x2C].GetFlag(0x80) ? (sbyte)4 : (sbyte)0,
+                    Mag = _rawBlock2[0x2D].GetFlag(0x01) ? (sbyte)4 : (sbyte)0,
+                    Skl = _rawBlock2[0x2D].GetFlag(0x02) ? (sbyte)4 : (sbyte)0,
+                    Spd = _rawBlock2[0x2D].GetFlag(0x04) ? (sbyte)4 : (sbyte)0,
+                    Lck = _rawBlock2[0x2D].GetFlag(0x08) ? (sbyte)8 : (sbyte)0,
+                    Def = _rawBlock2[0x2D].GetFlag(0x10) ? (sbyte)4 : (sbyte)0,
+                    Res = _rawBlock2[0x2D].GetFlag(0x20) ? (sbyte)4 : (sbyte)0
+                };
+                return stats;
+            }
+            set
+            {
+                _rawBlock2[0x2C].SetFlag(0x80, value.Str == 4);
+                _rawBlock2[0x2D].SetFlag(0x01, value.Mag == 4);
+                _rawBlock2[0x2D].SetFlag(0x02, value.Skl == 4);
+                _rawBlock2[0x2D].SetFlag(0x04, value.Spd == 4);
+                _rawBlock2[0x2D].SetFlag(0x08, value.Lck == 8);
+                _rawBlock2[0x2D].SetFlag(0x10, value.Def == 4);
+                _rawBlock2[0x2D].SetFlag(0x20, value.Res == 4);
+            }
+        }
+
+        /// <summary>
+        /// Bonus stat from Rally Spectrum. Might be used in the future.
+        /// </summary>
+        public Stat RallySpectrumStats
+        {
+            get
+            {
+                if (_rawBlock2[0x2D].GetFlag(0x40))
+                    return new Stat() { HP = 0, Str = 2, Skl = 2, Spd = 2, Lck = 2, Def = 2, Res = 2 };
+                else
+                    return new Stat();
+            }
+            set
+            {
+                _rawBlock2[0x2D].SetFlag(0x40, value.Str == 2); // lazy check
+            }
+        }
+
+        /// <summary>
+        /// Bonus movement from Rally skill. Might be used in the future.
+        /// </summary>
+        public bool HasRallyMovement
+        {
+            get { return _rawBlock2[0x2D].GetFlag(0x80); }
+            set { _rawBlock2[0x2D].SetFlag(0x80, value); }
         }
 
         /// <summary>
@@ -1161,6 +1219,8 @@ namespace FEFTwiddler.Model
                 if (_rawBlock2[0x2F].GetFlag(0x20)) stats.Lck -= 1;
                 if (_rawBlock2[0x2F].GetFlag(0x40)) stats.Def += 2;
                 if (_rawBlock2[0x2F].GetFlag(0x80)) stats.Def -= 1;
+                if (_rawBlock2[0x30].GetFlag(0x01)) stats.Res += 2;
+                if (_rawBlock2[0x30].GetFlag(0x02)) stats.Res -= 1;
                 return stats;
             }
             set
@@ -1171,6 +1231,7 @@ namespace FEFTwiddler.Model
                 SetMealFlag(value.Spd, 0x2F, 0x04, 0x08);
                 SetMealFlag(value.Lck, 0x2F, 0x10, 0x20);
                 SetMealFlag(value.Def, 0x2F, 0x40, 0x80);
+                SetMealFlag(value.Res, 0x30, 0x01, 0x02);
             }
         }
 
