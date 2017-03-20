@@ -24,7 +24,7 @@ namespace FEFTwiddler.Utils
         public static string ToString(byte[] byteArray)
         {
             int length = 0;
-            while (BitConverter.ToInt16(byteArray, length) != 0)
+            while (length < byteArray.Length && BitConverter.ToInt16(byteArray, length) != 0)
                 length += 2;
             return Encoding.Unicode.GetString(byteArray, 0, length);
         }
