@@ -15,7 +15,7 @@ namespace FEFTwiddler.GUI.UnitViewer
     public partial class UnitBlockInfo : UserControl
     {
         private ToolTip _tooltip = new ToolTip();
-        private Model.ChapterSave _chapterSave;
+        private Model.IChapterSave _chapterSave;
         private Model.Unit _unit;
 
         public UnitBlockInfo()
@@ -24,7 +24,7 @@ namespace FEFTwiddler.GUI.UnitViewer
             InitializeControls();
         }
 
-        public void LoadUnit(Model.ChapterSave chapterSave, Model.Unit unit)
+        public void LoadUnit(Model.IChapterSave chapterSave, Model.Unit unit)
         {
             _chapterSave = chapterSave;
             _unit = unit;

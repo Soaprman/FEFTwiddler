@@ -9,7 +9,7 @@ namespace FEFTwiddler.GUI
     public partial class MainForm : Form
     {
         private Model.SaveFile _saveFile;
-        private Model.ChapterSave _chapterSave;
+        private Model.IChapterSave _chapterSave;
         private Model.GlobalSave _globalSave;
         private Model.Unit _selectedUnit;
         private Controls.Blanket _unitViewerBlanket;
@@ -65,7 +65,7 @@ namespace FEFTwiddler.GUI
         private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openFileDialog1.FileName = "";
-            openFileDialog1.Filter = "'Chapter' save|*";
+            openFileDialog1.Filter = "'Chapter', 'Map', or 'Global' save|*";
 
             var startupPath = Config.StartupPath;
             if (startupPath == "" || !Directory.Exists(startupPath)) startupPath = Application.StartupPath;
@@ -83,9 +83,11 @@ namespace FEFTwiddler.GUI
         {
             var saveFile = Model.SaveFile.FromPath(path);
 
-            if (saveFile.Type != Enums.SaveFileType.Chapter && saveFile.Type != Enums.SaveFileType.Global)
+            if (saveFile.Type != Enums.SaveFileType.Chapter &&
+                saveFile.Type != Enums.SaveFileType.Map &&
+                saveFile.Type != Enums.SaveFileType.Global)
             {
-                MessageBox.Show("This type of save is not supported yet. Only 'Chapter' and 'Global' saves are supported right now.");
+                MessageBox.Show("This type of save is not supported yet. Only 'Chapter', 'Map', and 'Global' saves are supported right now.");
                 return;
             }
             else
@@ -100,7 +102,10 @@ namespace FEFTwiddler.GUI
             switch (_saveFile.Type)
             {
                 case Enums.SaveFileType.Chapter:
-                    _chapterSave = Model.ChapterSave.FromSaveFile(_saveFile);
+                case Enums.SaveFileType.Map:
+                    if (_saveFile.Type == Enums.SaveFileType.Chapter) _chapterSave = Model.ChapterSave.FromSaveFile(_saveFile);
+                    else if (_saveFile.Type == Enums.SaveFileType.Map) _chapterSave = Model.MapSave.FromSaveFile(_saveFile);
+
                     _globalSave = null;
 
                     LoadChapterData();
@@ -157,6 +162,7 @@ namespace FEFTwiddler.GUI
             switch (_saveFile.Type)
             {
                 case Enums.SaveFileType.Chapter:
+                case Enums.SaveFileType.Map:
                     if (_chapterSave == null)
                     {
                         MessageBox.Show("No file is loaded");
@@ -524,7 +530,7 @@ namespace FEFTwiddler.GUI
         private void decompressFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openFileDialog1.FileName = "";
-            openFileDialog1.Filter = "'Chapter' or 'Global' save|*";
+            openFileDialog1.Filter = "'Chapter', 'Map', or 'Global' save|*";
 
             var startupPath = Config.StartupPath;
             if (startupPath == "" || !Directory.Exists(startupPath)) startupPath = Application.StartupPath;
@@ -536,12 +542,13 @@ namespace FEFTwiddler.GUI
 
                 var saveFile = Model.SaveFile.FromPath(openFileDialog1.FileName);
 
-                if (!(saveFile.Type == Enums.SaveFileType.Chapter || 
+                if (!(saveFile.Type == Enums.SaveFileType.Chapter ||
+                    saveFile.Type == Enums.SaveFileType.Map ||
                     saveFile.Type == Enums.SaveFileType.Global || 
                     saveFile.Type == Enums.SaveFileType.Exchange ||
                     saveFile.Type == Enums.SaveFileType.Versus))
                 {
-                    MessageBox.Show("This type of save is not supported yet. Only 'Chapter', 'Global', 'Exchange', and 'Versus' saves are supported by the compression/decompression right now.");
+                    MessageBox.Show("This type of save is not supported yet. Only 'Chapter', 'Map', 'Global', 'Exchange', and 'Versus' saves are supported by the compression/decompression right now.");
                     return;
                 }
 
@@ -567,11 +574,12 @@ namespace FEFTwiddler.GUI
                 var saveFile = Model.SaveFile.FromPath(openFileDialog1.FileName);
 
                 if (!(saveFile.Type == Enums.SaveFileType.Chapter ||
+                    saveFile.Type == Enums.SaveFileType.Map ||
                     saveFile.Type == Enums.SaveFileType.Global ||
                     saveFile.Type == Enums.SaveFileType.Exchange ||
                     saveFile.Type == Enums.SaveFileType.Versus))
                 {
-                    MessageBox.Show("This type of save is not supported yet. Only 'Chapter', 'Global', 'Exchange', and 'Versus' saves are supported by the compression/decompression right now.");
+                    MessageBox.Show("This type of save is not supported yet. Only 'Chapter', 'Map', 'Global', 'Exchange', and 'Versus' saves are supported by the compression/decompression right now.");
                     return;
                 }
 

@@ -12,9 +12,9 @@ namespace FEFTwiddler.GUI.ChapterData
 {
     public partial class ChapterHistory : Form
     {
-        private Model.ChapterSave _chapterSave;
+        private Model.IChapterSave _chapterSave;
 
-        public ChapterHistory(Model.ChapterSave chapterSave)
+        public ChapterHistory(Model.IChapterSave chapterSave)
         {
             _chapterSave = chapterSave;
             InitializeComponent();

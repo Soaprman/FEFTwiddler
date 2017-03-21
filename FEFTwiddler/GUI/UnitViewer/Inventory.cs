@@ -153,7 +153,7 @@ namespace FEFTwiddler.GUI.UnitViewer
 
                 Raw.Text = item.Hex();
             }
-            catch (ArgumentOutOfRangeException e)
+            catch (ArgumentOutOfRangeException)
             { }
 
             EventsOn();

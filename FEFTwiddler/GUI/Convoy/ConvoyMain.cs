@@ -15,7 +15,7 @@ namespace FEFTwiddler.GUI.Convoy
     [Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", typeof(IDesigner))]
     public partial class ConvoyMain : UserControl
     {
-        private Model.ChapterSave _chapterSave;
+        private Model.IChapterSave _chapterSave;
 
         public ConvoyMain()
         {
@@ -33,7 +33,7 @@ namespace FEFTwiddler.GUI.Convoy
             return (ConvoyMain)parent;
         }
 
-        public void LoadChapterSave(Model.ChapterSave chapterSave)
+        public void LoadChapterSave(Model.IChapterSave chapterSave)
         {
             _chapterSave = chapterSave;
             PopulateControls();

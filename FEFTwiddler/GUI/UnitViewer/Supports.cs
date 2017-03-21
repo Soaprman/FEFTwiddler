@@ -13,9 +13,9 @@ namespace FEFTwiddler.GUI.UnitViewer
     public partial class Supports : Form
     {
         private Model.Unit _unit;
-        private Model.ChapterSave _chapterSave;
+        private Model.IChapterSave _chapterSave;
 
-        public Supports(Model.ChapterSave chapterSave, Model.Unit unit)
+        public Supports(Model.IChapterSave chapterSave, Model.Unit unit)
         {
             _chapterSave = chapterSave;
             _unit = unit;

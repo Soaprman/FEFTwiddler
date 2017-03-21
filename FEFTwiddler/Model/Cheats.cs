@@ -52,7 +52,7 @@
             //};
         }
 
-        public static void UnlockAllStatues(ChapterSave chapterSave)
+        public static void UnlockAllStatues(IChapterSave chapterSave)
         {
             // TODO: Verify values. Not all of these probably need to be 0xFF (there are more bits than statues)
             // This gives both Corrins and both Kanas. If that ends up problematic, we'll have to change this a bit.
@@ -70,7 +70,7 @@
             };
         }
 
-        public static void MysteryCheat(ChapterSave chapterSave)
+        public static void MysteryCheat(IChapterSave chapterSave)
         {
             var timeMachine = new Model.NewGamePlus.TimeMachine(chapterSave);
             var randomizer = new Model.NewGamePlus.Randomizer(chapterSave);

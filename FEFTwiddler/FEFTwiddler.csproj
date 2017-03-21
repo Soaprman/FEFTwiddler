@@ -319,6 +319,8 @@
     <Compile Include="Model\Battlefield.cs" />
     <Compile Include="Model\Building.cs" />
     <Compile Include="Model\ChapterHistoryEntry.cs" />
+    <Compile Include="Model\IChapterSave.cs" />
+    <Compile Include="Model\MapSave.cs" />
     <Compile Include="Model\ChapterSave.cs" />
     <Compile Include="Model\ChapterSaveRegions\BattlefieldRegion.cs" />
     <Compile Include="Model\ChapterSaveRegions\CompressionRegion.cs" />
@@ -330,6 +332,9 @@
     <Compile Include="Model\ChapterSaveRegions\UnitRegion.cs" />
     <Compile Include="Model\ChapterSaveRegions\UserRegion.cs" />
     <Compile Include="Model\ChapterSaveRegions\WeaponNameRegion.cs" />
+    <Compile Include="Model\MapSaveRegions\CompressionRegion.cs" />
+    <Compile Include="Model\MapSaveRegions\MapRegion.cs" />
+    <Compile Include="Model\MapSaveRegions\PERSRegion.cs" />
     <Compile Include="Model\Unit.cs" />
     <Compile Include="Model\Cheats.cs" />
     <Compile Include="Model\ConvoyItem.cs" />

@@ -103,7 +103,7 @@ namespace FEFTwiddler.Model
                 if (Enumerable.SequenceEqual(chunk, _compMarker))
                 {
                     _isCompressed = true;
-                    _type = Enums.SaveFileType.Chapter;
+                    SetChapterType();
 
                     br.BaseStream.Seek(0, SeekOrigin.Begin);
                     byte[] header = new byte[0xC0];
@@ -122,7 +122,7 @@ namespace FEFTwiddler.Model
                 else if (Enumerable.SequenceEqual(chunk, _indeMarker))
                 {
                     _isCompressed = false;
-                    _type = Enums.SaveFileType.Chapter;
+                    SetChapterType();
 
                     br.BaseStream.Seek(0, SeekOrigin.Begin);
                     _decompressedBytes = new byte[length];
@@ -143,6 +143,12 @@ namespace FEFTwiddler.Model
             else if (_inputFilePath.IndexOf("Rating") > -1) _type = Enums.SaveFileType.Rating;
             else if (_inputFilePath.IndexOf("Versus") > -1) _type = Enums.SaveFileType.Versus;
             else _type = Enums.SaveFileType.Unknown;
+        }
+
+        private void SetChapterType()
+        {
+            if (_inputFilePath.IndexOf("Map") > -1) _type = Enums.SaveFileType.Map;
+            else _type = Enums.SaveFileType.Chapter;
         }
 
         private int GetFileLength()
@@ -195,7 +201,9 @@ namespace FEFTwiddler.Model
             {
                 switch (_type)
                 {
-                    case Enums.SaveFileType.Chapter: WriteChapterFile(bw); break;
+                    case Enums.SaveFileType.Chapter:
+                    case Enums.SaveFileType.Map:
+                        WriteChapterFile(bw); break;
                     case Enums.SaveFileType.Exchange: WriteExchangeFile(bw); break;
                     case Enums.SaveFileType.Global: WriteGlobalFile(bw); break;
                     case Enums.SaveFileType.Rating: WriteRatingFile(bw); break;

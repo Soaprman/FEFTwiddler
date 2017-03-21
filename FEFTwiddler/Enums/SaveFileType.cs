@@ -7,6 +7,7 @@
         Exchange,
         Global,
         Rating,
-        Versus
+        Versus,
+        Map
     }
 }

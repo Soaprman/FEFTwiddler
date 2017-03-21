@@ -11,7 +11,7 @@ namespace FEFTwiddler.GUI.Convoy
     {
         private ToolTip _tooltip = new ToolTip();
 
-        private Model.ChapterSave _chapterSave;
+        private Model.IChapterSave _chapterSave;
 
         private Model.ConvoyItem _item;
         public Model.ConvoyItem Item { get { return _item; } }
@@ -22,7 +22,7 @@ namespace FEFTwiddler.GUI.Convoy
             InitializeControls();
         }
 
-        public void LoadItem(Model.ChapterSave chapterSave, Model.ConvoyItem convoyItem)
+        public void LoadItem(Model.IChapterSave chapterSave, Model.ConvoyItem convoyItem)
         {
             _chapterSave = chapterSave;
             _item = convoyItem;

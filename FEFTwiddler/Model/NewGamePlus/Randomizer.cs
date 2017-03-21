@@ -10,9 +10,9 @@ namespace FEFTwiddler.Model.NewGamePlus
     public class Randomizer
     {
         private Random _rng;
-        private Model.ChapterSave _chapterSave;
+        private Model.IChapterSave _chapterSave;
 
-        public Randomizer(Model.ChapterSave chapterSave)
+        public Randomizer(Model.IChapterSave chapterSave)
         {
             _rng = new Random();
             _chapterSave = chapterSave;

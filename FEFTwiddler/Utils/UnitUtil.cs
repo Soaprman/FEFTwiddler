@@ -8,7 +8,7 @@ namespace FEFTwiddler.Utils
 {
     public class UnitUtil
     {
-        public static void RemoveNamesFromHeldWeaponsWithInvalidNames(Model.ChapterSave chapterSave, Model.Unit unit)
+        public static void RemoveNamesFromHeldWeaponsWithInvalidNames(Model.IChapterSave chapterSave, Model.Unit unit)
         {
             if (unit.Item_1.IsNamed && !chapterSave.WeaponNameRegion.WeaponNames.Any((x) => x.ID == unit.Item_1.WeaponNameID))
             {

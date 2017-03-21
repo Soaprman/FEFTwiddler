@@ -8,9 +8,9 @@ namespace FEFTwiddler.Model.NewGamePlus
 {
     public class TimeMachine
     {
-        private Model.ChapterSave _chapterSave;
+        private Model.IChapterSave _chapterSave;
 
-        public TimeMachine(Model.ChapterSave chapterSave)
+        public TimeMachine(Model.IChapterSave chapterSave)
         {
             _chapterSave = chapterSave;
         }
