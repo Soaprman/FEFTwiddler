@@ -6,7 +6,6 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
 {
     public class Header
     {
-        //test
         public Header(byte[] raw)
         {
             _raw = raw;
