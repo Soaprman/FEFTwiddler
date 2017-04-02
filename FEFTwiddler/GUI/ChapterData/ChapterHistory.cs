@@ -23,35 +23,13 @@ namespace FEFTwiddler.GUI.ChapterData
             _chapterSave = chapterSave;
             _timeMachine = new Model.NewGamePlus.TimeMachine(_chapterSave);
 
-            //CreateBackups();
-
             InitializeComponent();
         }
-
-        //private void CreateBackups()
-        //{
-        //    _backupChapterHistory = new List<Model.ChapterHistoryEntry>();
-        //    foreach (var item in _chapterSave.UserRegion.ChapterHistory)
-        //    {
-        //        _backupChapterHistory.Add(item);
-        //    }
-
-        //    _backupBattlefields = new List<Model.Battlefield>();
-        //    foreach (var item in _chapterSave.BattlefieldRegion.Battlefields)
-        //    {
-        //        _backupBattlefields.Add(item);
-        //    }
-        //}
-
-        //private void RestoreBackups()
-        //{
-        //    _chapterSave.UserRegion.ChapterHistory = _backupChapterHistory;
-        //    _chapterSave.BattlefieldRegion.Battlefields = _backupBattlefields;
-        //}
 
         private void ChapterHistory_Load(object sender, EventArgs e)
         {
             PopulateHistoryPanel();
+            UpdateAvailableBattlefields();
         }
         
         private void PopulateHistoryPanel()
@@ -63,13 +41,6 @@ namespace FEFTwiddler.GUI.ChapterData
             }
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            //RestoreBackups();
-
-            this.Close();
-        }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -78,6 +49,7 @@ namespace FEFTwiddler.GUI.ChapterData
         public void UnplayChapter(Enums.Chapter chapterId)
         {
             _timeMachine.UnplayChapter(chapterId);
+            UpdateAvailableBattlefields();
         }
 
         public bool CanUnplayChapter(Enums.Chapter chapterId)
@@ -95,6 +67,17 @@ namespace FEFTwiddler.GUI.ChapterData
             return (ChapterHistory)parent;
         }
 
+        private void UpdateAvailableBattlefields()
+        {
+            flwBattlefieldsAvailable.Controls.Clear();
+
+            foreach (var battlefield in _chapterSave.BattlefieldRegion.Battlefields
+                .Where(x => x.BattlefieldStatus == Enums.BattlefieldStatus.Available))
+            {
+                flwBattlefieldsAvailable.Controls.Add(new BattlefieldPanel(battlefield));
+            }
+        }
+
         private void btnUnlockAmiiboChapters_Click(object sender, EventArgs e)
         {
             _timeMachine.UnlockChapter(Enums.Chapter.HeroBattle_Marth);
@@ -102,7 +85,9 @@ namespace FEFTwiddler.GUI.ChapterData
             _timeMachine.UnlockChapter(Enums.Chapter.HeroBattle_Lucina);
             _timeMachine.UnlockChapter(Enums.Chapter.HeroBattle_Robin);
 
-            MessageBox.Show("Done! (Trust me, they're there!)");
+            UpdateAvailableBattlefields();
+
+            MessageBox.Show("Done!");
         }
     }
 }

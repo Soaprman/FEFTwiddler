@@ -28,58 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChapterHistory));
             this.flwChaptersCompleted = new System.Windows.Forms.FlowLayoutPanel();
             this.btnSave = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnUnlockAmiiboChapters = new System.Windows.Forms.Button();
+            this.flwBattlefieldsAvailable = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // flwChaptersCompleted
             // 
             this.flwChaptersCompleted.AutoScroll = true;
             this.flwChaptersCompleted.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flwChaptersCompleted.Location = new System.Drawing.Point(12, 65);
+            this.flwChaptersCompleted.Location = new System.Drawing.Point(12, 25);
             this.flwChaptersCompleted.Name = "flwChaptersCompleted";
-            this.flwChaptersCompleted.Size = new System.Drawing.Size(586, 296);
+            this.flwChaptersCompleted.Size = new System.Drawing.Size(586, 278);
             this.flwChaptersCompleted.TabIndex = 0;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(604, 296);
+            this.btnSave.Location = new System.Drawing.Point(604, 380);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(94, 65);
+            this.btnSave.Size = new System.Drawing.Size(94, 45);
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "Close";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(426, 52);
-            this.label1.TabIndex = 3;
-            this.label1.Text = resources.GetString("label1.Text");
-            // 
             // btnUnlockAmiiboChapters
             // 
-            this.btnUnlockAmiiboChapters.Location = new System.Drawing.Point(604, 65);
+            this.btnUnlockAmiiboChapters.Location = new System.Drawing.Point(604, 325);
             this.btnUnlockAmiiboChapters.Name = "btnUnlockAmiiboChapters";
-            this.btnUnlockAmiiboChapters.Size = new System.Drawing.Size(94, 65);
+            this.btnUnlockAmiiboChapters.Size = new System.Drawing.Size(94, 45);
             this.btnUnlockAmiiboChapters.TabIndex = 4;
             this.btnUnlockAmiiboChapters.Text = "Unlock amiibo chapters";
             this.btnUnlockAmiiboChapters.UseVisualStyleBackColor = true;
             this.btnUnlockAmiiboChapters.Click += new System.EventHandler(this.btnUnlockAmiiboChapters_Click);
             // 
+            // flwBattlefieldsAvailable
+            // 
+            this.flwBattlefieldsAvailable.AutoScroll = true;
+            this.flwBattlefieldsAvailable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flwBattlefieldsAvailable.Location = new System.Drawing.Point(12, 325);
+            this.flwBattlefieldsAvailable.Name = "flwBattlefieldsAvailable";
+            this.flwBattlefieldsAvailable.Size = new System.Drawing.Size(586, 100);
+            this.flwBattlefieldsAvailable.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(9, 309);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(173, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Available (not completed) chapters:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(104, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Completed chapters:";
+            // 
             // ChapterHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(707, 368);
+            this.ClientSize = new System.Drawing.Size(707, 437);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.flwBattlefieldsAvailable);
             this.Controls.Add(this.btnUnlockAmiiboChapters);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.flwChaptersCompleted);
             this.Name = "ChapterHistory";
@@ -94,7 +115,9 @@
 
         private System.Windows.Forms.FlowLayoutPanel flwChaptersCompleted;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnUnlockAmiiboChapters;
+        private System.Windows.Forms.FlowLayoutPanel flwBattlefieldsAvailable;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

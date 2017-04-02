@@ -117,6 +117,9 @@
     <Compile Include="Extensions\StreamExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\XElementExtensions.cs" />
+    <Compile Include="GUI\ChapterData\BattlefieldPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="GUI\ChapterData\CastleMap.cs">
       <SubType>UserControl</SubType>
     </Compile>
