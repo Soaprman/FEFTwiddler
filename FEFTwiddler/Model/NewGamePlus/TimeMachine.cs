@@ -124,6 +124,22 @@ namespace FEFTwiddler.Model.NewGamePlus
             }
         }
 
+        /// <summary>
+        /// Unlocks a chapter and sets it available if it's currently set to unavailable.
+        /// Mainly for amiibo chapter unlocking.
+        /// </summary>
+        public void UnlockChapter(Enums.Chapter chapterId)
+        {
+            var battlefields = _chapterSave.BattlefieldRegion.Battlefields.Where((x) => x.ChapterID == chapterId);
+            foreach (var battlefield in battlefields)
+            {
+                if (battlefield.BattlefieldStatus == Enums.BattlefieldStatus.Unavailable)
+                {
+                    battlefield.BattlefieldStatus = Enums.BattlefieldStatus.Available;
+                }
+            }
+        }
+
         public void ReturnToPrologue()
         {
             ClearBattlefields();

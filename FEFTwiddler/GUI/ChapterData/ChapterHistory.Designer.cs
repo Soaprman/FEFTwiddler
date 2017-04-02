@@ -32,6 +32,7 @@
             this.flwChaptersCompleted = new System.Windows.Forms.FlowLayoutPanel();
             this.btnSave = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnUnlockAmiiboChapters = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // flwChaptersCompleted
@@ -62,11 +63,22 @@
             this.label1.TabIndex = 3;
             this.label1.Text = resources.GetString("label1.Text");
             // 
+            // btnUnlockAmiiboChapters
+            // 
+            this.btnUnlockAmiiboChapters.Location = new System.Drawing.Point(604, 65);
+            this.btnUnlockAmiiboChapters.Name = "btnUnlockAmiiboChapters";
+            this.btnUnlockAmiiboChapters.Size = new System.Drawing.Size(94, 65);
+            this.btnUnlockAmiiboChapters.TabIndex = 4;
+            this.btnUnlockAmiiboChapters.Text = "Unlock amiibo chapters";
+            this.btnUnlockAmiiboChapters.UseVisualStyleBackColor = true;
+            this.btnUnlockAmiiboChapters.Click += new System.EventHandler(this.btnUnlockAmiiboChapters_Click);
+            // 
             // ChapterHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(710, 368);
+            this.ClientSize = new System.Drawing.Size(707, 368);
+            this.Controls.Add(this.btnUnlockAmiiboChapters);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.flwChaptersCompleted);
@@ -83,5 +95,6 @@
         private System.Windows.Forms.FlowLayoutPanel flwChaptersCompleted;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnUnlockAmiiboChapters;
     }
 }

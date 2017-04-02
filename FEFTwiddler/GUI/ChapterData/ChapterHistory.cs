@@ -94,5 +94,15 @@ namespace FEFTwiddler.GUI.ChapterData
             }
             return (ChapterHistory)parent;
         }
+
+        private void btnUnlockAmiiboChapters_Click(object sender, EventArgs e)
+        {
+            _timeMachine.UnlockChapter(Enums.Chapter.HeroBattle_Marth);
+            _timeMachine.UnlockChapter(Enums.Chapter.HeroBattle_Ike);
+            _timeMachine.UnlockChapter(Enums.Chapter.HeroBattle_Lucina);
+            _timeMachine.UnlockChapter(Enums.Chapter.HeroBattle_Robin);
+
+            MessageBox.Show("Done! (Trust me, they're there!)");
+        }
     }
 }
