@@ -811,6 +811,7 @@ namespace FEFTwiddler.Model
         }
 
         // Eight unknown bytes (0x2F through 0x36)
+        // Haven't looked, but off the top of my head, these could be additional stats for Map saves
 
         // 0x37 through 0x3E
         private Stat _extraGainedStats;
@@ -1614,6 +1615,41 @@ namespace FEFTwiddler.Model
                     _rawBlock2[offset] = _rawBlock2[offset].SetFlag(mask2, false);
                     break;
             }
+        }
+
+        /// <summary>
+        /// Copies values from _rawBlock1 to Stat properties.
+        /// Call this after hex editing a unit.
+        /// A hack to avoid rewriting a ton of stuff to fix stats.
+        /// </summary>
+        public void RefreshStatProperties()
+        {
+            GainedStats.HP = (sbyte)_rawBlock1[0x1F];
+            GainedStats.Str = (sbyte)_rawBlock1[0x20];
+            GainedStats.Mag = (sbyte)_rawBlock1[0x21];
+            GainedStats.Skl = (sbyte)_rawBlock1[0x22];
+            GainedStats.Spd = (sbyte)_rawBlock1[0x23];
+            GainedStats.Lck = (sbyte)_rawBlock1[0x24];
+            GainedStats.Def = (sbyte)_rawBlock1[0x25];
+            GainedStats.Res = (sbyte)_rawBlock1[0x26];
+
+            StatueBonusStats.HP = (sbyte)_rawBlock1[0x27];
+            StatueBonusStats.Str = (sbyte)_rawBlock1[0x28];
+            StatueBonusStats.Mag = (sbyte)_rawBlock1[0x29];
+            StatueBonusStats.Skl = (sbyte)_rawBlock1[0x2A];
+            StatueBonusStats.Spd = (sbyte)_rawBlock1[0x2B];
+            StatueBonusStats.Lck = (sbyte)_rawBlock1[0x2C];
+            StatueBonusStats.Def = (sbyte)_rawBlock1[0x2D];
+            StatueBonusStats.Res = (sbyte)_rawBlock1[0x2E];
+
+            ExtraGainedStats.HP = (sbyte)_rawBlock1[0x37];
+            ExtraGainedStats.Str = (sbyte)_rawBlock1[0x38];
+            ExtraGainedStats.Mag = (sbyte)_rawBlock1[0x39];
+            ExtraGainedStats.Skl = (sbyte)_rawBlock1[0x3A];
+            ExtraGainedStats.Spd = (sbyte)_rawBlock1[0x3B];
+            ExtraGainedStats.Lck = (sbyte)_rawBlock1[0x3C];
+            ExtraGainedStats.Def = (sbyte)_rawBlock1[0x3D];
+            ExtraGainedStats.Res = (sbyte)_rawBlock1[0x3E];
         }
 
         #endregion
