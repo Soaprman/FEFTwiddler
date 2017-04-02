@@ -5,6 +5,8 @@ namespace FEFTwiddler.Model
 {
     public class GlobalSave
     {
+        public Enums.SaveFileType GetSaveFileType() { return Enums.SaveFileType.Global; }
+
         public static GlobalSave FromSaveFile(SaveFile file)
         {
             var s = new GlobalSave();

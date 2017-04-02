@@ -253,6 +253,7 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
         }
 
         /// <summary>
+        /// It's 0x05 on my map saves.
         /// It's 0x04 on my battle prep saves.
         /// It's 0x01 on my revelation chapter 27 save.
         /// It's 0x02 on my birthright chapter 27 save.

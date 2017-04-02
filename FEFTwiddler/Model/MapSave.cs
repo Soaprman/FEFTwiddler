@@ -8,6 +8,8 @@ namespace FEFTwiddler.Model
     /// </summary>
     public class MapSave : IChapterSave
     {
+        public Enums.SaveFileType GetSaveFileType() { return Enums.SaveFileType.Map; }
+
         public static MapSave FromSaveFile(SaveFile file)
         {
             var cs = new MapSave();

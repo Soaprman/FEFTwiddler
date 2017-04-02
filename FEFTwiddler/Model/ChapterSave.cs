@@ -8,6 +8,8 @@ namespace FEFTwiddler.Model
     /// </summary>
     public class ChapterSave : IChapterSave
     {
+        public Enums.SaveFileType GetSaveFileType() { return Enums.SaveFileType.Chapter; }
+
         public static ChapterSave FromSaveFile(SaveFile file)
         {
             var cs = new ChapterSave();

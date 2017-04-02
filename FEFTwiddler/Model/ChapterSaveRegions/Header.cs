@@ -120,6 +120,7 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
 
         // This is a guess but it seems to fit
         // I haven't found a corresponding value in the user block though
+        // I have seen _raw[0x0D] equal 0x02 on a Map save
         public bool IsBattlePrepSave
         {
             get { return _raw[0x0D].GetFlag(0x01); }

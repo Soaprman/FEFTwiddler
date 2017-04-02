@@ -72,6 +72,11 @@ namespace FEFTwiddler.GUI.UnitViewer
             {
                 DisableAll();
             }
+            // Don't mess with this stuff while a battle is in progress
+            else if (_chapterSave.GetSaveFileType() == Enums.SaveFileType.Map)
+            {
+                DisableAll();
+            }
             else
             {
                 EnableAll();
