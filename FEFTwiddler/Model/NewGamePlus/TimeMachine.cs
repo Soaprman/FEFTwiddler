@@ -88,14 +88,39 @@ namespace FEFTwiddler.Model.NewGamePlus
             _chapterSave.ConvoyRegion.Convoy.Clear();
         }
 
+        public bool CanUnplayChapter(Enums.Chapter chapterId)
+        {
+            var chapterData = Data.Database.Chapters.GetByID(chapterId);
+
+            foreach (var unlockedChapterId in chapterData.UnlocksChapters)
+            {
+                if (_chapterSave.BattlefieldRegion.Battlefields
+                    .Where(x => x.ChapterID == unlockedChapterId && x.BattlefieldStatus == Enums.BattlefieldStatus.Completed)
+                    .Any())
+                    return false;
+            }
+
+            return true;
+        }
+
         public void UnplayChapter(Enums.Chapter chapterId)
         {
+            // Set the newly unplayed chapter to available
             _chapterSave.UserRegion.ChapterHistory.RemoveAll((x) => x.ChapterID == chapterId);
 
             var battlefields = _chapterSave.BattlefieldRegion.Battlefields.Where((x) => x.ChapterID == chapterId);
             foreach (var battlefield in battlefields)
             {
                 battlefield.BattlefieldStatus = Enums.BattlefieldStatus.Available;
+            }
+
+            // Set any chapters beating this chapter would unlock to unavailable
+            var chapterData = Data.Database.Chapters.GetByID(chapterId);
+
+            foreach (var unlockedChapterId in chapterData.UnlocksChapters)
+            {
+                var dependentBattlefield = _chapterSave.BattlefieldRegion.Battlefields.Where(x => x.ChapterID == unlockedChapterId).FirstOrDefault();
+                if (dependentBattlefield != null) dependentBattlefield.BattlefieldStatus = Enums.BattlefieldStatus.Unavailable;
             }
         }
 

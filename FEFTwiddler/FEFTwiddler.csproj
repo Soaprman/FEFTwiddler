@@ -70,6 +70,8 @@
     <Compile Include="Data\BaseDatabase.cs" />
     <Compile Include="Data\Building.cs" />
     <Compile Include="Data\BuildingDatabase.cs" />
+    <Compile Include="Data\Chapter.cs" />
+    <Compile Include="Data\ChapterDatabase.cs" />
     <Compile Include="Data\Character.cs" />
     <Compile Include="Data\CharacterDatabase.cs" />
     <Compile Include="Data\Class.cs" />
@@ -495,6 +497,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Resources\Data\Skills.xml" />
+    <Content Include="Resources\Data\Chapters.xml" />
     <Content Include="Resources\Images\ItemIcons\ItemSubType_Axe.png" />
     <Content Include="Resources\Images\ItemIcons\ItemSubType_Beaststone.png" />
     <Content Include="Resources\Images\ItemIcons\ItemSubType_Bow.png" />

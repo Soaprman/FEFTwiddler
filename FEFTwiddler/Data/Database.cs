@@ -10,6 +10,7 @@
         public static StatDatabase Stats = new StatDatabase(Enums.Language.English);
         public static PrisonerDatabase Prisoners = new PrisonerDatabase(Enums.Language.English);
         public static AccessoryDatabase Accessories = new AccessoryDatabase(Enums.Language.English);
+        public static ChapterDatabase Chapters = new ChapterDatabase(Enums.Language.English);
 
         public static void SetLanguage(Enums.Language language)
         {
@@ -21,6 +22,7 @@
             Stats.SetLanguage(language);
             Prisoners.SetLanguage(language);
             Accessories.SetLanguage(language);
+            Chapters.SetLanguage(language);
         }
     }
 }
