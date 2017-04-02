@@ -151,13 +151,16 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
 
         // 223 unknown bytes (0x00 through 0xDE)
         // (block of mostly 00s that starts with 00 80 and ends with 30 00 00 00)
+        // Unknown_Block2_0x05 = 8 then 12 after passing a turn in chapter 2 and a new tutorial appeared.
 
         // These four are FF FF FF FF on my chapter 27 saves, but there are lower values on other saves.
+        // They are likely flags set by doing one-time-only stuff in battles over the course of the game.
         public byte Unknown_Block2_0xDF
         {
             get { return _rawBlock2[0xDF]; }
             set { _rawBlock2[0xDF] = value; }
         }
+        // In chapter 2, this is 0x40 after you've talked to Felicia and 0x60 after you've talked to Gunter. It's 0x96 as soon as you are allowed to save on the following turn
         public byte Unknown_Block2_0xE0
         {
             get { return _rawBlock2[0xE0]; }
