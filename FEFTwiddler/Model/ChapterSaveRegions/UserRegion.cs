@@ -154,6 +154,7 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
         // Unknown_Block2_0x05 = 8 then 12 after passing a turn in chapter 2 and a new tutorial appeared.
 
         // These four are FF FF FF FF on my chapter 27 saves, but there are lower values on other saves.
+        // Chapter1_FreshChapter7_dec: FF FF 1F 3B
         // They are likely flags set by doing one-time-only stuff in battles over the course of the game.
         public byte Unknown_Block2_0xDF
         {
@@ -233,7 +234,11 @@ namespace FEFTwiddler.Model.ChapterSaveRegions
         // Not sure what these three are.
         // F0 C7 00 on my ch27 RV save
         // 00 00 00 on my "new" save
+        // F0 C3 00 on "Fate.bak"
+        // F0 03 00 on some save that boots to My Castle
         // Changing these to 00 00 00 successfully kicked a save back to the prologue.
+        // Also, changing these to 00 00 00 worked for re-enabling branch of fate.
+        // Just unsetting the first F0 also works for branch of fate.
         public byte Unknown_Block2_0xE6
         {
             get { return _rawBlock2[0xE6]; }
