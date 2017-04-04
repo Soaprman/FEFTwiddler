@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameProgressMain));
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.flwBattlefieldsAvailable = new System.Windows.Forms.FlowLayoutPanel();
@@ -86,10 +87,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(595, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 104);
+            this.label1.Size = new System.Drawing.Size(128, 156);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Click the X to\r\nunplay a chapter.\r\n\r\nTo unplay a chapter, you \r\nmust first unplay" +
-    " any\r\nchapters that would be \r\nunlocked by beating that\r\nchapter.";
+            this.label1.Text = resources.GetString("label1.Text");
             // 
             // GameProgressMain
             // 
