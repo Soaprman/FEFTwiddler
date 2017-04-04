@@ -122,6 +122,15 @@ namespace FEFTwiddler.Model.NewGamePlus
                 var dependentBattlefield = _chapterSave.BattlefieldRegion.Battlefields.Where(x => x.ChapterID == unlockedChapterId).FirstOrDefault();
                 if (dependentBattlefield != null) dependentBattlefield.BattlefieldStatus = Enums.BattlefieldStatus.Unavailable;
             }
+
+            // Update the header if we just unplayed a story chapter AND if we're not in battle or in a map save
+            if (_chapterSave.GetSaveFileType() == Enums.SaveFileType.Chapter &&
+                _chapterSave.Header.IsBattlePrepSave == false &&
+                chapterData.Type == "Story")
+            {
+                UpdateHeaderChapter(chapterId);
+            }
+
         }
 
         /// <summary>
@@ -138,6 +147,17 @@ namespace FEFTwiddler.Model.NewGamePlus
                     battlefield.BattlefieldStatus = Enums.BattlefieldStatus.Available;
                 }
             }
+        }
+
+        /// <summary>
+        /// Update the header with the name of the given chapter
+        /// </summary>
+        public void UpdateHeaderChapter(Enums.Chapter chapterId)
+        {
+            var chapterData = Data.Database.Chapters.GetByID(chapterId);
+            _chapterSave.Header.CurrentChapter = chapterId;
+            _chapterSave.Header.ChapterName1 = chapterData.DisplayName1;
+            _chapterSave.Header.ChapterName2 = chapterData.DisplayName2;
         }
 
         public void ReturnToPrologue()

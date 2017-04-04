@@ -76,6 +76,50 @@ namespace FEFTwiddler.Data
             }
         }
 
+        protected string GetDisplayName1(XElement xe)
+        {
+            XElement lang;
+
+            // Get desired language
+            lang = xe.Elements("text").Where((x) => x.GetAttribute("lang") == _language.ToString()).FirstOrDefault();
+
+            // Get fallback language (English)
+            if (lang == null) lang = xe.Elements("text").Where((x) => x.GetAttribute("lang") == Enums.Language.English.ToString()).FirstOrDefault();
+
+            // Fallback on internal name if no display name exists yet
+            var displayName = (lang != null ? lang.GetAttribute("displayName1") : "DisplayName");
+            if (displayName == "DisplayName")
+            {
+                return xe.GetAttribute("name");
+            }
+            else
+            {
+                return displayName;
+            }
+        }
+
+        protected string GetDisplayName2(XElement xe)
+        {
+            XElement lang;
+
+            // Get desired language
+            lang = xe.Elements("text").Where((x) => x.GetAttribute("lang") == _language.ToString()).FirstOrDefault();
+
+            // Get fallback language (English)
+            if (lang == null) lang = xe.Elements("text").Where((x) => x.GetAttribute("lang") == Enums.Language.English.ToString()).FirstOrDefault();
+
+            // Fallback on internal name if no display name exists yet
+            var displayName = (lang != null ? lang.GetAttribute("displayName2") : "DisplayName");
+            if (displayName == "DisplayName")
+            {
+                return xe.GetAttribute("name");
+            }
+            else
+            {
+                return displayName;
+            }
+        }
+
 
 
 
@@ -94,90 +138,126 @@ namespace FEFTwiddler.Data
         /// </summary>
         protected void UpdateXmlStructure()
         {
-            var rows = _data.Elements("building");
+            var rows = _data.Elements("chapter");
             for (var i = 0; i < rows.Count(); i++)
             {
                 var row = rows.ElementAt(i);
 
-                //var categories = row.Elements("categories").First();
-                //var gender = row.GetAttribute("gender");
-                //if (gender == "Female")
+                var text = row.Element("text");
+                var dn = text.GetAttribute<string>("displayName");
+
+                if (dn.StartsWith("Chapter") || dn.StartsWith("Prologue") || dn.StartsWith("Paralogue") || dn.StartsWith("Endgame"))
+                {
+                    text.SetAttributeValue("name1", dn.Split(new string[]{ ": "}, System.StringSplitOptions.None)[0]);
+                    text.SetAttributeValue("name2", dn.Split(new string[]{ ": "}, System.StringSplitOptions.None)[1]);
+                    text.Attribute("displayName").Remove();
+                }
+                else if (dn.StartsWith("Birthright Chapter"))
+                {
+                    string name1 = dn.Split(new string[] { ": " }, System.StringSplitOptions.None)[0];
+                    name1 = name1.Substring("Birthright ".Length);
+                    text.SetAttributeValue("name1", name1);
+                    text.SetAttributeValue("name2", dn.Split(new string[] { ": " }, System.StringSplitOptions.None)[1]);
+                    text.Attribute("displayName").Remove();
+                }
+                else if (dn.StartsWith("Conquest Chapter"))
+                {
+                    string name1 = dn.Split(new string[] { ": " }, System.StringSplitOptions.None)[0];
+                    name1 = name1.Substring("Conquest ".Length);
+                    text.SetAttributeValue("name1", name1);
+                    text.SetAttributeValue("name2", dn.Split(new string[] { ": " }, System.StringSplitOptions.None)[1]);
+                    text.Attribute("displayName").Remove();
+                }
+                else if (dn.StartsWith("Revelation Chapter"))
+                {
+                    string name1 = dn.Split(new string[] { ": " }, System.StringSplitOptions.None)[0];
+                    name1 = name1.Substring("Revelation ".Length);
+                    text.SetAttributeValue("name1", name1);
+                    text.SetAttributeValue("name2", dn.Split(new string[] { ": " }, System.StringSplitOptions.None)[1]);
+                    text.Attribute("displayName").Remove();
+                }
+
+
+
+                ////var categories = row.Elements("categories").First();
+                ////var gender = row.GetAttribute("gender");
+                ////if (gender == "Female")
+                ////{
+                ////    categories.SetAttributeValue("isFemale", "true");
+                ////}
+                ////else
+                ////{
+                ////    categories.SetAttributeValue("isFemale", "false");
+                ////}
+                ////categories.SetAttributeValue("isNpcOnly", "false");
+
+                ////row.Attribute("gender").Remove();
+
+                //var frontName = row.Attribute("name").Value;
+                //var size = "3";
+                //var rank = "0";
+                //var usesRankBackground = "true";
+                //var isStatue = "false";
+                //var isGatheringSpot = "false";
+
+                //if (frontName.Contains("Statue"))
                 //{
-                //    categories.SetAttributeValue("isFemale", "true");
+                //    var suffix = frontName.Substring(frontName.Length - 2, 2);
+                //    frontName = "Statue" + suffix;
+                //    size = "1";
+                //    rank = suffix.Substring(1);
+                //    usesRankBackground = "false";
+                //    isStatue = "true";
                 //}
-                //else
+                //else if (frontName.Contains("Golem"))
                 //{
-                //    categories.SetAttributeValue("isFemale", "false");
+                //    var suffix = frontName.Substring(frontName.Length - 2, 2);
+                //    frontName = "Golem" + suffix;
+                //    size = "1";
+                //    rank = suffix.Substring(1);
+                //    usesRankBackground = "false";
                 //}
-                //categories.SetAttributeValue("isNpcOnly", "false");
+                //else if (frontName.Contains("Puppet"))
+                //{
+                //    var suffix = frontName.Substring(frontName.Length - 2, 2);
+                //    frontName = "Puppet" + suffix;
+                //    size = "1";
+                //    rank = suffix.Substring(1);
+                //    usesRankBackground = "false";
+                //}
+                //else if (frontName.Contains("Ballista") || frontName.Contains("FireOrb") || frontName.Contains("Launcher"))
+                //{
+                //    var suffix = frontName.Substring(frontName.Length - 2, 2);
+                //    frontName = "Turret" + suffix;
+                //    size = "1";
+                //    rank = suffix.Substring(1);
+                //    usesRankBackground = "false";
+                //}
+                //else if (frontName.EndsWith("_1") || frontName.EndsWith("_2") || frontName.EndsWith("_3"))
+                //{
+                //    var suffix = frontName.Substring(frontName.Length - 2, 2);
+                //    frontName = frontName.Substring(0, frontName.Length - 2);
+                //    rank = suffix.Substring(1);
+                //}
 
-                //row.Attribute("gender").Remove();
+                //if (int.Parse(row.Attribute("id").Value) >= 0x3A &&
+                //    int.Parse(row.Attribute("id").Value) <= 0x7B)
+                //{
+                //    isGatheringSpot = "true";
+                //}
 
-                var frontName = row.Attribute("name").Value;
-                var size = "3";
-                var rank = "0";
-                var usesRankBackground = "true";
-                var isStatue = "false";
-                var isGatheringSpot = "false";
+                //if (size == "1" || rank == "0")
+                //{
+                //    usesRankBackground = "false";
+                //}
 
-                if (frontName.Contains("Statue"))
-                {
-                    var suffix = frontName.Substring(frontName.Length - 2, 2);
-                    frontName = "Statue" + suffix;
-                    size = "1";
-                    rank = suffix.Substring(1);
-                    usesRankBackground = "false";
-                    isStatue = "true";
-                }
-                else if (frontName.Contains("Golem"))
-                {
-                    var suffix = frontName.Substring(frontName.Length - 2, 2);
-                    frontName = "Golem" + suffix;
-                    size = "1";
-                    rank = suffix.Substring(1);
-                    usesRankBackground = "false";
-                }
-                else if (frontName.Contains("Puppet"))
-                {
-                    var suffix = frontName.Substring(frontName.Length - 2, 2);
-                    frontName = "Puppet" + suffix;
-                    size = "1";
-                    rank = suffix.Substring(1);
-                    usesRankBackground = "false";
-                }
-                else if (frontName.Contains("Ballista") || frontName.Contains("FireOrb") || frontName.Contains("Launcher"))
-                {
-                    var suffix = frontName.Substring(frontName.Length - 2, 2);
-                    frontName = "Turret" + suffix;
-                    size = "1";
-                    rank = suffix.Substring(1);
-                    usesRankBackground = "false";
-                }
-                else if (frontName.EndsWith("_1") || frontName.EndsWith("_2") || frontName.EndsWith("_3"))
-                {
-                    var suffix = frontName.Substring(frontName.Length - 2, 2);
-                    frontName = frontName.Substring(0, frontName.Length - 2);
-                    rank = suffix.Substring(1);
-                }
+                //var properties = XElement.Parse(@"<properties size=""" + size + @""" rank=""" + rank + @""" isStatue=""" + isStatue + @""" isGatheringSpot=""" + isGatheringSpot + @""" isLilithsTemple=""false"" isTravelersPlaza=""false"" />");
 
-                if (int.Parse(row.Attribute("id").Value) >= 0x3A &&
-                    int.Parse(row.Attribute("id").Value) <= 0x7B)
-                {
-                    isGatheringSpot = "true";
-                }
+                //row.Add(properties);
 
-                if (size == "1" || rank == "0")
-                {
-                    usesRankBackground = "false";
-                }
+                //var image = XElement.Parse(@"<image name=""" + frontName + @""" usesRankBackground=""" + usesRankBackground + @""" />");
 
-                var properties = XElement.Parse(@"<properties size=""" + size + @""" rank=""" + rank + @""" isStatue=""" + isStatue + @""" isGatheringSpot=""" + isGatheringSpot + @""" isLilithsTemple=""false"" isTravelersPlaza=""false"" />");
-
-                row.Add(properties);
-
-                var image = XElement.Parse(@"<image name=""" + frontName + @""" usesRankBackground=""" + usesRankBackground + @""" />");
-
-                row.Add(image);
+                //row.Add(image);
             }
             // Stop here and look in the debugger for the updated XML string
             var breakpoint = true;

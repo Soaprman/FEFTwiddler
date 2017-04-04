@@ -25,12 +25,17 @@ namespace FEFTwiddler.Data
 
         public Chapter FromElement(XElement row)
         {
-            var displayName = GetDisplayName(row);
+            var displayName1 = GetDisplayName1(row);
+            var displayName2 = GetDisplayName2(row);
+            var displayName = displayName1 + (!string.IsNullOrEmpty(displayName2) ? ": " + displayName2 : "");
 
             var chapter = new Chapter
             {
                 ChapterID = (Enums.Chapter)row.GetAttribute<byte>("id"),
+                Type = row.GetAttribute<string>("type"),
                 DisplayName = displayName,
+                DisplayName1 = displayName1,
+                DisplayName2 = displayName2,
             };
 
             chapter.UnlocksChapters = new List<Enums.Chapter>();
