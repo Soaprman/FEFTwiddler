@@ -15,9 +15,6 @@ namespace FEFTwiddler.GUI.ChapterData
         private Model.IChapterSave _chapterSave;
         private Model.NewGamePlus.TimeMachine _timeMachine;
 
-        //private List<Model.ChapterHistoryEntry> _backupChapterHistory;
-        //private List<Model.Battlefield> _backupBattlefields;
-
         public ChapterHistory(Model.IChapterSave chapterSave)
         {
             _chapterSave = chapterSave;
