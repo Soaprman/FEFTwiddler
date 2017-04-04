@@ -74,10 +74,10 @@
             this.lstLiving = new System.Windows.Forms.ListBox();
             this.tabMegacheats = new System.Windows.Forms.TabPage();
             this.megacheatsMain1 = new FEFTwiddler.GUI.ChapterData.MegacheatsMain();
-            this.tabGlobalData = new System.Windows.Forms.TabPage();
-            this.globalDataMain1 = new FEFTwiddler.GUI.GlobalData.GlobalDataMain();
             this.tabConvoy = new System.Windows.Forms.TabPage();
             this.convoyMain1 = new FEFTwiddler.GUI.Convoy.ConvoyMain();
+            this.tabGlobalData = new System.Windows.Forms.TabPage();
+            this.globalDataMain1 = new FEFTwiddler.GUI.GlobalData.GlobalDataMain();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip1.SuspendLayout();
@@ -87,8 +87,8 @@
             this.pnlUnitView.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabMegacheats.SuspendLayout();
-            this.tabGlobalData.SuspendLayout();
             this.tabConvoy.SuspendLayout();
+            this.tabGlobalData.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -392,18 +392,6 @@
             resources.ApplyResources(this.megacheatsMain1, "megacheatsMain1");
             this.megacheatsMain1.Name = "megacheatsMain1";
             // 
-            // tabGlobalData
-            // 
-            this.tabGlobalData.Controls.Add(this.globalDataMain1);
-            resources.ApplyResources(this.tabGlobalData, "tabGlobalData");
-            this.tabGlobalData.Name = "tabGlobalData";
-            this.tabGlobalData.UseVisualStyleBackColor = true;
-            // 
-            // globalDataMain1
-            // 
-            resources.ApplyResources(this.globalDataMain1, "globalDataMain1");
-            this.globalDataMain1.Name = "globalDataMain1";
-            // 
             // tabConvoy
             // 
             this.tabConvoy.Controls.Add(this.convoyMain1);
@@ -415,6 +403,18 @@
             // 
             resources.ApplyResources(this.convoyMain1, "convoyMain1");
             this.convoyMain1.Name = "convoyMain1";
+            // 
+            // tabGlobalData
+            // 
+            this.tabGlobalData.Controls.Add(this.globalDataMain1);
+            resources.ApplyResources(this.tabGlobalData, "tabGlobalData");
+            this.tabGlobalData.Name = "tabGlobalData";
+            this.tabGlobalData.UseVisualStyleBackColor = true;
+            // 
+            // globalDataMain1
+            // 
+            resources.ApplyResources(this.globalDataMain1, "globalDataMain1");
+            this.globalDataMain1.Name = "globalDataMain1";
             // 
             // saveToolStripMenuItem
             // 
@@ -442,8 +442,8 @@
             this.pnlUnitView.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.tabMegacheats.ResumeLayout(false);
-            this.tabGlobalData.ResumeLayout(false);
             this.tabConvoy.ResumeLayout(false);
+            this.tabGlobalData.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

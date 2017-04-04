@@ -196,7 +196,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnCastleMap.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 364</value>
+    <value>150, 393</value>
   </data>
   <data name="btnCastleMap.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 96</value>
@@ -249,16 +249,18 @@
     <value>NoControl</value>
   </data>
   <data name="btnChapterHistory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 466</value>
+    <value>6, 393</value>
   </data>
   <data name="btnChapterHistory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 23</value>
+    <value>138, 96</value>
   </data>
   <data name="btnChapterHistory.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
   </data>
   <data name="btnChapterHistory.Text" xml:space="preserve">
-    <value>Chapter History</value>
+    <value>Chapter History
+(Unplay chapters, unlock amiibo chapters)
+</value>
   </data>
   <data name="&gt;&gt;btnChapterHistory.Name" xml:space="preserve">
     <value>btnChapterHistory</value>
