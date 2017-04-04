@@ -8,6 +8,7 @@
         Global,
         Rating,
         Versus,
-        Map
+        Map,
+        Fate
     }
 }

@@ -546,7 +546,7 @@
 		<text lang="English" displayName1="Invasion 3" displayName2="" />
 	</chapter>
 	<chapter id="108" name="Chapter 6" type="Story">
-		<text lang="English" displayName1="Chapter 6" displayName2="Branch of Fate" />
+		<text lang="English" displayName1="Chapter 6" displayName2="The Path Is Yours" />
 		<unlocks>
 			<chapter id="8" />
 			<chapter id="31" />
