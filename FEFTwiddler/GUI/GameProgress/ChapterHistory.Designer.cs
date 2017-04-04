@@ -1,4 +1,4 @@
-﻿namespace FEFTwiddler.GUI.ChapterData
+﻿namespace FEFTwiddler.GUI.GameProgress
 {
     partial class ChapterHistory
     {

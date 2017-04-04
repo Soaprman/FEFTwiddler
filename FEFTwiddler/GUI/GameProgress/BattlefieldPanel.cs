@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace FEFTwiddler.GUI.ChapterData
+namespace FEFTwiddler.GUI.GameProgress
 {
     public class BattlefieldPanel : Panel
     {

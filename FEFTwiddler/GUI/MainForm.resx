@@ -196,7 +196,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnCastleMap.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 393</value>
+    <value>6, 393</value>
   </data>
   <data name="btnCastleMap.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 96</value>
@@ -245,35 +245,6 @@
   <data name="&gt;&gt;difficulty1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="btnChapterHistory.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnChapterHistory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 393</value>
-  </data>
-  <data name="btnChapterHistory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 96</value>
-  </data>
-  <data name="btnChapterHistory.TabIndex" type="System.Int32, mscorlib">
-    <value>62</value>
-  </data>
-  <data name="btnChapterHistory.Text" xml:space="preserve">
-    <value>Chapter History
-(Unplay chapters, unlock amiibo chapters)
-</value>
-  </data>
-  <data name="&gt;&gt;btnChapterHistory.Name" xml:space="preserve">
-    <value>btnChapterHistory</value>
-  </data>
-  <data name="&gt;&gt;btnChapterHistory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnChapterHistory.Parent" xml:space="preserve">
-    <value>tabChapterData</value>
-  </data>
-  <data name="&gt;&gt;btnChapterHistory.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="goldAndPoints1.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 47</value>
   </data>
@@ -296,7 +267,7 @@
     <value>tabChapterData</value>
   </data>
   <data name="&gt;&gt;goldAndPoints1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="materials1.Location" type="System.Drawing.Point, System.Drawing">
     <value>607, 3</value>
@@ -320,7 +291,7 @@
     <value>tabChapterData</value>
   </data>
   <data name="&gt;&gt;materials1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="lblAvatarName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -353,7 +324,7 @@
     <value>tabChapterData</value>
   </data>
   <data name="&gt;&gt;lblAvatarName.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="tabChapterData.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -1159,6 +1130,54 @@
   <data name="&gt;&gt;tabConvoy.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="gameProgressMain1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 6</value>
+  </data>
+  <data name="gameProgressMain1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>740, 480</value>
+  </data>
+  <data name="gameProgressMain1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gameProgressMain1.Name" xml:space="preserve">
+    <value>gameProgressMain1</value>
+  </data>
+  <data name="&gt;&gt;gameProgressMain1.Type" xml:space="preserve">
+    <value>FEFTwiddler.GUI.GameProgress.GameProgressMain, FEFTwiddler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gameProgressMain1.Parent" xml:space="preserve">
+    <value>tabGameProgress</value>
+  </data>
+  <data name="&gt;&gt;gameProgressMain1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabGameProgress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabGameProgress.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabGameProgress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 495</value>
+  </data>
+  <data name="tabGameProgress.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="tabGameProgress.Text" xml:space="preserve">
+    <value>Game Progress</value>
+  </data>
+  <data name="&gt;&gt;tabGameProgress.Name" xml:space="preserve">
+    <value>tabGameProgress</value>
+  </data>
+  <data name="&gt;&gt;tabGameProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabGameProgress.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabGameProgress.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="globalDataMain1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
@@ -1208,7 +1227,7 @@
     <value>tabControl1</value>
   </data>
   <data name="&gt;&gt;tabGlobalData.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="tabControl1.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>

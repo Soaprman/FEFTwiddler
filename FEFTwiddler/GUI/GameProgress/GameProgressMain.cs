@@ -1,34 +1,46 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
+using System.ComponentModel.Design;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FEFTwiddler.GUI.ChapterData
+namespace FEFTwiddler.GUI.GameProgress
 {
-    public partial class ChapterHistory : Form
+    [Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", typeof(IDesigner))]
+    public partial class GameProgressMain : UserControl
     {
         private Model.IChapterSave _chapterSave;
         private Model.NewGamePlus.TimeMachine _timeMachine;
 
-        public ChapterHistory(Model.IChapterSave chapterSave)
+        public GameProgressMain()
+        {
+            InitializeComponent();
+            InitializeControls();
+        }
+
+        public void LoadChapterSave(Model.IChapterSave chapterSave)
         {
             _chapterSave = chapterSave;
             _timeMachine = new Model.NewGamePlus.TimeMachine(_chapterSave);
 
-            InitializeComponent();
+            PopulateControls();
         }
 
-        private void ChapterHistory_Load(object sender, EventArgs e)
+        private void InitializeControls()
+        {
+        }
+
+        private void PopulateControls()
         {
             PopulateHistoryPanel();
             UpdateAvailableBattlefields();
         }
-        
+
         private void PopulateHistoryPanel()
         {
             foreach (var historyEntry in _chapterSave.UserRegion.ChapterHistory)
@@ -36,11 +48,6 @@ namespace FEFTwiddler.GUI.ChapterData
                 var panel = new ChapterHistoryPanel(historyEntry);
                 flwChaptersCompleted.Controls.Add(panel);
             }
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         public void UnplayChapter(Enums.Chapter chapterId)

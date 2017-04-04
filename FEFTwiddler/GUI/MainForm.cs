@@ -203,12 +203,7 @@ namespace FEFTwiddler.GUI
             megacheatsMain1.LoadChapterSave(_chapterSave);
             difficulty1.LoadChapterSave(_chapterSave);
             convoyMain1.LoadChapterSave(_chapterSave);
-        }
-
-        private void btnChapterHistory_Click(object sender, EventArgs e)
-        {
-            var popup = new GUI.ChapterData.ChapterHistory(_chapterSave);
-            popup.ShowDialog();
+            gameProgressMain1.LoadChapterSave(_chapterSave);
         }
 
         private void btnCastleMap_Click(object sender, EventArgs e)

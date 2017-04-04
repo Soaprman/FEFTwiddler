@@ -42,7 +42,6 @@
             this.tabChapterData = new System.Windows.Forms.TabPage();
             this.btnCastleMap = new System.Windows.Forms.Button();
             this.difficulty1 = new FEFTwiddler.GUI.ChapterData.Difficulty();
-            this.btnChapterHistory = new System.Windows.Forms.Button();
             this.goldAndPoints1 = new FEFTwiddler.GUI.ChapterData.GoldAndPoints();
             this.materials1 = new FEFTwiddler.GUI.ChapterData.Materials();
             this.lblAvatarName = new System.Windows.Forms.Label();
@@ -76,10 +75,12 @@
             this.megacheatsMain1 = new FEFTwiddler.GUI.ChapterData.MegacheatsMain();
             this.tabConvoy = new System.Windows.Forms.TabPage();
             this.convoyMain1 = new FEFTwiddler.GUI.Convoy.ConvoyMain();
+            this.tabGameProgress = new System.Windows.Forms.TabPage();
             this.tabGlobalData = new System.Windows.Forms.TabPage();
             this.globalDataMain1 = new FEFTwiddler.GUI.GlobalData.GlobalDataMain();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.gameProgressMain1 = new FEFTwiddler.GUI.GameProgress.GameProgressMain();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabChapterData.SuspendLayout();
@@ -88,6 +89,7 @@
             this.groupBox1.SuspendLayout();
             this.tabMegacheats.SuspendLayout();
             this.tabConvoy.SuspendLayout();
+            this.tabGameProgress.SuspendLayout();
             this.tabGlobalData.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -150,6 +152,7 @@
             this.tabControl1.Controls.Add(this.tabUnitViewer);
             this.tabControl1.Controls.Add(this.tabMegacheats);
             this.tabControl1.Controls.Add(this.tabConvoy);
+            this.tabControl1.Controls.Add(this.tabGameProgress);
             this.tabControl1.Controls.Add(this.tabGlobalData);
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
@@ -159,7 +162,6 @@
             // 
             this.tabChapterData.Controls.Add(this.btnCastleMap);
             this.tabChapterData.Controls.Add(this.difficulty1);
-            this.tabChapterData.Controls.Add(this.btnChapterHistory);
             this.tabChapterData.Controls.Add(this.goldAndPoints1);
             this.tabChapterData.Controls.Add(this.materials1);
             this.tabChapterData.Controls.Add(this.lblAvatarName);
@@ -178,13 +180,6 @@
             // 
             resources.ApplyResources(this.difficulty1, "difficulty1");
             this.difficulty1.Name = "difficulty1";
-            // 
-            // btnChapterHistory
-            // 
-            resources.ApplyResources(this.btnChapterHistory, "btnChapterHistory");
-            this.btnChapterHistory.Name = "btnChapterHistory";
-            this.btnChapterHistory.UseVisualStyleBackColor = true;
-            this.btnChapterHistory.Click += new System.EventHandler(this.btnChapterHistory_Click);
             // 
             // goldAndPoints1
             // 
@@ -404,6 +399,13 @@
             resources.ApplyResources(this.convoyMain1, "convoyMain1");
             this.convoyMain1.Name = "convoyMain1";
             // 
+            // tabGameProgress
+            // 
+            this.tabGameProgress.Controls.Add(this.gameProgressMain1);
+            resources.ApplyResources(this.tabGameProgress, "tabGameProgress");
+            this.tabGameProgress.Name = "tabGameProgress";
+            this.tabGameProgress.UseVisualStyleBackColor = true;
+            // 
             // tabGlobalData
             // 
             this.tabGlobalData.Controls.Add(this.globalDataMain1);
@@ -420,6 +422,11 @@
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
+            // 
+            // gameProgressMain1
+            // 
+            resources.ApplyResources(this.gameProgressMain1, "gameProgressMain1");
+            this.gameProgressMain1.Name = "gameProgressMain1";
             // 
             // MainForm
             // 
@@ -443,6 +450,7 @@
             this.groupBox1.ResumeLayout(false);
             this.tabMegacheats.ResumeLayout(false);
             this.tabConvoy.ResumeLayout(false);
+            this.tabGameProgress.ResumeLayout(false);
             this.tabGlobalData.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -478,7 +486,6 @@
         private System.Windows.Forms.ListBox lstDead;
         private System.Windows.Forms.Button btnOpenHexEditor;
         private UnitViewer.Skills skills1;
-        private System.Windows.Forms.Button btnChapterHistory;
         private UnitViewer.DragonVein dragonVein1;
         private ChapterData.Difficulty difficulty1;
         private System.Windows.Forms.ToolStripMenuItem decompressorToolStripMenuItem;
@@ -501,6 +508,8 @@
         private System.Windows.Forms.Button btnTraits;
         private System.Windows.Forms.Label lblUsesCustomData;
         private System.Windows.Forms.Button btnCastleMap;
+        private System.Windows.Forms.TabPage tabGameProgress;
+        private GameProgress.GameProgressMain gameProgressMain1;
     }
 }
 

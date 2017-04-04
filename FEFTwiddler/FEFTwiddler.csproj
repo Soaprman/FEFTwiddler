@@ -117,7 +117,7 @@
     <Compile Include="Extensions\StreamExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\XElementExtensions.cs" />
-    <Compile Include="GUI\ChapterData\BattlefieldPanel.cs">
+    <Compile Include="GUI\GameProgress\BattlefieldPanel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="GUI\ChapterData\CastleMap.cs">
@@ -132,13 +132,13 @@
     <Compile Include="GUI\ChapterData\CastleViewer.Designer.cs">
       <DependentUpon>CastleViewer.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\ChapterData\ChapterHistory.cs">
+    <Compile Include="GUI\GameProgress\ChapterHistory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\ChapterData\ChapterHistory.Designer.cs">
+    <Compile Include="GUI\GameProgress\ChapterHistory.Designer.cs">
       <DependentUpon>ChapterHistory.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\ChapterData\ChapterHistoryPanel.cs">
+    <Compile Include="GUI\GameProgress\ChapterHistoryPanel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="GUI\ChapterData\Difficulty.cs">
@@ -194,6 +194,12 @@
     </Compile>
     <Compile Include="GUI\Convoy\ConvoyMain.Designer.cs">
       <DependentUpon>ConvoyMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GameProgress\GameProgressMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GameProgress\GameProgressMain.Designer.cs">
+      <DependentUpon>GameProgressMain.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\GlobalData\GlobalDataMain.cs">
       <SubType>UserControl</SubType>
@@ -372,7 +378,7 @@
     <EmbeddedResource Include="GUI\ChapterData\CastleMap.resx">
       <DependentUpon>CastleMap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\ChapterData\ChapterHistory.resx">
+    <EmbeddedResource Include="GUI\GameProgress\ChapterHistory.resx">
       <DependentUpon>ChapterHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ChapterData\Difficulty.resx">
@@ -398,6 +404,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Convoy\ConvoyMain.resx">
       <DependentUpon>ConvoyMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GameProgress\GameProgressMain.resx">
+      <DependentUpon>GameProgressMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GlobalData\GlobalDataMain.resx">
       <DependentUpon>GlobalDataMain.cs</DependentUpon>
