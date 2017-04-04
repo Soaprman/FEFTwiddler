@@ -43,6 +43,8 @@ namespace FEFTwiddler.GUI.GameProgress
 
         private void PopulateHistoryPanel()
         {
+            flwChaptersCompleted.Controls.Clear();
+
             foreach (var historyEntry in _chapterSave.UserRegion.ChapterHistory)
             {
                 var panel = new ChapterHistoryPanel(historyEntry);
