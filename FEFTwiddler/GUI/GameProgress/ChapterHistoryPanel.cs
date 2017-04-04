@@ -66,11 +66,11 @@ namespace FEFTwiddler.GUI.GameProgress
 
         public void RemoveEntry(object sender, EventArgs e)
         {
-            var chapterHistoryWindow = ChapterHistory.GetFromHere(this);
+            var gameProgressPanel = GameProgressMain.GetFromHere(this);
 
-            if (chapterHistoryWindow.CanUnplayChapter(_historyEntry.ChapterID))
+            if (gameProgressPanel.CanUnplayChapter(_historyEntry.ChapterID))
             {
-                chapterHistoryWindow.UnplayChapter(_historyEntry.ChapterID);
+                gameProgressPanel.UnplayChapter(_historyEntry.ChapterID);
                 this.Parent.Controls.Remove(this);
             }
             else

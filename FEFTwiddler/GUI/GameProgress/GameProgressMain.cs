@@ -61,14 +61,14 @@ namespace FEFTwiddler.GUI.GameProgress
             return _timeMachine.CanUnplayChapter(chapterId);
         }
 
-        public static ChapterHistory GetFromHere(Control ctl)
+        public static GameProgressMain GetFromHere(Control ctl)
         {
             var parent = ctl.Parent;
-            while (parent.GetType() != typeof(ChapterHistory))
+            while (parent.GetType() != typeof(GameProgressMain))
             {
                 parent = parent.Parent;
             }
-            return (ChapterHistory)parent;
+            return (GameProgressMain)parent;
         }
 
         private void UpdateAvailableBattlefields()

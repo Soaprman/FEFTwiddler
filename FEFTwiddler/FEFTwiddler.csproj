@@ -132,12 +132,6 @@
     <Compile Include="GUI\ChapterData\CastleViewer.Designer.cs">
       <DependentUpon>CastleViewer.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GameProgress\ChapterHistory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\GameProgress\ChapterHistory.Designer.cs">
-      <DependentUpon>ChapterHistory.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\GameProgress\ChapterHistoryPanel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -377,9 +371,6 @@
     <Compile Include="Utils\WeaponNameUtil.cs" />
     <EmbeddedResource Include="GUI\ChapterData\CastleMap.resx">
       <DependentUpon>CastleMap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GameProgress\ChapterHistory.resx">
-      <DependentUpon>ChapterHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ChapterData\Difficulty.resx">
       <DependentUpon>Difficulty.cs</DependentUpon>
