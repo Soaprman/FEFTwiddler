@@ -72,6 +72,7 @@
             this.btnUnlockAmiiboChapters.TabIndex = 10;
             this.btnUnlockAmiiboChapters.Text = "Unlock amiibo chapters";
             this.btnUnlockAmiiboChapters.UseVisualStyleBackColor = true;
+            this.btnUnlockAmiiboChapters.Click += new System.EventHandler(this.btnUnlockAmiiboChapters_Click);
             // 
             // flwChaptersCompleted
             // 
