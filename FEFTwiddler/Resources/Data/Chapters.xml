@@ -1,42 +1,83 @@
-﻿<root>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
 	<chapter id="0" name="None" type="Story">
 		<text lang="English" displayName1="None" displayName2="" />
+		<text lang="Japanese" displayName1="" displayName2="" />
+		<text lang="Spanish" displayName1="" displayName2="" />
+		<text lang="French" displayName1="" displayName2="" />
+		<text lang="German" displayName1="" displayName2="" />
+		<text lang="Italian" displayName1="" displayName2="" />
 	</chapter>
 	<chapter id="1" name="Confirmation" type="Story">
 		<text lang="English" displayName1="Confirmation" displayName2="" />
+		<text lang="Japanese" displayName1="確認章" displayName2="" />
+		<text lang="Spanish" displayName1="Confirmar" displayName2="" />
+		<text lang="French" displayName1="Confirmation" displayName2="" />
+		<text lang="German" displayName1="Bestätigen" displayName2="" />
+		<text lang="Italian" displayName1="Conferma" displayName2="" />
 	</chapter>
 	<chapter id="2" name="Prologue" type="Story">
 		<text lang="English" displayName1="Prologue" displayName2="Ties that Bind" />
+		<text lang="Japanese" displayName1="無章" displayName2="その手が拓く未来" />
+		<text lang="Spanish" displayName1="Prólogo" displayName2="Lazos que unen" />
+		<text lang="French" displayName1="Prologue" displayName2="Des liens forts" />
+		<text lang="German" displayName1="Prolog" displayName2="Der Weg ist dein" />
+		<text lang="Italian" displayName1="Prologo" displayName2="Legami" />
 		<unlocks>
 			<chapter id="3" />
 		</unlocks>
 	</chapter>
 	<chapter id="3" name="Chapter1" type="Story">
 		<text lang="English" displayName1="Chapter 1" displayName2="Nohr" />
+		<text lang="Japanese" displayName1="1章" displayName2="暗夜の同胞" />
+		<text lang="Spanish" displayName1="Capítulo 1" displayName2="Nohr" />
+		<text lang="French" displayName1="Chap. 1" displayName2="Nohr" />
+		<text lang="German" displayName1="Kapitel 1" displayName2="Nohr" />
+		<text lang="Italian" displayName1="Capitolo 1" displayName2="Il Nohr" />
 		<unlocks>
 			<chapter id="4" />
 		</unlocks>
 	</chapter>
 	<chapter id="4" name="Chapter2" type="Story">
 		<text lang="English" displayName1="Chapter 2" displayName2="Gift of Ganglari" />
+		<text lang="Japanese" displayName1="2章" displayName2="魔剣ガングレリ" />
+		<text lang="Spanish" displayName1="Capítulo 2" displayName2="Ganglari" />
+		<text lang="French" displayName1="Chap. 2" displayName2="Ganglari" />
+		<text lang="German" displayName1="Kapitel 2" displayName2="Das Geschenk Gangleri" />
+		<text lang="Italian" displayName1="Capitolo 2" displayName2="Ganglari" />
 		<unlocks>
 			<chapter id="5" />
 		</unlocks>
 	</chapter>
 	<chapter id="5" name="Chapter3" type="Story">
 		<text lang="English" displayName1="Chapter 3" displayName2="Journey Begins" />
+		<text lang="Japanese" displayName1="3章" displayName2="旅立ちの刻" />
+		<text lang="Spanish" displayName1="Capítulo 3" displayName2="Inicio del viaje" />
+		<text lang="French" displayName1="Chap. 3" displayName2="Expédition frontalière" />
+		<text lang="German" displayName1="Kapitel 3" displayName2="Die Reise beginnt" />
+		<text lang="Italian" displayName1="Capitolo 3" displayName2="Inizia il viaggio" />
 		<unlocks>
 			<chapter id="6" />
 		</unlocks>
 	</chapter>
 	<chapter id="6" name="Chapter4" type="Story">
 		<text lang="English" displayName1="Chapter 4" displayName2="Hoshido" />
+		<text lang="Japanese" displayName1="4章" displayName2="白夜の同胞" />
+		<text lang="Spanish" displayName1="Capítulo 4" displayName2="Hoshido" />
+		<text lang="French" displayName1="Chap. 4" displayName2="Hoshido" />
+		<text lang="German" displayName1="Kapitel 4" displayName2="Hoshido" />
+		<text lang="Italian" displayName1="Capitolo 4" displayName2="L'Hoshido" />
 		<unlocks>
 			<chapter id="7" />
 		</unlocks>
 	</chapter>
 	<chapter id="7" name="Chapter5" type="Story">
 		<text lang="English" displayName1="Chapter 5" displayName2="Mother" />
+		<text lang="Japanese" displayName1="5章" displayName2="母と子" />
+		<text lang="Spanish" displayName1="Capítulo 5" displayName2="Madre" />
+		<text lang="French" displayName1="Chap. 5" displayName2="Une mère" />
+		<text lang="German" displayName1="Kapitel 5" displayName2="Mutter" />
+		<text lang="Italian" displayName1="Capitolo 5" displayName2="La madre" />
 		<unlocks>
 			<chapter id="8" />
 			<chapter id="31" />
@@ -46,12 +87,22 @@
 	</chapter>
 	<chapter id="8" name="Birthright_Chapter6" type="Story">
 		<text lang="English" displayName1="Chapter 6" displayName2="In the White Light" />
+		<text lang="Japanese" displayName1="6章" displayName2="光へ手を伸ばす" />
+		<text lang="Spanish" displayName1="Capítulo 6" displayName2="Un halo de luz blanca" />
+		<text lang="French" displayName1="Chap. 6" displayName2="Baignée de lumière" />
+		<text lang="German" displayName1="Kapitel 6" displayName2="Im Weißen Licht" />
+		<text lang="Italian" displayName1="Capitolo 6" displayName2="Verso la luce" />
 		<unlocks>
 			<chapter id="9" />
 		</unlocks>
 	</chapter>
 	<chapter id="9" name="Birthright_Chapter7" type="Story">
 		<text lang="English" displayName1="Chapter 7" displayName2="A Vow Upheld" />
+		<text lang="Japanese" displayName1="7章" displayName2="寄り集まる心" />
+		<text lang="Spanish" displayName1="Capítulo 7" displayName2="El juramento" />
+		<text lang="French" displayName1="Chap. 7" displayName2="Un serment respecté" />
+		<text lang="German" displayName1="Kapitel 7" displayName2="Ein gehaltener Schwur" />
+		<text lang="Italian" displayName1="Capitolo 7" displayName2="Una promessa mantenuta" />
 		<unlocks>
 			<chapter id="10" />
 			<chapter id="77" />
@@ -59,135 +110,250 @@
 	</chapter>
 	<chapter id="10" name="Birthright_Chapter8" type="Story">
 		<text lang="English" displayName1="Chapter 8" displayName2="Fierce Winds" />
+		<text lang="Japanese" displayName1="8章" displayName2="猛き風" />
+		<text lang="Spanish" displayName1="Capítulo 8" displayName2="Vientos feroces" />
+		<text lang="French" displayName1="Chap. 8" displayName2="Furieuse tempête" />
+		<text lang="German" displayName1="Kapitel 8" displayName2="Schneidende Winde" />
+		<text lang="Italian" displayName1="Capitolo 8" displayName2="Venti impetuosi" />
 		<unlocks>
 			<chapter id="11" />
 		</unlocks>
 	</chapter>
 	<chapter id="11" name="Birthright_Chapter9" type="Story">
 		<text lang="English" displayName1="Chapter 9" displayName2="Land of Gods" />
+		<text lang="Japanese" displayName1="9章" displayName2="神々の坐す国" />
+		<text lang="Spanish" displayName1="Capítulo 9" displayName2="Tierra de dioses" />
+		<text lang="French" displayName1="Chap. 9" displayName2="Le royaume des dieux" />
+		<text lang="German" displayName1="Kapitel 9" displayName2="Land der Götter" />
+		<text lang="Italian" displayName1="Capitolo 9" displayName2="La terra degli dèi" />
 		<unlocks>
 			<chapter id="12" />
 		</unlocks>
 	</chapter>
 	<chapter id="12" name="Birthright_Chapter10" type="Story">
 		<text lang="English" displayName1="Chapter 10" displayName2="Ninja Village" />
+		<text lang="Japanese" displayName1="10章" displayName2="忍の里" />
+		<text lang="Spanish" displayName1="Capítulo 10" displayName2="Aldea ninja" />
+		<text lang="French" displayName1="Chap. 10" displayName2="Le village ninja" />
+		<text lang="German" displayName1="Kapitel 10" displayName2="Dorf der Ninja" />
+		<text lang="Italian" displayName1="Capitolo 10" displayName2="Il villaggio ninja" />
 		<unlocks>
 			<chapter id="13" />
 		</unlocks>
 	</chapter>
 	<chapter id="13" name="Birthright_Chapter11" type="Story">
 		<text lang="English" displayName1="Chapter 11" displayName2="To the Sea" />
+		<text lang="Japanese" displayName1="11章" displayName2="海へ…" />
+		<text lang="Spanish" displayName1="Capítulo 11" displayName2="Hacia el mar" />
+		<text lang="French" displayName1="Chap. 11" displayName2="Pleine mer" />
+		<text lang="German" displayName1="Kapitel 11" displayName2="Auf zum Meer!" />
+		<text lang="Italian" displayName1="Capitolo 11" displayName2="Per mare" />
 		<unlocks>
 			<chapter id="14" />
 		</unlocks>
 	</chapter>
 	<chapter id="14" name="Birthright_Chapter12" type="Story">
 		<text lang="English" displayName1="Chapter 12" displayName2="Dark Reunion" />
+		<text lang="Japanese" displayName1="12章" displayName2="楽園の再会" />
+		<text lang="Spanish" displayName1="Capítulo 12" displayName2="Reencuentro oscuro" />
+		<text lang="French" displayName1="Chap. 12" displayName2="Sombres retrouvailles" />
+		<text lang="German" displayName1="Kapitel 12" displayName2="Dunkles Wiedersehen" />
+		<text lang="Italian" displayName1="Capitolo 12" displayName2="Incontro oscuro" />
 		<unlocks>
 			<chapter id="15" />
 		</unlocks>
 	</chapter>
 	<chapter id="15" name="Birthright_Chapter13" type="Story">
 		<text lang="English" displayName1="Chapter 13" displayName2="Another Hope" />
+		<text lang="Japanese" displayName1="13章" displayName2="魂は屈せず" />
+		<text lang="Spanish" displayName1="Capítulo 13" displayName2="Otra esperanza" />
+		<text lang="French" displayName1="Chap. 13" displayName2="Un nouvel espoir" />
+		<text lang="German" displayName1="Kapitel 13" displayName2="Neue Hoffnung" />
+		<text lang="Italian" displayName1="Capitolo 13" displayName2="Nuova speranza" />
 		<unlocks>
 			<chapter id="16" />
 		</unlocks>
 	</chapter>
 	<chapter id="16" name="Birthright_Chapter14" type="Story">
 		<text lang="English" displayName1="Chapter 14" displayName2="Light Scatters" />
+		<text lang="Japanese" displayName1="14章" displayName2="柔く光り散りて" />
+		<text lang="Spanish" displayName1="Capítulo 14" displayName2="La luz se expande" />
+		<text lang="French" displayName1="Chap. 14" displayName2="Lumière voilée" />
+		<text lang="German" displayName1="Kapitel 14" displayName2="Licht breitet sich aus" />
+		<text lang="Italian" displayName1="Capitolo 14" displayName2="Luce dispersa" />
 		<unlocks>
 			<chapter id="17" />
 		</unlocks>
 	</chapter>
 	<chapter id="17" name="Birthright_Chapter15" type="Story">
 		<text lang="English" displayName1="Chapter 15" displayName2="Wolfskin Peak" />
+		<text lang="Japanese" displayName1="15章" displayName2="人狼の峰" />
+		<text lang="Spanish" displayName1="Capítulo 15" displayName2="Pico del lobo" />
+		<text lang="French" displayName1="Chap. 15" displayName2="Le pic des loups" />
+		<text lang="German" displayName1="Kapitel 15" displayName2="Gipfel der Ulfhedin" />
+		<text lang="Italian" displayName1="Capitolo 15" displayName2="Il picco degli ulfhedin" />
 		<unlocks>
 			<chapter id="18" />
 		</unlocks>
 	</chapter>
 	<chapter id="18" name="Birthright_Chapter16" type="Story">
 		<text lang="English" displayName1="Chapter 16" displayName2="Pleasure Palace" />
+		<text lang="Japanese" displayName1="16章" displayName2="歓楽の宮殿" />
+		<text lang="Spanish" displayName1="Capítulo 16" displayName2="Palacio del ocio" />
+		<text lang="French" displayName1="Chap. 16" displayName2="Le palais des dangers" />
+		<text lang="German" displayName1="Kapitel 16" displayName2="Palast der Freude" />
+		<text lang="Italian" displayName1="Capitolo 16" displayName2="Il palazzo del piacere" />
 		<unlocks>
 			<chapter id="19" />
 		</unlocks>
 	</chapter>
 	<chapter id="19" name="Birthright_Chapter17" type="Story">
 		<text lang="English" displayName1="Chapter 17" displayName2="Lost in the Ice" />
+		<text lang="Japanese" displayName1="17章" displayName2="氷の別離" />
+		<text lang="Spanish" displayName1="Capítulo 17" displayName2="Extravío gélido" />
+		<text lang="French" displayName1="Chap. 17" displayName2="Prison de glace" />
+		<text lang="German" displayName1="Kapitel 17" displayName2="Verschollen im Eis" />
+		<text lang="Italian" displayName1="Capitolo 17" displayName2="Gelo nel cuore" />
 		<unlocks>
 			<chapter id="20" />
 		</unlocks>
 	</chapter>
 	<chapter id="20" name="Birthright_Chapter18" type="Story">
 		<text lang="English" displayName1="Chapter 18" displayName2="Leo" />
+		<text lang="Japanese" displayName1="18章" displayName2="暗夜王子レオン" />
+		<text lang="Spanish" displayName1="Capítulo 18" displayName2="Leo" />
+		<text lang="French" displayName1="Chap. 18" displayName2="Leo" />
+		<text lang="German" displayName1="Kapitel 18" displayName2="Leo" />
+		<text lang="Italian" displayName1="Capitolo 18" displayName2="Leo" />
 		<unlocks>
 			<chapter id="21" />
 		</unlocks>
 	</chapter>
 	<chapter id="21" name="Birthright_Chapter191" type="Story">
 		<text lang="English" displayName1="Chapter 19" displayName2="Rainbow Sage" />
+		<text lang="Japanese" displayName1="19章" displayName2="虹の賢者" />
+		<text lang="Spanish" displayName1="Capítulo 19" displayName2="Sabio Lumen" />
+		<text lang="French" displayName1="Chap. 19" displayName2="Le sage de l'iris" />
+		<text lang="German" displayName1="Kapitel 19" displayName2="Der Regenbogenweise" />
+		<text lang="Italian" displayName1="Capitolo 19" displayName2="Il savio irideo" />
 		<unlocks>
 			<chapter id="22" />
 		</unlocks>
 	</chapter>
 	<chapter id="22" name="Birthright_Chapter20" type="Story">
 		<text lang="English" displayName1="Chapter 20" displayName2="Fort Dragonfall" />
+		<text lang="Japanese" displayName1="20章" displayName2="黒竜砦" />
+		<text lang="Spanish" displayName1="Capítulo 20" displayName2="El Dragón Abatido" />
+		<text lang="French" displayName1="Chap. 20" displayName2="Le fort Dracomor" />
+		<text lang="German" displayName1="Kapitel 20" displayName2="Schwarzdrachenfeste" />
+		<text lang="Italian" displayName1="Capitolo 20" displayName2="Forte Grandrago" />
 		<unlocks>
 			<chapter id="23" />
 		</unlocks>
 	</chapter>
 	<chapter id="23" name="Birthright_Chapter21" type="Story">
 		<text lang="English" displayName1="Chapter 21" displayName2="Burning Falls" />
+		<text lang="Japanese" displayName1="21章" displayName2="燃える滝" />
+		<text lang="Spanish" displayName1="Capítulo 21" displayName2="Salto de fuego" />
+		<text lang="French" displayName1="Chap. 21" displayName2="Cascade de flammes" />
+		<text lang="German" displayName1="Kapitel 21" displayName2="Flüssiges Feuer" />
+		<text lang="Italian" displayName1="Capitolo 21" displayName2="Cascate ardenti" />
 		<unlocks>
 			<chapter id="24" />
 		</unlocks>
 	</chapter>
 	<chapter id="24" name="Birthright_Chapter22" type="Story">
 		<text lang="English" displayName1="Chapter 22" displayName2="Hidden Capital" />
+		<text lang="Japanese" displayName1="22章" displayName2="死したる王都" />
+		<text lang="Spanish" displayName1="Capítulo 22" displayName2="Capital oculta" />
+		<text lang="French" displayName1="Chap. 22" displayName2="La capitale dissimulée" />
+		<text lang="German" displayName1="Kapitel 22" displayName2="Hauptstadt der Not" />
+		<text lang="Italian" displayName1="Capitolo 22" displayName2="La capitale nascosta" />
 		<unlocks>
 			<chapter id="25" />
 		</unlocks>
 	</chapter>
 	<chapter id="25" name="Birthright_Chapter23" type="Story">
 		<text lang="English" displayName1="Chapter 23" displayName2="Camilla" />
+		<text lang="Japanese" displayName1="23章" displayName2="暗夜王女カミラ" />
+		<text lang="Spanish" displayName1="Capítulo 23" displayName2="Camilla" />
+		<text lang="French" displayName1="Chap. 23" displayName2="Camilla" />
+		<text lang="German" displayName1="Kapitel 23" displayName2="Camilla" />
+		<text lang="Italian" displayName1="Capitolo 23" displayName2="Camilla" />
 		<unlocks>
 			<chapter id="26" />
 		</unlocks>
 	</chapter>
 	<chapter id="26" name="Birthright_Chapter24" type="Story">
 		<text lang="English" displayName1="Chapter 24" displayName2="Tears of a Dragon" />
+		<text lang="Japanese" displayName1="24章" displayName2="星竜の涙" />
+		<text lang="Spanish" displayName1="Capítulo 24" displayName2="Lágrimas de dragón" />
+		<text lang="French" displayName1="Chap. 24" displayName2="Les larmes du dragon" />
+		<text lang="German" displayName1="Kapitel 24" displayName2="Drachentränen" />
+		<text lang="Italian" displayName1="Capitolo 24" displayName2="Lacrime di drago" />
 		<unlocks>
 			<chapter id="27" />
 		</unlocks>
 	</chapter>
 	<chapter id="27" name="Birthright_Chapter25" type="Story">
 		<text lang="English" displayName1="Chapter 25" displayName2="Traitor Revealed" />
+		<text lang="Japanese" displayName1="25章" displayName2="蝙蝠の正体" />
+		<text lang="Spanish" displayName1="Capítulo 25" displayName2="Traicionados" />
+		<text lang="French" displayName1="Chap. 25" displayName2="Bas les masques !" />
+		<text lang="German" displayName1="Kapitel 25" displayName2="Der wahre Verräter" />
+		<text lang="Italian" displayName1="Capitolo 25" displayName2="Tradimento rivelato" />
 		<unlocks>
 			<chapter id="28" />
 		</unlocks>
 	</chapter>
 	<chapter id="28" name="Birthright_Chapter26" type="Story">
 		<text lang="English" displayName1="Chapter 26" displayName2="Xander" />
+		<text lang="Japanese" displayName1="26章" displayName2="暗夜王子マークス" />
+		<text lang="Spanish" displayName1="Capítulo 26" displayName2="Xander" />
+		<text lang="French" displayName1="Chap. 26" displayName2="Xander" />
+		<text lang="German" displayName1="Kapitel 26" displayName2="Xander" />
+		<text lang="Italian" displayName1="Capitolo 26" displayName2="Xander" />
 		<unlocks>
 			<chapter id="29" />
 		</unlocks>
 	</chapter>
 	<chapter id="29" name="Birthright_Chapter27" type="Story">
 		<text lang="English" displayName1="Chapter 27" displayName2="King Garon" />
+		<text lang="Japanese" displayName1="27章" displayName2="暗夜王ガロン" />
+		<text lang="Spanish" displayName1="Capítulo 27" displayName2="Rey Garon" />
+		<text lang="French" displayName1="Chap. 27" displayName2="Le roi Garon" />
+		<text lang="German" displayName1="Kapitel 27" displayName2="König Garon" />
+		<text lang="Italian" displayName1="Capitolo 27" displayName2="Re Garon" />
 		<unlocks>
 			<chapter id="30" />
 		</unlocks>
 	</chapter>
 	<chapter id="30" name="Birthright_Endgame" type="Story">
 		<text lang="English" displayName1="Endgame" displayName2="Dawn Breaks" />
+		<text lang="Japanese" displayName1="終章" displayName2="闇の去り行く暁" />
+		<text lang="Spanish" displayName1="Final" displayName2="Estalla el albor" />
+		<text lang="French" displayName1="Fin" displayName2="Premières lueurs" />
+		<text lang="German" displayName1="Finale" displayName2="Der Morgen bricht an" />
+		<text lang="Italian" displayName1="Finale" displayName2="Un nuovo sole" />
 	</chapter>
 	<chapter id="31" name="Conquest_Chapter6" type="Story">
 		<text lang="English" displayName1="Chapter 6" displayName2="Embrace the Dark" />
+		<text lang="Japanese" displayName1="6章" displayName2="闇へと進みゆく" />
+		<text lang="Spanish" displayName1="Capítulo 6" displayName2="Acepta la oscuridad" />
+		<text lang="French" displayName1="Chap. 6" displayName2="Aux ténèbres" />
+		<text lang="German" displayName1="Kapitel 6" displayName2="Umarme die Finsternis" />
+		<text lang="Italian" displayName1="Capitolo 6" displayName2="Verso le tenebre" />
 		<unlocks>
 			<chapter id="32" />
 		</unlocks>
 	</chapter>
 	<chapter id="32" name="Conquest_Chapter7" type="Story">
 		<text lang="English" displayName1="Chapter 7" displayName2="A Dragon's Decree" />
+		<text lang="Japanese" displayName1="7章" displayName2="聞こえざる啓示" />
+		<text lang="Spanish" displayName1="Capítulo 7" displayName2="Ley del dragón" />
+		<text lang="French" displayName1="Chap. 7" displayName2="Le verdict du dragon" />
+		<text lang="German" displayName1="Kapitel 7" displayName2="Ein Drachenerlass" />
+		<text lang="Italian" displayName1="Capitolo 7" displayName2="Il verdetto del drago" />
 		<unlocks>
 			<chapter id="33" />
 			<chapter id="77" />
@@ -195,135 +361,250 @@
 	</chapter>
 	<chapter id="33" name="Conquest_Chapter8" type="Story">
 		<text lang="English" displayName1="Chapter 8" displayName2="Cold Reception" />
+		<text lang="Japanese" displayName1="8章" displayName2="氷の村の少女" />
+		<text lang="Spanish" displayName1="Capítulo 8" displayName2="Desencuentro" />
+		<text lang="French" displayName1="Chap. 8" displayName2="Accueil glacial" />
+		<text lang="German" displayName1="Kapitel 8" displayName2="Eisiger Empfang" />
+		<text lang="Italian" displayName1="Capitolo 8" displayName2="Una fredda accoglienza" />
 		<unlocks>
 			<chapter id="34" />
 		</unlocks>
 	</chapter>
 	<chapter id="34" name="Conquest_Chapter9" type="Story">
 		<text lang="English" displayName1="Chapter 9" displayName2="Another Trial" />
+		<text lang="Japanese" displayName1="9章" displayName2="再びの試練" />
+		<text lang="Spanish" displayName1="Capítulo 9" displayName2="Otra prueba" />
+		<text lang="French" displayName1="Chap. 9" displayName2="Nouvelle épreuve" />
+		<text lang="German" displayName1="Kapitel 9" displayName2="Ein neuer Test" />
+		<text lang="Italian" displayName1="Capitolo 9" displayName2="Ancora una prova" />
 		<unlocks>
 			<chapter id="35" />
 		</unlocks>
 	</chapter>
 	<chapter id="35" name="Conquest_Chapter10" type="Story">
 		<text lang="English" displayName1="Chapter 10" displayName2="Unhappy Reunion" />
+		<text lang="Japanese" displayName1="10章" displayName2="望まぬ再会" />
+		<text lang="Spanish" displayName1="Capítulo 10" displayName2="Reencuentro trágico" />
+		<text lang="French" displayName1="Chap. 10" displayName2="Tristes retrouvailles" />
+		<text lang="German" displayName1="Kapitel 10" displayName2="Trauriges Wiedersehen" />
+		<text lang="Italian" displayName1="Capitolo 10" displayName2="Triste incontro" />
 		<unlocks>
 			<chapter id="36" />
 		</unlocks>
 	</chapter>
 	<chapter id="36" name="Conquest_Chapter11" type="Story">
 		<text lang="English" displayName1="Chapter 11" displayName2="Rainbow Sage" />
+		<text lang="Japanese" displayName1="11章" displayName2="虹の賢者" />
+		<text lang="Spanish" displayName1="Capítulo 11" displayName2="Sabio Lumen" />
+		<text lang="French" displayName1="Chap. 11" displayName2="Le sage de l'iris" />
+		<text lang="German" displayName1="Kapitel 11" displayName2="Der Regenbogenweise" />
+		<text lang="Italian" displayName1="Capitolo 11" displayName2="Il savio irideo" />
 		<unlocks>
 			<chapter id="37" />
 		</unlocks>
 	</chapter>
 	<chapter id="37" name="Conquest_Chapter12" type="Story">
 		<text lang="English" displayName1="Chapter 12" displayName2="Bitter Intrigue" />
+		<text lang="Japanese" displayName1="12章" displayName2="昏き企み" />
+		<text lang="Spanish" displayName1="Capítulo 12" displayName2="Intriga amarga" />
+		<text lang="French" displayName1="Chap. 12" displayName2="Cruelle intrigue" />
+		<text lang="German" displayName1="Kapitel 12" displayName2="Bittere Intrigen" />
+		<text lang="Italian" displayName1="Capitolo 12" displayName2="Un amaro intrigo" />
 		<unlocks>
 			<chapter id="38" />
 		</unlocks>
 	</chapter>
 	<chapter id="38" name="Conquest_Chapter13" type="Story">
 		<text lang="English" displayName1="Chapter 13" displayName2="Uprising" />
+		<text lang="Japanese" displayName1="13章" displayName2="反乱鎮圧" />
+		<text lang="Spanish" displayName1="Capítulo 13" displayName2="Levantamiento" />
+		<text lang="French" displayName1="Chap. 13" displayName2="Rébellion" />
+		<text lang="German" displayName1="Kapitel 13" displayName2="Rebellion" />
+		<text lang="Italian" displayName1="Capitolo 13" displayName2="Rivolta" />
 		<unlocks>
 			<chapter id="39" />
 		</unlocks>
 	</chapter>
 	<chapter id="39" name="Conquest_Chapter14" type="Story">
 		<text lang="English" displayName1="Chapter 14" displayName2="Voice of Paradise" />
+		<text lang="Japanese" displayName1="14章" displayName2="楽園の歌声" />
+		<text lang="Spanish" displayName1="Capítulo 14" displayName2="Voz del paraíso" />
+		<text lang="French" displayName1="Chap. 14" displayName2="Une voix enchanteresse" />
+		<text lang="German" displayName1="Kapitel 14" displayName2="Himmlische Stimme" />
+		<text lang="Italian" displayName1="Capitolo 14" displayName2="Una voce celeste" />
 		<unlocks>
 			<chapter id="40" />
 		</unlocks>
 	</chapter>
 	<chapter id="40" name="Conquest_Chapter15" type="Story">
 		<text lang="English" displayName1="Chapter 15" displayName2="The Black Pillar" />
+		<text lang="Japanese" displayName1="15章" displayName2="鈍く崩れ落ちて" />
+		<text lang="Spanish" displayName1="Capítulo 15" displayName2="El pilar negro" />
+		<text lang="French" displayName1="Chap. 15" displayName2="La colonne noire" />
+		<text lang="German" displayName1="Kapitel 15" displayName2="Die dunkle Säule" />
+		<text lang="Italian" displayName1="Capitolo 15" displayName2="La colonna nera" />
 		<unlocks>
 			<chapter id="41" />
 		</unlocks>
 	</chapter>
 	<chapter id="41" name="Conquest_Chapter16" type="Story">
 		<text lang="English" displayName1="Chapter 16" displayName2="Invasion" />
+		<text lang="Japanese" displayName1="16章" displayName2="白夜侵攻" />
+		<text lang="Spanish" displayName1="Capítulo 16" displayName2="Invasión" />
+		<text lang="French" displayName1="Chap. 16" displayName2="Invasion" />
+		<text lang="German" displayName1="Kapitel 16" displayName2="Invasion" />
+		<text lang="Italian" displayName1="Capitolo 16" displayName2="Invasione" />
 		<unlocks>
 			<chapter id="42" />
 		</unlocks>
 	</chapter>
 	<chapter id="42" name="Conquest_Chapter17" type="Story">
 		<text lang="English" displayName1="Chapter 17" displayName2="Den of Betrayal" />
+		<text lang="Japanese" displayName1="17章" displayName2="裏切りの魔窟" />
+		<text lang="Spanish" displayName1="Capítulo 17" displayName2="Nido del traidor" />
+		<text lang="French" displayName1="Chap. 17" displayName2="Alliance perfide" />
+		<text lang="German" displayName1="Kapitel 17" displayName2="Höhle des Verräters" />
+		<text lang="Italian" displayName1="Capitolo 17" displayName2="Un nido di serpi" />
 		<unlocks>
 			<chapter id="43" />
 		</unlocks>
 	</chapter>
 	<chapter id="43" name="Conquest_Chapter18" type="Story">
 		<text lang="English" displayName1="Chapter 18" displayName2="Black &amp; White" />
+		<text lang="Japanese" displayName1="18章" displayName2="黒白の王子" />
+		<text lang="Spanish" displayName1="Capítulo 18" displayName2="Blanco y negro" />
+		<text lang="French" displayName1="Chap. 18" displayName2="Noir et blanc" />
+		<text lang="German" displayName1="Kapitel 18" displayName2="Schwarz und Weiß" />
+		<text lang="Italian" displayName1="Capitolo 18" displayName2="Bianco e nero" />
 		<unlocks>
 			<chapter id="44" />
 		</unlocks>
 	</chapter>
 	<chapter id="44" name="Conquest_Chapter191" type="Story">
 		<text lang="English" displayName1="Chapter 19" displayName2="Kitsune Lair" />
+		<text lang="Japanese" displayName1="19章" displayName2="妖狐の山" />
+		<text lang="Spanish" displayName1="Capítulo 19" displayName2="Guarida kitsune" />
+		<text lang="French" displayName1="Chap. 19" displayName2="La tanière du renard" />
+		<text lang="German" displayName1="Kapitel 19" displayName2="Fuchsbau" />
+		<text lang="Italian" displayName1="Capitolo 19" displayName2="La tana dei kitsune" />
 		<unlocks>
 			<chapter id="45" />
 		</unlocks>
 	</chapter>
 	<chapter id="45" name="Conquest_Chapter20" type="Story">
 		<text lang="English" displayName1="Chapter 20" displayName2="Winds of Change" />
+		<text lang="Japanese" displayName1="20章" displayName2="風の村の覇者" />
+		<text lang="Spanish" displayName1="Capítulo 20" displayName2="Nuevos vientos" />
+		<text lang="French" displayName1="Chap. 20" displayName2="Vents changeants" />
+		<text lang="German" displayName1="Kapitel 20" displayName2="Ein frischer Wind" />
+		<text lang="Italian" displayName1="Capitolo 20" displayName2="Il vento cambia" />
 		<unlocks>
 			<chapter id="46" />
 		</unlocks>
 	</chapter>
 	<chapter id="46" name="Conquest_Chapter21" type="Story">
 		<text lang="English" displayName1="Chapter 21" displayName2="Eternal Stairway" />
+		<text lang="Japanese" displayName1="21章" displayName2="黄泉の階段" />
+		<text lang="Spanish" displayName1="Capítulo 21" displayName2="Escalera Eterna" />
+		<text lang="French" displayName1="Chap. 21" displayName2="L'escalier sans fin" />
+		<text lang="German" displayName1="Kapitel 21" displayName2="Die Ewige Treppe" />
+		<text lang="Italian" displayName1="Capitolo 21" displayName2="La Scalinata Eterna" />
 		<unlocks>
 			<chapter id="47" />
 		</unlocks>
 	</chapter>
 	<chapter id="47" name="Conquest_Chapter22" type="Story">
 		<text lang="English" displayName1="Chapter 22" displayName2="Sakura" />
+		<text lang="Japanese" displayName1="22章" displayName2="白夜王女サクラ" />
+		<text lang="Spanish" displayName1="Capítulo 22" displayName2="Sakura" />
+		<text lang="French" displayName1="Chap. 22" displayName2="Sakura" />
+		<text lang="German" displayName1="Kapitel 22" displayName2="Sakura" />
+		<text lang="Italian" displayName1="Capitolo 22" displayName2="Sakura" />
 		<unlocks>
 			<chapter id="48" />
 		</unlocks>
 	</chapter>
 	<chapter id="48" name="Conquest_Chapter23" type="Story">
 		<text lang="English" displayName1="Chapter 23" displayName2="Possessed" />
+		<text lang="Japanese" displayName1="23章" displayName2="囚われし瞳" />
+		<text lang="Spanish" displayName1="Capítulo 23" displayName2="Posesión" />
+		<text lang="French" displayName1="Chap. 23" displayName2="La possession" />
+		<text lang="German" displayName1="Kapitel 23" displayName2="Besessen" />
+		<text lang="Italian" displayName1="Capitolo 23" displayName2="Possessione" />
 		<unlocks>
 			<chapter id="49" />
 		</unlocks>
 	</chapter>
 	<chapter id="49" name="Conquest_Chapter24" type="Story">
 		<text lang="English" displayName1="Chapter 24" displayName2="Hinoka" />
+		<text lang="Japanese" displayName1="24章" displayName2="白夜王女ヒノカ" />
+		<text lang="Spanish" displayName1="Capítulo 24" displayName2="Hinoka" />
+		<text lang="French" displayName1="Chap. 24" displayName2="Hinoka" />
+		<text lang="German" displayName1="Kapitel 24" displayName2="Hinoka" />
+		<text lang="Italian" displayName1="Capitolo 24" displayName2="Hinoka" />
 		<unlocks>
 			<chapter id="50" />
 		</unlocks>
 	</chapter>
 	<chapter id="50" name="Conquest_Chapter25" type="Story">
 		<text lang="English" displayName1="Chapter 25" displayName2="Ryoma" />
+		<text lang="Japanese" displayName1="25章" displayName2="白夜王子リョウマ" />
+		<text lang="Spanish" displayName1="Capítulo 25" displayName2="Ryoma" />
+		<text lang="French" displayName1="Chap. 25" displayName2="Ryoma" />
+		<text lang="German" displayName1="Kapitel 25" displayName2="Ryoma" />
+		<text lang="Italian" displayName1="Capitolo 25" displayName2="Ryoma" />
 		<unlocks>
 			<chapter id="51" />
 		</unlocks>
 	</chapter>
 	<chapter id="51" name="Conquest_Chapter26" type="Story">
 		<text lang="English" displayName1="Chapter 26" displayName2="Treason" />
+		<text lang="Japanese" displayName1="26章" displayName2="悪逆" />
+		<text lang="Spanish" displayName1="Capítulo 26" displayName2="Traición" />
+		<text lang="French" displayName1="Chap. 26" displayName2="Trahison" />
+		<text lang="German" displayName1="Kapitel 26" displayName2="Verrat" />
+		<text lang="Italian" displayName1="Capitolo 26" displayName2="Tradimento" />
 		<unlocks>
 			<chapter id="52" />
 		</unlocks>
 	</chapter>
 	<chapter id="52" name="Conquest_Chapter27" type="Story">
 		<text lang="English" displayName1="Chapter 27" displayName2="The Empty King" />
+		<text lang="Japanese" displayName1="27章" displayName2="虚ろなる王" />
+		<text lang="Spanish" displayName1="Capítulo 27" displayName2="Rey vacuo" />
+		<text lang="French" displayName1="Chap. 27" displayName2="Le visage du roi" />
+		<text lang="German" displayName1="Kapitel 27" displayName2="Des Königs Gesicht" />
+		<text lang="Italian" displayName1="Capitolo 27" displayName2="Il re vacuo" />
 		<unlocks>
 			<chapter id="53" />
 		</unlocks>
 	</chapter>
 	<chapter id="53" name="Conquest_Endgame" type="Story">
 		<text lang="English" displayName1="Endgame" displayName2="Night Breaks Through" />
+		<text lang="Japanese" displayName1="終章" displayName2="光去り行く黄昏" />
+		<text lang="Spanish" displayName1="Final" displayName2="La noche vence" />
+		<text lang="French" displayName1="Fin" displayName2="La nuit tombera" />
+		<text lang="German" displayName1="Finale" displayName2="Die Nacht bricht herein" />
+		<text lang="Italian" displayName1="Finale" displayName2="Eclissi" />
 	</chapter>
 	<chapter id="54" name="Revelation_Chapter6" type="Story">
 		<text lang="English" displayName1="Chapter 6" displayName2="Into the Ground" />
+		<text lang="Japanese" displayName1="6章" displayName2="狭間へ沈みゆく" />
+		<text lang="Spanish" displayName1="Capítulo 6" displayName2="En la tierra hundido" />
+		<text lang="French" displayName1="Chap. 6" displayName2="Dans le sol" />
+		<text lang="German" displayName1="Kapitel 6" displayName2="Im Grund versinkend" />
+		<text lang="Italian" displayName1="Capitolo 6" displayName2="Nel vuoto" />
 		<unlocks>
 			<chapter id="55" />
 		</unlocks>
 	</chapter>
 	<chapter id="55" name="Revelation_Chapter7" type="Story">
 		<text lang="English" displayName1="Chapter 7" displayName2="Unspeakable World" />
+		<text lang="Japanese" displayName1="7章" displayName2="語られざる世界" />
+		<text lang="Spanish" displayName1="Capítulo 7" displayName2="Mundo innombrable" />
+		<text lang="French" displayName1="Chap. 7" displayName2="Indicible univers" />
+		<text lang="German" displayName1="Kapitel 7" displayName2="Unaussprechliche Welt" />
+		<text lang="Italian" displayName1="Capitolo 7" displayName2="Un mondo innominabile" />
 		<unlocks>
 			<chapter id="56" />
 			<chapter id="77" />
@@ -331,222 +612,487 @@
 	</chapter>
 	<chapter id="56" name="Revelation_Chapter8" type="Story">
 		<text lang="English" displayName1="Chapter 8" displayName2="Traitor's Brand" />
+		<text lang="Japanese" displayName1="8章" displayName2="裏切りの汚名" />
+		<text lang="Spanish" displayName1="Capítulo 8" displayName2="La marca de la traición" />
+		<text lang="French" displayName1="Chap. 8" displayName2="La marque du traître" />
+		<text lang="German" displayName1="Kapitel 8" displayName2="Das Mal des Verräters" />
+		<text lang="Italian" displayName1="Capitolo 8" displayName2="Il marchio del traditore" />
 		<unlocks>
 			<chapter id="57" />
 		</unlocks>
 	</chapter>
 	<chapter id="57" name="Revelation_Chapter9" type="Story">
 		<text lang="English" displayName1="Chapter 9" displayName2="Wanderer" />
+		<text lang="Japanese" displayName1="9章" displayName2="流浪" />
+		<text lang="Spanish" displayName1="Capítulo 9" displayName2="Nómada" />
+		<text lang="French" displayName1="Chap. 9" displayName2="Vagabondages" />
+		<text lang="German" displayName1="Kapitel 9" displayName2="Wanderer" />
+		<text lang="Italian" displayName1="Capitolo 9" displayName2="Deviazione inaspettata" />
 		<unlocks>
 			<chapter id="58" />
 		</unlocks>
 	</chapter>
 	<chapter id="58" name="Revelation_Chapter10" type="Story">
 		<text lang="English" displayName1="Chapter 10" displayName2="Voice of a God" />
+		<text lang="Japanese" displayName1="10章" displayName2="神の声" />
+		<text lang="Spanish" displayName1="Capítulo 10" displayName2="Voz de un dios" />
+		<text lang="French" displayName1="Chap. 10" displayName2="La voix d'un dieu" />
+		<text lang="German" displayName1="Kapitel 10" displayName2="Ein Gott spricht" />
+		<text lang="Italian" displayName1="Capitolo 10" displayName2="Il volere degli dèi" />
 		<unlocks>
 			<chapter id="59" />
 		</unlocks>
 	</chapter>
 	<chapter id="59" name="Revelation_Chapter11" type="Story">
 		<text lang="English" displayName1="Chapter 11" displayName2="Mutual Enemies" />
+		<text lang="Japanese" displayName1="11章" displayName2="共闘" />
+		<text lang="Spanish" displayName1="Capítulo 11" displayName2="Enemigo mutuo" />
+		<text lang="French" displayName1="Chap. 11" displayName2="Ennemis communs" />
+		<text lang="German" displayName1="Kapitel 11" displayName2="Gemeinsame Feinde" />
+		<text lang="Italian" displayName1="Capitolo 11" displayName2="Nemici comuni" />
 		<unlocks>
 			<chapter id="60" />
 		</unlocks>
 	</chapter>
 	<chapter id="60" name="Revelation_Chapter12" type="Story">
 		<text lang="English" displayName1="Chapter 12" displayName2="Frozen Sea" />
+		<text lang="Japanese" displayName1="12章" displayName2="凍てつく海" />
+		<text lang="Spanish" displayName1="Capítulo 12" displayName2="Mar helado" />
+		<text lang="French" displayName1="Chap. 12" displayName2="Mer de glace" />
+		<text lang="German" displayName1="Kapitel 12" displayName2="Meer aus Eis" />
+		<text lang="Italian" displayName1="Capitolo 12" displayName2="Il mare ghiacciato" />
 		<unlocks>
 			<chapter id="61" />
 		</unlocks>
 	</chapter>
 	<chapter id="61" name="Revelation_Chapter13" type="Story">
 		<text lang="English" displayName1="Chapter 13" displayName2="A Lost Peace" />
+		<text lang="Japanese" displayName1="13章" displayName2="失われた楽園" />
+		<text lang="Spanish" displayName1="Capítulo 13" displayName2="Paz perdida" />
+		<text lang="French" displayName1="Chap. 13" displayName2="Une paix compromise" />
+		<text lang="German" displayName1="Kapitel 13" displayName2="Ein verlorener Frieden" />
+		<text lang="Italian" displayName1="Capitolo 13" displayName2="Una pace compromessa" />
 		<unlocks>
 			<chapter id="62" />
 		</unlocks>
 	</chapter>
 	<chapter id="62" name="Revelation_Chapter14" type="Story">
 		<text lang="English" displayName1="Chapter 14" displayName2="Orders" />
+		<text lang="Japanese" displayName1="14章" displayName2="暗夜軍襲来" />
+		<text lang="Spanish" displayName1="Capítulo 14" displayName2="Órdenes" />
+		<text lang="French" displayName1="Chap. 14" displayName2="Suivre les ordres" />
+		<text lang="German" displayName1="Kapitel 14" displayName2="Befehle" />
+		<text lang="Italian" displayName1="Capitolo 14" displayName2="Ordini" />
 		<unlocks>
 			<chapter id="63" />
 		</unlocks>
 	</chapter>
 	<chapter id="63" name="Revelation_Chapter15" type="Story">
 		<text lang="English" displayName1="Chapter 15" displayName2="Rainbow Sage" />
+		<text lang="Japanese" displayName1="15章" displayName2="虹の賢者" />
+		<text lang="Spanish" displayName1="Capítulo 15" displayName2="Sabio Lumen" />
+		<text lang="French" displayName1="Chap. 15" displayName2="Le sage de l'iris" />
+		<text lang="German" displayName1="Kapitel 15" displayName2="Der Regenbogenweise" />
+		<text lang="Italian" displayName1="Capitolo 15" displayName2="Il savio irideo" />
 		<unlocks>
 			<chapter id="64" />
 		</unlocks>
 	</chapter>
 	<chapter id="64" name="Revelation_Chapter16" type="Story">
 		<text lang="English" displayName1="Chapter 16" displayName2="White Flames" />
+		<text lang="Japanese" displayName1="16章" displayName2="白き炎" />
+		<text lang="Spanish" displayName1="Capítulo 16" displayName2="Llamas blancas" />
+		<text lang="French" displayName1="Chap. 16" displayName2="Flammes blanches" />
+		<text lang="German" displayName1="Kapitel 16" displayName2="Weiße Flammen" />
+		<text lang="Italian" displayName1="Capitolo 16" displayName2="Fiamme bianche" />
 		<unlocks>
 			<chapter id="65" />
 		</unlocks>
 	</chapter>
 	<chapter id="65" name="Revelation_Chapter17" type="Story">
 		<text lang="English" displayName1="Chapter 17" displayName2="Black Flames" />
+		<text lang="Japanese" displayName1="17章" displayName2="黒き炎" />
+		<text lang="Spanish" displayName1="Capítulo 17" displayName2="Llamas negras" />
+		<text lang="French" displayName1="Chap. 17" displayName2="Flammes noires" />
+		<text lang="German" displayName1="Kapitel 17" displayName2="Schwarze Flammen" />
+		<text lang="Italian" displayName1="Capitolo 17" displayName2="Fiamme nere" />
 		<unlocks>
 			<chapter id="66" />
 		</unlocks>
 	</chapter>
 	<chapter id="66" name="Revelation_Chapter18" type="Story">
 		<text lang="English" displayName1="Chapter 18" displayName2="Veiled Kingdom" />
+		<text lang="Japanese" displayName1="18章" displayName2="見えざる王国" />
+		<text lang="Spanish" displayName1="Capítulo 18" displayName2="Reino velado" />
+		<text lang="French" displayName1="Chap. 18" displayName2="Le royaume secret" />
+		<text lang="German" displayName1="Kapitel 18" displayName2="Hinter dem Schleier" />
+		<text lang="Italian" displayName1="Capitolo 18" displayName2="Il regno velato" />
 		<unlocks>
 			<chapter id="67" />
 		</unlocks>
 	</chapter>
 	<chapter id="67" name="Revelation_Chapter191" type="Story">
 		<text lang="English" displayName1="Chapter 19" displayName2="Hidden Strings" />
+		<text lang="Japanese" displayName1="19章" displayName2="滅びの街" />
+		<text lang="Spanish" displayName1="Capítulo 19" displayName2="Hilos ocultos" />
+		<text lang="French" displayName1="Chap. 19" displayName2="Ficelles cachées" />
+		<text lang="German" displayName1="Kapitel 19" displayName2="Unsichtbare Fäden" />
+		<text lang="Italian" displayName1="Capitolo 19" displayName2="Fili nascosti" />
 		<unlocks>
 			<chapter id="68" />
 		</unlocks>
 	</chapter>
 	<chapter id="68" name="Revelation_Chapter20" type="Story">
 		<text lang="English" displayName1="Chapter 20" displayName2="Seeds of Doubt" />
+		<text lang="Japanese" displayName1="20章" displayName2="疑惑の種子" />
+		<text lang="Spanish" displayName1="Capítulo 20" displayName2="Desconfianza" />
+		<text lang="French" displayName1="Chap. 20" displayName2="L'ombre du soupçon" />
+		<text lang="German" displayName1="Kapitel 20" displayName2="Saat des Zweifels" />
+		<text lang="Italian" displayName1="Capitolo 20" displayName2="I semi del dubbio" />
 		<unlocks>
 			<chapter id="69" />
 		</unlocks>
 	</chapter>
 	<chapter id="69" name="Revelation_Chapter21" type="Story">
 		<text lang="English" displayName1="Chapter 21" displayName2="Going Forward" />
+		<text lang="Japanese" displayName1="21章" displayName2="進むべき道" />
+		<text lang="Spanish" displayName1="Capítulo 21" displayName2="Hacia delante" />
+		<text lang="French" displayName1="Chap. 21" displayName2="Détour fatidique" />
+		<text lang="German" displayName1="Kapitel 21" displayName2="Weiter voran" />
+		<text lang="Italian" displayName1="Capitolo 21" displayName2="Andare avanti" />
 		<unlocks>
 			<chapter id="70" />
 		</unlocks>
 	</chapter>
 	<chapter id="70" name="Revelation_Chapter22" type="Story">
 		<text lang="English" displayName1="Chapter 22" displayName2="Memories" />
+		<text lang="Japanese" displayName1="22章" displayName2="母の記憶" />
+		<text lang="Spanish" displayName1="Capítulo 22" displayName2="Recuerdos" />
+		<text lang="French" displayName1="Chap. 22" displayName2="Réminiscences" />
+		<text lang="German" displayName1="Kapitel 22" displayName2="Erinnerungen" />
+		<text lang="Italian" displayName1="Capitolo 22" displayName2="Ricordi" />
 		<unlocks>
 			<chapter id="71" />
 		</unlocks>
 	</chapter>
 	<chapter id="71" name="Revelation_Chapter23" type="Story">
 		<text lang="English" displayName1="Chapter 23" displayName2="Arete Undone" />
+		<text lang="Japanese" displayName1="23章" displayName2="眷属シェンメイ" />
+		<text lang="Spanish" displayName1="Capítulo 23" displayName2="Arete expuesta" />
+		<text lang="French" displayName1="Chap. 23" displayName2="La fin d'Arete" />
+		<text lang="German" displayName1="Kapitel 23" displayName2="Arete fällt" />
+		<text lang="Italian" displayName1="Capitolo 23" displayName2="La fine di Arete" />
 		<unlocks>
 			<chapter id="72" />
 		</unlocks>
 	</chapter>
 	<chapter id="72" name="Revelation_Chapter24" type="Story">
 		<text lang="English" displayName1="Chapter 24" displayName2="Days Lost" />
+		<text lang="Japanese" displayName1="24章" displayName2="在りし日の面影" />
+		<text lang="Spanish" displayName1="Capítulo 24" displayName2="Días perdidos" />
+		<text lang="French" displayName1="Chap. 24" displayName2="Visions d'outre-tombe" />
+		<text lang="German" displayName1="Kapitel 24" displayName2="Verlorene Zeit" />
+		<text lang="Italian" displayName1="Capitolo 24" displayName2="Giorni perduti" />
 		<unlocks>
 			<chapter id="73" />
 		</unlocks>
 	</chapter>
 	<chapter id="73" name="Revelation_Chapter25" type="Story">
 		<text lang="English" displayName1="Chapter 25" displayName2="Blades Drawn" />
+		<text lang="Japanese" displayName1="25章" displayName2="魔剣士再び" />
+		<text lang="Spanish" displayName1="Capítulo 25" displayName2="Espadas en alto" />
+		<text lang="French" displayName1="Chap. 25" displayName2="À la pointe de l'épée" />
+		<text lang="German" displayName1="Kapitel 25" displayName2="Gezogene Schwerter" />
+		<text lang="Italian" displayName1="Capitolo 25" displayName2="Scontro di lame" />
 		<unlocks>
 			<chapter id="74" />
 		</unlocks>
 	</chapter>
 	<chapter id="74" name="Revelation_Chapter26" type="Story">
 		<text lang="English" displayName1="Chapter 26" displayName2="The Vallite King" />
+		<text lang="Japanese" displayName1="26章" displayName2="我が名は透魔王" />
+		<text lang="Spanish" displayName1="Capítulo 26" displayName2="Rey de Valla" />
+		<text lang="French" displayName1="Chap. 26" displayName2="Le roi de Valla" />
+		<text lang="German" displayName1="Kapitel 26" displayName2="Vallas König" />
+		<text lang="Italian" displayName1="Capitolo 26" displayName2="Il re del Valla" />
 		<unlocks>
 			<chapter id="75" />
 		</unlocks>
 	</chapter>
 	<chapter id="75" name="Revelation_Chapter27" type="Story">
 		<text lang="English" displayName1="Chapter 27" displayName2="Hear My Cry" />
+		<text lang="Japanese" displayName1="27章" displayName2="埋もれ狂い果てて" />
+		<text lang="Spanish" displayName1="Capítulo 27" displayName2="Lloros que se ignoran" />
+		<text lang="French" displayName1="Chap. 27" displayName2="Sans réponse" />
+		<text lang="German" displayName1="Kapitel 27" displayName2="Höre meinen Ruf" />
+		<text lang="Italian" displayName1="Capitolo 27" displayName2="Ascoltatemi" />
 		<unlocks>
 			<chapter id="76" />
 		</unlocks>
 	</chapter>
 	<chapter id="76" name="Revelation_Endgame" type="Story">
 		<text lang="English" displayName1="Endgame" displayName2="Anankos" />
+		<text lang="Japanese" displayName1="終章" displayName2="透魔竜ハイドラ" />
+		<text lang="Spanish" displayName1="Final" displayName2="Anankos" />
+		<text lang="French" displayName1="Fin" displayName2="Anankos" />
+		<text lang="German" displayName1="Finale" displayName2="Anankos" />
+		<text lang="Italian" displayName1="Finale" displayName2="Anankos" />
 	</chapter>
 	<chapter id="77" name="Paralogue1" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 1" displayName2="Tragic Start" />
+		<text lang="Japanese" displayName1="外伝" displayName2="悲劇にさす光明" />
+		<text lang="Spanish" displayName1="Desvío 1" displayName2="Inicio trágico" />
+		<text lang="French" displayName1="Anx. 1" displayName2="Prémices tragiques" />
+		<text lang="German" displayName1="Nebenq. 1" displayName2="Ein tragischer Beginn" />
+		<text lang="Italian" displayName1="Append. 1" displayName2="Un tragico inizio" />
 	</chapter>
 	<chapter id="78" name="Paralogue2" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 2" displayName2="Dragon Blood" />
+		<text lang="Japanese" displayName1="外伝" displayName2="竜の血がもつ宿命" />
+		<text lang="Spanish" displayName1="Desvío 2" displayName2="Sangre de dragón" />
+		<text lang="French" displayName1="Anx. 2" displayName2="Le sang du dragon" />
+		<text lang="German" displayName1="Nebenq. 2" displayName2="Drachenblut" />
+		<text lang="Italian" displayName1="Append. 2" displayName2="Sangue di drago" />
 	</chapter>
 	<chapter id="79" name="Paralogue3" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 3" displayName2="Surprise Duet" />
+		<text lang="Japanese" displayName1="外伝" displayName2="歌姫と共に" />
+		<text lang="Spanish" displayName1="Desvío 3" displayName2="Dúo sorpresa" />
+		<text lang="French" displayName1="Anx. 3" displayName2="Étrange rencontre" />
+		<text lang="German" displayName1="Nebenq. 3" displayName2="Überraschendes Duett" />
+		<text lang="Italian" displayName1="Append. 3" displayName2="Duetto a sorpresa" />
 	</chapter>
 	<chapter id="80" name="Paralogue4" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 4" displayName2="Fight or Flight" />
+		<text lang="Japanese" displayName1="外伝" displayName2="闘わぬことの意味" />
+		<text lang="Spanish" displayName1="Desvío 4" displayName2="Luchar o escapar" />
+		<text lang="French" displayName1="Anx. 4" displayName2="Combattre ou fuir" />
+		<text lang="German" displayName1="Nebenq. 4" displayName2="Kampf oder Flucht" />
+		<text lang="Italian" displayName1="Append. 4" displayName2="Combattere o no" />
 	</chapter>
 	<chapter id="81" name="Paralogue5" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 5" displayName2="Bold Approach" />
+		<text lang="Japanese" displayName1="外伝" displayName2="心通うとき" />
+		<text lang="Spanish" displayName1="Desvío 5" displayName2="Enfoque audaz" />
+		<text lang="French" displayName1="Anx. 5" displayName2="Une approche risquée" />
+		<text lang="German" displayName1="Nebenq. 5" displayName2="Wagemut" />
+		<text lang="Italian" displayName1="Append. 5" displayName2="Lo sprone giusto" />
 	</chapter>
 	<chapter id="82" name="Paralogue6" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 6" displayName2="Herbal Remedy" />
+		<text lang="Japanese" displayName1="外伝" displayName2="願いの薬草" />
+		<text lang="Spanish" displayName1="Desvío 6" displayName2="Cura natural" />
+		<text lang="French" displayName1="Anx. 6" displayName2="Plante médicinale" />
+		<text lang="German" displayName1="Nebenq. 6" displayName2="Heilende Hände" />
+		<text lang="Italian" displayName1="Append. 6" displayName2="Rimedi naturali" />
 	</chapter>
 	<chapter id="83" name="Paralogue7" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 7" displayName2="Father &amp; Liege" />
+		<text lang="Japanese" displayName1="外伝" displayName2="父の背を追って" />
+		<text lang="Spanish" displayName1="Desvío 7" displayName2="Padre y señor" />
+		<text lang="French" displayName1="Anx. 7" displayName2="Père et seigneur" />
+		<text lang="German" displayName1="Nebenq. 7" displayName2="Vater und Herr" />
+		<text lang="Italian" displayName1="Append. 7" displayName2="Padre padrone" />
 	</chapter>
 	<chapter id="84" name="Paralogue8" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 8" displayName2="A Great Hunt" />
+		<text lang="Japanese" displayName1="外伝" displayName2="狩猟に導かれし道" />
+		<text lang="Spanish" displayName1="Desvío 8" displayName2="Gran cacería" />
+		<text lang="French" displayName1="Anx. 8" displayName2="Partie de chasse" />
+		<text lang="German" displayName1="Nebenq. 8" displayName2="Die große Jagd" />
+		<text lang="Italian" displayName1="Append. 8" displayName2="Caccia grossa" />
 	</chapter>
 	<chapter id="85" name="Paralogue9" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 9" displayName2="Saizo vs. Saizo" />
+		<text lang="Japanese" displayName1="外伝" displayName2="サイゾウの名跡" />
+		<text lang="Spanish" displayName1="Desvío 9" displayName2="Saizo contra Saizo" />
+		<text lang="French" displayName1="Anx. 9" displayName2="Saizo contre Saizo" />
+		<text lang="German" displayName1="Nebenq. 9" displayName2="Saizo vs. Saizo" />
+		<text lang="Italian" displayName1="Append. 9" displayName2="Saizo contro Saizo" />
 	</chapter>
 	<chapter id="86" name="Paralogue10" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 10" displayName2="Hunter &amp; Prey" />
+		<text lang="Japanese" displayName1="外伝" displayName2="狩る者狩られる者" />
+		<text lang="Spanish" displayName1="Desvío 10" displayName2="Cazador y presa" />
+		<text lang="French" displayName1="Anx. 10" displayName2="La proie et le chasseur" />
+		<text lang="German" displayName1="Nebenq. 10" displayName2="Jäger und Beute" />
+		<text lang="Italian" displayName1="Append. 10" displayName2="Cacciatore e preda" />
 	</chapter>
 	<chapter id="87" name="Paralogue11" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 11" displayName2="A Long Grudge" />
+		<text lang="Japanese" displayName1="外伝" displayName2="愛憎半ば" />
+		<text lang="Spanish" displayName1="Desvío 11" displayName2="Rencor eterno" />
+		<text lang="French" displayName1="Anx. 11" displayName2="Vieille rancune" />
+		<text lang="German" displayName1="Nebenq. 11" displayName2="Alter Groll" />
+		<text lang="Italian" displayName1="Append. 11" displayName2="Rancori" />
 	</chapter>
 	<chapter id="88" name="Paralogue12" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 12" displayName2="Sweet Dreams" />
+		<text lang="Japanese" displayName1="外伝" displayName2="眠り妨ぐもの" />
+		<text lang="Spanish" displayName1="Desvío 12" displayName2="Dulces sueños" />
+		<text lang="French" displayName1="Anx. 12" displayName2="De doux rêves" />
+		<text lang="German" displayName1="Nebenq. 12" displayName2="Süße Träume" />
+		<text lang="Italian" displayName1="Append. 12" displayName2="Sogni d'oro" />
 	</chapter>
 	<chapter id="89" name="Paralogue13" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 13" displayName2="Truly Talented" />
+		<text lang="Japanese" displayName1="外伝" displayName2="完璧な娘" />
+		<text lang="Spanish" displayName1="Desvío 13" displayName2="Talento real" />
+		<text lang="French" displayName1="Anx. 13" displayName2="Un talent inné" />
+		<text lang="German" displayName1="Nebenq. 13" displayName2="Naturtalent" />
+		<text lang="Italian" displayName1="Append. 13" displayName2="Un vero talento" />
 	</chapter>
 	<chapter id="90" name="Paralogue14" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 14" displayName2="After the End" />
+		<text lang="Japanese" displayName1="外伝" displayName2="秘術の果てに" />
+		<text lang="Spanish" displayName1="Desvío 14" displayName2="Tras el fin" />
+		<text lang="French" displayName1="Anx. 14" displayName2="Magie noire" />
+		<text lang="German" displayName1="Nebenq. 14" displayName2="Nach dem Ende" />
+		<text lang="Italian" displayName1="Append. 14" displayName2="Dopo la fine" />
 	</chapter>
 	<chapter id="91" name="Paralogue15" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 15" displayName2="Hidden Bravery" />
+		<text lang="Japanese" displayName1="外伝" displayName2="秘めたる覚悟" />
+		<text lang="Spanish" displayName1="Desvío 15" displayName2="Valor oculto" />
+		<text lang="French" displayName1="Anx. 15" displayName2="Bravoure révélée" />
+		<text lang="German" displayName1="Nebenq. 15" displayName2="Verborgener Mut" />
+		<text lang="Italian" displayName1="Append. 15" displayName2="Valore nascosto" />
 	</chapter>
 	<chapter id="92" name="Paralogue16" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 16" displayName2="Abducted" />
+		<text lang="Japanese" displayName1="外伝" displayName2="囚われの王子" />
+		<text lang="Spanish" displayName1="Desvío 16" displayName2="Secuestrado" />
+		<text lang="French" displayName1="Anx. 16" displayName2="L'enlèvement" />
+		<text lang="German" displayName1="Nebenq. 16" displayName2="Entführt" />
+		<text lang="Italian" displayName1="Append. 16" displayName2="Rapimento" />
 	</chapter>
 	<chapter id="93" name="Paralogue17" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 17" displayName2="Two Defenders" />
+		<text lang="Japanese" displayName1="外伝" displayName2="守り守られる者" />
+		<text lang="Spanish" displayName1="Desvío 17" displayName2="Defensa doble" />
+		<text lang="French" displayName1="Anx. 17" displayName2="Vaillance filiale" />
+		<text lang="German" displayName1="Nebenq. 17" displayName2="Stählernes Herz" />
+		<text lang="Italian" displayName1="Append. 17" displayName2="I difensori" />
 	</chapter>
 	<chapter id="94" name="Paralogue18" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 18" displayName2="Nutty Family" />
+		<text lang="Japanese" displayName1="外伝" displayName2="風変わりな親子" />
+		<text lang="Spanish" displayName1="Desvío 18" displayName2="De tal palo, tal astilla" />
+		<text lang="French" displayName1="Anx. 18" displayName2="Une famille étrange" />
+		<text lang="German" displayName1="Nebenq. 18" displayName2="Wie der Vater..." />
+		<text lang="Italian" displayName1="Append. 18" displayName2="Tale padre..." />
 	</chapter>
 	<chapter id="95" name="Paralogue19" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 19" displayName2="Great Heroism" />
+		<text lang="Japanese" displayName1="外伝" displayName2="寂寥と嘘と喜びと" />
+		<text lang="Spanish" displayName1="Desvío 19" displayName2="Gran heroísmo" />
+		<text lang="French" displayName1="Anx. 19" displayName2="Héros confondu" />
+		<text lang="German" displayName1="Nebenq. 19" displayName2="Heldenmut" />
+		<text lang="Italian" displayName1="Append. 19" displayName2="Atto di eroismo" />
 	</chapter>
 	<chapter id="96" name="Paralogue20" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 20" displayName2="Ultimate Power" />
+		<text lang="Japanese" displayName1="外伝" displayName2="究極最強の魔書" />
+		<text lang="Spanish" displayName1="Desvío 20" displayName2="Poder definitivo" />
+		<text lang="French" displayName1="Anx. 20" displayName2="Le pouvoir absolu" />
+		<text lang="German" displayName1="Nebenq. 20" displayName2="Wahre Macht" />
+		<text lang="Italian" displayName1="Append. 20" displayName2="Potere supremo" />
 	</chapter>
 	<chapter id="97" name="Paralogue21" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 21" displayName2="Bright Smile" />
+		<text lang="Japanese" displayName1="外伝" displayName2="危機に咲く笑顔" />
+		<text lang="Spanish" displayName1="Desvío 21" displayName2="Sonrisa radiante" />
+		<text lang="French" displayName1="Anx. 21" displayName2="Un sourire éclatant" />
+		<text lang="German" displayName1="Nebenq. 21" displayName2="Sonnenschein" />
+		<text lang="Italian" displayName1="Append. 21" displayName2="Un sorriso radioso" />
 	</chapter>
 	<chapter id="98" name="Paralogue22" type="Paralogue">
 		<text lang="English" displayName1="Paralogue 22" displayName2="Abrupt Clash" />
+		<text lang="Japanese" displayName1="外伝" displayName2="予期せぬ遭遇" />
+		<text lang="Spanish" displayName1="Desvío 22" displayName2="Choque brutal" />
+		<text lang="French" displayName1="Anx. 22" displayName2="Confrontation violente" />
+		<text lang="German" displayName1="Nebenq. 22" displayName2="Aus dem Nichts" />
+		<text lang="Italian" displayName1="Append. 22" displayName2="Scontro" />
 	</chapter>
 	<chapter id="99" name="Birthright_Invasion1" type="Invasion">
 		<text lang="English" displayName1="Invasion 1" displayName2="" />
+		<text lang="Japanese" displayName1="防衛戦１" displayName2="" />
+		<text lang="Spanish" displayName1="Invasión 1" displayName2="" />
+		<text lang="French" displayName1="Invasion 1" displayName2="" />
+		<text lang="German" displayName1="Belagerung 1" displayName2="" />
+		<text lang="Italian" displayName1="Invasione 1" displayName2="" />
 	</chapter>
 	<chapter id="100" name="Birthright_Invasion2" type="Invasion">
 		<text lang="English" displayName1="Invasion 2" displayName2="" />
+		<text lang="Japanese" displayName1="防衛戦２" displayName2="" />
+		<text lang="Spanish" displayName1="Invasión 2" displayName2="" />
+		<text lang="French" displayName1="Invasion 2" displayName2="" />
+		<text lang="German" displayName1="Belagerung 2" displayName2="" />
+		<text lang="Italian" displayName1="Invasione 2" displayName2="" />
 	</chapter>
 	<chapter id="101" name="Birthright_Invasion3" type="Invasion">
 		<text lang="English" displayName1="Invasion 3" displayName2="" />
+		<text lang="Japanese" displayName1="防衛戦３" displayName2="" />
+		<text lang="Spanish" displayName1="Invasión 3" displayName2="" />
+		<text lang="French" displayName1="Invasion 3" displayName2="" />
+		<text lang="German" displayName1="Belagerung 3" displayName2="" />
+		<text lang="Italian" displayName1="Invasione 3" displayName2="" />
 	</chapter>
 	<chapter id="102" name="Conquest_Invasion1" type="Invasion">
 		<text lang="English" displayName1="Invasion 1" displayName2="" />
+		<text lang="Japanese" displayName1="防衛戦１" displayName2="" />
+		<text lang="Spanish" displayName1="Invasión 1" displayName2="" />
+		<text lang="French" displayName1="Invasion 1" displayName2="" />
+		<text lang="German" displayName1="Belagerung 1" displayName2="" />
+		<text lang="Italian" displayName1="Invasione 1" displayName2="" />
 	</chapter>
 	<chapter id="103" name="Conquest_Invasion2" type="Invasion">
 		<text lang="English" displayName1="Invasion 2" displayName2="" />
+		<text lang="Japanese" displayName1="防衛戦２" displayName2="" />
+		<text lang="Spanish" displayName1="Invasión 2" displayName2="" />
+		<text lang="French" displayName1="Invasion 2" displayName2="" />
+		<text lang="German" displayName1="Belagerung 2" displayName2="" />
+		<text lang="Italian" displayName1="Invasione 2" displayName2="" />
 	</chapter>
 	<chapter id="104" name="Conquest_Invasion3" type="Invasion">
 		<text lang="English" displayName1="Invasion 3" displayName2="" />
+		<text lang="Japanese" displayName1="防衛戦３" displayName2="" />
+		<text lang="Spanish" displayName1="Invasión 3" displayName2="" />
+		<text lang="French" displayName1="Invasion 3" displayName2="" />
+		<text lang="German" displayName1="Belagerung 3" displayName2="" />
+		<text lang="Italian" displayName1="Invasione 3" displayName2="" />
 	</chapter>
 	<chapter id="105" name="Revelation_Invasion1" type="Invasion">
 		<text lang="English" displayName1="Invasion 1" displayName2="" />
+		<text lang="Japanese" displayName1="防衛戦１" displayName2="" />
+		<text lang="Spanish" displayName1="Invasión 1" displayName2="" />
+		<text lang="French" displayName1="Invasion 1" displayName2="" />
+		<text lang="German" displayName1="Belagerung 1" displayName2="" />
+		<text lang="Italian" displayName1="Invasione 1" displayName2="" />
 	</chapter>
 	<chapter id="106" name="Revelation_Invasion2" type="Invasion">
 		<text lang="English" displayName1="Invasion 2" displayName2="" />
+		<text lang="Japanese" displayName1="防衛戦２" displayName2="" />
+		<text lang="Spanish" displayName1="Invasión 2" displayName2="" />
+		<text lang="French" displayName1="Invasion 2" displayName2="" />
+		<text lang="German" displayName1="Belagerung 2" displayName2="" />
+		<text lang="Italian" displayName1="Invasione 2" displayName2="" />
 	</chapter>
 	<chapter id="107" name="Revelation_Invasion3" type="Invasion">
 		<text lang="English" displayName1="Invasion 3" displayName2="" />
+		<text lang="Japanese" displayName1="防衛戦３" displayName2="" />
+		<text lang="Spanish" displayName1="Invasión 3" displayName2="" />
+		<text lang="French" displayName1="Invasion 3" displayName2="" />
+		<text lang="German" displayName1="Belagerung 3" displayName2="" />
+		<text lang="Italian" displayName1="Invasione 3" displayName2="" />
 	</chapter>
 	<chapter id="108" name="Chapter 6" type="Story">
 		<text lang="English" displayName1="Chapter 6" displayName2="The Path Is Yours" />
+		<text lang="Japanese" displayName1="6章" displayName2="その手が拓く未来" />
+		<text lang="Spanish" displayName1="Capítulo 6" displayName2="Tuya es la senda" />
+		<text lang="French" displayName1="Chap. 6" displayName2="La croisée des chemins" />
+		<text lang="German" displayName1="Kapitel 6" displayName2="Der Weg ist dein" />
+		<text lang="Italian" displayName1="Capitolo 6" displayName2="Tuo è il destino" />
 		<unlocks>
 			<chapter id="8" />
 			<chapter id="31" />
@@ -555,17 +1101,42 @@
 	</chapter>
 	<chapter id="109" name="DragonsGate" type="DragonsGate">
 		<text lang="English" displayName1="Dragon's Gate" displayName2="" />
+		<text lang="Japanese" displayName1="" displayName2="" />
+		<text lang="Spanish" displayName1="" displayName2="" />
+		<text lang="French" displayName1="" displayName2="" />
+		<text lang="German" displayName1="" displayName2="" />
+		<text lang="Italian" displayName1="" displayName2="" />
 	</chapter>
 	<chapter id="117" name="HeroBattle_Marth" type="HeroBattle">
 		<text lang="English" displayName1="Hero Battle" displayName2="Hero-King Marth" />
+		<text lang="Japanese" displayName1="英雄戦" displayName2="英雄王マルス" />
+		<text lang="Spanish" displayName1="Contienda" displayName2="Rey heroico Marth" />
+		<text lang="French" displayName1="Les héros" displayName2="Marth, le Roi-Héros" />
+		<text lang="German" displayName1="Heldenkampf" displayName2="Heldenkönig Marth" />
+		<text lang="Italian" displayName1="Duello eroico" displayName2="Marth, il re eroico" />
 	</chapter>
 	<chapter id="118" name="HeroBattle_Ike" type="HeroBattle">
 		<text lang="English" displayName1="Hero Battle" displayName2="Radiant Hero Ike" />
+		<text lang="Japanese" displayName1="英雄戦" displayName2="勇者アイク" />
+		<text lang="Spanish" displayName1="Contienda" displayName2="Héroe resplandec. Ike" />
+		<text lang="French" displayName1="Les héros" displayName2="Ike, le Héros de l'Aube" />
+		<text lang="German" displayName1="Heldenkampf" displayName2="Strahlender Held Ike" />
+		<text lang="Italian" displayName1="Duello eroico" displayName2="Ike, l'eroe della fiamma" />
 	</chapter>
 	<chapter id="119" name="HeroBattle_Lucina" type="HeroBattle">
 		<text lang="English" displayName1="Hero Battle" displayName2="Princess Lucina" />
+		<text lang="Japanese" displayName1="英雄戦" displayName2="王女ルキナ" />
+		<text lang="Spanish" displayName1="Contienda" displayName2="Princesa Lucina" />
+		<text lang="French" displayName1="Les héros" displayName2="Princesse Lucina" />
+		<text lang="German" displayName1="Heldenkampf" displayName2="Prinzessin Lucina" />
+		<text lang="Italian" displayName1="Duello eroico" displayName2="La principessa Lucina" />
 	</chapter>
 	<chapter id="120" name="HeroBattle_Robin" type="HeroBattle">
 		<text lang="English" displayName1="Hero Battle" displayName2="Grandmaster Robin" />
+		<text lang="Japanese" displayName1="英雄戦" displayName2="神軍師ルフレ" />
+		<text lang="Spanish" displayName1="Contienda" displayName2="Gran estratega Daraen" />
+		<text lang="French" displayName1="Les héros" displayName2="Daraen, maître stratège" />
+		<text lang="German" displayName1="Heldenkampf" displayName2="Großmeister Daraen" />
+		<text lang="Italian" displayName1="Duello eroico" displayName2="Daraen, il Gran Maestro" />
 	</chapter>
 </root>
