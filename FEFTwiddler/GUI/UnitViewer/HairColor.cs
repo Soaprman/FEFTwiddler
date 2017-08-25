@@ -57,10 +57,8 @@ namespace FEFTwiddler.GUI.UnitViewer
         private void PickHairColor(object sender, EventArgs e)
         {
             ColorDialog colorDialog = new ColorDialog();
-            if (colorDialog.ShowDialog() == DialogResult.OK) {
+            if (colorDialog.ShowDialog() == DialogResult.OK)
                 HairColorHex.Text = colorDialog.Color.R.ToString("X2") + colorDialog.Color.G.ToString("X2") + colorDialog.Color.B.ToString("X2");
-                UpdateHairColor(null, null);
-            }
         }
     }
 }
